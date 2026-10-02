@@ -14,6 +14,7 @@ cd aad-transport-recovery/tools
 python3 -c "import wp; print(wp.U)"          # must print the AAD URL
 python3 publish_services.py                   # builds + pushes the 13 service pages as drafts (records IDs in created.json)
 python3 publish_services.py --assets          # also re-pushes home page + header/footer templates (CSS/JS live in them)
+python3 apply_metas.py                        # sets Yoast SEO title + meta description on the 13 service pages
 ```
 Python 3 only (stdlib). Playwright/Chromium preview helpers: `prev.py`, `shotp2.js`, `sheet.py`, `live.js` (launch Chromium with the HTTPS proxy + `ignoreHTTPSErrors`).
 
@@ -24,7 +25,7 @@ Python 3 only (stdlib). Playwright/Chromium preview helpers: `prev.py`, `shotp2.
 - All buttons have icons (phone / quote / paper-plane / arrow).
 - Service cards = tall photo cards w/ number badge + round orange arrow (reference style), smooth hover.
 - Animations: scroll reveal (`.rv`), scroll progress bar, card tilt (desktop), sticky shrinking header, pulse CTAs; respects reduced-motion.
-- SEO: one H1 per page, alt text on all media (set in library), FAQ schema (accordion `faq_schema`), LocalBusiness JSON-LD (header template only), aria-labels on icon buttons. User adds Yoast meta titles/descriptions themself.
+- SEO: one H1 per page, alt text on all media (set in library), FAQ schema (accordion `faq_schema`), LocalBusiness JSON-LD (header template only), aria-labels on icon buttons. Yoast meta titles/descriptions for the 13 service pages are set from the Google Doc (`tools/service_metas.json`, applied by `tools/apply_metas.py` via Yoast's `bulk_editor/update_search` route + a re-save so the indexable refreshes; plain REST `meta` writes to `_yoast_*` are silently ignored). Other pages' metas: user handling.
 - Google reviews section uses shortcode `[trustindex no-registration=google]`.
 
 ## What exists on the AAD site (IDs in `tools/created.json`)
