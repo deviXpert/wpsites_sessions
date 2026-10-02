@@ -35,15 +35,15 @@ Python 3 only (stdlib). Playwright/Chromium preview helpers: `prev.py`, `shotp2.
 | Header template (site-wide) | 1202 | published, include/general |
 | Footer template (site-wide) | 1203 | published, include/general |
 | Old header/footer | 241 / 272 | conditions removed |
-| Redesign drafts: About 1215, Contact 1216, Emergency 1217, Towing 1218, Flatbed 1219, Privacy 1220, Cookie 1221, Services hub 1222 | | drafts (built from existing page content) |
-| 13 new service pages from Google Doc | 1267–1279 (slug→ID in `created.json` → `svc`) | drafts on the site (template `elementor_header_footer`), pushed 2026-10-02; awaiting screenshots + user review |
+| Redesign pages: About 1215, Contact 1216, Emergency 1217, Towing 1218, Flatbed 1219, Privacy 1220, Cookie 1221, Services hub 1222 | | published (these now own the live URLs) |
+| 13 new service pages from Google Doc | 1267–1279 (slug→ID in `created.json` → `svc`) | **published** 2026-10-02 (template `elementor_header_footer`), Yoast metas set |
 
 Original-site backup (pages, posts, templates, media list, menus, settings) is in `tools/wp-backup/`.
 
 ## Open issues / next steps
 1. **Boxed hero on inner pages (Elementor Full Width template):** cause = stale Elementor per-post CSS (element IDs changed between rebuilds). User does NOT want extra CSS hacks. Agreed approach (pending user confirmation): keep site-wide header/footer, keep element IDs stable (builders now seed `random` per page — `build_services.py` uses `random.seed(slug)`; apply same to `build_pages.py`), then user runs **Elementor → Tools → Clear Files & Data** once.
-2. ~~Publish the 13 service pages as drafts~~ (done, IDs 1267–1279) → screenshot desktop + mobile → user review.
-3. Add new service pages to the Services menu (menu "mian", id in `wp-backup/menus.json`) and link matching cards on Home/Services hub.
+2. ~~Publish the 13 service pages~~ (done, IDs 1267–1279, live).
+3. ~~Menu~~ done: header now has a custom **mega menu** (desktop) + slide-in **drawer** (≤1024px) and a rebuilt footer listing every service. All generated from `MENU` in `build.py` — edit that list and run `python3 publish_services.py --assets`. The WordPress menu "mian" (Appearance → Menus) is **no longer used** by the header. Still to do: link matching cards on Home/Services hub to the new pages.
 4. Car Lockout & Roadside Assistance sections in the doc have no FAQ/CTA — a generic closing CTA was added; tell the user.
 5. On approval: copy each redesign draft's `_elementor_data` into the ORIGINAL page IDs (keeps URLs/SEO), then delete drafts.
 6. Old home page (ID 25) still published at `/home/` (duplicate content) — suggested setting it to draft; awaiting user.
@@ -51,7 +51,7 @@ Original-site backup (pages, posts, templates, media list, menus, settings) is i
 8. Elementor element caching was disabled by the user during the redesign — remind to re-enable at the end.
 
 ## Tool overview (`tools/`)
-- `build.py` — home page + header/footer templates; holds shared helpers (C/W/H/T/BTN…) and the CSS/JS asset widget (reads `redesign.css`, `redesign.js`).
+- `build.py` — home page + header/footer templates (mega menu/drawer HTML from `MENU`, `mega_html()`); holds shared helpers (C/W/H/T/BTN…) and the CSS/JS asset widget (reads `redesign.css`, `redesign.js`).
 - `build_pages.py` — redesigns existing inner pages from their Elementor data (+ Services hub).
 - `parse_doc.py` — parses `gdoc.html` → `doc_pages.json` (handles inconsistent heading levels, tables, notes cut-off).
 - `build_services.py` — builds the 13 service pages with varied sections (split+photo, navy checklist, tick tiles, feature/numbered/dark cards, steps, destination panel, areas+photo, 24/7 phone band, comparison table, reviews, FAQ, CTA). Image picks per page in `IMGS`.

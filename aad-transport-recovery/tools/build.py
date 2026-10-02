@@ -60,6 +60,49 @@ hdr_nav.update(menu_typography_font_family='Figtree', dropdown_typography_font_f
                pointer_color_menu_item_hover='#FE6402', color_menu_item_active='#FE6402', pointer_color_menu_item_active='#FE6402',
                dropdown='tablet', toggle_color='#011D5E', background_color_dropdown_item='#FFFFFF', color_dropdown_item='#011D5E',
                color_dropdown_item_hover='#FE6402', background_color_dropdown_item_hover='#FFF4EC', _css_classes='x-nav')
+# Service menu (mega menu, mobile drawer and footer all read from this): (group, [(label, slug, icon, blurb)])
+MENU = [
+    ('Vehicle Recovery', [
+        ('Emergency Breakdown Recovery', 'emergency-breakdown-recovery-birmingham', 'exclamation-triangle', 'Fast 24/7 roadside rescue'),
+        ('Accident Recovery', 'accident-recovery-birmingham', 'car-crash', 'Damaged &amp; non-drivable vehicles'),
+        ('Flatbed Recovery', 'flatbed-recovery-birmingham', 'truck-loading', 'Safe transport for non-runners'),
+        ('Wheel-Lift Recovery', 'wheel-lift-recovery-birmingham', 'truck-pickup', 'Quick towing for cars &amp; vans'),
+        ('Heavy-Duty Recovery', 'heavy-duty-recovery-birmingham', 'truck-moving', 'Heavy &amp; commercial vehicles'),
+        ('Motorcycle Recovery', 'motorcycle-recovery-birmingham', 'motorcycle', 'Motorbike breakdowns &amp; accidents'),
+        ('RV &amp; Trailer Recovery', 'rv-trailer-recovery-birmingham', 'caravan', 'Motorhomes, caravans &amp; trailers')]),
+    ('Towing &amp; Transport', [
+        ('Towing Service', 'towing-service-birmingham', 'truck', '24/7 vehicle towing'),
+        ('Commercial Vehicle Towing', 'commercial-vehicle-towing-birmingham', 'shipping-fast', 'Vans &amp; business vehicles'),
+        ('Long-Distance Recovery', 'long-distance-recovery-birmingham', 'route', 'Recovery &amp; transport UK-wide'),
+        ('Vehicle Transport', 'vehicle-transport-birmingham', 'car-side', 'Garage moves &amp; car transport')]),
+    ('Roadside Assistance', [
+        ('Roadside Assistance', 'roadside-assistance-birmingham', 'tools', 'Breakdown help at the roadside'),
+        ('Flat Battery Service', 'flat-battery-service-birmingham', 'car-battery', 'Jump starts &amp; battery help'),
+        ('Flat Tyre Services', 'flat-tyre-services-birmingham', 'circle-notch', 'Punctures &amp; tyre problems'),
+        ('Fuel Delivery', 'fuel-delivery-services-birmingham', 'gas-pump', 'Out of fuel? We can help'),
+        ('Car Lockout Service', 'car-lockout-service-birmingham', 'key', 'Locked out of your vehicle')]),
+]
+TOP = [('Home', U + '/'), ('Services', U + '/services/'), ('About Us', U + '/about-us/'), ('Contact Us', U + '/contact/')]
+def mega_html():
+    item = lambda t, s, i, d: f'<a class="x-mm-item" href="{U}/{s}/"><span class="x-mm-ic"><i class="fas fa-{i}" aria-hidden="true"></i></span><span class="x-mm-tx"><span class="x-mm-tt">{t}</span><span class="x-mm-ds">{d}</span></span></a>'
+    groups = ''.join(f'<div class="x-mm-col"><p class="x-mm-gh">{g}</p>{"".join(item(*x) for x in xs)}</div>' for g, xs in MENU)
+    promo = (f'<div class="x-mm-promo"><p class="x-mm-pk">24/7 Recovery</p><p class="x-mm-pt">Broken Down Right Now?</p><p class="x-mm-pd">Operators are standing by day and night across Birmingham &amp; the West Midlands.</p>'
+             f'<a class="x-mm-call" href="{TEL}"><i class="fas fa-phone-alt" aria-hidden="true"></i> {PHONE}</a><a class="x-mm-all" href="{U}/services/">View All Services <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>')
+    links = ''.join(
+        f'<li class="x-mm-has"><a class="x-mm-link" href="{u}" aria-haspopup="true" aria-expanded="false">{t} <i class="fas fa-chevron-down" aria-hidden="true"></i></a>'
+        f'<div class="x-mm-panel"><div class="x-mm-grid">{groups}{promo}</div></div></li>' if t == 'Services' else f'<li><a class="x-mm-link" href="{u}">{t}</a></li>' for t, u in TOP)
+    dwl = lambda t, s, i, d: f'<a href="{U}/{s}/"><i class="fas fa-{i}" aria-hidden="true"></i>{t}</a>'
+    # mobile drawer (moved to <body> by redesign.js so the header's backdrop-filter can't trap it)
+    acc = ''.join(f'<div class="x-dw-grp"><button class="x-dw-acc" type="button" aria-expanded="false">{g}<i class="fas fa-chevron-down" aria-hidden="true"></i></button>'
+                  f'<div class="x-dw-sub"><div class="x-dw-subin">{"".join(dwl(*x) for x in xs)}</div></div></div>' for g, xs in MENU)
+    drawer = (f'<div class="x-dw" id="x-dw" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="x-dw-bg" data-x-close></div><div class="x-dw-pane">'
+              f'<div class="x-dw-top"><span class="x-dw-ttl">Menu</span><button class="x-dw-x" type="button" data-x-close aria-label="Close menu"><i class="fas fa-times" aria-hidden="true"></i></button></div>'
+              f'<nav class="x-dw-nav" aria-label="Mobile"><a class="x-dw-main" href="{U}/">Home</a><p class="x-dw-lbl">Our Services</p>{acc}'
+              f'<a class="x-dw-main" href="{U}/services/">All Services</a><a class="x-dw-main" href="{U}/about-us/">About Us</a><a class="x-dw-main" href="{U}/contact/">Contact Us</a></nav>'
+              f'<div class="x-dw-cta"><a class="x-dw-call" href="{TEL}"><i class="fas fa-phone-alt" aria-hidden="true"></i> Call {PHONE}</a><a class="x-dw-quote" href="{U}/contact/"><i class="fas fa-file-signature" aria-hidden="true"></i> Get a Free Quote</a></div></div></div>')
+    burger = '<button class="x-burger" type="button" aria-label="Open menu" aria-controls="x-dw" aria-expanded="false"><span></span><span></span><span></span></button>'
+    return f'<nav class="x-mm" aria-label="Main"><ul class="x-mm-list">{links}</ul></nav>{burger}{drawer}'
+
 def header():
     top = C([
         W('icon-list', 'x-live', icon_list=[{'_id': rid(), 'text': 'Live dispatch — operators standing by, 24 hours a day', 'selected_icon': ICO('circle')}], view='inline'),
@@ -67,7 +110,7 @@ def header():
     ], 'x-topbar', flex_direction='row', flex_justify_content='space-between', flex_align_items='center', cw='boxed')
     main = C([
         W('theme-site-logo', 'x-logo', __dynamic__={'image': '[elementor-tag id="" name="site-logo" settings="%7B%7D"]'}, align='start', width={'unit': 'px', 'size': 150}),
-        W('nav-menu', '', **hdr_nav),
+        W('html', 'x-navwrap', html=mega_html()),
         BTN('Get a Free Quote', TEL, 'x-btn x-btn-sm x-hdr-cta'),
     ], 'x-mainbar', flex_direction='row', flex_justify_content='space-between', flex_align_items='center', flex_wrap='nowrap', cw='boxed')
     return C([top, main], 'x-header', flex_direction='column')
@@ -75,18 +118,22 @@ def header():
 # ---------- FOOTER ----------
 def flinks(items): return W('icon-list', 'x-flinks', icon_list=[{'_id': rid(), 'text': t, 'selected_icon': {'value': '', 'library': ''}, 'link': {'url': u}} for t, u in items])
 def footer():
+    fl = lambda xs: flinks([(t.replace('&amp;', '&'), f'{U}/{s}/') for t, s, i, d in xs])
     cols = C([
         C([W('theme-site-logo', 'x-logo x-flogo', __dynamic__={'image': '[elementor-tag id="" name="site-logo" settings="%7B%7D"]'}, align='start', width={'unit': 'px', 'size': 150}),
            T('<p>24/7 breakdown recovery, car recovery and towing services across Birmingham and the West Midlands.</p>', 'x-fabout'),
-           BTN('Call Now: ' + PHONE, TEL, 'x-btn x-btn-sm')], 'x-fcol x-fcol-wide', flex_direction='column'),
-        C([H('Services', 'p', 'x-fhead'), flinks([('Flatbed  Recovery', U + '/flatbed-recovery-birmingham/'), ('Towing Services ', U + '/towing-service-birmingham/'), ('Emergency Breakdown Recovery', U + '/emergency-breakdown-recovery-birmingham/')])], 'x-fcol', flex_direction='column'),
-        C([H('Company ', 'p', 'x-fhead'), flinks([('About ', U + '/about-us/'), ('Contact', U + '/contact/'), ('Privacy Policy', U + '/privacy-policy/'), ('Cookies Policy', U + '/cookie-policy/')])], 'x-fcol', flex_direction='column'),
-        C([H('Contact', 'p', 'x-fhead'), W('icon-list', 'x-flinks x-fcontact', icon_list=[
-            {'_id': rid(), 'text': '(077)-710-04242', 'selected_icon': ICO('phone-alt'), 'link': {'url': TEL}},
+           W('icon-list', 'x-flinks x-fcontact', icon_list=[
+            {'_id': rid(), 'text': PHONE, 'selected_icon': ICO('phone-alt'), 'link': {'url': TEL}},
             {'_id': rid(), 'text': 'general@aadtransportrecovery.co.uk', 'selected_icon': ICO('envelope'), 'link': {'url': 'mailto:general@aadtransportrecovery.co.uk'}},
-            {'_id': rid(), 'text': 'Walsall Rd, Birmingham, West Midlands, B42 1TQ', 'selected_icon': ICO('map-marker-alt')}])], 'x-fcol', flex_direction='column'),
+            {'_id': rid(), 'text': 'Walsall Rd, Birmingham, B42 1TQ', 'selected_icon': ICO('map-marker-alt')},
+            {'_id': rid(), 'text': 'Open 24 hours, 7 days a week', 'selected_icon': ICO('clock')}])], 'x-fcol x-fcol-brand', flex_direction='column'),
+        *[C([H(g.replace('&amp;', '&'), 'p', 'x-fhead'), fl(xs)], 'x-fcol', flex_direction='column') for g, xs in MENU],
+        C([H('Company', 'p', 'x-fhead'), flinks([('Home', U + '/'), ('All Services', U + '/services/'), ('About Us', U + '/about-us/'), ('Contact Us', U + '/contact/')]),
+           BTN('Get a Free Quote', U + '/contact/', 'x-btn x-btn-sm x-fquote')], 'x-fcol', flex_direction='column'),
     ], 'x-fgrid', flex_direction='row', flex_wrap='wrap', cw='boxed')
-    bottom = C([T('<p>AAD Transport &amp; Recovery &copy; 2026 — All Rights Reserved.</p>', 'x-fcopy')], 'x-fbottom', cw='boxed')
+    bottom = C([T('<p>&copy; 2026 AAD Transport &amp; Recovery. All rights reserved.</p>', 'x-fcopy'),
+                T(f'<p><a href="{U}/privacy-policy/">Privacy Policy</a><a href="{U}/cookie-policy/">Cookie Policy</a></p>', 'x-flegal')],
+               'x-fbottom', flex_direction='row', flex_justify_content='space-between', flex_align_items='center', flex_wrap='wrap', cw='boxed')
     return C([cols, bottom], 'x-footer', flex_direction='column')
 
 # ---------- HOME ----------

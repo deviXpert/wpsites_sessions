@@ -15,8 +15,8 @@ if '--assets' in sys.argv:
 bs = json.loads(fix(open('built_services.json').read()))
 c.setdefault('svc', {})
 for slug, v in bs.items():
-    body = {'title': v['title'], 'slug': slug, 'status': 'draft', 'template': 'elementor_header_footer',
+    body = {'title': v['title'], 'slug': slug, 'template': 'elementor_header_footer',
             'meta': {'_elementor_edit_mode': 'builder', '_elementor_template_type': 'wp-page', '_elementor_data': json.dumps(v['data'])}}
-    r = req(f"wp/v2/pages/{c['svc'][slug]}", 'POST', body) if c['svc'].get(slug) else req('wp/v2/pages', 'POST', body)
+    r = req(f"wp/v2/pages/{c['svc'][slug]}", 'POST', body) if c['svc'].get(slug) else req('wp/v2/pages', 'POST', {**body, 'status': 'draft'})  # existing pages keep their status
     c['svc'][slug] = r.get('id'); print(slug, r.get('id'), r.get('_err') or '')
 json.dump(c, open('created.json', 'w'), indent=1)

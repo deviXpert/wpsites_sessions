@@ -1,0 +1,21 @@
+const {chromium}=require('playwright');(async()=>{const b=await chromium.launch({proxy:{server:process.env.HTTPS_PROXY},args:['--ignore-certificate-errors']});
+const f='file://'+process.cwd()+'/prevmm/home.html';const fix=()=>{document.addEventListener('DOMContentLoaded',()=>{const s=document.createElement('style');s.textContent='.rv{opacity:1!important;transform:none!important}';document.head.appendChild(s)})};
+let p=await b.newPage({ignoreHTTPSErrors:true,viewport:{width:1440,height:900}});await p.addInitScript(fix);
+p.on('pageerror',e=>console.log('ERR',e.message));
+await p.goto(f,{waitUntil:'networkidle',timeout:90000}).catch(e=>console.log(e.message));
+await p.screenshot({path:'prevmm/d_header.png'});
+await p.hover('.x-mm-has>.x-mm-link');await p.waitForTimeout(500);await p.screenshot({path:'prevmm/d_mega.png'});
+await p.mouse.move(5,600);await p.evaluate(()=>scrollTo(0,document.body.scrollHeight));await p.waitForTimeout(800);
+const ft=await p.$('.x-footer');await ft.screenshot({path:'prevmm/d_footer.png'});
+await p.setViewportSize({width:1100,height:900});await p.evaluate(()=>scrollTo(0,0));await p.waitForTimeout(300);await p.hover('.x-mm-has>.x-mm-link');await p.waitForTimeout(500);await p.screenshot({path:'prevmm/t_mega.png'});
+await p.close();
+p=await b.newPage({ignoreHTTPSErrors:true,viewport:{width:390,height:844},isMobile:true,hasTouch:true});await p.addInitScript(fix);p.on('pageerror',e=>console.log('ERR',e.message));
+await p.goto(f,{waitUntil:'networkidle',timeout:90000}).catch(e=>console.log(e.message));
+await p.screenshot({path:'prevmm/m_header.png'});
+await p.tap('.x-burger');await p.waitForTimeout(600);await p.screenshot({path:'prevmm/m_drawer.png'});
+await p.tap('.x-dw-acc >> nth=0');await p.waitForTimeout(500);await p.screenshot({path:'prevmm/m_drawer_open.png'});
+await p.tap('.x-dw-x');await p.waitForTimeout(500);
+console.log('drawer hidden after close:',await p.evaluate(()=>document.querySelector('.x-dw').hidden), 'overflowX:',await p.evaluate(()=>document.documentElement.scrollWidth));
+await p.evaluate(()=>scrollTo(0,document.body.scrollHeight));await p.waitForTimeout(800);
+await (await p.$('.x-footer')).screenshot({path:'prevmm/m_footer.png'});
+await b.close()})()
