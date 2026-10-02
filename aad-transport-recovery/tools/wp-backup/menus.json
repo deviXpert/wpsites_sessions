@@ -1,0 +1,49 @@
+[
+ {
+  "id": 5,
+  "description": "",
+  "name": "Mian",
+  "slug": "mian",
+  "meta": [],
+  "locations": [],
+  "auto_add": false,
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/menus/5",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/menus"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/taxonomies/nav_menu"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/menu-items?menus=5"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

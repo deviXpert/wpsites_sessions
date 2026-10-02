@@ -1,0 +1,146 @@
+[
+ {
+  "id": 1,
+  "count": 1,
+  "description": "",
+  "link": "https://maroon-raven-160825.hostingersite.com/category/uncategorized/",
+  "name": "Uncategorized",
+  "slug": "uncategorized",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Uncategorized Archives - maroon-raven-160825.hostingersite.com</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [Yoast SEO - Settings] menu and set up a template. -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Uncategorized Archives - maroon-raven-160825.hostingersite.com\" />\n<meta property=\"og:url\" content=\"https://maroon-raven-160825.hostingersite.com/category/uncategorized/\" />\n<meta property=\"og:site_name\" content=\"maroon-raven-160825.hostingersite.com\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/category\\/uncategorized\\/\",\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/category\\/uncategorized\\/\",\"name\":\"Uncategorized Archives - maroon-raven-160825.hostingersite.com\",\"isPartOf\":{\"@id\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/category\\/uncategorized\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/category\\/uncategorized\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Uncategorized\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/#website\",\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/\",\"name\":\"maroon-raven-160825.hostingersite.com\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/#organization\",\"name\":\"maroon-raven-160825.hostingersite.com\",\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/wp-content\\/uploads\\/2026\\/09\\/A.A.D-Logo-TP.webp\",\"contentUrl\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/wp-content\\/uploads\\/2026\\/09\\/A.A.D-Logo-TP.webp\",\"width\":1536,\"height\":1024,\"caption\":\"maroon-raven-160825.hostingersite.com\"},\"image\":{\"@id\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Uncategorized Archives - maroon-raven-160825.hostingersite.com",
+   "robots": {
+    "index": "noindex",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "og_locale": "en_US",
+   "og_type": "article",
+   "og_title": "Uncategorized Archives - maroon-raven-160825.hostingersite.com",
+   "og_url": "https://maroon-raven-160825.hostingersite.com/category/uncategorized/",
+   "og_site_name": "maroon-raven-160825.hostingersite.com",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://maroon-raven-160825.hostingersite.com/category/uncategorized/",
+      "url": "https://maroon-raven-160825.hostingersite.com/category/uncategorized/",
+      "name": "Uncategorized Archives - maroon-raven-160825.hostingersite.com",
+      "isPartOf": {
+       "@id": "https://maroon-raven-160825.hostingersite.com/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://maroon-raven-160825.hostingersite.com/category/uncategorized/#breadcrumb"
+      },
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://maroon-raven-160825.hostingersite.com/category/uncategorized/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://maroon-raven-160825.hostingersite.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Uncategorized"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://maroon-raven-160825.hostingersite.com/#website",
+      "url": "https://maroon-raven-160825.hostingersite.com/",
+      "name": "maroon-raven-160825.hostingersite.com",
+      "description": "",
+      "publisher": {
+       "@id": "https://maroon-raven-160825.hostingersite.com/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://maroon-raven-160825.hostingersite.com/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "en-US"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://maroon-raven-160825.hostingersite.com/#organization",
+      "name": "maroon-raven-160825.hostingersite.com",
+      "url": "https://maroon-raven-160825.hostingersite.com/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "en-US",
+       "@id": "https://maroon-raven-160825.hostingersite.com/#/schema/logo/image/",
+       "url": "https://maroon-raven-160825.hostingersite.com/wp-content/uploads/2026/09/A.A.D-Logo-TP.webp",
+       "contentUrl": "https://maroon-raven-160825.hostingersite.com/wp-content/uploads/2026/09/A.A.D-Logo-TP.webp",
+       "width": 1536,
+       "height": 1024,
+       "caption": "maroon-raven-160825.hostingersite.com"
+      },
+      "image": {
+       "@id": "https://maroon-raven-160825.hostingersite.com/#/schema/logo/image/"
+      }
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/categories/1",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/categories"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/posts?categories=1"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

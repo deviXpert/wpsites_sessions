@@ -1,0 +1,158 @@
+[
+ {
+  "plugin": "Auto-Convert-to-webp.php_/Auto Convert to webp",
+  "status": "active",
+  "name": "Auto Convert to WebP",
+  "plugin_uri": "",
+  "author": "Khurram Shahzad | Dev",
+  "author_uri": "",
+  "description": {
+   "raw": "Automatically converts uploaded JPEG/PNG images to WebP, removes the original file, and keeps only the WebP version in the Media Library. Reduces file size while preserving visual quality.",
+   "rendered": "Automatically converts uploaded JPEG/PNG images to WebP, removes the original file, and keeps only the WebP version in the Media Library. Reduces file size while preserving visual quality. <cite>By Khurram Shahzad | Dev.</cite>"
+  },
+  "version": "1.1.0",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "Auto-Convert-to-webp.php_",
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/plugins/Auto-Convert-to-webp.php_/Auto Convert to webp"
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "elementor/elementor",
+  "status": "active",
+  "name": "Elementor",
+  "plugin_uri": "https://elementor.com/?utm_source=wp-plugins&#038;utm_campaign=plugin-uri&#038;utm_medium=wp-dash",
+  "author": "Elementor.com",
+  "author_uri": "https://elementor.com/?utm_source=wp-plugins&#038;utm_campaign=author-uri&#038;utm_medium=wp-dash",
+  "description": {
+   "raw": "The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now!",
+   "rendered": "The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now! <cite>By <a href=\"https://elementor.com/?utm_source=wp-plugins&#038;utm_campaign=author-uri&#038;utm_medium=wp-dash\">Elementor.com</a>.</cite>"
+  },
+  "version": "4.3.2",
+  "network_only": false,
+  "requires_wp": "6.8",
+  "requires_php": "7.4",
+  "textdomain": "elementor",
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/plugins/elementor/elementor",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "elementor-pro/elementor-pro",
+  "status": "active",
+  "name": "Elementor Pro",
+  "plugin_uri": "https://go.elementor.com/wp-dash-wp-plugins-author-uri/",
+  "author": "Elementor.com",
+  "author_uri": "https://go.elementor.com/wp-dash-wp-plugins-author-uri/",
+  "description": {
+   "raw": "Elevate your designs and unlock the full power of the Atomic Editor. Gain access to dozens of Pro widgets, Website Templates, Theme Builder, Pop Ups, Forms, reusable Components, and WooCommerce building capabilities.",
+   "rendered": "Elevate your designs and unlock the full power of the Atomic Editor. Gain access to dozens of Pro widgets, Website Templates, Theme Builder, Pop Ups, Forms, reusable Components, and WooCommerce building capabilities. <cite>By <a href=\"https://go.elementor.com/wp-dash-wp-plugins-author-uri/\">Elementor.com</a>.</cite>"
+  },
+  "version": "4.2.2",
+  "network_only": false,
+  "requires_wp": "6.8",
+  "requires_php": "7.4",
+  "textdomain": "elementor-pro",
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/plugins/elementor-pro/elementor-pro",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "sg-security/sg-security",
+  "status": "active",
+  "name": "Security Optimizer",
+  "plugin_uri": "https://siteground.com",
+  "author": "SiteGround",
+  "author_uri": "https://www.siteground.com",
+  "description": {
+   "raw": "Security Optimizer by SiteGround is the all-in-one security solution for your WordPress website. With the carefully selected and easy to configure functions the plugin provides everything you need to secure your website and prevent a number of threats such as brute-force attacks, compromised login, data leaks and more.",
+   "rendered": "Security Optimizer by SiteGround is the all-in-one security solution for your WordPress website. With the carefully selected and easy to configure functions the plugin provides everything you need to secure your website and prevent a number of threats such as brute-force attacks, compromised login, data leaks and more. <cite>By <a href=\"https://www.siteground.com\">SiteGround</a>.</cite>"
+  },
+  "version": "1.6.8",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "sg-security",
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/plugins/sg-security/sg-security",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "wordpress-seo/wp-seo",
+  "status": "active",
+  "name": "Yoast SEO",
+  "plugin_uri": "https://yoa.st/1uj",
+  "author": "Team Yoast",
+  "author_uri": "https://yoa.st/1uk",
+  "description": {
+   "raw": "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.",
+   "rendered": "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more. <cite>By <a href=\"https://yoa.st/1uk\">Team Yoast</a>.</cite>"
+  },
+  "version": "28.5",
+  "network_only": false,
+  "requires_wp": "6.9",
+  "requires_php": "7.4",
+  "textdomain": "wordpress-seo",
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/plugins/wordpress-seo/wp-seo",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ }
+]

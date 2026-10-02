@@ -1,0 +1,1067 @@
+[
+ {
+  "id": 272,
+  "date": "2026-09-21T13:54:18",
+  "date_gmt": "2026-09-21T13:54:18",
+  "guid": {
+   "rendered": "https://maroon-raven-160825.hostingersite.com/?post_type=elementor_library&#038;p=272",
+   "raw": "https://maroon-raven-160825.hostingersite.com/?post_type=elementor_library&#038;p=272"
+  },
+  "modified": "2026-09-27T14:34:26",
+  "modified_gmt": "2026-09-27T14:34:26",
+  "password": "",
+  "slug": "elementor-footer-272",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://maroon-raven-160825.hostingersite.com/?elementor_library=elementor-footer-272",
+  "title": {
+   "raw": "Elementor Footer #272",
+   "rendered": "Elementor Footer #272"
+  },
+  "author": 1,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "site-sidebar-layout": "no-sidebar",
+   "site-content-layout": "",
+   "ast-site-content-layout": "full-width-container",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "disabled",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "footer",
+   "_elementor_data": "[{\"id\":\"7c9cc8a\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_justify_content\":\"space-between\",\"background_background\":\"classic\",\"background_color\":\"#010F35\",\"padding\":{\"unit\":\"px\",\"top\":\"30\",\"right\":\"20\",\"bottom\":\"50\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"c9381c2\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":25},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"0\",\"bottom\":\"10\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"2a512fc\",\"elType\":\"widget\",\"settings\":{\"__dynamic__\":{\"image\":\"[elementor-tag id=\\\"\\\" name=\\\"site-logo\\\" settings=\\\"%7B%7D\\\"]\"},\"align\":\"start\",\"width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"space\":{\"unit\":\"px\",\"size\":150,\"sizes\":[]},\"space_tablet\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"space_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]}},\"elements\":[],\"widgetType\":\"theme-site-logo\"},{\"id\":\"b36f772\",\"elType\":\"widget\",\"settings\":{\"editor\":\"24\\/7 breakdown recovery, car recovery and towing services across Birmingham and the West Midlands.\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"07f72ca\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":20,\"sizes\":[]},\"width_tablet\":{\"unit\":\"%\",\"size\":25,\"sizes\":[]},\"width_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"flex_justify_content\":\"flex-end\",\"flex_justify_content_tablet\":\"flex-start\",\"padding_tablet\":{\"unit\":\"px\",\"top\":\"90\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"d073203\",\"elType\":\"widget\",\"settings\":{\"title\":\"Services\",\"header_size\":\"p\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"typography_font_weight\":\"700\",\"typography_line_height_tablet\":{\"unit\":\"em\",\"size\":1.3,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"em\",\"size\":1.2,\"sizes\":[]},\"__globals__\":{\"title_color\":\"globals\\/colors?id=accent\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"05893d7\",\"elType\":\"widget\",\"settings\":{\"icon_list\":[{\"text\":\"Flatbed  Recovery\",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"_id\":\"08aed3e\",\"link\":{\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/flatbed-recovery-birmingham\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"text\":\"Towing Services \",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"_id\":\"1f512e9\",\"link\":{\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/towing-service-birmingham\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"text\":\"Emergency Breakdown Recovery\",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"_id\":\"ca6c55a\",\"link\":{\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/emergency-breakdown-recovery-birmingham\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}}],\"icon_typography_typography\":\"custom\",\"icon_typography_font_family\":\"IBM Plex Sans\",\"icon_typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"icon_typography_font_weight\":\"400\",\"text_color\":\"#7E8BB0\",\"text_color_hover\":\"#FE6402\",\"__globals__\":{\"text_color\":\"\",\"text_color_hover\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-list\"}],\"isInner\":true},{\"id\":\"b4e4e3d\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":20,\"sizes\":[]},\"width_tablet\":{\"unit\":\"%\",\"size\":15,\"sizes\":[]},\"width_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"flex_justify_content\":\"flex-end\",\"flex_justify_content_tablet\":\"flex-start\",\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"20\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"90\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"5a2a4c3\",\"elType\":\"widget\",\"settings\":{\"title\":\"Company \",\"header_size\":\"p\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"typography_font_weight\":\"700\",\"typography_line_height_tablet\":{\"unit\":\"em\",\"size\":1.3,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"em\",\"size\":1.2,\"sizes\":[]},\"__globals__\":{\"title_color\":\"globals\\/colors?id=accent\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"70efe35\",\"elType\":\"widget\",\"settings\":{\"icon_list\":[{\"text\":\"About \",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"_id\":\"08aed3e\",\"link\":{\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/about-us\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"text\":\"Contact\",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"_id\":\"1f512e9\",\"link\":{\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/contact\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"text\":\"Privacy Policy\",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"_id\":\"ca6c55a\",\"link\":{\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/privacy-policy\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"text\":\"Cookies Policy\",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"link\":{\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/cookie-policy\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"},\"_id\":\"62760f1\"}],\"icon_typography_typography\":\"custom\",\"icon_typography_font_family\":\"IBM Plex Sans\",\"icon_typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"icon_typography_font_weight\":\"400\",\"text_color\":\"#7E8BB0\",\"text_color_hover\":\"#FE6402\",\"__globals__\":{\"text_color\":\"\",\"text_color_hover\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-list\"}],\"isInner\":true},{\"id\":\"b533156\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":25,\"sizes\":[]},\"width_tablet\":{\"unit\":\"%\",\"size\":30,\"sizes\":[]},\"width_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"flex_justify_content\":\"flex-end\",\"flex_justify_content_tablet\":\"flex-start\",\"padding_tablet\":{\"unit\":\"px\",\"top\":\"90\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"3d26cfb\",\"elType\":\"widget\",\"settings\":{\"title\":\"Contact\",\"header_size\":\"p\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"typography_font_weight\":\"700\",\"typography_line_height_tablet\":{\"unit\":\"em\",\"size\":1.3,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"em\",\"size\":1.2,\"sizes\":[]},\"__globals__\":{\"title_color\":\"globals\\/colors?id=accent\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"55ec94a\",\"elType\":\"widget\",\"settings\":{\"icon_list\":[{\"text\":\"(077)-710-04242\",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"_id\":\"08aed3e\",\"link\":{\"url\":\"tel:(077)-710-04242\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"text\":\"general@aadtransportrecovery.co.uk\",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"link\":{\"url\":\"mailto:general@aadtransportrecovery.co.uk\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"},\"_id\":\"1f512e9\"},{\"text\":\"Walsall Rd, Birmingham, West Midlands, B42 1TQ\",\"selected_icon\":{\"value\":\"\",\"library\":\"\"},\"_id\":\"ca6c55a\"}],\"icon_typography_typography\":\"custom\",\"icon_typography_font_family\":\"IBM Plex Sans\",\"icon_typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"icon_typography_font_weight\":\"400\",\"text_color\":\"#7E8BB0\",\"text_color_hover\":\"#FE6402\",\"__globals__\":{\"text_color\":\"\",\"text_color_hover\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-list\"}],\"isInner\":true}],\"isInner\":false},{\"id\":\"59627eb\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#010F35\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\"},\"elements\":[{\"id\":\"59abf2b\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"80\",\"bottom\":\"24\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"40\",\"bottom\":\"20\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"634fac4\",\"elType\":\"widget\",\"settings\":{\"editor\":\"AAD Transport &amp; Recovery &copy; 2026 \\u2014 All Rights Reserved.\",\"text_color\":\"#5A6790\",\"align\":\"center\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":false}]",
+   "_elementor_page_settings": [],
+   "_elementor_conditions": [
+    "include/general"
+   ]
+  },
+  "permalink_template": "https://maroon-raven-160825.hostingersite.com/?elementor_library=elementor-footer-272",
+  "generated_slug": "elementor-footer-272",
+  "class_list": [
+   "post-272",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/272",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/users/1"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 9,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/272/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 1198,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/272/revisions/1198"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/media?parent=272"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/272"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/272"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/272"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 241,
+  "date": "2026-09-21T13:19:44",
+  "date_gmt": "2026-09-21T13:19:44",
+  "guid": {
+   "rendered": "https://maroon-raven-160825.hostingersite.com/?post_type=elementor_library&#038;p=241",
+   "raw": "https://maroon-raven-160825.hostingersite.com/?post_type=elementor_library&#038;p=241"
+  },
+  "modified": "2026-09-23T12:56:42",
+  "modified_gmt": "2026-09-23T12:56:42",
+  "password": "",
+  "slug": "elementor-header-241",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://maroon-raven-160825.hostingersite.com/?elementor_library=elementor-header-241",
+  "title": {
+   "raw": "Elementor Header #241",
+   "rendered": "Elementor Header #241"
+  },
+  "author": 1,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "site-sidebar-layout": "no-sidebar",
+   "site-content-layout": "",
+   "ast-site-content-layout": "full-width-container",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "disabled",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "header",
+   "_elementor_data": "[{\"id\":\"9a01c3a\",\"elType\":\"container\",\"settings\":{\"presetTitle\":\"Container\",\"presetIcon\":\"eicon-container\",\"boxed_width\":{\"unit\":\"px\",\"size\":1440,\"sizes\":[]},\"background_background\":\"classic\",\"__globals__\":{\"background_color\":\"globals\\/colors?id=secondary\"},\"flex_direction\":\"row\",\"flex_justify_content\":\"space-between\",\"flex_justify_content_mobile\":\"center\",\"flex_gap_mobile\":{\"column\":\"10\",\"row\":\"10\",\"isLinked\":true,\"unit\":\"px\",\"size\":10},\"padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"20\",\"bottom\":\"10\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"eb82cb0\",\"elType\":\"widget\",\"settings\":{\"icon_list\":[{\"text\":\" Live dispatch \\u2014 operators standing by, 24 hours a day\",\"selected_icon\":{\"value\":\"fas fa-circle\",\"library\":\"fa-solid\"},\"_id\":\"6215a6d\"}],\"icon_size\":{\"unit\":\"px\",\"size\":8,\"sizes\":[]},\"icon_typography_typography\":\"custom\",\"icon_typography_font_family\":\"IBM Plex Sans\",\"icon_typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"icon_typography_font_size_mobile\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"icon_typography_font_weight\":\"500\",\"text_color\":\"#FFFFFF\",\"__globals__\":{\"icon_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-list\"},{\"id\":\"0ba6d04\",\"elType\":\"widget\",\"settings\":{\"icon_list\":[{\"text\":\"(077)-710-04242\",\"selected_icon\":{\"value\":\"fas fa-phone-alt\",\"library\":\"fa-solid\"},\"_id\":\"6215a6d\",\"link\":{\"url\":\"tel: (077)-710-04242\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}}],\"icon_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"icon_typography_typography\":\"custom\",\"icon_typography_font_family\":\"IBM Plex Sans\",\"icon_typography_font_size\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"icon_typography_font_size_tablet\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"icon_typography_font_weight\":\"500\",\"text_color\":\"#FFFFFF\",\"__globals__\":{\"icon_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-list\"}],\"isInner\":false},{\"id\":\"eee6d59\",\"elType\":\"container\",\"settings\":{\"presetTitle\":\"Container\",\"presetIcon\":\"eicon-container\",\"boxed_width\":{\"unit\":\"px\",\"size\":1440,\"sizes\":[]},\"background_background\":\"classic\",\"__globals__\":{\"background_color\":\"globals\\/colors?id=primary\"},\"flex_direction\":\"row\",\"flex_justify_content\":\"space-between\",\"flex_justify_content_mobile\":\"center\",\"flex_gap_mobile\":{\"column\":\"10\",\"row\":\"10\",\"isLinked\":true,\"unit\":\"px\",\"size\":10},\"padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"20\",\"bottom\":\"10\",\"left\":\"20\",\"isLinked\":false},\"flex_wrap_mobile\":\"nowrap\",\"padding_mobile\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"9956e34\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":20,\"sizes\":[]},\"width_mobile\":{\"unit\":\"%\",\"size\":50,\"sizes\":[]},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"width_tablet\":{\"unit\":\"%\",\"size\":25,\"sizes\":[]},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"_flex_align_self_mobile\":\"flex-start\"},\"elements\":[{\"id\":\"f1ff571\",\"elType\":\"widget\",\"settings\":{\"__dynamic__\":{\"image\":\"[elementor-tag id=\\\"\\\" name=\\\"site-logo\\\" settings=\\\"%7B%7D\\\"]\"},\"align\":\"start\",\"width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"space\":{\"unit\":\"px\",\"size\":150,\"sizes\":[]},\"space_tablet\":{\"unit\":\"px\",\"size\":120,\"sizes\":[]},\"space_mobile\":{\"unit\":\"px\",\"size\":120,\"sizes\":[]},\"css_filters_brightness\":{\"unit\":\"px\",\"size\":61,\"sizes\":[]},\"css_filters_contrast\":{\"unit\":\"px\",\"size\":74,\"sizes\":[]},\"css_filters_saturate\":{\"unit\":\"px\",\"size\":200,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"theme-site-logo\"}],\"isInner\":true},{\"id\":\"1d1412f\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":60,\"sizes\":[]},\"width_mobile\":{\"unit\":\"%\",\"size\":40,\"sizes\":[]},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"width_tablet\":{\"unit\":\"%\",\"size\":45,\"sizes\":[]},\"flex_justify_content_tablet\":\"center\",\"_flex_align_self\":\"center\",\"_flex_align_self_mobile\":\"center\"},\"elements\":[{\"id\":\"8421897\",\"elType\":\"widget\",\"settings\":{\"menu_name\":\"Menu\",\"align_items\":\"center\",\"menu\":\"mian\",\"pointer\":\"none\",\"full_width\":\"stretch\",\"toggle_align\":\"right\",\"menu_typography_typography\":\"custom\",\"menu_typography_font_family\":\"IBM Plex Sans\",\"menu_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"menu_typography_font_size_tablet\":{\"unit\":\"custom\",\"size\":\"clamp(36px, 4vw, 54px);\",\"sizes\":[]},\"menu_typography_font_size_mobile\":{\"unit\":\"custom\",\"size\":\"clamp(36px, 4vw, 54px);\",\"sizes\":[]},\"menu_typography_font_weight\":\"500\",\"menu_typography_line_height_tablet\":{\"unit\":\"em\",\"size\":1.3,\"sizes\":[]},\"menu_typography_line_height_mobile\":{\"unit\":\"em\",\"size\":1.2,\"sizes\":[]},\"dropdown_typography_typography\":\"custom\",\"dropdown_typography_font_family\":\"IBM Plex Sans\",\"dropdown_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"dropdown_typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"dropdown_typography_font_size_mobile\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"dropdown_typography_font_weight\":\"400\",\"padding_horizontal_dropdown_item_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"padding_vertical_dropdown_item_tablet\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]},\"toggle_size_tablet\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"toggle_size_mobile\":{\"unit\":\"px\",\"size\":25,\"sizes\":[]},\"_flex_align_self_mobile\":\"flex-end\",\"__globals__\":{\"nav_menu_divider_color\":\"globals\\/colors?id=secondary\",\"color_menu_item\":\"globals\\/colors?id=accent\",\"color_menu_item_hover\":\"globals\\/colors?id=secondary\",\"color_menu_item_active\":\"globals\\/colors?id=secondary\",\"toggle_color\":\"globals\\/colors?id=astglobalcolor4\",\"color_dropdown_item\":\"globals\\/colors?id=astglobalcolor2\",\"color_dropdown_item_hover\":\"globals\\/colors?id=accent\",\"color_dropdown_item_active\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"nav-menu\"}],\"isInner\":true},{\"id\":\"ef693bb\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":20,\"sizes\":[]},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"_flex_align_self\":\"center\",\"hide_mobile\":\"hidden-mobile\",\"width_tablet\":{\"unit\":\"%\",\"size\":25,\"sizes\":[]},\"width_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]}},\"elements\":[{\"id\":\"1e36907\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"e-1e36907-bdd6d50\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"Get a Free Quote\"},\"link\":{\"$$type\":\"link\",\"value\":{\"isTargetBlank\":null,\"destination\":null}}},\"elements\":[],\"widgetType\":\"e-button\",\"styles\":{\"e-1e36907-bdd6d50\":{\"id\":\"e-1e36907-bdd6d50\",\"label\":\"local\",\"type\":\"class\",\"variants\":[{\"meta\":{\"breakpoint\":\"desktop\",\"state\":null},\"props\":{\"font-family\":{\"$$type\":\"font-family\",\"value\":\"IBM Plex Sans\"},\"font-weight\":{\"$$type\":\"string\",\"value\":\"700\"},\"font-size\":{\"$$type\":\"global-size-variable\",\"value\":\"e-gv-b4355a9\"},\"color\":{\"$$type\":\"global-color-variable\",\"value\":\"e-gv-3998dc3\"},\"border-radius\":{\"$$type\":\"size\",\"value\":{\"size\":5,\"unit\":\"px\"}},\"border-width\":{\"$$type\":\"size\",\"value\":{\"size\":1,\"unit\":\"px\"}},\"border-color\":{\"$$type\":\"global-color-variable\",\"value\":\"e-gv-3998dc3\"},\"background\":{\"$$type\":\"background\",\"value\":{\"color\":{\"$$type\":\"color\",\"value\":\"#ffffff\"},\"background-overlay\":{\"$$type\":\"background-overlay\",\"value\":[]},\"clip\":{\"$$type\":\"string\",\"value\":\"border-box\"}}},\"mix-blend-mode\":{\"$$type\":\"string\",\"value\":\"normal\"},\"filter\":{\"$$type\":\"filter\",\"value\":[]},\"backdrop-filter\":{\"$$type\":\"backdrop-filter\",\"value\":[]},\"transition\":{\"$$type\":\"transition\",\"value\":[{\"$$type\":\"selection-size\",\"value\":{\"selection\":{\"$$type\":\"key-value\",\"value\":{\"key\":{\"$$type\":\"string\",\"value\":\"All properties\"},\"value\":{\"$$type\":\"string\",\"value\":\"all\"}}},\"size\":{\"$$type\":\"size\",\"value\":{\"size\":500,\"unit\":\"ms\"}}}}]},\"align-self\":{\"$$type\":\"string\",\"value\":\"end\"}},\"custom_css\":null},{\"meta\":{\"breakpoint\":\"desktop\",\"state\":\"hover\"},\"props\":{\"color\":{\"$$type\":\"global-color-variable\",\"value\":\"e-gv-3998dc3\"},\"background\":{\"$$type\":\"background\",\"value\":{\"color\":{\"$$type\":\"color\",\"value\":\"#ffffff\"}}}},\"custom_css\":null},{\"meta\":{\"breakpoint\":\"mobile\",\"state\":null},\"props\":{\"width\":{\"$$type\":\"size\",\"value\":{\"size\":100,\"unit\":\"%\"}},\"max-width\":{\"$$type\":\"size\",\"value\":{\"size\":100,\"unit\":\"%\"}}},\"custom_css\":null},{\"meta\":{\"breakpoint\":\"tablet\",\"state\":null},\"props\":{\"padding\":{\"$$type\":\"dimensions\",\"value\":{\"inline-end\":{\"$$type\":\"size\",\"value\":{\"size\":10,\"unit\":\"px\"}},\"inline-start\":{\"$$type\":\"size\",\"value\":{\"size\":10,\"unit\":\"px\"}},\"block-start\":{\"$$type\":\"size\",\"value\":{\"size\":10,\"unit\":\"px\"}},\"block-end\":{\"$$type\":\"size\",\"value\":{\"size\":10,\"unit\":\"px\"}}}},\"align-self\":{\"$$type\":\"string\",\"value\":\"stretch\"}},\"custom_css\":null}]}},\"interactions\":[],\"editor_settings\":[],\"version\":\"0.0\"}],\"isInner\":true}],\"isInner\":false}]",
+   "_elementor_page_settings": [],
+   "_elementor_conditions": [
+    "include/general"
+   ]
+  },
+  "permalink_template": "https://maroon-raven-160825.hostingersite.com/?elementor_library=elementor-header-241",
+  "generated_slug": "elementor-header-241",
+  "class_list": [
+   "post-241",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/241",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/users/1"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 16,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/241/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 749,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/241/revisions/749"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/media?parent=241"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/241"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/241"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/241"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 21,
+  "date": "2026-09-17T13:05:02",
+  "date_gmt": "2026-09-17T13:05:02",
+  "guid": {
+   "rendered": "https://maroon-raven-160825.hostingersite.com/?elementor_library=home",
+   "raw": "https://maroon-raven-160825.hostingersite.com/?elementor_library=home"
+  },
+  "modified": "2026-09-17T13:06:49",
+  "modified_gmt": "2026-09-17T13:06:49",
+  "password": "",
+  "slug": "home",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://maroon-raven-160825.hostingersite.com/?elementor_library=home",
+  "title": {
+   "raw": "Home",
+   "rendered": "Home"
+  },
+  "author": 1,
+  "featured_media": 0,
+  "template": "elementor_header_footer",
+  "meta": {
+   "site-sidebar-layout": "default",
+   "site-content-layout": "",
+   "ast-site-content-layout": "default",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "page",
+   "_elementor_data": "[{\"id\":\"5dd470d3\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#010F35\"},\"elements\":[{\"id\":\"411ebd6a\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"80\",\"bottom\":\"10\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"40\",\"bottom\":\"10\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"20\",\"bottom\":\"10\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"a0b9a4f\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"697208a\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"hide_mobile\":\"hidden\"},\"elements\":[{\"id\":\"3a33b0c6\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>Live dispatch \\u2014 operators standing by, 24 hours a day<\\/p>\",\"text_color\":\"#C7CFE3\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_font_weight\":\"500\"},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"3ab8961a\",\"elType\":\"widget\",\"settings\":{\"text\":\"07771 004242\",\"link\":{\"url\":\"tel:07771004242\"},\"background_color\":\"transparent\",\"button_text_color\":\"#FFFFFF\",\"border_border\":\"none\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"button_padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"button\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"33173454\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#011D5E\"},\"elements\":[{\"id\":\"4e620b51\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"80\",\"bottom\":\"20\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"16\",\"right\":\"40\",\"bottom\":\"16\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"14\",\"right\":\"20\",\"bottom\":\"14\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"47094a93\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"20\",\"row\":\"20\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"4413e8e8\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"6\",\"row\":\"6\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\"},\"elements\":[{\"id\":\"19e5228d\",\"elType\":\"widget\",\"settings\":{\"title\":\"AAD\",\"align\":\"left\",\"title_color\":\"#FFFFFF\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"900\",\"typography_font_size\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"7f6b5ca4\",\"elType\":\"widget\",\"settings\":{\"title\":\"TRANSPORT &amp; RECOVERY\",\"header_size\":\"h6\",\"align\":\"left\",\"title_color\":\"#FCA311\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true},{\"id\":\"233c8d8c\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"28\",\"row\":\"28\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"flex-end\"},\"elements\":[{\"id\":\"46e34e9c\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"28\",\"row\":\"28\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"hide_tablet\":\"hidden\",\"hide_mobile\":\"hidden\"},\"elements\":[{\"id\":\"2a82afb6\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<a href=\\\"#services\\\" style=\\\"color:#D7DEEC;font-weight:500;\\\">Services<\\/a>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"21c13af7\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<a href=\\\"#why\\\" style=\\\"color:#D7DEEC;font-weight:500;\\\">Why Us<\\/a>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"72f8851f\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<a href=\\\"#areas\\\" style=\\\"color:#D7DEEC;font-weight:500;\\\">Areas<\\/a>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"1fc8e1c9\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<a href=\\\"#faq\\\" style=\\\"color:#D7DEEC;font-weight:500;\\\">FAQ<\\/a>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"1144bda2\",\"elType\":\"widget\",\"settings\":{\"text\":\"Get a Free Quote\",\"link\":{\"url\":\"#quote\"},\"size\":\"lg\",\"background_color\":\"#FCA311\",\"button_text_color\":\"#011D5E\",\"border_border\":\"none\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\"},\"border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":false},\"button_padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"30\",\"bottom\":\"18\",\"left\":\"30\",\"isLinked\":false},\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"_element_width_mobile\":\"initial\"},\"elements\":[],\"widgetType\":\"button\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"194c9bd0\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"gradient\",\"background_color\":\"#011D5E\",\"background_color_b\":\"#010F35\",\"background_gradient_angle\":{\"unit\":\"deg\",\"size\":160}},\"elements\":[{\"id\":\"43f9f3d0\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"88\",\"right\":\"80\",\"bottom\":\"64\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"56\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"1e563ff8\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"64\",\"row\":\"64\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_direction_tablet\":\"column\"},\"elements\":[{\"id\":\"400a49e0\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"0\",\"row\":\"0\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":58},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"7f59e629\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"28\",\"row\":\"28\",\"unit\":\"px\",\"isLinked\":true},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"47152d1\",\"elType\":\"widget\",\"settings\":{\"title\":\"24\\/7 breakdown recovery in Birmingham, fast and reliable.\",\"header_size\":\"h1\",\"align\":\"left\",\"title_color\":\"#FFFFFF\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"800\",\"typography_font_size\":{\"unit\":\"px\",\"size\":54,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.1}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"26d1a478\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Broken down, involved in an accident, or need a vehicle towed across the country? AAD Transport &amp; Recovery gets you and your vehicle moving day or night, rain or shine.\",\"text_color\":\"#B9C3DC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":18},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"65c2ea86\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"flex-start\"},\"elements\":[{\"id\":\"60aaedc1\",\"elType\":\"widget\",\"settings\":{\"text\":\"Call Now: 07771 004242\",\"link\":{\"url\":\"tel:07771004242\"},\"size\":\"lg\",\"background_color\":\"#FCA311\",\"button_text_color\":\"#011D5E\",\"border_border\":\"none\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\"},\"border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":false},\"button_padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"30\",\"bottom\":\"18\",\"left\":\"30\",\"isLinked\":false},\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"_element_width_mobile\":\"initial\"},\"elements\":[],\"widgetType\":\"button\"},{\"id\":\"5e18e8bc\",\"elType\":\"widget\",\"settings\":{\"text\":\"Get a Free Quote\",\"link\":{\"url\":\"#quote\"},\"size\":\"lg\",\"background_color\":\"transparent\",\"button_text_color\":\"#FFFFFF\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"2\",\"right\":\"2\",\"bottom\":\"2\",\"left\":\"2\"},\"border_color\":\"#4A5A8A\",\"border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":false},\"button_padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"30\",\"bottom\":\"18\",\"left\":\"30\",\"isLinked\":false},\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"_element_width_mobile\":\"initial\"},\"elements\":[],\"widgetType\":\"button\"}],\"isInner\":true},{\"id\":\"41e19575\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"0\",\"row\":\"0\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\",\"margin\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"acee71f\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"6\",\"row\":\"6\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"20\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"1\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\"},\"elements\":[{\"id\":\"7ecaadac\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#7E8BB0;font-size:13px;font-weight:500;'>Availability<\\/strong>\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"41a32ec8\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FFFFFF;'>24\\/7, 365 days<\\/strong>\",\"text_color\":\"#FFFFFF\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"600\"},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"67ed50b4\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"6\",\"row\":\"6\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"20\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"1\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\"},\"elements\":[{\"id\":\"fac5ceb\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#7E8BB0;font-size:13px;font-weight:500;'>Operators<\\/strong>\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"322fa1f7\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FFFFFF;'>Fully insured<\\/strong>\",\"text_color\":\"#FFFFFF\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"600\"},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"2c3e2532\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"6\",\"row\":\"6\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"20\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"1\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\"},\"elements\":[{\"id\":\"4d319dc5\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#7E8BB0;font-size:13px;font-weight:500;'>Coverage<\\/strong>\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"6040e0c\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FFFFFF;'>Birmingham &amp; nationwide<\\/strong>\",\"text_color\":\"#FFFFFF\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"600\"},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true},{\"id\":\"4f4747de\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":38},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#F4F6FA\",\"border_radius\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"8\",\"bottom\":\"8\",\"left\":\"8\",\"isLinked\":false},\"box_shadow_box_shadow\":{\"horizontal\":0,\"vertical\":30,\"blur\":60,\"spread\":0,\"color\":\"rgba(1,7,30,0.45)\"},\"padding\":{\"unit\":\"px\",\"top\":\"36\",\"right\":\"36\",\"bottom\":\"36\",\"left\":\"36\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"28\",\"right\":\"22\",\"bottom\":\"28\",\"left\":\"22\",\"isLinked\":false},\"_element_id\":\"quote\"},\"elements\":[{\"id\":\"29990f0a\",\"elType\":\"widget\",\"settings\":{\"title\":\"Get a free quote\",\"header_size\":\"h3\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":21,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":21,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":21,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"1af98909\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Tell us what's happened \\u2014 we'll call you back within minutes.\",\"text_color\":\"#5A6377\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"76d9c1a2\",\"elType\":\"widget\",\"settings\":{\"form_name\":\"Free Quote Request\",\"form_fields\":[{\"custom_id\":\"name\",\"field_label\":\"Full Name\",\"required\":\"true\",\"_id\":\"2df987f\",\"previous_button\":\"\",\"next_button\":\"\",\"file_sizes\":\"\",\"file_types\":\"\",\"allow_multiple_upload\":\"\",\"max_files\":\"\",\"acceptance_text\":\"\",\"checked_by_default\":\"\",\"field_min\":\"\",\"field_max\":\"\",\"min_date\":\"\",\"max_date\":\"\",\"use_native_date\":\"\",\"use_native_time\":\"\"},{\"custom_id\":\"phone\",\"field_label\":\"Phone Number\",\"field_type\":\"tel\",\"required\":\"true\",\"_id\":\"7ceb0dc\",\"previous_button\":\"\",\"next_button\":\"\",\"file_sizes\":\"\",\"file_types\":\"\",\"allow_multiple_upload\":\"\",\"max_files\":\"\",\"acceptance_text\":\"\",\"checked_by_default\":\"\",\"field_min\":\"\",\"field_max\":\"\",\"min_date\":\"\",\"max_date\":\"\",\"use_native_date\":\"\",\"use_native_time\":\"\"},{\"custom_id\":\"location\",\"field_label\":\"Your Location\",\"required\":\"true\",\"_id\":\"8681817\",\"previous_button\":\"\",\"next_button\":\"\",\"file_sizes\":\"\",\"file_types\":\"\",\"allow_multiple_upload\":\"\",\"max_files\":\"\",\"acceptance_text\":\"\",\"checked_by_default\":\"\",\"field_min\":\"\",\"field_max\":\"\",\"min_date\":\"\",\"max_date\":\"\",\"use_native_date\":\"\",\"use_native_time\":\"\"},{\"custom_id\":\"message\",\"field_label\":\"What's happened to your vehicle?\",\"field_type\":\"textarea\",\"required\":\"false\",\"rows\":3,\"_id\":\"59ae5a0\",\"previous_button\":\"\",\"next_button\":\"\",\"file_sizes\":\"\",\"file_types\":\"\",\"allow_multiple_upload\":\"\",\"max_files\":\"\",\"acceptance_text\":\"\",\"checked_by_default\":\"\",\"field_min\":\"\",\"field_max\":\"\",\"min_date\":\"\",\"max_date\":\"\",\"use_native_date\":\"\",\"use_native_time\":\"\"}],\"button_text\":\"Get My Free Quote\",\"button_size\":\"lg\",\"button_background_color\":\"#011D5E\",\"button_text_color\":\"#FFFFFF\",\"button_width\":{\"unit\":\"%\",\"size\":100},\"success_message\":\"Thanks! We've received your request and will call you back shortly.\",\"mailchimp_fields_map\":[],\"drip_fields_map\":[],\"activecampaign_fields_map\":[],\"getresponse_fields_map\":[],\"convertkit_fields_map\":[],\"mailerlite_fields_map\":[],\"step_next_label\":\"Next\",\"step_previous_label\":\"Previous\",\"email_to\":\"ahsanhashmi1925@gmail.com\",\"email_subject\":\"New message from \\\"maroon-raven-160825.hostingersite.com\\\"\",\"email_content\":\"[all-fields]\",\"email_from\":\"email@maroon-raven-160825.hostingersite.com\",\"email_from_name\":\"maroon-raven-160825.hostingersite.com\",\"email_to_2\":\"ahsanhashmi1925@gmail.com\",\"email_subject_2\":\"New message from \\\"maroon-raven-160825.hostingersite.com\\\"\",\"email_content_2\":\"[all-fields]\",\"email_from_2\":\"email@maroon-raven-160825.hostingersite.com\",\"email_from_name_2\":\"maroon-raven-160825.hostingersite.com\",\"email_reply_to_2\":\"ahsanhashmi1925@gmail.com\",\"error_message\":\"Your submission failed because of an error.\",\"server_message\":\"Your submission failed because of a server error.\",\"invalid_message\":\"Your submission failed because the form is invalid.\",\"required_field_message\":\"This field is required.\"},\"elements\":[],\"widgetType\":\"form\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"5ac60c52\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\"},\"elements\":[{\"id\":\"20c2add\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"40\",\"right\":\"80\",\"bottom\":\"40\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"32\",\"right\":\"40\",\"bottom\":\"32\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"28\",\"right\":\"20\",\"bottom\":\"28\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"1105ef3b\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"40\",\"row\":\"40\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\"},\"elements\":[{\"id\":\"79e873ab\",\"elType\":\"widget\",\"settings\":{\"editor\":\"AT A GLANCE\",\"text_color\":\"#FCA311\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"469d33a8\",\"elType\":\"widget\",\"settings\":{\"editor\":\"AAD Transport &amp; Recovery provides 24\\/7 breakdown recovery in Birmingham, including emergency breakdown recovery, car recovery, accident recovery, flatbed and wheel-lift towing, and long-distance vehicle transport. Whatever's happened to your vehicle, call <strong style='color:#011D5E;'>07771 004242<\\/strong> for fast, professional roadside assistance anywhere in Birmingham and the West Midlands.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"34fd2e3b\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\"},\"elements\":[{\"id\":\"60079333\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"96\",\"right\":\"80\",\"bottom\":\"96\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"3e0f61d7\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"72\",\"row\":\"72\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_direction_tablet\":\"column\"},\"elements\":[{\"id\":\"77fcd72b\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":42},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"4b5b7977\",\"elType\":\"widget\",\"settings\":{\"image\":{\"id\":\"\",\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/wp-content\\/plugins\\/elementor\\/assets\\/images\\/placeholder.png\"},\"width\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true},{\"id\":\"9672dde\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"18\",\"row\":\"18\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":58},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"4eac2665\",\"elType\":\"widget\",\"settings\":{\"title\":\"24\\/7 breakdown recovery Birmingham\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":34,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"19fb2427\",\"elType\":\"widget\",\"settings\":{\"editor\":\"A breakdown never happens at a convenient time. Whether your car has cut out on the motorway during rush hour, refused to start outside your house on a Sunday morning, or left you stranded in a supermarket car park late at night, AAD Transport &amp; Recovery is available around the clock to help.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"1b5099a7\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Our team responds quickly, communicates clearly, and handles every vehicle with care from the moment we arrive to the moment it's safely delivered to its destination.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"46c62075\",\"elType\":\"widget\",\"settings\":{\"editor\":\"We cover breakdowns anywhere in Birmingham, including residential streets, workplaces, retail car parks, and busy routes such as the <strong style='color:#011D5E;'>M6, M5, M42 and A38<\\/strong>. If you're unsure whether your car is safe to continue driving, call us and we'll advise the safest next step.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"4af8724d\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#F4F6FA\"},\"elements\":[{\"id\":\"53804121\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"96\",\"right\":\"80\",\"bottom\":\"96\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"5044edcc\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"72\",\"row\":\"72\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_direction_tablet\":\"column\"},\"elements\":[{\"id\":\"1ea905a5\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"18\",\"row\":\"18\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":58},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"1838de78\",\"elType\":\"widget\",\"settings\":{\"title\":\"Car recovery Birmingham you can rely on\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":34,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"49d60971\",\"elType\":\"widget\",\"settings\":{\"editor\":\"When you search for car recovery in Birmingham, you want a company that turns up quickly, treats your vehicle properly, and doesn't leave you guessing about cost or timing. AAD Transport &amp; Recovery has built its reputation on exactly that.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"4e64cd0d\",\"elType\":\"widget\",\"settings\":{\"editor\":\"We use the right vehicle for the job every time: wheel-lift recovery for quick, local jobs, and flatbed recovery for vehicles that need to be transported without touching the road.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"6756ba65\",\"elType\":\"widget\",\"settings\":{\"editor\":\"From the first phone call, we aim to give you a clear idea of arrival time, cost, and what happens next, so you're never left standing at the roadside wondering what's going on.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"75151414\",\"elType\":\"widget\",\"settings\":{\"text\":\"Get a Free Quote\",\"link\":{\"url\":\"#quote\"},\"size\":\"lg\",\"background_color\":\"#FCA311\",\"button_text_color\":\"#011D5E\",\"border_border\":\"none\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\"},\"border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":false},\"button_padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"30\",\"bottom\":\"18\",\"left\":\"30\",\"isLinked\":false},\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"_element_width_mobile\":\"initial\"},\"elements\":[],\"widgetType\":\"button\"}],\"isInner\":true},{\"id\":\"39864ad9\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":42},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"2d3182a6\",\"elType\":\"widget\",\"settings\":{\"image\":{\"id\":\"\",\"url\":\"https:\\/\\/maroon-raven-160825.hostingersite.com\\/wp-content\\/plugins\\/elementor\\/assets\\/images\\/placeholder.png\"},\"width\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"3eddc094\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\",\"_element_id\":\"services\"},\"elements\":[{\"id\":\"5487c6b2\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"44\",\"row\":\"44\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"100\",\"right\":\"80\",\"bottom\":\"100\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"98ef51a\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"14\",\"row\":\"14\",\"unit\":\"px\",\"isLinked\":true}},\"elements\":[{\"id\":\"4d55b0ee\",\"elType\":\"widget\",\"settings\":{\"title\":\"Our breakdown recovery &amp; roadside services\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":36,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"81b2176\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Whatever's happened to your vehicle, we provide breakdown recovery and roadside assistance to match \\u2014 from a flat tyre outside your house to a motorway breakdown or long-distance transport.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"width\":{\"unit\":\"%\",\"size\":60},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"3cd71d25\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"2\",\"row\":\"2\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"stretch\",\"flex_direction_mobile\":\"column\",\"flex_direction_tablet\":\"column\"},\"elements\":[{\"id\":\"4d636942\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":50},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#011D5E\",\"padding\":{\"unit\":\"px\",\"top\":\"32\",\"right\":\"32\",\"bottom\":\"32\",\"left\":\"32\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"26\",\"right\":\"22\",\"bottom\":\"26\",\"left\":\"22\",\"isLinked\":false},\"min_height\":{\"unit\":\"px\",\"size\":420},\"min_height_mobile\":{\"unit\":\"px\",\"size\":260},\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"2046da93\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"fas fa-triangle-exclamation\",\"library\":\"fa-solid\"},\"title_text\":\"Emergency Breakdown Recovery\",\"description_text\":\"Fast, round-the-clock response when your car won't start or stops unexpectedly.\",\"icon_primary_color\":\"#FCA311\",\"title_color\":\"#FFFFFF\",\"description_color\":\"#AEB8CC\",\"icon_size\":{\"unit\":\"px\",\"size\":34},\"icon_space\":{\"unit\":\"px\",\"size\":16},\"position\":\"top\",\"text_align\":\"left\",\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"Archivo\",\"title_typography_font_weight\":\"700\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":22},\"description_typography_typography\":\"custom\",\"description_typography_font_family\":\"IBM Plex Sans\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":14.5}},\"elements\":[],\"widgetType\":\"icon-box\"}],\"isInner\":true},{\"id\":\"e6f7060\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"2\",\"row\":\"2\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":50},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"71fbb19c\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"2\",\"row\":\"2\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"row\",\"flex_justify_content\":\"flex-start\"},\"elements\":[{\"id\":\"7c0b9481\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":100},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\",\"padding\":{\"unit\":\"px\",\"top\":\"28\",\"right\":\"28\",\"bottom\":\"28\",\"left\":\"28\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"22\",\"right\":\"20\",\"bottom\":\"22\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"3f8ab397\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"fas fa-truck-pickup\",\"library\":\"fa-solid\"},\"title_text\":\"Birmingham Towing\",\"description_text\":\"Local towing for cars, vans and commercial vehicles.\",\"icon_primary_color\":\"#FCA311\",\"title_color\":\"#011D5E\",\"description_color\":\"#4B546E\",\"icon_size\":{\"unit\":\"px\",\"size\":24},\"icon_space\":{\"unit\":\"px\",\"size\":16},\"position\":\"top\",\"text_align\":\"left\",\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"Archivo\",\"title_typography_font_weight\":\"700\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":16},\"description_typography_typography\":\"custom\",\"description_typography_font_family\":\"IBM Plex Sans\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":13}},\"elements\":[],\"widgetType\":\"icon-box\"}],\"isInner\":true},{\"id\":\"aca7f32\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":100},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\",\"padding\":{\"unit\":\"px\",\"top\":\"28\",\"right\":\"28\",\"bottom\":\"28\",\"left\":\"28\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"22\",\"right\":\"20\",\"bottom\":\"22\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"677517f6\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"fas fa-truck-ramp-box\",\"library\":\"fa-solid\"},\"title_text\":\"Flatbed Recovery\",\"description_text\":\"No-drag transport for low or damaged vehicles.\",\"icon_primary_color\":\"#FCA311\",\"title_color\":\"#011D5E\",\"description_color\":\"#4B546E\",\"icon_size\":{\"unit\":\"px\",\"size\":24},\"icon_space\":{\"unit\":\"px\",\"size\":16},\"position\":\"top\",\"text_align\":\"left\",\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"Archivo\",\"title_typography_font_weight\":\"700\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":16},\"description_typography_typography\":\"custom\",\"description_typography_font_family\":\"IBM Plex Sans\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":13}},\"elements\":[],\"widgetType\":\"icon-box\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"68b0b863\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"2\",\"row\":\"2\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"row\",\"flex_justify_content\":\"flex-start\"},\"elements\":[{\"id\":\"41766d2d\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":100},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FCA311\",\"padding\":{\"unit\":\"px\",\"top\":\"28\",\"right\":\"28\",\"bottom\":\"28\",\"left\":\"28\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"22\",\"right\":\"20\",\"bottom\":\"22\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"1f67fee8\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"fas fa-car-burst\",\"library\":\"fa-solid\"},\"title_text\":\"Accident Recovery\",\"description_text\":\"Prompt, sensitive clearance from collision scenes.\",\"icon_primary_color\":\"#011D5E\",\"title_color\":\"#011D5E\",\"description_color\":\"#010F35\",\"icon_size\":{\"unit\":\"px\",\"size\":24},\"icon_space\":{\"unit\":\"px\",\"size\":16},\"position\":\"top\",\"text_align\":\"left\",\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"Archivo\",\"title_typography_font_weight\":\"700\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":16},\"description_typography_typography\":\"custom\",\"description_typography_font_family\":\"IBM Plex Sans\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":13}},\"elements\":[],\"widgetType\":\"icon-box\"}],\"isInner\":true},{\"id\":\"3fec2f62\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":100},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\",\"padding\":{\"unit\":\"px\",\"top\":\"28\",\"right\":\"28\",\"bottom\":\"28\",\"left\":\"28\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"22\",\"right\":\"20\",\"bottom\":\"22\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"2409627d\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"fas fa-car\",\"library\":\"fa-solid\"},\"title_text\":\"Wheel-Lift Recovery\",\"description_text\":\"Fast local towing, wheels lifted clear.\",\"icon_primary_color\":\"#FCA311\",\"title_color\":\"#011D5E\",\"description_color\":\"#4B546E\",\"icon_size\":{\"unit\":\"px\",\"size\":24},\"icon_space\":{\"unit\":\"px\",\"size\":16},\"position\":\"top\",\"text_align\":\"left\",\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"Archivo\",\"title_typography_font_weight\":\"700\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":16},\"description_typography_typography\":\"custom\",\"description_typography_font_family\":\"IBM Plex Sans\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":13}},\"elements\":[],\"widgetType\":\"icon-box\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"10287895\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"2\",\"row\":\"2\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\"},\"elements\":[{\"id\":\"545e9f65\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":100},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\",\"padding\":{\"unit\":\"px\",\"top\":\"28\",\"right\":\"28\",\"bottom\":\"28\",\"left\":\"28\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"22\",\"right\":\"20\",\"bottom\":\"22\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"8a96fc2\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"fas fa-road\",\"library\":\"fa-solid\"},\"title_text\":\"Long-Distance Recovery\",\"description_text\":\"Nationwide transport, clear pricing upfront.\",\"icon_primary_color\":\"#FCA311\",\"title_color\":\"#011D5E\",\"description_color\":\"#4B546E\",\"icon_size\":{\"unit\":\"px\",\"size\":24},\"icon_space\":{\"unit\":\"px\",\"size\":16},\"position\":\"top\",\"text_align\":\"left\",\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"Archivo\",\"title_typography_font_weight\":\"700\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":16},\"description_typography_typography\":\"custom\",\"description_typography_font_family\":\"IBM Plex Sans\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":13}},\"elements\":[],\"widgetType\":\"icon-box\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true},{\"id\":\"39134443\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"margin\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"7001896a\",\"elType\":\"widget\",\"settings\":{\"editor\":\"ALSO AVAILABLE\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"705382b1\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"0\",\"row\":\"0\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\"},\"elements\":[{\"id\":\"4c6d8d33\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\",\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"0\",\"bottom\":\"18\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"5e2b2c39\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"663667\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;font-weight:600;'>Heavy-Duty Recovery<\\/strong>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"7f4b44ac\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Vans &amp; trucks\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"24b33551\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\",\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"0\",\"bottom\":\"18\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"37943a2e\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"4ca2c65\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;font-weight:600;'>Motorcycle Recovery<\\/strong>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"2e098e69\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Secure tie-down\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"21e236b9\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\",\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"0\",\"bottom\":\"18\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"21355aa6\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"19c54827\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;font-weight:600;'>RV &amp; Trailer Recovery<\\/strong>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"cf2bd97\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Caravans &amp; motorhomes\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"314e8c0c\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\",\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"0\",\"bottom\":\"18\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"485290\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"714f4172\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;font-weight:600;'>Commercial Towing<\\/strong>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"3397a700\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Fleets &amp; light goods\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"7571cbb9\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\",\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"0\",\"bottom\":\"18\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"42786bc5\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"3ed1abd6\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;font-weight:600;'>Battery Services<\\/strong>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"64c64c7d\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Jump starts\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"4303817c\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\",\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"0\",\"bottom\":\"18\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"7d40c244\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"3a602de6\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;font-weight:600;'>Tyre &amp; Flat Tyre<\\/strong>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"7c1e4618\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Roadside changes\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"1751514f\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\",\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"0\",\"bottom\":\"18\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"17478b11\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"34c94f5\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;font-weight:600;'>Fuel Delivery<\\/strong>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"774a8af8\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Emergency top-up\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"3e68afbd\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\",\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"0\",\"bottom\":\"18\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"660a6739\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"7a510b56\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;font-weight:600;'>Car Lockout<\\/strong>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"23066e82\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Locked out help\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"46f75de4\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"1\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#E7EAF2\",\"padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"0\",\"bottom\":\"18\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"76411453\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"space-between\"},\"elements\":[{\"id\":\"32ca91eb\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;font-weight:600;'>Roadside Assistance<\\/strong>\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"693263b0\",\"elType\":\"widget\",\"settings\":{\"editor\":\"General help\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"9d2945d\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#F4F6FA\"},\"elements\":[{\"id\":\"3fbef5ca\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":900},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"100\",\"right\":\"80\",\"bottom\":\"100\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"13085d59\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"32\",\"row\":\"32\",\"unit\":\"px\",\"isLinked\":true}},\"elements\":[{\"id\":\"d7df770\",\"elType\":\"widget\",\"settings\":{\"title\":\"Every service, in detail\",\"align\":\"center\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"width\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"a324379\",\"elType\":\"widget\",\"settings\":{\"tabs\":[{\"tab_title\":\"Emergency Breakdown Recovery Birmingham\",\"tab_content\":\"When your car breaks down, every minute matters. We provide emergency breakdown recovery across Birmingham, 24 hours a day, 7 days a week, covering residential streets, workplaces, car parks and busy roads including the M6, M5, M42 and A38.\",\"_id\":\"3e0cca5\"},{\"tab_title\":\"Birmingham Towing Service\",\"tab_content\":\"Our towing service handles cars, vans and small commercial vehicles, moving them safely to a garage, your home, or wherever you need \\u2014 wheel-lift for quick local jobs, flatbed for vehicles that shouldn't be dragged.\",\"_id\":\"b7a1373\"},{\"tab_title\":\"Long-Distance Recovery\",\"tab_content\":\"Broken down miles from home? AAD Transport &amp; Recovery offers long-distance recovery across the UK, with clear pricing agreed before we set off.\",\"_id\":\"ac72f8a\"},{\"tab_title\":\"Flatbed Recovery\",\"tab_content\":\"The safest way to move a vehicle that can't or shouldn't be driven. We load, secure and transport your car without it touching the ground, avoiding further damage on the journey.\",\"_id\":\"10cbfaa\"},{\"tab_title\":\"Wheel-Lift Recovery\",\"tab_content\":\"A fast, efficient option for straightforward local moves \\u2014 ideal for short-distance recovery to a nearby garage or home address.\",\"_id\":\"69cd960\"},{\"tab_title\":\"Heavy-Duty Recovery\",\"tab_content\":\"Vans, light trucks and larger commercial vehicles across Birmingham, handled by a team trained to move bigger loads safely and legally.\",\"_id\":\"606b312\"},{\"tab_title\":\"Motorcycle Recovery\",\"tab_content\":\"Secure tie-down transport designed specifically for two wheels, protecting your motorbike after a breakdown or accident.\",\"_id\":\"7961f5d\"},{\"tab_title\":\"RV &amp; Trailer Recovery\",\"tab_content\":\"Recovery and towing support for caravans, motorhomes and trailers across Birmingham and further afield.\",\"_id\":\"af03ab2\"},{\"tab_title\":\"Commercial Vehicle Towing\",\"tab_content\":\"Built for fleet operators, tradespeople and delivery businesses who need vans and light commercial vehicles recovered quickly, with minimal disruption.\",\"_id\":\"ee27ead\"},{\"tab_title\":\"Accident Recovery\",\"tab_content\":\"Clearing your vehicle from the scene safely and taking it to a garage, insurance-approved bodyshop, or your chosen location, handled calmly and efficiently.\",\"_id\":\"7635f5c\"},{\"tab_title\":\"Tyre &amp; Flat Tyre Services\",\"tab_content\":\"Flat tyre assistance, tyre changes, spare tyre installation and puncture repair support at the roadside.\",\"_id\":\"e01e974\"},{\"tab_title\":\"Battery Services\",\"tab_content\":\"Jump-start and battery boost services, diagnosing whether a jump start will get you going or the vehicle needs further attention.\",\"_id\":\"3200128\"},{\"tab_title\":\"Fuel Delivery\",\"tab_content\":\"Emergency fuel delivery so you're not left stranded, bringing enough fuel to reach the nearest station safely.\",\"_id\":\"8c7e46f\"},{\"tab_title\":\"Roadside Assistance &amp; Vehicle Transport\",\"tab_content\":\"Car lockouts, winch-outs for vehicles stuck in mud, snow or ditches, recovery from impound lots, plus planned vehicle transport for dealership deliveries and classic cars.\",\"_id\":\"5a88f2f\"}],\"title_color\":\"#011D5E\",\"tab_active_color\":\"#011D5E\",\"content_color\":\"#4B546E\",\"border_width\":{\"unit\":\"px\",\"size\":1},\"border_color\":\"#D6DBE7\",\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"IBM Plex Sans\",\"title_typography_font_weight\":\"600\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":16},\"content_typography_typography\":\"custom\",\"content_typography_font_family\":\"IBM Plex Sans\",\"content_typography_font_size\":{\"unit\":\"px\",\"size\":15}},\"elements\":[],\"widgetType\":\"accordion\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"4701e4dd\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\"},\"elements\":[{\"id\":\"ddd7ea4\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"0\",\"row\":\"0\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"96\",\"right\":\"80\",\"bottom\":\"96\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"6e09e0a8\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"14\",\"row\":\"14\",\"unit\":\"px\",\"isLinked\":true}},\"elements\":[{\"id\":\"c521078\",\"elType\":\"widget\",\"settings\":{\"title\":\"Common reasons drivers call us for recovery\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]},\"width\":{\"unit\":\"%\",\"size\":60},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"7d006e1\",\"elType\":\"widget\",\"settings\":{\"editor\":\"If you're not sure exactly what's wrong, that's fine \\u2014 call us, describe what's happening, and we'll talk you through the safest option.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"width\":{\"unit\":\"%\",\"size\":60},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"3277bd\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"64\",\"row\":\"64\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_direction_tablet\":\"column\",\"margin\":{\"unit\":\"px\",\"top\":\"30\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"2c3a278a\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":50},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"2a837aa\",\"elType\":\"widget\",\"settings\":{\"icon_list\":[{\"text\":\"Car won't start at home, at work, in a car park or at the roadside\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"645369d\"},{\"text\":\"Flat battery, failed jump start or electrical fault\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"da7c7bc\"},{\"text\":\"Flat tyre, damaged wheel or tyre blowout\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"dd36369\"},{\"text\":\"Warning lights, limp mode or sudden loss of power\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"0a78a7b\"},{\"text\":\"Overheating, coolant leaks or unusual engine noises\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"41919fd\"},{\"text\":\"Clutch, gearbox or other mechanical faults\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"4f66787\"}],\"icon_color\":\"#FCA311\",\"text_color\":\"#232D4B\",\"space_between\":{\"unit\":\"px\",\"size\":8},\"icon_size\":{\"unit\":\"px\",\"size\":6},\"text_typography_typography\":\"custom\",\"text_typography_font_family\":\"IBM Plex Sans\",\"text_typography_font_size\":{\"unit\":\"px\",\"size\":15},\"border_width\":{\"unit\":\"px\",\"size\":1},\"divider\":\"yes\",\"divider_color\":\"#E7EAF2\"},\"elements\":[],\"widgetType\":\"icon-list\"}],\"isInner\":true},{\"id\":\"65276d24\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":50},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"183b20a2\",\"elType\":\"widget\",\"settings\":{\"icon_list\":[{\"text\":\"Running out of fuel or misfuelling\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"2fc6e46\"},{\"text\":\"Vehicle involved in a collision and needs recovering from the scene\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"c60e771\"},{\"text\":\"Van or commercial vehicle breakdown affecting a working day\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"00ed669\"},{\"text\":\"Non-running vehicle that needs moving to a garage\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"e56072b\"},{\"text\":\"Vehicle stuck after a motorway or major road fault\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"b90343a\"},{\"text\":\"Locked out of your own car\",\"selected_icon\":{\"value\":\"fas fa-square-full\",\"library\":\"fa-solid\"},\"_id\":\"6703b5b\"}],\"icon_color\":\"#FCA311\",\"text_color\":\"#232D4B\",\"space_between\":{\"unit\":\"px\",\"size\":8},\"icon_size\":{\"unit\":\"px\",\"size\":6},\"text_typography_typography\":\"custom\",\"text_typography_font_family\":\"IBM Plex Sans\",\"text_typography_font_size\":{\"unit\":\"px\",\"size\":15},\"border_width\":{\"unit\":\"px\",\"size\":1},\"divider\":\"yes\",\"divider_color\":\"#E7EAF2\"},\"elements\":[],\"widgetType\":\"icon-list\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"19a8a0f3\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#011D5E\",\"_element_id\":\"why\"},\"elements\":[{\"id\":\"252190b3\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"0\",\"row\":\"0\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"96\",\"right\":\"80\",\"bottom\":\"96\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"589d5e8a\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"14\",\"row\":\"14\",\"unit\":\"px\",\"isLinked\":true}},\"elements\":[{\"id\":\"55693a1d\",\"elType\":\"widget\",\"settings\":{\"title\":\"Why choose AAD Transport &amp; Recovery?\",\"align\":\"left\",\"title_color\":\"#FFFFFF\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":34,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]},\"width\":{\"unit\":\"%\",\"size\":55},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"4f3e1dc1\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Choosing the right recovery company matters when your vehicle is off the road and you need someone you can trust to sort it out properly.\",\"text_color\":\"#AEB8CC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"width\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"53e3ea40\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"0\",\"row\":\"0\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"margin\":{\"unit\":\"px\",\"top\":\"40\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"11cb383b\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"5e7926e2\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FCA311;'>Available 24\\/7<\\/strong>\",\"text_color\":\"#FCA311\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"7b027d51\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Breakdowns don't wait for office hours, and neither do we.\",\"text_color\":\"#AEB8CC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"644338ae\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"63924ae\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FCA311;'>Fast Response<\\/strong>\",\"text_color\":\"#FCA311\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"21c3fedb\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Quick response times across Birmingham and the West Midlands.\",\"text_color\":\"#AEB8CC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"6e0f4cb4\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"2a838da1\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FCA311;'>Fully Insured<\\/strong>\",\"text_color\":\"#FCA311\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"1b108e8e\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Experienced operators handling every vehicle with care.\",\"text_color\":\"#AEB8CC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"3d912411\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"3f717505\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FCA311;'>Transparent Pricing<\\/strong>\",\"text_color\":\"#FCA311\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"4b5d23b3\",\"elType\":\"widget\",\"settings\":{\"editor\":\"You'll know the cost before we start \\u2014 no surprises.\",\"text_color\":\"#AEB8CC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"39eba84f\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"50c57072\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FCA311;'>Right Equipment<\\/strong>\",\"text_color\":\"#FCA311\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"4215d003\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Flatbed, wheel-lift and heavy-duty vehicles for every job.\",\"text_color\":\"#AEB8CC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"5936d070\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"1198879a\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FCA311;'>Local Knowledge<\\/strong>\",\"text_color\":\"#FCA311\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"47ce9046\",\"elType\":\"widget\",\"settings\":{\"editor\":\"We know Birmingham's roads, so we get to you faster.\",\"text_color\":\"#AEB8CC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"bc2e336\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"79b62bdb\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FCA311;'>Nationwide Recovery<\\/strong>\",\"text_color\":\"#FCA311\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"705e2538\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Long-distance recovery when you need to go further than Birmingham.\",\"text_color\":\"#AEB8CC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"31a11925\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"237c4967\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#FCA311;'>Clear Communication<\\/strong>\",\"text_color\":\"#FCA311\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"61b49d9f\",\"elType\":\"widget\",\"settings\":{\"editor\":\"From your first call to the moment your vehicle is delivered.\",\"text_color\":\"#AEB8CC\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"37964889\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\",\"_element_id\":\"areas\"},\"elements\":[{\"id\":\"7111a38e\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"96\",\"right\":\"80\",\"bottom\":\"96\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"383c3f86\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"72\",\"row\":\"72\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_direction_tablet\":\"column\"},\"elements\":[{\"id\":\"2cb510de\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"18\",\"row\":\"18\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":45},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"16ff5079\",\"elType\":\"widget\",\"settings\":{\"title\":\"Breakdown recovery across Birmingham &amp; beyond\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"500190d3\",\"elType\":\"widget\",\"settings\":{\"editor\":\"We provide breakdown recovery, car recovery and towing services throughout Birmingham, plus nationwide long-distance recovery when your vehicle needs to travel further.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"1f7d2598\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"10\",\"row\":\"10\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"margin\":{\"unit\":\"px\",\"top\":\"26\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"6218c317\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<span>Erdington<\\/span>\",\"text_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":false},\"border_color\":\"#D6DBE7\",\"border_radius\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"3\",\"bottom\":\"3\",\"left\":\"3\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"16\",\"bottom\":\"8\",\"left\":\"16\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"46a9eee1\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<span>Perry Barr<\\/span>\",\"text_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":false},\"border_color\":\"#D6DBE7\",\"border_radius\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"3\",\"bottom\":\"3\",\"left\":\"3\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"16\",\"bottom\":\"8\",\"left\":\"16\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"6fd0923f\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<span>Aston<\\/span>\",\"text_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":false},\"border_color\":\"#D6DBE7\",\"border_radius\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"3\",\"bottom\":\"3\",\"left\":\"3\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"16\",\"bottom\":\"8\",\"left\":\"16\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"137a5780\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<span>Sutton Coldfield<\\/span>\",\"text_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":false},\"border_color\":\"#D6DBE7\",\"border_radius\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"3\",\"bottom\":\"3\",\"left\":\"3\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"16\",\"bottom\":\"8\",\"left\":\"16\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"2cd312a4\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<span>Solihull<\\/span>\",\"text_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":false},\"border_color\":\"#D6DBE7\",\"border_radius\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"3\",\"bottom\":\"3\",\"left\":\"3\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"16\",\"bottom\":\"8\",\"left\":\"16\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"63534b96\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<span>West Bromwich<\\/span>\",\"text_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":false},\"border_color\":\"#D6DBE7\",\"border_radius\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"3\",\"bottom\":\"3\",\"left\":\"3\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"16\",\"bottom\":\"8\",\"left\":\"16\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"469d6196\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<span>Walsall<\\/span>\",\"text_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":false},\"border_color\":\"#D6DBE7\",\"border_radius\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"3\",\"bottom\":\"3\",\"left\":\"3\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"16\",\"bottom\":\"8\",\"left\":\"16\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"2a1c41c2\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<span>Dudley<\\/span>\",\"text_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":false},\"border_color\":\"#D6DBE7\",\"border_radius\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"3\",\"bottom\":\"3\",\"left\":\"3\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"8\",\"right\":\"16\",\"bottom\":\"8\",\"left\":\"16\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"7654e825\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":55},\"width_tablet\":{\"unit\":\"%\",\"size\":100},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"96f65e6\",\"elType\":\"widget\",\"settings\":{\"address\":\"Walsall Rd, Birmingham, West Midlands, B42 1TQ\",\"zoom\":{\"unit\":\"px\",\"size\":14},\"height\":{\"unit\":\"px\",\"size\":380}},\"elements\":[],\"widgetType\":\"google_maps\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"3a665f51\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#F4F6FA\"},\"elements\":[{\"id\":\"67b6ec70\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"96\",\"right\":\"80\",\"bottom\":\"96\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"5ab2db5\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"0\",\"row\":\"0\",\"unit\":\"px\",\"isLinked\":true}},\"elements\":[{\"id\":\"46f2eabe\",\"elType\":\"widget\",\"settings\":{\"title\":\"What happens when you call\",\"align\":\"center\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]},\"width\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"4e50b448\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"0\",\"row\":\"0\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"margin\":{\"unit\":\"px\",\"top\":\"40\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"1\",\"isLinked\":false},\"border_color\":\"#D6DBE7\"},\"elements\":[{\"id\":\"649d02ec\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"20472351\",\"elType\":\"widget\",\"settings\":{\"title\":\"01\",\"header_size\":\"h3\",\"align\":\"left\",\"title_color\":\"#FCA311\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"800\",\"typography_font_size\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"45d45bc3\",\"elType\":\"widget\",\"settings\":{\"title\":\"Call us\",\"header_size\":\"h4\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"40e5306e\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Call 07771 004242 with your location and a brief description of the problem.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"6737a2c\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"802af25\",\"elType\":\"widget\",\"settings\":{\"title\":\"02\",\"header_size\":\"h3\",\"align\":\"left\",\"title_color\":\"#FCA311\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"800\",\"typography_font_size\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"33a3519b\",\"elType\":\"widget\",\"settings\":{\"title\":\"We assess\",\"header_size\":\"h4\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"703adecf\",\"elType\":\"widget\",\"settings\":{\"editor\":\"We tell you which vehicle we're sending and an estimated arrival time.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"558a1573\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"5e3be585\",\"elType\":\"widget\",\"settings\":{\"title\":\"03\",\"header_size\":\"h3\",\"align\":\"left\",\"title_color\":\"#FCA311\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"800\",\"typography_font_size\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"3e0b7b25\",\"elType\":\"widget\",\"settings\":{\"title\":\"We recover\",\"header_size\":\"h4\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"4586dea9\",\"elType\":\"widget\",\"settings\":{\"editor\":\"A quick wheel-lift tow or full flatbed transport, handled safely.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"41688ad6\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":25},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"24\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"74e5b1a3\",\"elType\":\"widget\",\"settings\":{\"title\":\"04\",\"header_size\":\"h3\",\"align\":\"left\",\"title_color\":\"#FCA311\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"800\",\"typography_font_size\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"5d59f5e1\",\"elType\":\"widget\",\"settings\":{\"title\":\"You're sorted\",\"header_size\":\"h4\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":17,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"4a67ca5d\",\"elType\":\"widget\",\"settings\":{\"editor\":\"We take you and your vehicle to your chosen destination.\",\"text_color\":\"#4B546E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"7610161\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\"},\"elements\":[{\"id\":\"6a94fdb3\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"96\",\"right\":\"80\",\"bottom\":\"96\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"5bb71235\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"0\",\"row\":\"0\",\"unit\":\"px\",\"isLinked\":true}},\"elements\":[{\"id\":\"27381402\",\"elType\":\"widget\",\"settings\":{\"title\":\"What drivers say\",\"align\":\"left\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"48a3a251\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"48\",\"row\":\"48\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"margin\":{\"unit\":\"px\",\"top\":\"44\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"21c05358\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"18\",\"row\":\"18\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#FCA311\",\"padding\":{\"unit\":\"px\",\"top\":\"22\",\"right\":\"20\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"dce10af\",\"elType\":\"widget\",\"settings\":{\"editor\":\"\\\"My car broke down at home on a Saturday morning and I had no hope of finding a quick and reasonable priced recovery service. Kam attended immediately and fixed my car within half an hour. Extremely grateful.\\\"\",\"text_color\":\"#232D4B\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"30eeda3e\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;'>Jason S. \\u2014 Birmingham<\\/strong>\",\"text_color\":\"#011D5E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"22c5083b\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"18\",\"row\":\"18\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#FCA311\",\"padding\":{\"unit\":\"px\",\"top\":\"22\",\"right\":\"20\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"1d5a1bd0\",\"elType\":\"widget\",\"settings\":{\"editor\":\"\\\"Called Kam and I was in a dire situation with my car. Gave me honest and sound advice at what was quite a stressing time. Outstanding service.\\\"\",\"text_color\":\"#232D4B\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"3044476\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;'>Hass \\u2014 Birmingham<\\/strong>\",\"text_color\":\"#011D5E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"635baa45\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"18\",\"row\":\"18\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":33.333},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"3\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#FCA311\",\"padding\":{\"unit\":\"px\",\"top\":\"22\",\"right\":\"20\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"7072831a\",\"elType\":\"widget\",\"settings\":{\"editor\":\"\\\"Great service, very reasonable price compared to other companies. Came on time and kept me in good spirit! Absolutely deserved 5 stars.\\\"\",\"text_color\":\"#232D4B\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"614d3072\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong style='color:#011D5E;'>Kamil I. \\u2014 Birmingham<\\/strong>\",\"text_color\":\"#011D5E\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"49757ee1\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#F4F6FA\",\"_element_id\":\"faq\"},\"elements\":[{\"id\":\"7ccef962\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":900},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"96\",\"right\":\"80\",\"bottom\":\"96\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"2f6ba405\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"32\",\"row\":\"32\",\"unit\":\"px\",\"isLinked\":true}},\"elements\":[{\"id\":\"2913811d\",\"elType\":\"widget\",\"settings\":{\"title\":\"Frequently asked questions\",\"align\":\"center\",\"title_color\":\"#011D5E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"width\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"785b6f42\",\"elType\":\"widget\",\"settings\":{\"tabs\":[{\"tab_title\":\"Do you offer 24\\/7 breakdown recovery in Birmingham?\",\"tab_content\":\"Yes. AAD Transport &amp; Recovery operates 24 hours a day, 7 days a week, across Birmingham and the surrounding areas.\",\"_id\":\"ee07014\"},{\"tab_title\":\"How quickly can you get to me?\",\"tab_content\":\"Response times depend on your location and current job volume, but we prioritise unsafe roadside situations. Call us directly for the fastest response.\",\"_id\":\"84df15b\"},{\"tab_title\":\"What's the difference between flatbed and wheel-lift recovery?\",\"tab_content\":\"Flatbed recovery loads the whole vehicle onto a platform, ideal for damaged or non-running vehicles. Wheel-lift recovery tows the vehicle with its wheels partially off the ground, typically for quicker, shorter-distance jobs.\",\"_id\":\"9f01fb7\"},{\"tab_title\":\"How much does breakdown recovery in Birmingham cost?\",\"tab_content\":\"Pricing depends on the type of recovery, distance, and vehicle involved. Call us for a free, no-obligation quote before we begin any work.\",\"_id\":\"d7ce03c\"},{\"tab_title\":\"What areas do you cover?\",\"tab_content\":\"We cover Birmingham and the surrounding West Midlands for local recovery, with long-distance and nationwide transport also available.\",\"_id\":\"6f67734\"}],\"title_color\":\"#011D5E\",\"tab_active_color\":\"#011D5E\",\"content_color\":\"#4B546E\",\"border_width\":{\"unit\":\"px\",\"size\":1},\"border_color\":\"#D6DBE7\",\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"IBM Plex Sans\",\"title_typography_font_weight\":\"600\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":16},\"content_typography_typography\":\"custom\",\"content_typography_font_family\":\"IBM Plex Sans\",\"content_typography_font_size\":{\"unit\":\"px\",\"size\":15}},\"elements\":[],\"widgetType\":\"accordion\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"f464655\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"gradient\",\"background_color\":\"#011D5E\",\"background_color_b\":\"#010F35\",\"background_gradient_angle\":{\"unit\":\"deg\",\"size\":160}},\"elements\":[{\"id\":\"5d9371a8\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"90\",\"right\":\"80\",\"bottom\":\"90\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"40\",\"bottom\":\"64\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"56\",\"right\":\"20\",\"bottom\":\"56\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"4e7c86d5\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"24\",\"row\":\"24\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\"},\"elements\":[{\"id\":\"5d1ce36b\",\"elType\":\"widget\",\"settings\":{\"title\":\"Stuck on the road? We're ready when you are.\",\"align\":\"center\",\"title_color\":\"#FFFFFF\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":38,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]},\"width\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"29ed8645\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Don't wait it out \\u2014 call AAD Transport &amp; Recovery now for fast, reliable breakdown recovery anywhere in Birmingham, 24 hours a day.\",\"text_color\":\"#B9C3DC\",\"align\":\"center\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":17},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"width\":{\"unit\":\"%\",\"size\":60},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"d1f4c7a\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_justify_content\":\"center\"},\"elements\":[{\"id\":\"536d2ed1\",\"elType\":\"widget\",\"settings\":{\"text\":\"Call Now: 07771 004242\",\"link\":{\"url\":\"tel:07771004242\"},\"size\":\"lg\",\"background_color\":\"#FCA311\",\"button_text_color\":\"#011D5E\",\"border_border\":\"none\",\"border_width\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\"},\"border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":false},\"button_padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"30\",\"bottom\":\"18\",\"left\":\"30\",\"isLinked\":false},\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"_element_width_mobile\":\"initial\"},\"elements\":[],\"widgetType\":\"button\"},{\"id\":\"2a2b5a39\",\"elType\":\"widget\",\"settings\":{\"text\":\"Get a Free Quote\",\"link\":{\"url\":\"#quote\"},\"size\":\"lg\",\"background_color\":\"transparent\",\"button_text_color\":\"#FFFFFF\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"2\",\"right\":\"2\",\"bottom\":\"2\",\"left\":\"2\"},\"border_color\":\"#4A5A8A\",\"border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":false},\"button_padding\":{\"unit\":\"px\",\"top\":\"18\",\"right\":\"30\",\"bottom\":\"18\",\"left\":\"30\",\"isLinked\":false},\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_weight\":\"700\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16},\"width_mobile\":{\"unit\":\"%\",\"size\":100},\"_element_width_mobile\":\"initial\"},\"elements\":[],\"widgetType\":\"button\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"686b130f\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#010F35\"},\"elements\":[{\"id\":\"3232dbeb\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"80\",\"bottom\":\"32\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"40\",\"bottom\":\"24\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"40\",\"right\":\"20\",\"bottom\":\"24\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"349984f5\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"wrap\",\"flex_gap\":{\"column\":\"40\",\"row\":\"40\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\",\"flex_direction_tablet\":\"row\"},\"elements\":[{\"id\":\"52585c05\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":32},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"6296861d\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_wrap\":\"nowrap\",\"flex_gap\":{\"column\":\"6\",\"row\":\"6\",\"unit\":\"px\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_direction_mobile\":\"column\"},\"elements\":[{\"id\":\"42c5a227\",\"elType\":\"widget\",\"settings\":{\"title\":\"AAD\",\"header_size\":\"h3\",\"align\":\"left\",\"title_color\":\"#FFFFFF\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"900\",\"typography_font_size\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"7f7c1d5b\",\"elType\":\"widget\",\"settings\":{\"title\":\"TRANSPORT &amp; RECOVERY\",\"header_size\":\"h6\",\"align\":\"left\",\"title_color\":\"#FCA311\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_weight\":\"600\",\"typography_font_size\":{\"unit\":\"px\",\"size\":11,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":11,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":11,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true},{\"id\":\"1061a463\",\"elType\":\"widget\",\"settings\":{\"editor\":\"24\\/7 breakdown recovery, car recovery and towing services across Birmingham and the West Midlands.\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"f36dacb\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"14\",\"row\":\"14\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":22.6},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"b16f316\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong>Services<\\/strong>\",\"text_color\":\"#FFFFFF\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"77790e38\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<a href=\\\"#\\\" style=\\\"color:#7E8BB0;\\\">Roadside Recovery<\\/a><br><a href=\\\"#\\\" style=\\\"color:#7E8BB0;\\\">Vehicle Transportation<\\/a><br><a href=\\\"#\\\" style=\\\"color:#7E8BB0;\\\">Vehicle Assessment<\\/a>\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":2.2}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"4a171a8e\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"14\",\"row\":\"14\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":22.6},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"2ad49fd7\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong>Company<\\/strong>\",\"text_color\":\"#FFFFFF\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"24060c0\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<a href=\\\"#\\\" style=\\\"color:#7E8BB0;\\\">About<\\/a><br><a href=\\\"#\\\" style=\\\"color:#7E8BB0;\\\">Contact<\\/a><br><a href=\\\"#\\\" style=\\\"color:#7E8BB0;\\\">Privacy Policy<\\/a>\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":2.2}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true},{\"id\":\"12b6b0f8\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"14\",\"row\":\"14\",\"unit\":\"px\",\"isLinked\":true},\"width\":{\"unit\":\"%\",\"size\":22.6},\"width_tablet\":{\"unit\":\"%\",\"size\":50},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"342ed3d7\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<strong>Contact<\\/strong>\",\"text_color\":\"#FFFFFF\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Archivo\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7},\"typography_font_weight\":\"700\"},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"60f76acb\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<a href=\\\"tel:07771004242\\\" style=\\\"color:#7E8BB0;\\\">07771 004242<\\/a><br><a href=\\\"mailto:general@aadtransportrecovery.co.uk\\\" style=\\\"color:#7E8BB0;\\\">general@aadtransportrecovery.co.uk<\\/a><br><span style=\\\"color:#7E8BB0;\\\">Walsall Rd, Birmingham, West Midlands, B42 1TQ<\\/span>\",\"text_color\":\"#7E8BB0\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14},\"typography_line_height\":{\"unit\":\"em\",\"size\":2.2}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false},{\"id\":\"79cdd565\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100},\"background_background\":\"classic\",\"background_color\":\"#010F35\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#1E2E58\"},\"elements\":[{\"id\":\"4b701468\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"width\":{\"unit\":\"px\",\"size\":1440},\"flex_gap\":{\"column\":\"16\",\"row\":\"16\",\"unit\":\"px\",\"isLinked\":true},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"80\",\"bottom\":\"24\",\"left\":\"80\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"40\",\"bottom\":\"20\",\"left\":\"40\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"6e3ae6f2\",\"elType\":\"widget\",\"settings\":{\"editor\":\"AAD Transport &amp; Recovery &copy; 2026 \\u2014 All Rights Reserved.\",\"text_color\":\"#5A6790\",\"align\":\"left\",\"typography_typography\":\"custom\",\"typography_font_family\":\"IBM Plex Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":13},\"typography_line_height\":{\"unit\":\"em\",\"size\":1.7}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":true}],\"isInner\":false}]",
+   "_elementor_page_settings": [],
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://maroon-raven-160825.hostingersite.com/?elementor_library=home",
+  "generated_slug": "home",
+  "class_list": [
+   "post-21",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/21",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/users/1"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 3,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/21/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 136,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/21/revisions/136"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/media?parent=21"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/21"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/21"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/21"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 10,
+  "date": "2026-09-17T12:39:03",
+  "date_gmt": "2026-09-17T12:39:03",
+  "guid": {
+   "rendered": "https://maroon-raven-160825.hostingersite.com/?p=10",
+   "raw": "https://maroon-raven-160825.hostingersite.com/?p=10"
+  },
+  "modified": "2026-09-21T13:29:50",
+  "modified_gmt": "2026-09-21T13:29:50",
+  "password": "",
+  "slug": "default-kit",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://maroon-raven-160825.hostingersite.com/?elementor_library=default-kit",
+  "title": {
+   "raw": "Default Kit",
+   "rendered": "Default Kit"
+  },
+  "author": 1,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "site-sidebar-layout": "default",
+   "site-content-layout": "",
+   "ast-site-content-layout": "default",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-4)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "kit",
+   "_elementor_data": "[]",
+   "_elementor_page_settings": {
+    "colors_enable_styleguide_preview": "yes",
+    "system_colors": [
+     {
+      "_id": "primary",
+      "title": "Primary",
+      "color": "#011D5E"
+     },
+     {
+      "_id": "secondary",
+      "title": "Secondary",
+      "color": "#FE6402"
+     },
+     {
+      "_id": "text",
+      "title": "Text",
+      "color": "#4B546E"
+     },
+     {
+      "_id": "accent",
+      "title": "Accent",
+      "color": "#FAF9F5"
+     }
+    ],
+    "custom_colors": [
+     {
+      "_id": "3810f87",
+      "title": "Section BG",
+      "color": "#F4F6FA"
+     }
+    ],
+    "typography_enable_styleguide_preview": "yes",
+    "system_typography": [
+     {
+      "_id": "primary",
+      "title": "Primary",
+      "typography_typography": "custom",
+      "typography_font_family": "Archivo",
+      "typography_font_weight": "800",
+      "typography_font_size": {
+       "unit": "custom",
+       "size": "clamp(36px, 4vw, 54px);",
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "custom",
+       "size": "clamp(36px, 4vw, 54px);",
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "custom",
+       "size": "clamp(36px, 4vw, 54px);",
+       "sizes": []
+      },
+      "typography_line_height_tablet": {
+       "unit": "em",
+       "size": 1.3,
+       "sizes": []
+      },
+      "typography_line_height_mobile": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "secondary",
+      "title": "Secondary",
+      "typography_typography": "custom",
+      "typography_font_family": "Archivo",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "custom",
+       "size": "clamp(30px, 3vw, 44px);",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.3,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "text",
+      "title": "Text",
+      "typography_typography": "custom",
+      "typography_font_family": "IBM Plex Sans",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 15,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "accent",
+      "title": "Accent",
+      "typography_typography": "custom",
+      "typography_font_family": "IBM Plex Sans",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 15,
+       "sizes": []
+      }
+     }
+    ],
+    "custom_typography": [],
+    "default_generic_fonts": "Sans-serif",
+    "h3_typography_typography": "custom",
+    "h3_typography_font_family": "Archivo",
+    "h3_typography_font_size": {
+     "unit": "custom",
+     "size": "clamp(22px, 3vw, 34px);",
+     "sizes": []
+    },
+    "h3_typography_line_height": {
+     "unit": "em",
+     "size": 1.2,
+     "sizes": []
+    },
+    "site_name": "maroon-raven-160825.hostingersite.com",
+    "container_width": {
+     "unit": "px",
+     "size": 1440,
+     "sizes": []
+    },
+    "page_title_selector": "h1.entry-title",
+    "default_page_template": "elementor_header_footer",
+    "settings_page_transitions_background_color": "#FFFFFF",
+    "settings_page_transitions_preloader_type": "animation",
+    "settings_page_transitions_preloader_animation_type": "bouncing-dots",
+    "settings_page_transitions_preloader_animation_duration": {
+     "unit": "ms",
+     "size": 1000,
+     "sizes": []
+    },
+    "settings_page_transitions_preloader_size": {
+     "unit": "px",
+     "size": 10,
+     "sizes": []
+    },
+    "activeItemIndex": 1,
+    "__globals__": {
+     "body_color": "globals/colors?id=text",
+     "settings_page_transitions_preloader_color": "globals/colors?id=secondary"
+    },
+    "viewport_md": 768,
+    "viewport_lg": 1025,
+    "site_logo": {
+     "url": "https://maroon-raven-160825.hostingersite.com/wp-content/uploads/2026/09/A.A.D-Logo-TP.png",
+     "id": 247,
+     "size": "",
+     "alt": "",
+     "source": "library"
+    },
+    "site_favicon": {
+     "url": "https://maroon-raven-160825.hostingersite.com/wp-content/uploads/2026/09/A.A.D-Logo-TP.png",
+     "id": 247,
+     "size": "",
+     "alt": "",
+     "source": "library"
+    }
+   },
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://maroon-raven-160825.hostingersite.com/?elementor_library=default-kit",
+  "generated_slug": "default-kit",
+  "class_list": [
+   "post-10",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/10",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/users/1"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 14,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/10/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 248,
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/10/revisions/248"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/media?parent=10"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/10"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/10"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://maroon-raven-160825.hostingersite.com/wp-json/wp/v2/elementor_library/10"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]
