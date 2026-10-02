@@ -35,13 +35,13 @@ Python 3 only (stdlib). Playwright/Chromium preview helpers: `prev.py`, `shotp2.
 | Footer template (site-wide) | 1203 | published, include/general |
 | Old header/footer | 241 / 272 | conditions removed |
 | Redesign drafts: About 1215, Contact 1216, Emergency 1217, Towing 1218, Flatbed 1219, Privacy 1220, Cookie 1221, Services hub 1222 | | drafts (built from existing page content) |
-| 13 new service pages from Google Doc | — | **built locally (`built_services.json`), NOT yet on the site** |
+| 13 new service pages from Google Doc | 1267–1279 (slug→ID in `created.json` → `svc`) | drafts on the site (template `elementor_header_footer`), pushed 2026-10-02; awaiting screenshots + user review |
 
 Original-site backup (pages, posts, templates, media list, menus, settings) is in `tools/wp-backup/`.
 
 ## Open issues / next steps
 1. **Boxed hero on inner pages (Elementor Full Width template):** cause = stale Elementor per-post CSS (element IDs changed between rebuilds). User does NOT want extra CSS hacks. Agreed approach (pending user confirmation): keep site-wide header/footer, keep element IDs stable (builders now seed `random` per page — `build_services.py` uses `random.seed(slug)`; apply same to `build_pages.py`), then user runs **Elementor → Tools → Clear Files & Data** once.
-2. Publish the 13 service pages as drafts → screenshot desktop + mobile → user review.
+2. ~~Publish the 13 service pages as drafts~~ (done, IDs 1267–1279) → screenshot desktop + mobile → user review.
 3. Add new service pages to the Services menu (menu "mian", id in `wp-backup/menus.json`) and link matching cards on Home/Services hub.
 4. Car Lockout & Roadside Assistance sections in the doc have no FAQ/CTA — a generic closing CTA was added; tell the user.
 5. On approval: copy each redesign draft's `_elementor_data` into the ORIGINAL page IDs (keeps URLs/SEO), then delete drafts.
