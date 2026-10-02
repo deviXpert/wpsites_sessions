@@ -64,3 +64,4 @@ Original-site backup (pages, posts, templates, media list, menus, settings) is i
 - Content width: boxed containers are 1440px (was capped at 1240px in `redesign.css`; Elementor kit already 1440px).
 - Hero form card: sized to content + `position:sticky` (desktop); hero uses `overflow:clip` so sticky works.
 - Sticky header on inner pages fixed by making `[data-elementor-type="header"]` sticky (the inner `.x-header` was trapped in its 107px wrapper).
+- Form service dropdowns (all 18 forms): full service list + 'Please choose a service' (empty value, so required works) + 'Other / Not sure'; service pages preselect their own service. Done by `fix_forms()` in `link_pages.py` (live data).

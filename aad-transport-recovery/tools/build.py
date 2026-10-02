@@ -36,6 +36,8 @@ def find(n, pred, out):
     return out
 def one(t): return find(home, lambda e: e.get('widgetType') == t, [])[0]
 form = copy.deepcopy(one('form')['settings'])
+for f in form['form_fields']:
+    if f.get('field_type') == 'select': f['field_options'] = 'Please choose a service|\nOther / Not sure'  # full list filled in by link_pages.py
 form.update(selected_button_icon={'value': 'fas fa-paper-plane', 'library': 'fa-solid'}, button_icon_align='row-reverse', button_icon_indent={'unit': 'px', 'size': 10})
 faq = copy.deepcopy(one('accordion')['settings'])
 gmap = copy.deepcopy(one('google_maps')['settings'])

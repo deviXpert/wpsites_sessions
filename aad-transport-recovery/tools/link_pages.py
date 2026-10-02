@@ -1,6 +1,7 @@
 """Internal linking for the AAD site. Patches each published page's LIVE _elementor_data in place (so manual Elementor
 edits are kept): service cards/boxes get their service page URL, and the first mention of another service in body
-text becomes a link (max one per service, MAX_TEXT per page, never to the page itself). Safe to re-run.
+text becomes a link (max one per service, MAX_TEXT per page, never to the page itself); form service dropdowns get
+the full service list (current service preselected). Safe to re-run.
 Usage:  cd tools && python3 link_pages.py            (dry run: prints what would change)
         python3 link_pages.py --apply"""
 import json, re, sys
@@ -65,8 +66,24 @@ def link_text(html, slug_re, href):
             return ''.join(parts), m.group(1)
     return None, None
 
-def process(data, self_slug):
+SERVICE_OPTIONS = '\n'.join(['Please choose a service|'] + [t.replace('&amp;', '&') for _, xs in MENU for t, _, _, _ in xs] + ['Other / Not sure'])
+LABEL = {s: t.replace('&amp;', '&') for _, xs in MENU for t, s, _, _ in xs}
+
+def fix_forms(data, self_slug):
+    """Every form's service dropdown lists all services; on a service page that service is preselected."""
     log = []
+    for e, _ in walk(data):
+        if e.get('widgetType') != 'form': continue
+        for f in e['settings'].get('form_fields', []):
+            if f.get('field_type') != 'select': continue
+            want = LABEL.get(self_slug, '')
+            if f.get('field_options') != SERVICE_OPTIONS or f.get('field_value', '') != want:
+                f['field_options'] = SERVICE_OPTIONS; f['field_value'] = want; f['field_label'] = 'Select Service'
+                log.append(f'form  service dropdown -> {len(SERVICE_OPTIONS.splitlines()) - 1} options' + (f', preselected "{want}"' if want else ''))
+    return log
+
+def process(data, self_slug):
+    log = fix_forms(data, self_slug)
     here = url(self_slug) if self_slug else None
     linked = lambda: set(re.findall(r'https://maroon-raven-160825\.hostingersite\.com/([a-z0-9-]+)/', json.dumps(data)))
     # 1) cards: x-sc photo cards (arrow button), image-box / icon-box titles, headings in feature cards
