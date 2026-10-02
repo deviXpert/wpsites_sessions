@@ -168,7 +168,7 @@ s1 = split(UP + 'AAD-TRANSPORT_20260429_165834_226.webp', '24/7 Breakdown Recove
 s2 = split(UP + 'AAD-TRANSPORT_20250731_144034_770.webp', 'Car Recovery Birmingham <span class="x-hl">You Can Rely On</span>', te('When you search for car recovery'), True, BTN('Get A Quote', '#contact-form'))
 
 SI = json.load(open(os.path.join(os.path.dirname(__file__), 'svc_imgs.json')))
-SLINK = {'Emergency Breakdown Recovery': U + '/emergency-breakdown-recovery-birmingham/', 'Birmingham Towing': U + '/towing-service-birmingham/', 'Flatbed Recovery': U + '/flatbed-recovery-birmingham/'}
+SLINK = {**{t.replace('&amp;', '&'): f'{U}/{s}/' for _, xs in MENU for t, s, _, _ in xs}, 'Birmingham Towing': U + '/towing-service-birmingham/', 'Battery Services': U + '/flat-battery-service-birmingham/', 'Tyre & Flat Tyre Services': U + '/flat-tyre-services-birmingham/'}
 cards = []
 for i, s in enumerate(services):
     cards.append(C([

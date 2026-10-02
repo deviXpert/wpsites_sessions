@@ -2,7 +2,7 @@
 html{scroll-behavior:smooth}body{background:#fff}
 .x-root{--padding-top:0;--padding-bottom:0;font-family:"Figtree",sans-serif;color:var(--x-text);overflow-x:clip}
 .x-root .e-con{--padding-left:0;--padding-right:0}
-.x-root .e-con-boxed>.e-con-inner{max-width:1240px;padding-left:20px;padding-right:20px}
+.x-root .e-con-boxed>.e-con-inner{max-width:1440px;padding-left:20px;padding-right:20px}
 .x-h .elementor-heading-title{font-family:"Outfit",sans-serif;color:var(--x-navy);letter-spacing:-.02em}
 .x-t p:last-child{margin-bottom:0}
 /* reveal */
@@ -470,13 +470,13 @@ body.elementor-editor-active .rv{opacity:1!important;transform:none!important}
 /* full-bleed sections on theme-template pages */
 .x-root.e-con{width:100%!important;max-width:none!important;--width:100%;--content-width:100%;margin-left:0!important;margin-right:0!important}
 .x-root>.e-con,.x-root>.e-con.e-con-boxed,.x-root>.e-con.e-con-full{width:100%!important;max-width:none!important;--width:100%;margin-left:0!important;margin-right:0!important}
-.x-root>.e-con-boxed>.e-con-inner,.x-root .x-bx>.e-con-inner{width:100%;max-width:1240px!important;margin:0 auto}
+.x-root>.e-con-boxed>.e-con-inner,.x-root .x-bx>.e-con-inner{width:100%;max-width:1440px!important;margin:0 auto}
 .x-root .x-dark>.x-sec{width:100%!important;max-width:none!important}
 body.page-template-elementor_header_footer .site-content .ast-container,body .elementor-page .ast-container{max-width:100%;padding:0}
 /* full-bleed sections on theme-template pages */
 .x-root.e-con{width:100%!important;max-width:none!important;--width:100%;--content-width:100%;margin-left:0!important;margin-right:0!important}
 .x-root>.e-con,.x-root>.e-con.e-con-boxed,.x-root>.e-con.e-con-full{width:100%!important;max-width:none!important;--width:100%;margin-left:0!important;margin-right:0!important}
-.x-root>.e-con-boxed>.e-con-inner,.x-root .x-bx>.e-con-inner{width:100%;max-width:1240px!important;margin:0 auto}
+.x-root>.e-con-boxed>.e-con-inner,.x-root .x-bx>.e-con-inner{width:100%;max-width:1440px!important;margin:0 auto}
 .x-root .x-dark>.x-sec{width:100%!important;max-width:none!important}
 /* ===== service-page components ===== */
 .x-sec-nc>.e-con-inner,.x-sec-cmp>.e-con-inner{align-items:center!important;text-align:center}
@@ -511,7 +511,7 @@ body.page-template-elementor_header_footer .site-content .ast-container,body .el
 .x-cmp td{padding:16px 22px;border:0;border-top:1px solid var(--x-line);color:var(--x-navy);text-align:left;vertical-align:top;transition:background .3s}
 .x-cmp td:first-child{border-right:1px solid var(--x-line)}
 .x-cmp tr:hover td{background:#FFF7F1}
-.x-textblock-img{max-width:1240px!important;flex-direction:row!important;gap:40px;align-items:center;padding:40px!important}
+.x-textblock-img{max-width:1440px!important;flex-direction:row!important;gap:40px;align-items:center;padding:40px!important}
 .x-tb-rev{flex-direction:row-reverse!important}
 .x-tb-copy{flex:1 1 55%;gap:14px}
 .x-tb-media{flex:1 1 45%}
@@ -554,7 +554,7 @@ body.page-template-elementor_header_footer .site-content .ast-container,body .el
 .x-mm-link:hover:after,.x-mm-link.is-current:after{transform:scaleX(1)}
 .x-mm-link i{font-size:11px;transition:transform .3s var(--x-ease)}
 .x-mm-has:hover>.x-mm-link i,.x-mm-has:focus-within>.x-mm-link i{transform:rotate(180deg)}
-.x-mm-panel{position:absolute;left:50%;top:100%;width:min(1180px,calc(100vw - 40px));transform:translate(-50%,12px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s var(--x-ease),transform .25s var(--x-ease),visibility 0s linear .25s;z-index:1000;padding-top:10px}
+.x-mm-panel{position:absolute;left:50%;top:100%;width:min(1400px,calc(100vw - 40px));transform:translate(-50%,12px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s var(--x-ease),transform .25s var(--x-ease),visibility 0s linear .25s;z-index:1000;padding-top:10px}
 .x-mm-has:hover>.x-mm-panel,.x-mm-has:focus-within>.x-mm-panel,.x-mm-has.is-open>.x-mm-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0);transition-delay:0s}
 .x-mm-has.is-closed>.x-mm-panel{opacity:0;visibility:hidden;pointer-events:none}
 .x-mm-grid{display:grid;grid-template-columns:repeat(3,1fr) 1.05fr;gap:8px;background:#fff;border:1px solid var(--x-line);border-radius:22px;box-shadow:var(--x-sh-lg);padding:22px}
@@ -643,3 +643,18 @@ html.x-lock,html.x-lock body{overflow:hidden}
 .x-dw-acc,.x-dw-acc:hover,.x-dw-acc:focus{background:var(--x-light)!important;color:var(--x-navy)!important;border:0!important;box-shadow:none!important}
 .x-dw-acc[aria-expanded="true"]{background:var(--x-navy)!important;color:#fff!important}
 .x-burger:focus-visible,.x-dw-x:focus-visible,.x-dw-acc:focus-visible{outline:2px solid var(--x-orange)!important;outline-offset:2px}
+/* internal links in body text + linked card titles */
+.x-ilink{color:var(--x-orange)!important;font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;transition:text-decoration-thickness .2s,color .2s}
+.x-ilink:hover{color:var(--x-orange-2)!important;text-decoration-thickness:2px}
+.x-dark .x-ilink,.x-reasons-lists .x-ilink{color:#FF8A3D!important}
+.x-root .elementor-heading-title a,.x-root .elementor-image-box-title a,.x-root .elementor-icon-box-title a{color:inherit!important;text-decoration:none;transition:color .2s}
+.x-root .elementor-heading-title a:hover,.x-root .elementor-image-box-title a:hover,.x-root .elementor-icon-box-title a:hover{color:var(--x-orange)!important}
+/* hero form card: size to content + sticky beside long hero copy (desktop) */
+.x-hero{overflow:hidden;overflow:clip}
+.x-hero>.e-con-inner{align-items:flex-start!important}
+.x-root .x-hero-card{align-self:flex-start!important;height:auto!important;flex-grow:0!important;position:sticky!important;top:130px;transition:top .3s}
+@media(max-width:1024px){.x-root .x-hero-card{position:relative!important;top:auto}}
+/* sticky header on theme-template pages: the header template wrapper is only as tall as the header, so stick the wrapper itself */
+[data-elementor-type="header"]{position:sticky;top:0;z-index:999}
+body.admin-bar [data-elementor-type="header"]{top:32px}
+@media(max-width:782px){body.admin-bar [data-elementor-type="header"]{top:46px}}

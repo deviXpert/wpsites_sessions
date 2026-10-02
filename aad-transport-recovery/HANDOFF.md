@@ -15,6 +15,7 @@ python3 -c "import wp; print(wp.U)"          # must print the AAD URL
 python3 publish_services.py                   # builds + pushes the 13 service pages as drafts (records IDs in created.json)
 python3 publish_services.py --assets          # also re-pushes home page + header/footer templates (CSS/JS live in them)
 python3 apply_metas.py                        # sets Yoast SEO title + meta description on the 13 service pages
+python3 link_pages.py [--apply]               # internal links (cards + first in-text mention), patches LIVE data; publish_services.py runs it automatically
 ```
 Python 3 only (stdlib). Playwright/Chromium preview helpers: `prev.py`, `shotp2.js`, `sheet.py`, `live.js` (launch Chromium with the HTTPS proxy + `ignoreHTTPSErrors`).
 
@@ -43,7 +44,7 @@ Original-site backup (pages, posts, templates, media list, menus, settings) is i
 ## Open issues / next steps
 1. **Boxed hero on inner pages (Elementor Full Width template):** cause = stale Elementor per-post CSS (element IDs changed between rebuilds). User does NOT want extra CSS hacks. Agreed approach (pending user confirmation): keep site-wide header/footer, keep element IDs stable (builders now seed `random` per page — `build_services.py` uses `random.seed(slug)`; apply same to `build_pages.py`), then user runs **Elementor → Tools → Clear Files & Data** once.
 2. ~~Publish the 13 service pages~~ (done, IDs 1267–1279, live).
-3. ~~Menu~~ done: header now has a custom **mega menu** (desktop) + slide-in **drawer** (≤1024px) and a rebuilt footer listing every service. All generated from `MENU` in `build.py` — edit that list and run `python3 publish_services.py --assets`. The WordPress menu "mian" (Appearance → Menus) is **no longer used** by the header. Still to do: link matching cards on Home/Services hub to the new pages.
+3. ~~Menu~~ done: header now has a custom **mega menu** (desktop) + slide-in **drawer** (≤1024px) and a rebuilt footer listing every service. All generated from `MENU` in `build.py` — edit that list and run `python3 publish_services.py --assets`. The WordPress menu "mian" (Appearance → Menus) is **no longer used** by the header. Cards on Home/Services hub/About + in-text mentions now link to the service pages (`link_pages.py`).
 4. Car Lockout & Roadside Assistance sections in the doc have no FAQ/CTA — a generic closing CTA was added; tell the user.
 5. On approval: copy each redesign draft's `_elementor_data` into the ORIGINAL page IDs (keeps URLs/SEO), then delete drafts.
 6. Old home page (ID 25) still published at `/home/` (duplicate content) — suggested setting it to draft; awaiting user.
@@ -57,3 +58,9 @@ Original-site backup (pages, posts, templates, media list, menus, settings) is i
 - `build_services.py` — builds the 13 service pages with varied sections (split+photo, navy checklist, tick tiles, feature/numbered/dark cards, steps, destination panel, areas+photo, 24/7 phone band, comparison table, reviews, FAQ, CTA). Image picks per page in `IMGS`.
 - `publish_services.py` — build + push drafts. `pushpages.py` — push inner-page drafts.
 - Layout classes are self-contained (`x-dr`/`x-dc`/`x-bx` + `e-no-lazyload`) so pages don't depend on Elementor's generated CSS.
+
+## Notes (2026-10-02, later)
+- **Never rebuild the redesign pages (1215–1222) with `build_pages.py` + `pushpages.py`**: the Towing page (1218) was edited by the user in Elementor on 2026-09-30, and `build_pages.py` still re-randomises element IDs. Patch live data instead (as `link_pages.py` does).
+- Content width: boxed containers are 1440px (was capped at 1240px in `redesign.css`; Elementor kit already 1440px).
+- Hero form card: sized to content + `position:sticky` (desktop); hero uses `overflow:clip` so sticky works.
+- Sticky header on inner pages fixed by making `[data-elementor-type="header"]` sticky (the inner `.x-header` was trapped in its 107px wrapper).

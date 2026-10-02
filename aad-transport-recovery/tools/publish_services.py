@@ -20,3 +20,4 @@ for slug, v in bs.items():
     r = req(f"wp/v2/pages/{c['svc'][slug]}", 'POST', body) if c['svc'].get(slug) else req('wp/v2/pages', 'POST', {**body, 'status': 'draft'})  # existing pages keep their status
     c['svc'][slug] = r.get('id'); print(slug, r.get('id'), r.get('_err') or '')
 json.dump(c, open('created.json', 'w'), indent=1)
+subprocess.run([sys.executable, 'link_pages.py', '--apply'], check=True)  # re-add internal links (rebuilds above drop them)
