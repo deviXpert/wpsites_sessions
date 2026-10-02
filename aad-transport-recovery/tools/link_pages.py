@@ -82,8 +82,26 @@ def fix_forms(data, self_slug):
                 log.append(f'form  service dropdown -> {len(SERVICE_OPTIONS.splitlines()) - 1} options' + (f', preselected "{want}"' if want else ''))
     return log
 
+FIX_URLS = {'tel:(077)-710-04242': 'tel:07771004242', 'http://www.allaboutcookies.org/': 'https://allaboutcookies.org/', 'http://www.aboutcookies.org/': 'https://www.aboutcookies.org/'}
+
+def fix_links(data):
+    """Bad tel: links, outdated http links, and '#contact-form' anchors on pages that have no form (-> Contact page)."""
+    log = []
+    has_form = any(e['settings'].get('_element_id') == 'contact-form' for e, _ in walk(data))
+    fixes = dict(FIX_URLS, **({} if has_form else {'#contact-form': f'{U}/contact/'}))
+    def sub(v):
+        if isinstance(v, dict): return {k: sub(x) for k, x in v.items()}
+        if isinstance(v, list): return [sub(x) for x in v]
+        if isinstance(v, str):
+            for a, b in fixes.items():
+                if v == a or f'"{a}"' in v:
+                    log.append(f'link  {a} -> {b}'); v = b if v == a else v.replace(f'"{a}"', f'"{b}"')
+        return v
+    for e, _ in walk(data): e['settings'] = sub(e.get('settings', {}))
+    return log
+
 def process(data, self_slug):
-    log = fix_forms(data, self_slug)
+    log = fix_links(data) + fix_forms(data, self_slug)
     here = url(self_slug) if self_slug else None
     linked = lambda: set(re.findall(r'https://maroon-raven-160825\.hostingersite\.com/([a-z0-9-]+)/', json.dumps(data)))
     # 1) cards: x-sc photo cards (arrow button), image-box / icon-box titles, headings in feature cards

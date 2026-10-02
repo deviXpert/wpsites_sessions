@@ -65,3 +65,5 @@ Original-site backup (pages, posts, templates, media list, menus, settings) is i
 - Hero form card: sized to content + `position:sticky` (desktop); hero uses `overflow:clip` so sticky works.
 - Sticky header on inner pages fixed by making `[data-elementor-type="header"]` sticky (the inner `.x-header` was trapped in its 107px wrapper).
 - Form service dropdowns (all 18 forms): full service list + 'Please choose a service' (empty value, so required works) + 'Other / Not sure'; service pages preselect their own service. Done by `fix_forms()` in `link_pages.py` (live data).
+- Link check (`tools/check_links.py`, 2026-10-02): 26 pages / 211 links+assets — all OK. Fixed: Services-hub quote buttons (#contact-form with no form → /contact/), Contact page `tel:(077)-710-04242`, cookie-policy http links (`fix_links()` in `link_pages.py`). allaboutcookies.org returns 403 to bots only (fine in browsers).
+- Still published: WordPress sample post 'Hello world!' (/hello-world/) + its Uncategorized category and author archive (/author/ahsanhashmi1925gmail-com/ reveals the login name) — suggested removing; awaiting user.
