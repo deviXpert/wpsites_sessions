@@ -24,3 +24,4 @@ Site: **https://bptowingservice.ca/** (WordPress + "cartow" theme w/ Redux heade
 - Drafts/templates in `tools/created.json`: Home draft 4478, header 4486, footer 4487, stats 4477.
 - Every build is checked with `verify.py` (all original text + link targets must be present; no new links).
 - Next: user review of Home → then About, Services, Contact, FAQ, 9 service pages, Thank You, Blog, 15 posts. Launch = copy draft `_elementor_data` into the original page IDs + set template to elementor_canvas.
+- Yoast SEO copied from Home (26) to draft 4478 via `yoast/v1/bulk_editor/update_search` (SEO title, meta description, focus keyphrase); all other Yoast fields already identical (verified field-by-field via MCP `yoast-seo/get-post-seo-data`). MCP `yoast-seo/update-post-seo-data` can't set title/description — use the bulk-editor route. At launch the data is copied INTO page 26, so the original metas are never touched.
