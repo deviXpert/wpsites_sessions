@@ -675,3 +675,12 @@ body.single-post{background:var(--bp-bg)}
 .bp-post-form .elementor-heading-title{color:#fff!important}
 .bp-post-body{padding-top:56px!important}
 @media (max-width:767px){.bp-post-body{padding-top:28px!important}.bp-post-hero{padding-top:70px!important;padding-bottom:70px!important}}
+/* ===== v10: post hero without image; full featured image; uniform blog grid images ===== */
+.bp-post-hero{min-height:auto!important;padding-top:90px!important;padding-bottom:90px!important;background:radial-gradient(900px 420px at 15% 0%,rgba(229,34,45,.28),transparent 60%),radial-gradient(900px 420px at 90% 100%,rgba(47,107,255,.22),transparent 60%),var(--bp-ink)!important}
+.bp-post-hero:before{display:none!important}
+.bp-post-feat{margin-bottom:34px!important}
+.bp-post-feat img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;border-radius:20px;display:block;box-shadow:var(--bp-sh)}
+.bp-post-feat:empty{display:none}
+.bp-loop .elementor-widget-theme-post-featured-image a,.bp-loop .elementor-widget-theme-post-featured-image .elementor-widget-container,.bp-loop .elementor-widget-image a{display:block;overflow:hidden;border-radius:16px}
+.bp-loop .elementor-widget-theme-post-featured-image img,.bp-loop .e-loop-item .elementor-widget-image img{width:100%!important;height:auto!important;aspect-ratio:16/10!important;object-fit:cover!important;object-position:center;max-height:none!important;display:block}
+@media (max-width:767px){.bp-post-hero{padding-top:60px!important;padding-bottom:60px!important}}

@@ -19,10 +19,9 @@ def single():
         {'_id': rid(), 'type': 'date', 'selected_icon': ICO('calendar-alt'), 'link': ''},
         {'_id': rid(), 'type': 'time', 'selected_icon': ICO('clock', 'fa-regular'), 'link': ''}], view='inline')
     title = W('theme-post-title', 'bp-h bp-h1', header_size='h1', __dynamic__={'title': tag('post-title')})
-    hero = SEC([C([info, title], 'bp-phero-copy bp-post-head')], 'bp-phero bp-post-hero bp-sec',
-               background_background='classic', background_size='cover', background_position='center center',
-               __dynamic__={'background_image': tag('post-featured-image')})
-    content = C([W('theme-post-content', 'bp-prose')], 'bp-post-main')
+    hero = SEC([C([info, title], 'bp-phero-copy bp-post-head')], 'bp-phero bp-post-hero bp-aura bp-gridbg bp-sec')
+    feat = W('theme-post-featured-image', 'bp-post-feat', image_size='full', align='center', __dynamic__={'image': tag('post-featured-image')})
+    content = C([feat, W('theme-post-content', 'bp-prose')], 'bp-post-main')
     form_tpl = tree(3358)[0]
     aside = C([
         C([W('heading', 'bp-h bp-h3', title='Get Immediate Towing', header_size='div'),
