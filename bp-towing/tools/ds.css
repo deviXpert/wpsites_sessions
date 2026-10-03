@@ -813,3 +813,17 @@ body.archive,body.search,body.error404{background:var(--bp-bg)}
 .bp-404-grid>.bp-mega-link:last-child:nth-child(3n+1){grid-column:1/-1}
 @media (max-width:1024px){.bp-archive .elementor-posts-container{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media (max-width:767px){.bp-archive .elementor-posts-container,.bp-404-grid{grid-template-columns:1fr!important}}
+/* ===== v14: Safari/iOS fix — stacked columns must never wrap into side-by-side columns ===== */
+.bp-col,.bp-col>.e-con-inner{flex-wrap:nowrap!important;--flex-wrap:nowrap;--flex-wrap-mobile:nowrap}
+.bp .e-con.bp-col{--flex-wrap-mobile:nowrap}
+@media (max-width:1024px){
+ .bp-hero-copy,.bp-hero-side,.bp-phero-copy,.bp-post-main,.bp-post-aside{flex:1 1 auto!important;width:100%!important;max-width:100%}
+ .bp-hero>.e-con-inner>.e-con{flex:1 1 auto!important}
+}
+@media (max-width:767px){
+ .bp-f1,.bp-split-media,.bp-why-media,.bp-faq-side,.bp-faq-main,.bp-oc-media,.bp-oc-copy,.bp-frame,.bp-video,.bp-fbrand{flex:1 1 auto!important;width:100%!important;max-width:100%!important}
+ .bp-row>.e-con,.bp-row>.e-con-inner>.e-con{flex:1 1 auto!important;width:100%!important;min-height:0}
+ .bp-row.bp-keep>.e-con,.bp-row.bp-keep>.e-con-inner>.e-con,.bp-brands>.bp-brand,.bp-mnav .bp-mitem{width:auto!important}
+ .bp-row.bp-keep>.e-con.bp-statx,.bp-stat>.e-con{flex:1 1 auto!important}
+}
+@media (max-width:767px){.bp-btns,.bp-btns>.e-con-inner{flex-wrap:nowrap!important;align-items:stretch}.bp-btns .elementor-button{width:100%;justify-content:center}}
