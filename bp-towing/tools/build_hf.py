@@ -33,7 +33,8 @@ SERVICES = [('Auto Towing', '/auto-towing-calgary/', 'truck', 'Flatbed & wheel-l
             ('Winch Out Service', '/winch-out-service-calgary/', 'link', 'Pulled out of snow, mud or ditches without damage.'),
             ('Local Hauling', '/local-hauling/', 'truck-loading', 'Equipment, trailers, ATVs and materials moved locally.'),
             ('Motorcycle Towing', '/motorcycle-towing/', 'motorcycle', 'Flatbed-only bike transport with soft straps.'),
-            ('Special Vehicle Towing', '/special-vehicle-towing/', 'car-side', 'Luxury, exotic, lowered and oversized vehicles.')]
+            ('Special Vehicle Towing', '/special-vehicle-towing/', 'car-side', 'Luxury, exotic, lowered and oversized vehicles.'),
+            ('Long Distance Towing', '/long-distance-towing/', 'route', 'Calgary, across Alberta and into neighbouring provinces.')]
 MENU = [('Home', '/'), ('Services', '/services/'), ('About Us', '/about-us/'), ('FAQ', '/faq/'), ('Contact', '/contact/'), ('Blog', '/blog/')]
 
 def mega_menu():
@@ -67,7 +68,7 @@ def footer():
     services = [('Auto Towing', '/auto-towing-calgary/'), ('Roadside Assistance', '/roadside-assistance/'),
                 ('Flat Tire Change or Replacement', '/flat-tire-change-or-replacement/'), ('Fuel Delivery', '/fuel-delivery/'),
                 ('Vehicle Jump Start', '/vehicle-jump-start-calgary/'), ('Winch Out Service', '/winch-out-service-calgary/'),
-                ('Local Hauling', '/local-hauling/'), ('Motorcycle Towing', '/motorcycle-towing/')]
+                ('Local Hauling', '/local-hauling/'), ('Motorcycle Towing', '/motorcycle-towing/'), ('Long Distance Towing', '/long-distance-towing/')]
     quick = [('About Us', '/about-us/'), ("FAQ's", '/faq/'), ('Blog', '/blog/'), ('Contact', '/contact/')]
     wa = 'https://api.whatsapp.com/send/?phone=14039912265&text=Hi+BP+Towing%2C+I+need+immediate+assistance+with+my+vehicle.+Please+help%21&type=phone_number&app_absent=0'
     fb = 'https://www.facebook.com/people/BP-Towing/61583752828458/?mibextid=wwXIfr&rdid=WeEmuDyT7MokRuC0&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BnVMwwrET%2F%3Fmibextid%3DwwXIfr'

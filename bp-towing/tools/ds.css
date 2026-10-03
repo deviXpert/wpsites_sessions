@@ -759,3 +759,15 @@ body.single-post{background:var(--bp-bg)}
 .bp-credit a{color:#C9D2E8!important;font-weight:700;border-bottom:1px solid rgba(229,34,45,.6)!important;text-decoration:none;transition:color .25s}
 .bp-credit a:hover{color:#fff!important;border-bottom-color:var(--bp-red)!important}
 @media (max-width:767px){.bp-credit{flex:1 1 auto!important}}
+/* 10-item mega grid: last item spans the row as a highlighted wide link */
+.bp-mega-grid>.bp-mega-link:last-child:nth-child(3n+1){grid-column:1/-1;background:rgba(229,34,45,.05);border:1px dashed rgba(229,34,45,.25)}
+.bp-mega-grid>.bp-mega-link:last-child:nth-child(3n+1):hover{background:rgba(229,34,45,.09)}
+/* wide featured card (10th service) */
+.bp-grid-3>.bp-cardwrap:last-child:nth-child(3n+1){grid-column:1/-1}
+.bp-card-wide .elementor-image-box-wrapper{flex-direction:row!important}
+.bp-card-wide .elementor-image-box-img{flex:0 0 42%;aspect-ratio:auto!important;min-height:260px}
+.bp-card-wide .elementor-image-box-content{display:flex;flex-direction:column;justify-content:center;padding:34px 36px 80px!important}
+.bp-card-wide .elementor-image-box-title{font-size:clamp(22px,2vw,28px)!important}
+.bp-card-wide .elementor-image-box-description{font-size:16px!important;max-width:620px}
+.bp-card-wide.bp-linked .elementor-image-box-content:after{left:36px;bottom:30px}
+@media (max-width:767px){.bp-card-wide .elementor-image-box-wrapper{flex-direction:column!important}.bp-card-wide .elementor-image-box-img{flex:none;min-height:0;aspect-ratio:16/11!important}.bp-card-wide .elementor-image-box-content{padding:26px 26px 78px!important}}
