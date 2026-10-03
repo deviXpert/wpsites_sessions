@@ -11,11 +11,13 @@ Site: **https://pak-translations.com** (LIVE) — WordPress + Astra child + Elem
 
 ## Security findings (site was SEO-spam hacked)
 - Old home (ID 530): hidden HTML widget with ~28 spam links + 2 casino text widgets. New home is built from scratch; user wants old home deleted after approval.
-- 3 spam pages: 2617, 2603, 1142 (essay spam). 11,095 orphaned spam categories (no posts exist). ~37 duplicate "Default Kit" posts (active kit 26951).
-- Deletion was blocked by the session's safety classifier pending explicit user confirmation of exact scope — `tools/del_spam_cats.py` is ready (keeps category 1).
+- 3 spam pages: 2617, 2603, 1142 (essay spam) — DELETED (confirmed gone). 11,095 orphaned spam categories (no posts exist). ~37 duplicate "Default Kit" posts (active kit 26951).
+- User confirmed deletion: `tools/del_spam_cats.py` (keeps category 1) — run started; re-run it if interrupted (already-deleted IDs count as done).
 - Recommend: change admin + hosting passwords, update all plugins, re-enable Wordfence and run a scan (the injection source is likely still present).
 
 ## Settings changed
+- Front page = 39107; menu item 919 (Home) → page 39107. Yoast title/description/focus keyphrase set via `yoast/v1/bulk_editor/update_search` (fields `seo_title`, `meta_description`, `focus_keyphrase`); re-save the page afterwards so Yoast refreshes its indexable.
+- Footer credit: "Powered by hafizahsanali.com" (user request).
 - Elementor experiment **Flexbox Container → active** (needed for the new layout; old section pages unaffected).
 
 ## How it works
@@ -28,7 +30,8 @@ Site: **https://pak-translations.com** (LIVE) — WordPress + Astra child + Elem
 ## Status
 | Item | ID | Status |
 |---|---|---|
-| New home preview | 39107 | password-protected preview, awaiting user review |
+| **New home (LIVE front page)** | 39107 | approved & live (Canvas template, header/footer embedded). Update with `python3 tools/publish_live.py home` — NOT push_preview.py |
+| Old home | 530 | moved to Trash (slug now home__trashed; /home/ 301s to /) |
 | About, Services, Languages, Samples, Career, Contact, Your Order | 611, 673, 633, 988, 693, 706, 319 | to redesign next |
 
 ## Go-live plan (after approval)

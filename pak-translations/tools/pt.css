@@ -371,3 +371,4 @@ body.elementor-editor-active .rv,body.elementor-editor-active .rv-st>*{opacity:1
 .x-sec,.x-hero,.x-marq,.x-stats,.x-phero,.x-ftr,.elementor-location-header,.elementor-location-footer{overflow-x:clip}
 html{overflow-x:clip}
 @media (max-width:1024px){.x-js .rv-l,.x-js .rv-r{transform:translateY(30px)}.x-faq-side{position:static!important}}
+.x-credit a{color:#fff!important;font-weight:600}.x-credit a:hover{color:var(--y)!important}

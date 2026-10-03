@@ -148,6 +148,6 @@ def footer():
         C([H('Get in Touch', 'p', 'x-fhead'), ILIST([(PHONE, 'fab fa-whatsapp', WA), (EMAIL, 'envelope', 'mailto:' + EMAIL),
                                                      ('ProZ.com profile', 'user-check', PROZ), (ADDRESS, 'map-marker-alt', None)], 'x-flinks')], 'x-fcol'),
     ], 'x-fgrid', box=True)
-    bot = C([P('© 2026 Pak Translations. All rights reserved.'), P(f'<a href="{U}/contact-us/">Contact</a> · <a href="{U}/your-order/">Order</a> · <a href="{U}/career/">Careers</a>')], 'x-fbot', 'row', box=True)
+    bot = C([P('© 2026 Pak Translations. All rights reserved.'), P('Powered by <a href="https://hafizahsanali.com" target="_blank" rel="noopener">hafizahsanali.com</a>', 'x-credit')], 'x-fbot', 'row', box=True)
     wa = W('icon', 'x-wa', selected_icon=ICO('fab fa-whatsapp'), link=LNK(WA, True), view='default', **{'_attributes': ''})
     return C([cta, grid, bot, wa], 'x-ftr')
