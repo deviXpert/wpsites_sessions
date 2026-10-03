@@ -12,7 +12,8 @@ def req(path, method='GET', data=None):
     r = urllib.request.Request(U + '/wp-json/' + path, method=method, headers=H,
                                data=json.dumps(data).encode() if data is not None else None)
     try:
-        with urllib.request.urlopen(r, timeout=60) as f: return json.load(f)
+        with urllib.request.urlopen(r, timeout=60) as f:
+            b = f.read(); return json.loads(b) if b.strip() else {}
     except urllib.error.HTTPError as e: return {'_err': e.code, 'body': e.read().decode()[:400]}
 def all(path):
     out = []; p = 1

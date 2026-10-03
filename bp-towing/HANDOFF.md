@@ -15,3 +15,12 @@ Site: **https://bptowingservice.ca/** (WordPress + "cartow" theme w/ Redux heade
 
 ## Tools
 - `wp.py` — REST helper. `backup.py` — full JSON backup to `wp-backup/`. `audit.py` — inventory → `audit.md`.
+
+## Session 2 progress (2026-10-03)
+- Contact page `te:` → `tel:+14039912265` fixed on live page 36.
+- Alt text added to 98 media items that had none (`tools/alts.json`); decorative/placeholder graphics intentionally left empty; existing alts never overwritten.
+- Site MCP endpoint works over HTTP (`tools/mcp.py`, abilities via `mcp-adapter-execute-ability`). Preview links need Atomic Editor (off) → local stitched preview (`preview.py` + `live.js`/`full.js`).
+- cartow theme does NOT render Elementor Theme Builder locations (site parts show is_active=false) → pages use **Elementor Canvas** with header/footer embedded as library templates. Design-system CSS/JS (`ds.css`, `ds.js`) lives in an HTML widget inside the header template.
+- Drafts/templates in `tools/created.json`: Home draft 4478, header 4486, footer 4487, stats 4477.
+- Every build is checked with `verify.py` (all original text + link targets must be present; no new links).
+- Next: user review of Home → then About, Services, Contact, FAQ, 9 service pages, Thank You, Blog, 15 posts. Launch = copy draft `_elementor_data` into the original page IDs + set template to elementor_canvas.
