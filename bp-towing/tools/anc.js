@@ -1,0 +1,4 @@
+const {chromium}=require('playwright');(async()=>{const b=await chromium.launch({proxy:{server:process.env.HTTPS_PROXY},args:['--ignore-certificate-errors']});
+const p=await b.newPage({ignoreHTTPSErrors:true,viewport:{width:1440,height:900}});
+await p.goto(process.argv[2],{waitUntil:'networkidle',timeout:90000}).catch(()=>{});
+console.log(await p.evaluate(()=>{let n=document.querySelector('.bp-post-hero');const o=[];while(n&&n!==document.body){const c=getComputedStyle(n),r=n.getBoundingClientRect();o.push(`${n.tagName}#${n.id}.${(n.className||'').toString().slice(0,60)} x=${Math.round(r.x)} w=${Math.round(r.width)} pad=${c.paddingLeft}/${c.paddingRight} mw=${c.maxWidth} m=${c.marginLeft}`);n=n.parentElement}return o.join('\n')+'\nBODY '+document.body.className.slice(0,200)}));await b.close()})()

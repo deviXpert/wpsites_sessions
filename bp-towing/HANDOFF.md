@@ -33,3 +33,5 @@ Site: **https://bptowingservice.ca/** (WordPress + "cartow" theme w/ Redux heade
 - preview.py now uses the live (canvas) home as shell.
 - Mega menu panel switched to white. About 30, Services 32, Contact 36, FAQ 552, Thank You 3928, Blog 4037 redesigned via `build_pages.py` and written live (same IDs/URLs/metas; verified). Drafts 4511–4516 and 4491–4499 can be trashed.
 - Remaining: 15 blog posts (single post template 4074 not active on cartow theme), Home menu item repoint.
+- Theme switched to Astra (by user). Theme Builder works: header 4523 + footer 4525 site parts (include/general, embed 4486/4487; canvas pages unaffected), single post 4527 (include/singular/post; `build_single.py`). Old single 4074 set to draft (NOTE: manage-site-parts `conditions: []` on update resets to include/general — unpublish instead).
+- On theme-builder pages (posts/archives/404) the header is white + static via `.elementor-location-header` CSS scope; canvas pages keep the dark sticky header.

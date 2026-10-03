@@ -20,6 +20,9 @@
  "templates": {
   "stats": 4477,
   "hdr": 4486,
-  "ftr": 4487
+  "ftr": 4487,
+  "tb-header": 4523,
+  "tb-footer": 4525,
+  "tb-single": 4527
  }
 }
