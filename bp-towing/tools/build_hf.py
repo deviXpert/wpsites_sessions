@@ -89,5 +89,6 @@ def footer():
     col5 = C([hd('Reach Us'), HTML(f'<iframe src="{mapsrc}" width="600" height="350" style="border:0;border-radius:10px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="BP Towing location map"></iframe>', 'bp-map')], 'bp-g12')
     grid = C([col2, col3, col4, col5], 'bp-fgrid')
     copy_ = T('<p>Copyright  2026 © BP Towing Service, AB, Canada.</p>', 'bp-t bp-copy')
-    bottom = C([copy_, follow], 'bp-fbottom', row=True, css_classes='bp-fbottom bp-row bp-between bp-center')
+    credit = T('<p>Designed and Developed by <a href="https://hafizahsanali.com/" target="_blank" rel="noopener">hafizahsanali.com</a></p>', 'bp-t bp-credit')
+    bottom = C([copy_, credit, follow], 'bp-fbottom', row=True, css_classes='bp-fbottom bp-row bp-between bp-center')
     return [SEC([top, grid, bottom], 'bp-footer')]
