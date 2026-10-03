@@ -444,3 +444,10 @@ body.page-template-elementor_header_footer #primary{margin:0!important;padding:0
 .x-top .elementor-icon-list-icon i:before{display:inline-block}
 .x-top .elementor-icon-list-item{gap:9px!important}.x-top .elementor-icon-list-text{padding:0!important;margin:0!important}
 .x-top .elementor-icon-list-items{column-gap:28px!important}
+/* FAQ / form rows: fixed column proportions so opening an accordion item never resizes the layout */
+@media (min-width:1025px){
+.x-faq-wrap.x-dr>.x-faq-side{flex:0 0 36%!important;width:36%!important;max-width:36%!important;min-width:0}
+.x-faq-wrap.x-dr>.x-faq,.x-faq-wrap.x-dr>.x-form-card{flex:1 1 0!important;width:auto!important;min-width:0!important;max-width:none!important}
+.x-faq .elementor-accordion,.x-faq .elementor-widget-container{width:100%}
+}
+.x-faq .elementor-tab-content{overflow-wrap:anywhere}
