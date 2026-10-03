@@ -37,11 +37,11 @@ WHY = [  # (label, text, icon)
     ('24/7 availability:', 'Day, night, weekends and holidays.', 'clock'),
     ('Fast dispatch from Calgary:', 'Quick pickup in every quadrant of the city.', 'shipping-fast'),
     ('Safe flatbed transport:', 'Vehicle is loaded, strapped and secured properly.', 'truck-loading'),
-    ('Transparent pricing:', 'Clear quote before we dispatch, with no surprise fees.', 'file-invoice-dollar'),
-    ('Experienced drivers:', 'Trained for Alberta\'s highway, winter and rural conditions.', 'id-badge'),
+    ('Transparent pricing:', 'Clear quote before we dispatch; any after-hours or toll charges are explained upfront.', 'file-invoice-dollar'),
+    ('Experienced drivers:', 'Trained for Alberta\'s highway, winter and rural conditions, with 7+ years towing in Calgary.', 'id-badge'),
     ('All vehicle types:', 'Cars, SUVs, pickups, vans, motorcycles, AWD and luxury vehicles.', 'car-side'),
     ('Door-to-door service:', 'Home, shop, dealership, auction or storage.', 'map-marker-alt'),
-    ('Insured towing:', 'Your vehicle is covered in transit.', 'shield-alt'),
+    ('Insured towing:', 'Fully insured with cargo coverage while your vehicle is in transit.', 'shield-alt'),
 ]
 STEPS = [
     ('Call or request a quote.', 'Give us your vehicle details, pickup location and destination.'),
@@ -60,10 +60,10 @@ FAQ = [
     ('Is flatbed towing better for long distance?', 'Yes. A flatbed keeps all four wheels off the road, protecting the transmission, tires, suspension and drivetrain. It is the safest option for AWD, luxury, electric and damaged vehicles.'),
     ('Can you tow an AWD, 4x4 or electric vehicle long distance?', 'Yes. We use flatbed transport for AWD, 4x4 and electric vehicles, which should not be towed with their wheels on the ground.'),
     ('Do you offer 24/7 emergency long distance towing?', 'Yes. We are available 24 hours a day, 7 days a week, including holidays and during winter weather.'),
-    ('How fast can you arrive for pickup in Calgary?', 'Arrival time depends on your location and current demand. We dispatch from Calgary and aim to reach most areas quickly.'),
+    ('How fast can you arrive for pickup in Calgary?', 'Arrival time depends on your location and current demand. We dispatch from Calgary and aim to reach most areas quickly. In most Calgary neighbourhoods, expect 20 to 35 minutes.'),
     ('Can you tow a vehicle after an accident?', 'Yes. We recover and transport accident-damaged vehicles to repair shops, insurance yards or your home.'),
     ('Do you tow motorcycles, vans and trucks long distance?', 'Yes. We handle motorcycles, cars, SUVs, pickups, vans and light commercial vehicles. Contact us for heavier or oversized loads.'),
-    ('Is my vehicle insured while being towed?', 'Ask your dispatcher for coverage details when booking.'),
+    ('Is my vehicle insured while being towed?', 'Yes. BP Towing carries commercial liability and cargo insurance, so your vehicle is covered while in our care. Ask your dispatcher for coverage details when booking.'),
     ('How do I book long distance towing?', f'Call {PH}, or send your pickup location, destination and vehicle details through our contact form. We\'ll confirm the price and send a truck.'),
 ]
 
