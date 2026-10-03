@@ -1,0 +1,1451 @@
+[
+ {
+  "id": 919,
+  "title": {
+   "raw": "Home",
+   "rendered": "Home"
+  },
+  "status": "publish",
+  "url": "https://pak-translations.com/",
+  "attr_title": "",
+  "description": "",
+  "type": "post_type",
+  "type_label": "Page",
+  "object": "page",
+  "object_id": 530,
+  "parent": 0,
+  "menu_order": 1,
+  "target": "",
+  "classes": [
+   ""
+  ],
+  "xfn": [
+   ""
+  ],
+  "invalid": false,
+  "meta": {
+   "site-sidebar-layout": "default",
+   "site-content-layout": "",
+   "ast-site-content-layout": "default",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   }
+  },
+  "menus": 3,
+  "_links": {
+   "self": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/919",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/types/nav_menu_item"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "nav_menu",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/menus?post=919"
+    }
+   ],
+   "wp:menu-item-object": [
+    {
+     "post_type": "page",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/pages/530"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/919"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/919"
+    }
+   ],
+   "wp:action-create-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/919"
+    }
+   ],
+   "wp:action-assign-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/919"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 920,
+  "title": {
+   "raw": "About Us",
+   "rendered": "About Us"
+  },
+  "status": "publish",
+  "url": "https://pak-translations.com/about-us/",
+  "attr_title": "",
+  "description": "",
+  "type": "post_type",
+  "type_label": "Page",
+  "object": "page",
+  "object_id": 611,
+  "parent": 0,
+  "menu_order": 2,
+  "target": "",
+  "classes": [
+   ""
+  ],
+  "xfn": [
+   ""
+  ],
+  "invalid": false,
+  "meta": {
+   "site-sidebar-layout": "default",
+   "site-content-layout": "",
+   "ast-site-content-layout": "default",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   }
+  },
+  "menus": 3,
+  "_links": {
+   "self": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/920",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/types/nav_menu_item"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "nav_menu",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/menus?post=920"
+    }
+   ],
+   "wp:menu-item-object": [
+    {
+     "post_type": "page",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/pages/611"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/920"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/920"
+    }
+   ],
+   "wp:action-create-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/920"
+    }
+   ],
+   "wp:action-assign-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/920"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 921,
+  "title": {
+   "raw": "Services",
+   "rendered": "Services"
+  },
+  "status": "publish",
+  "url": "https://pak-translations.com/services/",
+  "attr_title": "",
+  "description": "",
+  "type": "post_type",
+  "type_label": "Page",
+  "object": "page",
+  "object_id": 673,
+  "parent": 0,
+  "menu_order": 3,
+  "target": "",
+  "classes": [
+   ""
+  ],
+  "xfn": [
+   ""
+  ],
+  "invalid": false,
+  "meta": {
+   "site-sidebar-layout": "default",
+   "site-content-layout": "",
+   "ast-site-content-layout": "default",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   }
+  },
+  "menus": 3,
+  "_links": {
+   "self": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/921",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/types/nav_menu_item"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "nav_menu",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/menus?post=921"
+    }
+   ],
+   "wp:menu-item-object": [
+    {
+     "post_type": "page",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/pages/673"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/921"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/921"
+    }
+   ],
+   "wp:action-create-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/921"
+    }
+   ],
+   "wp:action-assign-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/921"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 991,
+  "title": {
+   "raw": "Samples",
+   "rendered": "Samples"
+  },
+  "status": "publish",
+  "url": "https://pak-translations.com/sample/",
+  "attr_title": "",
+  "description": "",
+  "type": "post_type",
+  "type_label": "Page",
+  "object": "page",
+  "object_id": 988,
+  "parent": 0,
+  "menu_order": 4,
+  "target": "",
+  "classes": [
+   ""
+  ],
+  "xfn": [
+   ""
+  ],
+  "invalid": false,
+  "meta": {
+   "site-sidebar-layout": "default",
+   "site-content-layout": "",
+   "ast-site-content-layout": "default",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   }
+  },
+  "menus": 3,
+  "_links": {
+   "self": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/991",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/types/nav_menu_item"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "nav_menu",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/menus?post=991"
+    }
+   ],
+   "wp:menu-item-object": [
+    {
+     "post_type": "page",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/pages/988"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/991"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/991"
+    }
+   ],
+   "wp:action-create-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/991"
+    }
+   ],
+   "wp:action-assign-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/991"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 922,
+  "title": {
+   "raw": "Languages",
+   "rendered": "Languages"
+  },
+  "status": "publish",
+  "url": "https://pak-translations.com/languages/",
+  "attr_title": "",
+  "description": "",
+  "type": "post_type",
+  "type_label": "Page",
+  "object": "page",
+  "object_id": 633,
+  "parent": 0,
+  "menu_order": 5,
+  "target": "",
+  "classes": [
+   ""
+  ],
+  "xfn": [
+   ""
+  ],
+  "invalid": false,
+  "meta": {
+   "site-sidebar-layout": "default",
+   "site-content-layout": "",
+   "ast-site-content-layout": "default",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   }
+  },
+  "menus": 3,
+  "_links": {
+   "self": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/922",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/types/nav_menu_item"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "nav_menu",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/menus?post=922"
+    }
+   ],
+   "wp:menu-item-object": [
+    {
+     "post_type": "page",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/pages/633"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/922"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/922"
+    }
+   ],
+   "wp:action-create-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/922"
+    }
+   ],
+   "wp:action-assign-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/922"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 923,
+  "title": {
+   "raw": "Career",
+   "rendered": "Career"
+  },
+  "status": "publish",
+  "url": "https://pak-translations.com/career/",
+  "attr_title": "",
+  "description": "",
+  "type": "post_type",
+  "type_label": "Page",
+  "object": "page",
+  "object_id": 693,
+  "parent": 0,
+  "menu_order": 6,
+  "target": "",
+  "classes": [
+   ""
+  ],
+  "xfn": [
+   ""
+  ],
+  "invalid": false,
+  "meta": {
+   "site-sidebar-layout": "default",
+   "site-content-layout": "",
+   "ast-site-content-layout": "default",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   }
+  },
+  "menus": 3,
+  "_links": {
+   "self": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/923",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/types/nav_menu_item"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "nav_menu",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/menus?post=923"
+    }
+   ],
+   "wp:menu-item-object": [
+    {
+     "post_type": "page",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/pages/693"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/923"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/923"
+    }
+   ],
+   "wp:action-create-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/923"
+    }
+   ],
+   "wp:action-assign-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/923"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 924,
+  "title": {
+   "raw": "Contact Us",
+   "rendered": "Contact Us"
+  },
+  "status": "publish",
+  "url": "https://pak-translations.com/contact-us/",
+  "attr_title": "",
+  "description": "",
+  "type": "post_type",
+  "type_label": "Page",
+  "object": "page",
+  "object_id": 706,
+  "parent": 0,
+  "menu_order": 7,
+  "target": "",
+  "classes": [
+   ""
+  ],
+  "xfn": [
+   ""
+  ],
+  "invalid": false,
+  "meta": {
+   "site-sidebar-layout": "default",
+   "site-content-layout": "",
+   "ast-site-content-layout": "default",
+   "site-content-style": "default",
+   "site-sidebar-style": "default",
+   "ast-global-header-display": "",
+   "ast-banner-title-visibility": "",
+   "ast-main-header-display": "",
+   "ast-hfb-above-header-display": "",
+   "ast-hfb-below-header-display": "",
+   "ast-hfb-mobile-header-display": "",
+   "site-post-title": "",
+   "ast-breadcrumbs-content": "",
+   "ast-featured-img": "",
+   "footer-sml-layout": "",
+   "ast-disable-related-posts": "",
+   "theme-transparent-header-meta": "",
+   "adv-header-id-meta": "",
+   "stick-header-meta": "",
+   "header-above-stick-meta": "",
+   "header-main-stick-meta": "",
+   "header-below-stick-meta": "",
+   "astra-migrate-meta-layouts": "default",
+   "ast-page-background-enabled": "default",
+   "ast-page-background-meta": {
+    "desktop": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   },
+   "ast-content-background-meta": {
+    "desktop": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "tablet": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    },
+    "mobile": {
+     "background-color": "var(--ast-global-color-5)",
+     "background-image": "",
+     "background-repeat": "repeat",
+     "background-position": "center center",
+     "background-size": "auto",
+     "background-attachment": "scroll",
+     "background-type": "",
+     "background-media": "",
+     "overlay-type": "",
+     "overlay-color": "",
+     "overlay-opacity": "",
+     "overlay-gradient": ""
+    }
+   }
+  },
+  "menus": 3,
+  "_links": {
+   "self": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/924",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/types/nav_menu_item"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "nav_menu",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/menus?post=924"
+    }
+   ],
+   "wp:menu-item-object": [
+    {
+     "post_type": "page",
+     "embeddable": true,
+     "href": "https://pak-translations.com/wp-json/wp/v2/pages/706"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/924"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/924"
+    }
+   ],
+   "wp:action-create-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/924"
+    }
+   ],
+   "wp:action-assign-menus": [
+    {
+     "href": "https://pak-translations.com/wp-json/wp/v2/menu-items/924"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]
