@@ -513,6 +513,9 @@ body.elementor-editor-active .bp-header{position:relative!important}
 .bp-cta .bp-btns,.bp-cta>.e-con-inner{justify-content:center}
 @media (max-width:1024px){.bp-split-media{flex:1 1 auto!important}.bp-split-media img{min-height:300px}}
 .bp-mlink .elementor-heading-title a,.bp-mlink .elementor-heading-title a:visited{color:#fff!important}
-.bp-mega-link .elementor-icon-box-description{display:none!important}
 .bp ul.elementor-icon-list-items,.bp .elementor-icon-list-items{list-style:none!important;margin:0!important;padding:0!important}
 .bp .elementor-icon-list-item::marker{content:none}
+.bp-mega-link .elementor-icon-box-wrapper{align-items:flex-start!important}
+.bp-mega-link .elementor-icon-box-title{margin:0 0 4px!important}
+.bp-mega-link .elementor-icon-box-description{margin:0!important;font-size:13px!important;line-height:1.5!important;color:#98A3BF!important;transition:color .3s}
+.bp-mega-link:hover .elementor-icon-box-description{color:#C9D2E8!important}

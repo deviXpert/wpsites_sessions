@@ -20,11 +20,15 @@ def assets_html():
             '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400..800&display=swap">'
             f'<style id="bp-ds">{css}</style><script id="bp-ds-js">{js}</script>')
 
-SERVICES = [('Auto Towing', '/auto-towing-calgary/', 'truck'), ('Roadside Assistance', '/roadside-assistance/', 'road'),
-            ('Flat Tire Change or Replacement', '/flat-tire-change-or-replacement/', 'tools'), ('Fuel Delivery', '/fuel-delivery/', 'gas-pump'),
-            ('Vehicle Jump Start', '/vehicle-jump-start-calgary/', 'car-battery'), ('Winch Out Service', '/winch-out-service-calgary/', 'link'),
-            ('Local Hauling', '/local-hauling/', 'truck-loading'), ('Motorcycle Towing', '/motorcycle-towing/', 'motorcycle'),
-            ('Special Vehicle Towing', '/special-vehicle-towing/', 'car-side')]
+SERVICES = [('Auto Towing', '/auto-towing-calgary/', 'truck', 'Flatbed & wheel-lift towing for cars, SUVs and light trucks.'),
+            ('Roadside Assistance', '/roadside-assistance/', 'road', 'Quick fixes on the spot — boosts, tires, fuel and lockouts.'),
+            ('Flat Tire Change or Replacement', '/flat-tire-change-or-replacement/', 'tools', 'On-site tire changes at home, work or the roadside.'),
+            ('Fuel Delivery', '/fuel-delivery/', 'gas-pump', 'Gas, diesel & premium delivered to your location.'),
+            ('Vehicle Jump Start', '/vehicle-jump-start-calgary/', 'car-battery', '24/7 battery boosts — even in extreme Calgary cold.'),
+            ('Winch Out Service', '/winch-out-service-calgary/', 'link', 'Pulled out of snow, mud or ditches without damage.'),
+            ('Local Hauling', '/local-hauling/', 'truck-loading', 'Equipment, trailers, ATVs and materials moved locally.'),
+            ('Motorcycle Towing', '/motorcycle-towing/', 'motorcycle', 'Flatbed-only bike transport with soft straps.'),
+            ('Special Vehicle Towing', '/special-vehicle-towing/', 'car-side', 'Luxury, exotic, lowered and oversized vehicles.')]
 MENU = [('Home', '/'), ('Services', '/services/'), ('About Us', '/about-us/'), ('FAQ', '/faq/'), ('Contact', '/contact/'), ('Blog', '/blog/')]
 
 def mega_menu():
@@ -39,8 +43,8 @@ def mega_menu():
                      BTN('Call For a Tow', TEL, 'bp-btn', icon='phone-alt')],
                     'bp-mega-feature', background_background='classic', background_image=img(4333),
                     background_size='cover', background_position='center center')
-        links = [W('icon-box', 'bp-mega-link', selected_icon=ICO(ic), title_text=t, description_text='', title_size='div', link=LINK(SITE + u), position='left')
-                 for t, u, ic in SERVICES]
+        links = [W('icon-box', 'bp-mega-link', selected_icon=ICO(ic), title_text=t, description_text=dsc, title_size='div', link=LINK(SITE + u), position='left')
+                 for t, u, ic, dsc in SERVICES]
         panel = C([C([feature, C(links, 'bp-mega-grid')], 'bp-mega-inner', row=True, css_classes='bp-mega-inner bp-row')], 'bp-mpanel')
         items.append(C([link, panel], 'bp-mitem bp-has-mega'))
     return C(items, 'bp-mnav', row=True, css_classes='bp-mnav bp-row bp-keep bp-center', hide_tablet='hidden-tablet', hide_mobile='hidden-mobile')
