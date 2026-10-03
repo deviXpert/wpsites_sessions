@@ -21,6 +21,10 @@
       var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target) } }) }, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
       items.forEach(function (e) { io.observe(e) });
     }
+    // count-up stats (numbers are server-rendered final values; JS only animates them)
+    var cnt = d.querySelectorAll('.bp-count[data-to]');
+    var run = function (el) { var to = +el.getAttribute('data-to'), t0 = null, dur = 1800; var step = function (t) { if (!t0) t0 = t; var p = Math.min((t - t0) / dur, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step) }; el.textContent = '0'; requestAnimationFrame(step) };
+    if (!reduce && 'IntersectionObserver' in window) { var co = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { run(e.target); co.unobserve(e.target) } }) }, { threshold: .6 }); cnt.forEach(function (e) { co.observe(e) }) }
     // mark linked service cards
     d.querySelectorAll('.bp-card').forEach(function (c) { if (c.querySelector('a[href]')) c.classList.add('bp-linked') });
     if (reduce || !fine) return;
@@ -38,9 +42,6 @@
       b.addEventListener('pointermove', function (e) { var r = b.getBoundingClientRect(); b.style.translate = ((e.clientX - r.left - r.width / 2) * .12) + 'px ' + ((e.clientY - r.top - r.height / 2) * .2) + 'px' });
       b.addEventListener('pointerleave', function () { b.style.translate = '' });
     });
-    // hero copy drift on scroll
-    var hc = d.querySelector('.bp-hero-copy');
-    if (hc) { var t2 = false; addEventListener('scroll', function () { if (t2) return; t2 = true; requestAnimationFrame(function () { var y = Math.min(scrollY, 700); hc.style.transform = 'translate3d(0,' + (y * .18) + 'px,0)'; hc.style.opacity = 1 - y / 900; t2 = false }) }, { passive: true }) }
   }
   if (d.readyState !== 'loading') init(); else d.addEventListener('DOMContentLoaded', init);
 })();

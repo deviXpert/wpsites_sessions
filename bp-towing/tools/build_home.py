@@ -35,8 +35,7 @@ def build():
     names = names[:len(names) // 2] if len(names) % 2 == 0 and names[:len(names)//2] == names[len(names)//2:] else names
     AH = ' aria-hidden="true"'
     sp = lambda hidden: ''.join('<span' + (AH if hidden else '') + '>' + n + '</span>' for n in names)
-    tk = (f'<div class="bp-tk bp-tk-b" aria-hidden="true"><div class="bp-tk-track">{sp(1)}{sp(1)}</div></div>'
-          f'<div class="bp-tk bp-tk-a"><div class="bp-tk-track">{sp(0)}{sp(1)}</div></div>')
+    tk = f'<div class="bp-tk"><div class="bp-tk-track">{sp(0)}{sp(1)}</div></div>'
     secs.append(SEC([HTML(tk)], 'bp-ticker', boxed=False))
     # 3 ABOUT -------------------------------------------------------------
     about_media = C([IMG(4452, 'bp-media bp-media-tall', size='large'),
@@ -59,8 +58,12 @@ def build():
     # 6 STATS (shared template) --------------------------------------------
     secs.append(SEC([W('template', '', template_id=STATS_ID)], '', boxed=False))
     # 7 ONE-CALL ------------------------------------------------------------
-    feats = [ANIM(C([ICONBOX(P, k)], 'bp-cardwrap'), 'fadeInUp', i * 120) for i, k in enumerate(['993c492', '53c0d6f', 'bd7f73b'])]
-    secs.append(SEC([C(PTH('400b5c6'), 'bp-head-c'), C(feats, 'bp-grid-3')], 'bp-sec bp-gradient'))
+    rows = [ANIM(C([ICONBOX(P, k, cls='bp-feat-row', position='left')], 'bp-step'), 'fadeInUp', i * 120) for i, k in enumerate(['993c492', '53c0d6f', 'bd7f73b'])]
+    chip = C([W('icon', '', selected_icon=S(P, k, 'selected_icon'), view='default') for k in ('993c492', '53c0d6f', 'bd7f73b')],
+             'bp-oc-chip bp-glass-light', row=True, css_classes='bp-oc-chip bp-glass-light bp-row bp-keep')
+    oc_media = C([IMG(4333, 'bp-media', size='large'), chip], 'bp-oc-media', animation='fadeInLeft')
+    secs.append(SEC([oc_media, C(PTH('400b5c6') + [C(rows, 'bp-oc-rows')], 'bp-oc-copy')],
+                    'bp-sec bp-onecall', row=True, css_classes='bp bp-sec bp-onecall bp-light bp-row bp-g64 bp-center'))
     # 8 WHY -----------------------------------------------------------------
     why_img = IMG(4366, 'bp-media bp-media-tall', size='large', motion_fx_motion_fx_scrolling='yes', motion_fx_translateY_effect='yes',
                   motion_fx_translateY_speed={'unit': 'px', 'size': 2}, motion_fx_devices=['desktop', 'tablet'])
@@ -96,7 +99,9 @@ def stats_template():
     t = tree(3399)
     icons = [e['settings']['selected_icon'] for e in find(3399, lambda e: e.get('widgetType') == 'icon')]
     cnts = [e['settings'] for e in find(3399, lambda e: e.get('widgetType') == 'counter')]
-    cards = [ANIM(C([W('icon', '', selected_icon=ic, view='default'), COUNTER(c['ending_number'], c.get('suffix', ''), c['title'])],
+    num = lambda c: W('heading', 'bp-h bp-num', header_size='div', title=f'<span class="bp-count" data-to="{int(c["ending_number"])}">{int(c["ending_number"])}</span><span class="bp-suf">{c.get("suffix", "")}</span>')
+    cards = [ANIM(C([W('icon', '', selected_icon=ic, view='default'),
+                     C([num(c), W('heading', 'bp-h bp-num-l', title=c['title'].strip(), header_size='div')], 'bp-statx')],
                     'bp-stat bp-glass bp-spot', row=True, css_classes='bp-stat bp-glass bp-spot bp-row bp-keep bp-center'), 'fadeInUp', i * 120)
              for i, (ic, c) in enumerate(zip(icons, cnts))]
     return [SEC([C(cards, 'bp-grid-3')], 'bp-sec-sm bp-stats bp-dark', background_background='classic', background_image=img(4298),
