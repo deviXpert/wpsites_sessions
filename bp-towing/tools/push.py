@@ -74,6 +74,13 @@ if __name__ == '__main__':
         for pid, key in bs.SVC.items():
             d = draft_page('svc-' + key, PAGES[pid]['title']['raw'] + ' — Redesign Draft', page(bs.build(pid)), template='elementor_canvas')
             print('svc draft', key, d)
+    if 'pages' in what:
+        import build_pages as bp
+        bp.STATS_ID = st['templates']['stats']
+        from lib import PAGES
+        for pid, key in bp.PAGES_MAP.items():
+            d = draft_page('pg-' + key, PAGES[pid]['title']['raw'] + ' — Redesign Draft', page(bp.build(pid)), template='elementor_canvas')
+            print('page draft', key, d)
     if 'assets' in what or 'home' in what: assets()
     if 'home' in what:
         import build_home as bh

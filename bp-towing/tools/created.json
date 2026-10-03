@@ -9,7 +9,13 @@
   "svc-auto": 4496,
   "svc-hauling": 4497,
   "svc-moto": 4498,
-  "svc-special": 4499
+  "svc-special": 4499,
+  "pg-about": 4511,
+  "pg-services": 4512,
+  "pg-contact": 4513,
+  "pg-faq": 4514,
+  "pg-thankyou": 4515,
+  "pg-blog": 4516
  },
  "templates": {
   "stats": 4477,

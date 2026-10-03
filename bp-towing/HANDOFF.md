@@ -31,3 +31,5 @@ Site: **https://bptowingservice.ca/** (WordPress + "cartow" theme w/ Redux heade
 - Header 4486 now has a custom mega menu (native containers; Pro "Menu" widget experiment is OFF on this site so `mega-menu` widgets are silently dropped) + Pro nav-menu (dropdown layout) for tablet/mobile. LIVE header currently shows Elementor's lorem description in the Services panel — fix (description_text='') is built but NOT pushed (live change blocked pending user approval).
 - 9 service page drafts 4491–4499 built by `build_service.py` (verify.py: 0 missing text/links; Yoast copied). Go-live plan: write each draft's `_elementor_data` into the original page ID + template elementor_canvas (keeps URL + metas), page by page, screenshot live after each.
 - preview.py now uses the live (canvas) home as shell.
+- Mega menu panel switched to white. About 30, Services 32, Contact 36, FAQ 552, Thank You 3928, Blog 4037 redesigned via `build_pages.py` and written live (same IDs/URLs/metas; verified). Drafts 4511–4516 and 4491–4499 can be trashed.
+- Remaining: 15 blog posts (single post template 4074 not active on cartow theme), Home menu item repoint.
