@@ -29,6 +29,9 @@
     var here = location.pathname.replace(/\/+$/, '/') || '/';
     d.querySelectorAll('.bp-mlink a').forEach(function (a) { try { var p = new URL(a.href).pathname; if (p === here || (p !== '/' && here.indexOf(p) === 0)) a.classList.add('is-active') } catch (e) {} });
     d.querySelectorAll('.bp-mega-link a').forEach(function (a) { try { if (new URL(a.href).pathname === here) { var m = d.querySelector('.bp-has-mega .bp-mlink a'); if (m) m.classList.add('is-active') } } catch (e) {} });
+    // smart sticky sidebar on posts: if taller than the viewport, stick by its bottom edge
+    var side = d.querySelector('.bp-post-aside');
+    if (side) { var fit = function () { var h = side.offsetHeight, v = innerHeight; side.style.setProperty('--bp-side-top', (h + 48 > v ? (v - h - 24) : 24) + 'px') }; fit(); addEventListener('resize', fit); addEventListener('load', fit); setTimeout(fit, 1500) }
     // mark linked service cards
     d.querySelectorAll('.bp-card').forEach(function (c) { if (c.querySelector('a[href]')) c.classList.add('bp-linked') });
     if (reduce || !fine) return;
