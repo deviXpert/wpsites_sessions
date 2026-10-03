@@ -24,6 +24,10 @@
   "ftr": 4487,
   "tb-header": 4523,
   "tb-footer": 4525,
-  "tb-single": 4527
+  "tb-single": 4527,
+  "tb-archive": 4532,
+  "tb-search": 4534,
+  "tb-404": 4536,
+  "snip-noindex": 4538
  }
 }

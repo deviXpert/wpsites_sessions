@@ -38,3 +38,5 @@ Site: **https://bptowingservice.ca/** (WordPress + "cartow" theme w/ Redux heade
 - New page Long Distance Towing: draft 4529 (slug long-distance-towing, canvas), built by `build_ld.py` from client brief; Yoast title/desc/focus set. Bracketed author notes removed; [phone] -> (403) 991-2265. Awaiting publish + menu/mega-menu/footer links.
 - Footer credit "Designed and Developed by hafizahsanali.com" added (footer template 4487).
 - Long Distance Towing (4529) PUBLISHED; meta desc shortened to 155 chars. Linked from: mega menu (10th, full-width), footer Services list, WP menu (under Services, item 4531), wide service card on Home/Services/About (inserted into live data; pre-edit backups in tools/wp-backup/live/). Pending from client: pricing/insurance confirmation.
+- Theme Builder: Archive 4532 (include/archive), Search 4534 (include/archive/search), 404 4536 (not_found404) — `build_tb.py`.
+- Elementor Custom Code 4538: `<meta name="robots" content="noindex, nofollow">` on include/archive + 404 (Yoast already noindex,follow there; not in sitemaps; no internal links). robots.txt is a physical file — Disallow lines given to client to add manually.
