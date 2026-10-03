@@ -9,6 +9,7 @@ EMAIL = 'info@pak-translations.com'
 ADDRESS = 'B-14/16-C, Street No. 2, Behind Zamindara Bank, Mohallah Fattupura, Gujrat 50700, Punjab, Pakistan'
 FB, TW, PROZ = 'https://www.facebook.com/PakTranslationsCompany', 'https://twitter.com/TranslationsPak', 'https://www.proz.com/profile/1415308'
 MEDIA = {m['source_url']: m['id'] for m in json.load(open(os.path.join(D, 'wp-backup/media.json')))}
+MEDIA[U + '/wp-content/uploads/2026/10/founder-dr-salman-riaz.jpg'] = 39125
 
 def seed(s): random.seed(s)
 def rid(): return '%07x' % random.getrandbits(28)
@@ -63,6 +64,7 @@ def head(eb, title, lead=None, center=True, tag='h2'):
 
 # ---------- Elementor Pro form ----------
 def F(cid, ftype, label, ph='', req=False, width='100', **kw):
+    if ftype == 'tel': ftype = 'text'   # Elementor's tel validation rejects spaces ("+92 300 1234567"), so accept any text
     f = {'_id': rid(), 'custom_id': cid, 'field_type': ftype, 'field_label': label, 'placeholder': ph,
          'required': 'true' if req else '', 'width': width}
     if ftype == 'upload':
@@ -70,12 +72,13 @@ def F(cid, ftype, label, ph='', req=False, width='100', **kw):
     f.update(kw)
     return f
 def FORM(name, fields, button, to=EMAIL, subject=None, cls='x-form', labels=True):
+    fields = fields + [{'_id': rid(), 'custom_id': 'hp_check', 'field_type': 'honeypot', 'field_label': '', 'width': '100'}]   # invisible anti-spam trap
     return W('form', cls, form_name=name, form_fields=fields, button_text=button, show_labels='yes' if labels else '',
              input_size='md', button_size='md', button_width='100', selected_button_icon=ICO('paper-plane'), button_icon_align='row-reverse',
-             button_icon_indent={'unit': 'px', 'size': 10}, submit_actions=['email'], email_to=to,
+             button_icon_indent={'unit': 'px', 'size': 10}, submit_actions=['save-to-database', 'email'], email_to=to,
              email_subject=subject or f'New enquiry: {name} — Pak Translations', email_content='[all-fields]',
              email_from='email@pak-translations.com', email_from_name='Pak Translations', email_reply_to='email',
-             success_message='Thank you! Your message has been sent — our team will get back to you shortly.',
+             custom_messages='yes', success_message='Thank you! Your message has been sent — our team will get back to you shortly.',
              error_message='Sorry, something went wrong. Please email us at info@pak-translations.com.',
              required_field_message='This field is required.', invalid_message='Please check the highlighted field.',
              mark_required='yes')
@@ -175,7 +178,7 @@ def faq_sec(faqs, lead='Quick answers to common questions. Still curious? Our te
 
 def cta_sec(title='Ready to Reach a Global Audience?', text='Tell us what you need translated — we will match you with the right linguist and send a free quote.', primary=('Get a Free Quote', None)):
     return sec([C([H(title, 'h2'), P(text),
-                   C([BTN(primary[0], primary[1] or U + '/your-order/', 'x-btn'), BTN('Call / WhatsApp ' + PHONE, WA, 'x-btn x-btn-ol', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')],
+                   C([BTN(primary[0], primary[1] or U + '/your-order/', 'x-btn'), BTN('Chat on WhatsApp', WA, 'x-btn x-btn-ol', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')],
                   'x-cta rv rv-s')], 'x-center x-cta-sec')
 
 def steps_sec(eb, title, lead, steps, dark=True):

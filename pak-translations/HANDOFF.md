@@ -59,3 +59,16 @@ Old home 530 is in Trash. Preview pages deleted. Spam categories deleted (11,094
 1. Create Elementor Pro header + footer theme templates from `lib.header()/footer()` with condition include/general (`elementor/v1/site-editor/templates-conditions/<id>`); remove conditions from old header 33/27 and footer 37.
 2. Copy each page body into the ORIGINAL page IDs (keeps URLs), template `elementor_header_footer`; new home → set as front page; delete old home 530 + preview pages.
 3. Set kit global fonts (Outfit/Figtree) + colours via `elementor/v1/globals/*`; set Yoast titles/descriptions; clear Elementor cache + Hostinger cache.
+
+## Round 2 fixes (2026-10-03)
+- Languages region cards: icon + title aligned, count badge inline, masonry columns (no gaps).
+- Full width: pages get Astra meta `ast-site-content-layout=full-width-container` (+ CSS fallback) — Astra's 1240px `.ast-container` was boxing the page.
+- Content container width 1440px on desktop (`.x-bx>.e-con-inner`).
+- Top bar: icons/text were clipped by inherited overflow — fixed (`.x-top *{overflow:visible}`).
+- Hero trust chips: icon left of text, even 3-column row.
+- Founder photo: background removed (rembg isnet-general-use), composited on dark brand background → media 39125 `2026/10/founder-dr-salman-riaz.jpg` (Home + About).
+- Forms: phone fields are text (Elementor tel validation rejects spaces), custom success message, `save-to-database` + email, honeypot anti-spam field. All 4 forms tested live (TEST submissions sent to info@ / hr@).
+- SEO: titles ≤ ~65 chars, descriptions ≤ ~160; OG/Twitter social title+description; share image media 39126 set as featured image on all pages (Yoast og:image); alt text added to all used media.
+- Link check: `python3 tools/linkcheck.py` — all internal links/anchors OK. Facebook/ProZ block bots (fine in browsers).
+- Hostinger CDN served a stale copy of the OLD home (with spam) at the bare URL — purge CDN in hPanel after big changes.
+- User removed the addon plugins and installed WP Mail SMTP during this round.

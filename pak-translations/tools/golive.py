@@ -3,8 +3,8 @@ usage: python3 golive.py [page names...]   (no args = templates + all pages)"""
 import json, sys, importlib, wp
 from lib import header, footer
 PAGES = {'home': 39107, 'about': 611, 'services': 673, 'languages': 633, 'samples': 988, 'career': 693, 'contact': 706, 'order': 319}
-HOME_SEO = ('Translation Services in Pakistan | Certified Translation | Pak Translations',
-            'PhD-led translation company in Pakistan offering certified document translation, localization, transcription, subtitling and interpreting in 120+ languages. Get a free quote.',
+HOME_SEO = ('Certified Translation Services in Pakistan | Pak Translations',
+            'PhD-led translation company in Pakistan: certified document translation, localization, transcription, subtitling & interpreting in 120+ languages. Free quote.',
             'translation services in Pakistan')
 names = sys.argv[1:] or list(PAGES)
 if not sys.argv[1:]:
@@ -15,7 +15,9 @@ seo = []
 for n in names:
     mod = importlib.import_module(n)
     r = wp.req(f'wp/v2/pages/{PAGES[n]}', 'POST', {'template': 'elementor_header_footer', 'status': 'publish',
-        'meta': {'_elementor_edit_mode': 'builder', '_elementor_template_type': 'wp-page', '_elementor_data': json.dumps(mod.build())}})
+        'meta': {'_elementor_edit_mode': 'builder', '_elementor_template_type': 'wp-page', '_elementor_data': json.dumps(mod.build()),
+                 'ast-site-content-layout': 'full-width-container', 'site-content-layout': 'page-builder', 'site-sidebar-layout': 'no-sidebar',
+                 'site-content-style': 'unboxed', 'site-sidebar-style': 'unboxed', 'site-post-title': 'disabled'}})
     print(n, r.get('id'), r.get('link'), r.get('_err') or '')
     t, d, k = HOME_SEO if n == 'home' else mod.SEO
     seo.append({'id': PAGES[n], 'seo_title': t, 'meta_description': d, 'focus_keyphrase': k})

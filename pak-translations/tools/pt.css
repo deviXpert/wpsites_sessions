@@ -407,3 +407,40 @@ section[id],.e-con[id]{scroll-margin-top:90px}
 @media (max-width:1024px){.x-split.x-dr,.x-split-rev.x-dr,.x-faq-wrap.x-dr{flex-direction:column!important;gap:40px!important;align-items:stretch!important}
 .x-split.x-dr>.e-con,.x-faq-wrap.x-dr>.e-con,.x-faq-wrap.x-dr>.elementor-widget{width:100%!important;max-width:100%!important;flex:0 0 auto!important;min-width:0}}
 .x-map iframe{width:100%!important;height:440px!important}@media(max-width:767px){.x-map iframe{height:320px!important}}
+/* languages: region cards (masonry, aligned header) */
+.x-regions.x-dc{display:block!important;column-count:2;column-gap:24px}
+.x-regions>.x-region{break-inside:avoid;-webkit-column-break-inside:avoid;margin:0 0 24px!important;width:100%!important;display:flex!important;flex-direction:column}
+.x-region-top{justify-content:space-between!important;align-items:center!important;gap:12px!important;padding-bottom:16px!important;border-bottom:1px solid var(--line)}
+.x-region-h .elementor-heading-title{display:flex!important;align-items:center;justify-content:flex-start!important;gap:12px;font-size:21px!important}
+.x-region-ic{width:42px;height:42px;border-radius:13px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(109,181,46,.14),rgba(248,195,0,.18));color:var(--g-d);font-size:17px;flex:0 0 42px}
+.x-region:hover .x-region-ic{background:var(--ink);color:var(--y)}
+.x-region .x-tags .elementor-icon-list-items{gap:8px}
+@media (max-width:767px){.x-regions.x-dc{column-count:1}.x-region{padding:22px!important}.x-region-h .elementor-heading-title{font-size:19px!important}}
+/* full-width pages: neutralise Astra's content container around Elementor pages */
+body.page-template-elementor_header_footer #content>.ast-container,body.page-template-elementor_header_footer .site-content>.ast-container{max-width:100%!important;width:100%!important;padding-left:0!important;padding-right:0!important;display:block}
+body.page-template-elementor_header_footer #primary{margin:0!important;padding:0!important;width:100%!important}
+/* hero trust chips: icon + text left-aligned on one row */
+.x-chip .elementor-icon-box-wrapper{display:flex!important;flex-direction:row!important;align-items:center!important;text-align:left!important;gap:12px}
+.x-chip .elementor-icon-box-content{text-align:left!important}
+@media (max-width:767px){.x-chip .elementor-icon-box-wrapper{flex-direction:row!important;align-items:center!important}.x-trust{grid-template-columns:1fr!important}}
+.x-founder-img img{background:none!important;box-shadow:var(--sh-lg);aspect-ratio:6/7;object-fit:cover}
+.x-founder-img:after{content:"";position:absolute;width:120px;height:120px;border-radius:30px;background:var(--grad);left:-18px;bottom:-18px;z-index:-1}
+.x-founder-img{isolation:isolate}
+@media (min-width:768px){.x-trust{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px!important;max-width:660px}.x-trust>.elementor-widget{width:auto!important}.x-chip{padding:12px 14px!important}.x-chip .elementor-icon-box-title{font-size:14.5px}.x-chip .elementor-icon-box-description{font-size:12.5px}}
+/* container width 1440 on desktop */
+.x-bx>.e-con-inner{max-width:1440px!important}
+.x-hero>.e-con-inner{gap:80px}
+/* top bar: never shrink icons or clip text */
+.x-top .elementor-widget{flex:0 0 auto!important;width:auto!important;max-width:none!important}
+.x-top .elementor-icon-list-item{flex:0 0 auto;display:inline-flex!important;align-items:center;gap:8px}
+.x-top .elementor-icon-list-icon{flex:0 0 auto;width:auto!important;display:inline-flex;align-items:center;justify-content:center;min-width:16px}
+.x-top .elementor-icon-list-icon i{width:auto!important;font-size:13px!important;line-height:1}
+.x-top .elementor-icon-list-text{padding-left:0!important;overflow:visible;text-overflow:clip}
+@media (max-width:1280px){.x-top .x-top-l .elementor-icon-list-item:nth-child(2){display:none!important}}
+.x-top,.x-top *{overflow:visible!important}
+.x-top .elementor-icon-list-items{margin:0!important;padding:0!important;width:max-content!important;max-width:none!important}
+.x-top .elementor-icon-list-icon{width:18px!important;min-width:18px;height:18px}
+.x-top .elementor-icon-list-icon i{width:18px!important;min-width:18px;text-align:center;font-size:14px!important;display:inline-block}
+.x-top .elementor-icon-list-icon i:before{display:inline-block}
+.x-top .elementor-icon-list-item{gap:9px!important}.x-top .elementor-icon-list-text{padding:0!important;margin:0!important}
+.x-top .elementor-icon-list-items{column-gap:28px!important}

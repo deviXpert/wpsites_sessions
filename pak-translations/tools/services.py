@@ -1,8 +1,8 @@
 """Services (page 673). Each service has an anchor (#slug) that the home/footer links point to."""
 from lib import *
 TITLE = 'Services'
-SEO = ('Translation Services in Pakistan | Localization, Transcription & More',
-       'Professional translation services in Pakistan: certified & document translation, localization, transcription, subtitling, interpreting, proofreading and DTP in 120+ languages.',
+SEO = ('Translation & Language Services in Pakistan | Pak Translations',
+       'Certified & document translation, localization, transcription, subtitling, interpreting, proofreading and DTP in 120+ languages by native linguists.',
        'translation services')
 
 DETAIL = {

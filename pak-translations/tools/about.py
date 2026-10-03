@@ -41,7 +41,7 @@ def build():
     ], 'x-band', 'row')])
 
     founder = sec([C([
-        C([IMG(UP + '2020/10/Salman-Background-Removed.png', '', 'Dr. Muhammad Salman Riaz, founder and CEO of Pak Translations')], 'x-founder-img rv rv-l'),
+        C([IMG(UP + '2026/10/founder-dr-salman-riaz.jpg', '', 'Dr. Muhammad Salman Riaz, founder and CEO of Pak Translations')], 'x-founder-img rv rv-l'),
         C([EB('Meet the Founder'), H('Dr. Muhammad <span class="x-hl">Salman Riaz</span>', 'h2', 'x-title'),
            P('Every message deserves to be understood exactly as intended — that is the standard I set for every project we deliver.', 'x-quote'),
            P('Dr. Muhammad Salman Riaz holds a Ph.D. in Translation Studies from the University of Leeds, UK and an M.Phil. in Linguistics from the National University of Modern Languages (NUML), Pakistan.'),

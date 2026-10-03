@@ -10,9 +10,9 @@ def build():
             H('Professional Translation Services in Pakistan — <span class="x-hl">Accurate, Certified &amp; On Time</span>', 'h1', 'rv'),
             P('Pak Translations is your one-stop language partner. From certified document translation for immigration to website localization, transcription and subtitling, our tested native linguists work in <strong>120+ languages</strong> — and every project is quality-checked before it reaches you.', 'x-lead rv'),
             C([BTN('Get a Free Quote', '#quote', 'x-btn', 'arrow-right'), BTN('WhatsApp Us', WA, 'x-btn x-btn-o', 'fab fa-whatsapp', False, True)], 'x-btns rv', 'row'),
-            C([IBOX('language', '120+ Languages', 'Asian, European &amp; African', 'x-chip', tag='p'),
-               IBOX('stamp', 'Certified Translation', 'Immigration, legal &amp; academic', 'x-chip', tag='p'),
-               IBOX('check-double', 'Two-Step QA', 'Every file reviewed', 'x-chip', tag='p')], 'x-trust rv', 'row'),
+            C([IBOX('language', '120+ Languages', 'Asian, European &amp; African', 'x-chip', tag='p', position='left'),
+               IBOX('stamp', 'Certified Translation', 'Immigration, legal &amp; academic', 'x-chip', tag='p', position='left'),
+               IBOX('check-double', 'Two-Step QA', 'Every file reviewed', 'x-chip', tag='p', position='left')], 'x-trust rv', 'row'),
         ], 'x-hero-copy'),
         C([H('Get a Free Quote', 'h2', 'x-card-title'),
            P("Send us your document and we'll reply with a clear, no-obligation price.", 'x-card-sub'),
@@ -102,7 +102,7 @@ def build():
     ], 'x-center')
 
     founder = sec([C([
-        C([IMG(UP + '2020/10/Salman-Background-Removed.png', '', 'Dr. Muhammad Salman Riaz, founder of Pak Translations', 'large')], 'x-founder-img rv rv-l'),
+        C([IMG(UP + '2026/10/founder-dr-salman-riaz.jpg', '', 'Dr. Muhammad Salman Riaz, founder of Pak Translations', 'large')], 'x-founder-img rv rv-l'),
         C([EB('Meet the Founder'), H('Led by <span class="x-hl">Dr. Muhammad Salman Riaz</span>', 'h2', 'x-title'),
            P('Pak Translations was founded on commitment, honesty, perseverance and simplicity — and on the belief that every message deserves to be understood exactly as intended.', 'x-quote'),
            P('Dr. Riaz holds a Ph.D. in Translation Studies from the University of Leeds, UK and an M.Phil. in Linguistics from the National University of Modern Languages, Pakistan. With over a decade of experience in translation, localization, QA, transcription, subtitling and language-test development, he personally oversees the quality of our work.'),
@@ -146,7 +146,7 @@ def build():
 
     cta = sec([C([H('Ready to Reach a Global Audience?', 'h2'),
                   P('Tell us what you need translated — we will match you with the right linguist and send a free quote.'),
-                  C([BTN('Get a Free Quote', '#quote', 'x-btn'), BTN('Call / WhatsApp ' + PHONE, WA, 'x-btn x-btn-ol', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')], 'x-cta rv rv-s')], 'x-center x-cta-sec')
+                  C([BTN('Get a Free Quote', '#quote', 'x-btn'), BTN('Chat on WhatsApp', WA, 'x-btn x-btn-ol', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')], 'x-cta rv rv-s')], 'x-center x-cta-sec')
 
     ld = {'@context': 'https://schema.org', '@type': 'ProfessionalService', '@id': U + '/#business', 'name': 'Pak Translations', 'url': U + '/',
           'logo': LOGO, 'image': LOGO, 'description': 'Professional and certified translation services in Pakistan: document translation, localization, transcription, subtitling, interpreting and DTP in 120+ languages.',

@@ -31,10 +31,11 @@ def build():
     total = len({l.lower() for v in R.values() for l in v})
     hero = phero('Languages', 'Languages We Translate: <span class="x-hl">120+ Languages</span> &amp; Dialects',
                  'From Urdu, Punjabi and Pashto to Arabic, Chinese, French and Swahili — our native linguists cover major world languages and rare regional ones across Asia, Europe and Africa.')
-    cards = [C([H(f'<i class="fas fa-{ICONS[r]}" aria-hidden="true"></i>&nbsp; {NAMES.get(r, r)}', 'h2', 'x-region-h'), P(f'{len(R[r])} language{"s" if len(R[r]) > 1 else ""}', 'x-count'),
+    cards = [C([C([H(f'<span class="x-region-ic"><i class="fas fa-{ICONS[r]}" aria-hidden="true"></i></span>{NAMES.get(r, r)}', 'h2', 'x-region-h'),
+                   P(f'{len(R[r])} language{"s" if len(R[r]) > 1 else ""}', 'x-count')], 'x-region-top', 'row'),
                 ILIST([(l,) for l in R[r]], 'x-tags')], 'x-region') for r in ORDER if r in R]
     grid = sec([head('Coverage by Region', 'Asian, European &amp; <span class="x-hl">African Languages</span>', 'Every language below is handled by native-speaker linguists who have passed our skills test.'),
-                C(cards, 'x-g2 x-regions rv-st', 'grid')], 'x-bg')
+                C(cards, 'x-regions rv-st', 'col')], 'x-bg')
     pairs = ['Urdu to English', 'English to Urdu', 'Punjabi to English', 'Pashto to English', 'Arabic to English', 'English to Arabic', 'Persian to English', 'Sindhi to English',
              'German to English', 'French to English', 'Chinese to English', 'English to Spanish', 'German to Urdu', 'French to Arabic', 'Balochi to English', 'Hindi to English']
     pair_sec = sec([split(

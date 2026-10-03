@@ -2,7 +2,7 @@
 from lib import *
 TITLE = 'Samples'
 SEO = ('Translation Sample Projects & Case Studies | Pak Translations',
-       'See real translation projects by Pak Translations: Urdu localization for a mobile brand, Punjabi healthcare website, legal translation, Balochi & Mongolian AV translation and subtitling.',
+       'Real projects by Pak Translations: Urdu localization for a mobile brand, Punjabi healthcare website, legal translation, Balochi AV translation and subtitling.',
        'translation sample projects')
 
 CASES = [

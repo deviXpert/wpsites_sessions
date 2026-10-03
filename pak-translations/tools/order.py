@@ -2,7 +2,7 @@
 from lib import *
 TITLE = 'Place Your Order'
 SEO = ('Order Translation Online | Free Quote | Pak Translations',
-       'Place your translation order online: upload documents, choose source and target languages and set your deadline. Certified and professional translation in 120+ languages.',
+       'Order translation online: upload your documents, choose languages and set a deadline. Certified, professional translation in 120+ languages. Free quote.',
        'order translation online')
 
 def build():
