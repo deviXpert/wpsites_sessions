@@ -43,7 +43,7 @@ Site: **https://pak-translations.com** (LIVE) — WordPress + Astra child + Elem
 
 All pages use template `elementor_header_footer`; each has one H1, Yoast title/description/focus keyphrase, and FAQ schema where there is an FAQ.
 Elementor globals set: colours (#6DB52E, #0B1A10, #4A5560, #F8C300), fonts (Outfit headings, Figtree text).
-Old home 530 is in Trash. Preview pages deleted. Spam categories deleted (only Uncategorized left).
+Old home 530 is in Trash. Preview pages deleted. Spam categories deleted (11,094 removed; only Uncategorized left). Duplicate kits deleted.
 
 ## Updating pages
 - Edit the module (`tools/<page>.py`, `lib.py`, `pt.css`), then `python3 tools/golive.py <page>` (no args = header/footer + all pages). It also sets Yoast meta and clears the Elementor cache (needed — element cache serves stale HTML otherwise).
@@ -52,7 +52,7 @@ Old home 530 is in Trash. Preview pages deleted. Spam categories deleted (only U
 ## Remaining recommendations for the user
 - Security: change WP admin + hosting passwords, update plugins, re-enable Wordfence & scan (spam injection source likely still present).
 - Addons (Master Addons, PowerPack, Premium Addons, Transition Slider, Sticky Header Effects) are unused by the new design and can be deactivated/deleted; re-check pages afterwards.
-- ~37 duplicate "Default Kit" posts (active kit 26951) can be cleaned up.
+- Duplicate "Default Kit" posts: DELETED (37 removed; only the active kit 26951 remains). Elementor kits need `force_delete_kit=1` on REST DELETE.
 - Purge Hostinger cache after changes.
 
 ## Go-live plan (DONE — kept for reference)
