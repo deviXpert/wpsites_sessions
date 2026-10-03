@@ -151,3 +151,33 @@ def footer():
     bot = C([P('© 2026 Pak Translations. All rights reserved.'), P('Powered by <a href="https://hafizahsanali.com" target="_blank" rel="noopener">hafizahsanali.com</a>', 'x-credit')], 'x-fbot', 'row', box=True)
     wa = W('icon', 'x-wa', selected_icon=ICO('fab fa-whatsapp'), link=LNK(WA, True), view='default', **{'_attributes': ''})
     return C([cta, grid, bot, wa], 'x-ftr')
+
+# ---------- shared page sections ----------
+def phero(crumb, h1, lead, btns=None):
+    """Inner-page hero with breadcrumb + the page's single H1."""
+    els = [P(f'<a href="{U}/">Home</a> &nbsp;/&nbsp; {crumb}', 'x-crumbs rv'), H(h1, 'h1', 'rv'), P(lead, 'x-lead rv')]
+    if btns is None:
+        btns = [BTN('Get a Free Quote', U + '/your-order/', 'x-btn'), BTN('WhatsApp Us', WA, 'x-btn x-btn-o', 'fab fa-whatsapp', False, True)]
+    if btns: els.append(C(btns, 'x-btns rv', 'row'))
+    return C(els, 'x-phero x-center', box=True)
+
+def split(media, copy_els, rev=False, cls=''):
+    """media: list of widgets for the media column; copy_els: widgets for the text column."""
+    return C([C(media, 'x-media rv ' + ('rv-r' if rev else 'rv-l')), C(copy_els, 'x-split-copy rv')],
+             'x-split' + (' x-split-rev' if rev else '') + (' ' + cls if cls else ''), 'row')
+
+def faq_sec(faqs, lead='Quick answers to common questions. Still curious? Our team replies fast on WhatsApp.', title='Frequently Asked <span class="x-hl">Questions</span>', bg=''):
+    return sec([C([
+        C([EB('FAQs'), H(title, 'h2', 'x-title'), P(lead, 'x-lead'), BTN('Ask on WhatsApp', WA, 'x-btn x-btn-g', 'fab fa-whatsapp', False, True)], 'x-faq-side rv'),
+        W('accordion', 'x-faq rv', tabs=[{'_id': rid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs], faq_schema='yes', title_html_tag='h3',
+          selected_icon=ICO('plus'), selected_active_icon=ICO('minus'), icon_align='right'),
+    ], 'x-faq-wrap', 'row')], bg)
+
+def cta_sec(title='Ready to Reach a Global Audience?', text='Tell us what you need translated — we will match you with the right linguist and send a free quote.', primary=('Get a Free Quote', None)):
+    return sec([C([H(title, 'h2'), P(text),
+                   C([BTN(primary[0], primary[1] or U + '/your-order/', 'x-btn'), BTN('Call / WhatsApp ' + PHONE, WA, 'x-btn x-btn-ol', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')],
+                  'x-cta rv rv-s')], 'x-center x-cta-sec')
+
+def steps_sec(eb, title, lead, steps, dark=True):
+    s = sec([head(eb, title, lead), C([IBOX(i, t, d, 'x-step', tag='h3') for i, t, d in steps], f'x-steps x-g{3 if len(steps) % 3 == 0 else 4} rv-st', 'grid')])
+    return C([s], 'x-dark') if dark else s

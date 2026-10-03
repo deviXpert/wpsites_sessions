@@ -1,7 +1,7 @@
 """Rebuild and update LIVE pages in place (data only; title/slug/status untouched). usage: python3 publish_live.py home"""
 import json, sys, importlib, wp
 from lib import header, footer
-LIVE = {'home': (39107, True)}   # name -> (page id, embeds header/footer (Canvas template))
+LIVE = {'home': (39107, False), 'about': (611, False), 'services': (673, False), 'languages': (633, False), 'samples': (988, False), 'career': (693, False), 'contact': (706, False), 'order': (319, False)}   # name -> (page id, embeds header/footer)
 for name in sys.argv[1:]:
     pid, embed = LIVE[name]
     body = importlib.import_module(name).build()

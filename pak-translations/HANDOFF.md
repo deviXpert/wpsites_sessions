@@ -27,14 +27,35 @@ Site: **https://pak-translations.com** (LIVE) — WordPress + Astra child + Elem
 - `python3 tools/push_preview.py home` — pushes `/redesign-preview-<name>/` (published, **password-protected**, Canvas template with header/footer embedded) and clears Elementor cache (element cache otherwise serves stale HTML). Preview IDs + password in git-ignored `tools/preview_state.json`.
 - Screenshots: `node tools/shot.js <url> prev/name <password>` then `python3 tools/slice.py prev/name_d.png`.
 
-## Status
-| Item | ID | Status |
+## Status — ALL PAGES LIVE (2026-10-03)
+| Page | ID | URL |
 |---|---|---|
-| **New home (LIVE front page)** | 39107 | approved & live (Canvas template, header/footer embedded). Update with `python3 tools/publish_live.py home` — NOT push_preview.py |
-| Old home | 530 | moved to Trash (slug now home__trashed; /home/ 301s to /) |
-| About, Services, Languages, Samples, Career, Contact, Your Order | 611, 673, 633, 988, 693, 706, 319 | to redesign next |
+| Home (front page) | 39107 | / |
+| About | 611 | /about-us/ |
+| Services (11 anchored sections, e.g. /services/#certified-translation) | 673 | /services/ |
+| Languages | 633 | /languages/ |
+| Samples | 988 | /sample/ |
+| Career (Elementor form → info@) | 693 | /career/ |
+| Contact (Elementor form → hr@, Google map) | 706 | /contact-us/ |
+| Your Order (Elementor form → info@) | 319 | /your-order/ |
+| Header template (site-wide, holds CSS/JS/fonts) | 33 | include/general |
+| Footer template (site-wide, "Powered by hafizahsanali.com") | 37 | include/general |
 
-## Go-live plan (after approval)
+All pages use template `elementor_header_footer`; each has one H1, Yoast title/description/focus keyphrase, and FAQ schema where there is an FAQ.
+Elementor globals set: colours (#6DB52E, #0B1A10, #4A5560, #F8C300), fonts (Outfit headings, Figtree text).
+Old home 530 is in Trash. Preview pages deleted. Spam categories deleted (only Uncategorized left).
+
+## Updating pages
+- Edit the module (`tools/<page>.py`, `lib.py`, `pt.css`), then `python3 tools/golive.py <page>` (no args = header/footer + all pages). It also sets Yoast meta and clears the Elementor cache (needed — element cache serves stale HTML otherwise).
+- For a risky change, preview first: `python3 tools/push_preview.py <page>` (password page), then delete the preview.
+
+## Remaining recommendations for the user
+- Security: change WP admin + hosting passwords, update plugins, re-enable Wordfence & scan (spam injection source likely still present).
+- Addons (Master Addons, PowerPack, Premium Addons, Transition Slider, Sticky Header Effects) are unused by the new design and can be deactivated/deleted; re-check pages afterwards.
+- ~37 duplicate "Default Kit" posts (active kit 26951) can be cleaned up.
+- Purge Hostinger cache after changes.
+
+## Go-live plan (DONE — kept for reference)
 1. Create Elementor Pro header + footer theme templates from `lib.header()/footer()` with condition include/general (`elementor/v1/site-editor/templates-conditions/<id>`); remove conditions from old header 33/27 and footer 37.
 2. Copy each page body into the ORIGINAL page IDs (keeps URLs), template `elementor_header_footer`; new home → set as front page; delete old home 530 + preview pages.
 3. Set kit global fonts (Outfit/Figtree) + colours via `elementor/v1/globals/*`; set Yoast titles/descriptions; clear Elementor cache + Hostinger cache.
