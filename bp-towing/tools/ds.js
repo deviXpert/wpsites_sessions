@@ -25,6 +25,10 @@
     var cnt = d.querySelectorAll('.bp-count[data-to]');
     var run = function (el) { var to = +el.getAttribute('data-to'), t0 = null, dur = 1800; var step = function (t) { if (!t0) t0 = t; var p = Math.min((t - t0) / dur, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step) }; el.textContent = '0'; requestAnimationFrame(step) };
     if (!reduce && 'IntersectionObserver' in window) { var co = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { run(e.target); co.unobserve(e.target) } }) }, { threshold: .6 }); cnt.forEach(function (e) { co.observe(e) }) }
+    // active state for custom mega nav
+    var here = location.pathname.replace(/\/+$/, '/') || '/';
+    d.querySelectorAll('.bp-mlink a').forEach(function (a) { try { var p = new URL(a.href).pathname; if (p === here || (p !== '/' && here.indexOf(p) === 0)) a.classList.add('is-active') } catch (e) {} });
+    d.querySelectorAll('.bp-mega-link a').forEach(function (a) { try { if (new URL(a.href).pathname === here) { var m = d.querySelector('.bp-has-mega .bp-mlink a'); if (m) m.classList.add('is-active') } } catch (e) {} });
     // mark linked service cards
     d.querySelectorAll('.bp-card').forEach(function (c) { if (c.querySelector('a[href]')) c.classList.add('bp-linked') });
     if (reduce || !fine) return;

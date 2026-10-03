@@ -1,6 +1,15 @@
 {
  "drafts": {
-  "home": 4478
+  "home": 4478,
+  "svc-roadside": 4491,
+  "svc-jumpstart": 4492,
+  "svc-fuel": 4493,
+  "svc-tire": 4494,
+  "svc-winch": 4495,
+  "svc-auto": 4496,
+  "svc-hauling": 4497,
+  "svc-moto": 4498,
+  "svc-special": 4499
  },
  "templates": {
   "stats": 4477,

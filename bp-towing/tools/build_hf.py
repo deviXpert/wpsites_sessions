@@ -8,10 +8,9 @@ def header():
              ICONLIST([{'text': '(403) 991-2265', 'icon': ICO('phone-alt'), 'link': TEL}], '', view='inline')],
             'bp-topbar', boxed=True, row=True, css_classes='bp-topbar bp-row bp-keep bp-between bp-center')
     main = C([W('image', 'bp-logo bp-auto', image=img(2276), image_size='medium', link_to='custom', link=LINK(SITE + '/')),
-              W('nav-menu', 'bp-nav', menu='menu-1', layout='horizontal', align_items='center', pointer='none',
-                submenu_icon={'value': 'fas fa-chevron-down', 'library': 'fa-solid'}, dropdown='tablet', toggle='burger', full_width='stretch',
-                text_align='aside'),
-              BTN('Call For a Tow', TEL, 'bp-btn bp-hdr-cta bp-auto', icon='phone-alt')],
+              mega_menu(),
+              BTN('Call For a Tow', TEL, 'bp-btn bp-hdr-cta bp-auto', icon='phone-alt'),
+              mobile_menu()],
              'bp-mainbar', boxed=True, row=True, css_classes='bp-mainbar bp-row bp-keep bp-between bp-center bp-g24')
     return [SEC([HTML(assets_html(), 'bp-assets'), top, main], 'bp-header', boxed=False)]
 
@@ -20,6 +19,37 @@ def assets_html():
     return ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
             '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400..800&display=swap">'
             f'<style id="bp-ds">{css}</style><script id="bp-ds-js">{js}</script>')
+
+SERVICES = [('Auto Towing', '/auto-towing-calgary/', 'truck'), ('Roadside Assistance', '/roadside-assistance/', 'road'),
+            ('Flat Tire Change or Replacement', '/flat-tire-change-or-replacement/', 'tools'), ('Fuel Delivery', '/fuel-delivery/', 'gas-pump'),
+            ('Vehicle Jump Start', '/vehicle-jump-start-calgary/', 'car-battery'), ('Winch Out Service', '/winch-out-service-calgary/', 'link'),
+            ('Local Hauling', '/local-hauling/', 'truck-loading'), ('Motorcycle Towing', '/motorcycle-towing/', 'motorcycle'),
+            ('Special Vehicle Towing', '/special-vehicle-towing/', 'car-side')]
+MENU = [('Home', '/'), ('Services', '/services/'), ('About Us', '/about-us/'), ('FAQ', '/faq/'), ('Contact', '/contact/'), ('Blog', '/blog/')]
+
+def mega_menu():
+    """Desktop mega menu built from native containers/widgets (same items & link targets as WP menu 'Menu 1').
+    Services panel opens on hover / keyboard focus (CSS :hover/:focus-within). Hidden on tablet/mobile."""
+    items = []
+    for title, path in MENU:
+        link = W('heading', 'bp-mlink', title=title, header_size='div', link=LINK(SITE + path))
+        if title != 'Services':
+            items.append(C([link], 'bp-mitem')); continue
+        feature = C([W('heading', 'bp-h', title='Services', header_size='div', link=LINK(SITE + path)),
+                     BTN('Call For a Tow', TEL, 'bp-btn', icon='phone-alt')],
+                    'bp-mega-feature', background_background='classic', background_image=img(4333),
+                    background_size='cover', background_position='center center')
+        links = [W('icon-box', 'bp-mega-link', selected_icon=ICO(ic), title_text=t, description_text='', title_size='div', link=LINK(SITE + u), position='left')
+                 for t, u, ic in SERVICES]
+        panel = C([C([feature, C(links, 'bp-mega-grid')], 'bp-mega-inner', row=True, css_classes='bp-mega-inner bp-row')], 'bp-mpanel')
+        items.append(C([link, panel], 'bp-mitem bp-has-mega'))
+    return C(items, 'bp-mnav', row=True, css_classes='bp-mnav bp-row bp-keep bp-center', hide_tablet='hidden-tablet', hide_mobile='hidden-mobile')
+
+def mobile_menu():
+    """Elementor Pro Nav Menu in dropdown-only layout for tablet/mobile (uses WP menu 'Menu 1')."""
+    return W('nav-menu', 'bp-nav bp-mobnav bp-auto', menu='menu-1', layout='dropdown', toggle='burger', full_width='stretch',
+             submenu_icon={'value': 'fas fa-chevron-down', 'library': 'fa-solid'}, toggle_icon_normal=ICO('bars'), toggle_icon_active=ICO('times'),
+             hide_desktop='hidden-desktop', toggle_align='right')
 
 def footer():
     seed('footer')

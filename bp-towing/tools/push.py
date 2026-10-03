@@ -67,6 +67,13 @@ def clear_cache(): print('cache', wp.req('elementor/v1/cache', 'DELETE'))
 
 if __name__ == '__main__':
     what = sys.argv[1:]
+    if 'svc' in what:
+        import build_service as bs
+        bs.STATS_ID = st['templates']['stats']
+        from lib import PAGES
+        for pid, key in bs.SVC.items():
+            d = draft_page('svc-' + key, PAGES[pid]['title']['raw'] + ' — Redesign Draft', page(bs.build(pid)), template='elementor_canvas')
+            print('svc draft', key, d)
     if 'assets' in what or 'home' in what: assets()
     if 'home' in what:
         import build_home as bh

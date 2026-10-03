@@ -25,3 +25,9 @@ Site: **https://bptowingservice.ca/** (WordPress + "cartow" theme w/ Redux heade
 - Every build is checked with `verify.py` (all original text + link targets must be present; no new links).
 - Next: user review of Home → then About, Services, Contact, FAQ, 9 service pages, Thank You, Blog, 15 posts. Launch = copy draft `_elementor_data` into the original page IDs + set template to elementor_canvas.
 - Yoast SEO copied from Home (26) to draft 4478 via `yoast/v1/bulk_editor/update_search` (SEO title, meta description, focus keyphrase); all other Yoast fields already identical (verified field-by-field via MCP `yoast-seo/get-post-seo-data`). MCP `yoast-seo/update-post-seo-data` can't set title/description — use the bulk-editor route. At launch the data is copied INTO page 26, so the original metas are never touched.
+
+## Session 3 (service pages + mega menu)
+- User published Home draft 4478 as front page and trashed old Home 26 (their action). Menu item "Home" still points to trashed 26 → hidden in menus; needs repoint to 4478 (blocked: needs user OK for live change).
+- Header 4486 now has a custom mega menu (native containers; Pro "Menu" widget experiment is OFF on this site so `mega-menu` widgets are silently dropped) + Pro nav-menu (dropdown layout) for tablet/mobile. LIVE header currently shows Elementor's lorem description in the Services panel — fix (description_text='') is built but NOT pushed (live change blocked pending user approval).
+- 9 service page drafts 4491–4499 built by `build_service.py` (verify.py: 0 missing text/links; Yoast copied). Go-live plan: write each draft's `_elementor_data` into the original page ID + template elementor_canvas (keeps URL + metas), page by page, screenshot live after each.
+- preview.py now uses the live (canvas) home as shell.
