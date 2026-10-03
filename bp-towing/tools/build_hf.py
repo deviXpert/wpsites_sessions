@@ -16,7 +16,12 @@ def header():
 
 def assets_html():
     css = open(os.path.join(HERE, 'ds.css')).read(); js = open(os.path.join(HERE, 'ds.js')).read()
-    return ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+    E = 'https://bptowingservice.ca/wp-content/plugins/elementor/assets/css/'
+    EP = 'https://bptowingservice.ca/wp-content/plugins/elementor-pro/assets/css/'
+    early = ''.join(f'<link rel="stylesheet" href="{u}">' for u in (
+        EP + 'widget-nav-menu.min.css?ver=4.3.0', E + 'widget-icon-list.min.css?ver=4.3.3',
+        E + 'widget-icon-box.min.css?ver=4.3.3', E + 'widget-social-icons.min.css?ver=4.3.3'))
+    return (early + '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
             '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400..800&display=swap">'
             f'<style id="bp-ds">{css}</style><script id="bp-ds-js">{js}</script>')
 

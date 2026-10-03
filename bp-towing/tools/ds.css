@@ -713,3 +713,20 @@ body.single-post{background:var(--bp-bg)}
  .bp-hdr-cta .elementor-button-icon{display:inline-flex!important;align-items:center;line-height:1}
  .bp-hdr-cta .elementor-button-icon svg{width:18px;height:18px;display:block}
 }
+/* FOUC guards: header icons + mobile dropdown before Elementor widget CSS arrives */
+.bp-header .e-font-icon-svg{width:1em;height:1em}
+.bp-header .elementor-menu-toggle svg,.bp-header .elementor-menu-toggle i{width:20px;height:20px;font-size:20px}
+.bp-header .sub-arrow svg{width:12px;height:12px}
+.bp-mobnav .elementor-nav-menu--dropdown.elementor-nav-menu__container{max-height:0;overflow:hidden;transform:scaleY(0);transform-origin:top}
+.bp-mobnav .elementor-menu-toggle.elementor-active+.elementor-nav-menu__container{max-height:100vh;transform:scaleY(1)}
+.bp-mobnav .elementor-menu-toggle .e-close,.bp-mobnav .elementor-menu-toggle:not(.elementor-active) .elementor-menu-toggle__icon--close{display:none}
+.bp-mobnav .elementor-menu-toggle.elementor-active .elementor-menu-toggle__icon--open{display:none}
+.bp-mobnav .elementor-menu-toggle.elementor-active .elementor-menu-toggle__icon--close{display:inline-flex}
+@media (min-width:1025px){.bp-mobnav{display:none!important}}
+@media (max-width:1024px){.bp-mnav{display:none!important}}
+.bp-mobnav .elementor-nav-menu--dropdown.elementor-nav-menu__container{background:#0A1430!important}
+.elementor-location-header .bp-mobnav .elementor-nav-menu--dropdown.elementor-nav-menu__container{background:#fff!important;border-color:var(--bp-line)!important}
+.elementor-location-header .bp-mobnav .elementor-nav-menu--dropdown a{color:var(--bp-head)!important}
+.elementor-location-header .bp-mobnav .elementor-nav-menu--dropdown .sub-menu a{color:var(--bp-text)!important}
+.elementor-location-header .bp-mobnav .elementor-nav-menu--dropdown a:hover,.elementor-location-header .bp-mobnav .elementor-nav-menu--dropdown a.highlighted{background:var(--bp-bg)!important}
+.elementor-location-header .bp-mobnav .sub-arrow svg{fill:var(--bp-head)!important}
