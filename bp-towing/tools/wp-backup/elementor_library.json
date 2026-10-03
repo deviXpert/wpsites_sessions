@@ -1,0 +1,2063 @@
+[
+ {
+  "id": 4074,
+  "date": "2026-04-27T15:11:25",
+  "date_gmt": "2026-04-27T15:11:25",
+  "guid": {
+   "rendered": "https://bptowingservice.ca/?post_type=elementor_library&#038;p=4074",
+   "raw": "https://bptowingservice.ca/?post_type=elementor_library&#038;p=4074"
+  },
+  "modified": "2026-09-07T10:55:10",
+  "modified_gmt": "2026-09-07T16:55:10",
+  "password": "",
+  "slug": "single-blog-post",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=single-blog-post",
+  "title": {
+   "raw": "Single Blog Post",
+   "rendered": "Single Blog Post"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "single-post",
+   "_elementor_data": "[{\"id\":\"dcb76ef\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_gap\":{\"unit\":\"px\",\"size\":20,\"column\":\"20\",\"row\":\"10\"},\"padding\":{\"unit\":\"px\",\"top\":\"60\",\"right\":\"10\",\"bottom\":\"60\",\"left\":\"01\",\"isLinked\":false}},\"elements\":[{\"id\":\"1baf5a5\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":70}},\"elements\":[{\"id\":\"b6ce030\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>Technology<\\/p>\",\"align\":\"start\",\"paragraph_spacing\":{\"unit\":\"px\",\"size\":0,\"sizes\":[]},\"text_color\":\"#FFFFFF\",\"_padding\":{\"unit\":\"px\",\"top\":\"5\",\"right\":\"15\",\"bottom\":\"5\",\"left\":\"15\",\"isLinked\":false},\"_flex_align_self\":\"flex-start\",\"_background_background\":\"classic\",\"_border_radius\":{\"unit\":\"px\",\"top\":\"6\",\"right\":\"6\",\"bottom\":\"6\",\"left\":\"6\",\"isLinked\":true},\"__dynamic__\":{\"editor\":\"[elementor-tag id=\\\"c2ace3f\\\" name=\\\"post-terms\\\" settings=\\\"%7B%22taxonomy%22%3A%22category%22%2C%22separator%22%3A%22%2C%20%22%2C%22link%22%3A%22%22%7D\\\"]\"},\"_background_color_stop_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_color_stop_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_color_b_stop_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_color_b_stop_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_gradient_angle_tablet\":{\"unit\":\"deg\",\"size\":\"\",\"sizes\":[]},\"_background_gradient_angle_mobile\":{\"unit\":\"deg\",\"size\":\"\",\"sizes\":[]},\"_background_hover_color_stop_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_hover_color_stop_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_hover_color_b_stop_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_hover_color_b_stop_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_hover_gradient_angle_tablet\":{\"unit\":\"deg\",\"size\":\"\",\"sizes\":[]},\"_background_hover_gradient_angle_mobile\":{\"unit\":\"deg\",\"size\":\"\",\"sizes\":[]},\"__globals__\":{\"_background_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"690019c\",\"elType\":\"widget\",\"settings\":{\"__dynamic__\":{\"image\":\"[elementor-tag id=\\\"\\\" name=\\\"post-featured-image\\\" settings=\\\"%7B%22fallback%22%3A%7B%22url%22%3A%22%22%2C%22id%22%3A%22%22%2C%22size%22%3A%22%22%7D%7D\\\"]\"},\"image_size\":\"full\",\"width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_border_radius\":{\"unit\":\"px\",\"top\":\"12\",\"right\":\"12\",\"bottom\":\"12\",\"left\":\"12\",\"isLinked\":true},\"_padding\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"0\",\"bottom\":\"20\",\"left\":\"0\",\"isLinked\":false},\"image\":{\"id\":4076,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/04\\/placeholder-1.png\"},\"image_custom_dimension\":{\"width\":\"1000\",\"height\":\"450\"},\"height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"height_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"height_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"object-fit\":\"cover\",\"object-fit_tablet\":\"cover\",\"object-position_mobile\":\"center center\"},\"elements\":[],\"widgetType\":\"theme-post-featured-image\"},{\"id\":\"a725624\",\"elType\":\"widget\",\"settings\":{\"icon_list\":[{\"selected_icon\":{\"value\":\"fas fa-calendar\",\"library\":\"fa-solid\"},\"_id\":\"8ed390d\",\"custom_date_format\":\"F j, Y\",\"custom_time_format\":\"g:i a\"},{\"type\":\"time\",\"selected_icon\":{\"value\":\"far fa-clock\",\"library\":\"fa-regular\"},\"_id\":\"985f96b\",\"custom_date_format\":\"F j, Y\",\"custom_time_format\":\"g:i a\"}],\"__globals__\":{\"text_color\":\"globals\\/colors?id=text\"}},\"elements\":[],\"widgetType\":\"post-info\"},{\"id\":\"26f97e6\",\"elType\":\"widget\",\"settings\":{\"__dynamic__\":{\"title\":\"[elementor-tag id=\\\"\\\" name=\\\"post-title\\\" settings=\\\"%7B%22before%22%3A%22%22%2C%22after%22%3A%22%22%2C%22fallback%22%3A%22%22%7D\\\"]\"},\"title\":\"Add Your Heading Text Here\",\"typography_typography\":\"custom\",\"typography_font_size\":{\"unit\":\"px\",\"size\":34,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"em\",\"size\":1.2,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"theme-post-title\"},{\"id\":\"c935010\",\"elType\":\"widget\",\"settings\":{\"typography_typography\":\"custom\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"custom_css\":\"h2 {\\n    font-size: 28px;\\n}\"},\"elements\":[],\"widgetType\":\"theme-post-content\"}],\"isInner\":true},{\"id\":\"2e45d02\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":30},\"sticky\":\"top\",\"sticky_on\":[\"desktop\",\"tablet\"],\"sticky_offset\":120,\"sticky_parent\":\"yes\"},\"elements\":[{\"id\":\"a1e3341\",\"elType\":\"widget\",\"settings\":{\"title\":\"Recent Post\",\"header_size\":\"span\",\"typography_typography\":\"custom\",\"typography_font_size\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"typography_font_weight\":\"600\"},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"c6f6377\",\"elType\":\"widget\",\"settings\":{\"count_items\":6,\"type\":\"list\",\"thumb_size\":\"full\",\"image_width\":{\"unit\":\"px\",\"size\":100,\"sizes\":[]},\"image_width_mobile\":{\"unit\":\"px\",\"size\":100,\"sizes\":[]},\"show_author\":\"\",\"show_short_desc\":\"\",\"__globals__\":{\"bullet_color_active\":\"globals\\/colors?id=secondary\"},\"filter_buttons\":\"\",\"title_typography\":\"custom\",\"title_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"pt-blog\"},{\"id\":\"5c0d1d1\",\"elType\":\"widget\",\"settings\":{\"title\":\"Get Immediate Towing\",\"header_size\":\"span\",\"typography_typography\":\"custom\",\"typography_font_size\":{\"unit\":\"px\",\"size\":29,\"sizes\":[]},\"typography_font_weight\":\"600\",\"_margin\":{\"unit\":\"px\",\"top\":\"40\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"124df44\",\"elType\":\"widget\",\"settings\":{\"form_name\":\"form\",\"form_fields\":[{\"custom_id\":\"name\",\"placeholder\":\"Full Name *\",\"dynamic\":{\"active\":true},\"_id\":\"1b7e382\",\"required\":\"true\"},{\"_id\":\"cffe91a\",\"field_type\":\"tel\",\"placeholder\":\"Phone Number *\",\"required\":\"true\",\"custom_id\":\"field_cffe91a\",\"width_tablet\":\"100\"},{\"_id\":\"e8afa88\",\"field_type\":\"email\",\"placeholder\":\"Email*\",\"required\":\"true\",\"custom_id\":\"field_e8afa88\",\"width_tablet\":\"100\"},{\"_id\":\"811c06e\",\"placeholder\":\" Location \\/ Street Address *\",\"custom_id\":\"field_811c06e\",\"width_tablet\":\"100\"},{\"_id\":\"6af6db6\",\"placeholder\":\"Service Needed * (Roadside \\/ Towing \\/ Accident \\/ Other)\",\"custom_id\":\"field_6af6db6\",\"width_tablet\":\"100\"}],\"input_size\":\"md\",\"mark_required\":\"yes\",\"button_size\":\"md\",\"step_next_label\":\"Next\",\"step_previous_label\":\"Previous\",\"button_text\":\"Submit\",\"email_to\":\"bptowings@gmail.com, ahsanhashmi1925@gmail.com\",\"email_subject\":\"New message from \\\"BP Towing Service\\\"\",\"email_content\":\"[all-fields]\",\"email_from\":\"\",\"email_from_name\":\"BP Towing Service\",\"email_to_2\":\"ahsanhashmi1925@gmail.com\",\"email_subject_2\":\"New message from \\\"GW Cash For Cars\\\"\",\"email_content_2\":\"[all-fields]\",\"email_from_2\":\"email@gwcashforcars.ca\",\"email_from_name_2\":\"GW Cash For Cars\",\"email_reply_to_2\":\"ahsanhashmi1925@gmail.com\",\"mailchimp_fields_map\":[],\"drip_fields_map\":[],\"activecampaign_fields_map\":[],\"getresponse_fields_map\":[],\"convertkit_fields_map\":[],\"mailerlite_fields_map\":[],\"success_message\":\"Your submission was successful.\",\"error_message\":\"Your submission failed because of an error.\",\"server_message\":\"Your submission failed because of a server error.\",\"invalid_message\":\"Your submission failed because the form is invalid.\",\"required_field_message\":\"This field is required.\",\"column_gap\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"row_gap\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"field_text_color\":\"#000000\",\"field_typography_typography\":\"custom\",\"field_typography_font_family\":\"Poppins\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"field_typography_font_weight\":\"400\",\"field_background_color\":\"#FAFAFA\",\"field_border_color\":\"#E9E9E9\",\"field_border_radius\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"10\",\"bottom\":\"10\",\"left\":\"10\",\"isLinked\":true},\"button_align\":\"start\",\"__globals__\":{\"button_background_color\":\"globals\\/colors?id=secondary\",\"_background_color\":\"\",\"field_background_color\":\"\"},\"button_background_color\":\"#C81E1E\",\"_padding\":{\"unit\":\"px\",\"top\":\"40\",\"right\":\"40\",\"bottom\":\"40\",\"left\":\"40\",\"isLinked\":true},\"_background_background\":\"classic\",\"_background_color\":\"#FFFFFF\",\"_border_radius\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"10\",\"bottom\":\"10\",\"left\":\"10\",\"isLinked\":true},\"button_width_tablet\":\"100\",\"_padding_mobile\":{\"unit\":\"px\",\"top\":\"30\",\"right\":\"10\",\"bottom\":\"30\",\"left\":\"10\",\"isLinked\":false},\"submit_actions\":[\"save-to-database\",\"email\",\"redirect\"],\"redirect_to\":\"https:\\/\\/bptowingservice.ca\\/thank-you\",\"form_metadata\":[\"date\",\"time\",\"page_url\",\"remote_ip\"],\"_border_border\":\"solid\",\"_border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":true},\"_border_color\":\"#C6C6C6\",\"email_reply_to\":\"field_e8afa88\"},\"elements\":[],\"widgetType\":\"global\",\"templateID\":\"3358\"}],\"isInner\":true}],\"isInner\":false}]",
+   "_elementor_page_settings": {
+    "preview_type": "single/post",
+    "preview_id": "",
+    "page_template": "elementor_header_footer"
+   },
+   "_elementor_conditions": [
+    "include/singular/post"
+   ]
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=single-blog-post",
+  "generated_slug": "single-blog-post",
+  "class_list": [
+   "post-4074",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4074",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 24,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4074/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 4457,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4074/revisions/4457"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=4074"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4074"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4074"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4074"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 4062,
+  "date": "2026-04-27T15:04:38",
+  "date_gmt": "2026-04-27T15:04:38",
+  "guid": {
+   "rendered": "https://bptowingservice.ca/?elementor_library=elementor-loop-item-1212",
+   "raw": "https://bptowingservice.ca/?elementor_library=elementor-loop-item-1212"
+  },
+  "modified": "2026-09-07T10:50:51",
+  "modified_gmt": "2026-09-07T16:50:51",
+  "password": "",
+  "slug": "elementor-loop-item-1212",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=elementor-loop-item-1212",
+  "title": {
+   "raw": "Blog Posts",
+   "rendered": "Blog Posts"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "loop-item",
+   "_elementor_data": "[{\"id\":\"76101e01\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":true},\"border_color\":\"#E8E8EA\",\"border_radius\":{\"unit\":\"px\",\"top\":\"12\",\"right\":\"12\",\"bottom\":\"12\",\"left\":\"12\",\"isLinked\":true},\"min_height\":{\"unit\":\"px\",\"size\":430,\"sizes\":[]},\"box_shadow_box_shadow_type\":\"yes\",\"box_shadow_box_shadow\":{\"horizontal\":0,\"vertical\":0,\"blur\":4,\"spread\":-2,\"color\":\"rgba(0,0,0,0.5)\"},\"min_height_mobile\":{\"unit\":\"px\",\"size\":350,\"sizes\":[]},\"flex_gap\":{\"column\":\"13\",\"row\":\"13\",\"isLinked\":true,\"unit\":\"px\",\"size\":13},\"padding\":{\"unit\":\"px\",\"top\":\"15\",\"right\":\"15\",\"bottom\":\"15\",\"left\":\"15\",\"isLinked\":true}},\"elements\":[{\"id\":\"24dbf72f\",\"elType\":\"widget\",\"settings\":{\"image_border_radius\":{\"unit\":\"px\",\"top\":\"6\",\"right\":\"6\",\"bottom\":\"6\",\"left\":\"6\",\"isLinked\":true},\"__dynamic__\":{\"image\":\"[elementor-tag id=\\\"6002ce4\\\" name=\\\"post-featured-image\\\" settings=\\\"%7B%7D\\\"]\",\"link\":\"[elementor-tag id=\\\"b2607b3\\\" name=\\\"post-url\\\" settings=\\\"%7B%7D\\\"]\"},\"link_to\":\"custom\",\"image\":{\"id\":4061,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/04\\/placeholder.png\"},\"image_size\":\"full\",\"image_custom_dimension\":{\"width\":\"600\",\"height\":\"400\"},\"width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"height_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"height_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"object-fit\":\"cover\",\"object-fit_tablet\":\"cover\"},\"elements\":[],\"widgetType\":\"image\"},{\"id\":\"362d0235\",\"elType\":\"widget\",\"settings\":{\"icon_list\":[{\"selected_icon\":{\"value\":\"fas fa-calendar\",\"library\":\"fa-solid\"},\"_id\":\"a10a82d\",\"custom_date_format\":\"F j, Y\",\"custom_time_format\":\"g:i a\",\"link\":\"\"}],\"text_color\":\"#50505085\",\"__globals__\":{\"text_color\":\"\"}},\"elements\":[],\"widgetType\":\"post-info\"},{\"id\":\"65c23565\",\"elType\":\"widget\",\"settings\":{\"title\":\"The Impact of Technology on the Workplace: How Technology is Changing\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Work Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_text_transform\":\"capitalize\",\"typography_line_height\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]},\"__globals__\":{\"typography_typography\":\"\"},\"typography_word_spacing\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"title_color\":\"#181A2A\",\"__dynamic__\":{\"title\":\"[elementor-tag id=\\\"905901d\\\" name=\\\"post-title\\\" settings=\\\"%7B%7D\\\"]\",\"link\":\"[elementor-tag id=\\\"4da9125\\\" name=\\\"post-url\\\" settings=\\\"%7B%7D\\\"]\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"5e48d728\",\"elType\":\"widget\",\"settings\":{\"__dynamic__\":{\"excerpt\":\"[elementor-tag id=\\\"\\\" name=\\\"post-excerpt\\\" settings=\\\"%7B%22max_length%22%3A12%2C%22apply_to_post_content%22%3A%22yes%22%2C%22after%22%3A%22....%22%7D\\\"]\"},\"_margin\":{\"unit\":\"px\",\"top\":\"-10\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"theme-post-excerpt\"},{\"id\":\"2fee4ee3\",\"elType\":\"widget\",\"settings\":{\"text\":\"Read More\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Montserrat\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_font_weight\":\"500\",\"typography_text_transform\":\"capitalize\",\"typography_text_decoration\":\"underline\",\"background_color\":\"#50505000\",\"text_padding\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":true},\"_margin\":{\"unit\":\"px\",\"top\":\"-10\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"_margin_mobile\":{\"unit\":\"px\",\"top\":\"-20\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"__globals__\":{\"button_text_color\":\"globals\\/colors?id=secondary\"},\"__dynamic__\":{\"link\":\"[elementor-tag id=\\\"39bae46\\\" name=\\\"post-url\\\" settings=\\\"%7B%7D\\\"]\"}},\"elements\":[],\"widgetType\":\"button\"}],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=elementor-loop-item-1212",
+  "generated_slug": "blog-posts",
+  "class_list": [
+   "post-4062",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4062",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 5,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4062/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 4456,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4062/revisions/4456"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=4062"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4062"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4062"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4062"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 4047,
+  "date": "2026-04-27T14:55:49",
+  "date_gmt": "2026-04-27T14:55:49",
+  "guid": {
+   "rendered": "https://bptowingservice.ca/?elementor_library=blog-cards",
+   "raw": "https://bptowingservice.ca/?elementor_library=blog-cards"
+  },
+  "modified": "2026-04-27T14:55:49",
+  "modified_gmt": "2026-04-27T14:55:49",
+  "password": "",
+  "slug": "blog-cards",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=blog-cards",
+  "title": {
+   "raw": "blog cards",
+   "rendered": "blog cards"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"3c76c4d3\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_justify_content\":\"center\",\"flex_align_items\":\"center\",\"padding\":{\"unit\":\"px\",\"top\":\"70\",\"right\":\"10\",\"bottom\":\"20\",\"left\":\"10\",\"isLinked\":false},\"background_image\":{\"url\":\"\",\"id\":\"\",\"size\":\"\"},\"background_video_fallback\":{\"url\":\"\",\"id\":\"\",\"size\":\"\"},\"background_slideshow_gallery\":[],\"background_hover_image\":{\"url\":\"\",\"id\":\"\",\"size\":\"\"},\"background_hover_video_fallback\":{\"url\":\"\",\"id\":\"\",\"size\":\"\"},\"background_hover_slideshow_gallery\":[],\"background_overlay_image\":{\"url\":\"\",\"id\":\"\",\"size\":\"\"},\"background_overlay_video_fallback\":{\"url\":\"\",\"id\":\"\",\"size\":\"\"},\"background_overlay_slideshow_gallery\":[],\"background_overlay_hover_image\":{\"url\":\"\",\"id\":\"\",\"size\":\"\"},\"background_overlay_hover_video_fallback\":{\"url\":\"\",\"id\":\"\",\"size\":\"\"},\"background_overlay_hover_slideshow_gallery\":[]},\"elements\":[],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=blog-cards",
+  "generated_slug": "blog-cards",
+  "class_list": [
+   "post-4047",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4047",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 1,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4047/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 4048,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4047/revisions/4048"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=4047"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4047"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4047"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/4047"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 3427,
+  "date": "2026-04-02T09:46:46",
+  "date_gmt": "2026-04-02T09:46:46",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=google-reviews",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=google-reviews"
+  },
+  "modified": "2026-04-02T09:46:47",
+  "modified_gmt": "2026-04-02T09:46:47",
+  "password": "",
+  "slug": "google-reviews",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=google-reviews",
+  "title": {
+   "raw": "google reviews",
+   "rendered": "google reviews"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"37a2e06\",\"elType\":\"container\",\"settings\":[],\"elements\":[{\"id\":\"4dfeeb07\",\"elType\":\"widget\",\"settings\":{\"title\":\"Customer <span>Reviews<\\/span>\",\"subtitle\":\"Testimonials\",\"align\":\"center\",\"__globals__\":{\"title_color\":\"\",\"accent_color\":\"globals\\/colors?id=secondary\"},\"title_typography_typography\":\"custom\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"title_color\":\"#000000\",\"title_typography_font_size_mobile\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"_margin\":{\"unit\":\"px\",\"top\":\"60\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"pt-heading\"},{\"id\":\"6491549\",\"elType\":\"widget\",\"settings\":{\"shortcode\":\"[trustindex no-registration=google]\",\"_element_width\":\"inherit\",\"_element_custom_width\":{\"unit\":\"%\",\"size\":92.365}},\"elements\":[],\"widgetType\":\"shortcode\"}],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=google-reviews",
+  "generated_slug": "google-reviews",
+  "class_list": [
+   "post-3427",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3427",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3427/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 3429,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3427/revisions/3429"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=3427"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3427"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3427"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3427"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 3418,
+  "date": "2026-04-02T09:45:22",
+  "date_gmt": "2026-04-02T09:45:22",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=work",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=work"
+  },
+  "modified": "2026-04-02T09:45:22",
+  "modified_gmt": "2026-04-02T09:45:22",
+  "password": "",
+  "slug": "work",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=work",
+  "title": {
+   "raw": "work",
+   "rendered": "work"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"651867c6\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"margin\":{\"unit\":\"px\",\"top\":\"50\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"33bc532\",\"elType\":\"widget\",\"settings\":{\"title\":\"Our <span>Work<\\/span>\",\"subtitle\":\"What We Done So Far\",\"align\":\"center\",\"__globals__\":{\"title_color\":\"\",\"accent_color\":\"globals\\/colors?id=secondary\"},\"title_typography_typography\":\"custom\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"title_color\":\"#000000\",\"title_typography_font_size_mobile\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"pt-heading\"},{\"id\":\"49fb4e7f\",\"elType\":\"widget\",\"settings\":{\"carousel_name\":\"Image Carousel\",\"carousel\":[{\"id\":2446,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/02\\/22-1.webp\"},{\"id\":2445,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/02\\/11-2.webp\"},{\"id\":2447,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/02\\/33-1.webp\"},{\"id\":2448,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/02\\/44-1.webp\"},{\"id\":2449,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/02\\/55-1.webp\"},{\"id\":2450,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/02\\/66-1.webp\"},{\"id\":2440,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/02\\/77.webp\"},{\"id\":2866,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/03\\/bpp-e1772840270987.jpeg\"},{\"id\":2867,\"url\":\"https:\\/\\/bptowingservice.ca\\/wp-content\\/uploads\\/2026\\/03\\/bp-e1772840163330.jpeg\"}],\"thumbnail_size\":\"custom\",\"slides_to_show\":\"3\",\"slides_to_scroll\":\"3\",\"thumbnail_custom_dimension\":{\"width\":\"600\",\"height\":\"700\"},\"navigation\":\"dots\",\"dots_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"dots_size_mobile\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]},\"dots_inactive_color\":\"#CECECE\",\"gallery_vertical_align\":\"center\",\"image_spacing\":\"custom\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"5\",\"right\":\"5\",\"bottom\":\"5\",\"left\":\"5\",\"isLinked\":true},\"__globals__\":{\"dots_inactive_color\":\"\",\"dots_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"image-carousel\"}],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=work",
+  "generated_slug": "work",
+  "class_list": [
+   "post-3418",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3418",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3418/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 3420,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3418/revisions/3420"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=3418"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3418"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3418"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3418"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 3399,
+  "date": "2026-04-02T09:40:06",
+  "date_gmt": "2026-04-02T09:40:06",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=stat",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=stat"
+  },
+  "modified": "2026-04-02T09:42:39",
+  "modified_gmt": "2026-04-02T09:42:39",
+  "password": "",
+  "slug": "stat",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=stat",
+  "title": {
+   "raw": "stat",
+   "rendered": "stat"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"2cec5dd6\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_gap\":{\"unit\":\"px\",\"size\":0,\"column\":\"0\",\"row\":\"0\"},\"background_overlay_background\":\"classic\",\"background_overlay_color\":\"#FFFFFF\",\"background_overlay_image\":{\"url\":\"\",\"id\":\"\",\"size\":\"\",\"alt\":\"\",\"source\":\"library\"},\"background_overlay_position\":\"bottom center\",\"background_overlay_xpos\":{\"unit\":\"px\",\"size\":-8,\"sizes\":[]},\"background_overlay_ypos\":{\"unit\":\"px\",\"size\":364,\"sizes\":[]},\"background_overlay_repeat\":\"no-repeat\",\"background_overlay_size\":\"cover\",\"background_overlay_opacity\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"padding\":{\"unit\":\"px\",\"top\":\"30\",\"right\":\"10\",\"bottom\":\"30\",\"left\":\"10\",\"isLinked\":false},\"background_background\":\"classic\",\"padding_mobile\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"10\",\"bottom\":\"20\",\"left\":\"10\",\"isLinked\":false},\"__globals__\":{\"background_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[{\"id\":\"27498aca\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":\"25\"}},\"elements\":[{\"id\":\"41d81ebe\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"fas fa-car\",\"library\":\"fa-solid\"},\"__globals__\":{\"primary_color\":\"\"},\"primary_color\":\"#073875\",\"size\":{\"unit\":\"px\",\"size\":50,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"61a98377\",\"elType\":\"widget\",\"settings\":{\"ending_number\":549,\"suffix\":\"+\",\"title\":\" Vehicles Towed\",\"number_color\":\"#000000\",\"typography_number_typography\":\"custom\",\"typography_number_font_size\":{\"unit\":\"px\",\"size\":44,\"sizes\":[]},\"typography_number_font_weight\":\"700\",\"title_color\":\"#000000\",\"typography_title_typography\":\"custom\",\"typography_title_font_family\":\"DM Sans\",\"typography_title_font_weight\":\"600\",\"__globals__\":{\"typography_number_typography\":\"\",\"typography_title_typography\":\"globals\\/typography?id=primary\",\"number_color\":\"\",\"title_color\":\"\"},\"typography_number_font_size_mobile\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"counter\"}],\"isInner\":true},{\"id\":\"7f18ae8b\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":\"50\"}},\"elements\":[{\"id\":\"6bdfb89c\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"far fa-smile\",\"library\":\"fa-regular\"},\"__globals__\":{\"primary_color\":\"\"},\"primary_color\":\"#073875\",\"size\":{\"unit\":\"px\",\"size\":50,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"6adfa25\",\"elType\":\"widget\",\"settings\":{\"ending_number\":782,\"suffix\":\"+\",\"title\":\"Happy Customers\",\"number_color\":\"#000000\",\"typography_number_typography\":\"custom\",\"typography_number_font_size\":{\"unit\":\"px\",\"size\":44,\"sizes\":[]},\"typography_number_font_weight\":\"700\",\"title_color\":\"#000000\",\"typography_title_typography\":\"custom\",\"typography_title_font_family\":\"DM Sans\",\"typography_title_font_weight\":\"600\",\"__globals__\":{\"typography_number_typography\":\"\",\"typography_title_typography\":\"globals\\/typography?id=primary\",\"number_color\":\"\",\"title_color\":\"\"},\"typography_number_font_size_mobile\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"counter\"}],\"isInner\":true},{\"id\":\"37771bb4\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":\"25\"}},\"elements\":[{\"id\":\"42e9c81\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"far fa-check-square\",\"library\":\"fa-regular\"},\"__globals__\":{\"primary_color\":\"\"},\"primary_color\":\"#073875\",\"size\":{\"unit\":\"px\",\"size\":50,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"606af1de\",\"elType\":\"widget\",\"settings\":{\"ending_number\":7,\"suffix\":\"+\",\"title\":\"Years in Business\",\"number_color\":\"#000000\",\"typography_number_typography\":\"custom\",\"typography_number_font_size\":{\"unit\":\"px\",\"size\":44,\"sizes\":[]},\"typography_number_font_weight\":\"700\",\"title_color\":\"#000000\",\"typography_title_typography\":\"custom\",\"typography_title_font_family\":\"DM Sans\",\"typography_title_font_weight\":\"600\",\"__globals__\":{\"typography_number_typography\":\"\",\"typography_title_typography\":\"globals\\/typography?id=primary\",\"number_color\":\"\",\"title_color\":\"\"},\"typography_number_font_size_mobile\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"counter\"}],\"isInner\":true}],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=stat",
+  "generated_slug": "stat",
+  "class_list": [
+   "post-3399",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3399",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 3,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3399/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 3405,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3399/revisions/3405"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=3399"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3399"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3399"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3399"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 3358,
+  "date": "2026-04-02T09:17:28",
+  "date_gmt": "2026-04-02T09:17:28",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=form-global",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=form-global"
+  },
+  "modified": "2026-06-05T06:23:15",
+  "modified_gmt": "2026-06-05T06:23:15",
+  "password": "",
+  "slug": "form-global",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=form-global",
+  "title": {
+   "raw": "form global",
+   "rendered": "form global"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "widget",
+   "_elementor_data": "[{\"id\":\"3358\",\"elType\":\"widget\",\"settings\":{\"form_name\":\"form\",\"form_fields\":[{\"custom_id\":\"name\",\"placeholder\":\"Full Name *\",\"dynamic\":{\"active\":true},\"_id\":\"1b7e382\",\"required\":\"true\"},{\"_id\":\"cffe91a\",\"field_type\":\"tel\",\"placeholder\":\"Phone Number *\",\"required\":\"true\",\"custom_id\":\"field_cffe91a\",\"width_tablet\":\"100\"},{\"_id\":\"e8afa88\",\"field_type\":\"email\",\"placeholder\":\"Email*\",\"required\":\"true\",\"custom_id\":\"field_e8afa88\",\"width_tablet\":\"100\"},{\"_id\":\"811c06e\",\"placeholder\":\" Location \\/ Street Address *\",\"custom_id\":\"field_811c06e\",\"width_tablet\":\"100\"},{\"_id\":\"6af6db6\",\"placeholder\":\"Service Needed * (Roadside \\/ Towing \\/ Accident \\/ Other)\",\"custom_id\":\"field_6af6db6\",\"width_tablet\":\"100\"}],\"input_size\":\"md\",\"mark_required\":\"yes\",\"button_size\":\"md\",\"step_next_label\":\"Next\",\"step_previous_label\":\"Previous\",\"button_text\":\"Submit\",\"email_to\":\"bptowings@gmail.com, ahsanhashmi1925@gmail.com\",\"email_subject\":\"New message from \\\"BP Towing Service\\\"\",\"email_content\":\"[all-fields]\",\"email_from\":\"\",\"email_from_name\":\"BP Towing Service\",\"email_to_2\":\"ahsanhashmi1925@gmail.com\",\"email_subject_2\":\"New message from \\\"GW Cash For Cars\\\"\",\"email_content_2\":\"[all-fields]\",\"email_from_2\":\"email@gwcashforcars.ca\",\"email_from_name_2\":\"GW Cash For Cars\",\"email_reply_to_2\":\"ahsanhashmi1925@gmail.com\",\"mailchimp_fields_map\":[],\"drip_fields_map\":[],\"activecampaign_fields_map\":[],\"getresponse_fields_map\":[],\"convertkit_fields_map\":[],\"mailerlite_fields_map\":[],\"success_message\":\"Your submission was successful.\",\"error_message\":\"Your submission failed because of an error.\",\"server_message\":\"Your submission failed because of a server error.\",\"invalid_message\":\"Your submission failed because the form is invalid.\",\"required_field_message\":\"This field is required.\",\"column_gap\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"row_gap\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"field_text_color\":\"#000000\",\"field_typography_typography\":\"custom\",\"field_typography_font_family\":\"Poppins\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"field_typography_font_weight\":\"400\",\"field_background_color\":\"#FAFAFA\",\"field_border_color\":\"#E9E9E9\",\"field_border_radius\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"10\",\"bottom\":\"10\",\"left\":\"10\",\"isLinked\":true},\"button_align\":\"start\",\"__globals__\":{\"button_background_color\":\"globals\\/colors?id=secondary\",\"_background_color\":\"\",\"field_background_color\":\"\"},\"button_background_color\":\"#C81E1E\",\"_padding\":{\"unit\":\"px\",\"top\":\"40\",\"right\":\"40\",\"bottom\":\"40\",\"left\":\"40\",\"isLinked\":true},\"_background_background\":\"classic\",\"_background_color\":\"#FFFFFF\",\"_border_radius\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"10\",\"bottom\":\"10\",\"left\":\"10\",\"isLinked\":true},\"button_width_tablet\":\"100\",\"_padding_mobile\":{\"unit\":\"px\",\"top\":\"30\",\"right\":\"10\",\"bottom\":\"30\",\"left\":\"10\",\"isLinked\":false},\"submit_actions\":[\"save-to-database\",\"email\",\"redirect\"],\"redirect_to\":\"https:\\/\\/bptowingservice.ca\\/thank-you\",\"form_metadata\":[\"date\",\"time\",\"page_url\",\"remote_ip\"],\"_border_border\":\"solid\",\"_border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":true},\"_border_color\":\"#C6C6C6\",\"email_reply_to\":\"field_e8afa88\"},\"elements\":[],\"widgetType\":\"form\"}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=form-global",
+  "generated_slug": "form-global",
+  "class_list": [
+   "post-3358",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3358",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 6,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3358/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 4236,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3358/revisions/4236"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=3358"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3358"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3358"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/3358"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 1564,
+  "date": "2026-01-12T23:20:46",
+  "date_gmt": "2026-01-12T23:20:46",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=new-blue-bar",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=new-blue-bar"
+  },
+  "modified": "2026-01-12T23:20:46",
+  "modified_gmt": "2026-01-12T23:20:46",
+  "password": "",
+  "slug": "new-blue-bar",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=new-blue-bar",
+  "title": {
+   "raw": "new blue bar",
+   "rendered": "new blue bar"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"71164b19\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_justify_content\":\"space-between\",\"flex_align_items\":\"center\",\"background_background\":\"classic\",\"background_image\":{\"url\":\"https:\\/\\/promo-theme.com\\/cartow\\/wp-content\\/uploads\\/2024\\/03\\/cartow-24.webp\",\"id\":413,\"size\":\"\",\"alt\":\"\",\"source\":\"library\"},\"background_position\":\"center center\",\"background_repeat\":\"no-repeat\",\"background_size\":\"cover\",\"padding\":{\"unit\":\"px\",\"top\":\"29\",\"right\":\"15\",\"bottom\":\"29\",\"left\":\"15\",\"isLinked\":false},\"flex_direction_tablet\":\"row\",\"flex_direction_mobile\":\"column\",\"background_overlay_background\":\"classic\",\"background_overlay_opacity\":{\"unit\":\"px\",\"size\":0.83,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=primary\",\"background_overlay_color\":\"globals\\/colors?id=primary\"},\"background_overlay_opacity_mobile\":{\"unit\":\"px\",\"size\":0.89,\"sizes\":[]}},\"elements\":[{\"id\":\"5db19a33\",\"elType\":\"widget\",\"settings\":{\"links\":[{\"_id\":\"5983454\",\"label\":\"Request Service\"}],\"typography_typography\":\"custom\",\"typography_font_family\":\"Clash Display\",\"typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_line_height\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"_animation\":\"fadeInLeft\",\"__globals__\":{\"links_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"pt-simple-links\"},{\"id\":\"2b37039d\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-arrow-right\",\"library\":\"pticons\"},\"size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"_transform_translate_popover\":\"transform\",\"_transform_translateY_effect\":{\"unit\":\"px\",\"size\":5,\"sizes\":[]},\"rotate_mobile\":{\"unit\":\"deg\",\"size\":90,\"sizes\":[]},\"__globals__\":{\"primary_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"2b338425\",\"elType\":\"widget\",\"settings\":{\"links\":[{\"_id\":\"5983454\",\"label\":\"Immediate Dispatch\",\"link\":{\"url\":\"\\/cartow\\/services\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}}],\"typography_typography\":\"custom\",\"typography_font_family\":\"Clash Display\",\"typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_line_height\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"_animation\":\"fadeInLeft\",\"__globals__\":{\"links_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"pt-simple-links\"},{\"id\":\"53165491\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-arrow-right\",\"library\":\"pticons\"},\"size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"_transform_translate_popover\":\"transform\",\"_transform_translateY_effect\":{\"unit\":\"px\",\"size\":5,\"sizes\":[]},\"rotate_mobile\":{\"unit\":\"deg\",\"size\":90,\"sizes\":[]},\"__globals__\":{\"primary_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"4865cc68\",\"elType\":\"widget\",\"settings\":{\"links\":[{\"_id\":\"5983454\",\"label\":\"You\\u2019re Back on the Road\"}],\"typography_typography\":\"custom\",\"typography_font_family\":\"Clash Display\",\"typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_line_height\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"_animation\":\"fadeInLeft\",\"__globals__\":{\"links_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"pt-simple-links\"}],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=new-blue-bar",
+  "generated_slug": "new-blue-bar",
+  "class_list": [
+   "post-1564",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1564",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1564/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 1566,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1564/revisions/1566"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=1564"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1564"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1564"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1564"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 1324,
+  "date": "2025-04-25T16:07:38",
+  "date_gmt": "2025-04-25T16:07:38",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=contact",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=contact"
+  },
+  "modified": "2025-04-25T16:07:38",
+  "modified_gmt": "2025-04-25T16:07:38",
+  "password": "",
+  "slug": "contact",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=contact",
+  "title": {
+   "raw": "contact",
+   "rendered": "contact"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "widget",
+   "_elementor_data": "[{\"id\":\"4c18e26c\",\"elType\":\"widget\",\"settings\":{\"cols\":\"3\",\"style\":\"before-content\",\"items\":[{\"_id\":\"fbaefa8\",\"icon\":{\"value\":\"pticon pticon-phone\",\"library\":\"pticons\"},\"title\":\"(204) 396-6556\",\"subtitle\":\"phone number\",\"text\":\"\",\"link\":{\"url\":\"tel:(204) 396-6556\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"icon\":{\"value\":\"pticon pticon-time\",\"library\":\"pticons\"},\"title\":\"24\\/7\",\"subtitle\":\"working hours\",\"text\":\"\",\"_id\":\"76f8a1c\"},{\"icon\":{\"value\":\"pticon pticon-location\",\"library\":\"pticons\"},\"title\":\"Winnipeg & Nearby Areas\",\"subtitle\":\"Serving\",\"text\":\"\",\"_id\":\"0e20d88\"}],\"icon_size\":64,\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"Clash Display\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]},\"title_typography_line_height\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"__globals__\":{\"icon_color\":\"globals\\/colors?id=8a4245d\",\"button_color\":\"\",\"text_color\":\"globals\\/colors?id=a3bc34d\"},\"cols_tablet\":\"1\",\"icon_size_mobile\":40,\"title_typography_font_size_mobile\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]},\"title_spacing\":0,\"_css_classes\":\"icon-box-align-items-center\",\"text_typography_typography\":\"custom\"},\"elements\":[],\"widgetType\":\"pt-icon-box\"}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=contact",
+  "generated_slug": "contact",
+  "class_list": [
+   "post-1324",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1324",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1324/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 1326,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1324/revisions/1326"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=1324"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1324"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1324"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1324"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 1279,
+  "date": "2025-04-25T15:55:18",
+  "date_gmt": "2025-04-25T15:55:18",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=maps",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=maps"
+  },
+  "modified": "2025-04-25T15:55:18",
+  "modified_gmt": "2025-04-25T15:55:18",
+  "password": "",
+  "slug": "maps",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=maps",
+  "title": {
+   "raw": "maps",
+   "rendered": "maps"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"185f46bd\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"content_width\":\"full\",\"margin\":{\"unit\":\"px\",\"top\":\"-12\",\"right\":\"0\",\"bottom\":\"-12\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"408ec9b6\",\"elType\":\"widget\",\"settings\":{\"address\":\"222 Parklane Ave\"},\"elements\":[],\"widgetType\":\"google_maps\"}],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=maps",
+  "generated_slug": "maps",
+  "class_list": [
+   "post-1279",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1279",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1279/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 1281,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1279/revisions/1281"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=1279"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1279"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1279"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1279"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 1130,
+  "date": "2025-04-24T17:03:00",
+  "date_gmt": "2025-04-24T17:03:00",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=blue-bar",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=blue-bar"
+  },
+  "modified": "2025-04-24T17:03:00",
+  "modified_gmt": "2025-04-24T17:03:00",
+  "password": "",
+  "slug": "blue-bar",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=blue-bar",
+  "title": {
+   "raw": "blue bar",
+   "rendered": "blue bar"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"4f68fedd\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_justify_content\":\"space-between\",\"flex_align_items\":\"center\",\"background_background\":\"classic\",\"background_image\":{\"url\":\"https:\\/\\/promo-theme.com\\/cartow\\/wp-content\\/uploads\\/2024\\/03\\/cartow-24.webp\",\"id\":413,\"size\":\"\",\"alt\":\"\",\"source\":\"library\"},\"background_position\":\"center center\",\"background_repeat\":\"no-repeat\",\"background_size\":\"cover\",\"padding\":{\"unit\":\"px\",\"top\":\"29\",\"right\":\"15\",\"bottom\":\"29\",\"left\":\"15\",\"isLinked\":false},\"flex_direction_tablet\":\"row\",\"flex_direction_mobile\":\"column\",\"background_overlay_background\":\"classic\",\"background_overlay_opacity\":{\"unit\":\"px\",\"size\":0.83,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=8a4245d\",\"background_overlay_color\":\"globals\\/colors?id=8a4245d\"},\"background_overlay_opacity_mobile\":{\"unit\":\"px\",\"size\":0.89,\"sizes\":[]}},\"elements\":[{\"id\":\"4fff133c\",\"elType\":\"widget\",\"settings\":{\"links\":[{\"_id\":\"5983454\",\"label\":\"Get an appointment\"}],\"typography_typography\":\"custom\",\"typography_font_family\":\"Clash Display\",\"typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_line_height\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"_animation\":\"fadeInLeft\",\"__globals__\":{\"links_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"pt-simple-links\"},{\"id\":\"5755a725\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-arrow-right\",\"library\":\"pticons\"},\"size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"_transform_translate_popover\":\"transform\",\"_transform_translateY_effect\":{\"unit\":\"px\",\"size\":5,\"sizes\":[]},\"rotate_mobile\":{\"unit\":\"deg\",\"size\":90,\"sizes\":[]},\"__globals__\":{\"primary_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"289310c9\",\"elType\":\"widget\",\"settings\":{\"links\":[{\"_id\":\"5983454\",\"label\":\"Towing Process\",\"link\":{\"url\":\"\\/cartow\\/services\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}}],\"typography_typography\":\"custom\",\"typography_font_family\":\"Clash Display\",\"typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_line_height\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"_animation\":\"fadeInLeft\",\"__globals__\":{\"links_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"pt-simple-links\"},{\"id\":\"643119ba\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-arrow-right\",\"library\":\"pticons\"},\"size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"_transform_translate_popover\":\"transform\",\"_transform_translateY_effect\":{\"unit\":\"px\",\"size\":5,\"sizes\":[]},\"rotate_mobile\":{\"unit\":\"deg\",\"size\":90,\"sizes\":[]},\"__globals__\":{\"primary_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"3e0e5805\",\"elType\":\"widget\",\"settings\":{\"links\":[{\"_id\":\"5983454\",\"label\":\"Delivery and Follow-up\",\"link\":{\"url\":\"\\/cartow\\/about-us\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}}],\"typography_typography\":\"custom\",\"typography_font_family\":\"Clash Display\",\"typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_line_height\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"_animation\":\"fadeInLeft\",\"__globals__\":{\"links_color\":\"globals\\/colors?id=4175fc9\"}},\"elements\":[],\"widgetType\":\"pt-simple-links\"}],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=blue-bar",
+  "generated_slug": "blue-bar",
+  "class_list": [
+   "post-1130",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1130",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1130/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 1132,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1130/revisions/1132"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=1130"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1130"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1130"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1130"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 1038,
+  "date": "2025-04-23T21:14:37",
+  "date_gmt": "2025-04-23T21:14:37",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=orange-bar",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=orange-bar"
+  },
+  "modified": "2025-04-23T21:14:37",
+  "modified_gmt": "2025-04-23T21:14:37",
+  "password": "",
+  "slug": "orange-bar",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=orange-bar",
+  "title": {
+   "raw": "orange bar",
+   "rendered": "orange bar"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"5588081b\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_justify_content\":\"space-between\",\"flex_align_items\":\"center\",\"background_background\":\"classic\",\"background_image\":{\"url\":\"https:\\/\\/promo-theme.com\\/cartow\\/wp-content\\/uploads\\/2024\\/03\\/cartow-24.webp\",\"id\":413,\"size\":\"\",\"alt\":\"\",\"source\":\"library\"},\"background_position\":\"center center\",\"background_repeat\":\"no-repeat\",\"background_size\":\"cover\",\"padding\":{\"unit\":\"px\",\"top\":\"29\",\"right\":\"15\",\"bottom\":\"29\",\"left\":\"15\",\"isLinked\":false},\"flex_direction_tablet\":\"row\",\"flex_direction_mobile\":\"column\",\"margin\":{\"unit\":\"px\",\"top\":\"81\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[{\"id\":\"363419a\",\"elType\":\"widget\",\"settings\":{\"links\":[{\"_id\":\"5983454\",\"label\":\"Get an appointment\",\"link\":{\"url\":\"\\/cartow\\/faq\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}}],\"links_color\":\"#FFFFFF\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Clash Display\",\"typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_line_height\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]}},\"elements\":[],\"widgetType\":\"pt-simple-links\"},{\"id\":\"4c3a8a5f\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-arrow-right\",\"library\":\"pticons\"},\"primary_color\":\"#FFFFFF\",\"size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"_transform_translate_popover\":\"transform\",\"_transform_translateY_effect\":{\"unit\":\"px\",\"size\":5,\"sizes\":[]},\"rotate_mobile\":{\"unit\":\"deg\",\"size\":90,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"6ab8ed1f\",\"elType\":\"widget\",\"settings\":{\"links\":[{\"_id\":\"5983454\",\"label\":\"Towing Process\",\"link\":{\"url\":\"\\/cartow\\/faq\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}}],\"links_color\":\"#FFFFFF\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Clash Display\",\"typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_line_height\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]}},\"elements\":[],\"widgetType\":\"pt-simple-links\"},{\"id\":\"38f01366\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-arrow-right\",\"library\":\"pticons\"},\"primary_color\":\"#FFFFFF\",\"size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"_transform_translate_popover\":\"transform\",\"_transform_translateY_effect\":{\"unit\":\"px\",\"size\":5,\"sizes\":[]},\"rotate_mobile\":{\"unit\":\"deg\",\"size\":90,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"33a21762\",\"elType\":\"widget\",\"settings\":{\"links\":[{\"_id\":\"5983454\",\"label\":\"Delivery and Follow-up\",\"link\":{\"url\":\"\\/cartow\\/faq\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}}],\"links_color\":\"#FFFFFF\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Clash Display\",\"typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]},\"typography_font_weight\":\"600\",\"typography_line_height\":{\"unit\":\"px\",\"size\":42,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_line_height_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]}},\"elements\":[],\"widgetType\":\"pt-simple-links\"}],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=orange-bar",
+  "generated_slug": "orange-bar",
+  "class_list": [
+   "post-1038",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1038",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1038/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 1040,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1038/revisions/1040"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=1038"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1038"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1038"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/1038"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 844,
+  "date": "2025-04-21T16:04:00",
+  "date_gmt": "2025-04-21T16:04:00",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=home-section-2",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=home-section-2"
+  },
+  "modified": "2025-04-21T16:04:01",
+  "modified_gmt": "2025-04-21T16:04:01",
+  "password": "",
+  "slug": "home-section-2",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=home-section-2",
+  "title": {
+   "raw": "home section 2",
+   "rendered": "home section 2"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"7f1815cb\",\"elType\":\"container\",\"settings\":{\"margin\":{\"unit\":\"px\",\"top\":\"76\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"animation\":\"fadeInUp\"},\"elements\":[{\"id\":\"1a99ee29\",\"elType\":\"widget\",\"settings\":{\"title\":\"Your One-Stop-Shop for Towing and Roadside Support\",\"subtitle\":\"benefits\",\"align\":\"center\",\"_element_width\":\"initial\",\"_element_custom_width\":{\"unit\":\"%\",\"size\":70,\"sizes\":[]},\"_flex_align_self\":\"center\",\"_element_custom_width_tablet\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"_element_custom_width_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]}},\"elements\":[],\"widgetType\":\"pt-heading\"},{\"id\":\"6033ba27\",\"elType\":\"widget\",\"settings\":{\"items\":[{\"_id\":\"cb43286\",\"icon\":{\"value\":\"pticon pticon-crane-truck\",\"library\":\"pticons\"},\"title\":\"Protection & support\",\"text\":\"Whether you require assistance in family law, criminal defense.\",\"link\":{\"url\":\"\\/cartow\\/about-us\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"icon\":{\"value\":\"pticon pticon-rim\",\"library\":\"pticons\"},\"title\":\"Protection & support\",\"text\":\"Whether you require assistance in family law, criminal defense.\",\"_id\":\"6a99954\",\"link\":{\"url\":\"\\/cartow\\/about-us\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"icon\":{\"value\":\"pticon pticon-water-tank\",\"library\":\"pticons\"},\"title\":\"Protection & support\",\"text\":\"Whether you require assistance in family law, criminal defense.\",\"_id\":\"c2f4e26\",\"link\":{\"url\":\"\\/cartow\\/about-us\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}},{\"icon\":{\"value\":\"pticon pticon-car-engine\",\"library\":\"pticons\"},\"title\":\"Protection & support\",\"text\":\"Whether you require assistance in family law, criminal defense.\",\"_id\":\"b25efbf\",\"link\":{\"url\":\"\\/cartow\\/about-us\\/\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"}}],\"padding\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"30\",\"bottom\":\"44\",\"left\":\"30\",\"isLinked\":false},\"background_color\":\"#F2F2F4\",\"text_color_hover\":\"#FFFFFF\",\"icon_size\":48,\"icon_spacing\":20,\"__globals__\":{\"background_color_hover\":\"globals\\/colors?id=accent\"},\"_css_classes\":\"icon-box-has-corner\",\"layout\":\"carousel\",\"cols\":\"4\",\"loop\":\"yes\",\"_margin\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"pt-icon-box\"}],\"isInner\":false}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=home-section-2",
+  "generated_slug": "home-section-2",
+  "class_list": [
+   "post-844",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/844",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/844/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 846,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/844/revisions/846"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=844"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/844"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/844"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/844"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 819,
+  "date": "2025-04-21T15:41:37",
+  "date_gmt": "2025-04-21T15:41:37",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=home-sub-section-2",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=home-sub-section-2"
+  },
+  "modified": "2025-04-21T15:41:37",
+  "modified_gmt": "2025-04-21T15:41:37",
+  "password": "",
+  "slug": "home-sub-section-2",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=home-sub-section-2",
+  "title": {
+   "raw": "Home sub section 2",
+   "rendered": "Home sub section 2"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"64077fae\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"flex_direction\":\"row\",\"flex_justify_content\":\"space-between\",\"flex_align_items\":\"center\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#FFFFFF\",\"padding\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"0\",\"bottom\":\"64\",\"left\":\"0\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"0\",\"bottom\":\"24\",\"left\":\"0\",\"isLinked\":false},\"_offset_orientation_v\":\"end\",\"hide_mobile\":\"hidden-mobile\"},\"elements\":[{\"id\":\"4a19a16f\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-rim\",\"library\":\"pticons\"},\"title_text\":\"working hours\",\"description_text\":\"We\\u2019re available 24\\/7\",\"position\":\"left\",\"content_vertical_alignment\":\"middle\",\"icon_space\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"icon_space_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_bottom_space\":{\"unit\":\"px\",\"size\":6,\"sizes\":[]},\"primary_color\":\"#FFFFFF\",\"icon_size\":{\"unit\":\"px\",\"size\":64,\"sizes\":[]},\"icon_size_tablet\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"DM Sans\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"title_typography_font_weight\":\"500\",\"title_typography_text_transform\":\"uppercase\",\"title_typography_line_height\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_typography_letter_spacing\":{\"unit\":\"em\",\"size\":0.2,\"sizes\":[]},\"title_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"title_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_color\":\"#FFFFFF\",\"description_typography_typography\":\"custom\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"description_typography_font_weight\":\"600\",\"description_typography_text_transform\":\"capitalize\",\"description_typography_line_height\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_letter_spacing\":{\"unit\":\"em\",\"size\":-0.02,\"sizes\":[]},\"description_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"__globals__\":{\"title_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-box\"},{\"id\":\"3423c6fc\",\"elType\":\"widget\",\"settings\":{\"width\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"width_tablet\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"width_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"text\":\"Divider\",\"color\":\"#FFFFFF\",\"weight\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"gap\":{\"unit\":\"px\",\"size\":0,\"sizes\":[]},\"_element_width\":\"initial\",\"_element_custom_width\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"hide_tablet\":\"hidden-tablet\",\"hide_mobile\":\"hidden-mobile\"},\"elements\":[],\"widgetType\":\"divider\"},{\"id\":\"14685ef7\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-water-tank\",\"library\":\"pticons\"},\"title_text\":\"working hours\",\"description_text\":\"We\\u2019re available 24\\/7\",\"position\":\"left\",\"content_vertical_alignment\":\"middle\",\"icon_space\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"icon_space_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_bottom_space\":{\"unit\":\"px\",\"size\":6,\"sizes\":[]},\"primary_color\":\"#FFFFFF\",\"icon_size\":{\"unit\":\"px\",\"size\":64,\"sizes\":[]},\"icon_size_tablet\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"DM Sans\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"title_typography_font_weight\":\"500\",\"title_typography_text_transform\":\"uppercase\",\"title_typography_line_height\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_typography_letter_spacing\":{\"unit\":\"em\",\"size\":0.2,\"sizes\":[]},\"title_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"title_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_color\":\"#FFFFFF\",\"description_typography_typography\":\"custom\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"description_typography_font_weight\":\"600\",\"description_typography_text_transform\":\"capitalize\",\"description_typography_line_height\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_letter_spacing\":{\"unit\":\"em\",\"size\":-0.02,\"sizes\":[]},\"description_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"__globals__\":{\"title_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-box\"},{\"id\":\"15f971e9\",\"elType\":\"widget\",\"settings\":{\"width\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"width_tablet\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"width_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"text\":\"Divider\",\"color\":\"#FFFFFF\",\"weight\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"gap\":{\"unit\":\"px\",\"size\":0,\"sizes\":[]},\"_element_width\":\"initial\",\"_element_custom_width\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"hide_tablet\":\"hidden-tablet\",\"hide_mobile\":\"hidden-mobile\"},\"elements\":[],\"widgetType\":\"divider\"},{\"id\":\"4ed6834b\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-air-conditioner\",\"library\":\"pticons\"},\"title_text\":\"working hours\",\"description_text\":\"We\\u2019re available 24\\/7\",\"position\":\"left\",\"content_vertical_alignment\":\"middle\",\"icon_space\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"icon_space_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_bottom_space\":{\"unit\":\"px\",\"size\":6,\"sizes\":[]},\"primary_color\":\"#FFFFFF\",\"icon_size\":{\"unit\":\"px\",\"size\":64,\"sizes\":[]},\"icon_size_tablet\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"DM Sans\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"title_typography_font_weight\":\"500\",\"title_typography_text_transform\":\"uppercase\",\"title_typography_line_height\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_typography_letter_spacing\":{\"unit\":\"em\",\"size\":0.2,\"sizes\":[]},\"title_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"title_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_color\":\"#FFFFFF\",\"description_typography_typography\":\"custom\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"description_typography_font_weight\":\"600\",\"description_typography_text_transform\":\"capitalize\",\"description_typography_line_height\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_letter_spacing\":{\"unit\":\"em\",\"size\":-0.02,\"sizes\":[]},\"description_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"__globals__\":{\"title_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-box\"}],\"isInner\":true}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=home-sub-section-2",
+  "generated_slug": "home-sub-section-2",
+  "class_list": [
+   "post-819",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/819",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/819/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 821,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/819/revisions/821"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=819"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/819"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/819"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/819"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 815,
+  "date": "2025-04-21T15:39:12",
+  "date_gmt": "2025-04-21T15:39:12",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?elementor_library=home-subsection",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?elementor_library=home-subsection"
+  },
+  "modified": "2025-04-21T15:39:12",
+  "modified_gmt": "2025-04-21T15:39:12",
+  "password": "",
+  "slug": "home-subsection",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=home-subsection",
+  "title": {
+   "raw": "Home - subsection",
+   "rendered": "Home &#8211; subsection"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "container",
+   "_elementor_data": "[{\"id\":\"711ce978\",\"elType\":\"container\",\"settings\":{\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"15\",\"bottom\":\"0\",\"left\":\"15\",\"isLinked\":false},\"position\":\"absolute\",\"_offset_orientation_v\":\"end\",\"animation\":\"fadeInUp\"},\"elements\":[{\"id\":\"7419e572\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"flex_direction\":\"row\",\"flex_justify_content\":\"space-between\",\"flex_align_items\":\"center\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"border_color\":\"#FFFFFF\",\"padding\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"0\",\"bottom\":\"64\",\"left\":\"0\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"0\",\"bottom\":\"24\",\"left\":\"0\",\"isLinked\":false},\"_offset_orientation_v\":\"end\",\"hide_mobile\":\"hidden-mobile\"},\"elements\":[{\"id\":\"2a5bd4f1\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-rim\",\"library\":\"pticons\"},\"title_text\":\"working hours\",\"description_text\":\"We\\u2019re available 24\\/7\",\"position\":\"left\",\"content_vertical_alignment\":\"middle\",\"icon_space\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"icon_space_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_bottom_space\":{\"unit\":\"px\",\"size\":6,\"sizes\":[]},\"primary_color\":\"#FFFFFF\",\"icon_size\":{\"unit\":\"px\",\"size\":64,\"sizes\":[]},\"icon_size_tablet\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"DM Sans\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"title_typography_font_weight\":\"500\",\"title_typography_text_transform\":\"uppercase\",\"title_typography_line_height\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_typography_letter_spacing\":{\"unit\":\"em\",\"size\":0.2,\"sizes\":[]},\"title_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"title_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_color\":\"#FFFFFF\",\"description_typography_typography\":\"custom\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"description_typography_font_weight\":\"600\",\"description_typography_text_transform\":\"capitalize\",\"description_typography_line_height\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_letter_spacing\":{\"unit\":\"em\",\"size\":-0.02,\"sizes\":[]},\"description_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"__globals__\":{\"title_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-box\"},{\"id\":\"63994466\",\"elType\":\"widget\",\"settings\":{\"width\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"width_tablet\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"width_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"text\":\"Divider\",\"color\":\"#FFFFFF\",\"weight\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"gap\":{\"unit\":\"px\",\"size\":0,\"sizes\":[]},\"_element_width\":\"initial\",\"_element_custom_width\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"hide_tablet\":\"hidden-tablet\",\"hide_mobile\":\"hidden-mobile\"},\"elements\":[],\"widgetType\":\"divider\"},{\"id\":\"396e6008\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-water-tank\",\"library\":\"pticons\"},\"title_text\":\"working hours\",\"description_text\":\"We\\u2019re available 24\\/7\",\"position\":\"left\",\"content_vertical_alignment\":\"middle\",\"icon_space\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"icon_space_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_bottom_space\":{\"unit\":\"px\",\"size\":6,\"sizes\":[]},\"primary_color\":\"#FFFFFF\",\"icon_size\":{\"unit\":\"px\",\"size\":64,\"sizes\":[]},\"icon_size_tablet\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"DM Sans\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"title_typography_font_weight\":\"500\",\"title_typography_text_transform\":\"uppercase\",\"title_typography_line_height\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_typography_letter_spacing\":{\"unit\":\"em\",\"size\":0.2,\"sizes\":[]},\"title_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"title_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_color\":\"#FFFFFF\",\"description_typography_typography\":\"custom\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"description_typography_font_weight\":\"600\",\"description_typography_text_transform\":\"capitalize\",\"description_typography_line_height\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_letter_spacing\":{\"unit\":\"em\",\"size\":-0.02,\"sizes\":[]},\"description_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"__globals__\":{\"title_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-box\"},{\"id\":\"29589a17\",\"elType\":\"widget\",\"settings\":{\"width\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"width_tablet\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"width_mobile\":{\"unit\":\"px\",\"size\":\"\",\"sizes\":[]},\"text\":\"Divider\",\"color\":\"#FFFFFF\",\"weight\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"gap\":{\"unit\":\"px\",\"size\":0,\"sizes\":[]},\"_element_width\":\"initial\",\"_element_custom_width\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"hide_tablet\":\"hidden-tablet\",\"hide_mobile\":\"hidden-mobile\"},\"elements\":[],\"widgetType\":\"divider\"},{\"id\":\"32aadc8f\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":\"pticon pticon-air-conditioner\",\"library\":\"pticons\"},\"title_text\":\"working hours\",\"description_text\":\"We\\u2019re available 24\\/7\",\"position\":\"left\",\"content_vertical_alignment\":\"middle\",\"icon_space\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"icon_space_tablet\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_bottom_space\":{\"unit\":\"px\",\"size\":6,\"sizes\":[]},\"primary_color\":\"#FFFFFF\",\"icon_size\":{\"unit\":\"px\",\"size\":64,\"sizes\":[]},\"icon_size_tablet\":{\"unit\":\"px\",\"size\":32,\"sizes\":[]},\"title_typography_typography\":\"custom\",\"title_typography_font_family\":\"DM Sans\",\"title_typography_font_size\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"title_typography_font_weight\":\"500\",\"title_typography_text_transform\":\"uppercase\",\"title_typography_line_height\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"title_typography_letter_spacing\":{\"unit\":\"em\",\"size\":0.2,\"sizes\":[]},\"title_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"title_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_color\":\"#FFFFFF\",\"description_typography_typography\":\"custom\",\"description_typography_font_size\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_font_size_tablet\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"description_typography_font_weight\":\"600\",\"description_typography_text_transform\":\"capitalize\",\"description_typography_line_height\":{\"unit\":\"px\",\"size\":22,\"sizes\":[]},\"description_typography_letter_spacing\":{\"unit\":\"em\",\"size\":-0.02,\"sizes\":[]},\"description_typography_letter_spacing_tablet\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"description_typography_letter_spacing_mobile\":{\"unit\":\"em\",\"size\":\"\",\"sizes\":[]},\"__globals__\":{\"title_color\":\"globals\\/colors?id=secondary\"}},\"elements\":[],\"widgetType\":\"icon-box\"}],\"isInner\":true}],\"isInner\":true}]",
+   "_elementor_page_settings": null,
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=home-subsection",
+  "generated_slug": "home-subsection",
+  "class_list": [
+   "post-815",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/815",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 2,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/815/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 817,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/815/revisions/817"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=815"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/815"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/815"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/815"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 10,
+  "date": "2025-04-15T18:24:34",
+  "date_gmt": "2025-04-15T18:24:34",
+  "guid": {
+   "rendered": "https://seashell-yak-344415.hostingersite.com/?p=10",
+   "raw": "https://seashell-yak-344415.hostingersite.com/?p=10"
+  },
+  "modified": "2026-03-30T11:50:37",
+  "modified_gmt": "2026-03-30T11:50:37",
+  "password": "",
+  "slug": "default-kit",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=default-kit",
+  "title": {
+   "raw": "Default Kit",
+   "rendered": "Default Kit"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "kit",
+   "_elementor_data": "[]",
+   "_elementor_page_settings": {
+    "colors_enable_styleguide_preview": "yes",
+    "system_colors": [
+     {
+      "_id": "primary",
+      "title": "Primary",
+      "color": "#1FA4D9"
+     },
+     {
+      "_id": "secondary",
+      "title": "Secondary",
+      "color": "#C81E1E"
+     },
+     {
+      "_id": "text",
+      "title": "Text",
+      "color": "#000000"
+     },
+     {
+      "_id": "accent",
+      "title": "Accent",
+      "color": "#A9B4C2"
+     }
+    ],
+    "custom_colors": [
+     {
+      "_id": "8a4245d",
+      "title": "New Item #1",
+      "color": "#3594B2"
+     },
+     {
+      "_id": "4175fc9",
+      "title": "New Item #2",
+      "color": "#000000"
+     },
+     {
+      "_id": "a3bc34d",
+      "title": "New Item #3",
+      "color": "#FFFFFF"
+     },
+     {
+      "_id": "d0316af",
+      "title": "lighter",
+      "color": "#F9F9F9"
+     }
+    ],
+    "system_typography": [
+     {
+      "_id": "primary",
+      "title": "Primary",
+      "typography_typography": "custom",
+      "typography_font_family": "Clash Display",
+      "typography_font_weight": "600"
+     },
+     {
+      "_id": "secondary",
+      "title": "Secondary",
+      "typography_typography": "custom",
+      "typography_font_family": "Clash Display",
+      "typography_font_weight": "400"
+     },
+     {
+      "_id": "text",
+      "title": "Text",
+      "typography_typography": "custom",
+      "typography_font_family": "Clash Display",
+      "typography_font_weight": "400"
+     },
+     {
+      "_id": "accent",
+      "title": "Accent",
+      "typography_typography": "custom",
+      "typography_font_family": "Clash Display",
+      "typography_font_weight": "500"
+     }
+    ],
+    "custom_typography": [],
+    "default_generic_fonts": "Sans-serif",
+    "site_name": "BP Towing Service",
+    "site_description": "Best Towing Company in Calgary",
+    "page_title_selector": "h1.entry-title",
+    "activeItemIndex": 1,
+    "woocommerce_cart_page_id": "13",
+    "woocommerce_checkout_page_id": "14",
+    "woocommerce_myaccount_page_id": "15",
+    "woocommerce_terms_page_id": "",
+    "woocommerce_purchase_summary_page_id": false,
+    "woocommerce_shop_page_id": "12",
+    "viewport_md": 768,
+    "viewport_lg": 1025,
+    "container_width": {
+     "unit": "px",
+     "size": 1440,
+     "sizes": []
+    },
+    "typography_enable_styleguide_preview": "yes",
+    "default_page_template": "elementor_header_footer",
+    "body_background_background": "classic",
+    "body_background_color": "#FFFFFF"
+   },
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=default-kit",
+  "generated_slug": "default-kit",
+  "class_list": [
+   "post-10",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/10",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 5,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/10/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 2939,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/10/revisions/2939"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=10"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/10"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/10"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/10"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 7,
+  "date": "2024-03-13T08:37:36",
+  "date_gmt": "2024-03-13T08:37:36",
+  "guid": {
+   "rendered": "https://promo-theme.com/cartow/?p=7",
+   "raw": "https://promo-theme.com/cartow/?p=7"
+  },
+  "modified": "2024-03-13T08:37:36",
+  "modified_gmt": "2024-03-13T08:37:36",
+  "password": "",
+  "slug": "default-kit-2",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://bptowingservice.ca/?elementor_library=default-kit-2",
+  "title": {
+   "raw": "Default Kit",
+   "rendered": "Default Kit"
+  },
+  "author": 5,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_acf_changed": false,
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "kit",
+   "_elementor_data": "",
+   "_elementor_page_settings": {
+    "system_colors": [
+     {
+      "_id": "primary",
+      "title": "Primary",
+      "color": "#000000"
+     },
+     {
+      "_id": "secondary",
+      "title": "Secondary",
+      "color": "#F0B63D"
+     },
+     {
+      "_id": "text",
+      "title": "Text",
+      "color": "#000000"
+     },
+     {
+      "_id": "accent",
+      "title": "Accent",
+      "color": "#EB5E22"
+     }
+    ],
+    "system_typography": [
+     {
+      "_id": "primary",
+      "title": "Primary",
+      "typography_typography": "custom",
+      "typography_font_family": "Clash Display",
+      "typography_font_weight": "600"
+     },
+     {
+      "_id": "secondary",
+      "title": "Secondary",
+      "typography_typography": "custom",
+      "typography_font_family": "Clash Display",
+      "typography_font_weight": "600"
+     },
+     {
+      "_id": "text",
+      "title": "Text",
+      "typography_typography": "custom",
+      "typography_font_family": "DM Sans",
+      "typography_font_weight": "400"
+     },
+     {
+      "_id": "accent",
+      "title": "Accent",
+      "typography_typography": "custom",
+      "typography_font_family": "Clash Display",
+      "typography_font_weight": "600"
+     }
+    ],
+    "container_width": {
+     "unit": "px",
+     "size": "1240",
+     "sizes": []
+    }
+   },
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://bptowingservice.ca/?elementor_library=default-kit-2",
+  "generated_slug": "default-kit-2",
+  "class_list": [
+   "post-7",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/7",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/users/5"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 0,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/7/revisions"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/media?parent=7"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/7"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/7"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/elementor_library/7"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

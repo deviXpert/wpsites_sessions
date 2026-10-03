@@ -1,0 +1,563 @@
+[
+ {
+  "plugin": "advanced-custom-fields/acf",
+  "status": "active",
+  "name": "Advanced Custom Fields",
+  "plugin_uri": "https://www.advancedcustomfields.com",
+  "author": "WP Engine",
+  "author_uri": "https://wpengine.com/?utm_source=wordpress.org&#038;utm_medium=referral&#038;utm_campaign=plugin_directory&#038;utm_content=advanced_custom_fields",
+  "description": {
+   "raw": "Customize WordPress with powerful, professional and intuitive fields.",
+   "rendered": "Customize WordPress with powerful, professional and intuitive fields. <cite>By <a href=\"https://wpengine.com/?utm_source=wordpress.org&#038;utm_medium=referral&#038;utm_campaign=plugin_directory&#038;utm_content=advanced_custom_fields\">WP Engine</a>.</cite>"
+  },
+  "version": "6.8.9",
+  "network_only": false,
+  "requires_wp": "6.2",
+  "requires_php": "7.4",
+  "textdomain": "acf",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/advanced-custom-fields/acf",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "clickcease-click-fraud-protection/clickcease",
+  "status": "active",
+  "name": "Clickcease - Click Fraud Protection",
+  "plugin_uri": "",
+  "author": "ClickCease",
+  "author_uri": "https://www.clickcease.com",
+  "description": {
+   "raw": "Plugin adds the ClickCease click fraud protection code.",
+   "rendered": "Plugin adds the ClickCease click fraud protection code. <cite>By <a href=\"https://www.clickcease.com\">ClickCease</a>.</cite>"
+  },
+  "version": "3.2.15",
+  "network_only": false,
+  "requires_wp": "5.6",
+  "requires_php": "5.6",
+  "textdomain": "clickcease-click-fraud-protection",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/clickcease-click-fraud-protection/clickcease",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "contact-form-7/wp-contact-form-7",
+  "status": "active",
+  "name": "Contact Form 7",
+  "plugin_uri": "https://contactform7.com/",
+  "author": "Rock Lobster Inc.",
+  "author_uri": "https://github.com/rocklobster-in/",
+  "description": {
+   "raw": "Just another contact form plugin. Simple but flexible.",
+   "rendered": "Just another contact form plugin. Simple but flexible. <cite>By <a href=\"https://github.com/rocklobster-in/\">Rock Lobster Inc.</a>.</cite>"
+  },
+  "version": "6.1.7",
+  "network_only": false,
+  "requires_wp": "6.7",
+  "requires_php": "7.4",
+  "textdomain": "contact-form-7",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/contact-form-7/wp-contact-form-7",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "elementor/elementor",
+  "status": "active",
+  "name": "Elementor",
+  "plugin_uri": "https://elementor.com/?utm_source=wp-plugins&#038;utm_campaign=plugin-uri&#038;utm_medium=wp-dash",
+  "author": "Elementor.com",
+  "author_uri": "https://elementor.com/?utm_source=wp-plugins&#038;utm_campaign=author-uri&#038;utm_medium=wp-dash",
+  "description": {
+   "raw": "The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now!",
+   "rendered": "The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now! <cite>By <a href=\"https://elementor.com/?utm_source=wp-plugins&#038;utm_campaign=author-uri&#038;utm_medium=wp-dash\">Elementor.com</a>.</cite>"
+  },
+  "version": "4.3.3",
+  "network_only": false,
+  "requires_wp": "6.8",
+  "requires_php": "7.4",
+  "textdomain": "elementor",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/elementor/elementor",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "elementor-pro/elementor-pro",
+  "status": "active",
+  "name": "Elementor Pro",
+  "plugin_uri": "https://go.elementor.com/wp-dash-wp-plugins-author-uri/",
+  "author": "Elementor.com",
+  "author_uri": "https://go.elementor.com/wp-dash-wp-plugins-author-uri/",
+  "description": {
+   "raw": "Elevate your designs and unlock the full power of the Atomic Editor. Gain access to dozens of Pro widgets, Website Templates, Theme Builder, Pop Ups, Forms, reusable Components, and WooCommerce building capabilities.",
+   "rendered": "Elevate your designs and unlock the full power of the Atomic Editor. Gain access to dozens of Pro widgets, Website Templates, Theme Builder, Pop Ups, Forms, reusable Components, and WooCommerce building capabilities. <cite>By <a href=\"https://go.elementor.com/wp-dash-wp-plugins-author-uri/\">Elementor.com</a>.</cite>"
+  },
+  "version": "4.3.0",
+  "network_only": false,
+  "requires_wp": "6.8",
+  "requires_php": "7.4",
+  "textdomain": "elementor-pro",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/elementor-pro/elementor-pro",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "header-footer-code-manager/99robots-header-footer-code-manager",
+  "status": "active",
+  "name": "Header Footer Code Manager",
+  "plugin_uri": "https://draftpress.com/products",
+  "author": "DraftPress",
+  "author_uri": "https://draftpress.com/",
+  "description": {
+   "raw": "Header Footer Code Manager is a quick and simple way for you to add tracking code snippets, conversion pixels, or other scripts required by third party services for analytics, tracking, marketing, or chat functions. Used by 700,000+ sites. For detailed documentation, please visit the plugin\u2019s <a href=\"https://draftpress.com/\"> official page</a>.",
+   "rendered": "Header Footer Code Manager is a quick and simple way for you to add tracking code snippets, conversion pixels, or other scripts required by third party services for analytics, tracking, marketing, or chat functions. Used by 700,000+ sites. For detailed documentation, please visit the plugin\u2019s <a href=\"https://draftpress.com/\"> official page</a>. <cite>By <a href=\"https://draftpress.com/\">DraftPress</a>.</cite>"
+  },
+  "version": "1.1.46",
+  "network_only": false,
+  "requires_wp": "4.9",
+  "requires_php": "5.6.20",
+  "textdomain": "header-footer-code-manager",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/header-footer-code-manager/99robots-header-footer-code-manager",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "ip2location-country-blocker/ip2location-country-blocker",
+  "status": "active",
+  "name": "IP2Location Country Blocker",
+  "plugin_uri": "https://ip2location.com/resources/wordpress-ip2location-country-blocker",
+  "author": "IP2Location",
+  "author_uri": "https://www.ip2location.com",
+  "description": {
+   "raw": "Block visitors from accessing your website or admin area by their country.",
+   "rendered": "Block visitors from accessing your website or admin area by their country. <cite>By <a href=\"https://www.ip2location.com\">IP2Location</a>.</cite>"
+  },
+  "version": "2.45.0",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "7.4",
+  "textdomain": "ip2location-country-blocker.",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/ip2location-country-blocker/ip2location-country-blocker",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "litespeed-cache/litespeed-cache",
+  "status": "inactive",
+  "name": "LiteSpeed Cache",
+  "plugin_uri": "https://www.litespeedtech.com/products/cache-plugins/wordpress-acceleration",
+  "author": "LiteSpeed Technologies",
+  "author_uri": "https://www.litespeedtech.com",
+  "description": {
+   "raw": "High-performance page caching and site optimization from LiteSpeed",
+   "rendered": "High-performance page caching and site optimization from LiteSpeed <cite>By <a href=\"https://www.litespeedtech.com\">LiteSpeed Technologies</a>.</cite>"
+  },
+  "version": "7.9.1",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "litespeed-cache",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/litespeed-cache/litespeed-cache",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "pro-elements/pro-elements",
+  "status": "active",
+  "name": "PRO Elements",
+  "plugin_uri": "https://proelements.org/",
+  "author": "PROElements.org",
+  "author_uri": "https://proelements.org/",
+  "description": {
+   "raw": "Adds professional features for sites using the Elementor page builder.",
+   "rendered": "Adds professional features for sites using the Elementor page builder. <cite>By <a href=\"https://proelements.org/\">PROElements.org</a>.</cite>"
+  },
+  "version": "4.1.0",
+  "network_only": false,
+  "requires_wp": "6.7",
+  "requires_php": "7.4",
+  "textdomain": "pro-elements",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/pro-elements/pro-elements",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "pt-cartow-addons/addons",
+  "status": "active",
+  "name": "PT Cartow Addons",
+  "plugin_uri": "",
+  "author": "Promo Theme",
+  "author_uri": "https://promo-theme.com/",
+  "description": {
+   "raw": "Addons for Cartow theme",
+   "rendered": "Addons for Cartow theme <cite>By <a href=\"https://promo-theme.com/\">Promo Theme</a>.</cite>"
+  },
+  "version": "1.0.2",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "pt-addons",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/pt-cartow-addons/addons",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "redux-framework/redux-framework",
+  "status": "active",
+  "name": "Redux Framework",
+  "plugin_uri": "https://wordpress.org/plugins/redux-framework",
+  "author": "Team Redux",
+  "author_uri": "https://redux.io",
+  "description": {
+   "raw": "Build better sites in WordPress fast!",
+   "rendered": "Build better sites in WordPress fast! <cite>By <a href=\"https://redux.io\">Team Redux</a>.</cite>"
+  },
+  "version": "4.5.15",
+  "network_only": false,
+  "requires_wp": "5.3",
+  "requires_php": "7.4",
+  "textdomain": "redux-framework",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/redux-framework/redux-framework",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "sg-security/sg-security",
+  "status": "inactive",
+  "name": "Security Optimizer",
+  "plugin_uri": "https://siteground.com",
+  "author": "SiteGround",
+  "author_uri": "https://www.siteground.com",
+  "description": {
+   "raw": "Security Optimizer by SiteGround is the all-in-one security solution for your WordPress website. With the carefully selected and easy to configure functions the plugin provides everything you need to secure your website and prevent a number of threats such as brute-force attacks, compromised login, data leaks and more.",
+   "rendered": "Security Optimizer by SiteGround is the all-in-one security solution for your WordPress website. With the carefully selected and easy to configure functions the plugin provides everything you need to secure your website and prevent a number of threats such as brute-force attacks, compromised login, data leaks and more. <cite>By <a href=\"https://www.siteground.com\">SiteGround</a>.</cite>"
+  },
+  "version": "1.6.8",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "sg-security",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/sg-security/sg-security",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "softaculous-pro/softaculous-pro",
+  "status": "active",
+  "name": "SoftWP",
+  "plugin_uri": "https://softwp.net/",
+  "author": "Softaculous",
+  "author_uri": "https://www.softaculous.com",
+  "description": {
+   "raw": "SoftWP plugin helps users get familiar with WordPress and build a functional website with a seamless onboarding process and Softaculous AI to help build content. Softaculous also offers an assistant which provides tour of essential aspects of WordPress for the user to understand the functionality.",
+   "rendered": "SoftWP plugin helps users get familiar with WordPress and build a functional website with a seamless onboarding process and Softaculous AI to help build content. Softaculous also offers an assistant which provides tour of essential aspects of WordPress for the user to understand the functionality. <cite>By <a href=\"https://www.softaculous.com\">Softaculous</a>.</cite>"
+  },
+  "version": "2.3.8",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "softaculous-pro",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/softaculous-pro/softaculous-pro",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "wp-reviews-plugin-for-google/wp-reviews-plugin-for-google",
+  "status": "active",
+  "name": "Widgets for Google Reviews",
+  "plugin_uri": "https://wordpress.org/plugins/wp-reviews-plugin-for-google/",
+  "author": "Trustindex.io ",
+  "author_uri": "https://www.trustindex.io/",
+  "description": {
+   "raw": "Google Reviews Widget for WordPress. Display Google reviews in 1 minute with 45 professional layouts. Build trust, boost SEO, and increase sales.",
+   "rendered": "Google Reviews Widget for WordPress. Display Google reviews in 1 minute with 45 professional layouts. Build trust, boost SEO, and increase sales. <cite>By <a href=\"https://www.trustindex.io/\">Trustindex.io </a>.</cite>"
+  },
+  "version": "14.2",
+  "network_only": false,
+  "requires_wp": "6.2",
+  "requires_php": "7.4",
+  "textdomain": "wp-reviews-plugin-for-google",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/wp-reviews-plugin-for-google/wp-reviews-plugin-for-google",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "wp-file-manager/file_folder_manager",
+  "status": "active",
+  "name": "WP File Manager",
+  "plugin_uri": "https://filemanagerpro.io/",
+  "author": "mndpsingh287",
+  "author_uri": "https://profiles.wordpress.org/mndpsingh287",
+  "description": {
+   "raw": "Manage your WP files.",
+   "rendered": "Manage your WP files. <cite>By <a href=\"https://profiles.wordpress.org/mndpsingh287\">mndpsingh287</a>.</cite>"
+  },
+  "version": "8.0.6",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "wp-file-manager",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/wp-file-manager/file_folder_manager",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "wp-mail-smtp/wp_mail_smtp",
+  "status": "active",
+  "name": "WP Mail SMTP",
+  "plugin_uri": "https://wpmailsmtp.com/",
+  "author": "WP Mail SMTP",
+  "author_uri": "https://wpmailsmtp.com/",
+  "description": {
+   "raw": "Send WordPress emails reliably via SMTP or API using SendLayer, Brevo, SMTP.com, Gmail, Outlook, or another email service of your choice.",
+   "rendered": "Send WordPress emails reliably via SMTP or API using SendLayer, Brevo, SMTP.com, Gmail, Outlook, or another email service of your choice. <cite>By <a href=\"https://wpmailsmtp.com/\">WP Mail SMTP</a>.</cite>"
+  },
+  "version": "4.10.0",
+  "network_only": false,
+  "requires_wp": "5.5",
+  "requires_php": "7.4",
+  "textdomain": "wp-mail-smtp",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/wp-mail-smtp/wp_mail_smtp",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "wordpress-seo/wp-seo",
+  "status": "active",
+  "name": "Yoast SEO",
+  "plugin_uri": "https://yoa.st/1uj",
+  "author": "Team Yoast",
+  "author_uri": "https://yoa.st/1uk",
+  "description": {
+   "raw": "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.",
+   "rendered": "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more. <cite>By <a href=\"https://yoa.st/1uk\">Team Yoast</a>.</cite>"
+  },
+  "version": "28.6",
+  "network_only": false,
+  "requires_wp": "6.9",
+  "requires_php": "7.4",
+  "textdomain": "wordpress-seo",
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/plugins/wordpress-seo/wp-seo",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ }
+]

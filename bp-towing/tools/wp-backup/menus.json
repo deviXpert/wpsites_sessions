@@ -1,0 +1,63 @@
+[
+ {
+  "id": 34,
+  "description": "",
+  "name": "Menu 1",
+  "slug": "menu-1",
+  "meta": [],
+  "acf": [],
+  "locations": [
+   "navigation",
+   "mobile"
+  ],
+  "auto_add": false,
+  "_links": {
+   "self": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/menus/34",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/menus"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/taxonomies/nav_menu"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/menu-items?menus=34"
+    }
+   ],
+   "wp:menu-location": [
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/menu-locations/navigation"
+    },
+    {
+     "embeddable": true,
+     "href": "https://bptowingservice.ca/wp-json/wp/v2/menu-locations/mobile"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]
