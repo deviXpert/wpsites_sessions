@@ -3,7 +3,7 @@
 Site: **https://bptowingservice.ca/** (WordPress + "cartow" theme w/ Redux header/footer + Elementor 4.3.3 / Elementor Pro 4.3.0 + Pro Elements, Yoast, Trustindex, CF7, ACF)
 
 ## Before doing anything
-- Credentials come from env vars only: `WP_URL`, `WP_USER`, `WP_APP_PASS`. Never paste them in chat or commit them.
+- Credentials come from env vars only: `WP_URL`, `WP_USER`, `WP_APP_PASSWORD`. Never paste them in chat or commit them.
 - `tools/wp.py` refuses to run unless the host is `bptowingservice.ca`.
 - No Elementor MCP server was attached to the session; Elementor data is read/written via the WP REST API (`meta._elementor_data`), which is the same data the site's MCP plugin (`/wp-json/mcp/...`, `elementor-mcp-composer`) operates on.
 - Work on drafts; never overwrite live pages without the user's OK. Do NOT touch Yoast meta.

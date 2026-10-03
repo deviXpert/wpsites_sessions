@@ -1,5 +1,5 @@
 """WordPress REST helper for BP Towing (bptowingservice.ca). Credentials come ONLY from env vars
-WP_URL / WP_USER / WP_APP_PASS. Refuses to run unless host is bptowingservice.ca."""
+WP_URL / WP_USER / WP_APP_PASSWORD. Refuses to run unless host is bptowingservice.ca."""
 import os, json, base64, urllib.request, urllib.parse
 U = (os.environ.get('WP_URL') or '').rstrip('/')
 EXPECTED = os.environ.get('BP_EXPECTED_HOST', 'bptowingservice.ca')
