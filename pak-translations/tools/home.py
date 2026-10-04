@@ -77,7 +77,7 @@ def build():
     cert = sec([C([
         C([EB('Certified Translation'), H('Certified Translation for <span class="x-hl">Immigration, Visa &amp; Legal</span> Documents', 'h2', 'x-title'),
            P('Applying for a visa, immigration or university abroad? We translate and certify your personal and legal documents so they are ready to submit. On request we can provide a signed translator affidavit and guide you through the notarization process.'),
-           C([BTN('Order Certified Translation', U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-o', 'envelope', False)], 'x-btns', 'row')], 'x-band-copy rv'),
+           C([BTN('Order Certified Translation', U + '/your-order/', 'x-btn')], 'x-btns', 'row')], 'x-band-copy rv'),
         C([ILIST([(t, 'check-circle') for t in ('Birth, marriage &amp; death certificates', 'Degrees, diplomas &amp; transcripts', 'Court orders, wills &amp; contracts',
                                                  'Land records &amp; affidavits', 'Medical reports &amp; claim forms', 'Business &amp; financial documents')], 'x-checks x-checks-1')], 'x-band-side rv rv-r'),
     ], 'x-band', 'row')])

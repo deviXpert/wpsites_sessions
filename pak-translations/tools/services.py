@@ -53,7 +53,7 @@ def build():
         block = split([IMG(UP + img, '', f'{name} services by Pak Translations')],
                       [P(f'<i class="fas fa-{icon}" aria-hidden="true"></i>&nbsp; Service {i + 1:02d}', 'x-eyebrow'),
                        H(name, 'h2', 'x-title x-title-sm'), P(text, 'x-lead'), ILIST([(t, 'check-circle') for t in items], 'x-checks'),
-                       C([BTN('Get a Quote', U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-ol', 'envelope', False)], 'x-btns', 'row')], rev)
+                       C([BTN('Get a Quote', U + '/your-order/', 'x-btn')], 'x-btns', 'row')], rev)
         blocks.append(C([C([block], 'x-svc-block', box=True)], 'x-svc-row' + (' x-bg' if rev else ''), _element_id=slug))
     steps = [('comments', 'Understanding', 'We discuss your requirements and reference material.'),
              ('file-signature', 'Order', 'Confirm through the order form or by email.'),

@@ -158,7 +158,7 @@ def phero(crumb, h1, lead, btns=None):
     """Inner-page hero with breadcrumb + the page's single H1."""
     els = [P(f'<a href="{U}/">Home</a> &nbsp;/&nbsp; {crumb}', 'x-crumbs rv'), H(h1, 'h1', 'rv'), P(lead, 'x-lead rv')]
     if btns is None:
-        btns = [BTN('Get a Free Quote', U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-o', 'envelope', False)]
+        btns = [BTN('Get a Free Quote', U + '/your-order/', 'x-btn')]
     if btns: els.append(C(btns, 'x-btns rv', 'row'))
     return C(els, 'x-phero x-center', box=True)
 
@@ -176,7 +176,7 @@ def faq_sec(faqs, lead='Quick answers to common questions. Still curious? Please
 
 def cta_sec(title='Ready to Reach a Global Audience?', text='Tell us what you need translated — we will match you with the right linguist and send a free quote.', primary=('Get a Free Quote', None)):
     return sec([C([H(title, 'h2'), P(text),
-                   C([BTN(primary[0], primary[1] or U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-ol', 'envelope', False)], 'x-btns', 'row')],
+                   C([BTN(primary[0], primary[1] or U + '/your-order/', 'x-btn')], 'x-btns', 'row')],
                   'x-cta rv rv-s')], 'x-center x-cta-sec')
 
 def steps_sec(eb, title, lead, steps, dark=True):
