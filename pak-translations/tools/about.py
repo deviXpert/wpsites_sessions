@@ -19,10 +19,11 @@ def build():
          C([BTN('Explore Our Services', U + '/services/', 'x-btn x-btn-g')], 'x-btns', 'row')])])
 
     stats = C([C([
+        W('counter', 'x-stat', starting_number=0, ending_number=15, suffix='+', title='Years of translation expertise', duration=1800),
         W('counter', 'x-stat', starting_number=0, ending_number=120, suffix='+', title='Languages &amp; dialects', duration=2000),
         W('counter', 'x-stat', starting_number=0, ending_number=11, suffix='', title='Specialist language services', duration=1500),
         W('counter', 'x-stat', starting_number=0, ending_number=99, suffix='%', title='Accuracy on large localization projects', duration=2000),
-    ], 'x-stats-grid x-g3 rv rv-s', 'grid')], 'x-stats x-stats-flat', box=True)
+    ], 'x-stats-grid x-g4 rv rv-s', 'grid')], 'x-stats x-stats-flat', box=True)
 
     values = [('handshake', 'Commitment', 'We take ownership of every project and see it through — on time, as agreed, without excuses.'),
               ('balance-scale', 'Honesty', 'Clear quotes, realistic deadlines and open communication if anything changes.'),
@@ -44,7 +45,7 @@ def build():
         C([EB('Meet the Founder'), H('Dr. Muhammad <span class="x-hl">Salman Riaz</span>', 'h2', 'x-title'),
            P('Every message deserves to be understood exactly as intended — that is the standard I set for every project we deliver.', 'x-quote'),
            P('Dr. Muhammad Salman Riaz holds a Ph.D. in Translation Studies from the University of Leeds, UK and an M.Phil. in Linguistics from the National University of Modern Languages (NUML), Pakistan.'),
-           P('He brings over 10 years of experience in translation and localization, review, QA, transcription, subtitling, language-proficiency test development, and phonetic and morpho-syntactic services. Known for exceeding client expectations, he founded Pak Translations to offer the same level of quality in all Asian and European languages.'),
+           P('He brings over 15 years of experience in translation and localization, review, QA, transcription, subtitling, language-proficiency test development, and phonetic and morpho-syntactic services. Known for exceeding client expectations, he founded Pak Translations to offer the same level of quality in all Asian and European languages.'),
            P('Dr. Muhammad Salman Riaz<span>Founder &amp; CEO, Pak Translations</span>', 'x-sign'),
            C([BTN('View LinkedIn Profile', LINKEDIN, 'x-btn x-btn-g', 'fab fa-linkedin-in', True, True)], 'x-btns', 'row')], 'x-founder-copy rv'),
     ], 'x-founder', 'row')])

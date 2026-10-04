@@ -6,8 +6,8 @@ def build():
     seed('home')
     hero = C([
         C([
-            P('<i class="fas fa-award" aria-hidden="true"></i>&nbsp; PhD-led translation company', 'x-eyebrow rv'),
-            H('Professional Translation Services — <span class="x-hl">Accurate, Certified &amp; On Time</span>', 'h1', 'rv'),
+            P('<i class="fas fa-award" aria-hidden="true"></i>&nbsp; PhD-led translation company serving the world', 'x-eyebrow rv'),
+            H('Professional Translation Services — <span class="x-hl">Accurate, Fast &amp; On Time</span>', 'h1', 'rv'),
             P('Pak Translations is your one-stop language partner. From certified document translation for immigration to website localization, transcription and subtitling, our tested native linguists work in <strong>120+ languages</strong> — and every project is quality-checked before it reaches you.', 'x-lead rv'),
             C([BTN('Get a Free Quote', '#quote', 'x-btn', 'arrow-right')], 'x-btns rv', 'row'),
             C([IBOX('language', '120+ Languages', 'Asian, European &amp; African', 'x-chip', tag='p', position='left'),
@@ -24,10 +24,11 @@ def build():
     marq = C([RAW(f'<div class="x-marq-track" aria-hidden="true">{track}{track}</div>')], 'x-marq')
 
     stats = C([C([
+        W('counter', 'x-stat', starting_number=0, ending_number=15, suffix='+', title='Years of translation expertise', duration=1800),
         W('counter', 'x-stat', starting_number=0, ending_number=120, suffix='+', title='Languages &amp; dialects', duration=2000),
         W('counter', 'x-stat', starting_number=0, ending_number=99, suffix='%', title='Accuracy on large localization projects', duration=2000),
         W('counter', 'x-stat', starting_number=0, ending_number=1, suffix='M+', title='Words localized for one client alone', duration=1200),
-    ], 'x-stats-grid x-g3 rv rv-s', 'grid')], 'x-stats', box=True)
+    ], 'x-stats-grid x-g4 rv rv-s', 'grid')], 'x-stats', box=True)
 
     svc_desc = {
         'localization': 'Adapt websites, apps and software for new markets with culturally sensitive localization that respects tags, placeholders and style guides.',
@@ -103,7 +104,7 @@ def build():
         C([IMG(UP + '2026/10/founder-dr-salman-riaz.jpg', '', 'Dr. Muhammad Salman Riaz, founder of Pak Translations', 'large')], 'x-founder-img rv rv-l'),
         C([EB('Meet the Founder'), H('Led by <span class="x-hl">Dr. Muhammad Salman Riaz</span>', 'h2', 'x-title'),
            P('Pak Translations was founded on commitment, honesty, perseverance and simplicity — and on the belief that every message deserves to be understood exactly as intended.', 'x-quote'),
-           P('Dr. Riaz holds a Ph.D. in Translation Studies from the University of Leeds, UK and an M.Phil. in Linguistics from the National University of Modern Languages, Pakistan. With over a decade of experience in translation, localization, QA, transcription, subtitling and language-test development, he personally oversees the quality of our work.'),
+           P('Dr. Riaz holds a Ph.D. in Translation Studies from the University of Leeds, UK and an M.Phil. in Linguistics from the National University of Modern Languages, Pakistan. With over 15 years of experience in translation, localization, QA, transcription, subtitling and language-test development, he personally oversees the quality of our work.'),
            P('Dr. Muhammad Salman Riaz<span>Founder &amp; CEO, Pak Translations</span>', 'x-sign'),
            BTN('More About Us', U + '/about-us/', 'x-btn x-btn-g')], 'x-founder-copy rv'),
     ], 'x-founder', 'row')])
@@ -127,12 +128,10 @@ def build():
           pagination='bullets', show_arrows='yes', space_between={'unit': 'px', 'size': 24}, image_size='thumbnail'),
     ], 'x-bg')
 
-    faqs = [('How much do translation services cost?', 'Pricing depends on the language pair, word count, subject matter (for example legal or medical) and your deadline. Send us your document through the quote form or by email and we will reply with a clear, no-obligation quote.'),
-            ('Do you provide certified translations for immigration and visas?', 'Yes. We translate and certify personal and legal documents such as birth and marriage certificates, degrees, transcripts and court papers. On request we can also provide a signed translator affidavit and guidance with notarization.'),
-            ('Which languages do you translate?', 'We work in 120+ languages across South Asia, East and Southeast Asia, the Middle East, Europe and Africa — including regional languages such as Urdu, Punjabi, Pashto, Sindhi, Balochi and Saraiki. See our <a href="https://pak-translations.com/languages/">full language list</a>.'),
-            ('Can you translate between two non-English languages?', 'Yes. Our services are not limited to English. We regularly handle pairs such as German, French or Spanish into other languages — just ask about your combination.'),
+    faqs = [('How much do translation services cost?', 'Pricing depends on the language pair, word count, subject matter (for example legal or medical) and your deadline. Let us know about your needs, and we will get back to you with a clear, no-obligation quote.'),
+            ('Which languages do you translate?', 'We cover 120+ languages across Asia, Europe and Africa. See our <a href="https://pak-translations.com/languages/">full language list</a>.'),
             ('How long does a translation take?', 'It depends on the length and complexity of the content. We agree a realistic deadline with you before starting, and if anything unexpected happens we inform you immediately and reassign the work so your delivery date is protected.'),
-            ('How do I place an order?', 'Use our <a href="https://pak-translations.com/your-order/">order form</a> to share your files and requirements, or contact us by email at info@pak-translations.com.'),
+            ('How do I place an order?', 'Use our <a href="https://pak-translations.com/your-order/">order form</a> to share your files and requirements, or contact us by email.'),
             ('Do you offer support after delivery?', 'Absolutely. If you have questions or need a revision after delivery, we are here to help — our support does not end when the project does.')]
     faq = sec([C([
         C([EB('FAQs'), H('Frequently Asked <span class="x-hl">Questions</span>', 'h2', 'x-title'),
@@ -154,7 +153,7 @@ def build():
           'sameAs': [FB, TW],
           'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': 'Translation services', 'itemListElement': [{'@type': 'Offer', 'itemOffered': {'@type': 'Service', 'name': n}} for _, n, _ in SERVICES]}}
     schema = RAW(f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>')
-    return [hero, stats, marq, svc, why, how, cert, lang, work, founder, testi, faq, cta, schema]
+    return [hero, stats, marq, svc, why, how, lang, work, testi, faq, cta, schema]
 
 if __name__ == '__main__':
     json.dump(build(), open(os.path.join(D, 'built_home.json'), 'w'))
