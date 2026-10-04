@@ -6,7 +6,7 @@ def build():
     seed('home')
     hero = C([
         C([
-            P('<i class="fas fa-award" aria-hidden="true"></i>&nbsp; PhD-led translation company serving the world', 'x-eyebrow rv'),
+            P(FAI('award') + '&nbsp; PhD-led translation company serving the world', 'x-eyebrow rv'),
             H('Professional Translation Services — <span class="x-hl">Accurate, Fast &amp; On Time</span>', 'h1', 'rv'),
             P('Pak Translations is your one-stop language partner. From certified document translation for immigration to website localization, transcription and subtitling, our tested native linguists work in <strong>120+ languages</strong> — and every project is quality-checked before it reaches you.', 'x-lead rv'),
             C([BTN('Get a Free Quote', '#quote', 'x-btn', 'arrow-right')], 'x-btns rv', 'row'),
@@ -121,11 +121,12 @@ def build():
     walk(json.loads(P530['meta']['_elementor_data']))
     for s in slides:
         s['title'] = s['title'].replace(', <a', ' · <a').replace('Director,,', 'Director,')
+        s['image'] = dict(s['image'], url=THUMB.get(s['image'].get('url'), s['image'].get('url')))   # small avatar, not the full-size original
     testi = sec([
         head('Client Reviews', 'What Our <span class="x-hl">Clients Say</span>', 'Universities, development organisations and individuals trust us with their most important words.'),
         W('testimonial-carousel', 'x-testi rv', slides=slides, skin='default', layout='image_inline', alignment='left', slides_per_view='2', slides_per_view_tablet='1',
           slides_per_view_mobile='1', slides_to_scroll='1', autoplay='yes', autoplay_speed=6000, loop='yes', pause_on_hover='yes', speed=600,
-          pagination='bullets', show_arrows='yes', space_between={'unit': 'px', 'size': 24}, image_size='thumbnail'),
+          pagination='bullets', show_arrows='yes', space_between={'unit': 'px', 'size': 24}, image_size='thumbnail', image_size_size='thumbnail'),
     ], 'x-bg')
 
     faqs = [('How much do translation services cost?', 'Pricing depends on the language pair, word count, subject matter (for example legal or medical) and your deadline. Let us know about your needs, and we will get back to you with a clear, no-obligation quote.'),
@@ -137,7 +138,7 @@ def build():
         C([EB('FAQs'), H('Frequently Asked <span class="x-hl">Questions</span>', 'h2', 'x-title'),
            P('Quick answers to common questions. Still curious? Please fill in the Contact Us form or send us an email, and we will get back to you.', 'x-lead'),
            BTN('Place an Order', U + '/your-order/', 'x-btn x-btn-g', 'file-signature', False)], 'x-faq-side rv'),
-        W('accordion', 'x-faq rv', tabs=[{'_id': rid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs], faq_schema='yes', title_html_tag='h3',
+        W('accordion', 'x-faq rv', tabs=[{'_id': rid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs], faq_schema='yes', title_html_tag='div',
           selected_icon=ICO('plus'), selected_active_icon=ICO('minus'), icon_align='right'),
     ], 'x-faq-wrap', 'row')])
 

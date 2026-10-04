@@ -1,7 +1,7 @@
 :root{--ink:#0B1A10;--ink-2:#10261A;--ink-3:#173322;--g:#6DB52E;--g-2:#4E9A1F;--g-d:#2F6E14;--y:#F8C300;--y-2:#FFD84A;--bg:#F5F8F1;--bg-2:#EEF3E7;--line:#E2E9DA;--text:#4A5560;--head:#0B1A10;--r:20px;--r-lg:28px;--sh:0 12px 34px -14px rgba(11,26,16,.18);--sh-lg:0 34px 70px -26px rgba(11,26,16,.38);--ease:cubic-bezier(.2,.7,.2,1);--grad:linear-gradient(120deg,#6DB52E 0%,#A9D63A 45%,#F8C300 100%)}
 html{scroll-behavior:smooth}
-body{font-family:"Figtree",system-ui,sans-serif;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased;overflow-x:clip}
-body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,sans-serif}
+body{font-family:"Figtree","Figtree Fallback",system-ui,sans-serif;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit","Outfit Fallback",system-ui,sans-serif}
 ::selection{background:var(--y);color:var(--ink)}
 /* ---------- layout primitives (independent of Elementor's generated CSS) ---------- */
 .x-sec,.x-sec .e-con,.x-hdr,.x-hdr .e-con,.x-ftr,.x-ftr .e-con{--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;--margin-top:0px;--margin-bottom:0px}
@@ -19,19 +19,19 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 .x-bg{background:var(--bg)}.x-dark{background:var(--ink);color:#C9D4C6}
 .x-t p{margin:0 0 1em}.x-t p:last-child{margin:0}
 /* ---------- type ---------- */
-.x-h .elementor-heading-title{font-family:"Outfit",sans-serif;color:var(--head);letter-spacing:-.025em;line-height:1.12;font-weight:700}
+.x-h .elementor-heading-title{font-family:"Outfit","Outfit Fallback",sans-serif;color:var(--head);letter-spacing:-.025em;line-height:1.12;font-weight:700}
 .x-title .elementor-heading-title{font-size:clamp(30px,3.6vw,50px);font-weight:700}
 .x-dark .x-h .elementor-heading-title{color:#fff}
 .x-hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:xshine 6s linear infinite}
 @keyframes xshine{to{background-position:200% center}}
-.x-eyebrow p{display:inline-flex;align-items:center;gap:10px;margin:0;font-family:"Outfit";font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--g-d);background:rgba(109,181,46,.1);border:1px solid rgba(109,181,46,.25);padding:7px 14px;border-radius:999px}
+.x-eyebrow p{display:inline-flex;align-items:center;gap:10px;margin:0;font-family:"Outfit","Outfit Fallback";font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--g-d);background:rgba(109,181,46,.1);border:1px solid rgba(109,181,46,.25);padding:7px 14px;border-radius:999px}
 .x-eyebrow p:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--g);box-shadow:0 0 0 4px rgba(109,181,46,.2)}
 .x-dark .x-eyebrow p{color:var(--y);background:rgba(248,195,0,.08);border-color:rgba(248,195,0,.25)}.x-dark .x-eyebrow p:before{background:var(--y);box-shadow:0 0 0 4px rgba(248,195,0,.2)}
 .x-lead{font-size:18px;line-height:1.75;max-width:720px}
 .x-center .x-lead{margin:0 auto}
 .x-head{gap:16px;margin-bottom:34px}
 /* ---------- buttons ---------- */
-.x-btn .elementor-button{position:relative;overflow:hidden;font-family:"Outfit",sans-serif;font-weight:600;font-size:16px;letter-spacing:.01em;line-height:1;border-radius:999px;padding:17px 28px;background:var(--y);color:var(--ink);border:2px solid var(--y);box-shadow:0 14px 28px -14px rgba(248,195,0,.9);transition:transform .3s var(--ease),box-shadow .3s,background .3s,color .3s,border-color .3s}
+.x-btn .elementor-button{position:relative;overflow:hidden;font-family:"Outfit","Outfit Fallback",sans-serif;font-weight:600;font-size:16px;letter-spacing:.01em;line-height:1;border-radius:999px;padding:17px 28px;background:var(--y);color:var(--ink);border:2px solid var(--y);box-shadow:0 14px 28px -14px rgba(248,195,0,.9);transition:transform .3s var(--ease),box-shadow .3s,background .3s,color .3s,border-color .3s}
 .x-btn .elementor-button:after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(110deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s var(--ease)}
 .x-btn .elementor-button:hover:after{left:140%}
 .x-btn .elementor-button:hover{transform:translateY(-3px);background:var(--y-2);border-color:var(--y-2);color:var(--ink);box-shadow:0 20px 34px -14px rgba(248,195,0,.95)}
@@ -61,13 +61,13 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 .x-bar.elementor-sticky--effects .x-logo img{width:118px!important}
 .x-nav{flex:1 1 auto;width:auto!important}
 .x-nav .elementor-nav-menu--main{justify-content:center;display:flex}
-.x-nav .elementor-nav-menu--main .elementor-item{font-family:"Outfit";font-weight:500;font-size:16px;color:var(--ink)!important;padding:10px 15px!important;border-radius:999px;transition:background .25s,color .25s}
+.x-nav .elementor-nav-menu--main .elementor-item{font-family:"Outfit","Outfit Fallback";font-weight:500;font-size:16px;color:var(--ink)!important;padding:10px 15px!important;border-radius:999px;transition:background .25s,color .25s}
 .x-nav .elementor-nav-menu--main .elementor-item:hover,.x-nav .elementor-nav-menu--main .elementor-item.elementor-item-active{background:var(--bg-2);color:var(--g-d)!important}
 .x-nav .elementor-nav-menu--main .elementor-item:before,.x-nav .elementor-nav-menu--main .elementor-item:after{display:none!important}
 .x-nav .elementor-menu-toggle{background:var(--bg-2)!important;border-radius:12px;padding:10px;color:var(--ink)!important;font-size:22px}
 .x-nav .elementor-menu-toggle svg{fill:var(--ink)}
 .x-nav .elementor-nav-menu--dropdown{background:#fff!important;border-radius:18px;box-shadow:var(--sh-lg);margin-top:14px!important;overflow:hidden;border:1px solid var(--line)}
-.x-nav .elementor-nav-menu--dropdown .elementor-item{font-family:"Outfit";font-weight:500;font-size:16px;color:var(--ink)!important;background:#fff!important;padding:14px 22px!important;border-bottom:1px solid var(--line)}
+.x-nav .elementor-nav-menu--dropdown .elementor-item{font-family:"Outfit","Outfit Fallback";font-weight:500;font-size:16px;color:var(--ink)!important;background:#fff!important;padding:14px 22px!important;border-bottom:1px solid var(--line)}
 .x-nav .elementor-nav-menu--dropdown .elementor-item:hover,.x-nav .elementor-nav-menu--dropdown .elementor-item-active{color:var(--g-d)!important;background:var(--bg)!important}
 .x-hcta{flex:0 0 auto;width:auto!important}
 #x-progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--grad);z-index:100000;pointer-events:none}
@@ -86,7 +86,7 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 .x-chip:hover{transform:translateY(-4px);background:rgba(255,255,255,.1);border-color:rgba(248,195,0,.4)}
 .x-chip .elementor-icon-box-wrapper{display:flex;align-items:center;gap:12px;text-align:left}.x-chip .elementor-icon-box-icon{margin:0!important;display:flex}
 .x-chip .elementor-icon{font-size:20px;color:var(--y)!important}.x-chip .elementor-icon svg{fill:var(--y);width:20px;height:20px}
-.x-chip .elementor-icon-box-title{margin:0!important;color:#fff;font-family:"Outfit";font-weight:600;font-size:15px;line-height:1.2}
+.x-chip .elementor-icon-box-title{margin:0!important;color:#fff;font-family:"Outfit","Outfit Fallback";font-weight:600;font-size:15px;line-height:1.2}
 .x-chip .elementor-icon-box-description{margin:2px 0 0!important;color:#9FB09A;font-size:13px;line-height:1.3}
 .x-hero-card{flex:1 1 42%;max-width:480px;position:relative;background:rgba(255,255,255,.98);border-radius:var(--r-lg);padding:34px!important;box-shadow:0 40px 90px -30px rgba(0,0,0,.6);gap:6px!important;scroll-margin-top:130px}
 .x-hero-card:before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1.5px;background:var(--grad);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
@@ -95,14 +95,14 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 /* ---------- forms (Elementor Pro Form) ---------- */
 .x-form .elementor-form-fields-wrapper{row-gap:14px}
 .x-form .elementor-field-group{margin-bottom:0!important}
-.x-form .elementor-field-group>label,.x-form .elementor-field-label{font-family:"Outfit";font-size:14px;font-weight:500;color:var(--ink);margin-bottom:6px}
-.x-form .elementor-field-textual,.x-form .elementor-field-group .elementor-select-wrapper select,.x-form input[type=file]{width:100%;border:1.5px solid var(--line)!important;border-radius:14px!important;background:var(--bg)!important;padding:13px 15px!important;font-family:"Figtree";font-size:15px!important;color:var(--ink)!important;min-height:50px;transition:border-color .25s,box-shadow .25s,background .25s}
+.x-form .elementor-field-group>label,.x-form .elementor-field-label{font-family:"Outfit","Outfit Fallback";font-size:14px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.x-form .elementor-field-textual,.x-form .elementor-field-group .elementor-select-wrapper select,.x-form input[type=file]{width:100%;border:1.5px solid var(--line)!important;border-radius:14px!important;background:var(--bg)!important;padding:13px 15px!important;font-family:"Figtree","Figtree Fallback";font-size:15px!important;color:var(--ink)!important;min-height:50px;transition:border-color .25s,box-shadow .25s,background .25s}
 .x-form input[type=file]{padding:11px!important;font-size:14px!important}
 .x-form .elementor-field-textual::placeholder{color:#8A958A}
 .x-form .elementor-field-textual:focus,.x-form select:focus{border-color:var(--g)!important;background:#fff!important;box-shadow:0 0 0 4px rgba(109,181,46,.18)!important;outline:0}
 .x-form textarea.elementor-field-textual{min-height:110px}
 .x-form .elementor-field-type-submit{margin-top:6px}
-.x-form .elementor-button{width:100%;border-radius:999px!important;background:var(--y)!important;color:var(--ink)!important;font-family:"Outfit";font-weight:600;font-size:16px;padding:17px!important;transition:transform .3s var(--ease),background .3s,box-shadow .3s;box-shadow:0 14px 28px -14px rgba(248,195,0,.95)}
+.x-form .elementor-button{width:100%;border-radius:999px!important;background:var(--y)!important;color:var(--ink)!important;font-family:"Outfit","Outfit Fallback";font-weight:600;font-size:16px;padding:17px!important;transition:transform .3s var(--ease),background .3s,box-shadow .3s;box-shadow:0 14px 28px -14px rgba(248,195,0,.95)}
 .x-form .elementor-button:hover{background:var(--y-2)!important;transform:translateY(-2px)}
 .x-form .elementor-button svg{fill:currentColor;width:15px}
 .x-form .elementor-message{font-size:15px;margin-top:12px}
@@ -110,7 +110,7 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 .x-marq{background:var(--y);overflow:hidden;padding:18px 0!important;border-block:1px solid rgba(11,26,16,.1)}
 .x-marq-track{display:flex;width:max-content;gap:0;animation:xmarq 45s linear infinite}
 .x-marq:hover .x-marq-track{animation-play-state:paused}
-.x-marq-track span{font-family:"Outfit";font-weight:600;font-size:22px;color:var(--ink);white-space:nowrap;padding:0 28px;display:inline-flex;align-items:center;gap:28px}
+.x-marq-track span{font-family:"Outfit","Outfit Fallback";font-weight:600;font-size:22px;color:var(--ink);white-space:nowrap;padding:0 28px;display:inline-flex;align-items:center;gap:28px}
 .x-marq-track span:after{content:"✦";font-size:14px;color:var(--g-d)}
 @keyframes xmarq{to{transform:translateX(-50%)}}
 /* ---------- stats ---------- */
@@ -118,9 +118,9 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 .x-stats-grid{background:#fff;border-radius:var(--r-lg);box-shadow:var(--sh-lg);padding:14px!important;gap:0!important}
 .x-stat{padding:26px 22px!important;border-right:1px solid var(--line);text-align:center}
 .x-stat:last-child{border-right:0}
-.x-stat .elementor-counter-number-wrapper{font-family:"Outfit";font-weight:700;font-size:48px;line-height:1;color:var(--ink);justify-content:center}
+.x-stat .elementor-counter-number-wrapper{font-family:"Outfit","Outfit Fallback";font-weight:700;font-size:48px;line-height:1;color:var(--ink);justify-content:center}
 .x-stat .elementor-counter-number-suffix,.x-stat .elementor-counter-number-prefix{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.x-stat .elementor-counter-title{font-family:"Figtree";font-size:15px;color:var(--text);margin-top:10px;justify-content:center;text-align:center}
+.x-stat .elementor-counter-title{font-family:"Figtree","Figtree Fallback";font-size:15px;color:var(--text);margin-top:10px;justify-content:center;text-align:center}
 .x-stat .elementor-counter{display:flex;flex-direction:column-reverse;gap:0}
 /* ---------- cards ---------- */
 .x-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px!important;transition:transform .45s var(--ease),box-shadow .45s,border-color .45s;overflow:hidden;isolation:isolate}
@@ -136,7 +136,7 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 .x-svc .elementor-icon-box-title{margin:0 0 10px!important;font-size:21px;font-weight:600;line-height:1.25}
 .x-svc .elementor-icon-box-title,.x-svc .elementor-icon-box-title a{color:var(--ink)!important}
 .x-svc .elementor-icon-box-description{font-size:15.5px;line-height:1.7;margin:0;color:var(--text)}
-.x-svc .elementor-icon-box-content:after{content:"Learn more →";display:inline-block;margin-top:16px;font-family:"Outfit";font-weight:600;font-size:15px;color:var(--g-d);transition:transform .3s var(--ease)}
+.x-svc .elementor-icon-box-content:after{content:"Learn more →";display:inline-block;margin-top:16px;font-family:"Outfit","Outfit Fallback";font-weight:600;font-size:15px;color:var(--g-d);transition:transform .3s var(--ease)}
 .x-svc:hover .elementor-icon-box-content:after{transform:translateX(6px)}
 .x-svc.x-nomore .elementor-icon-box-content:after{display:none}
 .x-card-dark{background:var(--ink-2);border-color:rgba(255,255,255,.08)}
@@ -175,7 +175,7 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 .x-steps{counter-reset:step}
 .x-step{counter-increment:step;position:relative;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:var(--r);padding:30px!important;transition:transform .45s var(--ease),background .45s,border-color .45s}
 .x-step:hover{transform:translateY(-6px);background:rgba(255,255,255,.07);border-color:rgba(248,195,0,.4)}
-.x-step:after{content:"0" counter(step);position:absolute;top:22px;right:26px;font-family:"Outfit";font-weight:700;font-size:44px;line-height:1;background:linear-gradient(180deg,rgba(248,195,0,.55),rgba(248,195,0,0));-webkit-background-clip:text;background-clip:text;color:transparent}
+.x-step:after{content:"0" counter(step);position:absolute;top:22px;right:26px;font-family:"Outfit","Outfit Fallback";font-weight:700;font-size:44px;line-height:1;background:linear-gradient(180deg,rgba(248,195,0,.55),rgba(248,195,0,0));-webkit-background-clip:text;background-clip:text;color:transparent}
 .x-step .elementor-icon-box-wrapper{text-align:left!important}
 .x-step .elementor-icon-box-icon{margin:0 0 18px!important}
 .x-step .elementor-icon{width:54px;height:54px;border-radius:16px;background:var(--y);color:var(--ink)!important;display:inline-flex!important;align-items:center;justify-content:center;font-size:21px}.x-step .elementor-icon svg{fill:var(--ink);width:21px}
@@ -200,25 +200,25 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 .x-region:hover{box-shadow:var(--sh);transform:translateY(-4px)}
 .x-region .x-tags .elementor-icon-list-item{background:var(--bg);padding:7px 13px!important}
 .x-region-h .elementor-heading-title{font-size:21px!important;display:flex;align-items:center;justify-content:space-between}
-.x-count p{font-family:"Outfit";font-weight:600;font-size:13px;color:var(--g-d);background:rgba(109,181,46,.1);border-radius:999px;padding:4px 10px;margin:0;display:inline-block}
+.x-count p{font-family:"Outfit","Outfit Fallback";font-weight:600;font-size:13px;color:var(--g-d);background:rgba(109,181,46,.1);border-radius:999px;padding:4px 10px;margin:0;display:inline-block}
 /* ---------- founder ---------- */
 .x-founder{background:var(--bg);border-radius:32px;padding:56px!important;gap:56px!important;align-items:center;overflow:hidden;position:relative}
 .x-founder-img{flex:0 0 38%;position:relative}
 .x-founder-img img{width:100%!important;height:auto;border-radius:24px;background:linear-gradient(160deg,#DDEBCB,#FFF1B8);display:block}
 .x-founder-copy{flex:1 1 auto;gap:18px!important}
-.x-quote p{font-family:"Outfit";font-size:22px;line-height:1.5;color:var(--ink);font-weight:500;border-left:4px solid var(--y);padding-left:20px;margin:0}
-.x-sign p{margin:0;font-family:"Outfit";font-weight:600;color:var(--ink);font-size:18px}.x-sign span{display:block;font-family:"Figtree";font-weight:400;font-size:14px;color:var(--text)}
+.x-quote p{font-family:"Outfit","Outfit Fallback";font-size:22px;line-height:1.5;color:var(--ink);font-weight:500;border-left:4px solid var(--y);padding-left:20px;margin:0}
+.x-sign p{margin:0;font-family:"Outfit","Outfit Fallback";font-weight:600;color:var(--ink);font-size:18px}.x-sign span{display:block;font-family:"Figtree","Figtree Fallback";font-weight:400;font-size:14px;color:var(--text)}
 /* ---------- testimonials (Elementor Pro carousel) ---------- */
 .x-testi .swiper,.x-testi .elementor-swiper{padding:10px 4px 60px!important}
 .x-testi .elementor-testimonial{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px!important;height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:24px;transition:box-shadow .4s,transform .4s var(--ease)}
 .x-testi .swiper-slide{height:auto!important}
 .x-testi .elementor-testimonial:hover{box-shadow:var(--sh);transform:translateY(-4px)}
 .x-testi .elementor-testimonial__content{position:relative}
-.x-testi .elementor-testimonial__content:before{content:"“";font-family:"Outfit";font-size:80px;line-height:.6;display:block;height:34px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.x-testi .elementor-testimonial__content:before{content:"“";font-family:"Outfit","Outfit Fallback";font-size:80px;line-height:.6;display:block;height:34px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .x-testi .elementor-testimonial__text{font-size:16.5px!important;line-height:1.75!important;color:var(--text)!important;font-style:normal!important}
 .x-testi .elementor-testimonial__footer{display:flex;align-items:center;gap:14px;border-top:1px solid var(--line);padding-top:20px}
 .x-testi .elementor-testimonial__image img{width:52px!important;height:52px!important;border-radius:50%;object-fit:cover;background:var(--bg)}
-.x-testi .elementor-testimonial__name{font-family:"Outfit";font-weight:600;font-size:17px!important;color:var(--ink)!important}
+.x-testi .elementor-testimonial__name{font-family:"Outfit","Outfit Fallback";font-weight:600;font-size:17px!important;color:var(--ink)!important}
 .x-testi .elementor-testimonial__title{font-size:13.5px!important;color:var(--text)!important;line-height:1.5}
 .x-testi .elementor-testimonial__title a{color:var(--g-d)}
 .x-testi .swiper-pagination-bullet{width:10px;height:10px;background:var(--line);opacity:1;transition:width .3s,background .3s}
@@ -235,7 +235,7 @@ body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Outfit",system-ui,s
 .x-faq .elementor-accordion-item:hover{border-color:rgba(109,181,46,.45)!important}
 .x-faq .elementor-accordion-item:has(.elementor-active){box-shadow:var(--sh);border-color:rgba(109,181,46,.5)!important}
 .x-faq .elementor-tab-title{padding:22px 24px!important;border:0!important;display:flex;align-items:center;flex-direction:row-reverse;justify-content:space-between;gap:16px}
-.x-faq .elementor-tab-title .elementor-accordion-title{font-family:"Outfit";font-weight:600;font-size:18px;color:var(--ink)!important;line-height:1.35}
+.x-faq .elementor-tab-title .elementor-accordion-title{font-family:"Outfit","Outfit Fallback";font-weight:600;font-size:18px;color:var(--ink)!important;line-height:1.35}
 .x-faq .elementor-accordion-icon{width:34px;height:34px;flex:0 0 34px;border-radius:50%;background:var(--bg-2);display:inline-flex!important;align-items:center;justify-content:center;color:var(--g-d)!important;font-size:13px;transition:background .3s,color .3s,transform .4s var(--ease)}
 .x-faq .elementor-accordion-icon svg{fill:var(--g-d);width:13px}
 .x-faq .elementor-active .elementor-accordion-icon{background:var(--y);transform:rotate(180deg)}
@@ -352,7 +352,7 @@ body.elementor-editor-active .rv,body.elementor-editor-active .rv-st>*{opacity:1
 .x-band .x-eyebrow p{color:var(--y);background:rgba(248,195,0,.08);border-color:rgba(248,195,0,.25)}.x-band .x-eyebrow p:before{background:var(--y);box-shadow:0 0 0 4px rgba(248,195,0,.2)}
 .x-band .x-checks .elementor-icon-list-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 16px!important;transition:transform .35s var(--ease),background .35s}
 .x-band .x-checks .elementor-icon-list-item:hover{transform:translateX(6px);background:rgba(255,255,255,.1)}
-.x-testi .elementor-testimonial__text,.x-testi .elementor-testimonial__title,.x-testi .elementor-testimonial__title *,.x-testi cite{font-family:"Figtree",sans-serif!important;font-style:normal}.x-testi .elementor-testimonial__name{font-family:"Outfit",sans-serif!important}
+.x-testi .elementor-testimonial__text,.x-testi .elementor-testimonial__title,.x-testi .elementor-testimonial__title *,.x-testi cite{font-family:"Figtree","Figtree Fallback",sans-serif!important;font-style:normal}.x-testi .elementor-testimonial__name{font-family:"Outfit","Outfit Fallback",sans-serif!important}
 .x-testi .elementor-testimonial__image img{object-fit:contain!important;background:#fff;border:1px solid var(--line)}
 .x-ftr .elementor-widget-image,.x-ftr .elementor-widget-image a{text-align:left!important}
 .x-social .elementor-widget-container,.x-social .elementor-social-icons-wrapper{justify-content:flex-start!important;text-align:left}
@@ -458,7 +458,7 @@ body.page-template-elementor_header_footer #primary{margin:0!important;padding:0
 .x-contact-inline .elementor-icon-list-item:hover{transform:translateY(-3px);border-color:var(--g)}
 .x-contact-inline .elementor-icon-list-item:after{display:none!important}
 .x-contact-inline .elementor-icon-list-icon i{color:var(--g-d)!important;font-size:16px}.x-contact-inline .elementor-icon-list-icon svg{fill:var(--g-d)!important;width:16px}
-.x-contact-inline .elementor-icon-list-text{font-family:"Outfit";font-weight:600;font-size:17px;color:var(--ink)!important;padding-left:10px}
+.x-contact-inline .elementor-icon-list-text{font-family:"Outfit","Outfit Fallback";font-weight:600;font-size:17px;color:var(--ink)!important;padding-left:10px}
 .x-contact-sec{padding-top:70px!important}
 .x-contact-main .x-form-card{width:100%!important;flex:0 0 auto!important}
 /* stats with 3 items */
@@ -470,3 +470,17 @@ body.page-template-elementor_header_footer #primary{margin:0!important;padding:0
 /* footer "Order Now" button */
 .x-ftr .x-forder{margin-top:18px}
 .x-ftr .x-forder .elementor-button{padding:12px 24px}
+/* performance: above-the-fold hero content is never hidden (LCP) — slide-in without opacity */
+@keyframes x-rise{from{transform:translateY(22px)}to{transform:none}}
+.x-js .x-hero .rv,.x-js .x-phero .rv{opacity:1!important;transform:none;animation:x-rise .8s var(--ease) both}
+/* inline SVG icons (Font Awesome icon font no longer loaded) */
+.x-fa{display:inline-block;width:1em;height:1em;fill:currentColor;vertical-align:-.125em;flex:none}
+.elementor-icon-list-icon svg.e-font-icon-svg,.elementor-icon svg.e-font-icon-svg,.elementor-button-icon svg.e-font-icon-svg,.elementor-social-icon svg.e-font-icon-svg{fill:currentColor}
+/* region card: icon is its own HTML widget (heading titles strip SVG) */
+.x-region-name{flex-wrap:nowrap!important;align-items:center!important;gap:12px!important;width:auto!important}
+.x-region-name>.elementor-widget{width:auto!important;flex:0 0 auto}
+.x-region-icw .x-region-ic{display:inline-flex}
+/* a11y: breadcrumb link not distinguished by colour alone */
+.x-crumbs a{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+/* accordion +/− icons as inline SVG: Elementor colours the active one with the accent (yellow on yellow) */
+.x-faq .elementor-accordion-icon svg{fill:var(--g-d)!important}

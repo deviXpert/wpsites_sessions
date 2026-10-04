@@ -9,6 +9,8 @@ EMAIL = 'info@pak-translations.com'
 FB, TW = 'https://www.facebook.com/PakTranslationsCompany', 'https://twitter.com/TranslationsPak'
 LINKEDIN = 'https://www.linkedin.com/in/dr-muhammad-salman-riaz-738a2224/'
 MEDIA = {m['source_url']: m['id'] for m in json.load(open(os.path.join(D, 'wp-backup/media.json')))}
+THUMB = {m['source_url']: m['media_details']['sizes']['thumbnail']['source_url'] for m in json.load(open(os.path.join(D, 'wp-backup/media.json')))
+         if 'thumbnail' in (m.get('media_details') or {}).get('sizes', {})}
 MEDIA[U + '/wp-content/uploads/2026/10/founder-dr-salman-riaz.jpg'] = 39125
 
 def seed(s): random.seed(s)
@@ -56,6 +58,10 @@ def ILIST(items, cls='', view='traditional'):
         if u: r['link'] = LNK(u, u.startswith('http') and 'pak-translations.com' not in u)
         out.append(r)
     return W('icon-list', cls, icon_list=out, view=view)
+FA_SVG = json.load(open(os.path.join(D, 'fa_icons.json')))   # Font Awesome 5 solid paths (icon font is not loaded: Elementor inline-SVG icons)
+def FAI(name):
+    w, h, path = FA_SVG[name]
+    return f'<svg class="x-fa" viewBox="0 0 {w} {h}" aria-hidden="true"><path d="{path}"/></svg>'
 def RAW(h, cls=''): return W('html', cls, html=h)
 def sec(els, cls='', d='col', **kw): return C(els, ('x-sec ' + cls).strip(), d, box=True, **kw)
 def head(eb, title, lead=None, center=True, tag='h2'):
@@ -97,9 +103,8 @@ def quote_form(cls='x-form', labels=False):
 def assets():
     css = open(os.path.join(D, 'pt.css')).read()
     js = open(os.path.join(D, 'pt.js')).read()
-    return RAW('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-               '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap">'
-               f'<style id="pt-css">{css}</style><script>{js}</script>', 'x-assets')
+    # fonts are NOT loaded here: @font-face lives in the Elementor kit custom CSS (fonts.css, pushed by perf.py) so it prints in <head>
+    return RAW(f'<style id="pt-css">{css}</style><script>{js}</script>', 'x-assets')
 
 LOGO = UP + '2020/10/logo.png'
 NAV = dict(menu='menu', layout='horizontal', pointer='none', dropdown='tablet', toggle='burger', full_width='stretch',
@@ -170,7 +175,7 @@ def split(media, copy_els, rev=False, cls=''):
 def faq_sec(faqs, lead='Quick answers to common questions. Still curious? Please fill in the Contact Us form or send us an email, and we will get back to you.', title='Frequently Asked <span class="x-hl">Questions</span>', bg=''):
     return sec([C([
         C([EB('FAQs'), H(title, 'h2', 'x-title'), P(lead, 'x-lead'), BTN('Place an Order', U + '/your-order/', 'x-btn x-btn-g', 'file-signature', False)], 'x-faq-side rv'),
-        W('accordion', 'x-faq rv', tabs=[{'_id': rid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs], faq_schema='yes', title_html_tag='h3',
+        W('accordion', 'x-faq rv', tabs=[{'_id': rid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs], faq_schema='yes', title_html_tag='div',
           selected_icon=ICO('plus'), selected_active_icon=ICO('minus'), icon_align='right'),
     ], 'x-faq-wrap', 'row')], bg)
 

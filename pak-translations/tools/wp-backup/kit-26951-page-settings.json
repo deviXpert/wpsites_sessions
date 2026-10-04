@@ -1,0 +1,118 @@
+{
+ "system_colors": [
+  {
+   "_id": "primary",
+   "title": "Primary",
+   "color": "#83C225"
+  },
+  {
+   "_id": "secondary",
+   "title": "Secondary",
+   "color": "#54595F"
+  },
+  {
+   "_id": "text",
+   "title": "Text",
+   "color": "#7A7A7A"
+  },
+  {
+   "_id": "accent",
+   "title": "Accent",
+   "color": "#F7C300"
+  }
+ ],
+ "custom_colors": [
+  {
+   "_id": "primary",
+   "title": "Primary",
+   "color": "#6DB52E"
+  },
+  {
+   "_id": "secondary",
+   "title": "Secondary",
+   "color": "#0B1A10"
+  },
+  {
+   "_id": "text",
+   "title": "Text",
+   "color": "#4A5560"
+  },
+  {
+   "_id": "accent",
+   "title": "Accent",
+   "color": "#F8C300"
+  }
+ ],
+ "system_typography": [
+  {
+   "_id": "primary",
+   "title": "Primary",
+   "typography_typography": "custom",
+   "typography_font_family": "Roboto",
+   "typography_font_weight": "600"
+  },
+  {
+   "_id": "secondary",
+   "title": "Secondary",
+   "typography_typography": "custom",
+   "typography_font_family": "Roboto Slab",
+   "typography_font_weight": "400"
+  },
+  {
+   "_id": "text",
+   "title": "Text",
+   "typography_typography": "custom",
+   "typography_font_family": "Roboto",
+   "typography_font_weight": "400"
+  },
+  {
+   "_id": "accent",
+   "title": "Accent",
+   "typography_typography": "custom",
+   "typography_font_family": "Roboto",
+   "typography_font_weight": "500"
+  }
+ ],
+ "custom_typography": [
+  {
+   "_id": "primary",
+   "title": "Primary",
+   "typography_typography": "custom",
+   "typography_font_family": "Outfit",
+   "typography_font_weight": "700"
+  },
+  {
+   "_id": "secondary",
+   "title": "Secondary",
+   "typography_typography": "custom",
+   "typography_font_family": "Outfit",
+   "typography_font_weight": "600"
+  },
+  {
+   "_id": "text",
+   "title": "Text",
+   "typography_typography": "custom",
+   "typography_font_family": "Figtree",
+   "typography_font_weight": "400"
+  },
+  {
+   "_id": "accent",
+   "title": "Accent",
+   "typography_typography": "custom",
+   "typography_font_family": "Outfit",
+   "typography_font_weight": "600"
+  }
+ ],
+ "default_generic_fonts": "Sans-serif",
+ "site_name": "Pak Translations",
+ "site_description": "Language Translation Services",
+ "page_title_selector": "h1.entry-title",
+ "activeItemIndex": 1,
+ "viewport_md": 768,
+ "viewport_lg": 1025,
+ "container_width": {
+  "unit": "px",
+  "size": 1440,
+  "sizes": []
+ }
+}

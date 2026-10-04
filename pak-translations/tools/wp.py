@@ -12,7 +12,11 @@ def req(path, method='GET', data=None):
     r = urllib.request.Request(U + '/wp-json/' + path, method=method, headers=H, data=json.dumps(data).encode() if data is not None else None)
     try:
         with urllib.request.urlopen(r, timeout=120) as f:
-            b = f.read(); return json.loads(b) if b.strip() else {"_empty": f.status}
+            b = f.read()
+            if not b.strip(): return {"_empty": f.status}
+            try: return json.loads(b)
+            except ValueError:   # Elementor (CSS print method "internal") echoes <style> blocks before the JSON on saves
+                i = b.find(b'{"id":'); return json.loads(b[i:]) if i >= 0 else {'_err': 'non-json', 'body': b[:300].decode(errors='replace')}
     except urllib.error.HTTPError as e: return {'_err': e.code, 'body': e.read().decode()[:500]}
 def all(path):
     out = []; p = 1

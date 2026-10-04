@@ -51,7 +51,7 @@ def build():
         img, text, items = DETAIL[slug]
         rev = i % 2 == 1
         block = split([IMG(UP + img, '', f'{name} services by Pak Translations')],
-                      [P(f'<i class="fas fa-{icon}" aria-hidden="true"></i>&nbsp; Service {i + 1:02d}', 'x-eyebrow'),
+                      [P(f'{FAI(icon)}&nbsp; Service {i + 1:02d}', 'x-eyebrow'),
                        H(name, 'h2', 'x-title x-title-sm'), P(text, 'x-lead'), ILIST([(t, 'check-circle') for t in items], 'x-checks'),
                        C([BTN('Get a Quote', U + '/your-order/', 'x-btn')], 'x-btns', 'row')], rev)
         blocks.append(C([C([block], 'x-svc-block', box=True)], 'x-svc-row' + (' x-bg' if rev else ''), _element_id=slug))

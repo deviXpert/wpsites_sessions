@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | Live site | **https://pak-translations.com** (LIVE production site — every change is public) |
-| Stack | WordPress · Astra child theme · Elementor 4.3.x + Elementor Pro 4.3 · Yoast SEO · WP Mail SMTP · Loginizer · Security Optimizer · Wordfence (inactive) · Classic Editor |
+| Stack | WordPress · Astra child theme · Elementor 4.3.x + Elementor Pro 4.3 · Yoast SEO · WP Mail SMTP · Loginizer · LiteSpeed Cache · Security Optimizer · Wordfence (inactive) · Classic Editor |
 | Hosting | Hostinger (CDN "hcdn" in front — purge in hPanel after big changes) |
 | Status | **Redesign complete and LIVE** (all 8 pages, site-wide header/footer). Client round 3 published 2026-10-04 |
 | Owner contact on site | Dr. Muhammad Salman Riaz · WhatsApp +92 337 1440929 · info@pak-translations.com · Gujrat, Punjab, Pakistan |
@@ -94,8 +94,22 @@ python3 -c "import wp,json; from lib import header; wp.req('wp/v2/elementor_libr
 - The injection source was **not** found/fixed. User was advised to change WP admin + hosting passwords, update plugins, re-enable Wordfence and scan. Re-check for spam after any CDN purge: `curl -s https://pak-translations.com/ | grep -ciE 'casino|garuda|hatori|mostbet'`.
 - Original-site backup (pages incl. old Elementor data, templates, media list, menus, settings, categories) in `tools/wp-backup/` (taken before any change).
 
+## 5b. Performance (PageSpeed) — 2026-10-04
+Local Lighthouse 12 (PSI keyless API quota was exhausted). Baseline home: mobile 60 / desktop 73.
+Now: **desktop 94–97**, mobile 82–84 on a fresh render, but only ~64–68 on LiteSpeed-cached pages. Lighthouse's simulation charges every script/image that starts before first paint, and on a cached page that is all of them. Real mobile Chrome paints the LCP at ~1.7 s. Accessibility 95, Best practices 100, SEO 92 (Elementor accordion `<a>` without href).
+What was done (all re-runnable):
+- `tools/perf.py` — kit 26951 global font families cleared (Elementor no longer enqueues Roboto/Roboto Slab/Outfit/Figtree Google CSS), kit custom CSS = `tools/fonts.css` (@font-face in `<head>` + metric-matched `Outfit Fallback`/`Figtree Fallback` → CLS 0), Elementor options: font-display swap, CSS print method **internal**, **inline SVG icons** (`e_font_icon_svg`), optimized image loading, lazy background images. Original kit settings backed up in `tools/wp-backup/kit-26951-page-settings.json`.
+- Icon font is gone → never write `<i class="fas fa-…">` in HTML; use `FAI('name')` (paths in `tools/fa_icons.json`, add new names from `/wp-content/plugins/elementor/assets/lib/font-awesome/json/solid.json`). Heading widgets strip `<svg>` — put icons in a `RAW` widget (see languages region cards).
+- Hero (`.x-hero`, `.x-phero`) content is never hidden by the scroll-reveal (was a 15 s mobile LCP).
+- Testimonial avatars use 150×150 thumbnails (`image_size_size`), FAQ titles are `<div>` (a11y), breadcrumb links underlined.
+- `wp.py` tolerates Elementor's `<style>` echo before JSON (side effect of CSS print method internal).
+- **LiteSpeed Cache 7.9.1 installed + active** (default settings → page cache on; TTFB ~2 s miss → ~0.3 s hit). It auto-purges when pages/templates are saved (verified). Forms work on cached pages: Elementor Pro doesn't check the nonce (tested with honeypot, no email sent).
+- Test: `npm i lighthouse@12` in scratch, `CHROME_PATH=/opt/pw-browsers/chromium-1194/chrome-linux/chrome lighthouse <url> [--preset=desktop] --chrome-flags="--headless=new --no-sandbox --ignore-certificate-errors"`.
+**Needs the user in wp-admin** (LiteSpeed settings have no REST API): LiteSpeed Cache → Cache → *Cache Mobile* ON; Page Optimization → CSS: *CSS Minify* ON, *CSS Combine* ON; JS: *JS Minify* ON, *JS Defer* = Deferred; HTML: *HTML Minify* ON, *DNS Prefetch Control* ON; Media: *Lazy Load Images* ON; Browser → *Browser Cache* ON. Then Toolbox → Purge All, re-test, and check the menu, forms, counters, carousel and FAQ still work.
+
 ## 6. Open items / ideas for next session
 - [x] **Published 2026-10-04:** client round 3 + home edits (commits 98b2e37, 1a75da3) are now LIVE via `python3 golive.py` (header, footer, all 8 pages, Yoast meta, Elementor cache cleared). REST auth works again. Checked after publish: linkcheck OK (only LinkedIn 999 bot-block), metaaudit OK, no spam strings. Ask the user to purge the Hostinger CDN.
+- [ ] **Performance:** user to apply the LiteSpeed Page Optimization settings in §5b, then re-test mobile (target 90+).
 - [ ] Confirm the user received the 4 TEST form emails (WP Mail SMTP delivery).
 - [ ] Optional cleanup: old saved templates 171, 97, 71, 64, 54, 47 and old header 27 (unused) — ask before deleting.
 - [ ] Optional: blog/insights section for SEO content (no posts exist yet), Google Business Profile link, Urdu landing page.

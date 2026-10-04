@@ -31,7 +31,7 @@ def build():
     total = len({l.lower() for v in R.values() for l in v})
     hero = phero('Languages', 'Languages We Translate: <span class="x-hl">120+ Languages</span> &amp; Dialects',
                  'From Urdu, Punjabi and Pashto to Arabic, Chinese, French and Swahili — our native linguists cover major world languages and rare regional ones across Asia, Europe and Africa.')
-    cards = [C([C([H(f'<span class="x-region-ic"><i class="fas fa-{ICONS[r]}" aria-hidden="true"></i></span>{NAMES.get(r, r)}', 'h2', 'x-region-h'),
+    cards = [C([C([C([RAW(f'<span class="x-region-ic">{FAI(ICONS[r])}</span>', 'x-region-icw'), H(NAMES.get(r, r), 'h2', 'x-region-h')], 'x-region-name', 'row'),
                    P(f'{len(R[r])} language{"s" if len(R[r]) > 1 else ""}', 'x-count')], 'x-region-top', 'row'),
                 ILIST([(l,) for l in R[r]], 'x-tags')], 'x-region') for r in ORDER if r in R]
     grid = sec([head('Coverage by Region', 'Asian, European &amp; <span class="x-hl">African Languages</span>', 'Every language below is handled by native linguists who have passed our skills test.'),
