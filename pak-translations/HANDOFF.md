@@ -9,7 +9,7 @@
 | Live site | **https://pak-translations.com** (LIVE production site — every change is public) |
 | Stack | WordPress · Astra child theme · Elementor 4.3.x + Elementor Pro 4.3 · Yoast SEO · WP Mail SMTP · Loginizer · Security Optimizer · Wordfence (inactive) · Classic Editor |
 | Hosting | Hostinger (CDN "hcdn" in front — purge in hPanel after big changes) |
-| Status | **Redesign complete and LIVE** (all 8 pages, site-wide header/footer) as of 2026-10-03 |
+| Status | **Redesign complete and LIVE** (all 8 pages, site-wide header/footer). Client round 3 published 2026-10-04 |
 | Owner contact on site | Dr. Muhammad Salman Riaz · WhatsApp +92 337 1440929 · info@pak-translations.com · Gujrat, Punjab, Pakistan |
 | Developer credit | Footer: "Powered by hafizahsanali.com" (user request — keep it) |
 
@@ -95,7 +95,7 @@ python3 -c "import wp,json; from lib import header; wp.req('wp/v2/elementor_libr
 - Original-site backup (pages incl. old Elementor data, templates, media list, menus, settings, categories) in `tools/wp-backup/` (taken before any change).
 
 ## 6. Open items / ideas for next session
-- [ ] **PUBLISH PENDING (2026-10-04):** client round 3 + home edits (commits 98b2e37, 1a75da3) are built but NOT live. Run `python3 golive.py` (header, footer, all pages) once REST auth works. Last attempt: `WP_URL` = pak-translations.com but every authenticated REST call returns `401 rest_not_logged_in`, even with a bogus username. That means WordPress never processed the Basic auth header. Likely causes: a stale application password, or the header being stripped by the host/CDN/security plugin.
+- [x] **Published 2026-10-04:** client round 3 + home edits (commits 98b2e37, 1a75da3) are now LIVE via `python3 golive.py` (header, footer, all 8 pages, Yoast meta, Elementor cache cleared). REST auth works again. Checked after publish: linkcheck OK (only LinkedIn 999 bot-block), metaaudit OK, no spam strings. Ask the user to purge the Hostinger CDN.
 - [ ] Confirm the user received the 4 TEST form emails (WP Mail SMTP delivery).
 - [ ] Optional cleanup: old saved templates 171, 97, 71, 64, 54, 47 and old header 27 (unused) — ask before deleting.
 - [ ] Optional: blog/insights section for SEO content (no posts exist yet), Google Business Profile link, Urdu landing page.
