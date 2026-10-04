@@ -135,7 +135,7 @@ SERVICES = [
 def footer():
     seed('footer')
     cta = C([H('Have a document to translate? <span class="x-hl">Get a free quote today.</span>', 'h2'),
-             C([BTN('Place an Order', U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-o', 'envelope', False)], 'x-btns', 'row')],
+             C([BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-o', 'envelope', False)], 'x-btns', 'row')],
             'x-fcta', 'row', box=True)
     grid = C([
         C([IMG(LOGO, 'x-flogo', 'Pak Translations', 'medium', U + '/'),
