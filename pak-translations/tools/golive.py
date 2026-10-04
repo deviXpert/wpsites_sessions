@@ -3,9 +3,9 @@ usage: python3 golive.py [page names...]   (no args = templates + all pages)"""
 import json, sys, importlib, wp
 from lib import header, footer
 PAGES = {'home': 39107, 'about': 611, 'services': 673, 'languages': 633, 'samples': 988, 'career': 693, 'contact': 706, 'order': 319}
-HOME_SEO = ('Certified Translation Services in Pakistan | Pak Translations',
-            'PhD-led translation company in Pakistan: certified document translation, localization, transcription, subtitling & interpreting in 120+ languages. Free quote.',
-            'translation services in Pakistan')
+HOME_SEO = ('Professional & Certified Translation Services | Pak Translations',
+            'PhD-led translation company: certified document translation, localization, transcription, subtitling & interpreting in 120+ languages. Free quote.',
+            'professional translation services')
 names = sys.argv[1:] or list(PAGES)
 if not sys.argv[1:]:
     print('header', wp.req('wp/v2/elementor_library/33', 'POST', {'meta': {'_elementor_data': json.dumps([header()]), '_elementor_edit_mode': 'builder'}}).get('id'))

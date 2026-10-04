@@ -28,7 +28,7 @@ def build():
     main = sec([C([
         C([EB('How Ordering Works'), H('Simple, Secure &amp; <span class="x-hl">Transparent</span>', 'h2', 'x-title'),
            C([IBOX(i, t, d, 'x-feat', tag='h3', position='left') for i, t, d in steps], 'x-feats rv-st'),
-           C([IBOX('fab fa-whatsapp', 'Prefer to chat?', f'WhatsApp us on {PHONE} or email {EMAIL}', 'x-media-badge x-inline-badge', WA, 'p')], 'x-dc')], 'x-faq-side rv'),
+           C([IBOX('envelope', 'Prefer email?', f'Write to us at {EMAIL}', 'x-media-badge x-inline-badge', 'mailto:' + EMAIL, 'p')], 'x-dc')], 'x-faq-side rv'),
         C([form], 'x-form-card rv'),
     ], 'x-faq-wrap', 'row')], _element_id='order-form')
     return [hero, main]

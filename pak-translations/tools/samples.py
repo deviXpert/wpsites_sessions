@@ -26,7 +26,7 @@ CASES = [
 def build():
     seed('samples')
     hero = phero('Sample Projects', 'Translation Sample Projects &amp; <span class="x-hl">Case Studies</span>',
-                 'Real projects we have delivered — from millions of words of Urdu localization to rare-language audio translation and large-scale subtitling.')
+                 'Examples of projects we have delivered — from millions of words of localization to rare-language audio translation and large-scale subtitling.')
     out = [hero]
     for i, (slug, name, img, intro, items) in enumerate(CASES):
         rev = i % 2 == 1

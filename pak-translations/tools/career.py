@@ -39,14 +39,13 @@ def build():
         f('rate_hourly', 'text', 'Hourly rate (proofreading, review, linguistic services)', False, '100'),
         f('specialization', 'text', 'Areas of specialization'), f('tools', 'text', 'CAT &amp; other tools'),
         f('daily_output', 'text', 'Daily word output'), f('payment_method', 'text', 'Preferred payment method', True),
-        f('profile_link', 'url', 'Website / LinkedIn / ProZ profile'), f('references', 'text', 'References'),
+        f('profile_link', 'url', 'Website / LinkedIn profile'), f('references', 'text', 'References'),
         f('additional_info', 'textarea', 'Additional information', False, '100', rows='4'),
-        F('cv', 'upload', 'Upload your CV (required)', '', True, '50', allow_multiple_upload='', max_files='1'),
-        F('supporting_files', 'upload', 'Supporting files (optional, up to 4)', '', False, '50', max_files='4'),
+        F('cv', 'upload', 'Upload your CV (required)', '', True, '100', allow_multiple_upload='', max_files='1'),
     ], 'Submit Application', subject='New career application — Pak Translations website')
     apply = sec([C([
         C([EB('Apply Now'), H('Join the <span class="x-hl">Pak Translations</span> Team', 'h2', 'x-title'),
-           P('Fill out the form and our HR team will get back to you if your profile matches our requirements. Uploading your CV is required; other supporting files are optional.', 'x-lead'),
+           P('Fill out the form and our HR team will get back to you if your profile matches our requirements. Uploading your CV is required.', 'x-lead'),
            IMG(UP + '2022/03/beautiful-curly-female-freelancer-with-cute-manicure-using-laptop-smiling-indoor-portrait-blonde-secretary-sitting-beside-african-coworker-blue-shirt-min-scaled.jpg', 'x-side-img', 'Freelance translators working remotely with Pak Translations'),
            ILIST([(t, 'check-circle') for t in ('Remote, flexible project work', 'Regular projects in your language pair', 'Clear instructions and prompt communication')], 'x-checks x-checks-1')], 'x-faq-side rv'),
         C([form], 'x-form-card rv'),

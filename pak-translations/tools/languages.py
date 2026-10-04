@@ -34,7 +34,7 @@ def build():
     cards = [C([C([H(f'<span class="x-region-ic"><i class="fas fa-{ICONS[r]}" aria-hidden="true"></i></span>{NAMES.get(r, r)}', 'h2', 'x-region-h'),
                    P(f'{len(R[r])} language{"s" if len(R[r]) > 1 else ""}', 'x-count')], 'x-region-top', 'row'),
                 ILIST([(l,) for l in R[r]], 'x-tags')], 'x-region') for r in ORDER if r in R]
-    grid = sec([head('Coverage by Region', 'Asian, European &amp; <span class="x-hl">African Languages</span>', 'Every language below is handled by native-speaker linguists who have passed our skills test.'),
+    grid = sec([head('Coverage by Region', 'Asian, European &amp; <span class="x-hl">African Languages</span>', 'Every language below is handled by native linguists who have passed our skills test.'),
                 C(cards, 'x-regions rv-st', 'col')], 'x-bg')
     pairs = ['Urdu to English', 'English to Urdu', 'Punjabi to English', 'Pashto to English', 'Arabic to English', 'English to Arabic', 'Persian to English', 'Sindhi to English',
              'German to English', 'French to English', 'Chinese to English', 'English to Spanish', 'German to Urdu', 'French to Arabic', 'Balochi to English', 'Hindi to English']
@@ -43,9 +43,8 @@ def build():
         [EB('Language Pairs'), H('Not Just English — <span class="x-hl">Any Language Pair</span>', 'h2', 'x-title'),
          P('Our services are not limited to combinations where English is the source or target language. We regularly translate German, French and Spanish into other languages, and we can arrange linguists for lesser-known languages spoken in these regions too.', 'x-lead'),
          P('<strong>Popular translation pairs:</strong>'), ILIST([(p,) for p in pairs], 'x-tags'),
-         C([BTN('Ask About Your Language', WA, 'x-btn x-btn-g', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')])])
+         C([BTN('Ask About Your Language', U + '/contact-us/', 'x-btn x-btn-g', 'envelope', False)], 'x-btns', 'row')])])
     faqs = [('Do you translate rare or regional languages?', 'Yes. Alongside major languages we cover regional ones such as Balochi, Saraiki, Hindko, Pahari, Mirpuri, Sylheti, Chittagonian and Rohingya, plus many African languages. If your language is not listed, ask us — we can often arrange a linguist.'),
-            ('Can you translate Urdu documents into English for immigration?', 'Yes. Urdu-to-English certified translation of certificates, degrees and legal documents is one of our most requested services, with a translator affidavit available on request.'),
             ('Do you translate between two non-English languages?', 'Yes — for example German, French or Spanish into other languages. Please check with us for any uncommon pair; we may well be able to help.'),
             ('Which Arabic dialects do you cover?', 'We work with Modern Standard Arabic and regional dialects. Tell us the target country or audience and we will assign a suitable native linguist.')]
     return [hero, grid, pair_sec, faq_sec(faqs, bg='x-bg'), cta_sec('Need a Language Not Listed?', 'Tell us the language or pair you need — we will find the right native linguist and send you a free quote.')]

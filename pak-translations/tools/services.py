@@ -1,7 +1,7 @@
 """Services (page 673). Each service has an anchor (#slug) that the home/footer links point to."""
 from lib import *
 TITLE = 'Services'
-SEO = ('Translation & Language Services in Pakistan | Pak Translations',
+SEO = ('Professional Translation & Language Services | Pak Translations',
        'Certified & document translation, localization, transcription, subtitling, interpreting, proofreading and DTP in 120+ languages by native linguists.',
        'translation services')
 
@@ -43,8 +43,8 @@ DETAIL = {
 
 def build():
     seed('services')
-    hero = phero('Services', 'Translation &amp; Language <span class="x-hl">Services in Pakistan</span>',
-                 'One partner for every language need — certified translation, localization, transcription, subtitling, interpreting and more, delivered by tested native linguists in 120+ languages.')
+    hero = phero('Services', 'Professional Translation &amp; <span class="x-hl">Language Services</span>',
+                 'One partner for every language need — translation, localization, transcription, subtitling, interpreting and more, delivered by tested native linguists in 120+ languages.')
     nav = C([ILIST([(n, None, f'#{s}') for s, n, _ in SERVICES], 'x-tags x-tags-lg')], 'x-svc-nav rv', box=True)
     blocks = []
     for i, (slug, name, icon) in enumerate(SERVICES):
@@ -53,15 +53,14 @@ def build():
         block = split([IMG(UP + img, '', f'{name} services by Pak Translations')],
                       [P(f'<i class="fas fa-{icon}" aria-hidden="true"></i>&nbsp; Service {i + 1:02d}', 'x-eyebrow'),
                        H(name, 'h2', 'x-title x-title-sm'), P(text, 'x-lead'), ILIST([(t, 'check-circle') for t in items], 'x-checks'),
-                       C([BTN('Get a Quote', U + '/your-order/', 'x-btn'), BTN('Ask a Question', WA, 'x-btn x-btn-ol', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')], rev)
+                       C([BTN('Get a Quote', U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-ol', 'envelope', False)], 'x-btns', 'row')], rev)
         blocks.append(C([C([block], 'x-svc-block', box=True)], 'x-svc-row' + (' x-bg' if rev else ''), _element_id=slug))
     steps = [('comments', 'Understanding', 'We discuss your requirements and reference material.'),
-             ('file-signature', 'Order', 'Confirm through the order form, email or WhatsApp.'),
+             ('file-signature', 'Order', 'Confirm through the order form or by email.'),
              ('user-tie', 'Assignment', 'The most relevant native linguist takes your project.'),
              ('search', 'Quality Assurance', 'Our QA team checks every detail before delivery.')]
     how = steps_sec('How It Works', 'From Request to <span class="x-hl">Delivery</span>', 'A clear, four-step process for every service.', steps)
     faqs = [('Which translation service do I need?', 'If your document is for an embassy, immigration office, university or court, you most likely need certified translation. For websites and apps choose localization, and for audio or video choose transcription or subtitling. Not sure? Message us and we will advise.'),
-            ('Do you translate into and out of Urdu?', 'Yes — Urdu, Punjabi, Pashto, Sindhi, Balochi, Saraiki and other Pakistani languages are among our core specialities, alongside 120+ other languages.'),
             ('What file formats do you accept?', 'Word, PDF, Excel, PowerPoint, scanned images, subtitle files (SRT and others), audio and video files, and localization files. We return the translation in the format you need.'),
             ('Can you handle large or urgent projects?', 'Yes. For large or urgent work we assign a team of linguists and reviewers, as we did for 18 hours of interview subtitling and two hours of urgent Mongolian AV translation.'),
             ('How is pricing calculated?', 'Usually per word for translation, per minute for transcription and subtitling, per hour for interpreting and review, and per page for DTP. Send your files for a free, no-obligation quote.')]

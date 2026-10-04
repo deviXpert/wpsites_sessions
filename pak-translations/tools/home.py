@@ -6,12 +6,11 @@ def build():
     seed('home')
     hero = C([
         C([
-            P('<i class="fas fa-award" aria-hidden="true"></i>&nbsp; PhD-led translation company in Pakistan', 'x-eyebrow rv'),
-            H('Professional Translation Services in Pakistan — <span class="x-hl">Accurate, Certified &amp; On Time</span>', 'h1', 'rv'),
+            P('<i class="fas fa-award" aria-hidden="true"></i>&nbsp; PhD-led translation company', 'x-eyebrow rv'),
+            H('Professional Translation Services — <span class="x-hl">Accurate, Certified &amp; On Time</span>', 'h1', 'rv'),
             P('Pak Translations is your one-stop language partner. From certified document translation for immigration to website localization, transcription and subtitling, our tested native linguists work in <strong>120+ languages</strong> — and every project is quality-checked before it reaches you.', 'x-lead rv'),
-            C([BTN('Get a Free Quote', '#quote', 'x-btn', 'arrow-right'), BTN('WhatsApp Us', WA, 'x-btn x-btn-o', 'fab fa-whatsapp', False, True)], 'x-btns rv', 'row'),
+            C([BTN('Get a Free Quote', '#quote', 'x-btn', 'arrow-right')], 'x-btns rv', 'row'),
             C([IBOX('language', '120+ Languages', 'Asian, European &amp; African', 'x-chip', tag='p', position='left'),
-               IBOX('stamp', 'Certified Translation', 'Immigration, legal &amp; academic', 'x-chip', tag='p', position='left'),
                IBOX('check-double', 'Two-Step QA', 'Every file reviewed', 'x-chip', tag='p', position='left')], 'x-trust rv', 'row'),
         ], 'x-hero-copy'),
         C([H('Get a Free Quote', 'h2', 'x-card-title'),
@@ -25,11 +24,10 @@ def build():
     marq = C([RAW(f'<div class="x-marq-track" aria-hidden="true">{track}{track}</div>')], 'x-marq')
 
     stats = C([C([
-        W('counter', 'x-stat', starting_number=0, ending_number=10, suffix='+', title='Years of translation expertise', duration=1800),
         W('counter', 'x-stat', starting_number=0, ending_number=120, suffix='+', title='Languages &amp; dialects', duration=2000),
         W('counter', 'x-stat', starting_number=0, ending_number=99, suffix='%', title='Accuracy on large localization projects', duration=2000),
         W('counter', 'x-stat', starting_number=0, ending_number=1, suffix='M+', title='Words localized for one client alone', duration=1200),
-    ], 'x-stats-grid x-g4 rv rv-s', 'grid')], 'x-stats', box=True)
+    ], 'x-stats-grid x-g3 rv rv-s', 'grid')], 'x-stats', box=True)
 
     svc_desc = {
         'localization': 'Adapt websites, apps and software for new markets with culturally sensitive localization that respects tags, placeholders and style guides.',
@@ -65,7 +63,7 @@ def build():
     ], 'x-split', 'row')])
 
     steps = [('comments', 'Understanding', 'We discuss your requirements, ask questions, request reference material and suggest how to get the best result.'),
-             ('file-signature', 'Order', 'You confirm the order through our simple order form, by email or on WhatsApp.'),
+             ('file-signature', 'Order', 'You confirm the order through our simple order form, or by email.'),
              ('user-tie', 'Assignment', 'We assign your project to the most relevant native linguist, who translates and self-proofreads it.'),
              ('search', 'Quality Assurance', 'Our QA team checks formatting, layout, punctuation, terminology and missing lines.'),
              ('paper-plane', 'Delivery', 'Your finished translation is delivered in the format you need — on or before the deadline.'),
@@ -78,7 +76,7 @@ def build():
     cert = sec([C([
         C([EB('Certified Translation'), H('Certified Translation for <span class="x-hl">Immigration, Visa &amp; Legal</span> Documents', 'h2', 'x-title'),
            P('Applying for a visa, immigration or university abroad? We translate and certify your personal and legal documents so they are ready to submit. On request we can provide a signed translator affidavit and guide you through the notarization process.'),
-           C([BTN('Order Certified Translation', U + '/your-order/', 'x-btn'), BTN('Ask a Question', WA, 'x-btn x-btn-o', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')], 'x-band-copy rv'),
+           C([BTN('Order Certified Translation', U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-o', 'envelope', False)], 'x-btns', 'row')], 'x-band-copy rv'),
         C([ILIST([(t, 'check-circle') for t in ('Birth, marriage &amp; death certificates', 'Degrees, diplomas &amp; transcripts', 'Court orders, wills &amp; contracts',
                                                  'Land records &amp; affidavits', 'Medical reports &amp; claim forms', 'Business &amp; financial documents')], 'x-checks x-checks-1')], 'x-band-side rv rv-r'),
     ], 'x-band', 'row')])
@@ -129,32 +127,31 @@ def build():
           pagination='bullets', show_arrows='yes', space_between={'unit': 'px', 'size': 24}, image_size='thumbnail'),
     ], 'x-bg')
 
-    faqs = [('How much do translation services cost?', 'Pricing depends on the language pair, word count, subject matter (for example legal or medical) and your deadline. Send us your document through the quote form or on WhatsApp and we will reply with a clear, no-obligation quote.'),
+    faqs = [('How much do translation services cost?', 'Pricing depends on the language pair, word count, subject matter (for example legal or medical) and your deadline. Send us your document through the quote form or by email and we will reply with a clear, no-obligation quote.'),
             ('Do you provide certified translations for immigration and visas?', 'Yes. We translate and certify personal and legal documents such as birth and marriage certificates, degrees, transcripts and court papers. On request we can also provide a signed translator affidavit and guidance with notarization.'),
             ('Which languages do you translate?', 'We work in 120+ languages across South Asia, East and Southeast Asia, the Middle East, Europe and Africa — including regional languages such as Urdu, Punjabi, Pashto, Sindhi, Balochi and Saraiki. See our <a href="https://pak-translations.com/languages/">full language list</a>.'),
             ('Can you translate between two non-English languages?', 'Yes. Our services are not limited to English. We regularly handle pairs such as German, French or Spanish into other languages — just ask about your combination.'),
             ('How long does a translation take?', 'It depends on the length and complexity of the content. We agree a realistic deadline with you before starting, and if anything unexpected happens we inform you immediately and reassign the work so your delivery date is protected.'),
-            ('How do I place an order?', 'Use our <a href="https://pak-translations.com/your-order/">order form</a> to share your files and requirements, or contact us by email at info@pak-translations.com or on WhatsApp at +92 337 1440929.'),
+            ('How do I place an order?', 'Use our <a href="https://pak-translations.com/your-order/">order form</a> to share your files and requirements, or contact us by email at info@pak-translations.com.'),
             ('Do you offer support after delivery?', 'Absolutely. If you have questions or need a revision after delivery, we are here to help — our support does not end when the project does.')]
     faq = sec([C([
         C([EB('FAQs'), H('Frequently Asked <span class="x-hl">Questions</span>', 'h2', 'x-title'),
-           P('Quick answers about our translation services, pricing and certified translations. Still curious? Our team replies fast on WhatsApp.', 'x-lead'),
-           BTN('Ask on WhatsApp', WA, 'x-btn x-btn-g', 'fab fa-whatsapp', False, True)], 'x-faq-side rv'),
+           P('Quick answers to common questions. Still curious? Please fill in the Contact Us form or send us an email, and we will get back to you.', 'x-lead'),
+           BTN('Place an Order', U + '/your-order/', 'x-btn x-btn-g', 'file-signature', False)], 'x-faq-side rv'),
         W('accordion', 'x-faq rv', tabs=[{'_id': rid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs], faq_schema='yes', title_html_tag='h3',
           selected_icon=ICO('plus'), selected_active_icon=ICO('minus'), icon_align='right'),
     ], 'x-faq-wrap', 'row')])
 
     cta = sec([C([H('Ready to Reach a Global Audience?', 'h2'),
                   P('Tell us what you need translated — we will match you with the right linguist and send a free quote.'),
-                  C([BTN('Get a Free Quote', '#quote', 'x-btn'), BTN('Chat on WhatsApp', WA, 'x-btn x-btn-ol', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')], 'x-cta rv rv-s')], 'x-center x-cta-sec')
+                  C([BTN('Get a Free Quote', '#quote', 'x-btn'), BTN('Place an Order', U + '/your-order/', 'x-btn x-btn-ol', 'file-signature', False)], 'x-btns', 'row')], 'x-cta rv rv-s')], 'x-center x-cta-sec')
 
-    ld = {'@context': 'https://schema.org', '@type': 'ProfessionalService', '@id': U + '/#business', 'name': 'Pak Translations', 'url': U + '/',
-          'logo': LOGO, 'image': LOGO, 'description': 'Professional and certified translation services in Pakistan: document translation, localization, transcription, subtitling, interpreting and DTP in 120+ languages.',
-          'telephone': '+923371440929', 'email': EMAIL, 'priceRange': '$$',
-          'address': {'@type': 'PostalAddress', 'streetAddress': 'B-14/16-C, Street No. 2, Behind Zamindara Bank, Mohallah Fattupura', 'addressLocality': 'Gujrat', 'addressRegion': 'Punjab', 'postalCode': '50700', 'addressCountry': 'PK'},
-          'founder': {'@type': 'Person', 'name': 'Dr. Muhammad Salman Riaz', 'jobTitle': 'Founder & CEO', 'alumniOf': ['University of Leeds', 'National University of Modern Languages']},
+    ld = {'@context': 'https://schema.org', '@type': 'Organization', '@id': U + '/#business', 'name': 'Pak Translations', 'url': U + '/',
+          'logo': LOGO, 'image': LOGO, 'description': 'Professional and certified translation services: document translation, localization, transcription, subtitling, interpreting and DTP in 120+ languages.',
+          'telephone': '+923371440929', 'email': EMAIL,
+          'founder': {'@type': 'Person', 'name': 'Dr. Muhammad Salman Riaz', 'jobTitle': 'Founder & CEO', 'sameAs': [LINKEDIN], 'alumniOf': ['University of Leeds', 'National University of Modern Languages']},
           'areaServed': 'Worldwide', 'knowsLanguage': ['ur', 'en', 'ar', 'pa', 'ps', 'sd', 'fa', 'hi', 'bn', 'zh', 'fr', 'de', 'es', 'tr', 'ru'],
-          'sameAs': [FB, TW, PROZ],
+          'sameAs': [FB, TW],
           'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': 'Translation services', 'itemListElement': [{'@type': 'Offer', 'itemOffered': {'@type': 'Service', 'name': n}} for _, n, _ in SERVICES]}}
     schema = RAW(f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>')
     return [hero, stats, marq, svc, why, how, cert, lang, work, founder, testi, faq, cta, schema]

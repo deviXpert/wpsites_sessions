@@ -451,3 +451,19 @@ body.page-template-elementor_header_footer #primary{margin:0!important;padding:0
 .x-faq .elementor-accordion,.x-faq .elementor-widget-container{width:100%}
 }
 .x-faq .elementor-tab-content{overflow-wrap:anywhere}
+/* contact page: phone + email + form only */
+.x-contact-main{max-width:860px;margin:0 auto!important;width:100%;gap:28px!important;align-items:stretch}
+.x-contact-inline .elementor-icon-list-items{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.x-contact-inline .elementor-icon-list-item{margin:0!important;padding:14px 22px!important;background:#fff;border:1px solid var(--line);border-radius:999px;box-shadow:var(--sh);transition:transform .3s var(--ease),border-color .3s}
+.x-contact-inline .elementor-icon-list-item:hover{transform:translateY(-3px);border-color:var(--g)}
+.x-contact-inline .elementor-icon-list-item:after{display:none!important}
+.x-contact-inline .elementor-icon-list-icon i{color:var(--g-d)!important;font-size:16px}.x-contact-inline .elementor-icon-list-icon svg{fill:var(--g-d)!important;width:16px}
+.x-contact-inline .elementor-icon-list-text{font-family:"Outfit";font-weight:600;font-size:17px;color:var(--ink)!important;padding-left:10px}
+.x-contact-sec{padding-top:70px!important}
+.x-contact-main .x-form-card{width:100%!important;flex:0 0 auto!important}
+/* stats with 3 items */
+.x-stats-grid.x-g3{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.x-stats-grid.x-g3 .x-stat{border-bottom:0!important;border-right:1px solid var(--line)!important}.x-stats-grid.x-g3 .x-stat:last-child{border-right:0!important}
+@media (max-width:767px){.x-stats-grid.x-g3 .x-stat{padding:18px 6px!important}.x-stats-grid.x-g3 .elementor-counter-number-wrapper{font-size:32px}.x-stats-grid.x-g3 .elementor-counter-title{font-size:12.5px}}
+/* hero trust chips: 2 items */
+@media (min-width:768px){.x-trust{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-width:470px}}

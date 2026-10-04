@@ -6,8 +6,8 @@ U = 'https://pak-translations.com'
 UP = U + '/wp-content/uploads/'
 PHONE, TEL, WA = '+92 337 1440929', 'tel:+923371440929', 'https://wa.me/923371440929'
 EMAIL = 'info@pak-translations.com'
-ADDRESS = 'B-14/16-C, Street No. 2, Behind Zamindara Bank, Mohallah Fattupura, Gujrat 50700, Punjab, Pakistan'
-FB, TW, PROZ = 'https://www.facebook.com/PakTranslationsCompany', 'https://twitter.com/TranslationsPak', 'https://www.proz.com/profile/1415308'
+FB, TW = 'https://www.facebook.com/PakTranslationsCompany', 'https://twitter.com/TranslationsPak'
+LINKEDIN = 'https://www.linkedin.com/in/dr-muhammad-salman-riaz-738a2224/'
 MEDIA = {m['source_url']: m['id'] for m in json.load(open(os.path.join(D, 'wp-backup/media.json')))}
 MEDIA[U + '/wp-content/uploads/2026/10/founder-dr-salman-riaz.jpg'] = 39125
 
@@ -86,7 +86,7 @@ def quote_form(cls='x-form', labels=False):
     return FORM('Free Translation Quote', [
         F('name', 'text', 'Full name', 'Full name *', True, '50'),
         F('email', 'email', 'Email address', 'Email address *', True, '50'),
-        F('phone', 'tel', 'Phone / WhatsApp', 'Phone / WhatsApp', False, '100'),
+        F('phone', 'tel', 'Phone number', 'Phone number', False, '100'),
         F('source_language', 'text', 'Translate from', 'From (e.g. Urdu)', True, '50'),
         F('target_language', 'text', 'Translate to', 'To (e.g. English)', True, '50'),
         F('files', 'upload', 'Upload documents (optional)', '', False, '100'),
@@ -108,8 +108,8 @@ NAV = dict(menu='menu', layout='horizontal', pointer='none', dropdown='tablet', 
 def header():
     seed('header')
     top = C([
-        ILIST([('Certified translation in 120+ languages', 'certificate'), ('Gujrat, Pakistan · Serving clients worldwide', 'globe-asia', None)], 'x-top-l x-top-hide', 'inline'),
-        ILIST([(EMAIL, 'envelope', 'mailto:' + EMAIL), (PHONE, 'fab fa-whatsapp', WA)], 'x-top-r', 'inline'),
+        ILIST([('Certified translation in 120+ languages', 'certificate'), ('Serving clients worldwide', 'globe-asia', None)], 'x-top-l x-top-hide', 'inline'),
+        ILIST([(EMAIL, 'envelope', 'mailto:' + EMAIL), (PHONE, 'phone-alt', TEL)], 'x-top-r', 'inline'),
     ], 'x-top', 'row', box=True)
     bar = C([
         IMG(LOGO, 'x-logo', 'Pak Translations logo', 'thumbnail', U + '/'),
@@ -135,32 +135,29 @@ SERVICES = [
 def footer():
     seed('footer')
     cta = C([H('Have a document to translate? <span class="x-hl">Get a free quote today.</span>', 'h2'),
-             C([BTN('Place an Order', U + '/your-order/', 'x-btn'), BTN('Chat on WhatsApp', WA, 'x-btn x-btn-o', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')],
+             C([BTN('Place an Order', U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-o', 'envelope', False)], 'x-btns', 'row')],
             'x-fcta', 'row', box=True)
     grid = C([
         C([IMG(LOGO, 'x-flogo', 'Pak Translations', 'medium', U + '/'),
-           P('Pak Translations is a PhD-led translation company in Gujrat, Pakistan, delivering certified translation, localization, transcription and subtitling in 120+ Asian, European and African languages.'),
+           P('Pak Translations – A Name to Rely Upon'),
            W('social-icons', 'x-social', social_icon_list=[
                {'_id': rid(), 'social_icon': ICO('fab fa-facebook-f'), 'link': LNK(FB, True), 'item_icon_secondary_color': '#fff'},
                {'_id': rid(), 'social_icon': ICO('fab fa-twitter'), 'link': LNK(TW, True)},
-               {'_id': rid(), 'social_icon': ICO('fab fa-whatsapp'), 'link': LNK(WA, True)},
-               {'_id': rid(), 'social_icon': ICO('globe'), 'link': LNK(PROZ, True)}], shape='rounded', icon_size={'unit': 'px', 'size': 16})], 'x-fcol'),
+               ], shape='rounded', icon_size={'unit': 'px', 'size': 16})], 'x-fcol'),
         C([H('Services', 'p', 'x-fhead'), ILIST([(n, None, f'{U}/services/#{s}') for s, n, _ in SERVICES[:7]], 'x-flinks')], 'x-fcol'),
         C([H('Company', 'p', 'x-fhead'), ILIST([('About Us', None, U + '/about-us/'), ('Languages', None, U + '/languages/'), ('Sample Projects', None, U + '/sample/'),
                                                  ('Careers', None, U + '/career/'), ('Place an Order', None, U + '/your-order/'), ('Contact Us', None, U + '/contact-us/')], 'x-flinks')], 'x-fcol'),
-        C([H('Get in Touch', 'p', 'x-fhead'), ILIST([(PHONE, 'fab fa-whatsapp', WA), (EMAIL, 'envelope', 'mailto:' + EMAIL),
-                                                     ('ProZ.com profile', 'user-check', PROZ), (ADDRESS, 'map-marker-alt', None)], 'x-flinks')], 'x-fcol'),
+        C([H('Get in Touch', 'p', 'x-fhead'), ILIST([(PHONE, 'phone-alt', TEL), (EMAIL, 'envelope', 'mailto:' + EMAIL)], 'x-flinks')], 'x-fcol'),
     ], 'x-fgrid', box=True)
     bot = C([P('© 2026 Pak Translations. All rights reserved.'), P('Powered by <a href="https://hafizahsanali.com" target="_blank" rel="noopener">hafizahsanali.com</a>', 'x-credit')], 'x-fbot', 'row', box=True)
-    wa = W('icon', 'x-wa', selected_icon=ICO('fab fa-whatsapp'), link=LNK(WA, True), view='default', **{'_attributes': ''})
-    return C([cta, grid, bot, wa], 'x-ftr')
+    return C([cta, grid, bot], 'x-ftr')
 
 # ---------- shared page sections ----------
 def phero(crumb, h1, lead, btns=None):
     """Inner-page hero with breadcrumb + the page's single H1."""
     els = [P(f'<a href="{U}/">Home</a> &nbsp;/&nbsp; {crumb}', 'x-crumbs rv'), H(h1, 'h1', 'rv'), P(lead, 'x-lead rv')]
     if btns is None:
-        btns = [BTN('Get a Free Quote', U + '/your-order/', 'x-btn'), BTN('WhatsApp Us', WA, 'x-btn x-btn-o', 'fab fa-whatsapp', False, True)]
+        btns = [BTN('Get a Free Quote', U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-o', 'envelope', False)]
     if btns: els.append(C(btns, 'x-btns rv', 'row'))
     return C(els, 'x-phero x-center', box=True)
 
@@ -169,16 +166,16 @@ def split(media, copy_els, rev=False, cls=''):
     return C([C(media, 'x-media rv ' + ('rv-r' if rev else 'rv-l')), C(copy_els, 'x-split-copy rv')],
              'x-split' + (' x-split-rev' if rev else '') + (' ' + cls if cls else ''), 'row')
 
-def faq_sec(faqs, lead='Quick answers to common questions. Still curious? Our team replies fast on WhatsApp.', title='Frequently Asked <span class="x-hl">Questions</span>', bg=''):
+def faq_sec(faqs, lead='Quick answers to common questions. Still curious? Please fill in the Contact Us form or send us an email, and we will get back to you.', title='Frequently Asked <span class="x-hl">Questions</span>', bg=''):
     return sec([C([
-        C([EB('FAQs'), H(title, 'h2', 'x-title'), P(lead, 'x-lead'), BTN('Ask on WhatsApp', WA, 'x-btn x-btn-g', 'fab fa-whatsapp', False, True)], 'x-faq-side rv'),
+        C([EB('FAQs'), H(title, 'h2', 'x-title'), P(lead, 'x-lead'), BTN('Place an Order', U + '/your-order/', 'x-btn x-btn-g', 'file-signature', False)], 'x-faq-side rv'),
         W('accordion', 'x-faq rv', tabs=[{'_id': rid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs], faq_schema='yes', title_html_tag='h3',
           selected_icon=ICO('plus'), selected_active_icon=ICO('minus'), icon_align='right'),
     ], 'x-faq-wrap', 'row')], bg)
 
 def cta_sec(title='Ready to Reach a Global Audience?', text='Tell us what you need translated — we will match you with the right linguist and send a free quote.', primary=('Get a Free Quote', None)):
     return sec([C([H(title, 'h2'), P(text),
-                   C([BTN(primary[0], primary[1] or U + '/your-order/', 'x-btn'), BTN('Chat on WhatsApp', WA, 'x-btn x-btn-ol', 'fab fa-whatsapp', False, True)], 'x-btns', 'row')],
+                   C([BTN(primary[0], primary[1] or U + '/your-order/', 'x-btn'), BTN('Contact Us', U + '/contact-us/', 'x-btn x-btn-ol', 'envelope', False)], 'x-btns', 'row')],
                   'x-cta rv rv-s')], 'x-center x-cta-sec')
 
 def steps_sec(eb, title, lead, steps, dark=True):
