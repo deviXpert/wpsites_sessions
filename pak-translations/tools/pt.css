@@ -467,3 +467,6 @@ body.page-template-elementor_header_footer #primary{margin:0!important;padding:0
 @media (max-width:767px){.x-stats-grid.x-g3 .x-stat{padding:18px 6px!important}.x-stats-grid.x-g3 .elementor-counter-number-wrapper{font-size:32px}.x-stats-grid.x-g3 .elementor-counter-title{font-size:12.5px}}
 /* hero trust chips: 2 items */
 @media (min-width:768px){.x-trust{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-width:470px}}
+/* footer "Order Now" button */
+.x-ftr .x-forder{margin-top:18px}
+.x-ftr .x-forder .elementor-button{padding:12px 24px}

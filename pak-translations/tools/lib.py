@@ -147,7 +147,8 @@ def footer():
         C([H('Services', 'p', 'x-fhead'), ILIST([(n, None, f'{U}/services/#{s}') for s, n, _ in SERVICES[:7]], 'x-flinks')], 'x-fcol'),
         C([H('Company', 'p', 'x-fhead'), ILIST([('About Us', None, U + '/about-us/'), ('Languages', None, U + '/languages/'), ('Sample Projects', None, U + '/sample/'),
                                                  ('Careers', None, U + '/career/'), ('Place an Order', None, U + '/your-order/'), ('Contact Us', None, U + '/contact-us/')], 'x-flinks')], 'x-fcol'),
-        C([H('Get in Touch', 'p', 'x-fhead'), ILIST([(PHONE, 'phone-alt', TEL), (EMAIL, 'envelope', 'mailto:' + EMAIL)], 'x-flinks')], 'x-fcol'),
+        C([H('Get in Touch', 'p', 'x-fhead'), ILIST([(PHONE, 'phone-alt', TEL), (EMAIL, 'envelope', 'mailto:' + EMAIL)], 'x-flinks'),
+           BTN('Order Now', U + '/your-order/', 'x-btn x-forder')], 'x-fcol'),
     ], 'x-fgrid', box=True)
     bot = C([P('© 2026 Pak Translations. All rights reserved.'), P('Powered by <a href="https://hafizahsanali.com" target="_blank" rel="noopener">hafizahsanali.com</a>', 'x-credit')], 'x-fbot', 'row', box=True)
     return C([cta, grid, bot], 'x-ftr')
