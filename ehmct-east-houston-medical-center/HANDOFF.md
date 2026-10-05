@@ -51,6 +51,9 @@ Read from environment variables only:
   pill (Figma: "View Our ER" → /#locations, "Call Now" → tel). Header also has `/*hdr-mid*/` CSS for 1025–1279px.
 - `fix_banners.py` – mobile only: inner-page banners (page[0] > banner > content) start their content at 150px so it
   clears the header action row (ends y=138). Applied to all 24 inner pages; new pages with that banner need it too.
+- Hero slider = 4 slides (`hero_slides.py`, idempotent): 1 EHMC building (main artboard; desktop media 1069 clean
+  crop of Figma 418:4, mobile 968), 2 glass building (1065 / mobile 1066), 3 building (658), 4 reception (659).
+  Desktop/tablet dots per Figma (`/*d-dots*/`): 18px, active 38px #BE2424, aligned with the kicker.
 - Conditions tabs (home): on mobile the active card's image opens directly below that card (flex `order` + `:has()`).
   Hidden tab images were lazy-loaded (fetched only on tap); HTML widget 'Conditions – Preload Tab Images'
   (absolute, inside 'Conditions – Grid') switches them to eager when the section is ~800px away (only the images
@@ -93,7 +96,7 @@ Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to t
 - Baytown location shows "Coming soon" – real details pending.
 - Phone: (832) 400-2396 confirmed by the user (Contact Us 400-9662 fixed 2026-10-05).
 - Reviews block "4.9 / 5 based on 1,200+" vs Trustindex shows 588 Google reviews.
-- New hero banners 2 & 3 from Figma are low-res (1000px / 768px).
+- Hero slides 3 & 4 photos are low-res in Figma too (1000px / 768px) – ask for originals.
 - TikTok link `@east.houston.medi` copied from ehmct.com – verify.
 - Rotate the application password that was pasted in chat.
 - Remaining Figma pages: About Us, Contact Us, more condition pages (knee pain, UTI, back pain, earache, nausea & vomiting).

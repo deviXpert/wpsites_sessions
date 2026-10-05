@@ -22,7 +22,8 @@ def dm(t, r, b, l, u='px'):
 
 
 # Figma image crops per slide: background width and offset relative to the slide (slide = card minus 4px border)
-CROPS = {'Hero – Slide 1': (1271, -249, -94), 'Hero – Slide 2': (1129, -229, 0), 'Hero – Slide 3': (1129, -442, -4)}
+CROPS = {'Hero – Slide 1': (1271, -249, -94), 'Hero – Slide 2': (365, -4, -4),  # slide 2 mobile image is already a 365x753 crop
+         'Hero – Slide 3': (1129, -229, 0), 'Hero – Slide 4': (1129, -442, -4)}
 OVERLAY = ('linear-gradient(0deg,rgba(6,40,67,.2) 0%,rgba(12,50,105,0) 112%),'
            'linear-gradient(90deg,rgba(2,16,34,.81) 0%,rgba(3,19,39,.67) 32%,rgba(3,19,39,.2) 62%,rgba(3,19,39,.04) 100%)')
 ARROW_MOBILE = ('selector .elementor-icon-box-wrapper::after{right:-50.7px;width:36px;height:36px;margin-top:-18px;'
