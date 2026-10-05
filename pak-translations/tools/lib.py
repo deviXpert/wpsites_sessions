@@ -100,11 +100,15 @@ def quote_form(cls='x-form', labels=False):
     ], 'Get My Free Quote', subject='New quote request — Pak Translations website', cls=cls, labels=labels)
 
 # ---------- assets: fonts, CSS, JS (live in the header so they load site-wide) ----------
+FONT_PRELOAD = ['https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2', 'https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DQ.woff2']
 def assets():
     css = open(os.path.join(D, 'pt.css')).read()
     js = open(os.path.join(D, 'pt.js')).read()
     # fonts are NOT loaded here: @font-face lives in the Elementor kit custom CSS (fonts.css, pushed by perf.py) so it prints in <head>
-    return RAW(f'<style id="pt-css">{css}</style><script>{js}</script>', 'x-assets')
+    # preload the two latin font files (same URLs as fonts.css): the preload scanner finds them as soon as the HTML arrives,
+    # so they are ready before first paint and nothing reflows when they swap in (CLS)
+    pre = ''.join(f'<link rel="preload" href="{u}" as="font" type="font/woff2" crossorigin>' for u in FONT_PRELOAD)
+    return RAW(f'<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>{pre}<style id="pt-css">{css}</style><script>{js}</script>', 'x-assets')
 
 LOGO = UP + '2020/10/logo.png'
 NAV = dict(menu='menu', layout='horizontal', pointer='none', dropdown='tablet', toggle='burger', full_width='stretch',

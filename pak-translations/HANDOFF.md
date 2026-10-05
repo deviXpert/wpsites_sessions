@@ -105,11 +105,16 @@ What was done (all re-runnable):
 - `wp.py` tolerates Elementor's `<style>` echo before JSON (side effect of CSS print method internal).
 - **LiteSpeed Cache 7.9.1 installed + active** (default settings → page cache on; TTFB ~2 s miss → ~0.3 s hit). It auto-purges when pages/templates are saved (verified). Forms work on cached pages: Elementor Pro doesn't check the nonce (tested with honeypot, no email sent).
 - Test: `npm i lighthouse@12` in scratch, `CHROME_PATH=/opt/pw-browsers/chromium-1194/chrome-linux/chrome lighthouse <url> [--preset=desktop] --chrome-flags="--headless=new --no-sandbox --ignore-certificate-errors"`.
+- **2026-10-05:** user applied the LiteSpeed settings → PSI mobile **90**. Agentic Browsing (Lighthouse 13 category) fixed to 100% on all 8 pages, accessibility + SEO 100:
+  `pt.js` removes Elementor accordion's invalid `aria-selected` on `role=button` titles and gives the page wrapper `role="main"`;
+  header `assets()` preloads the 2 latin font files (`FONT_PRELOAD`, keep in sync with `fonts.css`) so fonts are ready before first paint (Services H1 wrapped differently in the fallback → CLS 0.075);
+  fallback `size-adjust` re-tuned to the real headings; order form Deadline uses the native date input (`use_native_date`), as flatpickr's extra unlabeled `tabindex=1` input failed the audit.
+  Local Lighthouse reads mobile performance ~25 points lower than PSI (proxy) — use PSI for the real score. Lighthouse 13: `npm i lighthouse@latest` (category `agentic-browsing`).
 **Needs the user in wp-admin** (LiteSpeed settings have no REST API): LiteSpeed Cache → Cache → *Cache Mobile* ON; Page Optimization → CSS: *CSS Minify* ON, *CSS Combine* ON; JS: *JS Minify* ON, *JS Defer* = Deferred; HTML: *HTML Minify* ON, *DNS Prefetch Control* ON; Media: *Lazy Load Images* ON; Browser → *Browser Cache* ON. Then Toolbox → Purge All, re-test, and check the menu, forms, counters, carousel and FAQ still work.
 
 ## 6. Open items / ideas for next session
 - [x] **Published 2026-10-04:** client round 3 + home edits (commits 98b2e37, 1a75da3) are now LIVE via `python3 golive.py` (header, footer, all 8 pages, Yoast meta, Elementor cache cleared). REST auth works again. Checked after publish: linkcheck OK (only LinkedIn 999 bot-block), metaaudit OK, no spam strings. Ask the user to purge the Hostinger CDN.
-- [ ] **Performance:** user to apply the LiteSpeed Page Optimization settings in §5b, then re-test mobile (target 90+).
+- [x] **Performance:** LiteSpeed settings applied by the user, PSI mobile 90 (2026-10-05).
 - [ ] Confirm the user received the 4 TEST form emails (WP Mail SMTP delivery).
 - [ ] Optional cleanup: old saved templates 171, 97, 71, 64, 54, 47 and old header 27 (unused) — ask before deleting.
 - [ ] Optional: blog/insights section for SEO content (no posts exist yet), Google Business Profile link, Urdu landing page.

@@ -16,7 +16,7 @@ def build():
         F('source_language', 'text', 'Source language(s)', 'e.g. Urdu', True, '50'), F('target_language', 'text', 'Target language(s)', 'e.g. English', True, '50'),
         F('service', 'select', 'Service required', '', False, '50', field_options='Certified translation\nDocument translation\nLocalization\nEditing & proofreading\nTranscription\nSubtitling\nInterpreting\nContent writing\nLanguage test / material development\nLinguistic services\nDesktop publishing (DTP)\nOther'),
         F('domain', 'text', 'Domain / content', 'Medical, legal, IT, personal...', False, '50'),
-        F('deadline', 'date', 'Deadline', '', False, '50'),
+        F('deadline', 'date', 'Deadline', '', False, '50', use_native_date='yes'),
         F('certified', 'select', 'Need certification / affidavit?', '', False, '50', field_options='No\nYes - certified translation\nYes - with translator affidavit\nNot sure'),
         F('message', 'textarea', 'Order details', 'Describe your requirements: purpose, format, word count, special instructions...', False, '100', rows='5'),
         F('files', 'upload', 'Upload supporting files (up to 6)', '', False, '100'),
