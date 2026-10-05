@@ -1,0 +1,182 @@
+===== Section 266:31 156.0 True
+  17.899999618530273/700 Call Now
+  14.399999618530273/700 Check-In Now
+  14.399999618530273/700 Services
+  14.399999618530273/700 Conditions
+  14.399999618530273/700 About
+  14.399999618530273/700 Locations
+  24.0/700 When Minutes Matter, / We’re Here for You.
+  74.0/700 Expert Emergency
+  74.0/700 Care 24/7
+  12.300000190734863/600 Same-Day Care
+  12.300000190734863/600 No Appointment
+  12.300000190734863/600 All Ages
+  12.300000190734863/600 Expert Care
+  12.0/600 Average Wait Time
+  14.0/700 Trusted by thousands in our / community for fast, / compassionate emergency / care.
+  20.0/700 Under 15 Minutes
+===== Section 6:2640 156.0 True
+  17.899999618530273/700 Call Now
+  14.399999618530273/700 Check-In Now
+  14.399999618530273/700 Services
+  14.399999618530273/700 Conditions
+  14.399999618530273/700 About
+  14.399999618530273/700 Locations
+  24.0/700 When Minutes Matter, / We’re Here for You.
+  74.0/700 Expert Emergency
+  74.0/700 Care 24/7
+  12.300000190734863/600 Same-Day Care
+  12.300000190734863/600 No Appointment
+  12.300000190734863/600 All Ages
+  12.300000190734863/600 Expert Care
+  12.0/600 Average Wait Time
+  14.0/700 Trusted by thousands in our / community for fast, / compassionate emergency / care.
+  20.0/700 Under 15 Minutes
+===== Section - Hospital statistics 6:3026 1040.0 True
+  24.0/600 24/7
+  24.0/600 99%
+  24.0/600 10+
+  24.0/600 25,231+
+  13.0/500 Open
+  13.0/500 Satisfied Patients
+  13.0/500 Years of Healing Excellence
+  13.0/500 Healthy Patients
+===== Section 6:2719 1152.0 True
+  12.0/700 Immediate Treatment
+  56.0/700 Conditions We Treat
+  16.0/400 From sudden illness to unexpected injuries, our emergency team is here 24/7 to / evaluate and treat a wide range of conditions.
+  17.899999618530273/600 Chest Pain & Heart Concerns
+  17.899999618530273/700 Allergic Reactions
+  13.399999618530273/400 Rapid evaluation for chest pain and suspected heart / attacks.
+  13.399999618530273/400 Prompt treatment for severe or rapidly worsening / reactions.
+  17.899999618530273/600 High Fever
+  17.899999618530273/600 Abdominal Pain
+  13.399999618530273/400 Evaluation and treatment for dangerously high / temperatures.
+  13.399999618530273/400 Expert care for sudden or severe stomach pain.
+  17.899999618530273/600 Breathing Difficulties
+  17.899999618530273/600 Severe Bleeding
+  13.399999618530273/400 Immediate care for respiratory distress or shortness / of breath.
+  13.399999618530273/400 Immediate care for uncontrolled bleeding and / serious wounds.
+  17.899999618530273/600 Broken Bones & Fractures
+  17.899999618530273/600 Major Injuries & Trauma
+  13.399999618530273/400 On-site imaging and treatment for fractures and / orthopedic injuries.
+  13.399999618530273/400 Advanced evaluation and stabilization for serious / injuries.
+  16.0/700 View All Conditions
+===== Section 6:2789 2293.8603515625 True
+  12.0/700 24+ Experienced Physicians
+  56.0/700 Meet Our Medical Team
+  16.0/400 At EHMCT, we have a team of highly experienced staff who are committed to providing  / excellence in healthcare.
+  14.0/700 Dr. Adriano Goffi (Director)
+  14.0/600 Dr. Darshan Anandu
+  14.0/600 Dr. Shariq Khan
+  12.0/400 ER Physician
+  12.0/400 Gastroenterologist
+  12.0/400 ER Physician
+  96.0/700 250+
+  36.0/400 Medical Specialists
+  16.0/700 Book Appointment
+  14.0/600 Dr. Moses Wilcox
+  12.0/400 Urologist
+===== Frame 20 6:2845 3500.8603515625 True
+  12.0/700 Our Departments
+  57.599998474121094/700 Care Under One Roof
+  17.100000381469727/400 Advanced technology and experienced medical professionals, ready to deliver / comprehensive emergency care.
+  24.915000915527344/700 Diagnostic / Imaging
+  24.915000915527344/700 Laboratory / Services
+  24.915000915527344/700 Pediatric / Emergency
+  24.915000915527344/700 Emergency Care
+  24.915000915527344/700 Trauma Care
+  24.915000915527344/700 Cardiac Care
+  11.632499694824219/700 Immediate care, available 24/7.
+  11.632499694824219/700 Fast answers, right on-site.
+  12.0/500 Rapid results when they matter.
+  12.0/500 Focused care for serious injuries.
+  12.0/500 Advanced evaluation for heart concerns.
+  12.0/500 Compassionate care for children.
+  16.0/700 Explore Departments
+===== Section 6:2990 4398.4501953125 True
+  12.0/700 Patient Reviews
+  56.0/700 Trusted by / Houston / Families
+  17.600000381469727/400 ★★★★★
+  17.600000381469727/400 ★★★★★
+  17.600000381469727/400 ★★★★★
+  14.0/400 “They treated my son with / such patience and care. Truly grateful for the amazing team.” / 
+  14.0/400 “The staff was incredible— / fast, kind, and professional. I / felt safe and well cared for / during a very scary situation.”
+  14.0/400 “Short wait time, excellent / care, and everyone was so / compassionate. Highly / recommend this ER.” / 
+  16.0/400 Real stories. Real care. Real people.
+  14.100000381469727/600 — Jennifer
+  14.100000381469727/600 — Sarah
+  14.100000381469727/600 — Michael
+  17.600000381469727/400 ★★★★★
+  48.0/700 4.9
+  20.0/600  / 5
+  12.0/400 Based on 1,200+ reviews
+===== Frame 21 6:2930 4901.34033203125 True
+  12.0/700 Our Locations
+  57.599998474121094/700 Find an East Houston Medical Center Near You
+===== Frame 23 6:2937 4901.34033203125 True
+  12.0/700 Our Locations
+  57.599998474121094/700 Find an East Houston Medical Center Near You
+  24.0/600 Houston
+  24.0/600 Baytown
+  16.0/600 East Houston Medical Center
+  16.0/600 East Houston Medical Center
+  14.0/400 1200 N. Main St.
+  14.0/400 1601 Garth Rd.
+  14.0/400 Houston, TX 77009
+  14.0/400 Baytown, TX 77530
+  14.0/600 (123) 123-1234
+  14.0/600 (123) 123-1234
+  14.0/600 Get Direction
+  14.0/600 Get Direction
+===== Section 6:3076 5757.34033203125 True
+  12.300000190734863/700 FAQ
+  57.599998474121094/700 Frequently Asked / Questions
+  16.0/400 Get quick answers to common questions about our emergency care.
+  16.0/600 Do I need an appointment?
+  16.0/700 +
+  16.0/400 No. We welcome walk-ins 24 hours a day, seven days a week.
+  16.0/600 Are you open on holidays?
+  16.0/700 +
+  16.0/600 What insurance do you accept?
+  16.0/700 +
+  16.0/600 How quickly will I be seen?
+  16.0/700 +
+  16.0/600 When should I visit an emergency room?
+  16.0/700 +
+===== Section 94:965 6569.22021484375 True
+  20.0/700 Request a Call
+  13.100000381469727/400 We’ll get back to you as soon as possible. Do not use this form for life-threatening emergencies.
+  12.0/700 Get in Touch
+  12.0/700 Full Name
+  12.0/700 Phone Number
+  56.0/700 Need Emergency Care Now?
+  12.0/700 Email Address
+  16.0/400 We’re open 24/7 and ready when you need us.
+  12.0/700 How Can We Help?
+  16.0/700 (832) 400-9662
+  16.0/700 Get Directions
+  12.800000190734863/700 Open 24/7
+  12.800000190734863/700 Convenient Location
+  12.800000190734863/700 Walk-Ins Welcome
+  11.0/400 365 days a year
+  11.0/400 Houston, Texas
+  11.0/400 No appointment
+  16.0/700 Request a Call
+===== Footer 6:3202 7359.8603515625 True
+  15.699999809265137/700 Contact
+  15.699999809265137/700 Quick Links
+  15.699999809265137/700 Emergency Care
+  13.399999618530273/400 1234 Medical Center Dr. / Houston, TX 77030
+  13.399999618530273/400 Conditions
+  13.399999618530273/400 Diagnostic Imaging
+  13.399999618530273/400 Physicians
+  13.399999618530273/400 Trauma Care
+  14.100000381469727/400 Expert emergency care and compassionate / treatment, available when Houston needs it / most.
+  13.399999618530273/400 (713) 555-0123
+  13.399999618530273/400 Departments
+  13.399999618530273/400 Cardiac Care
+  13.399999618530273/400 Open 24/7
+  13.399999618530273/400 Reviews
+  13.399999618530273/400 Pediatric Emergency
+  11.699999809265137/700 A medical emergency can be life-threatening. If you are experiencing a serious emergency, call 911 immediately.

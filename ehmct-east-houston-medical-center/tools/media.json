@@ -1,0 +1,190 @@
+{
+ "dept-cardiac-care": {
+  "id": 14,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dept-cardiac-care.webp"
+ },
+ "dept-diagnostic-imaging": {
+  "id": 15,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dept-diagnostic-imaging.webp"
+ },
+ "dept-emergency-care": {
+  "id": 16,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dept-emergency-care.webp"
+ },
+ "dept-laboratory-services": {
+  "id": 17,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dept-laboratory-services.webp"
+ },
+ "dept-pediatric-emergency": {
+  "id": 18,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dept-pediatric-emergency.webp"
+ },
+ "dept-trauma-care": {
+  "id": 19,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dept-trauma-care.webp"
+ },
+ "dr-adriano-goffi": {
+  "id": 20,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dr-adriano-goffi.webp"
+ },
+ "dr-darshan-anandu": {
+  "id": 21,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dr-darshan-anandu.webp"
+ },
+ "dr-moses-wilcox": {
+  "id": 22,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dr-moses-wilcox.webp"
+ },
+ "dr-shariq-khan": {
+  "id": 23,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dr-shariq-khan.webp"
+ },
+ "ehmc-faq-emergency-nurse": {
+  "id": 24,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-faq-emergency-nurse.webp"
+ },
+ "ehmc-heart-illustration": {
+  "id": 25,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-heart-illustration.webp"
+ },
+ "ehmc-hero-hospital-building": {
+  "id": 26,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-hero-hospital-building.webp"
+ },
+ "ehmc-logo": {
+  "id": 27,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-logo.webp"
+ },
+ "ehmc-patient-avatar-1": {
+  "id": 28,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-patient-avatar-1.webp"
+ },
+ "ehmc-patient-avatar-2": {
+  "id": 29,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-patient-avatar-2.webp"
+ },
+ "ehmc-patient-avatar-3": {
+  "id": 30,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-patient-avatar-3.webp"
+ },
+ "dr-anandu-thumb": {
+  "id": 79,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dr-anandu-thumb.webp"
+ },
+ "dr-goffi-thumb": {
+  "id": 80,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dr-goffi-thumb.webp"
+ },
+ "dr-khan-thumb": {
+  "id": 81,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dr-khan-thumb.webp"
+ },
+ "dr-moses-wilcox-crop": {
+  "id": 82,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dr-moses-wilcox-crop.webp"
+ },
+ "dr-wilcox-thumb": {
+  "id": 83,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/dr-wilcox-thumb.webp"
+ },
+ "ehmc-icon-users": {
+  "id": 84,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-icon-users.webp"
+ },
+ "ehmc-patient-avatar-1-crop": {
+  "id": 85,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-patient-avatar-1-crop.webp"
+ },
+ "ehmc-patient-avatar-2-crop": {
+  "id": 86,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-patient-avatar-2-crop.webp"
+ },
+ "ehmc-patient-avatar-3-crop": {
+  "id": 87,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-patient-avatar-3-crop.webp"
+ },
+ "ehmc-patient-avatar-1-figma": {
+  "id": 90,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-patient-avatar-1-figma.webp"
+ },
+ "ehmc-patient-avatar-2-figma": {
+  "id": 91,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-patient-avatar-2-figma.webp"
+ },
+ "ehmc-patient-avatar-3-figma": {
+  "id": 92,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/09/ehmc-patient-avatar-3-figma.webp"
+ },
+ "condition-abdominal-pain": {
+  "id": 650,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-abdominal-pain.webp"
+ },
+ "condition-allergic-reactions": {
+  "id": 651,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-allergic-reactions.webp"
+ },
+ "condition-breathing-difficulties": {
+  "id": 652,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-breathing-difficulties.webp"
+ },
+ "condition-broken-bones": {
+  "id": 653,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-broken-bones.webp"
+ },
+ "condition-chest-pain-heart": {
+  "id": 654,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-chest-pain-heart.webp"
+ },
+ "condition-high-fever": {
+  "id": 655,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-high-fever.webp"
+ },
+ "condition-major-injuries-trauma": {
+  "id": 656,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-major-injuries-trauma.webp"
+ },
+ "condition-severe-bleeding": {
+  "id": 657,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-severe-bleeding.webp"
+ },
+ "ehmc-hero-building-2": {
+  "id": 658,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-hero-building-2.webp"
+ },
+ "ehmc-hero-reception-3": {
+  "id": 659,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-hero-reception-3.webp"
+ },
+ "hero-broken-bones": {
+  "id": 683,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/hero-broken-bones-er.webp"
+ },
+ "hero-high-fever": {
+  "id": 684,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/hero-high-fever-er.webp"
+ },
+ "hero-severe-bleeding": {
+  "id": 685,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/hero-severe-bleeding-er.webp"
+ },
+ "hero-difficulty-breathing": {
+  "id": 686,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/hero-difficulty-breathing-er.webp"
+ },
+ "hero-allergic-reactions": {
+  "id": 687,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/hero-allergic-reactions-er.webp"
+ },
+ "hero-blood-clots": {
+  "id": 688,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/hero-blood-clots-er.webp"
+ },
+ "hero-infection": {
+  "id": 689,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/hero-infection-er.webp"
+ },
+ "hero-diabetic-emergency": {
+  "id": 690,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/hero-diabetic-emergency-er.webp"
+ }
+}
