@@ -53,7 +53,11 @@ Read from environment variables only:
   clears the header action row (ends y=138). Applied to all 24 inner pages; new pages with that banner need it too.
 - Conditions tabs (home): on mobile the active card's image opens directly below that card (flex `order` + `:has()`).
   Hidden tab images were lazy-loaded (fetched only on tap); HTML widget 'Conditions – Preload Tab Images'
-  (absolute, inside 'Conditions – Grid') switches them to eager when the section is ~800px away.
+  (absolute, inside 'Conditions – Grid') switches them to eager when the section is ~800px away (only the images
+  visible at the current breakpoint).
+- Conditions mobile (Figma 442:727): cards/image 353 wide (section 20px sides), 18px gaps, image 353x353 r18.
+  Each tab has a mobile-only '… Illustration (Mobile)' square image (media 1056–1063, generated from the portraits
+  with the subject zoomed out) and the portrait widget is hidden on mobile.
 - Header buttons are equal height: 56px desktop/tablet (`/*eq-h*/`), 46px mobile. Mobile action row has explicit
   z_index 1 and the logo pill z_index 3 (containers inherit the header's --z-index:50, which covered the open menu).
 - Desktop/tablet hero card frame per Figma 418:3: 8px #F2F3F6, radius 50, soft shadow 0 10px 30px rgba(4,38,72,.08) (`/*d-frame*/` CSS on 'Hero').

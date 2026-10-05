@@ -258,5 +258,37 @@
  "patient_avatar_3_v2": {
   "id": 1016,
   "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-patient-avatar-3-v2.webp"
+ },
+ "condition_chest_pain_heart_square": {
+  "id": 1056,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-chest-pain-heart-square.webp"
+ },
+ "condition_abdominal_pain_square": {
+  "id": 1057,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-abdominal-pain-square.webp"
+ },
+ "condition_breathing_difficulties_square": {
+  "id": 1058,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-breathing-difficulties-square.webp"
+ },
+ "condition_broken_bones_square": {
+  "id": 1059,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-broken-bones-square.webp"
+ },
+ "condition_allergic_reactions_square": {
+  "id": 1060,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-allergic-reactions-square.webp"
+ },
+ "condition_high_fever_square": {
+  "id": 1061,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-high-fever-square.webp"
+ },
+ "condition_severe_bleeding_square": {
+  "id": 1062,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-severe-bleeding-square.webp"
+ },
+ "condition_major_injuries_trauma_square": {
+  "id": 1063,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/condition-major-injuries-trauma-square.webp"
  }
 }

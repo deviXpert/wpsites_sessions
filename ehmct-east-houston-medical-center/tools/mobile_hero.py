@@ -130,19 +130,21 @@ STATS_CSS = ('selector{display:grid !important;grid-template-columns:171fr 180fr
 OLD_TABS_MOBILE = ('@media(max-width:767px){selector .e-n-tabs{grid-template-columns:1fr;gap:16px}selector .e-n-tabs-content{grid-column:1;grid-row:5}'
                    + ''.join('selector .e-n-tab-title:nth-child(%d){grid-column:1;grid-row:%d}' % (n, n if n < 5 else n + 1) for n in range(1, 9))
                    + 'selector .e-n-tabs-content img{height:auto;aspect-ratio:343/608}}')
-TABS_CSS = ('selector .e-n-tabs{display:flex !important;flex-direction:column;gap:16px}'
+TABS_CSS = ('selector .e-n-tabs{display:flex !important;flex-direction:column;gap:18px}'
             'selector .e-n-tabs-heading{display:contents !important}'
             + ''.join('selector .e-n-tab-title:nth-child(%d){order:%d}' % (n, 2 * n) for n in range(1, 9))
             + 'selector .e-n-tabs-content{order:3}'
             + ''.join('selector .e-n-tabs:has(.e-n-tab-title:nth-child(%d)[aria-selected=true]) .e-n-tabs-content{order:%d}' % (n, 2 * n + 1)
                       for n in range(1, 9))
-            + 'selector .e-n-tabs-content img{height:auto;aspect-ratio:347/466;border-radius:16px}')
+            + 'selector .e-n-tabs-content img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:18px}')  # Figma 442:727: 353x353, r18
 
 
 def conditions(doc):
     t = find(doc['data'], titled('Conditions – Tabs'))
     t['settings']['custom_css'] = t['settings']['custom_css'].replace(OLD_TABS_MOBILE, '')
     add_css(t['settings'], TABS_CSS)
+    sec = find(doc['data'], titled('Conditions We Treat'))['settings']   # Figma cards/image are 353 wide at 393 -> 20px sides
+    sec['padding_mobile'] = dict(sec.get('padding_mobile') or {'unit': 'px', 'top': '60', 'bottom': '40'}, right='20', left='20', isLinked=False)
 
 
 def stats(doc):
