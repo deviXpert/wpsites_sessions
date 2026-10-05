@@ -38,9 +38,20 @@ Read from environment variables only:
 | Fracture template page (user-built layout used for condition pages) | 556 |
 | New condition pages (published) | see `tools/cond_ids.json` (691–712) |
 | Other condition pages (user-built) | 123 abdominal-pain, 427 seizures, 472 burns, 527 trauma-injury, 529 chest-pain, 575 covid-19, 593 sore-throat, 649 flu |
-| Media | see `tools/media.json` (key → id/url) |
+| Community Events page (published, `/community-events/`) | 994 |
+| Careers page (published, `/careers/`, Zoho Recruit job board embed) | 997 |
+| Media | see `tools/media.json` (key → id/url); mobile hero photo 968, event gallery 980–992, careers photo 993 |
 
 ## Tools (`tools/`)
+- **`patch.py` – the default way to change anything live**: `fetch(id[, 'elementor_library'])` → edit `doc['data']` →
+  `save(doc)`. Backs up the live JSON to `backups/`, refuses to save if the post changed after the fetch, regenerates CSS.
+- `mobile_hero.py` – mobile-only (≤767px) Figma match for home hero/dots/stats (32) and header pill (33). Only sets
+  `*_mobile` keys and a CSS block between `/*m-figma*/` markers, so it is safe to re-run on live data.
+- `header_call.py` – desktop Call button shows the number; mobile-only "Call Now" pill inside the logo pill
+  (icon-only under 390px). Header also has `/*hdr-mid*/` CSS for 1025–1279px.
+- `inner_pages.py` – first build of Community Events / Careers. Refuses to overwrite once built (`--rebuild-draft` only
+  while still a draft). Careers' Zoho embed needs the `.embed_jobs_head` / `.embed_jobs_head3` wrappers; Zoho's own CSS is
+  intentionally not loaded (our CSS overrides it).
 - `el.py` – helpers: `C()` container, `W()` widget, `H()/T()/BTN()`, `put()`, `regen()`.
 - `page.py` – full homepage generator (`python3 page.py page` writes page 32, `qa <id>` writes a full preview).
 - `hf.py` – original header/footer generator. **Header has since been edited directly** (menu CSS for
@@ -55,7 +66,16 @@ Read from environment variables only:
 The user also edits pages in the Elementor editor. Regenerating from these scripts overwrites
 those edits. Always fetch the live `_elementor_data` first and patch it, or confirm with the user.
 
+## Check-In
+Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to the GoRev pre-registration portal
+(same URL as ehmct.com), new tab. The header Check-In button is hidden on mobile.
+
 ## Open items
+- Mobile Figma pass done for header, hero (dots/kicker/title/pills/wait card/trust strip) and stats. Remaining home
+  sections (Conditions, Team, Care Under One Roof, Reviews, Locations, FAQ) not yet compared section by section.
+- Figma stats icons are outline style; live uses solid Font Awesome icons (users, shield).
+- Community Events / Careers are not in the nav menu yet (user renamed "Services" → "Conditions" on 2026-10-05).
+- Headless Chromium renders 10px Poppins slightly wide (hero trust text wraps to 4 lines in screenshots only).
 - Baytown location shows "Coming soon" – real details pending.
 - Phone conflict: Figma shows 832-400-9662, live site uses (832) 400-2396 (currently used).
 - Reviews block "4.9 / 5 based on 1,200+" vs Trustindex shows 588 Google reviews.
