@@ -54,7 +54,7 @@ Read from environment variables only:
 - Conditions tabs (home): on mobile the active card's image opens directly below that card (flex `order` + `:has()`).
 - Header buttons are equal height: 56px desktop/tablet (`/*eq-h*/`), 46px mobile. Mobile action row has explicit
   z_index 1 and the logo pill z_index 3 (containers inherit the header's --z-index:50, which covered the open menu).
-- Desktop/tablet hero card frame per Figma 418:3: 8px #F2F3F6, radius 50, shadow (`/*d-frame*/` CSS on 'Hero').
+- Desktop/tablet hero card frame per Figma 418:3: 8px #F2F3F6, radius 50, soft shadow 0 10px 30px rgba(4,38,72,.08) (`/*d-frame*/` CSS on 'Hero').
 - Hero avatars use Figma crops (media 1014–1016) with CSS ring/shadow; hero card has a 4px #F1F2F3 curved outline.
 - `inner_pages.py` – first build of Community Events / Careers. Refuses to overwrite once built (`--rebuild-draft` only
   while still a draft). Careers' Zoho embed needs the `.embed_jobs_head` / `.embed_jobs_head3` wrappers; Zoho's own CSS is
