@@ -47,8 +47,12 @@ Read from environment variables only:
   `save(doc)`. Backs up the live JSON to `backups/`, refuses to save if the post changed after the fetch, regenerates CSS.
 - `mobile_hero.py` – mobile-only (≤767px) Figma match for home hero/dots/stats (32) and header pill (33). Only sets
   `*_mobile` keys and a CSS block between `/*m-figma*/` markers, so it is safe to re-run on live data.
-- `header_call.py` – desktop Call button shows the number; mobile-only "Call Now" pill inside the logo pill
-  (icon-only under 390px). Header also has `/*hdr-mid*/` CSS for 1025–1279px.
+- `header_call.py` – desktop Call button shows the number; mobile-only "Header – Mobile Actions" row under the logo
+  pill (Figma: "View Our ER" → /#locations, "Call Now" → tel). Header also has `/*hdr-mid*/` CSS for 1025–1279px.
+- `fix_banners.py` – mobile only: inner-page banners (page[0] > banner > content) start their content at 150px so it
+  clears the header action row (ends y=138). Applied to all 24 inner pages; new pages with that banner need it too.
+- Conditions tabs (home): on mobile the active card's image opens directly below that card (flex `order` + `:has()`).
+- Hero avatars use Figma crops (media 1014–1016) with CSS ring/shadow; hero card has a 4px #F1F2F3 curved outline.
 - `inner_pages.py` – first build of Community Events / Careers. Refuses to overwrite once built (`--rebuild-draft` only
   while still a draft). Careers' Zoho embed needs the `.embed_jobs_head` / `.embed_jobs_head3` wrappers; Zoho's own CSS is
   intentionally not loaded (our CSS overrides it).
@@ -73,6 +77,7 @@ Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to t
 ## Open items
 - Mobile Figma pass done for header, hero (dots/kicker/title/pills/wait card/trust strip) and stats. Remaining home
   sections (Conditions, Team, Care Under One Roof, Reviews, Locations, FAQ) not yet compared section by section.
+- Knee Pain page (743) section heading reads "Symptoms of SORE…" (copy slip from Sore Throat) – not touched.
 - Figma stats icons are outline style; live uses solid Font Awesome icons (users, shield).
 - Community Events / Careers are not in the nav menu yet (user renamed "Services" → "Conditions" on 2026-10-05).
 - Headless Chromium renders 10px Poppins slightly wide (hero trust text wraps to 4 lines in screenshots only).
