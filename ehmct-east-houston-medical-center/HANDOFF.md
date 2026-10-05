@@ -97,7 +97,6 @@ Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to t
 (same URL as ehmct.com), new tab. The header Check-In button is hidden on mobile.
 
 ## Open items
-- About Us 'Have a Concern?' card dials 832-990-8109 (not on ehmct.com) – confirm with user.
 - News & Blogs page (1081, user-built) has no content yet; only the default 'Hello world!' post exists.
 - FAQ image media 24 was deleted; replaced by 1122 (Figma export).
 - Mobile Figma pass done for header, hero (dots/kicker/title/pills/wait card/trust strip) and stats. Remaining home
