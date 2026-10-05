@@ -95,7 +95,7 @@ The user also edits pages in the Elementor editor. Regenerating from these scrip
 those edits. Always fetch the live `_elementor_data` first and patch it, or confirm with the user.
 
 ## Check-In
-Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to the GoRev pre-registration portal
+Header "Check-In Now" links to the GoRev pre-registration portal; the home Team card button is "Request an Appointment" → /request-an-appointment/
 (same URL as ehmct.com), new tab. The header Check-In button is hidden on mobile.
 
 ## Open items
