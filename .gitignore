@@ -1,3 +1,8 @@
 __pycache__/
 *.png
 prev/
+ehmct-east-houston-medical-center/tools/.sid
+ehmct-east-houston-medical-center/tools/h.txt
+ehmct-east-houston-medical-center/tools/payload.json
+ehmct-east-houston-medical-center/tools/backups/
+ehmct-east-houston-medical-center/tools/live/
