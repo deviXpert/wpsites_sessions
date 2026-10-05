@@ -3,7 +3,7 @@
  2 glass building (component 222:1226 / 307:2102)   3 building (222:1469 / 307:2104)   4 reception (222:1549 / 307:2161)
 usage: python3 hero_slides.py [page_id]   (then run mobile_hero.py hero <page_id> for the mobile crops)
 """
-import copy, sys
+import copy, re, sys
 from patch import fetch, save, find, titled
 from el import uid, img
 
@@ -31,8 +31,28 @@ if len(slides) == 3:
 assert len(slides) == 4 and len(car['settings']['carousel_items']) == 4
 
 slides[0]['settings']['background_image'] = bg('hero_slide_1_desktop')
-slides[1]['settings']['background_image'] = bg('hero_slide_2_glass')
-slides[1]['settings']['background_image_mobile'] = bg('hero_slide_2_glass_mobile')
+for n in (2, 3, 4):   # Figma 222:1148/1471/1551 (desktop) and 436:1306/1307/1308 (mobile), exported as cropped
+    slides[n - 1]['settings']['background_image'] = bg('hero_v4_slide_%d' % n)
+    slides[n - 1]['settings']['background_image_mobile'] = bg('hero_v4_slide_%d_mobile' % n)
+
+# Overlays straight from Figma (layer opacity multiplied into the stops)
+G1 = 'linear-gradient(90deg,rgba(2,16,34,{0}) 0%,rgba(3,19,39,{1}) 32%,rgba(3,19,39,{2}) 62%,rgba(3,19,39,{3}) 100%)'
+OV = {
+    # desktop main 418:5 (100%) + 418:6 bottom 54% (rgba(2,13,29,.62) -> 0)
+    1: ('linear-gradient(0deg,rgba(2,13,29,.62) 0%,rgba(2,13,29,0) 54%),' + G1.format(.9, .74, .22, .04),
+        # mobile main 266:5 (90% layer) + 266:6 (20% tint)
+        'linear-gradient(90deg,rgba(6,40,67,.2) 0%,rgba(12,50,105,0) 100%),'
+        'linear-gradient(90deg,rgba(2,16,34,.855) 0%,rgba(3,19,39,.81) 67%,rgba(3,19,39,.287) 100%)'),  # handle spans 116% of width
+}
+for n in (2, 3, 4):
+    # desktop 222:1149 (80% layer) + 222:1150 bottom 54%; mobile 307:2046 (80%) + 307:2047 left strip
+    OV[n] = ('linear-gradient(0deg,rgba(6,40,67,.62) 0%,rgba(12,50,105,0) 54%),' + G1.format(.72, .592, .176, .032),
+             'linear-gradient(90deg,rgba(6,40,67,.2) 0%,rgba(12,50,105,0) 156px),' + G1.format(.72, .592, .176, .032))
+for n, (desk, mob) in OV.items():
+    st = slides[n - 1]['settings']
+    css = ('/*ov*/selector::before{background-image:' + desk + ' !important;background-color:transparent !important;opacity:1 !important}'
+           '@media(max-width:767px){selector::before{background-image:' + mob + ' !important}}/*ov*/')
+    st['custom_css'] = (re.sub(r'/\*ov\*/.*?/\*ov\*/', '', st.get('custom_css', ''), flags=re.S).strip() + ' ' + css).strip()
 # desktop/tablet dots per Figma 418:8-11: 18px white(.76) dots, active 38x18 #BE2424, 3px white(.72) ring, 8px gap
 import re
 DOTS = ('/*d-dots*/@media(min-width:768px){selector .swiper-pagination{display:flex;gap:8px;line-height:0;transform:none !important}'

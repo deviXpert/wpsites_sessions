@@ -310,5 +310,29 @@
  "banner_departments": {
   "id": 1085,
   "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-banner-departments.webp"
+ },
+ "hero_v4_slide_2": {
+  "id": 1102,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-hero-slide-2.webp"
+ },
+ "hero_v4_slide_2_mobile": {
+  "id": 1103,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-hero-slide-2-mobile.webp"
+ },
+ "hero_v4_slide_3": {
+  "id": 1104,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-hero-slide-3.webp"
+ },
+ "hero_v4_slide_3_mobile": {
+  "id": 1105,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-hero-slide-3-mobile.webp"
+ },
+ "hero_v4_slide_4": {
+  "id": 1106,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-hero-slide-4.webp"
+ },
+ "hero_v4_slide_4_mobile": {
+  "id": 1107,
+  "url": "https://hotpink-lobster-615998.hostingersite.com/wp-content/uploads/2026/10/ehmc-hero-slide-4-mobile.webp"
  }
 }

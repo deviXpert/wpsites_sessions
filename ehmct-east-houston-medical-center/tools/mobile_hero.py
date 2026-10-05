@@ -22,8 +22,8 @@ def dm(t, r, b, l, u='px'):
 
 
 # Figma image crops per slide: background width and offset relative to the slide (slide = card minus 4px border)
-CROPS = {'Hero – Slide 1': (1271, -249, -94), 'Hero – Slide 2': (365, -4, -4),  # slide 2 mobile image is already a 365x753 crop
-         'Hero – Slide 3': (1129, -229, 0), 'Hero – Slide 4': (1129, -442, -4)}
+CROPS = {'Hero – Slide 1': (1271, -249, -94),  # slides 2-4: mobile images are exact Figma 365x753 crops
+         'Hero – Slide 2': (365, -4, -4), 'Hero – Slide 3': (365, -4, -4), 'Hero – Slide 4': (365, -4, -4)}
 OVERLAY = ('linear-gradient(0deg,rgba(6,40,67,.2) 0%,rgba(12,50,105,0) 112%),'
            'linear-gradient(90deg,rgba(2,16,34,.81) 0%,rgba(3,19,39,.67) 32%,rgba(3,19,39,.2) 62%,rgba(3,19,39,.04) 100%)')
 ARROW_MOBILE = ('selector .elementor-icon-box-wrapper::after{right:-50.7px;width:36px;height:36px;margin-top:-18px;'
@@ -66,7 +66,8 @@ def hero(pid=32):
                       background_position_mobile='initial', background_xpos_mobile=px(x), background_ypos_mobile=px(y))
             if ss.get('_title') == 'Hero – Slide 1':  # Figma uses the clean photo (live desktop image has a baked-in gradient)
                 ss['background_image_mobile'] = {'id': 968, 'url': MOBILE_IMG, 'source': 'library', 'alt': '', 'size': ''}
-        add_css(ss, 'selector::before{background-image:' + OVERLAY + ' !important;opacity:1 !important}')
+        # overlays are per slide and per breakpoint now: see hero_slides.py (/*ov*/ block)
+        ss['custom_css'] = re.sub(re.escape(M) + r'.*?' + re.escape(M), '', ss.get('custom_css', ''), flags=re.S).strip()
         for w in slide['elements']:
             t = w['settings'].get('_title', '')
             if t == 'Hero – Kicker':

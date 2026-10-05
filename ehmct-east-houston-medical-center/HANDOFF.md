@@ -53,8 +53,9 @@ Read from environment variables only:
   pill (Figma: "View Our ER" → /#locations, "Call Now" → tel). Header also has `/*hdr-mid*/` CSS for 1025–1279px.
 - `fix_banners.py` – mobile only: inner-page banners (page[0] > banner > content) start their content at 150px so it
   clears the header action row (ends y=138). Applied to all 24 inner pages; new pages with that banner need it too.
-- Hero slider = 4 slides (`hero_slides.py`, idempotent): 1 EHMC building (main artboard; desktop media 1069 clean
-  crop of Figma 418:4, mobile 968), 2 glass building (1065 / mobile 1066), 3 building (658), 4 reception (659).
+- Hero slider = 4 slides (`hero_slides.py`, idempotent): 1 EHMC building (desktop 1069, mobile 968), 2 hospital
+  entrance, 3 aerial, 4 reception (media 1102–1107, desktop + mobile exported exactly as cropped in Figma 222:1468 /
+  307:2103). Overlays per slide and breakpoint from Figma, in a `/*ov*/` CSS block on each slide's ::before.
   Desktop/tablet dots per Figma (`/*d-dots*/`): 18px, active 38px #BE2424, aligned with the kicker.
 - Conditions tabs (home): on mobile the active card's image opens directly below that card (flex `order` + `:has()`).
   Hidden tab images were lazy-loaded (fetched only on tap); HTML widget 'Conditions – Preload Tab Images'
@@ -91,7 +92,6 @@ Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to t
 (same URL as ehmct.com), new tab. The header Check-In button is hidden on mobile.
 
 ## Open items
-- Hero home images: Figma is being updated with new ones – redo `hero_slides.py` images when ready.
 - Footer 'Need Emergency Care' phone button wraps to 2 lines on mobile.
 - Mobile Figma pass done for header, hero (dots/kicker/title/pills/wait card/trust strip) and stats. Remaining home
   sections (Conditions, Team, Care Under One Roof, Reviews, Locations, FAQ) not yet compared section by section.
@@ -102,7 +102,7 @@ Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to t
 - Baytown location shows "Coming soon" – real details pending.
 - Phone: (832) 400-2396 confirmed by the user (Contact Us 400-9662 fixed 2026-10-05).
 - Reviews block "4.9 / 5 based on 1,200+" vs Trustindex shows 588 Google reviews.
-- Hero slides 3 & 4 photos are low-res in Figma too (1000px / 768px) – ask for originals.
+- Hero desktop slide 2–4 sources in Figma are ~900px / 768px wide (upscaled on large screens) – ask for originals.
 - TikTok link `@east.houston.medi` copied from ehmct.com – verify.
 - Rotate the application password that was pasted in chat.
 - Remaining Figma pages: About Us, Contact Us, more condition pages (knee pain, UTI, back pain, earache, nausea & vomiting).
