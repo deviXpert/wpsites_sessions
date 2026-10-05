@@ -17,7 +17,8 @@ card['elements'] = [e for e in card['elements'] if e['settings'].get('_title') n
                     ('Locations – Baytown Map (placeholder embed)', 'Locations – Baytown Directions Link', 'Locations – Baytown Campus Image')]
 houston_map = find(d, titled('Locations – Houston Map (placeholder embed)'))['settings']
 card['elements'].append(W('image', 'Locations – Baytown Campus Image', image=img('baytown_campus'), image_size='full',
-                          width=px(100, '%'), height=houston_map.get('height', px(200)), object_fit='cover', object_position='center center',
+                          width=px(100, '%'), height=houston_map.get('height', px(200)), **{'object-fit': 'cover', 'object-position': 'center center'},
+                          custom_css='selector img{width:100%;height:200px;object-fit:cover;object-position:center center}',
                           image_border_radius=dims(8), image_border_border='solid', image_border_width=dims(1), image_border_color='#DFE5ED'))
 
 car = find(d, titled('Hero – Slider'))['settings']
