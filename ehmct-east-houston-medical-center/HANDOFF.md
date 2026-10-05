@@ -71,6 +71,10 @@ Read from environment variables only:
 - Hero avatars use Figma crops (media 1014–1016) with CSS ring/shadow; hero card has a 4px #F1F2F3 curved outline.
 - `figma_pages.py` – first build of /conditions/ and /departments/ (same refuse-to-overwrite rules). Condition cards
   link to their condition pages; desktop only in Figma, mobile = one column.
+- `home_fixes.py` – flip-card hint removed, Baytown map → campus image (media 1115), slider rounded on `.swiper`
+  (slides square, so no edges show mid-swipe).
+- `qa_crawl.js` – full-site QA (run in a dir with pages.json from the REST API): overflow, broken images, `#` links,
+  JS errors, 4xx responses, screenshots at 1440/393.
 - `inner_pages.py` – first build of Community Events / Careers. Refuses to overwrite once built (`--rebuild-draft` only
   while still a draft). Careers' Zoho embed needs the `.embed_jobs_head` / `.embed_jobs_head3` wrappers; Zoho's own CSS is
   intentionally not loaded (our CSS overrides it).
@@ -93,7 +97,9 @@ Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to t
 (same URL as ehmct.com), new tab. The header Check-In button is hidden on mobile.
 
 ## Open items
-- Footer 'Need Emergency Care' phone button wraps to 2 lines on mobile.
+- About Us 'Have a Concern?' card dials 832-990-8109 (not on ehmct.com) – confirm with user.
+- News & Blogs page (1081, user-built) has no content yet; only the default 'Hello world!' post exists.
+- FAQ image media 24 was deleted; replaced by 1122 (Figma export).
 - Mobile Figma pass done for header, hero (dots/kicker/title/pills/wait card/trust strip) and stats. Remaining home
   sections (Conditions, Team, Care Under One Roof, Reviews, Locations, FAQ) not yet compared section by section.
 - Knee Pain page (743) section heading reads "Symptoms of SORE…" (copy slip from Sore Throat) – not touched.
