@@ -43,6 +43,7 @@ Read from environment variables only:
 | Conditions page (published, `/conditions/`, Figma 436:46) | 1086 |
 | Departments page (published, `/departments/`, Figma 436:1016) | 1089 |
 | Request An Appointment (published, `/request-an-appointment/`, Elementor Pro form → dev@themaddex.com + Submissions) | 1154 |
+| Site icon / favicon (Settings → site_icon; source in `assets/`) | media 2065 |
 | Media | see `tools/media.json` (key → id/url); mobile hero photo 968, event gallery 980–992, careers photo 993 |
 
 ## Tools (`tools/`)
