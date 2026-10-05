@@ -20,10 +20,10 @@ def actions_row():
              border_radius=dims(999), text_padding=dims(0), button_text_color='#FFFFFF', background_color='rgba(12,37,67,0.14)',
              typography_typography='custom', typography_font_family='Poppins', typography_font_weight='700',
              typography_font_size=px(10.63), typography_line_height=px(17),
-             custom_css='selector .elementor-button{display:inline-flex;align-items:center;gap:8.2px;height:39.9px;padding:0 4.45px 0 15.5px;'
+             custom_css='selector .elementor-button{display:inline-flex;align-items:center;gap:8.2px;height:46px;box-sizing:border-box;padding:0 5px 0 16px;'
                         'border:.74px solid rgba(255,255,255,.75);-webkit-backdrop-filter:blur(7.4px);backdrop-filter:blur(7.4px);white-space:nowrap}'
                         'selector .elementor-button-content-wrapper{align-items:center;gap:8.2px}'
-                        'selector .elementor-button-content-wrapper::after{content:"";width:31px;height:31px;box-sizing:border-box;border-radius:50%;'
+                        'selector .elementor-button-content-wrapper::after{content:"";width:36px;height:36px;box-sizing:border-box;border-radius:50%;'
                         'border:.74px solid rgba(255,255,255,.72);background:url("' + ARROW + '") center/14.8px no-repeat}')
     call = W('button', 'Header – Call Now (Mobile)', text='Call Now',
              link={'url': 'tel:+18324002396', 'is_external': '', 'nofollow': '', 'custom_attributes': ''},
@@ -31,13 +31,13 @@ def actions_row():
              button_background_hover_color='#9F3135', hover_color='#FFFFFF',
              typography_typography='custom', typography_font_family='Poppins', typography_font_weight='700',
              typography_font_size=px(13.22), typography_line_height=px(21.17),
-             custom_css='selector .elementor-button{display:inline-flex;align-items:center;height:48px;box-sizing:border-box;'
-                        'padding:7.86px 19.94px 8.38px;border:5.17px solid #FFFFFF;box-shadow:0 8.86px 23.63px rgba(75,5,22,.25);white-space:nowrap}'
+             custom_css='selector .elementor-button{display:inline-flex;align-items:center;height:46px;box-sizing:border-box;'
+                        'padding:0 19.94px;border:5.17px solid #FFFFFF;box-shadow:0 8.86px 23.63px rgba(75,5,22,.25);white-space:nowrap}'
                         'selector .elementor-button-content-wrapper{align-items:center;gap:8.86px}'
                         'selector .elementor-button-content-wrapper::before{content:"";width:18.5px;height:18.5px;background:url("' + PHONE + '") center/contain no-repeat}')
     return C('Header – Mobile Actions', [view, call], flex_direction='row', flex_justify_content='center',
              flex_align_items='center', flex_gap=gap(13.9), flex_wrap='nowrap', width=px(100, '%'), padding=dims(0),
-             hide_desktop='hidden-desktop', hide_tablet='hidden-tablet')
+             hide_desktop='hidden-desktop', hide_tablet='hidden-tablet', z_index=1)  # explicit: e-con inherits the header's --z-index:50
 
 
 doc = fetch(33, 'elementor_library')
@@ -53,4 +53,17 @@ pill_i = top['elements'].index(pill)
 top['elements'].insert(pill_i + 1, actions_row())
 # Figma: pill ends at y=83, buttons row starts at y=90 -> 7px row gap on mobile
 top['settings']['flex_gap_mobile'] = {'column': '16', 'row': '7', 'isLinked': False, 'unit': 'px', 'size': 16}
+
+# equal-height desktop/tablet buttons (Check-In 48px vs Call 57px before)
+import re
+EQ = '/*eq-h*/@media(min-width:768px){selector .elementor-button{height:56px;box-sizing:border-box;display:inline-flex;align-items:center;padding-top:0 !important;padding-bottom:0 !important}}/*eq-h*/'
+for t in ('Header – Check-In', 'Header – Call Now'):
+    st = find(d, titled(t))['settings']
+    st['custom_css'] = (re.sub(r'/\*eq-h\*/.*?/\*eq-h\*/', '', st.get('custom_css', ''), flags=re.S).strip() + ' ' + EQ).strip()
+
+# open mobile menu must sit above the action row
+ps = pill['settings']
+ps['z_index'] = 3
+Z = '/*menu-z*/@media(max-width:1024px){selector{position:relative;z-index:3}}/*menu-z*/'
+ps['custom_css'] = (re.sub(r'/\*menu-z\*/.*?/\*menu-z\*/', '', ps.get('custom_css', ''), flags=re.S).strip() + ' ' + Z).strip()
 save(doc)

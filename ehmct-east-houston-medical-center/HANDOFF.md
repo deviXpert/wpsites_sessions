@@ -52,6 +52,9 @@ Read from environment variables only:
 - `fix_banners.py` – mobile only: inner-page banners (page[0] > banner > content) start their content at 150px so it
   clears the header action row (ends y=138). Applied to all 24 inner pages; new pages with that banner need it too.
 - Conditions tabs (home): on mobile the active card's image opens directly below that card (flex `order` + `:has()`).
+- Header buttons are equal height: 56px desktop/tablet (`/*eq-h*/`), 46px mobile. Mobile action row has explicit
+  z_index 1 and the logo pill z_index 3 (containers inherit the header's --z-index:50, which covered the open menu).
+- Desktop/tablet hero card frame per Figma 418:3: 8px #F2F3F6, radius 50, shadow (`/*d-frame*/` CSS on 'Hero').
 - Hero avatars use Figma crops (media 1014–1016) with CSS ring/shadow; hero card has a 4px #F1F2F3 curved outline.
 - `inner_pages.py` – first build of Community Events / Careers. Refuses to overwrite once built (`--rebuild-draft` only
   while still a draft). Careers' Zoho embed needs the `.embed_jobs_head` / `.embed_jobs_head3` wrappers; Zoho's own CSS is
@@ -82,7 +85,7 @@ Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to t
 - Community Events / Careers are not in the nav menu yet (user renamed "Services" → "Conditions" on 2026-10-05).
 - Headless Chromium renders 10px Poppins slightly wide (hero trust text wraps to 4 lines in screenshots only).
 - Baytown location shows "Coming soon" – real details pending.
-- Phone conflict: Figma shows 832-400-9662, live site uses (832) 400-2396 (currently used).
+- Phone: (832) 400-2396 confirmed by the user (Contact Us 400-9662 fixed 2026-10-05).
 - Reviews block "4.9 / 5 based on 1,200+" vs Trustindex shows 588 Google reviews.
 - New hero banners 2 & 3 from Figma are low-res (1000px / 768px).
 - TikTok link `@east.houston.medi` copied from ehmct.com – verify.
