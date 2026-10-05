@@ -40,6 +40,8 @@ Read from environment variables only:
 | Other condition pages (user-built) | 123 abdominal-pain, 427 seizures, 472 burns, 527 trauma-injury, 529 chest-pain, 575 covid-19, 593 sore-throat, 649 flu |
 | Community Events page (published, `/community-events/`) | 994 |
 | Careers page (published, `/careers/`, Zoho Recruit job board embed) | 997 |
+| Conditions page (published, `/conditions/`, Figma 436:46) | 1086 |
+| Departments page (published, `/departments/`, Figma 436:1016) | 1089 |
 | Media | see `tools/media.json` (key → id/url); mobile hero photo 968, event gallery 980–992, careers photo 993 |
 
 ## Tools (`tools/`)
@@ -65,6 +67,8 @@ Read from environment variables only:
   z_index 1 and the logo pill z_index 3 (containers inherit the header's --z-index:50, which covered the open menu).
 - Desktop/tablet hero card frame per Figma 418:3: 8px #F2F3F6, radius 50, soft shadow 0 10px 30px rgba(4,38,72,.08) (`/*d-frame*/` CSS on 'Hero').
 - Hero avatars use Figma crops (media 1014–1016) with CSS ring/shadow; hero card has a 4px #F1F2F3 curved outline.
+- `figma_pages.py` – first build of /conditions/ and /departments/ (same refuse-to-overwrite rules). Condition cards
+  link to their condition pages; desktop only in Figma, mobile = one column.
 - `inner_pages.py` – first build of Community Events / Careers. Refuses to overwrite once built (`--rebuild-draft` only
   while still a draft). Careers' Zoho embed needs the `.embed_jobs_head` / `.embed_jobs_head3` wrappers; Zoho's own CSS is
   intentionally not loaded (our CSS overrides it).
@@ -87,6 +91,8 @@ Header "Check-In Now" and home "Check-In Now" (was "Book Appointment") link to t
 (same URL as ehmct.com), new tab. The header Check-In button is hidden on mobile.
 
 ## Open items
+- Hero home images: Figma is being updated with new ones – redo `hero_slides.py` images when ready.
+- Footer 'Need Emergency Care' phone button wraps to 2 lines on mobile.
 - Mobile Figma pass done for header, hero (dots/kicker/title/pills/wait card/trust strip) and stats. Remaining home
   sections (Conditions, Team, Care Under One Roof, Reviews, Locations, FAQ) not yet compared section by section.
 - Knee Pain page (743) section heading reads "Symptoms of SORE…" (copy slip from Sore Throat) – not touched.
