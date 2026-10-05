@@ -44,6 +44,8 @@ Read from environment variables only:
 | Departments page (published, `/departments/`, Figma 436:1016) | 1089 |
 | Request An Appointment (published, `/request-an-appointment/`, Elementor Pro form → dev@themaddex.com + Submissions) | 1154 |
 | Site icon / favicon (Settings → site_icon; source in `assets/`) | media 2065 |
+| News & Blogs listing (page 1081, Posts widget, 9/page, excludes post 1) | 1081 |
+| Single Post template (Theme Builder, include/singular/post) | 2734 |
 | Media | see `tools/media.json` (key → id/url); mobile hero photo 968, event gallery 980–992, careers photo 993 |
 
 ## Tools (`tools/`)
@@ -73,6 +75,9 @@ Read from environment variables only:
 - Hero avatars use Figma crops (media 1014–1016) with CSS ring/shadow; hero card has a 4px #F1F2F3 curved outline.
 - `figma_pages.py` – first build of /conditions/ and /departments/ (same refuse-to-overwrite rules). Condition cards
   link to their condition pages; desktop only in Figma, mobile = one column.
+- `blog_templates.py` – first build of the blog listing (page 1081) and single-post template 2734 (content + sticky
+  sidebar: recent posts + emergency CTA). `fix_post_images.py` copies post images missing on this site from ehmct.com
+  (map in post_images.json) and sets featured images.
 - `appointment_page.py` – first build of /request-an-appointment/ (fields from ehmct.com WPForms 632).
 - `home_fixes.py` – flip-card hint removed, Baytown map → campus image (media 1115), slider rounded on `.swiper`
   (slides square, so no edges show mid-swipe).
@@ -100,7 +105,8 @@ Header "Check-In Now" links to the GoRev pre-registration portal; the home Team 
 (same URL as ehmct.com), new tab. The header Check-In button is hidden on mobile.
 
 ## Open items
-- News & Blogs page (1081, user-built) has no content yet; only the default 'Hello world!' post exists.
+- Default 'Hello world!' post (id 1) still published – hidden from listing/sidebar; delete when the user agrees.
+- Blog posts: no excerpts or categories set (listing uses 20-word auto excerpts; all 'Uncategorized').
 - FAQ image media 24 was deleted; replaced by 1122 (Figma export).
 - Mobile Figma pass done for header, hero (dots/kicker/title/pills/wait card/trust strip) and stats. Remaining home
   sections (Conditions, Team, Care Under One Roof, Reviews, Locations, FAQ) not yet compared section by section.
