@@ -55,7 +55,8 @@ Read from environment variables only:
   clears the header action row (ends y=138). Applied to all 24 inner pages; new pages with that banner need it too.
 - Hero slider = 4 slides (`hero_slides.py`, idempotent): 1 EHMC building (desktop 1069, mobile 968), 2 hospital
   entrance, 3 aerial, 4 reception (media 1102–1107, desktop + mobile exported exactly as cropped in Figma 222:1468 /
-  307:2103). Overlays per slide and breakpoint from Figma, in a `/*ov*/` CSS block on each slide's ::before.
+  307:2103). Overlays per slide and breakpoint from Figma (`/*ov*/` CSS on each slide ::before); mobile slides 2–4
+  use the darker main-artboard mobile overlay + a text band (Figma 80% overlay left the headline unreadable).
   Desktop/tablet dots per Figma (`/*d-dots*/`): 18px, active 38px #BE2424, aligned with the kicker.
 - Conditions tabs (home): on mobile the active card's image opens directly below that card (flex `order` + `:has()`).
   Hidden tab images were lazy-loaded (fetched only on tap); HTML widget 'Conditions – Preload Tab Images'

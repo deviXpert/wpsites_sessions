@@ -47,7 +47,10 @@ OV = {
 for n in (2, 3, 4):
     # desktop 222:1149 (80% layer) + 222:1150 bottom 54%; mobile 307:2046 (80%) + 307:2047 left strip
     OV[n] = ('linear-gradient(0deg,rgba(6,40,67,.62) 0%,rgba(12,50,105,0) 54%),' + G1.format(.72, .592, .176, .032),
-             'linear-gradient(90deg,rgba(6,40,67,.2) 0%,rgba(12,50,105,0) 156px),' + G1.format(.72, .592, .176, .032))
+             # mobile: Figma's 80% overlay left the busy photos (flag, HOSPITAL sign) behind the headline,
+             # so slides 2-4 use the darker main-artboard mobile overlay plus a soft band behind the text block
+             'linear-gradient(180deg,rgba(2,16,34,0) 18%,rgba(2,16,34,.45) 30%,rgba(2,16,34,.45) 68%,rgba(2,16,34,0) 80%),'
+             'linear-gradient(90deg,rgba(2,16,34,.855) 0%,rgba(3,19,39,.81) 67%,rgba(3,19,39,.287) 100%)')
 for n, (desk, mob) in OV.items():
     st = slides[n - 1]['settings']
     css = ('/*ov*/selector::before{background-image:' + desk + ' !important;background-color:transparent !important;opacity:1 !important}'
