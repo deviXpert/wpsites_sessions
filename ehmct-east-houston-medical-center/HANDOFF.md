@@ -100,6 +100,10 @@ Read from environment variables only:
 The user also edits pages in the Elementor editor. Regenerating from these scripts overwrites
 those edits. Always fetch the live `_elementor_data` first and patch it, or confirm with the user.
 
+## Menu dropdowns
+The 3-column mega menu with icons applies only to menu items with the CSS class `ehmc-mega` (Appearance → Menus →
+CSS Classes; currently Conditions, item 35). Every other dropdown is a simple list (`/*simple-dd*/` CSS on 'Header – Menu').
+
 ## Check-In
 Header "Check-In Now" links to the GoRev pre-registration portal; the home Team card button is "Request an Appointment" → /request-an-appointment/
 (same URL as ehmct.com), new tab. The header Check-In button is hidden on mobile.
