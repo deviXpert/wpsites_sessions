@@ -17,6 +17,8 @@ def push_page(key, title, data, slug, parent=0, seo=None):
     if slug: body['slug'] = slug
     import time; body['content'] = f'<!-- jim build {int(time.time())} -->'  # forces a new revision so preview links show the latest build
     pid = c.setdefault('pages', {}).get(key)
+    if pid:  # existing (possibly live) page: only update the build, never title/slug/status/parent
+        for k in ('title', 'status', 'parent', 'slug'): body.pop(k, None)
     r = req(f'wp/v2/pages/{pid}', 'POST', body) if pid else req('wp/v2/pages', 'POST', body)
     if '_err' in r: print('ERR', key, r); return
     c['pages'][key] = r['id']; save(); print('page', key, r['id'], r['status'])

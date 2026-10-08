@@ -11,11 +11,11 @@
   "long-distance-towing-alberta": 440,
   "battery-jump-start-calgary": 441,
   "emergency-fuel-delivery-calgary": 442,
-  "about": 166,
-  "services": 161,
-  "service-areas": 164,
-  "pricing": 274,
-  "contact": 168
+  "about": 447,
+  "services": 448,
+  "service-areas": 449,
+  "pricing": 450,
+  "contact": 451
  },
  "seo": {
   "home": [
@@ -66,24 +66,5 @@
    "Contact Jim Towing | 24/7 Towing Calgary | 587-914-0130",
    "Contact Jim Towing Ltd. for 24/7 towing and roadside assistance in Calgary. Call 587-914-0130, email jimtowingltd@gmail.com or request service online."
   ]
- },
- "redesign_copies": {
-  "services": 448,
-  "service-areas": 449,
-  "about": 447,
-  "contact": 451,
-  "pricing": 450
- },
- "live": true,
- "trashed": [
-  448,
-  449,
-  447,
-  451,
-  450,
-  227,
-  229,
-  231,
-  233
- ]
+ }
 }

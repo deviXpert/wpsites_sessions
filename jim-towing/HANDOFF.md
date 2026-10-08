@@ -28,26 +28,24 @@ The CSS/JS live in the **header** template (`jim.css`, `jim.js`), so push `heade
 - Layout classes are self-contained (`j-*`); containers use `content_width: full`, zero padding/gap, and CSS controls the layout. Nothing depends on Elementor's per-element style settings.
 - Only the **client's own photos** are used: 12 from jim.deveterslistings.com (IMG_15xx–19xx), 2 from the Google Business Profile, and 4 WhatsApp photos already in the library. All are WebP with alt text. No stock or AI-generated images. Transparent logo: media 415.
 
-## What exists on the site (IDs in `tools/created.json`)
-| Item | ID | Status |
+## Status: LIVE (2026-10-08)
+| Page | ID | URL |
 |---|---|---|
-| Header site part | 428 | published, **conditions = only the redesign drafts** |
-| Footer site part | 430 | published, same scoped conditions |
-| Menu "Jim Main Menu" | 15 | custom links pointing at the FINAL URLs |
-| Home (redesign) | 432 | draft |
-| 6 service pages (children of Services 161) | 437–442 | draft — final URLs `/services/<slug>/` |
-| About / Services / Service Areas / Pricing / Contact (redesign) | 447 / 448 / 449 / 450 / 451 | draft |
+| Home (front page) | 432 | `/` (slug `home`) |
+| Services hub | 161 | `/services/` |
+| 6 service pages | 437–442 | `/services/<slug>/` |
+| Service Areas | 164 | `/service-areas/` |
+| About | 166 | `/about/` |
+| Contact | 168 | `/contact/` |
+| Pricing | 274 | `/pricing/` |
+| Header / Footer site parts | 428 / 430 | conditions `include/general` |
+| Menu "Jim Main Menu" | 15 | custom links |
 
-Backup of the original site (pages, media, settings, menus) is in `tools/wp-backup/`. Theme was switched from Twenty Twenty-Five to Astra by the user.
-
-## Go-live checklist (needs the user's OK)
-1. Copy `_elementor_data` (+ `_elementor_edit_mode=builder`, template `elementor_header_footer`) from each redesign draft into the ORIGINAL page IDs, which keeps the URLs: Home 152, Services 161, Service Areas 164, About 166, Contact 168, Pricing 274. Then delete those 6 drafts.
-2. Publish the 6 service drafts (437–442).
-3. Set `created.json` `"live": true` and run `python3 publish.py header footer`. This switches the header/footer conditions to `include/general`.
-4. Old service URLs `/flatbed-towing/` (227), `/roadside-assistance/` (229), `/tire-change/` (231), `/fuel-delivery/` (233) need 301 redirects to the new `/services/...` URLs. There's no redirect plugin installed (suggest "Redirection").
-5. Yoast titles and descriptions per page are in `created.json` → `seo` (taken from the Google Docs). The Yoast ability on this site can't set them, so enter them in the Yoast box or use another method.
-6. Old draft "Home" (386) still exists — leave it or delete it.
-7. Elementor → Tools → Clear Files & Data once after go-live.
+- The redesigns were copied into the original page IDs, so URLs are unchanged. `created.json` → `pages` now points at the live IDs and `"live": true`. `publish.py` only updates the build (Elementor data) on existing pages and never changes their title, slug, status or parent. Pre-go-live mapping is saved in `created.pre-golive.json`.
+- Yoast SEO titles and descriptions are set through `POST yoast/v1/bulk_editor/update_search` (`items: [{id, seo_title, meta_description}]`). Values are in `created.json` → `seo`.
+- Trashed (restorable from WP trash): redesign duplicates 447–451, old service pages 227 `/flatbed-towing/`, 229 `/roadside-assistance/`, 231 `/tire-change/`, 233 `/fuel-delivery/`. The user had already trashed the old Home 152 and draft 386.
+- Old URLs: `/flatbed-towing/` and `/roadside-assistance/` 301 to the new pages automatically (WordPress slug guessing). **`/tire-change/` and `/fuel-delivery/` return 404.** They need a redirect plugin (e.g. Redirection) to point to `/services/roadside-assistance-calgary/` and `/services/emergency-fuel-delivery-calgary/`.
+- Still to do: run Elementor → Tools → Clear Files & Data if anything looks stale, connect Trustindex to Google reviews, and confirm the pricing ($75 vs the old $69/$89).
 
 ## Content decisions / open questions for the client
 - **[VERIFY] items in Doc 2 were left out**: EV flatbed, lockout proof-of-ownership, battery 3–5 year figure, battery replacement FAQ, fuel types/diesel, exact fuel amount. Calgary→Red Deer ≈150 km and →Edmonton ≈300 km were kept (geographic facts).
