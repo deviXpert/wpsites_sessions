@@ -7,7 +7,7 @@ PHONE, TEL = '587-914-0130', 'tel:+15879140130'
 EMAIL = 'jimtowingltd@gmail.com'
 MAPS = 'https://maps.app.goo.gl/KbZ8JuHkDmVXuvDW6'
 MAP_EMBED = 'https://maps.google.com/maps?cid=5630118754390366668&amp;output=embed'
-SOC = [('facebook-f', 'Facebook', 'https://www.facebook.com/share/1Dq5gCGQfT/'),
+SOC = [('facebook-f', 'Facebook', 'https://www.facebook.com/people/Jim-towing-LTD/61585197274357/'),
        ('instagram', 'Instagram', 'https://www.instagram.com/jimtowingltd'),
        ('tiktok', 'TikTok', 'https://www.tiktok.com/@jim.towing.ltd')]
 RATING, REVIEWS = '4.9', '51'
