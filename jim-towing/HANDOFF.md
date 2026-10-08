@@ -47,7 +47,9 @@ The CSS/JS live in the **header** template (`jim.css`, `jim.js`), so push `heade
 - Old URLs: `/flatbed-towing/` and `/roadside-assistance/` 301 to the new pages automatically (WordPress slug guessing). **`/tire-change/` and `/fuel-delivery/` return 404.** They need a redirect plugin (e.g. Redirection) to point to `/services/roadside-assistance-calgary/` and `/services/emergency-fuel-delivery-calgary/`.
 - Pricing (client decision): roadside help (jump-start, lockout, fuel, tire) **from $69**, local/emergency towing **from $75**, flatbed **from $89**, long distance = quote.
 - Trustindex is connected (widget shows 14 reviews; Google profile shows 51, so the plugin may need a re-sync or upgrade to pull all).
-- Footer has a dark Google map band (Calgary). The service ticker under the home hero is a flat dark strip of service links (no tilt).
+- Content width 1440px (`.j-in`). Maps (footer, Contact, Service Areas) embed the business listing via `cid=5630118754390366668` (`MAP_EMBED` in lib.py) so Google shows "Jim Towing Ltd. 4.9★". Footer map is dark-styled (invert + hue-rotate keeps the pin red).
+- Service pages: Key facts panel = `ticket_html()` in lib.py (icon rows, price block auto-extracted from the "Starting price" fact, call button); Quick answer = `quick()` in p_services.py (dark side panel + text + chips, price chip auto-extracted).
+- Footer map band (business listing). The service ticker under the home hero is a flat dark strip of service links (no tilt).
 
 ## Content decisions / open questions for the client
 - **[VERIFY] items in Doc 2 were left out**: EV flatbed, lockout proof-of-ownership, battery 3–5 year figure, battery replacement FAQ, fuel types/diesel, exact fuel amount. Calgary→Red Deer ≈150 km and →Edmonton ≈300 km were kept (geographic facts).

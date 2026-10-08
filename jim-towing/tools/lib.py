@@ -6,6 +6,7 @@ SITE = 'https://jimtowing.ca'
 PHONE, TEL = '587-914-0130', 'tel:+15879140130'
 EMAIL = 'jimtowingltd@gmail.com'
 MAPS = 'https://maps.app.goo.gl/KbZ8JuHkDmVXuvDW6'
+MAP_EMBED = 'https://maps.google.com/maps?cid=5630118754390366668&amp;output=embed'
 SOC = [('facebook-f', 'Facebook', 'https://www.facebook.com/share/1Dq5gCGQfT/'),
        ('instagram', 'Instagram', 'https://www.instagram.com/jimtowingltd'),
        ('tiktok', 'TikTok', 'https://www.tiktok.com/@jim.towing.ltd')]
@@ -108,7 +109,7 @@ def header(menu_slug):
 
 # ---------------- footer ----------------
 FMAP = (f'<div class="j-fmap"><iframe title="Jim Towing service area map — Calgary, Alberta" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
-        f'src="https://maps.google.com/maps?q=Calgary%2C%20AB&amp;z=10&amp;output=embed"></iframe><i class="fas fa-map-marker-alt j-fmap-pin" aria-hidden="true"></i>'
+        f'src="https://maps.google.com/maps?cid=5630118754390366668&amp;output=embed"></iframe>'
         f'<div class="j-fmap-card"><b>Serving Calgary &amp; surrounding areas — 24/7</b><p>Airdrie, Chestermere, Okotoks, Cochrane and long-distance transport across Alberta.</p>'
         f'<a href="{MAPS}" target="_blank" rel="noopener"><i class="fab fa-google"></i> View us on Google Maps</a></div></div>')
 def footer():
@@ -177,9 +178,30 @@ def steps(items, title='How Jim Towing ' + hl('Works'), eyebrow='Simple process'
     road = f'<div class="j-road{" j-light" if light else ""}"><div class="j-road-line"><div class="j-road-fill"></div></div><i class="fas fa-truck-pickup j-truck" aria-hidden="true"></i><div class="j-steps">{st}</div></div>'
     return sec([head(eyebrow, title, lead), RAW(road, 'rv')], ('j-paper' if light else 'j-dark j-grain'))
 
+FACT_IC = [('price', 'tag'), ('roadside', 'tools'), ('towing', 'truck-pickup'), ('flatbed', 'truck-loading'), ('long', 'route'), ('confirmed', 'check-circle'),
+           ('best', 'car-side'), ('method', 'truck-loading'), ('route', 'route'), ('hour', 'clock'), ('area', 'map-marked-alt'), ('where', 'map-marker-alt'),
+           ('nearby', 'map-signs'), ('calgary', 'city'), ('based', 'map-pin'), ('rating', 'star'), ('email', 'envelope'), ('service', 'truck-pickup')]
+def _fic(label):
+    k = label.lower()
+    return next((i for w, i in FACT_IC if w in k), 'info-circle')
+def ticket_html(facts):
+    import re as _re
+    rows, price = '', ''
+    for k, v in facts:
+        if k.lower() == 'phone': continue
+        if k.lower() in ('starting price', 'price'):
+            m = _re.search(r'\$\d+', v)
+            rest = _re.sub(r'^\s*(From\s*)?\$\d+\s*', '', v).strip(' —-()')
+            price = (f'<div class="j-tk-price"><span>Starting<br>from</span><b>{m.group(0)}</b><small>{(rest[:1].upper() + rest[1:]) if rest else "Price confirmed before dispatch"}</small></div>' if m
+                     else f'<div class="j-tk-price"><span>Pricing</span><small style="font-size:16px;color:#fff;font-weight:700">{v}</small></div>')
+            continue
+        rows += f'<li><i class="fas fa-{_fic(k)}" aria-hidden="true"></i><div><span>{k}</span><b>{v}</b></div></li>'
+    return (f'<aside class="j-ticket" aria-label="Key facts"><div class="j-tk-head"><span class="j-tk-ic"><i class="fas fa-clipboard-list"></i></span><div><small>At a glance</small><h2>Key facts</h2></div>'
+            f'<span class="j-tk-live"><span class="j-dot"></span>Online 24/7</span></div><ul class="j-tk-rows">{rows}</ul>{price}'
+            f'<a class="j-tk-call" href="{TEL}"><span class="ic"><i class="fas fa-phone-alt"></i></span><span><small>Tap to call · 24/7 dispatch</small><b>{PHONE}</b></span><i class="fas fa-arrow-right" aria-hidden="true"></i></a></aside>')
+
 def page_hero(crumb, h1, lead, facts, img=None, extra=None):
-    dl = ''.join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in facts)
-    ticket = RAW(f'<aside class="j-ticket" aria-label="Key facts"><div class="j-ticket-in"><h2>Key facts</h2><dl>{dl}</dl></div><div class="j-ticket-foot"><b>Dispatch online now</b><a href="{TEL}"><i class="fas fa-phone-alt"></i> Call</a></div></aside>', 'j-ticket-w rv rv-r')
+    ticket = RAW(ticket_html(facts), 'j-ticket-w rv rv-r')
     bg = W('image', 'j-hero-bg', image={'url': iu(img, 'full'), 'id': IMG[img]}, image_size='1536x1536') if img else None
     cr = f'<nav class="j-crumb" aria-label="Breadcrumb"><a href="{SITE}/">Home</a><span>/</span>' + ''.join(f'<a href="{u}">{t}</a><span>/</span>' for t, u in crumb[:-1]) + f'<em>{crumb[-1][0]}</em></nav>'
     return C([bg, C([C([RAW(cr), H(h1, 'h1', 'j-splitw'), P(lead, 'j-lead rv'), BTNS(CALL(), QUOTE()), extra], 'j-phero-copy j-col'), ticket], 'j-in', fd='row')], 'j-phero', tag='section')

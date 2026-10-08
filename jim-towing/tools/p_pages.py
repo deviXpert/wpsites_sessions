@@ -2,7 +2,7 @@ from lib import *
 from p_home import svc_cards, stats_html, why_cards, situations_html, route_map, form_widget
 from p_services import fc, ib, info, split, chips, phone_link, NEIGH
 
-GMAP = '<div class="j-gmap"><iframe title="Jim Towing Ltd. on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Calgary%2C%20ABq=Jim%20Towing%20Ltd.%2C%20Calgary%2C%20AB&amp;z=10amp;z=10&amp;output=embed" allowfullscreen></iframe></div>'
+GMAP = f'<div class="j-gmap"><iframe title="Jim Towing Ltd. on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="{MAP_EMBED}" allowfullscreen></iframe></div>'
 BASE_FACTS = [('Hours', 'Open 24 hours, 7 days a week'), ('Based in', 'Calgary, Alberta'), ('Google rating', f'{RATING} ★ from {REVIEWS} reviews'), ('Starting price', 'Roadside from $69 · Towing from $75'), ('Phone', phone_link())]
 
 def about():

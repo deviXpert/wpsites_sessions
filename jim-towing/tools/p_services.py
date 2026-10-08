@@ -10,7 +10,13 @@ def split(media_key, els, rev=False, cls='j-white', second=None):
     media = C([IMGW(media_key, 'j-m1'), IMGW(second, 'j-m2')], 'j-media rv rv-l') if second else C([IMGW(media_key, 'j-img j-img-tall')], 'j-col rv ' + ('rv-r' if rev else 'rv-l'))
     return sec([C([media, C(els, 'j-stack j-col rv')], 'j-split' + (' j-split-rev' if rev else ''), fd='row')], cls)
 def quick(text):
-    return sec([C([EB('Quick answer'), T(f'<p>{text}</p>')], 'j-qa j-col rv')], 'j-paper j-sec-tight')
+    import re as _re
+    m = _re.search(r'\$\d+', text)
+    pts = [('clock', 'Available 24/7'), ('tag', f'From {m.group(0)}' if m else 'Free quote'), ('map-marker-alt', 'Calgary &amp; area'), ('shield-alt', 'Price confirmed before dispatch')]
+    side = RAW(f'<div class="j-qa-side"><div><span class="ic"><i class="fas fa-bolt"></i></span></div><div><b>Quick answer</b><span>The short version — everything you need to know in 20 seconds.</span></div>'
+               f'<a href="{TEL}"><i class="fas fa-phone-alt"></i>{PHONE}</a></div>')
+    main = C([EB('In short'), T(f'<p>{text}</p>'), RAW('<div class="j-qa-pts">' + ''.join(f'<span><i class="fas fa-{i}"></i>{t}</span>' for i, t in pts) + '</div>')], 'j-qa-main j-col')
+    return sec([C([side, main], 'j-qa2 rv')], 'j-paper j-sec-tight')
 def chips(items, icon='map-marker-alt', big=False): return RAW(f'<div class="j-chips{" big" if big else ""}">' + ''.join(f'<span><i class="fas fa-{icon}"></i>{c}</span>' for c in items) + '</div>')
 def facts(rows): return rows
 def phone_link(): return f'<a href="{TEL}">{PHONE}</a>'
