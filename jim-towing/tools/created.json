@@ -1,0 +1,70 @@
+{
+ "menu": 15,
+ "menu_slug": "jim-main-menu",
+ "header": 428,
+ "footer": 430,
+ "pages": {
+  "home": 432,
+  "emergency-towing-calgary": 437,
+  "flatbed-towing-calgary": 438,
+  "roadside-assistance-calgary": 439,
+  "long-distance-towing-alberta": 440,
+  "battery-jump-start-calgary": 441,
+  "emergency-fuel-delivery-calgary": 442,
+  "about": 447,
+  "services": 448,
+  "service-areas": 449,
+  "pricing": 450,
+  "contact": 451
+ },
+ "seo": {
+  "home": [
+   "Towing Calgary | 24/7 Tow Truck & Roadside Assistance | Jim Towing",
+   "Need towing in Calgary? Jim Towing provides 24/7 emergency towing, flatbed towing, roadside assistance, long-distance transport, battery jump-starts and fuel delivery."
+  ],
+  "emergency-towing-calgary": [
+   "24/7 Emergency Towing in Calgary | From $75 | Jim Towing",
+   "Need an emergency tow in Calgary? Jim Towing offers 24/7 towing for breakdowns and accidents with clear pricing from $75. Call 587-914-0130."
+  ],
+  "flatbed-towing-calgary": [
+   "Flatbed Towing Calgary | AWD, Luxury & Motorcycle | Jim Towing",
+   "Safe flatbed towing in Calgary for AWD, luxury, lowered cars and motorcycles. Damage-free transport, 24/7. Rates from $75. Call 587-914-0130."
+  ],
+  "roadside-assistance-calgary": [
+   "Roadside Assistance Calgary | 24/7 Help | Jim Towing",
+   "24/7 roadside assistance in Calgary: jump-starts, flat tire change, fuel delivery and lockouts. Fast dispatch, clear pricing. Call 587-914-0130."
+  ],
+  "long-distance-towing-alberta": [
+   "Long-Distance Towing from Calgary | Edmonton, Red Deer | Jim Towing",
+   "Secure long-distance towing from Calgary to Airdrie, Red Deer, Edmonton and across Alberta. Affordable, safe vehicle transport. Call 587-914-0130."
+  ],
+  "battery-jump-start-calgary": [
+   "Battery Jump-Start Calgary | Dead Battery Help 24/7 | Jim Towing",
+   "Dead battery in Calgary? Jim Towing offers fast, safe 24/7 jump-start service at your location. Clear pricing from $75. Call 587-914-0130."
+  ],
+  "emergency-fuel-delivery-calgary": [
+   "Emergency Fuel Delivery Calgary | Out of Gas? | Jim Towing",
+   "Ran out of gas in Calgary? Jim Towing delivers emergency fuel to your location 24/7 so you can reach the station. Call 587-914-0130."
+  ],
+  "about": [
+   "About Jim Towing Ltd. | Calgary Towing & Roadside Assistance",
+   "Jim Towing Ltd. is a Calgary-based towing and roadside assistance team focused on fast dispatch, safe transport and clear communication \u2014 24/7."
+  ],
+  "services": [
+   "Towing & Roadside Services in Calgary | Jim Towing",
+   "Emergency towing, flatbed towing, roadside assistance, long-distance transport, battery jump-starts and fuel delivery in Calgary \u2014 24/7 from $75."
+  ],
+  "service-areas": [
+   "Towing Service Areas | Calgary & Surrounding Alberta | Jim Towing",
+   "Jim Towing serves all of Calgary \u2014 NE, NW, SE, SW \u2014 plus Airdrie, Chestermere, Okotoks, Cochrane, Red Deer, Edmonton and more. 24/7 dispatch: 587-914-0130."
+  ],
+  "pricing": [
+   "Towing Prices Calgary | Rates From $75 | Jim Towing",
+   "Clear towing and roadside assistance pricing in Calgary. Rates start from $75 with your price confirmed before dispatch. Call 587-914-0130."
+  ],
+  "contact": [
+   "Contact Jim Towing | 24/7 Towing Calgary | 587-914-0130",
+   "Contact Jim Towing Ltd. for 24/7 towing and roadside assistance in Calgary. Call 587-914-0130, email jimtowingltd@gmail.com or request service online."
+  ]
+ }
+}
