@@ -13,10 +13,6 @@ var show=y>innerHeight*.6;if(fab)fab.classList.toggle('on',show);if(mbar)mbar.cl
 last=y;road()}
 addEventListener('scroll',onScroll,{passive:true});
 if(top)top.addEventListener('click',function(){scrollTo({top:0,behavior:RM?'auto':'smooth'})});
-/* split hero headline into words */
-$$('.j-splitw .elementor-heading-title').forEach(function(t){if(t.dataset.done)return;t.dataset.done=1;var i=0;
-(function walk(n){[].slice.call(n.childNodes).forEach(function(c){if(c.nodeType===3){var f=d.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(w){if(!w)return;if(/^\s+$/.test(w)){f.appendChild(d.createTextNode(w));return}var s=d.createElement('span');s.className='j-word';s.style.transitionDelay=(i++*0.07)+'s';s.textContent=w;f.appendChild(s)});c.parentNode.replaceChild(f,c)}else walk(c)})})(t);
-setTimeout(function(){t.closest('.j-splitw').classList.add('is-split')},150)});
 /* reveal */
 var els=$$('.rv,.j-stats,.j-map');
 if(!('IntersectionObserver' in window)||RM||editor){els.forEach(function(e){e.classList.add('is-in')})}
@@ -45,6 +41,8 @@ $$('.j-gal-in').forEach(function(g){if(g.dataset.dup)return;g.dataset.dup=1;$$('
 var lb=null;d.addEventListener('click',function(e){var f=e.target.closest('.j-gal figure');if(!f)return;var img=f.querySelector('img');
 if(!lb){lb=d.createElement('div');lb.className='j-lb';lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');lb.innerHTML='<img alt=""><button aria-label="Close">&#10005;</button>';d.body.appendChild(lb);lb.addEventListener('click',function(ev){if(ev.target.tagName!=='IMG')lb.classList.remove('on')});d.addEventListener('keydown',function(ev){if(ev.key==='Escape')lb.classList.remove('on')})}
 var li=lb.querySelector('img');li.src=img.dataset.full||img.currentSrc||img.src;li.alt=img.alt;lb.classList.add('on');lb.querySelector('button').focus()});
+/* live Calgary clock */
+$$('.j-clock').forEach(function(el){var sh=el.parentNode.querySelector('.j-shift');function t(){try{var d=new Date(),s=d.toLocaleTimeString('en-CA',{hour:'numeric',minute:'2-digit',timeZone:el.dataset.tz||'America/Edmonton'}),h=+new Intl.DateTimeFormat('en-CA',{hour:'numeric',hour12:false,timeZone:el.dataset.tz||'America/Edmonton'}).format(d);el.textContent=s.replace(/\./g,'').toUpperCase();if(sh)sh.textContent=(h>=22||h<6?'night shift':h<12?'morning shift':h<18?'day shift':'evening shift')+' · dispatching now'}catch(e){}}t();setInterval(t,30000)});
 onScroll()}
 /* steps road: fill + truck follows scroll */
 function road(){$$('.j-road').forEach(function(r){var b=r.getBoundingClientRect(),vh=innerHeight,p=Math.max(0,Math.min(1,(vh*.8-b.top)/(b.height+vh*.35)));var f=r.querySelector('.j-road-fill'),t=r.querySelector('.j-truck');if(f)f.style.width=(p*100)+'%';if(t)t.style.left=(p*100)+'%';

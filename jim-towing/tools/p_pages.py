@@ -109,10 +109,10 @@ def contact():
     hero = page_hero([('Contact', '')], f'Contact Jim Towing {hl("Ltd.")}',
         "Need towing or roadside help in Calgary? <strong>Call for the fastest dispatch</strong> — or send a request and we'll call you back as quickly as possible.",
         [('Phone', phone_link()), ('Email', f'<a href="mailto:{EMAIL}" style="font-size:15px">{EMAIL}</a>'), ('Hours', 'Open 24 hours, 7 days a week'), ('Service area', 'Calgary, Alberta &amp; surrounding areas')], 'night_sedan')
-    soc = ''.join(f'<a class="j-cc" href="{u}" target="_blank" rel="noopener"><i class="fab fa-{i}"></i><small>Follow us</small><b>{n}</b></a>' for i, n, u in SOC)
+    soc = ''.join(f'<a class="j-cc" href="{u}" target="_blank" rel="noopener">{bi(i)}<small>Follow us</small><b>{n}</b></a>' for i, n, u in SOC)
     cards = sec([RAW(f'<div class="j-cgrid"><a class="j-cc rv" href="{TEL}"><i class="fas fa-phone-alt"></i><small>Call or text 24/7</small><b>{PHONE}</b><span>Fastest way to get help</span></a>'
                      f'<a class="j-cc rv rv-d1" href="mailto:{EMAIL}"><i class="fas fa-envelope"></i><small>Email</small><b>{EMAIL}</b><span>For quotes &amp; scheduled transport</span></a>'
-                     f'<a class="j-cc rv rv-d2" href="{MAPS}" target="_blank" rel="noopener"><i class="fab fa-google"></i><small>Google Business Profile</small><b>{RATING} ★ · {REVIEWS} reviews</b><span>Directions, details &amp; reviews</span></a></div>')], 'j-paper j-sec-tight')
+                     f'<a class="j-cc rv rv-d2" href="{MAPS}" target="_blank" rel="noopener">{bi("google")}<small>Google Business Profile</small><b>{RATING} ★ · {REVIEWS} reviews</b><span>Directions, details &amp; reviews</span></a></div>')], 'j-paper j-sec-tight')
     form = sec([C([C([EB('Request service'), H(f'Send Us Your {hl("Details")}', 'h2', 'j-h2 j-cf-t'), P("Fill in the form and we'll call you back to confirm dispatch, pricing and next steps.", 'j-cf-s'), form_widget(name='Contact Page Request', btn='Send Request'),
                       P(f'Emergency? Don\'t wait for a reply — <a href="{TEL}">call {PHONE}</a>.', 'j-cf-note')], 'j-formcard j-col rv rv-l', _element_id='request'),
                    C([RAW(GMAP), RAW(f'<div class="j-cgrid j-cgrid-soc">{soc}</div>')], 'j-stack j-col rv rv-r')], 'j-split j-split-top', fd='row')], 'j-white')

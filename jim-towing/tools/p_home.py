@@ -13,29 +13,29 @@ def form_widget(cls='j-form', name='Hero Service Request', btn='Request Dispatch
     f.append({'_id': rid(), 'custom_id': 'hp', 'field_type': 'honeypot', 'field_label': 'Honeypot', 'width': '100'})
     return W('form', cls, form_name=name, form_fields=f, show_labels='', input_size='md', button_text=btn, button_size='md',
              selected_button_icon=ICO('paper-plane'), button_icon_align='row-reverse', button_icon_indent={'unit': 'px', 'size': 10},
-             submit_actions=['email', 'save-to-database'], email_to=EMAIL, email_subject='New service request from jimtowing.ca',
+             submit_actions=['email', 'save-to-database'], email_to=EMAIL + ', ahsanhashmi1925@gmail.com', email_subject='New service request from jimtowing.ca',
              email_content='[all-fields]', email_from_name='Jim Towing Website', email_reply_to='', email_content_type='html',
-             success_message=f"Thanks — we've received your request and will call you back shortly. For the fastest dispatch, call {PHONE}.",
+             custom_messages='yes', success_message=f"Thanks — we've received your request and will call you back shortly. For the fastest dispatch, call {PHONE}.",
              error_message=f'Something went wrong. Please call us directly at {PHONE}.', required_message='This field is required.', form_id='jim-request-form')
 
 def build():
     seed('home')
     # ---------- hero ----------
-    trust = (f'<div class="j-trust"><div><span class="j-ti g"><i class="fab fa-google" style="color:#4285F4"></i></span><span><b>{RATING} {stars()}</b><span>{REVIEWS} Google reviews</span></span></div>'
+    trust = (f'<div class="j-trust"><div><span class="j-ti g">{bi("google")}</span><span><b>{RATING} {stars()}</b><span>{REVIEWS} Google reviews</span></span></div>'
              '<div><span class="j-ti"><i class="fas fa-clock"></i></span><span><b>24/7</b><span>Nights, weekends, holidays</span></span></div>'
              '<div><span class="j-ti"><i class="fas fa-tag"></i></span><span><b>From $75</b><span>Quote before dispatch</span></span></div></div>')
     hero = C([
-        W('image', 'j-hero-bg', image={'url': iu('downtown', 'full'), 'id': IMG['downtown']}, image_size='1536x1536'),
+        hero_img('downtown'),
         C([
-            C([T('<p><span class="j-dot"></span>Dispatch online now &middot; Calgary, Alberta</p>', 'j-pill rv'),
+            C([T('<p><span class="j-dot"></span>Dispatch online now &middot; Calgary, Alberta</p>', 'j-pill j-up'),
                H(f'24/7 Towing Services in {hl("Calgary")}', 'h1', 'j-splitw'),
-               P('When you need a reliable towing service in Calgary, <strong>Jim Towing is ready to help.</strong> We provide 24/7 towing and roadside assistance for breakdowns, accidents, dead batteries, flat tires, low fuel and other roadside emergencies.', 'j-lead rv rv-d1'),
-               BTNS(CALL(), QUOTE('j-btn-ghost', '#request'), cls='rv rv-d2'),
-               RAW(trust, 'rv rv-d3')], 'j-hero-copy j-col'),
+               P('When you need a reliable towing service in Calgary, <strong>Jim Towing is ready to help.</strong> We provide 24/7 towing and roadside assistance for breakdowns, accidents, dead batteries, flat tires, low fuel and other roadside emergencies.', 'j-lead j-up j-up2'),
+               BTNS(CALL(), QUOTE('j-btn-ghost'), cls='j-up j-up3'),
+               RAW(trust, 'j-up j-up4')], 'j-hero-copy j-col'),
             C([H('Need a tow? <span style="color:var(--j-red)">Get help now.</span>', 'h2', 'j-cf-t'),
                P("Send your details and we'll call you back to confirm dispatch and pricing.", 'j-cf-s'),
                form_widget(),
-               P(f'Stranded right now? <a href="{TEL}">Call {PHONE}</a> for immediate dispatch.', 'j-cf-note')], 'j-card-form j-col rv rv-r', _element_id='request'),
+               P(f'Stranded right now? <a href="{TEL}">Call {PHONE}</a> for immediate dispatch.', 'j-cf-note')], 'j-card-form j-col j-up j-up2', _element_id='request'),
         ], 'j-in', fd='row'),
     ], 'j-hero', tag='section')
 
@@ -145,7 +145,7 @@ def svc_cards():
     spans = ['big', 'big', '', '', '', 'big']
     for i, (s, t, ic, im, d) in enumerate(SVC):
         cards.append(C([
-            W('image', 'j-sc-bg', image={'url': iu(im, 'full'), 'id': IMG[im]}, image_size='large'),
+            RAW(LIMG(im), 'j-sc-bg'),
             RAW(f'<span><i class="fas fa-{ic}"></i>{i + 1:02d}</span>', 'j-sc-num'),
             C([H(t, 'h3', 'j-h3'), P(d, 'j-sc-t'), RAW(f'<a class="j-sc-go" href="{surl(s)}">Learn more <i class="fas fa-arrow-right" aria-hidden="true"></i></a>')], 'j-sc-body j-col'),
         ], f'j-sc j-col {spans[i]} rv rv-d{i % 3}', tag='article'))

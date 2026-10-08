@@ -6,7 +6,11 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-flatbed-downtown-calgary-1-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-flatbed-downtown-calgary-1-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-flatbed-downtown-calgary-1-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-flatbed-downtown-calgary-1-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-flatbed-downtown-calgary-1-1152x1536.webp",
+  "w1536": 1152,
+  "h640": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-flatbed-downtown-calgary-1-hero640.webp",
+  "h640w": 640
  },
  "398": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-flatbed-tow-calgary-night-1.webp",
@@ -15,7 +19,9 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-flatbed-tow-calgary-night-1-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-flatbed-tow-calgary-night-1-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-flatbed-tow-calgary-night-1-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-flatbed-tow-calgary-night-1-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-flatbed-tow-calgary-night-1-1152x1536.webp",
+  "w1536": 1152
  },
  "399": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-transport-flatbed-calgary-1.webp",
@@ -24,7 +30,9 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-transport-flatbed-calgary-1-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-transport-flatbed-calgary-1-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-transport-flatbed-calgary-1-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-transport-flatbed-calgary-1-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/motorcycle-transport-flatbed-calgary-1-1152x1536.webp",
+  "w1536": 1152
  },
  "400": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/equipment-transport-flatbed-calgary.webp",
@@ -33,7 +41,9 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/equipment-transport-flatbed-calgary-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/equipment-transport-flatbed-calgary-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/equipment-transport-flatbed-calgary-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/equipment-transport-flatbed-calgary-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/equipment-transport-flatbed-calgary-1152x1536.webp",
+  "w1536": 1152
  },
  "401": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/flatbed-towing-construction-site-calgary.webp",
@@ -42,7 +52,11 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/flatbed-towing-construction-site-calgary-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/flatbed-towing-construction-site-calgary-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/flatbed-towing-construction-site-calgary-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/flatbed-towing-construction-site-calgary-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/flatbed-towing-construction-site-calgary-1152x1536.webp",
+  "w1536": 1152,
+  "h640": "https://jimtowing.ca/wp-content/uploads/2026/10/flatbed-towing-construction-site-calgary-hero640.webp",
+  "h640w": 640
  },
  "402": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/suv-flatbed-towing-calgary.webp",
@@ -51,7 +65,11 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/suv-flatbed-towing-calgary-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/suv-flatbed-towing-calgary-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/suv-flatbed-towing-calgary-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/suv-flatbed-towing-calgary-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/suv-flatbed-towing-calgary-1152x1536.webp",
+  "w1536": 1152,
+  "h640": "https://jimtowing.ca/wp-content/uploads/2026/10/suv-flatbed-towing-calgary-hero640.webp",
+  "h640w": 640
  },
  "403": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/long-distance-vehicle-transport-alberta.webp",
@@ -60,7 +78,11 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/long-distance-vehicle-transport-alberta-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/long-distance-vehicle-transport-alberta-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/long-distance-vehicle-transport-alberta-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/long-distance-vehicle-transport-alberta-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/long-distance-vehicle-transport-alberta-1152x1536.webp",
+  "w1536": 1152,
+  "h640": "https://jimtowing.ca/wp-content/uploads/2026/10/long-distance-vehicle-transport-alberta-hero640.webp",
+  "h640w": 640
  },
  "404": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/luxury-car-flatbed-towing-calgary.webp",
@@ -69,7 +91,11 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/luxury-car-flatbed-towing-calgary-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/luxury-car-flatbed-towing-calgary-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/luxury-car-flatbed-towing-calgary-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/luxury-car-flatbed-towing-calgary-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/luxury-car-flatbed-towing-calgary-1152x1536.webp",
+  "w1536": 1152,
+  "h640": "https://jimtowing.ca/wp-content/uploads/2026/10/luxury-car-flatbed-towing-calgary-hero640.webp",
+  "h640w": 640
  },
  "405": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/scissor-lift-transport-calgary.webp",
@@ -78,7 +104,9 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/scissor-lift-transport-calgary-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/scissor-lift-transport-calgary-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/scissor-lift-transport-calgary-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/scissor-lift-transport-calgary-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/scissor-lift-transport-calgary-1152x1536.webp",
+  "w1536": 1152
  },
  "406": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/emergency-towing-calgary-suv.webp",
@@ -87,7 +115,11 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/emergency-towing-calgary-suv-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/emergency-towing-calgary-suv-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/emergency-towing-calgary-suv-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/emergency-towing-calgary-suv-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/emergency-towing-calgary-suv-1152x1536.webp",
+  "w1536": 1152,
+  "h640": "https://jimtowing.ca/wp-content/uploads/2026/10/emergency-towing-calgary-suv-hero640.webp",
+  "h640w": 640
  },
  "407": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/dealership-vehicle-transport-calgary.webp",
@@ -96,7 +128,9 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/dealership-vehicle-transport-calgary-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/dealership-vehicle-transport-calgary-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/dealership-vehicle-transport-calgary-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/dealership-vehicle-transport-calgary-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/dealership-vehicle-transport-calgary-1152x1536.webp",
+  "w1536": 1152
  },
  "408": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-truck-logo-calgary.webp",
@@ -105,7 +139,11 @@
   "h": 1800,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-truck-logo-calgary-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-truck-logo-calgary-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-truck-logo-calgary-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-truck-logo-calgary-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-truck-logo-calgary-1152x1536.webp",
+  "w1536": 1152,
+  "h640": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-truck-logo-calgary-hero640.webp",
+  "h640w": 640
  },
  "409": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-heavy-flatbed-night-calgary.webp",
@@ -114,7 +152,9 @@
   "h": 1600,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-heavy-flatbed-night-calgary-599x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-heavy-flatbed-night-calgary-768x1313.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-heavy-flatbed-night-calgary-176x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-heavy-flatbed-night-calgary-176x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-heavy-flatbed-night-calgary-899x1536.webp",
+  "w1536": 899
  },
  "410": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/winter-towing-calgary-snow.webp",
@@ -123,7 +163,9 @@
   "h": 1600,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/10/winter-towing-calgary-snow-768x1024.webp",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/10/winter-towing-calgary-snow-768x1024.webp",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/winter-towing-calgary-snow-225x300.webp"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/10/winter-towing-calgary-snow-225x300.webp",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/10/winter-towing-calgary-snow-1152x1536.webp",
+  "w1536": 1152
  },
  "363": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-18-at-2.14.47-PM.jpeg",
@@ -132,7 +174,9 @@
   "h": 1600,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-18-at-2.14.47-PM-768x1024.jpeg",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-18-at-2.14.47-PM-768x1024.jpeg",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-18-at-2.14.47-PM-225x300.jpeg"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-18-at-2.14.47-PM-225x300.jpeg",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-18-at-2.14.47-PM-1152x1536.jpeg",
+  "w1536": 1152
  },
  "364": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-2.jpeg",
@@ -141,7 +185,11 @@
   "h": 1600,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-2-768x1024.jpeg",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-2-768x1024.jpeg",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-2-225x300.jpeg"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-2-225x300.jpeg",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-2-1152x1536.jpeg",
+  "w1536": 1152,
+  "h640": "https://jimtowing.ca/wp-content/uploads/2026/10/WhatsApp-Image-2026-04-14-at-11.56.42-PM-2-hero640.webp",
+  "h640w": 640
  },
  "365": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM.jpeg",
@@ -150,7 +198,9 @@
   "h": 1600,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-768x1024.jpeg",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-768x1024.jpeg",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-225x300.jpeg"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-225x300.jpeg",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-14-at-11.56.42-PM-1152x1536.jpeg",
+  "w1536": 1152
  },
  "366": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-5.29.57-PM.jpeg",
@@ -159,7 +209,11 @@
   "h": 1600,
   "large": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-5.29.57-PM-768x1024.jpeg",
   "ml": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-5.29.57-PM-768x1024.jpeg",
-  "med": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-5.29.57-PM-225x300.jpeg"
+  "med": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-5.29.57-PM-225x300.jpeg",
+  "1536": "https://jimtowing.ca/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-10-at-5.29.57-PM-1152x1536.jpeg",
+  "w1536": 1152,
+  "h640": "https://jimtowing.ca/wp-content/uploads/2026/10/WhatsApp-Image-2026-04-10-at-5.29.57-PM-hero640.webp",
+  "h640w": 640
  },
  "75": {
   "full": "https://jimtowing.ca/wp-content/uploads/2026/03/logo.png.png",
@@ -174,5 +228,11 @@
   "id": 415,
   "full": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-logo.png",
   "alt": "Jim Towing Ltd. logo"
+ },
+ "logo_sm": {
+  "id": 525,
+  "full": "https://jimtowing.ca/wp-content/uploads/2026/10/jim-towing-logo-240.webp",
+  "w": 240,
+  "h": 224
  }
 }
