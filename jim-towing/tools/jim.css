@@ -763,6 +763,12 @@ body .elementor-location-single,body .elementor-location-archive{padding:0!impor
 .j-post-nav .post-navigation__prev--title,.j-post-nav .post-navigation__next--title{font-family:var(--j-hd);font-weight:700;color:var(--j-ink);font-size:16px}
 @media (max-width:1024px){.j-blog-grid .elementor-posts-container{grid-template-columns:repeat(2,minmax(0,1fr))}.j-post-grid{grid-template-columns:1fr}.j-post-side{position:relative!important;top:0}.j-blog-hero .j-in{align-items:flex-start!important}}
 @media (max-width:767px){.j-blog-grid .elementor-posts-container{grid-template-columns:1fr}.j-prose{font-size:16.5px}.j-post-img{margin-top:-90px!important}.j-post-hero>.j-in{padding-bottom:110px!important}.j-blog-call b{font-size:20px}}
+/* utility classes (replace former inline styles) */
+.j-red{color:var(--j-red)}
+.j-sm{font-size:15px}
+.j-marq-dup{display:contents}
+.j-tk-price-q{font-size:16px!important;color:#fff!important;font-weight:700!important}
+.j-map .hwy-l{font:600 11px var(--j-bd);fill:#596070}
 /* floating actions */
 .j-fab{position:fixed;right:22px;bottom:22px;z-index:999;display:flex;align-items:center;gap:10px;background:var(--j-red);color:#fff!important;text-decoration:none;border-radius:999px;padding:8px 22px 8px 8px;box-shadow:0 18px 36px -12px rgba(225,37,27,.8);font-family:var(--j-hd);font-weight:800;transform:translateY(140%);transition:transform .5s var(--j-ease),background .3s}
 .j-fab.on{transform:none}

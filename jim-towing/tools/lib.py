@@ -120,12 +120,12 @@ def header(menu_slug):
     nav = W('nav-menu', 'j-nav', menu=menu_slug, layout='horizontal', align_items='center', submenu_icon={'value': 'fas fa-chevron-down', 'library': 'fa-solid'},
             pointer='none', dropdown='tablet', toggle='burger', full_width='stretch', text_align='aside', toggle_align='right')
     main = C([
-        RAW(f'<a class="j-brand" href="{SITE}/" aria-label="Jim Towing Ltd. home"><img src="{LOGO_SM["full"]}" alt="Jim Towing Ltd. logo" width="240" height="224" style="width:88px;height:auto" fetchpriority="high"></a>', 'j-logo'),
+        RAW(f'<a class="j-brand" href="{SITE}/" aria-label="Jim Towing Ltd. home"><img src="{LOGO_SM["full"]}" alt="Jim Towing Ltd. logo" width="240" height="224" fetchpriority="high"></a>', 'j-logo'),
         nav,
         RAW(f'<a class="j-hcall" href="{TEL}" aria-label="Call Jim Towing at {PHONE}"><span class="j-ic"><i class="fas fa-phone-alt"></i></span><span><small>24/7 Dispatch</small><b>{PHONE}</b></span></a>', 'j-hcta'),
     ], 'j-in j-row', fd='row')
     hdr = C([C([top], 'j-topbar'), C([main], 'j-mainbar')], 'j-header', tag='header')
-    return [C([assets(), hdr, RAW('<div class="j-hspace" aria-hidden="true"></div>')], 'j-root')]
+    return [C([hdr, RAW('<div class="j-hspace" aria-hidden="true"></div>')], 'j-root')]  # CSS/JS/fonts live in kit Custom CSS + Custom Code (assets.py)
 
 # ---------------- footer ----------------
 FMAP = f'<div class="j-fmap"><iframe title="Jim Towing Ltd. on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="{MAP_EMBED}"></iframe></div>'
@@ -166,7 +166,7 @@ def footer():
 def marquee(items=None):
     items = items or ['24/7 Emergency Towing', 'Flatbed Towing', 'Roadside Assistance', 'Long-Distance Transport', 'Battery Jump-Starts', 'Emergency Fuel Delivery', 'Calgary & Area']
     s = ''.join(f'<a href="{surl(sl)}"><i class="fas fa-{ic}" aria-hidden="true"></i>{t}</a>' for sl, t, ic, *_ in SVC)
-    return C([RAW(f'<nav class="j-marq-in" aria-label="Our services">{s}<span aria-hidden="true" style="display:contents">{s.replace("<a ", "<a tabindex=" + chr(34) + "-1" + chr(34) + " ")}</span></nav>')], 'j-marq')
+    return C([RAW(f'<nav class="j-marq-in" aria-label="Our services">{s}<span class="j-marq-dup" aria-hidden="true">{s.replace("<a ", "<a tabindex=" + chr(34) + "-1" + chr(34) + " ")}</span></nav>')], 'j-marq')
 
 def faq_section(items, title='Frequently Asked ' + hl('Questions'), lead='Straight answers to the questions Calgary drivers ask us most. Still unsure? Call — a real person answers 24/7.', cls='j-white'):
     acc = W('accordion', 'j-faq', tabs=[{'_id': rid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in items], faq_schema='yes',
@@ -225,7 +225,7 @@ def ticket_html(facts):
             m = _re.search(r'\$\d+', v)
             rest = _re.sub(r'^\s*(From\s*)?\$\d+\s*', '', v).strip(' —-()')
             price = (f'<div class="j-tk-price"><span>Starting<br>from</span><b>{m.group(0)}</b><small>{(rest[:1].upper() + rest[1:]) if rest else "Price confirmed before dispatch"}</small></div>' if m
-                     else f'<div class="j-tk-price"><span>Pricing</span><small style="font-size:16px;color:#fff;font-weight:700">{v}</small></div>')
+                     else f'<div class="j-tk-price"><span>Pricing</span><small class="j-tk-price-q">{v}</small></div>')
             continue
         rows += f'<li><i class="fas fa-{_fic(k)}" aria-hidden="true"></i><div><span>{k}</span><b>{v}</b></div></li>'
     return (f'<aside class="j-ticket" aria-label="Key facts"><div class="j-tk-head"><span class="j-tk-ic"><i class="fas fa-clipboard-list"></i></span><div><small>At a glance</small><h2>Key facts</h2></div>'

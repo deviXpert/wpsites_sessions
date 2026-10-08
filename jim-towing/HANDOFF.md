@@ -70,3 +70,10 @@ The CSS/JS live in the **header** template (`jim.css`, `jim.js`), so push `heade
 - Astra/Elementor quirks handled in CSS: Astra greys focused/hovered `.elementor-button` (locked all states), Astra `#ast-scroll-top` hidden, Astra 40px padding on `.elementor-location-single/archive` removed, separate-container wrappers made full-bleed on blog/single/archive, admin-bar offset for fixed header.
 - Blog (`blog.py`): Theme Builder archive (575, include/archive) + single post (577, include/singular/post); Blog page 573 = posts page; menu item "Blog"; category "Towing Tips" (17); test post 574 "Stuck on the Road in Calgary? What to Do While You Wait for a Tow" (featured image 410). Theme title/featured-image widgets need explicit `__dynamic__` tags.
 - GoDaddy sends `cache-control: max-age=2678400` on HTML → users may need a hard refresh after changes; the wpaas flush endpoint is not allowed for app passwords.
+
+## Where the CSS / JS live now (round 5)
+- **All CSS** → Elementor > Site Settings > **Custom CSS** (kit 390 `_elementor_page_settings.custom_css`), readable with a table of contents + numbered section comments (source: `tools/gfonts.css` + `tools/jim.css`). Served via the cached `uploads/elementor/css/post-390.css` in `<head>`.
+- **Head assets** → Elementor > Custom Elements > **Code** → "Jim Towing — Head assets (fonts, icons, schema)" (snippet 581, `<head>`, priority 1): font preloads, non-blocking Font Awesome 5.15.4, LocalBusiness JSON-LD.
+- **JavaScript** → Custom Code "Jim Towing — Site interactions (JavaScript)" (snippet 582, `</body>`, source `tools/jim.js`).
+- No CSS/JS inside any widget; no inline `style=""` attributes (replaced by utility classes). Header template = header markup only.
+- Edit `jim.css` / `jim.js` then run `python3 assets.py` (also runs automatically with `publish.py header`). Editing directly in Site Settings works too, but the next `assets.py` run overwrites it — keep `jim.css` as the source of truth.

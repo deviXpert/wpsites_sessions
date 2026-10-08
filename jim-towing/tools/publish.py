@@ -56,6 +56,8 @@ def scope_parts():
     if ops: print('conditions', ability('elementor/manage-site-parts', {'operations': ops}).get('status'), len(conds))
 
 if __name__ == '__main__':
+    if on('assets') or on('header'):
+        import subprocess, sys; subprocess.run([sys.executable, os.path.join(lib.D, 'assets.py')], check=True)
     if on('menu') or on('header'): ensure_menu()
     if on('header'): site_part('header', lib.header(c.get('menu_slug', 'jim-main-menu')))
     if on('footer'): site_part('footer', lib.footer())

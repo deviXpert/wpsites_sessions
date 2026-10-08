@@ -93,5 +93,9 @@
   "archive": 575,
   "single": 577,
   "menu_item": 579
+ },
+ "snippets": {
+  "head": 581,
+  "js": 582
  }
 }

@@ -108,7 +108,7 @@ def contact():
     seed('contact')
     hero = page_hero([('Contact', '')], f'Contact Jim Towing {hl("Ltd.")}',
         "Need towing or roadside help in Calgary? <strong>Call for the fastest dispatch</strong> — or send a request and we'll call you back as quickly as possible.",
-        [('Phone', phone_link()), ('Email', f'<a href="mailto:{EMAIL}" style="font-size:15px">{EMAIL}</a>'), ('Hours', 'Open 24 hours, 7 days a week'), ('Service area', 'Calgary, Alberta &amp; surrounding areas')], 'night_sedan')
+        [('Phone', phone_link()), ('Email', f'<a class="j-sm" href="mailto:{EMAIL}">{EMAIL}</a>'), ('Hours', 'Open 24 hours, 7 days a week'), ('Service area', 'Calgary, Alberta &amp; surrounding areas')], 'night_sedan')
     soc = ''.join(f'<a class="j-cc" href="{u}" target="_blank" rel="noopener">{bi(i)}<small>Follow us</small><b>{n}</b></a>' for i, n, u in SOC)
     cards = sec([RAW(f'<div class="j-cgrid"><a class="j-cc rv" href="{TEL}"><i class="fas fa-phone-alt"></i><small>Call or text 24/7</small><b>{PHONE}</b><span>Fastest way to get help</span></a>'
                      f'<a class="j-cc rv rv-d1" href="mailto:{EMAIL}"><i class="fas fa-envelope"></i><small>Email</small><b>{EMAIL}</b><span>For quotes &amp; scheduled transport</span></a>'

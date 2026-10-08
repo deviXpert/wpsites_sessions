@@ -32,7 +32,7 @@ def build():
                P('When you need a reliable towing service in Calgary, <strong>Jim Towing is ready to help.</strong> We provide 24/7 towing and roadside assistance for breakdowns, accidents, dead batteries, flat tires, low fuel and other roadside emergencies.', 'j-lead j-up j-up2'),
                BTNS(CALL(), QUOTE('j-btn-ghost'), cls='j-up j-up3'),
                RAW(trust, 'j-up j-up4')], 'j-hero-copy j-col'),
-            C([H('Need a tow? <span style="color:var(--j-red)">Get help now.</span>', 'h2', 'j-cf-t'),
+            C([H('Need a tow? <span class="j-red">Get help now.</span>', 'h2', 'j-cf-t'),
                P("Send your details and we'll call you back to confirm dispatch and pricing.", 'j-cf-s'),
                form_widget(),
                P(f'Stranded right now? <a href="{TEL}">Call {PHONE}</a> for immediate dispatch.', 'j-cf-note')], 'j-card-form j-col j-up j-up2', _element_id='request'),
@@ -136,7 +136,7 @@ def route_map():
         anchor, dx = ('end', -16) if x < 200 else ('start', 16)
         pts += f'<g class="city"><circle class="p" cx="{x}" cy="{y}" r="7"/><circle class="c" cx="{x}" cy="{y}" r="6"/><text x="{x + dx}" y="{y - 2}" text-anchor="{anchor}">{n}</text><text class="k" x="{x + dx}" y="{y + 15}" text-anchor="{anchor}">{k}</text></g>'
     pts += f'<g class="city hub"><circle class="p" cx="{hub[0]}" cy="{hub[1]}" r="10"/><circle class="c" cx="{hub[0]}" cy="{hub[1]}" r="10"/><text x="{hub[0] - 20}" y="{hub[1] + 6}" text-anchor="end">Calgary</text><text class="k" x="{hub[0] - 20}" y="{hub[1] + 23}" text-anchor="end">Home base · 24/7 dispatch</text></g>'
-    hwy = '<path class="hwy" d="M250,30 C256,120 262,160 262,186 S270,300 268,340 S262,440 250,520"/><text x="226" y="262" style="font:600 11px Manrope;fill:#596070" transform="rotate(-88 226 262)">HWY 2</text>'
+    hwy = '<path class="hwy" d="M250,30 C256,120 262,160 262,186 S270,300 268,340 S262,440 250,520"/><text class="hwy-l" x="226" y="262" transform="rotate(-88 226 262)">HWY 2</text>'
     return f'<div class="j-map" role="img" aria-label="Map of Jim Towing routes from Calgary to Airdrie, Cochrane, Chestermere, Okotoks, Red Deer and Edmonton"><svg viewBox="0 0 500 540"><g class="grid">{grid}</g>{hwy}{routes}{pts}</svg></div>'
 
 
