@@ -37,7 +37,6 @@ def build():
                form_widget(),
                P(f'Stranded right now? <a href="{TEL}">Call {PHONE}</a> for immediate dispatch.', 'j-cf-note')], 'j-card-form j-col rv rv-r', _element_id='request'),
         ], 'j-in', fd='row'),
-        RAW('<div class="j-cue" aria-hidden="true"></div>'),
     ], 'j-hero', tag='section')
 
     # ---------- intro ----------

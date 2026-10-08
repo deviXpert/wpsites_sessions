@@ -78,13 +78,13 @@ CSS = open(os.path.join(D, 'jim.css')).read()
 JS = open(os.path.join(D, 'jim.js')).read()
 LD = {'@context': 'https://schema.org', '@type': 'AutomotiveBusiness', 'additionalType': 'https://schema.org/TowingService',
       '@id': SITE + '/#business', 'name': 'Jim Towing Ltd.', 'url': SITE + '/', 'telephone': '+1-587-914-0130', 'email': EMAIL,
-      'image': iu('downtown'), 'logo': LOGO['full'], 'priceRange': 'From $75',
+      'image': iu('downtown'), 'logo': LOGO['full'], 'priceRange': 'From $69',
       'address': {'@type': 'PostalAddress', 'addressLocality': 'Calgary', 'addressRegion': 'AB', 'addressCountry': 'CA'},
       'openingHoursSpecification': {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], 'opens': '00:00', 'closes': '23:59'},
       'aggregateRating': {'@type': 'AggregateRating', 'ratingValue': RATING, 'reviewCount': REVIEWS},
       'areaServed': ['Calgary', 'Airdrie', 'Chestermere', 'Okotoks', 'Cochrane', 'Red Deer', 'Edmonton'],
       'hasMap': MAPS, 'sameAs': [u for _, _, u in SOC]}
-FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Manrope:wght@400..800&display=swap"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">'
+FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..900&family=Figtree:wght@400..800&display=swap"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">'
 def assets(): return RAW(f'{FONTS}<script type="application/ld+json">{json.dumps(LD)}</script><style>{CSS}</style><script>{JS}</script>', 'j-assets')
 
 def stars(n=5): return '<span class="j-stars" aria-hidden="true">' + '★' * n + '</span>'
@@ -107,6 +107,10 @@ def header(menu_slug):
     return [C([assets(), hdr, RAW('<div class="j-hspace" aria-hidden="true"></div>')], 'j-root')]
 
 # ---------------- footer ----------------
+FMAP = (f'<div class="j-fmap"><iframe title="Jim Towing service area map — Calgary, Alberta" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
+        f'src="https://maps.google.com/maps?q=Calgary%2C%20AB&amp;z=10&amp;output=embed"></iframe><i class="fas fa-map-marker-alt j-fmap-pin" aria-hidden="true"></i>'
+        f'<div class="j-fmap-card"><b>Serving Calgary &amp; surrounding areas — 24/7</b><p>Airdrie, Chestermere, Okotoks, Cochrane and long-distance transport across Alberta.</p>'
+        f'<a href="{MAPS}" target="_blank" rel="noopener"><i class="fab fa-google"></i> View us on Google Maps</a></div></div>')
 def footer():
     soc = ''.join(f'<a href="{u}" target="_blank" rel="noopener" aria-label="Jim Towing on {n}"><i class="fab fa-{i}"></i></a>' for i, n, u in SOC)
     svc = ''.join(f'<li><a href="{surl(s)}">{t}</a></li>' for s, t, *_ in SVC)
@@ -116,7 +120,7 @@ def footer():
 <nav aria-label="Company"><h4>Company</h4><ul class="j-flinks">{comp}</ul></nav>
 <div><h4>Get Help Now</h4><div class="j-fcontact"><a href="{TEL}"><i class="fas fa-phone-alt"></i><span><small>Call or text 24/7</small><b>{PHONE}</b></span></a><a href="mailto:{EMAIL}"><i class="fas fa-envelope"></i><span><small>Email</small><b style="font-size:15px">{EMAIL}</b></span></a><a href="{MAPS}" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i><span><small>Service area</small><b style="font-size:15px">Calgary, Alberta &amp; area</b></span></a><div><i class="fas fa-clock"></i><span><small>Hours</small><b style="font-size:15px">Open 24 hours, 7 days</b></span></div></div></div></div>''')
     f = C([
-        C([grid], 'j-in'),
+        C([RAW(FMAP), grid], 'j-in'),
         RAW('<div class="j-fbig" aria-hidden="true">Jim Towing</div>'),
         C([RAW(f'<div class="j-fbottom"><span>&copy; <span class="j-year">2026</span> Jim Towing Ltd. All rights reserved.</span><span>Towing &amp; roadside assistance &middot; Calgary, Alberta</span></div>')], 'j-in'),
     ], 'j-footer', tag='footer')
@@ -128,8 +132,8 @@ def footer():
 # ---------------- shared sections ----------------
 def marquee(items=None):
     items = items or ['24/7 Emergency Towing', 'Flatbed Towing', 'Roadside Assistance', 'Long-Distance Transport', 'Battery Jump-Starts', 'Emergency Fuel Delivery', 'Calgary & Area']
-    s = ''.join(f'<span>{esc(i)}</span>' for i in items)
-    return C([RAW(f'<div class="j-marq-in" aria-hidden="true">{s}{s}</div>')], 'j-marq', role='presentation')
+    s = ''.join(f'<a href="{surl(sl)}"><i class="fas fa-{ic}" aria-hidden="true"></i>{t}</a>' for sl, t, ic, *_ in SVC)
+    return C([RAW(f'<nav class="j-marq-in" aria-label="Our services">{s}<span aria-hidden="true" style="display:contents">{s.replace("<a ", "<a tabindex=" + chr(34) + "-1" + chr(34) + " ")}</span></nav>')], 'j-marq')
 
 def faq_section(items, title='Frequently Asked ' + hl('Questions'), lead='Straight answers to the questions Calgary drivers ask us most. Still unsure? Call — a real person answers 24/7.', cls='j-white'):
     acc = W('accordion', 'j-faq', tabs=[{'_id': rid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in items], faq_schema='yes',
@@ -143,7 +147,7 @@ def cta(title='Need Towing in ' + hl('Calgary?'), text="Don't let a breakdown, a
     tags = ''.join(f'<span><i class="fas fa-check-circle"></i>{t}</span>' for t in ['Fast response', 'Professional service', 'Safe vehicle transport', '24/7 assistance'])
     return sec([C([
         C([H(title, 'h2', 'j-h2'), P(text), RAW(f'<div class="j-tags">{tags}</div>')], 'j-cta-copy j-col'),
-        C([RAW(f'<a class="j-bigphone" href="{TEL}"><small>Call now — 24/7 dispatch</small>{PHONE}</a>'), BTNS(QUOTE('j-btn-ghost'))], 'j-cta-phone j-col'),
+        C([RAW(f'<a class="j-bigphone" href="{TEL}"><small>Call now — 24/7 dispatch</small>{PHONE}</a>'), BTNS(QUOTE('j-btn'))], 'j-cta-phone j-col'),
     ], 'j-cta rv rv-s', fd='row')], cls + ' j-sec-tight')
 
 def reviews(cls='j-paper'):
@@ -157,7 +161,7 @@ def related(slugs, title='Related ' + hl('Services')):
     for s, t, ic, im, d in SVC:
         if s in slugs:
             cards += f'<a class="j-rc rv" href="{surl(s)}"><img src="{iu(im, "med")}" alt="{esc(ia(im))}" loading="lazy" width="225" height="300"><span><b>{t}</b><small>Learn more</small></span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>'
-    for k, t, d in [('pricing', 'Pricing', 'Rates from $75'), ('areas', 'Service Areas', 'Calgary &amp; Alberta')]:
+    for k, t, d in [('pricing', 'Pricing', 'Rates from $69'), ('areas', 'Service Areas', 'Calgary &amp; Alberta')]:
         if k in slugs:
             cards += f'<a class="j-rc rv" href="{PAGES[k]}"><img src="{iu("downtown" if k == "areas" else "logo_truck", "med")}" alt="" loading="lazy" width="225" height="300"><span><b>{t}</b><small>{d}</small></span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>'
     return sec([head('Keep exploring', title), RAW(f'<div class="j-rel">{cards}</div>')], 'j-paper j-sec-tight')

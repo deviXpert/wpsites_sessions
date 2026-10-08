@@ -22,7 +22,7 @@ The CSS/JS live in the **header** template (`jim.css`, `jim.js`), so push `heade
 
 ## Design system
 - Brand from the logo: ink `#0B0D12`, red `#E1251B`, gold `#FFC20E`, paper `#F6F5F1`, cream `#FBFAF7`.
-- Fonts: **Archivo** (variable width, used 108–125% for headings) + **Manrope** (body). Font Awesome 5.15.4 from cdnjs.
+- Fonts: **Outfit** (headings) + **Figtree** (body), applied site-wide (incl. plain h1–h6/body). Font Awesome 5.15.4 from cdnjs.
 - Motifs: hazard checker stripes (from the logo), animated road line, skewed red marquee.
 - Interactions: word-by-word hero reveal, scroll reveals, sticky shrinking/auto-hiding header, scroll progress bar, magnetic buttons, card tilt, animated counters, scrollytelling service explorer (sticky photo), "What happened?" situation tabs (keyboard accessible), steps road with a truck that follows the scroll, animated Alberta route map (SVG), infinite photo strip with lightbox, mobile bottom call bar, desktop floating call button, back-to-top progress ring. Respects `prefers-reduced-motion`.
 - Layout classes are self-contained (`j-*`); containers use `content_width: full`, zero padding/gap, and CSS controls the layout. Nothing depends on Elementor's per-element style settings.
@@ -45,7 +45,9 @@ The CSS/JS live in the **header** template (`jim.css`, `jim.js`), so push `heade
 - Yoast SEO titles and descriptions are set through `POST yoast/v1/bulk_editor/update_search` (`items: [{id, seo_title, meta_description}]`). Values are in `created.json` → `seo`.
 - Trashed (restorable from WP trash): redesign duplicates 447–451, old service pages 227 `/flatbed-towing/`, 229 `/roadside-assistance/`, 231 `/tire-change/`, 233 `/fuel-delivery/`. The user had already trashed the old Home 152 and draft 386.
 - Old URLs: `/flatbed-towing/` and `/roadside-assistance/` 301 to the new pages automatically (WordPress slug guessing). **`/tire-change/` and `/fuel-delivery/` return 404.** They need a redirect plugin (e.g. Redirection) to point to `/services/roadside-assistance-calgary/` and `/services/emergency-fuel-delivery-calgary/`.
-- Still to do: run Elementor → Tools → Clear Files & Data if anything looks stale, connect Trustindex to Google reviews, and confirm the pricing ($75 vs the old $69/$89).
+- Pricing (client decision): roadside help (jump-start, lockout, fuel, tire) **from $69**, local/emergency towing **from $75**, flatbed **from $89**, long distance = quote.
+- Trustindex is connected (widget shows 14 reviews; Google profile shows 51, so the plugin may need a re-sync or upgrade to pull all).
+- Footer has a dark Google map band (Calgary). The service ticker under the home hero is a flat dark strip of service links (no tilt).
 
 ## Content decisions / open questions for the client
 - **[VERIFY] items in Doc 2 were left out**: EV flatbed, lockout proof-of-ownership, battery 3–5 year figure, battery replacement FAQ, fuel types/diesel, exact fuel amount. Calgary→Red Deer ≈150 km and →Edmonton ≈300 km were kept (geographic facts).

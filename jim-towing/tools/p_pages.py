@@ -3,7 +3,7 @@ from p_home import svc_cards, stats_html, why_cards, situations_html, route_map,
 from p_services import fc, ib, info, split, chips, phone_link, NEIGH
 
 GMAP = '<div class="j-gmap"><iframe title="Jim Towing Ltd. on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Calgary%2C%20ABq=Jim%20Towing%20Ltd.%2C%20Calgary%2C%20AB&amp;z=10amp;z=10&amp;output=embed" allowfullscreen></iframe></div>'
-BASE_FACTS = [('Hours', 'Open 24 hours, 7 days a week'), ('Based in', 'Calgary, Alberta'), ('Google rating', f'{RATING} ★ from {REVIEWS} reviews'), ('Starting price', 'From $75'), ('Phone', phone_link())]
+BASE_FACTS = [('Hours', 'Open 24 hours, 7 days a week'), ('Based in', 'Calgary, Alberta'), ('Google rating', f'{RATING} ★ from {REVIEWS} reviews'), ('Starting price', 'Roadside from $69 · Towing from $75'), ('Phone', phone_link())]
 
 def about():
     seed('about')
@@ -32,23 +32,23 @@ def services():
     seed('services')
     hero = page_hero([('Services', '')], f'Towing &amp; Roadside {hl("Services")}',
         'Fast dispatch, safe transport and reliable help whenever you need it. <strong>Six core services</strong> for drivers across Calgary and nearby Alberta communities.',
-        [('Services', 'Emergency towing, flatbed, roadside assistance, long-distance transport, jump-starts, fuel delivery'), ('Hours', '24/7, including holidays'), ('Area', 'Calgary + surrounding communities'), ('Starting price', 'From $75'), ('Phone', phone_link())], 'construction')
+        [('Services', 'Emergency towing, flatbed, roadside assistance, long-distance transport, jump-starts, fuel delivery'), ('Hours', '24/7, including holidays'), ('Area', 'Calgary + surrounding communities'), ('Starting price', 'Roadside $69 · Towing $75 · Flatbed $89'), ('Phone', phone_link())], 'construction')
     grid = sec([head('All services', f'Choose the Help {hl("You Need")}', 'Every service is available 24/7 — tap a card for full details, pricing guidance and FAQs.'), C(svc_cards(), 'j-svc-grid')], 'j-paper')
     sit = sec([head('What happened?', f'Not Sure Which Service? {hl("Start Here.")}', 'Pick your situation and we\'ll point you to the right service.', True), RAW(situations_html(), 'rv')], 'j-white')
     whyl = split('dealer', [EB('Why Jim Towing'), H(f'One Call. {hl("The Right Help.")}', 'h2'),
-        ul(['24/7 emergency dispatch', 'Quick dispatch across Calgary', 'Affordable rates starting at $75', 'Friendly, trained towing operators', 'Damage-conscious towing methods', 'Honest pricing — no hidden charges', 'Full roadside assistance services', 'Available day, night, weekends and holidays']),
+        ul(['24/7 emergency dispatch', 'Quick dispatch across Calgary', 'Affordable rates — roadside help from $69', 'Friendly, trained towing operators', 'Damage-conscious towing methods', 'Honest pricing — no hidden charges', 'Full roadside assistance services', 'Available day, night, weekends and holidays']),
         P('When you call Jim Towing, you\'re calling a team that puts your safety and time first.', 'j-note'), BTNS(CALL())], rev=True, cls='j-paper')
     how = steps([('Contact Jim Towing', 'Call us and tell us what happened, your current location and the type of assistance you need.'),
                  ('We Identify the Right Service', 'We match the help to your situation — towing, flatbed, roadside, jump-start, fuel or long distance.'),
                  ('Professional Assistance', 'Our team is dispatched to your location with the appropriate equipment.'),
                  ('Safe Transport or Roadside Fix', 'We tow your vehicle to your destination — or get you moving again on the spot.')], lead='Four simple steps from your call to safe transport.')
     faqs = [('Is Jim Towing available 24/7?', 'Yes. Towing and roadside assistance are available 24 hours a day, 7 days a week, including nights, weekends and holidays.'),
-            ('How much does towing cost in Calgary?', f'Towing starts from $75. The final price depends on the vehicle, pickup location, destination, distance and service required. <a href="{PAGES["pricing"]}">See pricing</a>.'),
+            ('How much does towing cost in Calgary?', f'Roadside help starts from $69, local towing from $75 and flatbed towing from $89. The final price depends on the vehicle, pickup location, destination, distance and service required. <a href="{PAGES["pricing"]}">See pricing</a>.'),
             ('Does roadside assistance always require towing?', 'No. Some problems, such as a dead battery or lack of fuel, can be resolved where you are. If the vehicle cannot be safely driven, towing may be required.'),
             ('Do you offer flatbed towing?', 'Yes — for luxury cars, AWD vehicles, SUVs, motorcycles, lowered vehicles and accident-damaged vehicles.'),
             ('Do you provide long-distance towing?', 'Yes. We transport vehicles across Alberta, including Airdrie, Chestermere, Okotoks, Cochrane, Red Deer and Edmonton.')]
     body = [hero, grid, sit, whyl, how, faq_section(faqs, cls='j-white'), cta()]
-    return 'services', 'Services (redesign)', wrap(body), ('Towing & Roadside Services in Calgary | Jim Towing', 'Emergency towing, flatbed towing, roadside assistance, long-distance transport, battery jump-starts and fuel delivery in Calgary — 24/7 from $75.')
+    return 'services', 'Services (redesign)', wrap(body), ('Towing & Roadside Services in Calgary | Jim Towing', 'Emergency towing, flatbed towing, roadside assistance, long-distance transport, battery jump-starts and fuel delivery in Calgary — 24/7, roadside help from $69.')
 
 def areas():
     seed('areas')
@@ -80,14 +80,14 @@ def pricing():
     seed('pricing')
     hero = page_hero([('Pricing', '')], f'Towing &amp; Roadside {hl("Pricing")}',
         'Clear starting rates for common services in Calgary. <strong>We confirm your price before dispatch</strong> — no hidden fees, no surprises.',
-        [('Towing', 'From $75'), ('Roadside help', 'From $75'), ('Long distance', 'Quote based on distance &amp; vehicle'), ('Price confirmed', 'Before dispatch'), ('Phone', phone_link())], 'logo_truck')
+        [('Roadside help', 'From $69'), ('Local towing', 'From $75'), ('Flatbed', 'From $89'), ('Long distance', 'Quote based on distance &amp; vehicle'), ('Price confirmed', 'Before dispatch'), ('Phone', phone_link())], 'logo_truck')
     def card(title, price, items, hot=False, flag=None, btn='Call for a Quote'):
         return C([RAW(f'<span>{flag}</span>', 'j-pc-flag') if flag else None, H(title, 'h3', 'j-h3'), RAW(f'<div class="j-price"><small>Starting from</small>{price}</div>' if price.startswith('$') else f'<div class="j-price"><small>Pricing</small>{price}</div>'),
                   ul(items), BTNS(BTN(btn, TEL, 'j-btn-sm ' + ('j-btn-gold' if hot else 'j-btn-dark')))], 'j-pc j-col rv' + (' hot' if hot else ''))
     cards = sec([head('Starting rates (CAD)', f'Simple, Honest {hl("Starting Rates")}', 'Typical starting prices. We confirm your exact total after a quick call.', True), C([
-        card('Roadside Help', '$75<sup>*</sup>', ['Battery jump-start', 'Lockout service', 'Fuel delivery (fuel extra)', 'Flat tire change (spare required)']),
+        card('Roadside Help', '$69<sup>*</sup>', ['Battery jump-start', 'Lockout service', 'Fuel delivery (fuel extra)', 'Flat tire change (spare required)']),
         card('Local Towing', '$75<sup>*</sup>', ['Standard tow — cars &amp; SUVs', 'Tows within Calgary', 'Accident &amp; breakdown towing', 'Safe loading &amp; transport'], True, 'Most requested'),
-        card('Flatbed Towing', '$75<sup>*</sup>', ['Low-clearance &amp; luxury vehicles', 'AWD / 4x4 recommended', 'Motorcycles', 'Non-running vehicles']),
+        card('Flatbed Towing', '$89<sup>*</sup>', ['Low-clearance &amp; luxury vehicles', 'AWD / 4x4 recommended', 'Motorcycles', 'Non-running vehicles']),
         card('Long Distance', 'Quote', ['Calgary ↔ Airdrie, Okotoks, Cochrane', 'Calgary ↔ Red Deer, Edmonton', 'Flatbed available', 'Scheduled pickups'])], 'j-prices'),
         P('* Starting rates. Final pricing may vary by distance, time of day, vehicle type/condition and access.', 'j-center j-small rv')], 'j-paper')
     factors = sec([head('What affects the price', f'What Determines {hl("Your Final Price?")}', center=True),
@@ -96,13 +96,13 @@ def pricing():
         P('Call us with a few details and we\'ll give you a clear price before dispatch:'),
         ul(['Your exact location', 'Vehicle make, model and condition', 'What happened', 'Where you want the vehicle taken'], 'j-checks'),
         P('No hidden fees. No surprises.', 'j-note'), BTNS(CALL(), QUOTE('j-btn-line'))], cls='j-paper')
-    faqs = [('How much does towing cost in Calgary?', 'Towing starts from $75. The final price depends on the vehicle, pickup location, destination, distance and type of service required.'),
+    faqs = [('How much does towing cost in Calgary?', 'Roadside help starts from $69, local towing from $75 and flatbed towing from $89. The final price depends on the vehicle, pickup location, destination, distance and type of service required.'),
             ('Do you give a price before dispatch?', 'Yes. We confirm the price range when you call, before we dispatch a truck.'),
             ('Is fuel included in fuel delivery pricing?', 'We confirm the total, including fuel, when you call.'),
             ('How is long-distance towing priced?', 'By distance, vehicle type, pickup and drop-off locations and timing. Call for a clear quote.'),
             ('Are there hidden fees?', 'No. We aim to give you clear information about the service and expected costs before we proceed.')]
     body = [hero, cards, factors, quote, faq_section(faqs, cls='j-white'), cta(f'Need Help {hl("Right Now?")}', f'Call {PHONE} for a fast estimate and dispatch, or send a request and we\'ll get back to you ASAP.')]
-    return 'pricing', 'Pricing (redesign)', wrap(body), ('Towing Prices Calgary | Rates From $75 | Jim Towing', 'Clear towing and roadside assistance pricing in Calgary. Rates start from $75 with your price confirmed before dispatch. Call 587-914-0130.')
+    return 'pricing', 'Pricing (redesign)', wrap(body), ('Towing Prices Calgary | Roadside From $69 | Jim Towing', 'Clear towing and roadside pricing in Calgary: roadside help from $69, local towing from $75, flatbed from $89. Price confirmed before dispatch. Call 587-914-0130.')
 
 def contact():
     seed('contact')

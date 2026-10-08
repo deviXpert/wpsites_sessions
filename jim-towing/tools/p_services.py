@@ -53,7 +53,7 @@ def flatbed():
     s = 'flatbed-towing-calgary'; seed(s)
     hero = page_hero([CR, ('Flatbed Towing', '')], f'Professional Flatbed Towing in {hl("Calgary")}',
         'All four wheels off the road. <strong>Damage-conscious transport</strong> for AWD vehicles, luxury and lowered cars, motorcycles and accident-damaged vehicles — 24/7.',
-        [('Service', 'Flatbed (platform) towing'), ('Best for', 'AWD/4WD, luxury, lowered cars, motorcycles, accident-damaged vehicles'), ('Hours', '24/7'), ('Starting price', 'From $75'), ('Phone', phone_link())], 'luxury')
+        [('Service', 'Flatbed (platform) towing'), ('Best for', 'AWD/4WD, luxury, lowered cars, motorcycles, accident-damaged vehicles'), ('Hours', '24/7'), ('Starting price', 'From $89'), ('Phone', phone_link())], 'luxury')
     what = split('moto_night', [EB('The basics'), H(f'What Is {hl("Flatbed Towing?")}', 'h2'),
         P('Flatbed towing uses a truck with a flat, tilting platform. The vehicle is winched onto the bed and secured with straps, so <strong>no wheels roll on the road during transport</strong>. This is why it is the safest towing method for many vehicles.'),
         P("If you're unsure which method your vehicle needs, ask us — we'll recommend the right one.", 'j-note'), BTNS(CALL())])
@@ -72,24 +72,24 @@ def flatbed():
         C([H('Not sure?', 'h3', 'j-h3'), P('Tell us your vehicle and situation — we\'ll recommend the right method before we dispatch.'), BTNS(BTN(f'Call {PHONE}', TEL, 'j-btn-dark j-btn-sm'))], 'j-ib red j-col rv rv-d2')], 'j-fgrid j-cols3')], 'j-white')
     protect = split('lift', [EB('Our process'), H(f'How We {hl("Protect Your Vehicle")}', 'h2'),
         ul(['Professional flatbed equipment and winching', 'Wheel straps and safe tie-down methods', 'Careful loading angle for low vehicles', 'Inspection of loading points before we move your car'], 'j-checks one'),
-        ib('How much does flatbed towing cost in Calgary?', f'<p>Our towing rates <strong>start at $75</strong>. Flatbed pricing depends on distance, vehicle type, time of day and location. Call {phone_link()} for a quote before dispatch.</p>', 'dark', 'tag')], rev=True, cls='j-paper')
+        ib('How much does flatbed towing cost in Calgary?', f'<p>Flatbed towing <strong>starts at $89</strong>. Pricing depends on distance, vehicle type, time of day and location. Call {phone_link()} for a quote before dispatch.</p>', 'dark', 'tag')], rev=True, cls='j-paper')
     faqs = [('Is flatbed towing safer for my car?', 'For most vehicles, yes. All four wheels stay off the road, so there is less wear on tires, transmission and drivetrain.'),
             ('Can you flatbed tow a motorcycle?', 'Yes. We secure motorcycles with proper tie-downs for safe transport.'),
             ('Should I use a flatbed for an AWD vehicle?', 'Yes. AWD and 4WD vehicles are best moved on a flatbed to avoid drivetrain damage.'),
             ("Can you tow a car that won't start or roll?", 'Yes. We winch non-running vehicles onto the flatbed.'),
             ('Do you offer flatbed towing at night?', 'Yes — 24/7, including weekends and holidays.'),
             ('Can you move my vehicle to a dealership or body shop?', 'Yes, to any destination you choose.')]
-    body = [hero, quick(f'Flatbed towing carries your whole vehicle on a flat platform with all four wheels off the road. Jim Towing Ltd. offers 24/7 flatbed towing in Calgary for AWD vehicles, luxury and lowered cars, motorcycles and accident-damaged vehicles. Rates start at <strong>$75</strong>. Call <a href="{TEL}">{PHONE}</a>.'),
+    body = [hero, quick(f'Flatbed towing carries your whole vehicle on a flat platform with all four wheels off the road. Jim Towing Ltd. offers 24/7 flatbed towing in Calgary for AWD vehicles, luxury and lowered cars, motorcycles and accident-damaged vehicles. Rates start at <strong>$89</strong>. Call <a href="{TEL}">{PHONE}</a>.'),
             what, vs, need, protect, gallery(['luxury', 'moto_night', 'moto', 'dealer', 'construction', 'lift', 'equip', 'downtown'], 'j-dark j-grain', 'Flatbed Jobs ' + hl('We\'ve Handled')),
             faq_section(faqs, cls='j-white'), related(['emergency-towing-calgary', 'long-distance-towing-alberta', 'pricing']),
             cta(f'Protect {hl("Your Vehicle.")}', f'Call {PHONE} for flatbed towing in Calgary — careful loading, secure tie-downs and clear pricing before dispatch.')]
-    return s, 'Professional Flatbed Towing in Calgary', wrap(body), ('Flatbed Towing Calgary | AWD, Luxury & Motorcycle | Jim Towing', 'Safe flatbed towing in Calgary for AWD, luxury, lowered cars and motorcycles. Damage-free transport, 24/7. Rates from $75. Call 587-914-0130.')
+    return s, 'Professional Flatbed Towing in Calgary', wrap(body), ('Flatbed Towing Calgary | AWD, Luxury & Motorcycle | Jim Towing', 'Safe flatbed towing in Calgary for AWD, luxury, lowered cars and motorcycles. Damage-free transport, 24/7. Rates from $89. Call 587-914-0130.')
 
 def roadside():
     s = 'roadside-assistance-calgary'; seed(s)
     hero = page_hero([CR, ('Roadside Assistance', '')], f'24/7 Roadside Assistance in {hl("Calgary")}',
         'Jump-starts, flat tire changes, emergency fuel delivery and lockout help. <strong>Many problems are fixed on the spot — no tow needed.</strong>',
-        [('Services', 'Jump-start, flat tire change, fuel delivery, lockout'), ('Hours', '24/7, all holidays'), ('Area', 'Calgary + nearby communities'), ('Starting price', 'From $75'), ('Phone', phone_link())], 'suv_op')
+        [('Services', 'Jump-start, flat tire change, fuel delivery, lockout'), ('Hours', '24/7, all holidays'), ('Area', 'Calgary + nearby communities'), ('Starting price', 'From $69'), ('Phone', phone_link())], 'suv_op')
     inc = sec([head("What's included", f'What Does Roadside Assistance {hl("Include?")}'), C([
         fc('car-battery', 'Battery Boost / Jump-Start', f'<p>Safe jump-start for dead batteries. {link("battery-jump-start-calgary", "More on jump-starts")}.</p>', '01'),
         fc('life-ring', 'Flat Tire Change', '<p>We install your spare so you can drive to a tire shop.</p>', '02', 'rv-d1'),
@@ -105,7 +105,7 @@ def roadside():
         fc('exclamation-triangle', 'Stay Safe While Waiting', 'Do not leave your vehicle running in a closed garage while you wait for help.', None, 'rv-d2')], 'j-fgrid j-cols3')], 'j-dark j-grain')
     get = sec([info(
         ib('How do I get roadside assistance in Calgary?', f'<p>Call {phone_link()}, give your location and the problem, and we dispatch a technician. You\'ll get a quote and an arrival estimate.</p>', '', 'phone-alt'),
-        ib('How much does roadside assistance cost?', '<p>Our rates <strong>start at $75</strong>. The final price depends on the service, location and time. We confirm before dispatch.</p>', 'red', 'tag'))], 'j-white j-sec-tight')
+        ib('How much does roadside assistance cost?', '<p>Our roadside rates <strong>start at $69</strong>. The final price depends on the service, location and time. We confirm before dispatch.</p>', 'red', 'tag'))], 'j-white j-sec-tight')
     faqs = [('Do you offer roadside assistance at night?', 'Yes. We are available 24/7, including weekends and holidays.'),
             ("What if the jump-start doesn't work?", 'We can tow your vehicle to your home or a repair shop.'),
             ("Can you change a flat tire if I don't have a spare?", 'We can tow you to a tire shop instead.'),
@@ -149,7 +149,7 @@ def jump():
     s = 'battery-jump-start-calgary'; seed(s)
     hero = page_hero([CR, ('Battery Jump-Start', '')], f'Battery Jump-Start Service in {hl("Calgary")}',
         'Dead battery at home, at work, in a parking lot or at the roadside? <strong>We come to you 24/7</strong> with professional boost equipment.',
-        [('Service', 'Mobile battery jump-start'), ('Hours', '24/7'), ('Where', 'Home, work, parking lots, roadside in Calgary'), ('Starting price', 'From $75'), ('Phone', phone_link())], 'dusk')
+        [('Service', 'Mobile battery jump-start'), ('Hours', '24/7'), ('Where', 'Home, work, parking lots, roadside in Calgary'), ('Starting price', 'From $69'), ('Phone', phone_link())], 'dusk')
     signs = sec([head('Warning signs', f'How Do I Know My {hl("Battery Is Dead?")}'), C([
         fc('volume-up', 'Clicking, No Crank', 'The engine clicks but does not turn over.', '01'),
         fc('lightbulb', 'Dim Lights', 'Headlights or interior lights are dim.', '02', 'rv-d1'),
@@ -165,28 +165,28 @@ def jump():
     after = sec([info(
         ib('After the jump: what next?', '<p>Drive for at least <strong>20–30 minutes</strong> if possible, and have the battery and alternator tested soon. If it dies again, the battery or charging system likely needs replacement.</p>', 'dark', 'road'),
         ib('Can a jump-start damage my car?', '<p>Done properly, no. Modern vehicles have sensitive electronics, so professional equipment and the correct connection order matter — a good reason to call a trained technician.</p>', '', 'microchip'))], 'j-paper')
-    faqs = [('How much does a jump-start cost in Calgary?', 'Our service rates start at $75. We confirm your price when you call.'),
+    faqs = [('How much does a jump-start cost in Calgary?', 'Our jump-start rates start at $69. We confirm your price when you call.'),
             ('How long does a jump-start take?', 'The jump itself usually takes only a few minutes once we arrive.'),
             ("What if my car still won't start?", f'It may need a new battery, starter or alternator. We can {link("emergency-towing-calgary", "tow it to your mechanic")}.'),
             ('Do you do jump-starts in underground parkades?', 'Often yes, depending on access. Tell us the location when you call.'),
             ('Is this available at night and on weekends?', 'Yes, 24/7.')]
-    body = [hero, quick(f'If your car battery is dead in Calgary, Jim Towing Ltd. can come to your location 24/7 and jump-start your vehicle safely. Service rates start at <strong>$75</strong>. If the vehicle still will not start, we can tow it to a repair shop. Call <a href="{TEL}">{PHONE}</a>.'),
+    body = [hero, quick(f'If your car battery is dead in Calgary, Jim Towing Ltd. can come to your location 24/7 and jump-start your vehicle safely. Service rates start at <strong>$69</strong>. If the vehicle still will not start, we can tow it to a repair shop. Call <a href="{TEL}">{PHONE}</a>.'),
             signs, how, winter, after, faq_section(faqs, cls='j-white'), related(['roadside-assistance-calgary', 'emergency-towing-calgary', 'emergency-fuel-delivery-calgary']),
             cta(f'Dead {hl("Battery?")}', f'Call {PHONE} now — we come to you with professional boost equipment, day or night.')]
-    return s, 'Battery Jump-Start Service in Calgary', wrap(body), ('Battery Jump-Start Calgary | Dead Battery Help 24/7 | Jim Towing', 'Dead battery in Calgary? Jim Towing offers fast, safe 24/7 jump-start service at your location. Clear pricing from $75. Call 587-914-0130.')
+    return s, 'Battery Jump-Start Service in Calgary', wrap(body), ('Battery Jump-Start Calgary | Dead Battery Help 24/7 | Jim Towing', 'Dead battery in Calgary? Jim Towing offers fast, safe 24/7 jump-start service at your location. Clear pricing from $69. Call 587-914-0130.')
 
 def fuel():
     s = 'emergency-fuel-delivery-calgary'; seed(s)
     hero = page_hero([CR, ('Emergency Fuel Delivery', '')], f'Emergency Fuel Delivery in {hl("Calgary")}',
         'Ran out of gas? We deliver emergency fuel to your location, 24/7 — <strong>enough to get you to the nearest station</strong>.',
-        [('Service', 'Emergency fuel delivery'), ('Hours', '24/7'), ('Where', 'Anywhere in Calgary and nearby communities'), ('Starting price', 'From $75'), ('Phone', phone_link())], 'night_sedan')
+        [('Service', 'Emergency fuel delivery'), ('Hours', '24/7'), ('Where', 'Anywhere in Calgary and nearby communities'), ('Starting price', 'From $69 (fuel extra)'), ('Phone', phone_link())], 'night_sedan')
     what = steps([('Hazards On', 'Turn on hazard lights and move to the shoulder or a safe spot if the car still rolls.'), ('Stay Clear of Traffic', 'Stand behind a barrier if possible. Do not walk along highways or Stoney Trail.'),
                   ('Call ' + PHONE, 'Give your exact location — cross streets, exit number or a landmark.'), ('We Bring Fuel', 'We bring fuel and get you moving again.')],
                  title=f'What Should I Do If I {hl("Run Out of Gas?")}', eyebrow='Stay safe', light=True)
     blocks = sec([info(
         ib('How much fuel do you deliver?', '<p>Enough to reach the nearest gas station safely — not a full tank. Fill up right after.</p>', '', 'gas-pump'),
         ib('Why is it unsafe to wait on the shoulder?', '<p>Highway shoulders are dangerous, especially at night, in snow or in low visibility. A fast fuel delivery gets you off the roadside sooner.</p>', 'dark', 'exclamation-triangle'),
-        ib('How much does fuel delivery cost?', '<p>Our service rates <strong>start at $75</strong>. Fuel cost and distance may affect the final price. We confirm the price before dispatch.</p>', 'red wide', 'tag'))], 'j-white')
+        ib('How much does fuel delivery cost?', '<p>Our service rates <strong>start at $69</strong> (fuel extra). Fuel cost and distance may affect the final price. We confirm the price before dispatch.</p>', 'red wide', 'tag'))], 'j-white')
     tips = split('heavy_night', [EB('Prevention'), H(f'Tips to Avoid Running Out of Fuel {hl("in Calgary")}', 'h2'),
         ul(['Refuel at a quarter tank, especially in winter.', 'Do not rely on the "distance to empty" number in extreme cold.', 'Watch for long gaps between stations on highways outside the city.'], 'j-checks one'),
         BTNS(CALL())], cls='j-paper')
