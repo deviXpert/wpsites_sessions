@@ -22,6 +22,8 @@ Still open: Elementor popup 36373 is a `role="document"` dialog with `aria-modal
 | Snippet | ID | What it removes from the initial load |
 |---|---|---|
 | `snippets/4-ekit-icons.php` | 14 | ElementsKit icon font (`elementskit.woff`, ~450 KB) used only for the menu, submenu-arrow and arrow-circle icons |
-| `snippets/5-trustindex-lazy.php` | 15 | ~20 Trustindex review photos (~550 KB) printed with `skip-lazy` far below the fold |
+| `snippets/5-trustindex-lazy.php` | 15 | Trustindex `loader.js` (waits for first scroll/tap) and the ~550 KB of review photos it pulls; also lazy-loads the widget's own `skip-lazy` photos |
 
-Test: `php snippets/test.php in.html out.html 4-ekit-icons 5-trustindex-lazy`.
+Test: `php snippets/test5.php in.html out.html 4-ekit-icons 5-trustindex-lazy` (also simulates the `script_loader_tag` swap).
+Local Lighthouse, mobile, CPU x6, 4 runs each: homepage 50–92 (median 74) → 93–94; page weight 1,483 KiB → 333 KiB.
+Note: the Trustindex widget stays blank until loader.js runs, so it now fills in on the first scroll.
