@@ -16,3 +16,12 @@ All three filter `elementor/frontend/the_content` (covers page content and theme
 Local Lighthouse on the patched homepage and Lumberton page: accessibility 92/86 → 100.
 Activated 2026-10-09 and WP Rocket cache cleared. Live Lighthouse: the three audits are gone on all five pages.
 Still open: Elementor popup 36373 is a `role="document"` dialog with `aria-modal` (aria-allowed-attr) on the location pages.
+
+## Mobile performance snippets (saved inactive)
+
+| Snippet | ID | What it removes from the initial load |
+|---|---|---|
+| `snippets/4-ekit-icons.php` | 14 | ElementsKit icon font (`elementskit.woff`, ~450 KB) used only for the menu, submenu-arrow and arrow-circle icons |
+| `snippets/5-trustindex-lazy.php` | 15 | ~20 Trustindex review photos (~550 KB) printed with `skip-lazy` far below the fold |
+
+Test: `php snippets/test.php in.html out.html 4-ekit-icons 5-trustindex-lazy`.
