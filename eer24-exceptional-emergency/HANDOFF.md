@@ -30,6 +30,13 @@ Playwright (Pixel 5, patched copy routed in place of the live URL): one tap on "
 
 Note: Playwright forces localhost through the proxy, so serve test copies with `page.route` on the live URL instead.
 
+## Check-in button styling (fix before activation)
+On Stat, delaying the widget turned the check-in buttons into QupHealth's default uppercase crimson (`#CC1E41`, 4px radius). The site's button rules live in Additional CSS (`#wp-custom-css`), and WP Rocket's Remove Unused CSS drops them once the widget no longer renders during its crawl.
+- #19 now adds those rules (copied from Additional CSS: `#DC271D`, 12px 25px / 9px 10px on mobile, Satoshi label) from script just before `my-widget.js` loads. If Additional CSS for the button changes, update `eer_qup_css()` too.
+- #19 also styles the mobile header placeholder (widget 7ab4001, plain red text until the widget renders) as the same red button from a head script, so the header looks unchanged and there is no swap shift.
+- #17 hamburger SVG redrawn to match the font glyph's bar width, thickness and spacing.
+Test with the rules stripped from used CSS (simulating RUCSS): without the fix the buttons render `#CC1E41` uppercase (matches the owner's Stat screenshot); with it the button styles match the live site exactly on mobile and desktop.
+
 ## Still open
 - color-contrast on Beaumont: `#1275BA` on `#EBEBEB` (4.11:1) and white on `#0082C2` buttons (4.22:1). Visible colour change, needs the owner's OK.
 - /locations/brownsville redirects to valleyregionalmedicalcenter.com.
