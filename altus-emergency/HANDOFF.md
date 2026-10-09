@@ -17,7 +17,7 @@ Local Lighthouse on the patched homepage and Lumberton page: accessibility 92/86
 Activated 2026-10-09 and WP Rocket cache cleared. Live Lighthouse: the three audits are gone on all five pages.
 Still open: Elementor popup 36373 is a `role="document"` dialog with `aria-modal` (aria-allowed-attr) on the location pages.
 
-## Mobile performance snippets (saved inactive)
+## Mobile performance snippets (active since 2026-10-09)
 
 | Snippet | ID | What it removes from the initial load |
 |---|---|---|
@@ -27,3 +27,10 @@ Still open: Elementor popup 36373 is a `role="document"` dialog with `aria-modal
 Test: `php snippets/test5.php in.html out.html 4-ekit-icons 5-trustindex-lazy` (also simulates the `script_loader_tag` swap).
 Local Lighthouse, mobile, CPU x6, 4 runs each: homepage 50–92 (median 74) → 93–94; page weight 1,483 KiB → 333 KiB.
 Note: the Trustindex widget stays blank until loader.js runs, so it now fills in on the first scroll.
+
+Live notes:
+- WP Rocket's Remove Unused CSS strips inline `<style>` blocks, so the SVG icons carry their sizing as attributes; `pointer-events:none` keeps the mobile submenu arrows clickable.
+- Trustindex fills its widget after Elementor renders, so the review-photo lazy-load runs from an output buffer opened at `template_redirect`.
+- Live Lighthouse after activation (mobile, CPU x6, 4 runs): homepage 86–93, page weight 401 KiB. Accessibility 100.
+- Lumberton scores far lower (24 in one run: 2.9 MB, TBT 1.9 s, CLS 0.37), so it needs its own pass.
+- `wpcf7 is not defined` in the console was already there before these snippets.

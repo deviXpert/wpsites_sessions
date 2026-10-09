@@ -19,20 +19,34 @@ add_filter( 'script_loader_tag', function ( $tag, $handle, $src ) {
 
 // The widget's own fallback injector fires on DOMContentLoaded; make it wait too.
 add_filter( 'elementor/frontend/the_content', function ( $content ) {
-	if ( false === strpos( $content, 'ti-widget' ) && false === strpos( $content, 'tiLoaderFallback' ) ) {
+	if ( false === strpos( $content, 'tiLoaderFallback' ) ) {
 		return $content;
 	}
-	// Its review photos are printed with class="skip-lazy"; let the browser lazy-load them.
-	$content = preg_replace_callback(
-		'/<img\b(?![^>]*\bloading=)[^>]*\bsrc="https:\/\/(?:cdn\.trustindex\.io|lh3\.googleusercontent\.com)\/[^>]*>/i',
-		function ( $m ) {
-			return preg_replace( '/^<img\b/i', '<img loading="lazy"', $m[0] );
-		},
-		$content
-	);
 	return preg_replace(
 		'/if\s*\(\s*"loading"\s*===\s*document\.readyState\s*\)\s*\{\s*document\.addEventListener\(\s*"DOMContentLoaded"\s*,\s*tiLoadLoader\s*\);\s*\}\s*else\s*\{\s*tiLoadLoader\(\);\s*\}/',
 		altus_ti_delay_js(),
 		$content
 	);
 }, 20 );
+
+// The widget's review photos are printed with class="skip-lazy", and Trustindex
+// fills them in after Elementor renders, so lazy-load them on the whole page
+// from an output buffer opened before any template code runs.
+function altus_ti_lazy_images( $html ) {
+	if ( false === strpos( $html, 'ti-widget' ) ) {
+		return $html;
+	}
+	return preg_replace_callback(
+		'/<img\b(?![^>]*\bloading=)[^>]*\bsrc="https:\/\/(?:cdn\.trustindex\.io|lh3\.googleusercontent\.com)\/[^>]*>/i',
+		function ( $m ) {
+			return preg_replace( '/^<img\b/i', '<img loading="lazy"', $m[0] );
+		},
+		$html
+	);
+}
+add_action( 'template_redirect', function () {
+	if ( is_admin() || wp_doing_ajax() || is_feed() || ( defined( 'REST_REQUEST' ) && REST_REQUEST ) ) {
+		return;
+	}
+	ob_start( 'altus_ti_lazy_images' );
+}, 0 );

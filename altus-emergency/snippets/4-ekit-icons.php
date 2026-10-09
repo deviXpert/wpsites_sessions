@@ -9,20 +9,18 @@ add_filter( 'elementor/frontend/the_content', function ( $content ) {
 		return $content;
 	}
 	$svgs = array(
-		'icon-menu-button-of-three-horizontal-lines' => '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 4h18a1.75 1.75 0 0 1 0 3.5H3A1.75 1.75 0 0 1 3 4zm0 6.25h18a1.75 1.75 0 0 1 0 3.5H3a1.75 1.75 0 0 1 0-3.5zm0 6.25h18a1.75 1.75 0 0 1 0 3.5H3a1.75 1.75 0 0 1 0-3.5z"/></svg>',
-		'icon-down-arrow1'                           => '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.4 1.3 6.7l1.4-1.4L12 14.6l9.3-9.3 1.4 1.4z"/></svg>',
-		'icon-arrow-right-circle'                    => '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><circle cx="12" cy="12" r="11"/><path d="M6.5 12h10.5M12.5 7.5 17 12l-4.5 4.5"/></g></svg>',
+		'icon-menu-button-of-three-horizontal-lines' => '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="vertical-align:-.125em;pointer-events:none" aria-hidden="true" focusable="false"><path d="M3 4h18a1.75 1.75 0 0 1 0 3.5H3A1.75 1.75 0 0 1 3 4zm0 6.25h18a1.75 1.75 0 0 1 0 3.5H3a1.75 1.75 0 0 1 0-3.5zm0 6.25h18a1.75 1.75 0 0 1 0 3.5H3a1.75 1.75 0 0 1 0-3.5z"/></svg>',
+		'icon-down-arrow1'                           => '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="vertical-align:-.125em;pointer-events:none" aria-hidden="true" focusable="false"><path d="M12 17.4 1.3 6.7l1.4-1.4L12 14.6l9.3-9.3 1.4 1.4z"/></svg>',
+		'icon-arrow-right-circle'                    => '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="vertical-align:-.125em;pointer-events:none" aria-hidden="true" focusable="false"><g style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><circle cx="12" cy="12" r="11"/><path d="M6.5 12h10.5M12.5 7.5 17 12l-4.5 4.5"/></g></svg>',
 	);
-	$count   = 0;
-	$content = preg_replace_callback(
+	return preg_replace_callback(
 		'/<i\b([^>]*?)\bclass="([^"]*)"([^>]*)>\s*<\/i>/i',
-		function ( $m ) use ( $svgs, &$count ) {
+		function ( $m ) use ( $svgs ) {
 			$classes = preg_split( '/\s+/', trim( $m[2] ) );
 			foreach ( $svgs as $name => $svg ) {
 				if ( in_array( 'icon', $classes, true ) && in_array( $name, $classes, true ) ) {
 					$classes = array_diff( $classes, array( 'icon', $name ) );
 					$classes[] = 'ekit-svg-icon';
-					$count++;
 					return '<i' . $m[1] . 'class="' . implode( ' ', $classes ) . '"' . $m[3] . '>' . $svg . '</i>';
 				}
 			}
@@ -30,8 +28,4 @@ add_filter( 'elementor/frontend/the_content', function ( $content ) {
 		},
 		$content
 	);
-	if ( $count ) {
-		$content = '<style>.ekit-svg-icon{display:inline-block;line-height:1}.ekit-svg-icon svg{width:1em;height:1em;fill:currentColor;vertical-align:-.125em}</style>' . $content;
-	}
-	return $content;
 }, 20 );
