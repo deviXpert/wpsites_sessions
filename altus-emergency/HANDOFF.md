@@ -14,4 +14,5 @@ Access: REST API with the app password in the environment (`WP_URL`, `WP_USER`, 
 All three filter `elementor/frontend/the_content` (covers page content and theme-builder header/footer).
 `snippets/test.php` runs them against a saved page: `php test.php in.html out.html`.
 Local Lighthouse on the patched homepage and Lumberton page: accessibility 92/86 → 100.
-After activating, clear the WP Rocket cache.
+Activated 2026-10-09 and WP Rocket cache cleared. Live Lighthouse: the three audits are gone on all five pages.
+Still open: Elementor popup 36373 is a `role="document"` dialog with `aria-modal` (aria-allowed-attr) on the location pages.
