@@ -32,6 +32,8 @@ Snippets 8–12 activated on the owner's go; WP Rocket cache cleared with a sing
 - Local Lighthouse on the live site, mobile (same setup that scored the old homepage 42 while PSI said 73): homepage 85–94 (TBT 3.2 s → 30–180 ms, 3.9 MB → 440 KiB), Laredo South 91, Laredo inpatient 92. Accessibility 94–97.
 - Menu opens and no `elementskit.woff` request on the live homepage.
 
+- Red button (reported by owner): RUCSS regenerated after the delay and dropped the site's blue rules for the widget button (`.health-widget-container.css-p55m0s`, `.css-e5fs27`), so it fell back to QupHealth red. #12 now injects those rules from script right before the widget loads. Tested on a copy of the live page: colour, radius and height match the original on mobile and desktop.
+
 ## Still open
 - color-contrast: brand blue `#0082C2` on white is 4.22:1 (needs 4.5; `#007BB8` gives 4.64), green `#39B54A` service headings are 2.66:1 (need 3:1 for large bold; `#2E9A3D` gives 3.62). Visible colour change, needs the owner's OK.
 - link-in-text-block on /locations/laredo-south.

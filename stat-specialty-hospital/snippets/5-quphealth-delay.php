@@ -6,7 +6,15 @@
  * check-in button before the widget is ready is remembered (on pointerup,
  * because WP Rocket's delay-JS swallows that first click), and the widget's
  * own button is clicked for the visitor once it has rendered.
+ *
+ * The site's blue styling for the widget button lived in the page CSS, but WP
+ * Rocket's Remove Unused CSS drops it once the widget no longer renders during
+ * its crawl, and the button falls back to QupHealth's red. Those rules are
+ * added back by script, just before the widget loads, so RUCSS never sees them.
  */
+function stat_qup_css() {
+	return 'button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.health-widget-container.css-p55m0s{background-color:#0082c2;box-shadow:unset!important;padding:15px 35px;width:auto!important;border-radius:8px}.css-e5fs27{font-family:Satoshi!important;font-size:clamp(15px, 4vw, 18px)!important;font-weight:500!important;text-transform:capitalize}@media(max-width:768px){button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.health-widget-container.css-p55m0s{background-color:#0082c2;padding:9px 10px!important;box-shadow:unset!important;width:100%!important;border-radius:8px}.css-e5fs27{font-size:15px!important}}';
+}
 function stat_qup_delay( $html ) {
 	if ( false === strpos( $html, 'checkin.quphealth.com/static/js/my-widget.js' ) ) {
 		return $html;
@@ -16,7 +24,7 @@ function stat_qup_delay( $html ) {
 		function ( $m ) {
 			$src = wp_json_encode( $m[2] );
 			return '<script nowprocket data-nowprocket>(function(){var src=' . $src . ',done=false,evs=["scroll","pointerdown","touchstart","keydown","mousemove","wheel"];'
-				. 'function load(){if(done){return;}done=true;evs.forEach(function(e){window.removeEventListener(e,load,{passive:true});});var s=document.createElement("script");s.src=src;s.async=true;document.head.appendChild(s);}'
+				. 'function load(){if(done){return;}done=true;evs.forEach(function(e){window.removeEventListener(e,load,{passive:true});});var st=document.createElement("style");st.id="stat-qup-css";st.textContent=' . wp_json_encode( stat_qup_css() ) . ';document.head.appendChild(st);var s=document.createElement("script");s.src=src;s.async=true;document.head.appendChild(s);}'
 				. 'evs.forEach(function(e){window.addEventListener(e,load,{passive:true});});'
 				. 'function want(root){if(root.qupWant){return;}root.qupWant=1;load();root.style.cursor="progress";var n=0,t=setInterval(function(){var b=root.querySelector(".health-widget-container");if(b||++n>150){clearInterval(t);root.style.cursor="";if(b){b.click();}}},100);}'
 				. 'function pending(e){var root=e.target.closest&&e.target.closest(".widget-root");return root&&!root.querySelector(".health-widget-container")?root:null;}'
