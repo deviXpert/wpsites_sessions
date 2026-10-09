@@ -4,7 +4,7 @@ WordPress + Astra child, Elementor Pro, ElementsKit Lite, WP Rocket, Code Snippe
 Access: REST API with the app password in this site's environment (`WP_URL`, `WP_USER`, `WP_APP_PASSWORD`).
 Same approach as `stat-specialty-hospital/` on branch `claude/project-thread-wzc9uu`; the snippets are the Stat ones with this site's AI-summary prompts.
 
-## PageSpeed snippets (Code Snippets, saved inactive 2026-10-09)
+## PageSpeed snippets (Code Snippets, active since 2026-10-09)
 
 | Snippet | ID | Fixes | Cause |
 |---|---|---|---|
@@ -13,6 +13,7 @@ Same approach as `stat-specialty-hospital/` on branch `claude/project-thread-wzc
 | `snippets/3-ekit-icons.php` | 17 | ~450 KB icon font | ElementsKit font used only for the hamburger and submenu-arrow icons |
 | `snippets/4-trustindex-lazy.php` | 18 | ~500 KB review photos | Trustindex `loader.js` and Google review photos load before the widget is in view |
 | `snippets/5-quphealth-delay.php` | 19 | ~7 s mobile CPU, 1.3 MB JS, 2× reCAPTCHA | HFCM #1 loads QupHealth `my-widget.js` (marked `nowprocket`, so WP Rocket never delays it) on page load |
+| `snippets/6-hero-cls.php` | 22 | homepage CLS 0.33 on mobile | Hero text centred in the section's min-height and the hero image widget has no height until the image loads, so partial paints move it; top-aligned on mobile and the image height reserved (front page only) |
 
 Test: `php snippets/test.php in.html out.html 1-aibtn 2-slack 3-ekit-icons 4-trustindex-lazy 5-quphealth-delay`.
 
@@ -36,6 +37,13 @@ On Stat, delaying the widget turned the check-in buttons into QupHealth's defaul
 - #19 also styles the mobile header placeholder (widget 7ab4001, plain red text until the widget renders) as the same red button from a head script, so the header looks unchanged and there is no swap shift.
 - #17 hamburger SVG redrawn to match the font glyph's bar width, thickness and spacing.
 Test with the rules stripped from used CSS (simulating RUCSS): without the fix the buttons render `#CC1E41` uppercase (matches the owner's Stat screenshot); with it the button styles match the live site exactly on mobile and desktop.
+
+## Live after activation (2026-10-09)
+Snippets 15–19 activated on the owner's go, then 22 for the layout shift they exposed. WP Rocket cache cleared each time with a single-use `rocket_clean_domain()` snippet (deleted after; leaves options `eer_rc_done`, `eer_rc_done2`, `eer_rc_done3`).
+- #19 placeholder CSS extended: before the widget renders, every check-in spot (desktop top bar was blue, others 2–6px taller) now matches the widget's red button size, so nothing moves when it swaps in. Checked on mobile and desktop: sizes and colours equal before and after load.
+- Homepage CLS: once the page got light, Chrome painted the hero before its section had fully arrived (CLS 0.33). #22 fixes it; final layout unchanged at 320–767px.
+- Live Lighthouse, mobile: homepage 85–97 (CLS 0, TBT 70–140 ms, 4.0 MB → ~400 KiB), Beaumont 94–95, Beaumont abdominal-pain 93–97, Amarillo Western 94, Tyler 95. Accessibility 94–100.
+- One tap on "Check-In Now" loads the widget and opens the location list; menu opens; no `elementskit.woff` request.
 
 ## Still open
 - color-contrast on Beaumont: `#1275BA` on `#EBEBEB` (4.11:1) and white on `#0082C2` buttons (4.22:1). Visible colour change, needs the owner's OK.
