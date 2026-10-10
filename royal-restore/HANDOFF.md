@@ -7,6 +7,7 @@ Scope: rename "Rapid Restore" → "Royal Restore" site-wide + logo. Nothing else
 - `tools/backup/` = pre-change export of all REST post types, settings, media list.
 - `tools/replace.py --apply`: replaced Rapid Restore→Royal Restore in content + `_elementor_data` of pages 4462, 4394, 4388, 4384, 4380, 4368, 3275, 2696.
 - New logo (same artwork, text redrawn in Rajdhani Regular, colour #04509B): media 4799 (full), 4800 (cropped). `site_logo` setting → 4800 (was 4100).
+- Logo replaced with client-supplied artwork (white bg removed): media 4812 `royal-restore-logo-v2.png`; `site_logo` → 4812.
 
 ## Needs wp-admin (not reachable via REST)
 - Header template 2700 and footer template 3024 (Appearance → Elementor Header & Footer Builder): swap logo image to "Royal Restore logo", and edit footer text ("Rapid Restore is your trusted partner…", copyright "Rapid Restore").
