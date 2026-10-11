@@ -51,7 +51,7 @@ def emergency():
     body = [hero, quick('Jim Towing Ltd. provides 24/7 emergency towing across Calgary, Alberta for breakdowns, accidents and vehicles that are unsafe to drive. You can call <a href="' + TEL + '">' + PHONE + '</a> any time — including nights, weekends and holidays — for immediate dispatch.'),
             when, how, blocks, areas, faq_section(faqs, cls='j-paper'), related(['flatbed-towing-calgary', 'roadside-assistance-calgary', 'areas']),
             cta(f'Stranded {hl("Right Now?")}', f'Call {PHONE} for immediate dispatch. A real person answers 24/7.')]
-    return s, '24/7 Emergency Towing in Calgary', wrap(body), ('24/7 Emergency Towing in Calgary | Fast Dispatch | Jim Towing', 'Need an emergency tow in Calgary? Jim Towing offers 24/7 towing for breakdowns and accidents Call 587-914-0130.')
+    return s, '24/7 Emergency Towing in Calgary', wrap(body), ('24/7 Emergency Towing in Calgary | Fast Dispatch | Jim Towing', 'Need an emergency tow in Calgary? Jim Towing offers 24/7 towing for breakdowns and accidents. Call 587-914-0130.')
 
 def flatbed():
     s = 'flatbed-towing-calgary'; seed(s)
