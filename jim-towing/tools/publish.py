@@ -36,7 +36,7 @@ def ensure_menu():
     item('Home', lib.PAGES['home'])
     sv = item('Services', lib.PAGES['services'])
     for s, t, *_ in lib.SVC: item(t, lib.surl(s), sv)
-    item('Service Areas', lib.PAGES['areas']); item('Pricing', lib.PAGES['pricing']); item('About', lib.PAGES['about']); item('Contact', lib.PAGES['contact'])
+    item('Service Areas', lib.PAGES['areas']); item('About', lib.PAGES['about']); item('Contact', lib.PAGES['contact'])
     c['menu'] = mid; c['menu_slug'] = m.get('slug', 'jim-main-menu'); save(); print('menu', mid)
     return mid
 

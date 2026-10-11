@@ -37,7 +37,7 @@ The CSS/JS live in the **header** template (`jim.css`, `jim.js`), so push `heade
 | Service Areas | 164 | `/service-areas/` |
 | About | 166 | `/about/` |
 | Contact | 168 | `/contact/` |
-| Pricing | 274 | `/pricing/` |
+| Pricing | 274 | removed (draft), `/pricing/` 301 → `/services/` via Redirection |
 | Header / Footer site parts | 428 / 430 | conditions `include/general` |
 | Menu "Jim Main Menu" | 15 | custom links |
 
