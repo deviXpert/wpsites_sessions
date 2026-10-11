@@ -51,7 +51,7 @@ POST_HTML = f'''<!-- wp:paragraph --><p>A breakdown on Deerfoot Trail, a fender-
 <!-- wp:heading --><h2>2. Have the right details ready when you call</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>A quick, clear call gets the right truck to you faster. When you call <a href="{TEL}">{PHONE}</a>, tell the dispatcher:</p><!-- /wp:paragraph -->
 <!-- wp:list {{"ordered":true}} --><ol><li>Your exact location — cross streets, exit number or a nearby landmark.</li><li>Your vehicle make and model.</li><li>What happened (won't start, accident, flat tire, out of fuel…).</li><li>Where you want the vehicle taken — home, your mechanic, a body shop or a dealership.</li></ol><!-- /wp:list -->
-<!-- wp:paragraph --><p>We confirm the price and an estimated arrival time before we dispatch, so there are no surprises.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>We confirm an estimated arrival time before we dispatch, so you know what to expect.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2>3. Not every problem needs a tow</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>A dead battery, a flat tire or an empty tank can often be fixed on the spot with <a href="{surl("roadside-assistance-calgary")}">roadside assistance</a>. If the engine won't run after a jump, there's a fluid leak, a damaged wheel or axle, or the car was in a collision, <a href="{surl("emergency-towing-calgary")}">towing</a> is the safer option. Our team will tell you honestly which one you need.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2>4. Ask for a flatbed when it matters</h2><!-- /wp:heading -->

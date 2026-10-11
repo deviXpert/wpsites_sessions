@@ -38,7 +38,7 @@ SVC = [
     ('emergency-fuel-delivery-calgary', 'Emergency Fuel Delivery', 'gas-pump', 'night_sedan', 'Ran out of gas? We bring enough fuel to get you to the nearest station — day or night.'),
 ]
 def surl(slug): return f'{SITE}/services/{slug}/'
-PAGES = {'home': SITE + '/', 'services': SITE + '/services/', 'areas': SITE + '/service-areas/', 'pricing': SITE + '/pricing/',
+PAGES = {'home': SITE + '/', 'services': SITE + '/services/', 'areas': SITE + '/service-areas/',
          'about': SITE + '/about/', 'contact': SITE + '/contact/'}
 
 # ---------------- element primitives ----------------
@@ -94,7 +94,7 @@ CSS = _re.sub(r'\s*([{}:;,>])\s*', r'\1', _re.sub(r'/\*.*?\*/', '', open(os.path
 JS = open(os.path.join(D, 'jim.js')).read()
 LD = {'@context': 'https://schema.org', '@type': 'AutomotiveBusiness', 'additionalType': 'https://schema.org/TowingService',
       '@id': SITE + '/#business', 'name': 'Jim Towing Ltd.', 'url': SITE + '/', 'telephone': '+1-587-914-0130', 'email': EMAIL,
-      'image': iu('downtown'), 'logo': LOGO['full'], 'priceRange': 'From $69',
+      'image': iu('downtown'), 'logo': LOGO['full'], 
       'address': {'@type': 'PostalAddress', 'addressLocality': 'Calgary', 'addressRegion': 'AB', 'addressCountry': 'CA'},
       'openingHoursSpecification': {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], 'opens': '00:00', 'closes': '23:59'},
       'aggregateRating': {'@type': 'AggregateRating', 'ratingValue': RATING, 'reviewCount': REVIEWS},
@@ -133,7 +133,7 @@ FMAP = f'<div class="j-fmap"><iframe title="Jim Towing Ltd. on Google Maps" load
 def footer():
     soc = ''.join(f'<a href="{u}" target="_blank" rel="noopener" aria-label="Jim Towing on {n}">{bi(i)}</a>' for i, n, u in SOC)
     svc = ''.join(f'<li><a href="{surl(s)}">{t}</a></li>' for s, t, *_ in SVC)
-    comp = ''.join(f'<li><a href="{u}">{t}</a></li>' for t, u in [('Home', PAGES['home']), ('All Services', PAGES['services']), ('Service Areas', PAGES['areas']), ('Pricing', PAGES['pricing']), ('About Us', PAGES['about']), ('Contact', PAGES['contact'])])
+    comp = ''.join(f'<li><a href="{u}">{t}</a></li>' for t, u in [('Home', PAGES['home']), ('All Services', PAGES['services']), ('Service Areas', PAGES['areas']), ('About Us', PAGES['about']), ('Contact', PAGES['contact'])])
     areas = {'emergency-towing-calgary': 'Calgary + area', 'flatbed-towing-calgary': 'Calgary + area', 'roadside-assistance-calgary': 'All Calgary',
              'long-distance-towing-alberta': 'Across Alberta', 'battery-jump-start-calgary': 'All Calgary', 'emergency-fuel-delivery-calgary': 'Calgary + area'}
     rows = ''.join(f'<a class="j-db-row" href="{surl(s)}"><span class="n">{i + 1:02d}</span><span class="s"><i class="fas fa-{ic}" aria-hidden="true"></i>{t}</span>'
@@ -142,14 +142,14 @@ def footer():
     board = (f'<div class="j-db rv"><div class="j-db-head"><div><small>Live dispatch board</small><b>Jim Towing &middot; Calgary, AB</b></div>'
              f'<div class="j-db-clock"><span class="j-clock" data-tz="America/Edmonton">--:--</span><small>Calgary time &middot; <em class="j-shift">open 24/7</em></small></div></div>'
              f'<div class="j-db-cols" aria-hidden="true"><span>#</span><span>Service</span><span class="a">Coverage</span><span>Status</span></div>{rows}'
-             f'<div class="j-db-foot"><span><i class="fas fa-star"></i> {RATING} on Google &middot; {REVIEWS} reviews</span><span><i class="fas fa-tag"></i> Roadside from $69 &middot; Towing from $75</span></div></div>')
+             f'<div class="j-db-foot"><span><i class="fas fa-star"></i> {RATING} on Google &middot; {REVIEWS} reviews</span><span><i class="fas fa-bolt"></i> Fast dispatch across Calgary &amp; Alberta</span></div></div>')
     soc = ''.join(f'<a href="{u}" target="_blank" rel="noopener" aria-label="Jim Towing on {n}">{bi(i)}</a>' for i, n, u in SOC)
     brand = (f'<div class="j-fbrand rv rv-d1"><div class="j-fb-top"><img src="{LOGO_SM["full"]}" alt="Jim Towing Ltd. logo" width="240" height="224" loading="lazy">'
              f'<p>24/7 towing &amp; roadside assistance for Calgary and surrounding Alberta communities.</p></div>'
              f'<a class="j-fb-phone" href="{TEL}"><small>24/7 dispatch line</small>{PHONE}</a>'
              f'<div class="j-fb-meta"><a href="mailto:{EMAIL}"><i class="fas fa-envelope"></i>{EMAIL}</a><span><i class="fas fa-clock"></i>Open 24 hours, 7 days</span></div>'
              f'<div class="j-soc">{soc}</div>{FMAP}</div>')
-    links = ''.join(f'<a href="{u}">{t}</a>' for t, u in [('Home', PAGES['home']), ('Services', PAGES['services']), ('Service Areas', PAGES['areas']), ('Pricing', PAGES['pricing']), ('About', PAGES['about']), ('Contact', PAGES['contact'])])
+    links = ''.join(f'<a href="{u}">{t}</a>' for t, u in [('Home', PAGES['home']), ('Services', PAGES['services']), ('Service Areas', PAGES['areas']), ('About', PAGES['about']), ('Contact', PAGES['contact'])])
     road = '<div class="j-froad" aria-hidden="true"><div class="j-froad-line"></div><i class="fas fa-truck-pickup j-froad-truck"></i></div>'
     f = C([
         RAW(road),
@@ -186,7 +186,7 @@ def cta(title='Need Towing in ' + hl('Calgary?'), text="Don't let a breakdown, a
 def reviews(cls='j-paper'):
     badge = RAW(f'<a class="j-gbadge" href="{MAPS}" target="_blank" rel="noopener"><span class="g">{bi("google")}</span><b>{RATING}</b><span>{stars()}<small>Based on {REVIEWS} Google reviews</small></span></a>')
     acts = BTNS(BTN('Read our Google reviews', MAPS, 'j-btn-dark j-btn-sm', 'external-link-alt', True))
-    return sec([C([C([EB('Reviews'), H('Calgary Drivers ' + hl('Trust Jim Towing'), 'h2', 'j-h2'), P(f'Rated {RATING} out of 5 by {REVIEWS} customers on Google — for fast dispatch, fair pricing and careful handling.', 'j-lead')], 'j-col'), C([badge, acts], 'j-col j-stack')], 'j-headrow j-row j-wrap rv', fd='row'),
+    return sec([C([C([EB('Reviews'), H('Calgary Drivers ' + hl('Trust Jim Towing'), 'h2', 'j-h2'), P(f'Rated {RATING} out of 5 by {REVIEWS} customers on Google — for fast dispatch, clear communication and careful handling.', 'j-lead')], 'j-col'), C([badge, acts], 'j-col j-stack')], 'j-headrow j-row j-wrap rv', fd='row'),
                 C([W('shortcode', 'j-reviews-sc', shortcode='[trustindex no-registration=google]')], 'rv')], cls + ' j-sec-tight')
 
 def related(slugs, title='Related ' + hl('Services')):
@@ -194,7 +194,7 @@ def related(slugs, title='Related ' + hl('Services')):
     for s, t, ic, im, d in SVC:
         if s in slugs:
             cards += f'<a class="j-rc rv" href="{surl(s)}"><img src="{iu(im, "med")}" alt="{esc(ia(im))}" loading="lazy" width="225" height="300"><span><b>{t}</b><small>Learn more</small></span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>'
-    for k, t, d in [('pricing', 'Pricing', 'Rates from $69'), ('areas', 'Service Areas', 'Calgary &amp; Alberta')]:
+    for k, t, d in [('areas', 'Service Areas', 'Calgary &amp; Alberta')]:
         if k in slugs:
             cards += f'<a class="j-rc rv" href="{PAGES[k]}"><img src="{iu("downtown" if k == "areas" else "logo_truck", "med")}" alt="" loading="lazy" width="225" height="300"><span><b>{t}</b><small>{d}</small></span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>'
     return sec([head('Keep exploring', title), RAW(f'<div class="j-rel">{cards}</div>')], 'j-paper j-sec-tight')

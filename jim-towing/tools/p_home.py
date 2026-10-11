@@ -23,7 +23,7 @@ def build():
     # ---------- hero ----------
     trust = (f'<div class="j-trust"><div><span class="j-ti g">{bi("google")}</span><span><b>{RATING} {stars()}</b><span>{REVIEWS} Google reviews</span></span></div>'
              '<div><span class="j-ti"><i class="fas fa-clock"></i></span><span><b>24/7</b><span>Nights, weekends, holidays</span></span></div>'
-             '<div><span class="j-ti"><i class="fas fa-tag"></i></span><span><b>From $75</b><span>Quote before dispatch</span></span></div></div>')
+             '<div><span class="j-ti"><i class="fas fa-map-marker-alt"></i></span><span><b>Calgary &amp; area</b><span>All quadrants + nearby towns</span></span></div></div>')
     hero = C([
         hero_img('downtown'),
         C([
@@ -33,7 +33,7 @@ def build():
                BTNS(CALL(), QUOTE('j-btn-ghost'), cls='j-up j-up3'),
                RAW(trust, 'j-up j-up4')], 'j-hero-copy j-col'),
             C([H('Need a tow? <span class="j-red">Get help now.</span>', 'h2', 'j-cf-t'),
-               P("Send your details and we'll call you back to confirm dispatch and pricing.", 'j-cf-s'),
+               P("Send your details and we'll call you back to confirm dispatch and an arrival time.", 'j-cf-s'),
                form_widget(),
                P(f'Stranded right now? <a href="{TEL}">Call {PHONE}</a> for immediate dispatch.', 'j-cf-note')], 'j-card-form j-col j-up j-up2', _element_id='request'),
         ], 'j-in', fd='row'),
@@ -98,7 +98,7 @@ def build():
            P('Jim Towing provides towing and roadside assistance across Calgary, Alberta, with service extending to surrounding communities and Alberta destinations depending on the type of service required.'),
            P('<strong>Long-distance transport destinations include:</strong>'),
            RAW('<div class="j-chips big">' + ''.join(f'<span><i class="fas fa-map-marker-alt"></i>{c}</span>' for c in ['Calgary', 'Airdrie', 'Chestermere', 'Okotoks', 'Cochrane', 'Red Deer', 'Edmonton']) + '</div>'),
-           P('For a specific pickup and destination, contact Jim Towing to confirm service availability and pricing.', 'j-note'),
+           P('For a specific pickup and destination, contact Jim Towing to confirm service availability.', 'j-note'),
            BTNS(BTN('See all service areas', PAGES['areas'], 'j-btn-dark', 'arrow-right', True), CALL('j-btn-line'))], 'j-stack j-col rv rv-l'),
         C([RAW(route_map())], 'j-col rv rv-r'),
     ], 'j-split', fd='row')], 'j-white')
@@ -111,7 +111,6 @@ def build():
 
     faqs = [('What towing services does Jim Towing provide in Calgary?', 'Jim Towing provides 24/7 emergency towing, professional flatbed towing, roadside assistance, long-distance vehicle transport, battery jump-start service and emergency fuel delivery.'),
             ('Is Jim Towing available 24/7?', 'Yes. Jim Towing provides towing and roadside assistance 24 hours a day, 7 days a week, including nights, weekends and holidays.'),
-            ('How much does towing cost in Calgary?', 'The cost depends on the vehicle, pickup location, destination, distance and type of service required. Jim Towing currently advertises towing starting from $75, while the final price depends on the specific job.'),
             ('Does Jim Towing offer flatbed towing?', 'Yes. Jim Towing provides professional flatbed towing for vehicles including luxury cars, AWD vehicles, SUVs, motorcycles, lowered vehicles and accident-damaged vehicles.'),
             ('Can Jim Towing help with a dead battery?', 'Yes. Jim Towing provides a battery jump-start service in Calgary for vehicles with dead or weak batteries.'),
             ('What if I run out of gas?', 'Jim Towing provides emergency fuel delivery and can bring fuel to your location so you can continue your journey.'),
@@ -150,7 +149,7 @@ def svc_cards():
             C([H(t, 'h3', 'j-h3'), P(d, 'j-sc-t'), RAW(f'<a class="j-sc-go" href="{surl(s)}">Learn more <i class="fas fa-arrow-right" aria-hidden="true"></i></a>')], 'j-sc-body j-col'),
         ], f'j-sc j-col {spans[i]} rv rv-d{i % 3}', tag='article'))
     cards.append(C([RAW('<span><i class="fas fa-question"></i>Not sure?</span>', 'j-sc-num'),
-                    C([H('Not Sure What You Need?', 'h3', 'j-h3'), P("Tell us what happened and where you are. We'll recommend the right service — towing, flatbed or a roadside fix — and confirm the price before dispatch."), BTNS(BTN(f'Call {PHONE}', TEL, 'j-btn-dark'))], 'j-sc-body j-col')],
+                    C([H('Not Sure What You Need?', 'h3', 'j-h3'), P("Tell us what happened and where you are. We'll recommend the right service — towing, flatbed or a roadside fix — and send the right truck."), BTNS(BTN(f'Call {PHONE}', TEL, 'j-btn-dark'))], 'j-sc-body j-col')],
                    'j-sc j-sc-cta j-col big rv rv-d1'))
     return cards
 
@@ -158,7 +157,7 @@ def stats_html():
     return (f'<div class="j-stats rv"><div class="j-stat"><b><span data-count="{RATING}">{RATING}</span><em>★</em></b><span>Google rating</span></div>'
              f'<div class="j-stat"><b><span data-count="{REVIEWS}">{REVIEWS}</span><em>+</em></b><span>Google reviews</span></div>'
              '<div class="j-stat"><b><span data-count="24">24</span><em>/7</em></b><span>Dispatch &amp; support</span></div>'
-             '<div class="j-stat"><b><em>$</em><span data-count="75">75</span></b><span>Towing starts from</span></div></div>')
+             '<div class="j-stat"><b><span data-count="6">6</span></b><span>Core towing &amp; roadside services</span></div></div>')
 
 def why_cards():
     why_items = [('clock', '24/7 Availability', 'Vehicle emergencies happen at any time. Jim Towing provides towing and roadside assistance 24 hours a day, 7 days a week.'),
