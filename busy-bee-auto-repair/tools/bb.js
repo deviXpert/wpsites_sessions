@@ -97,7 +97,7 @@
 
   /* ---------- symptom checker: make→model dropdowns, vehicle preview, instant guidance ---------- */
   /* Imagin.studio customer key: renders with the demo key are watermarked, so the Civic photo is used until a key is set */
-  var IMAGIN_KEY = '';
+  var IMAGIN_KEY = 'img'; // 'img' = Imagin demo key (watermarked) – replace with the shop's commercial key
   var RULES = [
     { k: /brak|squeal|grind|pedal|stopping/i, t: 'Brakes', u: 2, svc: 'Brake repair & replacement',
       c: ['Worn brake pads or rotors', 'Sticking caliper or slide pins', 'Low or contaminated brake fluid'],
@@ -143,6 +143,7 @@
     var img = $('.bb-veh-img img', sec), out = $('.bb-result', sec), form = $('form', sec);
     var issue = f('issue'), make = f('make'), model = f('model'), cars = window.BB_CARS || {};
     var civic = img ? { src: img.getAttribute('src'), srcset: img.getAttribute('srcset') } : null;
+    if (img) img.addEventListener('error', function () { if (civic && img.src !== civic.src) { img.src = civic.src; } });
     var opts = model ? Array.prototype.slice.call(model.options) : [];
 
     function filterModels() {
@@ -161,7 +162,7 @@
       if (IMAGIN_KEY && fam) {
         var u = 'https://cdn.imagin.studio/getImage?customer=' + encodeURIComponent(IMAGIN_KEY) + '&make=' + c.slug +
           '&modelFamily=' + fam + (y ? '&modelYear=' + y : '') + '&angle=23&zoomType=fullscreen&width=';
-        img.removeAttribute('srcset'); img.src = u + '800';
+        img.loading = 'eager'; img.removeAttribute('srcset'); img.removeAttribute('sizes'); img.src = u + '800';
         img.alt = md + ' studio render';
       } else if (civic) {
         img.src = civic.src; civic.srcset ? img.setAttribute('srcset', civic.srcset) : img.removeAttribute('srcset');
