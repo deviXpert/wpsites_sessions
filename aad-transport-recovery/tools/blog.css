@@ -1,0 +1,75 @@
+.x-blog-head{gap:14px;margin-bottom:10px}
+/* post cards (archive-posts + related posts, cards skin) */
+.x-blog-grid{width:100%}
+.x-blog-grid .elementor-post{transition:transform .35s var(--x-ease)}
+.x-blog-grid .elementor-post:hover{transform:translateY(-6px)}
+.x-blog-grid .elementor-post__card{border-radius:22px!important;border:1px solid var(--x-line)!important;background:#fff!important;box-shadow:var(--x-sh)!important;overflow:hidden;display:flex;flex-direction:column;height:100%;transition:box-shadow .35s,border-color .35s}
+.x-blog-grid .elementor-post:hover .elementor-post__card{box-shadow:var(--x-sh-lg)!important;border-color:rgba(254,100,2,.4)!important}
+.x-blog-grid .elementor-post__thumbnail img{transition:transform .6s var(--x-ease)}
+.x-blog-grid .elementor-post:hover .elementor-post__thumbnail img{transform:translate(-50%,-50%) scale(1.06)}
+.x-blog-grid article:not(.has-post-thumbnail) .elementor-post__card:before{content:"\f0d1";font-family:"Font Awesome 5 Free";font-weight:900;font-size:54px;color:rgba(255,255,255,.9);display:grid;place-items:center;aspect-ratio:16/10;background:radial-gradient(400px 200px at 90% 0,rgba(254,100,2,.45),transparent 60%),linear-gradient(135deg,var(--x-navy),var(--x-navy-2))}
+.x-blog-grid .elementor-post__badge{background:var(--x-orange)!important;color:#fff!important;font-family:"Outfit",sans-serif;font-weight:700;font-size:12px!important;letter-spacing:.08em;text-transform:uppercase;border-radius:999px!important;padding:7px 14px!important;margin:18px!important;line-height:1!important}
+.x-blog-grid article:not(.has-post-thumbnail) .elementor-post__badge{position:absolute;top:0;left:0}
+.x-blog-grid .elementor-post__card{position:relative}
+.x-blog-grid .elementor-post__text{padding:26px 26px 0!important;flex:1;display:flex;flex-direction:column;gap:10px;margin-top:0!important}
+.x-blog-grid .elementor-post__title{margin:0!important}
+.x-blog-grid .elementor-post__title a{font-family:"Outfit",sans-serif;font-weight:700;font-size:21px;line-height:1.3;color:var(--x-navy)!important;text-transform:capitalize;transition:color .25s}
+.x-blog-grid .elementor-post__title a:hover{color:var(--x-orange)!important}
+.x-blog-grid .elementor-post__excerpt p{color:var(--x-text);font-size:15px;line-height:1.7;margin:0}
+.x-blog-grid .elementor-post__read-more{font-family:"Outfit",sans-serif;font-weight:700;font-size:15px;color:var(--x-orange)!important;margin-top:auto;padding-bottom:22px;display:inline-block}
+.x-blog-grid .elementor-post__read-more:after{content:" →";transition:margin .25s}
+.x-blog-grid .elementor-post__read-more:hover:after{margin-left:5px}
+.x-blog-grid .elementor-post__meta-data{border-top:1px solid var(--x-line)!important;padding:14px 26px!important;font-size:13px;color:#8A93AB!important;font-weight:500}
+.x-blog-grid .elementor-post__meta-data:before{content:"\f073";font-family:"Font Awesome 5 Free";font-weight:400;color:var(--x-orange);margin-right:8px}
+/* pagination */
+.x-blog-grid .elementor-pagination{margin-top:44px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.x-blog-grid .elementor-pagination .page-numbers{display:inline-grid;place-items:center;min-width:46px;height:46px;padding:0 16px;margin:0!important;border-radius:999px;border:1.5px solid var(--x-line);background:#fff;font-family:"Outfit",sans-serif;font-weight:700;color:var(--x-navy)!important;transition:all .25s}
+.x-blog-grid .elementor-pagination a.page-numbers:hover{border-color:var(--x-orange);color:var(--x-orange)!important}
+.x-blog-grid .elementor-pagination .page-numbers.current{background:var(--x-orange);border-color:var(--x-orange);color:#fff!important}
+.x-blog-grid .elementor-posts-nothing-found{background:var(--x-light);border:1px dashed var(--x-line);border-radius:18px;padding:40px;text-align:center;color:var(--x-navy);font-weight:600}
+/* single post hero */
+.x-post-hero .x-hero-title .elementor-heading-title{font-size:clamp(32px,4vw,52px)}
+.x-post-meta .elementor-icon-list-items{gap:10px 22px}
+.x-post-meta .elementor-icon-list-item{margin:0!important;padding:0!important}
+.x-post-meta .elementor-icon-list-item:after{display:none!important}
+.x-post-meta .elementor-icon-list-text,.x-post-meta a{color:#D5DCEE!important;font-size:15px;font-weight:500}
+.x-post-meta a:hover{color:#fff!important}
+.x-post-meta .elementor-icon-list-icon i{color:var(--x-orange)!important;font-size:14px}
+/* single post body */
+.x-post-layout{gap:36px;align-items:flex-start}
+.x-post-card{gap:26px}
+.x-post-img img{width:100%;border-radius:18px;aspect-ratio:16/9;object-fit:cover}
+.x-post-img:empty{display:none}
+.x-prose p{margin:0 0 1.1em}.x-prose h2{font-size:30px}
+.x-prose img{border-radius:16px;height:auto}
+.x-prose blockquote{margin:28px 0;padding:22px 26px;border-left:4px solid var(--x-orange);background:#FFF7F1;border-radius:0 16px 16px 0;color:var(--x-navy);font-weight:500}
+.x-prose table{width:100%;border-collapse:collapse;margin:22px 0}.x-prose th,.x-prose td{border:1px solid var(--x-line);padding:10px 14px;text-align:left}.x-prose th{background:var(--x-light);color:var(--x-navy)}
+.x-post-tags .elementor-icon-list-text,.x-post-tags a{font-size:14px;color:var(--x-navy)!important;font-weight:600}
+.x-post-tags .elementor-icon-list-icon i{color:var(--x-orange)!important}
+.x-share{border-top:1px solid var(--x-line);padding-top:22px}
+.x-share .elementor-share-btn{background:var(--x-light)!important;color:var(--x-navy)!important;transition:background .25s,color .25s,transform .25s}
+.x-share .elementor-share-btn:hover{background:var(--x-orange)!important;color:#fff!important;transform:translateY(-3px)}
+.x-share .elementor-share-btn i,.x-share .elementor-share-btn svg{color:inherit!important;fill:currentColor!important}
+.x-post-nav .elementor-post-navigation{border-top:1px solid var(--x-line);padding-top:22px}
+.x-post-nav .post-navigation__prev--label,.x-post-nav .post-navigation__next--label{font-family:"Outfit",sans-serif;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--x-orange)}
+.x-post-nav .post-navigation__prev--title,.x-post-nav .post-navigation__next--title{font-family:"Outfit",sans-serif;font-weight:700;color:var(--x-navy);font-size:16px}
+.x-post-nav .post-navigation__arrow-wrapper{color:var(--x-orange)}
+.x-post-aside{flex:0 0 300px;width:300px;gap:22px;position:sticky;top:140px}
+.x-post-aside .x-toc{position:static;flex:none;width:100%}
+.x-callcard{background:radial-gradient(400px 220px at 100% 0,rgba(254,100,2,.35),transparent 60%),linear-gradient(160deg,var(--x-navy),var(--x-navy-2));border-radius:22px;padding:28px!important;gap:10px;box-shadow:var(--x-sh-lg)}
+.x-callcard-k p{margin:0;font-family:"Outfit",sans-serif;font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--x-orange)}
+.x-callcard-t .elementor-heading-title{color:#fff!important;font-family:"Outfit",sans-serif;font-weight:800;font-size:24px;line-height:1.2}
+.x-callcard-d p{color:#C9D3EC;font-size:15px;margin:0 0 6px}
+.x-callcard .x-btn .elementor-button{width:100%;justify-content:center}
+.x-sec-post{padding-top:70px!important}.x-sec-related{padding-top:0!important}
+.x-sec-related:not(:has(article)){display:none!important}
+@media(max-width:1024px){.x-post-layout{flex-direction:column!important}.x-post-aside{position:static;width:100%!important;flex:auto}.x-post-aside .x-toc{display:none}}
+@media(max-width:767px){.x-blog-grid .elementor-post__text{padding:22px 22px 0!important}.x-blog-grid .elementor-post__meta-data{padding:12px 22px!important}.x-post-card{gap:20px}}
+.x-post-img:has(img[src*="placeholder"]){display:none!important}
+/* let the blog templates span full width inside Astra's single/archive containers (Astra adds narrow/separate containers on posts) */
+.site-content>.ast-container:has(.x-blog){max-width:none!important;width:100%!important;padding:0!important;display:block!important;margin:0!important}
+.site-content>.ast-container:has(.x-blog) #primary,.site-content>.ast-container:has(.x-blog) .elementor-location-single,.site-content>.ast-container:has(.x-blog) .elementor-location-archive{margin:0!important;padding:0!important;width:100%!important;max-width:none!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.x-share .elementor-share-btn__icon,.x-share .elementor-share-btn__icon i{color:var(--x-navy)!important;background:transparent!important}
+.x-share .elementor-share-btn__icon svg{fill:var(--x-navy)!important}
+.x-share .elementor-share-btn:hover .elementor-share-btn__icon,.x-share .elementor-share-btn:hover .elementor-share-btn__icon i{color:#fff!important}
+.x-share .elementor-share-btn:hover .elementor-share-btn__icon svg{fill:#fff!important}

@@ -45,6 +45,20 @@ Original-site backup (pages, posts, templates, media list, menus, settings) is i
 - Crawl after fix: all 26 sitemap/internal pages 200, no broken internal links or assets, no staging URLs; http:// and www. 301 to https://aadrecovery.co.uk/; all original-site URLs still resolve.
 - Still open: contact forms send to `ahsanhashmi1925@gmail.com` (switch to the client's inbox?); default "Hello world!" post is published and in the sitemap; Elementor → Tools → Clear Files & Data + LiteSpeed purge-all recommended so generated CSS/cache rebuilds.
 
+## Form recipients (2026-10-12)
+- All 19 Elementor forms (13 service pages, Towing/Flatbed/Emergency, Contact, Home 1208, old Home template 21) now email `ahsanhashmi1925@gmail.com, info@aadrecovery.co.uk` (Email + Email 2 "To"). Script: `tools/form_recipients.py ADDRESS [--apply]`; backups in `tools/wp-backup/pre-form-recipients/`.
+
+## Blog (2026-10-12)
+- Page **Blog** (ID 1303, `/blog/`) set as the WordPress posts page.
+- Theme Builder templates, built by `tools/build_blog.py` (`--publish` creates/updates them; IDs in `created.json`), styles in `tools/blog.css`:
+  - **Blog – Archive (Listing)** ID 1304, condition *All archives* (blog page, categories, tags, author, date, search). Hero with archive title (fallback "Recovery Tips & News" on /blog/), Archive Posts widget (cards, 3/2/1 cols, pagination), CTA.
+  - **Blog – Single Post** ID 1306, condition *Posts*. Hero (title, date, category), article card (featured image, content, tags, share, prev/next), sticky aside (auto table of contents from H2–H4 + 24/7 call card), related posts (hidden when none), CTA.
+  - Both use page template `elementor_header_footer`; blog.css also stretches Astra's narrow/separate post container only on pages containing `.x-blog`. Alternative without CSS: Astra Customizer → Blog → Single Post → container *Full Width*.
+  - Templates were created with `wp/v2/elementor_library` + conditions via `elementor/v1/site-editor/templates-conditions/{id}` (that endpoint also refreshes Elementor's conditions cache). Clear CSS with `DELETE elementor/v1/cache`.
+- Menu: the header is a custom HTML mega-menu (not the WP menu), so Blog was added by `tools/add_blog_nav.py` to the desktop nav + mobile drawer (template 1202 and Canvas home 1208) and to the footer Company links (1203 + 1208). Also added to WP menu "Mian" (item 1308) for completeness. Backups: `tools/wp-backup/pre-blog-nav/`.
+- Author was left out of the post meta because the admin user's display name is their email; the author archive slug also contains the email.
+- Only the default "Hello world!" post exists; replace it with real articles (set a featured image for best cards).
+
 ## Open issues / next steps
 1. **Boxed hero on inner pages (Elementor Full Width template):** cause = stale Elementor per-post CSS (element IDs changed between rebuilds). User does NOT want extra CSS hacks. Agreed approach (pending user confirmation): keep site-wide header/footer, keep element IDs stable (builders now seed `random` per page — `build_services.py` uses `random.seed(slug)`; apply same to `build_pages.py`), then user runs **Elementor → Tools → Clear Files & Data** once.
 2. Publish the 13 service pages as drafts → screenshot desktop + mobile → user review.

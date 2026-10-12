@@ -3,7 +3,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 B = os.path.join(os.path.dirname(__file__), 'wp-backup')
 P = {p['id']: p for p in json.load(open(f'{B}/pages.json'))}
 L = {t['id']: t for t in json.load(open(f'{B}/elementor_library.json'))}
-U = 'https://maroon-raven-160825.hostingersite.com'
+U = 'https://aadrecovery.co.uk'
 UP = U + '/wp-content/uploads/2026/09/'
 PHONE, TEL = '07771 004242', 'tel:07771004242'
 
