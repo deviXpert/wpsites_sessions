@@ -1,0 +1,998 @@
+<body> [0,0 768x15611] . {ff=-apple-system; fontSize=16px; fontWeight=400; lineHeight=24px; color=#020618; backgroundColor=#ffffff}
+  <main> [0,0 768x15611] . {}
+    <section> [0,0 768x1298] .relative hidden overflow-hidden bg-paper text-ink md:block {position=relative; color=#1a2024; backgroundColor=#ffffff; overflow=hidden}
+      <div> [0,0 768x1298] .absolute inset-0 overflow-hidden bg-paper {position=absolute; backgroundColor=#ffffff; overflow=hidden; top=0px; left=0px; right=0px; bottom=0px}
+        <img> [0,0 768x1298] .absolute inset-0 h-full w-full object-cover object-center src=/assets/busy-bee-workshop-hero-BWgzEgab.jpg alt="Silver family SUV inside a clean professional mechanic shop" {position=absolute; maxWidth=100%; overflow=clip; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover}
+        <div> [0,0 768x1298] .absolute inset-0 bg-[linear-gradient(180deg,color-mix(in_oklab,var(--pitch)_86%,transparent)_0%,color-mix(in_oklab,var(--pitch)_70%,transpar {position=absolute; backgroundImage=linear-gradient(#010101/0.86 0%, #010101/0.7 36%, #010101/0.42 64%, #010101/0.9 100%), linear-gradient(90deg, #010101/0.72 0%, #010101/0.38 42%, transparent 72%); top=0px; left=0px; right=0px; bottom=0px}
+        <div> [253,734 0x0] .pointer-events-none absolute {position=absolute; top=733.516px; left=253.438px; right=514.562px; bottom=564.75px}
+          <span> [221,702 64x64] .zone-fill absolute left-1/2 top-1/2 h-11 w-11 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-bee bg-bee/35 shadow-[0_0_0_5px {position=absolute; backgroundColor=#e87745/0.326; borderRadius=9999px; border=2px solid #e77545; boxShadow=#e87945/0.206 0px 0px 0px 5px, #e87945/0.515 0px 0px 23.3805px 0px; top=0px; left=0px; right=-64px; bottom=-64px}
+          <span> [249,730 8x8] .absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink {position=absolute; backgroundColor=#1a2024; borderRadius=9999px; top=0px; left=0px; right=-8px; bottom=-8px}
+        <div> [300,714 0x0] .pointer-events-none absolute {position=absolute; top=714.031px; left=299.516px; right=468.484px; bottom=584.234px}
+          <span> [268,682 64x64] .zone-fill absolute left-1/2 top-1/2 h-11 w-11 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-bee bg-bee/35 shadow-[0_0_0_5px {position=absolute; backgroundColor=#e87745/0.326; borderRadius=9999px; border=2px solid #e77545; boxShadow=#e87945/0.206 0px 0px 0px 5px, #e87945/0.515 0px 0px 23.3805px 0px; top=0px; left=0px; right=-64px; bottom=-64px}
+          <span> [296,710 8x8] .absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink {position=absolute; backgroundColor=#1a2024; borderRadius=9999px; top=0px; left=0px; right=-8px; bottom=-8px}
+        <div> [311,954 0x0] .pointer-events-none absolute {position=absolute; top=954.219px; left=311.031px; right=456.969px; bottom=344.047px}
+          <span> [279,922 64x64] .zone-fill absolute left-1/2 top-1/2 h-11 w-11 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-bee bg-bee/35 shadow-[0_0_0_5px {position=absolute; backgroundColor=#e87745/0.326; borderRadius=9999px; border=2px solid #e77545; boxShadow=#e87945/0.206 0px 0px 0px 5px, #e87945/0.515 0px 0px 23.3805px 0px; top=0px; left=0px; right=-64px; bottom=-64px}
+          <span> [307,950 8x8] .absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink {position=absolute; backgroundColor=#1a2024; borderRadius=9999px; top=0px; left=0px; right=-8px; bottom=-8px}
+        <div> [349,656 0x0] .pointer-events-none absolute {position=absolute; top=655.609px; left=349.438px; right=418.562px; bottom=642.656px}
+          <span> [317,624 64x64] .zone-fill absolute left-1/2 top-1/2 h-11 w-11 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-bee bg-bee/35 shadow-[0_0_0_5px {position=absolute; backgroundColor=#e87745/0.326; borderRadius=9999px; border=2px solid #e77545; boxShadow=#e87945/0.206 0px 0px 0px 5px, #e87945/0.515 0px 0px 23.3805px 0px; top=0px; left=0px; right=-64px; bottom=-64px}
+          <span> [345,652 8x8] .absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink {position=absolute; backgroundColor=#1a2024; borderRadius=9999px; top=0px; left=0px; right=-8px; bottom=-8px}
+        <div> [526,844 0x0] .pointer-events-none absolute {position=absolute; top=843.859px; left=526.078px; right=241.922px; bottom=454.406px}
+          <span> [494,812 64x64] .zone-fill absolute left-1/2 top-1/2 h-11 w-11 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-bee bg-bee/35 shadow-[0_0_0_5px {position=absolute; backgroundColor=#e87745/0.326; borderRadius=9999px; border=2px solid #e77545; boxShadow=#e87945/0.206 0px 0px 0px 5px, #e87945/0.515 0px 0px 23.3805px 0px; top=0px; left=0px; right=-64px; bottom=-64px}
+          <span> [522,840 8x8] .absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink {position=absolute; backgroundColor=#1a2024; borderRadius=9999px; top=0px; left=0px; right=-8px; bottom=-8px}
+        <div> [553,954 0x0] .pointer-events-none absolute {position=absolute; top=954.219px; left=552.953px; right=215.047px; bottom=344.047px}
+          <span> [521,922 64x64] .zone-fill absolute left-1/2 top-1/2 h-11 w-11 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-bee bg-bee/35 shadow-[0_0_0_5px {position=absolute; backgroundColor=#e87745/0.326; borderRadius=9999px; border=2px solid #e77545; boxShadow=#e87945/0.206 0px 0px 0px 5px, #e87945/0.515 0px 0px 23.3805px 0px; top=0px; left=0px; right=-64px; bottom=-64px}
+          <span> [549,950 8x8] .absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink {position=absolute; backgroundColor=#1a2024; borderRadius=9999px; top=0px; left=0px; right=-8px; bottom=-8px}
+        <div> [0,1193 768x1] .absolute inset-x-0 bottom-[8%] border-b border-dashed border-paper/25 transition-opacity duration-700  {position=absolute; border=; top=1193.41px; left=0px; right=0px; bottom=103.859px}
+        <div> [16,1257 171x25] .absolute bottom-4 left-4 z-20 border border-ink/40 bg-paper/90 px-2 py-1 font-body text-[9px] font-semibold uppercase text-ink/70 backdrop-b {position=absolute; padding=4px 8px; ff=Manrope; fontSize=10px; fontWeight=600; lineHeight=15px; textTransform=uppercase; color=#1a2024/0.7; backgroundColor=#ffffff/0.9; border=1px solid #1a2024/0.4; zIndex=20; top=1257.27px; left=16px; right=580.844px; bottom=16px; backdropFilter=blur(8px)} "Multi-point diagnostic scan"
+        <div> [0,0 768x1298] .absolute inset-0 z-10 transition-opacity duration-1000 pointer-events-none opacity-0 {position=absolute; opacity=0; zIndex=10; top=0px; left=0px; right=0px; bottom=0px}
+          <img> [0,0 768x1298] .absolute inset-0 h-full w-full object-cover object-center src=/assets/truck-H1ANT7bA.jpg alt="Black pickup truck seen from a slight front angle in a dark mechanic shop" {position=absolute; maxWidth=100%; overflow=clip; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover}
+          <div> [0,0 768x1298] .absolute inset-0 bg-[linear-gradient(180deg,color-mix(in_oklab,var(--pitch)_70%,transparent)_0%,color-mix(in_oklab,var(--pitch)_35%,transpar {position=absolute; backgroundImage=linear-gradient(#010101/0.7 0%, #010101/0.35 46%, transparent 70%, #010101/0.85 100%); top=0px; left=0px; right=0px; bottom=0px}
+          <span> [322,495 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=519.297px; left=345.594px; right=374.406px; bottom=730.969px}
+            svg 20x20 cls=lucide lucide-cog size-4 md:size-5 color=#1a2024
+          <span> [489,794 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=817.906px; left=513.016px; right=206.984px; bottom=432.359px}
+            svg 20x20 cls=lucide lucide-disc3 lucide-disc-3 size-4 md:size-5 color=#1a2024
+          <span> [604,807 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=830.875px; left=628.219px; right=91.7812px; bottom=419.391px}
+            svg 20x20 cls=lucide lucide-waves size-4 md:size-5 color=#1a2024
+          <span> [698,755 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=778.953px; left=721.906px; right=-1.90625px; bottom=471.312px}
+            svg 20x20 cls=lucide lucide-circle-dashed size-4 md:size-5 color=#1a2024
+        <div> [0,0 768x1298] .absolute inset-0 z-10 transition-opacity duration-1000 pointer-events-none opacity-0 {position=absolute; opacity=0; zIndex=10; top=0px; left=0px; right=0px; bottom=0px}
+          <img> [0,0 768x1298] .absolute inset-0 h-full w-full object-cover object-center src=/assets/mercedes-BNKnk8qJ.jpg alt="Silver Mercedes-AMG sports car in side profile inside a dark mechanic shop" {position=absolute; maxWidth=100%; overflow=clip; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover}
+          <div> [0,0 768x1298] .absolute inset-0 bg-[linear-gradient(180deg,color-mix(in_oklab,var(--pitch)_70%,transparent)_0%,color-mix(in_oklab,var(--pitch)_35%,transpar {position=absolute; backgroundImage=linear-gradient(#010101/0.7 0%, #010101/0.35 46%, transparent 70%, #010101/0.85 100%); top=0px; left=0px; right=0px; bottom=0px}
+          <span> [573,547 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=571.234px; left=596.734px; right=123.266px; bottom=679.031px}
+            svg 20x20 cls=lucide lucide-cog size-4 md:size-5 color=#1a2024
+          <span> [690,612 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=636.141px; left=714.234px; right=5.76562px; bottom=614.125px}
+            svg 20x20 cls=lucide lucide-snowflake size-4 md:size-5 color=#1a2024
+          <span> [499,573 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=597.188px; left=523px; right=197px; bottom=653.078px}
+            svg 20x20 cls=lucide lucide-battery-charging size-4 md:size-5 color=#1a2024
+        <div> [0,0 768x1298] .absolute inset-0 z-10 transition-opacity duration-1000 pointer-events-none opacity-0 {position=absolute; opacity=0; zIndex=10; top=0px; left=0px; right=0px; bottom=0px}
+          <img> [0,0 768x1298] .absolute inset-0 h-full w-full object-cover object-center src=/assets/bmw-DNN6tMwq.jpg alt="Blue BMW sedan seen from the front inside a dark mechanic shop" {position=absolute; maxWidth=100%; overflow=clip; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover}
+          <div> [0,0 768x1298] .absolute inset-0 bg-[linear-gradient(180deg,color-mix(in_oklab,var(--pitch)_70%,transparent)_0%,color-mix(in_oklab,var(--pitch)_35%,transpar {position=absolute; backgroundImage=linear-gradient(#010101/0.7 0%, #010101/0.35 46%, transparent 70%, #010101/0.85 100%); top=0px; left=0px; right=0px; bottom=0px}
+          <span> [385,495 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=519.297px; left=408.562px; right=311.438px; bottom=730.969px}
+            svg 20x20 cls=lucide lucide-battery-charging size-4 md:size-5 color=#1a2024
+          <span> [279,833 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=856.844px; left=303.359px; right=416.641px; bottom=393.422px}
+            svg 20x20 cls=lucide lucide-disc3 lucide-disc-3 size-4 md:size-5 color=#1a2024
+          <span> [625,833 48x48] .vehicle-service-point vehicle-service-point--steady pointer-events-none absolute flex size-10 -translate-x-1/2 -translate-y-1/2 items-center {display=flex; position=absolute; justifyContent=center; alignItems=center; backgroundColor=#f7d710; borderRadius=9999px; border=2px solid #ffffff; boxShadow=#f7d710/0.22 0px 0px 0px 3px, #f7d710/0.5 0px 0px 14px 0px; top=856.844px; left=648.953px; right=71.0469px; bottom=393.422px}
+            svg 20x20 cls=lucide lucide-circle-dashed size-4 md:size-5 color=#1a2024
+        <div> [0,0 768x1298] .absolute inset-0 z-10 transition-opacity duration-1000 pointer-events-none opacity-0 {position=absolute; backgroundColor=rgb(16, 23, 25); opacity=0; zIndex=10; top=0px; left=0px; right=0px; bottom=0px}
+          <img> [0,0 768x1298] .absolute inset-0 h-full w-full hero-workshop-wide src=/cars/fleets/workshop-wide.png alt="Illustrative wide-angle view of a full repair bay with a mechanic working beside a sedan" {position=absolute; maxWidth=100%; overflow=clip; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover}
+          <div> [0,0 768x1298] .absolute inset-0 bg-[linear-gradient(180deg,color-mix(in_oklab,var(--pitch)_70%,transparent)_0%,color-mix(in_oklab,var(--pitch)_35%,transpar {position=absolute; backgroundImage=linear-gradient(#010101/0.7 0%, #010101/0.35 46%, transparent 70%, #010101/0.85 100%); top=0px; left=0px; right=0px; bottom=0px}
+      <div> [0,0 768x36] .relative z-20 flex h-9 items-center justify-center gap-7 bg-ink px-4 font-body text-[11px] font-bold text-paper {display=flex; position=relative; gap=28px; justifyContent=center; alignItems=center; padding=0px 16px; ff=Manrope; fontSize=11px; fontWeight=700; lineHeight=16.5px; color=#ffffff; backgroundColor=#1a2024; zIndex=20}
+        <a> [249,10 104x17] .flex items-center gap-2 href=tel:+14039305888 {display=flex; gap=8px; alignItems=center} "(403) 930-5888"
+          svg 12x12 cls=lucide lucide-phone size-3 text-bee color=#f7d710
+        <a> [381,10 138x17] .flex items-center gap-2 href=https://maps.google.com/?q=324+41+Ave+NE+Calgary+AB+T2E+2N3 {display=flex; gap=8px; alignItems=center} "324 41 Ave NE, Calgary"
+          svg 12x12 cls=lucide lucide-map-pin size-3 text-bee color=#f7d710
+      <div> [0,56 768x1242] .relative z-20 mx-auto max-w-6xl px-6 pb-6 {position=relative; padding=0px 24px 24px; maxWidth=1152px; zIndex=20}
+        <header> [24,56 720x70] .home-wide-nav mt-5 flex items-center justify-between gap-4 rounded-full border border-ink/5 bg-paper px-5 py-3 {display=flex; gap=16px; justifyContent=space-between; alignItems=center; padding=12px 20px; margin=20px 0px 0px; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #1a2024/0.05}
+          <a> [45,71 112x40] .active href=/ {}
+            <img> [45,71 112x40] .h-10 w-auto src=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png alt="Busy Bee Auto Repair" {maxWidth=100%; overflow=clip}
+          <button> [590,69 133x44] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 20px; fontSize=14px; fontWeight=700; lineHeight=20px; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px; border=1px solid #1a2024; boxShadow=#1a2024/0.18 0px 8px 24px 0px} "Book now"
+            svg 16x16 cls=lucide lucide-arrow-up-right color=#ffffff
+        <div> [24,126 720x775] .grid min-h-[470px] grid-cols-[minmax(0,1fr)_260px] items-start gap-10 pb-10 pt-10 lg:min-h-[490px] lg:gap-20 {display=grid; gap=40px; gridTemplateColumns=420px 260px; alignItems=flex-start; padding=40px 0px}
+          <div> [24,166 420x695] .text-paper {color=#ffffff}
+            <div> [24,166 370x46] .inline-flex items-center gap-2.5 rounded-full border border-ink/10 bg-paper py-1.5 pl-1.5 pr-4 shadow-[0_8px_22px_-12px_color-mix(in_oklab,v {display=inline-flex; gap=10px; alignItems=center; padding=6px 16px 6px 6px; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #1a2024/0.1; boxShadow=#1a2024/0.55 0px 8px 22px -12px}
+              <span> [31,173 32x32] .flex size-8 shrink-0 items-center justify-center rounded-full bg-bee-soft scan-glow {display=flex; position=relative; justifyContent=center; alignItems=center; backgroundColor=#fcf5db; borderRadius=9999px; boxShadow=#f7d710/0.257 0px 0px 0px 2.66295px, #f7d710/0.636 0px 0px 11.3259px 2.59777px}
+                <img> [38,180 18x18] .size-[18px] object-contain src=/__l5e/assets-v1/08124596-98e2-461d-a4ec-1e62d9461822/diagnostic-indicator.png alt="" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [73,184 304x11] .font-body text-[10px] font-extrabold uppercase leading-none tracking-[0.04em] whitespace-nowrap text-ink md:text-[11px] {ff=Manrope; fontSize=11px; fontWeight=800; lineHeight=11px; letterSpacing=0.44px; textTransform=uppercase; color=#1a2024} "Computer diagnostics All makes and models"
+                <span> [224,182 8x15] . {display=inline} "•"
+            <h1> [24,236 420x249] .mt-6 max-w-[650px] font-display text-5xl font-extrabold uppercase leading-[1.02] lg:text-[60px] {margin=24px 0px 0px; ff=Manrope; fontSize=48px; fontWeight=800; lineHeight=48.96px; textTransform=uppercase; maxWidth=650px} "Auto repair in Calgary you can actually"
+              <br> [393,227 0x65] . {display=inline}
+              <br> [127,325 0x65] . {display=inline}
+              <span> [24,432 186x53] .inline-block bg-bee px-3 pb-1 text-ink {display=inline-block; padding=0px 12px 4px; color=#1a2024; backgroundColor=#f7d710}
+                <span> [36,423 156x65] . {display=inline} "trust"
+                <span> [194,438 4x38] .typing-caret {display=inline-block; margin=0px 0px 0px 1.92px; backgroundColor=#1a2024; opacity=0}
+                <span> [198,423 0x65] .invisible {display=inline}
+            <p> [24,501 420x156] .mt-4 max-w-[510px] font-body text-base leading-relaxed text-paper/90 {margin=16px 0px 0px; ff=Manrope; lineHeight=26px; color=#ffffff/0.9; maxWidth=510px} "Busy Bee Auto Repair & Tire Shop is a family-owned auto repair shop in NE Calgary. Our certified mechanics fix all makes and models, from a quick oil change to a check engine light nobody else could solve. You get a clear diagnosis, an honest quote, and the work done right the first time."
+            <div> [24,681 420x124] .mt-6 flex flex-wrap gap-3 {display=flex; gap=12px; margin=24px 0px 0px}
+              <button> [24,681 226x56] .btn {display=flex; gap=12px; justifyContent=center; alignItems=center; padding=0px 20px 0px 6px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; backgroundColor=#1a2024; borderRadius=9999px; border=1px solid #1a2024; boxShadow=#ffffff/0.25 0px 0px 0px 1px, #1a2024/0.18 0px 8px 24px 0px} "Book an Appointment"
+                <span> [31,689 40x40] .flex size-10 items-center justify-center rounded-full bg-bee text-ink {display=flex; justifyContent=center; alignItems=center; color=#1a2024; backgroundColor=#f7d710; borderRadius=9999px}
+                  svg 16x16 cls=lucide lucide-calendar-days color=#1a2024
+              <a> [24,749 216x56] .btn {display=flex; gap=12px; justifyContent=center; alignItems=center; padding=0px 20px 0px 6px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; color=#1a2024; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #1a2024/0.1; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Call (403) 930-5888"
+                <span> [31,757 40x40] .flex size-10 items-center justify-center rounded-full bg-ink text-paper {display=flex; justifyContent=center; alignItems=center; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px}
+                  svg 16x16 cls=lucide lucide-phone color=#ffffff
+              <a> [252,749 157x56] .whatsapp-button href=https://wa.me/14039305888?text=Hi%20Busy%20Bee%2C%20I'd%20like%20to%20ask%20about%20service%20for%20my%20vehicle. {display=flex; gap=9px; justifyContent=center; alignItems=center; padding=12px 19px; fontSize=13px; fontWeight=750; lineHeight=16.9px; color=rgb(255, 255, 255); backgroundColor=rgb(18, 140, 80); borderRadius=30px; border=1px solid rgb(18, 140, 80)} "WhatsApp us"
+                svg 22x22 cls= color=rgb(255, 255, 255)
+            <div> [24,825 420x36] .mt-5 flex items-center gap-3 {display=flex; gap=12px; alignItems=center; margin=20px 0px 0px}
+              <img> [24,825 75x36] .h-9 w-[75px] object-contain src=/assets/reviewer-avatars-BOEPlixg.png alt="" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <p> [111,826 229x33] .font-body text-xs leading-snug {ff=Manrope; fontSize=12px; lineHeight=16.5px} "Walk-ins welcome, every make and model."
+                <strong> [111,825 162x17] . {display=inline; fontWeight=700} "Family-owned in NE Calgary."
+                <br> [273,825 0x17] . {display=inline}
+          <aside> [484,166 260x386] .grid grid-cols-2 gap-3 text-ink {display=grid; gap=12px; gridTemplateColumns=124px 124px}
+            <div> [484,166 260x199] .col-span-2 rounded-2xl border border-ink/5 bg-paper p-5 shadow-lg {padding=20px; backgroundColor=#ffffff; borderRadius=18px; border=1px solid #1a2024/0.05; boxShadow=rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px}
+              <div> [505,187 218x28] .flex flex-wrap items-center justify-between gap-2 {display=flex; gap=8px; justifyContent=space-between; alignItems=center}
+                <span> [505,194 88x15] .font-body text-[10px] font-extrabold uppercase text-ink/55 {ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; textTransform=uppercase; color=#1a2024/0.55} "Google reviews"
+                svg 28x28 cls=size-7 shrink-0 color=#1a2024
+              <div> [505,227 218x48] .mt-3 flex items-center gap-3 {display=flex; gap=12px; alignItems=center; margin=12px 0px 0px}
+                <strong> [505,227 74x48] .font-display text-5xl font-extrabold leading-none {ff=Manrope; fontSize=48px; fontWeight=800; lineHeight=48px} "4.8"
+                <div> [591,229 119x45] . {}
+                  <span> [591,232 94x21] .text-lg {display=inline; fontSize=18px; lineHeight=28px}
+                    <span> [591,232 19x21] . {display=inline; color=rgb(66, 133, 244)} "★"
+                    <span> [610,232 19x21] . {display=inline; color=rgb(234, 67, 53)} "★"
+                    <span> [628,232 19x21] . {display=inline; color=rgb(251, 188, 5)} "★"
+                    <span> [647,232 19x21] . {display=inline; color=rgb(52, 168, 83)} "★"
+                    <span> [666,232 19x21] . {display=inline; color=rgb(66, 133, 244)} "★"
+                  <p> [591,257 119x17] .font-body text-[11px] text-ink/70 {ff=Manrope; fontSize=11px; lineHeight=16.5px; color=#1a2024/0.7} "Google customer rating"
+              <div> [505,287 218x6] .my-3 h-1.5 rounded-full bg-line-grey {margin=12px 0px; backgroundColor=#e5e8ea; borderRadius=9999px}
+                <div> [505,287 209x6] .h-full w-[96%] rounded-full {backgroundImage=linear-gradient(to right, rgb(66, 133, 244) 0%, rgb(66, 133, 244) 25%, rgb(234, 67, 53) 25%, rgb(234, 67, 53) 50%, rgb(251, 188, 5) 50%, rgb(251, 188, 5) 75%, rgb(52, 168, 83) 75%, rgb(52, 168, 83) 100%); borderRadius=9999px}
+              <p> [505,305 218x39] .font-body text-xs leading-relaxed text-ink/65 {ff=Manrope; fontSize=12px; lineHeight=19.5px; color=#1a2024/0.65} "Honest pricing, quality workmanship and transparent communication."
+            <div> [484,377 124x175] .rounded-2xl bg-bee p-4 shadow-lg {padding=16px; backgroundColor=#f7d710; borderRadius=18px; boxShadow=rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px}
+              <span> [500,393 36x36] .flex size-9 items-center justify-center rounded-lg bg-ink text-bee {display=flex; justifyContent=center; alignItems=center; color=#f7d710; backgroundColor=#1a2024; borderRadius=10px}
+                svg 16x16 cls=lucide lucide-calendar-days size-4 color=#f7d710
+              <h2> [500,441 92x35] .mt-3 font-display text-sm font-extrabold uppercase leading-tight {margin=12px 0px 0px; ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=17.5px; textTransform=uppercase} "Walk-ins welcome"
+              <p> [500,484 92x50] .mt-2 font-body text-xs leading-snug {margin=8px 0px 0px; ff=Manrope; fontSize=12px; lineHeight=16.5px} "Monday to Friday 9 AM to 6 PM"
+                <br> [533,500 0x17] . {display=inline}
+            <div> [620,377 124x175] .rounded-2xl border border-ink/5 bg-paper p-4 shadow-lg {padding=16px; backgroundColor=#ffffff; borderRadius=18px; border=1px solid #1a2024/0.05; boxShadow=rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px}
+              <span> [637,394 36x36] .flex size-9 items-center justify-center rounded-lg border border-ink/10 bg-bee-soft {display=flex; justifyContent=center; alignItems=center; backgroundColor=#fcf5db; borderRadius=10px; border=1px solid #1a2024/0.1}
+                svg 16x16 cls=lucide lucide-shield-check size-4 color=#1a2024
+              <h2> [637,442 90x35] .mt-3 font-display text-sm font-extrabold uppercase leading-tight {margin=12px 0px 0px; ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=17.5px; textTransform=uppercase} "Certified techs"
+              <p> [637,485 90x50] .mt-2 font-body text-xs leading-snug text-ink/70 {margin=8px 0px 0px; ff=Manrope; fontSize=12px; lineHeight=16.5px; color=#1a2024/0.7} "Parts & labour warranty on most repairs"
+        <div> [24,901 720x32] .mb-5 flex justify-end gap-2 {display=flex; gap=8px; justifyContent=flex-end; margin=0px 0px 20px}
+          <button> [379,901 52x32] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=0px 16px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; backgroundColor=#f7d710; borderRadius=9999px; border=1px solid #1a2024/0.2; boxShadow=#1a2024/0.14 0px 8px 24px 0px} "SUV"
+          <button> [439,901 68x32] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=0px 16px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #e2e8f0; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Pickup"
+          <button> [515,901 83x32] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=0px 16px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #e2e8f0; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Mercedes"
+          <button> [605,901 56x32] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=0px 16px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #e2e8f0; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "BMW"
+          <button> [670,901 74x32] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=0px 16px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #e2e8f0; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "At work"
+        <div> [24,953 720x322] .text-ink {}
+          <div> [24,953 720x14] .mb-3 flex items-center gap-3 {display=flex; gap=12px; alignItems=center; margin=0px 0px 12px}
+            <span> [24,957 6x6] .size-1.5 shrink-0 rounded-full bg-bee {backgroundColor=#f7d710; borderRadius=9999px}
+            <p> [42,953 167x14] .font-body text-[9px] font-extrabold uppercase text-paper {ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; color=#ffffff} "Multi-point diagnostic scan · SUV"
+            <span> [221,959 523x1] .h-px flex-1 bg-paper/25 {backgroundColor=#ffffff/0.25}
+          <div> [24,978 720x296] .grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6 {display=grid; gap=8px; gridTemplateColumns=234.656px 234.672px 234.672px}
+            <article> [24,978 235x144] .flex min-h-36 flex-col rounded-xl border border-ink/5 bg-paper p-3 {display=flex; flexDirection=column; padding=12px; backgroundColor=#ffffff; borderRadius=14px; border=1px solid #1a2024/0.05}
+              <div> [37,991 209x28] .flex items-center gap-2 {display=flex; gap=8px; alignItems=center}
+                <span> [37,991 28x28] .flex size-7 shrink-0 items-center justify-center rounded-full bg-bee font-body text-[10px] font-extrabold {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; backgroundColor=#f7d710; borderRadius=9999px}
+                  svg 20x20 cls=lucide lucide-cog size-5 color=#1a2024
+                <h3> [73,997 44x16] .font-display text-xs font-extrabold uppercase {ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; textTransform=uppercase} "Engine"
+              <p> [37,1027 209x15] .mb-3 mt-2 font-body text-[11px] leading-snug text-ink/65 {margin=8px 0px 12px; ff=Manrope; fontSize=11px; lineHeight=15.125px; color=#1a2024/0.65} "Timing, spark plugs, leak detection"
+              <a> [37,1076 209x33] .mt-auto flex items-center justify-between border-t border-ink/10 pt-2 font-body text-[9px] font-extrabold uppercase href=/services/engine {display=flex; justifyContent=space-between; alignItems=center; padding=8px 0px 0px; margin=21.875px 0px 0px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; border=} "See service"
+                <span> [222,1085 24x24] .flex size-6 items-center justify-center rounded-full bg-ink text-paper {display=flex; justifyContent=center; alignItems=center; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px}
+                  svg 12x12 cls=lucide lucide-arrow-up-right size-3 color=#ffffff
+            <article> [267,978 235x144] .flex min-h-36 flex-col rounded-xl border border-ink/5 bg-paper p-3 {display=flex; flexDirection=column; padding=12px; backgroundColor=#ffffff; borderRadius=14px; border=1px solid #1a2024/0.05}
+              <div> [280,991 209x28] .flex items-center gap-2 {display=flex; gap=8px; alignItems=center}
+                <span> [280,991 28x28] .flex size-7 shrink-0 items-center justify-center rounded-full bg-bee font-body text-[10px] font-extrabold {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; backgroundColor=#f7d710; borderRadius=9999px}
+                  svg 20x20 cls=lucide lucide-battery-charging size-5 color=#1a2024
+                <h3> [316,997 53x16] .font-display text-xs font-extrabold uppercase {ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; textTransform=uppercase} "Battery"
+              <p> [280,1027 209x15] .mb-3 mt-2 font-body text-[11px] leading-snug text-ink/65 {margin=8px 0px 12px; ff=Manrope; fontSize=11px; lineHeight=15.125px; color=#1a2024/0.65} "Free testing, alternator and charging"
+              <a> [280,1076 209x33] .mt-auto flex items-center justify-between border-t border-ink/10 pt-2 font-body text-[9px] font-extrabold uppercase href=/services/battery {display=flex; justifyContent=space-between; alignItems=center; padding=8px 0px 0px; margin=21.875px 0px 0px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; border=} "See service"
+                <span> [464,1085 24x24] .flex size-6 items-center justify-center rounded-full bg-ink text-paper {display=flex; justifyContent=center; alignItems=center; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px}
+                  svg 12x12 cls=lucide lucide-arrow-up-right size-3 color=#ffffff
+            <article> [509,978 235x144] .flex min-h-36 flex-col rounded-xl border border-ink/5 bg-paper p-3 {display=flex; flexDirection=column; padding=12px; backgroundColor=#ffffff; borderRadius=14px; border=1px solid #1a2024/0.05}
+              <div> [522,991 209x28] .flex items-center gap-2 {display=flex; gap=8px; alignItems=center}
+                <span> [522,991 28x28] .flex size-7 shrink-0 items-center justify-center rounded-full bg-bee font-body text-[10px] font-extrabold {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; backgroundColor=#f7d710; borderRadius=9999px}
+                  svg 20x20 cls=lucide lucide-disc3 lucide-disc-3 size-5 color=#1a2024
+                <h3> [558,997 47x16] .font-display text-xs font-extrabold uppercase {ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; textTransform=uppercase} "Brakes"
+              <p> [522,1027 209x15] .mb-3 mt-2 font-body text-[11px] leading-snug text-ink/65 {margin=8px 0px 12px; ff=Manrope; fontSize=11px; lineHeight=15.125px; color=#1a2024/0.65} "Pads, rotors, full inspections"
+              <a> [522,1076 209x33] .mt-auto flex items-center justify-between border-t border-ink/10 pt-2 font-body text-[9px] font-extrabold uppercase href=/services/brakes {display=flex; justifyContent=space-between; alignItems=center; padding=8px 0px 0px; margin=21.875px 0px 0px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; border=} "See service"
+                <span> [707,1085 24x24] .flex size-6 items-center justify-center rounded-full bg-ink text-paper {display=flex; justifyContent=center; alignItems=center; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px}
+                  svg 12x12 cls=lucide lucide-arrow-up-right size-3 color=#ffffff
+            <article> [24,1130 235x144] .flex min-h-36 flex-col rounded-xl border border-ink/5 bg-paper p-3 {display=flex; flexDirection=column; padding=12px; backgroundColor=#ffffff; borderRadius=14px; border=1px solid #1a2024/0.05}
+              <div> [37,1143 209x28] .flex items-center gap-2 {display=flex; gap=8px; alignItems=center}
+                <span> [37,1143 28x28] .flex size-7 shrink-0 items-center justify-center rounded-full bg-bee font-body text-[10px] font-extrabold {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; backgroundColor=#f7d710; borderRadius=9999px}
+                  svg 20x20 cls=lucide lucide-waves size-5 color=#1a2024
+                <h3> [73,1149 78x16] .font-display text-xs font-extrabold uppercase {ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; textTransform=uppercase} "Suspension"
+              <p> [37,1179 209x15] .mb-3 mt-2 font-body text-[11px] leading-snug text-ink/65 {margin=8px 0px 12px; ff=Manrope; fontSize=11px; lineHeight=15.125px; color=#1a2024/0.65} "Shocks, struts, steering"
+              <a> [37,1228 209x33] .mt-auto flex items-center justify-between border-t border-ink/10 pt-2 font-body text-[9px] font-extrabold uppercase href=/services/suspension {display=flex; justifyContent=space-between; alignItems=center; padding=8px 0px 0px; margin=21.875px 0px 0px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; border=} "See service"
+                <span> [222,1237 24x24] .flex size-6 items-center justify-center rounded-full bg-ink text-paper {display=flex; justifyContent=center; alignItems=center; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px}
+                  svg 12x12 cls=lucide lucide-arrow-up-right size-3 color=#ffffff
+            <article> [267,1130 235x144] .flex min-h-36 flex-col rounded-xl border border-ink/5 bg-paper p-3 {display=flex; flexDirection=column; padding=12px; backgroundColor=#ffffff; borderRadius=14px; border=1px solid #1a2024/0.05}
+              <div> [280,1143 209x28] .flex items-center gap-2 {display=flex; gap=8px; alignItems=center}
+                <span> [280,1143 28x28] .flex size-7 shrink-0 items-center justify-center rounded-full bg-bee font-body text-[10px] font-extrabold {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; backgroundColor=#f7d710; borderRadius=9999px}
+                  svg 20x20 cls=lucide lucide-snowflake size-5 color=#1a2024
+                <h3> [316,1149 55x16] .font-display text-xs font-extrabold uppercase {ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; textTransform=uppercase} "Cooling"
+              <p> [280,1179 209x15] .mb-3 mt-2 font-body text-[11px] leading-snug text-ink/65 {margin=8px 0px 12px; ff=Manrope; fontSize=11px; lineHeight=15.125px; color=#1a2024/0.65} "Radiator, water pump, thermostat"
+              <a> [280,1228 209x33] .mt-auto flex items-center justify-between border-t border-ink/10 pt-2 font-body text-[9px] font-extrabold uppercase href=/services/cooling {display=flex; justifyContent=space-between; alignItems=center; padding=8px 0px 0px; margin=21.875px 0px 0px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; border=} "See service"
+                <span> [464,1237 24x24] .flex size-6 items-center justify-center rounded-full bg-ink text-paper {display=flex; justifyContent=center; alignItems=center; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px}
+                  svg 12x12 cls=lucide lucide-arrow-up-right size-3 color=#ffffff
+            <article> [509,1130 235x144] .flex min-h-36 flex-col rounded-xl border border-ink/5 bg-paper p-3 {display=flex; flexDirection=column; padding=12px; backgroundColor=#ffffff; borderRadius=14px; border=1px solid #1a2024/0.05}
+              <div> [522,1143 209x28] .flex items-center gap-2 {display=flex; gap=8px; alignItems=center}
+                <span> [522,1143 28x28] .flex size-7 shrink-0 items-center justify-center rounded-full bg-bee font-body text-[10px] font-extrabold {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; backgroundColor=#f7d710; borderRadius=9999px}
+                  svg 20x20 cls=lucide lucide-circle-dashed size-5 color=#1a2024
+                <h3> [558,1149 34x16] .font-display text-xs font-extrabold uppercase {ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; textTransform=uppercase} "Tires"
+              <p> [522,1179 209x15] .mb-3 mt-2 font-body text-[11px] leading-snug text-ink/65 {margin=8px 0px 12px; ff=Manrope; fontSize=11px; lineHeight=15.125px; color=#1a2024/0.65} "New and used, balancing, rotations"
+              <a> [522,1228 209x33] .mt-auto flex items-center justify-between border-t border-ink/10 pt-2 font-body text-[9px] font-extrabold uppercase href=/services/tires {display=flex; justifyContent=space-between; alignItems=center; padding=8px 0px 0px; margin=21.875px 0px 0px; ff=Manrope; fontSize=9px; fontWeight=800; lineHeight=13.5px; textTransform=uppercase; border=} "See service"
+                <span> [707,1237 24x24] .flex size-6 items-center justify-center rounded-full bg-ink text-paper {display=flex; justifyContent=center; alignItems=center; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px}
+                  svg 12x12 cls=lucide lucide-arrow-up-right size-3 color=#ffffff
+    <section> [0,1298 768x175] .border-y border-ink/10 bg-paper py-8 md:py-10 {padding=40px 0px; backgroundColor=#ffffff; border=}
+      <p> [0,1339 768x17] .mb-6 text-center font-body text-[11px] font-bold uppercase tracking-[0.32em] text-ink/45 {margin=0px 0px 24px; ff=Manrope; fontSize=11px; fontWeight=700; lineHeight=16.5px; letterSpacing=3.52px; textTransform=uppercase; color=#1a2024/0.45} "Quality parts from proven suppliers"
+      <div> [0,1380 768x52] .marquee relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] {position=relative; overflow=hidden; mask=linear-gradient(90deg, transparent, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, transparent)}
+        <div> [-266,1380 1880x52] .marquee-track flex w-max items-center gap-12 pr-12 md:gap-20 md:pr-20 {display=flex; gap=80px; alignItems=center; padding=0px 80px 0px 0px; transform=matrix(1, 0, 0, 1, -265.832, 0)}
+          <div> [-266,1380 860x52] .flex items-center gap-12 md:gap-20 {display=flex; gap=80px; alignItems=center}
+            <img> [-266,1386 162x40] .h-7 md:h-10 w-auto  src=/assets/napa-auto-parts-Bx_qg8GY.png alt="NAPA Auto Parts" {maxWidth=100%; overflow=clip}
+            <img> [-23,1380 143x52] .h-9 md:h-13 w-auto  src=/assets/lordco-auto-parts-Uk4USUl3.png alt="Lordco Auto Parts" {maxWidth=100%; overflow=clip}
+            <img> [200,1386 150x40] .h-7 md:h-10 w-auto  src=/assets/partsource-DV9h667p.png alt="PartSource" {maxWidth=100%; overflow=clip}
+            <img> [429,1386 165x40] .h-7 md:h-10 w-auto  src=/assets/auto-value-DQAzBDM4.png alt="Auto Value Auto Parts" {maxWidth=100%; overflow=clip}
+          <div> [674,1380 860x52] .flex items-center gap-12 md:gap-20 {display=flex; gap=80px; alignItems=center}
+            <img> [674,1386 162x40] .h-7 md:h-10 w-auto  src=/assets/napa-auto-parts-Bx_qg8GY.png alt="" {maxWidth=100%; overflow=clip}
+            <img> [917,1380 143x52] .h-9 md:h-13 w-auto  src=/assets/lordco-auto-parts-Uk4USUl3.png alt="" {maxWidth=100%; overflow=clip}
+            <img> [1140,1386 150x40] .h-7 md:h-10 w-auto  src=/assets/partsource-DV9h667p.png alt="" {maxWidth=100%; overflow=clip}
+            <img> [1369,1386 165x40] .h-7 md:h-10 w-auto  src=/assets/auto-value-DQAzBDM4.png alt="" {maxWidth=100%; overflow=clip}
+    <section#services> [0,1473 768x3055] .bg-line-grey/20 px-5 py-10 text-ink md:px-8 md:py-28 {padding=112px 32px; color=#1a2024; backgroundColor=#e5e8ea/0.2}
+      <div> [32,1585 704x2831] .mx-auto max-w-6xl {maxWidth=1152px}
+        <div> [32,1585 704x293] .flex flex-col justify-between gap-7 lg:flex-row lg:items-end {display=flex; flexDirection=column; gap=28px; justifyContent=space-between}
+          <div> [32,1585 672x173] .max-w-2xl {maxWidth=672px}
+            <p> [32,1585 672x17] .flex items-center gap-2 font-body text-[11px] font-extrabold uppercase tracking-[0.24em] text-ink/50 {display=flex; gap=8px; alignItems=center; ff=Manrope; fontSize=11px; fontWeight=800; lineHeight=16.5px; letterSpacing=2.64px; textTransform=uppercase; color=#1a2024/0.5} "Services · NE Calgary"
+              <span> [32,1589 8x8] .size-2 shrink-0 rounded-full bg-bee {backgroundColor=#f7d710; borderRadius=9999px}
+            <h2> [32,1613 672x101] .mt-3 font-display text-[1.75rem] font-extrabold uppercase leading-[1.05] md:text-5xl {margin=12px 0px 0px; ff=Manrope; fontSize=48px; fontWeight=800; lineHeight=50.4px; textTransform=uppercase} "Car Repair Services in Calgary"
+            <p> [32,1730 576x28] .mt-4 max-w-xl font-body text-sm leading-7 text-ink/60 md:text-base {margin=16px 0px 0px; ff=Manrope; lineHeight=28px; color=#1a2024/0.6; maxWidth=576px} "Whatever your vehicle needs, our Calgary auto shop handles it under one roof."
+          <a> [32,1786 704x20] .font-body text-sm font-bold underline underline-offset-4 href=/services/ {ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px} "View all services ↗"
+          <div> [32,1834 704x44] .flex max-w-full shrink-0 gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden {display=flex; gap=8px; maxWidth=100%; overflow=auto}
+            <button> [32,1834 59x44] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 20px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px; border=1px solid #1a2024; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "All"
+            <button> [99,1834 130x44] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 20px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #1a2024/0.15; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Maintenance"
+            <button> [238,1834 86x44] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 20px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #1a2024/0.15; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Repair"
+            <button> [331,1834 76x44] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 20px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; backgroundColor=#ffffff; borderRadius=9999px; border=1px solid #1a2024/0.15; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Tires"
+        <div> [32,1910 704x2306] .mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-flow-dense lg:grid-cols-4 {display=grid; gap=20px; gridTemplateColumns=342px 342px; margin=32px 0px 0px}
+          <article> [32,1910 342x829] .service-photo-feature relative flex flex-col overflow-hidden rounded-[28px] bg-ink p-8 text-paper md:p-10 lg:col-span-2 lg:row-span-2 lg:min {display=flex; position=relative; flexDirection=column; padding=40px; color=#ffffff; backgroundColor=#1a2024; borderRadius=28px; overflow=hidden}
+            svg 320x320 cls=lucide lucide-circle-dot pointer-events-none absolute -bottom-16 -right-16 size-80 text-bee opacity-15 color=#f7d710
+            <div> [72,1950 262x749] .relative z-10 flex h-full flex-1 flex-col {display=flex; position=relative; flexDirection=column; zIndex=10}
+              <div> [72,1950 262x104] .flex flex-wrap items-center justify-between gap-4 {display=flex; gap=16px; justifyContent=space-between; alignItems=center}
+                <div> [72,1950 161x56] .flex items-center gap-3 {display=flex; gap=12px; alignItems=center}
+                  <span> [72,1950 56x56] .flex size-14 shrink-0 items-center justify-center rounded-2xl bg-bee text-ink {display=flex; justifyContent=center; alignItems=center; color=#1a2024; backgroundColor=#f7d710; borderRadius=18px}
+                    svg 28x28 cls=lucide lucide-gauge size-7 color=#1a2024
+                  <span> [140,1970 93x16] .font-body text-xs font-extrabold uppercase tracking-wider text-bee {ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; letterSpacing=0.6px; textTransform=uppercase; color=#f7d710} "Most booked"
+                <span> [72,2022 172x32] .rounded-full bg-bee/15 px-3 py-2 font-body text-xs font-bold text-bee {padding=8px 12px; ff=Manrope; fontSize=12px; fontWeight=700; lineHeight=16px; color=#f7d710; backgroundColor=#f7d710/0.15; borderRadius=9999px} "Winter tire season is here"
+              <h3> [72,2086 262x135] .mt-8 font-display text-3xl font-extrabold uppercase leading-tight md:text-4xl {margin=32px 0px 0px; ff=Manrope; fontSize=36px; fontWeight=800; lineHeight=45px; textTransform=uppercase} "Tires, wheels & alignment"
+              <p> [72,2237 262x112] .mt-4 font-body text-sm leading-7 text-paper/70 md:text-base {margin=16px 0px 0px; ff=Manrope; lineHeight=28px; color=#ffffff/0.7} "New and used tires, installation, repair, rotation, and balancing. Wheel alignment for straighter tracking and longer tire life."
+              <ul> [72,2381 262x176] .my-8 grid gap-x-5 gap-y-4 md:grid-cols-2 {display=grid; gap=16px 20px; gridTemplateColumns=121px 121px; margin=32px 0px}
+                <li> [72,2381 121x48] .flex items-start gap-2 font-body text-sm leading-6 {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px} "Tire repair up to 16 in · $84"
+                  svg 20x20 cls=lucide lucide-check mt-0.5 size-5 shrink-0 text-bee color=#f7d710
+                <li> [213,2381 121x48] .flex items-start gap-2 font-body text-sm leading-6 {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px} "Seasonal tire swaps"
+                  svg 20x20 cls=lucide lucide-check mt-0.5 size-5 shrink-0 text-bee color=#f7d710
+                <li> [72,2445 121x48] .flex items-start gap-2 font-body text-sm leading-6 {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px} "Wheel alignment"
+                  svg 20x20 cls=lucide lucide-check mt-0.5 size-5 shrink-0 text-bee color=#f7d710
+                <li> [213,2445 121x48] .flex items-start gap-2 font-body text-sm leading-6 {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px} "Balancing & rotation"
+                  svg 20x20 cls=lucide lucide-check mt-0.5 size-5 shrink-0 text-bee color=#f7d710
+                <li> [72,2509 121x48] .flex items-start gap-2 font-body text-sm leading-6 {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px} "New & used tires"
+                  svg 20x20 cls=lucide lucide-check mt-0.5 size-5 shrink-0 text-bee color=#f7d710
+                <li> [213,2509 121x48] .flex items-start gap-2 font-body text-sm leading-6 {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px} "Winter & all-season tires"
+                  svg 20x20 cls=lucide lucide-check mt-0.5 size-5 shrink-0 text-bee color=#f7d710
+              <div> [72,2589 262x110] .mt-auto flex flex-col gap-3 pt-2 md:flex-row md:flex-wrap {display=flex; gap=12px; padding=8px 0px 0px}
+                <button> [72,2597 175x46] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=12px 20px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; color=#1a2024; backgroundColor=#f7d710; borderRadius=9999px; border=1px solid #1a2024/0.2; boxShadow=#1a2024/0.14 0px 8px 24px 0px} "Book a tire swap"
+                  svg 16x16 cls=lucide lucide-arrow-right size-4 shrink-0 color=#1a2024
+                <a> [72,2655 128x44] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 20px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; borderRadius=9999px; border=1px solid #ffffff/0.25; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Tire services"
+          <a> [394,1910 342x829] .service-photo-card group flex min-w-0 items-center gap-4 rounded-2xl border border-ink/10 bg-paper p-4 transition-[transform,border-color] d href=/services/oil-change {display=flex; flexDirection=column; gap=0px; alignItems=stretch; padding=28px; backgroundColor=#ffffff; borderRadius=22px; border=1px solid #1a2024/0.1}
+            <div> [423,1939 284x52] .flex shrink-0 items-center justify-between gap-2 {display=flex; gap=8px; justifyContent=space-between; alignItems=center}
+              <span> [423,1939 52x52] .flex size-12 shrink-0 items-center justify-center rounded-2xl bg-bee/25 md:size-[52px] {display=flex; justifyContent=center; alignItems=center; backgroundColor=#f7d710/0.25; borderRadius=18px}
+                svg 24x24 cls=lucide lucide-droplets size-6 text-ink color=#1a2024
+              <span> [627,1953 80x24] .hidden rounded-full bg-ink px-3 py-1 font-body text-xs font-bold text-bee md:block {padding=4px 12px; ff=Manrope; fontSize=12px; fontWeight=700; lineHeight=16px; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px} "Same day"
+            <div> [423,1991 284x634] .min-w-0 flex-1 {}
+              <p> [423,2015 284x20] .mt-6 hidden font-body text-[10px] font-extrabold uppercase leading-5 tracking-wider text-ink/50 md:block {margin=24px 0px 0px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=20px; letterSpacing=0.5px; textTransform=uppercase; color=#1a2024/0.5} "Routine care"
+              <h3> [423,2043 284x55] .font-display text-base font-extrabold leading-snug md:mt-2 md:text-xl md:uppercase {margin=8px 0px 0px; ff=Manrope; fontSize=20px; fontWeight=800; lineHeight=27.5px; textTransform=uppercase} "Mobil 1 synthetic oil change"
+              <p> [423,2110 284x48] .mt-1 line-clamp-1 font-body text-sm leading-6 text-ink/60 md:mt-3 md:line-clamp-none {margin=12px 0px 0px; ff=Manrope; fontSize=14px; color=#1a2024/0.6} "Mobil 1 synthetic oil changes from $75, with a free inspection."
+            <div> [423,2649 284x61] .mt-auto hidden items-center justify-between gap-2 border-t border-ink/10 pt-4 md:flex md:mt-6 {display=flex; gap=8px; justifyContent=space-between; alignItems=center; padding=16px 0px 0px; margin=24px 0px 0px; border=}
+              <span> [423,2678 62x20] .font-body text-sm font-extrabold {ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=20px} "From $75"
+              <span> [663,2666 44x44] .flex size-11 shrink-0 items-center justify-center rounded-full bg-ink text-bee {display=flex; justifyContent=center; alignItems=center; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px}
+                svg 20x20 cls=lucide lucide-arrow-right size-5 color=#f7d710
+          <a> [32,2759 342x362] .service-photo-card group flex min-w-0 items-center gap-4 rounded-2xl border border-ink/10 bg-paper p-4 transition-[transform,border-color] d href=/services/brakes {display=flex; flexDirection=column; gap=0px; alignItems=stretch; padding=28px; backgroundColor=#ffffff; borderRadius=22px; border=1px solid #1a2024/0.1}
+            <div> [61,2788 284x52] .flex shrink-0 items-center justify-between gap-2 {display=flex; gap=8px; justifyContent=space-between; alignItems=center}
+              <span> [61,2788 52x52] .flex size-12 shrink-0 items-center justify-center rounded-2xl bg-bee/25 md:size-[52px] {display=flex; justifyContent=center; alignItems=center; backgroundColor=#f7d710/0.25; borderRadius=18px}
+                svg 24x24 cls=lucide lucide-disc3 lucide-disc-3 size-6 text-ink color=#1a2024
+            <div> [61,2840 284x167] .min-w-0 flex-1 {}
+              <p> [61,2864 284x20] .mt-6 hidden font-body text-[10px] font-extrabold uppercase leading-5 tracking-wider text-ink/50 md:block {margin=24px 0px 0px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=20px; letterSpacing=0.5px; textTransform=uppercase; color=#1a2024/0.5} "Safety system"
+              <h3> [61,2892 284x55] .font-display text-base font-extrabold leading-snug md:mt-2 md:text-xl md:uppercase {margin=8px 0px 0px; ff=Manrope; fontSize=20px; fontWeight=800; lineHeight=27.5px; textTransform=uppercase} "Brake repair & replacement"
+              <p> [61,2959 284x48] .mt-1 line-clamp-1 font-body text-sm leading-6 text-ink/60 md:mt-3 md:line-clamp-none {margin=12px 0px 0px; ff=Manrope; fontSize=14px; color=#1a2024/0.6} "Pads, rotors, calipers, and brake fluid service."
+            <div> [61,3031 284x61] .mt-auto hidden items-center justify-between gap-2 border-t border-ink/10 pt-4 md:flex md:mt-6 {display=flex; gap=8px; justifyContent=space-between; alignItems=center; padding=16px 0px 0px; margin=24px 0px 0px; border=}
+              <span> [61,3060 156x20] .font-body text-sm font-extrabold {ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=20px} "Quote after inspection"
+              <span> [301,3048 44x44] .flex size-11 shrink-0 items-center justify-center rounded-full bg-ink text-bee {display=flex; justifyContent=center; alignItems=center; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px}
+                svg 20x20 cls=lucide lucide-arrow-right size-5 color=#f7d710
+          <a> [394,2759 342x362] .service-photo-card group flex min-w-0 items-center gap-4 rounded-2xl border border-ink/10 bg-paper p-4 transition-[transform,border-color] d href=/services/diagnostics {display=flex; flexDirection=column; gap=0px; alignItems=stretch; padding=28px; backgroundColor=#ffffff; borderRadius=22px; border=1px solid #1a2024/0.1}
+            <div> [423,2788 284x52] .flex shrink-0 items-center justify-between gap-2 {display=flex; gap=8px; justifyContent=space-between; alignItems=center}
+              <span> [423,2788 52x52] .flex size-12 shrink-0 items-center justify-center rounded-2xl bg-bee/25 md:size-[52px] {display=flex; justifyContent=center; alignItems=center; backgroundColor=#f7d710/0.25; borderRadius=18px}
+                svg 24x24 cls=lucide lucide-circle-gauge size-6 text-ink color=#1a2024
+            <div> [423,2840 284x167] .min-w-0 flex-1 {}
+              <p> [423,2864 284x20] .mt-6 hidden font-body text-[10px] font-extrabold uppercase leading-5 tracking-wider text-ink/50 md:block {margin=24px 0px 0px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=20px; letterSpacing=0.5px; textTransform=uppercase; color=#1a2024/0.5} "Fault finding"
+              <h3> [423,2892 284x55] .font-display text-base font-extrabold leading-snug md:mt-2 md:text-xl md:uppercase {margin=8px 0px 0px; ff=Manrope; fontSize=20px; fontWeight=800; lineHeight=27.5px; textTransform=uppercase} "Computer diagnostics & electrical"
+              <p> [423,2959 284x48] .mt-1 line-clamp-1 font-body text-sm leading-6 text-ink/60 md:mt-3 md:line-clamp-none {margin=12px 0px 0px; ff=Manrope; fontSize=14px; color=#1a2024/0.6} "Warning lights, wiring, starters, and sensors."
+            <div> [423,3031 284x61] .mt-auto hidden items-center justify-between gap-2 border-t border-ink/10 pt-4 md:flex md:mt-6 {display=flex; gap=8px; justifyContent=space-between; alignItems=center; padding=16px 0px 0px; margin=24px 0px 0px; border=}
+              <span> [423,3060 115x20] .font-body text-sm font-extrabold {ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=20px} "Quote after scan"
+              <span> [663,3048 44x44] .flex size-11 shrink-0 items-center justify-center rounded-full bg-ink text-bee {display=flex; justifyContent=center; alignItems=center; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px}
+                svg 20x20 cls=lucide lucide-arrow-right size-5 color=#f7d710
+          <a> [32,3141 342x362] .service-photo-card group flex min-w-0 items-center gap-4 rounded-2xl border border-ink/10 bg-paper p-4 transition-[transform,border-color] d href=/services/battery {display=flex; flexDirection=column; gap=0px; alignItems=stretch; padding=28px; backgroundColor=#ffffff; borderRadius=22px; border=1px solid #1a2024/0.1}
+            <div> [61,3170 284x52] .flex shrink-0 items-center justify-between gap-2 {display=flex; gap=8px; justifyContent=space-between; alignItems=center}
+              <span> [61,3170 52x52] .flex size-12 shrink-0 items-center justify-center rounded-2xl bg-bee/25 md:size-[52px] {display=flex; justifyContent=center; alignItems=center; backgroundColor=#f7d710/0.25; borderRadius=18px}
+                svg 24x24 cls=lucide lucide-battery-charging size-6 text-ink color=#1a2024
+              <span> [296,3184 49x24] .hidden rounded-full bg-ink px-3 py-1 font-body text-xs font-bold text-bee md:block {padding=4px 12px; ff=Manrope; fontSize=12px; fontWeight=700; lineHeight=16px; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px} "Free"
+            <div> [61,3222 284x167] .min-w-0 flex-1 {}
+              <p> [61,3246 284x20] .mt-6 hidden font-body text-[10px] font-extrabold uppercase leading-5 tracking-wider text-ink/50 md:block {margin=24px 0px 0px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=20px; letterSpacing=0.5px; textTransform=uppercase; color=#1a2024/0.5} "Starting & charging"
+              <h3> [61,3274 284x55] .font-display text-base font-extrabold leading-snug md:mt-2 md:text-xl md:uppercase {margin=8px 0px 0px; ff=Manrope; fontSize=20px; fontWeight=800; lineHeight=27.5px; textTransform=uppercase} "Battery & alternator service"
+              <p> [61,3341 284x48] .mt-1 line-clamp-1 font-body text-sm leading-6 text-ink/60 md:mt-3 md:line-clamp-none {margin=12px 0px 0px; ff=Manrope; fontSize=14px; color=#1a2024/0.6} "Free battery testing and charging system checks."
+            <div> [61,3413 284x61] .mt-auto hidden items-center justify-between gap-2 border-t border-ink/10 pt-4 md:flex md:mt-6 {display=flex; gap=8px; justifyContent=space-between; alignItems=center; padding=16px 0px 0px; margin=24px 0px 0px; border=}
+              <span> [61,3442 114x20] .font-body text-sm font-extrabold {ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=20px} "Free battery test"
+              <span> [301,3430 44x44] .flex size-11 shrink-0 items-center justify-center rounded-full bg-ink text-bee {display=flex; justifyContent=center; alignItems=center; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px}
+                svg 20x20 cls=lucide lucide-arrow-right size-5 color=#f7d710
+          <a> [394,3141 342x362] .service-photo-card group flex min-w-0 items-center gap-4 rounded-2xl border border-ink/10 bg-paper p-4 transition-[transform,border-color] d href=/services/engine {display=flex; flexDirection=column; gap=0px; alignItems=stretch; padding=28px; backgroundColor=#ffffff; borderRadius=22px; border=1px solid #1a2024/0.1}
+            <div> [423,3170 284x52] .flex shrink-0 items-center justify-between gap-2 {display=flex; gap=8px; justifyContent=space-between; alignItems=center}
+              <span> [423,3170 52x52] .flex size-12 shrink-0 items-center justify-center rounded-2xl bg-bee/25 md:size-[52px] {display=flex; justifyContent=center; alignItems=center; backgroundColor=#f7d710/0.25; borderRadius=18px}
+                svg 24x24 cls=lucide lucide-settings2 lucide-settings-2 size-6 text-ink color=#1a2024
+            <div> [423,3222 284x167] .min-w-0 flex-1 {}
+              <p> [423,3246 284x20] .mt-6 hidden font-body text-[10px] font-extrabold uppercase leading-5 tracking-wider text-ink/50 md:block {margin=24px 0px 0px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=20px; letterSpacing=0.5px; textTransform=uppercase; color=#1a2024/0.5} "Powertrain"
+              <h3> [423,3274 284x55] .font-display text-base font-extrabold leading-snug md:mt-2 md:text-xl md:uppercase {margin=8px 0px 0px; ff=Manrope; fontSize=20px; fontWeight=800; lineHeight=27.5px; textTransform=uppercase} "Engine maintenance & repair"
+              <p> [423,3341 284x48] .mt-1 line-clamp-1 font-body text-sm leading-6 text-ink/60 md:mt-3 md:line-clamp-none {margin=12px 0px 0px; ff=Manrope; fontSize=14px; color=#1a2024/0.6} "Check engine lights, misfires, leaks, timing belts, and more."
+            <div> [423,3413 284x61] .mt-auto hidden items-center justify-between gap-2 border-t border-ink/10 pt-4 md:flex md:mt-6 {display=flex; gap=8px; justifyContent=space-between; alignItems=center; padding=16px 0px 0px; margin=24px 0px 0px; border=}
+              <span> [423,3442 156x20] .font-body text-sm font-extrabold {ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=20px} "Quote after inspection"
+              <span> [663,3430 44x44] .flex size-11 shrink-0 items-center justify-center rounded-full bg-ink text-bee {display=flex; justifyContent=center; alignItems=center; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px}
+                svg 20x20 cls=lucide lucide-arrow-right size-5 color=#f7d710
+          <a> [32,3523 342x362] .service-photo-card group flex min-w-0 items-center gap-4 rounded-2xl border border-ink/10 bg-paper p-4 transition-[transform,border-color] d href=/services/cooling {display=flex; flexDirection=column; gap=0px; alignItems=stretch; padding=28px; backgroundColor=#ffffff; borderRadius=22px; border=1px solid #1a2024/0.1}
+            <div> [61,3552 284x52] .flex shrink-0 items-center justify-between gap-2 {display=flex; gap=8px; justifyContent=space-between; alignItems=center}
+              <span> [61,3552 52x52] .flex size-12 shrink-0 items-center justify-center rounded-2xl bg-bee/25 md:size-[52px] {display=flex; justifyContent=center; alignItems=center; backgroundColor=#f7d710/0.25; borderRadius=18px}
+                svg 24x24 cls=lucide lucide-snowflake size-6 text-ink color=#1a2024
+            <div> [61,3604 284x167] .min-w-0 flex-1 {}
+              <p> [61,3628 284x20] .mt-6 hidden font-body text-[10px] font-extrabold uppercase leading-5 tracking-wider text-ink/50 md:block {margin=24px 0px 0px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=20px; letterSpacing=0.5px; textTransform=uppercase; color=#1a2024/0.5} "Temperature control"
+              <h3> [61,3656 284x55] .font-display text-base font-extrabold leading-snug md:mt-2 md:text-xl md:uppercase {margin=8px 0px 0px; ff=Manrope; fontSize=20px; fontWeight=800; lineHeight=27.5px; textTransform=uppercase} "Cooling system & radiator"
+              <p> [61,3723 284x48] .mt-1 line-clamp-1 font-body text-sm leading-6 text-ink/60 md:mt-3 md:line-clamp-none {margin=12px 0px 0px; ff=Manrope; fontSize=14px; color=#1a2024/0.6} "Radiators, water pumps, thermostats, and coolant flushes."
+            <div> [61,3795 284x61] .mt-auto hidden items-center justify-between gap-2 border-t border-ink/10 pt-4 md:flex md:mt-6 {display=flex; gap=8px; justifyContent=space-between; alignItems=center; padding=16px 0px 0px; margin=24px 0px 0px; border=}
+              <span> [61,3824 156x20] .font-body text-sm font-extrabold {ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=20px} "Quote after inspection"
+              <span> [301,3812 44x44] .flex size-11 shrink-0 items-center justify-center rounded-full bg-ink text-bee {display=flex; justifyContent=center; alignItems=center; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px}
+                svg 20x20 cls=lucide lucide-arrow-right size-5 color=#f7d710
+          <a> [394,3523 342x362] .service-photo-card group flex min-w-0 items-center gap-4 rounded-2xl border border-ink/10 bg-paper p-4 transition-[transform,border-color] d href=/services/suspension {display=flex; flexDirection=column; gap=0px; alignItems=stretch; padding=28px; backgroundColor=#ffffff; borderRadius=22px; border=1px solid #1a2024/0.1}
+            <div> [423,3552 284x52] .flex shrink-0 items-center justify-between gap-2 {display=flex; gap=8px; justifyContent=space-between; alignItems=center}
+              <span> [423,3552 52x52] .flex size-12 shrink-0 items-center justify-center rounded-2xl bg-bee/25 md:size-[52px] {display=flex; justifyContent=center; alignItems=center; backgroundColor=#f7d710/0.25; borderRadius=18px}
+                svg 24x24 cls=lucide lucide-waves size-6 text-ink color=#1a2024
+            <div> [423,3604 284x167] .min-w-0 flex-1 {}
+              <p> [423,3628 284x20] .mt-6 hidden font-body text-[10px] font-extrabold uppercase leading-5 tracking-wider text-ink/50 md:block {margin=24px 0px 0px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=20px; letterSpacing=0.5px; textTransform=uppercase; color=#1a2024/0.5} "Ride & handling"
+              <h3> [423,3656 284x55] .font-display text-base font-extrabold leading-snug md:mt-2 md:text-xl md:uppercase {margin=8px 0px 0px; ff=Manrope; fontSize=20px; fontWeight=800; lineHeight=27.5px; textTransform=uppercase} "Suspension & steering repair"
+              <p> [423,3723 284x48] .mt-1 line-clamp-1 font-body text-sm leading-6 text-ink/60 md:mt-3 md:line-clamp-none {margin=12px 0px 0px; ff=Manrope; fontSize=14px; color=#1a2024/0.6} "Shocks, struts, ball joints, tie rods, and bearings."
+            <div> [423,3795 284x61] .mt-auto hidden items-center justify-between gap-2 border-t border-ink/10 pt-4 md:flex md:mt-6 {display=flex; gap=8px; justifyContent=space-between; alignItems=center; padding=16px 0px 0px; margin=24px 0px 0px; border=}
+              <span> [423,3824 156x20] .font-body text-sm font-extrabold {ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=20px} "Quote after inspection"
+              <span> [663,3812 44x44] .flex size-11 shrink-0 items-center justify-center rounded-full bg-ink text-bee {display=flex; justifyContent=center; alignItems=center; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px}
+                svg 20x20 cls=lucide lucide-arrow-right size-5 color=#f7d710
+          <a> [32,3905 342x311] .service-photo-card group flex min-w-0 items-center gap-4 rounded-2xl border border-ink/10 bg-paper p-4 transition-[transform,border-color] d href=/services/transmission {display=flex; flexDirection=column; gap=0px; alignItems=stretch; padding=28px; backgroundColor=#ffffff; borderRadius=22px; border=1px solid #1a2024/0.1}
+            <div> [61,3934 284x52] .flex shrink-0 items-center justify-between gap-2 {display=flex; gap=8px; justifyContent=space-between; alignItems=center}
+              <span> [61,3934 52x52] .flex size-12 shrink-0 items-center justify-center rounded-2xl bg-bee/25 md:size-[52px] {display=flex; justifyContent=center; alignItems=center; backgroundColor=#f7d710/0.25; borderRadius=18px}
+                svg 24x24 cls=lucide lucide-unplug size-6 text-ink color=#1a2024
+            <div> [61,3986 284x116] .min-w-0 flex-1 {}
+              <p> [61,4010 284x20] .mt-6 hidden font-body text-[10px] font-extrabold uppercase leading-5 tracking-wider text-ink/50 md:block {margin=24px 0px 0px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=20px; letterSpacing=0.5px; textTransform=uppercase; color=#1a2024/0.5} "Driveline"
+              <h3> [61,4038 284x28] .font-display text-base font-extrabold leading-snug md:mt-2 md:text-xl md:uppercase {margin=8px 0px 0px; ff=Manrope; fontSize=20px; fontWeight=800; lineHeight=27.5px; textTransform=uppercase} "Transmission repair"
+              <p> [61,4078 284x24] .mt-1 line-clamp-1 font-body text-sm leading-6 text-ink/60 md:mt-3 md:line-clamp-none {margin=12px 0px 0px; ff=Manrope; fontSize=14px; color=#1a2024/0.6} "Fluid service, diagnosis, and repair."
+            <div> [61,4126 284x61] .mt-auto hidden items-center justify-between gap-2 border-t border-ink/10 pt-4 md:flex md:mt-6 {display=flex; gap=8px; justifyContent=space-between; alignItems=center; padding=16px 0px 0px; margin=24px 0px 0px; border=}
+              <span> [61,4155 156x20] .font-body text-sm font-extrabold {ff=Manrope; fontSize=14px; fontWeight=800; lineHeight=20px} "Quote after inspection"
+              <span> [301,4143 44x44] .flex size-11 shrink-0 items-center justify-center rounded-full bg-ink text-bee {display=flex; justifyContent=center; alignItems=center; color=#f7d710; backgroundColor=#1a2024; borderRadius=9999px}
+                svg 20x20 cls=lucide lucide-arrow-right size-5 color=#f7d710
+        <div> [32,4248 704x168] .mt-8 flex flex-col gap-6 rounded-3xl border border-ink/10 bg-paper px-8 py-6 lg:flex-row lg:items-center lg:justify-between {display=flex; flexDirection=column; gap=24px; padding=24px 32px; margin=32px 0px 0px; backgroundColor=#ffffff; borderRadius=22px; border=1px solid #1a2024/0.1}
+          <div> [65,4273 638x48] .flex flex-col gap-5 md:flex-row md:gap-6 {display=flex; gap=24px}
+            <div> [65,4273 182x48] .flex items-center gap-3 {display=flex; gap=12px; alignItems=center}
+              svg 24x24 cls=lucide lucide-clipboard-check size-6 shrink-0 text-ink color=#1a2024
+              <span> [101,4273 146x48] .font-body text-sm font-semibold leading-6 {ff=Manrope; fontSize=14px; fontWeight=600} "Estimate approved before any work"
+            <div> [271,4273 200x48] .flex items-center gap-3 {display=flex; gap=12px; alignItems=center}
+              svg 24x24 cls=lucide lucide-shield-check size-6 shrink-0 text-ink color=#1a2024
+              <span> [307,4273 164x48] .font-body text-sm font-semibold leading-6 {ff=Manrope; fontSize=14px; fontWeight=600} "Parts & labour warranty on most repairs"
+            <div> [495,4273 208x48] .flex items-center gap-3 {display=flex; gap=12px; alignItems=center}
+              svg 24x24 cls=lucide lucide-timer-reset size-6 shrink-0 text-ink color=#1a2024
+              <span> [531,4273 172x48] .font-body text-sm font-semibold leading-6 {ff=Manrope; fontSize=14px; fontWeight=600} "Oil, tires & batteries often done same day"
+          <button> [65,4345 638x46] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=12px 20px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; backgroundColor=#f7d710; borderRadius=9999px; border=1px solid #1a2024/0.2; boxShadow=#1a2024/0.14 0px 8px 24px 0px} "Book a service"
+            svg 16x16 cls=lucide lucide-calendar-check size-5 shrink-0 color=#1a2024
+    <div> [0,4528 768x83] .audi-service-ribbon home-service-ribbon {padding=18px 0px; color=rgb(255, 255, 255); backgroundColor=rgb(27, 34, 37); overflow=hidden}
+      <div> [-262,4546 2165x47] .audi-ribbon-track {display=flex; transform=matrix(1, 0, 0, 1, -262.401, 0)}
+        <div> [-262,4546 1083x47] .audi-ribbon-group {display=flex; gap=40px; alignItems=center; padding=0px 64px 0px 0px}
+          <img> [-262,4548 116x42] . src=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png alt="Busy Bee Auto Repair" {padding=5px; backgroundColor=rgb(255, 255, 255); borderRadius=6px; maxWidth=100%; overflow=clip; objectFit=contain}
+          <span> [-106,4558 192x23] . {fontSize=15px; fontWeight=650; lineHeight=22.5px} "Calgary, get winter-ready."
+          <i> [126,4567 5x5] . {backgroundColor=rgb(255, 230, 0); borderRadius=50%}
+          <span> [171,4558 344x23] . {fontSize=15px; fontWeight=650; lineHeight=22.5px} "Seasonal tire changes · Balancing · Tire checks"
+          <a> [554,4546 202x47] . href=tel:+14039305888 {padding=12px 22px; fontSize=14px; fontWeight=750; lineHeight=21px; color=rgb(27, 34, 37); backgroundColor=rgb(255, 230, 0); borderRadius=30px; border=1px solid rgb(255, 230, 0)} "Call (403) 930-5888 ↗"
+        <div> [820,4546 1083x47] .audi-ribbon-group {display=flex; gap=40px; alignItems=center; padding=0px 64px 0px 0px}
+          <img> [820,4548 116x42] . src=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png alt="Busy Bee Auto Repair" {padding=5px; backgroundColor=rgb(255, 255, 255); borderRadius=6px; maxWidth=100%; overflow=clip; objectFit=contain}
+          <span> [976,4558 192x23] . {fontSize=15px; fontWeight=650; lineHeight=22.5px} "Calgary, get winter-ready."
+          <i> [1208,4567 5x5] . {backgroundColor=rgb(255, 230, 0); borderRadius=50%}
+          <span> [1253,4558 344x23] . {fontSize=15px; fontWeight=650; lineHeight=22.5px} "Seasonal tire changes · Balancing · Tire checks"
+          <a> [1637,4546 202x47] . href=tel:+14039305888 {padding=12px 22px; fontSize=14px; fontWeight=750; lineHeight=21px; color=rgb(27, 34, 37); backgroundColor=rgb(255, 230, 0); borderRadius=30px; border=1px solid rgb(255, 230, 0)} "Call (403) 930-5888 ↗"
+    <section#winter-ready> [0,4611 768x1122] .seasonal-campaign {padding=30px 20px; backgroundColor=rgb(255, 255, 255); maxWidth=1504px}
+      <div> [20,4641 728x267] .winter-banner {display=flex; position=relative; flexDirection=column; gap=24px; justifyContent=space-between; alignItems=flex-start; padding=36px 40px; color=rgb(255, 255, 255); backgroundColor=rgb(22, 29, 31); borderRadius=8px; overflow=hidden}
+        <img> [20,4641 728x267] . src=/promotions/winter-tires.png alt="Winter tires on a snowy road" {position=absolute; maxWidth=100%; overflow=clip; zIndex=-2; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover; objectPosition=50% 60%}
+        <div> [60,4677 475x122] . {}
+          <span> [60,4685 275x12] . {display=inline; fontSize=10px; fontWeight=750; lineHeight=15px; letterSpacing=1.5px; color=rgb(255, 230, 0)} "BUSY BEE · CALGARY TIRE CHANGE SEASON"
+          <h2> [60,4715 475x30] . {margin=14px 0px 12px; fontSize=28px; lineHeight=30.24px; letterSpacing=-1.12px; textTransform=uppercase; maxWidth=540px} "Winter roads. Meet your match."
+          <p> [60,4757 410x42] . {fontSize=13px; lineHeight=20.8px; color=rgb(225, 228, 229); maxWidth=410px} "Seasonal tire changes, balancing and checks for the months ahead."
+        <a> [60,4822 215x50] . href=tel:+14039305888 {display=flex; gap=16px; alignItems=center; padding=15px 21px; fontSize=13px; fontWeight=750; lineHeight=19.5px; color=rgb(23, 32, 36); backgroundColor=rgb(255, 230, 0); borderRadius=5px} "Book your tire change"
+          svg 18x18 cls=lucide lucide-arrow-up-right color=rgb(23, 32, 36)
+      <div> [20,4942 728x15] .campaign-heading {display=flex; justifyContent=space-between; alignItems=center; margin=34px 0px 18px}
+        <p> [20,4942 195x15] . {fontSize=10px; fontWeight=750; lineHeight=15px; letterSpacing=1.5px} "REAL SERVICES. CLEAR VALUE."
+      <div> [20,4975 728x728] .campaign-posts {display=grid; gap=22px; gridTemplateColumns=353px 353px}
+        <button> [20,4975 353x353] .campaign-post tires {position=relative; color=rgb(255, 255, 255); backgroundColor=rgb(24, 33, 36); borderRadius=6px; overflow=hidden}
+          <img> [20,4975 353x353] .campaign-photo src=/promotions/winter-tires.png alt="" {position=absolute; maxWidth=100%; overflow=clip; zIndex=-3; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover}
+          <span> [20,4975 353x353] .campaign-shade {position=absolute; backgroundImage=linear-gradient(rgba(16, 24, 28, 0.082), rgba(16, 24, 28, 0.584) 42%, rgba(16, 24, 28, 0.96) 100%); zIndex=-2; top=0px; left=0px; right=0px; bottom=0px}
+          <img> [38,4993 90x35] .campaign-logo src=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png alt="Busy Bee Auto Repair" {position=absolute; padding=5px; backgroundColor=rgb(255, 255, 255); borderRadius=3px; maxWidth=100%; overflow=clip; top=18px; left=18px; right=245px; bottom=300px; objectFit=contain}
+          <span> [36,5187 321x125] .campaign-copy {display=flex; position=absolute; flexDirection=column; alignItems=flex-start; top=212.406px; left=16px; right=16px; bottom=16px}
+            <small> [36,5187 124x12] . {margin=0px 0px 10px; fontSize=8px; fontWeight=750; lineHeight=12px; letterSpacing=0.8px; color=rgb(255, 230, 0)} "CALGARY · WINTER READY"
+            <strong> [36,5209 159x56] . {fontSize=27px; fontWeight=800; lineHeight=27.81px; letterSpacing=-1.215px} "New season.
+Right tires."
+            <span> [36,5284 134x28] .campaign-cta {display=flex; gap=10px; alignItems=center; padding=10px 0px 0px; margin=19px 0px 0px; fontSize=10px; fontWeight=750; lineHeight=15px; border=} "Book your tire change"
+              svg 17x17 cls=lucide lucide-arrow-up-right color=rgb(255, 255, 255)
+        <button> [395,4975 353x353] .campaign-post oil-offer {position=relative; color=rgb(255, 255, 255); backgroundColor=rgb(16, 23, 25); borderRadius=6px; overflow=hidden}
+          <img> [395,4975 353x353] .campaign-photo src=/promotions/oil-service.png alt="" {position=absolute; maxWidth=100%; overflow=clip; zIndex=-3; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover; objectPosition=50% 25%}
+          <span> [395,4975 353x353] .campaign-shade {position=absolute; backgroundImage=linear-gradient(transparent 18%, rgba(16, 23, 25, 0.22) 36%, rgba(16, 23, 25, 0.91) 64%, rgb(16, 23, 25) 100%); zIndex=-2; top=0px; left=0px; right=0px; bottom=0px}
+          <img> [413,4993 90x35] .campaign-logo src=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png alt="Busy Bee Auto Repair" {position=absolute; padding=5px; backgroundColor=rgb(255, 255, 255); borderRadius=3px; maxWidth=100%; overflow=clip; top=18px; left=18px; right=245px; bottom=300px; objectFit=contain}
+          <span> [421,5092 301x210] .campaign-copy {display=flex; position=absolute; flexDirection=column; alignItems=flex-start; top=117.312px; left=26px; right=26px; bottom=26px}
+            <small> [421,5092 218x17] . {margin=0px 0px 10px; fontSize=11px; fontWeight=750; lineHeight=16.5px; letterSpacing=1.32px; color=rgb(255, 230, 0)} "MOBIL 1 SYNTHETIC OIL CHANGE"
+            <strong> [421,5119 185x42] . {fontSize=40px; fontWeight=900; lineHeight=42px; letterSpacing=-2.4px; color=rgb(255, 230, 0)} "FROM $75"
+            <span> [421,5173 260x43] .offer-benefit {margin=12px 0px 0px; fontWeight=750; lineHeight=21.6px; maxWidth=260px} "Includes a complimentary vehicle inspection"
+            <span> [421,5226 161x15] .offer-terms {margin=10px 0px 0px; fontSize=10px; lineHeight=15px; opacity=0.8} "Starting price · vehicle-dependent"
+            <span> [421,5260 169x42] .campaign-cta {display=flex; gap=10px; alignItems=center; padding=12px 16px; margin=19px 0px 0px; fontSize=12px; fontWeight=750; lineHeight=18px; color=rgb(23, 32, 36); backgroundColor=rgb(255, 230, 0); borderRadius=4px} "Book an oil change"
+              svg 17x17 cls=lucide lucide-arrow-up-right color=rgb(23, 32, 36)
+        <button> [20,5350 353x353] .campaign-post battery-offer {position=relative; color=rgb(255, 255, 255); backgroundColor=rgb(23, 32, 36); borderRadius=6px; overflow=hidden}
+          <img> [20,5350 353x353] .campaign-photo src=/promotions/battery-service.png alt="" {position=absolute; maxWidth=100%; overflow=clip; zIndex=-3; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover; objectPosition=50% 25%}
+          <span> [20,5350 353x353] .campaign-shade {position=absolute; backgroundImage=linear-gradient(transparent 18%, rgba(16, 23, 25, 0.22) 36%, rgba(16, 23, 25, 0.91) 64%, rgb(16, 23, 25) 100%); zIndex=-2; top=0px; left=0px; right=0px; bottom=0px}
+          <img> [38,5368 90x35] .campaign-logo src=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png alt="Busy Bee Auto Repair" {position=absolute; padding=5px; backgroundColor=rgb(255, 255, 255); borderRadius=3px; maxWidth=100%; overflow=clip; top=18px; left=18px; right=245px; bottom=300px; objectFit=contain}
+          <span> [46,5467 301x210] .campaign-copy {display=flex; position=absolute; flexDirection=column; alignItems=flex-start; top=117.312px; left=26px; right=26px; bottom=26px}
+            <small> [46,5467 122x17] . {margin=0px 0px 10px; fontSize=11px; fontWeight=750; lineHeight=16.5px; letterSpacing=1.32px; color=rgb(255, 230, 0)} "BATTERY TESTING"
+            <strong> [46,5494 90x42] . {fontSize=40px; fontWeight=900; lineHeight=42px; letterSpacing=-2.4px; color=rgb(255, 230, 0)} "FREE"
+            <span> [46,5548 260x43] .offer-benefit {margin=12px 0px 0px; fontWeight=750; lineHeight=21.6px; maxWidth=260px} "Battery test + charging-system check"
+            <span> [46,5601 171x15] .offer-terms {margin=10px 0px 0px; fontSize=10px; lineHeight=15px; opacity=0.8} "Repairs and replacement parts extra"
+            <span> [46,5635 207x42] .campaign-cta {display=flex; gap=10px; alignItems=center; padding=12px 16px; margin=19px 0px 0px; fontSize=12px; fontWeight=750; lineHeight=18px; color=rgb(23, 32, 36); backgroundColor=rgb(255, 230, 0); borderRadius=4px} "Get your battery checked"
+              svg 17x17 cls=lucide lucide-arrow-up-right color=rgb(23, 32, 36)
+    <section#vehicle-brands> [0,5733 768x1411] .vehicle-brands {padding=90px 32px 60px; color=rgb(27, 34, 37); backgroundColor=rgb(255, 255, 255)}
+      <div> [32,5823 704x1261] .modern-wrap {maxWidth=1152px}
+        <div> [32,5823 704x154] .brand-intro {display=flex; gap=50px; justifyContent=space-between; alignItems=flex-end; margin=0px 0px 42px}
+          <div> [32,5823 274x154] . {}
+            <p> [32,5823 274x15] .modern-eyebrow {display=flex; gap=10px; alignItems=center; fontSize=10px; fontWeight=800; lineHeight=15px; letterSpacing=2px} "DOMESTIC & IMPORT SPECIALISTS"
+            <h2> [32,5863 274x114] . {margin=25px 0px 0px; fontSize=36px; fontWeight=800; lineHeight=38.16px; letterSpacing=-1.62px; textTransform=uppercase} "Your car. Our expertise."
+              <br> [218,5860 0x44] . {display=inline}
+          <div> [356,5886 380x91] . {maxWidth=380px}
+            <p> [356,5886 380x53] . {fontSize=14px; lineHeight=26.6px; color=rgb(116, 128, 133)} "Our mechanics work on domestic, Asian, and European vehicles every day."
+            <a> [356,5959 380x18] . href=tel:+14039305888 {display=flex; gap=12px; alignItems=center; margin=20px 0px 0px; fontSize=12px; fontWeight=800; lineHeight=18px} "Talk to our team"
+              svg 18x18 cls=lucide lucide-arrow-right color=rgb(27, 34, 37)
+        <ul> [32,6019 704x467] .brand-gallery {display=grid; gridTemplateColumns=234px 234px 234px; borderRadius=20px; border=1px solid rgb(232, 235, 234); overflow=hidden}
+          <li> [33,6020 234x155] . {display=flex; flexDirection=column; gap=15px; justifyContent=center; alignItems=center; backgroundColor=rgb(251, 252, 251); border=}
+            <a> [33,6020 233x154] . href=/brands/audi {display=flex; flexDirection=column; gap=16px; justifyContent=center; alignItems=center}
+              <img> [92,6051 115x62] . src=/brands/audi.png alt="Audi logo" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [137,6129 25x15] . {fontSize=10px; fontWeight=600; lineHeight=15px; letterSpacing=0.6px; color=rgb(123, 133, 136)} "Audi"
+          <li> [267,6020 234x155] . {display=flex; flexDirection=column; gap=15px; justifyContent=center; alignItems=center; backgroundColor=rgb(251, 252, 251); border=}
+            <a> [267,6020 233x154] . href=/brands/bmw {display=flex; flexDirection=column; gap=16px; justifyContent=center; alignItems=center}
+              <img> [326,6051 115x62] . src=/brands/bmw.png alt="BMW logo" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [370,6129 28x15] . {fontSize=10px; fontWeight=600; lineHeight=15px; letterSpacing=0.6px; color=rgb(123, 133, 136)} "BMW"
+          <li> [501,6020 234x155] . {display=flex; flexDirection=column; gap=15px; justifyContent=center; alignItems=center; backgroundColor=rgb(251, 252, 251); border=}
+            <a> [501,6020 234x154] . href=/brands/mercedes-benz {display=flex; flexDirection=column; gap=16px; justifyContent=center; alignItems=center}
+              <img> [561,6051 115x62] . src=/brands/mercedes-benz.png alt="Mercedes-Benz logo" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [575,6129 85x15] . {fontSize=10px; fontWeight=600; lineHeight=15px; letterSpacing=0.6px; color=rgb(123, 133, 136)} "Mercedes-Benz"
+          <li> [33,6175 234x155] . {display=flex; flexDirection=column; gap=15px; justifyContent=center; alignItems=center; backgroundColor=rgb(251, 252, 251); border=}
+            <a> [33,6175 233x154] . href=/brands/porsche {display=flex; flexDirection=column; gap=16px; justifyContent=center; alignItems=center}
+              <img> [92,6206 115x62] . src=/brands/porsche.png alt="Porsche logo" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [128,6284 44x15] . {fontSize=10px; fontWeight=600; lineHeight=15px; letterSpacing=0.6px; color=rgb(123, 133, 136)} "Porsche"
+          <li> [267,6175 234x155] . {display=flex; flexDirection=column; gap=15px; justifyContent=center; alignItems=center; backgroundColor=rgb(251, 252, 251); border=}
+            <a> [267,6175 233x154] . href=/brands/toyota {display=flex; flexDirection=column; gap=16px; justifyContent=center; alignItems=center}
+              <img> [326,6206 115x62] . src=/brands/toyota.png alt="Toyota logo" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [365,6284 36x15] . {fontSize=10px; fontWeight=600; lineHeight=15px; letterSpacing=0.6px; color=rgb(123, 133, 136)} "Toyota"
+          <li> [501,6175 234x155] . {display=flex; flexDirection=column; gap=15px; justifyContent=center; alignItems=center; backgroundColor=rgb(251, 252, 251); border=}
+            <a> [501,6175 234x154] . href=/brands/ford {display=flex; flexDirection=column; gap=16px; justifyContent=center; alignItems=center}
+              <img> [561,6206 115x62] . src=/brands/ford.png alt="Ford logo" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [606,6284 24x15] . {fontSize=10px; fontWeight=600; lineHeight=15px; letterSpacing=0.6px; color=rgb(123, 133, 136)} "Ford"
+          <li> [33,6330 234x155] . {display=flex; flexDirection=column; gap=15px; justifyContent=center; alignItems=center; backgroundColor=rgb(251, 252, 251); border=}
+            <a> [33,6330 233x155] . href=/brands/gmc {display=flex; flexDirection=column; gap=16px; justifyContent=center; alignItems=center}
+              <img> [92,6361 115x62] . src=/brands/gmc.png alt="GMC logo" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [137,6439 26x15] . {fontSize=10px; fontWeight=600; lineHeight=15px; letterSpacing=0.6px; color=rgb(123, 133, 136)} "GMC"
+          <li> [267,6330 234x155] . {display=flex; flexDirection=column; gap=15px; justifyContent=center; alignItems=center; backgroundColor=rgb(251, 252, 251); border=}
+            <a> [267,6330 233x155] . href=/brands/hyundai {display=flex; flexDirection=column; gap=16px; justifyContent=center; alignItems=center}
+              <img> [326,6361 115x62] . src=/brands/hyundai.png alt="Hyundai logo" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [361,6439 44x15] . {fontSize=10px; fontWeight=600; lineHeight=15px; letterSpacing=0.6px; color=rgb(123, 133, 136)} "Hyundai"
+          <li> [501,6330 234x155] . {display=flex; flexDirection=column; gap=15px; justifyContent=center; alignItems=center; backgroundColor=rgb(251, 252, 251); border=}
+            <a> [501,6330 234x155] . href=/brands/dodge {display=flex; flexDirection=column; gap=16px; justifyContent=center; alignItems=center}
+              <img> [561,6361 115x62] . src=/brands/dodge.png alt="Dodge logo" {maxWidth=100%; overflow=clip; objectFit=contain}
+              <span> [601,6439 35x15] . {fontSize=10px; fontWeight=600; lineHeight=15px; letterSpacing=0.6px; color=rgb(123, 133, 136)} "Dodge"
+        <div> [32,6518 704x516] .all-brand-links {display=grid; gap=0px 24px; gridTemplateColumns=218.656px 218.672px 218.672px; margin=32px 0px}
+          <a> [32,6518 219x43] . href=/brands/acura {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Acura"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6518 219x43] . href=/brands/alfa-romeo {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Alfa Romeo"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6518 219x43] . href=/brands/audi {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Audi"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6561 219x43] . href=/brands/bmw {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "BMW"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6561 219x43] . href=/brands/buick {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Buick"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6561 219x43] . href=/brands/cadillac {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Cadillac"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6604 219x43] . href=/brands/chevrolet {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Chevrolet"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6604 219x43] . href=/brands/chrysler {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Chrysler"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6604 219x43] . href=/brands/dodge {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Dodge"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6647 219x43] . href=/brands/fiat {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Fiat"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6647 219x43] . href=/brands/ford {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Ford"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6647 219x43] . href=/brands/genesis {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Genesis"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6690 219x43] . href=/brands/gmc {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "GMC"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6690 219x43] . href=/brands/honda {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Honda"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6690 219x43] . href=/brands/hyundai {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Hyundai"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6733 219x43] . href=/brands/infiniti {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Infiniti"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6733 219x43] . href=/brands/jeep {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Jeep"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6733 219x43] . href=/brands/kia {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Kia"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6776 219x43] . href=/brands/land-rover {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Land Rover"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6776 219x43] . href=/brands/lexus {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Lexus"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6776 219x43] . href=/brands/lincoln {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Lincoln"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6819 219x43] . href=/brands/mazda {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Mazda"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6819 219x43] . href=/brands/mercedes-benz {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Mercedes-Benz"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6819 219x43] . href=/brands/mitsubishi {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Mitsubishi"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6862 219x43] . href=/brands/nissan {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Nissan"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6862 219x43] . href=/brands/porsche {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Porsche"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6862 219x43] . href=/brands/ram {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "RAM"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6905 219x43] . href=/brands/skoda {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Skoda"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6905 219x43] . href=/brands/smart {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Smart"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6905 219x43] . href=/brands/subaru {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Subaru"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6948 219x43] . href=/brands/suzuki {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Suzuki"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [275,6948 219x43] . href=/brands/toyota {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Toyota"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [517,6948 219x43] . href=/brands/volkswagen {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Volkswagen"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+          <a> [32,6991 219x43] . href=/brands/volvo {display=flex; gap=8px; justifyContent=space-between; padding=12px 0px; fontSize=12px; lineHeight=18px; border=} "Volvo"
+            svg 13x13 cls=lucide lucide-arrow-up-right color=rgb(27, 34, 37)
+        <div> [32,7066 704x18] .brand-bottom {display=flex; gap=20px; justifyContent=space-between; margin=24px 0px 0px; fontSize=11px; lineHeight=16.5px; color=rgb(123, 133, 136)}
+          <span> [32,7066 235x18] . {display=flex; gap=8px; alignItems=center; color=rgb(52, 63, 66)} "All makes. All models. One trusted shop."
+            svg 18x18 cls=lucide lucide-badge-check color=rgb(52, 63, 66)
+          <span> [577,7066 159x18] . {} "Dealer-sourced parts available"
+    <section#symptom-check> [0,7144 768x1071] .vehicle-checker {padding=90px 32px; color=rgb(27, 34, 37); backgroundColor=rgb(255, 255, 255)}
+      <div> [32,7234 704x891] .vehicle-checker-wrap {maxWidth=1240px}
+        <header> [32,7234 704x198] .vehicle-checker-heading {display=flex; gap=60px; justifyContent=space-between; alignItems=flex-end; margin=0px 0px 45px}
+          <div> [32,7234 329x198] . {}
+            <p> [32,7234 329x15] . {margin=0px 0px 22px; fontSize=10px; fontWeight=800; lineHeight=15px; letterSpacing=1.6px} "BUSY BEE / SYMPTOM CHECKER"
+            <h2> [32,7271 329x161] . {fontSize=48px; fontWeight=700; lineHeight=53.76px; letterSpacing=-2.16px} "Know your car."
+              <br> [355,7268 0x59] . {display=inline}
+              <span> [32,7322 255x113] . {display=inline; color=rgb(129, 134, 135)} "Understand the signs."
+          <p> [421,7357 315x76] . {fontSize=14px; lineHeight=25.2px; color=rgb(113, 119, 121); maxWidth=315px} "Tell us what’s happening. We’ll help you understand the possible causes and your next step."
+        <div> [32,7478 704x648] .vehicle-checker-grid {display=grid; gridTemplateColumns=382.906px 319.094px; borderRadius=18px; border=1px solid rgb(228, 231, 231); overflow=hidden}
+          <div> [33,7479 383x646] .vehicle-studio {display=flex; position=relative; flexDirection=column; padding=30px; backgroundColor=rgb(246, 247, 247); overflow=hidden}
+            <div> [63,7509 323x14] .vehicle-studio-top {display=flex; justifyContent=space-between; fontSize=9px; fontWeight=700; lineHeight=13.5px; letterSpacing=1.08px; color=rgb(125, 133, 135)}
+              <span> [63,7509 79x14] . {} "YOUR VEHICLE"
+              <span> [306,7509 80x14] . {} "01 / OVERVIEW"
+            <h3> [63,7556 323x48] . {margin=34px 0px 0px; fontSize=32px; fontWeight=700; lineHeight=48px; letterSpacing=-1.12px} "Let’s meet your car."
+            <p> [63,7612 323x18] .vehicle-spec {margin=8px 0px 0px; fontSize=12px; lineHeight=18px; color=rgb(123, 131, 133)} "Year Mileage"
+              <span> [99,7613 11x15] . {display=inline; margin=0px 10px; color=rgb(195, 200, 201)} "/"
+            <img> [33,7642 383x255] .vehicle-studio-render src=/cars/civic-studio.png alt="Illustrative white Honda Civic studio render" {margin=12px -30px 0px; overflow=clip; objectFit=contain}
+            <div> [63,7905 323x34] .vehicle-studio-caption {display=flex; gap=10px; justifyContent=space-between; margin=8px 0px 0px; fontSize=8px; lineHeight=12px; letterSpacing=0.32px; color=rgb(138, 146, 148)}
+              <span> [63,7905 163x12] . {} "HONDA CIVIC · ILLUSTRATIVE PREVIEW"
+              <span> [63,7927 150x12] . {} "Vehicle image matching coming next"
+            <div> [63,8023 323x72] .vehicle-studio-bottom {display=flex; gap=12px; alignItems=center; padding=32px 0px 0px; margin=83.6406px 0px 0px; color=rgb(107, 116, 118)}
+              svg 19x19 cls=lucide lucide-shield-check color=rgb(107, 116, 118)
+              <p> [94,8055 191x40] . {fontSize=11px; lineHeight=19.8px} "Your description is the starting point."
+                <br> [285,8057 0x14] . {display=inline}
+                <strong> [94,8077 191x14] . {display=inline; fontWeight=500; color=rgb(65, 74, 76)} "A technician confirms the diagnosis."
+          <div> [416,7479 319x646] .vehicle-checker-form-panel {padding=34px; backgroundColor=rgb(255, 255, 255); border=}
+            <form> [451,7513 250x578] .vehicle-checker-form {}
+              <div> [451,7513 250x75] .checker-form-title {}
+                <span> [451,7522 95x11] . {display=inline; fontSize=9px; fontWeight=700; lineHeight=13.5px; letterSpacing=1.08px; color=rgb(139, 147, 149)} "02 / THE DETAILS"
+                <h3> [451,7549 250x39] . {margin=12px 0px 27px; fontSize=26px; fontWeight=700; lineHeight=39px; letterSpacing=-0.91px} "What’s going on?"
+              <div> [451,7615 250x160] .checker-field-grid {display=grid; gap=19px 14px; gridTemplateColumns=118.047px 118.047px}
+                <label> [451,7615 118x71] . {fontSize=11px; fontWeight=600; lineHeight=16.5px; color=rgb(65, 73, 75)} "Make"
+                  <input> [451,7639 118x46] . ph="e.g. Honda" type=text name= {padding=13px; margin=8px 0px 0px; fontSize=12px; fontWeight=400; lineHeight=18px; backgroundColor=rgb(255, 255, 255); borderRadius=6px; border=1px solid rgb(220, 225, 226); overflow=clip}
+                <label> [583,7615 118x71] . {fontSize=11px; fontWeight=600; lineHeight=16.5px; color=rgb(65, 73, 75)} "Model"
+                  <input> [583,7639 118x46] . ph="e.g. Civic" type=text name= {padding=13px; margin=8px 0px 0px; fontSize=12px; fontWeight=400; lineHeight=18px; backgroundColor=rgb(255, 255, 255); borderRadius=6px; border=1px solid rgb(220, 225, 226); overflow=clip}
+                <label> [451,7704 118x71] . {fontSize=11px; fontWeight=600; lineHeight=16.5px; color=rgb(65, 73, 75)} "Year"
+                  <input> [451,7729 118x46] . ph="e.g. 2022" type=text name= {padding=13px; margin=8px 0px 0px; fontSize=12px; fontWeight=400; lineHeight=18px; backgroundColor=rgb(255, 255, 255); borderRadius=6px; border=1px solid rgb(220, 225, 226); overflow=clip}
+                <label> [583,7704 118x71] . {fontSize=11px; fontWeight=600; lineHeight=16.5px; color=rgb(65, 73, 75)} "Mileage (km)"
+                  <input> [583,7729 118x46] . ph="e.g. 65,000" type=text name= {padding=13px; margin=8px 0px 0px; fontSize=12px; fontWeight=400; lineHeight=18px; backgroundColor=rgb(255, 255, 255); borderRadius=6px; border=1px solid rgb(220, 225, 226); overflow=clip}
+              <label> [451,7798 250x141] .checker-issues {margin=23px 0px 0px; fontSize=11px; fontWeight=600; lineHeight=16.5px; color=rgb(65, 73, 75)} "Describe the issue"
+                <textarea> [451,7822 250x116] . ph="What do you hear or feel? When does it happen? Any warning lights? Tell us as much as you can." type=textarea name= {padding=13px; margin=8px 0px 0px; fontSize=12px; fontWeight=400; lineHeight=21.6px; backgroundColor=rgb(255, 255, 255); borderRadius=6px; border=1px solid rgb(220, 225, 226); overflow=auto}
+              <div> [451,7950 250x62] .checker-suggestions {display=flex; gap=7px; margin=12px 0px 25px}
+                <button> [451,7950 89x28] . {padding=6px 9px; fontSize=9px; lineHeight=13.5px; color=rgb(112, 121, 123); borderRadius=4px; border=1px solid rgb(228, 231, 232)} "Unusual noise +"
+                <button> [546,7950 85x28] . {padding=6px 9px; fontSize=9px; lineHeight=13.5px; color=rgb(112, 121, 123); borderRadius=4px; border=1px solid rgb(228, 231, 232)} "Warning light +"
+                <button> [451,7985 96x28] . {padding=6px 9px; fontSize=9px; lineHeight=13.5px; color=rgb(112, 121, 123); borderRadius=4px; border=1px solid rgb(228, 231, 232)} "Trouble starting +"
+                <button> [553,7985 67x28] . {padding=6px 9px; fontSize=9px; lineHeight=13.5px; color=rgb(112, 121, 123); borderRadius=4px; border=1px solid rgb(228, 231, 232)} "Vibration +"
+              <button> [451,8037 250x54] .checker-submit {display=flex; justifyContent=space-between; alignItems=center; padding=17px 20px; fontSize=13px; fontWeight=800; lineHeight=19.5px; color=rgb(21, 28, 30); backgroundColor=rgb(255, 230, 0); borderRadius=7px} "Check my symptoms"
+                svg 18x18 cls=lucide lucide-arrow-right color=rgb(21, 28, 30)
+            <div> [451,8091 250x0] .diagnostic-results space-y-8 {}
+    <section#why-busy-bee> [0,8216 768x955] .calgary-section {padding=40px 24px; color=rgb(20, 22, 21); backgroundColor=rgb(255, 255, 255)}
+      <div> [24,8256 720x875] .calgary-board {display=grid; gap=10px; gridTemplateColumns=60px 310px 310px; padding=10px; backgroundColor=rgb(8, 9, 9); borderRadius=36px; maxWidth=1320px}
+        <div> [34,8266 60x375] .calgary-spine {display=flex; justifyContent=center; alignItems=center; backgroundColor=rgb(255, 255, 255); borderRadius=24px; overflow=hidden}
+          <span> [45,8318 38x270] . {fontSize=38px; fontWeight=900; lineHeight=38px; letterSpacing=-2px; textTransform=uppercase; transform=matrix(-1, 0, 0, -1, 0, 0)} "Why Busy Bee"
+        <header> [104,8266 630x167] .calgary-heading {padding=24px; backgroundColor=rgb(255, 255, 255); borderRadius=24px; overflow=hidden}
+          <h2> [128,8290 582x57] . {fontSize=27px; fontWeight=850; lineHeight=28.35px; letterSpacing=-1.4px; textTransform=uppercase; maxWidth=610px} "Why Calgary Drivers Choose Our Mechanics"
+          <p> [128,8364 530x45] . {margin=18px 0px 0px; fontSize=14px; lineHeight=22.4px; color=rgb(98, 102, 98); maxWidth=530px} "Family-owned, locally run. Our name is on every job, and our reputation depends on getting it right."
+        <article> [104,8443 630x198] .calgary-diagnosis {position=relative; padding=24px; backgroundColor=rgb(255, 230, 0); borderRadius=24px; overflow=hidden}
+          <span> [670,8465 42x42] .calgary-arrow {display=grid; position=absolute; gridTemplateColumns=40px; alignItems=center; borderRadius=13px; border=1px solid rgba(20, 22, 21, 0.333); top=22px; left=566px; right=22px; bottom=134px}
+            svg 24x24 cls=lucide lucide-arrow-up-right color=rgb(20, 22, 21)
+          <h3> [128,8467 550x83] . {padding=0px 38px 0px 0px; fontSize=22px; fontWeight=750; lineHeight=27.5px; letterSpacing=-0.8px; textTransform=uppercase; maxWidth=550px} "Honest diagnosis first. We find the real cause before we replace anything, so you don't pay for parts you didn't need."
+          <button> [128,8576 198x42] . {display=flex; gap=28px; alignItems=center; padding=10px 17px; margin=26px 0px 0px; fontSize=13px; fontWeight=700; lineHeight=19.5px; borderRadius=30px; border=1px solid rgb(20, 22, 21)} "Book appointment"
+            svg 18x18 cls=lucide lucide-arrow-right color=rgb(20, 22, 21)
+        <article> [34,8651 380x210] .calgary-quotes {position=relative; padding=23px; backgroundColor=rgb(255, 255, 255); borderRadius=24px; overflow=hidden}
+          <img> [247,8651 167x210] . src=/assets/brake-service-DAs--rV2.jpg alt="Technician inspecting a vehicle brake system" {position=absolute; opacity=0.35; maxWidth=100%; overflow=clip; top=0px; left=212.812px; right=0px; bottom=0px; objectFit=cover; mask=linear-gradient(90deg, transparent, rgb(0, 0, 0))}
+          <h3> [57,8674 300x97] . {position=relative; fontSize=18px; fontWeight=800; lineHeight=25.2px; textTransform=uppercase; maxWidth=300px} "Clear, upfront quotes."
+            <span> [57,8708 245x62] . {margin=9px 0px 0px; fontSize=13px; fontWeight=500; lineHeight=20.8px; maxWidth=245px} "You approve every repair and price before we start. No surprises at pickup."
+        <article> [424,8651 310x210] .calgary-fix {display=flex; position=relative; alignItems=end; padding=22px; backgroundColor=rgb(36, 41, 39); borderRadius=24px; overflow=hidden}
+          <img> [424,8651 310x210] . src=/assets/diagnostics-service-Djl4l8sV.jpg alt="Technician diagnosing a vehicle" {position=absolute; opacity=0.48; maxWidth=100%; overflow=clip; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover}
+          <h3> [446,8760 266x79] . {position=relative; fontSize=21px; fontWeight=700; lineHeight=26.25px; textTransform=uppercase; color=rgb(255, 255, 255); zIndex=1} "Finds the real problem and fixes it right the first time."
+        <article> [34,8871 700x250] .calgary-makes {position=relative; backgroundColor=rgb(52, 58, 56); borderRadius=24px; overflow=hidden}
+          <img> [34,8871 700x250] . src=/cars/fleets/audi-workshop.png alt="Illustrative mechanic working on a vehicle in a workshop" {position=absolute; maxWidth=100%; overflow=clip; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover; objectPosition=44% 50%}
+          <div> [59,8969 178x123] . {position=absolute; color=rgb(255, 255, 255); zIndex=1; top=97.5px; left=25px; right=497.109px; bottom=30px}
+            svg 32x32 cls=lucide lucide-car-front color=rgb(255, 255, 255)
+            <h3> [59,9019 178x48] . {margin=18px 0px 0px; fontSize=32px; fontWeight=850; lineHeight=48px; letterSpacing=-1px; textTransform=uppercase} "ALL MAKES"
+            <p> [59,9072 178x20] . {margin=5px 0px 0px; fontSize=13px; lineHeight=19.5px; color=rgb(221, 221, 221)} "Cars · SUVs · Trucks"
+    <section#reviews> [0,9171 768x750] .google-reviews bg-paper px-5 pb-10 pt-4 md:px-10 md:pb-28 xl:px-16 {padding=65px 40px 112px; backgroundColor=rgb(255, 255, 255)}
+      <div> [48,9236 672x152] .bento-reveal mx-auto max-w-2xl text-center is-in {margin=0px 8px; maxWidth=672px}
+        <span> [256,9236 256x50] .inline-flex rounded-full bg-line-grey/45 px-8 py-2.5 font-body text-[11px] font-semibold uppercase tracking-[0.08em] text-ink/55 {display=inline-flex; gap=12px; padding=10px 32px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; letterSpacing=0.88px; textTransform=uppercase; color=rgb(85, 85, 85); backgroundColor=rgb(255, 255, 255); borderRadius=9999px; border=1px solid rgb(232, 234, 237)} "Service you can trust"
+          svg 28x28 cls=google-mark color=rgb(85, 85, 85)
+        <h2> [48,9298 672x50] .mt-3 font-display text-[1.75rem] font-extrabold uppercase leading-[1.05] md:text-5xl {margin=12px 0px 0px; ff=Manrope; fontSize=48px; fontWeight=800; lineHeight=50.4px; textTransform=uppercase} "What our customers say"
+        <p> [96,9364 576x24] .mx-auto mt-4 max-w-xl font-body text-sm leading-6 text-ink/60 md:text-base {margin=16px 48px 0px; ff=Manrope; color=#1a2024/0.6; maxWidth=576px} "4.8 stars on Google from Calgary drivers."
+      <div> [40,9444 688x297] .mt-8 md:mt-14 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden {display=flex; gap=12px; padding=0px 0px 12px; margin=56px 0px 0px; overflow=auto}
+        <figure> [40,9444 330x285] .bento-reveal flex min-h-80 w-[82%] shrink-0 snap-start flex-col rounded-2xl bg-line-grey/45 p-6 transition-[transform,background-color] dura {display=flex; flexDirection=column; padding=24px; backgroundColor=rgb(255, 255, 255); borderRadius=16px; border=; boxShadow=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px}
+          <div> [65,9471 280x29] .google-review-top {display=flex; justifyContent=space-between; alignItems=center; margin=0px 0px 24px}
+            <span> [65,9471 114x29] . {fontSize=19px; lineHeight=28.5px; letterSpacing=3px; color=rgb(251, 188, 5)} "★★★★★"
+            svg 28x28 cls=google-mark color=#020618
+          <blockquote> [65,9524 280x48] .font-body text-sm leading-6 text-ink/65 {ff=Manrope; fontSize=14px; color=#1a2024/0.65} "“ Fair pricing, honest work, and zero feeling of being taken advantage of. ”"
+          <figcaption> [65,9628 280x76] .mt-auto flex items-center gap-3 pt-10 {display=flex; gap=12px; alignItems=center; padding=40px 0px 0px; margin=56.5px 0px 0px}
+            <div> [65,9670 32x32] .flex size-8 items-center justify-center rounded-full bg-ink font-display text-[10px] font-bold text-bee {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=700; lineHeight=15px; color=rgb(25, 103, 210); backgroundColor=rgb(232, 240, 254); borderRadius=9999px} "AR"
+            <div> [109,9668 77x36] . {}
+              <p> [109,9668 77x20] .font-body text-sm font-semibold text-ink {ff=Manrope; fontSize=14px; fontWeight=600; lineHeight=20px; color=#1a2024} "Allyson R."
+              <p> [109,9688 77x16] .font-body text-xs text-ink/45 {ff=Manrope; fontSize=12px; lineHeight=16px; color=#1a2024/0.45} "General repair"
+        <figure> [382,9444 330x285] .bento-reveal flex min-h-80 w-[82%] shrink-0 snap-start flex-col rounded-2xl bg-line-grey/45 p-6 transition-[transform,background-color] dura {display=flex; flexDirection=column; padding=24px; backgroundColor=rgb(255, 255, 255); borderRadius=16px; border=; boxShadow=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px}
+          <div> [407,9471 280x29] .google-review-top {display=flex; justifyContent=space-between; alignItems=center; margin=0px 0px 24px}
+            <span> [407,9471 114x29] . {fontSize=19px; lineHeight=28.5px; letterSpacing=3px; color=rgb(251, 188, 5)} "★★★★★"
+            svg 28x28 cls=google-mark color=#020618
+          <blockquote> [407,9524 280x96] .font-body text-sm leading-6 text-ink/65 {ff=Manrope; fontSize=14px; color=#1a2024/0.65} "“ The techs listened, ran a quick diagnostic, and pinpointed a worn lift pump. They replaced the part same day. Prices were transparent. ”"
+          <figcaption> [407,9628 280x76] .mt-auto flex items-center gap-3 pt-10 {display=flex; gap=12px; alignItems=center; padding=40px 0px 0px; margin=8.5px 0px 0px}
+            <div> [407,9670 32x32] .flex size-8 items-center justify-center rounded-full bg-ink font-display text-[10px] font-bold text-bee {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=700; lineHeight=15px; color=rgb(197, 34, 31); backgroundColor=rgb(252, 232, 230); borderRadius=9999px} "RS"
+            <div> [451,9668 123x36] . {}
+              <p> [451,9668 123x20] .font-body text-sm font-semibold text-ink {ff=Manrope; fontSize=14px; fontWeight=600; lineHeight=20px; color=#1a2024} "Rai S."
+              <p> [451,9688 123x16] .font-body text-xs text-ink/45 {ff=Manrope; fontSize=12px; lineHeight=16px; color=#1a2024/0.45} "Computer diagnostics"
+        <figure> [728,9475 324x279] .bento-reveal flex min-h-80 w-[82%] shrink-0 snap-start flex-col rounded-2xl bg-line-grey/45 p-6 transition-[transform,background-color] dura {display=flex; flexDirection=column; padding=24px; backgroundColor=rgb(255, 255, 255); borderRadius=16px; border=; boxShadow=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px; opacity=0; transform=matrix(0.98, 0, 0, 0.98, 0, 28)}
+          <div> [752,9502 275x28] .google-review-top {display=flex; justifyContent=space-between; alignItems=center; margin=0px 0px 24px}
+            <span> [752,9502 112x28] . {fontSize=19px; lineHeight=28.5px; letterSpacing=3px; color=rgb(251, 188, 5)} "★★★★★"
+            svg 27x27 cls=google-mark color=#020618
+          <blockquote> [752,9553 275x47] .font-body text-sm leading-6 text-ink/65 {ff=Manrope; fontSize=14px; color=#1a2024/0.65} "“ They did an excellent job with my oil change: fast, professional, and friendly. ”"
+          <figcaption> [752,9656 275x74] .mt-auto flex items-center gap-3 pt-10 {display=flex; gap=12px; alignItems=center; padding=40px 0px 0px; margin=56.5px 0px 0px}
+            <div> [752,9697 31x31] .flex size-8 items-center justify-center rounded-full bg-ink font-display text-[10px] font-bold text-bee {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=700; lineHeight=15px; color=rgb(25, 103, 210); backgroundColor=rgb(232, 240, 254); borderRadius=9999px} "AK"
+            <div> [795,9695 76x35] . {}
+              <p> [795,9695 76x20] .font-body text-sm font-semibold text-ink {ff=Manrope; fontSize=14px; fontWeight=600; lineHeight=20px; color=#1a2024} "Armanjot K."
+              <p> [795,9714 76x16] .font-body text-xs text-ink/45 {ff=Manrope; fontSize=12px; lineHeight=16px; color=#1a2024/0.45} "Oil change"
+        <figure> [1070,9475 324x279] .bento-reveal flex min-h-80 w-[82%] shrink-0 snap-start flex-col rounded-2xl bg-line-grey/45 p-6 transition-[transform,background-color] dura {display=flex; flexDirection=column; padding=24px; backgroundColor=rgb(255, 255, 255); borderRadius=16px; border=; boxShadow=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px; opacity=0; transform=matrix(0.98, 0, 0, 0.98, 0, 28)}
+          <div> [1095,9502 275x28] .google-review-top {display=flex; justifyContent=space-between; alignItems=center; margin=0px 0px 24px}
+            <span> [1095,9502 112x28] . {fontSize=19px; lineHeight=28.5px; letterSpacing=3px; color=rgb(251, 188, 5)} "★★★★★"
+            svg 27x27 cls=google-mark color=#020618
+          <blockquote> [1095,9553 275x71] .font-body text-sm leading-6 text-ink/65 {ff=Manrope; fontSize=14px; color=#1a2024/0.65} "“ Despite not having an appointment, they helped me last minute with my car battery issue. ”"
+          <figcaption> [1095,9656 275x74] .mt-auto flex items-center gap-3 pt-10 {display=flex; gap=12px; alignItems=center; padding=40px 0px 0px; margin=32.5px 0px 0px}
+            <div> [1095,9697 31x31] .flex size-8 items-center justify-center rounded-full bg-ink font-display text-[10px] font-bold text-bee {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=700; lineHeight=15px; color=rgb(197, 34, 31); backgroundColor=rgb(252, 232, 230); borderRadius=9999px} "RS"
+            <div> [1138,9695 81x35] . {}
+              <p> [1138,9695 81x20] .font-body text-sm font-semibold text-ink {ff=Manrope; fontSize=14px; fontWeight=600; lineHeight=20px; color=#1a2024} "Ruby S."
+              <p> [1138,9714 81x16] .font-body text-xs text-ink/45 {ff=Manrope; fontSize=12px; lineHeight=16px; color=#1a2024/0.45} "Battery service"
+        <figure> [1412,9475 324x279] .bento-reveal flex min-h-80 w-[82%] shrink-0 snap-start flex-col rounded-2xl bg-line-grey/45 p-6 transition-[transform,background-color] dura {display=flex; flexDirection=column; padding=24px; backgroundColor=rgb(255, 255, 255); borderRadius=16px; border=; boxShadow=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px; opacity=0; transform=matrix(0.98, 0, 0, 0.98, 0, 28)}
+          <div> [1437,9502 275x28] .google-review-top {display=flex; justifyContent=space-between; alignItems=center; margin=0px 0px 24px}
+            <span> [1437,9502 112x28] . {fontSize=19px; lineHeight=28.5px; letterSpacing=3px; color=rgb(251, 188, 5)} "★★★★★"
+            svg 27x27 cls=google-mark color=#020618
+          <blockquote> [1437,9553 275x71] .font-body text-sm leading-6 text-ink/65 {ff=Manrope; fontSize=14px; color=#1a2024/0.65} "“ They quickly diagnosed the issue and explained everything clearly, at a very reasonable price. ”"
+          <figcaption> [1437,9656 275x74] .mt-auto flex items-center gap-3 pt-10 {display=flex; gap=12px; alignItems=center; padding=40px 0px 0px; margin=32.5px 0px 0px}
+            <div> [1437,9697 31x31] .flex size-8 items-center justify-center rounded-full bg-ink font-display text-[10px] font-bold text-bee {display=flex; justifyContent=center; alignItems=center; ff=Manrope; fontSize=10px; fontWeight=700; lineHeight=15px; color=rgb(25, 103, 210); backgroundColor=rgb(232, 240, 254); borderRadius=9999px} "KS"
+            <div> [1480,9695 121x35] . {}
+              <p> [1480,9695 121x20] .font-body text-sm font-semibold text-ink {ff=Manrope; fontSize=14px; fontWeight=600; lineHeight=20px; color=#1a2024} "Kultar S."
+              <p> [1480,9714 121x16] .font-body text-xs text-ink/45 {ff=Manrope; fontSize=12px; lineHeight=16px; color=#1a2024/0.45} "Computer diagnostics"
+        <figure> [1754,9475 324x279] .bento-reveal flex min-h-80 w-[82%] shrink-0 snap-start flex-col rounded-2xl bg-line-grey/45 p-6 transition-transform duration-500 hover:-tra {display=flex; flexDirection=column; padding=24px; backgroundColor=rgb(255, 255, 255); borderRadius=16px; border=; boxShadow=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px; opacity=0; transform=matrix(0.98, 0, 0, 0.98, 0, 28)}
+          <span> [1779,9502 275x16] .flex gap-0.5 text-ink {display=flex; gap=2px; color=#1a2024}
+            svg 16x16 cls=lucide lucide-star size-4 fill-current color=#1a2024
+            svg 16x16 cls=lucide lucide-star size-4 fill-current color=#1a2024
+            svg 16x16 cls=lucide lucide-star size-4 fill-current color=#1a2024
+            svg 16x16 cls=lucide lucide-star size-4 fill-current color=#1a2024
+            svg 16x16 cls=lucide lucide-star size-4 fill-current color=#1a2024
+          <p> [1779,9537 275x47] .mt-5 font-display text-5xl font-semibold leading-none {margin=20px 0px 0px; ff=Manrope; fontSize=48px; fontWeight=600; lineHeight=48px} "4.8"
+          <p> [1779,9596 275x47] .mt-3 font-body text-sm leading-6 text-ink/70 {margin=12px 0px 0px; ff=Manrope; fontSize=14px; color=#1a2024/0.7} "Rated by local drivers on Google for honest pricing and clear answers."
+          <button> [1779,9691 142x39] .group/btn mt-auto inline-flex w-fit items-center gap-3 rounded-full bg-ink py-1.5 pl-4 pr-1.5 font-body text-xs font-semibold text-paper {display=flex; gap=12px; alignItems=center; padding=6px 6px 6px 16px; margin=49px 0px 0px; ff=Manrope; fontSize=12px; fontWeight=600; lineHeight=16px; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px} "Book your visit"
+            <span> [1888,9697 27x27] .flex size-7 items-center justify-center rounded-full bg-paper text-ink transition-transform duration-300 group-hover/btn:translate-x-1 {display=flex; justifyContent=center; alignItems=center; color=#1a2024; backgroundColor=#ffffff; borderRadius=9999px}
+              svg 14x14 cls=lucide lucide-arrow-right size-3.5 color=#1a2024
+      <div> [40,9781 688x28] .mt-6 md:mt-10 flex flex-wrap items-center gap-2 {display=flex; gap=8px; alignItems=center; margin=40px 0px 0px}
+        <button> [40,9781 28x28] .flex size-7 items-center justify-center rounded-full bg-line-grey/45 text-ink transition-colors hover:bg-bee {display=flex; justifyContent=center; alignItems=center; color=#1a2024; backgroundColor=#e5e8ea/0.45; borderRadius=9999px}
+          svg 14x14 cls=lucide lucide-arrow-left size-3.5 color=#1a2024
+        <button> [76,9781 28x28] .flex size-7 items-center justify-center rounded-full bg-line-grey/45 text-ink transition-colors hover:bg-bee {display=flex; justifyContent=center; alignItems=center; color=#1a2024; backgroundColor=#e5e8ea/0.45; borderRadius=9999px}
+          svg 14x14 cls=lucide lucide-arrow-right size-3.5 color=#1a2024
+        <a> [120,9788 172x15] .ml-2 font-body text-[10px] font-extrabold uppercase tracking-[0.16em] text-ink underline decoration-bee decoration-2 underline-offset-4 tran href=https://www.google.com/search?q=Busy+Bee+Auto+Repair+Calgary+reviews {margin=0px 0px 0px 8px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; letterSpacing=1.6px; textTransform=uppercase; color=#1a2024} "Read all Google reviews"
+    <section#how-it-works> [0,9921 768x1346] .repair-process {padding=90px 32px; color=rgb(27, 34, 37); backgroundColor=rgb(255, 255, 255)}
+      <div> [32,10011 704x1166] .modern-wrap {maxWidth=1152px}
+        <div> [32,10011 704x264] .process-heading {display=flex; gap=50px; justifyContent=space-between; alignItems=flex-end; margin=0px 0px 42px}
+          <div> [32,10011 314x264] . {}
+            <p> [32,10011 314x15] .modern-eyebrow {display=flex; gap=10px; alignItems=center; fontSize=10px; fontWeight=800; lineHeight=15px; letterSpacing=2px} "THE BUSY BEE WAY"
+            <h2> [32,10051 314x76] . {margin=25px 0px 0px; fontSize=36px; fontWeight=800; lineHeight=38.16px; letterSpacing=-1.62px; textTransform=uppercase} "Good repairs."
+              <br> [292,10048 0x44] . {display=inline}
+              <span> [32,10087 256x44] . {display=inline} "No surprises."
+            <p> [32,10150 314x126] .process-seo-description {margin=22px 0px 0px; fontSize=14px; lineHeight=25.2px; color=rgb(104, 114, 118); maxWidth=640px} "Auto repair in NE Calgary made simple. From brake repairs and oil changes to vehicle diagnostics, Busy Bee Auto Repair explains what your car needs, provides a clear estimate, and gets your approval before work begins."
+          <p> [396,10196 340x80] . {fontSize=14px; lineHeight=26.6px; color=rgb(108, 119, 123); maxWidth=340px} "From the first conversation to the drive home, you’re in control. Clear answers. Honest estimates. Work you can trust."
+        <div> [32,10318 704x813] .process-grid {display=grid; position=relative; gap=24px; gridTemplateColumns=169px 140.953px 174px 179px}
+          <div> [32,10318 169x813] .process-card {position=relative; padding=10px 10px 28px; backgroundColor=rgb(255, 255, 255); borderRadius=20px; border=1px solid rgb(232, 233, 233)}
+            <div> [43,10329 147x235] .process-stage {display=flex; position=relative; justifyContent=center; alignItems=center; color=rgb(32, 38, 39); backgroundImage=radial-gradient(at 50% 35%, rgb(255, 255, 255) 0%, rgb(241, 242, 239) 75%); borderRadius=13px; border=1px solid rgb(240, 241, 237); boxShadow=rgb(255, 255, 255) 0px 1px 0px 0px inset; overflow=hidden}
+              <span> [59,10345 18x18] .process-number {position=absolute; fontSize=12px; fontWeight=800; lineHeight=18px; letterSpacing=2px; color=rgb(122, 130, 132); top=15px; left=15px; right=112.391px; bottom=200px} "0 1"
+              <div> [41,10384 150x115] .stage-book {display=flex; position=relative; flexDirection=column; alignItems=center; padding=14px; backgroundImage=linear-gradient(135deg, rgb(255, 255, 255), rgb(248, 249, 246)); borderRadius=12px; border=1px solid rgb(215, 218, 213); boxShadow=rgba(24, 34, 31, 0.333) 0px 18px 24px -16px, rgb(225, 228, 222) 3px 5px 0px 0px; transform=matrix3d(0.995727, -0.0553275, -0.0739429, 0, 0.0554793, 0.99846, 0, 0, 0.073829, -0.0041023, 0.997262, 0, 0, -4.69939, 0, 1)}
+                <span> [84,10401 62x17] . {fontSize=9px; fontWeight=700; lineHeight=13.5px; letterSpacing=1px} "YOUR VISIT"
+                <div> [55,10425 124x47] .mini-calendar {display=grid; gap=4px; gridTemplateColumns=14px 14px 14px 14px 14px 14px 14px; margin=12px 0px}
+                  <i> [55,10431 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "1"
+                  <i> [73,10430 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "2"
+                  <i> [91,10429 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "3"
+                  <i> [109,10428 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "4"
+                  <i> [127,10427 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "5"
+                  <i> [145,10426 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "6"
+                  <i> [162,10425 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "7"
+                  <i> [56,10453 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "8"
+                  <i> [74,10452 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "9"
+                  <i> [92,10451 15x19] .selected {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px; backgroundColor=rgb(255, 230, 0); borderRadius=4px} "10"
+                  <i> [110,10450 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "11"
+                  <i> [128,10449 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "12"
+                  <i> [146,10448 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "13"
+                  <i> [164,10447 15x19] . {display=grid; gridTemplateColumns=14px; alignItems=center; fontSize=9px; lineHeight=13.5px} "14"
+                svg 61x51 cls=lucide lucide-car-front color=rgb(32, 38, 39)
+            <h3> [57,10588 119x48] . {margin=24px 14px 12px; fontSize=18px; fontWeight=800; lineHeight=23.4px; letterSpacing=-0.54px; textTransform=uppercase} "Book or walk in"
+            <p> [57,10648 119x265] . {margin=0px 14px; fontSize=13px; lineHeight=24.05px; color=rgb(89, 101, 105)} "Book auto repair in NE Calgary online, call (403) 930-5888, or walk into Busy Bee at 324 41 Ave NE. Share your vehicle’s make, model and symptoms so our team can plan the right first check."
+          <div> [225,10318 141x813] .process-card {position=relative; padding=10px 10px 28px; backgroundColor=rgb(255, 255, 255); borderRadius=20px; border=1px solid rgb(232, 233, 233)}
+            <div> [236,10329 119x235] .process-stage {display=flex; position=relative; justifyContent=center; alignItems=center; color=rgb(32, 38, 39); backgroundImage=radial-gradient(at 50% 35%, rgb(255, 255, 255) 0%, rgb(241, 242, 239) 75%); borderRadius=13px; border=1px solid rgb(240, 241, 237); boxShadow=rgb(255, 255, 255) 0px 1px 0px 0px inset; overflow=hidden}
+              <span> [252,10345 20x18] .process-number {position=absolute; fontSize=12px; fontWeight=800; lineHeight=18px; letterSpacing=2px; color=rgb(122, 130, 132); top=15px; left=15px; right=81.9844px; bottom=200px} "0 2"
+              <div> [241,10374 110x145] .stage-scan {display=flex; position=relative; flexDirection=column; gap=12px; alignItems=center}
+                svg 100x100 cls=lucide lucide-car-front color=rgb(32, 38, 39)
+                <span> [228,10396 135x2] .scan-line {position=absolute; backgroundColor=rgb(213, 185, 0); boxShadow=rgba(255, 230, 0, 0.667) 0px 0px 12px 0px; opacity=0.47219; top=48px; left=-12.6875px; right=-12.6719px; bottom=95px; transform=matrix(1, 0, 0, 1, 0, -26.059)}
+                <div> [241,10486 110x16] .scan-label {display=flex; gap=6px; alignItems=center; fontSize=8px; lineHeight=12px; letterSpacing=0.5px} "DIAGNOSTIC CHECK"
+                  svg 16x16 cls=lucide lucide-scan-search color=rgb(32, 38, 39)
+                <div> [242,10514 107x5] .scan-meters {display=flex; gap=4px}
+                  <i> [242,10514 33x5] . {backgroundColor=rgb(255, 230, 0); borderRadius=2px; opacity=0.473452}
+                  <i> [279,10514 33x5] . {backgroundColor=rgb(255, 230, 0); borderRadius=2px; opacity=0.70363}
+                  <i> [316,10514 33x5] . {backgroundColor=rgb(221, 221, 221); borderRadius=2px; opacity=0.905586}
+            <h3> [250,10588 91x94] . {margin=24px 14px 12px; fontSize=18px; fontWeight=800; lineHeight=23.4px; letterSpacing=-0.54px; textTransform=uppercase} "We diagnose and explain"
+            <p> [250,10693 91x409] . {margin=0px 14px; fontSize=13px; lineHeight=24.05px; color=rgb(89, 101, 105)} "Our mechanics inspect your vehicle and investigate warning lights, unusual noises or performance concerns. We explain the findings and provide a clear repair estimate before any work begins."
+          <div> [390,10318 174x813] .process-card {position=relative; padding=10px 10px 28px; backgroundColor=rgb(255, 255, 255); borderRadius=20px; border=1px solid rgb(232, 233, 233)}
+            <div> [401,10329 152x235] .process-stage {display=flex; position=relative; justifyContent=center; alignItems=center; color=rgb(32, 38, 39); backgroundImage=radial-gradient(at 50% 35%, rgb(255, 255, 255) 0%, rgb(241, 242, 239) 75%); borderRadius=13px; border=1px solid rgb(240, 241, 237); boxShadow=rgb(255, 255, 255) 0px 1px 0px 0px inset; overflow=hidden}
+              <span> [417,10345 20x18] .process-number {position=absolute; fontSize=12px; fontWeight=800; lineHeight=18px; letterSpacing=2px; color=rgb(122, 130, 132); top=15px; left=15px; right=114.797px; bottom=200px} "0 3"
+              <div> [397,10348 159x191] .stage-approval {padding=16px; backgroundImage=linear-gradient(135deg, rgb(255, 255, 255), rgb(248, 249, 246)); borderRadius=8px; border=1px solid rgb(215, 218, 213); boxShadow=rgba(24, 34, 31, 0.333) 0px 18px 24px -16px, rgb(225, 228, 222) 3px 5px 0px 0px; transform=matrix(0.998612, 0.0526764, -0.0526764, 0.998612, 0, -2.45117)}
+                svg 42x42 cls=lucide lucide-clipboard-check color=rgb(32, 38, 39)
+                <span> [420,10415 117x20] . {fontSize=9px; fontWeight=700; lineHeight=13.5px; letterSpacing=1px} "REPAIR ESTIMATE"
+                <i> [419,10437 116x10] . {margin=9px 0px 0px; backgroundColor=rgb(233, 236, 234)}
+                <i> [418,10450 116x10] . {margin=9px 0px 0px; backgroundColor=rgb(233, 236, 234)}
+                <i> [418,10463 75x8] . {margin=9px 0px 0px; backgroundColor=rgb(233, 236, 234)}
+                <div> [415,10481 118x40] . {display=flex; gap=6px; justifyContent=center; alignItems=center; padding=9px; margin=14px 0px 0px; fontSize=8px; fontWeight=800; lineHeight=12px; backgroundImage=linear-gradient(135deg, rgb(255, 241, 106), rgb(255, 230, 0)); borderRadius=5px; boxShadow=rgba(182, 166, 0, 0.082) 0px 3px 8px 0px} "YOU APPROVE"
+                  svg 17x17 cls=lucide lucide-check color=rgb(32, 38, 39)
+            <h3> [415,10588 124x48] . {margin=24px 14px 12px; fontSize=18px; fontWeight=800; lineHeight=23.4px; letterSpacing=-0.54px; textTransform=uppercase} "You approve"
+            <p> [415,10648 124x265] . {margin=0px 14px; fontSize=13px; lineHeight=24.05px; color=rgb(89, 101, 105)} "Review the recommended repairs and quoted price with our team. Ask about the work your car needs and approve the estimate before we start. You stay in control of your auto repair decisions."
+          <div> [588,10318 179x813] .process-card {position=relative; padding=10px 10px 28px; backgroundColor=rgb(255, 255, 255); borderRadius=20px; border=1px solid rgb(232, 233, 233)}
+            <div> [599,10329 157x235] .process-stage {display=flex; position=relative; justifyContent=center; alignItems=center; color=rgb(32, 38, 39); backgroundImage=radial-gradient(at 50% 35%, rgb(255, 255, 255) 0%, rgb(241, 242, 239) 75%); borderRadius=13px; border=1px solid rgb(240, 241, 237); boxShadow=rgb(255, 255, 255) 0px 1px 0px 0px inset; overflow=hidden}
+              <span> [615,10345 21x18] .process-number {position=absolute; fontSize=12px; fontWeight=800; lineHeight=18px; letterSpacing=2px; color=rgb(122, 130, 132); top=15px; left=15px; right=119.422px; bottom=200px} "0 4"
+              <div> [600,10363 155x167] .stage-drive {display=flex; position=relative; flexDirection=column; alignItems=center}
+                svg 45x45 cls=lucide lucide-shield-check color=rgb(32, 38, 39)
+                svg 94x94 cls=lucide lucide-car-front color=rgb(32, 38, 39)
+                <div> [600,10499 155x2] .road-line {margin=5px 0px 0px; backgroundImage=repeating-linear-gradient(90deg, rgb(167, 173, 171) 0px, rgb(167, 173, 171) 9px, transparent 9px, transparent 16px)}
+                <span> [625,10518 105x12] . {margin=17px 0px 0px; fontSize=8px; lineHeight=12px; letterSpacing=1px} "READY FOR THE ROAD"
+            <h3> [613,10588 129x48] . {margin=24px 14px 12px; fontSize=18px; fontWeight=800; lineHeight=23.4px; letterSpacing=-0.54px; textTransform=uppercase} "Drive away covered"
+            <p> [613,10648 129x313] . {margin=0px 14px; fontSize=13px; lineHeight=24.05px; color=rgb(89, 101, 105)} "Collect your vehicle after the agreed repairs are complete. We explain the work performed and any recommended next steps. Most repairs include a parts and labour warranty; ask our team about coverage for your job."
+        <div> [32,11159 704x18] .process-note {display=flex; gap=9px; alignItems=center; margin=28px 0px 0px; fontSize=11px; lineHeight=16.5px; color=rgb(108, 119, 123)}
+          svg 18x18 cls=lucide lucide-shield-check color=rgb(108, 119, 123)
+          <span> [59,11160 215x17] . {} "Your approval comes before every repair."
+          <a> [600,11160 136x17] . href=#book {display=flex; gap=8px; alignItems=center; margin=0px 0px 0px 316.922px; fontWeight=800; color=rgb(27, 34, 37)} "Let’s get you booked"
+            svg 16x16 cls=lucide lucide-arrow-right color=rgb(27, 34, 37)
+    <section#pricing> [0,11267 768x1095] .pricing-grid bg-paper px-5 py-10 md:px-8 md:py-28 {padding=112px 32px; backgroundColor=#ffffff; backgroundImage=radial-gradient(#1a2024/0.14 0.7px, transparent 0.7px)}
+      <div> [32,11379 704x871] .mx-auto max-w-5xl {maxWidth=1024px}
+        <div> [32,11379 704x122] .mx-auto max-w-3xl text-center {maxWidth=768px}
+          <h2> [32,11379 704x50] .font-display text-[1.75rem] font-extrabold uppercase leading-[1.05] text-ink md:text-5xl {ff=Manrope; fontSize=48px; fontWeight=800; lineHeight=50.4px; textTransform=uppercase; color=#1a2024} "Straightforward Pricing"
+          <p> [48,11445 672x56] .mx-auto mt-4 max-w-2xl font-body text-sm leading-7 text-ink/55 md:text-base {margin=16px 16px 0px; ff=Manrope; lineHeight=28px; color=#1a2024/0.55; maxWidth=672px} "Most repairs are quoted after a quick diagnosis, because the right price depends on your vehicle. Here are our published starting prices."
+        <div> [32,11533 704x20] .mb-12 mt-8 flex items-center justify-center gap-2.5 {display=flex; gap=10px; justifyContent=center; alignItems=center; margin=32px 0px 48px}
+          <span> [212,11533 36x20] .flex h-5 w-9 items-center justify-end rounded-full bg-ink p-0.5 {display=flex; justifyContent=flex-end; alignItems=center; padding=2px; backgroundColor=#1a2024; borderRadius=9999px}
+            <span> [230,11535 16x16] .size-4 rounded-full bg-white {backgroundColor=rgb(255, 255, 255); borderRadius=9999px}
+          <p> [258,11533 299x20] .font-body text-sm font-bold {ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px} "You approve the estimate before work starts"
+        <div> [32,11601 704x593] .grid items-center gap-4 md:grid-cols-3 md:gap-0 {display=grid; gap=0px; gridTemplateColumns=234.656px 234.672px 234.672px; alignItems=center}
+          <article> [74,11639 221x538] .relative flex min-h-[470px] flex-col rounded-[10px] border bg-paper p-7 text-center z-10 border-ink/10 md:mt-5 md:scale-[0.94] md:first:tran {display=flex; position=relative; flexDirection=column; padding=28px; margin=20px 0px 0px; backgroundColor=#ffffff; borderRadius=10px; border=1px solid #1a2024/0.1; zIndex=10}
+            <div> [166,11666 38x38] .mx-auto flex size-10 items-center justify-center rounded-full bg-bee text-ink {display=flex; justifyContent=center; alignItems=center; margin=0px 68.3281px; color=#1a2024; backgroundColor=#f7d710; borderRadius=9999px}
+              svg 19x19 cls=lucide lucide-battery-charging size-5 color=#1a2024
+            <p> [101,11722 166x15] .mt-5 font-body text-xs font-extrabold uppercase text-ink/50 {margin=20px 0px 0px; ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; textTransform=uppercase; color=#1a2024/0.5} "Battery testing"
+            <h3> [101,11760 166x35] .mt-6 font-display text-2xl font-extrabold uppercase leading-tight md:text-3xl {margin=24px 0px 0px; ff=Manrope; fontSize=30px; fontWeight=800; lineHeight=37.5px; textTransform=uppercase} "Free"
+            <p> [101,11803 166x75] .mt-2 font-body text-xs leading-5 text-ink/45 {margin=8px 0px 0px; ff=Manrope; fontSize=12px; lineHeight=20px; color=#1a2024/0.45} "Free battery testing plus a full charging system check — especially wise before a Calgary cold snap."
+            <ul> [101,11900 166x136] .mb-7 mt-6 flex flex-col gap-3 border-t border-ink/10 pt-5 {display=flex; flexDirection=column; gap=12px; padding=20px 0px 0px; margin=24px 0px 28px; border=}
+              <li> [101,11920 166x19] .flex items-start gap-2 text-left font-body text-sm font-medium {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px} "Free battery testing"
+                svg 15x15 cls=lucide lucide-check mt-0.5 size-4 shrink-0 color=#020618
+              <li> [101,11950 166x38] .flex items-start gap-2 text-left font-body text-sm font-medium {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px} "Full charging system checks"
+                svg 15x15 cls=lucide lucide-check mt-0.5 size-4 shrink-0 color=#020618
+              <li> [101,11999 166x38] .flex items-start gap-2 text-left font-body text-sm font-medium {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px} "Long-term warranty options"
+                svg 15x15 cls=lucide lucide-check mt-0.5 size-4 shrink-0 color=#020618
+            <a> [101,12063 166x41] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 16px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; backgroundColor=#ffffff; borderRadius=8px; border=1px solid #e2e8f0; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Get your estimate"
+            <p> [101,12119 166x30] .mt-4 font-body text-[10px] leading-4 text-ink/40 {margin=16px 0px 0px; ff=Manrope; fontSize=10px; lineHeight=16px; color=#1a2024/0.4} "You always approve before work starts."
+          <article> [267,11602 235x591] .relative flex min-h-[470px] flex-col rounded-[10px] bg-paper p-7 text-center z-20 border-2 border-ink shadow-xl md:min-h-[540px] {display=flex; position=relative; flexDirection=column; padding=28px; backgroundColor=#ffffff; borderRadius=10px; border=2px solid #1a2024; boxShadow=rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px; zIndex=20}
+            <span> [425,11604 74x23] .absolute right-0 top-0 flex items-center gap-1 rounded-bl-lg rounded-tr-[8px] bg-ink px-2.5 py-1 font-body text-[10px] font-extrabold text-p {display=flex; position=absolute; gap=4px; alignItems=center; padding=4px 10px; ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; color=#ffffff; backgroundColor=#1a2024; borderRadius=0px 8px 0px 10px; top=0px; left=156.484px; right=0px; bottom=563.5px} "Popular"
+              svg 12x12 cls=lucide lucide-star size-3 fill-current color=#ffffff
+            <div> [364,11632 40x40] .mx-auto flex size-10 items-center justify-center rounded-full bg-bee text-ink {display=flex; justifyContent=center; alignItems=center; margin=0px 67.3281px; color=#1a2024; backgroundColor=#f7d710; borderRadius=9999px}
+              svg 20x20 cls=lucide lucide-droplets size-5 color=#1a2024
+            <p> [297,11692 175x32] .mt-5 font-body text-xs font-extrabold uppercase text-ink/50 {margin=20px 0px 0px; ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; textTransform=uppercase; color=#1a2024/0.5} "Mobil 1 synthetic oil change"
+            <h3> [297,11748 175x38] .mt-6 font-display text-2xl font-extrabold uppercase leading-tight md:text-3xl {margin=24px 0px 0px; ff=Manrope; fontSize=30px; fontWeight=800; lineHeight=37.5px; textTransform=uppercase} "From $75"
+            <p> [297,11794 175x60] .mt-2 font-body text-xs leading-5 text-ink/45 {margin=8px 0px 0px; ff=Manrope; fontSize=12px; lineHeight=20px; color=#1a2024/0.45} "Premium Mobil 1 synthetic oil with a complimentary vehicle inspection."
+            <ul> [297,11878 175x165] .mb-7 mt-6 flex flex-col gap-3 border-t border-ink/10 pt-5 {display=flex; flexDirection=column; gap=12px; padding=20px 0px 0px; margin=24px 0px 28px; border=}
+              <li> [297,11899 175x40] .flex items-start gap-2 text-left font-body text-sm font-medium {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px} "Premium Mobil 1 synthetic oil"
+                svg 16x16 cls=lucide lucide-check mt-0.5 size-4 shrink-0 color=#020618
+              <li> [297,11951 175x40] .flex items-start gap-2 text-left font-body text-sm font-medium {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px} "Complimentary vehicle inspection"
+                svg 16x16 cls=lucide lucide-check mt-0.5 size-4 shrink-0 color=#020618
+              <li> [297,12003 175x40] .flex items-start gap-2 text-left font-body text-sm font-medium {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px} "Often done the same day"
+                svg 16x16 cls=lucide lucide-check mt-0.5 size-4 shrink-0 color=#020618
+            <a> [297,12071 175x44] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 16px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; color=#ffffff; backgroundColor=#1a2024; borderRadius=9999px; border=1px solid #1a2024; boxShadow=#1a2024/0.18 0px 8px 24px 0px} "Get your estimate"
+            <p> [297,12131 175x32] .mt-4 font-body text-[10px] leading-4 text-ink/40 {margin=16px 0px 0px; ff=Manrope; fontSize=10px; lineHeight=16px; color=#1a2024/0.4} "You always approve before work starts."
+          <article> [473,11639 221x538] .relative flex min-h-[470px] flex-col rounded-[10px] border bg-paper p-7 text-center z-10 border-ink/10 md:mt-5 md:scale-[0.94] md:first:tran {display=flex; position=relative; flexDirection=column; padding=28px; margin=20px 0px 0px; backgroundColor=#ffffff; borderRadius=10px; border=1px solid #1a2024/0.1; zIndex=10}
+            <div> [565,11666 38x38] .mx-auto flex size-10 items-center justify-center rounded-full bg-bee text-ink {display=flex; justifyContent=center; alignItems=center; margin=0px 68.3281px; color=#1a2024; backgroundColor=#f7d710; borderRadius=9999px}
+              svg 19x19 cls=lucide lucide-wrench size-5 color=#1a2024
+            <p> [501,11722 166x15] .mt-5 font-body text-xs font-extrabold uppercase text-ink/50 {margin=20px 0px 0px; ff=Manrope; fontSize=12px; fontWeight=800; lineHeight=16px; textTransform=uppercase; color=#1a2024/0.5} "Wheels & tires"
+            <h3> [501,11760 166x35] .mt-6 font-display text-2xl font-extrabold uppercase leading-tight md:text-3xl {margin=24px 0px 0px; ff=Manrope; fontSize=30px; fontWeight=800; lineHeight=37.5px; textTransform=uppercase} "From $84"
+            <p> [501,11803 166x56] .mt-2 font-body text-xs leading-5 text-ink/45 {margin=8px 0px 0px; ff=Manrope; fontSize=12px; lineHeight=20px; color=#1a2024/0.45} "Tire repair up to 16 inches, wheel balancing, rotations, and new and used tires."
+            <ul> [501,11882 166x155] .mb-7 mt-6 flex flex-col gap-3 border-t border-ink/10 pt-5 {display=flex; flexDirection=column; gap=12px; padding=20px 0px 0px; margin=24px 0px 28px; border=}
+              <li> [501,11901 166x38] .flex items-start gap-2 text-left font-body text-sm font-medium {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px} "Tire repair (up to 16″) — $84"
+                svg 15x15 cls=lucide lucide-check mt-0.5 size-4 shrink-0 color=#020618
+              <li> [501,11950 166x38] .flex items-start gap-2 text-left font-body text-sm font-medium {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px} "Balancing and rotations"
+                svg 15x15 cls=lucide lucide-check mt-0.5 size-4 shrink-0 color=#020618
+              <li> [501,11999 166x38] .flex items-start gap-2 text-left font-body text-sm font-medium {display=flex; gap=8px; alignItems=flex-start; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px} "Honest advice on repair vs. replace"
+                svg 15x15 cls=lucide lucide-check mt-0.5 size-4 shrink-0 color=#020618
+            <a> [501,12063 166x41] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 16px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; backgroundColor=#ffffff; borderRadius=8px; border=1px solid #e2e8f0; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Get your estimate"
+            <p> [501,12119 166x30] .mt-4 font-body text-[10px] leading-4 text-ink/40 {margin=16px 0px 0px; ff=Manrope; fontSize=10px; lineHeight=16px; color=#1a2024/0.4} "You always approve before work starts."
+        <p> [32,12226 704x24] .mt-8 text-center font-body text-xs leading-6 text-ink/50 {margin=32px 0px 0px; ff=Manrope; fontSize=12px; color=#1a2024/0.5} "Final pricing depends on your vehicle's make, model and condition. You always approve the estimate before work starts."
+    <section#faq> [0,12362 768x694] .bg-paper px-5 py-10 md:px-8 md:py-28 {padding=112px 32px; backgroundColor=#ffffff}
+      <div> [32,12474 704x470] .mx-auto grid max-w-6xl gap-6 md:gap-12 md:grid-cols-[0.8fr_1.2fr] {display=grid; gap=48px; gridTemplateColumns=297.797px 358.203px; maxWidth=1152px}
+        <div> [32,12474 298x470] . {}
+          <div> [32,12474 298x280] .max-w-2xl {maxWidth=672px}
+            <p> [32,12474 298x17] .font-body text-[11px] font-extrabold uppercase tracking-[0.24em] text-ink/50 {ff=Manrope; fontSize=11px; fontWeight=800; lineHeight=16.5px; letterSpacing=2.64px; textTransform=uppercase; color=#1a2024/0.5} "Questions, answered"
+            <h2> [32,12502 298x151] .mt-3 font-display text-[1.75rem] font-extrabold uppercase leading-[1.05] text-ink md:text-5xl {margin=12px 0px 0px; ff=Manrope; fontSize=48px; fontWeight=800; lineHeight=50.4px; textTransform=uppercase; color=#1a2024} "Frequently Asked Questions"
+            <p> [32,12670 298x84] .mt-4 max-w-xl font-body text-sm leading-7 text-ink/65 md:text-base {margin=16px 0px 0px; ff=Manrope; lineHeight=28px; color=#1a2024/0.65; maxWidth=576px} "If you have a different question, call the shop and we'll help you plan the next step."
+          <a> [32,12786 186x56] .btn {display=inline-flex; gap=8px; justifyContent=center; alignItems=center; padding=0px 28px; margin=32px 0px 0px; ff=Manrope; fontSize=14px; fontWeight=500; lineHeight=20px; color=#1a2024; backgroundColor=#f7d710; borderRadius=8px; border=1px solid #1a2024/0.2; boxShadow=#1a2024/0.14 0px 8px 24px 0px} "(403) 930-5888"
+            svg 16x16 cls=lucide lucide-phone color=#1a2024
+        <div> [378,12474 358x470] .border-t border-ink/15 {border=}
+          <details> [378,12475 358x105] .group border-b border-ink/15 py-1 {padding=4px 0px; border=}
+            <summary> [378,12479 358x96] .flex cursor-pointer list-none items-center justify-between gap-5 py-5 font-display text-base font-extrabold uppercase text-ink md:text-lg {display=flex; gap=20px; justifyContent=space-between; alignItems=center; padding=20px 0px; ff=Manrope; fontSize=18px; fontWeight=800; lineHeight=28px; textTransform=uppercase; color=#1a2024} "Do you work on all makes and models?"
+              svg 20x20 cls=lucide lucide-chevron-down size-5 shrink-0 transition-transform duration-300 group-open:rotate-180 color=#1a2024
+            <p> [378,12575 358x76] .max-w-2xl pb-5 pr-10 font-body text-sm leading-7 text-ink/65 {padding=0px 40px 20px 0px; ff=Manrope; fontSize=14px; lineHeight=28px; color=#1a2024/0.65; maxWidth=672px} "Yes. We service domestic, Asian, and European cars, SUVs, and light trucks."
+          <details> [378,12580 358x77] .group border-b border-ink/15 py-1 {padding=4px 0px; border=}
+            <summary> [378,12584 358x68] .flex cursor-pointer list-none items-center justify-between gap-5 py-5 font-display text-base font-extrabold uppercase text-ink md:text-lg {display=flex; gap=20px; justifyContent=space-between; alignItems=center; padding=20px 0px; ff=Manrope; fontSize=18px; fontWeight=800; lineHeight=28px; textTransform=uppercase; color=#1a2024} "Do I need an appointment?"
+              svg 20x20 cls=lucide lucide-chevron-down size-5 shrink-0 transition-transform duration-300 group-open:rotate-180 color=#1a2024
+            <p> [378,12652 358x76] .max-w-2xl pb-5 pr-10 font-body text-sm leading-7 text-ink/65 {padding=0px 40px 20px 0px; ff=Manrope; fontSize=14px; lineHeight=28px; color=#1a2024/0.65; maxWidth=672px} "Appointments get you in fastest, but walk-ins are welcome."
+          <details> [378,12657 358x105] .group border-b border-ink/15 py-1 {padding=4px 0px; border=}
+            <summary> [378,12661 358x96] .flex cursor-pointer list-none items-center justify-between gap-5 py-5 font-display text-base font-extrabold uppercase text-ink md:text-lg {display=flex; gap=20px; justifyContent=space-between; alignItems=center; padding=20px 0px; ff=Manrope; fontSize=18px; fontWeight=800; lineHeight=28px; textTransform=uppercase; color=#1a2024} "How much does a diagnostic cost?"
+              svg 20x20 cls=lucide lucide-chevron-down size-5 shrink-0 transition-transform duration-300 group-open:rotate-180 color=#1a2024
+            <p> [378,12757 358x104] .max-w-2xl pb-5 pr-10 font-body text-sm leading-7 text-ink/65 {padding=0px 40px 20px 0px; ff=Manrope; fontSize=14px; lineHeight=28px; color=#1a2024/0.65; maxWidth=672px} "It depends on the issue. We'll quote the diagnostic upfront and always ask before doing any repairs."
+          <details> [378,12762 358x105] .group border-b border-ink/15 py-1 {padding=4px 0px; border=}
+            <summary> [378,12766 358x96] .flex cursor-pointer list-none items-center justify-between gap-5 py-5 font-display text-base font-extrabold uppercase text-ink md:text-lg {display=flex; gap=20px; justifyContent=space-between; alignItems=center; padding=20px 0px; ff=Manrope; fontSize=18px; fontWeight=800; lineHeight=28px; textTransform=uppercase; color=#1a2024} "Do your repairs come with a warranty?"
+              svg 20x20 cls=lucide lucide-chevron-down size-5 shrink-0 transition-transform duration-300 group-open:rotate-180 color=#1a2024
+            <p> [378,12862 358x76] .max-w-2xl pb-5 pr-10 font-body text-sm leading-7 text-ink/65 {padding=0px 40px 20px 0px; ff=Manrope; fontSize=14px; lineHeight=28px; color=#1a2024/0.65; maxWidth=672px} "Yes. Parts and labour are covered, and we'll explain the terms for your specific repair."
+          <details> [378,12867 358x77] .group border-b border-ink/15 py-1 {padding=4px 0px; border=}
+            <summary> [378,12871 358x68] .flex cursor-pointer list-none items-center justify-between gap-5 py-5 font-display text-base font-extrabold uppercase text-ink md:text-lg {display=flex; gap=20px; justifyContent=space-between; alignItems=center; padding=20px 0px; ff=Manrope; fontSize=18px; fontWeight=800; lineHeight=28px; textTransform=uppercase; color=#1a2024} "Where are you located?"
+              svg 20x20 cls=lucide lucide-chevron-down size-5 shrink-0 transition-transform duration-300 group-open:rotate-180 color=#1a2024
+            <p> [378,12939 358x48] .max-w-2xl pb-5 pr-10 font-body text-sm leading-7 text-ink/65 {padding=0px 40px 20px 0px; ff=Manrope; fontSize=14px; lineHeight=28px; color=#1a2024/0.65; maxWidth=672px} "324 41 Ave NE, Calgary, AB T2E 2N3."
+    <section#book> [0,13056 768x1089] .bg-paper px-5 py-10 text-ink md:px-8 md:py-14 {padding=56px 32px; color=#1a2024; backgroundColor=#ffffff}
+      <div> [32,13112 704x205] .mx-auto mb-8 max-w-6xl md:mb-10 {margin=0px 0px 40px; maxWidth=1152px}
+        svg 28x28 cls=lucide lucide-sparkles size-7 text-bee color=#f7d710
+        <h2> [32,13152 704x101] .mt-3 font-display text-3xl font-extrabold uppercase leading-[1.05] md:text-5xl {margin=12px 0px 0px; ff=Manrope; fontSize=48px; fontWeight=800; lineHeight=50.4px; textTransform=uppercase} "Need a Mechanic in Calgary Today?"
+        <p> [32,13269 576x48] .mt-4 max-w-xl font-body text-sm leading-6 text-ink/65 md:text-base {margin=16px 0px 0px; ff=Manrope; color=#1a2024/0.65; maxWidth=576px} "Call (403) 930-5888 or book online. We'll get you back on the road safely, without the runaround."
+      <div> [32,13357 704x732] .mx-auto max-w-6xl shadow-[0_24px_60px_-30px_rgba(23,23,23,0.6)] rounded-2xl {borderRadius=18px; boxShadow=rgba(23, 23, 23, 0.6) 0px 24px 60px -30px; maxWidth=1152px}
+        <div> [32,13357 704x732] .grid overflow-hidden rounded-2xl md:grid-cols-[0.9fr_1.1fr] {display=grid; gridTemplateColumns=316.797px 387.203px; borderRadius=18px; overflow=hidden}
+          <div> [32,13357 317x732] .relative flex flex-col justify-between bg-gradient-to-b from-bee via-bee to-line-grey/40 p-6 text-ink md:p-8 {display=flex; position=relative; flexDirection=column; justifyContent=space-between; padding=32px; backgroundImage=linear-gradient(#f7d710 0%, #f7d710 50%, #e5e8ea/0.4 100%)}
+            <div> [64,13389 253x194] . {}
+              <img> [64,13389 101x36] .h-9 w-auto src=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png alt="Busy Bee Auto Repair" {maxWidth=100%; overflow=clip}
+              <div> [64,13449 253x74] .mt-6 flex flex-wrap items-center gap-2 {display=flex; gap=8px; alignItems=center; margin=24px 0px 0px}
+                <a> [64,13449 145x32] .inline-flex items-center gap-2 rounded-md bg-ink px-4 py-2 font-body text-xs font-semibold text-paper transition-colors hover:bg-ink/85 href=tel:+14039305888 {display=flex; gap=8px; alignItems=center; padding=8px 16px; ff=Manrope; fontSize=12px; fontWeight=600; lineHeight=16px; color=#ffffff; backgroundColor=#1a2024; borderRadius=8px} "(403) 930-5888"
+                  svg 14x14 cls=lucide lucide-phone size-3.5 text-bee color=#f7d710
+                <a> [64,13489 109x34] .inline-flex items-center rounded-md border border-ink/25 px-4 py-2 font-body text-xs font-semibold text-ink transition-colors hover:bg-ink h href=tel:+14039305888 {display=flex; alignItems=center; padding=8px 16px; ff=Manrope; fontSize=12px; fontWeight=600; lineHeight=16px; borderRadius=8px; border=1px solid #1a2024/0.25} "Call the shop"
+              <p> [64,13543 253x40] .mt-5 max-w-xs font-body text-xs leading-5 text-ink/70 {margin=20px 0px 0px; ff=Manrope; fontSize=12px; lineHeight=20px; color=#1a2024/0.7; maxWidth=320px} "Book online in under a minute. We call back to confirm your appointment."
+            <p> [64,13716 253x196] .mt-10 font-display text-4xl font-semibold leading-[1.02] md:text-5xl {margin=40px 0px 0px; ff=Manrope; fontSize=48px; fontWeight=600; lineHeight=48.96px} "Every repair"
+              <span> [64,13805 248x114] .text-ink/45 {display=inline; color=#1a2024/0.45} "starts with a plan."
+            <a> [64,14037 253x20] .mt-8 inline-flex items-start gap-2 font-body text-xs leading-5 text-ink/70 transition-colors hover:text-ink href=https://maps.google.com/?q=324+41+Ave+NE+Calgary+AB+T2E+2N3 {display=flex; gap=8px; alignItems=flex-start; margin=32px 0px 0px; ff=Manrope; fontSize=12px; lineHeight=20px; color=#1a2024/0.7} "324 41 Ave NE, Calgary, AB T2E 2N3"
+              svg 16x16 cls=lucide lucide-map-pin mt-0.5 size-4 shrink-0 color=#1a2024/0.7
+          <div> [349,13357 387x732] .bg-ink p-6 md:p-8 text-paper {padding=32px; color=#ffffff; backgroundColor=#1a2024}
+            <form> [381,13389 323x668] . {}
+              <h3> [381,13389 323x108] .font-display font-semibold text-2xl md:text-3xl text-paper {ff=Manrope; fontSize=30px; fontWeight=600; lineHeight=36px; textTransform=uppercase} "Tell us what your vehicle needs."
+                <span> [381,13386 251x41] .text-paper/45 {display=inline; color=#ffffff/0.45} "Book your visit."
+              <fieldset> [381,13521 323x213] .mt-6 {margin=24px 0px 0px}
+                <legend> [381,13521 161x17] .font-body text-[11px] font-bold uppercase tracking-[0.14em] text-paper/60 {ff=Manrope; fontSize=11px; fontWeight=700; lineHeight=16.5px; letterSpacing=1.54px; textTransform=uppercase; color=#ffffff/0.6} "Reason for your visit"
+                <div> [381,13549 323x185] .flex flex-wrap gap-2 mt-3 {display=flex; gap=8px; margin=12px 0px 0px}
+                  <label> [381,13549 153x31] .cursor-pointer {}
+                    <input> [380,13548 1x1] .peer sr-only ph="" type=radio name=reason {position=absolute; margin=-1px; overflow=hidden; top=13549.2px; left=380.797px; right=388.203px; bottom=-12648.2px; clipPath=inset(50%)}
+                    <span> [381,13549 153x31] .inline-flex rounded-full border px-3 font-body font-semibold transition-colors peer-checked:border-bee peer-checked:bg-bee peer-checked:text {display=inline-flex; padding=6px 12px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; borderRadius=9999px; border=1px solid #ffffff/0.3} "Scheduled maintenance"
+                  <label> [542,13549 81x31] .cursor-pointer {}
+                    <input> [541,13548 1x1] .peer sr-only ph="" type=radio name=reason {position=absolute; margin=-1px; overflow=hidden; top=13549.2px; left=542.062px; right=226.938px; bottom=-12648.2px; clipPath=inset(50%)}
+                    <span> [542,13549 81x31] .inline-flex rounded-full border px-3 font-body font-semibold transition-colors peer-checked:border-bee peer-checked:bg-bee peer-checked:text {display=inline-flex; padding=6px 12px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; borderRadius=9999px; border=1px solid #ffffff/0.3} "Oil change"
+                  <label> [381,13588 88x31] .cursor-pointer {}
+                    <input> [380,13587 1x1] .peer sr-only ph="" type=radio name=reason {position=absolute; margin=-1px; overflow=hidden; top=13587.7px; left=380.797px; right=388.203px; bottom=-12686.7px; clipPath=inset(50%)}
+                    <span> [381,13588 88x31] .inline-flex rounded-full border px-3 font-body font-semibold transition-colors peer-checked:border-bee peer-checked:bg-bee peer-checked:text {display=inline-flex; padding=6px 12px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; borderRadius=9999px; border=1px solid #ffffff/0.3} "Tire change"
+                  <label> [477,13588 86x31] .cursor-pointer {}
+                    <input> [476,13587 1x1] .peer sr-only ph="" type=radio name=reason {position=absolute; margin=-1px; overflow=hidden; top=13587.7px; left=476.547px; right=292.453px; bottom=-12686.7px; clipPath=inset(50%)}
+                    <span> [477,13588 86x31] .inline-flex rounded-full border px-3 font-body font-semibold transition-colors peer-checked:border-bee peer-checked:bg-bee peer-checked:text {display=inline-flex; padding=6px 12px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; borderRadius=9999px; border=1px solid #ffffff/0.3} "Brake issue"
+                  <label> [570,13588 111x31] .cursor-pointer {}
+                    <input> [569,13587 1x1] .peer sr-only ph="" type=radio name=reason {position=absolute; margin=-1px; overflow=hidden; top=13587.7px; left=570.219px; right=198.781px; bottom=-12686.7px; clipPath=inset(50%)}
+                    <span> [570,13588 111x31] .inline-flex rounded-full border px-3 font-body font-semibold transition-colors peer-checked:border-bee peer-checked:bg-bee peer-checked:text {display=inline-flex; padding=6px 12px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; borderRadius=9999px; border=1px solid #ffffff/0.3} "Noise complaint"
+                  <label> [381,13626 209x31] .cursor-pointer {}
+                    <input> [380,13625 1x1] .peer sr-only ph="" type=radio name=reason {position=absolute; margin=-1px; overflow=hidden; top=13626.2px; left=380.797px; right=388.203px; bottom=-12725.2px; clipPath=inset(50%)}
+                    <span> [381,13626 209x31] .inline-flex rounded-full border px-3 font-body font-semibold transition-colors peer-checked:border-bee peer-checked:bg-bee peer-checked:text {display=inline-flex; padding=6px 12px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; borderRadius=9999px; border=1px solid #ffffff/0.3} "Check engine or dash warning light"
+                  <label> [381,13665 152x31] .cursor-pointer {}
+                    <input> [380,13664 1x1] .peer sr-only ph="" type=radio name=reason {position=absolute; margin=-1px; overflow=hidden; top=13664.7px; left=380.797px; right=388.203px; bottom=-12763.7px; clipPath=inset(50%)}
+                    <span> [381,13665 152x31] .inline-flex rounded-full border px-3 font-body font-semibold transition-colors peer-checked:border-bee peer-checked:bg-bee peer-checked:text {display=inline-flex; padding=6px 12px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; borderRadius=9999px; border=1px solid #ffffff/0.3} "Battery or starting issue"
+                  <label> [381,13703 180x31] .cursor-pointer {}
+                    <input> [380,13702 1x1] .peer sr-only ph="" type=radio name=reason {position=absolute; margin=-1px; overflow=hidden; top=13703.2px; left=380.797px; right=388.203px; bottom=-12802.2px; clipPath=inset(50%)}
+                    <span> [381,13703 180x31] .inline-flex rounded-full border px-3 font-body font-semibold transition-colors peer-checked:border-bee peer-checked:bg-bee peer-checked:text {display=inline-flex; padding=6px 12px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; borderRadius=9999px; border=1px solid #ffffff/0.3} "Repair estimate or diagnostic"
+                  <label> [568,13703 56x31] .cursor-pointer {}
+                    <input> [567,13702 1x1] .peer sr-only ph="" type=radio name=reason {position=absolute; margin=-1px; overflow=hidden; top=13703.2px; left=568.484px; right=200.516px; bottom=-12802.2px; clipPath=inset(50%)}
+                    <span> [568,13703 56x31] .inline-flex rounded-full border px-3 font-body font-semibold transition-colors peer-checked:border-bee peer-checked:bg-bee peer-checked:text {display=inline-flex; padding=6px 12px; ff=Manrope; fontSize=11px; fontWeight=600; lineHeight=16.5px; borderRadius=9999px; border=1px solid #ffffff/0.3} "Other"
+              <div> [381,13754 323x179] .grid gap-x-4 gap-y-0 grid-cols-2 sm:gap-x-5 mt-5 {display=grid; gap=0px 20px; gridTemplateColumns=151.594px 151.609px; margin=20px 0px 0px}
+                <input> [381,13754 152x45] .w-full border-b bg-transparent py-3 font-body text-sm outline-none transition-colors focus:border-bee border-paper/25 text-paper placeholder ph="Name" type=text name=name {padding=12px 0px; ff=Manrope; fontSize=14px; lineHeight=20px; border=; overflow=clip}
+                <input> [552,13754 152x45] .w-full border-b bg-transparent py-3 font-body text-sm outline-none transition-colors focus:border-bee border-paper/25 text-paper placeholder ph="Phone number" type=tel name=phone {padding=12px 0px; ff=Manrope; fontSize=14px; lineHeight=20px; border=; overflow=clip}
+                <input> [381,13799 323x45] .w-full border-b bg-transparent py-3 font-body text-sm outline-none transition-colors focus:border-bee border-paper/25 text-paper placeholder ph="Vehicle make and model" type=text name=vehicle {padding=12px 0px; ff=Manrope; fontSize=14px; lineHeight=20px; border=; overflow=clip}
+                <textarea> [381,13848 323x85] .w-full border-b bg-transparent py-3 font-body text-sm outline-none transition-colors focus:border-bee border-paper/25 text-paper placeholder ph="Briefly describe repair details" type=textarea name=details {padding=12px 0px; margin=4px 0px 0px; ff=Manrope; fontSize=14px; lineHeight=20px; border=; overflow=auto}
+              <input> [-9999,13933 0x0] .pointer-events-none absolute left-[-9999px] size-0 opacity-0 ph="" type=text name=website {position=absolute; opacity=0; overflow=clip; top=13932.7px; left=-9999px; right=10767px; bottom=-13032.7px}
+              <button> [381,13957 323x48] .btn {display=inline-flex; gap=8px; justifyContent=center; alignItems=center; padding=8px 16px; margin=24px 0px 0px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; color=#1a2024; backgroundColor=#f7d710; borderRadius=8px; border=1px solid #1a2024/0.2; boxShadow=#1a2024/0.14 0px 8px 24px 0px} "Request my appointment"
+              <p> [381,14017 323x40] .font-body text-[11px] leading-5 mt-3 text-paper/45 {margin=12px 0px 0px; ff=Manrope; fontSize=11px; lineHeight=20px; color=#ffffff/0.45} "We usually call back within business hours. Walk-ins welcome Monday to Friday, 9 AM to 6 PM."
+    <footer> [0,14145 768x1466] .relative isolate overflow-hidden px-5 pb-8 pt-10 text-paper md:px-8 md:pt-20 {position=relative; padding=80px 32px 32px; color=#ffffff; overflow=hidden}
+      <div> [0,14145 768x1466] .overflow-hidden absolute inset-0 -z-20 {position=absolute; overflow=hidden; zIndex=-20; top=0px; left=0px; right=0px; bottom=0px}
+        <img> [0,14145 768x1466] .absolute inset-0 size-full object-cover src=/__l5e/assets-v1/a2002458-c145-4fe5-be53-e9cb6393756d/busy-bee-storefront.png alt="Busy Bee Auto Repair storefront in Calgary" {position=absolute; maxWidth=100%; overflow=clip; top=0px; left=0px; right=0px; bottom=0px; objectFit=cover}
+      <div> [0,14145 768x1466] .absolute inset-0 -z-10 bg-gradient-to-b from-ink via-ink/92 to-pitch {position=absolute; backgroundImage=linear-gradient(#1a2024 0%, #1a2024/0.92 50%, #010101 100%); zIndex=-10; top=0px; left=0px; right=0px; bottom=0px}
+      <div> [32,14225 704x1354] .mx-auto max-w-7xl {maxWidth=1280px}
+        <div> [32,14225 704x310] .grid gap-6 md:gap-10 border-b border-paper/15 pb-8 md:pb-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-end {display=grid; gap=40px; gridTemplateColumns=704px; padding=0px 0px 56px; border=}
+          <div> [32,14225 704x157] . {}
+            <p> [32,14225 704x15] .font-body text-[10px] font-extrabold uppercase tracking-[0.2em] text-bee {ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; letterSpacing=2px; textTransform=uppercase; color=#f7d710} "Ready when you are"
+            <h2> [32,14256 704x126] .mt-4 max-w-3xl font-display text-3xl font-extrabold leading-[1.05] text-paper md:text-6xl {margin=16px 0px 0px; ff=Manrope; fontSize=60px; fontWeight=800; lineHeight=63px; textTransform=uppercase; maxWidth=768px} "Need a Mechanic in Calgary Today?"
+          <div> [32,14422 704x56] .flex flex-col gap-3 sm:flex-row lg:justify-end {display=flex; gap=12px}
+            <button> [32,14422 207x56] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=0px 28px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; color=#1a2024; backgroundColor=#f7d710; borderRadius=9999px; border=1px solid #1a2024/0.2; boxShadow=#1a2024/0.14 0px 8px 24px 0px} "Book appointment"
+              svg 16x16 cls=lucide lucide-arrow-right color=#1a2024
+            <a> [251,14422 179x56] .inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-all focus-visible:outline-none focus-visible:ring- href=https://maps.google.com/?q=324+41+Ave+NE+Calgary+AB+T2E+2N3 {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=0px 28px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; borderRadius=9999px; border=1px solid #ffffff/0.25; boxShadow=rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px} "Get directions"
+              svg 16x16 cls=lucide lucide-navigation color=#ffffff
+        <div> [32,14535 704x808] .grid gap-8 md:gap-12 border-b border-paper/15 py-8 md:py-14 md:grid-cols-2 lg:grid-cols-[1.15fr_1.5fr_1fr] {display=grid; gap=48px; gridTemplateColumns=328px 328px; padding=56px 0px; border=}
+          <div> [32,14591 328x368] . {}
+            <img> [32,14591 151x56] .h-14 w-auto rounded-sm bg-paper px-2 py-1 src=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png alt="Busy Bee Auto Repair" {padding=4px 8px; backgroundColor=#ffffff; borderRadius=6px; maxWidth=100%; overflow=clip}
+            <p> [32,14667 320x140] .mt-5 max-w-xs font-body text-sm leading-7 text-paper/55 {margin=20px 0px 0px; ff=Manrope; fontSize=14px; lineHeight=28px; color=#ffffff/0.55; maxWidth=320px} "You'll find us at 324 41 Ave NE, close to Deerfoot Trail and easy to reach from across the city. We see drivers from NE Calgary, Downtown, Bridgeland, Renfrew, Mayland Heights, Marlborough, and Airdrie."
+            <div> [32,14831 328x40] .mt-6 flex items-center gap-2 {display=flex; gap=8px; alignItems=center; margin=24px 0px 0px}
+              <a> [32,14831 40x40] .inline-flex size-10 items-center justify-center rounded-full border border-paper/20 text-paper transition-colors hover:border-bee hover:bg-b href=https://www.instagram.com/busybee_autorepair/ {display=flex; justifyContent=center; alignItems=center; borderRadius=9999px; border=1px solid #ffffff/0.2}
+                svg 16x16 cls=lucide lucide-instagram size-4 color=#ffffff
+              <a> [80,14831 40x40] .inline-flex size-10 items-center justify-center rounded-full border border-paper/20 text-paper transition-colors hover:border-bee hover:bg-b href=mailto:busybeeautocalgary@gmail.com {display=flex; justifyContent=center; alignItems=center; borderRadius=9999px; border=1px solid #ffffff/0.2}
+                svg 16x16 cls=lucide lucide-mail size-4 color=#ffffff
+          <div> [408,14591 328x368] . {}
+            <p> [408,14591 328x15] .font-body text-[10px] font-extrabold uppercase tracking-[0.2em] text-bee {ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; letterSpacing=2px; textTransform=uppercase; color=#f7d710} "Services"
+            <nav> [408,14626 328x333] .mt-5 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 {display=grid; gap=12px 32px; gridTemplateColumns=148px 148px; margin=20px 0px 0px}
+              <a> [408,14626 148x73] .group flex items-center justify-between gap-3 border-b border-paper/10 pb-3 font-body text-sm text-paper/65 transition-colors hover:text-pap href=/services/diagnostics {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=0px 0px 12px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65; border=}
+                <span> [408,14626 122x60] . {} "Computer diagnostics & electrical"
+                svg 14x14 cls=lucide lucide-arrow-right size-3.5 shrink-0 text-bee transition-transform group-hover:translate-x-1 color=#f7d710
+              <a> [588,14626 148x73] .group flex items-center justify-between gap-3 border-b border-paper/10 pb-3 font-body text-sm text-paper/65 transition-colors hover:text-pap href=/services/engine {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=0px 0px 12px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65; border=}
+                <span> [588,14626 122x60] . {} "Engine maintenance & repair"
+                svg 14x14 cls=lucide lucide-arrow-right size-3.5 shrink-0 text-bee transition-transform group-hover:translate-x-1 color=#f7d710
+              <a> [408,14711 148x53] .group flex items-center justify-between gap-3 border-b border-paper/10 pb-3 font-body text-sm text-paper/65 transition-colors hover:text-pap href=/services/brakes {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=0px 0px 12px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65; border=}
+                <span> [408,14711 122x40] . {} "Brake repair & replacement"
+                svg 14x14 cls=lucide lucide-arrow-right size-3.5 shrink-0 text-bee transition-transform group-hover:translate-x-1 color=#f7d710
+              <a> [588,14711 148x53] .group flex items-center justify-between gap-3 border-b border-paper/10 pb-3 font-body text-sm text-paper/65 transition-colors hover:text-pap href=/services/oil-change {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=0px 0px 12px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65; border=}
+                <span> [588,14711 122x40] . {} "Mobil 1 synthetic oil change"
+                svg 14x14 cls=lucide lucide-arrow-right size-3.5 shrink-0 text-bee transition-transform group-hover:translate-x-1 color=#f7d710
+              <a> [408,14776 148x53] .group flex items-center justify-between gap-3 border-b border-paper/10 pb-3 font-body text-sm text-paper/65 transition-colors hover:text-pap href=/services/suspension {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=0px 0px 12px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65; border=}
+                <span> [408,14776 122x40] . {} "Suspension & steering repair"
+                svg 14x14 cls=lucide lucide-arrow-right size-3.5 shrink-0 text-bee transition-transform group-hover:translate-x-1 color=#f7d710
+              <a> [588,14776 148x53] .group flex items-center justify-between gap-3 border-b border-paper/10 pb-3 font-body text-sm text-paper/65 transition-colors hover:text-pap href=/services/tires {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=0px 0px 12px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65; border=}
+                <span> [588,14776 122x40] . {} "Wheels, tires & balancing"
+                svg 14x14 cls=lucide lucide-arrow-right size-3.5 shrink-0 text-bee transition-transform group-hover:translate-x-1 color=#f7d710
+              <a> [408,14841 148x53] .group flex items-center justify-between gap-3 border-b border-paper/10 pb-3 font-body text-sm text-paper/65 transition-colors hover:text-pap href=/services/battery {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=0px 0px 12px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65; border=}
+                <span> [408,14841 122x40] . {} "Battery & alternator service"
+                svg 14x14 cls=lucide lucide-arrow-right size-3.5 shrink-0 text-bee transition-transform group-hover:translate-x-1 color=#f7d710
+              <a> [588,14841 148x53] .group flex items-center justify-between gap-3 border-b border-paper/10 pb-3 font-body text-sm text-paper/65 transition-colors hover:text-pap href=/services/cooling {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=0px 0px 12px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65; border=}
+                <span> [588,14841 122x40] . {} "Cooling system & radiator"
+                svg 14x14 cls=lucide lucide-arrow-right size-3.5 shrink-0 text-bee transition-transform group-hover:translate-x-1 color=#f7d710
+              <a> [408,14906 148x53] .group flex items-center justify-between gap-3 border-b border-paper/10 pb-3 font-body text-sm text-paper/65 transition-colors hover:text-pap href=/services/transmission {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=0px 0px 12px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65; border=}
+                <span> [408,14906 122x40] . {} "Transmission repair"
+                svg 14x14 cls=lucide lucide-arrow-right size-3.5 shrink-0 text-bee transition-transform group-hover:translate-x-1 color=#f7d710
+          <div> [32,15007 328x279] . {}
+            <p> [32,15007 328x15] .font-body text-[10px] font-extrabold uppercase tracking-[0.2em] text-bee {ff=Manrope; fontSize=10px; fontWeight=800; lineHeight=15px; letterSpacing=2px; textTransform=uppercase; color=#f7d710} "Contact"
+            <div> [32,15042 328x244] .mt-5 space-y-4 {margin=20px 0px 0px}
+              <a> [32,15042 328x48] .flex items-start gap-3 font-body text-sm leading-6 text-paper/65 transition-colors hover:text-paper href=https://maps.google.com/?q=324+41+Ave+NE+Calgary+AB+T2E+2N3 {display=flex; gap=12px; alignItems=flex-start; margin=0px 0px 16px; ff=Manrope; fontSize=14px; color=#ffffff/0.65} "324 41 Ave NE Calgary, AB T2E 2N3"
+                svg 16x16 cls=lucide lucide-map-pin mt-0.5 size-4 shrink-0 text-bee color=#f7d710
+                <br> [147,15044 0x19] . {}
+              <a> [32,15106 328x20] .flex items-center gap-3 font-body text-sm font-bold transition-colors hover:text-bee href=tel:+14039305888 {display=flex; gap=12px; alignItems=center; margin=0px 0px 16px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px} "(403) 930-5888"
+                svg 16x16 cls=lucide lucide-phone size-4 text-bee color=#f7d710
+              <a> [32,15142 328x20] .flex items-center gap-3 font-body text-sm font-bold text-paper/65 transition-colors hover:text-bee href=tel:+18255401995 {display=flex; gap=12px; alignItems=center; margin=0px 0px 16px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; color=#ffffff/0.65} "(825) 540-1995"
+                svg 16x16 cls=lucide lucide-phone size-4 text-bee color=#f7d710
+              <a> [32,15178 328x20] .flex items-start gap-3 break-all font-body text-sm text-paper/65 transition-colors hover:text-paper href=mailto:busybeeautocalgary@gmail.com {display=flex; gap=12px; alignItems=flex-start; margin=0px 0px 16px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.65} "busybeeautocalgary@gmail.com"
+                svg 16x16 cls=lucide lucide-mail mt-0.5 size-4 shrink-0 text-bee color=#f7d710
+              <p> [32,15214 328x72] .flex items-start gap-3 font-body text-sm leading-6 text-paper/65 {display=flex; gap=12px; alignItems=flex-start; ff=Manrope; fontSize=14px; color=#ffffff/0.65} "Monday–Friday 9:00 AM–6:00 PM Weekends closed"
+                svg 16x16 cls=lucide lucide-clock3 lucide-clock-3 mt-0.5 size-4 shrink-0 text-bee color=#f7d710
+                <br> [157,15216 0x19] . {}
+                <br> [174,15240 0x19] . {}
+        <div> [32,15343 704x193] .grid gap-6 border-b border-paper/15 py-10 md:grid-cols-[1fr_1.2fr] md:items-center {display=grid; gap=24px; gridTemplateColumns=309.078px 370.922px; alignItems=center; padding=40px 0px; border=}
+          <div> [32,15383 309x112] . {}
+            <p> [32,15383 309x64] .font-display text-2xl font-extrabold text-paper {ff=Manrope; fontSize=24px; fontWeight=800; lineHeight=32px} "Questions about your vehicle?"
+            <p> [32,15455 309x40] .mt-2 font-body text-sm text-paper/50 {margin=8px 0px 0px; ff=Manrope; fontSize=14px; lineHeight=20px; color=#ffffff/0.5} "Enter your email and start a message to our shop."
+          <form> [365,15411 371x56] .flex min-w-0 flex-col gap-2 sm:flex-row {display=flex; gap=8px}
+            <label> [364,15410 1x1] .sr-only {position=absolute; margin=-1px; overflow=hidden; top=1266px; left=365.078px; right=403.922px; bottom=201px; clipPath=inset(50%)} "Your email address"
+            <input#footer-email> [365,15411 207x56] .h-14 min-w-0 flex-1 rounded-full border border-paper/20 bg-paper/5 px-6 font-body text-sm text-paper outline-none placeholder:text-paper/35  ph="Your email address" type=email name= {padding=0px 24px; ff=Manrope; fontSize=14px; lineHeight=20px; backgroundColor=#ffffff/0.05; borderRadius=9999px; border=1px solid #ffffff/0.2; overflow=clip}
+            <button> [580,15411 156x56] .btn {display=flex; gap=8px; justifyContent=center; alignItems=center; padding=0px 28px; ff=Manrope; fontSize=14px; fontWeight=700; lineHeight=20px; color=#1a2024; backgroundColor=#f7d710; borderRadius=9999px; border=1px solid #1a2024/0.2; boxShadow=#1a2024/0.14 0px 8px 24px 0px} "Send email"
+              svg 16x16 cls=lucide lucide-arrow-right color=#1a2024
+        <div> [32,15536 704x43] .flex flex-col gap-3 pt-7 font-body text-[10px] uppercase tracking-[0.16em] text-paper/35 sm:flex-row sm:items-center sm:justify-between {display=flex; gap=12px; justifyContent=space-between; alignItems=center; padding=28px 0px 0px; ff=Manrope; fontSize=10px; lineHeight=15px; letterSpacing=1.6px; textTransform=uppercase; color=#ffffff/0.35}
+          <span> [32,15564 185x15] . {} "© 2026 Busy Bee Auto Repair"
+          <span> [622,15564 114x15] . {} "Calgary, Alberta"
+  <iframe> [0,0 1x1] . {position=absolute; overflow=clip; top=0px; left=0px; right=767px; bottom=899px}

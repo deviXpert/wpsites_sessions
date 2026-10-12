@@ -1,0 +1,57 @@
+[
+ {
+  "id": 11,
+  "description": "",
+  "name": "Main",
+  "slug": "main",
+  "meta": [],
+  "locations": [
+   "primary"
+  ],
+  "auto_add": false,
+  "_links": {
+   "self": [
+    {
+     "href": "https://papayawhip-ostrich-717285.hostingersite.com/wp-json/wp/v2/menus/11",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://papayawhip-ostrich-717285.hostingersite.com/wp-json/wp/v2/menus"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://papayawhip-ostrich-717285.hostingersite.com/wp-json/wp/v2/taxonomies/nav_menu"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://papayawhip-ostrich-717285.hostingersite.com/wp-json/wp/v2/menu-items?menus=11"
+    }
+   ],
+   "wp:menu-location": [
+    {
+     "embeddable": true,
+     "href": "https://papayawhip-ostrich-717285.hostingersite.com/wp-json/wp/v2/menu-locations/primary"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

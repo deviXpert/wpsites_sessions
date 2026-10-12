@@ -1,0 +1,204 @@
+[
+ {
+  "template_id": 79,
+  "source": "local",
+  "type": "header",
+  "title": "Header",
+  "thumbnail": "",
+  "date": 1777629922,
+  "human_date": "May 1, 2026",
+  "human_modified_date": "May 1, 2026",
+  "author": "ahsanhashmi1925@gmail.com",
+  "status": "publish",
+  "hasPageSettings": true,
+  "tags": [],
+  "export_link": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=79",
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-header",
+  "instances": {
+   "general": "Entire site"
+  },
+  "defaultCondition": "general",
+  "id": 79,
+  "exportLink": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=79",
+  "modifiedDate": "May 1, 2026",
+  "editURL": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/post.php?post=79&action=elementor",
+  "conditions": [
+   {
+    "type": "include",
+    "name": "general",
+    "sub_name": "",
+    "sub_id": "",
+    "sub": "",
+    "subId": ""
+   }
+  ],
+  "isActive": true,
+  "previewUrl": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-header&post_id=79&render_mode=template-preview&render_mode_nonce=ba8dcc9fb2&ver=1791830129",
+  "placeholderUrl": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/plugins/elementor/assets/images/app/site-editor/header.svg",
+  "pageLayout": "strip",
+  "supportsSiteEditor": true,
+  "showInstances": true,
+  "screenshot_url": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-header&post_id=79&render_mode=screenshot&render_mode_nonce=ba8dcc9fb2&ver=1791830129"
+ },
+ {
+  "template_id": 68,
+  "source": "local",
+  "type": "single-post",
+  "title": "AutoWorks &#8211; Single post",
+  "thumbnail": "",
+  "date": 1777629921,
+  "human_date": "May 1, 2026",
+  "human_modified_date": "May 1, 2026",
+  "author": "ahsanhashmi1925@gmail.com",
+  "status": "publish",
+  "hasPageSettings": true,
+  "tags": [],
+  "export_link": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=68",
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-single-post",
+  "instances": {
+   "post": "Posts"
+  },
+  "defaultCondition": "singular",
+  "id": 68,
+  "exportLink": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=68",
+  "modifiedDate": "May 1, 2026",
+  "editURL": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/post.php?post=68&action=elementor",
+  "conditions": [
+   {
+    "type": "include",
+    "name": "singular",
+    "sub_name": "post",
+    "sub_id": "",
+    "sub": "post",
+    "subId": ""
+   }
+  ],
+  "isActive": true,
+  "previewUrl": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-single-post&post_id=68&render_mode=template-preview&render_mode_nonce=2c8b55b8bc&ver=1791830129",
+  "placeholderUrl": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/plugins/elementor/assets/images/app/site-editor/single-post.svg",
+  "pageLayout": "grid",
+  "supportsSiteEditor": true,
+  "showInstances": true
+ },
+ {
+  "template_id": 71,
+  "source": "local",
+  "type": "archive",
+  "title": "AutoWorks &#8211; Archive Blog",
+  "thumbnail": "",
+  "date": 1777629921,
+  "human_date": "May 1, 2026",
+  "human_modified_date": "May 1, 2026",
+  "author": "ahsanhashmi1925@gmail.com",
+  "status": "publish",
+  "hasPageSettings": true,
+  "tags": [],
+  "export_link": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=71",
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-archive-blog",
+  "instances": {
+   "archive": "All archives"
+  },
+  "defaultCondition": "archive",
+  "id": 71,
+  "exportLink": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=71",
+  "modifiedDate": "May 1, 2026",
+  "editURL": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/post.php?post=71&action=elementor",
+  "conditions": [
+   {
+    "type": "include",
+    "name": "archive",
+    "sub_name": "",
+    "sub_id": "",
+    "sub": "",
+    "subId": ""
+   }
+  ],
+  "isActive": true,
+  "previewUrl": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-archive-blog&post_id=71&render_mode=template-preview&render_mode_nonce=a547ff8e6a&ver=1791830129",
+  "placeholderUrl": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/plugins/elementor/assets/images/app/site-editor/archive.svg",
+  "pageLayout": "grid",
+  "supportsSiteEditor": true,
+  "showInstances": true
+ },
+ {
+  "template_id": 74,
+  "source": "local",
+  "type": "footer",
+  "title": "Footer",
+  "thumbnail": "",
+  "date": 1777629921,
+  "human_date": "May 1, 2026",
+  "human_modified_date": "May 1, 2026",
+  "author": "ahsanhashmi1925@gmail.com",
+  "status": "publish",
+  "hasPageSettings": true,
+  "tags": [],
+  "export_link": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=74",
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-footer",
+  "instances": {
+   "general": "Entire site"
+  },
+  "defaultCondition": "general",
+  "id": 74,
+  "exportLink": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=74",
+  "modifiedDate": "May 1, 2026",
+  "editURL": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/post.php?post=74&action=elementor",
+  "conditions": [
+   {
+    "type": "include",
+    "name": "general",
+    "sub_name": "",
+    "sub_id": "",
+    "sub": "",
+    "subId": ""
+   }
+  ],
+  "isActive": true,
+  "previewUrl": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-footer&post_id=74&render_mode=template-preview&render_mode_nonce=133d5a3340&ver=1791830129",
+  "placeholderUrl": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/plugins/elementor/assets/images/app/site-editor/footer.svg",
+  "pageLayout": "strip",
+  "supportsSiteEditor": true,
+  "showInstances": true,
+  "screenshot_url": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-footer&post_id=74&render_mode=screenshot&render_mode_nonce=133d5a3340&ver=1791830129"
+ },
+ {
+  "template_id": 49,
+  "source": "local",
+  "type": "error-404",
+  "title": "AutoWorks &#8211; Error 404",
+  "thumbnail": "",
+  "date": 1777629917,
+  "human_date": "May 1, 2026",
+  "human_modified_date": "May 1, 2026",
+  "author": "ahsanhashmi1925@gmail.com",
+  "status": "publish",
+  "hasPageSettings": true,
+  "tags": [],
+  "export_link": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=49",
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-error-404",
+  "instances": {
+   "not_found404": "404 Page"
+  },
+  "defaultCondition": "singular",
+  "id": 49,
+  "exportLink": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/admin-ajax.php?action=elementor_library_direct_actions&library_action=export_template&source=local&_nonce=b770e94a2b&template_id=49",
+  "modifiedDate": "May 1, 2026",
+  "editURL": "https://papayawhip-ostrich-717285.hostingersite.com/wp-admin/post.php?post=49&action=elementor",
+  "conditions": [
+   {
+    "type": "include",
+    "name": "singular",
+    "sub_name": "not_found404",
+    "sub_id": "",
+    "sub": "not_found404",
+    "subId": ""
+   }
+  ],
+  "isActive": true,
+  "previewUrl": "https://papayawhip-ostrich-717285.hostingersite.com/?elementor_library=autoworks-error-404&post_id=49&render_mode=template-preview&render_mode_nonce=c246c2316d&ver=1791830129",
+  "placeholderUrl": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/plugins/elementor/assets/images/app/site-editor/error-404.svg",
+  "pageLayout": "grid",
+  "supportsSiteEditor": true,
+  "showInstances": true
+ }
+]
