@@ -864,7 +864,7 @@ REASONS = ['Scheduled maintenance', 'Oil change', 'Tire change', 'Brake issue', 
 
 def book():
     head = C('Head', [
-        ICON('sparkles', 28, color=BEE, name='Sparkles', w='auto'),
+        ICON('sparkles', 28, color=BEE, name='Sparkles', w='auto', cls='bb-sparkles'),
         H('Need a Mechanic in Calgary Today?', 'h2', INK, M(48, 800, 1.05, tt='uppercase', size_m=30), mar=(12, 0, 0, 0), name='Title'),
         T("<p>Call (403) 930-5888 or book online. We'll get you back on the road safely, without the runaround.</p>", ink(0.65),
           M(16, 400, 24, size_m=14), mar=(16, 0, 0, 0), w=576, w_mobile='full', name='Intro'),

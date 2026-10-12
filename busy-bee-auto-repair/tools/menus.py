@@ -12,7 +12,7 @@ if __name__ == '__main__':
     ids = json.load(open('ids.json'))
     existing = {m['slug']: m for m in wp.get('wp/v2/menus')}
     for slug, (name, items) in MENUS.items():
-        m = existing.get(slug) or wp.post('wp/v2/menus', {'name': name, 'slug': slug})
+        m = ({'id': ids['menu_' + slug]} if 'menu_' + slug in ids else None) or existing.get(slug) or wp.post('wp/v2/menus', {'name': name, 'slug': slug})
         mid = m['id']
         for it in wp.get(f'wp/v2/menu-items?menus={mid}&per_page=100'):
             wp.req('DELETE', f'wp/v2/menu-items/{it["id"]}?force=true')

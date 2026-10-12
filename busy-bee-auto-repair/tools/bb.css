@@ -32,10 +32,9 @@ body,html{overflow-x:clip}
 /* ---- Buttons with a coloured icon disc (hero) ---- */
 .bb-btn-disc .elementor-button-icon{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:9999px;flex:0 0 40px}
 .bb-btn-disc.bb-disc-bee .elementor-button-icon{background:var(--bb-bee);color:var(--bb-ink)}
-.bb-btn-disc.bb-disc-bee .elementor-button-icon svg{fill:currentColor}
 .bb-btn-disc.bb-disc-ink .elementor-button-icon{background:var(--bb-ink);color:#fff}
 .bb-btn-disc .elementor-button{padding:0 20px 0 6px!important;height:56px;display:inline-flex;align-items:center}
-.bb-btn-disc .elementor-button-icon svg{fill:currentColor!important;width:16px;height:16px}
+.bb-btn-disc .elementor-button-icon svg{width:16px;height:16px}
 .bb-ring .elementor-button{box-shadow:0 0 0 1px rgb(255 255 255/.25),0 8px 24px rgb(26 32 36/.18)!important}
 
 /* ==========================================================================
@@ -190,7 +189,7 @@ body,html{overflow-x:clip}
 .bb-vertical .elementor-heading-title{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap}
 .bb-why-arrow .elementor-icon{width:48px;height:48px;border:1px solid rgb(20 22 21/.333);border-radius:13px;display:grid;place-items:center}
 .bb-why-arrow svg{stroke-width:1px}
-.bb-why-btn .elementor-button:hover svg{fill:currentColor}
+
 .bb-why-quotes-title .elementor-heading-title{max-width:53%;position:relative}
 .bb-why-quotes-title span{display:block;max-width:340px;margin-top:8px;font-size:.95cqw;font-weight:500;line-height:1.4;text-transform:uppercase}
 .bb-why-quotes-img,.bb-why-fix-img,.bb-why-makes-img{position:absolute!important;inset:0;width:100%;height:100%;margin:0!important}
@@ -278,7 +277,7 @@ body,html{overflow-x:clip}
 .bb-rev-prev .elementor-icon:hover,.bb-rev-next .elementor-icon:hover{background:var(--bb-bee)!important}
 .bb-greviews-link .elementor-heading-title{text-decoration:underline;text-decoration-color:var(--bb-bee);text-decoration-thickness:2px;text-underline-offset:4px}
 .bb-visit-btn .elementor-button-icon{width:27px;height:27px;border-radius:9999px;background:#fff;color:var(--bb-ink);display:flex;align-items:center;justify-content:center;transition:transform .3s}
-.bb-visit-btn .elementor-button-icon svg{fill:currentColor;width:14px;height:14px}
+.bb-visit-btn .elementor-button-icon svg{width:14px;height:14px}
 .bb-visit-btn .elementor-button:hover .elementor-button-icon{transform:translateX(4px)}
 .bb-reveal{opacity:0;transform:translateY(28px) scale(.98);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1);transition-delay:var(--reveal-delay,0s)}
 .bb-reveal.is-in{opacity:1;transform:none}
@@ -350,7 +349,7 @@ body,html{overflow-x:clip}
    BOOK
    ========================================================================== */
 .bb-ic-bee .elementor-button-icon{color:var(--bb-bee)}
-.bb-ic-bee .elementor-button-icon svg{fill:var(--bb-bee)}
+.bb-ic-bee .elementor-button-icon svg{stroke:var(--bb-bee)}
 .bb-tagline span{color:rgb(26 32 36/.45)}
 .bb-book-title span{color:rgb(255 255 255/.45)}
 .bb-book-form .elementor-field-type-radio{margin-top:24px}
@@ -381,7 +380,7 @@ body,html{overflow-x:clip}
 .bb-foot-logo img{height:56px!important;width:auto!important;background:#fff;border-radius:6px;padding:4px 8px;box-sizing:border-box}
 .bb-social .elementor-icon{width:40px;height:40px;border:1px solid rgb(255 255 255/.2);border-radius:9999px;display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s,color .2s}
 .bb-social .elementor-icon:hover{background:var(--bb-bee);border-color:var(--bb-bee);color:var(--bb-ink)}
-.bb-social .elementor-icon:hover svg{fill:var(--bb-ink)}
+.bb-social .elementor-icon:hover svg{stroke:var(--bb-ink)}
 .bb-foot-links .elementor-icon-list-items{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 32px}
 .bb-foot-links .elementor-icon-list-item{margin:0!important;padding:0 0 12px!important;border-bottom:1px solid rgb(255 255 255/.1)}
 .bb-foot-links .elementor-icon-list-item>a{flex-direction:row-reverse;justify-content:space-between;gap:12px;width:100%;transition:color .2s}
@@ -463,3 +462,14 @@ body,html{overflow-x:clip}
   .bb-why-fix .elementor-heading-title{font-size:21px!important;line-height:26.25px!important;letter-spacing:0!important}
   .bb-why-makes-copy{left:25px!important}
 }
+
+.bb-wa .elementor-button-icon svg{width:22px;height:22px}
+.elementor-button .elementor-button-icon svg.lucide{stroke:currentColor}
+/* Lucide stroke widths used by the design */
+.bb-pt svg{stroke-width:2.2}
+.bb-dcard .elementor-widget-icon:first-child svg,.bb-maddr svg,.bb-mcall svg,.bb-mmenu .elementor-menu-toggle svg{stroke-width:1.8}
+.bb-why-makes-copy svg,.bb-sparkles svg{stroke-width:1.5}
+.bb-scan-car svg,.bb-drive-car svg{stroke-width:1}
+.bb-stage-approval>.elementor-widget-icon svg{stroke-width:1.3}
+.bb-drive-shield svg{stroke-width:1.4}
+.bb-feature-ring svg{stroke-width:.7}

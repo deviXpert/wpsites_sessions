@@ -18,6 +18,20 @@ def collect():
     return sorted(el.USED_ICONS)
 
 
+def upload_svg(path, filename):
+    """Multipart upload flagged as an Elementor media upload – Elementor only allows SVG for those requests."""
+    import subprocess
+    r = subprocess.run(['curl', '-sS', '-u', f"{os.environ.get('BB_WP_USER') or os.environ['WP_USER']}:"
+                        f"{os.environ.get('BB_WP_APP_PASSWORD') or os.environ['WP_APP_PASSWORD']}",
+                        '-F', f'file=@{path};type=image/svg+xml;filename={filename}',
+                        '-F', 'uploadTypeCaller=elementor-wp-media-upload', wp.U + '/wp-json/wp/v2/media'],
+                       capture_output=True, text=True, check=True)
+    d = json.loads(r.stdout)
+    if 'id' not in d:
+        raise SystemExit(f'upload {filename} failed: {d}')
+    return d
+
+
 def svg_for(name, src):
     if name in CUSTOM:
         return CUSTOM[name]
@@ -37,7 +51,7 @@ if __name__ == '__main__':
             continue
         with tempfile.NamedTemporaryFile('w', suffix='.svg', delete=False) as f:
             f.write(svg_for(n, src))
-        d = wp.upload(f.name, f'lucide-{n}.svg', 'image/svg+xml')
+        d = upload_svg(f.name, f'lucide-{n}.svg')
         have[n] = {'id': d['id'], 'url': d['source_url']}
         json.dump(have, open('icons.json', 'w'), indent=1)
         print('uploaded', n, d['id'])

@@ -41,9 +41,7 @@ Design source (must match 1:1): **https://busy-bee-auto-repair-preview.mightycar
 - `node func.js` – functional test (hero slider, filters, popups, FAQ, forms, menus, links, WebP, no h-scroll).
 
 ## Open items
-1. **Icons:** WordPress blocks SVG uploads, so icons currently use Font Awesome fallbacks. Once the user enables
-   *Elementor → Settings → Advanced → Enable Unfiltered File Uploads*, run `python3 icons.py lucide && python3 build_all.py`
-   to swap in the exact Lucide icons (35 used, copies in `tools/lucide/`).
+1. **Icons:** done – 36 Lucide SVGs uploaded via `icons.py` (multipart upload with `uploadTypeCaller=elementor-wp-media-upload`, needs "Enable Unfiltered File Uploads", now on); IDs in `tools/icons.json`.
 2. Service-detail pages don't exist: all "See service"/service links point to `#services` (map in `common.py` → `SVC`).
    Brand cells are not linked.
 3. Symptom checker: the design calls an AI backend; here it is an Elementor form that emails the shop. No contact field
