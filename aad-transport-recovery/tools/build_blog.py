@@ -77,14 +77,14 @@ def archive():
 # ---------- SINGLE POST ----------
 def single():
     info = W('post-info', 'x-post-meta rv', view='inline', icon_list=[
-        {'_id': rid(), 'type': 'date', 'selected_icon': ICO('calendar-alt'), 'show_icon': 'custom'},
-        {'_id': rid(), 'type': 'terms', 'taxonomy': 'category', 'selected_icon': ICO('folder-open'), 'show_icon': 'custom', 'link': 'yes'}])
+        {'_id': rid(), 'type': 'date', 'selected_icon': ICO('calendar-alt'), 'show_icon': 'custom', 'link': ''},
+        {'_id': rid(), 'type': 'terms', 'taxonomy': 'category', 'selected_icon': ICO('folder-open'), 'show_icon': 'custom', 'link': ''}])
     h = hero([crumbs(('Home', U + '/'), ('Blog', U + '/blog/'), ('Article', None)),
               W('theme-post-title', 'x-h x-hero-title rv', header_size='h1', __dynamic__={'title': '[elementor-tag id="' + rid() + '" name="post-title" settings="%7B%7D"]'}), info], 'x-post-hero')
     article = C([
         W('theme-post-featured-image', 'x-post-img', image_size='large'),
         W('theme-post-content', 'x-prose'),
-        W('post-info', 'x-post-tags', view='inline', icon_list=[{'_id': rid(), 'type': 'terms', 'taxonomy': 'post_tag', 'selected_icon': ICO('tags'), 'show_icon': 'custom', 'link': 'yes'}]),
+        W('post-info', 'x-post-tags', view='inline', icon_list=[{'_id': rid(), 'type': 'terms', 'taxonomy': 'post_tag', 'selected_icon': ICO('tags'), 'show_icon': 'custom', 'link': ''}]),
         W('share-buttons', 'x-share', share_buttons=[{'_id': rid(), 'button': b} for b in ('facebook', 'twitter', 'linkedin', 'whatsapp', 'email')], view='icon', skin='flat', shape='circle', columns='0', alignment='left'),
         W('post-navigation', 'x-post-nav', show_label='yes', prev_label='Previous Article', next_label='Next Article', show_arrow='yes', show_title='yes', show_borders=''),
     ], 'x-prose-card x-post-card rv', flex_direction='column')
