@@ -477,3 +477,23 @@ body,html{overflow-x:clip}
 .bb-feature-ring svg{stroke-width:.7}
 
 @media (min-width:768px){.bb-hero .bb-wa .elementor-button{height:56px;display:inline-flex;align-items:center}}
+/* symptom checker v2: dropdowns + instant guidance */
+.bb-checker-form select.elementor-field-textual{padding:13px 32px 13px 13px!important;min-height:46px;background-color:#fff;cursor:pointer}
+.bb-checker-form select:disabled{background:#f6f7f7;color:#9aa0a2;cursor:not-allowed}
+.bb-checker-form .elementor-select-wrapper:before{font-size:11px;color:#7b8385}
+.bb-veh-img img{transition:opacity .3s}
+.bb-result{display:none}
+.bb-result.is-shown{display:block;margin-top:24px;padding:22px;border:1px solid #e4e7e7;border-radius:10px;background:#fbfbf8;font-family:var(--bb-sys);color:#41494b;font-size:12.5px;line-height:1.65}
+.bb-res-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:9px;font-weight:700;letter-spacing:1.08px;color:#8b9395}
+.bb-res-urg{padding:3px 8px;border-radius:20px;letter-spacing:.2px;color:#1a2024}
+.bb-u1{background:#e3f4e6}.bb-u2{background:#fff3c4}.bb-u3{background:#fde0dc}
+.bb-result h4{margin:12px 0 10px;font-size:18px;line-height:1.3;font-weight:700;color:#1a2024;letter-spacing:-.4px}
+.bb-res-block{padding:14px 0;border-top:1px solid #e9ecec}
+.bb-res-block strong{font-size:13px;color:#1a2024}
+.bb-res-block ul{margin:6px 0 8px;padding-left:18px}
+.bb-res-block p{margin:4px 0}
+.bb-res-block a{display:inline-block;margin-top:6px;color:#1a2024;font-weight:700;text-decoration:underline;text-decoration-color:#ffe600;text-underline-offset:3px}
+.bb-res-note{margin:12px 0 0;font-size:11px;color:#7b8385}
+.bb-res-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.bb-res-cta a{flex:1 1 160px;text-align:center;padding:13px 16px;border-radius:7px;font-weight:800;font-size:13px;color:#151c1e}
+.bb-res-book{background:#ffe600}.bb-res-call{border:1px solid #dce1e2;background:#fff}

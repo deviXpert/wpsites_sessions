@@ -48,3 +48,8 @@ Design source (must match 1:1): **https://busy-bee-auto-repair-preview.mightycar
    in the design → confirm with the user.
 4. Forms (symptom, booking, footer email) email `busybeeautocalgary@gmail.com`; not test-submitted (would email the shop).
 5. Old AutoWorks templates (single post, archive, 404, unused library items) are still in the library.
+
+## Symptom checker v2
+- Make / Model / Year are Elementor select fields (lists in `tools/cars.py`); `code.py` injects `window.BB_CARS` before bb.js, which filters models by make and updates title/spec.
+- Added required Name + Phone. Email subject includes make/model. On `submit_success` bb.js renders rule-based "Instant guidance" (RULES in bb.js) into `.bb-result`.
+- Car preview: set `IMAGIN_KEY` in bb.js to a commercial Imagin.studio customer key to show the selected car. The demo key is watermarked, so the Honda Civic photo is shown until a key is set.

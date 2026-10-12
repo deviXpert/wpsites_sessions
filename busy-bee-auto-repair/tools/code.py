@@ -1,5 +1,5 @@
 """Push bb.css / bb.js into Elementor Pro Custom Code snippets (site-wide). Snippet ids kept in ids.json."""
-import json, wp
+import json, wp, cars
 
 SNIPPETS = {
     'snippet_css': ('Busy Bee – Styles', 'elementor_head', 'bb.css', lambda c: '<style id="bb-styles">\n' + c + '\n</style>'),
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     ids.setdefault('snippet_css', 176)  # created during setup as a test snippet
     for key, (title, loc, f, wrap) in SNIPPETS.items():
         body = {'title': title, 'status': 'publish',
-                'meta': {'_elementor_location': loc, '_elementor_priority': 10, '_elementor_code': wrap(css_with_icons() if f == 'bb.css' else open(f).read())}}
+                'meta': {'_elementor_location': loc, '_elementor_priority': 10, '_elementor_code': wrap(css_with_icons() if f == 'bb.css' else cars.js_data() + '\n' + open(f).read())}}
         d = wp.post(f'wp/v2/elementor_snippet/{ids[key]}', body) if key in ids else wp.post('wp/v2/elementor_snippet', body)
         ids[key] = d['id']
         wp.req('PUT', f'elementor/v1/site-editor/templates-conditions/{d["id"]}',

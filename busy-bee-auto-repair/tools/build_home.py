@@ -3,6 +3,7 @@ Run: python3 build_home.py            (writes the page + regenerates its CSS)
 Every section is native Elementor containers/widgets; behaviour lives in bb.js / bb.css (Custom Code)."""
 import json
 import el
+import cars
 from common import *
 from el import uid
 
@@ -522,8 +523,9 @@ def checker():
           S(12, 400, 18), mar=(8, 0, 0, 0), name='Spec', cls='bb-veh-spec'),
         IMG('honda-civic-symptom-checker', w=cu('calc(100% + 60px)'), fit='contain', alt='Illustrative white Honda Civic studio render',
             name='Car render', mar=(12, -30, 0, -30), cls='bb-veh-img'),
-        C('Caption', [H('HONDA CIVIC · ILLUSTRATIVE PREVIEW', 'span', '#8A9294', S(8, 400, 12, 0.32), name='Caption'),
-                      H('Vehicle image matching coming next', 'span', '#8A9294', S(8, 400, 12, 0.32), name='Note')],
+        C('Caption', [H('HONDA CIVIC · ILLUSTRATIVE PREVIEW', 'span', '#8A9294', S(8, 400, 12, 0.32), name='Caption', cls='bb-veh-cap'),
+                      H('Select a make and model to preview it', 'span', '#8A9294', S(8, 400, 12, 0.32), name='Note',
+                        cls='bb-veh-note')],
           d='row', wrap='wrap', jc='space-between', gap=10, mar=(8, 0, 0, 0)),
         C('Bottom', [ICON('shield-check', 19, color='#6B7476', name='Shield', w='auto'),
                      T('<p>Your description is the starting point.<br><strong>A technician confirms the diagnosis.</strong></p>',
@@ -531,10 +533,10 @@ def checker():
           d='row', ai='center', gap=12, pad=(32, 0, 0, 0), cls='bb-push-bottom'),
     ], pad=30, pad_mobile=24, bg='#F6F7F7', ov=True, cls='bb-studio')
     fields = [
-        form_field('make', 'text', 'Make', 'e.g. Honda', '50'),
-        form_field('model', 'text', 'Model', 'e.g. Civic', '50'),
-        form_field('year', 'text', 'Year', 'e.g. 2022', '50'),
-        form_field('mileage', 'text', 'Mileage (km)', 'e.g. 65,000', '50'),
+        form_field('make', 'select', 'Make', '', '50', True, field_options=cars.make_options()),
+        form_field('model', 'select', 'Model', '', '50', True, field_options=cars.model_options()),
+        form_field('year', 'select', 'Year', '', '50', field_options=cars.year_options()),
+        form_field('mileage', 'number', 'Mileage (km)', 'e.g. 65000', '50', min='0'),
         form_field('issue', 'textarea', 'Describe the issue',
                    'What do you hear or feel? When does it happen? Any warning lights? Tell us as much as you can.', '100', True, rows=4),
         form_field('chips', 'html', '', '', '100',
@@ -542,12 +544,14 @@ def checker():
                               '<button type="button" data-add="Warning light">Warning light +</button>'
                               '<button type="button" data-add="Trouble starting">Trouble starting +</button>'
                               '<button type="button" data-add="Vibration">Vibration +</button></div>'),
+        form_field('name', 'text', 'Your name', 'First and last name', '50', True),
+        form_field('phone', 'tel', 'Phone', '(403) 555-0123', '50', True),
     ]
     form = W('form', 'Symptom form', form_name='Symptom check', form_fields=fields, input_size='sm', show_labels='yes',
              button_text='Check my symptoms', button_size='sm', button_width='100', selected_button_icon=icon('arrow-right'),
              button_icon_align='row-reverse', submit_actions=['email'], email_to=EMAIL,
-             email_subject='Symptom check from busybeeautorepair website', email_content='[all-fields]',
-             email_from_name='Busy Bee website', success_message='Thanks! A Busy Bee technician will review this and call you back. '
+             email_subject='Symptom check – [field id="make"] / [field id="model"]', email_content='[all-fields]',
+             email_from_name='Busy Bee website', success_message='Thanks! Your details are with our technicians – we’ll call you back. '
              'Need it sooner? Call (403) 930-5888.', column_gap=px(14), row_gap=px(19), label_spacing=px(8),
              label_color='#41494B', **{('label_' + k): v for k, v in S(11, 600, 16.5).items()},
              field_text_color=DK, **{('field_' + k): v for k, v in S(12, 400, 18).items()},
@@ -559,6 +563,7 @@ def checker():
         H('02 / THE DETAILS', 'span', '#8B9395', S(9, 700, 24, 1.08), name='Step'),
         H('What’s going on?', 'h3', DK, S(26, 700, 39, -0.91), mar=(12, 0, 27, 0), name='Title'),
         form,
+        C('Instant guidance', [], cls='bb-result'),
     ], pad=34, pad_mobile=24, bg=PAPER, border=(dims(0, 0, 0, 1), '#E4E7E7'), cls='bb-form-panel')
     grid = C('Checker grid', [studio, panel], grid='1.2fr 1fr', grid_mobile='1fr', rows='auto', rows_mobile='auto', gap=0,
              radius=18, border=(1, '#E4E7E7'), ov=True)
