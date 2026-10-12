@@ -135,7 +135,31 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  /* ---------- seamless marquees: clone groups until the strip is wider than the screen ---------- */
+  function marquee(track, pxPerSec) {
+    var groups = Array.prototype.slice.call(track.children);
+    if (!groups.length) return;
+    var first = groups[0];
+    function setup() {
+      var gw = first.getBoundingClientRect().width + (parseFloat(getComputedStyle(track).columnGap) || 0);
+      if (!gw) return;
+      while (track.children.length < 40 && track.scrollWidth < window.innerWidth + gw * 2) {
+        var c = first.cloneNode(true); c.setAttribute('aria-hidden', 'true');
+        c.querySelectorAll('img').forEach(function (i) { i.alt = ''; i.loading = 'eager'; });
+        track.appendChild(c);
+      }
+      track.style.setProperty('--bb-shift', (-gw) + 'px');
+      track.style.animationDuration = (gw / pxPerSec) + 's';
+      track.classList.add('bb-loop');
+    }
+    setup();
+    window.addEventListener('resize', setup);
+    window.addEventListener('load', setup);
+  }
+
   function init() {
+    $$('.bb-marquee-track').forEach(function (t) { marquee(t, 940 / 30); });
+    $$('.bb-ribbon-track').forEach(function (t) { marquee(t, 1083 / 35); });
     $$('.bb-type').forEach(typing);
     $$('.bb-hero, .bb-mhero').forEach(heroSlider);
     $$('.bb-services').forEach(serviceFilter);

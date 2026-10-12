@@ -53,7 +53,7 @@ body,html{overflow-x:clip}
 .bb-mmenu .elementor-menu-toggle svg{width:20px;height:20px}
 .bb-mmenu nav.elementor-nav-menu--dropdown{position:fixed!important;left:16px!important;right:16px!important;width:auto!important;top:80px!important;border:1px solid rgb(26 32 36/.1);border-radius:8px;background:#fff;padding:20px;box-shadow:0 20px 25px -5px rgb(0 0 0/.1),0 8px 10px -6px rgb(0 0 0/.1)}
 .bb-mmenu .elementor-nav-menu--dropdown .elementor-item{display:flex!important;justify-content:space-between;align-items:center;border-bottom:1px solid rgb(26 32 36/.1);padding:16px 0!important;font-family:var(--bb-sys);font-size:20px!important;line-height:28px;font-weight:700;text-transform:uppercase;color:var(--bb-ink)!important;background:transparent!important}
-.bb-mmenu .elementor-nav-menu--dropdown .elementor-item:after{content:"↗";font-weight:700}
+.bb-mmenu .elementor-nav-menu--dropdown .elementor-item:after{content:"↗\FE0E";font-weight:700}
 .bb-mmenu .elementor-nav-menu--dropdown .bb-menu-cta .elementor-item{margin-top:20px;border:1px solid rgb(26 32 36/.2);border-radius:9999px;justify-content:center;background:var(--bb-bee)!important;font-size:14px!important;line-height:20px;text-transform:none;padding:12px 20px!important;box-shadow:0 8px 24px rgb(26 32 36/.14)}
 .bb-mmenu .elementor-nav-menu--dropdown .bb-menu-cta .elementor-item:after{content:none}
 
@@ -122,6 +122,8 @@ body,html{overflow-x:clip}
    ========================================================================== */
 .bb-marquee{-webkit-mask-image:linear-gradient(to right,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(to right,transparent,#000 10%,#000 90%,transparent)}
 .bb-marquee-track{will-change:transform;animation:30s linear infinite bb-marquee}
+.bb-loop{animation-name:bb-loop!important}
+@keyframes bb-loop{from{transform:translateX(0)}to{transform:translateX(var(--bb-shift,-50%))}}
 .bb-marquee:hover .bb-marquee-track,.bb-marquee:focus-within .bb-marquee-track{animation-play-state:paused}
 .bb-logoimg img{width:auto!important;max-width:none}
 .bb-ribbon-track{will-change:transform;animation:35s linear infinite bb-marquee}
@@ -473,3 +475,5 @@ body,html{overflow-x:clip}
 .bb-stage-approval>.elementor-widget-icon svg{stroke-width:1.3}
 .bb-drive-shield svg{stroke-width:1.4}
 .bb-feature-ring svg{stroke-width:.7}
+
+@media (min-width:768px){.bb-hero .bb-wa .elementor-button{height:56px;display:inline-flex;align-items:center}}

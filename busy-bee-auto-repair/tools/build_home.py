@@ -343,7 +343,7 @@ def services():
                     T('<p>Whatever your vehicle needs, our Calgary auto shop handles it under one roof.</p>', ink(0.6),
                       M(16, 400, 28, size_m=14), mar=(16, 0, 0, 0), w=576, w_mobile='full', name='Intro')],
           w=672, w_tablet=pct(100)),
-        H('View all services ↗', 'span', INK, M(14, 700, 20, deco='underline'), href='#services', name='View all services',
+        H('View all services ↗︎', 'span', INK, M(14, 700, 20, deco='underline'), href='#services', name='View all services',
           w=96, w_tablet='auto', cls='bb-underline'),
         C('Filters', [filter_btn(x, x == 'All') for x in ('All', 'Maintenance', 'Repair', 'Tires')], d='row', gap=8, w='auto',
           cls='bb-filters'),
@@ -375,7 +375,7 @@ def ribbon():
             H('Calgary, get winter-ready.', 'span', PAPER, S(15, 650, 22.5), name='Text', cls='bb-nowrap'),
             C('Dot', [], w=5, minh=5, bg=YEL, radius=PILL),
             H('Seasonal tire changes · Balancing · Tire checks', 'span', PAPER, S(15, 650, 22.5), name='Text', cls='bb-nowrap'),
-            BTN('Call ' + PHONE + ' ↗', TEL, S(14, 750, 21), color='#1B2225', bg=YEL, pad=(12, 22), radius=30, border=(1, YEL),
+            BTN('Call ' + PHONE + ' ↗︎', TEL, S(14, 750, 21), color='#1B2225', bg=YEL, pad=(12, 22), radius=30, border=(1, YEL),
                 name='Call', cls='bb-nowrap'),
         ], d='row', ai='center', gap=40, pad=(0, 64, 0, 0), w=cu('max-content'), attrs={'aria-hidden': 'true'} if dup else None)
     return C('Winter ribbon', [C('Track', [group(False), group(True)], d='row', w=cu('max-content'), cls='bb-ribbon-track')],
