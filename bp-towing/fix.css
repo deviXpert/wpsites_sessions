@@ -1,0 +1,7 @@
+/* v8: mobile menu fixes (theme-builder pages + close/scroll behaviour) */
+@media (max-width:1024px){
+.bp-mobnav,.bp-mobnav>.elementor-widget-container{position:static!important}
+.bp-mobnav .elementor-nav-menu--dropdown.elementor-nav-menu__container{width:auto!important;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.elementor-location-header .bp-mobnav .elementor-nav-menu--dropdown.elementor-nav-menu__container{left:12px!important;right:12px!important;overflow:auto!important;max-height:calc(100svh - 110px)!important;margin-top:6px!important}
+.elementor-location-header .bp-mobnav .elementor-menu-toggle:not(.elementor-active)+.elementor-nav-menu__container{max-height:0!important;padding:0!important;border:0!important}
+}
