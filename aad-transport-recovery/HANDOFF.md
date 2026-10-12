@@ -1,11 +1,11 @@
 # AAD Transport & Recovery — WordPress Redesign Handoff
 
-Site: **https://maroon-raven-160825.hostingersite.com** (WordPress + Astra child + Elementor / Elementor Pro, Yoast, Trustindex)
+Site: **https://aadrecovery.co.uk** (live; previously staged at maroon-raven-160825 / darkblue-kudu-638106 .hostingersite.com) (WordPress + Astra child + Elementor / Elementor Pro, Yoast, Trustindex)
 Content source for new service pages: Google Doc https://docs.google.com/document/d/1tm9CqX6-TecfKiAPSj79lJA-qgvueNt4NuKzKEHdxTg/edit (copy saved as `tools/gdoc.html`, parsed to `tools/doc_pages.json`)
 
 ## ⚠️ Before doing anything in a new session
 1. Credentials come from env vars only — **`AAD_WP_URL`, `AAD_WP_USER`, `AAD_WP_APP_PASSWORD`** (preferred) or `WP_URL`/`WP_USER`/`WP_APP_PASSWORD`. Never paste them in chat.
-2. `tools/wp.py` **refuses to run unless the host is `maroon-raven-160825.hostingersite.com`** (override with `AAD_EXPECTED_HOST` only if the AAD site has genuinely moved). This guard exists because a previous session's env pointed at a different client site (`hotpink-lobster-615998…`, a medical site); 13 drafts were accidentally created there and were immediately and permanently deleted (verified).
+2. `tools/wp.py` **refuses to run unless the host is `aadrecovery.co.uk`** (override with `AAD_EXPECTED_HOST` only if the AAD site has genuinely moved). This guard exists because a previous session's env pointed at a different client site (`hotpink-lobster-615998…`, a medical site); 13 drafts were accidentally created there and were immediately and permanently deleted (verified).
 3. Always work on drafts; never overwrite live pages without the user's OK.
 
 ## How to resume
@@ -38,6 +38,12 @@ Python 3 only (stdlib). Playwright/Chromium preview helpers: `prev.py`, `shotp2.
 | 13 new service pages from Google Doc | — | **built locally (`built_services.json`), NOT yet on the site** |
 
 Original-site backup (pages, posts, templates, media list, menus, settings) is in `tools/wp-backup/`.
+
+## URL fix after go-live (2026-10-12)
+- Site moved to **aadrecovery.co.uk**, but Elementor data still held 449 staging links (`darkblue-kudu-638106…`, `maroon-raven-160825…`) in 22 pages + 4 templates (menus/buttons/cards, header, footer), and the contact forms used the staging domain as from-address/name/subject.
+- Fixed with `tools/fix_urls.py --apply` (dry run without `--apply`; re-running reports 0). Pre-fix copies of every changed item: `tools/wp-backup/pre-url-fix/`. Form from-address → `email@aadrecovery.co.uk`, name/subject → "AAD Transport And Recovery". Admin user's Website field (used in Yoast author schema) → live domain. GUIDs left as-is (WP convention).
+- Crawl after fix: all 26 sitemap/internal pages 200, no broken internal links or assets, no staging URLs; http:// and www. 301 to https://aadrecovery.co.uk/; all original-site URLs still resolve.
+- Still open: contact forms send to `ahsanhashmi1925@gmail.com` (switch to the client's inbox?); default "Hello world!" post is published and in the sitemap; Elementor → Tools → Clear Files & Data + LiteSpeed purge-all recommended so generated CSS/cache rebuilds.
 
 ## Open issues / next steps
 1. **Boxed hero on inner pages (Elementor Full Width template):** cause = stale Elementor per-post CSS (element IDs changed between rebuilds). User does NOT want extra CSS hacks. Agreed approach (pending user confirmation): keep site-wide header/footer, keep element IDs stable (builders now seed `random` per page — `build_services.py` uses `random.seed(slug)`; apply same to `build_pages.py`), then user runs **Elementor → Tools → Clear Files & Data** once.
