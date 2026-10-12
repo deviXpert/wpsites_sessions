@@ -63,8 +63,14 @@ const res=[]; const ok=(n,c,d='')=>res.push(`${c?'PASS':'FAIL'}  ${n}${d?' — '
   ok('FAQ question opens', !!faqOpen, faqOpen||'');
   const schema=await p.evaluate(()=>[...document.querySelectorAll('script[type="application/ld+json"]')].some(s=>s.textContent.includes('FAQPage')));
   ok('FAQ schema (FAQPage JSON-LD) present', schema);
+  // booking popup
+  await p.evaluate(()=>scrollTo(0,0)); await p.locator('a.elementor-button:visible',{hasText:/Book an Appointment/i}).first().click(); await p.waitForTimeout(900);
+  ok('Book an Appointment opens booking popup', await p.locator('#elementor-popup-modal-347').isVisible());
+  await p.keyboard.press('Escape'); await p.waitForTimeout(500);
   // symptom checker
-  await p.fill('[name="form_fields[make]"]','Toyota'); await p.fill('[name="form_fields[model]"]','Camry'); await p.fill('[name="form_fields[year]"]','2019'); await p.fill('[name="form_fields[mileage]"]','120,000');
+  await p.selectOption('[name="form_fields[make]"]','Toyota'); await p.selectOption('[name="form_fields[model]"]','Toyota Camry'); await p.selectOption('[name="form_fields[year]"]','2019'); await p.fill('[name="form_fields[mileage]"]','120000');
+  await p.waitForTimeout(2500);
+  ok('Symptom checker shows selected car', await p.$eval('.bb-veh-img img',i=>i.src.includes('modelFamily=camry')&&i.naturalWidth>0));
   const vt=await p.evaluate(()=>[document.querySelector('.bb-veh-title .elementor-heading-title').textContent,document.querySelector('.bb-veh-year').textContent,document.querySelector('.bb-veh-km').textContent]);
   ok('Symptom checker live vehicle title', vt[0]==='Toyota Camry' && vt[1]==='2019' && vt[2]==='120,000 km', vt.join(' | '));
   await p.click('.bb-chips button[data-add="Warning light"]'); await p.click('.bb-chips button[data-add="Vibration"]');

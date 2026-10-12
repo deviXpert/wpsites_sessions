@@ -53,3 +53,8 @@ Design source (must match 1:1): **https://busy-bee-auto-repair-preview.mightycar
 - Make / Model / Year are Elementor select fields (lists in `tools/cars.py`); `code.py` injects `window.BB_CARS` before bb.js, which filters models by make and updates title/spec.
 - Added required Name + Phone. Email subject includes make/model. On `submit_success` bb.js renders rule-based "Instant guidance" (RULES in bb.js) into `.bb-result`.
 - Car preview: set `IMAGIN_KEY` in bb.js to a commercial Imagin.studio customer key to show the selected car. The demo key is watermarked, so the Honda Civic photo is shown until a key is set.
+
+## Booking popup (347)
+- `build_popups.py` builds popup 347 from `build_home.booking_card()` (same card as the #book section).
+- `el.book_popup()` makes every button linking to `#book` / `/#book` (hero, header Book now, tire swap, services, Why, process, footer) open popup 347; the anchor remains as fallback. "Get your estimate" calls the shop, as in the design.
+- Symptom checker uses the Imagin demo key `img` (watermarked) – replace `IMAGIN_KEY` in bb.js with a commercial key.

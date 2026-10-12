@@ -1,4 +1,5 @@
 """Busy Bee footer → Theme Builder footer template (post 74, condition: entire site)."""
+import json
 import el
 from common import *
 from el import uid
@@ -89,7 +90,7 @@ def build():
     root = C('Footer', [C('Inner', [cta, cols, news, legal], w=cu('min(1280px, 100%)'), mar=(0, 'auto'), z=1)],
              tag='footer', pad=(80, 32, 32, 32), pad_mobile=(40, 20, 32, 20), bgimg='busy-bee-auto-repair-storefront-calgary',
              bg=INK, ov=True, cls='bb-footer')
-    return [root]
+    return el.book_popup([root], json.load(open('ids.json'))['popup_book'])
 
 
 if __name__ == '__main__':

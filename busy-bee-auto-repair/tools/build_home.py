@@ -799,7 +799,7 @@ def price_card(i, ic, label, price, desc, items, popular):
         ILIST([('check', x, None) for x in items], t=M(14, 500, 20), color=INK, ic_color='#020618', ic_size=16 if popular else 15,
               gap_=8, space=12, name='Includes', pad=(20, 0, 0, 0), mar=(24, 0, 28, 0), cls='bb-price-list',
               _border_border='solid', _border_width=dims(1, 0, 0, 0), _border_color=ink(0.1)),
-        BTN('Get your estimate', BOOK, M(14, 700, 20), color=PAPER if popular else INK, bg=INK if popular else PAPER,
+        BTN('Get your estimate', TEL, M(14, 700, 20), color=PAPER if popular else INK, bg=INK if popular else PAPER,
             pad=(12 if popular else 10.5, 16), radius=PILL if popular else 8, border=(1, INK if popular else '#E2E8F0'),
             sh=SH_INK if popular else SH_SM, align='justify', name='Get your estimate', cls='bb-push-bottom'),
         T('<p>You always approve before work starts.</p>', ink(0.4), M(10, 400, 16), align='center', mar=(16, 0, 0, 0), name='Note'),
@@ -867,13 +867,7 @@ REASONS = ['Scheduled maintenance', 'Oil change', 'Tire change', 'Brake issue', 
            'Battery or starting issue', 'Repair estimate or diagnostic', 'Other']
 
 
-def book():
-    head = C('Head', [
-        ICON('sparkles', 28, color=BEE, name='Sparkles', w='auto', cls='bb-sparkles'),
-        H('Need a Mechanic in Calgary Today?', 'h2', INK, M(48, 800, 1.05, tt='uppercase', size_m=30), mar=(12, 0, 0, 0), name='Title'),
-        T("<p>Call (403) 930-5888 or book online. We'll get you back on the road safely, without the runaround.</p>", ink(0.65),
-          M(16, 400, 24, size_m=14), mar=(16, 0, 0, 0), w=576, w_mobile='full', name='Intro'),
-    ], mar=(0, 0, 40, 0), mar_mobile=(0, 0, 32, 0))
+def booking_card(**kw):
     left = C('Promo', [
         C('Top', [
             IMG('busy-bee-auto-repair-logo', w=101, h=36, fit='contain', alt='Busy Bee Auto Repair', name='Logo', align='left'),
@@ -916,8 +910,18 @@ def book():
         T('<p>We usually call back within business hours. Walk-ins welcome Monday to Friday, 9 AM to 6 PM.</p>', wht(0.45),
           M(11, 400, 20), mar=(12, 0, 0, 0), name='Note'),
     ], pad=32, pad_mobile=24, bg=INK)
-    card = C('Booking card', [left, right], grid='0.9fr 1.1fr', grid_mobile='1fr', rows='auto', rows_mobile='auto', gap=0, radius=18,
-             ov=True, shadow=shadow(0, 24, 60, -30, 'rgba(23,23,23,0.6)'))
+    return C('Booking card', [left, right], grid='0.9fr 1.1fr', grid_mobile='1fr', rows='auto', rows_mobile='auto', gap=0,
+             ov=True, **{'radius': 18, **kw})
+
+
+def book():
+    head = C('Head', [
+        ICON('sparkles', 28, color=BEE, name='Sparkles', w='auto', cls='bb-sparkles'),
+        H('Need a Mechanic in Calgary Today?', 'h2', INK, M(48, 800, 1.05, tt='uppercase', size_m=30), mar=(12, 0, 0, 0), name='Title'),
+        T("<p>Call (403) 930-5888 or book online. We'll get you back on the road safely, without the runaround.</p>", ink(0.65),
+          M(16, 400, 24, size_m=14), mar=(16, 0, 0, 0), w=576, w_mobile='full', name='Intro'),
+    ], mar=(0, 0, 40, 0), mar_mobile=(0, 0, 32, 0))
+    card = booking_card(shadow=shadow(0, 24, 60, -30, 'rgba(23,23,23,0.6)'))
     return C('Book', [C('Wrap', [head, card], w=cu('min(1152px, 100%)'), mar=(0, 'auto'))], tag='section', id_='book', pad=(56, 32),
              pad_mobile=(40, 20), bg=PAPER, cls='bb-book')
 
@@ -925,8 +929,8 @@ def book():
 # ================================================================ PAGE
 def build():
     el.seed('home')
-    return [hero_mobile(), hero_desktop(), suppliers(), services(), ribbon(), winter(), brands(), checker(), why(), reviews(), process(), pricing(),
-            faq(), book()]
+    return el.book_popup([hero_mobile(), hero_desktop(), suppliers(), services(), ribbon(), winter(), brands(), checker(), why(), reviews(), process(), pricing(),
+            faq(), book()], json.load(open('ids.json'))['popup_book'])
 
 
 PAGE_SETTINGS = {'hide_title': 'yes', 'template': 'elementor_header_footer'}

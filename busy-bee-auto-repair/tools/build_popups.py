@@ -2,6 +2,7 @@
 winter-tires popup, automatically once per session after scrolling 650px on screens ≥901px (bb.js)."""
 import json
 import el
+import wp
 from common import *
 
 POPUPS = [  # key, image, theme, tag, title, benefit, detail, cta
@@ -49,8 +50,28 @@ def popup(key, img_key, theme, tag, title, benefit, detail, cta):
         cls=f'bb-offer bb-popup-card bb-offer-{theme}')]
 
 
+BOOK_SETTINGS = dict(SETTINGS, width=px(768), width_mobile=cu('calc(100vw - 24px)'), border_radius=dims(16), background_color=INK,
+                     close_button_color=wht(0.6), close_button_background_color='rgba(0,0,0,0)', close_button_vertical=pct(2),
+                     close_button_horizontal=pct(2), icon_size=px(18), overlay_background_color='rgba(0,0,0,0.8)')
+
+
+def booking():
+    import build_home
+    card = build_home.booking_card(radius=0, cls='bb-book-pop')
+    card['settings']['_title'] = 'Booking popup'
+    return [card]
+
+
 if __name__ == '__main__':
     ids = json.load(open('ids.json'))
+    if 'popup_book' not in ids:
+        d = wp.post('wp/v2/elementor_library', {'title': 'Busy Bee – Book appointment', 'status': 'publish',
+                                                 'meta': {'_elementor_template_type': 'popup', '_elementor_edit_mode': 'builder'}})
+        ids['popup_book'] = d['id']
+        json.dump(ids, open('ids.json', 'w'), indent=1)
+    el.seed('popup_book')
+    el.save('elementor_library', ids['popup_book'], booking(), page_settings=BOOK_SETTINGS)
+    el.regen(ids['popup_book'])
     for p in POPUPS:
         el.seed(p[0])
         el.save('elementor_library', ids[p[0]], popup(*p), page_settings=SETTINGS,

@@ -524,3 +524,17 @@ def save(kind, post_id, elements, page_settings=None, extra=None):
 def regen(post_id):
     """Ask Elementor to rebuild the document's CSS (MCP update-page-settings triggers a proper document save)."""
     return wp.mcp('elementor/update-page-settings', {'post_id': post_id, 'settings': {}})
+
+
+def book_popup(elements, popup_id, urls=('#book', '/#book')):
+    """Buttons linking to the booking anchor open the booking popup instead (the anchor stays as the no-JS fallback)."""
+    import urllib.parse
+    st = urllib.parse.quote(json.dumps({'popup': str(popup_id)}, separators=(',', ':')))
+
+    def walk(els):
+        for x in els:
+            if x.get('widgetType') == 'button' and (x['settings'].get('link') or {}).get('url') in urls:
+                x['settings'].setdefault('__dynamic__', {})['link'] = f'[elementor-tag id="{uid()}" name="popup" settings="{st}"]'
+            walk(x.get('elements', []))
+    walk(elements)
+    return elements

@@ -55,7 +55,7 @@ def build():
         C('Desktop header', [topbar(), nav()], hide='m'),
         mobile_header(),
     ], tag='header', cls='bb-header', pos={'x': 0, 'y': 0}, z=50, w=pct(100))
-    return [root]
+    return el.book_popup([root], json.load(open('ids.json'))['popup_book'])
 
 
 if __name__ == '__main__':

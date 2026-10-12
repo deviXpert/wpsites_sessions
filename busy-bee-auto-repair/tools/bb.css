@@ -497,3 +497,4 @@ body,html{overflow-x:clip}
 .bb-res-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 .bb-res-cta a{flex:1 1 160px;text-align:center;padding:13px 16px;border-radius:7px;font-weight:800;font-size:13px;color:#151c1e}
 .bb-res-book{background:#ffe600}.bb-res-call{border:1px solid #dce1e2;background:#fff}
+@media (max-width:767px){#elementor-popup-modal-347 .dialog-close-button{color:#1A2024!important}}
