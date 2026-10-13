@@ -761,7 +761,7 @@ def process():
         process_card(4, 'Drive away covered', 'Collect your vehicle after the agreed repairs are complete. We explain the work performed '
                      'and any recommended next steps. Most repairs include a parts and labour warranty; ask our team about coverage '
                      'for your job.', stage_drive(), last=True),
-    ], grid='repeat(4, minmax(0, 1fr))', grid_tablet='minmax(169px, 1fr) minmax(141px, 1fr) minmax(174px, 1fr) minmax(179px, 1fr)', grid_mobile='minmax(174px, 1fr) minmax(179px, 1fr)', gap=24,
+    ], grid='repeat(4, minmax(0, 1fr))', grid_tablet='minmax(169px, 1fr) minmax(141px, 1fr) minmax(174px, 1fr) minmax(179px, 1fr)', grid_mobile='repeat(2, minmax(0, 1fr))', gap=24, gap_mobile=12,
         rows='auto', rows_tablet='auto', rows_mobile='auto', cls='bb-proc-grid')
     note = C('Note', [
         ILIST([('shield-check', 'Your approval comes before every repair.', None)], t=S(11, 400, 16.5, lh_m=17.6), color='#6C777B',

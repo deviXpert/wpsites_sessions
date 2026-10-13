@@ -10,7 +10,7 @@
   --scan-ok:oklch(72% .16 152);--scan-alert:oklch(60% .19 22);--scan-warn:oklch(88% .18 98);
 }
 body{font-family:var(--bb-sys);color:#020618;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-body,html{overflow-x:clip}
+body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .elementor a{text-decoration:none}
 .elementor .elementor-widget-text-editor a,.elementor .elementor-icon-list-item a{color:inherit}
 .elementor .elementor-widget-text-editor p:last-child{margin-bottom:0}
@@ -444,7 +444,7 @@ body,html{overflow-x:clip}
 .elementor-popup-modal .dialog-widget-content{overflow:hidden}
 .bb-mhero .bb-badge .bb-scan-glow{flex-shrink:0}
 @media (min-width:360px){.bb-mhero .bb-badge .elementor-heading-title{white-space:nowrap}}
-@media (max-width:900px){.bb-why-board>.bb-why-fix>.elementor-widget-heading{min-width:min-content}}
+
 .bb-feature-ring{opacity:.15;pointer-events:none}
 
 .bb-svc-head>.e-con:first-child{flex:0 1 672px;min-width:0}
@@ -498,3 +498,27 @@ body,html{overflow-x:clip}
 .bb-res-cta a{flex:1 1 160px;text-align:center;padding:13px 16px;border-radius:7px;font-weight:800;font-size:13px;color:#151c1e}
 .bb-res-book{background:#ffe600}.bb-res-call{border:1px solid #dce1e2;background:#fff}
 @media (max-width:767px){#elementor-popup-modal-347 .dialog-close-button{color:#1A2024!important}}
+
+/* ---- small-phone fixes ---- */
+.bb-proc-card,.bb-proc-card>*{min-width:0}
+.bb-proc-card .elementor-heading-title,.bb-proc-card p{overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:480px){
+  .bb-why-fix{padding:16px 14px!important}
+  .bb-why-fix .elementor-heading-title{font-size:16px!important;line-height:20px!important;overflow-wrap:break-word}
+}
+@media (max-width:479px){
+  .bb-proc-grid{grid-template-columns:1fr!important}
+  .bb-proc-grid .bb-proc-card>.elementor-widget-icon{display:none}
+  .bb-proc-title .elementor-heading-title{min-height:0}
+}
+@media (max-width:379px){
+  .bb-why-heading .elementor-heading-title{font-size:22px!important;line-height:24px!important;letter-spacing:-1px!important}
+  .bb-why-heading .elementor-widget-text-editor{font-size:13px!important;line-height:20px!important}
+  .bb-why-diag{padding:64px 18px 18px!important}
+  .bb-why-diag .elementor-heading-title{font-size:17px!important;line-height:21px!important;letter-spacing:-.4px!important}
+  .bb-why-fix{padding:12px 10px!important}
+  .bb-why-fix .elementor-heading-title{font-size:12.5px!important;line-height:16px!important}
+  .bb-why-quotes{padding:14px!important}
+  .bb-why-quotes-title .elementor-heading-title{font-size:14px!important;line-height:19px!important}
+  .bb-checker-form .elementor-field-group:not(.elementor-field-type-submit){width:100%!important}
+}
