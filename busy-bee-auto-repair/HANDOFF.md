@@ -127,5 +127,5 @@ Sections identical on several pages are Elementor saved templates embedded with 
 google card 407 · booking 448 · reviews 450 · why-us 452 · location 454 · WhatsApp request 456 · general FAQ 458 · suppliers 460 ·
 services grid 462. Per-page content (service-specific FAQs, related services, heroes) stays on each page.
 FAQ design: intro left (sticky), question cards + plus/minus right, "talk to a technician" strip under the questions (native Accordion).
-Footer credit: "Design & developed by DeviXpert" → https://devixpert.com/. Link audit (`links.js` in QA): all internal targets 200,
+Footer credit: "Design & developed by DeviXpert" → https://devixpert.com/. Link audit (`tools/links.js`; overflow + H1 check `tools/ovall.js`): all internal targets 200,
 no dead anchors.
