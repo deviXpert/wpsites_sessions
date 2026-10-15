@@ -77,33 +77,6 @@ def year_options():
 
 
 def js_data():
-    data = {mk: {'slug': slug(mk), 'models': {f'{mk} {lab}': sl for lab, sl in models(mk)},
-                 'body': {f'{mk} {lab}': body(lab) for lab, _ in models(mk)}} for mk in CARS}
+    data = {mk: {'slug': slug(mk), 'models': {f'{mk} {lab}': sl for lab, sl in models(mk)}} for mk in CARS}
     return 'window.BB_CARS=' + json.dumps(data, separators=(',', ':')) + ';'
 
-
-# ---------------------------------------------------------------- body style per model (drives the drawn illustration)
-_BODY = {
-    'pickup': ['F-150', 'Ranger', 'Maverick', 'Silverado 1500', 'Colorado', 'Sierra', 'Canyon', 'Ridgeline', 'Tacoma', 'Tundra',
-               'Frontier', 'Titan', 'Gladiator', '1500', '2500'],
-    'van': ['Grand Caravan', 'Pacifica', 'Town & Country', 'Odyssey', 'Sienna', 'Carnival', 'Transit', 'Savana', 'Sprinter',
-            'ProMaster'],
-    'bigsuv': ['Tahoe', 'Suburban', 'Expedition', 'Yukon', 'Escalade', 'Navigator', 'Sequoia', 'QX80', 'GX', 'Wrangler', 'Defender',
-               '4Runner', 'Bronco', 'Range Rover', 'Discovery', 'Grand Cherokee', 'Palisade', 'Telluride', 'Ascent', 'Atlas',
-               'Pathfinder', 'Pilot', 'Highlander', 'Traverse', 'Acadia', 'Durango', 'Explorer', 'X7', 'Q7', 'Q8', 'GV80', 'CX-90',
-               'CX-9', 'QX60', 'XC90', 'MDX', 'XT6', 'Enclave', 'Aviator', 'GLE', 'X5', 'Cayenne'],
-    'coupe': ['Mustang', 'Camaro', 'Challenger', 'MX-5', '911'],
-    'hatch': ['Golf', 'Fit', 'Soul', 'Prius', 'Swift', 'Mirage', '500', 'Leaf', 'Fortwo', 'Spark', 'Integra', 'Kona', 'Venue',
-              'Niro', 'Rio', 'Ioniq 5', 'Trax', 'Encore', 'C-HR', 'A-Class', 'SX4', 'Focus', '500X', 'Renegade'],
-    'sedan': ['Civic', 'Accord', 'Camry', 'Corolla', 'Altima', 'Sentra', 'Versa', 'Jetta', 'Passat', 'Elantra', 'Sonata', 'Accent',
-              'Forte', 'Mazda3', 'Mazda6', 'Malibu', 'Cruze', 'Charger', '300', 'Fusion', 'TLX', 'ILX', 'TL', 'A3', 'A4', 'A5', 'A6',
-              '3 Series', '5 Series', 'CT5', 'CTS', 'Verano', 'G70', 'G80', 'Q50', 'ES', 'IS', 'C-Class', 'E-Class', 'S-Class',
-              'Legacy', 'Impreza', 'WRX', 'S60', 'V60', 'Giulia', 'Octavia', 'Panamera', 'Taycan', 'e-tron'],
-}
-
-
-def body(label):
-    for kind, names in _BODY.items():
-        if label in names:
-            return kind
-    return 'suv'

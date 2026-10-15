@@ -143,3 +143,8 @@ studio renders, domain-locked public key) or `IMAGIN_KEY` (demo 'img' is waterma
 - Live: CarImages API public key `ci_6349…a4c4` in bb.js (`CARIMAGES_KEY`), domain-locked to the staging host in the CarImages
   dashboard – add `busybeeauto.ca` (and `www.busybeeauto.ca`) there at launch or the images stop. Free plan = watermark + 5,000 req/month;
   Pro ($41/mo) removes the watermark, same key. Requests without an allowed Origin get 403 (verified).
+
+### Symptom checker images – PARKED (client decision, Oct 2026)
+Checker shows the single Honda Civic sample photo; all image-switching code (Imagin, CarImages API, drawn illustrations, loading state)
+was removed – see git history (commits up to "checker caption matches the sample photo") to restore. CarImages API account exists
+(free plan, watermarked; Pro $41/mo removes it). Waiting for the client's go-ahead.

@@ -531,7 +531,7 @@ def checker():
         IMG('honda-civic-symptom-checker', w=cu('calc(100% + 60px)'), fit='contain', alt='Illustrative white Honda Civic studio render',
             name='Car render', mar=(12, -30, 0, -30), cls='bb-veh-img'),
         C('Caption', [H('HONDA CIVIC · ILLUSTRATIVE PREVIEW', 'span', '#8A9294', S(8, 400, 12, 0.32), name='Caption', cls='bb-veh-cap'),
-                      H('Select a make and model to preview it', 'span', '#8A9294', S(8, 400, 12, 0.32), name='Note',
+                      H('Sample vehicle photo', 'span', '#8A9294', S(8, 400, 12, 0.32), name='Note',
                         cls='bb-veh-note')],
           d='row', wrap='wrap', jc='space-between', gap=10, mar=(8, 0, 0, 0)),
         C('Bottom', [ICON('shield-check', 19, color='#6B7476', name='Shield', w='auto'),
@@ -852,11 +852,11 @@ def faq():
     ])
     toggle = W('accordion', 'FAQ', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in FAQS],
                selected_icon=icon('plus'), selected_active_icon=icon('minus'), icon_align='right', title_html_tag='h3',
-               faq_schema='yes', border_width=px(0), space_between=px(0), title_color=INK, tab_active_color=INK, icon_color=INK,
-               icon_active_color=INK, title_padding=dims(20, 0), content_padding=dims(0, 40, 20, 0), content_color=ink(0.65),
+               faq_schema='yes', border_width=px(0), title_color=INK, tab_active_color=INK, icon_color=INK,
+               icon_active_color=INK, title_padding=dims(20, 22), content_padding=dims(0, 22, 22, 22), content_color=ink(0.65),
                **{('title_' + k): v for k, v in M(18, 800, 28, tt='uppercase', size_m=16, lh_m=24).items()},
                **{('content_' + k): v for k, v in M(14, 400, 28).items()}, cls='bb-faq bb-faq-cards')
-    return C('FAQ', [C('Grid', [left, C('Questions', [toggle], border=(dims(1, 0, 0, 0), ink(0.15)))], grid='minmax(min-content, 0.8fr) 1.2fr',
+    return C('FAQ', [C('Grid', [left, C('Questions', [toggle])], grid='minmax(min-content, 0.8fr) 1.2fr',
                        grid_mobile='1fr', gap=48, gap_mobile=24, rows='auto', rows_mobile='auto', w=cu('min(1152px, 100%)'), mar=(0, 'auto'))],
              tag='section', id_='faq', pad=(112, 32), pad_mobile=(40, 20), bg=PAPER, cls='bb-faq-section')
 

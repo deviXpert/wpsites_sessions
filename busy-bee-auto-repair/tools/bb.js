@@ -96,16 +96,6 @@
   }
 
   /* ---------- symptom checker: make→model dropdowns, vehicle preview, instant guidance ---------- */
-  /* Imagin.studio customer key: renders with the demo key are watermarked, so the Civic photo is used until a key is set */
-  var IMAGIN_KEY = '';  // Imagin demo key 'img' is watermarked – off
-  /* CarImages API (carimagesapi.com) – preferred provider once a key is pasted here. Use the PUBLIC key from the dashboard and lock it
-     to the site's domain there (never the API secret). When set, it replaces the Imagin demo above. */
-  var CARIMAGES_KEY = 'ci_6349daebb71d3e88d8d5b77501f062455b0c32b8f432378bb80da4c4';
-  /* Free CarImages plan is watermarked, so photos stay OFF until the account is on Pro – then set this to true.
-     Meanwhile the checker shows our own drawn illustration for the vehicle's body style (car_svg.py → window.BB_CARSVG). */
-  var CARIMAGES_PRO = false;
-  var USE_DRAWN = false;   // drawn body-style illustrations (car_svg.py) – off at the client's request
-  var CAR_COLOURS = ['#c8102e', '#f1f3f4', '#1f3a5f', '#8a9399', '#2b2f33', '#6b1d1d', '#ffffff', '#3f5e4a', '#b9bfc3', '#0f4c81']; // 'img' = Imagin demo key (watermarked) – replace with the shop's commercial key
   var RULES = [
     { k: /brak|squeal|grind|pedal|stopping/i, t: 'Brakes', u: 2, svc: 'Brake repair & replacement',
       c: ['Worn brake pads or rotors', 'Sticking caliper or slide pins', 'Low or contaminated brake fluid'],
@@ -147,11 +137,8 @@
   function checker(sec) {
     var f = function (id) { return $('[name="form_fields[' + id + ']"]', sec); };
     var title = $('.bb-veh-title .elementor-heading-title', sec), year = $('.bb-veh-year', sec), km = $('.bb-veh-km', sec);
-    var cap = $('.bb-veh-cap .elementor-heading-title', sec), note = $('.bb-veh-note .elementor-heading-title', sec);
-    var img = $('.bb-veh-img img', sec), out = $('.bb-result', sec), form = $('form', sec);
+    var out = $('.bb-result', sec), form = $('form', sec);
     var issue = f('issue'), make = f('make'), model = f('model'), cars = window.BB_CARS || {};
-    var civic = img ? { src: img.getAttribute('src'), srcset: img.getAttribute('srcset') } : null;
-    if (img) img.addEventListener('error', function () { if (civic && img.src !== civic.src) { img.src = civic.src; } });
     var opts = model ? Array.prototype.slice.call(model.options) : [];
 
     function filterModels() {
@@ -163,65 +150,6 @@
       if (model && model.selectedOptions[0] && model.selectedOptions[0].disabled) model.value = '';
       model && (model.disabled = !mk);
     }
-    var reqId = 0, studio = img ? img.closest('.bb-studio') : null;
-    function setImage() {
-      if (!img) return;
-      var mk = make.value, md = model.value, c = cars[mk];
-      // model chosen → that model; make only → the make's most popular model (first in the list) as a preview
-      var shown = c ? (c.models[md] ? md : Object.keys(c.models)[0]) : '', fam = c && c.models[shown];
-      var y = parseInt((f('year') || {}).value, 10), id = ++reqId;
-      if (USE_DRAWN && !(CARIMAGES_PRO && CARIMAGES_KEY) && c && window.BB_CARSVG) {
-        var kind = (c.body && c.body[shown]) || 'suv', h = 0;
-        for (var k = 0; k < shown.length; k++) h = (h * 31 + shown.charCodeAt(k)) >>> 0;
-        var svgTxt = window.BB_CARSVG[kind].replace(/var\(--car,#d8dde0\)/g, CAR_COLOURS[h % CAR_COLOURS.length]);
-        if (studio) studio.classList.remove('is-loading');
-        img.removeAttribute('srcset'); img.removeAttribute('sizes');
-        img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgTxt); img.alt = shown + ' illustration';
-        img.classList.add('bb-veh-drawn'); fam = fam || shown;
-      } else if (CARIMAGES_PRO && CARIMAGES_KEY && c) {
-        if (studio) studio.classList.add('is-loading');
-        var label = shown.replace(mk + ' ', '');
-        fetch('https://carimagesapi.com/api/v1/signed-url?api_key=' + encodeURIComponent(CARIMAGES_KEY) + '&make=' + encodeURIComponent(mk) +
-              '&model=' + encodeURIComponent(label) + (y ? '&year=' + y : '') + '&width=800&format=webp&view=front34')
-          .then(function (r) { return r.json(); })
-          .then(function (d) {
-            if (id !== reqId || !d || !d.url) throw 0;
-            var pre2 = new Image();
-            pre2.onload = function () {
-              if (id !== reqId) return;
-              img.removeAttribute('srcset'); img.removeAttribute('sizes'); img.src = d.url; img.alt = shown + ' studio render';
-              if (studio) studio.classList.remove('is-loading');
-            };
-            pre2.onerror = function () { if (studio) studio.classList.remove('is-loading'); };
-            pre2.src = d.url;
-          })
-          .catch(function () { if (id === reqId && studio) studio.classList.remove('is-loading'); });
-        fam = fam || label;
-      } else if (IMAGIN_KEY && fam) {
-        var u = 'https://cdn.imagin.studio/getImage?customer=' + encodeURIComponent(IMAGIN_KEY) + '&make=' + c.slug +
-          '&modelFamily=' + fam + (y ? '&modelYear=' + y : '') + '&angle=23&zoomType=fullscreen&width=800';
-        if (studio) studio.classList.add('is-loading');
-        var pre = new Image();          // preload, then swap – keeps the old picture until the new render has arrived
-        pre.onload = function () {
-          if (id !== reqId) return;
-          img.removeAttribute('srcset'); img.removeAttribute('sizes'); img.src = u; img.alt = shown + ' studio render';
-          if (studio) studio.classList.remove('is-loading');
-        };
-        pre.onerror = function () { if (id === reqId && studio) studio.classList.remove('is-loading'); };
-        pre.src = u;
-      } else if (civic) {
-        if (studio) studio.classList.remove('is-loading');
-        img.classList.remove('bb-veh-drawn');
-        img.src = civic.src; civic.srcset ? img.setAttribute('srcset', civic.srcset) : img.removeAttribute('srcset');
-      }
-      var drawn = img.classList.contains('bb-veh-drawn');
-      var swapped = drawn || (CARIMAGES_PRO && CARIMAGES_KEY) || IMAGIN_KEY;
-      if (cap) cap.textContent = (fam && swapped) ? shown.toUpperCase() + (drawn ? ' · ' + ((c.body && c.body[shown]) || 'suv').replace('bigsuv', 'full-size suv').replace('hatch', 'hatchback').toUpperCase() + ' ILLUSTRATION' : ' · ILLUSTRATIVE PREVIEW') : 'HONDA CIVIC · ILLUSTRATIVE PREVIEW';
-      if (note) note.textContent = !swapped ? 'Sample vehicle photo' : !fam ? 'Select a make and model to preview it'
-        : (c.models[md] ? (drawn ? 'Illustration by body style' : 'Colour and trim may differ') : 'Popular ' + mk + ' shown – pick your model');
-    }
-    // warm the connection to the image CDN as soon as the checker is on screen
-    if (CARIMAGES_KEY || IMAGIN_KEY) { var pc = document.createElement('link'); pc.rel = 'preconnect'; pc.href = CARIMAGES_KEY ? 'https://carimagesapi.com' : 'https://cdn.imagin.studio'; document.head.appendChild(pc); }
     function upd() {
       var md = model && model.value && model.value !== 'Other / not listed' ? model.value : (make ? make.value : '');
       var y = (f('year') || {}).value || '', m = (f('mileage') || {}).value || '';
@@ -229,9 +157,9 @@
       if (year) year.textContent = y || 'Year';
       if (km) km.textContent = m ? Number(m).toLocaleString('en-CA') + ' km' : 'Mileage';
     }
-    if (make) make.addEventListener('change', function () { filterModels(); setImage(); upd(); });
-    if (model) model.addEventListener('change', function () { setImage(); upd(); });
-    ['year', 'mileage'].forEach(function (k) { var i = f(k); if (i) { i.addEventListener('input', upd); i.addEventListener('change', function () { setImage(); upd(); }); } });
+    if (make) make.addEventListener('change', function () { filterModels(); upd(); });
+    if (model) model.addEventListener('change', upd);
+    ['year', 'mileage'].forEach(function (k) { var i = f(k); if (i) { i.addEventListener('input', upd); i.addEventListener('change', upd); } });
     filterModels();
     $$('.bb-chips button', sec).forEach(function (b) {
       b.addEventListener('click', function () {

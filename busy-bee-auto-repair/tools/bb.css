@@ -341,11 +341,7 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 /* ==========================================================================
    FAQ
    ========================================================================== */
-.bb-faq .elementor-toggle-item{border-bottom:1px solid rgb(26 32 36/.15);padding:4px 0}
-.bb-faq .elementor-tab-title{border:0!important;display:flex;flex-direction:row-reverse;justify-content:space-between;align-items:center;gap:20px}
-.bb-faq .elementor-tab-content{border:0!important;max-width:672px}
-.bb-faq .elementor-toggle-icon{transition:transform .3s;width:20px}
-.bb-faq .elementor-tab-title.elementor-active .elementor-toggle-icon{transform:rotate(180deg)}
+.bb-faq .elementor-tab-content{border:0!important}
 
 /* ==========================================================================
    BOOK
@@ -546,9 +542,8 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
   .bb-dlink a,.bb-dlink{min-height:44px;display:flex;align-items:center}
   .bb-rev-prev,.bb-rev-next,.bb-rev-prev a,.bb-rev-next a{min-width:44px!important;min-height:44px!important}
   .bb-rev-prev .elementor-icon,.bb-rev-next .elementor-icon{width:44px!important;height:44px!important}
-  .bb-underline a,.bb-icon-after a,.bb-greviews-link a,.bb-foot-links a,.bb-book-promo .elementor-icon-list-item a,.bb-faq .elementor-tab-title{padding-top:10px!important;padding-bottom:10px!important;display:inline-flex;align-items:center}
+  .bb-underline a,.bb-icon-after a,.bb-greviews-link a,.bb-foot-links a,.bb-book-promo .elementor-icon-list-item a{padding-top:10px!important;padding-bottom:10px!important;display:inline-flex;align-items:center}
   .bb-foot-links .elementor-icon-list-item{padding:0!important;margin:0!important}
-  .bb-faq .elementor-tab-title{display:flex;min-height:56px}
   .bb-book-promo .elementor-button,.bb-ic-bee .elementor-button{min-height:44px;display:inline-flex;align-items:center}
   .bb-mfav a,.bb-mfav img{min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center}
   .bb-maddr a{min-height:44px;display:flex;align-items:center}
@@ -673,7 +668,6 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .elementor-location-single,.elementor-location-archive{padding:0!important;margin:0!important;box-shadow:none!important;background:none!important}
 .ast-separate-container .ast-article-single:has(.elementor-location-single){padding:0!important;margin:0!important}
 /* FAQs use Elementor's native Accordion (one open at a time) – same skin as the earlier toggle */
-.bb-faq .elementor-accordion-item{border:0!important;border-bottom:1px solid rgb(26 32 36/.15)!important;padding:4px 0}
 .bb-sm-faq .elementor-accordion-item{border:0!important;border-bottom:1px solid #dce0dd!important}
 .bb-faq .elementor-tab-content,.bb-sm-faq .elementor-tab-content{border:0!important}
 .bb-faq .elementor-tab-title,.bb-sm-faq .elementor-tab-title{border:0!important}
@@ -710,10 +704,6 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .bb-credit a{color:#ffe600!important;font-weight:700}
 .bb-credit a:hover{text-decoration:underline}
 @media (min-width:1024px){.bb-faq-help>.e-con:last-child{flex-wrap:nowrap!important;flex-shrink:0}}
-/* symptom checker: loading state while the vehicle render downloads */
-.bb-studio .bb-veh-img{position:relative}
-.bb-studio.is-loading .bb-veh-img img{opacity:.35;filter:blur(2px);transition:opacity .3s,filter .3s}
-.bb-studio.is-loading .bb-veh-img:after{content:"Loading your vehicle…";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:700 12px/1 var(--bb-sys);letter-spacing:.08em;text-transform:uppercase;color:#1a2024;background:#fff;padding:10px 14px;border-radius:20px;box-shadow:0 6px 20px rgb(0 0 0/.12)}
 /* form guard message (bb.js formGuard) */
 .bb-guard-msg{flex-basis:100%;margin-top:12px;padding:12px 14px;border-radius:8px;background:#fde8e6;color:#8a1c12;font:600 13px/1.5 var(--bb-sys)}
-.bb-veh-drawn{mix-blend-mode:normal!important;object-fit:contain;padding:6% 2%}
+@media (max-width:767px){#ast-scroll-top{bottom:84px!important;right:14px!important}}
