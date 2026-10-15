@@ -624,7 +624,6 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .bb-mega-link:hover{background:#f6f7f3}
 /* phone-only sticky Call / Book bar (inner footer) */
 .bb-callbar{position:fixed!important;left:12px;right:12px;bottom:12px;z-index:90;padding:8px!important;background:rgb(23 32 36/.92);backdrop-filter:blur(8px);border-radius:40px;box-shadow:0 10px 30px rgb(0 0 0/.3);width:auto!important}
-.bb-callbar>.elementor-widget-button:first-child{flex:1 1 auto}
 /* home header keeps its uppercase Manrope nav style */
 @media (min-width:1024px){.bb-mega-home .e-n-menu-title-text{font:800 14px/21px Manrope,var(--bb-sys)!important;text-transform:uppercase}}
 .bb-mega-home.bb-mmenu .e-n-menu-toggle{width:40px;height:40px;border-radius:50%;background:rgb(255 255 255/.85)!important;display:flex;align-items:center;justify-content:center}
@@ -743,3 +742,18 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
   .bb-mega-panel .bb-mega-link .elementor-heading-title{font-size:15px!important}
 }
 @media (max-width:1023px){.bb-mega .e-n-menu-wrapper{box-shadow:0 24px 60px -18px rgb(16 23 25/.55),0 0 0 1px rgb(26 32 36/.06)!important}}
+/* phone call bar: two buttons that always fit inside the pill */
+.bb-callbar{display:flex!important;flex-wrap:nowrap!important;align-items:center;gap:8px!important;box-sizing:border-box}
+.bb-callbar>.elementor-widget-button{margin:0!important;width:auto!important;max-width:none!important}
+.bb-callbar>.bb-cb-call{flex:1 1 auto!important;min-width:0}
+.bb-callbar>.bb-cb-book{flex:0 0 auto!important}
+.bb-callbar .elementor-button{width:100%;min-height:48px;justify-content:center;white-space:nowrap;box-shadow:none!important}
+.bb-callbar .elementor-button-content-wrapper{gap:8px!important;justify-content:center}
+.bb-callbar .bb-cb-book .elementor-button:active,.bb-callbar .bb-cb-call .elementor-button:active{transform:scale(.97)}
+@media (max-width:359px){.bb-callbar .bb-cb-book .elementor-button-icon{display:none}}
+/* theme scroll-to-top: brand colours, sits above the call bar on phones */
+#ast-scroll-top{background:#1a2024!important;color:#ffe600!important;border-radius:50%!important;width:40px!important;height:40px!important;box-shadow:0 8px 20px rgb(0 0 0/.25)}
+#ast-scroll-top svg{fill:#ffe600!important}
+@media (max-width:767px){#ast-scroll-top{bottom:92px!important;right:16px!important}}
+/* home hero (phones): photo, overlays and service points always reach past the "Family-owned" chip – no black gap on short screens */
+@media (max-width:767px){.bb-mhero .bb-slide,.bb-mhero .bb-mov,.bb-mhero .bb-pts-layer,.bb-mhero .bb-pts{min-height:max(100svh,940px)!important;height:max(100svh,940px)!important}}

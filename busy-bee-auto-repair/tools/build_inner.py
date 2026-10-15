@@ -57,10 +57,10 @@ def mega_menu(dark=False):
 def callbar():
     """Phone-only sticky Call / Book bar (the SEO doc asks for a sticky tap-to-call button on mobile)."""
     return C('Mobile call bar', [
-        BTN('Call ' + PHONE, TEL, S(14, 800, 20), color=DK2, bg=YEL, ic='phone', ic_pos='before', ic_size=16, pad=(14, 18), radius=30,
-            name='Call', w_mobile=pct(100), align_mobile='justify'),
-        BTN('Book', '#book', S(14, 800, 20), color=PAPER, bg=DK2, pad=(14, 18), radius=30, border=(1, 'rgba(255,255,255,0.3)'),
-            name='Book'),
+        BTN('Call ' + PHONE, TEL, S(14, 800, 20), color=DK2, bg=YEL, ic='phone', ic_pos='before', ic_size=16, pad=(14, 16), radius=30,
+            name='Call', cls='bb-cb-call'),
+        BTN('Book now', '#book', S(14, 800, 20), color=DK2, bg=PAPER, ic='calendar-days', ic_pos='before', ic_size=16, pad=(14, 16),
+            radius=30, name='Book', cls='bb-cb-book'),
     ], d='row', gap=8, hide='dt', cls='bb-callbar')
 
 
