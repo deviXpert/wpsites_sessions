@@ -24,8 +24,9 @@ def nav():
     import build_inner
     menu = build_inner.mega_menu()
     menu['settings']['_css_classes'] += ' bb-mega-home'
-    book = BTN('Book now', BOOK, M(16, 700, 22.857, size_t=14, lh_t=20), color=PAPER, bg=INK, ic='arrow-up-right', ic_gap=8,
-               pad=(8, 20), radius=PILL, border=(1, INK), sh=SH_INK, hover_bg='#2A3236', name='Book now', cls='bb-booknow')
+    book = BTN('Book now', BOOK, M(15, 800, 20, size_t=14, lh_t=20), color=INK, bg=BEE, ic='arrow-up-right', ic_gap=12,
+               pad=(7, 7, 7, 22), radius=PILL, border=(1, BEE), sh=SH_BEE, hover_bg=INK, hover_color=PAPER, hover_border=INK,
+               name='Book now', cls='bb-booknow')
     book['settings']['icon_size'] = px(16)
     return C('Nav pill', [logo, menu, book], d='row', jc='space-between', ai='center', gap=16,
              w=cu('min(1440px, 100vw - 64px)'), w_tablet=cu('calc(100vw - 48px)'), minh=70, pad=(8, 20), pad_tablet=(12, 20),

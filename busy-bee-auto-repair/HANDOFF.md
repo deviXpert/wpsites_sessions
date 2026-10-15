@@ -97,9 +97,27 @@ Rebuild everything: `python3 build_all.py`.
    /engine-repair-calgary/ · /transmission/, /transmission-repair/ → /transmission-repair-calgary/ · /brake-system/ → /brake-repair-calgary/ ·
    /oil-change-service/ → /oil-change-calgary/ · /wheels-and-tires/ → /tire-shop-calgary/ · /battery-replacement/ →
    /car-battery-replacement-calgary/ · /electrical-and-diagnostics/ → /auto-electrical-diagnostics-calgary/ · /suspension-and-steering/ →
-   /suspension-repair-calgary/ · /cooling-system/ → /radiator-repair-calgary/ · /general-maintenance/ → /car-maintenance-calgary/
+   /suspension-repair-calgary/ · /cooling-system/ → /radiator-repair-calgary/ · /general-maintenance/ → /car-maintenance-calgary/ ·
+   also on the live site: /oil-change/ → /oil-change-calgary/ · /tires-and-alignment/ → /tire-shop-calgary/ · /brakes-and-rotors/ →
+   /brake-repair-calgary/ · /appointment/ → /contact-us/ · old blog posts use /YYYY/MM/DD/slug/ – keep that permalink structure or redirect them
    (needs a redirect plugin, e.g. Redirection, or Yoast Premium).
 3. **Owner to confirm** (left out of the published copy): Sunday hours, warranty length, conventional / high-mileage oil prices,
    alignment "from" price, A/C repair, CVT, pre-purchase inspections, tire storage, owner story + certifications (About page),
    geo coordinates for schema.
 4. Contact + booking forms email busybeeautocalgary@gmail.com – send one real test after launch.
+
+### From busybeeauto.ca (Oct 2026 check)
+- Facebook page (used in footer, Contact, schema): https://www.facebook.com/profile.php?id=61575647326309 – the live footer icon points to
+  facebook.com/busybeeautorepair (login wall, could not verify) – confirm which one is current.
+- No Instagram link on the live site – the Instagram URL comes from the design; confirm it's the shop's account.
+- Live site also shows info@busybeeauto.ca; forms still go to busybeeautocalgary@gmail.com (as in the SEO doc).
+- Live site has the same hours conflict (Mon–Fri 9–6 vs "Monday to Friday & Sunday, closed Saturdays") – owner to confirm.
+- 20 existing blog posts (2025-06 → 2026-03) on busybeeauto.ca; the SEO doc says keep them – import with WordPress Tools → Export/Import
+  or ask to have them pulled in through the REST API.
+
+### Contact details check (tools/nap.js)
+`node tools/nap.js` crawls all 19 URLs: every tel: link must dial (403) 930-5888 or (825) 540-1995 and match its visible number, every
+mailto: must be busybeeautocalgary@gmail.com. Last run: 209 tel links, all valid. Facebook (profile.php?id=61575647326309, from
+busybeeauto.ca) added to footer, Contact page and schema. WP author display name/slug changed to "Busy Bee Auto Repair" so the
+admin email no longer appears in post schema. One Google review shown by Trustindex has a reviewer name "fast679@hotmail.com 03030303w"
+– hide it in Trustindex → Reviews if unwanted.

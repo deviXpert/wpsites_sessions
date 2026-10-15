@@ -2,7 +2,7 @@
 NAP and hours match the site and design/content-seo.md.  Add "geo" once the owner confirms the Google Business Profile pin."""
 import json
 from urllib.parse import urlparse
-from common import INSTAGRAM, REVIEWS
+from common import FACEBOOK, INSTAGRAM, REVIEWS
 from sitemap import SERVICE_PAGES
 
 STOREFRONT = urlparse(json.load(open('media.json'))['busy-bee-auto-repair-storefront-calgary']['url']).path
@@ -20,7 +20,7 @@ DATA = {
                                    'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
                                    'opens': '09:00', 'closes': '18:00'}],
     'areaServed': ['NE Calgary', 'Calgary', 'Bridgeland', 'Renfrew', 'Mayland Heights', 'Marlborough', 'Airdrie'],
-    'sameAs': [INSTAGRAM, REVIEWS], 'hasMap': REVIEWS,
+    'sameAs': [FACEBOOK, INSTAGRAM, REVIEWS], 'hasMap': REVIEWS,
     'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': 'Auto repair services', 'itemListElement': [
         {'@type': 'Offer', 'itemOffered': {'@type': 'Service', 'name': label, 'url': BASE + url}} for _, label, url, *_ in SERVICE_PAGES]},
 }

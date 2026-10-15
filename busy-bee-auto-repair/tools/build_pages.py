@@ -53,6 +53,7 @@ def contact():
     el.seed('contact')
     quick = [('phone', 'Call the shop', PHONE, TEL), ('navigation', 'Get directions', '324 41 Ave NE, Calgary', MAPS),
              ('mail', 'Email us', EMAIL, 'mailto:' + EMAIL), ('whatsapp', 'WhatsApp', 'Message the shop', svc.WA)]
+    social = [('facebook', FACEBOOK), ('instagram', INSTAGRAM)]
     actions = C('Quick actions', [
         C(t, [ICON(ic, 22, color=DK2, bg=YEL, box=44, radius=12, name='Icon', w='auto'),
               C('Text', [H(t, 'span', '#C6CDD0', S(11, 700, 16.5, 0.88, 'uppercase'), name='Label'),
@@ -84,6 +85,9 @@ def contact():
         ILIST([('map-pin', '324 41 Ave NE, Calgary, AB T2E 2N3', MAPS), ('phone', PHONE, TEL), ('mail', EMAIL, 'mailto:' + EMAIL)],
               t=S(15, 600, 24), color=DK2, ic_color=DK2, ic_size=18, gap_=12, space=14, name='NAP', cls='bb-break'),
         H('Hours', 'h3', DK2, S(18, 800, 24, tt='uppercase'), mar=(28, 0, 12, 0), name='Hours title'), hours,
+        H('Follow us', 'h3', DK2, S(18, 800, 24, tt='uppercase'), mar=(28, 0, 10, 0), name='Follow title'),
+        C('Social', [ICON(ic, 18, color=DK2, bg=PAPER, box=40, radius=20, href=u, name=ic.title(), w='auto') for ic, u in social],
+          d='row', gap=10),
         H('Getting here', 'h3', DK2, S(18, 800, 24, tt='uppercase'), mar=(28, 0, 10, 0), name='Getting here'),
         T('<p>We’re in NE Calgary off 41 Avenue NE, a few minutes from Deerfoot Trail and Edmonton Trail. Appointments and walk-ins '
           'welcome.</p>', '#4B5558', S(14, 400, 23), name='Directions'),

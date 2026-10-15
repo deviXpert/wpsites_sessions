@@ -679,3 +679,18 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .bb-faq .elementor-tab-title,.bb-sm-faq .elementor-tab-title{border:0!important}
 .bb-sm-faq .elementor-accordion-icon{width:auto!important;font-size:12px}
 .bb-faq .elementor-accordion-icon svg{width:20px;height:20px}
+/* header "Book now": yellow pill + dark arrow chip, lifts and inverts on hover */
+.bb-booknow .elementor-button{transition:transform .2s,box-shadow .2s,background-color .2s,color .2s!important;box-shadow:0 8px 22px -8px rgb(247 215 16/.9)!important}
+.bb-booknow .elementor-button-icon{width:30px;height:30px;border-radius:50%;background:#1a2024;color:#ffe600;display:inline-flex!important;align-items:center;justify-content:center;transition:background-color .2s,color .2s,transform .2s}
+.bb-booknow .elementor-button-icon svg{width:15px!important;height:15px!important;stroke:currentColor}
+.bb-booknow .elementor-button:hover{transform:translateY(-2px);box-shadow:0 14px 28px -10px rgb(26 32 36/.55)!important}
+.bb-booknow .elementor-button:hover .elementor-button-icon{background:#ffe600;color:#1a2024;transform:rotate(45deg)}
+.bb-post-meta a{pointer-events:none;color:inherit!important}
+/* blog sidebar service list */
+.bb-side-services{background-image:radial-gradient(circle at 100% 0,rgb(255 230 0/.14),transparent 45%)!important}
+.bb-side-link{transition:background-color .2s}
+.bb-side-link+.bb-side-link{margin-top:2px}
+.bb-side-link:hover{background:rgb(255 255 255/.07)}
+.bb-side-arrow .elementor-icon{border:1px solid rgb(255 255 255/.2);transition:transform .2s,background-color .2s,color .2s}
+.bb-side-link:hover .bb-side-arrow .elementor-icon{background:#ffe600;color:#192124;border-color:#ffe600;transform:translateX(3px)}
+.bb-side-link:hover .bb-side-arrow svg{stroke:#192124}

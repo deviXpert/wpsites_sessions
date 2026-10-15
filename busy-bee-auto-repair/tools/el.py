@@ -65,6 +65,7 @@ def img(key):
 
 
 def link(url, external=False):
+    external = external or (isinstance(url, str) and url.startswith('http'))  # off-site links open in a new tab
     return {'url': url, 'is_external': 'on' if external else '', 'nofollow': '', 'custom_attributes': ''}
 
 

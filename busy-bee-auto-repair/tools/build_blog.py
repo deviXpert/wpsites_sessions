@@ -89,17 +89,24 @@ def blog_page():
 
 
 def sidebar():
-    links = [H(l.replace('&', '&amp;') + ' ↗︎', 'p', DK2, S(14, 700, 21), href=u, name=l, pad=(10, 0),
-               border=(dims(0, 0, 1, 0), '#DCE0D0')) for _, l, u, *_ in SERVICE_PAGES]
+    rows = [C(l, [ICON(ic, 18, color=DK2, bg=YEL, box=36, radius=10, name='Icon', w='auto'),
+                  H(l.replace('&', '&amp;'), 'span', PAPER, S(14, 700, 20), name='Name', cls='bb-shrink', grow=True),
+                  ICON('arrow-right', 14, color=PAPER, box=28, radius=14, name='Arrow', w='auto', cls='bb-side-arrow')],
+              d='row', ai='center', gap=12, pad=(9, 10), radius=12, href=u, cls='bb-side-link')
+            for _, l, u, ic, *_ in SERVICE_PAGES]
     return C('Sidebar', [
-        C('Services', [H('OUR SERVICES', 'p', DK2, S(11, 800, 16.5, 1.76), mar=(0, 0, 8, 0), name='Eyebrow')] + links,
-          pad=24, bg='#F3F3E7', radius=12),
-        C('Book card', [H('NEED A MECHANIC?', 'p', YEL, S(11, 800, 16.5, 1.76), name='Eyebrow'),
-                        H('Book with Busy Bee in NE Calgary.', 'p', PAPER, S(20, 800, 24, tt='uppercase'), mar=(10, 0, 16, 0),
+        C('Services', [H('OUR SERVICES', 'p', YEL, S(11, 800, 16.5, 1.76), name='Eyebrow'),
+                       H('What can we fix <em>today?</em>', 'p', PAPER, S(22, 850, 26, -0.4, 'uppercase'), mar=(8, 0, 16, 0),
+                         name='Title', cls='bb-sm-em-yel')] + rows +
+          [H('All services ↗︎', 'p', YEL, S(13, 800, 20), href='/services/', mar=(14, 0, 0, 10), name='All services')],
+          pad=(24, 14), bg=DK2, radius=16, cls='bb-side-services'),
+        C('Book card', [H('NEED A MECHANIC?', 'p', DK2, S(11, 800, 16.5, 1.76), name='Eyebrow'),
+                        H('Book with Busy Bee in NE Calgary.', 'p', DK2, S(20, 850, 24, tt='uppercase'), mar=(10, 0, 16, 0),
                           name='Title'),
-                        svc.yellow_btn('Book appointment', '#book', name='Book'),
-                        H(PHONE, 'p', PAPER, S(15, 750, 22), href=TEL, mar=(14, 0, 0, 0), name='Phone')],
-          pad=24, bg=DK2, radius=12, mar=(16, 0, 0, 0)),
+                        BTN('Book appointment', '#book', S(13, 800, 19.5), color=PAPER, bg=DK2, ic='arrow-up-right', ic_size=16,
+                            pad=(14, 22), radius=30, name='Book'),
+                        H(PHONE, 'p', DK2, S(15, 800, 22), href=TEL, mar=(14, 0, 0, 0), name='Phone')],
+          pad=24, bg=YEL, radius=16, mar=(16, 0, 0, 0)),
     ], cls='bb-sticky-side')
 
 
@@ -118,7 +125,7 @@ def single():
           cls='bb-post-cat'),
         W('theme-post-title', 'Title', header_size='h1', title_color=PAPER, __dynamic__={'title': tag('post-title')},
           **S(cu('clamp(32px, 4vw, 54px)'), 850, 1.06, cu('-0.035em'), 'uppercase'), mar=(14, 0, 18, 0), cls='bb-post-title'),
-        W('post-info', 'Meta', icon_list=[{'_id': el.uid(), 'type': 'date', 'selected_icon': icon('calendar-days')},
+        W('post-info', 'Meta', icon_list=[{'_id': el.uid(), 'type': 'date', 'link': '', 'selected_icon': icon('calendar-days')},
                                           {'_id': el.uid(), 'type': 'custom', 'custom_text': 'Busy Bee Auto Repair, NE Calgary',
                                            'selected_icon': icon('map-pin')}],
           text_color='#C6CDD0', icon_color=YEL, **{('icon_typography_' + k[11:]): v for k, v in S(13, 500, 20).items()},

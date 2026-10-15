@@ -38,7 +38,8 @@ def build():
         T('<p>You\'ll find us at 324 41 Ave NE, close to Deerfoot Trail and easy to reach from across the city. We see drivers from NE '
           'Calgary, Downtown, Bridgeland, Renfrew, Mayland Heights, Marlborough, and Airdrie.</p>', wht(0.55), M(14, 400, 28),
           mar=(20, 0, 0, 0), w=320, name='Text'),
-        C('Social', [ICON('instagram', 16, color=PAPER, href=INSTAGRAM, name='Instagram', cls='bb-social', w='auto'),
+        C('Social', [ICON('facebook', 16, color=PAPER, href=FACEBOOK, name='Facebook', cls='bb-social', w='auto'),
+                     ICON('instagram', 16, color=PAPER, href=INSTAGRAM, name='Instagram', cls='bb-social', w='auto'),
                      ICON('mail', 16, color=PAPER, href='mailto:' + EMAIL, name='Email', cls='bb-social', w='auto')],
           d='row', ai='center', gap=8, mar=(24, 0, 0, 0)),
     ])
