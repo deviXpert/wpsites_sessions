@@ -522,3 +522,42 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
   .bb-why-quotes-title .elementor-heading-title{font-size:14px!important;line-height:19px!important}
   .bb-checker-form .elementor-field-group:not(.elementor-field-type-submit){width:100%!important}
 }
+
+/* ==== Phone optimisation (≤767px): readable type, 44px touch targets, no text collisions ==== */
+@media (max-width:767px){
+  /* minimum readable sizes */
+  .bb-maddr .elementor-icon-list-text,.bb-aside .elementor-heading-title,.bb-checker>.e-con>.e-con .elementor-heading-title[class],
+  .bb-winter-banner .elementor-heading-title,.bb-brands .bb-eyebrow .elementor-heading-title{font-size:max(11px,1em)}
+  .bb-vbtn .elementor-button,.bb-vbtn a,.bb-vbtn{font-size:11px!important}
+  .bb-vname,.bb-mhero [class*="scan"] .elementor-heading-title{font-size:10.5px!important}
+  .bb-dlink,.bb-dlink *{font-size:11px!important}
+  .bb-brand-cell .elementor-heading-title,.bb-brand-cell span{font-size:11px!important}
+  .bb-studio .elementor-heading-title{font-size:max(10.5px,1em)}
+  .bb-veh-cap .elementor-heading-title,.bb-veh-note .elementor-heading-title{font-size:10.5px!important;line-height:15px!important}
+  .bb-form-panel>.elementor-widget-heading:first-child .elementor-heading-title{font-size:10.5px!important}
+  .bb-chips button{font-size:12px!important;line-height:16px!important;padding:11px 12px!important;min-height:40px}
+  .bb-offer .elementor-heading-title{font-size:max(10.5px,1em)}
+  .bb-offer-cta-line,.bb-offer-cta-line *{font-size:12px!important}
+  .bb-avatar .elementor-heading-title{font-size:11px!important}
+  .bb-checker-form .elementor-field-textual,.bb-checker-form select{font-size:16px!important} /* stops iOS zoom on focus */
+  .bb-book-form .elementor-field-textual,.bb-foot-form .elementor-field-textual,.bb-result input{font-size:16px!important}
+  /* touch targets */
+  .bb-vbtn .elementor-button,.bb-vbtn a{min-height:40px;min-width:44px;display:inline-flex;align-items:center;justify-content:center}
+  .bb-dlink a,.bb-dlink{min-height:44px;display:flex;align-items:center}
+  .bb-rev-prev,.bb-rev-next,.bb-rev-prev a,.bb-rev-next a{min-width:44px!important;min-height:44px!important}
+  .bb-rev-prev .elementor-icon,.bb-rev-next .elementor-icon{width:44px!important;height:44px!important}
+  .bb-underline a,.bb-icon-after a,.bb-greviews-link a,.bb-foot-links a,.bb-book-promo .elementor-icon-list-item a,.bb-faq .elementor-tab-title{padding-top:10px!important;padding-bottom:10px!important;display:inline-flex;align-items:center}
+  .bb-foot-links .elementor-icon-list-item{padding:0!important;margin:0!important}
+  .bb-faq .elementor-tab-title{display:flex;min-height:56px}
+  .bb-book-promo .elementor-button,.bb-ic-bee .elementor-button{min-height:44px;display:inline-flex;align-items:center}
+  .bb-mfav a,.bb-mfav img{min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center}
+  .bb-maddr a{min-height:44px;display:flex;align-items:center}
+  /* hero: hotspot dots must not sit on top of copy */
+  .bb-mhero .bb-pts,.bb-mhero .bb-pts-layer{z-index:0!important;opacity:.55;pointer-events:none}
+  .bb-mhero h1,.bb-mhero .elementor-widget-text-editor,.bb-mhero .elementor-widget-button{position:relative;z-index:2}
+  .bb-mhero h1+.elementor-widget-text-editor,.bb-mhero .elementor-widget-heading+.elementor-widget-text-editor{text-shadow:0 1px 8px rgba(0,0,0,.85)}
+  .bb-hover-bee a,.bb-top-icon a,.bb-greviews-link a{min-height:44px;display:inline-flex!important;align-items:center}
+  .bb-offer small.elementor-heading-title,.bb-offer .elementor-widget-heading:first-child .elementor-heading-title{font-size:10.5px!important}
+  .bb-mhero .bb-scanline .elementor-heading-title,.bb-mhero .elementor-heading-title{font-size:max(10px,1em)}
+  .bb-mhead .bb-pts,.bb-mhead .bb-pts-layer{display:none!important}
+}
