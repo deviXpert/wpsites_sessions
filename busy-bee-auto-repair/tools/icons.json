@@ -142,5 +142,13 @@
  "wrench": {
   "id": 334,
   "url": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/uploads/2026/10/lucide-wrench.svg"
+ },
+ "message-square": {
+  "id": 352,
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/uploads/2026/10/lucide-message-square.svg"
+ },
+ "settings": {
+  "id": 353,
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/uploads/2026/10/lucide-settings.svg"
  }
 }

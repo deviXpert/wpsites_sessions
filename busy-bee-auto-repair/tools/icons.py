@@ -12,7 +12,8 @@ FILLED = {'star'}  # design uses these with fill-current
 
 def collect():
     import build_header, build_footer, build_home, build_popups
-    build_header.build(); build_footer.build(); build_home.build()
+    import build_services
+    build_header.build(); build_footer.build(); build_home.build(); build_services.build()
     for p in build_popups.POPUPS:
         build_popups.popup(*p)
     return sorted(el.USED_ICONS)
@@ -49,6 +50,8 @@ if __name__ == '__main__':
     for n in names:
         if n in have:
             continue
+        if n not in CUSTOM and not os.path.exists(os.path.join(src, n + '.svg')):
+            continue  # Font Awesome-only glyph (e.g. caret-right)
         with tempfile.NamedTemporaryFile('w', suffix='.svg', delete=False) as f:
             f.write(svg_for(n, src))
         d = upload_svg(f.name, f'lucide-{n}.svg')

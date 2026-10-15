@@ -254,7 +254,42 @@
     window.addEventListener('load', setup);
   }
 
+  /* ---------- /services/: hero photo switch, service cards → request form, form → WhatsApp ---------- */
+  function servicesPage(hero) {
+    var slides = $$('.bb-sm-slide', hero), btns = $$('.bb-sm-sel', hero), cur = 0, timer;
+    function go(n) {
+      cur = (n + slides.length) % slides.length;
+      slides.forEach(function (s, i) { s.classList.toggle('is-active', i === cur); });
+      btns.forEach(function (b, i) { b.classList.toggle('is-active', i === cur); var a = $('a', b); if (a) a.setAttribute('aria-pressed', i === cur); });
+    }
+    btns.forEach(function (b, i) {
+      var a = $('a', b) || b; a.setAttribute('role', 'button');
+      a.addEventListener('click', function (e) { e.preventDefault(); go(i); clearInterval(timer); timer = setInterval(function () { go(cur + 1); }, 8000); });
+    });
+    timer = setInterval(function () { go(cur + 1); }, 8000);
+  }
+  function serviceRequest(form) {
+    var val = function (id) { var f = $('[name="form_fields[' + id + ']"]', form); return f ? f.value.trim() : ''; };
+    $$('.bb-sm-card[data-service]').forEach(function (c) {
+      c.addEventListener('click', function () {
+        var sel = $('[name="form_fields[service]"]', form); if (sel) sel.value = c.getAttribute('data-service');
+      });
+    });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); e.stopImmediatePropagation();
+      if (!form.reportValidity()) return;
+      var lines = ['Hi Busy Bee, I\'d like to request a service.', 'Name: ' + val('name'), 'Phone: ' + val('phone')];
+      if (val('vehicle')) lines.push('Vehicle: ' + val('vehicle'));
+      if (val('service')) lines.push('Service: ' + val('service'));
+      if (val('issue')) lines.push('Issue: ' + val('issue'));
+      window.open('https://wa.me/14039305888?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+    }, true);
+  }
+
   function init() {
+    $$('.bb-sm-hero').forEach(servicesPage);
+    $$('.bb-sm-form form').forEach(serviceRequest);
+    $$('.bb-sm-brand-track').forEach(function (t) { marquee(t, 57.8); });
     $$('.bb-marquee-track').forEach(function (t) { marquee(t, 940 / 30); });
     $$('.bb-ribbon-track').forEach(function (t) { marquee(t, 1083 / 35); });
     $$('.bb-type').forEach(typing);

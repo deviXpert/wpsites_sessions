@@ -1,0 +1,407 @@
+main [0,0 1440x5721] bg=rgb(251, 252, 250) pad=0px
+section [0,0 1440x830] bg=rgb(17, 25, 29) pad=24px 70px 0px
+img [0,0 1440x830] img=/cars/fleets/workshop-wide.png fit=cover pos=50% 40% pad=0px
+img [0,0 1440x830] img=/cars/fleets/workshop-services-wide.png fit=cover pos=50% 40% op=0 pad=0px
+header [70,24 1300x72] bg=rgb(255, 255, 255) rad=60px pad=12px 24px
+img [94,36 135x48] img=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png fit=fill pos=50% 50% pad=0px
+a [557,50 40x21] "Home" fs=14px fw=750 lh=21px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+a [624,50 60x21] "Services" fs=14px fw=750 lh=21px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+a [710,50 48x21] "Brands" fs=14px fw=750 lh=21px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+a [784,50 36x21] "FAQs" fs=14px fw=750 lh=21px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+a [845,50 49x21] "Find us" fs=14px fw=750 lh=21px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+a [1224,49 122x23] "(403) 930-5888" fs=15px fw=800 lh=22.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [70,161 660x15] "YOUR LOCAL WORKSHOP · NE CALGARY" fs=10px fw=800 lh=15px ls=1.6px tt=none c=rgb(255, 230, 0) ff=-apple-system pad=0px
+h1 [70,196 660x267] "Reliable car servicing. Repairs you can" fs=64.8px fw=850 lh=66.744px ls=-2.916px tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+em [70,389 224x79] "trust." fs=64.8px fw=850 lh=66.744px ls=-2.916px tt=uppercase c=rgb(255, 230, 0) ff=-apple-system pad=0px
+p [70,483 540x84] "From brake repairs and engine diagnostics to oil changes and seasonal " fs=16px fw=400 lh=28px ls=normal tt=none c=rgb(238, 240, 241) ff=-apple-system pad=0px
+a [70,591 192x48] "Request a service" fs=13px fw=800 lh=19.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system bg=rgb(255, 230, 0) rad=6px pad=14px 22px
+svg [222,606 18x18] pad=0px
+a [274,591 157x48] "WhatsApp us" fs=13px fw=750 lh=16.9px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system bg=rgb(18, 140, 80) bd=1px/1px/1px/1px rgb(18, 140, 80) rad=30px pad=12px 19px
+svg [294,604 22x22] pad=0px
+div [1090,205 280x199] bg=oklch(1 0 0) bd=1px/1px/1px/1px oklab(0.24 -0.00771345 -0.00919253 / 0.05) rad=18px sh=rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0 pad=20px
+span [1111,232 88x15] "Google reviews" fs=10px fw=800 lh=15px ls=normal tt=uppercase c=oklab(0.24 -0.00771345 -0.00919253 / 0.55) ff=Manrope pad=0px
+svg [1321,226 28x28] pad=0px
+strong [1111,266 74x48] "4.8" fs=48px fw=800 lh=48px ls=normal tt=none c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+span [1197,270 19x21] "★" fs=18px fw=400 lh=28px ls=normal tt=none c=rgb(66, 133, 244) ff=-apple-system pad=0px
+span [1216,270 19x21] "★" fs=18px fw=400 lh=28px ls=normal tt=none c=rgb(234, 67, 53) ff=-apple-system pad=0px
+span [1234,270 19x21] "★" fs=18px fw=400 lh=28px ls=normal tt=none c=rgb(251, 188, 5) ff=-apple-system pad=0px
+span [1253,270 19x21] "★" fs=18px fw=400 lh=28px ls=normal tt=none c=rgb(52, 168, 83) ff=-apple-system pad=0px
+span [1272,270 19x21] "★" fs=18px fw=400 lh=28px ls=normal tt=none c=rgb(66, 133, 244) ff=-apple-system pad=0px
+p [1197,295 119x17] "Google customer rating" fs=11px fw=400 lh=16.5px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919253 / 0.7) ff=Manrope pad=0px
+div [1111,326 238x6] bg=oklch(0.93 0.005 230) rad=3.35544e+07px pad=0px
+div [1111,326 228x6] bgi=linear-gradient(to right, rgb(66, 133, 244) 0%, rgb(66, 133, 244) 25%, rgb(234, 67, 53) 25%, rgb(234, 67, 53) 50%, rgb(2 rad=3.35544e+07px pad=0px
+p [1111,344 238x39] "Honest pricing, quality workmanship and transparent communication." fs=12px fw=400 lh=19.5px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919254 / 0.65) ff=Manrope pad=0px
+div [1090,416 134x175] bg=oklch(0.88 0.18 98) rad=18px sh=rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0 pad=16px
+span [1106,432 36x36] bg=oklch(0.24 0.012 230) rad=10px pad=0px
+svg [1116,442 16x16] pad=0px
+h2 [1106,480 102x35] "Walk-ins welcome" fs=14px fw=800 lh=17.5px ls=normal tt=uppercase c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+p [1106,523 102x33] "Monday to Friday 9 AM to 6 PM" fs=12px fw=400 lh=16.5px ls=normal tt=none c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+div [1236,416 134x175] bg=oklch(1 0 0) bd=1px/1px/1px/1px oklab(0.24 -0.00771345 -0.00919253 / 0.05) rad=18px sh=rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0 pad=16px
+span [1253,433 36x36] bg=oklch(0.97 0.035 95) bd=1px/1px/1px/1px oklab(0.24 -0.00771345 -0.00919253 / 0.1) rad=10px pad=0px
+svg [1263,443 16x16] pad=0px
+h2 [1253,481 100x35] "Certified techs" fs=14px fw=800 lh=17.5px ls=normal tt=uppercase c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+p [1253,524 100x50] "Parts & labour warranty on most repairs" fs=12px fw=400 lh=16.5px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919253 / 0.7) ff=Manrope pad=0px
+button [1174,699 87x35] "Workshop" fs=11px fw=400 lh=16.5px ls=normal tt=none c=rgb(23, 32, 36) ff=-apple-system bg=rgb(255, 230, 0) bd=1px/1px/1px/1px rgb(255, 230, 0) rad=25px pad=8px 16px
+button [1269,699 101x35] "Service bays" fs=11px fw=400 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system bg=rgba(23, 32, 36, 0.44) bd=1px/1px/1px/1px rgba(255, 255, 255, 0.5) rad=25px pad=8px 16px
+div [70,758 1300x72] bg=rgb(25, 33, 36) bd=1px/1px/1px/1px rgba(255, 255, 255, 0.19) rad=8px pad=0px
+svg [94,782 24x24] pad=0px
+span [133,785 96x18] "Hands-on repair" fs=12px fw=700 lh=18px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [419,782 24x24] pad=0px
+span [458,785 105x18] "Upfront estimates" fs=12px fw=700 lh=18px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [743,782 24x24] pad=0px
+span [782,785 149x18] "Warranty on most repairs" fs=12px fw=700 lh=18px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [1068,782 24x24] pad=0px
+span [1107,785 142x18] "Local Calgary workshop" fs=12px fw=700 lh=18px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+span [102,888 389x1] bg=rgb(220, 224, 221) pad=0px
+h2 [515,866 411x45] "Our automotive" fs=30px fw=850 lh=45px ls=-1.05px tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+em [784,870 141x36] "services" fs=30px fw=850 lh=45px ls=-1.05px tt=uppercase c=rgb(116, 123, 112) ff=-apple-system pad=0px
+span [949,888 389x1] bg=rgb(220, 224, 221) pad=0px
+a [102,941 399x280] bg=rgb(23, 32, 36) rad=8px pad=0px
+img [102,941 399x280] img=/assets/diagnostics-service-Djl4l8sV.jpg fit=cover pos=50% 50% pad=0px
+svg [125,1057 24x24] pad=0px
+h3 [125,1093 320x48] "Computer diagnostics & electrical" fs=22px fw=800 lh=24.2px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [125,1149 353x18] "Find the real cause before any repair." fs=12px fw=400 lh=18px ls=normal tt=none c=rgb(224, 229, 231) ff=-apple-system pad=0px
+span [125,1182 353x17] "Explore service" fs=11px fw=750 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [220,1182 16x16] pad=0px
+a [521,941 399x280] bg=rgb(23, 32, 36) rad=8px pad=0px
+img [521,941 399x280] img=/cars/fleets/audi-workshop.png fit=cover pos=50% 50% pad=0px
+svg [544,1057 24x24] pad=0px
+h3 [544,1093 320x48] "Engine maintenance & repair" fs=22px fw=800 lh=24.2px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [544,1149 353x18] "Prevent breakdowns before they start." fs=12px fw=400 lh=18px ls=normal tt=none c=rgb(224, 229, 231) ff=-apple-system pad=0px
+span [544,1182 353x17] "Explore service" fs=11px fw=750 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [639,1182 16x16] pad=0px
+a [939,941 399x280] bg=rgb(23, 32, 36) rad=8px pad=0px
+img [939,941 399x280] img=/assets/brake-service-DAs--rV2.jpg fit=cover pos=50% 50% pad=0px
+svg [962,1057 24x24] pad=0px
+h3 [962,1093 320x48] "Brake repair & replacement" fs=22px fw=800 lh=24.2px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [962,1149 353x18] "Safe, predictable stopping." fs=12px fw=400 lh=18px ls=normal tt=none c=rgb(224, 229, 231) ff=-apple-system pad=0px
+span [962,1182 353x17] "Explore service" fs=11px fw=750 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [1057,1182 16x16] pad=0px
+a [102,1241 399x280] bg=rgb(23, 32, 36) rad=8px pad=0px
+img [102,1241 399x280] img=/promotions/oil-service.png fit=cover pos=50% 50% pad=0px
+svg [125,1357 24x24] pad=0px
+h3 [125,1393 320x48] "Mobil 1 synthetic oil change" fs=22px fw=800 lh=24.2px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [125,1449 353x18] "Premium Mobil 1 synthetic, from $75." fs=12px fw=400 lh=18px ls=normal tt=none c=rgb(224, 229, 231) ff=-apple-system pad=0px
+span [125,1482 353x17] "Explore service" fs=11px fw=750 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [220,1482 16x16] pad=0px
+a [521,1241 399x280] bg=rgb(23, 32, 36) rad=8px pad=0px
+img [521,1241 399x280] img=/assets/brake-service-DAs--rV2.jpg fit=cover pos=50% 50% pad=0px
+svg [544,1357 24x24] pad=0px
+h3 [544,1393 320x48] "Suspension & steering repair" fs=22px fw=800 lh=24.2px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [544,1449 353x18] "Stable handling, even tire wear." fs=12px fw=400 lh=18px ls=normal tt=none c=rgb(224, 229, 231) ff=-apple-system pad=0px
+span [544,1482 353x17] "Explore service" fs=11px fw=750 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [639,1482 16x16] pad=0px
+a [939,1241 399x280] bg=rgb(23, 32, 36) rad=8px pad=0px
+img [939,1241 399x280] img=/promotions/winter-tires.png fit=cover pos=50% 50% pad=0px
+svg [962,1357 24x24] pad=0px
+h3 [962,1393 320x48] "Wheels, tires & balancing" fs=22px fw=800 lh=24.2px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [962,1449 353x18] "Honest advice on repair vs. replace." fs=12px fw=400 lh=18px ls=normal tt=none c=rgb(224, 229, 231) ff=-apple-system pad=0px
+span [962,1482 353x17] "Explore service" fs=11px fw=750 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [1057,1482 16x16] pad=0px
+a [102,1541 399x280] bg=rgb(23, 32, 36) rad=8px pad=0px
+img [102,1541 399x280] img=/promotions/battery-service.png fit=cover pos=50% 50% pad=0px
+svg [125,1657 24x24] pad=0px
+h3 [125,1693 320x48] "Battery & alternator service" fs=22px fw=800 lh=24.2px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [125,1749 353x18] "Free battery testing, every time." fs=12px fw=400 lh=18px ls=normal tt=none c=rgb(224, 229, 231) ff=-apple-system pad=0px
+span [125,1782 353x17] "Explore service" fs=11px fw=750 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [220,1782 16x16] pad=0px
+a [521,1541 399x280] bg=rgb(23, 32, 36) rad=8px pad=0px
+img [521,1541 399x280] img=/assets/diagnostics-service-Djl4l8sV.jpg fit=cover pos=50% 50% pad=0px
+svg [544,1657 24x24] pad=0px
+h3 [544,1693 320x48] "Cooling system & radiator" fs=22px fw=800 lh=24.2px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [544,1749 353x18] "Stop overheating before it starts." fs=12px fw=400 lh=18px ls=normal tt=none c=rgb(224, 229, 231) ff=-apple-system pad=0px
+span [544,1782 353x17] "Explore service" fs=11px fw=750 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [639,1782 16x16] pad=0px
+a [939,1541 399x280] bg=rgb(23, 32, 36) rad=8px pad=0px
+img [939,1541 399x280] img=/cars/fleets/workshop-wide.png fit=cover pos=50% 50% pad=0px
+svg [962,1681 24x24] pad=0px
+h3 [962,1717 320x24] "Transmission repair" fs=22px fw=800 lh=24.2px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [962,1749 353x18] "Smooth, reliable shifting." fs=12px fw=400 lh=18px ls=normal tt=none c=rgb(224, 229, 231) ff=-apple-system pad=0px
+span [962,1782 353x17] "Explore service" fs=11px fw=750 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [1057,1782 16x16] pad=0px
+span [126,1968 377x1] bg=rgb(220, 224, 221) pad=0px
+h2 [527,1946 386x45] "All makes." fs=30px fw=850 lh=45px ls=-1.05px tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+em [707,1950 206x36] "Expert care." fs=30px fw=850 lh=45px ls=-1.05px tt=uppercase c=rgb(116, 123, 112) ff=-apple-system pad=0px
+span [937,1968 377x1] bg=rgb(220, 224, 221) pad=0px
+div [0,2021 1440x133] bg=rgb(255, 255, 255) bd=1px/0px/1px/0px rgb(228, 231, 227) pad=24px 0px
+span [48,2074 53x27] "Acura" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [194,2074 102x27] "Alfa Romeo" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [370,2054 90x40] img=/brands/audi.png fit=contain pos=50% 50% pad=0px
+span [402,2106 26x17] "Audi" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [540,2054 90x40] img=/brands/bmw.png fit=contain pos=50% 50% pad=0px
+span [570,2106 29x17] "BMW" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [730,2074 50x27] "Buick" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [889,2074 72x27] "Cadillac" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [1051,2074 87x27] "Chevrolet" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [1226,2074 78x27] "Chrysler" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [1390,2054 90x40] img=/brands/dodge.png fit=contain pos=50% 50% pad=0px
+span [1417,2106 35x17] "Dodge" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [1588,2074 33x27] "Fiat" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [1730,2054 90x40] img=/brands/ford.png fit=contain pos=50% 50% pad=0px
+span [1763,2106 24x17] "Ford" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [1909,2074 72x27] "Genesis" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [2070,2054 90x40] img=/brands/gmc.png fit=contain pos=50% 50% pad=0px
+span [2102,2106 27x17] "GMC" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [2256,2074 58x27] "Honda" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [2410,2054 90x40] img=/brands/hyundai.png fit=contain pos=50% 50% pad=0px
+span [2432,2106 46x17] "Hyundai" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [2596,2074 58x27] "Infiniti" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [2773,2074 44x27] "Jeep" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [2950,2074 29x27] "Kia" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [3085,2074 99x27] "Land Rover" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [3278,2074 53x27] "Lexus" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [3442,2074 65x27] "Lincoln" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [3615,2074 60x27] "Mazda" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [3770,2054 90x40] img=/brands/mercedes-benz.png fit=contain pos=50% 50% pad=0px
+span [3772,2106 87x17] "Mercedes-Benz" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [3938,2074 94x27] "Mitsubishi" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [4124,2074 62x27] "Nissan" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [4280,2054 90x40] img=/brands/porsche.png fit=contain pos=50% 50% pad=0px
+span [4303,2106 45x17] "Porsche" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [4474,2074 43x27] "RAM" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [4637,2074 55x27] "Skoda" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [4808,2074 54x27] "Smart" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [4973,2074 65x27] "Subaru" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [5145,2074 61x27] "Suzuki" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [5300,2054 90x40] img=/brands/toyota.png fit=contain pos=50% 50% pad=0px
+span [5326,2106 37x17] "Toyota" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [5460,2074 110x27] "Volkswagen" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [5659,2074 51x27] "Volvo" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [5828,2074 53x27] "Acura" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [5974,2074 102x27] "Alfa Romeo" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [6150,2054 90x40] img=/brands/audi.png fit=contain pos=50% 50% pad=0px
+span [6182,2106 26x17] "Audi" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [6320,2054 90x40] img=/brands/bmw.png fit=contain pos=50% 50% pad=0px
+span [6350,2106 29x17] "BMW" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [6510,2074 50x27] "Buick" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [6669,2074 72x27] "Cadillac" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [6831,2074 87x27] "Chevrolet" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [7006,2074 78x27] "Chrysler" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [7170,2054 90x40] img=/brands/dodge.png fit=contain pos=50% 50% pad=0px
+span [7197,2106 35x17] "Dodge" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [7368,2074 33x27] "Fiat" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [7510,2054 90x40] img=/brands/ford.png fit=contain pos=50% 50% pad=0px
+span [7543,2106 24x17] "Ford" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [7689,2074 72x27] "Genesis" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [7850,2054 90x40] img=/brands/gmc.png fit=contain pos=50% 50% pad=0px
+span [7882,2106 27x17] "GMC" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [8036,2074 58x27] "Honda" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [8190,2054 90x40] img=/brands/hyundai.png fit=contain pos=50% 50% pad=0px
+span [8212,2106 46x17] "Hyundai" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [8376,2074 58x27] "Infiniti" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [8553,2074 44x27] "Jeep" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [8730,2074 29x27] "Kia" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [8865,2074 99x27] "Land Rover" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [9058,2074 53x27] "Lexus" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [9222,2074 65x27] "Lincoln" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [9395,2074 60x27] "Mazda" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [9550,2054 90x40] img=/brands/mercedes-benz.png fit=contain pos=50% 50% pad=0px
+span [9552,2106 87x17] "Mercedes-Benz" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [9718,2074 94x27] "Mitsubishi" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [9904,2074 62x27] "Nissan" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [10060,2054 90x40] img=/brands/porsche.png fit=contain pos=50% 50% pad=0px
+span [10083,2106 45x17] "Porsche" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [10254,2074 43x27] "RAM" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [10417,2074 55x27] "Skoda" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [10588,2074 54x27] "Smart" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [10753,2074 65x27] "Subaru" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [10925,2074 61x27] "Suzuki" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+img [11080,2054 90x40] img=/brands/toyota.png fit=contain pos=50% 50% pad=0px
+span [11106,2106 37x17] "Toyota" fs=11px fw=800 lh=16.5px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [11240,2074 110x27] "Volkswagen" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [11439,2074 51x27] "Volvo" fs=18px fw=800 lh=27px ls=normal tt=none c=rgb(39, 48, 52) ff=-apple-system pad=0px
+span [102,2226 406x1] bg=rgb(220, 224, 221) pad=0px
+h2 [532,2204 376x45] "Why drivers" fs=30px fw=850 lh=45px ls=-1.05px tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+em [740,2208 168x36] "choose us" fs=30px fw=850 lh=45px ls=-1.05px tt=uppercase c=rgb(116, 123, 112) ff=-apple-system pad=0px
+span [932,2226 406x1] bg=rgb(220, 224, 221) pad=0px
+svg [173,2297 34x34] pad=0px
+h3 [120,2346 140x17] "Practical expertise" fs=12px fw=750 lh=16.8px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+svg [349,2297 34x34] pad=0px
+h3 [297,2346 140x17] "Clear estimates" fs=12px fw=750 lh=16.8px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+svg [526,2297 34x34] pad=0px
+h3 [473,2346 140x34] "Careful diagnostics" fs=12px fw=750 lh=16.8px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+svg [702,2297 34x34] pad=0px
+h3 [650,2346 140x17] "Walk-ins welcome" fs=12px fw=750 lh=16.8px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+svg [879,2297 34x34] pad=0px
+h3 [826,2346 140x34] "Parts options explained" fs=12px fw=750 lh=16.8px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+svg [1056,2297 34x34] pad=0px
+h3 [1003,2346 140x34] "Warranty on most repairs" fs=12px fw=750 lh=16.8px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+svg [1232,2297 34x34] pad=0px
+h3 [1179,2346 140x34] "Care for your vehicle" fs=12px fw=750 lh=16.8px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+section [102,2458 1236x554] bg=rgb(25, 33, 36) rad=12px pad=0px
+img [102,2458 618x554] img=/cars/fleets/audi-workshop.png fit=cover pos=50% 50% pad=0px
+p [144,2745 330x22] "LET’S GET IT SORTED" fs=13px fw=800 lh=22.1px ls=2.08px tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+h2 [144,2781 348x85] "Need your car checked" fs=40px fw=850 lh=42.4px ls=-1.6px tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+em [337,2819 155x49] "today?" fs=40px fw=850 lh=42.4px ls=-1.6px tt=uppercase c=rgb(255, 230, 0) ff=-apple-system pad=0px
+p [144,2886 330x44] "Tell us what’s happening. We’ll confirm availability and the next step" fs=13px fw=400 lh=22.1px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+p [144,2948 330x22] "Clear estimates. Your approval first." fs=13px fw=400 lh=22.1px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+svg [144,2948 16x16] pad=0px
+h2 [752,2504 554x27] "Request your service" fs=25px fw=850 lh=26.5px ls=-1px tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+label [752,2563 270x64] "Name" fs=11px fw=650 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+input [752,2585 270x42] bg=rgba(255, 255, 255, 0.03) bd=1px/1px/1px/1px rgba(255, 255, 255, 0.25) rad=5px pad=10px
+label [1037,2563 270x64] "Phone" fs=11px fw=650 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+input [1037,2585 270x42] bg=rgba(255, 255, 255, 0.03) bd=1px/1px/1px/1px rgba(255, 255, 255, 0.25) rad=5px pad=10px
+label [752,2651 554x64] "Vehicle make, model and year" fs=11px fw=650 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+input [752,2673 554x42] bg=rgba(255, 255, 255, 0.03) bd=1px/1px/1px/1px rgba(255, 255, 255, 0.25) rad=5px pad=10px
+label [752,2727 554x63] "Service needed" fs=11px fw=650 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+select [752,2749 554x40] bg=rgba(255, 255, 255, 0.03) bd=1px/1px/1px/1px rgba(255, 255, 255, 0.25) rad=5px pad=10px
+label [752,2801 554x84] "Tell us about the issue" fs=11px fw=650 lh=16.5px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system pad=0px
+textarea [752,2824 554x61] bg=rgba(255, 255, 255, 0.03) bd=1px/1px/1px/1px rgba(255, 255, 255, 0.25) rad=5px pad=10px
+button [752,2905 554x48] "Continue in WhatsApp" fs=13px fw=800 lh=19.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system bg=rgb(255, 230, 0) rad=6px pad=14px 22px
+svg [1100,2919 18x18] pad=0px
+p [752,2964 554x16] "Opens a message for you to send. The shop confirms your appointment." fs=10px fw=400 lh=16px ls=normal tt=none c=rgb(198, 205, 208) ff=-apple-system pad=0px
+span [102,3094 483x1] bg=rgb(220, 224, 221) pad=0px
+h2 [609,3072 221x45] "How it" fs=30px fw=850 lh=45px ls=-1.05px tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+em [720,3076 110x36] "works" fs=30px fw=850 lh=45px ls=-1.05px tt=uppercase c=rgb(116, 123, 112) ff=-apple-system pad=0px
+span [855,3094 483x1] bg=rgb(220, 224, 221) pad=0px
+article [102,3147 228x179] bd=2px/0px/0px/0px rgb(255, 230, 0) pad=20px 0px 0px
+div [102,3169 52x52] bg=rgb(255, 245, 168) rad=12px pad=0px
+svg [114,3181 28x28] pad=0px
+span [102,3242 17x15] "0 1" fs=12px fw=800 lh=18px ls=1.44px tt=none c=rgb(147, 156, 152) ff=-apple-system pad=0px
+svg [330,3183 20x24] pad=0px
+h3 [102,3272 228x23] "Book your visit" fs=15px fw=800 lh=22.5px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [102,3307 228x19] "Call or send your service request." fs=12px fw=400 lh=19.2px ls=normal tt=none c=rgb(102, 112, 116) ff=-apple-system pad=0px
+article [354,3147 228x179] bd=2px/0px/0px/0px rgb(255, 230, 0) pad=20px 0px 0px
+div [354,3169 52x52] bg=rgb(255, 245, 168) rad=12px pad=0px
+svg [366,3181 28x28] pad=0px
+span [354,3242 19x15] "0 2" fs=12px fw=800 lh=18px ls=1.44px tt=none c=rgb(147, 156, 152) ff=-apple-system pad=0px
+svg [582,3183 20x24] pad=0px
+h3 [354,3272 228x23] "Describe the issue" fs=15px fw=800 lh=22.5px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [354,3307 228x19] "Tell us what changed and when." fs=12px fw=400 lh=19.2px ls=normal tt=none c=rgb(102, 112, 116) ff=-apple-system pad=0px
+article [606,3147 228x179] bd=2px/0px/0px/0px rgb(255, 230, 0) pad=20px 0px 0px
+div [606,3169 52x52] bg=rgb(255, 245, 168) rad=12px pad=0px
+svg [618,3181 28x28] pad=0px
+span [606,3242 19x15] "0 3" fs=12px fw=800 lh=18px ls=1.44px tt=none c=rgb(147, 156, 152) ff=-apple-system pad=0px
+svg [834,3183 20x24] pad=0px
+h3 [606,3272 228x23] "We inspect" fs=15px fw=800 lh=22.5px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [606,3307 228x19] "We investigate the symptoms." fs=12px fw=400 lh=19.2px ls=normal tt=none c=rgb(102, 112, 116) ff=-apple-system pad=0px
+article [858,3147 228x179] bd=2px/0px/0px/0px rgb(255, 230, 0) pad=20px 0px 0px
+div [858,3169 52x52] bg=rgb(255, 245, 168) rad=12px pad=0px
+svg [870,3181 28x28] pad=0px
+span [858,3242 19x15] "0 4" fs=12px fw=800 lh=18px ls=1.44px tt=none c=rgb(147, 156, 152) ff=-apple-system pad=0px
+svg [1086,3183 20x24] pad=0px
+h3 [858,3272 228x23] "You approve" fs=15px fw=800 lh=22.5px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [858,3307 228x19] "Review the findings and estimate." fs=12px fw=400 lh=19.2px ls=normal tt=none c=rgb(102, 112, 116) ff=-apple-system pad=0px
+article [1110,3147 228x179] bd=2px/0px/0px/0px rgb(255, 230, 0) pad=20px 0px 0px
+div [1110,3169 52x52] bg=rgb(255, 245, 168) rad=12px pad=0px
+svg [1122,3181 28x28] pad=0px
+span [1110,3242 19x15] "0 5" fs=12px fw=800 lh=18px ls=1.44px tt=none c=rgb(147, 156, 152) ff=-apple-system pad=0px
+h3 [1110,3272 228x23] "Back on the road" fs=15px fw=800 lh=22.5px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [1110,3307 228x19] "Collect your car after agreed repairs." fs=12px fw=400 lh=19.2px ls=normal tt=none c=rgb(102, 112, 116) ff=-apple-system pad=0px
+p [102,3446 465x15] "BEFORE YOUR VISIT" fs=10px fw=800 lh=15px ls=1.6px tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+h2 [102,3475 465x85] "Questions?" fs=40px fw=850 lh=42.4px ls=-1.6px tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+em [102,3513 342x49] "Clear answers." fs=40px fw=850 lh=42.4px ls=-1.6px tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+a [102,3580 465x21] "(403) 930-5888" fs=14px fw=750 lh=21px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+svg [102,3581 18x18] pad=0px
+details [627,3446 711x62] bd=0px/0px/1px/0px oklch(0.929 0.013 255.508) pad=19px 0px
+summary [627,3465 711x23] "What auto repair services do you offer?" fs=15px fw=750 lh=22.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [627,3501 711x70] "We offer diagnostics, engine repairs, brakes, oil changes, suspension " fs=13px fw=400 lh=23.4px ls=normal tt=none c=rgb(89, 99, 103) ff=-apple-system pad=0px
+details [627,3507 711x62] bd=0px/0px/1px/0px oklch(0.929 0.013 255.508) pad=19px 0px
+summary [627,3526 711x23] "Do I need an appointment?" fs=15px fw=750 lh=22.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [627,3563 711x47] "Call ahead to arrange your visit. Walk-ins are welcome during business" fs=13px fw=400 lh=23.4px ls=normal tt=none c=rgb(89, 99, 103) ff=-apple-system pad=0px
+details [627,3569 711x62] bd=0px/0px/1px/0px oklch(0.929 0.013 255.508) pad=19px 0px
+summary [627,3588 711x23] "Will I get a price before repairs begin?" fs=15px fw=750 lh=22.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [627,3624 711x23] "Yes. We explain our findings and provide an estimate for your approval" fs=13px fw=400 lh=23.4px ls=normal tt=none c=rgb(89, 99, 103) ff=-apple-system pad=0px
+details [627,3630 711x62] bd=0px/0px/1px/0px oklch(0.929 0.013 255.508) pad=19px 0px
+summary [627,3649 711x23] "Do you work on my make and model?" fs=15px fw=750 lh=22.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [627,3686 711x47] "We work on domestic, Asian and European vehicles. For imported, electr" fs=13px fw=400 lh=23.4px ls=normal tt=none c=rgb(89, 99, 103) ff=-apple-system pad=0px
+details [627,3692 711x62] bd=0px/0px/1px/0px oklch(0.929 0.013 255.508) pad=19px 0px
+summary [627,3711 711x23] "Do repairs include a warranty?" fs=15px fw=750 lh=22.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [627,3747 711x47] "Most repairs include a parts and labour warranty. Ask our team about t" fs=13px fw=400 lh=23.4px ls=normal tt=none c=rgb(89, 99, 103) ff=-apple-system pad=0px
+details [627,3753 711x62] bd=0px/0px/1px/0px oklch(0.929 0.013 255.508) pad=19px 0px
+summary [627,3772 711x23] "Where is Busy Bee located?" fs=15px fw=750 lh=22.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [627,3809 711x23] "Find us at 324 41 Ave NE, Calgary, AB T2E 2N3. We are open Monday to F" fs=13px fw=400 lh=23.4px ls=normal tt=none c=rgb(89, 99, 103) ff=-apple-system pad=0px
+div [102,3935 601x390] bg=rgb(243, 243, 231) rad=8px pad=30px
+p [132,3965 541x25] "FIND BUSY BEE" fs=14px fw=800 lh=25.2px ls=2.24px tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+h2 [132,4004 541x85] "Your neighbourhood" fs=40px fw=850 lh=42.4px ls=-1.6px tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+em [132,4042 258x49] "repair shop." fs=40px fw=850 lh=42.4px ls=-1.6px tt=uppercase c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [132,4109 541x50] "324 41 Ave NE Calgary, AB T2E 2N3" fs=14px fw=400 lh=25.2px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+p [132,4171 541x25] "Monday–Friday · 9 AM–6 PM" fs=14px fw=400 lh=25.2px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system pad=0px
+a [132,4221 147x48] "Get directions ↗" fs=13px fw=800 lh=19.5px ls=normal tt=none c=rgb(25, 33, 36) ff=-apple-system bg=rgb(255, 230, 0) rad=6px pad=14px 22px
+a [291,4220 157x48] "WhatsApp us" fs=13px fw=750 lh=16.9px ls=normal tt=none c=rgb(255, 255, 255) ff=-apple-system bg=rgb(18, 140, 80) bd=1px/1px/1px/1px rgb(18, 140, 80) rad=30px pad=12px 19px
+svg [311,4233 22x22] pad=0px
+section [0,4385 1440x750] bg=rgb(255, 255, 255) pad=65px 64px 112px
+span [592,4450 256x50] "Service you can trust" fs=11px fw=600 lh=16.5px ls=0.88px tt=uppercase c=rgb(85, 85, 85) ff=Manrope bg=rgb(255, 255, 255) bd=1px/1px/1px/1px rgb(232, 234, 237) rad=3.35544e+07px pad=10px 32px
+svg [625,4461 28x28] pad=0px
+h2 [384,4512 672x50] "What our customers say" fs=48px fw=800 lh=50.4px ls=normal tt=uppercase c=rgb(25, 33, 36) ff=Manrope pad=0px
+p [432,4578 576x24] "4.8 stars on Google from Calgary drivers." fs=16px fw=400 lh=24px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919253 / 0.6) ff=Manrope pad=0px
+figure [64,4658 319x285] bg=rgb(255, 255, 255) bd=3px/1px/1px/1px rgb(66, 133, 244) rad=16px sh=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px pad=24px
+span [89,4685 114x29] "★★★★★" fs=19px fw=400 lh=28.5px ls=3px tt=none c=rgb(251, 188, 5) ff=-apple-system pad=0px
+svg [330,4685 28x28] pad=0px
+blockquote [89,4738 269x48] "“ Fair pricing, honest work, and zero feeling of being taken advantage" fs=14px fw=400 lh=24px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919254 / 0.65) ff=Manrope pad=0px
+div [89,4884 32x32] "AR" fs=10px fw=700 lh=15px ls=normal tt=none c=rgb(25, 103, 210) ff=Manrope bg=rgb(232, 240, 254) rad=3.35544e+07px pad=0px
+p [133,4882 77x20] "Allyson R." fs=14px fw=600 lh=20px ls=normal tt=none c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+p [133,4902 77x16] "General repair" fs=12px fw=400 lh=16px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919253 / 0.45) ff=Manrope pad=0px
+figure [395,4658 319x285] bg=rgb(255, 255, 255) bd=3px/1px/1px/1px rgb(234, 67, 53) rad=16px sh=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px pad=24px
+span [420,4685 114x29] "★★★★★" fs=19px fw=400 lh=28.5px ls=3px tt=none c=rgb(251, 188, 5) ff=-apple-system pad=0px
+svg [661,4685 28x28] pad=0px
+blockquote [420,4738 269x96] "“ The techs listened, ran a quick diagnostic, and pinpointed a worn li" fs=14px fw=400 lh=24px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919254 / 0.65) ff=Manrope pad=0px
+div [420,4884 32x32] "RS" fs=10px fw=700 lh=15px ls=normal tt=none c=rgb(197, 34, 31) ff=Manrope bg=rgb(252, 232, 230) rad=3.35544e+07px pad=0px
+p [464,4882 123x20] "Rai S." fs=14px fw=600 lh=20px ls=normal tt=none c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+p [464,4902 123x16] "Computer diagnostics" fs=12px fw=400 lh=16px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919253 / 0.45) ff=Manrope pad=0px
+figure [726,4658 319x285] bg=rgb(255, 255, 255) bd=3px/1px/1px/1px rgb(251, 188, 5) rad=16px sh=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px pad=24px
+span [751,4685 114x29] "★★★★★" fs=19px fw=400 lh=28.5px ls=3px tt=none c=rgb(251, 188, 5) ff=-apple-system pad=0px
+svg [992,4685 28x28] pad=0px
+blockquote [751,4738 269x48] "“ They did an excellent job with my oil change: fast, professional, an" fs=14px fw=400 lh=24px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919254 / 0.65) ff=Manrope pad=0px
+div [751,4884 32x32] "AK" fs=10px fw=700 lh=15px ls=normal tt=none c=rgb(25, 103, 210) ff=Manrope bg=rgb(232, 240, 254) rad=3.35544e+07px pad=0px
+p [795,4882 78x20] "Armanjot K." fs=14px fw=600 lh=20px ls=normal tt=none c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+p [795,4902 78x16] "Oil change" fs=12px fw=400 lh=16px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919253 / 0.45) ff=Manrope pad=0px
+figure [1057,4658 319x285] bg=rgb(255, 255, 255) bd=3px/1px/1px/1px rgb(52, 168, 83) rad=16px sh=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px pad=24px
+span [1082,4685 114x29] "★★★★★" fs=19px fw=400 lh=28.5px ls=3px tt=none c=rgb(251, 188, 5) ff=-apple-system pad=0px
+svg [1323,4685 28x28] pad=0px
+blockquote [1082,4738 269x72] "“ Despite not having an appointment, they helped me last minute with m" fs=14px fw=400 lh=24px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919254 / 0.65) ff=Manrope pad=0px
+div [1082,4884 32x32] "RS" fs=10px fw=700 lh=15px ls=normal tt=none c=rgb(197, 34, 31) ff=Manrope bg=rgb(252, 232, 230) rad=3.35544e+07px pad=0px
+p [1126,4882 83x20] "Ruby S." fs=14px fw=600 lh=20px ls=normal tt=none c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+p [1126,4902 83x16] "Battery service" fs=12px fw=400 lh=16px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919253 / 0.45) ff=Manrope pad=0px
+figure [1388,4658 319x285] bg=rgb(255, 255, 255) bd=3px/1px/1px/1px rgb(66, 133, 244) rad=16px sh=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px pad=24px
+span [1413,4685 114x29] "★★★★★" fs=19px fw=400 lh=28.5px ls=3px tt=none c=rgb(251, 188, 5) ff=-apple-system pad=0px
+svg [1654,4685 28x28] pad=0px
+blockquote [1413,4738 269x72] "“ They quickly diagnosed the issue and explained everything clearly, a" fs=14px fw=400 lh=24px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919254 / 0.65) ff=Manrope pad=0px
+div [1413,4884 32x32] "KS" fs=10px fw=700 lh=15px ls=normal tt=none c=rgb(25, 103, 210) ff=Manrope bg=rgb(232, 240, 254) rad=3.35544e+07px pad=0px
+p [1457,4882 123x20] "Kultar S." fs=14px fw=600 lh=20px ls=normal tt=none c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+p [1457,4902 123x16] "Computer diagnostics" fs=12px fw=400 lh=16px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919253 / 0.45) ff=Manrope pad=0px
+figure [1719,4658 319x285] bg=rgb(255, 255, 255) bd=3px/1px/1px/1px rgb(234, 67, 53) rad=16px sh=rgba(32, 33, 36, 0.024) 0px 8px 24px 0px pad=24px
+svg [1744,4685 16x16] pad=0px
+svg [1762,4685 16x16] pad=0px
+svg [1780,4685 16x16] pad=0px
+svg [1798,4685 16x16] pad=0px
+svg [1816,4685 16x16] pad=0px
+p [1744,4721 269x48] "4.8" fs=48px fw=600 lh=48px ls=normal tt=none c=rgb(25, 33, 36) ff=Manrope pad=0px
+p [1744,4781 269x48] "Rated by local drivers on Google for honest pricing and clear answers." fs=14px fw=400 lh=24px ls=normal tt=none c=oklab(0.24 -0.00771345 -0.00919253 / 0.7) ff=Manrope pad=0px
+button [1744,4878 145x40] "Book your visit" fs=12px fw=600 lh=16px ls=normal tt=none c=oklch(1 0 0) ff=Manrope bg=oklch(0.24 0.012 230) rad=3.35544e+07px pad=6px 6px 6px 16px
+span [1855,4884 28x28] bg=oklch(1 0 0) rad=3.35544e+07px pad=0px
+svg [1862,4891 14x14] pad=0px
+button [64,4995 28x28] bg=oklab(0.93 -0.00321394 -0.00383022 / 0.45) rad=3.35544e+07px pad=0px
+svg [71,5002 14x14] pad=0px
+button [100,4995 28x28] bg=oklab(0.93 -0.00321394 -0.00383022 / 0.45) rad=3.35544e+07px pad=0px
+svg [107,5002 14x14] pad=0px
+a [144,5002 172x15] "Read all Google reviews" fs=10px fw=800 lh=15px ls=1.6px tt=uppercase c=oklch(0.24 0.012 230) ff=Manrope pad=0px
+section [0,5135 1440x175] bg=oklch(1 0 0) bd=1px/0px/1px/0px oklab(0.24 -0.00771345 -0.00919253 / 0.1) pad=40px 0px
+p [0,5176 1440x17] "Quality parts from proven suppliers" fs=11px fw=700 lh=16.5px ls=3.52px tt=uppercase c=oklab(0.24 -0.00771345 -0.00919253 / 0.45) ff=Manrope pad=0px
+img [0,5223 162x40] img=/assets/napa-auto-parts-Bx_qg8GY.png fit=fill pos=50% 50% pad=0px
+img [242,5217 143x52] img=/assets/lordco-auto-parts-Uk4USUl3.png fit=fill pos=50% 50% pad=0px
+img [465,5223 150x40] img=/assets/partsource-DV9h667p.png fit=fill pos=50% 50% pad=0px
+img [695,5223 165x40] img=/assets/auto-value-DQAzBDM4.png fit=fill pos=50% 50% pad=0px
+img [940,5223 162x40] img=/assets/napa-auto-parts-Bx_qg8GY.png fit=fill pos=50% 50% pad=0px
+img [1183,5217 143x52] img=/assets/lordco-auto-parts-Uk4USUl3.png fit=fill pos=50% 50% pad=0px
+img [1406,5223 150x40] img=/assets/partsource-DV9h667p.png fit=fill pos=50% 50% pad=0px
+img [1635,5223 165x40] img=/assets/auto-value-DQAzBDM4.png fit=fill pos=50% 50% pad=0px
+footer [0,5310 1440x412] bg=rgb(23, 32, 36) pad=50px 102px
+img [102,5370 170x71] bg=rgb(255, 255, 255) img=/__l5e/assets-v1/b837495d-35c7-4bf0-860e-bf2601f47cc0/busy-bee-original-logo.png fit=fill pos=50% 50% rad=5px pad=8px
+p [102,5451 379x43] "Auto repair with clear answers. 324 41 Ave NE, Calgary." fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [102,5504 379x22] "Instagram ↗" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+h3 [531,5360 379x23] "Services" fs=15px fw=800 lh=22.5px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+a [531,5397 379x22] "Computer diagnostics & electrical" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [531,5429 379x22] "Engine maintenance & repair" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [531,5460 379x22] "Brake repair & replacement" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [531,5492 379x22] "Mobil 1 synthetic oil change" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [531,5523 379x22] "Suspension & steering repair" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [531,5555 379x22] "Wheels, tires & balancing" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [531,5587 379x22] "Battery & alternator service" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [531,5618 379x22] "Cooling system & radiator" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [531,5650 379x22] "Transmission repair" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+h3 [959,5360 379x23] "Visit & contact" fs=15px fw=800 lh=22.5px ls=normal tt=uppercase c=rgb(255, 255, 255) ff=-apple-system pad=0px
+a [959,5397 379x22] "(403) 930-5888" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [959,5429 379x22] "busybeeautocalgary@gmail.com" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+p [959,5460 379x22] "Monday–Friday · 9 AM–6 PM" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px
+a [959,5492 379x22] "Request a service ↗" fs=12px fw=400 lh=21.6px ls=normal tt=none c=rgb(217, 223, 225) ff=-apple-system pad=0px

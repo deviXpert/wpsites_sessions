@@ -28,11 +28,13 @@ MAP = {
  'gmark.png': ('google-g-mark', 112, 'Google'), 'gmark_hero.png': ('google-g-mark-hero', 112, 'Google'),
  'audi.png': ('audi-logo', 320, 'Audi'), 'bmw.png': ('bmw-logo', 320, 'BMW'), 'mercedes-benz.png': ('mercedes-benz-logo', 480, 'Mercedes-Benz'),
  'porsche.png': ('porsche-logo', 320, 'Porsche'), 'toyota.png': ('toyota-logo', 320, 'Toyota'), 'ford.png': ('ford-logo', 320, 'Ford'),
+ 'workshop-services-wide.png': ('busy-bee-service-bays-calgary', 1672, 'Busy Bee service bays with vehicles on lifts'),
  'gmc.png': ('gmc-logo', 480, 'GMC'), 'hyundai.png': ('hyundai-logo', 320, 'Hyundai'), 'dodge.png': ('dodge-logo', 320, 'Dodge'),
 }
 if __name__ == '__main__':
     src, dst = sys.argv[1], sys.argv[2]
     for f, (name, mw, alt) in MAP.items():
+        if not os.path.exists(os.path.join(src, f)): continue
         im = Image.open(os.path.join(src, f))
         if im.width > mw:
             im = im.resize((mw, round(im.height * mw / im.width)), Image.LANCZOS)
