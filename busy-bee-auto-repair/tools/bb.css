@@ -758,3 +758,4 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 @media (max-width:767px){#ast-scroll-top{bottom:92px!important;right:16px!important}}
 /* home hero (phones): photo, overlays and service points always reach past the "Family-owned" chip – no black gap on short screens */
 @media (max-width:767px){.bb-mhero .bb-slide,.bb-mhero .bb-mov,.bb-mhero .bb-pts-layer,.bb-mhero .bb-pts{min-height:max(100svh,940px)!important;height:max(100svh,940px)!important}}
+@media (max-width:1023px){.bb-sm-hero .bb-aside{margin-bottom:24px!important}.bb-sm-hero .bb-sm-trust{margin-top:0!important}}
