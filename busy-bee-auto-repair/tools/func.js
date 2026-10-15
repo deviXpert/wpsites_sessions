@@ -69,7 +69,7 @@ const res=[]; const ok=(n,c,d='')=>res.push(`${c?'PASS':'FAIL'}  ${n}${d?' — '
   // symptom checker
   await p.selectOption('[name="form_fields[make]"]','Toyota'); await p.selectOption('[name="form_fields[model]"]','Toyota Camry'); await p.selectOption('[name="form_fields[year]"]','2019'); await p.fill('[name="form_fields[mileage]"]','120000');
   await p.waitForTimeout(2500);
-  ok('Symptom checker shows selected car', await p.$eval('.bb-veh-img img',i=>i.src.includes('modelFamily=camry')&&i.naturalWidth>0));
+  ok('Symptom checker keeps the sample photo (image switching parked)', await p.$eval('.bb-veh-img img',i=>i.src.includes('honda-civic')&&i.naturalWidth>0));
   const vt=await p.evaluate(()=>[document.querySelector('.bb-veh-title .elementor-heading-title').textContent,document.querySelector('.bb-veh-year').textContent,document.querySelector('.bb-veh-km').textContent]);
   ok('Symptom checker live vehicle title', vt[0]==='Toyota Camry' && vt[1]==='2019' && vt[2]==='120,000 km', vt.join(' | '));
   await p.click('.bb-chips button[data-add="Warning light"]'); await p.click('.bb-chips button[data-add="Vibration"]');

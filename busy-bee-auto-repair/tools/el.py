@@ -440,6 +440,9 @@ def ICON(ic, /, size=16, color=None, bg=None, box=None, radius=None, href=None, 
             s['primary_color'] = color
     if href:
         s['link'] = link(href)
+        # icon-only links need an accessible name (screen readers, Lighthouse "links have discernible name")
+        nm = kw.get('name') or ic.replace('-', ' ').title()
+        s['link']['custom_attributes'] = 'aria-label|' + nm
     s.setdefault('align', kw.pop('align', 'left'))
     return W('icon', kw.pop('name', 'Icon – ' + ic), **s, **kw)
 

@@ -34,5 +34,26 @@
  "tpl_request": 456,
  "tpl_faq": 458,
  "tpl_suppliers": 460,
- "tpl_services_grid": 462
+ "tpl_services_grid": 462,
+ "meta_snippets": {
+  "home": 490,
+  "services": 491,
+  "about": 492,
+  "contact": 493,
+  "engine": 494,
+  "brakes": 495,
+  "oil": 496,
+  "tires": 497,
+  "alignment": 498,
+  "battery": 499,
+  "electrical": 500,
+  "suspension": 501,
+  "transmission": 502,
+  "cooling": 503,
+  "maintenance": 504,
+  "blog": 505,
+  "post-how-often-oil-change-calgary": 506,
+  "post-winter-tires-calgary-when-to-switch": 507,
+  "post-check-engine-light-calgary": 508
+ }
 }

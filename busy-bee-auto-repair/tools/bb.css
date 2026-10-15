@@ -707,3 +707,19 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 /* form guard message (bb.js formGuard) */
 .bb-guard-msg{flex-basis:100%;margin-top:12px;padding:12px 14px;border-radius:8px;background:#fde8e6;color:#8a1c12;font:600 13px/1.5 var(--bb-sys)}
 @media (max-width:767px){#ast-scroll-top{bottom:84px!important;right:14px!important}}
+/* readability: functional labels never below ~10.5px on any screen (illustration mock-ups excluded) */
+.bb-chips button{font-size:11px!important;line-height:15px!important;padding:7px 10px!important}
+.bb-vbtn .elementor-button,.bb-vbtn a{font-size:10.5px!important}
+.bb-dlink .elementor-heading-title,.bb-dlink span{font-size:10.5px!important}
+.bb-studio>.e-con:first-child .elementor-heading-title,.bb-form-panel>.elementor-widget-heading:first-child .elementor-heading-title{font-size:10.5px!important}
+.bb-veh-cap .elementor-heading-title,.bb-veh-note .elementor-heading-title{font-size:10px!important;line-height:14px!important}
+.bb-offer .elementor-widget-heading:first-child .elementor-heading-title,.bb-offer small.elementor-heading-title{font-size:10.5px!important}
+.bb-hero .bb-vname,.bb-hero [class*="scan"] .elementor-heading-title{font-size:10px!important}
+/* tap comfort on phones (quality pass) */
+@media (max-width:767px){
+  .bb-credit a{display:inline-block;padding:12px 4px}
+  .bb-post-cat a{display:inline-block;padding:10px 0}
+  .bb-faq-help .elementor-heading-title a{display:inline-block;padding:8px 0}
+  .bb-badge .elementor-heading-title,.bb-mhero .bb-badge .elementor-heading-title{font-size:10px!important}
+}
+@media (max-width:389px){.bb-mhero .bb-badge .elementor-heading-title{font-size:9px!important}}

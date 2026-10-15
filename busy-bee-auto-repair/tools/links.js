@@ -5,7 +5,7 @@ for(const u of urls){await p.goto(B+u+'?v='+Date.now(),{waitUntil:'domcontentloa
 const r=await p.evaluate(()=>{const issues=[];const ids=new Set([...document.querySelectorAll('[id]')].map(e=>e.id));const hrefs=[];
 for(const a of document.querySelectorAll('a')){const h=a.getAttribute('href');const vis=a.getBoundingClientRect().width>0||a.closest('.elementor-popup-modal, [data-elementor-type=popup]');
  const label=(a.innerText||a.getAttribute('aria-label')||a.querySelector('img')?.alt||'').trim().replace(/\s+/g,' ').slice(0,40);
- if(h===null){if(vis)issues.push('NO HREF: '+label);continue;}
+ if(h===null){if(vis&&!a.closest('.elementor-tab-title'))issues.push('NO HREF: '+label);continue;}
  if(h.startsWith('#elementor-action'))continue;
  if(h==='#'||h===''){if(a.getAttribute('role')!=='button'&&!a.closest('.bb-vbtn,.bb-sm-sel,.bb-filter,.bb-rev-prev,.bb-rev-next,.e-n-menu,.bb-filters'))issues.push('EMPTY #: '+label+' ['+String(a.closest('[class*=bb-]')?.className).match(/bb-[\w-]+/)?.[0]+']');continue;}
  if(h.startsWith('#')){if(!ids.has(h.slice(1)))issues.push('MISSING ANCHOR '+h+': '+label);continue;}

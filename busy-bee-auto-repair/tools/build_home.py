@@ -111,7 +111,7 @@ def diag_card(slug, ic, title, detail):
 def diag_block(mobile=False):
     label = C('Scan label', [
         C('Dot', [], w=6, minh=6, bg=BEE, radius=PILL),
-        H('Multi-point diagnostic scan · <span class="bb-vname">SUV</span>', 'p', PAPER, M(9, 800, 13.5, tt='uppercase'), name='Label',
+        H('Multi-point diagnostic scan · <span class="bb-vname">SUV</span>', 'p', PAPER, M(10, 800, 14, tt='uppercase'), name='Label',
           w='auto'),
         C('Line', [], minh=1, bg=wht(0.25), grow=True, w=cu('auto')),
     ], d='row', ai='center', gap=12, mar=(0, 0, 12, 0))
