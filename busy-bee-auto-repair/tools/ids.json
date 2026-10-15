@@ -26,5 +26,13 @@
  "tpl_single_post": 393,
  "tpl_archive": 394,
  "snippet_schema": 403,
- "tpl_google_card": 407
+ "tpl_google_card": 407,
+ "tpl_booking": 448,
+ "tpl_reviews": 450,
+ "tpl_reasons": 452,
+ "tpl_location": 454,
+ "tpl_request": 456,
+ "tpl_faq": 458,
+ "tpl_suppliers": 460,
+ "tpl_services_grid": 462
 }

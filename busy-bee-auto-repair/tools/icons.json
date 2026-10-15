@@ -162,5 +162,13 @@
  "facebook": {
   "id": 434,
   "url": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/uploads/2026/10/lucide-facebook.svg"
+ },
+ "minus": {
+  "id": 464,
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/uploads/2026/10/lucide-minus.svg"
+ },
+ "plus": {
+  "id": 465,
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/uploads/2026/10/lucide-plus.svg"
  }
 }

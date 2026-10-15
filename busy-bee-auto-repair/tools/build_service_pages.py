@@ -4,6 +4,7 @@ location → reviews.  Every page links to 2–3 related services, the services 
 Usage: python3 build_service_pages.py [key …]   (no args = all pages)"""
 import json, sys
 import el, wp
+from build_globals import tpl
 import build_home as home
 import build_services as svc
 from common import *
@@ -134,9 +135,9 @@ def build(key):
                     aside=aside(c['offer']), select=False)
     body = [hero, C('Spacer', [], minh=24)]
     body += [kinds[s[0]](s) for s in c['sections']]
-    body += [svc.reasons(), home.book(),
+    body += [tpl('reasons'), tpl('booking'),
              svc.faq(c['faqs'], eyebrow=m['label'].upper().replace('&', '&amp;') + ' FAQS', heading='Questions?<br><em>Clear answers.</em>'),
-             related(c['related']), svc.location(), home.reviews()]
+             related(c['related']), tpl('location'), tpl('reviews')]
     return el.book_popup(body, json.load(open('ids.json'))['popup_book'])
 
 

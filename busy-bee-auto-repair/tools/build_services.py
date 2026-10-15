@@ -2,6 +2,7 @@
 the global inner header (mega menu) floats over the hero; the global inner footer closes the page.  Reviews + suppliers reuse the home-page builders."""
 import json
 import el
+from build_globals import tpl
 import build_home as home
 from common import *
 from el import uid
@@ -120,13 +121,16 @@ def card(value, ic, blurb, photo, href='#service-book'):
 
 
 def cta_card():
-    return C('Not sure card', [
+    c = C('Not sure card', [
         ICON('scan-search', 28, color=DK2, name='Icon', w='auto'),
         H('Not sure what’s wrong?', 'h3', DK2, S(22, 800, 1.1, tt='uppercase'), mar=(12, 0, 8, 0), name='Title'),
         H('Describe the symptom and we’ll find the real cause before any repair.', 'p', DK2, S(13, 400, 20), name='Text'),
-        C('Explore', [H('Request a diagnostic', 'span', DK2, S(11, 800, 16.5), name='Label'),
+        C('Explore', [H('Book a diagnostic', 'span', DK2, S(11, 800, 16.5), name='Label'),
                       ICON('arrow-up-right', 16, color=DK2, name='Arrow', w='auto')], d='row', ai='center', gap=12, mar=(15, 0, 0, 0)),
-    ], jc='flex-end', minh=280, pad=23, bg=YEL, radius=8, href='#service-book', cls='bb-sm-card-cta')
+    ], jc='flex-end', minh=280, pad=23, bg=YEL, radius=8, href='#book', cls='bb-sm-card-cta')
+    # open the booking popup (works on every page that embeds the global services grid)
+    c['settings']['__dynamic__'] = home.popup_link(json.load(open('ids.json'))['popup_book'])
+    return c
 
 
 def page_cards():
@@ -236,20 +240,33 @@ def steps():
 
 # ---------------------------------------------------------------- FAQ + location
 def faq(faqs=FAQS, eyebrow='BEFORE YOUR VISIT', heading='Questions?<br><em>Clear answers.</em>', id_='service-faq'):
+    """FAQ block used on every page: intro + "talk to a technician" card on the left (sticky on desktop), native Accordion on the
+    right (one answer open at a time, FAQPage schema)."""
+    help_card = C('Help card', [
+        C('Top', [ICON('phone', 20, color=DK2, bg=YEL, box=44, radius=22, name='Icon', w='auto'),
+                  C('Text', [H('TALK TO A TECHNICIAN', 'span', '#C6CDD0', S(10, 800, 15, 1.6), name='Label'),
+                             H(PHONE, 'span', PAPER, S(22, 850, 28), href=TEL, name='Phone')], w='auto')],
+          d='row', ai='center', gap=14),
+        C('Actions', [yellow_btn('Book appointment', '#book', name='Book'), wa_btn()], d='row', wrap='wrap', gap=10, w='auto'),
+    ], d='row', d_tablet='column', jc='space-between', ai='center', ai_tablet='flex-start', gap=20, pad=(20, 22), bg=DK2, radius=16,
+        mar=(16, 0, 0, 0), cls='bb-faq-help')
     left = C('Intro', [
-        H(eyebrow, 'p', DK2, S(10, 800, 15, 1.6), name='Eyebrow'),
-        H(heading, 'h2', DK2, S(40, 850, 1.06, -1.6, 'uppercase'), mar=(14, 0, 20, 0), name='Title'),
-        ILIST([('phone', PHONE, TEL)], t=S(14, 750, 21), color=DK2, ic_color=DK2, ic_size=18, gap_=10, name='Phone'),
-    ])
-    toggle = W('accordion', 'FAQ', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs],
-               selected_icon=icon('caret-right', 'fas fa-caret-right'), selected_active_icon=icon('caret-down', 'fas fa-caret-down'),
-               icon_align='left', icon_space=px(8), title_html_tag='h3', faq_schema='yes', border_width=px(0), space_between=px(0),
-               title_color=DK2, tab_active_color=DK2, icon_color=DK2, icon_active_color=DK2, title_padding=dims(19, 0),
-               content_padding=dims(0, 0, 19, 0), content_color='#596367',
-               **{('title_' + k): v for k, v in S(15, 750, 22.5).items()}, **{('content_' + k): v for k, v in S(13, 400, 23.4).items()},
-               cls='bb-sm-faq')
-    return C('FAQ', [left, toggle], grid='0.85fr 1.3fr', grid_tablet='1fr', grid_mobile='1fr', rows='auto', rows_tablet='auto',
-             rows_mobile='auto', gap=60, gap_tablet=24, tag='section', id_=id_, pad=(60, 32), pad_mobile=(40, 22),
+        C('Eyebrow', [C('Dot', [], w=8, minh=8, bg=YEL, radius=8), H(eyebrow, 'p', DK2, S(11, 800, 16.5, 1.76), name='Eyebrow', cls='bb-nowrap')],
+          d='row', ai='center', gap=10, w='auto'),
+        H(heading, 'h2', DK2, S(40, 850, 1.06, -1.4, 'uppercase', size_m=32), mar=(14, 0, 14, 0), name='Title'),
+        T('<p>Straight answers to the questions Calgary drivers ask us most. Still unsure? Talk to a technician – we explain '
+          'everything in plain English before any work.</p>', '#596367', S(15, 400, 25), name='Intro'),
+        H('Mon–Fri · 9 AM–6 PM · Walk-ins welcome', 'p', DK2, S(13, 700, 20), mar=(16, 0, 0, 0), name='Hours'),
+    ], cls='bb-faq-intro')
+    acc = W('accordion', 'FAQ', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs],
+            selected_icon=icon('plus'), selected_active_icon=icon('minus'), icon_align='right', title_html_tag='h3', faq_schema='yes',
+            border_width=px(0), title_color=DK2, tab_active_color=DK2, icon_color=DK2, icon_active_color=DK2,
+            title_padding=dims(20, 22), content_padding=dims(0, 22, 22, 22), content_color='#4B5558',
+            **{('title_' + k): v for k, v in S(16, 800, 23, size_m=15, lh_m=22).items()},
+            **{('content_' + k): v for k, v in S(14.5, 400, 25).items()}, cls='bb-sm-faq bb-faq-cards')
+    right = C('Questions', [acc, help_card])
+    return C('FAQ', [left, right], grid='0.8fr 1.2fr', grid_tablet='1fr', grid_mobile='1fr', rows='auto', rows_tablet='auto',
+             rows_mobile='auto', gap=56, gap_tablet=24, ai='start', tag='section', id_=id_, pad=(56, 32), pad_mobile=(40, 22),
              w=cu('min(1300px, 100%)'), mar=(0, 'auto'), cls='bb-sys')
 
 
@@ -272,8 +289,8 @@ def location():
 
 def build():
     el.seed('services')
-    return el.book_popup([hero(), services_grid(), brands(), reasons(), book(), steps(), faq(), location(), home.reviews(),
-                          home.suppliers()], json.load(open('ids.json'))['popup_book'])
+    return el.book_popup([hero(), tpl('services_grid'), brands(), tpl('reasons'), tpl('request'), steps(), tpl('faq'),
+                          tpl('location'), tpl('reviews'), tpl('suppliers')], json.load(open('ids.json'))['popup_book'])
 
 
 PAGE_SETTINGS = {'hide_title': 'yes', 'template': 'elementor_header_footer', 'background_background': 'classic',

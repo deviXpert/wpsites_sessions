@@ -4,6 +4,7 @@
 Also seeds three starter posts (each links to its matching service page, as the SEO doc asks).  Usage: python3 build_blog.py"""
 import json
 import el, wp
+from build_globals import tpl
 import build_services as svc
 import build_service_pages as sp
 from build_inner import ensure_template, set_conditions
@@ -152,7 +153,7 @@ def single():
                                     cards_meta_data=['date'], cards_read_more_text='Read more »', cards_show_badge='yes',
                                     cards_badge_taxonomy='category', cards_show_avatar='', cards_thumbnail_size_size='medium_large',
                                     cls='bb-post-cards')])
-    return el.book_popup([hero, content, more, svc.book(heading='Need your car checked <em>today?</em>')],
+    return el.book_popup([hero, content, more, tpl('request')],
                          json.load(open('ids.json'))['popup_book'])
 
 
@@ -173,7 +174,7 @@ def archive():
                                 pagination_type='numbers_and_prev_next',
                                 nothing_found_message='New car care articles are on the way. Call (403) 930-5888 with any question.',
                                 cls='bb-post-cards')], pad=(56, 32))
-    return el.book_popup([hero, posts, svc.book()], json.load(open('ids.json'))['popup_book'])
+    return el.book_popup([hero, posts, tpl('request')], json.load(open('ids.json'))['popup_book'])
 
 
 if __name__ == '__main__':

@@ -2,6 +2,7 @@
 Usage: python3 build_pages.py [about|contact]"""
 import json, sys
 import el, wp
+from build_globals import tpl
 import build_home as home
 import build_services as svc
 import build_service_pages as sp
@@ -42,9 +43,9 @@ def about():
     calgary = sp.sec_callout('Built for Calgary driving',
                              'Cold starts, chinooks, potholes, and road salt are hard on a car. We know what fails here and why, and '
                              'we’ll tell you what can wait.')
-    cards = svc.services_grid()
-    body = [hero, C('Spacer', [], minh=24), different, story, calgary, home.reviews(), cards, home.book(),
-            svc.location()]
+    cards = tpl('services_grid')
+    body = [hero, C('Spacer', [], minh=24), different, story, calgary, tpl('reviews'), cards, tpl('booking'),
+            tpl('location')]
     return el.book_popup(body, json.load(open('ids.json'))['popup_book'])
 
 
@@ -96,7 +97,7 @@ def contact():
              height=px(560), height_mobile=px(320), cls='bb-sm-map')
     info = sp.wrap('Visit', [C('Grid', [visit, gmap], grid='1fr 1fr', grid_tablet='1fr', grid_mobile='1fr', rows='auto',
                                  rows_tablet='auto', rows_mobile='auto', gap=24)], id_='visit')
-    body = [hero, info, booking_form(), svc.faq(svc.FAQS)]
+    body = [hero, info, booking_form(), tpl('faq')]
     return el.book_popup(body, json.load(open('ids.json'))['popup_book'])
 
 

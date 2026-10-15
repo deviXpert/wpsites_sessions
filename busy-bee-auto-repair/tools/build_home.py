@@ -3,6 +3,7 @@ Run: python3 build_home.py            (writes the page + regenerates its CSS)
 Every section is native Elementor containers/widgets; behaviour lives in bb.js / bb.css (Custom Code)."""
 import json
 import el
+from build_globals import tpl
 import cars
 from common import *
 from el import uid
@@ -850,11 +851,11 @@ def faq():
             border=(1, ink(0.2)), sh=SH_BEE, mar=(32, 0, 0, 0), name='Call'),
     ])
     toggle = W('accordion', 'FAQ', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in FAQS],
-               selected_icon=icon('chevron-down'), selected_active_icon=icon('chevron-up'), icon_align='right', title_html_tag='h3',
+               selected_icon=icon('plus'), selected_active_icon=icon('minus'), icon_align='right', title_html_tag='h3',
                faq_schema='yes', border_width=px(0), space_between=px(0), title_color=INK, tab_active_color=INK, icon_color=INK,
                icon_active_color=INK, title_padding=dims(20, 0), content_padding=dims(0, 40, 20, 0), content_color=ink(0.65),
                **{('title_' + k): v for k, v in M(18, 800, 28, tt='uppercase', size_m=16, lh_m=24).items()},
-               **{('content_' + k): v for k, v in M(14, 400, 28).items()}, cls='bb-faq')
+               **{('content_' + k): v for k, v in M(14, 400, 28).items()}, cls='bb-faq bb-faq-cards')
     return C('FAQ', [C('Grid', [left, C('Questions', [toggle], border=(dims(1, 0, 0, 0), ink(0.15)))], grid='minmax(min-content, 0.8fr) 1.2fr',
                        grid_mobile='1fr', gap=48, gap_mobile=24, rows='auto', rows_mobile='auto', w=cu('min(1152px, 100%)'), mar=(0, 'auto'))],
              tag='section', id_='faq', pad=(112, 32), pad_mobile=(40, 20), bg=PAPER, cls='bb-faq-section')
@@ -927,8 +928,8 @@ def book():
 # ================================================================ PAGE
 def build():
     el.seed('home')
-    return el.book_popup([hero_mobile(), hero_desktop(), suppliers(), services(), ribbon(), winter(), brands(), checker(), why(), reviews(), process(), pricing(),
-            faq(), book()], json.load(open('ids.json'))['popup_book'])
+    return el.book_popup([hero_mobile(), hero_desktop(), tpl('suppliers'), services(), ribbon(), winter(), brands(), checker(), why(), tpl('reviews'), process(), pricing(),
+            faq(), tpl('booking')], json.load(open('ids.json'))['popup_book'])
 
 
 PAGE_SETTINGS = {'hide_title': 'yes', 'template': 'elementor_header_footer'}

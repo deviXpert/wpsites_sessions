@@ -92,6 +92,8 @@ def build():
     legal = C('Legal', [
         H('© 2026 Busy Bee Auto Repair', 'span', wht(0.35), M(10, 400, 15, 1.6, 'uppercase'), name='Copyright'),
         H('Calgary, Alberta', 'span', wht(0.35), M(10, 400, 15, 1.6, 'uppercase'), name='City'),
+        H('Design &amp; developed by <a href="https://devixpert.com/" target="_blank" rel="noopener">DeviXpert</a>', 'span', wht(0.35),
+          M(10, 400, 15, 1.6, 'uppercase'), name='Credit', cls='bb-credit'),
     ], d='row', d_mobile='column', jc='space-between', ai='center', ai_mobile='flex-start', gap=12, pad=(28, 0, 0, 0))
 
     import build_inner
