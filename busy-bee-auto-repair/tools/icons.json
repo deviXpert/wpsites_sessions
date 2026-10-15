@@ -150,5 +150,13 @@
  "settings": {
   "id": 353,
   "url": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/uploads/2026/10/lucide-settings.svg"
+ },
+ "circle-alert": {
+  "id": 360,
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/uploads/2026/10/lucide-circle-alert.svg"
+ },
+ "chevron-up": {
+  "id": 421,
+  "url": "https://papayawhip-ostrich-717285.hostingersite.com/wp-content/uploads/2026/10/lucide-chevron-up.svg"
  }
 }

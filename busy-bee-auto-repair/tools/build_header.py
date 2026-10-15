@@ -21,14 +21,9 @@ def topbar():
 def nav():
     logo = IMG('busy-bee-auto-repair-logo', w=146, w_tablet=None, href='/', alt='Busy Bee Auto Repair', name='Logo', cls='bb-logo',
                width_tablet=px(112))
-    menu = W('nav-menu', 'Main menu', menu='bb-desktop', layout='horizontal', pointer='none', dropdown='none', align_items='center',
-             **M(14, 800, 21, tt='uppercase', **{}), cls='bb-nav-links', hide='tm',
-             color_menu_item=INK, color_menu_item_hover=INK, padding_horizontal_menu_item=px(0), padding_vertical_menu_item=px(0),
-             menu_space_between=px(0))
-    # nav-menu typography keys use the menu_ prefix
-    for k in list(menu['settings']):
-        if k.startswith('typography_'):
-            menu['settings']['menu_' + k] = menu['settings'].pop(k)
+    import build_inner
+    menu = build_inner.mega_menu()
+    menu['settings']['_css_classes'] += ' bb-mega-home'
     book = BTN('Book now', BOOK, M(16, 700, 22.857, size_t=14, lh_t=20), color=PAPER, bg=INK, ic='arrow-up-right', ic_gap=8,
                pad=(8, 20), radius=PILL, border=(1, INK), sh=SH_INK, hover_bg='#2A3236', name='Book now', cls='bb-booknow')
     book['settings']['icon_size'] = px(16)
@@ -43,8 +38,9 @@ def mobile_header():
     addr = ILIST([('map-pin', '324 41 Ave NE<br>Calgary', MAPS)], t=M(10, 700, 12.5, tt='uppercase'), color=PAPER, ic_color=PAPER,
                  ic_size=16, gap_=8, name='Address', align='center', grow=True, cls='bb-maddr')
     call = ICON('phone', size=16, color=PAPER, bg=INK, box=40, href=TEL, name='Call', cls='bb-mcall')
-    menu = W('nav-menu', 'Mobile menu', menu='bb-mobile', layout='dropdown', dropdown='mobile', toggle='burger', full_width='',
-             cls='bb-mmenu', toggle_color=INK, toggle_size=px(20), toggle_align='right')
+    import build_inner
+    menu = build_inner.mega_menu()
+    menu['settings']['_css_classes'] += ' bb-mega-home bb-mmenu'
     right = C('Actions', [call, menu], d='row', ai='center', gap=4, w='auto')
     return C('Mobile header', [fav, addr, right], d='row', ai='center', gap=8, minh=80, pad=(0, 16), cls='bb-mhead', hide='dt')
 

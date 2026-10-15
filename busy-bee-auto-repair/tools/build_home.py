@@ -58,6 +58,11 @@ def whatsapp_btn():
 
 
 def google_card():
+    """The Google rating card is a global Elementor template (build_globals.py) – every page embeds it with the Template widget."""
+    return W('template', 'Google rating card (global)', template_id=str(json.load(open('ids.json'))['tpl_google_card']), w='full')
+
+
+def google_card_content():
     top = C('Top', [H('Google reviews', 'div', ink(0.55), M(10, 800, 15, tt='uppercase'), name='Label'),
                     IMG('google-g-mark-hero', w=28, alt='Google', name='Google mark')], d='row', jc='space-between', ai='center', gap=8)
     stars = T('<span class="bb-gstars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></span>', None,
@@ -68,7 +73,8 @@ def google_card():
     bar = C('Rating bar', [C('Fill', [], w=pct(96), minh=6, radius=PILL, cls='bb-gbar')], minh=6, bg=GREY, radius=PILL, mar=(12, 0))
     return C('Google card', [top, score, bar, T('<p>Honest pricing, quality workmanship and transparent communication.</p>', ink(0.65),
                                                 M(12, 400, 19.5), name='Note')],
-             pad=20, bg=PAPER, radius=18, border=(1, ink(0.05)), shadow=SH_LG)
+             pad=20, bg=PAPER, radius=18, border=(1, ink(0.05)), shadow=SH_LG, href=REVIEWS, cls='bb-gcard',
+             attrs={'target': '_blank', 'rel': 'noopener', 'aria-label': 'Busy Bee Auto Repair – 4.8 stars on Google, open our Google Business profile'})
 
 
 def mini_card(name, ic, title, body, yellow):
@@ -669,18 +675,10 @@ def reviews():
         T('<p>4.8 stars on Google from Calgary drivers.</p>', ink(0.6), M(16, 400, 24, size_m=14), align='center', mar=(16, 0, 0, 0),
           name='Intro'),
     ], w=cu('min(672px, 100%)'), mar=(0, 'auto'), cls='bb-reveal')
-    track = C('Review track', [review_card(i, *r) for i, r in enumerate(REVIEWS_DATA[:4])] + [review_card(4, *REVIEWS_DATA[4]),
-                                                                                             summary_card()],
-              d='row', gap=12, pad=(0, 0, 12, 0), mar=(56, 0, 0, 0), mar_mobile=(32, 0, 0, 0), cls='bb-review-track', ai='flex-start')
-    nav = C('Review nav', [
-        ICON('arrow-left', 14, color=INK, bg='rgba(229,232,234,0.45)', box=28, name='Previous', cls='bb-rev-prev', w='auto',
-             href='#reviews'),
-        ICON('arrow-right', 14, color=INK, bg='rgba(229,232,234,0.45)', box=28, name='Next', cls='bb-rev-next', w='auto',
-             href='#reviews'),
-        H('Read all Google reviews', 'span', INK, M(10, 800, 15, 1.6, 'uppercase'), href=REVIEWS, mar=(0, 0, 0, 8),
-          name='Read all reviews', cls='bb-greviews-link'),
-    ], d='row', ai='center', gap=8, mar=(40, 0, 0, 0), mar_mobile=(24, 0, 0, 0))
-    return C('Reviews', [head, track, nav], tag='section', id_='reviews', pad=(65, 64, 112, 64), pad_tablet=(65, 40, 112, 40),
+    # live Google reviews from the Trustindex "Widgets for Google Reviews" plugin (native Elementor Shortcode widget)
+    widget = C('Trustindex', [W('shortcode', 'Google reviews (Trustindex)', shortcode='[trustindex no-registration=google]')],
+               mar=(48, 0, 0, 0), mar_mobile=(28, 0, 0, 0), cls='bb-trustindex')
+    return C('Reviews', [head, widget], tag='section', id_='reviews', pad=(65, 64, 112, 64), pad_tablet=(65, 40, 112, 40),
              pad_mobile=(65, 20, 40, 20), bg=PAPER, cls='bb-reviews')
 
 
@@ -851,8 +849,8 @@ def faq():
         BTN(PHONE, TEL, M(14, 500, 20), color=INK, bg=BEE, ic='phone', ic_pos='before', ic_size=16, pad=(18, 28), radius=8,
             border=(1, ink(0.2)), sh=SH_BEE, mar=(32, 0, 0, 0), name='Call'),
     ])
-    toggle = W('toggle', 'FAQ', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in FAQS],
-               selected_icon=icon('chevron-down'), selected_active_icon=icon('chevron-down'), icon_align='right', title_html_tag='h3',
+    toggle = W('accordion', 'FAQ', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in FAQS],
+               selected_icon=icon('chevron-down'), selected_active_icon=icon('chevron-up'), icon_align='right', title_html_tag='h3',
                faq_schema='yes', border_width=px(0), space_between=px(0), title_color=INK, tab_active_color=INK, icon_color=INK,
                icon_active_color=INK, title_padding=dims(20, 0), content_padding=dims(0, 40, 20, 0), content_color=ink(0.65),
                **{('title_' + k): v for k, v in M(18, 800, 28, tt='uppercase', size_m=16, lh_m=24).items()},

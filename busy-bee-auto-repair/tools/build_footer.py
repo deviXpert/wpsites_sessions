@@ -3,6 +3,7 @@ import json
 import el
 from common import *
 from el import uid
+from sitemap import SERVICE_PAGES, PAGES
 
 FOOTER_ID = 74
 FOOT_SERVICES = [('Computer diagnostics &amp; electrical', 'diagnostics'), ('Engine maintenance &amp; repair', 'engine'),
@@ -43,8 +44,13 @@ def build():
     ])
     svc = C('Services', [
         eyebrow('Services'),
-        ILIST([('arrow-right', t, SVC.get(k, '/#services')) for t, k in FOOT_SERVICES], t=M(14, 400, 20), color=wht(0.65),
+        ILIST([('arrow-right', l.replace('&', '&amp;'), u) for _, l, u, *_ in SERVICE_PAGES], t=M(14, 400, 20), color=wht(0.65),
               ic_color=BEE, ic_size=14, gap_=12, mar=(20, 0, 0, 0), name='Service links', cls='bb-foot-links'),
+    ])
+    company = C('Company', [
+        eyebrow('Company'),
+        ILIST([('arrow-right', t, u) for t, u in PAGES] + [('arrow-right', 'Book an appointment', '/#book')], t=M(14, 400, 20),
+              color=wht(0.65), ic_color=BEE, ic_size=14, gap_=12, mar=(20, 0, 0, 0), name='Company links', cls='bb-foot-links bb-foot-1col'),
     ])
     contact = C('Contact', [
         eyebrow('Contact'),
@@ -59,7 +65,7 @@ def build():
         ILIST([('clock-3', 'Monday–Friday<br>9:00 AM–6:00 PM<br>Weekends closed', None)], t=M(14, 400, 24), color=wht(0.65),
               ic_color=BEE, ic_size=16, gap_=12, name='Hours', cls='bb-top-icon'),
     ])
-    cols = C('Columns', [about, svc, contact], grid='1.15fr 1.5fr 1fr', grid_tablet='repeat(2, minmax(0, 1fr))', grid_mobile='1fr',
+    cols = C('Columns', [about, svc, company, contact], grid='1fr 1.6fr 0.7fr 1fr', grid_tablet='repeat(2, minmax(0, 1fr))', grid_mobile='1fr',
              rows='auto', rows_tablet='auto', rows_mobile='auto', gap=48, gap_mobile=32, pad=(56, 0), pad_mobile=(32, 0),
              border=(dims(0, 0, 1, 0), wht(0.15)))
 
@@ -87,8 +93,10 @@ def build():
         H('Calgary, Alberta', 'span', wht(0.35), M(10, 400, 15, 1.6, 'uppercase'), name='City'),
     ], d='row', d_mobile='column', jc='space-between', ai='center', ai_mobile='flex-start', gap=12, pad=(28, 0, 0, 0))
 
-    root = C('Footer', [C('Inner', [cta, cols, news, legal], w=cu('min(1280px, 100%)'), mar=(0, 'auto'), z=1)],
-             tag='footer', pad=(80, 32, 32, 32), pad_mobile=(40, 20, 32, 20), bgimg='busy-bee-auto-repair-storefront-calgary',
+    import build_inner
+    root = C('Footer', [C('Inner', [cta, cols, news, legal], w=cu('min(1280px, 100%)'), mar=(0, 'auto'), z=1),
+                        build_inner.callbar()],
+             tag='footer', pad=(80, 32, 32, 32), pad_mobile=(40, 20, 96, 20), bgimg='busy-bee-auto-repair-storefront-calgary',
              bg=INK, ov=True, cls='bb-footer')
     return el.book_popup([root], json.load(open('ids.json'))['popup_book'])
 

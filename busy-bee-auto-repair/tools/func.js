@@ -16,10 +16,6 @@ const res=[]; const ok=(n,c,d='')=>res.push(`${c?'PASS':'FAIL'}  ${n}${d?' — '
   await p.waitForTimeout(1200);
   const st=await p.evaluate(()=>({act:[...document.querySelectorAll('.bb-hero .bb-slide.is-active')].map(e=>e.dataset.slide),name:document.querySelector('.bb-hero .bb-vname').textContent,btn:document.querySelector('.bb-hero .bb-vbtn.is-active').dataset.slide}));
   ok('Hero vehicle button switches slide (Mercedes)', st.act.includes('2') && st.name==='Mercedes' && st.btn==='2', JSON.stringify(st));
-  // nav anchors
-  await p.click('.bb-nav a:has-text("Pricing")'); await p.waitForTimeout(1500);
-  const y=await p.evaluate(()=>Math.abs(document.querySelector('#pricing').getBoundingClientRect().top));
-  ok('Header nav "Pricing" scrolls to section', y<120, `offset ${Math.round(y)}px`);
   // popup auto (scroll)
   await p.evaluate(()=>{sessionStorage.removeItem('busy-bee-winter-preview')}); await p.evaluate(()=>scrollTo(0,0)); await p.waitForTimeout(300);
   await p.evaluate(()=>scrollTo(0,800)); await p.waitForTimeout(1500);
@@ -48,19 +44,22 @@ const res=[]; const ok=(n,c,d='')=>res.push(`${c?'PASS':'FAIL'}  ${n}${d?' — '
   await p.click('.bb-filter[data-filter="All"] a'); await p.waitForTimeout(300);
   f=await p.evaluate(()=>[...document.querySelectorAll('#services [data-cat]')].filter(c=>getComputedStyle(c).display!=='none').length);
   ok('Services filter "All"', f===9, f+' cards');
-  // reviews arrows
-  const before=await p.evaluate(()=>document.querySelector('.bb-review-track').scrollLeft);
-  await p.click('.bb-rev-next a'); await p.waitForTimeout(900);
-  const after=await p.evaluate(()=>document.querySelector('.bb-review-track').scrollLeft);
-  ok('Reviews "next" arrow scrolls cards', after>before, `${before} → ${after}`);
-  // reveal
-  const rv=await p.evaluate(()=>[...document.querySelectorAll('.bb-reveal')].filter(e=>e.classList.contains('is-in')).length);
-  ok('Review cards reveal on scroll', rv>0, rv+' revealed');
+  // Trustindex Google reviews + desktop mega menu
+  await p.locator('.bb-trustindex').scrollIntoViewIfNeeded(); await p.waitForTimeout(2500);
+  const ti=await p.evaluate(()=>{const e=document.querySelector('.bb-trustindex');return e?e.innerText.includes('Google reviews'):false;});
+  ok('Trustindex Google reviews widget renders', ti);
+  await p.evaluate(()=>scrollTo(0,0)); await p.locator('.bb-mega-home:not(.bb-mmenu) .e-n-menu-title',{hasText:'Services'}).first().hover(); await p.waitForTimeout(800);
+  const mega=await p.evaluate(()=>[...document.querySelectorAll('.bb-mega-home:not(.bb-mmenu) .bb-mega-link')].filter(a=>a.getBoundingClientRect().height>0).map(a=>a.getAttribute('href')));
+  ok('Mega menu lists the 11 service pages', mega.length===11, mega.slice(0,3).join(','));
+  await p.mouse.move(5,600);
   // FAQ toggle
   await p.locator('.bb-faq .elementor-tab-title').nth(1).scrollIntoViewIfNeeded();
   await p.locator('.bb-faq .elementor-tab-title').nth(1).click(); await p.waitForTimeout(600);
   const faqOpen=await p.evaluate(()=>{const c=document.querySelectorAll('.bb-faq .elementor-tab-content')[1];return getComputedStyle(c).display!=='none' && c.textContent.trim();});
   ok('FAQ question opens', !!faqOpen, faqOpen||'');
+  await p.locator('.bb-faq .elementor-tab-title').nth(2).click(); await p.waitForTimeout(700);
+  const openCount=await p.evaluate(()=>[...document.querySelectorAll('.bb-faq .elementor-tab-content')].filter(c=>getComputedStyle(c).display!=='none').length);
+  ok('FAQ accordion keeps one answer open', openCount===1, openCount+' open');
   const schema=await p.evaluate(()=>[...document.querySelectorAll('script[type="application/ld+json"]')].some(s=>s.textContent.includes('FAQPage')));
   ok('FAQ schema (FAQPage JSON-LD) present', schema);
   // booking popup
@@ -85,7 +84,7 @@ const res=[]; const ok=(n,c,d='')=>res.push(`${c?'PASS':'FAIL'}  ${n}${d?' — '
   const chk=await p.evaluate(()=>{const r=[...document.querySelectorAll('[name="form_fields[reason]"]')].find(r=>r.checked);return r&&r.value;});
   ok('Booking form: reason chip selectable', chk==='Brake issue', chk);
   // links
-  const links=await p.evaluate(()=>{const a=[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href'));return {tel:a.filter(h=>h.startsWith('tel:')).length, wa:a.filter(h=>h.includes('wa.me')).length, maps:a.filter(h=>h.includes('maps.google')).length, mail:a.filter(h=>h.startsWith('mailto:')).length, empty:a.filter(h=>h==='#'||h==='').length}});
+  const links=await p.evaluate(()=>{const a=[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href'));return {tel:a.filter(h=>h.startsWith('tel:')).length, wa:a.filter(h=>h.includes('wa.me')).length, maps:a.filter(h=>h.includes('google.com/maps')).length, mail:a.filter(h=>h.startsWith('mailto:')).length, empty:a.filter(h=>h==='#'||h==='').length}});
   ok('Call / WhatsApp / Maps / email links present', links.tel>3&&links.wa>0&&links.maps>0&&links.mail>0, JSON.stringify(links));
   // marquee
   const m1=await p.evaluate(()=>getComputedStyle(document.querySelector('.bb-marquee-track')).transform); await p.waitForTimeout(500);
@@ -99,12 +98,12 @@ const res=[]; const ok=(n,c,d='')=>res.push(`${c?'PASS':'FAIL'}  ${n}${d?' — '
   // ---------- mobile
   ctx = await b.newContext({ viewport: { width: 390, height: 844 }, ignoreHTTPSErrors: true, isMobile:true, hasTouch:true });
   p = await ctx.newPage(); await p.goto(URL, { waitUntil: 'networkidle' });
-  await p.click('.bb-mmenu .elementor-menu-toggle'); await p.waitForTimeout(600);
-  const mm=await p.evaluate(()=>{const n=document.querySelector('.bb-mmenu nav.elementor-nav-menu--dropdown');return n&&getComputedStyle(n).display!=='none'&&n.getBoundingClientRect().height>100;});
+  await p.click('.bb-mmenu .e-n-menu-toggle'); await p.waitForTimeout(700);
+  const mm=await p.evaluate(()=>{const n=document.querySelector('.bb-mmenu .e-n-menu-wrapper');return !!n&&n.getBoundingClientRect().height>150;});
   ok('Mobile menu opens', mm);
-  await p.locator('.bb-mmenu nav.elementor-nav-menu--dropdown a:has-text("FAQ")').click(); await p.waitForTimeout(1500);
-  const fy=await p.evaluate(()=>Math.abs(document.querySelector('#faq').getBoundingClientRect().top));
-  ok('Mobile menu link scrolls to FAQ', fy<150, Math.round(fy)+'px');
+  await p.locator('.bb-mmenu .e-n-menu-title-container',{hasText:'Contact'}).click(); await p.waitForLoadState('domcontentloaded'); await p.waitForTimeout(800);
+  ok('Mobile menu link opens Contact page', p.url().includes('/contact-us/'), p.url());
+  await p.goto(URL, { waitUntil: 'networkidle' });
   await p.evaluate(()=>scrollTo(0,0)); await p.click('.bb-mhero .bb-vbtn[data-slide="1"] a'); await p.waitForTimeout(800);
   const ms=await p.evaluate(()=>({pts:document.querySelector('.bb-mhero .bb-pts.is-active').dataset.slide,name:document.querySelector('.bb-mhero .bb-vname').textContent}));
   ok('Mobile hero vehicle switch + points', ms.pts==='1'&&ms.name==='Pickup truck', JSON.stringify(ms));

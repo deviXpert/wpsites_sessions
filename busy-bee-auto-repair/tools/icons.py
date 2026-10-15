@@ -12,7 +12,9 @@ FILLED = {'star'}  # design uses these with fill-current
 
 def collect():
     import build_header, build_footer, build_home, build_popups
-    import build_services
+    import build_services, build_service_pages, build_pages, build_blog
+    for k in build_service_pages.PAGES: build_service_pages.build(k)
+    build_pages.about(); build_pages.contact(); build_blog.single(); build_blog.archive()
     build_header.build(); build_footer.build(); build_home.build(); build_services.build()
     for p in build_popups.POPUPS:
         build_popups.popup(*p)

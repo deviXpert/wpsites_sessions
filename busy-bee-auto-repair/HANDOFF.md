@@ -58,3 +58,48 @@ Design source (must match 1:1): **https://busy-bee-auto-repair-preview.mightycar
 - `build_popups.py` builds popup 347 from `build_home.booking_card()` (same card as the #book section).
 - `el.book_popup()` makes every button linking to `#book` / `/#book` (hero, header Book now, tire swap, services, Why, process, footer) open popup 347; the anchor remains as fallback. "Get your estimate" calls the shop, as in the design.
 - Symptom checker uses the Imagin demo key `img` (watermarked) – replace `IMAGIN_KEY` in bb.js with a commercial key.
+
+
+## Full site build (content: design/content-seo.md)
+**Pages** (all Elementor, header 79 + footer 74 site-wide, conditions: entire site):
+home 208 · /services/ 350 · 11 service pages (ids in ids.json `page_*`, builder `build_service_pages.py`, copy `service_content.py`) ·
+/about-us/ 384 · /contact-us/ 386 · /blog/ 391 (WordPress posts page) · 3 starter posts (`build_blog.py`).
+**Theme Builder:** single post 393, blog archive 394. **Global templates:** Google rating card 407 (Template widget everywhere –
+edit once in Templates → Saved Templates). **Mega menu:** native Elementor Pro Menu widget in header 79 (desktop + mobile), service
+list from `sitemap.py`. **FAQs:** native Accordion (one open at a time) with FAQPage schema. **Reviews:** Trustindex shortcode
+`[trustindex no-registration=google]` (plugin "Widgets for Google Reviews"). **Schema:** LocalBusiness/AutoRepair snippet 403
+(`schema.py`). **Font:** Manrope site-wide (`--bb-sys` in bb.css). Google Business Profile place id in `common.GBP_PLACE_ID`.
+Rebuild everything: `python3 build_all.py`.
+
+### To finish in WordPress (can't be set through the API)
+1. **Yoast titles + meta descriptions** – SEO → Tools → Bulk editor (WordPress page titles already equal the SEO titles minus the
+   brand, so Yoast titles are close already; meta descriptions are empty until pasted):
+
+| Page | URL | SEO title | Meta description |
+| --- | --- | --- | --- |
+| Home | / | Auto Repair Calgary \| Trusted Mechanic in NE Calgary \| Busy Bee | Family-owned auto repair shop in NE Calgary. Certified mechanics for brakes, tires, oil changes and diagnostics on all makes. Walk-ins welcome. Call today. |
+| Services | /services/ | Car Repair Services in Calgary \| Busy Bee Auto Repair | Complete car repair and maintenance in NE Calgary: engine, brakes, tires, alignment, oil changes, batteries, and diagnostics. All makes and models. |
+| About | /about-us/ | About Busy Bee Auto Repair \| Family-Owned Calgary Mechanic | Meet Busy Bee Auto Repair & Tire Shop, a family-owned NE Calgary mechanic known for honest diagnosis, fair prices, and certified technicians. |
+| Contact | /contact-us/ | Contact Busy Bee Auto Repair \| 324 41 Ave NE Calgary | Book auto repair in NE Calgary. Call (403) 930-5888 or visit us at 324 41 Ave NE, Calgary, AB T2E 2N3. Appointments and walk-ins welcome. |
+| Engine Repair | /engine-repair-calgary/ | Engine Repair Calgary | Check Engine Light Diagnosis | Busy Bee | Engine repair in NE Calgary: check engine light, misfires, overheating, oil leaks, and timing belts. Honest diagnosis and clear quotes on all makes. |
+| Brake Repair | /brake-repair-calgary/ | Brake Repair & Replacement Calgary | Pads & Rotors | Busy Bee | Brake repair and replacement in NE Calgary: pads, rotors, calipers, and brake fluid. Free brake inspection with every service. Book today. |
+| Oil Change | /oil-change-calgary/ | Oil Change Calgary from $75 | Mobil 1 Synthetic | Busy Bee Auto | Mobil 1 synthetic oil change in NE Calgary from $75, with a free multi-point inspection. Conventional and high-mileage options. Walk-ins welcome. |
+| Tire Shop | /tire-shop-calgary/ | Tire Shop Calgary | New & Used Tires, Repair & Install | Busy Bee | Calgary tire shop for new and used tires, flat tire repair, installation, rotation, and balancing. Winter and all-season tires for all makes. Call today. |
+| Wheel Alignment | /wheel-alignment-calgary/ | Wheel Alignment Calgary | Car & Tire Alignment | Busy Bee Auto | Wheel alignment in NE Calgary. Fix pulling, crooked steering, and uneven tire wear. Fast car and tire alignment for all makes. Book today. |
+| Battery & Alternator | /car-battery-replacement-calgary/ | Car Battery Replacement Calgary | Free Battery Test | Busy Bee | Car battery replacement in NE Calgary with free battery testing. Alternator and starter diagnosis, warranty-backed batteries for Alberta winters. |
+| Electrical & Diagnostics | /auto-electrical-diagnostics-calgary/ | Auto Electrical Repair & Car Diagnostics Calgary | Busy Bee | Car diagnostics and auto electrical repair in NE Calgary. Warning lights, wiring faults, starters, alternators, and sensors found and fixed at the source. |
+| Suspension & Steering | /suspension-repair-calgary/ | Suspension & Steering Repair Calgary | Shocks, Struts | Busy Bee | Suspension and steering repair in NE Calgary: shocks, struts, ball joints, tie rods, control arms, and wheel bearings. Smoother, safer handling. |
+| Transmission Repair | /transmission-repair-calgary/ | Transmission Shop Calgary | Transmission Repair | Busy Bee Auto | Transmission repair in NE Calgary. Diagnosis for slipping, hard shifts, and leaks, plus transmission fluid changes and flushes. All makes and models. |
+| Radiator & Cooling | /radiator-repair-calgary/ | Radiator Repair Calgary | Cooling System Service | Busy Bee Auto | Radiator repair and cooling system service in NE Calgary: coolant flushes, thermostats, water pumps, and hoses. Stop overheating before it damages your engine. |
+| Car Maintenance | /car-maintenance-calgary/ | Car Maintenance Calgary | Scheduled Service & Tune-Ups | Busy Bee | Scheduled car maintenance in NE Calgary: fluid checks, belts, filters, spark plugs, and inspections that keep your warranty valid and prevent breakdowns. |
+
+2. **301 redirects at launch** (old busybeeauto.ca URLs → new): /engine-repair/, /engine-repair-in-calgary/, /fuel-system-maintenance/ →
+   /engine-repair-calgary/ · /transmission/, /transmission-repair/ → /transmission-repair-calgary/ · /brake-system/ → /brake-repair-calgary/ ·
+   /oil-change-service/ → /oil-change-calgary/ · /wheels-and-tires/ → /tire-shop-calgary/ · /battery-replacement/ →
+   /car-battery-replacement-calgary/ · /electrical-and-diagnostics/ → /auto-electrical-diagnostics-calgary/ · /suspension-and-steering/ →
+   /suspension-repair-calgary/ · /cooling-system/ → /radiator-repair-calgary/ · /general-maintenance/ → /car-maintenance-calgary/
+   (needs a redirect plugin, e.g. Redirection, or Yoast Premium).
+3. **Owner to confirm** (left out of the published copy): Sunday hours, warranty length, conventional / high-mileage oil prices,
+   alignment "from" price, A/C repair, CVT, pre-purchase inspections, tire storage, owner story + certifications (About page),
+   geo coordinates for schema.
+4. Contact + booking forms email busybeeautocalgary@gmail.com – send one real test after launch.

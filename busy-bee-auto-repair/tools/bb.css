@@ -6,7 +6,7 @@
    ========================================================================== */
 :root{
   --bb-ink:#1a2024;--bb-bee:#f7d710;--bb-yellow:#ffe600;--bb-pitch:#010101;--bb-paper:#fff;--bb-soft:#fcf5db;--bb-grey:#e5e8ea;
-  --bb-sys:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bb-sys:Manrope,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --scan-ok:oklch(72% .16 152);--scan-alert:oklch(60% .19 22);--scan-warn:oklch(88% .18 98);
 }
 body{font-family:var(--bb-sys);color:#020618;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
@@ -613,3 +613,69 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .bb-sm-brand{flex:0 0 150px!important;width:150px!important}
 .bb-sm-brand-track>.e-con{flex-shrink:0}
 .bb-sm-brand-window:hover .bb-sm-brand-track{animation-play-state:paused}
+
+/* ==================== Global inner header – native Elementor Mega Menu (Pro "Menu" widget) ====================
+   Elementor provides the menu, dropdown, hover/click and the mobile toggle; these rules only skin it to the design. */
+.bb-inner-header{padding-left:max(32px,50vw - 650px)!important;padding-right:max(32px,50vw - 650px)!important}
+.bb-mega{flex:1 1 auto!important;--n-menu-title-space-between:30px!important}
+.bb-mega .e-n-menu-content>.e-con{left:0!important;margin-inline:auto!important;width:fit-content!important;max-width:calc(100vw - 32px)}
+.bb-mega .e-n-menu-heading{justify-content:center}
+.bb-mega .e-n-menu-title{padding:6px 0!important;background:none!important}
+.bb-mega .e-n-menu-title-text,.bb-mega .e-n-menu-title-container{font:750 14px/21px var(--bb-sys)!important;color:#192124!important}
+.bb-mega .e-n-menu-title:hover .e-n-menu-title-text,.bb-mega .e-n-menu-title.e-current .e-n-menu-title-text{color:#8f8100!important}
+.bb-mega .e-n-menu-dropdown-icon svg{width:12px;height:12px}
+.bb-mega-panel{width:min(1180px,100vw - 64px)!important;box-shadow:0 24px 60px -20px rgb(16 23 25/.45);margin-top:14px}
+.bb-mega-link{transition:background .15s}
+.bb-mega-link:hover{background:#f6f7f3}
+@media (max-width:1023px){
+  .bb-mega{flex:0 0 auto!important;margin-left:auto}
+  .bb-mega .e-n-menu-toggle{padding:8px}
+  .bb-mega .e-n-menu-toggle svg{width:22px;height:22px}
+  .bb-mega .e-n-menu-wrapper{background:#fff!important;border-radius:16px;box-shadow:0 24px 60px -20px rgb(16 23 25/.45);padding:6px 0 12px;margin-top:10px;max-height:calc(100svh - 110px);overflow:auto}
+  .bb-mega .e-n-menu-heading{justify-content:flex-start;padding:0 18px!important}
+  .bb-mega .e-n-menu-title{padding:0!important;border-bottom:1px solid #eef0ee;width:100%;display:flex!important;align-items:center;justify-content:space-between}
+  .bb-mega .e-n-menu-title-container{flex:1 1 auto;padding:12px 0!important;min-width:0}
+  .bb-mega .e-n-menu-item{width:100%}
+  .bb-mega .e-n-menu-dropdown-icon{position:relative;z-index:2;width:44px!important;height:44px;display:flex!important;align-items:center;justify-content:center}
+  .bb-mega .e-n-menu-title-text{font-size:16px!important}
+  .bb-mega-panel{width:100%!important;box-shadow:none;margin:0}
+  .bb-mega .e-n-menu-content>.e-con{width:100%!important;max-width:none}
+}
+/* phone-only sticky Call / Book bar (inner footer) */
+.bb-callbar{position:fixed!important;left:12px;right:12px;bottom:12px;z-index:90;padding:8px!important;background:rgb(23 32 36/.92);backdrop-filter:blur(8px);border-radius:40px;box-shadow:0 10px 30px rgb(0 0 0/.3);width:auto!important}
+.bb-callbar>.elementor-widget-button:first-child{flex:1 1 auto}
+/* home header keeps its uppercase Manrope nav style */
+@media (min-width:1024px){.bb-mega-home .e-n-menu-title-text{font:800 14px/21px Manrope,var(--bb-sys)!important;text-transform:uppercase}}
+.bb-mega-home.bb-mmenu .e-n-menu-toggle{width:40px;height:40px;border-radius:50%;background:rgb(255 255 255/.85)!important;display:flex;align-items:center;justify-content:center}
+.bb-mega-home.bb-mmenu .e-n-menu-wrapper{position:fixed!important;left:12px!important;right:12px!important;top:76px!important;width:auto!important}
+
+/* ==================== Blog (Theme Builder archive + single post) – skin for Elementor's native Posts / Archive Posts cards ==================== */
+.bb-post-cards .elementor-post__card{border-radius:12px!important;border:1px solid #e4e7e3!important;background:#fff;box-shadow:none!important;transition:transform .2s,box-shadow .2s}
+.bb-post-cards .elementor-post__card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgb(16 23 25/.5)!important}
+.bb-post-cards .elementor-post__thumbnail{padding-bottom:58%!important}
+.bb-post-cards .elementor-post__badge{background:#ffe600!important;color:#192124!important;font:800 10px/1 var(--bb-sys)!important;letter-spacing:.08em;text-transform:uppercase;border-radius:20px!important;padding:7px 10px!important}
+.bb-post-cards .elementor-post__title,.bb-post-cards .elementor-post__title a{font:850 19px/1.25 var(--bb-sys)!important;color:#192124!important;text-transform:uppercase;letter-spacing:-.3px}
+.bb-post-cards .elementor-post__excerpt p{font:400 14px/1.6 var(--bb-sys)!important;color:#667074!important}
+.bb-post-cards .elementor-post__read-more{font:800 12px/1 var(--bb-sys)!important;color:#192124!important;text-decoration:underline;text-decoration-color:#ffe600;text-underline-offset:4px}
+.bb-post-cards .elementor-post__meta-data{font:500 12px/1 var(--bb-sys)!important;color:#8c979b!important;border-top-color:#eef0ee!important}
+.bb-post-cards .elementor-pagination{margin-top:40px;font:700 14px var(--bb-sys)}
+.bb-post-cat .elementor-icon-list-icon{display:none}
+.bb-post-meta .elementor-icon-list-item:not(:last-child):after{border-color:#ffffff40!important}
+.bb-post-content h2{font:850 26px/1.2 var(--bb-sys);text-transform:uppercase;letter-spacing:-.6px;color:#192124;margin:36px 0 12px}
+.bb-post-content a{color:#192124;font-weight:700;text-decoration:underline;text-decoration-color:#ffe600;text-decoration-thickness:2px;text-underline-offset:3px}
+.bb-post-content ul{padding-left:20px}.bb-post-content li{margin:6px 0}
+.bb-post-img img{width:100%;aspect-ratio:16/9;object-fit:cover}
+@media (min-width:1024px){.bb-sticky-side{position:sticky!important;top:24px;align-self:start}}
+/* Theme Builder single/archive templates: let them run full width inside Astra's content wrapper */
+.single-post .site-content>.ast-container,.blog .site-content>.ast-container,.archive .site-content>.ast-container{max-width:100%!important;padding:0!important;display:block}
+.single-post #primary,.blog #primary,.archive #primary{margin:0!important;padding:0!important;width:100%}
+.bb-foot-1col .elementor-icon-list-items{grid-template-columns:1fr!important}
+.elementor-location-single,.elementor-location-archive{padding:0!important;margin:0!important;box-shadow:none!important;background:none!important}
+.ast-separate-container .ast-article-single:has(.elementor-location-single){padding:0!important;margin:0!important}
+/* FAQs use Elementor's native Accordion (one open at a time) – same skin as the earlier toggle */
+.bb-faq .elementor-accordion-item{border:0!important;border-bottom:1px solid rgb(26 32 36/.15)!important;padding:4px 0}
+.bb-sm-faq .elementor-accordion-item{border:0!important;border-bottom:1px solid #dce0dd!important}
+.bb-faq .elementor-tab-content,.bb-sm-faq .elementor-tab-content{border:0!important}
+.bb-faq .elementor-tab-title,.bb-sm-faq .elementor-tab-title{border:0!important}
+.bb-sm-faq .elementor-accordion-icon{width:auto!important;font-size:12px}
+.bb-faq .elementor-accordion-icon svg{width:20px;height:20px}
