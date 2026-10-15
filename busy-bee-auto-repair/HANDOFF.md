@@ -129,3 +129,14 @@ services grid 462. Per-page content (service-specific FAQs, related services, he
 FAQ design: intro left (sticky), question cards + plus/minus right, "talk to a technician" strip under the questions (native Accordion).
 Footer credit: "Design & developed by DeviXpert" → https://devixpert.com/. Link audit (`tools/links.js`; overflow + H1 check `tools/ovall.js`): all internal targets 200,
 no dead anchors.
+
+### Forms & spam (Oct 2026)
+All Elementor forms (symptom checker, booking section + popup, contact, footer email, WhatsApp request) email
+busybeeautocalgary@gmail.com, mohsinaly25@gmail.com (`common.FORM_TO`, applied to every form by `el.harden_forms` on save).
+Protection: native Elementor honeypot on every form (server-side) + bb.js `formGuard` (blocks scripted/instant submits, website links,
+SEO / guest-post / marketing / web-design / crypto pitches). For server-verified bot protection add Google reCAPTCHA v3 keys in
+Elementor → Settings → Integrations and I'll switch the forms to it.
+
+### Symptom checker car images
+Provider switch in bb.js: `CARIMAGES_KEY` (carimagesapi.com, recommended – Pro ~$41–49/mo, 25k images/mo, no watermark, transparent
+studio renders, domain-locked public key) or `IMAGIN_KEY` (demo 'img' is watermarked). Paste the public key, run `python3 code.py`.

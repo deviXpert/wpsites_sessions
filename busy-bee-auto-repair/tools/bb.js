@@ -97,7 +97,10 @@
 
   /* ---------- symptom checker: make→model dropdowns, vehicle preview, instant guidance ---------- */
   /* Imagin.studio customer key: renders with the demo key are watermarked, so the Civic photo is used until a key is set */
-  var IMAGIN_KEY = 'img'; // 'img' = Imagin demo key (watermarked) – replace with the shop's commercial key
+  var IMAGIN_KEY = 'img';
+  /* CarImages API (carimagesapi.com) – preferred provider once a key is pasted here. Use the PUBLIC key from the dashboard and lock it
+     to the site's domain there (never the API secret). When set, it replaces the Imagin demo above. */
+  var CARIMAGES_KEY = ''; // 'img' = Imagin demo key (watermarked) – replace with the shop's commercial key
   var RULES = [
     { k: /brak|squeal|grind|pedal|stopping/i, t: 'Brakes', u: 2, svc: 'Brake repair & replacement',
       c: ['Worn brake pads or rotors', 'Sticking caliper or slide pins', 'Low or contaminated brake fluid'],
@@ -162,7 +165,26 @@
       // model chosen → that model; make only → the make's most popular model (first in the list) as a preview
       var shown = c ? (c.models[md] ? md : Object.keys(c.models)[0]) : '', fam = c && c.models[shown];
       var y = parseInt((f('year') || {}).value, 10), id = ++reqId;
-      if (IMAGIN_KEY && fam) {
+      if (CARIMAGES_KEY && c) {
+        if (studio) studio.classList.add('is-loading');
+        var label = shown.replace(mk + ' ', '');
+        fetch('https://carimagesapi.com/api/v1/signed-url?api_key=' + encodeURIComponent(CARIMAGES_KEY) + '&make=' + encodeURIComponent(mk) +
+              '&model=' + encodeURIComponent(label) + (y ? '&year=' + y : '') + '&width=800&format=webp&view=front34')
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            if (id !== reqId || !d || !d.url) throw 0;
+            var pre2 = new Image();
+            pre2.onload = function () {
+              if (id !== reqId) return;
+              img.removeAttribute('srcset'); img.removeAttribute('sizes'); img.src = d.url; img.alt = shown + ' studio render';
+              if (studio) studio.classList.remove('is-loading');
+            };
+            pre2.onerror = function () { if (studio) studio.classList.remove('is-loading'); };
+            pre2.src = d.url;
+          })
+          .catch(function () { if (id === reqId && studio) studio.classList.remove('is-loading'); });
+        fam = fam || label;
+      } else if (IMAGIN_KEY && fam) {
         var u = 'https://cdn.imagin.studio/getImage?customer=' + encodeURIComponent(IMAGIN_KEY) + '&make=' + c.slug +
           '&modelFamily=' + fam + (y ? '&modelYear=' + y : '') + '&angle=23&zoomType=fullscreen&width=800';
         if (studio) studio.classList.add('is-loading');
@@ -178,12 +200,12 @@
         if (studio) studio.classList.remove('is-loading');
         img.src = civic.src; civic.srcset ? img.setAttribute('srcset', civic.srcset) : img.removeAttribute('srcset');
       }
-      if (cap) cap.textContent = ((IMAGIN_KEY && fam) ? shown : 'Honda Civic').toUpperCase() + ' · ILLUSTRATIVE PREVIEW';
+      if (cap) cap.textContent = (((CARIMAGES_KEY || IMAGIN_KEY) && fam) ? shown : 'Honda Civic').toUpperCase() + ' · ILLUSTRATIVE PREVIEW';
       if (note) note.textContent = !fam ? 'Select a make and model to preview it'
         : (c.models[md] ? 'Colour and trim may differ' : 'Popular ' + mk + ' shown – pick your model');
     }
     // warm the connection to the image CDN as soon as the checker is on screen
-    if (IMAGIN_KEY) { var pc = document.createElement('link'); pc.rel = 'preconnect'; pc.href = 'https://cdn.imagin.studio'; document.head.appendChild(pc); }
+    if (CARIMAGES_KEY || IMAGIN_KEY) { var pc = document.createElement('link'); pc.rel = 'preconnect'; pc.href = CARIMAGES_KEY ? 'https://carimagesapi.com' : 'https://cdn.imagin.studio'; document.head.appendChild(pc); }
     function upd() {
       var md = model && model.value && model.value !== 'Other / not listed' ? model.value : (make ? make.value : '');
       var y = (f('year') || {}).value || '', m = (f('mileage') || {}).value || '';
