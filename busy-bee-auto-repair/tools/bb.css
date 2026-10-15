@@ -743,7 +743,8 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 }
 @media (max-width:1023px){.bb-mega .e-n-menu-wrapper{box-shadow:0 24px 60px -18px rgb(16 23 25/.55),0 0 0 1px rgb(26 32 36/.06)!important}}
 /* phone call bar: two buttons that always fit inside the pill */
-.bb-callbar{display:flex!important;flex-wrap:nowrap!important;align-items:center;gap:8px!important;box-sizing:border-box}
+@media (min-width:768px){.bb-callbar{display:none!important}}
+@media (max-width:767px){.bb-callbar{display:flex!important;flex-wrap:nowrap!important;align-items:center;gap:8px!important;box-sizing:border-box}}
 .bb-callbar>.elementor-widget-button{margin:0!important;width:auto!important;max-width:none!important}
 .bb-callbar>.bb-cb-call{flex:1 1 auto!important;min-width:0}
 .bb-callbar>.bb-cb-book{flex:0 0 auto!important}
