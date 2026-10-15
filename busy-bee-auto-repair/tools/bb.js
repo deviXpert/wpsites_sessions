@@ -297,6 +297,13 @@
 
   /* ---------- mobile menu: tapping a parent item (Services) opens its list instead of leaving the page ---------- */
   function mobileMenu() {
+    // lock page scrolling while the menu card is open (so swipes scroll the menu, not the page behind it)
+    function sync() {
+      var open = window.innerWidth <= 1023 && $$('.bb-mega .e-n-menu-toggle').some(function (t) { return t.getAttribute('aria-expanded') === 'true'; });
+      document.documentElement.classList.toggle('bb-menu-open', open);
+    }
+    $$('.bb-mega .e-n-menu-toggle').forEach(function (t) { new MutationObserver(sync).observe(t, { attributes: true, attributeFilter: ['aria-expanded'] }); });
+    window.addEventListener('resize', sync);
     document.addEventListener('click', function (e) {
       if (window.innerWidth > 1023) return;
       var a = e.target.closest && e.target.closest('.bb-mega .e-n-menu-title-container');
