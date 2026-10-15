@@ -140,3 +140,6 @@ Elementor → Settings → Integrations and I'll switch the forms to it.
 ### Symptom checker car images
 Provider switch in bb.js: `CARIMAGES_KEY` (carimagesapi.com, recommended – Pro ~$41–49/mo, 25k images/mo, no watermark, transparent
 studio renders, domain-locked public key) or `IMAGIN_KEY` (demo 'img' is watermarked). Paste the public key, run `python3 code.py`.
+- Live: CarImages API public key `ci_6349…a4c4` in bb.js (`CARIMAGES_KEY`), domain-locked to the staging host in the CarImages
+  dashboard – add `busybeeauto.ca` (and `www.busybeeauto.ca`) there at launch or the images stop. Free plan = watermark + 5,000 req/month;
+  Pro ($41/mo) removes the watermark, same key. Requests without an allowed Origin get 403 (verified).
