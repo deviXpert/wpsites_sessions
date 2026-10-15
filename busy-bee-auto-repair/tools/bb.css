@@ -622,27 +622,12 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .bb-mega-panel{width:min(1180px,100vw - 64px)!important;box-shadow:0 24px 60px -20px rgb(16 23 25/.45);margin-top:29px}
 .bb-mega-link{transition:background .15s}
 .bb-mega-link:hover{background:#f6f7f3}
-@media (max-width:1023px){
-  .bb-mega{flex:0 0 auto!important;margin-left:auto}
-  .bb-mega .e-n-menu-toggle{padding:8px}
-  .bb-mega .e-n-menu-toggle svg{width:22px;height:22px}
-  .bb-mega .e-n-menu-wrapper{background:#fff!important;border-radius:16px;box-shadow:0 24px 60px -20px rgb(16 23 25/.45);padding:6px 0 12px;margin-top:10px;max-height:calc(100svh - 110px);overflow:auto}
-  .bb-mega .e-n-menu-heading{justify-content:flex-start;padding:0 18px!important}
-  .bb-mega .e-n-menu-title{padding:0!important;border-bottom:1px solid #eef0ee;width:100%;display:flex!important;align-items:center;justify-content:space-between}
-  .bb-mega .e-n-menu-title-container{flex:1 1 auto;padding:12px 0!important;min-width:0}
-  .bb-mega .e-n-menu-item{width:100%}
-  .bb-mega .e-n-menu-dropdown-icon{position:relative;z-index:2;width:44px!important;height:44px;display:flex!important;align-items:center;justify-content:center}
-  .bb-mega .e-n-menu-title-text{font-size:16px!important}
-  .bb-mega-panel{width:100%!important;box-shadow:none;margin:0}
-  .bb-mega .e-n-menu-content>.e-con{width:100%!important;max-width:none}
-}
 /* phone-only sticky Call / Book bar (inner footer) */
 .bb-callbar{position:fixed!important;left:12px;right:12px;bottom:12px;z-index:90;padding:8px!important;background:rgb(23 32 36/.92);backdrop-filter:blur(8px);border-radius:40px;box-shadow:0 10px 30px rgb(0 0 0/.3);width:auto!important}
 .bb-callbar>.elementor-widget-button:first-child{flex:1 1 auto}
 /* home header keeps its uppercase Manrope nav style */
 @media (min-width:1024px){.bb-mega-home .e-n-menu-title-text{font:800 14px/21px Manrope,var(--bb-sys)!important;text-transform:uppercase}}
 .bb-mega-home.bb-mmenu .e-n-menu-toggle{width:40px;height:40px;border-radius:50%;background:rgb(255 255 255/.85)!important;display:flex;align-items:center;justify-content:center}
-.bb-mega-home.bb-mmenu .e-n-menu-wrapper{position:fixed!important;left:12px!important;right:12px!important;top:76px!important;width:auto!important}
 
 /* ==================== Blog (Theme Builder archive + single post) – skin for Elementor's native Posts / Archive Posts cards ==================== */
 .bb-post-cards .elementor-post__card{border-radius:12px!important;border:1px solid #e4e7e3!important;background:#fff;box-shadow:none!important;transition:transform .2s,box-shadow .2s}
@@ -723,3 +708,38 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
   .bb-badge .elementor-heading-title,.bb-mhero .bb-badge .elementor-heading-title{font-size:10px!important}
 }
 @media (max-width:389px){.bb-mhero .bb-badge .elementor-heading-title{font-size:9px!important}}
+
+/* ==================== Mobile / tablet menu (native Elementor Menu widget, ≤1023px) ====================
+   Full-width floating card under the header, one tidy row per page, "Services" expands in place (bb.js mobileMenu). */
+@media (max-width:1023px){
+  .bb-mega{flex:0 0 auto!important;margin-left:auto;--n-menu-title-space-between:0px!important}
+  .bb-mega .e-n-menu-toggle{width:40px;height:40px;padding:0!important;border-radius:50%;background:rgb(255 255 255/.9)!important;display:flex;align-items:center;justify-content:center}
+  .bb-mega .e-n-menu-toggle svg{width:20px!important;height:20px!important}
+  .bb-mega .e-n-menu-wrapper{position:fixed!important;top:76px!important;left:12px!important;right:12px!important;width:auto!important;
+    max-height:calc(100svh - 96px);overflow-y:auto;overscroll-behavior:contain;background:#fff!important;border-radius:18px!important;
+    padding:8px 0!important;margin:0!important;box-shadow:0 24px 60px -18px rgb(16 23 25/.55),0 0 0 1px rgb(26 32 36/.06);z-index:999}
+  .bb-mega .e-n-menu-heading{display:flex!important;flex-direction:column!important;gap:0!important;padding:0!important;margin:0!important;width:100%!important}
+  .bb-mega .e-n-menu-item{width:100%!important;max-width:100%!important;margin:0!important;flex-direction:column!important}
+  .bb-mega .e-n-menu-item+.e-n-menu-item{border-top:1px solid #eef0ee}
+  .bb-mega .e-n-menu-title{width:100%!important;padding:0 8px 0 20px!important;display:flex!important;align-items:center;justify-content:space-between;border:0!important;box-sizing:border-box}
+  .bb-mega .e-n-menu-title-container{flex:1 1 auto;min-width:0;padding:15px 0!important}
+  .bb-mega .e-n-menu-title-text{font:800 16px/22px Manrope,var(--bb-sys)!important;text-transform:none!important;color:#192124!important}
+  .bb-mega .e-n-menu-title.e-current .e-n-menu-title-text{color:#8f8100!important}
+  .bb-mega .e-n-menu-dropdown-icon{position:static!important;flex:0 0 40px;width:40px!important;height:40px!important;margin:0!important;border-radius:50%;
+    background:#f3f3e7!important;display:flex!important;align-items:center;justify-content:center;transition:transform .2s,background-color .2s}
+  .bb-mega .e-n-menu-dropdown-icon[aria-expanded=true]{background:#ffe600!important;transform:rotate(180deg)}
+  .bb-mega .e-n-menu-dropdown-icon svg{width:14px!important;height:14px!important}
+  .bb-mega .e-n-menu-content{width:100%!important;position:static!important}
+  .bb-mega .e-n-menu-content>.e-con{width:100%!important;max-width:none!important;left:0!important;margin:0!important}
+  .bb-mega-panel{width:100%!important;box-shadow:none!important;margin:0!important;padding:0 12px 12px!important;background:#fff!important;border-radius:0!important}
+  .bb-mega-panel .bb-mega-link{padding:10px!important}
+  .bb-mega-panel .bb-mega-link .elementor-widget-heading:last-child{display:none}
+}
+@media (min-width:768px) and (max-width:1023px){.bb-mega .e-n-menu-wrapper{top:138px!important;max-height:calc(100svh - 158px);left:24px!important;right:24px!important}}
+@media (max-width:1023px){
+  .bb-mega-panel .bb-mega-link{padding:7px 8px!important;gap:12px!important;align-items:center!important}
+  .bb-mega-panel .bb-mega-link .elementor-icon{width:34px!important;height:34px!important;padding:8px!important}
+  .bb-mega-panel .bb-mega-link .elementor-icon svg{width:18px!important;height:18px!important}
+  .bb-mega-panel .bb-mega-link .elementor-heading-title{font-size:15px!important}
+}
+@media (max-width:1023px){.bb-mega .e-n-menu-wrapper{box-shadow:0 24px 60px -18px rgb(16 23 25/.55),0 0 0 1px rgb(26 32 36/.06)!important}}

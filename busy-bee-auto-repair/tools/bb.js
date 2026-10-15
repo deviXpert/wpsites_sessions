@@ -295,7 +295,20 @@
     }, true);
   }
 
+  /* ---------- mobile menu: tapping a parent item (Services) opens its list instead of leaving the page ---------- */
+  function mobileMenu() {
+    document.addEventListener('click', function (e) {
+      if (window.innerWidth > 1023) return;
+      var a = e.target.closest && e.target.closest('.bb-mega .e-n-menu-title-container');
+      if (!a) return;
+      var btn = a.parentElement.querySelector('.e-n-menu-dropdown-icon');
+      if (!btn) return;
+      e.preventDefault(); e.stopPropagation(); btn.click();
+    }, true);
+  }
+
   function init() {
+    mobileMenu();
     formGuard();
     $$('.bb-sm-hero').forEach(servicesPage);
     $$('.bb-sm-form form').forEach(serviceRequest);
