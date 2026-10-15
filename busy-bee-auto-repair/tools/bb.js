@@ -215,8 +215,9 @@
         img.src = civic.src; civic.srcset ? img.setAttribute('srcset', civic.srcset) : img.removeAttribute('srcset');
       }
       var drawn = img.classList.contains('bb-veh-drawn');
-      if (cap) cap.textContent = fam ? shown.toUpperCase() + (drawn ? ' · ' + ((c.body && c.body[shown]) || 'suv').replace('bigsuv', 'full-size suv').replace('hatch', 'hatchback').toUpperCase() + ' ILLUSTRATION' : ' · ILLUSTRATIVE PREVIEW') : 'HONDA CIVIC · ILLUSTRATIVE PREVIEW';
-      if (note) note.textContent = !fam ? 'Select a make and model to preview it'
+      var swapped = drawn || (CARIMAGES_PRO && CARIMAGES_KEY) || IMAGIN_KEY;
+      if (cap) cap.textContent = (fam && swapped) ? shown.toUpperCase() + (drawn ? ' · ' + ((c.body && c.body[shown]) || 'suv').replace('bigsuv', 'full-size suv').replace('hatch', 'hatchback').toUpperCase() + ' ILLUSTRATION' : ' · ILLUSTRATIVE PREVIEW') : 'HONDA CIVIC · ILLUSTRATIVE PREVIEW';
+      if (note) note.textContent = !swapped ? 'Sample vehicle photo' : !fam ? 'Select a make and model to preview it'
         : (c.models[md] ? (drawn ? 'Illustration by body style' : 'Colour and trim may differ') : 'Popular ' + mk + ' shown – pick your model');
     }
     // warm the connection to the image CDN as soon as the checker is on screen
