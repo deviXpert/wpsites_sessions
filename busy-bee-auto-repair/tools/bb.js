@@ -100,7 +100,7 @@
   var IMAGIN_KEY = 'img';
   /* CarImages API (carimagesapi.com) – preferred provider once a key is pasted here. Use the PUBLIC key from the dashboard and lock it
      to the site's domain there (never the API secret). When set, it replaces the Imagin demo above. */
-  var CARIMAGES_KEY = ''; // 'img' = Imagin demo key (watermarked) – replace with the shop's commercial key
+  var CARIMAGES_KEY = 'ci_6349daebb71d3e88d8d5b77501f062455b0c32b8f432378bb80da4c4'; // 'img' = Imagin demo key (watermarked) – replace with the shop's commercial key
   var RULES = [
     { k: /brak|squeal|grind|pedal|stopping/i, t: 'Brakes', u: 2, svc: 'Brake repair & replacement',
       c: ['Worn brake pads or rotors', 'Sticking caliper or slide pins', 'Low or contaminated brake fluid'],
