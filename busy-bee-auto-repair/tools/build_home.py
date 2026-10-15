@@ -226,7 +226,7 @@ def hero_mobile():
                 radius=PILL, border=(1, ink(0.1)), sh=SH_SM, name='Call'),
             whatsapp_btn(),
         ], d='column', ai='flex-start', gap=8, mar=(20, 0, 0, 0)),
-        SPACER(160),
+        SPACER(28),
         C('Family', [IMG('busy-bee-customer-avatars', w=75, h=36, fit='contain', alt='', name='Avatars'),
                      T('<p><strong>Family-owned in NE Calgary.</strong><br>Walk-ins welcome, every make and model.</p>', INK,
                        M(12, 400, 16.5), name='Text')], d='row', ai='center', gap=12, pad=(8, 12), bg=wht(0.9), radius=PILL,
