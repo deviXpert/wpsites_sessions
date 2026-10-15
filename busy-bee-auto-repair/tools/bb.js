@@ -97,10 +97,15 @@
 
   /* ---------- symptom checker: make→model dropdowns, vehicle preview, instant guidance ---------- */
   /* Imagin.studio customer key: renders with the demo key are watermarked, so the Civic photo is used until a key is set */
-  var IMAGIN_KEY = 'img';
+  var IMAGIN_KEY = '';  // Imagin demo key 'img' is watermarked – off
   /* CarImages API (carimagesapi.com) – preferred provider once a key is pasted here. Use the PUBLIC key from the dashboard and lock it
      to the site's domain there (never the API secret). When set, it replaces the Imagin demo above. */
-  var CARIMAGES_KEY = 'ci_6349daebb71d3e88d8d5b77501f062455b0c32b8f432378bb80da4c4'; // 'img' = Imagin demo key (watermarked) – replace with the shop's commercial key
+  var CARIMAGES_KEY = 'ci_6349daebb71d3e88d8d5b77501f062455b0c32b8f432378bb80da4c4';
+  /* Free CarImages plan is watermarked, so photos stay OFF until the account is on Pro – then set this to true.
+     Meanwhile the checker shows our own drawn illustration for the vehicle's body style (car_svg.py → window.BB_CARSVG). */
+  var CARIMAGES_PRO = false;
+  var USE_DRAWN = false;   // drawn body-style illustrations (car_svg.py) – off at the client's request
+  var CAR_COLOURS = ['#c8102e', '#f1f3f4', '#1f3a5f', '#8a9399', '#2b2f33', '#6b1d1d', '#ffffff', '#3f5e4a', '#b9bfc3', '#0f4c81']; // 'img' = Imagin demo key (watermarked) – replace with the shop's commercial key
   var RULES = [
     { k: /brak|squeal|grind|pedal|stopping/i, t: 'Brakes', u: 2, svc: 'Brake repair & replacement',
       c: ['Worn brake pads or rotors', 'Sticking caliper or slide pins', 'Low or contaminated brake fluid'],
@@ -165,7 +170,15 @@
       // model chosen → that model; make only → the make's most popular model (first in the list) as a preview
       var shown = c ? (c.models[md] ? md : Object.keys(c.models)[0]) : '', fam = c && c.models[shown];
       var y = parseInt((f('year') || {}).value, 10), id = ++reqId;
-      if (CARIMAGES_KEY && c) {
+      if (USE_DRAWN && !(CARIMAGES_PRO && CARIMAGES_KEY) && c && window.BB_CARSVG) {
+        var kind = (c.body && c.body[shown]) || 'suv', h = 0;
+        for (var k = 0; k < shown.length; k++) h = (h * 31 + shown.charCodeAt(k)) >>> 0;
+        var svgTxt = window.BB_CARSVG[kind].replace(/var\(--car,#d8dde0\)/g, CAR_COLOURS[h % CAR_COLOURS.length]);
+        if (studio) studio.classList.remove('is-loading');
+        img.removeAttribute('srcset'); img.removeAttribute('sizes');
+        img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgTxt); img.alt = shown + ' illustration';
+        img.classList.add('bb-veh-drawn'); fam = fam || shown;
+      } else if (CARIMAGES_PRO && CARIMAGES_KEY && c) {
         if (studio) studio.classList.add('is-loading');
         var label = shown.replace(mk + ' ', '');
         fetch('https://carimagesapi.com/api/v1/signed-url?api_key=' + encodeURIComponent(CARIMAGES_KEY) + '&make=' + encodeURIComponent(mk) +
@@ -198,11 +211,13 @@
         pre.src = u;
       } else if (civic) {
         if (studio) studio.classList.remove('is-loading');
+        img.classList.remove('bb-veh-drawn');
         img.src = civic.src; civic.srcset ? img.setAttribute('srcset', civic.srcset) : img.removeAttribute('srcset');
       }
-      if (cap) cap.textContent = (((CARIMAGES_KEY || IMAGIN_KEY) && fam) ? shown : 'Honda Civic').toUpperCase() + ' · ILLUSTRATIVE PREVIEW';
+      var drawn = img.classList.contains('bb-veh-drawn');
+      if (cap) cap.textContent = fam ? shown.toUpperCase() + (drawn ? ' · ' + ((c.body && c.body[shown]) || 'suv').replace('bigsuv', 'full-size suv').replace('hatch', 'hatchback').toUpperCase() + ' ILLUSTRATION' : ' · ILLUSTRATIVE PREVIEW') : 'HONDA CIVIC · ILLUSTRATIVE PREVIEW';
       if (note) note.textContent = !fam ? 'Select a make and model to preview it'
-        : (c.models[md] ? 'Colour and trim may differ' : 'Popular ' + mk + ' shown – pick your model');
+        : (c.models[md] ? (drawn ? 'Illustration by body style' : 'Colour and trim may differ') : 'Popular ' + mk + ' shown – pick your model');
     }
     // warm the connection to the image CDN as soon as the checker is on screen
     if (CARIMAGES_KEY || IMAGIN_KEY) { var pc = document.createElement('link'); pc.rel = 'preconnect'; pc.href = CARIMAGES_KEY ? 'https://carimagesapi.com' : 'https://cdn.imagin.studio'; document.head.appendChild(pc); }
