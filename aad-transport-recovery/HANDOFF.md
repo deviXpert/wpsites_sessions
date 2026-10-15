@@ -48,6 +48,13 @@ Original-site backup (pages, posts, templates, media list, menus, settings) is i
 ## Form recipients (2026-10-12)
 - All 19 Elementor forms (13 service pages, Towing/Flatbed/Emergency, Contact, Home 1208, old Home template 21) now email `ahsanhashmi1925@gmail.com, info@aadrecovery.co.uk` (Email + Email 2 "To"). Script: `tools/form_recipients.py ADDRESS [--apply]`; backups in `tools/wp-backup/pre-form-recipients/`.
 
+## Forms: one shared template + spam protection (2026-10-15)
+- **One form for the whole site:** Elementor template **"AAD – Quote Form (shared)" (ID 1449, type container, form id `aadqf01`)**. All 18 page forms (16 service pages, Contact 1216, Home 1208) were replaced by a Template widget pointing at it (`tools/form_template.py`; backups in `tools/wp-backup/pre-form-template/`). Edit the form once in Templates → Saved Templates. The old unused library template 21 still has its own form.
+  - Per-page pre-selected service: each Template widget has the custom attribute `data-service|<option>`; a small script inside template 1449 selects that option. New service page → add the Template widget (ID 1449), CSS class `x-formtpl`, attribute `data-service|<exact option text>`.
+- **Honeypot** field (`hp_trap`, hidden) on the form (`tools/form_honeypot.py`).
+- **Server-side spam filter:** plugin **Code Snippets** installed; snippet ID 5 "AAD – Block sales pitches in Elementor forms" runs `tools/form_spam_filter.php` (push changes with `tools/publish_spam_filter.py`). It hooks `elementor_pro/forms/validation` on every Elementor form and rejects text/email/textarea content matching SEO / marketing / web-design / lead-gen / "opt-out" / crypto/loan phrases or containing links (http://, www.). The visitor sees "Sorry, we can't accept this message… call 07771 004242"; nothing is emailed. Tested live with the reported spam (rejected) and locally against genuine customer messages (pass). Add/remove phrases in `$patterns`.
+- Not done: reCAPTCHA v3 (needs Google keys from the client).
+
 ## Blog (2026-10-12)
 - Page **Blog** (ID 1303, `/blog/`) set as the WordPress posts page.
 - Theme Builder templates, built by `tools/build_blog.py` (`--publish` creates/updates them; IDs in `created.json`), styles in `tools/blog.css`:
