@@ -155,22 +155,35 @@
       if (model && model.selectedOptions[0] && model.selectedOptions[0].disabled) model.value = '';
       model && (model.disabled = !mk);
     }
+    var reqId = 0, studio = img ? img.closest('.bb-studio') : null;
     function setImage() {
       if (!img) return;
-      var mk = make.value, md = model.value, c = cars[mk], fam = c && c.models[md];
-      var y = parseInt((f('year') || {}).value, 10);
+      var mk = make.value, md = model.value, c = cars[mk];
+      // model chosen → that model; make only → the make's most popular model (first in the list) as a preview
+      var shown = c ? (c.models[md] ? md : Object.keys(c.models)[0]) : '', fam = c && c.models[shown];
+      var y = parseInt((f('year') || {}).value, 10), id = ++reqId;
       if (IMAGIN_KEY && fam) {
         var u = 'https://cdn.imagin.studio/getImage?customer=' + encodeURIComponent(IMAGIN_KEY) + '&make=' + c.slug +
-          '&modelFamily=' + fam + (y ? '&modelYear=' + y : '') + '&angle=23&zoomType=fullscreen&width=';
-        img.loading = 'eager'; img.removeAttribute('srcset'); img.removeAttribute('sizes'); img.src = u + '800';
-        img.alt = md + ' studio render';
+          '&modelFamily=' + fam + (y ? '&modelYear=' + y : '') + '&angle=23&zoomType=fullscreen&width=800';
+        if (studio) studio.classList.add('is-loading');
+        var pre = new Image();          // preload, then swap – keeps the old picture until the new render has arrived
+        pre.onload = function () {
+          if (id !== reqId) return;
+          img.removeAttribute('srcset'); img.removeAttribute('sizes'); img.src = u; img.alt = shown + ' studio render';
+          if (studio) studio.classList.remove('is-loading');
+        };
+        pre.onerror = function () { if (id === reqId && studio) studio.classList.remove('is-loading'); };
+        pre.src = u;
       } else if (civic) {
+        if (studio) studio.classList.remove('is-loading');
         img.src = civic.src; civic.srcset ? img.setAttribute('srcset', civic.srcset) : img.removeAttribute('srcset');
       }
-      if (cap) cap.textContent = ((IMAGIN_KEY && fam) ? md : 'Honda Civic') .toUpperCase() + ' · ILLUSTRATIVE PREVIEW';
-      if (note) note.textContent = fam ? (IMAGIN_KEY ? 'Colour and trim may differ' : 'Vehicle preview shown for illustration')
-        : 'Select a make and model to preview it';
+      if (cap) cap.textContent = ((IMAGIN_KEY && fam) ? shown : 'Honda Civic').toUpperCase() + ' · ILLUSTRATIVE PREVIEW';
+      if (note) note.textContent = !fam ? 'Select a make and model to preview it'
+        : (c.models[md] ? 'Colour and trim may differ' : 'Popular ' + mk + ' shown – pick your model');
     }
+    // warm the connection to the image CDN as soon as the checker is on screen
+    if (IMAGIN_KEY) { var pc = document.createElement('link'); pc.rel = 'preconnect'; pc.href = 'https://cdn.imagin.studio'; document.head.appendChild(pc); }
     function upd() {
       var md = model && model.value && model.value !== 'Other / not listed' ? model.value : (make ? make.value : '');
       var y = (f('year') || {}).value || '', m = (f('mileage') || {}).value || '';

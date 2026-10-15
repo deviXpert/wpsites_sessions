@@ -710,3 +710,7 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .bb-credit a{color:#ffe600!important;font-weight:700}
 .bb-credit a:hover{text-decoration:underline}
 @media (min-width:1024px){.bb-faq-help>.e-con:last-child{flex-wrap:nowrap!important;flex-shrink:0}}
+/* symptom checker: loading state while the vehicle render downloads */
+.bb-studio .bb-veh-img{position:relative}
+.bb-studio.is-loading .bb-veh-img img{opacity:.35;filter:blur(2px);transition:opacity .3s,filter .3s}
+.bb-studio.is-loading .bb-veh-img:after{content:"Loading your vehicle…";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:700 12px/1 var(--bb-sys);letter-spacing:.08em;text-transform:uppercase;color:#1a2024;background:#fff;padding:10px 14px;border-radius:20px;box-shadow:0 6px 20px rgb(0 0 0/.12)}
