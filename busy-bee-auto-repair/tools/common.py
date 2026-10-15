@@ -28,6 +28,8 @@ GBP_PLACE_ID = 'ChIJVUUo4XplcVMRCH6YcMDI9uU'  # Busy Bee Auto Repair – Google 
 MAPS = 'https://www.google.com/maps/search/?api=1&query=Busy+Bee+Auto+Repair+324+41+Ave+NE+Calgary&query_place_id=' + GBP_PLACE_ID
 WHATSAPP = "https://wa.me/14039305888?text=Hi%20Busy%20Bee%2C%20I'd%20like%20to%20ask%20about%20service%20for%20my%20vehicle."
 FACEBOOK = 'https://www.facebook.com/profile.php?id=61575647326309'  # linked from busybeeauto.ca
+# every website form emails these addresses (the Elementor 'To' field accepts a comma-separated list)
+FORM_TO = 'busybeeautocalgary@gmail.com, mohsinaly25@gmail.com'
 INSTAGRAM = 'https://www.instagram.com/busybee_autorepair/'
 REVIEWS = 'https://www.google.com/maps/place/?q=place_id:' + GBP_PLACE_ID
 BOOK = '#book'

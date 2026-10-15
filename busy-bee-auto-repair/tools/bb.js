@@ -288,18 +288,49 @@
         var sel = $('[name="form_fields[service]"]', form); if (sel) sel.value = c.getAttribute('data-service');
       });
     });
-    form.addEventListener('submit', function (e) {
-      e.preventDefault(); e.stopImmediatePropagation();
-      if (!form.reportValidity()) return;
+    // Elementor submits the form (email to the shop); we also open WhatsApp with the same details
+    form.addEventListener('submit', function () {
+      if (!form.checkValidity()) return;
       var lines = ['Hi Busy Bee, I\'d like to request a service.', 'Name: ' + val('name'), 'Phone: ' + val('phone')];
       if (val('vehicle')) lines.push('Vehicle: ' + val('vehicle'));
       if (val('service')) lines.push('Service: ' + val('service'));
       if (val('issue')) lines.push('Issue: ' + val('issue'));
       window.open('https://wa.me/14039305888?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+    });
+  }
+
+  /* ---------- form guard: blocks bots and sales pitches before Elementor sends the email ----------
+     Runs in the capture phase on document, so a blocked submit never reaches Elementor's handler.
+     1) bots: no real typing/selection in the form, or submitted < 3 s after the first interaction
+     2) links: website addresses are not needed for a car-service request
+     3) solicitation: SEO / guest-post / marketing / web-design / crypto pitches
+     Server-side backup: Elementor's native honeypot field on every form (see el.harden_forms). */
+  var BB_SPAM = /\b(seo|search engine|guest ?post(s|ing)?|back ?links?|link ?building|outreach|digital marketing|marketing (agency|services|campaign)|social media (marketing|management)|lead generation|generate (more )?leads|web ?site (design|redesign|development)|web design|web developer|app development|first page (of|on) google|google (ranking|ads|my business optimi[sz]ation)|rank(ing)? (higher|your|on google)|domain authority|sponsored (post|article|content)|content writ(ing|er)|article submission|ppc|adwords|white ?label|virtual assistant|outsourc(e|ing)|crypto|bitcoin|forex|casino|betting|loan offer|business proposal|partnership opportunit(y|ies)|increase (your )?traffic|grow your business)\b/i;
+  function formGuard() {
+    var started = new WeakMap();
+    document.addEventListener('input', function (e) { var f = e.target.closest && e.target.closest('.bb-guard form'); if (f && !started.has(f)) started.set(f, Date.now()); }, true);
+    document.addEventListener('change', function (e) { var f = e.target.closest && e.target.closest('.bb-guard form'); if (f && !started.has(f)) started.set(f, Date.now()); }, true);
+    function say(form, msg) {
+      var box = form.querySelector('.bb-guard-msg');
+      if (!box) { box = document.createElement('div'); box.className = 'bb-guard-msg'; box.setAttribute('role', 'alert'); form.appendChild(box); }
+      box.textContent = msg;
+    }
+    document.addEventListener('submit', function (e) {
+      var form = e.target; if (!form.closest || !form.closest('.bb-guard')) return;
+      var text = Array.prototype.map.call(form.querySelectorAll('input[type=text],input[type=email],input:not([type]),textarea'),
+        function (i) { return i.value; }).join(' ');
+      var t0 = started.get(form), why = '';
+      if (!t0 || Date.now() - t0 < 3000) why = 'Please take a moment to fill in the form, then send it again.';
+      else if (/(https?:\/\/|www\.|\b[a-z0-9-]+\.(com|net|org|io|co|biz|info|xyz|online|site|agency)\b)/i.test(text.replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '')))
+        why = 'Please remove website links – we only need your vehicle details.';
+      else if (BB_SPAM.test(text)) why = 'This form is for vehicle service requests only. For anything else, please call (403) 930-5888.';
+      if (why) { e.preventDefault(); e.stopImmediatePropagation(); say(form, why); }
+      else { var b = form.querySelector('.bb-guard-msg'); if (b) b.remove(); }
     }, true);
   }
 
   function init() {
+    formGuard();
     $$('.bb-sm-hero').forEach(servicesPage);
     $$('.bb-sm-form form').forEach(serviceRequest);
     $$('.bb-sm-brand-track').forEach(function (t) { marquee(t, 57.8); });

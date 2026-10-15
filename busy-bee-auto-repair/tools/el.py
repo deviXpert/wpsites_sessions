@@ -502,9 +502,31 @@ def _fix_inner(els, inner=False):
             _fix_inner(e['elements'], True)
 
 
+def harden_forms(elements):
+    """Every Elementor form: email both shop addresses, keep a native honeypot field (checked server-side by Elementor Pro) and
+    the bb-guard class that bb.js uses for the anti-solicitation / bot timing check."""
+    from common import FORM_TO
+    for x in elements:
+        if x.get('widgetType') == 'form':
+            st = x['settings']
+            acts = st.setdefault('submit_actions', [])
+            if 'email' not in acts:
+                acts.append('email')
+            st['email_to'] = FORM_TO
+            st.setdefault('email_subject', 'Website enquiry – ' + st.get('form_name', 'form'))
+            st.setdefault('email_content', '[all-fields]')
+            st.setdefault('email_from_name', 'Busy Bee website')
+            if not any(f.get('field_type') == 'honeypot' for f in st.get('form_fields', [])):
+                st['form_fields'].append({'_id': 'hp', 'custom_id': 'hp', 'field_type': 'honeypot', 'field_label': '', 'width': '100'})
+            if 'bb-guard' not in st.get('_css_classes', ''):
+                st['_css_classes'] = (st.get('_css_classes', '') + ' bb-guard').strip()
+        harden_forms(x.get('elements', []))
+
+
 def save(kind, post_id, elements, page_settings=None, extra=None):
     """kind: 'pages' or 'elementor_library'."""
     _fix_inner(elements)
+    harden_forms(elements)
     meta = {'_elementor_data': json.dumps(elements), '_elementor_edit_mode': 'builder'}
     if kind == 'pages':  # Astra: full-width, no title, no sidebar
         meta.update({'ast-site-content-layout': 'full-width-container', 'site-content-style': 'unboxed',

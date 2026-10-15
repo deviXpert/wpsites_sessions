@@ -201,7 +201,8 @@ def book(heading='Need your car checked <em>today?</em>', photo_key='engine-repa
             f['width_mobile'] = '100'
     form = W('form', 'Request form', form_name='Service request (WhatsApp)', form_fields=fields, input_size='sm', show_labels='yes',
              button_text='Continue in WhatsApp', button_size='sm', button_width='100', selected_button_icon=icon('arrow-up-right'),
-             button_icon_align='row-reverse', button_icon_indent=px(15), submit_actions=[], success_message='Opening WhatsApp…',
+             button_icon_align='row-reverse', button_icon_indent=px(15), submit_actions=['email'], email_subject='Service request – [field id="service"] – busybeeautorepair website',
+             success_message='Thanks! Your request is with our team. WhatsApp is opening so you can message us too.',
              column_gap=px(15), row_gap=px(12), label_spacing=px(6), label_color=PAPER,
              **{('label_' + k): v for k, v in S(11, 650, 16.5).items()},
              field_text_color=PAPER, **{('field_' + k): v for k, v in S(13, 400, 19.5).items()},
