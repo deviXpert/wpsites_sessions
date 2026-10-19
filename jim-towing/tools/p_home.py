@@ -14,7 +14,7 @@ def form_widget(cls='j-form', name='Hero Service Request', btn='Request Dispatch
     return W('form', cls, form_name=name, form_fields=f, show_labels='', input_size='md', button_text=btn, button_size='md',
              selected_button_icon=ICO('paper-plane'), button_icon_align='row-reverse', button_icon_indent={'unit': 'px', 'size': 10},
              submit_actions=['email', 'save-to-database'], email_to=EMAIL + ', ahsanhashmi1925@gmail.com', email_subject='New service request from jimtowing.ca',
-             email_content='[all-fields]', email_from_name='Jim Towing Website', email_reply_to='', email_content_type='html',
+             email_content='[all-fields]', form_metadata=['date', 'time', 'page_url', 'remote_ip'], email_from_name='Jim Towing Website', email_reply_to='', email_content_type='html',
              custom_messages='yes', success_message=f"Thanks — we've received your request and will call you back shortly. For the fastest dispatch, call {PHONE}.",
              error_message=f'Something went wrong. Please call us directly at {PHONE}.', required_message='This field is required.', form_id='jim-request-form')
 
