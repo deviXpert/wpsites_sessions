@@ -37,7 +37,8 @@ node shot.js https://ktctowing.ca/ new   # desktop + mobile full-page screenshot
 ## Services mega menu (2026-10-21)
 - Elementor > Custom Code > **"KTC – Services mega menu"** (snippet ID in `tools/snippet_id`, location `<head>`). Source with comments: `tools/mega-menu.html`.
 - The links still come from the WordPress menu "Main". Add or rename services in Appearance > Menus under one of the 3 groups and the panel updates automatically.
-- Desktop only (at least 1025px): 3 columns plus a 24/7 dispatch card. The mobile off-canvas menu is unchanged. If the JS fails, the menu falls back to the normal dropdown.
+- Desktop (at least 1025px): 3 columns plus a 24/7 dispatch card. Mobile/tablet drawer: dark theme, groups shown as labels with their links listed (no nested taps), visible close button, fixed Call/WhatsApp buttons, and the list scrolls between them. If the JS fails, the menu falls back to the normal dropdown.
+- Test mobile without publishing: `node mobmenu.js mob 1`.
 - Test without publishing: `node megatest.js https://ktctowing.ca/about-us/ mm 1` (injects the local file and hovers Services).
 
 ## Open / for the user
