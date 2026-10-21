@@ -364,9 +364,10 @@ FAQ_CSS = """<style>
 .ktc-faq-card a.ktc-faq-card__phone{display:block;font-size:32px!important;font-weight:800!important;color:#FFA300!important;letter-spacing:.5px;line-height:1.2;text-decoration:none}
 .ktc-faq-card__note{font-size:14px;color:rgba(255,255,255,.75);margin:10px 0 18px}
 .ktc-faq-card a.ktc-faq-card__wa{display:inline-block;background:#25D366;color:#fff!important;font-weight:700!important;font-size:14px!important;border-radius:10px;padding:12px 18px;text-decoration:none}
-.ktc-acc .e-n-accordion{counter-reset:q}
+.ktc-acc .e-n-accordion{counter-reset:q;display:flex!important;flex-direction:column;gap:14px!important}
+.ktc-acc .e-n-accordion-item+.e-n-accordion-item{margin-top:0!important}
 .ktc-acc .e-n-accordion-item{counter-increment:q;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;
-  margin-bottom:12px;overflow:hidden;transition:box-shadow .25s,border-color .25s}
+  margin:0!important;overflow:hidden;transition:box-shadow .25s,border-color .25s}
 .ktc-acc .e-n-accordion-item:hover{box-shadow:0 10px 28px rgba(0,0,0,.08)}
 .ktc-acc .e-n-accordion-item[open]{border-color:#FFA300;box-shadow:0 14px 34px rgba(255,163,0,.18)}
 .ktc-acc .e-n-accordion-item-title{padding:20px 22px!important;border:0!important;background:transparent!important;align-items:center;gap:14px}
@@ -386,7 +387,10 @@ FAQ_CSS = """<style>
 .ktc-acc [role=region]>.e-con-inner,.ktc-acc [role=region].e-con{--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px}
 @media (max-width:1024px){.ktc-faq-intro{position:static}}
 @media (max-width:767px){
+  .ktc-acc .e-n-accordion{gap:12px!important}
   .ktc-acc .e-n-accordion-item-title{padding:16px!important}
+  .ktc-faq{--gap:28px;gap:28px!important}
+  .ktc-faq-card{margin-top:20px!important}
   .ktc-acc .e-n-accordion-item-title-header:before{width:32px;height:32px;font-size:12px;border-radius:10px}
   .ktc-acc .e-n-accordion-item-title-text{font-size:15px!important}
   .ktc-acc .e-n-accordion-item>[role=region]{padding:0 16px 16px!important}
