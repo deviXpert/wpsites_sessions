@@ -43,6 +43,9 @@ def eyebrow(text, align="center"):
 def h2(text, align="center"):
     e = clone(idx["c04edba"]); e["settings"]["title"] = text; e["settings"]["align"] = align
     e["settings"].pop("header_size", None)  # default h2
+    if align == "start":
+        for k in ("_element_width", "_element_custom_width"): e["settings"].pop(k, None)
+        e["settings"]["_flex_align_self"] = "flex-start"
     return e
 
 def para(html, align="center", width=760):
@@ -246,9 +249,11 @@ situ = section([
              "Give us the shop address and tell us if your car is AWD, lowered or damaged. We send a flatbed or wheel-lift truck to match.", "h3", "https://ktctowing.ca/flatbed-towing-calgary/"),
         card("fas fa-key", "I am locked out or out of fuel",
              "We come to you with lockout tools or fuel delivery so you can keep driving, with no tow needed.", "h3", "https://ktctowing.ca/roadside-assistance/"),
-    ], cols=3, cols_tab=2),
-    para("<p><strong>Not sure which service you need?</strong> Call (587) 435-0770 and describe what happened. Our Calgary dispatcher will tell you the right fix and the right truck.</p>"),
-    call_btn(width=260),
+        {"id": nid(), "elType": "widget", "widgetType": "html", "elements": [], "settings": {"_css_classes": "ktc-sit-cta-w", "html":
+            '<div class="ktc-sit-cta"><p class="ktc-sit-cta__t">Not sure which service you need?</p>'
+            '<p class="ktc-sit-cta__d">Describe what happened. Our Calgary dispatcher will tell you the right fix and the right truck.</p>'
+            '<a class="ktc-sit-cta__b" href="tel:+15874350770">Call (587) 435-0770</a></div>'}},
+    ], cols=4, cols_tab=2),
 ], bg="#F8F8F8")
 
 # Winter: clone the About layout (image + text), image on the right.
@@ -293,33 +298,24 @@ S("c9239d0")["css_classes"] = "ktc-strip"
 S("2922b34")["typography_font_size"] = {"unit": "custom", "size": "clamp(32px, 3.8vw, 52px)", "sizes": []}
 
 FLEET_CSS = """<style>
-.ktc-fleet{position:relative}
-.ktc-fleet .ktc-fc{background:linear-gradient(160deg,rgba(28,28,32,.94),rgba(10,10,12,.94))!important;
-  border:1px solid rgba(255,163,0,.28)!important;border-top:3px solid #FFA300!important;
-  box-shadow:0 18px 45px rgba(0,0,0,.5);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
-.ktc-fleet .ktc-fc:hover{transform:translateY(-6px);border-color:#FFA300!important;box-shadow:0 22px 55px rgba(255,163,0,.22)}
-.ktc-fleet .ktc-num .elementor-heading-title{display:inline-block;background:rgba(255,163,0,.14);color:#FFA300!important;
-  border:1px solid rgba(255,163,0,.45);border-radius:50px;padding:5px 12px;font-size:12px!important;letter-spacing:1.2px;text-transform:uppercase}
-.ktc-fleet .ktc-fbox .elementor-icon{background:#FFA300;color:#000!important;fill:#000;border-radius:12px;padding:13px}
-.ktc-fleet .ktc-fbox .elementor-icon i,.ktc-fleet .ktc-fbox .elementor-icon svg{color:#000;fill:#000}
-.ktc-fleet .ktc-fbox .elementor-icon-box-title{font-size:21px!important;font-weight:700!important}
-.ktc-fleet .ktc-fbox .elementor-icon-box-description{color:rgba(255,255,255,.82)!important;font-size:14.5px!important}
-.ktc-fleet .ktc-pill,.ktc-fleet .ktc-pill>.elementor-widget-container{background:#FFA300!important;border-color:#FFA300!important;
-  border-radius:50px!important}
-.ktc-fleet .ktc-pill{box-shadow:0 8px 22px rgba(255,163,0,.3);position:relative!important;left:auto!important;right:auto!important;
-  bottom:auto!important;top:auto!important;width:100%!important;max-width:100%!important;margin-top:auto!important}
+.ktc-fleet .ktc-fc{background:rgba(18,18,20,.88)!important;border:1px solid rgba(255,255,255,.14)!important;
+  transition:transform .3s ease,border-color .3s ease}
+.ktc-fleet .ktc-fc:hover{transform:translateY(-4px);border-color:rgba(255,163,0,.7)!important}
 .ktc-fleet .ktc-fc{display:flex!important;flex-direction:column}
-.ktc-fleet .ktc-fbox{margin-bottom:18px!important}
-.ktc-fleet .ktc-pill .elementor-heading-title,.ktc-fleet .ktc-pill .elementor-heading-title span{color:#000!important}
-.ktc-fleet .ktc-pill .elementor-heading-title span{font-weight:800}
-.ktc-fleet .ktc-tile{background:radial-gradient(circle at 50% 45%,rgba(255,163,0,.32),rgba(255,163,0,.06) 70%)!important;
-  border:1px solid rgba(255,163,0,.35);border-radius:15px}
-.ktc-fleet .ktc-tile svg{width:84px;height:84px;filter:drop-shadow(0 0 14px rgba(255,163,0,.55))}
-.ktc-fleet .ktc-strip{background:rgba(255,163,0,.07)!important;border:1px solid rgba(255,163,0,.45)!important;
-  box-shadow:0 18px 45px rgba(0,0,0,.45)}
-.ktc-fleet .ktc-strip .elementor-icon-box-title{color:#fff!important}
+.ktc-fleet .ktc-num .elementor-heading-title{color:#FFA300!important;font-size:12px!important;letter-spacing:1.2px;text-transform:uppercase}
+.ktc-fleet .ktc-fbox{margin-bottom:16px!important}
+.ktc-fleet .ktc-fbox .elementor-icon{border:1px solid rgba(255,163,0,.55);border-radius:10px;padding:9px;background:transparent}
+.ktc-fleet .ktc-fbox .elementor-icon svg{fill:#FFA300!important;width:18px;height:18px}
+.ktc-fleet .ktc-fbox .elementor-icon-box-title{font-size:20px!important}
+.ktc-fleet .ktc-fbox .elementor-icon-box-description{color:rgba(255,255,255,.78)!important}
+.ktc-fleet .ktc-pill{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;
+  width:auto!important;max-width:100%!important;margin-top:auto!important;align-self:flex-start}
+.ktc-fleet .ktc-pill,.ktc-fleet .ktc-pill>.elementor-widget-container{background:rgba(255,163,0,.1)!important;
+  border-color:rgba(255,163,0,.45)!important;border-radius:50px!important}
+.ktc-fleet .ktc-pill .elementor-heading-title{color:#fff!important}
+.ktc-fleet .ktc-pill .elementor-heading-title span{color:#FFA300!important}
+.ktc-fleet .ktc-tile{border:1px solid rgba(255,163,0,.25);border-radius:15px}
 @media (min-width:768px){.ktc-fleet .ktc-strip .elementor-widget-icon-box,.ktc-fleet .ktc-strip .elementor-widget-icon-box>.elementor-widget-container{border-bottom:0!important}}
-.ktc-fleet .ktc-strip .elementor-icon-box-description{color:rgba(255,255,255,.8)!important}
 @media (prefers-reduced-motion:reduce){.ktc-fleet .ktc-fc{transition:none}.ktc-fleet .ktc-fc:hover{transform:none}}
 </style>"""
 fleet["elements"].insert(0, {"id": nid(), "elType": "widget", "widgetType": "html", "elements": [],
@@ -355,7 +351,9 @@ faq_list = {"id": nid(), "elType": "container", "isInner": True, "elements": [id
                          "width_tablet": {"unit": "%", "size": 100, "sizes": []}}}
 FAQ_CSS = """<style>
 .ktc-faq{position:relative}
-.ktc-faq-intro{position:sticky;top:110px;align-self:flex-start}
+.ktc-faq-intro{position:sticky;top:110px;align-self:flex-start!important}
+.ktc-faq,.ktc-faq>.e-con-inner{--align-items:flex-start;align-items:flex-start!important}
+.ktc-faq-intro{--align-self:flex-start;--justify-content:flex-start;justify-content:flex-start!important}
 .ktc-faq-card{margin-top:14px;background:#111;border-radius:18px;padding:28px;color:#fff;position:relative;overflow:hidden;
   box-shadow:0 20px 45px rgba(0,0,0,.18)}
 .ktc-faq-card:before{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;
@@ -382,7 +380,10 @@ FAQ_CSS = """<style>
 .ktc-acc .e-n-accordion-item-title-icon svg{fill:#fff!important;width:12px;height:12px}
 .ktc-acc .e-n-accordion-item[open] .e-n-accordion-item-title-icon{background:#FFA300}
 .ktc-acc .e-n-accordion-item[open] .e-n-accordion-item-title-icon svg{fill:#000!important}
-.ktc-acc .e-n-accordion-item>[role=region]{border:0!important;padding:0 22px 20px 76px!important;color:#4A4A4A}
+.ktc-acc .e-n-accordion-item>[role=region]{border:0!important;padding:0 22px 18px 76px!important;color:#4A4A4A;min-height:0!important}
+.ktc-acc [role=region] .elementor-widget-text-editor,.ktc-acc [role=region] .elementor-widget-container{margin:0!important;padding:0!important}
+.ktc-acc [role=region] p:last-child{margin-bottom:0!important}
+.ktc-acc [role=region]>.e-con-inner,.ktc-acc [role=region].e-con{--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px}
 @media (max-width:1024px){.ktc-faq-intro{position:static}}
 @media (max-width:767px){
   .ktc-acc .e-n-accordion-item-title{padding:16px!important}
@@ -397,16 +398,62 @@ faq["elements"] = [faq_intro, faq_list,
                   "_element_custom_width": {"unit": "px", "size": 0, "sizes": []}}}]
 
 # ===================== 2d. mobile optimisation (home page only) =====================
-for g in (how["elements"][2], price["elements"][3]):  # short cards: 2 per row on phones
-    g["settings"]["grid_columns_grid_mobile"] = {"unit": "fr", "size": 2, "sizes": []}
+for g in (how["elements"][2], price["elements"][3]):  # phones: compact rows, icon on the left
+    g["settings"]["grid_columns_grid_mobile"] = {"unit": "fr", "size": 1, "sizes": []}
+    g["settings"]["grid_gaps_mobile"] = {"column": "10", "row": "10", "isLinked": True, "unit": "px"}
+    for w in g["elements"]:
+        w["settings"]["position_mobile"] = "inline-start"
+        w["settings"]["_padding_mobile"] = {"unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": True}
+for g in (situ["elements"][2],):
     g["settings"]["grid_gaps_mobile"] = {"column": "12", "row": "12", "isLinked": True, "unit": "px"}
-for c in ("d3f9148", "7574378", "07567ad"):
-    S(c)["css_classes"] = "ktc-flips"
+    for w in g["elements"]:
+        if w.get("widgetType") == "icon-box":
+            w["settings"]["_padding_mobile"] = {"unit": "px", "top": "20", "right": "18", "bottom": "20", "left": "18", "isLinked": False}
+# centred section on phones -> centred button
+S("0f4641c")["_flex_align_self_mobile"] = "center"
+for c, n in (("d3f9148", 3), ("7574378", 4), ("07567ad", 3)):
+    S(c)["css_classes"] = f"ktc-flips ktc-flips-{n}"
+    S(c)["boxed_width"] = {"unit": "px", "size": 1240, "sizes": []}
+S("07567ad")["content_width"] = "boxed"   # was full-width: wider than the other two rows
+for c in ("c0c4479", "0ab9485", winter["id"]):  # image + text sections: same 1240px box as the rest of the page
+    idx[c] = idx.get(c) or winter
+    (winter if c == winter["id"] else idx[c])["settings"].update({"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1240, "sizes": []},
+        "flex_gap": {"column": "60", "row": "30", "isLinked": False, "unit": "px", "size": 60}})
+S("93f3140")["border_border"] = "none"
+S("9e21e2a")["padding"] = {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": False}
+S("d746a44")["grid_columns_grid_mobile"] = {"unit": "fr", "size": 2, "sizes": []}
+S("d746a44")["css_classes"] = "ktc-stats"
+S("a948605")["_margin_mobile"] = {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": False}
+S("a274611")["_margin_mobile"] = dict(S("a948605")["_margin_mobile"])
+for c in ("056494d", "d21c473"):  # sticky image columns overlapped the text once the columns stack
+    for k in ("sticky", "sticky_on", "sticky_offset_tablet", "sticky_parent"): S(c).pop(k, None)
+data[0]["settings"]["padding_mobile"] = {"unit": "px", "top": "40", "right": "20", "bottom": "30", "left": "20", "isLinked": False}
 MOBILE_CSS = """<style>
+.ktc-card a,.ktc-card-sm a{font-size:inherit!important;font-weight:600;color:inherit}
+/* service cards: each row stretches to the full width (no orphan cards / side gaps) */
+.ktc-flips>.e-con-inner,.ktc-flips{flex-wrap:wrap!important}
+.ktc-flips .elementor-widget-flip-box{flex:1 1 calc(33.333% - 19px)!important;width:auto!important;max-width:none!important}
+.ktc-flips-4 .elementor-widget-flip-box{flex-basis:calc(25% - 19px)!important}
+.ktc-flips .elementor-flip-box{height:330px!important}
+@media (max-width:1024px){.ktc-flips .elementor-widget-flip-box,.ktc-flips-4 .elementor-widget-flip-box{flex-basis:calc(50% - 14px)!important}}
+.ktc-sit-cta-w{height:100%}
+.ktc-sit-cta-w>.elementor-widget-container{height:100%}
+.ktc-sit-cta{height:100%;box-sizing:border-box;background:#111;border-radius:16px;padding:26px 24px;display:flex;flex-direction:column;gap:10px;
+  position:relative;overflow:hidden}
+.ktc-sit-cta:before{content:"";position:absolute;right:-50px;top:-50px;width:160px;height:160px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,163,0,.4),rgba(255,163,0,0) 70%)}
+.ktc-sit-cta p.ktc-sit-cta__t{color:#fff;font-size:19px;font-weight:700;line-height:1.3;margin:0}
+.ktc-sit-cta p.ktc-sit-cta__d{color:rgba(255,255,255,.75);font-size:15px;line-height:1.6;margin:0}
+.ktc-sit-cta a.ktc-sit-cta__b{margin-top:auto;align-self:flex-start;background:#FFA300;color:#000!important;font-weight:700;font-size:15px;
+  border-radius:10px;padding:12px 18px;text-decoration:none}
 @media (max-width:767px){
+  .ktc-stats>.e-con:last-child{grid-column:1/-1}
+  .ktc-stats>.e-con{background:#fff;border:1px solid rgba(0,0,0,.08)!important;border-radius:14px;padding:16px 8px!important}
+  .ktc-stats .elementor-counter-number-wrapper{font-size:30px!important}
+  .ktc-stats .elementor-widget-counter,.ktc-stats .elementor-widget-counter>.elementor-widget-container{border:0!important;padding:0!important}
   /* service flip cards: 2 per row instead of 16 full-width 380px cards */
   .ktc-flips,.ktc-flips>.e-con-inner{gap:12px!important}
-  .ktc-flips .elementor-widget-flip-box{width:calc(50% - 6px)!important;max-width:calc(50% - 6px)!important}
+  .ktc-flips .elementor-widget-flip-box,.ktc-flips-4 .elementor-widget-flip-box{flex-basis:calc(50% - 6px)!important}
   .ktc-flips .elementor-flip-box{height:230px!important}
   .ktc-flips .elementor-flip-box__layer__title{font-size:14px!important;line-height:1.25!important}
   .ktc-flips .elementor-flip-box__back .elementor-flip-box__layer__description{font-size:11.5px!important;line-height:1.45!important;
@@ -415,10 +462,11 @@ MOBILE_CSS = """<style>
   /* compact info cards */
   .ktc-card .elementor-icon-box-title{font-size:16px!important}
   .ktc-card .elementor-icon-box-description{font-size:14px!important}
-  .ktc-card-sm{padding:16px 14px!important}
-  .ktc-card-sm .elementor-icon-box-title{font-size:14.5px!important}
-  .ktc-card-sm .elementor-icon-box-description{font-size:12.5px!important}
-  .ktc-card-sm .elementor-icon{padding:10px!important}
+  .ktc-card-sm .elementor-icon-box-wrapper{gap:14px}
+  .ktc-card-sm .elementor-icon-box-icon{margin:0!important}
+  .ktc-card-sm .elementor-icon-box-title{font-size:16px!important;margin-bottom:4px!important}
+  .ktc-card-sm .elementor-icon-box-description{font-size:14px!important;line-height:1.5!important}
+  .ktc-card-sm .elementor-icon{padding:11px!important}
   .ktc-card-sm .elementor-icon svg{width:18px!important;height:18px!important}
   /* readable body copy */
   .elementor-widget-text-editor p{font-size:15px;line-height:1.65}
@@ -441,5 +489,23 @@ order = ["678e4f8", "447526f", "c0c4479", "863aceb", "9e21e2a", "0ab9485", "116c
          winter, "0ac5450", "5d18d64", "8427113", "cc482fb", "c6b2cd9", "b02de70"]
 new = [top[x] if isinstance(x, str) else x for x in order]
 assert len({e["id"] for e in new}) == len(new) and set(top) <= {e["id"] for e in new}
+# ---- one vertical rhythm for every section (was a mix of margins + paddings, 0 to 160px) ----
+BG = {"9e21e2a", "116cc96", how["id"], price["id"], situ["id"]}
+KEEP = {"678e4f8", "447526f", "b7d5300", "e700e38", "93f3140"}  # hero, marquees, map + its area grid
+PAD = {"": 50, "_tablet": 40, "_mobile": 32}       # plain sections: neighbours add up to 100/80/64
+PAD_BG = {"": 90, "_tablet": 64, "_mobile": 52}     # sections with their own background
+ZERO = {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": True}
+for e in new:
+    if e["id"] in KEEP:
+        continue
+    st = e["settings"]
+    for bp, v in (PAD_BG if e["id"] in BG else PAD).items():
+        st["margin" + bp] = dict(ZERO)
+        old = st.get("padding" + bp) or st.get("padding") or {}
+        lr = old.get("left") or "20"
+        st["padding" + bp] = {"unit": "px", "top": str(v), "right": old.get("right") or lr, "bottom": str(v), "left": lr, "isLinked": False}
+# towns box sits right under the area grid
+S("f9c0150")["padding"]["top"] = "40"
+
 json.dump(new, open("built_home.json", "w"))
 print("sections", len(new))

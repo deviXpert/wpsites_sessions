@@ -7,7 +7,7 @@ for(const [n,w,h,m] of [['d',1440,900,false],['m',390,844,true]]){
  await p.goto(url,{waitUntil:'networkidle',timeout:120000}).catch(e=>console.log(e.message));
  const H=await p.evaluate(()=>document.body.scrollHeight);
  for(let y=0;y<H;y+=700){await p.evaluate(y=>scrollTo(0,y),y);await p.waitForTimeout(100);}
- for(const [k,s] of sels.entries()){const els=await p.$$(s); if(!els.length){console.log('none',s);continue;}
+ for(const [k,s] of sels.entries()){const els=await p.$$(s.startsWith("#id:")?`[data-id="${s.slice(4)}"]`:s); if(!els.length){console.log('none',s);continue;}
    const el=els[els.length-1]; await el.scrollIntoViewIfNeeded(); await p.waitForTimeout(800);
    await el.screenshot({path:`shots/${pre}_${k}_${n}.png`});}
  await p.close();}
