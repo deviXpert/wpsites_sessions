@@ -268,6 +268,171 @@ w_txt_col["elements"] = [
     call_btn(width=260, align="flex-start"),
 ]
 
+# ===================== 2b. fleet section ("Why the right tow truck matters") styling =====================
+fleet = idx["116cc96"]
+fleet["settings"]["css_classes"] = "ktc-fleet"
+fleet["settings"]["background_overlay_opacity"] = {"unit": "px", "size": 0.82, "sizes": []}
+FLEET_CARDS = {  # card container -> (icon-box, number label, pill, icon)
+    "9fd2c60": ("7fbbcb9", "0598369", "ac83084", None),  # flatbed keeps its big SVG tile
+    "ac99c6c": ("b69e5b9", "29d77f1", "085d3cb", "fas fa-truck-pickup"),
+    "d93bc5a": ("595b8f7", "5b1b780", "fe5df0f", "fas fa-link"),
+    "781a9e9": ("b4ae591", "d4aab57", "9edb2f7", "fas fa-truck-moving"),
+    "04bd782": ("59724ae", "b6a832c", "4cc466e", "fas fa-headset"),
+}
+for c, (box, num, pill, icon) in FLEET_CARDS.items():
+    S(c)["css_classes"] = "ktc-fc"
+    S(num)["_css_classes"] = "ktc-num"   # widgets use _css_classes, containers css_classes
+    S(pill)["_css_classes"] = "ktc-pill"
+    S(box)["_css_classes"] = "ktc-fbox"
+    S(c)["min_height_mobile"] = {"unit": "px", "size": 0, "sizes": []}
+    if icon:
+        S(box).update({"selected_icon": {"value": icon, "library": "fa-solid"}, "position": "top", "position_mobile": "top",
+                       "icon_size": {"unit": "px", "size": 20, "sizes": []}, "icon_space": {"unit": "px", "size": 14, "sizes": []}})
+S("62b68e1")["css_classes"] = "ktc-tile"
+S("c9239d0")["css_classes"] = "ktc-strip"
+S("2922b34")["typography_font_size"] = {"unit": "custom", "size": "clamp(32px, 3.8vw, 52px)", "sizes": []}
+
+FLEET_CSS = """<style>
+.ktc-fleet{position:relative}
+.ktc-fleet .ktc-fc{background:linear-gradient(160deg,rgba(28,28,32,.94),rgba(10,10,12,.94))!important;
+  border:1px solid rgba(255,163,0,.28)!important;border-top:3px solid #FFA300!important;
+  box-shadow:0 18px 45px rgba(0,0,0,.5);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.ktc-fleet .ktc-fc:hover{transform:translateY(-6px);border-color:#FFA300!important;box-shadow:0 22px 55px rgba(255,163,0,.22)}
+.ktc-fleet .ktc-num .elementor-heading-title{display:inline-block;background:rgba(255,163,0,.14);color:#FFA300!important;
+  border:1px solid rgba(255,163,0,.45);border-radius:50px;padding:5px 12px;font-size:12px!important;letter-spacing:1.2px;text-transform:uppercase}
+.ktc-fleet .ktc-fbox .elementor-icon{background:#FFA300;color:#000!important;fill:#000;border-radius:12px;padding:13px}
+.ktc-fleet .ktc-fbox .elementor-icon i,.ktc-fleet .ktc-fbox .elementor-icon svg{color:#000;fill:#000}
+.ktc-fleet .ktc-fbox .elementor-icon-box-title{font-size:21px!important;font-weight:700!important}
+.ktc-fleet .ktc-fbox .elementor-icon-box-description{color:rgba(255,255,255,.82)!important;font-size:14.5px!important}
+.ktc-fleet .ktc-pill,.ktc-fleet .ktc-pill>.elementor-widget-container{background:#FFA300!important;border-color:#FFA300!important;
+  border-radius:50px!important}
+.ktc-fleet .ktc-pill{box-shadow:0 8px 22px rgba(255,163,0,.3);position:relative!important;left:auto!important;right:auto!important;
+  bottom:auto!important;top:auto!important;width:100%!important;max-width:100%!important;margin-top:auto!important}
+.ktc-fleet .ktc-fc{display:flex!important;flex-direction:column}
+.ktc-fleet .ktc-fbox{margin-bottom:18px!important}
+.ktc-fleet .ktc-pill .elementor-heading-title,.ktc-fleet .ktc-pill .elementor-heading-title span{color:#000!important}
+.ktc-fleet .ktc-pill .elementor-heading-title span{font-weight:800}
+.ktc-fleet .ktc-tile{background:radial-gradient(circle at 50% 45%,rgba(255,163,0,.32),rgba(255,163,0,.06) 70%)!important;
+  border:1px solid rgba(255,163,0,.35);border-radius:15px}
+.ktc-fleet .ktc-tile svg{width:84px;height:84px;filter:drop-shadow(0 0 14px rgba(255,163,0,.55))}
+.ktc-fleet .ktc-strip{background:rgba(255,163,0,.07)!important;border:1px solid rgba(255,163,0,.45)!important;
+  box-shadow:0 18px 45px rgba(0,0,0,.45)}
+.ktc-fleet .ktc-strip .elementor-icon-box-title{color:#fff!important}
+@media (min-width:768px){.ktc-fleet .ktc-strip .elementor-widget-icon-box,.ktc-fleet .ktc-strip .elementor-widget-icon-box>.elementor-widget-container{border-bottom:0!important}}
+.ktc-fleet .ktc-strip .elementor-icon-box-description{color:rgba(255,255,255,.8)!important}
+@media (prefers-reduced-motion:reduce){.ktc-fleet .ktc-fc{transition:none}.ktc-fleet .ktc-fc:hover{transform:none}}
+</style>"""
+fleet["elements"].insert(0, {"id": nid(), "elType": "widget", "widgetType": "html", "elements": [],
+                             "settings": {"html": FLEET_CSS, "_element_width": "initial",
+                                          "_element_custom_width": {"unit": "px", "size": 0, "sizes": []},
+                                          "_position": "absolute"}})
+
+# ===================== 2c. FAQ: two-column layout, numbered question cards =====================
+faq = idx["8427113"]
+fs = faq["settings"]
+fs.update({"css_classes": "ktc-faq", "flex_direction": "row", "flex_direction_tablet": "column", "flex_wrap": "nowrap",
+           "flex_align_items": "flex-start", "flex_gap": {"column": "50", "row": "30", "isLinked": False, "unit": "px", "size": 50},
+           "boxed_width": {"unit": "px", "size": 1240, "sizes": []},
+           "padding": {"unit": "px", "top": "40", "right": "20", "bottom": "40", "left": "20", "isLinked": False}})
+S("4453e2a")["align"] = "start"
+S("9cb21cb")["align"] = "start"; S("9cb21cb")["align_tablet"] = "start"
+S("ed0808e")["_margin"] = {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": False}
+S("ed0808e")["_css_classes"] = "ktc-acc"
+faq_intro = {"id": nid(), "elType": "container", "isInner": True, "elements": [
+    idx["4453e2a"], idx["9cb21cb"],
+    para("<p>Straight answers about towing costs, arrival times, impound recovery and the areas we cover. Still not sure? Our dispatcher picks up 24/7.</p>", "start", None),
+    {"id": nid(), "elType": "widget", "widgetType": "html", "elements": [], "settings": {"html":
+        '<div class="ktc-faq-card"><span class="ktc-faq-card__tag">24/7 Dispatch</span>'
+        '<p class="ktc-faq-card__title">Talk to a real dispatcher now</p>'
+        '<a class="ktc-faq-card__phone" href="tel:+15874350770">(587) 435-0770</a>'
+        '<p class="ktc-faq-card__note">Quote and ETA before we dispatch. Average arrival about 20 minutes.</p>'
+        '<a class="ktc-faq-card__wa" href="https://api.whatsapp.com/send/?phone=15874350770&amp;text=Hi+KTC+Towing%2C+I+need+help+with+my+vehicle.">Message us on WhatsApp</a></div>'}},
+], "settings": {"content_width": "full", "flex_direction": "column", "width": {"unit": "%", "size": 38, "sizes": []},
+                "width_tablet": {"unit": "%", "size": 100, "sizes": []}, "css_classes": "ktc-faq-intro",
+                "flex_gap": {"column": "12", "row": "12", "isLinked": True, "unit": "px", "size": 12}}}
+faq_list = {"id": nid(), "elType": "container", "isInner": True, "elements": [idx["ed0808e"]],
+            "settings": {"content_width": "full", "flex_direction": "column", "width": {"unit": "%", "size": 62, "sizes": []},
+                         "width_tablet": {"unit": "%", "size": 100, "sizes": []}}}
+FAQ_CSS = """<style>
+.ktc-faq{position:relative}
+.ktc-faq-intro{position:sticky;top:110px;align-self:flex-start}
+.ktc-faq-card{margin-top:14px;background:#111;border-radius:18px;padding:28px;color:#fff;position:relative;overflow:hidden;
+  box-shadow:0 20px 45px rgba(0,0,0,.18)}
+.ktc-faq-card:before{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,163,0,.45),rgba(255,163,0,0) 70%)}
+.ktc-faq-card__tag{display:inline-block;background:#FFA300;color:#000;font-weight:700;font-size:12px;letter-spacing:1px;
+  text-transform:uppercase;border-radius:50px;padding:5px 12px}
+.ktc-faq-card__title{font-size:20px;font-weight:700;margin:14px 0 6px;color:#fff}
+.ktc-faq-card a.ktc-faq-card__phone{display:block;font-size:32px!important;font-weight:800!important;color:#FFA300!important;letter-spacing:.5px;line-height:1.2;text-decoration:none}
+.ktc-faq-card__note{font-size:14px;color:rgba(255,255,255,.75);margin:10px 0 18px}
+.ktc-faq-card a.ktc-faq-card__wa{display:inline-block;background:#25D366;color:#fff!important;font-weight:700!important;font-size:14px!important;border-radius:10px;padding:12px 18px;text-decoration:none}
+.ktc-acc .e-n-accordion{counter-reset:q}
+.ktc-acc .e-n-accordion-item{counter-increment:q;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;
+  margin-bottom:12px;overflow:hidden;transition:box-shadow .25s,border-color .25s}
+.ktc-acc .e-n-accordion-item:hover{box-shadow:0 10px 28px rgba(0,0,0,.08)}
+.ktc-acc .e-n-accordion-item[open]{border-color:#FFA300;box-shadow:0 14px 34px rgba(255,163,0,.18)}
+.ktc-acc .e-n-accordion-item-title{padding:20px 22px!important;border:0!important;background:transparent!important;align-items:center;gap:14px}
+.ktc-acc .e-n-accordion-item-title-header{display:flex;align-items:center;gap:14px}
+.ktc-acc .e-n-accordion-item-title-header:before{content:counter(q,decimal-leading-zero);flex:0 0 auto;width:40px;height:40px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;background:#FFF4DD;color:#C77E00}
+.ktc-acc .e-n-accordion-item[open] .e-n-accordion-item-title-header:before{background:#FFA300;color:#000}
+.ktc-acc .e-n-accordion-item-title-text{font-size:17px!important;line-height:1.4!important}
+.ktc-acc .e-n-accordion-item-title-icon{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:#111;
+  display:flex!important;align-items:center;justify-content:center}
+.ktc-acc .e-n-accordion-item-title-icon svg{fill:#fff!important;width:12px;height:12px}
+.ktc-acc .e-n-accordion-item[open] .e-n-accordion-item-title-icon{background:#FFA300}
+.ktc-acc .e-n-accordion-item[open] .e-n-accordion-item-title-icon svg{fill:#000!important}
+.ktc-acc .e-n-accordion-item>[role=region]{border:0!important;padding:0 22px 20px 76px!important;color:#4A4A4A}
+@media (max-width:1024px){.ktc-faq-intro{position:static}}
+@media (max-width:767px){
+  .ktc-acc .e-n-accordion-item-title{padding:16px!important}
+  .ktc-acc .e-n-accordion-item-title-header:before{width:32px;height:32px;font-size:12px;border-radius:10px}
+  .ktc-acc .e-n-accordion-item-title-text{font-size:15px!important}
+  .ktc-acc .e-n-accordion-item>[role=region]{padding:0 16px 16px!important}
+  .ktc-faq-card{padding:22px}.ktc-faq-card a.ktc-faq-card__phone{font-size:26px!important}}
+</style>"""
+faq["elements"] = [faq_intro, faq_list,
+    {"id": nid(), "elType": "widget", "widgetType": "html", "elements": [],
+     "settings": {"html": FAQ_CSS, "_position": "absolute", "_element_width": "initial",
+                  "_element_custom_width": {"unit": "px", "size": 0, "sizes": []}}}]
+
+# ===================== 2d. mobile optimisation (home page only) =====================
+for g in (how["elements"][2], price["elements"][3]):  # short cards: 2 per row on phones
+    g["settings"]["grid_columns_grid_mobile"] = {"unit": "fr", "size": 2, "sizes": []}
+    g["settings"]["grid_gaps_mobile"] = {"column": "12", "row": "12", "isLinked": True, "unit": "px"}
+for c in ("d3f9148", "7574378", "07567ad"):
+    S(c)["css_classes"] = "ktc-flips"
+MOBILE_CSS = """<style>
+@media (max-width:767px){
+  /* service flip cards: 2 per row instead of 16 full-width 380px cards */
+  .ktc-flips,.ktc-flips>.e-con-inner{gap:12px!important}
+  .ktc-flips .elementor-widget-flip-box{width:calc(50% - 6px)!important;max-width:calc(50% - 6px)!important}
+  .ktc-flips .elementor-flip-box{height:230px!important}
+  .ktc-flips .elementor-flip-box__layer__title{font-size:14px!important;line-height:1.25!important}
+  .ktc-flips .elementor-flip-box__back .elementor-flip-box__layer__description{font-size:11.5px!important;line-height:1.45!important;
+     display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:10px!important}
+  .ktc-flips .elementor-flip-box__layer__overlay{padding:14px!important}
+  /* compact info cards */
+  .ktc-card .elementor-icon-box-title{font-size:16px!important}
+  .ktc-card .elementor-icon-box-description{font-size:14px!important}
+  .ktc-card-sm{padding:16px 14px!important}
+  .ktc-card-sm .elementor-icon-box-title{font-size:14.5px!important}
+  .ktc-card-sm .elementor-icon-box-description{font-size:12.5px!important}
+  .ktc-card-sm .elementor-icon{padding:10px!important}
+  .ktc-card-sm .elementor-icon svg{width:18px!important;height:18px!important}
+  /* readable body copy */
+  .elementor-widget-text-editor p{font-size:15px;line-height:1.65}
+}
+</style>"""
+data[0]["elements"].insert(0, {"id": nid(), "elType": "widget", "widgetType": "html", "elements": [],
+                               "settings": {"html": MOBILE_CSS, "_position": "absolute", "_element_width": "initial",
+                                            "_element_custom_width": {"unit": "px", "size": 0, "sizes": []}}})
+for sec, cls in ((how, "ktc-card-sm"), (price, "ktc-card-sm"), (situ, "ktc-card")):
+    for g in sec["elements"]:
+        for w in g.get("elements", []):
+            if w.get("widgetType") == "icon-box":
+                w["settings"]["_css_classes"] = cls
+
 # ===================== 3. order (per doc) =====================
 top = {e["id"]: e for e in data}
 order = ["678e4f8", "447526f", "c0c4479", "863aceb", "9e21e2a", "0ab9485", "116cc96",

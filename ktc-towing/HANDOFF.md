@@ -26,6 +26,14 @@ node shot.js https://ktctowing.ca/ new   # desktop + mobile full-page screenshot
 - Heading hierarchy follows the doc. New sections from the doc: How it works (4 steps), Pricing, Towing by situation (7 cards), Winter towing. Section order follows the doc. Added areas Skyview/Inglewood/Beltline, 2 FAQs (FAQPage schema auto-updates, now 11 Qs), and the Section 5 CTA button.
 - Alt text: 28 gallery images that had camera-filename alts (e.g. "WhatsApp Image...") or none, both logos, and image 1868 ("KTC Towing tow truck in Calgary").
 
+## Design pass (2026-10-21, later)
+- Fleet section ("Why the right tow truck matters"): darker overlay, solid cards with orange top edge and hover lift, orange icon tiles, orange "Best for" pills (now in normal flow, so no overlap on mobile), restyled 4-point strip. CSS lives in an HTML widget inside the section (`.ktc-fleet`).
+- FAQ: two columns, with a sticky intro and 24/7 dispatcher card on the left and numbered question cards on the right; the open card is highlighted orange (`.ktc-faq`, `.ktc-acc`). FAQPage schema unchanged.
+- Footer (template 3713, **site-wide**): `build_footer.py` -> `built_footer.json`. Orange CTA card, brand row with a big call button and trust badges, orange accents under column headings, horizontal social icons, gradient wordmark. Quick links: About / Services / Blog / Contact (was "Help"). Fixed the broken relative Google-review link and the copyright text. Backup: `wp-backup/tpl-3713.json`.
+- Mobile: service flip cards 2 per row, How-it-works and Pricing cards 2 per row, compact cards, readable body copy. Mobile page is about 2,000px shorter.
+- Widgets take `_css_classes`; containers take `css_classes`. Boxed containers wrap children in `.e-con-inner`.
+- Push footer: `python3 -c "import wp;wp.post('wp/v2/elementor_library/3713',{'meta':{'_elementor_data':open('built_footer.json').read()}})"`, then clear the Elementor cache.
+
 ## Open / for the user
 1. Yoast meta description can't be set via REST. Paste the doc's version (adds "Call (587) 435-0770.") in Yoast on the home page.
 2. Conflicting facts: counter "25 min Average Arrival" vs "about 20 minutes" in the text. Counter "25+ Years of Experience" vs `foundingDate: 2023` in the LocalBusiness schema (HFCM). Confirm and fix one side.
