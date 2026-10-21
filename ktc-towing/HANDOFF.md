@@ -34,6 +34,12 @@ node shot.js https://ktctowing.ca/ new   # desktop + mobile full-page screenshot
 - Widgets take `_css_classes`; containers take `css_classes`. Boxed containers wrap children in `.e-con-inner`.
 - Push footer: `python3 -c "import wp;wp.post('wp/v2/elementor_library/3713',{'meta':{'_elementor_data':open('built_footer.json').read()}})"`, then clear the Elementor cache.
 
+## Services mega menu (2026-10-21)
+- Elementor > Custom Code > **"KTC – Services mega menu"** (snippet ID in `tools/snippet_id`, location `<head>`). Source with comments: `tools/mega-menu.html`.
+- The links still come from the WordPress menu "Main". Add or rename services in Appearance > Menus under one of the 3 groups and the panel updates automatically.
+- Desktop only (at least 1025px): 3 columns plus a 24/7 dispatch card. The mobile off-canvas menu is unchanged. If the JS fails, the menu falls back to the normal dropdown.
+- Test without publishing: `node megatest.js https://ktctowing.ca/about-us/ mm 1` (injects the local file and hovers Services).
+
 ## Open / for the user
 1. Yoast meta description can't be set via REST. Paste the doc's version (adds "Call (587) 435-0770.") in Yoast on the home page.
 2. Conflicting facts: counter "25 min Average Arrival" vs "about 20 minutes" in the text. Counter "25+ Years of Experience" vs `foundingDate: 2023` in the LocalBusiness schema (HFCM). Confirm and fix one side.
