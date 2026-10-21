@@ -1,0 +1,222 @@
+{
+ "id": 3619,
+ "date": "2026-08-10T10:21:47",
+ "date_gmt": "2026-08-10T10:21:47",
+ "guid": {
+  "rendered": "https://ktctowing.ca/?elementor_library=hero-form",
+  "raw": "https://ktctowing.ca/?elementor_library=hero-form"
+ },
+ "modified": "2026-08-10T13:26:50",
+ "modified_gmt": "2026-08-10T13:26:50",
+ "password": "",
+ "slug": "hero-form",
+ "status": "publish",
+ "type": "elementor_library",
+ "link": "https://ktctowing.ca/?elementor_library=hero-form",
+ "title": {
+  "raw": "Hero Form",
+  "rendered": "Hero Form"
+ },
+ "author": 1,
+ "featured_media": 0,
+ "template": "",
+ "meta": {
+  "site-sidebar-layout": "default",
+  "site-content-layout": "",
+  "ast-site-content-layout": "default",
+  "site-content-style": "default",
+  "site-sidebar-style": "default",
+  "ast-global-header-display": "",
+  "ast-banner-title-visibility": "",
+  "ast-main-header-display": "",
+  "ast-hfb-above-header-display": "",
+  "ast-hfb-below-header-display": "",
+  "ast-hfb-mobile-header-display": "",
+  "site-post-title": "",
+  "ast-breadcrumbs-content": "",
+  "ast-featured-img": "",
+  "footer-sml-layout": "",
+  "ast-disable-related-posts": "",
+  "theme-transparent-header-meta": "",
+  "adv-header-id-meta": "",
+  "stick-header-meta": "",
+  "header-above-stick-meta": "",
+  "header-main-stick-meta": "",
+  "header-below-stick-meta": "",
+  "astra-migrate-meta-layouts": "default",
+  "ast-page-background-enabled": "default",
+  "ast-page-background-meta": {
+   "desktop": {
+    "background-color": "var(--ast-global-color-5)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "tablet": {
+    "background-color": "",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "mobile": {
+    "background-color": "",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   }
+  },
+  "ast-content-background-meta": {
+   "desktop": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "tablet": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "mobile": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   }
+  },
+  "_elementor_edit_mode": "builder",
+  "_elementor_template_type": "widget",
+  "_elementor_data": "[{\"id\":\"3619\",\"elType\":\"widget\",\"settings\":{\"form_name\":\"banner form\",\"form_fields\":[{\"custom_id\":\"name\",\"field_label\":\"Your Location\",\"placeholder\":\"e.g. Deerfoot Trail & 16 Ave NE\",\"dynamic\":{\"active\":true},\"_id\":\"af6de2c\",\"required\":\"true\"},{\"custom_id\":\"name\",\"field_label\":\"Email\",\"placeholder\":\"Type email\",\"dynamic\":{\"active\":true},\"required\":\"true\",\"field_type\":\"email\",\"_id\":\"f26a2c7\"},{\"custom_id\":\"email\",\"field_type\":\"tel\",\"required\":\"true\",\"field_label\":\"Phone Number\",\"placeholder\":\"Type your phone\",\"_id\":\"8bd3f8b\",\"width\":\"50\"},{\"_id\":\"c104eab\",\"field_type\":\"select\",\"field_label\":\"Services\",\"required\":\"true\",\"field_options\":\"Select Service \\nEmergency Towing\\nFlatbed \\/ Heavy-Duty Towing  \\nLong-Distance Towing \\nMotorcycle Towing \\nBattery Boost\\nLockout Service\",\"custom_id\":\"field_c104eab\",\"width\":\"50\"}],\"input_size\":\"md\",\"step_next_label\":\"Next\",\"step_previous_label\":\"Previous\",\"button_text\":\"GET MY FREE QUOTE\",\"email_to\":\"ahsanhashmi1925@gmail.com, info@ktctowing.ca, mohsinaly25@gmail.com\",\"email_subject\":\"New message from \\\"KTC Towing\\\"\",\"email_content\":\"[all-fields]\",\"email_from\":\"email@ktctowing.ca\",\"email_from_name\":\"KTC Towing\",\"email_to_2\":\"ahsanhashmi1925@gmail.com\",\"email_subject_2\":\"New message from \\\"KTC Towing\\\"\",\"email_content_2\":\"[all-fields]\",\"email_from_2\":\"email@ktctowing.ca\",\"email_from_name_2\":\"KTC Towing\",\"email_reply_to_2\":\"ahsanhashmi1925@gmail.com\",\"mailchimp_fields_map\":[],\"drip_fields_map\":[],\"activecampaign_fields_map\":[],\"getresponse_fields_map\":[],\"convertkit_fields_map\":[],\"mailerlite_fields_map\":[],\"custom_messages\":\"yes\",\"success_message\":\"Your submission was successful.\",\"error_message\":\"Your submission failed because of an error.\",\"server_message\":\"Your submission failed because of a server error.\",\"invalid_message\":\"Your submission failed because the form is invalid.\",\"required_field_message\":\"This field is required.\",\"column_gap\":{\"unit\":\"px\",\"size\":12,\"sizes\":[]},\"row_gap\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"label_spacing\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]},\"label_typography_typography\":\"custom\",\"label_typography_font_family\":\"Poppins\",\"label_typography_font_size_mobile\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"html_typography_typography\":\"custom\",\"html_typography_font_family\":\"Poppins\",\"field_typography_typography\":\"custom\",\"field_typography_font_family\":\"Generel Sans\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"field_typography_font_size_tablet\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"field_border_color\":\"#00000035\",\"field_border_radius\":{\"unit\":\"px\",\"top\":\"12\",\"right\":\"12\",\"bottom\":\"12\",\"left\":\"12\",\"isLinked\":true},\"button_content_align\":\"center\",\"button_typography_typography\":\"custom\",\"button_typography_font_family\":\"Generel Sans\",\"button_typography_font_weight\":\"700\",\"button_border_radius\":{\"unit\":\"px\",\"top\":\"12\",\"right\":\"12\",\"bottom\":\"12\",\"left\":\"12\",\"isLinked\":true},\"button_text_padding\":{\"unit\":\"px\",\"top\":\"018\",\"right\":\"20\",\"bottom\":\"018\",\"left\":\"20\",\"isLinked\":false},\"__globals__\":{\"field_border_color\":\"\"},\"mark_required\":\"yes\",\"button_align\":\"start\",\"button_typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"form_metadata\":[\"date\",\"time\",\"page_url\",\"remote_ip\"]},\"elements\":[],\"widgetType\":\"form\"}]",
+  "_elementor_page_settings": [],
+  "_elementor_conditions": []
+ },
+ "permalink_template": "https://ktctowing.ca/?elementor_library=hero-form",
+ "generated_slug": "hero-form",
+ "class_list": [
+  "post-3619",
+  "elementor_library",
+  "type-elementor_library",
+  "status-publish",
+  "hentry"
+ ],
+ "_links": {
+  "self": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3619",
+    "targetHints": {
+     "allow": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+     ]
+    }
+   }
+  ],
+  "collection": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library"
+   }
+  ],
+  "about": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/types/elementor_library"
+   }
+  ],
+  "author": [
+   {
+    "embeddable": true,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/users/1"
+   }
+  ],
+  "version-history": [
+   {
+    "count": 2,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3619/revisions"
+   }
+  ],
+  "predecessor-version": [
+   {
+    "id": 3992,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3619/revisions/3992"
+   }
+  ],
+  "wp:attachment": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/media?parent=3619"
+   }
+  ],
+  "wp:action-publish": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3619"
+   }
+  ],
+  "wp:action-unfiltered-html": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3619"
+   }
+  ],
+  "wp:action-assign-author": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3619"
+   }
+  ],
+  "curies": [
+   {
+    "name": "wp",
+    "href": "https://api.w.org/{rel}",
+    "templated": true
+   }
+  ]
+ }
+}

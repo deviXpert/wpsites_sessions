@@ -1,0 +1,222 @@
+{
+ "id": 3833,
+ "date": "2026-08-10T12:16:21",
+ "date_gmt": "2026-08-10T12:16:21",
+ "guid": {
+  "rendered": "https://ktctowing.ca/?elementor_library=hero-form-section-call-cta",
+  "raw": "https://ktctowing.ca/?elementor_library=hero-form-section-call-cta"
+ },
+ "modified": "2026-10-19T16:16:24",
+ "modified_gmt": "2026-10-19T16:16:24",
+ "password": "",
+ "slug": "hero-form-section-call-cta",
+ "status": "publish",
+ "type": "elementor_library",
+ "link": "https://ktctowing.ca/?elementor_library=hero-form-section-call-cta",
+ "title": {
+  "raw": "hero form section call cta",
+  "rendered": "hero form section call cta"
+ },
+ "author": 1,
+ "featured_media": 0,
+ "template": "",
+ "meta": {
+  "site-sidebar-layout": "default",
+  "site-content-layout": "",
+  "ast-site-content-layout": "default",
+  "site-content-style": "default",
+  "site-sidebar-style": "default",
+  "ast-global-header-display": "",
+  "ast-banner-title-visibility": "",
+  "ast-main-header-display": "",
+  "ast-hfb-above-header-display": "",
+  "ast-hfb-below-header-display": "",
+  "ast-hfb-mobile-header-display": "",
+  "site-post-title": "",
+  "ast-breadcrumbs-content": "",
+  "ast-featured-img": "",
+  "footer-sml-layout": "",
+  "ast-disable-related-posts": "",
+  "theme-transparent-header-meta": "",
+  "adv-header-id-meta": "",
+  "stick-header-meta": "",
+  "header-above-stick-meta": "",
+  "header-main-stick-meta": "",
+  "header-below-stick-meta": "",
+  "astra-migrate-meta-layouts": "default",
+  "ast-page-background-enabled": "default",
+  "ast-page-background-meta": {
+   "desktop": {
+    "background-color": "var(--ast-global-color-5)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "tablet": {
+    "background-color": "",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "mobile": {
+    "background-color": "",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   }
+  },
+  "ast-content-background-meta": {
+   "desktop": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "tablet": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "mobile": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   }
+  },
+  "_elementor_edit_mode": "builder",
+  "_elementor_template_type": "widget",
+  "_elementor_data": "[{\"id\":\"3833\",\"elType\":\"widget\",\"settings\":{\"text\":\"Call Us Now: (587) 435-0770\",\"link\":{\"url\":\"tel:+15874350770\",\"is_external\":\"\",\"nofollow\":\"\",\"custom_attributes\":\"\"},\"selected_icon\":{\"value\":\"fas fa-phone-alt\",\"library\":\"fa-solid\"},\"align\":\"justify\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Generel Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"button_text_color\":\"#000000\",\"background_color\":\"#FFFFFF\",\"button_hover_border_color\":\"#FFA300\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":true},\"border_color\":\"#7A7A7A\",\"border_radius\":{\"unit\":\"px\",\"top\":\"12\",\"right\":\"12\",\"bottom\":\"12\",\"left\":\"12\",\"isLinked\":true},\"text_padding\":{\"unit\":\"px\",\"top\":\"12\",\"right\":\"0\",\"bottom\":\"12\",\"left\":\"20\",\"isLinked\":false},\"__globals__\":{\"border_color\":\"globals\\/colors?id=text\",\"button_text_color\":\"globals\\/colors?id=secondary\",\"background_color\":\"globals\\/colors?id=6742083\",\"button_background_hover_color\":\"\",\"button_hover_border_color\":\"globals\\/colors?id=primary\",\"hover_color\":\"globals\\/colors?id=primary\"},\"content_align\":\"center\",\"hover_color\":\"#000000\",\"button_background_hover_color\":\"#000000\"},\"elements\":[],\"widgetType\":\"button\"}]",
+  "_elementor_page_settings": [],
+  "_elementor_conditions": []
+ },
+ "permalink_template": "https://ktctowing.ca/?elementor_library=hero-form-section-call-cta",
+ "generated_slug": "hero-form-section-call-cta",
+ "class_list": [
+  "post-3833",
+  "elementor_library",
+  "type-elementor_library",
+  "status-publish",
+  "hentry"
+ ],
+ "_links": {
+  "self": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3833",
+    "targetHints": {
+     "allow": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+     ]
+    }
+   }
+  ],
+  "collection": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library"
+   }
+  ],
+  "about": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/types/elementor_library"
+   }
+  ],
+  "author": [
+   {
+    "embeddable": true,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/users/1"
+   }
+  ],
+  "version-history": [
+   {
+    "count": 3,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3833/revisions"
+   }
+  ],
+  "predecessor-version": [
+   {
+    "id": 5044,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3833/revisions/5044"
+   }
+  ],
+  "wp:attachment": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/media?parent=3833"
+   }
+  ],
+  "wp:action-publish": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3833"
+   }
+  ],
+  "wp:action-unfiltered-html": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3833"
+   }
+  ],
+  "wp:action-assign-author": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3833"
+   }
+  ],
+  "curies": [
+   {
+    "name": "wp",
+    "href": "https://api.w.org/{rel}",
+    "templated": true
+   }
+  ]
+ }
+}

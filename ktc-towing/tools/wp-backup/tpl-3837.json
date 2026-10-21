@@ -1,0 +1,222 @@
+{
+ "id": 3837,
+ "date": "2026-08-10T12:17:41",
+ "date_gmt": "2026-08-10T12:17:41",
+ "guid": {
+  "rendered": "https://ktctowing.ca/?elementor_library=lics-operator-strip-hero",
+  "raw": "https://ktctowing.ca/?elementor_library=lics-operator-strip-hero"
+ },
+ "modified": "2026-08-10T12:17:58",
+ "modified_gmt": "2026-08-10T12:17:58",
+ "password": "",
+ "slug": "lics-operator-strip-hero",
+ "status": "publish",
+ "type": "elementor_library",
+ "link": "https://ktctowing.ca/?elementor_library=lics-operator-strip-hero",
+ "title": {
+  "raw": "lics operator strip hero",
+  "rendered": "lics operator strip hero"
+ },
+ "author": 1,
+ "featured_media": 0,
+ "template": "",
+ "meta": {
+  "site-sidebar-layout": "default",
+  "site-content-layout": "",
+  "ast-site-content-layout": "default",
+  "site-content-style": "default",
+  "site-sidebar-style": "default",
+  "ast-global-header-display": "",
+  "ast-banner-title-visibility": "",
+  "ast-main-header-display": "",
+  "ast-hfb-above-header-display": "",
+  "ast-hfb-below-header-display": "",
+  "ast-hfb-mobile-header-display": "",
+  "site-post-title": "",
+  "ast-breadcrumbs-content": "",
+  "ast-featured-img": "",
+  "footer-sml-layout": "",
+  "ast-disable-related-posts": "",
+  "theme-transparent-header-meta": "",
+  "adv-header-id-meta": "",
+  "stick-header-meta": "",
+  "header-above-stick-meta": "",
+  "header-main-stick-meta": "",
+  "header-below-stick-meta": "",
+  "astra-migrate-meta-layouts": "default",
+  "ast-page-background-enabled": "default",
+  "ast-page-background-meta": {
+   "desktop": {
+    "background-color": "var(--ast-global-color-5)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "tablet": {
+    "background-color": "",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "mobile": {
+    "background-color": "",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   }
+  },
+  "ast-content-background-meta": {
+   "desktop": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "tablet": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "mobile": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   }
+  },
+  "_elementor_edit_mode": "builder",
+  "_elementor_template_type": "widget",
+  "_elementor_data": "[{\"id\":\"7bf77199\",\"elType\":\"widget\",\"settings\":{\"view\":\"inline\",\"icon_list\":[{\"text\":\"Licensed Operator \",\"selected_icon\":{\"value\":\"far fa-check-circle\",\"library\":\"fa-regular\"},\"_id\":\"7f4e506\"},{\"text\":\"100% Confidential\",\"selected_icon\":{\"value\":\"far fa-check-circle\",\"library\":\"fa-regular\"},\"_id\":\"ac2353e\"},{\"text\":\"No Hidden Fee\",\"selected_icon\":{\"value\":\"far fa-check-circle\",\"library\":\"fa-regular\"},\"_id\":\"58199e1\"}],\"space_between\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"space_between_tablet\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]},\"space_between_mobile\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"icon_align_tablet\":\"start\",\"icon_align_mobile\":\"start\",\"icon_size\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"icon_typography_typography\":\"custom\",\"icon_typography_font_family\":\"Generel Sans\",\"icon_typography_font_size\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"__globals__\":{\"icon_color\":\"globals\\/colors?id=primary\",\"text_color\":\"globals\\/colors?id=secondary\"},\"_background_color_stop_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_color_stop_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_color_b_stop_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_color_b_stop_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_gradient_angle_tablet\":{\"unit\":\"deg\",\"size\":\"\",\"sizes\":[]},\"_background_gradient_angle_mobile\":{\"unit\":\"deg\",\"size\":\"\",\"sizes\":[]},\"_background_hover_color_stop_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_hover_color_stop_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_hover_color_b_stop_tablet\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_hover_color_b_stop_mobile\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":[]},\"_background_hover_gradient_angle_tablet\":{\"unit\":\"deg\",\"size\":\"\",\"sizes\":[]},\"_background_hover_gradient_angle_mobile\":{\"unit\":\"deg\",\"size\":\"\",\"sizes\":[]}},\"elements\":[],\"widgetType\":\"icon-list\"}]",
+  "_elementor_page_settings": [],
+  "_elementor_conditions": []
+ },
+ "permalink_template": "https://ktctowing.ca/?elementor_library=lics-operator-strip-hero",
+ "generated_slug": "lics-operator-strip-hero",
+ "class_list": [
+  "post-3837",
+  "elementor_library",
+  "type-elementor_library",
+  "status-publish",
+  "hentry"
+ ],
+ "_links": {
+  "self": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3837",
+    "targetHints": {
+     "allow": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+     ]
+    }
+   }
+  ],
+  "collection": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library"
+   }
+  ],
+  "about": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/types/elementor_library"
+   }
+  ],
+  "author": [
+   {
+    "embeddable": true,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/users/1"
+   }
+  ],
+  "version-history": [
+   {
+    "count": 2,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3837/revisions"
+   }
+  ],
+  "predecessor-version": [
+   {
+    "id": 3839,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3837/revisions/3839"
+   }
+  ],
+  "wp:attachment": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/media?parent=3837"
+   }
+  ],
+  "wp:action-publish": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3837"
+   }
+  ],
+  "wp:action-unfiltered-html": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3837"
+   }
+  ],
+  "wp:action-assign-author": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/3837"
+   }
+  ],
+  "curies": [
+   {
+    "name": "wp",
+    "href": "https://api.w.org/{rel}",
+    "templated": true
+   }
+  ]
+ }
+}

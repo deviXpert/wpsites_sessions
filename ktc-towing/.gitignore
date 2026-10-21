@@ -1,0 +1,6 @@
+tools/shots/
+tools/gal/
+tools/*.html
+tools/tmp_id
+tools/current_text.txt
+tools/__pycache__/

@@ -1,0 +1,222 @@
+{
+ "id": 4661,
+ "date": "2026-08-14T11:17:07",
+ "date_gmt": "2026-08-14T11:17:07",
+ "guid": {
+  "rendered": "https://ktctowing.ca/?elementor_library=gallery-section",
+  "raw": "https://ktctowing.ca/?elementor_library=gallery-section"
+ },
+ "modified": "2026-08-14T11:20:04",
+ "modified_gmt": "2026-08-14T11:20:04",
+ "password": "",
+ "slug": "gallery-section",
+ "status": "publish",
+ "type": "elementor_library",
+ "link": "https://ktctowing.ca/?elementor_library=gallery-section",
+ "title": {
+  "raw": "gallery section",
+  "rendered": "gallery section"
+ },
+ "author": 1,
+ "featured_media": 0,
+ "template": "",
+ "meta": {
+  "site-sidebar-layout": "default",
+  "site-content-layout": "",
+  "ast-site-content-layout": "default",
+  "site-content-style": "default",
+  "site-sidebar-style": "default",
+  "ast-global-header-display": "",
+  "ast-banner-title-visibility": "",
+  "ast-main-header-display": "",
+  "ast-hfb-above-header-display": "",
+  "ast-hfb-below-header-display": "",
+  "ast-hfb-mobile-header-display": "",
+  "site-post-title": "",
+  "ast-breadcrumbs-content": "",
+  "ast-featured-img": "",
+  "footer-sml-layout": "",
+  "ast-disable-related-posts": "",
+  "theme-transparent-header-meta": "",
+  "adv-header-id-meta": "",
+  "stick-header-meta": "",
+  "header-above-stick-meta": "",
+  "header-main-stick-meta": "",
+  "header-below-stick-meta": "",
+  "astra-migrate-meta-layouts": "default",
+  "ast-page-background-enabled": "default",
+  "ast-page-background-meta": {
+   "desktop": {
+    "background-color": "var(--ast-global-color-5)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "tablet": {
+    "background-color": "",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "mobile": {
+    "background-color": "",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   }
+  },
+  "ast-content-background-meta": {
+   "desktop": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "tablet": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   },
+   "mobile": {
+    "background-color": "var(--ast-global-color-4)",
+    "background-image": "",
+    "background-repeat": "repeat",
+    "background-position": "center center",
+    "background-size": "auto",
+    "background-attachment": "scroll",
+    "background-type": "",
+    "background-media": "",
+    "overlay-type": "",
+    "overlay-color": "",
+    "overlay-opacity": "",
+    "overlay-gradient": ""
+   }
+  },
+  "_elementor_edit_mode": "builder",
+  "_elementor_template_type": "container",
+  "_elementor_data": "[{\"id\":\"2609b25e\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"margin\":{\"unit\":\"px\",\"top\":\"50\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"margin_tablet\":{\"unit\":\"px\",\"top\":\"60\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":true},\"content_width\":\"full\"},\"elements\":[{\"id\":\"7ba44345\",\"elType\":\"widget\",\"settings\":{\"title\":\"Our Work\\n\",\"header_size\":\"span\",\"align\":\"center\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Generel Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_font_size_mobile\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"typography_font_weight\":\"600\",\"__globals__\":{\"title_color\":\"globals\\/colors?id=primary\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"73184d00\",\"elType\":\"widget\",\"settings\":{\"title\":\"See KTC Towing in Action\\n\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Generel Sans\",\"typography_font_size\":{\"unit\":\"custom\",\"size\":\"clamp(30px, 3.4vw, 44px)\",\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":30,\"sizes\":[]},\"typography_font_weight\":\"700\",\"typography_text_transform\":\"uppercase\",\"typography_line_height\":{\"unit\":\"em\",\"size\":1.1,\"sizes\":[]},\"typography_line_height_mobile\":{\"unit\":\"em\",\"size\":1.2,\"sizes\":[]},\"_padding\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"_padding_mobile\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"_animation_delay\":\"500\",\"__globals__\":{\"title_color\":\"globals\\/colors?id=secondary\"},\"align\":\"center\",\"_padding_tablet\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"_element_width\":\"initial\",\"_element_custom_width\":{\"unit\":\"px\",\"size\":620,\"sizes\":[]},\"_flex_align_self\":\"center\"},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"5ef656c9\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<div class=\\\"services-head\\\"><div class=\\\"process-head\\\"><div class=\\\"gallery-head\\\"><p>We could tell you we handle every job with care, but it's easier to show you. Browse recent tows, recoveries, and roadside calls from around Calgary, light-duty to heavy-duty, sunshine to snowstorm.<\\/p><\\/div><div class=\\\"gallery-track-wrap\\\">\\u00a0<\\/div><\\/div><\\/div>\",\"align\":\"center\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Generel Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"typography_font_size_tablet\":{\"unit\":\"px\",\"size\":14,\"sizes\":[]},\"_margin\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"0\",\"bottom\":\"-10\",\"left\":\"0\",\"isLinked\":false},\"_element_width\":\"initial\",\"_element_custom_width\":{\"unit\":\"px\",\"size\":476,\"sizes\":[]},\"_element_custom_width_tablet\":{\"unit\":\"px\",\"size\":733,\"sizes\":[]},\"_flex_align_self\":\"center\",\"typography_font_weight\":\"400\",\"__globals__\":{\"text_color\":\"globals\\/colors?id=text\"}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"643b7d65\",\"elType\":\"widget\",\"settings\":{\"carousel_name\":\"Image Carousel\",\"carousel\":[{\"id\":975,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2025\\/05\\/IMG-20250414-WA0049.jpg\"},{\"id\":963,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2025\\/05\\/IMG-20250508-WA0005.jpg\"},{\"id\":961,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2025\\/05\\/IMG-20250515-WA0004.jpg\"},{\"id\":971,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2025\\/05\\/IMG-20250508-WA0006.jpg\"},{\"id\":947,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2025\\/05\\/IMG-20250414-WA0023.jpg\"},{\"id\":944,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2025\\/05\\/IMG-20250414-WA0056.jpg\"},{\"id\":941,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2025\\/05\\/IMG-20250414-WA0040.jpg\"},{\"id\":958,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2025\\/05\\/IMG-20250515-WA0009.jpg\"},{\"id\":969,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2025\\/05\\/IMG-20250414-WA0053.jpg\"},{\"id\":1296,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/01\\/WhatsApp-Image-2026-01-13-at-10.53.02-PM.jpeg\"},{\"id\":1300,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/01\\/WhatsApp-Image-2026-01-13-at-10.53.00-PM.jpeg\"},{\"id\":1417,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/04\\/How-Towing-Services-Work-with-Vehicle-Recovery-After-Accidents.jpg\"},{\"id\":1409,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/04\\/car-breakdowns-in-Calgary.jpeg\"},{\"id\":3780,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.40-PM.jpeg\"},{\"id\":3740,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.55-PM-1.jpeg\"},{\"id\":3741,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.55-PM.jpeg\"},{\"id\":3742,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.54-PM-1.jpeg\"},{\"id\":3743,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.54-PM.jpeg\"},{\"id\":3745,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.53-PM-1.jpeg\"},{\"id\":3746,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.53-PM.jpeg\"},{\"id\":3747,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.52-PM.jpeg\"},{\"id\":3748,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.51-PM-1.jpeg\"},{\"id\":3769,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.45-PM.jpeg\"},{\"id\":3768,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.44-PM-1.jpeg\"},{\"id\":3767,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.45-PM-1.jpeg\"},{\"id\":3765,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.45-PM-2.jpeg\"},{\"id\":3761,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.46-PM.jpeg\"},{\"id\":3758,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.47-PM.jpeg\"},{\"id\":3756,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.48-PM.jpeg\"},{\"id\":3755,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.48-PM-1.jpeg\"},{\"id\":3750,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.51-PM.jpeg\"},{\"id\":3770,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.44-PM.jpeg\"},{\"id\":3773,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.43-PM-1.jpeg\"},{\"id\":3774,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.43-PM.jpeg\"},{\"id\":3775,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.42-PM-1.jpeg\"},{\"id\":3777,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.42-PM.jpeg\"},{\"id\":3778,\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/WhatsApp-Image-2026-07-29-at-8.39.41-PM.jpeg\"}],\"thumbnail_size\":\"custom\",\"slides_to_show\":\"5\",\"image_stretch\":\"yes\",\"link_to\":\"file\",\"image_spacing\":\"custom\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"16\",\"right\":\"16\",\"bottom\":\"16\",\"left\":\"16\",\"isLinked\":true},\"slides_to_show_tablet\":\"3\",\"slides_to_show_mobile\":\"2\",\"navigation_previous_icon\":{\"value\":{\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/Container-68.svg\",\"id\":2649},\"library\":\"svg\"},\"navigation_next_icon\":{\"value\":{\"url\":\"https:\\/\\/ktctowing.ca\\/wp-content\\/uploads\\/2026\\/08\\/Container-67-1.svg\",\"id\":2653},\"library\":\"svg\"},\"autoplay_speed\":1,\"speed\":5000,\"arrows_size\":{\"unit\":\"px\",\"size\":35,\"sizes\":[]},\"arrows_size_mobile\":{\"unit\":\"px\",\"size\":25,\"sizes\":[]},\"image_spacing_custom_mobile\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]},\"image_border_radius_mobile\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"10\",\"bottom\":\"10\",\"left\":\"10\",\"isLinked\":true},\"thumbnail_custom_dimension\":{\"width\":\"400\",\"height\":\"300\"},\"gallery_vertical_align\":\"center\",\"navigation\":\"arrows\",\"open_lightbox\":\"yes\"},\"elements\":[],\"widgetType\":\"image-carousel\"}],\"isInner\":false}]",
+  "_elementor_page_settings": [],
+  "_elementor_conditions": []
+ },
+ "permalink_template": "https://ktctowing.ca/?elementor_library=gallery-section",
+ "generated_slug": "gallery-section",
+ "class_list": [
+  "post-4661",
+  "elementor_library",
+  "type-elementor_library",
+  "status-publish",
+  "hentry"
+ ],
+ "_links": {
+  "self": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/4661",
+    "targetHints": {
+     "allow": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+     ]
+    }
+   }
+  ],
+  "collection": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library"
+   }
+  ],
+  "about": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/types/elementor_library"
+   }
+  ],
+  "author": [
+   {
+    "embeddable": true,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/users/1"
+   }
+  ],
+  "version-history": [
+   {
+    "count": 4,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/4661/revisions"
+   }
+  ],
+  "predecessor-version": [
+   {
+    "id": 4672,
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/4661/revisions/4672"
+   }
+  ],
+  "wp:attachment": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/media?parent=4661"
+   }
+  ],
+  "wp:action-publish": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/4661"
+   }
+  ],
+  "wp:action-unfiltered-html": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/4661"
+   }
+  ],
+  "wp:action-assign-author": [
+   {
+    "href": "https://ktctowing.ca/wp-json/wp/v2/elementor_library/4661"
+   }
+  ],
+  "curies": [
+   {
+    "name": "wp",
+    "href": "https://api.w.org/{rel}",
+    "templated": true
+   }
+  ]
+ }
+}
