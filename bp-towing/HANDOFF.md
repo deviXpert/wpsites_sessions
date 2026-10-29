@@ -26,3 +26,10 @@ Not changed (tell user):
 - Yoast SEO titles still use "–" as the separator (e.g. "Winch Out Service Calgary | Vehicle Recovery – BP Towing"). Change it under Yoast → Settings → Site basics → Title separator.
 - One Google review avatar in the Trustindex widget sometimes fails to load (Google-hosted image, the plugin refreshes it).
 - Backup of all content before this pass: `backup/all-content-2026-10-12.json.gz`.
+
+## 2026-10-29 — Home areas section + Junk Car Removal page
+- **Home (4478) areas section** (`78b5676`): rewritten from client notes. H2 "Towing Service Areas in Calgary & Surrounding Areas"; Calgary list (NW/NE/SE/SW/N/S/E/W/Downtown + "Balzac & CrossIron Mills Area"); "Nearby Cities & Communities: Pickup on Request" (Airdrie, Cochrane, Chestermere, Canmore, Banff, Okotoks); availability note + call CTA. Backup: `backup/home-4478-before-areas-update.json`.
+- **New page 4580 `/junk-car-removal-calgary/`**: built by `tools/build_junk.py`, which copies the Long Distance Towing page (4529) layout and swaps in the client's copy. FAQ wording "BP Towing advertises…" changed to "Yes. BP Towing offers…". The H1 dash became a colon. Photos from the media library: 2281, 2434, 2867, 4418. Tips section removed, timeline cut to 4 steps (`bp-tl-4`).
+- **Yoast title/description can be set through the API**: `POST /wp-json/yoast/v1/bulk_editor/update_search` with `{"items":[{"id":…,"seo_title":…,"meta_description":…,"focus_keyphrase":…}]}`. `GET /yoast/v1/bulk_editor/posts?content_type=page` lists the current values.
+- Header widget CSS: added `<style id="bp-v9">` (4-column timeline, `.bp-note-c`, `.bp-list-1`, `.bp-areas-txt h3`).
+- Not done yet: the new page isn't linked from menus (header mega menu 4486, mobile nav menu, footer services list 4487) or from the home "Cash for Junk Cars" card / junk-car blog post.
