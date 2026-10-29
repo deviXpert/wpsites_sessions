@@ -1,0 +1,19 @@
+Redirect from,Redirect to
+/collections/manual,/collections/all
+/collections/best-selling,/collections/all?sort_by=best-selling
+/collections/title-ascending,/collections/all?sort_by=title-ascending
+/collections/price-descending,/collections/all?sort_by=price-descending
+/collections/price-ascending,/collections/all?sort_by=price-ascending
+/collections/created-ascending,/collections/all?sort_by=created-ascending
+/collections/created-descending,/collections/all?sort_by=created-descending
+/ar/collections/manual,/ar/collections/all
+/ar/collections/best-selling,/ar/collections/all?sort_by=best-selling
+/ar/collections/title-ascending,/ar/collections/all?sort_by=title-ascending
+/ar/collections/price-descending,/ar/collections/all?sort_by=price-descending
+/ar/collections/price-ascending,/ar/collections/all?sort_by=price-ascending
+/ar/collections/created-ascending,/ar/collections/all?sort_by=created-ascending
+/ar/collections/created-descending,/ar/collections/all?sort_by=created-descending
+/products/18k-yellow-gold-rope-chain,/collections/necklaces-chains
+/products/18k-yellow-gold-rollo-chain,/collections/necklaces-chains
+/products/18k-yellow-gold-italian-holo-necklace,/collections/necklaces-chains
+/products/18k-yellow-gold-snake-chain-1,/products/real-18k-yellow-gold-maze-snake-chain
