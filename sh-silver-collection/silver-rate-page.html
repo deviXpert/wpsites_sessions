@@ -1,0 +1,508 @@
+<!-- ============================================================
+  SH Silver Collection — Live Silver Rate in UAE
+  Paste into a "Custom HTML" / "Custom Liquid" section, or a page's Show HTML view.
+  Scoped under #shs-rate. Live spot: api.gold-api.com (free, no key). USD→AED peg 3.6725.
+  Note: keep a space between closing braces (Shopify rejects double braces).
+============================================================ -->
+<div id="shs-rate">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Pinyon+Script&family=Jost:wght@300;400;500&display=swap">
+<style>
+  #shs-rate{
+    --ivory:#F9F7F3; --paper:#FFFFFF; --ink:#2A2A2A; --soft:#6B6863; --hair:#E4DED5; --hair-2:#DAD2C5;
+    --tint:#F1ECE2; --silver:#A7A9AC; --up:#2E7D4F; --down:#B3261E;
+    --serif:"Instrument Serif", Georgia, "Times New Roman", serif;
+    --script:"Pinyon Script", cursive;
+    --sans:Jost, system-ui, sans-serif;
+    background:var(--ivory); color:var(--ink); font-family:var(--sans); font-weight:400; line-height:1.55;
+    padding:0 0 64px; box-sizing:border-box;
+  }
+  #shs-rate *{box-sizing:border-box}
+  #shs-rate .w{max-width:1120px; margin:0 auto; padding:0 20px}
+  #shs-rate .num{font-variant-numeric:lining-nums tabular-nums}
+
+  /* Ticker bar */
+  #shs-rate .bar{border-bottom:1px solid var(--hair); background:var(--paper)}
+  #shs-rate .bar .w{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; padding-top:12px; padding-bottom:12px; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--soft)}
+  #shs-rate .live{display:inline-flex; align-items:center; gap:8px; color:var(--ink)}
+  #shs-rate .dot{width:7px; height:7px; border-radius:50%; background:#3BB273; animation:shsPulse 2s infinite}
+  #shs-rate .dot.off{background:#B9B4AC; animation:none}
+  @keyframes shsPulse{
+    0%{box-shadow:0 0 0 0 rgba(59,178,115,.55)}
+    70%{box-shadow:0 0 0 9px rgba(59,178,115,0)}
+    100%{box-shadow:0 0 0 0 rgba(59,178,115,0)}
+  }
+
+  /* Hero */
+  #shs-rate .hero{text-align:center; padding:64px 0 28px}
+  #shs-rate .script{font-family:var(--script); font-size:44px; line-height:1; color:var(--soft); display:block; margin-bottom:-4px}
+  #shs-rate h1{font-family:var(--serif); font-weight:400; font-size:64px; line-height:1.02; letter-spacing:-.01em; margin:0; color:var(--ink); text-transform:none}
+  #shs-rate h1 em{font-style:italic}
+  #shs-rate .lede{max-width:560px; margin:16px auto 0; color:var(--soft); font-size:16px; font-weight:300}
+  #shs-rate .rule{width:120px; height:1px; margin:28px auto 0; background:linear-gradient(90deg,transparent,var(--silver),transparent)}
+
+  /* Price board */
+  #shs-rate .board{display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); margin-top:36px; background:var(--paper)}
+  #shs-rate .cell{padding:34px 36px 30px; text-align:center; position:relative}
+  #shs-rate .cell + .cell{border-left:1px solid var(--hair)}
+  #shs-rate .cell-k{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--soft)}
+  #shs-rate .cell-name{font-family:var(--serif); font-style:italic; font-size:24px; margin-top:2px}
+  #shs-rate .cell-price{font-family:var(--serif); font-size:76px; line-height:1; margin:18px 0 4px; transition:color .6s}
+  #shs-rate .cell-price span{font-family:var(--sans); font-size:16px; letter-spacing:.12em; color:var(--soft); margin-right:8px; vertical-align:super}
+  #shs-rate .cell-unit{font-size:13px; color:var(--soft)}
+  #shs-rate .cell-sub{display:flex; justify-content:center; gap:22px; margin-top:16px; padding-top:14px; border-top:1px dashed var(--hair-2); font-size:13.5px; color:var(--soft); flex-wrap:wrap}
+  #shs-rate .cell-sub b{color:var(--ink); font-weight:500}
+  #shs-rate .meta{display:flex; justify-content:center; gap:8px 28px; flex-wrap:wrap; margin-top:16px; font-size:13px; color:var(--soft)}
+  #shs-rate .meta b{color:var(--ink); font-weight:500}
+  #shs-rate .chg.up{color:var(--up)}
+  #shs-rate .chg.down{color:var(--down)}
+  #shs-rate .flash-up{color:var(--up) !important}
+  #shs-rate .flash-down{color:var(--down) !important}
+  #shs-rate .err{display:none; text-align:center; margin-top:10px; font-size:13px; color:var(--down)}
+
+  /* Section */
+  #shs-rate .sec{margin-top:72px}
+  #shs-rate .sec-head{display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap; padding-bottom:16px; border-bottom:1px solid var(--ink); margin-bottom:0}
+  #shs-rate .eyebrow{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--soft)}
+  #shs-rate h2{font-family:var(--serif); font-weight:400; font-size:42px; line-height:1.05; margin:4px 0 0; color:var(--ink); text-transform:none; letter-spacing:-.005em}
+  #shs-rate h2 em{font-style:italic}
+
+  /* Weight list */
+  #shs-rate .list{width:100%; border-collapse:collapse}
+  #shs-rate .list th, #shs-rate .list td{padding:18px 8px; border-bottom:1px solid var(--hair); text-align:right; white-space:nowrap}
+  #shs-rate .list th:first-child, #shs-rate .list td:first-child{text-align:left; padding-left:0}
+  #shs-rate .list th:last-child, #shs-rate .list td:last-child{padding-right:0}
+  #shs-rate .list thead th{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--soft); font-weight:400}
+  #shs-rate .list td{font-size:16px}
+  #shs-rate .list td:first-child{font-family:var(--serif); font-size:22px}
+  #shs-rate .list td small{font-family:var(--sans); font-size:12.5px; color:var(--soft); margin-left:8px}
+  #shs-rate .list tbody tr{transition:background .2s}
+  #shs-rate .list tbody tr:hover{background:var(--tint)}
+
+  /* Editorial columns */
+  #shs-rate .cols{display:grid; grid-template-columns:repeat(3,1fr); gap:0}
+  #shs-rate .col{padding:28px 28px 8px 0}
+  #shs-rate .col + .col{padding-left:28px; border-left:1px solid var(--hair)}
+  #shs-rate .col-n{font-family:var(--serif); font-style:italic; font-size:30px; color:var(--silver)}
+  #shs-rate .col h3{font-family:var(--serif); font-weight:400; font-size:24px; margin:6px 0 8px; text-transform:none; letter-spacing:0; color:var(--ink)}
+  #shs-rate .col p{margin:0; color:var(--soft); font-size:15px; font-weight:300}
+  #shs-rate .col a{color:var(--ink); text-underline-offset:3px}
+
+  /* Calculator */
+  #shs-rate .calc{display:grid; grid-template-columns:1.25fr 1fr; gap:48px; padding-top:32px}
+  #shs-rate .fields{display:grid; grid-template-columns:1fr 1fr; gap:26px 28px}
+  #shs-rate .f{display:flex; flex-direction:column; gap:6px}
+  #shs-rate .f label{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--soft)}
+  #shs-rate .f input, #shs-rate .f select{
+    font-family:var(--sans); font-size:18px; color:var(--ink); background:transparent; border:0; border-bottom:1px solid var(--ink);
+    border-radius:0; padding:8px 0; outline:none; width:100%; height:auto; margin:0; box-shadow:none;
+  }
+  #shs-rate .f input:focus, #shs-rate .f select:focus{border-bottom-width:2px; padding-bottom:7px}
+  #shs-rate .chips{grid-column:1 / -1; display:flex; gap:8px; flex-wrap:wrap}
+  #shs-rate .chips button{
+    font-family:var(--sans); font-size:13px; letter-spacing:.04em; color:var(--ink); background:transparent;
+    border:1px solid var(--hair-2); border-radius:99px; padding:7px 14px; cursor:pointer; min-height:auto; text-transform:none;
+  }
+  #shs-rate .chips button:hover{border-color:var(--ink)}
+  #shs-rate .result{background:var(--paper); border:1px solid var(--hair); padding:28px; align-self:start}
+  #shs-rate .rrow{display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-bottom:1px dashed var(--hair-2); font-size:14.5px; color:var(--soft)}
+  #shs-rate .rrow b{color:var(--ink); font-weight:500}
+  #shs-rate .rtotal{padding-top:18px}
+  #shs-rate .rtotal span{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--soft)}
+  #shs-rate .rtotal div{font-family:var(--serif); font-size:52px; line-height:1.05}
+  #shs-rate .rnote{font-size:12px; color:var(--soft); margin-top:6px}
+
+  /* Shop strip */
+  #shs-rate .shop{margin-top:72px; background:var(--ink); color:var(--ivory); text-align:center; padding:56px 24px}
+  #shs-rate .shop .script{color:var(--silver); font-size:40px}
+  #shs-rate .shop h2{color:var(--ivory); font-size:46px}
+  #shs-rate .shop p{color:#BDB8B0; margin:10px auto 26px; max-width:520px; font-weight:300}
+  #shs-rate .links{display:flex; justify-content:center; gap:10px; flex-wrap:wrap}
+  #shs-rate .links a{
+    color:var(--ivory); text-decoration:none; border:1px solid rgba(249,247,243,.35); border-radius:99px; padding:10px 20px;
+    font-size:13px; letter-spacing:.1em; text-transform:uppercase; transition:background .2s,color .2s;
+  }
+  #shs-rate .links a:hover{background:var(--ivory); color:var(--ink)}
+  #shs-rate .links a.main{background:var(--ivory); color:var(--ink)}
+
+  /* FAQ */
+  #shs-rate details{border-bottom:1px solid var(--hair)}
+  #shs-rate summary{list-style:none; cursor:pointer; display:flex; justify-content:space-between; gap:16px; padding:22px 0; font-family:var(--serif); font-size:22px; color:var(--ink)}
+  #shs-rate summary::-webkit-details-marker{display:none}
+  #shs-rate summary:after{content:"+"; font-family:var(--sans); font-weight:300; font-size:24px; line-height:1; transition:transform .25s}
+  #shs-rate details[open] summary:after{transform:rotate(45deg)}
+  #shs-rate details p{margin:0 0 22px; color:var(--soft); max-width:820px; font-weight:300}
+  #shs-rate .disc{text-align:center; font-size:12.5px; color:var(--soft); margin-top:36px}
+
+  /* Responsive */
+  @media (max-width:900px){
+    #shs-rate h1{font-size:48px}
+    #shs-rate .cell-price{font-size:60px}
+    #shs-rate .cols{grid-template-columns:1fr}
+    #shs-rate .col, #shs-rate .col + .col{padding:22px 0; border-left:0; border-bottom:1px solid var(--hair)}
+    #shs-rate .calc{grid-template-columns:1fr; gap:28px}
+  }
+  @media (max-width:600px){
+    #shs-rate .w{padding:0 16px}
+    #shs-rate .hero{padding:44px 0 16px}
+    #shs-rate .script{font-size:36px}
+    #shs-rate h1{font-size:40px}
+    #shs-rate .board{grid-template-columns:1fr}
+    #shs-rate .cell{padding:26px 16px 22px}
+    #shs-rate .cell + .cell{border-left:0; border-top:1px solid var(--hair)}
+    #shs-rate .cell-price{font-size:56px}
+    #shs-rate h2{font-size:34px}
+    #shs-rate .list td{font-size:14.5px}
+    #shs-rate .list td:first-child{font-size:18px}
+    #shs-rate .list td small{display:block; margin-left:0}
+    #shs-rate .fields{grid-template-columns:1fr}
+    #shs-rate .shop h2{font-size:36px}
+    #shs-rate summary{font-size:19px}
+    #shs-rate .rtotal div{font-size:44px}
+  }
+</style>
+
+  <div class="bar">
+    <div class="w">
+      <span class="live"><span class="dot" id="shsDot"></span> Live silver market</span>
+      <span>Updated <b id="shsTimeTop" class="num">—</b></span>
+    </div>
+  </div>
+
+  <div class="w">
+    <!-- HERO -->
+    <section class="hero">
+      <span class="script">Today's</span>
+      <h1>Silver Rate in <em>UAE</em></h1>
+      <p class="lede">Live silver price per gram in AED for 999 fine silver and 925 sterling silver, updated every minute from the international market.</p>
+      <div class="rule"></div>
+    </section>
+
+    <!-- PRICE BOARD -->
+    <section aria-live="polite">
+      <div class="board">
+        <div class="cell">
+          <div class="cell-k">999 Purity</div>
+          <div class="cell-name">Fine Silver</div>
+          <div class="cell-price num"><span>AED</span><i style="font-style:normal" id="shs999">—</i></div>
+          <div class="cell-unit">per gram</div>
+          <div class="cell-sub num"><span>10 g <b id="shs999_10">—</b></span><span>1 kg <b id="shs999_kg">—</b></span></div>
+        </div>
+        <div class="cell">
+          <div class="cell-k">925 Purity</div>
+          <div class="cell-name">Sterling Silver</div>
+          <div class="cell-price num"><span>AED</span><i style="font-style:normal" id="shs925">—</i></div>
+          <div class="cell-unit">per gram</div>
+          <div class="cell-sub num"><span>10 g <b id="shs925_10">—</b></span><span>1 kg <b id="shs925_kg">—</b></span></div>
+        </div>
+      </div>
+      <div class="meta num">
+        <span>Spot: <b id="shsSpot">—</b></span>
+        <span class="chg" id="shsChg">Loading live rate…</span>
+        <span>Updated: <b id="shsTime">—</b></span>
+      </div>
+      <noscript><p class="disc">Please enable JavaScript to see the live silver rate.</p></noscript>
+      <div class="err" id="shsErr">Live rate is temporarily unavailable. Retrying…</div>
+    </section>
+
+    <!-- WEIGHT LIST -->
+    <section class="sec">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Price by weight</div>
+          <h2>Silver Price <em>Today</em></h2>
+        </div>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="list num">
+          <thead><tr><th>Weight</th><th>999 Fine</th><th>925 Sterling</th></tr></thead>
+          <tbody id="shsList"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- EDITORIAL -->
+    <section class="sec">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Know your silver</div>
+          <h2>Silver Price in <em>Dubai</em> &amp; UAE</h2>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="col">
+          <div class="col-n">01</div>
+          <h3>999 Fine Silver</h3>
+          <p>99.9% pure silver, used for bars and coins. It is the benchmark for today's silver rate in UAE and is too soft for most everyday jewellery.</p>
+        </div>
+        <div class="col">
+          <div class="col-n">02</div>
+          <h3>925 Sterling Silver</h3>
+          <p>92.5% silver blended with copper for strength. It is the standard for fine silver jewellery in Dubai, and every SH Silver piece is <a href="/collections/all">925 sterling silver</a>.</p>
+        </div>
+        <div class="col">
+          <div class="col-n">03</div>
+          <h3>How the rate is set</h3>
+          <p>The live silver price follows the international spot market in US dollars per ounce, converted to AED at the fixed 3.6725 rate and to grams. It is the same across Dubai, Abu Dhabi and Sharjah.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section class="sec">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Estimate</div>
+          <h2>Silver Value <em>Calculator</em></h2>
+        </div>
+      </div>
+      <div class="calc">
+        <div class="fields">
+          <div class="f">
+            <label for="shsPurity">Purity</label>
+            <select id="shsPurity">
+              <option value="0.999">999 Fine Silver</option>
+              <option value="0.925" selected>925 Sterling Silver</option>
+            </select>
+          </div>
+          <div class="f">
+            <label for="shsWeight">Weight</label>
+            <input id="shsWeight" type="number" min="0" step="0.1" value="10" inputmode="decimal">
+          </div>
+          <div class="f">
+            <label for="shsUnit">Unit</label>
+            <select id="shsUnit">
+              <option value="1" selected>Grams</option>
+              <option value="11.6638">Tola</option>
+              <option value="31.1034768">Troy ounce</option>
+              <option value="1000">Kilogram</option>
+            </select>
+          </div>
+          <div class="f">
+            <label for="shsVat">VAT</label>
+            <select id="shsVat">
+              <option value="0.05" selected>Include 5% VAT</option>
+              <option value="0">Exclude VAT</option>
+            </select>
+          </div>
+          <div class="chips" aria-label="Quick weights">
+            <button type="button" data-w="5">5 g</button>
+            <button type="button" data-w="10">10 g</button>
+            <button type="button" data-w="50">50 g</button>
+            <button type="button" data-w="100">100 g</button>
+            <button type="button" data-w="1000">1 kg</button>
+          </div>
+        </div>
+        <div class="result num">
+          <div class="rrow"><span>Silver weight</span><b id="shsRWeight">—</b></div>
+          <div class="rrow"><span>Silver value</span><b id="shsRValue">—</b></div>
+          <div class="rrow"><span>VAT</span><b id="shsRVat">—</b></div>
+          <div class="rtotal"><span>Estimated metal value</span><div id="shsRTotal">—</div></div>
+          <div class="rnote">Metal value only. Jewellery prices also include design and craftsmanship.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- SHOP STRIP -->
+  <section class="shop">
+    <span class="script">Crafted in</span>
+    <h2>925 Sterling Silver</h2>
+    <p>Rings, bracelets, necklaces and men's silver jewellery, delivered across the UAE.</p>
+    <div class="links">
+      <a class="main" href="/collections/all">Shop All</a>
+      <a href="/collections/all-rings">Rings</a>
+      <a href="/collections/bracelets">Bracelets</a>
+      <a href="/collections/necklaces-chokers">Necklaces</a>
+      <a href="/collections/for-men">For Men</a>
+    </div>
+  </section>
+
+  <div class="w">
+    <!-- FAQ -->
+    <section class="sec">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Questions</div>
+          <h2>Silver Rate <em>FAQs</em></h2>
+        </div>
+      </div>
+      <details>
+        <summary>What is the silver rate today in UAE?</summary>
+        <p>The live silver rate per gram for 999 fine silver and 925 sterling silver is shown at the top of this page in AED and refreshes every minute.</p>
+      </details>
+      <details>
+        <summary>What is the difference between 999 and 925 silver?</summary>
+        <p>999 fine silver is 99.9% pure and very soft. 925 sterling silver is 92.5% silver mixed with copper, which makes it durable enough for rings, bracelets and everyday jewellery.</p>
+      </details>
+      <details>
+        <summary>Is the silver price the same in Dubai, Abu Dhabi and Sharjah?</summary>
+        <p>Yes. Silver rates follow the same international price across all emirates, and the AED is pegged to the US dollar. Jewellery prices differ by design and craftsmanship.</p>
+      </details>
+      <details>
+        <summary>How much is one tola of silver?</summary>
+        <p>One tola equals 11.664 grams. Choose "Tola" in the calculator above to see today's silver price per tola.</p>
+      </details>
+      <details>
+        <summary>Why does a silver ring cost more than its silver value?</summary>
+        <p>Jewellery prices include design, craftsmanship, finishing such as rhodium plating, stones and 5% VAT, on top of the silver metal value.</p>
+      </details>
+      <details>
+        <summary>How often does the silver price change?</summary>
+        <p>Silver prices move throughout the day while international markets are open, Monday to Friday. On weekends the rate stays close to Friday's closing price.</p>
+      </details>
+    </section>
+
+    <p class="disc">Rates are indicative, based on the live international silver market, and may differ from in-store prices.</p>
+  </div>
+
+<script type="application/ld+json">
+[
+ { "@context": "https://schema.org", "@type": "WebPage",
+   "name": "Silver Rate Today in UAE – 999 & 925 Silver Price per Gram",
+   "description": "Live silver rate today in UAE and Dubai. Check 999 fine silver and 925 sterling silver price per gram, tola and kg in AED, updated every minute.",
+   "url": "https://shsilvercollection.com/pages/silver-rate-today-uae", "inLanguage": "en-AE",
+   "publisher": { "@type": "Organization", "name": "SH Silver Collection", "url": "https://shsilvercollection.com" }
+ },
+ { "@context": "https://schema.org", "@type": "BreadcrumbList",
+   "itemListElement": [
+     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shsilvercollection.com/" },
+     { "@type": "ListItem", "position": 2, "name": "Silver Rate Today in UAE", "item": "https://shsilvercollection.com/pages/silver-rate-today-uae" }
+   ]
+ },
+ { "@context": "https://schema.org", "@type": "FAQPage",
+   "mainEntity": [
+     { "@type": "Question", "name": "What is the silver rate today in UAE?", "acceptedAnswer": { "@type": "Answer", "text": "The live silver rate per gram for 999 fine silver and 925 sterling silver is shown at the top of this page in AED and refreshes every minute." } },
+     { "@type": "Question", "name": "What is the difference between 999 and 925 silver?", "acceptedAnswer": { "@type": "Answer", "text": "999 fine silver is 99.9% pure and very soft. 925 sterling silver is 92.5% silver mixed with copper, which makes it durable enough for rings, bracelets and everyday jewellery." } },
+     { "@type": "Question", "name": "Is the silver price the same in Dubai, Abu Dhabi and Sharjah?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Silver rates follow the same international price across all emirates, and the AED is pegged to the US dollar. Jewellery prices differ by design and craftsmanship." } },
+     { "@type": "Question", "name": "How much is one tola of silver?", "acceptedAnswer": { "@type": "Answer", "text": "One tola equals 11.664 grams." } },
+     { "@type": "Question", "name": "Why does a silver ring cost more than its silver value?", "acceptedAnswer": { "@type": "Answer", "text": "Jewellery prices include design, craftsmanship, finishing such as rhodium plating, stones and 5% VAT, on top of the silver metal value." } },
+     { "@type": "Question", "name": "How often does the silver price change?", "acceptedAnswer": { "@type": "Answer", "text": "Silver prices move throughout the day while international markets are open, Monday to Friday. On weekends the rate stays close to Friday's closing price." } }
+   ]
+ }
+]
+</script>
+
+<script>
+(function(){
+  /* ---------- Settings ---------- */
+  var CONFIG = {
+    premiumPercent: 0,   // add a % on top of spot, e.g. 5 = +5%
+    premiumPerGram: 0,   // or a fixed AED per gram on 999 silver, e.g. 0.5
+    refreshSeconds: 60,
+    aedPerUsd: 3.6725
+  };
+  var API = 'https://api.gold-api.com/price/XAG';
+  var G_PER_OZ = 31.1034768;
+  var ROWS = [
+    { g:1,         label:'1 Gram' },
+    { g:10,        label:'10 Grams' },
+    { g:11.6638,   label:'1 Tola', note:'11.66 g' },
+    { g:G_PER_OZ,  label:'1 Ounce', note:'31.10 g' },
+    { g:100,       label:'100 Grams' },
+    { g:1000,      label:'1 Kilogram' }
+  ];
+
+  var root = document.getElementById('shs-rate');
+  var $ = function(id){ return document.getElementById(id); };
+  var st = { fine:null, first:null, spot:null };
+  var retry = null;
+
+  function fmt(n, d){
+    d = (d == null) ? 2 : d;
+    return n.toLocaleString('en-US', { minimumFractionDigits:d, maximumFractionDigits:d });
+  }
+  function aed(n){ return 'AED ' + fmt(n); }
+  function flash(el, dir){
+    if (!dir || !el) return;
+    el.classList.remove('flash-up', 'flash-down');
+    void el.offsetWidth;
+    el.classList.add(dir > 0 ? 'flash-up' : 'flash-down');
+    setTimeout(function(){ el.classList.remove('flash-up', 'flash-down'); }, 1200);
+  }
+
+  function renderCalc(){
+    if (st.fine == null) return;
+    var purity = parseFloat($('shsPurity').value);
+    var grams = Math.max(0, parseFloat($('shsWeight').value) || 0) * parseFloat($('shsUnit').value);
+    var vatRate = parseFloat($('shsVat').value);
+    var value = st.fine / 0.999 * purity * grams;
+    var vat = value * vatRate;
+    $('shsRWeight').textContent = fmt(grams) + ' g';
+    $('shsRValue').textContent = aed(value);
+    $('shsRVat').textContent = aed(vat);
+    $('shsRTotal').textContent = aed(value + vat);
+  }
+
+  function render(dir){
+    var s925 = st.fine / 0.999 * 0.925;
+    $('shs999').textContent = fmt(st.fine);
+    $('shs925').textContent = fmt(s925);
+    flash($('shs999'), dir); flash($('shs925'), dir);
+    $('shs999_10').textContent = aed(st.fine * 10);
+    $('shs925_10').textContent = aed(s925 * 10);
+    $('shs999_kg').textContent = aed(st.fine * 1000);
+    $('shs925_kg').textContent = aed(s925 * 1000);
+
+    var html = '';
+    ROWS.forEach(function(r){
+      html += '<tr><td>' + r.label + (r.note ? '<small>' + r.note + '</small>' : '') + '</td>' +
+              '<td>' + aed(st.fine * r.g) + '</td><td>' + aed(s925 * r.g) + '</td></tr>';
+    });
+    $('shsList').innerHTML = html;
+
+    var diff = st.fine - st.first, pct = st.first ? diff / st.first * 100 : 0;
+    var c = $('shsChg');
+    c.className = 'chg' + (diff > 0.0004 ? ' up' : diff < -0.0004 ? ' down' : '');
+    c.textContent = (diff > 0.0004 ? '▲ ' : diff < -0.0004 ? '▼ ' : '● ') + fmt(Math.abs(pct)) + '% since page opened';
+
+    $('shsSpot').textContent = '$' + fmt(st.spot) + ' / oz';
+    var t = new Date().toLocaleString('en-GB', { timeZone:'Asia/Dubai', day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit' });
+    $('shsTime').textContent = t + ' (UAE)';
+    $('shsTimeTop').textContent = t;
+    renderCalc();
+  }
+
+  function load(){
+    clearTimeout(retry);
+    var ctrl = window.AbortController ? new AbortController() : null;
+    var to = ctrl ? setTimeout(function(){ ctrl.abort(); }, 15000) : null;
+    fetch(API, { cache:'no-store', signal: ctrl ? ctrl.signal : undefined })
+      .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(d){
+        var spot = parseFloat(d.price);
+        if (!(spot > 0)) throw new Error('bad price');
+        var fine = spot / G_PER_OZ * CONFIG.aedPerUsd;
+        fine = fine * (1 + CONFIG.premiumPercent / 100) + CONFIG.premiumPerGram;
+        var dir = st.fine == null ? 0 : Math.sign(fine - st.fine);
+        st.spot = spot; st.fine = fine;
+        if (st.first == null) st.first = fine;
+        $('shsErr').style.display = 'none';
+        $('shsDot').classList.remove('off');
+        render(dir);
+      })
+      .catch(function(){
+        if (st.fine == null) $('shsErr').style.display = 'block';
+        $('shsDot').classList.add('off');
+        retry = setTimeout(load, 10000);
+      })
+      .then(function(){ clearTimeout(to); });
+  }
+
+  ['shsPurity', 'shsWeight', 'shsUnit', 'shsVat'].forEach(function(id){
+    $(id).addEventListener('input', renderCalc);
+    $(id).addEventListener('change', renderCalc);
+  });
+  root.querySelectorAll('.chips button').forEach(function(b){
+    b.addEventListener('click', function(){
+      $('shsWeight').value = b.getAttribute('data-w');
+      $('shsUnit').value = '1';
+      renderCalc();
+    });
+  });
+
+  load();
+  setInterval(load, CONFIG.refreshSeconds * 1000);
+})();
+</script>
+</div>

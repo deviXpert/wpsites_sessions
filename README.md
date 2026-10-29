@@ -5,3 +5,4 @@ One folder per client site. Start with that folder's `HANDOFF.md`.
 - `aad-transport-recovery/` — AAD Transport & Recovery (Elementor redesign)
 - `ehmct-east-houston-medical-center/` — East Houston Medical Center (Figma → Elementor build)
 - `sana-jewellers/` — Sana Jewellers (Shopify live gold rate page)
+- `sh-silver-collection/` — SH Silver Collection (Shopify live silver rate page)
