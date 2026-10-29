@@ -1,0 +1,81 @@
+<!-- ============================================================
+  Sana Jewellers — Smart 404 redirect
+  Add ONLY to the 404 template (Theme editor → Templates → 404 page →
+  Add section → Custom HTML / Custom Liquid → paste this).
+
+  When a visitor lands on a missing page it:
+    1. turns the missing URL into search words (e.g. /products/gold-clover-ring-18k → "gold clover ring")
+    2. asks Shopify's store search for the closest product / collection
+    3. redirects there, or to the fallback page if nothing matches
+  Keeps the /ar language prefix. Never redirects in a loop.
+============================================================ -->
+<div id="sj404" style="text-align:center;padding:40px 16px;font-size:15px;color:#7A7066">
+  <p id="sj404msg">Finding the closest page for you…</p>
+</div>
+<script>
+(function(){
+  var FALLBACK = '/collections/all';   // or '/' for the home page
+  var DELAY_MS = 600;                  // short pause so the message is visible
+  var SKIP = /^\/(cart|checkout|account|apps|admin|services|tools)(\/|$)/;
+  var STOP = ['the','and','for','with','new','old','sale','copy','products','collections','pages','blogs','html','item','sj','sjvc'];
+
+  // Theme editor preview: never redirect
+  if (window.Shopify && window.Shopify.designMode) return;
+
+  var path = decodeURIComponent(location.pathname);
+  var locale = '';
+  var m = path.match(/^\/(ar|en)(\/.*)?$/);
+  if (m) { locale = m[1] === 'ar' ? '/ar' : ''; path = m[2] || '/'; }
+  if (SKIP.test(path)) return;
+
+  // Loop guard: one smart redirect per missing URL per visit
+  var key = 'sj404:' + location.pathname;
+  try { if (sessionStorage.getItem(key)) { go(FALLBACK); return; } sessionStorage.setItem(key, '1'); } catch (e) {}
+
+  var parts = path.split('/').filter(Boolean);
+  var type = parts[0] || '';                         // products / collections / pages / blogs
+  var slug = parts[parts.length - 1] || '';
+  // Only products and collections get a smart match; pages, blogs etc. go to the fallback
+  if (type !== 'products' && type !== 'collections') { go(FALLBACK); return; }
+
+  var words = slug.toLowerCase()
+    .replace(/\.[a-z0-9]+$/, '')                     // strip .html etc.
+    .split(/[^a-z0-9؀-ۿ]+/)
+    .filter(function(w){ return w.length > 1 && !/^\d+$/.test(w) && STOP.indexOf(w) === -1; });
+
+  function go(url){
+    var target = locale + url;
+    if (target === location.pathname) target = locale + '/';
+    setTimeout(function(){ location.replace(target); }, DELAY_MS);
+  }
+  function clean(url){ return url.split('?')[0]; }
+
+  function search(list){
+    var q = list.join(' ');
+    var want = type === 'collections' ? 'collection' : 'product,collection';
+    var url = '/search/suggest.json?q=' + encodeURIComponent(q) +
+      '&resources[type]=' + want + '&resources[limit]=1&resources[options][unavailable_products]=last';
+    return fetch(url, { headers: { 'Accept': 'application/json' } })
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        var res = d && d.resources && d.resources.results || {};
+        var p = res.products && res.products[0], c = res.collections && res.collections[0];
+        var first = type === 'collections' ? c : (p || c);
+        return first ? clean(first.url).replace(/^\/(ar|en)(?=\/)/, '') : null;
+      })
+      .catch(function(){ return null; });
+  }
+
+  if (!words.length) { go(FALLBACK); return; }
+
+  // Try the first 4 words, then the first 2, then give up
+  search(words.slice(0, 4)).then(function(hit){
+    if (hit) return hit;
+    return words.length > 2 ? search(words.slice(0, 2)) : null;
+  }).then(function(hit){
+    var msg = document.getElementById('sj404msg');
+    if (msg) msg.textContent = hit ? 'Taking you to the closest match…' : 'Taking you to our collection…';
+    go(hit || FALLBACK);
+  });
+})();
+</script>
