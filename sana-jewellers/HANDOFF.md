@@ -14,3 +14,10 @@ Reference: https://ar.ae.fkjewellers.com/pages/today-gold-price-in-uae-gold-rate
 ## Install
 Preferred: Online Store → Pages → Add page "Gold Rate" → create a page template → in the theme editor add a **Custom Liquid** section to that template and paste the file.
 Alternative: paste into the page content editor's **Show HTML** (`<>`) view.
+
+## SEO (Shopify page fields → "Search engine listing")
+- Page title: `Gold Rate Today in UAE`
+- SEO title: `Gold Rate Today in UAE – 24K, 22K, 21K & 18K Gold Price`
+- Meta description: `Live gold rate today in UAE & Dubai. Check 24K, 22K, 21K and 18K gold price per gram, 10g and tola in AED, updated every minute. Shop gold at Sana Jewellers.`
+- URL handle: `gold-rate-today-uae` (JSON-LD URLs assume this handle)
+- In-page: H1 "Gold Rate Today in UAE", keyword content section, 6 FAQs, JSON-LD (WebPage, BreadcrumbList, FAQPage), noscript fallback.

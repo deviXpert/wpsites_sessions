@@ -135,6 +135,8 @@
   #sj-gold summary:after{content:"+"; color:var(--g); font-size:20px; line-height:1; transition:transform .2s}
   #sj-gold details[open] summary:after{transform:rotate(45deg)}
   #sj-gold details p{margin:0 0 18px; color:var(--muted); font-size:14.5px}
+  #sj-gold .sj-about p{max-width:860px; color:var(--text); font-size:15px; margin:12px 0 0}
+  #sj-gold .sj-about a{color:var(--g); text-decoration:underline; text-underline-offset:3px}
   #sj-gold .sj-disclaimer{margin-top:28px; font-size:12.5px; color:var(--muted); text-align:center}
   #sj-gold .sj-error{display:none; margin-top:12px; font-size:13px; color:#FFB4A8}
 
@@ -167,8 +169,8 @@
   <section class="sj-hero">
     <div style="position:relative;z-index:1">
       <span class="sj-eyebrow"><span class="sj-dot" id="sjDot"></span> Live · Updated every minute</span>
-      <h1>Today's Gold Rate in UAE</h1>
-      <p>Live gold prices per gram in UAE Dirham for 24K, 22K, 21K and 18K gold, based on the international market rate.</p>
+      <h1>Gold Rate Today in UAE</h1>
+      <p>Live gold price in UAE and Dubai today, per gram in AED for 24K, 22K, 21K and 18K gold, updated every minute from the international market.</p>
     </div>
     <div class="sj-live" aria-live="polite">
       <div class="sj-live-label">24K Gold · per gram</div>
@@ -181,6 +183,7 @@
         <span>Updated: <b id="sjTime">—</b></span>
         <span>Spot: <b id="sjSpot">—</b></span>
       </div>
+      <noscript><p style="color:#CFC6BB;font-size:13px;margin-top:10px">Please enable JavaScript to see the live gold rate.</p></noscript>
       <div class="sj-error" id="sjErr">Live rate is temporarily unavailable. Retrying…</div>
     </div>
   </section>
@@ -275,6 +278,14 @@
     </div>
   </section>
 
+  <!-- ABOUT / SEO CONTENT -->
+  <section class="sj-sec sj-about">
+    <h2>Gold Price in Dubai &amp; UAE Today</h2>
+    <p>Track today's gold rate in UAE with Sana Jewellers. Our live gold price follows the international spot market and converts it to UAE Dirham per gram, so you can check the 24K, 22K, 21K and 18K gold rate in Dubai, Abu Dhabi, Sharjah and across the Emirates before you buy.</p>
+    <p>22K and 21K gold are the most popular choices for traditional jewellery in the UAE, while 18K gold is ideal for everyday and diamond-set designs. Gold prices change throughout the day, so the rate shown here is updated every minute.</p>
+    <p>Ready to buy? Explore our <a href="/collections/all">gold jewellery collection</a> in 18K, 21K and 22K, with free delivery across the UAE.</p>
+  </section>
+
   <!-- FAQ -->
   <section class="sj-sec">
     <div class="sj-sec-head"><div><h2>Frequently Asked Questions</h2></div></div>
@@ -295,10 +306,108 @@
         <summary>Is the jewellery price the same as the gold rate?</summary>
         <p>No. Jewellery prices include the gold value, making charges for the design and craftsmanship, and 5% VAT. Use the calculator above for an estimate.</p>
       </details>
+      <details>
+        <summary>Is the gold rate the same in Dubai, Abu Dhabi and Sharjah?</summary>
+        <p>Yes. Gold rates are broadly the same across all emirates because they follow the same international gold price and the AED is pegged to the US dollar. Small differences come from each jeweller's making charges.</p>
+      </details>
+      <details>
+        <summary>How often does the gold price in UAE change?</summary>
+        <p>Gold prices move all day while international markets are open, Monday to Friday. This page refreshes the live rate every minute. On weekends the rate stays close to Friday's closing price.</p>
+      </details>
     </div>
   </section>
 
   <p class="sj-disclaimer">Rates are indicative, based on the live international gold market, and may differ from in-store prices. Updated every minute.</p>
+
+<script type="application/ld+json">
+[
+ {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Gold Rate Today in UAE – 24K, 22K, 21K & 18K Gold Price",
+  "description": "Live gold rate today in UAE and Dubai. Check 24K, 22K, 21K and 18K gold price per gram in AED, updated every minute.",
+  "url": "https://sanajewellers.com/pages/gold-rate-today-uae",
+  "inLanguage": "en-AE",
+  "publisher": {
+   "@type": "Organization",
+   "name": "Sana Jewellers",
+   "url": "https://sanajewellers.com"
+  }
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://sanajewellers.com/"
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Gold Rate Today in UAE",
+    "item": "https://sanajewellers.com/pages/gold-rate-today-uae"
+   }
+  ]
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "How is today's gold rate in UAE calculated?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The rate follows the live international gold spot price (USD per troy ounce), converted to AED at the fixed rate of 3.6725 and to grams (1 troy ounce = 31.1035 g). Lower karats are priced by their gold purity."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What is the difference between 24K, 22K, 21K and 18K gold?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "24K is pure gold (99.9%). 22K has 91.6% gold, 21K has 87.5% and 18K has 75%. Lower karats contain more alloy metals, which makes them stronger and better suited to everyday jewellery."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How much is one tola of gold?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "One tola equals 11.664 grams. Select Tola on the page to see today's price per tola for each karat."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is the jewellery price the same as the gold rate?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Jewellery prices include the gold value, making charges for the design and craftsmanship, and 5% VAT."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Is the gold rate the same in Dubai, Abu Dhabi and Sharjah?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. Gold rates are broadly the same across all emirates because they follow the same international gold price and the AED is pegged to the US dollar. Small differences come from each jeweller's making charges."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How often does the gold price in UAE change?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Gold prices move all day while international markets are open, Monday to Friday. This page refreshes the live rate every minute."
+    }
+   }
+  ]
+ }
+]
+</script>
 
 <script>
 (function(){
