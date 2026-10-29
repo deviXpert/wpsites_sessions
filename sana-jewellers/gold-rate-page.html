@@ -1,0 +1,449 @@
+<!-- ============================================================
+  Sana Jewellers — Live Gold Rate in UAE
+  Paste into: Shopify page (Show HTML) or a "Custom Liquid" section.
+  Everything is scoped under #sj-gold so it won't affect the theme.
+  Live spot price: api.gold-api.com (free, no key). USD→AED peg 3.6725.
+============================================================ -->
+<div id="sj-gold">
+<style>
+  #sj-gold{
+    --g:#B7813B; --g-light:#E3C48F; --g-pale:#F7EFE2;
+    --ink:#1B1714; --ink-2:#2A241F; --text:#3A332D; --muted:#7A7066;
+    --line:#E8DFD2; --bg:#FFFCF7; --up:#1F8A4C; --down:#C0392B;
+    font-family:inherit; color:var(--text); line-height:1.5;
+    max-width:1180px; margin:0 auto; padding:0 16px 48px; box-sizing:border-box;
+  }
+  #sj-gold *{box-sizing:border-box}
+  #sj-gold .sj-live-price .sj-num, #sj-gold .sj-card-price, #sj-gold .sj-total div{font-variant-numeric:lining-nums tabular-nums}
+
+  /* Hero */
+  #sj-gold .sj-hero{
+    position:relative; overflow:hidden; border-radius:20px; margin-top:24px;
+    background:radial-gradient(120% 140% at 85% 0%,#3A2E22 0%,var(--ink) 55%);
+    color:#fff; padding:44px 40px; display:grid; grid-template-columns:1.2fr 1fr; gap:32px; align-items:center;
+  }
+  #sj-gold .sj-hero:after{
+    content:""; position:absolute; right:-120px; top:-120px; width:380px; height:380px; border-radius:50%;
+    background:radial-gradient(circle,rgba(227,196,143,.28),rgba(183,129,59,0) 70%); pointer-events:none;
+  }
+  #sj-gold .sj-eyebrow{display:inline-flex; align-items:center; gap:8px; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--g-light)}
+  #sj-gold .sj-dot{width:8px; height:8px; border-radius:50%; background:#3DDC84; box-shadow:0 0 0 0 rgba(61,220,132,.6); animation:sjPulse 1.8s infinite}
+  #sj-gold .sj-dot.is-off{background:#999; animation:none}
+  @keyframes sjPulse{0%{box-shadow:0 0 0 0 rgba(61,220,132,.6)}70%{box-shadow:0 0 0 10px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+  #sj-gold h1{font-family:"Cormorant Garamond",Georgia,serif; font-weight:600; font-size:46px; line-height:1.08; margin:14px 0 12px; color:#fff; letter-spacing:0; text-transform:none}
+  #sj-gold .sj-hero p{color:#CFC6BB; margin:0; max-width:460px; font-size:15px}
+  #sj-gold .sj-live{
+    position:relative; z-index:1; background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+    border:1px solid rgba(227,196,143,.35); border-radius:16px; padding:26px 26px 22px; backdrop-filter:blur(4px);
+  }
+  #sj-gold .sj-live-label{font-size:13px; color:var(--g-light); letter-spacing:.06em}
+  #sj-gold .sj-live-price{display:flex; align-items:baseline; gap:8px; margin:6px 0 2px; flex-wrap:wrap}
+  #sj-gold .sj-live-price .sj-cur{font-size:18px; color:var(--g-light)}
+  #sj-gold .sj-live-price .sj-num{font-family:"Cormorant Garamond",Georgia,serif; font-size:60px; font-weight:600; line-height:1; color:#fff; font-variant-numeric:tabular-nums; transition:color .6s}
+  #sj-gold .sj-live-price .sj-per{font-size:15px; color:#CFC6BB}
+  #sj-gold .sj-chg{display:inline-flex; align-items:center; gap:4px; font-size:13px; font-weight:600; padding:3px 10px; border-radius:99px; background:rgba(255,255,255,.08); color:#CFC6BB}
+  #sj-gold .sj-chg.up{color:#5BE39A; background:rgba(61,220,132,.12)}
+  #sj-gold .sj-chg.down{color:#FF8A7A; background:rgba(255,99,71,.12)}
+  #sj-gold .sj-meta{display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:16px; padding-top:14px; border-top:1px solid rgba(255,255,255,.12); font-size:12.5px; color:#A99E92}
+  #sj-gold .sj-meta b{color:#E8E0D6; font-weight:600}
+  #sj-gold .flash-up{color:#7CF0B0 !important}
+  #sj-gold .flash-down{color:#FF9C8F !important}
+
+  /* Section headings */
+  #sj-gold .sj-sec{margin-top:48px}
+  #sj-gold .sj-sec-head{display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap; margin-bottom:18px}
+  #sj-gold h2{font-family:"Cormorant Garamond",Georgia,serif; font-weight:600; font-size:32px; line-height:1.15; margin:0; color:var(--ink); letter-spacing:0; text-transform:none}
+  #sj-gold .sj-sub{color:var(--muted); font-size:14px; margin:4px 0 0}
+
+  /* Unit toggle */
+  #sj-gold .sj-toggle{display:inline-flex; background:var(--g-pale); border-radius:99px; padding:4px; gap:2px}
+  #sj-gold .sj-toggle button{
+    border:0; background:transparent; color:var(--text); font:inherit; font-size:13.5px; font-weight:500;
+    padding:8px 16px; border-radius:99px; cursor:pointer; transition:background .2s,color .2s; min-height:auto; letter-spacing:0; text-transform:none;
+  }
+  #sj-gold .sj-toggle button[aria-pressed="true"]{background:var(--ink); color:#fff}
+
+  /* Rate cards */
+  #sj-gold .sj-cards{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
+  #sj-gold .sj-card{
+    position:relative; background:#fff; border:1px solid var(--line); border-radius:16px; padding:22px 20px 20px;
+    transition:transform .25s, box-shadow .25s, border-color .25s;
+  }
+  #sj-gold .sj-card:hover{transform:translateY(-3px); box-shadow:0 14px 30px -18px rgba(60,40,10,.35); border-color:var(--g-light)}
+  #sj-gold .sj-card.is-main{background:linear-gradient(165deg,#FFF8EC,#fff 60%); border-color:var(--g-light)}
+  #sj-gold .sj-badge{
+    width:52px; height:52px; border-radius:50%; display:grid; place-items:center; margin-bottom:14px;
+    background:linear-gradient(145deg,#F3DDB0,var(--g) 55%,#8E6127); color:#fff; font-weight:700; font-size:15px;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.5), 0 6px 14px -6px rgba(183,129,59,.7);
+  }
+  #sj-gold .sj-card-title{font-weight:600; color:var(--ink); font-size:15px}
+  #sj-gold .sj-card-purity{font-size:12.5px; color:var(--muted)}
+  #sj-gold .sj-card-price{margin-top:12px; font-family:"Cormorant Garamond",Georgia,serif; font-size:34px; font-weight:600; color:var(--ink); line-height:1.1; font-variant-numeric:tabular-nums; transition:color .6s}
+  #sj-gold .sj-card-price small{font-family:inherit; font-size:15px; color:var(--g); font-weight:600; margin-right:4px}
+  #sj-gold .sj-card-unit{font-size:12.5px; color:var(--muted)}
+
+  /* Table */
+  #sj-gold .sj-table-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:16px; background:#fff}
+  #sj-gold table{width:100%; border-collapse:collapse; min-width:560px; font-variant-numeric:tabular-nums}
+  #sj-gold th, #sj-gold td{padding:14px 18px; text-align:right; border-bottom:1px solid var(--line); font-size:14.5px; white-space:nowrap}
+  #sj-gold th:first-child, #sj-gold td:first-child{text-align:left}
+  #sj-gold thead th{background:var(--g-pale); color:var(--ink); font-weight:600; font-size:13px; letter-spacing:.04em; text-transform:uppercase}
+  #sj-gold tbody tr:last-child td{border-bottom:0}
+  #sj-gold tbody tr:hover td{background:#FFFBF3}
+  #sj-gold td .sj-k{display:inline-block; min-width:42px; font-weight:700; color:var(--g)}
+
+  /* Calculator */
+  #sj-gold .sj-calc{display:grid; grid-template-columns:1.3fr 1fr; gap:0; border-radius:18px; overflow:hidden; border:1px solid var(--line); background:#fff}
+  #sj-gold .sj-calc-form{padding:28px; display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  #sj-gold .sj-field{display:flex; flex-direction:column; gap:6px}
+  #sj-gold .sj-field.full{grid-column:1 / -1}
+  #sj-gold .sj-field label{font-size:13px; font-weight:600; color:var(--ink)}
+  #sj-gold .sj-field input, #sj-gold .sj-field select{
+    font:inherit; font-size:15px; padding:12px 14px; border:1px solid var(--line); border-radius:10px; background:var(--bg);
+    color:var(--ink); width:100%; outline:none; transition:border-color .2s, box-shadow .2s; height:auto; margin:0;
+  }
+  #sj-gold .sj-field input:focus, #sj-gold .sj-field select:focus{border-color:var(--g); box-shadow:0 0 0 3px rgba(183,129,59,.15)}
+  #sj-gold .sj-calc-out{background:var(--ink); color:#fff; padding:28px; display:flex; flex-direction:column; justify-content:center; gap:10px}
+  #sj-gold .sj-row{display:flex; justify-content:space-between; gap:12px; font-size:14px; color:#CFC6BB; font-variant-numeric:tabular-nums}
+  #sj-gold .sj-row b{color:#fff; font-weight:600}
+  #sj-gold .sj-total{margin-top:8px; padding-top:14px; border-top:1px solid rgba(255,255,255,.14)}
+  #sj-gold .sj-total span{font-size:13px; color:var(--g-light); letter-spacing:.06em; text-transform:uppercase}
+  #sj-gold .sj-total div{font-family:"Cormorant Garamond",Georgia,serif; font-size:40px; font-weight:600; line-height:1.1; font-variant-numeric:tabular-nums}
+  #sj-gold .sj-note-sm{font-size:12px; color:#A99E92}
+
+  /* CTA + info */
+  #sj-gold .sj-cta{
+    margin-top:48px; border-radius:18px; padding:32px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;
+    background:linear-gradient(120deg,#F7EFE2,#FFF8EC 60%,#F3E3C6);
+    border:1px solid var(--g-light);
+  }
+  #sj-gold .sj-cta h3{font-family:"Cormorant Garamond",Georgia,serif; font-size:28px; font-weight:600; margin:0 0 4px; color:var(--ink); text-transform:none; letter-spacing:0}
+  #sj-gold .sj-cta p{margin:0; color:var(--muted)}
+  #sj-gold .sj-btns{display:flex; gap:10px; flex-wrap:wrap}
+  #sj-gold .sj-btn{
+    display:inline-flex; align-items:center; justify-content:center; padding:13px 24px; border-radius:99px; font-weight:600; font-size:14px;
+    text-decoration:none; letter-spacing:.04em; transition:transform .2s, background .2s;
+  }
+  #sj-gold .sj-btn:hover{transform:translateY(-1px)}
+  #sj-gold .sj-btn-dark{background:var(--ink); color:#fff}
+  #sj-gold .sj-btn-gold{background:var(--g); color:#fff}
+
+  #sj-gold .sj-faq{display:grid; gap:10px}
+  #sj-gold details{background:#fff; border:1px solid var(--line); border-radius:14px; padding:0 20px}
+  #sj-gold summary{cursor:pointer; list-style:none; padding:18px 0; font-weight:600; color:var(--ink); display:flex; justify-content:space-between; gap:12px}
+  #sj-gold summary::-webkit-details-marker{display:none}
+  #sj-gold summary:after{content:"+"; color:var(--g); font-size:20px; line-height:1; transition:transform .2s}
+  #sj-gold details[open] summary:after{transform:rotate(45deg)}
+  #sj-gold details p{margin:0 0 18px; color:var(--muted); font-size:14.5px}
+  #sj-gold .sj-disclaimer{margin-top:28px; font-size:12.5px; color:var(--muted); text-align:center}
+  #sj-gold .sj-error{display:none; margin-top:12px; font-size:13px; color:#FFB4A8}
+
+  /* Responsive */
+  @media (max-width:980px){
+    #sj-gold .sj-cards{grid-template-columns:repeat(2,1fr)}
+    #sj-gold .sj-hero{grid-template-columns:1fr; padding:32px 24px}
+    #sj-gold .sj-calc{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    #sj-gold{padding:0 12px 36px}
+    #sj-gold h1{font-size:34px}
+    #sj-gold h2{font-size:26px}
+    #sj-gold .sj-live-price .sj-num{font-size:48px}
+    #sj-gold .sj-cards{gap:10px}
+    #sj-gold .sj-card{padding:16px 14px}
+    #sj-gold .sj-badge{width:42px; height:42px; font-size:13px; margin-bottom:10px}
+    #sj-gold .sj-card-price{font-size:26px}
+    #sj-gold .sj-calc-form{grid-template-columns:1fr; padding:20px}
+    #sj-gold .sj-calc-out{padding:22px 20px}
+    #sj-gold .sj-toggle{width:100%}
+    #sj-gold .sj-toggle button{flex:1; padding:8px 6px}
+    #sj-gold .sj-cta{padding:24px 20px}
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap">
+
+  <!-- HERO -->
+  <section class="sj-hero">
+    <div style="position:relative;z-index:1">
+      <span class="sj-eyebrow"><span class="sj-dot" id="sjDot"></span> Live · Updated every minute</span>
+      <h1>Today's Gold Rate in UAE</h1>
+      <p>Live gold prices per gram in UAE Dirham for 24K, 22K, 21K and 18K gold, based on the international market rate.</p>
+    </div>
+    <div class="sj-live" aria-live="polite">
+      <div class="sj-live-label">24K Gold · per gram</div>
+      <div class="sj-live-price">
+        <span class="sj-cur">AED</span>
+        <span class="sj-num" id="sjHero">—</span>
+      </div>
+      <span class="sj-chg" id="sjChg">Loading live rate…</span>
+      <div class="sj-meta">
+        <span>Updated: <b id="sjTime">—</b></span>
+        <span>Spot: <b id="sjSpot">—</b></span>
+      </div>
+      <div class="sj-error" id="sjErr">Live rate is temporarily unavailable. Retrying…</div>
+    </div>
+  </section>
+
+  <!-- RATE CARDS -->
+  <section class="sj-sec">
+    <div class="sj-sec-head">
+      <div>
+        <h2>Gold Price by Karat</h2>
+        <p class="sj-sub">All prices in AED. Choose a unit to compare.</p>
+      </div>
+      <div class="sj-toggle" role="group" aria-label="Unit">
+        <button type="button" data-unit="g" aria-pressed="true">1 Gram</button>
+        <button type="button" data-unit="10g" aria-pressed="false">10 Grams</button>
+        <button type="button" data-unit="tola" aria-pressed="false">Tola</button>
+        <button type="button" data-unit="oz" aria-pressed="false">Ounce</button>
+      </div>
+    </div>
+    <div class="sj-cards" id="sjCards"></div>
+  </section>
+
+  <!-- TABLE -->
+  <section class="sj-sec">
+    <div class="sj-sec-head">
+      <div>
+        <h2>Gold Rate Table</h2>
+        <p class="sj-sub">Today's gold rate in UAE across common weights.</p>
+      </div>
+    </div>
+    <div class="sj-table-wrap">
+      <table>
+        <thead><tr><th>Karat</th><th>1 Gram</th><th>8 Grams</th><th>10 Grams</th><th>Tola (11.66 g)</th><th>100 Grams</th></tr></thead>
+        <tbody id="sjTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section class="sj-sec">
+    <div class="sj-sec-head">
+      <div>
+        <h2>Gold Price Calculator</h2>
+        <p class="sj-sub">Estimate the price of your jewellery with making charges and VAT.</p>
+      </div>
+    </div>
+    <div class="sj-calc">
+      <div class="sj-calc-form">
+        <div class="sj-field">
+          <label for="sjKarat">Karat</label>
+          <select id="sjKarat">
+            <option value="24">24K</option>
+            <option value="22">22K</option>
+            <option value="21">21K</option>
+            <option value="18" selected>18K</option>
+          </select>
+        </div>
+        <div class="sj-field">
+          <label for="sjWeight">Weight (grams)</label>
+          <input id="sjWeight" type="number" min="0" step="0.01" value="10" inputmode="decimal">
+        </div>
+        <div class="sj-field">
+          <label for="sjMaking">Making charges (AED per gram)</label>
+          <input id="sjMaking" type="number" min="0" step="1" value="0" inputmode="decimal">
+        </div>
+        <div class="sj-field">
+          <label for="sjVat">VAT</label>
+          <select id="sjVat">
+            <option value="0.05" selected>Include 5% VAT</option>
+            <option value="0">Exclude VAT</option>
+          </select>
+        </div>
+      </div>
+      <div class="sj-calc-out">
+        <div class="sj-row"><span>Gold value</span><b id="sjCGold">—</b></div>
+        <div class="sj-row"><span>Making charges</span><b id="sjCMaking">—</b></div>
+        <div class="sj-row"><span>VAT</span><b id="sjCVat">—</b></div>
+        <div class="sj-total"><span>Estimated total</span><div id="sjCTotal">—</div></div>
+        <div class="sj-note-sm">Estimate only. Final price is confirmed in store.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sj-cta">
+    <div>
+      <h3>Shop gold jewellery at today's rate</h3>
+      <p>18K, 21K and 22K designs, delivered free across the UAE.</p>
+    </div>
+    <div class="sj-btns">
+      <a class="sj-btn sj-btn-dark" href="/collections/all">Shop Collection</a>
+      <a class="sj-btn sj-btn-gold" href="/pages/contact">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sj-sec">
+    <div class="sj-sec-head"><div><h2>Frequently Asked Questions</h2></div></div>
+    <div class="sj-faq">
+      <details>
+        <summary>How is today's gold rate in UAE calculated?</summary>
+        <p>The rate follows the live international gold spot price (USD per troy ounce), converted to AED at the fixed rate of 3.6725 and to grams (1 troy ounce = 31.1035 g). Lower karats are priced by their gold purity.</p>
+      </details>
+      <details>
+        <summary>What is the difference between 24K, 22K, 21K and 18K gold?</summary>
+        <p>24K is pure gold (99.9%). 22K has 91.6% gold, 21K has 87.5% and 18K has 75%. Lower karats contain more alloy metals, which makes them stronger and better suited to everyday jewellery.</p>
+      </details>
+      <details>
+        <summary>How much is one tola of gold?</summary>
+        <p>One tola equals 11.664 grams. Select "Tola" above to see today's price per tola for each karat.</p>
+      </details>
+      <details>
+        <summary>Is the jewellery price the same as the gold rate?</summary>
+        <p>No. Jewellery prices include the gold value, making charges for the design and craftsmanship, and 5% VAT. Use the calculator above for an estimate.</p>
+      </details>
+    </div>
+  </section>
+
+  <p class="sj-disclaimer">Rates are indicative, based on the live international gold market, and may differ from in-store prices. Updated every minute.</p>
+
+<script>
+(function(){
+  /* ---------- Settings ---------- */
+  var CONFIG = {
+    premiumPercent: 0,    // add a % on top of spot to match your shop rate, e.g. 2 = +2%
+    premiumPerGram: 0,    // or add a fixed AED per gram (24K), e.g. 3
+    refreshSeconds: 60,
+    aedPerUsd: 3.6725
+  };
+  var API = 'https://api.gold-api.com/price/XAU';
+  var GRAMS_PER_OZ = 31.1034768;
+  var KARATS = [
+    { k:24, name:'24K Gold', purity:'99.9% pure', ratio:1 },
+    { k:22, name:'22K Gold', purity:'91.6% pure', ratio:0.916 },
+    { k:21, name:'21K Gold', purity:'87.5% pure', ratio:0.875 },
+    { k:18, name:'18K Gold', purity:'75.0% pure', ratio:0.750 }
+  ];
+  var UNITS = {
+    g:    { grams:1,            label:'per gram' },
+    '10g':{ grams:10,           label:'per 10 grams' },
+    tola: { grams:11.6638,      label:'per tola' },
+    oz:   { grams:GRAMS_PER_OZ, label:'per troy ounce' }
+  };
+
+  var root = document.getElementById('sj-gold');
+  var $ = function(id){ return document.getElementById(id); };
+  var state = { perGram24:null, first:null, unit:'g', spot:null };
+
+  function fmt(n, d){
+    d = (d == null) ? 2 : d;
+    return n.toLocaleString('en-US', { minimumFractionDigits:d, maximumFractionDigits:d });
+  }
+  function rate(ratio){ return state.perGram24 * ratio; }
+
+  function flash(el, dir){
+    if (!dir) return;
+    el.classList.remove('flash-up','flash-down');
+    void el.offsetWidth;
+    el.classList.add(dir > 0 ? 'flash-up' : 'flash-down');
+    setTimeout(function(){ el.classList.remove('flash-up','flash-down'); }, 1200);
+  }
+
+  function renderCards(dir){
+    var u = UNITS[state.unit], html = '';
+    KARATS.forEach(function(k, i){
+      html += '<div class="sj-card' + (i === 0 ? ' is-main' : '') + '">' +
+        '<div class="sj-badge">' + k.k + 'K</div>' +
+        '<div class="sj-card-title">' + k.name + '</div>' +
+        '<div class="sj-card-purity">' + k.purity + '</div>' +
+        '<div class="sj-card-price"><small>AED</small>' + fmt(rate(k.ratio) * u.grams) + '</div>' +
+        '<div class="sj-card-unit">' + u.label + '</div>' +
+      '</div>';
+    });
+    $('sjCards').innerHTML = html;
+    if (dir) root.querySelectorAll('.sj-card-price').forEach(function(el){ flash(el, dir); });
+  }
+
+  function renderTable(){
+    var w = [1, 8, 10, 11.6638, 100], html = '';
+    KARATS.forEach(function(k){
+      html += '<tr><td><span class="sj-k">' + k.k + 'K</span> ' + k.purity + '</td>';
+      w.forEach(function(g){ html += '<td>AED ' + fmt(rate(k.ratio) * g) + '</td>'; });
+      html += '</tr>';
+    });
+    $('sjTable').innerHTML = html;
+  }
+
+  function renderCalc(){
+    if (state.perGram24 == null) return;
+    var k = KARATS.filter(function(x){ return x.k == $('sjKarat').value; })[0];
+    var wt = Math.max(0, parseFloat($('sjWeight').value) || 0);
+    var mk = Math.max(0, parseFloat($('sjMaking').value) || 0);
+    var vatRate = parseFloat($('sjVat').value);
+    var gold = rate(k.ratio) * wt, making = mk * wt, vat = (gold + making) * vatRate;
+    $('sjCGold').textContent = 'AED ' + fmt(gold);
+    $('sjCMaking').textContent = 'AED ' + fmt(making);
+    $('sjCVat').textContent = 'AED ' + fmt(vat);
+    $('sjCTotal').textContent = 'AED ' + fmt(gold + making + vat);
+  }
+
+  function renderAll(dir){
+    var hero = $('sjHero');
+    hero.textContent = fmt(state.perGram24);
+    flash(hero, dir);
+
+    var chg = $('sjChg');
+    var diff = state.perGram24 - state.first;
+    var pct = state.first ? (diff / state.first) * 100 : 0;
+    chg.className = 'sj-chg' + (diff > 0.004 ? ' up' : diff < -0.004 ? ' down' : '');
+    chg.textContent = (diff > 0.004 ? '▲ ' : diff < -0.004 ? '▼ ' : '● ') +
+      fmt(Math.abs(diff)) + ' (' + fmt(Math.abs(pct)) + '%) since page opened';
+
+    $('sjSpot').textContent = '$' + fmt(state.spot) + ' / oz';
+    $('sjTime').textContent = new Date().toLocaleString('en-GB', {
+      timeZone:'Asia/Dubai', day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit'
+    }) + ' (UAE)';
+
+    renderCards(dir);
+    renderTable();
+    renderCalc();
+  }
+
+  var retry = null;
+  function load(){
+    clearTimeout(retry);
+    var ctrl = window.AbortController ? new AbortController() : null;
+    var to = ctrl ? setTimeout(function(){ ctrl.abort(); }, 15000) : null;
+    fetch(API, { cache:'no-store', signal: ctrl ? ctrl.signal : undefined })
+      .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(d){
+        var spot = parseFloat(d.price);
+        if (!(spot > 0)) throw new Error('bad price');
+        var perGram = spot / GRAMS_PER_OZ * CONFIG.aedPerUsd;
+        perGram = perGram * (1 + CONFIG.premiumPercent / 100) + CONFIG.premiumPerGram;
+        var dir = state.perGram24 == null ? 0 : Math.sign(perGram - state.perGram24);
+        state.spot = spot;
+        state.perGram24 = perGram;
+        if (state.first == null) state.first = perGram;
+        $('sjErr').style.display = 'none';
+        $('sjDot').classList.remove('is-off');
+        renderAll(dir);
+      })
+      .catch(function(){
+        if (state.perGram24 == null) $('sjErr').style.display = 'block';
+        $('sjDot').classList.add('is-off');
+        retry = setTimeout(load, 10000);
+      })
+      .then(function(){ clearTimeout(to); });
+  }
+
+  root.querySelectorAll('.sj-toggle button').forEach(function(b){
+    b.addEventListener('click', function(){
+      root.querySelectorAll('.sj-toggle button').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      state.unit = b.getAttribute('data-unit');
+      if (state.perGram24 != null) renderCards(0);
+    });
+  });
+  ['sjKarat','sjWeight','sjMaking','sjVat'].forEach(function(id){
+    $(id).addEventListener('input', renderCalc);
+    $(id).addEventListener('change', renderCalc);
+  });
+
+  load();
+  setInterval(load, CONFIG.refreshSeconds * 1000);
+})();
+</script>
+</div>
