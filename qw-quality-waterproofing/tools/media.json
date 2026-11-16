@@ -1,0 +1,288 @@
+{
+ "logo": {
+  "id": 55,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/quality-waterproofing-logo.png",
+  "w": 520,
+  "h": 233
+ },
+ "ext_trench_membrane": {
+  "id": 7,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/exterior-basement-waterproofing-dimple-membrane-toronto.webp",
+  "w": 912,
+  "h": 1600
+ },
+ "ext_orange_membrane": {
+  "id": 8,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/exterior-foundation-waterproofing-membrane-gta.webp",
+  "w": 1206,
+  "h": 1600
+ },
+ "ext_worker_dig": {
+  "id": 9,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/foundation-excavation-waterproofing-crew.webp",
+  "w": 1206,
+  "h": 1595
+ },
+ "ext_brick_coat": {
+  "id": 10,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/foundation-wall-tar-coating-exterior-waterproofing.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "ext_brick_membrane": {
+  "id": 11,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/exterior-waterproofing-membrane-brick-home-mississauga.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "ext_parging": {
+  "id": 12,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/foundation-parging-exterior-waterproofing.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "ext_membrane_downspout": {
+  "id": 13,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/exterior-waterproofing-weeping-tile-gravel.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "ext_blueskin": {
+  "id": 14,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/blueskin-foundation-membrane-waterproofing.webp",
+  "w": 894,
+  "h": 1600
+ },
+ "ext_red_brick": {
+  "id": 15,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/exterior-waterproofing-red-brick-house-brampton.webp",
+  "w": 1206,
+  "h": 1592
+ },
+ "ext_long_trench": {
+  "id": 16,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/full-perimeter-exterior-waterproofing-excavation.webp",
+  "w": 1203,
+  "h": 1600
+ },
+ "ext_crew_trench": {
+  "id": 17,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/waterproofing-contractor-installing-membrane.webp",
+  "w": 1206,
+  "h": 1595
+ },
+ "ext_live1": {
+  "id": 18,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/basement-wall-membrane-exterior-waterproofing.webp",
+  "w": 1192,
+  "h": 1600
+ },
+ "ext_live2": {
+  "id": 19,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/stone-house-foundation-waterproofing.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "ext_live3": {
+  "id": 20,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/foundation-drainage-membrane-gravel-trench.webp",
+  "w": 576,
+  "h": 780
+ },
+ "crack_injection": {
+  "id": 21,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/foundation-crack-repair-sealed-crack.webp",
+  "w": 1206,
+  "h": 1595
+ },
+ "crack_patch": {
+  "id": 22,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/exterior-foundation-crack-repair-patch.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "crack_window": {
+  "id": 23,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/foundation-crack-repair-below-window.webp",
+  "w": 1600,
+  "h": 1200
+ },
+ "crack_wall": {
+  "id": 24,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/exterior-crack-repair-technician.webp",
+  "w": 1206,
+  "h": 1593
+ },
+ "crack_live_window": {
+  "id": 25,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/window-well-foundation-crack-sealing.webp",
+  "w": 1195,
+  "h": 1600
+ },
+ "crack_closeup": {
+  "id": 26,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/concrete-foundation-crack-close-up.webp",
+  "w": 1000,
+  "h": 667
+ },
+ "int_dmx_window": {
+  "id": 27,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interior-basement-waterproofing-dmx-membrane.webp",
+  "w": 1110,
+  "h": 1378
+ },
+ "int_dmx_wall": {
+  "id": 28,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interior-waterproofing-membrane-basement-toronto.webp",
+  "w": 1098,
+  "h": 1383
+ },
+ "int_drain": {
+  "id": 29,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interior-weeping-tile-basement-floor.webp",
+  "w": 1110,
+  "h": 1359
+ },
+ "int_long": {
+  "id": 30,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interior-perimeter-drain-membrane.webp",
+  "w": 1110,
+  "h": 1381
+ },
+ "int_unfinished": {
+  "id": 31,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/unfinished-basement-interior-waterproofing.webp",
+  "w": 1600,
+  "h": 1200
+ },
+ "int_column": {
+  "id": 32,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interior-waterproofing-basement-column.webp",
+  "w": 1600,
+  "h": 1200
+ },
+ "int_worker": {
+  "id": 33,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interior-waterproofing-installer-basement.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "int_orange": {
+  "id": 34,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interior-basement-waterproofing-system.webp",
+  "w": 1090,
+  "h": 1368
+ },
+ "int_live": {
+  "id": 35,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/basement-waterproofing-interior-membrane-new-floor.webp",
+  "w": 825,
+  "h": 1105
+ },
+ "sump_basin": {
+  "id": 36,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/sump-pump-installation-basin.webp",
+  "w": 1206,
+  "h": 1574
+ },
+ "sump_system": {
+  "id": 37,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/sump-pump-battery-backup-installation.webp",
+  "w": 1206,
+  "h": 895
+ },
+ "sump_pit": {
+  "id": 38,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/sump-pit-liner-installation.webp",
+  "w": 1206,
+  "h": 1467
+ },
+ "int_sump_corner": {
+  "id": 39,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/sump-pump-interior-drain-connection.webp",
+  "w": 1600,
+  "h": 1200
+ },
+ "il_patio_steps": {
+  "id": 40,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/backyard-interlock-patio-steps.webp",
+  "w": 828,
+  "h": 613
+ },
+ "il_patio_wide": {
+  "id": 42,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interlocking-patio-installation-gta.webp",
+  "w": 828,
+  "h": 626
+ },
+ "il_steps": {
+  "id": 43,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interlock-stone-steps-installation.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "il_pool1": {
+  "id": 44,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/pool-deck-interlocking-pavers.webp",
+  "w": 1440,
+  "h": 1080
+ },
+ "il_pool2": {
+  "id": 45,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interlock-pool-patio-installation.webp",
+  "w": 1600,
+  "h": 1200
+ },
+ "il_pool3": {
+  "id": 46,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/pool-surround-interlock-pavers.webp",
+  "w": 1440,
+  "h": 1080
+ },
+ "il_rear": {
+  "id": 47,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interlocking-backyard-patio-contractor.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "il_side": {
+  "id": 48,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interlock-walkway-and-steps.webp",
+  "w": 1600,
+  "h": 1200
+ },
+ "il_walkway": {
+  "id": 50,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/side-yard-interlock-walkway.webp",
+  "w": 1200,
+  "h": 1600
+ },
+ "il_live_deck": {
+  "id": 51,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interlocking-driveway-backyard-pad.webp",
+  "w": 1600,
+  "h": 1200
+ },
+ "il_live_walk": {
+  "id": 52,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/front-walkway-interlocking-pavers.webp",
+  "w": 1600,
+  "h": 1200
+ },
+ "il_live_side": {
+  "id": 53,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interlock-side-walkway-installation.webp",
+  "w": 828,
+  "h": 623
+ },
+ "il_live_steps": {
+  "id": 54,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/interlock-walkway-wood-steps.webp",
+  "w": 1600,
+  "h": 1200
+ },
+ "hero_video": {
+  "id": 56,
+  "url": "https://meteoric-cornflowerblue-pheasant-37.hostingersite.com/wp-content/uploads/2026/11/quality-waterproofing-hero-video.mp4"
+ }
+}
