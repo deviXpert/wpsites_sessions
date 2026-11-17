@@ -28,6 +28,7 @@ if __name__ == '__main__':
     print([(x['id'], x['success']) for x in r.get('results', [])] or r)
     # the bulk editor writes post meta but Yoast's indexables (what the front end outputs) only refresh on save_post
     for s in SEO:
-        wp.req(f'wp/v2/pages/{P[s]}', 'POST', {'status': 'publish'})
+        cur = wp.req(f'wp/v2/pages/{P[s]}?_fields=status')['status']
+        wp.req(f'wp/v2/pages/{P[s]}', 'POST', {'status': cur})  # re-save without changing status
         j = wp.req(f'wp/v2/pages/{P[s]}?_fields=yoast_head_json')['yoast_head_json']
         print(s, '|', j.get('title'), '|', (j.get('description') or 'MISSING')[:50], '|', j.get('robots', {}).get('index'))

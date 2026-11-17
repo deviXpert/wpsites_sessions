@@ -37,7 +37,7 @@ Cloud environment: "Quality WaterProofing" (allowlist has the staging host, the 
 | Menu "QW Main Menu" (slug `qw-main-menu`) | 4 |
 | Media | see `tools/media.json` (key → id/url); sources + alt text in `tools/media_src.py` |
 
-Pages (all published, Astra full-width / no title, template `elementor_header_footer`): Home, About, Services hub, 5 service pages (`/exterior-waterproofing/`, `/interior-waterproofing/`, `/sump-pump-installation/`, `/foundation-crack-repair/`, `/interlocking/`), 4 location pages (`/basement-waterproofing-toronto|mississauga|brampton|north-bay/`), Projects (filterable gallery), Contact.
+Pages (**only Home is published**; all others are drafts until the client approves the home page – `build.py`/`yoast.py` keep each page's current status; Astra full-width / no title, template `elementor_header_footer`): Home, About, Services hub, 5 service pages (`/exterior-waterproofing/`, `/interior-waterproofing/`, `/sump-pump-installation/`, `/foundation-crack-repair/`, `/interlocking/`), 4 location pages (`/basement-waterproofing-toronto|mississauga|brampton|north-bay/`), Projects (filterable gallery), Contact.
 
 ## How to rebuild / resume
 ```bash

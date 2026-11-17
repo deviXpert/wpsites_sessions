@@ -374,7 +374,8 @@ if __name__ == '__main__':
         if n in ('header', 'footer'):
             put(TPL[n], data, 'elementor_library', extra={'_ttype': n, 'status': 'publish'})
         else:
-            extra = {'status': 'publish', 'template': 'elementor_header_footer'}
+            # keep the page's current status (pages are drafts until the client approves; only Home is public)
+            extra = {'status': wp.req(f'wp/v2/pages/{PAGES[n]}?_fields=status')['status'], 'template': 'elementor_header_footer'}
             if n in SERVICES: extra['title'] = SERVICES[n]['name']
             if n in LOCATIONS: extra['title'] = LOCATIONS[n]['h1']
             put(PAGES[n], data, 'pages', extra=extra, settings=PAGE_SETTINGS)
