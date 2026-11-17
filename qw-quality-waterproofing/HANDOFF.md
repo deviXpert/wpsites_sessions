@@ -12,7 +12,8 @@ Cloud environment: "Quality WaterProofing" (allowlist has the staging host, the 
 ## User requirements (agreed)
 - Built in Elementor with **native widgets**; styling via widget controls + Global Colors/Fonts. Minimal CSS, kept in a global Elementor place.
 - Focus areas: Toronto/GTA, Mississauga, Brampton, North Bay. Services: exterior waterproofing, interior waterproofing, sump pump, exterior foundation crack repair, interlocking.
-- Logo tagline "Our company will help protect your home's basement from water damage" is used in the tagline band (Home, About, Projects).
+- Logo tagline "Our company will help protect your home's basement from water damage" is used only as text: opening line of the About story and the footer company blurb (also the JSON-LD `slogan`). No standalone tagline/logo band (user asked to remove it).
+- **Light theme** (like the reference site): white / cream / light-grey sections. Only the hero photo banners and the header/footer are dark; the cut-out logo needs a dark background.
 - Images: client photo zips + photos from the old site. The user will revise copy later.
 
 ## Design system (Elementor kit, post 5, written by `tools/kit.py`)

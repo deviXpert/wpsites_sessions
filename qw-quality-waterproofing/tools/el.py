@@ -74,7 +74,7 @@ def H(text, tag='h2', typo='qwh2', color='primary', align=None, **s):
     if align: s['align'] = align
     return W('heading', 'Heading: ' + text.split('<')[0][:40], title=text, header_size=tag, **s)
 
-def EYE(text, color='secondary', align=None, **s):
+def EYE(text, color='qwgolddk', align=None, **s):
     """Small serif eyebrow above section titles (not a heading tag)."""
     s.setdefault('g', {}).update(typography_typography=typ('qweye'), title_color=col(color))
     if align: s['align'] = align
@@ -91,7 +91,7 @@ def LINE(color='secondary', width=64, align='left'):
 
 def HEAD(eyebrow, title, intro=None, align='left', dark=False, tag='h2', maxw=760):
     a = None if align == 'left' else align
-    out = [EYE(eyebrow, align=a), H(title, tag, color='qwwhite' if dark else 'primary', align=a)]
+    out = [EYE(eyebrow, color='secondary' if dark else 'qwgolddk', align=a), H(title, tag, color='qwwhite' if dark else 'primary', align=a)]
     if intro:
         out.append(T(intro, color='qwmuted' if dark else 'text', typo='qwlead', align=a,
                      _element_width='initial', _element_custom_width=px(maxw), _element_custom_width_tablet=px(100, '%')))

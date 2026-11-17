@@ -32,7 +32,7 @@ def hero(eyebrow, h1, lead, bg=None, video=False, form=True, trust=None, minh=64
         ], title='Hero Form Card', pad=32, _element_id='estimate', border_border='none',
            box_shadow_box_shadow=shadow(30, 60, 'rgba(0,0,0,0.35)'), border_radius=dims(6), flex_gap=gap(10)))
     s = dict(min_height=px(minh), min_height_mobile=px(0), flex_align_items='center', background_overlay_background='gradient',
-             background_overlay_color='rgba(10,14,23,0.94)', background_overlay_color_b='rgba(10,14,23,0.62)',
+             background_overlay_color='rgba(10,14,23,0.86)', background_overlay_color_b='rgba(10,14,23,0.40)',
              background_overlay_gradient_angle=px(90, 'deg'), background_overlay_gradient_angle_mobile=px(180, 'deg'), background_overlay_opacity=px(1))
     if video:
         s.update(background_background='video', background_video_link=MEDIA['hero_video']['url'], background_play_on_mobile='yes',
@@ -50,24 +50,16 @@ def trust_strip():
     return SECTION([C([IBOX(i, t, d, pos='left', view='default', icon_size=px(30), tag='h3', position_mobile='top') for i, t, d in items], 'Trust Grid', grid=4, grid_t=2, grid_m=2, grid_gaps=gap(30, 26))],
                    'Trust Strip', bg='white', pad=(54, 44, 40), border_border='solid', border_width=dims(0, 0, 1, 0), border_color='#E3E6EC')
 
-def tagline_band():
-    return SECTION([
-        IMG('logo', size='full', width=px(220), width_mobile=px(170), radius=0, align='center'),
-        LINE(width=80, align='center'),
-        H(TAGLINE.upper().replace("HOME'S", 'HOME’S'), 'p', 'qwtag', 'qwgoldlt', align='center', _element_width='initial', _element_custom_width=px(860), _element_custom_width_tablet=px(100, '%')),
-        T('Basement waterproofing · Foundation crack repair · Sump pumps · Interlocking', 'qwmuted', 'qwsmall', align='center'),
-    ], 'Tagline Band', bg='ink2', pad=(84, 70, 56), flex_align_items='center', flex_gap=gap(18))
-
 def inspection_card():
     return CARD([
             W('icon', 'Icon', selected_icon=ico('fas fa-question'), view='stacked', shape='square', size=px(22), icon_padding=px(16), align='left',
               g={'primary_color': col('secondary'), 'secondary_color': col('primary')}),
-            H('Not Sure What You Need?', 'h3', 'qwh3', 'qwwhite'),
-            T('Every home is different. Book a free inspection and we’ll find the source of the water and recommend the right fix – honestly.', 'qwmuted', 'qwsmall'),
+            H('Not Sure What You Need?', 'h3', 'qwh3', 'primary'),
+            T('Every home is different. Book a free inspection and we’ll find the source of the water and recommend the right fix – honestly.', 'text', 'qwsmall'),
             BTN('Book Free Inspection', '#estimate', 'gold', 'fas fa-arrow-right', size='sm'),
-        ], dark=True, title='Inspection Card', flex_justify_content='flex-end', min_height=px(440), min_height_mobile=px(0))
+        ], title='Inspection Card', border_width=dims(4, 1, 1, 1), border_color='#C9A24B', flex_justify_content='flex-end', min_height=px(440), min_height_mobile=px(0))
 
-def services_grid(dark=False, intro=True, exclude=None):
+def services_grid(dark=False, intro=True, exclude=None, bg='cream'):
     cards = [SERVICE_CARD(SERVICES[s]['card'], SERVICES[s]['name'], SERVICES[s]['card_text'], page_url(s)) for s in SVC_ORDER if s != exclude]
     if not exclude:
         cards.append(inspection_card())
@@ -75,21 +67,21 @@ def services_grid(dark=False, intro=True, exclude=None):
                 'From the footing to the front walk – we protect your home from water with proven methods and careful workmanship.' if intro else None,
                 align='center', dark=dark)
     return SECTION(head + [C(cards, 'Services Grid', grid=3, grid_t=2, grid_gaps=gap(24), _margin=dims(26, 0, 0, 0))],
-                   'Services', bg='ink' if dark else 'cream', flex_gap=gap(20))
+                   'Services', bg='ink' if dark else bg, flex_gap=gap(20))
 
 def process(steps=None, title='How We Waterproof <span class="qw-hl">Your Basement</span>', eyebrow='Our Process'):
     steps = steps or [('Free Inspection', 'We inspect inside and out to find exactly where and why water is getting in.'),
                       ('Honest Recommendation', 'You get a clear, written quote for the right fix – not the most expensive one.'),
                       ('Expert Installation', 'Our experienced crew completes the work carefully, using proven materials.'),
                       ('Clean-Up & Walkthrough', 'We clean the site, walk you through the finished work and answer every question.')]
-    return SECTION(HEAD(eyebrow, title, 'A straightforward, four-step process from the first call to a dry basement.', align='center', dark=True)
-                   + [C([STEPS(steps)], 'Steps Wrap', _margin=dims(26, 0, 0, 0))], 'Process', bg='ink', flex_gap=gap(20))
+    return SECTION(HEAD(eyebrow, title, 'A straightforward, four-step process from the first call to a dry basement.', align='center')
+                   + [C([STEPS(steps, dark=False)], 'Steps Wrap', _margin=dims(26, 0, 0, 0))], 'Process', bg='light', flex_gap=gap(20))
 
-def why_us(img1='ext_worker_dig', img2='int_dmx_wall'):
+def why_us(img1='ext_worker_dig', img2='int_dmx_wall', bg='white'):
     left = C([
         C([IMG(img1, h=480, hm=300), IMG(img2, h=480, hm=300)], 'Image Pair', grid=2, grid_t=2, grid_m=2, grid_gaps=gap(16)),
-        C([CARD([H('10+', 'div', 'qwstat', 'secondary'), T('Years of residential & commercial construction experience', 'qwmuted', 'qwsmall')], dark=True, pad=24, title='Stat 1'),
-           CARD([H('4', 'div', 'qwstat', 'secondary'), T('Service regions: Toronto & GTA, Mississauga, Brampton, North Bay', 'qwmuted', 'qwsmall')], dark=True, pad=24, title='Stat 2')],
+        C([CARD([H('10+', 'div', 'qwstat', 'secondary'), T('Years of residential & commercial construction experience', 'text', 'qwsmall')], pad=24, title='Stat 1'),
+           CARD([H('4', 'div', 'qwstat', 'secondary'), T('Service regions: Toronto & GTA, Mississauga, Brampton, North Bay', 'text', 'qwsmall')], pad=24, title='Stat 2')],
           'Stats', grid=2, grid_t=2, grid_m=2, grid_gaps=gap(16)),
     ], 'Why Media', flex_gap=gap(16))
     right = C(HEAD('Why Quality Waterproofing', 'Done Right the First Time. <span class="qw-hl">Built to Stay Dry.</span>') + [
@@ -100,20 +92,19 @@ def why_us(img1='ext_worker_dig', img2='int_dmx_wall'):
           'Why Points', flex_gap=gap(22), _margin=dims(8, 0, 8, 0)),
         CTA_BTNS(dark=False),
     ], 'Why Copy', flex_gap=gap(16), flex_justify_content='center')
-    return SECTION([C([left, right], 'Why Grid', grid=2, grid_t=1, grid_gaps=gap(64, 44), grid_align_items='center')], 'Why Us', bg='white')
+    return SECTION([C([left, right], 'Why Grid', grid=2, grid_t=1, grid_gaps=gap(64, 44), grid_align_items='center')], 'Why Us', bg=bg)
 
 def areas_section(city_focus=None, dark=False):
     cards = []
     for slug in LOC_ORDER:
         L = LOCATIONS[slug]
-        cards.append(IBOX('fas fa-map-marker-alt', L['label'], ', '.join(L['hoods'][:5]) + ' and nearby.', dark=True,
+        cards.append(IBOX('fas fa-map-marker-alt', L['label'], ', '.join(L['hoods'][:5]) + ' and nearby.',
                           view='stacked', link_url=page_url(slug), tag='h3',
-                          **({'_border_border': 'solid', '_border_width': dims(1), '_border_color': '#2A3448', '_padding': dims(28), '_border_radius': dims(6), '_background_background': 'classic', '_background_color': '#161E2D'})))
+                          **({'_border_border': 'solid', '_border_width': dims(1), '_border_color': '#E3E6EC', '_padding': dims(28), '_border_radius': dims(6), '_background_background': 'classic', '_background_color': '#FFFFFF',
+                             '_box_shadow_box_shadow_type': 'yes', '_box_shadow_box_shadow': shadow(18, 40, 'rgba(14,20,32,0.07)')})))
     head = HEAD('Service Areas', 'Proudly Serving the GTA <span class="qw-hl">& North Bay</span>',
-                'Basement waterproofing, sump pumps, crack repair and interlocking for homeowners across Toronto, Mississauga, Brampton, North Bay and surrounding communities.', align='center', dark=True)
-    return SECTION(head + [C(cards, 'Areas Grid', grid=4, grid_t=2, grid_gaps=gap(20), _margin=dims(24, 0, 0, 0))], 'Service Areas', bg='ink', flex_gap=gap(20),
-                   background_image=img('ext_long_trench'), background_position='center center', background_size='cover',
-                   background_overlay_background='classic', background_overlay_color='#0E1420', background_overlay_opacity=px(0.93))
+                'Basement waterproofing, sump pumps, crack repair and interlocking for homeowners across Toronto, Mississauga, Brampton, North Bay and surrounding communities.', align='center')
+    return SECTION(head + [C(cards, 'Areas Grid', grid=4, grid_t=2, grid_gaps=gap(20), _margin=dims(24, 0, 0, 0))], 'Service Areas', bg='cream', flex_gap=gap(20))
 
 def faq_section(items, title='Frequently Asked <span class="qw-hl">Questions</span>', side_img='ext_parging'):
     left = C(HEAD('FAQ', title) + [
@@ -140,19 +131,19 @@ def split(title, paras, imgk, img2=None, eyebrow=None, rev=False, extra=None, bg
     kids = [media, copy] if not rev else [copy, media]
     return SECTION([C(kids, 'Split Grid', grid=2, grid_t=1, grid_gaps=gap(64, 40), grid_align_items='center')], 'Split: ' + title.split('<')[0][:30], bg=bg)
 
-def gallery(keys, title='Recent <span class="qw-hl">Projects</span>', eyebrow='Our Work', intro=None, cols=4):
+def gallery(keys, title='Recent <span class="qw-hl">Projects</span>', eyebrow='Our Work', intro=None, cols=4, bg='white'):
     g = W('gallery', 'Gallery', gallery_type='single', gallery=[img(k) for k in keys], gallery_layout='grid', columns=cols, columns_tablet=3, columns_mobile=2,
           gap=px(12), gap_tablet=px(10), gap_mobile=px(8), aspect_ratio='1:1', thumbnail_image_size='medium_large', link_to='file', open_lightbox='yes',
           image_hover_animation='zoom-in', overlay_background='yes', background_overlay_color='rgba(14,20,32,0.45)', image_border_radius=dims(4))
-    return SECTION(HEAD(eyebrow, title, intro, align='center') + [C([g], 'Gallery Wrap', _margin=dims(20, 0, 0, 0))], 'Gallery', bg='white')
+    return SECTION(HEAD(eyebrow, title, intro, align='center') + [C([g], 'Gallery Wrap', _margin=dims(20, 0, 0, 0))], 'Gallery', bg=bg)
 
 def form_section(title='Book Your <span class="qw-hl">Free Estimate</span>', text=None, eid='estimate-form'):
     text = text or 'Tell us a little about your basement or project and we’ll call you back to book a free on-site inspection anywhere in Toronto, Mississauga, Brampton or North Bay.'
-    left = C(HEAD('Contact Us', title, dark=True) + [T(text, 'qwmuted'),
+    left = C(HEAD('Contact Us', title) + [T(text),
         ILIST([(PHONE, 'fas fa-phone-alt', TEL), (EMAIL, 'fas fa-envelope', 'mailto:' + EMAIL), ('Toronto · Mississauga · Brampton · North Bay', 'fas fa-map-marker-alt')],
-              color='qwwhite', typo='qwlead', size=18, gapv=16)], 'Form Copy', flex_gap=gap(18), flex_justify_content='center')
-    right = CARD([FORM('Estimate Request')], title='Form Card', pad=36, _element_id=eid, border_border='none')
-    return SECTION([C([left, right], 'Form Grid', grid=2, grid_t=1, grid_gaps=gap(60, 36), grid_align_items='center')], 'Estimate Form', bg='ink')
+              color='primary', typo='qwlead', size=18, gapv=16)], 'Form Copy', flex_gap=gap(18), flex_justify_content='center')
+    right = CARD([FORM('Estimate Request')], title='Form Card', pad=36, _element_id=eid)
+    return SECTION([C([left, right], 'Form Grid', grid=2, grid_t=1, grid_gaps=gap(60, 36), grid_align_items='center')], 'Estimate Form', bg='cream')
 
 # ================= header / footer =================
 def header():
@@ -198,7 +189,7 @@ def footer():
     def fh(t): return H(t, 'p', 'qwh3', 'qwwhite', _margin=dims(0, 0, 6, 0))
     about = C([
         IMG('logo', size='full', width=px(190), radius=0, align='left'),
-        T('Basement waterproofing, foundation crack repair, sump pumps and interlocking for homeowners in Toronto, the GTA and North Bay. Over 10 years of residential and commercial construction experience.', 'qwmuted', 'qwsmall'),
+        T(TAGLINE + '. Basement waterproofing, foundation crack repair, sump pumps and interlocking for homeowners in Toronto, the GTA and North Bay. Over 10 years of residential and commercial construction experience.', 'qwmuted', 'qwsmall'),
         W('social-icons', 'Social Icons', social_icon_list=[{'_id': uid(), 'social_icon': ico('fab fa-facebook-f', 'fa-brands'), 'link': link(FB, True)},
                                                            {'_id': uid(), 'social_icon': ico('fab fa-instagram', 'fa-brands'), 'link': link(IG, True)}],
           shape='square', align='left', icon_size=px(15), icon_padding=px(0.8, 'em'), icon_spacing=px(10), icon_color='custom',
@@ -239,8 +230,7 @@ def home():
               'ext_orange_membrane', 'int_dmx_window', eyebrow='The Problem',
               extra=[ILIST(['Water at the base of walls or the floor joint', 'Damp walls, white efflorescence or musty smells', 'Leaks after heavy rain or spring thaw', 'Cracked foundation walls'], _margin=dims(6, 0, 6, 0)),
                      BTN('Book a Free Inspection', '#estimate', 'gold', 'fas fa-arrow-right')]),
-        tagline_band(),
-        why_us(),
+        why_us(bg='cream'),
         process(),
         gallery(['ext_trench_membrane', 'int_dmx_window', 'il_pool1', 'ext_brick_membrane', 'sump_basin', 'il_patio_steps', 'int_unfinished', 'ext_red_brick', 'crack_patch', 'il_steps', 'ext_long_trench', 'il_rear'],
                 intro='Real projects completed by our crews – exterior and interior waterproofing, sump pumps, crack repairs and interlocking.'),
@@ -271,20 +261,20 @@ def service_page(slug):
         signs,
         process(S['steps'], f'Our {S["name"]} <span class="qw-hl">Process</span>'),
         benefits,
-        gallery(S['gallery'], f'{S["name"]} <span class="qw-hl">Projects</span>', 'Project Gallery', cols=4),
+        gallery(S['gallery'], f'{S["name"]} <span class="qw-hl">Projects</span>', 'Project Gallery', cols=4, bg='light'),
         areas_section(),
         faq_section(S['faq'], side_img=S['gallery'][1]),
         form_section(),
-        services_grid(intro=False, exclude=slug),
+        services_grid(intro=False, exclude=slug, bg='white'),
     ]
 
 def location_page(slug):
     seed(slug); L = LOCATIONS[slug]; city = L['city']
     local = SECTION(HEAD('Local Expertise', L['local_h'].replace(city, f'<span class="qw-hl">{city}</span>'), align='center')
-                    + [C([IBOX(i, t, d, view='stacked') for i, t, d in L['local']], 'Local Grid', grid=4, grid_t=2, grid_gaps=gap(30), _margin=dims(24, 0, 0, 0))], 'Local Issues', bg='cream')
+                    + [C([IBOX(i, t, d, view='stacked') for i, t, d in L['local']], 'Local Grid', grid=4, grid_t=2, grid_gaps=gap(30), _margin=dims(24, 0, 0, 0))], 'Local Issues', bg='white')
     svc_cards = [SERVICE_CARD(SERVICES[s]['card'], f"{SERVICES[s]['name']}", SERVICES[s]['card_text'], page_url(s)) for s in SVC_ORDER] + [inspection_card()]
-    svcs = SECTION(HEAD('Services in ' + city, f'Our Services in <span class="qw-hl">{city}</span>', f'Everything you need to keep your {city} basement dry and your exterior looking great.', align='center', dark=True)
-                   + [C(svc_cards, 'Services Grid', grid=3, grid_t=2, grid_gaps=gap(24), _margin=dims(24, 0, 0, 0))], 'Services', bg='ink')
+    svcs = SECTION(HEAD('Services in ' + city, f'Our Services in <span class="qw-hl">{city}</span>', f'Everything you need to keep your {city} basement dry and your exterior looking great.', align='center')
+                   + [C(svc_cards, 'Services Grid', grid=3, grid_t=2, grid_gaps=gap(24), _margin=dims(24, 0, 0, 0))], 'Services', bg='cream')
     hoods = SECTION([C([
         C(HEAD('Neighbourhoods', f'Areas We Serve in and Around <span class="qw-hl">{city}</span>') + [
             T(f'We provide basement waterproofing, sump pump installation, foundation crack repair and interlocking throughout {city} and nearby communities, including:'),
@@ -295,7 +285,7 @@ def location_page(slug):
     return [
         hero(f'Serving {L["label"]}', L['h1'].replace(city, f'<span class="qw-hl">{city}</span>', 1), L['lead'], bg=L['hero']),
         split(f'Trusted Waterproofing Contractor in <span class="qw-hl">{city}</span>', L['intro'], L['img'], L['img2'], eyebrow=L['label'], extra=[CTA_BTNS(dark=False)]),
-        svcs, local, process(), hoods, why_us(), faq_section(L['faq'] + GEN_FAQ[2:4], side_img=L['img']), form_section(f'Free Estimate in <span class="qw-hl">{city}</span>'),
+        svcs, local, process(), hoods, why_us(bg='cream'), faq_section(L['faq'] + GEN_FAQ[2:4], side_img=L['img']), form_section(f'Free Estimate in <span class="qw-hl">{city}</span>'),
     ]
 
 def about():
@@ -305,17 +295,18 @@ def about():
                            IBOX('fas fa-gem', 'Quality Workmanship', 'Careful excavation, proper materials and attention to detail on every job, big or small.', view='stacked'),
                            IBOX('fas fa-handshake', 'Respect for Your Home', 'We protect your property, keep the site safe and clean up when the work is finished.', view='stacked'),
                            IBOX('fas fa-file-invoice', 'Clear Communication', 'Written quotes, clear timelines and straight answers from the first call to the final walkthrough.', view='stacked')],
-                          'Values Grid', grid=4, grid_t=2, grid_gaps=gap(30), _margin=dims(24, 0, 0, 0))], 'Values', bg='white')
+                          'Values Grid', grid=4, grid_t=2, grid_gaps=gap(30), _margin=dims(24, 0, 0, 0))], 'Values', bg='cream')
     return [
         hero('About Quality Waterproofing', 'Protecting GTA Basements With <span class="qw-hl">Quality Work</span>',
              'We are a waterproofing and exterior construction company serving Toronto, Mississauga, Brampton and North Bay, with more than 10 years of residential and commercial experience.',
              bg='ext_crew_trench', form=False, minh=520),
         split('Who <span class="qw-hl">We Are</span>',
-              ['Quality Waterproofing specializes in basement waterproofing and the exterior work that keeps a home dry and looking its best – exterior and interior waterproofing, sump pump installation, foundation crack repair and interlocking. Our team also brings experience in landscaping, walkouts, underpinning, concrete and drainage.',
+              ['<strong>' + TAGLINE + '.</strong> That has been our focus for more than 10 years.',
+               'Quality Waterproofing specializes in basement waterproofing and the exterior work that keeps a home dry and looking its best – exterior and interior waterproofing, sump pump installation, foundation crack repair and interlocking. Our team also brings experience in landscaping, walkouts, underpinning, concrete and drainage.',
                'With more than 10 years of residential and commercial construction experience, we know that every basement is different. That’s why every job starts with a proper inspection, and every recommendation comes with a clear explanation and a written quote.',
                'Our goal is simple: a dry basement, a protected foundation and a homeowner who would happily recommend us to their neighbours.'],
               'ext_worker_dig', 'il_pool2', eyebrow='Our Story', extra=[CTA_BTNS(dark=False)]),
-        tagline_band(), values, process(), services_grid(dark=False), cta_band()]
+        values, process(), services_grid(dark=False), cta_band()]
 
 def projects():
     seed('projects')
@@ -334,7 +325,7 @@ def projects():
     return [hero('Our Work', 'Waterproofing & Interlocking <span class="qw-hl">Projects</span>',
                  'Browse recent projects by our crews across Toronto, the GTA and North Bay – from deep exterior excavations to finished pool patios.', bg='il_pool3', form=False, minh=480),
             SECTION(HEAD('Project Gallery', 'Real Work, <span class="qw-hl">Real Homes</span>', 'Filter by service and click any photo to view it full size.', align='center') + [C([gal], 'Gallery Wrap', _margin=dims(20, 0, 0, 0))], 'Projects', bg='white'),
-            tagline_band(), cta_band()]
+            cta_band()]
 
 def contact():
     seed('contact')
@@ -350,7 +341,7 @@ def contact():
                  title='Contact Form Card', pad=40, _element_id='estimate')
     return [hero('Contact Quality Waterproofing', 'Contact Us for a <span class="qw-hl">Free Estimate</span>',
                  'Serving Toronto, Mississauga, Brampton, North Bay and the GTA. Call ' + PHONE + ' or send us a message below.', bg='int_long', form=False, minh=440),
-            SECTION([C([left, right], 'Contact Grid', grid=2, grid_t=1, grid_gaps=gap(56, 40))], 'Contact', bg='cream'),
+            SECTION([C([left, right], 'Contact Grid', grid=2, grid_t=1, grid_gaps=gap(56, 40))], 'Contact', bg='white'),
             areas_section(), faq_section(GEN_FAQ[:3])]
 
 # ================= push =================
