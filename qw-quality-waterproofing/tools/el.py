@@ -165,7 +165,10 @@ def CARD(children, dark=False, title='Card', pad=34, **s):
 
 def IMG(k, h=None, radius=6, size='large', hm=None, **s):
     st = dict(image=img(k), image_size=size, image_border_radius=dims(radius), width=px(100, '%'))
-    if h: st.update(height=px(h), object_fit='cover', height_mobile=px(hm or int(h * 0.75)))
+    if h:
+        st.update(height=px(h), height_mobile=px(hm or int(h * 0.75)))
+        # Elementor's control id is 'object-fit' (hyphen) – set every breakpoint so photos crop instead of squashing
+        st.update({'object-fit': 'cover', 'object-fit_tablet': 'cover', 'object-fit_mobile': 'cover', 'object-position': 'center center'})
     st.update(s)
     return W('image', 'Image: ' + k, **st)
 
