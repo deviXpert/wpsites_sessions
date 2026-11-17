@@ -166,7 +166,7 @@ def header():
                'background_color_dropdown_item_hover': col('secondary'), 'color_dropdown_item_active': col('primary'), 'background_color_dropdown_item_active': col('secondary'),
                'toggle_color': col('primary'), 'toggle_background_color': col('qwcream')})
     main = C([
-        W('image', 'Logo', image=img('logo_light'), image_size='full', width=px(176), width_tablet=px(150), width_mobile=px(124), link_to='custom', link=link(U + '/'), align='left',
+        W('image', 'Logo', image=img('logo_light'), image_size='full', width=px(132), width_tablet=px(120), width_mobile=px(100), link_to='custom', link=link(U + '/'), align='left',
           _flex_size='none'),
         nav,
         BTN('Free Estimate', page_url('contact'), 'gold', 'fas fa-clipboard-check', size='sm', hide_mobile='hidden-mobile', _flex_size='none'),
