@@ -34,7 +34,7 @@ Cloud environment: "Quality WaterProofing" (allowlist has the staging host, the 
 | Header (Theme Builder, entire site) | 60 |
 | Footer (Theme Builder, entire site) | 61 |
 | Pages | see `tools/pages.json` (Home 63 = front page) |
-| Menu "QW Main Menu" (slug `qw-main-menu`) | 4 |
+| Menu "QW Main Menu" (slug `qw-main-menu`) | 4 – **demo mode:** every item except Home links to `#` (structure kept for the client preview). Run `python3 restore_menu.py` after publishing the pages to restore real links (backup in `menu_backup.json`). |
 | Media | see `tools/media.json` (key → id/url); sources + alt text in `tools/media_src.py` |
 
 Pages (**only Home is published**; all others are drafts until the client approves the home page – `build.py`/`yoast.py` keep each page's current status; Astra full-width / no title, template `elementor_header_footer`): Home, About, Services hub, 5 service pages (`/exterior-waterproofing/`, `/interior-waterproofing/`, `/sump-pump-installation/`, `/foundation-crack-repair/`, `/interlocking/`), 4 location pages (`/basement-waterproofing-toronto|mississauga|brampton|north-bay/`), Projects (filterable gallery), Contact.
