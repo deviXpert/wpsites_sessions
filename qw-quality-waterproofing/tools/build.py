@@ -183,6 +183,12 @@ def header():
     return [C([top, main, schema], 'Header', inner=False, content_width='full', padding=dims(0), flex_gap=gap(0),
               sticky='top', sticky_on=['desktop', 'tablet', 'mobile'], sticky_offset=0, sticky_effects_offset=90, z_index=99)]
 
+_STATUS = {}
+def live(slug):
+    """URL of a page only if it is published – draft pages get no link (client demo mode)."""
+    if slug not in _STATUS: _STATUS[slug] = wp.req(f'wp/v2/pages/{PAGES[slug]}?_fields=status')['status']
+    return page_url(slug) if _STATUS[slug] == 'publish' else None
+
 def footer():
     seed('footer')
     def fl(items): return ILIST(items, color='qwmuted', icon_color='secondary', typo='qwsmall', size=10, gapv=8, icon='fas fa-chevron-right', g={'text_color_hover': col('secondary')})
@@ -195,12 +201,12 @@ def footer():
           shape='square', align='left', icon_size=px(15), icon_padding=px(0.8, 'em'), icon_spacing=px(10), icon_color='custom',
           icon_primary_color='#161E2D', icon_secondary_color='#C9A24B', hover_primary_color='#C9A24B', hover_secondary_color='#0E1420', border_radius=dims(4)),
     ], 'Footer About', flex_gap=gap(18))
-    svc = C([fh('Services')] + [fl([(SERVICES[s]['name'], 'fas fa-chevron-right', page_url(s)) for s in SVC_ORDER])], 'Footer Services', flex_gap=gap(10))
-    areas = C([fh('Service Areas')] + [fl([('Waterproofing ' + LOCATIONS[s]['label'], 'fas fa-chevron-right', page_url(s)) for s in LOC_ORDER] + [('Projects', 'fas fa-chevron-right', page_url('projects')), ('About Us', 'fas fa-chevron-right', page_url('about-us'))])], 'Footer Areas', flex_gap=gap(10))
+    svc = C([fh('Services')] + [fl([(SERVICES[s]['name'], 'fas fa-chevron-right', live(s)) for s in SVC_ORDER])], 'Footer Services', flex_gap=gap(10))
+    areas = C([fh('Service Areas')] + [fl([('Waterproofing ' + LOCATIONS[s]['label'], 'fas fa-chevron-right', live(s)) for s in LOC_ORDER] + [('Projects', 'fas fa-chevron-right', live('projects')), ('About Us', 'fas fa-chevron-right', live('about-us'))])], 'Footer Areas', flex_gap=gap(10))
     contact = C([fh('Get In Touch'),
                  ILIST([(PHONE, 'fas fa-phone-alt', TEL), (EMAIL, 'fas fa-envelope', 'mailto:' + EMAIL), ('Toronto · Mississauga · Brampton · North Bay', 'fas fa-map-marker-alt')],
                        color='qwwhite', icon_color='secondary', typo='qwsmall', size=15, gapv=14),
-                 BTN('Get a Free Estimate', page_url('contact'), 'gold', 'fas fa-clipboard-check', size='sm')], 'Footer Contact', flex_gap=gap(14))
+                 BTN('Get a Free Estimate', live('contact') or U + '/#estimate', 'gold', 'fas fa-clipboard-check', size='sm')], 'Footer Contact', flex_gap=gap(14))
     grid = C([about, svc, areas, contact], 'Footer Grid', grid=4, grid_t=2, grid_gaps=gap(40), grid_columns_grid=cols('1.5fr 1fr 1.1fr 1.2fr'))
     top = SECTION([grid], 'Footer Main', bg='primary', pad=(80, 64, 52), background_background='classic', g={'background_color': col('primary')})
     bottom = C([T('© 2026 Quality Waterproofing. All rights reserved.', 'qwmuted', 'qwsmall'),
