@@ -2,7 +2,7 @@
 phone/email from the old site, materials named on the old site / visible in project photos (DMX membrane, Blueskin, Aqua Bloc).
 No warranty terms, review counts or awards are claimed – confirm with the client before adding any."""
 
-AREAS = ['Toronto', 'Mississauga', 'Brampton', 'North Bay']
+AREAS = ['Toronto', 'Mississauga', 'Brampton', 'St. Catharines', 'North Bay']
 
 SERVICES = {
  'exterior-waterproofing': dict(
@@ -223,6 +223,23 @@ LOCATIONS = {
        ('Do you waterproof basement side entrances?', 'Yes. We waterproof around new and existing side entrances and walkouts, which are common leak points.'),
        ('Do you offer free estimates in Brampton?', 'Yes. We provide free on-site inspections and written quotes for Brampton homeowners.')]),
 
+ 'basement-waterproofing-st-catharines': dict(
+  city='St. Catharines', label='St. Catharines', hero='ext_membrane_downspout', img='ext_live2', img2='int_orange',
+  h1='Basement Waterproofing in St. Catharines',
+  title='Basement Waterproofing St. Catharines | Quality Waterproofing',
+  lead='Basement waterproofing, sump pump installation, foundation crack repair and interlocking for homes across St. Catharines and the Niagara Region.',
+  intro=[
+   'St. Catharines has some of the oldest housing stock in the Niagara Region. Many homes in neighbourhoods like Downtown, Merritton and Port Dalhousie have block or stone foundations and original drainage that were never fully waterproofed – and dense, clay-heavy soils hold water against the walls after every storm and spring thaw.',
+   'Quality Waterproofing helps St. Catharines homeowners fix wet basements properly. We inspect your basement inside and out, explain what is causing the water and give you a clear written quote for the right fix – exterior waterproofing with new weeping tile, an interior drainage system with a sump pump, or a single foundation crack repair.'],
+  local_h='Why St. Catharines Basements Leak',
+  local=[('fas fa-mountain', 'Clay-Heavy Soil', 'Dense soils drain slowly and hold water against foundation walls after rain.'),
+         ('fas fa-home', 'Older Foundations', 'Block, stone and older poured foundations often seep without a membrane.'),
+         ('fas fa-snowflake', 'Freeze-Thaw Cycles', 'Mild, wet winters bring repeated freezing and thawing that opens cracks.'),
+         ('fas fa-cloud-showers-heavy', 'Lake-Effect Storms', 'Heavy rain off Lake Ontario can overwhelm aging weeping tile.')],
+  hoods=['Downtown St. Catharines', 'Port Dalhousie', 'Merritton', 'Glenridge', 'Grantham', 'Lakeport', 'Western Hill', 'Martindale', 'Secord Woods', 'Thorold', 'Niagara-on-the-Lake', 'Niagara Falls'],
+  faq=[('Do you serve St. Catharines and the Niagara Region?', 'Yes. St. Catharines is one of our service areas, along with nearby Niagara communities such as Thorold, Niagara-on-the-Lake and Niagara Falls. Call us to confirm availability for your address.'),
+       ('Do older St. Catharines homes need exterior waterproofing?', 'Many older homes have block or stone foundations and original drainage. If water is coming through the walls, exterior waterproofing with new weeping tile is usually the most complete fix. We will confirm during your free inspection.'),
+       ('Do you offer free estimates in St. Catharines?', 'Yes. We provide free on-site inspections and written quotes for St. Catharines homeowners.')]),
  'basement-waterproofing-north-bay': dict(
   city='North Bay', label='North Bay', hero='ext_trench_membrane', img='ext_live1', img2='sump_system',
   h1='Basement Waterproofing in North Bay',

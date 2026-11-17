@@ -214,7 +214,7 @@ def FORM(name='Free Estimate Request', compact=False, service_default=None):
         {'_id': uid(), 'custom_id': 'name', 'field_type': 'text', 'field_label': 'Full Name', 'placeholder': 'Your name', 'required': 'true', 'width': '50', 'width_mobile': '100'},
         {'_id': uid(), 'custom_id': 'phone', 'field_type': 'tel', 'field_label': 'Phone', 'placeholder': '(___) ___-____', 'required': 'true', 'width': '50', 'width_mobile': '100'},
         {'_id': uid(), 'custom_id': 'email', 'field_type': 'email', 'field_label': 'Email', 'placeholder': 'you@email.com', 'required': 'true', 'width': '100'},
-        {'_id': uid(), 'custom_id': 'city', 'field_type': 'select', 'field_label': 'Your City', 'field_options': 'Toronto\nMississauga\nBrampton\nNorth Bay\nOther GTA city', 'width': '50', 'width_mobile': '100'},
+        {'_id': uid(), 'custom_id': 'city', 'field_type': 'select', 'field_label': 'Your City', 'field_options': 'Toronto\nMississauga\nBrampton\nSt. Catharines\nNorth Bay\nOther city', 'width': '50', 'width_mobile': '100'},
         {'_id': uid(), 'custom_id': 'service', 'field_type': 'select', 'field_label': 'Service Needed', 'field_options': opts, 'width': '50', 'width_mobile': '100'},
     ]
     if not compact:

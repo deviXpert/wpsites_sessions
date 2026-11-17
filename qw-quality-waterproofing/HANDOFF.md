@@ -11,7 +11,7 @@ Cloud environment: "Quality WaterProofing" (allowlist has the staging host, the 
 
 ## User requirements (agreed)
 - Built in Elementor with **native widgets**; styling via widget controls + Global Colors/Fonts. Minimal CSS, kept in a global Elementor place.
-- Focus areas: Toronto/GTA, Mississauga, Brampton, North Bay. Services: exterior waterproofing, interior waterproofing, sump pump, exterior foundation crack repair, interlocking.
+- Focus areas: Toronto/GTA, Mississauga, Brampton, St. Catharines (added later, Niagara Region), North Bay. Services: exterior waterproofing, interior waterproofing, sump pump, exterior foundation crack repair, interlocking.
 - Logo tagline "Our company will help protect your home's basement from water damage" is used only as text: opening line of the About story and the footer company blurb (also the JSON-LD `slogan`). No standalone tagline/logo band (user asked to remove it).
 - **Light theme** (like the reference site): white / cream / light-grey sections. Header: dark top bar + **white main bar** (logo variant for light backgrounds, media 117 `logo_light`); footer stays dark with the original cut-out logo (media 55, dark backgrounds only). Hero photo banners keep a dark overlay for white text.
 - Test note: headless Chromium reports touch mode, so SmartMenus dropdowns don't open on synthetic hover in Playwright. Real desktop hover works.
@@ -37,7 +37,7 @@ Cloud environment: "Quality WaterProofing" (allowlist has the staging host, the 
 | Menu "QW Main Menu" (slug `qw-main-menu`) | 4 – **demo mode:** every item except Home links to `#` (structure kept for the client preview). Run `python3 restore_menu.py` after publishing the pages to restore real links (backup in `menu_backup.json`). Footer page links are only added for **published** pages (`live()` in build.py) – after publishing, run `python3 build.py footer`. |
 | Media | see `tools/media.json` (key → id/url); sources + alt text in `tools/media_src.py` |
 
-Pages (**only Home is published**; all others are drafts until the client approves the home page – `build.py`/`yoast.py` keep each page's current status; Astra full-width / no title, template `elementor_header_footer`): Home, About, Services hub, 5 service pages (`/exterior-waterproofing/`, `/interior-waterproofing/`, `/sump-pump-installation/`, `/foundation-crack-repair/`, `/interlocking/`), 4 location pages (`/basement-waterproofing-toronto|mississauga|brampton|north-bay/`), Projects (filterable gallery), Contact.
+Pages (**only Home is published**; all others are drafts until the client approves the home page – `build.py`/`yoast.py` keep each page's current status; Astra full-width / no title, template `elementor_header_footer`): Home, About, Services hub, 5 service pages (`/exterior-waterproofing/`, `/interior-waterproofing/`, `/sump-pump-installation/`, `/foundation-crack-repair/`, `/interlocking/`), 5 location pages (`/basement-waterproofing-toronto|mississauga|brampton|st-catharines|north-bay/`), Projects (filterable gallery), Contact.
 
 ## How to rebuild / resume
 ```bash
