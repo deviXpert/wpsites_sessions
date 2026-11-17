@@ -13,7 +13,8 @@ Cloud environment: "Quality WaterProofing" (allowlist has the staging host, the 
 - Built in Elementor with **native widgets**; styling via widget controls + Global Colors/Fonts. Minimal CSS, kept in a global Elementor place.
 - Focus areas: Toronto/GTA, Mississauga, Brampton, North Bay. Services: exterior waterproofing, interior waterproofing, sump pump, exterior foundation crack repair, interlocking.
 - Logo tagline "Our company will help protect your home's basement from water damage" is used only as text: opening line of the About story and the footer company blurb (also the JSON-LD `slogan`). No standalone tagline/logo band (user asked to remove it).
-- **Light theme** (like the reference site): white / cream / light-grey sections. Only the hero photo banners and the header/footer are dark; the cut-out logo needs a dark background.
+- **Light theme** (like the reference site): white / cream / light-grey sections. Header: dark top bar + **white main bar** (logo variant for light backgrounds, media 117 `logo_light`); footer stays dark with the original cut-out logo (media 55, dark backgrounds only). Hero photo banners keep a dark overlay for white text.
+- Test note: headless Chromium reports touch mode, so SmartMenus dropdowns don't open on synthetic hover in Playwright. Real desktop hover works.
 - Images: client photo zips + photos from the old site. The user will revise copy later.
 
 ## Design system (Elementor kit, post 5, written by `tools/kit.py`)

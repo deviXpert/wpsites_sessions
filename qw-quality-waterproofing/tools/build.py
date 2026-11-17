@@ -157,22 +157,22 @@ def header():
         g={'background_color': col('qwink2')})
     nav = W('nav-menu', 'Main Menu', menu=MENU_SLUG, layout='horizontal', align_items='center', pointer='underline', animation_line='grow', submenu_icon=ico('fas fa-chevron-down'),
             dropdown='tablet', full_width='stretch', toggle='burger', text_align='aside', menu_space_between=px(6), padding_horizontal_menu_item=px(14), padding_vertical_menu_item=px(30),
-            pointer_width=px(2), dropdown_border_radius=dims(4), padding_horizontal_dropdown_item=px(20), padding_vertical_dropdown_item=px(13), dropdown_top_distance=px(0),
+            pointer_width=px(2), dropdown_border_radius=dims(4), dropdown_box_shadow_box_shadow_type='yes', dropdown_box_shadow_box_shadow=shadow(14, 34, 'rgba(14,20,32,0.14)'), dropdown_divider_border='solid', dropdown_divider_color='#EEF2F7', dropdown_divider_width=px(1), padding_horizontal_dropdown_item=px(20), padding_vertical_dropdown_item=px(13), dropdown_top_distance=px(0),
             toggle_size=px(26), toggle_border_width=px(0), toggle_border_radius=px(4), padding_vertical_dropdown_item_tablet=px(15),
             g={'menu_typography_typography': typ('qwnav'), 'dropdown_typography_typography': typ('qwnav'),
-               'color_menu_item': col('qwwhite'), 'color_menu_item_hover': col('secondary'), 'pointer_color_menu_item_hover': col('secondary'),
-               'color_menu_item_active': col('secondary'), 'pointer_color_menu_item_active': col('secondary'),
-               'color_dropdown_item': col('qwwhite'), 'background_color_dropdown_item': col('qwink2'), 'color_dropdown_item_hover': col('primary'),
+               'color_menu_item': col('primary'), 'color_menu_item_hover': col('qwgolddk'), 'pointer_color_menu_item_hover': col('secondary'),
+               'color_menu_item_active': col('qwgolddk'), 'pointer_color_menu_item_active': col('secondary'),
+               'color_dropdown_item': col('primary'), 'background_color_dropdown_item': col('qwwhite'), 'color_dropdown_item_hover': col('primary'),
                'background_color_dropdown_item_hover': col('secondary'), 'color_dropdown_item_active': col('primary'), 'background_color_dropdown_item_active': col('secondary'),
-               'toggle_color': col('secondary'), 'toggle_background_color': col('qwink2')})
+               'toggle_color': col('primary'), 'toggle_background_color': col('qwcream')})
     main = C([
-        W('image', 'Logo', image=img('logo'), image_size='full', width=px(176), width_tablet=px(150), width_mobile=px(124), link_to='custom', link=link(U + '/'), align='left',
+        W('image', 'Logo', image=img('logo_light'), image_size='full', width=px(176), width_tablet=px(150), width_mobile=px(124), link_to='custom', link=link(U + '/'), align='left',
           _flex_size='none'),
         nav,
         BTN('Free Estimate', page_url('contact'), 'gold', 'fas fa-clipboard-check', size='sm', hide_mobile='hidden-mobile', _flex_size='none'),
     ], 'Main Bar', inner=False, content_width='boxed', row=True, flex_direction_mobile='row', flex_justify_content='space-between', flex_align_items='center', flex_wrap='nowrap',
-        padding=dims(6, 20), padding_mobile=dims(10, 16), flex_gap=gap(20), background_background='classic', g={'background_color': col('primary')},
-        box_shadow_box_shadow_type='yes', box_shadow_box_shadow=shadow(8, 24, 'rgba(0,0,0,0.25)'))
+        padding=dims(6, 20), padding_mobile=dims(10, 16), flex_gap=gap(20), background_background='classic', g={'background_color': col('qwwhite')},
+        box_shadow_box_shadow_type='yes', box_shadow_box_shadow=shadow(6, 24, 'rgba(14,20,32,0.10)'))
     ld = {'@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness', 'name': 'Quality Waterproofing', 'url': U + '/', 'telephone': '+1-437-264-2664',
           'email': EMAIL, 'logo': MEDIA['logo']['url'], 'image': MEDIA['ext_trench_membrane']['url'], 'slogan': TAGLINE,
           'description': 'Basement waterproofing, sump pump installation, foundation crack repair and interlocking in Toronto, Mississauga, Brampton and North Bay.',
