@@ -214,7 +214,7 @@ def footer():
     top = SECTION([grid], 'Footer Main', bg='primary', pad=(80, 64, 52), background_background='classic', g={'background_color': col('primary')})
     bottom = C([T('© 2026 Quality Waterproofing. All rights reserved.', 'qwmuted', 'qwsmall'),
                 T('Basement Waterproofing Toronto · Mississauga · Brampton · North Bay', 'qwmuted', 'qwsmall')],
-               'Footer Bottom', inner=False, content_width='boxed', row=True, flex_justify_content='space-between', flex_align_items='center', padding=dims(20, 20),
+               'Footer Bottom', inner=False, content_width='boxed', row=True, flex_justify_content='space-between', flex_align_items='center', padding=dims(20, 20), padding_mobile=dims(20, 16),
                flex_wrap='wrap', background_background='classic', border_border='solid', border_width=dims(1, 0, 0, 0), border_color='#2A3448', g={'background_color': col('primary')})
     return [top, bottom]
 

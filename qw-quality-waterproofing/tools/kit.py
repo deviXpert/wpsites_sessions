@@ -46,7 +46,7 @@ S={
  'form_field_typography_typography':'custom','form_field_typography_font_family':BF,'form_field_typography_font_size':px(15),
  'form_field_text_color':INK,'form_field_background_color':'#FFFFFF','form_field_border_border':'solid','form_field_border_width':dims(1),'form_field_border_color':'#D7DCE4','form_field_border_radius':dims(4),
  'form_field_focus_border_color':GOLD,
- 'container_width':px(1240),'container_padding':dims(0,20),'space_between_widgets':{'column':'16','row':'16','isLinked':True,'unit':'px'},
+ 'container_width':px(1440),'container_padding':dims(0,20),'space_between_widgets':{'column':'16','row':'16','isLinked':True,'unit':'px'},
  'page_title_selector':'h1.entry-title','viewport_tablet':1024,'viewport_mobile':767,
  'custom_css':'''/* Quality Waterproofing – global helpers (Site Settings > Custom CSS) */
 /* Highlighted words inside headings: <span class="qw-hl">…</span> */

@@ -38,6 +38,7 @@ def C(children, title='Container', inner=True, **s):
     """Flex container (column by default). Use row=True for a row; grid=N for a CSS grid of N columns."""
     row = s.pop('row', False); grid = s.pop('grid', None)
     s.setdefault('content_width', 'full')
+    if inner: s.setdefault('padding', dims(0))  # no default 10px inset on nested containers
     if grid:
         t, m = s.pop('grid_t', min(grid, 2)), s.pop('grid_m', 1)
         for k, v in dict(container_type='grid', grid_columns_grid=px(grid, 'fr'), grid_columns_grid_tablet=px(t, 'fr'), grid_columns_grid_mobile=px(m, 'fr'),
@@ -58,7 +59,7 @@ def SECTION(children, title, bg='white', pad=(100, 90, 64), **s):
         s['background_background'] = 'classic'; s['g']['background_color'] = bgs[bg]
     if bg in ('ink', 'ink2'): s['css_classes'] = (s.get('css_classes', '') + ' qw-dark').strip()
     d, t, m = pad
-    s.setdefault('padding', dims(d, 20)); s.setdefault('padding_tablet', dims(t, 24)); s.setdefault('padding_mobile', dims(m, 18))
+    s.setdefault('padding', dims(d, 20)); s.setdefault('padding_tablet', dims(t, 20)); s.setdefault('padding_mobile', dims(m, 16))
     s.setdefault('html_tag', 'section')
     s.setdefault('flex_gap', gap(20))
     return C(children, title, inner=False, content_width='boxed', **s)
