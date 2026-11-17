@@ -228,7 +228,7 @@ GEN_FAQ = [('Do you offer free estimates?', 'Yes. We provide free on-site inspec
 def home():
     seed('home')
     return [
-        hero('Toronto · Mississauga · Brampton · North Bay', 'Basement Waterproofing & Foundation Repair <span class="qw-hl">You Can Trust</span>',
+        hero('Toronto · Mississauga · Brampton · North Bay', 'Basement Waterproofing & Foundation Repair in the <span class="qw-hl">GTA & North Bay</span>',
              'Wet basement? Leaking foundation crack? Quality Waterproofing keeps homes across Toronto, the GTA and North Bay dry with exterior and interior waterproofing, sump pumps, crack repair and expert interlocking.',
              bg='ext_long_trench', video=True, minh=720),
         trust_strip(),

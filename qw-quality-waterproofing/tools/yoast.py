@@ -3,7 +3,7 @@ import json, wp
 P = json.load(open('pages.json'))
 SEP = ' | Quality Waterproofing'
 SEO = {  # slug: (focus keyphrase, seo title, meta description)
- 'home': ('basement waterproofing Toronto', 'Basement Waterproofing Toronto & GTA' + SEP, 'Basement waterproofing, sump pumps, foundation crack repair & interlocking in Toronto, Mississauga, Brampton & North Bay. Over 10 years experience. Free quotes.'),
+ 'home': ('basement waterproofing GTA', 'Basement Waterproofing GTA & North Bay' + SEP, 'Basement waterproofing across the GTA & North Bay – exterior & interior systems, sump pumps, foundation crack repair and interlocking. Free estimates.'),
  'services': ('waterproofing services Toronto', 'Waterproofing Services Toronto & GTA' + SEP, 'Exterior & interior basement waterproofing, sump pump installation, foundation crack repair and interlocking across the GTA and North Bay. Free estimates.'),
  'about-us': ('waterproofing contractor GTA', 'About Us – GTA Waterproofing Contractor' + SEP, 'Quality Waterproofing protects basements across Toronto, Mississauga, Brampton & North Bay with 10+ years of residential & commercial experience.'),
  'projects': ('waterproofing projects Toronto', 'Waterproofing & Interlocking Projects' + SEP, 'See real exterior & interior waterproofing, sump pump, crack repair and interlocking projects completed across Toronto, the GTA and North Bay.'),

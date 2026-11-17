@@ -4,7 +4,7 @@ No SEO plugin is installed yet. After installing one, copy these in. The focus k
 
 | URL | SEO title | Meta description |
 |---|---|---|
-| `/` | Basement Waterproofing Toronto & GTA \| Quality Waterproofing | Basement waterproofing, sump pumps, foundation crack repair & interlocking in Toronto, Mississauga, Brampton & North Bay. 10+ years experience. Free estimates. |
+| `/` | Basement Waterproofing GTA & North Bay \| Quality Waterproofing | Basement waterproofing across the GTA & North Bay – exterior & interior systems, sump pumps, foundation crack repair and interlocking. Free estimates. |
 | `/services/` | Waterproofing Services Toronto & GTA \| Quality Waterproofing | Exterior & interior basement waterproofing, sump pump installation, foundation crack repair and interlocking across the GTA and North Bay. Book a free estimate. |
 | `/about-us/` | About Quality Waterproofing \| GTA Waterproofing Contractor | Quality Waterproofing protects basements across Toronto, Mississauga, Brampton & North Bay with 10+ years of residential & commercial experience. |
 | `/projects/` | Waterproofing & Interlocking Projects \| Quality Waterproofing | See real exterior & interior waterproofing, sump pump, crack repair and interlocking projects completed across Toronto, the GTA and North Bay. |
