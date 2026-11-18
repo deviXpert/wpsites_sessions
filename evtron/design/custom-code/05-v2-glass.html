@@ -100,6 +100,53 @@ html.ev-v2 .v2-px{transform:translate3d(var(--px,0px),var(--py,0px),0);transitio
 @media(max-width:767px){html.ev-v2 header.elementor-element > div{padding-left:14px!important;padding-right:8px!important}html.ev-v2 .elementor-location-header{top:10px}
   html.ev-v2 .v2-chip{font-size:10.5px!important;letter-spacing:.04em!important;padding:7px 12px!important;border-radius:14px!important}}
 html.ev-v2 header .elementor-menu-toggle{border:1px solid var(--v2-border)!important;border-radius:999px!important;background:rgba(255,255,255,.04)!important;color:var(--v2-text)!important}
+
+/* ---------- V2 sections ---------- */
+html.ev-v2 main{overflow-x:clip}
+html.ev-v2 main > section{overflow-x:clip}
+html.ev-v2 .v2-chip{align-self:flex-start;width:max-content;max-width:100%}
+html.ev-v2 .v2-sec::before{content:"";position:absolute;left:8%;right:8%;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(163,255,193,.22),transparent)}
+html.ev-v2 .v2-card{background:linear-gradient(155deg,rgba(255,255,255,.075) 0%,rgba(255,255,255,.03) 45%,rgba(255,255,255,.018) 100%)!important;
+  -webkit-backdrop-filter:blur(var(--v2-blur)) saturate(150%);backdrop-filter:blur(var(--v2-blur)) saturate(150%);
+  box-shadow:0 12px 40px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.09);transition:background .3s ease,border-color .3s ease,transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease}
+html.ev-v2 .v2-card::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(120deg,rgba(255,255,255,.08),rgba(255,255,255,0) 30%)}
+html.ev-v2 .v2-card:hover{border-color:rgba(120,255,170,.32)!important;transform:translateY(-5px);box-shadow:0 20px 55px rgba(0,0,0,.3),0 0 30px rgba(85,230,139,.07),inset 0 1px 0 rgba(255,255,255,.1)}
+html.ev-v2 .v2-solid{background:linear-gradient(180deg,#0E1D17,#0B1813)!important;transition:border-color .3s ease,transform .35s cubic-bezier(.2,.7,.2,1)}
+html.ev-v2 .v2-solid:hover{border-color:rgba(120,255,170,.22)!important;transform:translateY(-3px)}
+/* product glow pads */
+html.ev-v2 .v2-card img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+html.ev-v2 .v2-card:hover img{transform:translateY(-6px) scale(1.02)}
+html.ev-v2 .v2-glow-pad{position:absolute;left:50%;top:55%;width:70%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(85,230,139,.22),rgba(85,230,139,0) 62%);filter:blur(10px)}
+/* bento schedule tile: lit edge */
+html.ev-v2 .v2-lit{box-shadow:0 12px 40px rgba(0,0,0,.22),inset 0 1px 0 rgba(163,255,193,.25),0 0 0 1px rgba(85,230,139,.18)!important}
+html.ev-v2 .v2-lit::after{content:"";position:absolute;right:-20%;top:-30%;width:70%;aspect-ratio:1;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(85,230,139,.16),transparent 65%)}
+/* tech floats bob */
+@media (prefers-reduced-motion:no-preference){
+  html.ev-v2 .v2-bob{animation:v2bob 6s ease-in-out infinite;animation-delay:var(--bd,0s)}
+  @keyframes v2bob{50%{transform:translate3d(0,-10px,0)}}
+}
+html.ev-v2 .v2-phone-wrap{position:relative}
+html.ev-v2 .v2-phone-wrap::before{content:"";position:absolute;left:50%;top:50%;width:520px;max-width:120%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(85,230,139,.18),transparent 62%)}
+/* kept V1 sections, restyled */
+html.ev-v2 .v2-kept-panel{background:linear-gradient(155deg,rgba(255,255,255,.07),rgba(255,255,255,.025))!important;-webkit-backdrop-filter:blur(var(--v2-blur)) saturate(150%);backdrop-filter:blur(var(--v2-blur)) saturate(150%);
+  border:1px solid var(--v2-border)!important;border-radius:22px!important;box-shadow:0 12px 40px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.09)}
+html.ev-v2 main details{border-radius:16px!important;border:1px solid rgba(190,255,215,.10)!important;background:rgba(255,255,255,.025);margin-bottom:10px;transition:background .3s ease,border-color .3s ease}
+html.ev-v2 main details[open]{background:linear-gradient(155deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border-color:rgba(120,255,170,.32)!important}
+html.ev-v2 .ev-calc-out{background:rgba(7,17,14,.45)!important}
+html.ev-v2 .ev-calc-tiles,html.ev-v2 .ev-calc-tiles>div{background:rgba(7,17,14,.55)!important}
+html.ev-v2 .ev-x-chip,html.ev-v2 .ev-fd-tg{border-color:rgba(190,255,215,.24)!important}
+html.ev-v2 .ev-fd-row{background:rgba(7,17,14,.5)!important;border-color:rgba(190,255,215,.12)!important;border-radius:14px!important}
+html.ev-v2 .ev-fd-card{background:linear-gradient(160deg,rgba(85,230,139,.14),rgba(255,255,255,.03))!important;border-color:rgba(120,255,170,.45)!important;border-radius:20px!important;-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+html.ev-v2 .ev-fd-go{border-radius:999px!important;background:linear-gradient(135deg,#72F3A0,#28B967)!important}
+/* final CTA: cinematic */
+html.ev-v2 .v2-final{isolation:isolate;overflow:hidden}
+html.ev-v2 .v2-final::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse 60% 70% at 70% 55%,rgba(56,220,125,.22),transparent 65%),radial-gradient(ellipse 40% 50% at 15% 30%,rgba(163,255,193,.08),transparent 60%),linear-gradient(180deg,#07110E,#0A1712 50%,#07110E)}
+html.ev-v2 .v2-final .ev-fd{padding:56px!important;border-radius:28px!important}
+html.ev-v2 .v2-final h2{font-size:clamp(36px,4.6vw,64px)!important;letter-spacing:-.035em!important;line-height:1.02!important}
+@media(max-width:767px){html.ev-v2 .v2-final .ev-fd{padding:24px!important}}
 </style>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
@@ -112,6 +159,17 @@ document.addEventListener('DOMContentLoaded',function(){
   if(visual){var beam=document.createElement('div');beam.className='v2-beam';beam.setAttribute('aria-hidden','true');visual.prepend(beam);
     var floor=document.createElement('div');floor.className='v2-floor';floor.setAttribute('aria-hidden','true');visual.appendChild(floor)}
   var led=[].slice.call(hero.querySelectorAll('.v2-float div')).find(function(d){return getComputedStyle(d).backgroundColor==='rgb(85, 230, 139)'&&d.offsetWidth<=12});if(led)led.classList.add('v2-led-pulse');
+
+  /* ---- V2 sections enhancements ---- */
+  document.querySelectorAll('.v2-sec .v2-card img').forEach(function(im){var pad=document.createElement('span');pad.className='v2-glow-pad';pad.setAttribute('aria-hidden','true');im.parentElement.style.position='relative';im.parentElement.prepend(pad)});
+  var sched=[].slice.call(document.querySelectorAll('.v2-sec .v2-card')).find(function(c){return /Smart scheduling/.test(c.textContent)});if(sched)sched.classList.add('v2-lit');
+  [].forEach.call(document.querySelectorAll('.v2-sec .v2-float'),function(f,i){f.classList.add('v2-bob');f.style.setProperty('--bd',(i*1.3)+'s')});
+  var ph=[].slice.call(document.querySelectorAll('.v2-sec p')).find(function(x){return x.textContent==='Driveway charger'});if(ph&&ph.parentElement&&ph.parentElement.parentElement)ph.parentElement.parentElement.classList.add('v2-phone-wrap');
+  var allSecs=[].slice.call(document.querySelectorAll('main > section'));
+  var last=allSecs[allSecs.length-1];if(last&&!last.classList.contains('v2-sec'))last.classList.add('v2-final');
+  function keptPanels(){allSecs.forEach(function(sec){if(sec.classList.contains('v2-sec')||sec.classList.contains('v2-hero'))return;
+    sec.querySelectorAll('*').forEach(function(el){var bg=getComputedStyle(el).backgroundColor;if((bg==='rgb(17, 22, 29)')&&!el.parentElement.closest('.v2-kept-panel'))el.classList.add('v2-kept-panel')})})}
+  keptPanels();setTimeout(keptPanels,700);
   if(reduce)return;
   /* Entrance */
   var copy=hero.querySelector('h1').parentElement;

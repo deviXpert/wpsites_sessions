@@ -5,5 +5,7 @@
  "placeholder-evtron-tethered": 92,
  "placeholder-fox-tethered": 93,
  "placeholder-fox-untethered": 94,
- "render_evtron": 131
+ "render_evtron": 131,
+ "render_foxt": 160,
+ "render_foxu": 161
 }

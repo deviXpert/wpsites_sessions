@@ -87,16 +87,16 @@ hero = div('Hero', [div('Hero grid', [
 
 # ---------- 2. Chargers ----------
 PRODUCTS = [
-    ('EV-Tron Tethered', '£1,295', M['placeholder-evtron-tethered'], '/ev-chargers/evtron-tethered-ev-charger/', '7kW  ·  Tethered Type 2  ·  7.5m cable',
+    ('EV-Tron Tethered', '£1,295', M['render_evtron'], '/ev-chargers/evtron-tethered-ev-charger/', '7kW  ·  Tethered Type 2  ·  7.5m cable',
      'Our own design in four finishes, with a long tethered cable.', None),
-    ('Fox Tethered', '£995', M['placeholder-fox-tethered'], '/ev-chargers/fox-tethered-solar-ev-charger/', '7.3kW  ·  Tethered Type 2  ·  5m cable',
+    ('Fox Tethered', '£995', M['render_foxt'], '/ev-chargers/fox-tethered-solar-ev-charger/', '7.3kW  ·  Tethered Type 2  ·  5m cable',
      'Charges from your solar panels’ surplus. Four colours.', 'Solar-ready'),
-    ('Fox Untethered', '£945', M['placeholder-fox-untethered'], '/ev-chargers/fox-untethered-solar-ev-charger/', '7.3kW  ·  Type 2 socket  ·  Your own cable',
+    ('Fox Untethered', '£945', M['render_foxu'], '/ev-chargers/fox-untethered-solar-ev-charger/', '7.3kW  ·  Type 2 socket  ·  Your own cable',
      'A tidy socket for your own cable. Solar-ready.', 'Solar-ready'),
 ]
 cards = []
 for name, price, mid, url, spec, blurb, tag in PRODUCTS:
-    top = [img(f'{name} image', mid, 'width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px;')]
+    top = [img(f'{name} image', mid, 'width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 6px; background-color: #0B0F14;')]
     meta = [h(f'{name} name', name, 'h3', ['ev-h3'])]
     if tag:
         meta.append(p(f'{name} tag', tag, ['ev-label'], 'color: var(--ev-accent);'))

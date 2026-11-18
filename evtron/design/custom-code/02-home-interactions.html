@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded',function(){
     render();
   }
   /* Cost calculator: section 4 (rebuilt as an interactive tool) */
-  var secs=document.querySelectorAll('main > section');
-  var calc=secs[3]&&secs[3].querySelector(':scope > div > div:nth-child(2)');
+  var calcSec=[].slice.call(document.querySelectorAll('main > section')).find(function(x){return /What a charge costs at home/.test(x.textContent)});
+  var calc=calcSec&&calcSec.querySelector(':scope > div > div:nth-child(2)');
   if(calc){
     var B=[['Small','40'],['Medium','60'],['Large','80']];
     calc.classList.add('ev-calc');
