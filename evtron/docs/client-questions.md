@@ -2,11 +2,11 @@
 
 Please answer what you can. Anything left blank will appear on the site as a clearly marked placeholder until you confirm it.
 
-## 1. Business details
-1. Registered company name, company number and registered office address.
-2. VAT number.
-3. Trading address (if different), or should no address be shown?
-4. Customer phone number, email address and opening hours.
+## 1. Business details (minimum needed to sell online)
+1. Is the business a **limited company** or a **sole trader**, and what is its legal name? (If a limited company: the company number and registered office address.)
+2. Which postal address can we show on the website? UK law requires one for online sales. A registered office or business address is fine; it does not need to be a home address if another is available.
+3. Is the business **VAT registered**? If not, prices will be shown without "incl. VAT" wording, and the price list should be confirmed on that basis.
+4. Customer phone number (if any) and opening hours.
 
 ## 2. Service area and installation
 5. Where do you install: the whole UK, or specific regions, counties or postcodes?
@@ -25,10 +25,10 @@ Please answer what you can. Anything left blank will appear on the site as a cle
 16. Is dynamic load balancing with a CT clamp included with the EVTRON charger as standard?
 17. Does the EVTRON charger include PEN fault protection and surge protection, or are these fitted separately during installation?
 18. **Fox tethered charger:** please confirm the exact model (we believe it is the Fox ESS L Series L07P) and the four colours: black, blue, purple and pink.
-19. **Fox untethered charger:** please confirm the exact model (we believe it is the Fox ESS A Series) and send a photo of the **white** version.
+19. **Fox untethered charger:** please confirm the exact model (we believe it is the Fox ESS A Series) in **white**.
 20. For the Fox chargers' solar feature: what do customers need for it to work (a Fox inverter, or a Fox smart meter with other inverter brands)?
 21. Are your chargers on the government's eligible chargepoint model list for OZEV grants?
-22. Please confirm all prices: EVTRON tethered £1,295, Fox tethered £995 and Fox untethered £945, all fully installed and including VAT.
+22. Please confirm all prices: EVTRON tethered £1,295, Fox tethered £995 and Fox untethered £945, all fully installed (and whether VAT applies; see question 3).
 23. Accessories: are the black post (£200) and steel post (£280) supplied **and fitted** at that price? Any other accessories to sell?
 
 ## 4. Warranty, returns and payments
@@ -38,15 +38,14 @@ Please answer what you can. Anything left blank will appear on the site as a cle
 27. Instalments: do you want Klarna (via Stripe), PayPal Pay in 3, or both? Each needs approval on your account.
 28. Do you offer any discounts (for example NHS or Blue Light, referral codes)?
 
-## 5. Content and setup
-29. Photos: please send the original product photos (not WhatsApp screenshots).
-30. Is there anything about your company story, team or values you'd like on the About page?
-31. Who will update the website after launch, and what will they need to change (prices, stock, blog posts)?
-32. Email address(es) that should receive orders and quote enquiries.
+## 5. Content
+29. Is there anything about your company story, team or values you'd like on the About page?
 
 ## 6. Documents to send
 - Supplier specification `Specs.pdf` and the two charger manuals
 - Smart charge point statement of compliance (EVTRON charger)
 - Installer accreditation certificates
 - Warranty terms from the manufacturers
-- Original product photos (all colours)
+
+---
+*Already decided (no need to ask):* enquiries go to sales@ and info@ at evtron.co.uk; the website will be managed by the developer; product photos will be sent later (placeholders used until then).
