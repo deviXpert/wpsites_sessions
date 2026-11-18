@@ -49,6 +49,18 @@ Home · Choose your charger (compare the three) · Product pages (gallery, colou
 - A **Coming Soon / maintenance page** for logged-out visitors first (Elementor's built-in Maintenance Mode can do this).
 - The brief is the source of truth. Learn from competitors without copying them.
 
+## 5a. Checkpoint 1 answers (18 Nov 2026)
+- **Brand:** **EVTRON everywhere.** The own-brand charger (EMS3-70-C) is sold as an EVTRON charger. "EV-TRONX" is not used on the site.
+- **Accent:** follow the logo palette, i.e. **charge-green `#3BE37F`** as the single accent (option A), used sparingly.
+- **Variants follow the client's product photos:**
+  - **EVTRON tethered:** 4 colours: black, red (deep maroon), grey, green. Names to confirm: Mythos Black / Space Grey / Midnight Green from the brief, plus a name for the red.
+  - **Fox tethered (L Series):** 4 colours: black, blue (teal), purple, pink.
+  - **Fox untethered (A Series):** black (overrides the brief's "white").
+- **Payments:** **full payment by default** (Stripe cards, Apple Pay and Google Pay, plus PayPal), **plus an instalment option.**
+  - ⚠️ **Shop Pay Installments is Shopify-only** (Affirm via Shopify Payments) and can't run on WooCommerce.
+  - Proposed WooCommerce equivalents: **Klarna** and/or **Clearpay** via the Stripe gateway, and **PayPal Pay in 3** via WooCommerce PayPal Payments. All need the merchant accounts approved, and the order limits must cover £945 to £1,295+.
+  - Since 15 July 2026, third-party BNPL lenders are FCA-regulated. EVTRON should confirm with its provider or adviser what it must display and whether any permission applies to it as the retailer.
+
 ## 6. Current state of evtron.co.uk (audited 18 Nov 2026, read-only)
 - Fresh WordPress install on **Hostinger** (LiteSpeed + Hostinger CDN). Theme **Astra 4.14.3**. Plugins: **Elementor 4.4.0**, **Elementor Pro 4.3.1**, SG Security (inactive, left over from an earlier host). An Elementor MCP composer endpoint is present.
 - **No pages, posts, media or menus.** Front page shows latest posts. Site title "evtron.co.uk", no tagline, timezone empty, language en_US (should be en_GB).
