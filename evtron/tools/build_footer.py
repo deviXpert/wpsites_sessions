@@ -1,4 +1,4 @@
-"""Build the EVTRON footer (Theme Builder footer site part) with native Elementor V4 elements + nav-menu widgets.
+"""Build the EV-Tron footer (Theme Builder footer site part) with native Elementor V4 elements + nav-menu widgets.
 Run: EVTRON_WP_USER=<admin login> python3 build_footer.py"""
 import json, urllib.parse, wp
 from build_home import el, div, p, h, btn, cfg, st, cl, MONO, SITE
@@ -47,7 +47,7 @@ wordmark = el('e-image', 'Footer wordmark', {'image': {'src': {'id': 26}, 'size'
 
 legal = div('Footer legal', [
     p('Legal company', '[PLACEHOLDER] Company name · Company number · Registered address · VAT status', None, MONO + 'font-size: 12px; color: var(--ev-muted);'),
-    p('Legal copy', '© 2026 EVTRON · Driven by innovation', None, MONO + 'font-size: 12px; color: var(--ev-muted);'),
+    p('Legal copy', '© 2026 EV-Tron · Driven by innovation', None, MONO + 'font-size: 12px; color: var(--ev-muted);'),
 ], 'display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 24px; padding-top: 20px; border-top: 1px dashed var(--ev-control);')
 
 X = div('Site footer', [div('Footer inner', [top, index, wordmark, legal], classes=['ev-container'])],

@@ -1,4 +1,4 @@
-"""Build the EVTRON homepage (Direction A "Spec Sheet") with native Elementor V4 elements.
+"""Build the EV-Tron homepage (Direction A "Spec Sheet") with native Elementor V4 elements.
 Run: EVTRON_WP_USER=<admin login> python3 build_home.py   (rebuilds the page content in place)
 
 Layout rules (professional rhythm):
@@ -59,7 +59,7 @@ MONO = 'font-family: var(--ev-mono); '
 line_rows = [div(f'Line {i+1}', [p(f'Line {i+1} item', a, ['ev-body'], 'font-size: 14px;'),
                                  p(f'Line {i+1} value', b, None, MONO + 'font-size: 14px; white-space: nowrap; color: ' + ('var(--ev-accent)' if inc else 'var(--ev-text)') + ';')],
                  'display: flex; justify-content: space-between; gap: 16px; padding-top: 12px; padding-bottom: 12px; border-bottom: 1px dashed var(--ev-divider);')
-             for i, (a, b, inc) in enumerate([('EVTRON Tethered · Mythos Black', '£1,295', False), ('Cable 7.5m', 'Included', True),
+             for i, (a, b, inc) in enumerate([('EV-Tron Tethered · Mythos Black', '£1,295', False), ('Cable 7.5m', 'Included', True),
                                                ('Standard installation', 'Included', True), ('Load balancing CT clamp', 'Included', True)])]
 
 hero = div('Hero', [div('Hero grid', [
@@ -79,7 +79,7 @@ hero = div('Hero', [div('Hero grid', [
         div('Receipt lines', line_rows, 'display: flex; flex-direction: column; margin-top: 20px; border-top: 1px dashed var(--ev-control);'),
         div('Receipt total', [p('Total label', 'Total, fully installed', ['ev-body']), p('Total value', '£1,295', ['ev-price'])],
             'display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-top: 20px;'),
-        btn('Receipt CTA', 'View EVTRON Tethered', '/ev-chargers/evtron-tethered-ev-charger/', 'primary', 'width: 100%; margin-top: 24px;'),
+        btn('Receipt CTA', 'View EV-Tron Tethered', '/ev-chargers/evtron-tethered-ev-charger/', 'primary', 'width: 100%; margin-top: 24px;'),
         p('Receipt instalments', 'Pay in full, or spread the cost with Klarna or PayPal Pay in 3.', ['ev-small'], 'margin-top: 12px; text-align: center;'),
     ], 'background-color: var(--ev-s1); border: 1px solid var(--ev-divider); border-radius: var(--ev-r-md); padding: 32px; @media(--mobile){ padding: 20px; }', tag='aside'),
 ], 'display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 80px; align-items: center; padding-top: 104px; padding-bottom: 120px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 48px; padding-top: 64px; padding-bottom: 80px; }',
@@ -87,7 +87,7 @@ hero = div('Hero', [div('Hero grid', [
 
 # ---------- 2. Chargers ----------
 PRODUCTS = [
-    ('EVTRON Tethered', '£1,295', M['placeholder-evtron-tethered'], '/ev-chargers/evtron-tethered-ev-charger/', '7kW  ·  Tethered Type 2  ·  7.5m cable',
+    ('EV-Tron Tethered', '£1,295', M['placeholder-evtron-tethered'], '/ev-chargers/evtron-tethered-ev-charger/', '7kW  ·  Tethered Type 2  ·  7.5m cable',
      'Our own design in four finishes, with a long tethered cable.', None),
     ('Fox Tethered', '£995', M['placeholder-fox-tethered'], '/ev-chargers/fox-tethered-solar-ev-charger/', '7.3kW  ·  Tethered Type 2  ·  5m cable',
      'Charges from your solar panels’ surplus. Four colours.', 'Solar-ready'),

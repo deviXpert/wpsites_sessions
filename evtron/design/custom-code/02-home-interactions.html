@@ -1,4 +1,4 @@
-<!-- EVTRON homepage interactions. Elementor > Custom Code > "EVTRON home interactions" (body end, homepage only).
+<!-- EV-Tron homepage interactions. Elementor > Custom Code > "EV-Tron home interactions" (body end, homepage only).
      Progressive enhancement: the page is complete without this script (static receipt + example calculation). -->
 <style>
 .ev-x-seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
@@ -76,7 +76,7 @@
 document.addEventListener('DOMContentLoaded',function(){
   var aside=document.querySelector('main aside');
   if(aside){
-    var P={evtron:{n:'EVTRON Tethered',p:1295,cable:true,url:'/ev-chargers/evtron-tethered-ev-charger/',c:[['Mythos Black','#1B1D21'],['Crimson Red','#5A1418'],['Space Grey','#6E737A'],['Midnight Green','#1E4A3A']]},
+    var P={evtron:{n:'EV-Tron Tethered',p:1295,cable:true,url:'/ev-chargers/evtron-tethered-ev-charger/',c:[['Mythos Black','#1B1D21'],['Crimson Red','#5A1418'],['Space Grey','#6E737A'],['Midnight Green','#1E4A3A']]},
            foxt:{n:'Fox Tethered',p:995,cable:false,url:'/ev-chargers/fox-tethered-solar-ev-charger/',c:[['Black','#1E2024'],['Blue','#6FB7B5'],['Purple','#9C86C9'],['Pink','#D7A3AE']]},
            foxu:{n:'Fox Untethered',p:945,cable:false,url:'/ev-chargers/fox-untethered-solar-ev-charger/',c:[['White','#ECEDEA']]}};
     var CAB=[['5m',null,'5m is not currently available'],['7.5m',0],['10m',90,'10m availability is being confirmed']];
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded',function(){
     var card=document.createElement('div');card.className='ev-fd-card';card.setAttribute('aria-live','polite');
     panel.appendChild(card);
     if(cmp)cmp.remove();
-    var R={evtron:['EVTRON Tethered','£1,295','/ev-chargers/evtron-tethered-ev-charger/'],foxt:['Fox Tethered','£995','/ev-chargers/fox-tethered-solar-ev-charger/'],foxu:['Fox Untethered','£945','/ev-chargers/fox-untethered-solar-ev-charger/']};
+    var R={evtron:['EV-Tron Tethered','£1,295','/ev-chargers/evtron-tethered-ev-charger/'],foxt:['Fox Tethered','£995','/ev-chargers/fox-tethered-solar-ev-charger/'],foxu:['Fox Untethered','£945','/ev-chargers/fox-untethered-solar-ev-charger/']};
     var pick=function(){
       var k,why=[];
       if(!A.cable){k='foxu';why.push('A tidy Type 2 socket: you use your own cable');why.push(A.solar?'Can charge from your surplus solar power':'Our lowest installed price');}
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded',function(){
        '<div class="ev-batt-legend"><span id="ev-from">20%</span><span>80%</span></div>'+
        '<div class="ev-calc-tiles"><div><p class="ev-x-lab">Energy added</p><p class="ev-tile-v" id="ev-e">36 kWh</p></div><div><p class="ev-x-lab">Time on 7kW</p><p class="ev-tile-v" id="ev-t">5h 9m</p></div><div><p class="ev-x-lab">Miles added</p><p class="ev-tile-v" id="ev-mi">≈126</p></div></div>'+
        '<div class="ev-cmp"><p class="ev-x-lab">Charging time compared</p>'+
-         '<div class="ev-cmp-row"><span>EVTRON home charger · 7kW</span><span class="ev-cmp-v" id="ev-c7">5h 9m</span></div><div class="ev-cmp-bar"><i id="ev-b7"></i></div>'+
+         '<div class="ev-cmp-row"><span>EV-Tron home charger · 7kW</span><span class="ev-cmp-v" id="ev-c7">5h 9m</span></div><div class="ev-cmp-bar"><i id="ev-b7"></i></div>'+
          '<div class="ev-cmp-row"><span>3-pin plug · 2.3kW</span><span class="ev-cmp-v" id="ev-c2">15h 39m</span></div><div class="ev-cmp-bar ev-cmp-slow"><i id="ev-b2"></i></div></div>'+
        '<p class="ev-calc-note">Estimate only. Ignores charging losses and assumes the full power is available. Example figures, not a quote.</p>'+
      '</div>';

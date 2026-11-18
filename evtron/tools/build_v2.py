@@ -1,4 +1,4 @@
-"""EVTRON V2 (emerald glassmorphism) homepage: /home-v2/.
+"""EV-Tron V2 (emerald glassmorphism) homepage: /home-v2/.
 Stage 1 = new hero only; the remaining sections are V1's, appended unchanged until each is redesigned.
 Run: EVTRON_WP_USER=<admin login> python3 build_v2.py"""
 import json, urllib.parse, wp
