@@ -34,14 +34,16 @@ Please answer what you can. Anything left blank will appear on the site as a cle
 ## 4. Warranty, returns and payments
 24. Warranty: please confirm the 3-year standard warranty, and what the £89.99 extension (to 5 years) covers. Who handles warranty claims, you or the manufacturer?
 25. Cancellation and refund policy, including what happens if the survey shows a home isn't suitable after payment.
-26. Do you have business accounts with Stripe and PayPal yet? If not, who will set them up?
-27. Instalments: do you want Klarna (via Stripe), PayPal Pay in 3, or both? Each needs approval on your account.
-28. Do you offer any discounts (for example NHS or Blue Light, referral codes)?
+26. Instalments: do you want Klarna (via Stripe), PayPal Pay in 3, or both? Each needs approval on your account.
+27. Do you offer any discounts (for example NHS or Blue Light, referral codes)?
 
 ## 5. Content
-29. Is there anything about your company story, team or values you'd like on the About page?
+28. Is there anything about your company story, team or values you'd like on the About page?
 
-## 6. Documents to send
+## 6. Client actions
+- **Register Stripe and PayPal business accounts** in the business's legal name, and apply for instalments (Klarna and/or PayPal Pay in 3). Share access with the developer once they're approved so the payments can be connected and tested.
+
+## 7. Documents to send
 - Supplier specification `Specs.pdf` and the two charger manuals
 - Smart charge point statement of compliance (EVTRON charger)
 - Installer accreditation certificates
