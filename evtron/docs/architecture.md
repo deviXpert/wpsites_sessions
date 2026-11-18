@@ -28,12 +28,12 @@ Hostinger shared/cloud hosting · **LiteSpeed** web server · Hostinger CDN (cur
 | Shop | **WooCommerce** | Products, variations, basket, checkout, orders, emails |
 | Payments | **WooCommerce Stripe Gateway** (official, free) | Cards, Apple Pay, Google Pay, Link, **Klarna** |
 | Payments | **WooCommerce PayPal Payments** (official, free) | PayPal, **Pay in 3** (Pay Later) |
-| SEO | **Rank Math** (free) *or* Yoast | Recommend **Rank Math**: free WooCommerce Product schema, breadcrumbs, redirects, sitemap and 404 monitor in one plugin. Yoast needs a paid add-on for WooCommerce schema |
+| SEO | **Yoast SEO** (free), **chosen** | Titles, meta, sitemap, breadcrumbs, Organization/WebSite/Article schema. WooCommerce's own built-in Product JSON-LD stays on for product pages (the Yoast WooCommerce SEO add-on is paid and optional). Redirects are added in `.htaccess` (Yoast's redirect manager is Premium-only) |
 | Cache and performance | **LiteSpeed Cache** (free) | Native to the LiteSpeed server: page cache, CSS/JS optimise, WebP/AVIF via QUIC.cloud, lazy-load. WooCommerce-aware (basket/checkout excluded) |
 | Email delivery | **FluentSMTP** (free) | Sends WooCommerce and form emails through an authenticated mailbox (SPF/DKIM) so they don't land in spam |
 | Spam protection | **Cloudflare Turnstile** via Elementor Forms (native integration) or "Simple Cloudflare Turnstile" for WooCommerce checkout | Privacy-friendly, no cookie banner needed, no image puzzles |
 | Security | **SG Security: delete** (left over from an old host). Use Hostinger's malware scanner + strong passwords, 2FA (e.g. "Two Factor" plugin) and limited admin users | Fewer plugins |
-| Backups | Hostinger automatic backups + **UpdraftPlus** (free) to off-site storage (Google Drive/Dropbox) | Off-site copy before updates |
+| Backups and migration | Hostinger automatic backups + **All-in-One WP Migration**, **chosen** | Manual full-site export (`.wpress`) before each risky change and at milestones. The free version has no scheduling or cloud storage (paid extensions), and import is size-limited, so exports are downloaded and kept off-site manually |
 | Colour swatches | **No plugin.** A small Custom Code script turns WooCommerce's native variation `<select>` into accessible swatch buttons (the select stays as the source of truth) | Avoids a heavy swatch plugin |
 
 **Not installed:** sliders, page-speed "all-in-ones", icon-font packs, Google Fonts loaders, chat widgets, popup builders.
@@ -87,7 +87,7 @@ Form submissions are also saved in Elementor → Submissions (database) as a bac
 ## 8. Development and deployment workflow
 - **Build where it lives:** pages and templates are built in Elementor on evtron.co.uk behind **Coming Soon mode**, with "Discourage search engines" on.
 - **Version control in this repo:** design tokens, Custom Code snippets (CSS/JS), checkout field snippets, Elementor template exports (`.json`) and product data (CSV), so everything can be rebuilt or reviewed. Synced to WordPress via the REST API, using the app password from environment variables.
-- **Staging:** Hostinger staging (if available ❓) for plugin updates and risky changes after launch.
+- **Staging:** none (user decision). Risky changes are preceded by an All-in-One WP Migration export.
 - **Launch:** checklist in `deployment.md` (Phase 9).
 
 ## 9. Secrets and access
@@ -95,9 +95,9 @@ Form submissions are also saved in Elementor → Submissions (database) as a bac
 - Stripe and PayPal accounts are owned by the client (task #2). The developer gets team or user access, not shared passwords.
 - `WP_USER` in the session environment should be corrected to the admin login.
 
-## 10. Questions for Checkpoint 4
-1. **SEO plugin:** Rank Math (recommended) or Yoast?
-2. **Analytics:** A (cookieless, no banner, about £9/month), B (GA4 + banner, free) or C?
-3. **Mailboxes:** do sales@ and info@evtron.co.uk exist yet (Hostinger Email)? Which one should send the site's emails?
-4. **Staging:** does the Hostinger plan include staging?
-5. **Off-site backups:** OK to use UpdraftPlus to Google Drive or Dropbox (whose account)?
+## 10. Checkpoint 4 decisions
+- SEO plugin: **Yoast SEO** (free).
+- Mailboxes sales@ and info@ will be created by the client or developer. FluentSMTP is configured once they exist.
+- Staging: **not used**.
+- Backups and migration: **All-in-One WP Migration** (manual exports) + Hostinger backups.
+- Analytics: ❓ still open (A cookieless / B GA4 + banner). Needed by Phase 6.

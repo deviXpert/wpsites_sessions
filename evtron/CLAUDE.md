@@ -29,6 +29,7 @@ UK home EV charger brand. Sells chargers **supplied and fitted** at fixed VAT-in
 - Client is a new business, possibly not VAT-registered. Price wording ("incl. VAT") depends on that.
 
 - Design: **Direction A "Spec Sheet"** chosen (docs/design-system.md, tokens in design/tokens.css). Control borders #6A7688 (not the prototype #3A4655).
+- Plugins: Yoast SEO (free), All-in-One WP Migration for backups, no staging. Mailboxes sales@/info@ to be created.
 
 ## Open
 Batch 2 business details (brief-summary §9). EV-TRONX smart-charging compliance. Fox exact SKUs.

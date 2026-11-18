@@ -240,7 +240,7 @@ The client's service area is unconfirmed (Q5). **If** they cover defined regions
 
 | Area | Plan |
 |---|---|
-| **SEO plugin** | One plugin for titles, meta, sitemaps and schema (Rank Math or Yoast; choice in Phase 4). Elementor doesn't handle meta. |
+| **SEO plugin** | **Yoast SEO** (free) for titles, meta, sitemaps and schema, plus WooCommerce's built-in Product JSON-LD. Elementor doesn't handle meta. |
 | **Titles** | Pattern `Primary keyword: benefit \| EVTRON`, ≤60 characters. E.g. "Tethered EV Charger, Fully Installed from £1,295 \| EVTRON" ❓ price |
 | **Meta descriptions** | Unique, ≤155 characters, include price and what's included |
 | **Headings** | One H1 per page. Elementor headings set to the correct H-level explicitly (Elementor defaults to H2) |
