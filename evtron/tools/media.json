@@ -1,5 +1,8 @@
 {
  "app-icon-1024.png": 25,
  "evtron-horizontal-dark.png": 26,
- "social-avatar-800.png": 27
+ "social-avatar-800.png": 27,
+ "placeholder-evtron-tethered": 92,
+ "placeholder-fox-tethered": 93,
+ "placeholder-fox-untethered": 94
 }

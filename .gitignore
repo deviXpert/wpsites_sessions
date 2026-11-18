@@ -7,3 +7,4 @@ evtron/research/sources/*.html
 !evtron/assets/**/*.png
 evtron/qa/shots/*.png
 evtron/tools/__pycache__/
+evtron/qa/preview-*.html

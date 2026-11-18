@@ -1,0 +1,74 @@
+<!-- EVTRON homepage interactions. Elementor > Custom Code > "EVTRON home interactions" (body end, homepage only).
+     Progressive enhancement: the page is complete without this script (static receipt + example calculation). -->
+<style>
+.ev-x-seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ev-x-seg button,.ev-x-chip,.ev-x-sw{font:inherit;cursor:pointer}
+.ev-x-seg button{min-height:44px;border-radius:6px;border:1px solid #6A7688;background:transparent;color:#C3C7CD;font-weight:600;font-size:13px;line-height:1.2;padding:8px 6px}
+.ev-x-seg button[aria-pressed="true"]{background:#1F2833;color:#F2EFE9;border-color:#3BE37F}
+.ev-x-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ev-x-sw{width:44px;height:44px;border-radius:50%;padding:6px;border:0;background:transparent;display:grid;place-items:center}
+.ev-x-sw span{display:block;width:30px;height:30px;border-radius:50%;border:2px solid #6A7688}
+.ev-x-sw[aria-checked="true"] span{outline:2px solid #3BE37F;outline-offset:3px}
+.ev-x-chip{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid #6A7688;background:transparent;color:#C3C7CD;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px}
+.ev-x-chip[aria-checked="true"]{border-color:#3BE37F;color:#F2EFE9}
+.ev-x-chip:disabled{opacity:.45;cursor:not-allowed;text-decoration:line-through}
+.ev-x-lab{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:500;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#939CA8;margin:0}
+.ev-x-name{font-size:13px;color:#939CA8;margin:0}
+.ev-x-field{display:grid;gap:8px}
+.ev-x-field label{display:flex;justify-content:space-between;gap:12px;color:#F2EFE9;font-weight:600;font-size:14.5px}
+.ev-x-field output{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:500;color:#3BE37F}
+.ev-x-field input[type=range]{width:100%;accent-color:#3BE37F;min-height:32px}
+</style>
+<script>
+(function(){
+  var aside=document.querySelector('main aside');
+  if(aside){
+    var P={evtron:{n:'EVTRON Tethered',p:1295,cable:true,url:'/ev-chargers/evtron-tethered-ev-charger/',c:[['Mythos Black','#1B1D21'],['Red [name TBC]','#5A1418'],['Space Grey','#6E737A'],['Midnight Green','#1E4A3A']]},
+           foxt:{n:'Fox Tethered',p:995,cable:false,url:'/ev-chargers/fox-tethered-solar-ev-charger/',c:[['Black','#1E2024'],['Blue','#6FB7B5'],['Purple','#9C86C9'],['Pink','#D7A3AE']]},
+           foxu:{n:'Fox Untethered',p:945,cable:false,url:'/ev-chargers/fox-untethered-solar-ev-charger/',c:[['White','#ECEDEA']]}};
+    var CAB=[['5m',null,'5m is not currently available'],['7.5m',0],['10m',90,'10m availability is being confirmed']];
+    var cur='evtron',col=0,cab=1;
+    var kids=aside.children, ctrl=kids[1], lines=kids[2], totalEl=kids[3]&&kids[3].lastElementChild, cta=aside.querySelector('a');
+    var fmt=function(n){return '£'+n.toLocaleString('en-GB')};
+    function row(a,b,inc){return '<div style="display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed #2A3441;font-size:14px"><span>'+a+'</span><span style="font-family:IBM Plex Mono,monospace;white-space:nowrap;color:'+(inc?'#3BE37F':'#F2EFE9')+'">'+b+'</span></div>'}
+    function render(){
+      var p=P[cur],x=p.cable&&CAB[cab][1]?CAB[cab][1]:0;
+      ctrl.innerHTML='<div class="ev-x-seg" role="group" aria-label="Charger">'+Object.keys(P).map(function(k){return '<button type="button" data-p="'+k+'" aria-pressed="'+(k===cur)+'">'+P[k].n+'</button>'}).join('')+'</div>'+
+        '<div><p class="ev-x-lab">Finish</p><div class="ev-x-row" role="radiogroup" aria-label="Finish">'+p.c.map(function(c,i){return '<button type="button" class="ev-x-sw" role="radio" aria-checked="'+(i===col)+'" aria-label="'+c[0]+'" data-i="'+i+'"><span style="background:'+c[1]+'"></span></button>'}).join('')+'</div><p class="ev-x-name" aria-live="polite">'+p.c[col][0]+'</p></div>'+
+        (p.cable?'<div><p class="ev-x-lab" style="margin-bottom:8px">Cable length</p><div class="ev-x-row" role="radiogroup" aria-label="Cable length">'+CAB.map(function(c,i){var dis=c[1]===null;return '<button type="button" class="ev-x-chip" role="radio" data-c="'+i+'" aria-checked="'+(i===cab)+'"'+(dis?' disabled title="'+c[2]+'"':'')+'>'+c[0]+(c[1]?' +£'+c[1]:'')+'</button>'}).join('')+'</div></div>':'');
+      var L=[[p.n+' · '+p.c[col][0],fmt(p.p),false]];
+      if(p.cable)L.push(['Cable '+CAB[cab][0],x?'+'+fmt(x):'Included',!x]);
+      L.push(['Standard installation','Included',true]);
+      if(cur==='evtron')L.push(['Load balancing CT clamp','Included',true]);
+      lines.innerHTML=L.map(function(l){return row(l[0],l[1],l[2])}).join('');
+      if(totalEl)totalEl.textContent=fmt(p.p+x);
+      if(cta){cta.setAttribute('href',p.url);cta.textContent='View '+p.n}
+    }
+    ctrl.addEventListener('click',function(e){
+      var b=e.target.closest('button');if(!b||b.disabled)return;
+      if(b.dataset.p){cur=b.dataset.p;col=0;cab=1}
+      else if(b.dataset.i!=null){col=+b.dataset.i}
+      else if(b.dataset.c!=null){cab=+b.dataset.c}
+      render();
+      var f=ctrl.querySelector(b.dataset.p?'[data-p="'+cur+'"]':b.dataset.i!=null?'[data-i="'+col+'"]':'[data-c="'+cab+'"]');if(f)f.focus();
+    });
+    render();
+  }
+  /* Cost calculator: section 4 */
+  var secs=document.querySelectorAll('main > section');
+  var calc=secs[3]&&secs[3].querySelector(':scope > div > div:nth-child(2)');
+  if(calc){
+    var inputs=calc.children[0], res=calc.children[1], cost=res.children[1], time=res.children[2];
+    inputs.innerHTML='<form class="ev-x-calc" onsubmit="return false">'+
+      '<div class="ev-x-field" style="margin-bottom:18px"><label for="ev-kwh">Battery size <output id="ev-o-kwh">60 kWh</output></label><input id="ev-kwh" type="range" min="20" max="110" step="1" value="60"></div>'+
+      '<div class="ev-x-field" style="margin-bottom:18px"><label for="ev-ppk">Your electricity rate <output id="ev-o-ppk">8.5p per kWh</output></label><input id="ev-ppk" type="range" min="5" max="35" step="0.5" value="8.5"></div>'+
+      '<div class="ev-x-field"><label for="ev-pct">Charging from <output id="ev-o-pct">20% to 80%</output></label><input id="ev-pct" type="range" min="0" max="75" step="5" value="20"></div></form>';
+    res.setAttribute('aria-live','polite');
+    var q=function(i){return document.getElementById(i)};
+    var go=function(){var k=+q('ev-kwh').value,p=+q('ev-ppk').value,f=+q('ev-pct').value,e=(80-f)/100*k,h=e/7;
+      q('ev-o-kwh').textContent=k+' kWh';q('ev-o-ppk').textContent=p+'p per kWh';q('ev-o-pct').textContent=f+'% to 80%';
+      cost.textContent='£'+(e*p/100).toFixed(2);time.textContent='About '+Math.floor(h)+' h '+Math.round((h%1)*60)+' min on a 7kW charger'};
+    ['ev-kwh','ev-ppk','ev-pct'].forEach(function(i){q(i).addEventListener('input',go)});go();
+  }
+})();
+</script>

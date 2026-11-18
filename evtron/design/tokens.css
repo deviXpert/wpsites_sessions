@@ -31,7 +31,7 @@
   /* Spacing (4px base) */
   --ev-1:4px;--ev-2:8px;--ev-3:12px;--ev-4:16px;--ev-5:24px;--ev-6:32px;--ev-7:48px;--ev-8:72px;--ev-9:96px;
   /* Layout */
-  --ev-max:1240px; --ev-gutter:max(16px,env(safe-area-inset-left,0px));
+  --ev-max:1440px; --ev-gutter:max(16px,env(safe-area-inset-left,0px));
   /* Motion */
   --ev-fast:150ms; --ev-ease:cubic-bezier(.2,.7,.2,1);
 }

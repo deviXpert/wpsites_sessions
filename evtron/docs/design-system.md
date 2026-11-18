@@ -46,7 +46,7 @@ Lives in **Elementor → Custom Code → "EVTRON tokens"** (`<head>`, all pages,
   /* Spacing (4px base) */
   --ev-1:4px;--ev-2:8px;--ev-3:12px;--ev-4:16px;--ev-5:24px;--ev-6:32px;--ev-7:48px;--ev-8:72px;--ev-9:96px;
   /* Layout */
-  --ev-max:1240px; --ev-gutter:max(16px,env(safe-area-inset-left,0px));
+  --ev-max:1440px; --ev-gutter:max(16px,env(safe-area-inset-left,0px));
   /* Motion */
   --ev-fast:150ms; --ev-ease:cubic-bezier(.2,.7,.2,1);
 }
@@ -86,9 +86,9 @@ Headings use `text-wrap: balance`. Numbers use `font-variant-numeric: tabular-nu
 
 ## 5. Spacing and layout
 - 4px base scale (`--ev-1` to `--ev-9`). Gaps via flex/grid `gap`.
-- Container max **1240px**. Side gutter **16px** (<768px) and **32px** (≥768px), safe-area aware.
+- Container max **1440px** (user decision). Side gutter **16px** (<768px) and **32px** (≥768px), safe-area aware.
 - Section padding: **72px** block (56px <768px), with a 1px `--ev-divider` top border between sections.
-- Breakpoints: 600 (small), 768 (tablet), 1000 (desktop nav), 1440 (wide). Content stays at 1240 on ultrawide; backgrounds run full width.
+- Breakpoints: 600 (small), 768 (tablet), 1000 (desktop nav), 1440 (wide). Content stays at 1440 on ultrawide; backgrounds run full width.
 - Mobile first. No horizontal scrolling except inside tables (`overflow-x:auto` wrapper with a visible focus ring).
 - Touch targets **≥44×44px** (swatches 32px visual with a 44px hit area via padding).
 
@@ -151,7 +151,7 @@ Every interactive component defines: default · hover · focus-visible · active
 | Custom: Error | `#FF8A80` |
 
 **Global Fonts:** Primary = Manrope 600 (headings) · Secondary = Manrope 300 (display second line) · Text = Manrope 400 · Accent = IBM Plex Mono 500 (prices, labels).
-**Site Settings:** Theme Style → Typography (H1 to H6 per section 4), Buttons (primary style), Form Fields (input style above), Images (radius 10). Layout → content width 1240, widgets gap 24. Breakpoints: mobile 767, tablet 999 (match 768/1000).
+**Site Settings:** Theme Style → Typography (H1 to H6 per section 4), Buttons (primary style), Form Fields (input style above), Images (radius 10). Layout → content width 1440, widgets gap 24. Breakpoints: mobile 767, tablet 999 (match 768/1000).
 **Custom Code (global):** (1) critical head (meta, background, `color-scheme`, font preloads) · (2) tokens and component CSS that Elementor controls can't express (focus rings, autofill, forced-colors, print, tabular numbers) · (3) small interaction scripts (receipt, highlight, calculator, finder, checker), each loaded `defer` and only on pages that use them.
 
 ## 10. Forced colours, high contrast and print

@@ -23,5 +23,8 @@
   }
  },
  "header": 85,
- "footer": 86
+ "footer": 86,
+ "home": 95,
+ "snippet_home": 99,
+ "snippet_head": 44
 }
