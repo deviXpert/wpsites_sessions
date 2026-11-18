@@ -110,10 +110,8 @@ def faq_section(items, title='Frequently Asked <span class="qw-hl">Questions</sp
     """Centered single-column FAQ: heading, 960px accordion, then a 'still have questions' help strip."""
     head = HEAD('Got Questions?', title, 'Straight answers to the questions homeowners ask us most.', align='center')
     help_strip = C([
-        C([W('icon', 'Icon', selected_icon=ico('fas fa-headset'), view='stacked', shape='square', size=px(20), icon_padding=px(14), align='left', _flex_size='none',
-             g={'primary_color': col('secondary'), 'secondary_color': col('primary')}),
-           C([H('Still have questions?', 'p', 'qwh3', 'primary'), T('Talk to us directly – we’re happy to help.', 'text', 'qwsmall')], 'Help Text', flex_gap=gap(2), _flex_size='grow')],
-          'Help Copy', row=True, flex_direction_mobile='row', flex_wrap='nowrap', flex_wrap_mobile='nowrap', flex_align_items='center', flex_gap=gap(16)),
+        IBOX('fas fa-headset', 'Still have questions?', 'Talk to us directly – we’re happy to help.', pos='left', view='stacked', tag='p',
+             icon_size=px(20), position_mobile='left', icon_space=px(16), title_bottom_space=px(2), g={'description_typography_typography': typ('qwsmall')}),
         C([BTN('Call ' + PHONE, TEL, 'outline', 'fas fa-phone-alt', size='sm', align_mobile='justify', _element_width_mobile='inherit'),
            BTN('Get a Free Estimate', '#estimate', 'gold', 'fas fa-clipboard-check', size='sm', align_mobile='justify', _element_width_mobile='inherit')],
           'Help Buttons', row=True, flex_wrap='nowrap', flex_wrap_tablet='wrap', flex_gap=gap(12), flex_direction_mobile='column',

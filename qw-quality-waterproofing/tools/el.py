@@ -147,9 +147,11 @@ def IBOX(icon, title, desc, dark=False, pos='top', view='stacked', align='left',
     else: g.update(primary_color=col('secondary'))
     s.setdefault('g', {}).update(g)
     if link_url: s['link'] = link(link_url)
-    return W('icon-box', 'Icon Box: ' + title[:30], selected_icon=ico(icon), title_text=title, description_text=desc, position=pos, view=view,
-             shape='square', icon_size=icon_size or px(24 if view == 'stacked' else 34), icon_padding=px(16), icon_space=px(18), title_bottom_space=px(10),
-             text_align=align, title_size=tag, border_radius=dims(4), **s)
+    base = dict(selected_icon=ico(icon), title_text=title, description_text=desc, position=pos, view=view, shape='square',
+                icon_size=icon_size or px(24 if view == 'stacked' else 34), icon_padding=px(16), icon_space=px(18), title_bottom_space=px(10),
+                text_align=align, title_size=tag, border_radius=dims(4))
+    base.update(s)  # caller settings override the defaults
+    return W('icon-box', 'Icon Box: ' + title[:30], **base)
 
 def CARD(children, dark=False, title='Card', pad=34, **s):
     s.setdefault('g', {})['background_color'] = col('qwink2' if dark else 'qwwhite')
