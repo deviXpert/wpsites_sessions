@@ -17,7 +17,41 @@
 .ev-x-field{display:grid;gap:8px}
 .ev-x-field label{display:flex;justify-content:space-between;gap:12px;color:#F2EFE9;font-weight:600;font-size:14.5px}
 .ev-x-field output{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:500;color:#3BE37F}
-.ev-x-field input[type=range]{width:100%;accent-color:#3BE37F;min-height:32px}
+.ev-x-field input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:28px;background:transparent;cursor:pointer;margin:0}
+.ev-x-field input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:4px;background:linear-gradient(90deg,#3BE37F 0 var(--ev-fill,50%),#2A3441 var(--ev-fill,50%) 100%)}
+.ev-x-field input[type=range]::-moz-range-track{height:4px;border-radius:4px;background:#2A3441}
+.ev-x-field input[type=range]::-moz-range-progress{height:4px;border-radius:4px;background:#3BE37F}
+.ev-x-field input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;margin-top:-8px;border-radius:50%;background:#F2EFE9;border:4px solid #3BE37F;box-shadow:0 0 0 4px #11161D;transition:transform .15s ease}
+.ev-x-field input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:#F2EFE9;border:4px solid #3BE37F}
+.ev-x-field input[type=range]:hover::-webkit-slider-thumb{transform:scale(1.12)}
+.ev-x-field input[type=range]:focus-visible{outline:2px solid #3BE37F;outline-offset:4px;border-radius:4px}
+.ev-calc{display:grid!important;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr)!important;gap:0!important;padding:0!important;overflow:hidden}
+.ev-calc-in{display:flex;flex-direction:column;gap:28px;padding:40px;border-right:1px solid #2A3441}
+.ev-calc-out{display:flex;flex-direction:column;gap:28px;padding:40px;background:linear-gradient(180deg,#141A22,#11161D)}
+.ev-calc-hint{margin:2px 0 0;font-size:13px;color:#939CA8}
+.ev-calc-top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.ev-calc-cost{margin:10px 0 0;font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:500;font-size:clamp(48px,6vw,72px);line-height:1;color:#F2EFE9;font-variant-numeric:tabular-nums}
+.ev-calc-pm{margin:0;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:14px;color:#3BE37F;padding:6px 12px;border:1px solid rgba(59,227,127,.35);border-radius:999px}
+.ev-batt{display:flex;align-items:center;gap:6px}
+.ev-batt-cells{flex:1;display:grid;grid-template-columns:repeat(20,1fr);gap:4px;padding:6px;border:1px solid #6A7688;border-radius:10px}
+.ev-batt-cells i{display:block;height:34px;border-radius:3px;background:#1F2833;transition:background-color .25s ease}
+.ev-batt-cells i.on{background:#3A4655}
+.ev-batt-cells i.add{background:#3BE37F}
+.ev-batt-tip{width:6px;height:18px;border-radius:0 3px 3px 0;background:#6A7688}
+.ev-batt-legend{display:flex;justify-content:space-between;margin-top:-18px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:#939CA8;padding-right:12px}
+.ev-batt-legend span:last-child{margin-right:calc(20% - 12px)}
+.ev-calc-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#2A3441;border:1px solid #2A3441;border-radius:10px;overflow:hidden}
+.ev-calc-tiles>div{background:#11161D;padding:16px}
+.ev-tile-v{margin:8px 0 0;font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:500;font-size:22px;color:#F2EFE9}
+.ev-cmp{display:flex;flex-direction:column;gap:10px}
+.ev-cmp-row{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:#C3C7CD}
+.ev-cmp-v{font-family:"IBM Plex Mono",ui-monospace,monospace;color:#F2EFE9}
+.ev-cmp-bar{height:8px;border-radius:8px;background:#1F2833;overflow:hidden;margin-bottom:6px}
+.ev-cmp-bar i{display:block;height:100%;background:#3BE37F;transform-origin:left;transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.ev-cmp-slow i{background:#6A7688}
+.ev-calc-note{margin:0;font-size:12.5px;color:#939CA8}
+@media(max-width:1024px){.ev-calc{grid-template-columns:minmax(0,1fr)!important}.ev-calc-in{border-right:0;border-bottom:1px solid #2A3441}}
+@media(max-width:767px){.ev-calc-in,.ev-calc-out{padding:24px}.ev-batt-cells i{height:26px}.ev-calc-tiles{grid-template-columns:minmax(0,1fr)}}
 </style>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
@@ -57,21 +91,45 @@ document.addEventListener('DOMContentLoaded',function(){
     });
     render();
   }
-  /* Cost calculator: section 4 */
+  /* Cost calculator: section 4 (rebuilt as an interactive tool) */
   var secs=document.querySelectorAll('main > section');
   var calc=secs[3]&&secs[3].querySelector(':scope > div > div:nth-child(2)');
   if(calc){
-    var inputs=calc.children[0], res=calc.children[1], cost=res.children[1], time=res.children[2];
-    inputs.innerHTML='<form class="ev-x-calc" onsubmit="return false">'+
-      '<div class="ev-x-field" style="margin-bottom:18px"><label for="ev-kwh">Battery size <output id="ev-o-kwh">60 kWh</output></label><input id="ev-kwh" type="range" min="20" max="110" step="1" value="60"></div>'+
-      '<div class="ev-x-field" style="margin-bottom:18px"><label for="ev-ppk">Your electricity rate <output id="ev-o-ppk">8.5p per kWh</output></label><input id="ev-ppk" type="range" min="5" max="35" step="0.5" value="8.5"></div>'+
-      '<div class="ev-x-field"><label for="ev-pct">Charging from <output id="ev-o-pct">20% to 80%</output></label><input id="ev-pct" type="range" min="0" max="75" step="5" value="20"></div></form>';
-    res.setAttribute('aria-live','polite');
+    var B=[['Small','40'],['Medium','60'],['Large','80']];
+    calc.classList.add('ev-calc');
+    calc.innerHTML=
+     '<div class="ev-calc-in"><p class="ev-x-lab">Battery size</p><div class="ev-x-row" role="radiogroup" aria-label="Battery size" id="ev-bp">'+
+       B.map(function(b,i){return '<button type="button" class="ev-x-chip" role="radio" aria-checked="'+(i===1)+'" data-k="'+b[1]+'">'+b[0]+' · '+b[1]+' kWh</button>'}).join('')+'</div>'+
+       '<div class="ev-x-field"><label for="ev-kwh">Custom battery <output id="ev-o-kwh">60 kWh</output></label><input id="ev-kwh" type="range" min="20" max="110" step="1" value="60"></div>'+
+       '<div class="ev-x-field"><label for="ev-ppk">Your electricity rate <output id="ev-o-ppk">8.5p per kWh</output></label><input id="ev-ppk" type="range" min="5" max="35" step="0.5" value="8.5"><p class="ev-calc-hint">Check your bill or app for your off-peak rate.</p></div>'+
+       '<div class="ev-x-field"><label for="ev-pct">Start charging from <output id="ev-o-pct">20%</output></label><input id="ev-pct" type="range" min="0" max="75" step="5" value="20"></div>'+
+       '<div class="ev-x-field"><label for="ev-eff">Your car’s efficiency <output id="ev-o-eff">3.5 miles per kWh</output></label><input id="ev-eff" type="range" min="2" max="5" step="0.1" value="3.5"></div>'+
+     '</div>'+
+     '<div class="ev-calc-out" aria-live="polite">'+
+       '<div class="ev-calc-top"><div><p class="ev-x-lab">Cost to charge to 80%</p><p class="ev-calc-cost" id="ev-cost">£3.06</p></div><p class="ev-calc-pm" id="ev-pm">0.0p per mile</p></div>'+
+       '<div class="ev-batt" aria-hidden="true"><div class="ev-batt-cells" id="ev-cells"></div><span class="ev-batt-tip"></span></div>'+
+       '<div class="ev-batt-legend"><span id="ev-from">20%</span><span>80%</span></div>'+
+       '<div class="ev-calc-tiles"><div><p class="ev-x-lab">Energy added</p><p class="ev-tile-v" id="ev-e">36 kWh</p></div><div><p class="ev-x-lab">Time on 7kW</p><p class="ev-tile-v" id="ev-t">5h 9m</p></div><div><p class="ev-x-lab">Miles added</p><p class="ev-tile-v" id="ev-mi">≈126</p></div></div>'+
+       '<div class="ev-cmp"><p class="ev-x-lab">Charging time compared</p>'+
+         '<div class="ev-cmp-row"><span>EVTRON home charger · 7kW</span><span class="ev-cmp-v" id="ev-c7">5h 9m</span></div><div class="ev-cmp-bar"><i id="ev-b7"></i></div>'+
+         '<div class="ev-cmp-row"><span>3-pin plug · 2.3kW</span><span class="ev-cmp-v" id="ev-c2">15h 39m</span></div><div class="ev-cmp-bar ev-cmp-slow"><i id="ev-b2"></i></div></div>'+
+       '<p class="ev-calc-note">Estimate only. Ignores charging losses and assumes the full power is available. Example figures, not a quote.</p>'+
+     '</div>';
     var q=function(i){return document.getElementById(i)};
-    var go=function(){var k=+q('ev-kwh').value,p=+q('ev-ppk').value,f=+q('ev-pct').value,e=(80-f)/100*k,h=e/7;
-      q('ev-o-kwh').textContent=k+' kWh';q('ev-o-ppk').textContent=p+'p per kWh';q('ev-o-pct').textContent=f+'% to 80%';
-      cost.textContent='£'+(e*p/100).toFixed(2);time.textContent='About '+Math.floor(h)+' h '+Math.round((h%1)*60)+' min on a 7kW charger'};
-    ['ev-kwh','ev-ppk','ev-pct'].forEach(function(i){q(i).addEventListener('input',go)});go();
+    var cells=q('ev-cells');cells.innerHTML=Array.apply(null,{length:20}).map(function(){return '<i></i>'}).join('');
+    var hm=function(h){var m=Math.round(h*60);return Math.floor(m/60)+'h '+(m%60)+'m'};
+    var go=function(){var k=+q('ev-kwh').value,p=+q('ev-ppk').value,f=+q('ev-pct').value,ef=+q('ev-eff').value,e=(80-f)/100*k,h7=e/7,h2=e/2.3,mi=e*ef;
+      q('ev-o-kwh').textContent=k+' kWh';q('ev-o-ppk').textContent=p+'p per kWh';q('ev-o-pct').textContent=f+'%';q('ev-o-eff').textContent=ef.toFixed(1)+' miles per kWh';
+      q('ev-cost').textContent='£'+(e*p/100).toFixed(2);q('ev-pm').textContent=(p/ef).toFixed(1)+'p per mile';
+      q('ev-e').textContent=Math.round(e)+' kWh';q('ev-t').textContent=hm(h7);q('ev-mi').textContent='≈'+Math.round(mi);
+      q('ev-from').textContent=f+'%';q('ev-c7').textContent=hm(h7);q('ev-c2').textContent=hm(h2);
+      q('ev-b7').style.transform='scaleX('+(h2?h7/h2:0)+')';q('ev-b2').style.transform='scaleX(1)';
+      [].forEach.call(cells.children,function(c,i){var lvl=(i+1)*5;c.className=lvl<=f?'on':(lvl<=80?'add':'')});
+      [].forEach.call(q('ev-bp').children,function(b){b.setAttribute('aria-checked',String(+b.dataset.k===k))})};
+    q('ev-bp').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;q('ev-kwh').value=b.dataset.k;go()});
+    var fill=function(){['ev-kwh','ev-ppk','ev-pct','ev-eff'].forEach(function(i){var e=q(i);e.style.setProperty('--ev-fill',((e.value-e.min)/(e.max-e.min)*100)+'%')})};
+    ['ev-kwh','ev-ppk','ev-pct','ev-eff'].forEach(function(i){q(i).addEventListener('input',function(){go();fill()})});go();fill();
+    q('ev-bp').addEventListener('click',fill);
   }
 });
 </script>

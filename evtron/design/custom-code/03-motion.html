@@ -1,5 +1,6 @@
-<!-- EVTRON motion. Elementor > Custom Code > "EVTRON motion" (site-wide). Transform/opacity only, no layout shift,
-     reduced-motion respected, and content is fully visible if this script never runs. -->
+<!-- EVTRON motion + signature details. Elementor > Custom Code > "EVTRON motion" (site-wide).
+     Transform/opacity (and SVG stroke offset for the hero lines) only; no layout shift; reduced-motion respected;
+     every piece of content is visible if this script never runs. -->
 <style>
 @media (prefers-reduced-motion: no-preference){
   .ev-js .ev-rv{opacity:0;transform:translate3d(0,18px,0);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--ev-d,0ms)}
@@ -8,60 +9,130 @@
   @keyframes evWord{to{opacity:1;transform:none}}
   .ev-fade-in{opacity:0;animation:evFade .9s ease forwards;animation-delay:var(--ev-d,0ms)}
   @keyframes evFade{to{opacity:1}}
-  .ev-charge{display:block;height:3px;width:min(220px,40%);margin-top:28px;border-radius:3px;background:#1F2833;overflow:hidden}
-  .ev-charge i{display:block;height:100%;width:100%;background:#3BE37F;transform:scaleX(0);transform-origin:left;animation:evCharge 1.6s cubic-bezier(.4,0,.2,1) forwards;animation-delay:var(--ev-d,0ms)}
+  .ev-charge i{transform:scaleX(0);animation:evCharge 1.6s cubic-bezier(.4,0,.2,1) forwards;animation-delay:var(--ev-d,0ms)}
   @keyframes evCharge{to{transform:scaleX(1)}}
-  .ev-step-line{position:relative}
-  .ev-step-line::before{content:"";position:absolute;left:0;right:0;top:-1px;height:2px;background:#3BE37F;transform:scaleX(0);transform-origin:left;transition:transform .9s cubic-bezier(.4,0,.2,1);transition-delay:var(--ev-d,0ms)}
+  .ev-step-line::before{transform:scaleX(0);transition:transform .9s cubic-bezier(.4,0,.2,1);transition-delay:var(--ev-d,0ms)}
   .ev-step-line.ev-in::before{transform:scaleX(1)}
   .ev-lift{transition:transform .25s ease,border-color .25s ease}
   .ev-lift:hover{transform:translate3d(0,-4px,0)}
   .ev-lift img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
   .ev-lift:hover img{transform:scale(1.03)}
   .ev-tick{opacity:0;animation:evFade .5s ease forwards;animation-delay:var(--ev-d,0ms)}
+  .ev-flow .ev-pulse{animation:evFlow var(--ev-t,14s) linear infinite}
+  @keyframes evFlow{to{stroke-dashoffset:-1000}}
 }
+/* Charge bar under hero headline */
+.ev-charge{display:block;height:3px;width:min(220px,40%);margin-top:28px;border-radius:3px;background:#1F2833;overflow:hidden}
+.ev-charge i{display:block;height:100%;width:100%;background:#3BE37F;transform-origin:left}
+/* Step lines */
+.ev-step-line{position:relative}
+.ev-step-line::before{content:"";position:absolute;left:0;right:0;top:-1px;height:2px;background:#3BE37F;transform-origin:left}
+/* Hero crossover line field (built from the logo's two curves) */
+.ev-hero-host{position:relative;overflow:hidden;isolation:isolate}
+.ev-flow{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:1}
+.ev-flow path{fill:none;stroke-linecap:round}
+.ev-flow .ev-pulse{stroke-dasharray:70 930}
+/* Datasheet section index + crossover glyph on section lines */
+.ev-idx{font-family:"IBM Plex Mono",ui-monospace,monospace;color:#939CA8}
+.ev-glyph-host{position:relative}
+.ev-glyph{position:absolute;top:-12px;left:max(32px,calc((100% - 1440px)/2 + 32px));width:30px;height:24px;background:#0B0F14;padding:0 4px;pointer-events:none}
+@media(max-width:767px){.ev-glyph{left:16px}}
+/* Spec strip on product cards */
+.ev-spec-host{position:relative;overflow:hidden;border-radius:6px}
+.ev-spec-strip{position:absolute;left:0;right:0;bottom:0;padding:12px 16px;background:rgba(11,15,20,.88);border-top:1px solid #2A3441;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.04em;color:#F2EFE9;transform:translate3d(0,100%,0);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.ev-lift:hover .ev-spec-strip,.ev-lift:focus-within .ev-spec-strip{transform:none}
+/* Header "charge the page" battery */
+.ev-pbat{display:inline-flex;align-items:center;gap:8px;margin-right:4px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:#939CA8;white-space:nowrap}
+.ev-pbat b{position:relative;display:block;width:30px;height:14px;border:1.5px solid #6A7688;border-radius:3px;padding:1.5px}
+.ev-pbat b::after{content:"";position:absolute;right:-4px;top:4px;width:2px;height:5px;border-radius:0 1px 1px 0;background:#6A7688}
+.ev-pbat i{display:block;height:100%;width:100%;background:#3BE37F;border-radius:1px;transform-origin:left;transform:scaleX(var(--ev-p,0))}
+@media(max-width:1180px){.ev-pbat span{display:none}}
+@media(max-width:767px){.ev-pbat{display:none}}
 header.ev-scrolled{background-color:rgba(11,15,20,.985)!important}
 </style>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var root=document.documentElement; root.classList.add('ev-js');
-  /* Header: more solid after scrolling */
-  var hdr=document.querySelector('header.elementor-element');
-  if(hdr){var on=function(){hdr.classList.toggle('ev-scrolled',window.scrollY>8)};on();window.addEventListener('scroll',on,{passive:true})}
-  if(reduce)return;
+  document.documentElement.classList.add('ev-js');
+  var targets=[];
   var main=document.querySelector('main main')||document.querySelector('main');
+  var secs=main?[].slice.call(main.querySelectorAll(':scope > section')):[];
+  /* Header: solid on scroll + "charge the page" battery */
+  var hdr=document.querySelector('header.elementor-element');
+  var bat=null;
+  if(hdr){
+    var act=hdr.querySelector('.elementor-widget-woocommerce-menu-cart');
+    if(act&&act.parentElement){bat=document.createElement('span');bat.className='ev-pbat';bat.setAttribute('aria-hidden','true');bat.innerHTML='<b><i></i></b><span>0%</span>';act.parentElement.insertBefore(bat,act)}
+  }
+  var ticking=false;
+  function onScroll(){
+    var y=window.scrollY,max=Math.max(1,document.documentElement.scrollHeight-window.innerHeight),pc=Math.min(1,y/max);
+    if(hdr)hdr.classList.toggle('ev-scrolled',y>8);
+    if(bat){bat.style.setProperty('--ev-p',pc.toFixed(3));bat.lastChild.textContent=Math.round(pc*100)+'%'}
+    revealPassed();ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+  /* Datasheet index on section eyebrows + crossover glyph on section lines */
+  var total=secs.length-1;
+  var GLYPH='<svg viewBox="2 4 62 56" width="22" height="20" aria-hidden="true"><path d="M8 14C28 14 32 50 52 50" fill="none" stroke="#3BE37F" stroke-width="7" stroke-linecap="round"/><path d="M8 50C28 50 30 18 44 18" fill="none" stroke="#3BE37F" stroke-width="7" stroke-linecap="round"/></svg>';
+  secs.forEach(function(sec,i){
+    if(i===0)return;
+    var eb=sec.querySelector('.ev-label');
+    if(eb&&!eb.dataset.evIdx){eb.dataset.evIdx=1;eb.innerHTML='<span class="ev-idx">'+String(i).padStart(2,'0')+' / '+String(total).padStart(2,'0')+'</span>  ·  '+eb.innerHTML}
+    if(getComputedStyle(sec).borderTopWidth!=='0px'){sec.classList.add('ev-glyph-host');var g=document.createElement('span');g.className='ev-glyph';g.innerHTML=GLYPH;sec.prepend(g)}
+  });
+  /* Product cards: lift + spec strip */
+  document.querySelectorAll('main article').forEach(function(a){
+    a.classList.add('ev-lift');
+    var img=a.querySelector('img'),spec=[].slice.call(a.querySelectorAll('p')).find(function(p){return /kW/.test(p.textContent)});
+    if(img&&spec){var wrap=document.createElement('div');wrap.className='ev-spec-host';img.parentNode.insertBefore(wrap,img);wrap.appendChild(img);var st=document.createElement('div');st.className='ev-spec-strip';st.setAttribute('aria-hidden','true');st.textContent=spec.textContent;wrap.appendChild(st)}
+  });
+  onScroll();
+  if(reduce)return;
+  /* Hero: crossover line field */
+  var hero=secs[0];
+  if(hero){
+    hero.classList.add('ev-hero-host');
+    var W=1440,H=900,paths='';
+    /* Crossover pairs: one curve rising, one falling, crossing like the EVTRON mark */
+    for(var k=0;k<7;k++){
+      var x0=560+k*70,y0=120+k*95,a=150+k*18,x1=x0+900;
+      var up='M'+(x0-400)+' '+(y0+a)+' C'+(x0+180)+' '+(y0+a)+' '+(x0+260)+' '+(y0-a*0.2)+' '+(x0+520)+' '+(y0-a*0.2)+' S'+(x1)+' '+(y0-a)+' '+(x1+300)+' '+(y0-a);
+      var dn='M'+(x0-400)+' '+(y0-a*0.6)+' C'+(x0+180)+' '+(y0-a*0.6)+' '+(x0+260)+' '+(y0+a*0.6)+' '+(x0+520)+' '+(y0+a*0.6)+' S'+(x1)+' '+(y0+a)+' '+(x1+300)+' '+(y0+a);
+      [up,dn].forEach(function(d,j){
+        paths+='<path d="'+d+'" stroke="#1A2230" stroke-width="1" class="ev-base"/>';
+        if((k+j)%3===0)paths+='<path pathLength="1000" d="'+d+'" stroke="#3BE37F" stroke-opacity=".7" stroke-width="1.5" class="ev-pulse" style="--ev-t:'+(9+(k%4)*2.5)+'s;stroke-dashoffset:'+(k*137+j*400)+'"/>';
+      });
+    }
+    var svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+    svg.setAttribute('class','ev-flow');svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.setAttribute('preserveAspectRatio','xMidYMid slice');svg.setAttribute('aria-hidden','true');svg.innerHTML=paths;
+    hero.prepend(svg);
+  }
   /* Hero headline: word-by-word reveal + charge bar */
   var h1=main&&main.querySelector('h1');
   if(h1&&!h1.dataset.evSplit){
-    h1.dataset.evSplit=1;
-    var words=h1.textContent.trim().split(/\s+/);
+    h1.dataset.evSplit=1;var words=h1.textContent.trim().split(/\s+/);
     h1.setAttribute('aria-label',h1.textContent.trim());
     h1.innerHTML=words.map(function(w,i){return '<span class="ev-word" aria-hidden="true" style="--ev-d:'+(120+i*110)+'ms">'+w+'</span>'}).join(' ');
     var line2=h1.nextElementSibling;
     if(line2){line2.classList.add('ev-fade-in');line2.style.setProperty('--ev-d',(120+words.length*110+80)+'ms');
       var bar=document.createElement('span');bar.className='ev-charge';bar.setAttribute('aria-hidden','true');bar.innerHTML='<i style="--ev-d:'+(120+words.length*110+300)+'ms"></i>';line2.after(bar)}
   }
-  /* Scroll reveal: direct content blocks of each section below the fold */
+  /* Reveal targets: blocks below the fold. Fail-safe: anything scrolled to OR past is revealed. */
   var vh=window.innerHeight;
-  var targets=[];
-  (main?main.querySelectorAll(':scope > section'):[]).forEach(function(sec,si){
-    if(si===0)return;
-    var inner=sec.firstElementChild; if(!inner)return;
+  secs.forEach(function(sec,si){
+    if(si===0)return;var inner=[].slice.call(sec.children).find(function(c){return c.tagName==='DIV'&&!c.classList.contains('ev-glyph')});if(!inner)return;
     [].forEach.call(inner.children,function(block){
       var kids=block.children.length>1&&block.children.length<=6&&getComputedStyle(block).display==='grid'?[].slice.call(block.children):[block];
       kids.forEach(function(k,i){if(k.getBoundingClientRect().top>vh*0.9){k.classList.add('ev-rv');k.style.setProperty('--ev-d',(i*90)+'ms');targets.push(k)}});
     });
   });
-  /* "How it works" step lines fill in sequence */
-  var how=main&&main.querySelectorAll(':scope > section')[2];
-  var steps=how?how.querySelector(':scope > div > div:nth-child(2)'):null;
+  var how=secs[2],steps=how?how.querySelector(':scope > div > div:nth-child(2)'):null;
   if(steps){[].forEach.call(steps.children,function(s,i){s.classList.add('ev-step-line');s.style.setProperty('--ev-d',(250+i*220)+'ms');targets.push(s)})}
-  /* Product cards lift */
-  document.querySelectorAll('main article').forEach(function(a){a.classList.add('ev-lift')});
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('ev-in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:0.08});
-    targets.forEach(function(t){io.observe(t)});
-  }else{targets.forEach(function(t){t.classList.add('ev-in')})}
+  function revealPassed(){
+    if(!targets||!targets.length)return;var lim=window.innerHeight*0.92;
+    targets=targets.filter(function(t){if(t.getBoundingClientRect().top<lim){t.classList.add('ev-in');return false}return true});
+  }
+  revealPassed();
 });
 </script>

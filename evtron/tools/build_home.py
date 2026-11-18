@@ -47,8 +47,8 @@ def section(cid, children, extra=None):
     return div(cid, [div(cid + ' inner', children, classes=['ev-container'])], classes=['ev-section'] + (extra or []), tag='section')
 
 
-def head(cid, title, intro=None):
-    kids = [h(cid + ' title', title, 'h2', ['ev-h2'])]
+def head(cid, title, intro=None, eyebrow=None):
+    kids = ([p(cid + ' eyebrow', eyebrow, ['ev-label'], 'color: var(--ev-accent);')] if eyebrow else []) + [h(cid + ' title', title, 'h2', ['ev-h2'])]
     if intro: kids.append(p(cid + ' intro', intro, ['ev-lead']))
     return div(cid, kids, classes=['ev-section-head'])
 
@@ -110,27 +110,41 @@ for name, price, mid, url, spec, blurb, tag in PRODUCTS:
     ], classes=['ev-card'], tag='article'))
 
 chargers = section('Chargers', [
-    head('Chargers head', 'Three chargers. One clear price each.', 'Every price includes a standard installation. Compare them side by side, or let the receipt above do the maths.'),
+    head('Chargers head', 'Three chargers. One clear price each.', 'Every price includes a standard installation. Compare them side by side, or let the receipt above do the maths.', 'The range'),
     div('Charger cards', cards, 'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); gap: 16px; }'),
 ])
 
 # ---------- 3. How it works ----------
-steps = [('01', 'Order online', 'Choose your charger, finish and cable. Pay in full or in instalments.'),
-         ('02', 'Quick home check', 'Send a few photos so we can confirm a standard installation.'),
-         ('03', 'Installation day', 'Fitted, tested and certified by a qualified electrician.'),
-         ('04', 'Charge off-peak', 'Schedule charging for your tariff’s cheaper hours.')]
-step_cells = [div(f'Step {n}', [p(f'Step {n} number', n, None, MONO + 'color: var(--ev-accent); font-size: 13px;'),
+steps = [('01', 'Order online', 'Choose your charger, finish and cable. Pay in full or in instalments.', 'fa-solid fa-cart-shopping'),
+         ('02', 'Quick home check', 'Send a few photos so we can confirm a standard installation.', 'fa-regular fa-camera'),
+         ('03', 'Installation day', 'Fitted, tested and certified by a qualified electrician.', 'fa-solid fa-screwdriver-wrench'),
+         ('04', 'Charge off-peak', 'Schedule charging for your tariff’s cheaper hours.', 'fa-regular fa-moon')]
+
+
+def icon(cid, value, size=20, color='var(--ev-text)'):
+    return el('e-svg', cid, {'svg': {'value': value, 'library': value.split()[0]}}, f'width: {size}px; height: {size}px; color: {color};')
+
+
+def icon_tile(cid, value, accent=False):
+    return div(cid, [icon(cid + ' svg', value, 20, 'var(--ev-accent)' if accent else 'var(--ev-text)')],
+               'width: 48px; height: 48px; min-width: 48px; max-width: 48px; flex: 0 0 48px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background-color: var(--ev-s2); border: 1px solid var(--ev-divider); flex-shrink: 0;')
+
+
+step_cells = [div(f'Step {n}', [div(f'Step {n} top', [icon_tile(f'Step {n} icon', ic), p(f'Step {n} number', n, None, MONO + 'color: var(--ev-accent); font-size: 13px;')],
+                                    'display: flex; justify-content: space-between; align-items: center;'),
                                 h(f'Step {n} title', t, 'h3', ['ev-h3'], 'margin-top: 24px;'),
                                 p(f'Step {n} text', d, ['ev-body'], 'margin-top: 8px;')],
-                  'padding-top: 24px; border-top: 1px solid var(--ev-control);') for n, t, d in steps]
+                  'padding-top: 28px; border-top: 1px solid var(--ev-control);') for n, t, d, ic in steps]
 
 def checklist(cid, items, mark):
-    rows = [div(f'{cid} {i+1}', [p(f'{cid} {i+1} mark', mark, None, MONO + 'color: ' + ('var(--ev-accent)' if mark == '✓' else 'var(--ev-muted)') + '; width: 20px; flex-shrink: 0;'),
-                                 p(f'{cid} {i+1} text', t, ['ev-body'])], 'display: flex; gap: 12px;') for i, t in enumerate(items)]
-    return div(cid, rows, 'display: flex; flex-direction: column; gap: 14px;')
+    inc = mark == '✓'
+    rows = [div(f'{cid} {i+1}', [div(f'{cid} {i+1} mark', [icon(f'{cid} {i+1} svg', 'fa-solid fa-check' if inc else 'fa-solid fa-plus', 10, 'var(--ev-accent-ink)' if inc else 'var(--ev-text)')],
+                                     'width: 22px; height: 22px; min-width: 22px; max-width: 22px; flex: 0 0 22px; display: flex; align-items: center; justify-content: center; border-radius: 999px; margin-top: 2px; ' + ('background-color: var(--ev-accent);' if inc else 'border: 1px solid var(--ev-control);')),
+                                 p(f'{cid} {i+1} text', t, ['ev-body'])], 'display: flex; gap: 14px; align-items: flex-start;') for i, t in enumerate(items)]
+    return div(cid, rows, 'display: flex; flex-direction: column; gap: 16px;')
 
 how = section('How', [
-    head('How head', 'How it works', 'From order to first charge in four steps. If your home needs more than a standard installation, we tell you the cost first and you decide.'),
+    head('How head', 'From order to first charge', 'From order to first charge in four steps. If your home needs more than a standard installation, we tell you the cost first and you decide.', 'How it works'),
     div('Steps', step_cells, 'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 32px; } @media(--mobile){ grid-template-columns: minmax(0, 1fr); gap: 32px; }'),
     div('Price includes', [
         div('Included col', [p('Included label', 'Included in the price', ['ev-label']),
@@ -144,7 +158,7 @@ how = section('How', [
 
 # ---------- 4. Cost to charge ----------
 costs = section('Costs', [
-    head('Costs head', 'What a charge costs at home', 'Use your own numbers. We don’t assume a tariff: check your bill for your off-peak rate.'),
+    head('Costs head', 'What a charge costs at home', 'Use your own numbers. We don’t assume a tariff: check your bill for your off-peak rate.', 'Running costs'),
     div('Calculator', [
         div('Calculator inputs', [p('Calc fallback', 'Example: a 60 kWh battery charged from 20% to 80% uses 36 kWh. At 8.5p per kWh that is about £3.06, and takes about 5 hours 9 minutes on a 7kW charger.', ['ev-body'])],
             'display: flex; flex-direction: column; gap: 24px;'),
@@ -164,17 +178,29 @@ FAQ = [('Will it work with my car?', 'All three chargers use Type 2, which most 
        ('Can I pay in instalments?', 'Yes. You can pay in full, or spread the cost with Klarna or PayPal Pay in 3, subject to status.')]
 items = []
 for i, (q, a) in enumerate(FAQ):
-    items.append(el('e-accordion-item', f'FAQ {i+1}', None, 'border-bottom: 1px solid var(--ev-divider);', None, [
-        el('e-accordion-item-header', f'FAQ {i+1} header', None, 'padding-top: 24px; padding-bottom: 24px; padding-left: 0; padding-right: 0; gap: 24px;', None, [
-            el('e-accordion-item-title', f'FAQ {i+1} title', None, None, None, [p(f'FAQ {i+1} question', q, None, 'color: var(--ev-text); font-weight: 600; font-size: 18px; line-height: 1.4;')]),
-            el('e-accordion-item-icon', f'FAQ {i+1} icon', None, 'width: 24px; color: var(--ev-accent);')]),
-        el('e-accordion-item-content', f'FAQ {i+1} content', None, 'padding-top: 0; padding-bottom: 24px; padding-left: 0; padding-right: 40px;', None, [p(f'FAQ {i+1} answer', a, ['ev-body'], 'max-width: 64ch;')])]))
+    n = f'{i+1:02d}'
+    items.append(el('e-accordion-item', f'FAQ {i+1}', None, 'border-bottom: 1px solid var(--ev-divider); border-radius: var(--ev-r-md);', None, [
+        el('e-accordion-item-header', f'FAQ {i+1} header', None, 'padding-top: 24px; padding-bottom: 24px; padding-left: 24px; padding-right: 24px; gap: 24px; @media(--mobile){ padding-left: 16px; padding-right: 16px; gap: 16px; }', None, [
+            el('e-accordion-item-title', f'FAQ {i+1} title', None, None, None, [div(f'FAQ {i+1} q row', [
+                p(f'FAQ {i+1} index', n, None, MONO + 'font-size: 13px; color: var(--ev-muted); width: 32px; flex-shrink: 0; padding-top: 3px;'),
+                p(f'FAQ {i+1} question', q, None, 'color: var(--ev-text); font-weight: 600; font-size: 18px; line-height: 1.4; @media(--mobile){ font-size: 16px; }')],
+                'display: flex; align-items: flex-start; gap: 16px;')]),
+            el('e-accordion-item-icon', f'FAQ {i+1} icon', None, 'width: 32px; height: 32px; min-width: 32px; max-width: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid var(--ev-control); border-radius: 999px; color: var(--ev-text);', None,
+               [el('e-svg', f'FAQ {i+1} plus', {'svg': {'value': 'fa-solid fa-plus', 'library': 'fa-solid'}}, 'width: 12px; height: 12px;')])]),
+        el('e-accordion-item-content', f'FAQ {i+1} content', None, 'padding-top: 0; padding-bottom: 28px; padding-left: 72px; padding-right: 64px; @media(--mobile){ padding-left: 16px; padding-right: 16px; }', None,
+           [p(f'FAQ {i+1} answer', a, ['ev-body'], 'max-width: 62ch;')])]))
 faqs = section('FAQs', [div('FAQ grid', [
-    div('FAQ side', [h('FAQs title', 'Questions people ask first', 'h2', ['ev-h2']),
-                     p('FAQs intro', 'Straight answers before you choose. More detail on the full FAQs page.', ['ev-lead'], 'margin-top: 16px;'),
-                     btn('FAQs more', 'See all FAQs', '/faqs/', 'ghost', 'margin-top: 32px;')],
-        'display: flex; flex-direction: column; align-items: flex-start;'),
-    el('e-accordion', 'FAQ list', {'default_state': 'all_collapsed', 'max_expanded': 'multiple', 'show_icon': True, 'faq_schema': True}, 'border-top: 1px solid var(--ev-divider);', None, items),
+    div('FAQ side', [p('FAQs eyebrow', 'FAQs', ['ev-label'], 'color: var(--ev-accent);'),
+                     h('FAQs title', 'Questions people ask first', 'h2', ['ev-h2'], 'margin-top: 16px;'),
+                     p('FAQs intro', 'Straight answers before you choose. Open one at a time.', ['ev-lead'], 'margin-top: 16px;'),
+                     div('Help card', [p('Help title', 'Still have a question?', None, 'color: var(--ev-text); font-weight: 600; font-size: 17px;'),
+                                       p('Help text', 'Email us and a person will reply, usually within one working day [to be confirmed].', ['ev-small'], 'margin-top: 8px;'),
+                                       p('Help email', '<a href="mailto:sales@evtron.co.uk">sales@evtron.co.uk</a>', None, MONO + 'font-size: 14px; color: var(--ev-accent); margin-top: 16px;'),
+                                       div('Help buttons', [btn('FAQs more', 'See all FAQs', '/faqs/', 'ghost'), btn('Help quote', 'Get a quote', '/get-a-quote/', 'ghost')],
+                                           'display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px;')],
+                         'margin-top: 40px; padding: 24px; background-color: var(--ev-s1); border: 1px solid var(--ev-divider); border-radius: var(--ev-r-md);')],
+        'display: flex; flex-direction: column; position: sticky; top: 120px; @media(--tablet){ position: static; }'),
+    el('e-accordion', 'FAQ list', {'default_state': 'first_expanded', 'max_expanded': 'one', 'show_icon': True, 'icon_rotation': 45, 'faq_schema': True}, 'display: flex; flex-direction: column; gap: 8px;', None, items),
 ], 'display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 80px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 40px; }')],
     ['ev-divider-top'])
 
