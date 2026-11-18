@@ -1,0 +1,71 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:transparent}svg{display:block}</style></head><body>
+<!-- Illustrated render of the EVTRON tethered charger (Mythos Black, emerald LED). Placeholder until the client's product photography arrives. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A4049"/><stop offset=".35" stop-color="#1C2026"/><stop offset=".75" stop-color="#101317"/><stop offset="1" stop-color="#07090B"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#05070A"/><stop offset="1" stop-color="#1A1E24"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#20252C"/><stop offset=".5" stop-color="#14181D"/><stop offset="1" stop-color="#0D1013"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity=".0"/><stop offset=".45" stop-color="#fff" stop-opacity=".16"/><stop offset=".55" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9AF5BE" stop-opacity=".55"/><stop offset=".2" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="led" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A3FFC1"/><stop offset=".5" stop-color="#55E68B"/><stop offset="1" stop-color="#22B865"/>
+    </linearGradient>
+    <filter id="glow" x="-200%" y="-20%" width="500%" height="140%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="30"/></filter>
+    <linearGradient id="cable" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2C3138"/><stop offset=".5" stop-color="#15181C"/><stop offset="1" stop-color="#090B0D"/>
+    </linearGradient>
+    <linearGradient id="plug" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A4049"/><stop offset="1" stop-color="#0E1114"/>
+    </linearGradient>
+    <radialGradient id="floor" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#55E68B" stop-opacity=".35"/><stop offset="1" stop-color="#55E68B" stop-opacity="0"/></radialGradient>
+  </defs>
+  <!-- emerald light spill on wall -->
+  <ellipse cx="470" cy="560" rx="300" ry="420" fill="#55E68B" opacity=".10" filter="url(#soft)"/>
+  <!-- cable: from bottom of unit, looping down and back up to holster -->
+  <path d="M470 900 C470 1040 300 1110 230 1060 C150 1000 190 870 320 880 C470 892 640 960 700 900 C745 855 742 760 742 700" fill="none" stroke="#050607" stroke-width="58" stroke-linecap="round" opacity=".55" transform="translate(10 18)" filter="url(#glow)"/>
+  <path d="M470 900 C470 1040 300 1110 230 1060 C150 1000 190 870 320 880 C470 892 640 960 700 900 C745 855 742 760 742 700" fill="none" stroke="url(#cable)" stroke-width="46" stroke-linecap="round"/>
+  <path d="M470 900 C470 1040 300 1110 230 1060 C150 1000 190 870 320 880 C470 892 640 960 700 900 C745 855 742 760 742 700" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="6" stroke-linecap="round" transform="translate(-8 -10)"/>
+  <!-- drop shadow of unit -->
+  <rect x="300" y="200" width="360" height="680" rx="96" fill="#000" opacity=".55" filter="url(#soft)" transform="translate(24 40)"/>
+  <!-- unit side thickness -->
+  <rect x="300" y="170" width="372" height="700" rx="100" fill="url(#side)"/>
+  <!-- unit body -->
+  <rect x="288" y="160" width="372" height="700" rx="100" fill="url(#body)"/>
+  <rect x="288" y="160" width="372" height="700" rx="100" fill="none" stroke="url(#rim)" stroke-width="2.5"/>
+  <!-- front face panel -->
+  <rect x="320" y="196" width="308" height="628" rx="76" fill="url(#face)"/>
+  <rect x="320" y="196" width="308" height="628" rx="76" fill="none" stroke="#fff" stroke-opacity=".06" stroke-width="2"/>
+  <!-- gloss sweep -->
+  <path d="M320 272 C320 230 352 196 396 196 L470 196 L380 824 L396 824 C352 824 320 790 320 748 Z" fill="url(#gloss)"/>
+  <!-- LED light bar with glow -->
+  <rect x="464" y="300" width="20" height="300" rx="10" fill="#55E68B" opacity=".9" filter="url(#glow)"/>
+  <rect x="464" y="300" width="20" height="300" rx="10" fill="url(#led)"/>
+  <rect x="469" y="310" width="6" height="280" rx="3" fill="#fff" opacity=".55"/>
+  <!-- RFID icon -->
+  <g transform="translate(474 690)" fill="none" stroke="#6C7682" stroke-width="5" stroke-linecap="round">
+    <path d="M-10 -16 A22 22 0 0 1 -10 16"/><path d="M2 -26 A36 36 0 0 1 2 26"/><path d="M14 -36 A50 50 0 0 1 14 36"/>
+  </g>
+  <!-- EVTRON crossover mark -->
+  <g transform="translate(444 760) scale(.95)" stroke="#55E68B" stroke-width="5" fill="none" stroke-linecap="round" opacity=".9">
+    <path d="M8 14C28 14 32 50 52 50"/><path d="M8 50C28 50 30 18 44 18"/>
+  </g>
+  <!-- holster + Type 2 plug on the right side -->
+  <rect x="660" y="560" width="120" height="160" rx="34" fill="url(#plug)"/>
+  <rect x="660" y="560" width="120" height="160" rx="34" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="2"/>
+  <circle cx="720" cy="630" r="42" fill="#0A0C0F" stroke="#2C323A" stroke-width="6"/>
+  <g fill="#3A4049"><circle cx="704" cy="616" r="7"/><circle cx="736" cy="616" r="7"/><circle cx="720" cy="606" r="5"/><circle cx="704" cy="644" r="7"/><circle cx="736" cy="644" r="7"/><circle cx="720" cy="630" r="7"/><circle cx="720" cy="656" r="5"/></g>
+  <!-- floor reflection glow -->
+  <ellipse cx="470" cy="1180" rx="320" ry="40" fill="url(#floor)"/>
+</svg>
+</body></html>

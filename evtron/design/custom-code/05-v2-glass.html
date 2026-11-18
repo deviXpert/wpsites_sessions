@@ -1,0 +1,141 @@
+<!-- EVTRON V2: premium emerald glassmorphism layer. Elementor > Custom Code > "EVTRON V2" (Home V2 page only).
+     Works with Global Classes v2-hero / v2-glass / v2-float / v2-chip / v2-btn-primary / v2-btn-glass / v2-display / v2-lead / v2-label.
+     Hierarchy: solid deep background > glass panels (a few, deliberate) > transparent content. Motion: transform/opacity only. -->
+<style>
+:root{--v2-bg:#07110E;--v2-bg2:#0C1914;--v2-glass:rgba(255,255,255,.055);--v2-glass-h:rgba(255,255,255,.095);--v2-border:rgba(190,255,215,.16);
+  --v2-accent:#55E68B;--v2-accent-soft:#A3FFC1;--v2-text:#F5FFF8;--v2-text2:#A1B5A8;--v2-blur:20px;--v2-radius:22px}
+@media(max-width:767px){:root{--v2-blur:12px}}
+html.ev-v2,html.ev-v2 body,html.ev-v2 #page,html.ev-v2 .site,html.ev-v2 .site-content,html.ev-v2 #content{background-color:var(--v2-bg)!important}
+html.ev-v2 main section{background-color:var(--v2-bg)!important}
+
+/* ---------- Floating glass navbar ---------- */
+html.ev-v2 .elementor-location-header{position:fixed!important;left:0;right:0;top:16px;z-index:100;pointer-events:none}
+html.ev-v2.admin-bar-on .elementor-location-header{top:48px}
+html.ev-v2 header.elementor-element{pointer-events:auto;width:calc(100% - 32px);max-width:1408px;margin:0 auto;border-radius:20px!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03))!important;background-color:rgba(7,17,14,.55)!important;
+  -webkit-backdrop-filter:blur(22px) saturate(160%);backdrop-filter:blur(22px) saturate(160%);
+  border:1px solid var(--v2-border)!important;box-shadow:0 18px 50px -20px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.08);transition:background-color .3s ease,box-shadow .3s ease,transform .3s ease}
+html.ev-v2 header.elementor-element > div{min-height:64px!important;padding-left:20px!important;padding-right:12px!important}
+html.ev-v2 header.ev-scrolled{background-color:rgba(7,17,14,.78)!important;box-shadow:0 20px 60px -20px rgba(0,0,0,.75),inset 0 1px 0 rgba(255,255,255,.08)}
+html.ev-v2 header .elementor-nav-menu--main .elementor-item{color:var(--v2-text2)!important;border-radius:999px;transition:color .2s ease,background-color .2s ease}
+html.ev-v2 header .elementor-nav-menu--main .elementor-item:hover{color:var(--v2-text)!important;background-color:rgba(255,255,255,.06)}
+html.ev-v2 .elementor-nav-menu--dropdown{background:rgba(9,20,16,.82)!important;-webkit-backdrop-filter:blur(22px) saturate(160%);backdrop-filter:blur(22px) saturate(160%);
+  border:1px solid var(--v2-border)!important;border-radius:16px!important;box-shadow:0 24px 60px -24px rgba(0,0,0,.7);overflow:hidden;padding:6px 0}
+html.ev-v2 .elementor-nav-menu--dropdown a{background:transparent!important;color:var(--v2-text2)!important}
+html.ev-v2 .elementor-nav-menu--dropdown a:hover{background:rgba(85,230,139,.08)!important;color:var(--v2-text)!important}
+html.ev-v2 header .ev-btn-primary{border-radius:999px!important;background:linear-gradient(135deg,#72F3A0,#28B967)!important;border:0!important;color:#06150C!important}
+html.ev-v2 header .elementor-menu-cart__toggle .elementor-button{border-radius:999px!important;border-color:var(--v2-border)!important;background:rgba(255,255,255,.04)!important}
+
+/* ---------- Hero: cinematic lighting ---------- */
+html.ev-v2 .v2-hero{isolation:isolate}
+html.ev-v2 .v2-hero::before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(ellipse 55% 60% at 72% 46%,rgba(56,220,125,.20),transparent 62%),
+    radial-gradient(ellipse 40% 45% at 74% 40%,rgba(163,255,193,.10),transparent 60%),
+    radial-gradient(ellipse 50% 40% at 12% 8%,rgba(40,185,103,.10),transparent 60%),
+    radial-gradient(ellipse 80% 50% at 50% 115%,rgba(12,25,20,1),transparent 70%),
+    linear-gradient(180deg,#07110E 0%,#081410 60%,#07110E 100%)}
+html.ev-v2 .v2-hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;z-index:-1;
+  background:linear-gradient(90deg,transparent,rgba(163,255,193,.35) 50%,transparent)}
+.v2-aurora{position:absolute;inset:-20% -10% 0 -10%;z-index:-1;pointer-events:none;overflow:hidden}
+.v2-aurora i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;will-change:transform}
+.v2-aurora i:nth-child(1){width:42vw;height:42vw;left:50%;top:10%;background:radial-gradient(circle,rgba(85,230,139,.32),transparent 65%)}
+.v2-aurora i:nth-child(2){width:30vw;height:30vw;left:66%;top:44%;background:radial-gradient(circle,rgba(40,185,103,.30),transparent 65%)}
+.v2-aurora i:nth-child(3){width:26vw;height:26vw;left:4%;top:-6%;background:radial-gradient(circle,rgba(163,255,193,.12),transparent 65%)}
+.v2-beam{position:absolute;left:50%;top:-10%;width:34%;height:120%;transform:translateX(-50%);pointer-events:none;z-index:0;
+  background:linear-gradient(180deg,rgba(163,255,193,.10),rgba(85,230,139,.05) 45%,transparent 75%);clip-path:polygon(38% 0,62% 0,100% 100%,0 100%);filter:blur(6px)}
+.v2-floor{position:absolute;left:50%;bottom:4%;width:70%;height:60px;transform:translateX(-50%);z-index:0;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(85,230,139,.28),transparent 70%);filter:blur(8px)}
+@media (prefers-reduced-motion:no-preference){
+  .v2-aurora i:nth-child(1){animation:v2a 22s ease-in-out infinite alternate}
+  .v2-aurora i:nth-child(2){animation:v2b 26s ease-in-out infinite alternate}
+  .v2-aurora i:nth-child(3){animation:v2c 30s ease-in-out infinite alternate}
+  @keyframes v2a{to{transform:translate3d(-6vw,4vw,0) scale(1.08)}}
+  @keyframes v2b{to{transform:translate3d(4vw,-5vw,0) scale(.9)}}
+  @keyframes v2c{to{transform:translate3d(6vw,3vw,0)}}
+  .v2-beam{animation:v2beam 7s ease-in-out infinite}
+  @keyframes v2beam{50%{opacity:.6}}
+}
+
+/* ---------- Glass surfaces (deliberate, not everywhere) ---------- */
+html.ev-v2 .v2-glass,html.ev-v2 .v2-float{
+  background:linear-gradient(150deg,rgba(255,255,255,.085) 0%,rgba(255,255,255,.035) 40%,rgba(255,255,255,.02) 100%)!important;
+  -webkit-backdrop-filter:blur(var(--v2-blur)) saturate(150%);backdrop-filter:blur(var(--v2-blur)) saturate(150%);
+  border:1px solid var(--v2-border)!important;
+  box-shadow:0 12px 40px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.09),inset 0 0 0 1px rgba(255,255,255,.015);
+  transition:background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease}
+html.ev-v2 .v2-float{border-radius:18px!important;width:max-content!important;max-width:260px}
+html.ev-v2 .v2-float::before,html.ev-v2 .v2-glass::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(120deg,rgba(255,255,255,.10),rgba(255,255,255,0) 32%)}
+html.ev-v2 .v2-glass{position:relative}
+html.ev-v2 .v2-float:hover{background:var(--v2-glass-h)!important;border-color:rgba(120,255,170,.32)!important;box-shadow:0 20px 55px rgba(0,0,0,.3),0 0 30px rgba(85,230,139,.07)}
+html.ev-v2 .v2-chip{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+html.ev-v2 .v2-chip:first-child{color:var(--v2-accent-soft)!important}
+
+/* ---------- Type ---------- */
+html.ev-v2 .v2-hero h1.v2-display{background:linear-gradient(180deg,#FFFFFF 0%,#F5FFF8 55%,#CFEADB 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+html.ev-v2 .v2-hero h1.v2-display .ev-word{background:inherit;-webkit-background-clip:text;background-clip:text}
+html.ev-v2 .v2-hero p.v2-display{background:linear-gradient(90deg,#A3FFC1 0%,#55E68B 60%,#2CC072 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+
+/* ---------- Buttons ---------- */
+html.ev-v2 .v2-btn-primary{background:linear-gradient(135deg,#72F3A0,#28B967)!important;color:#06150C!important;box-shadow:0 10px 30px -12px rgba(85,230,139,.45),inset 0 1px 0 rgba(255,255,255,.35);
+  transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s ease}
+html.ev-v2 .v2-btn-primary:hover{box-shadow:0 14px 36px -10px rgba(85,230,139,.55),inset 0 1px 0 rgba(255,255,255,.4)}
+html.ev-v2 .v2-btn-glass{-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:transform .25s cubic-bezier(.2,.7,.2,1),background-color .25s ease,border-color .25s ease}
+html.ev-v2 .v2-btn-glass:hover{background-color:rgba(255,255,255,.1)!important;border-color:rgba(120,255,170,.4)!important}
+html.ev-v2 .v2-btn-primary:focus-visible,html.ev-v2 .v2-btn-glass:focus-visible{outline:2px solid var(--v2-accent-soft)!important;outline-offset:4px}
+
+/* ---------- Parallax + entrance ---------- */
+html.ev-v2 .v2-px{transform:translate3d(var(--px,0px),var(--py,0px),0);transition:transform .6s cubic-bezier(.2,.7,.2,1);will-change:transform}
+@media (prefers-reduced-motion:no-preference){
+  html.ev-v2 .v2-in{opacity:0;transform:translate3d(0,22px,0);animation:v2in .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0ms)}
+  html.ev-v2 .v2-in-scale{opacity:0;transform:scale(.96);animation:v2scale 1.2s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0ms)}
+  @keyframes v2in{to{opacity:1;transform:none}}
+  @keyframes v2scale{to{opacity:1;transform:none}}
+  .v2-led-pulse{animation:v2led 2.2s ease-in-out infinite}
+  @keyframes v2led{50%{opacity:.35}}
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){html.ev-v2 .v2-glass,html.ev-v2 .v2-float,html.ev-v2 header.elementor-element{background:#0C1914!important}}
+@media (forced-colors:active){.v2-aurora,.v2-beam,.v2-floor{display:none}}
+@media(max-width:767px){html.ev-v2 header.elementor-element > div{padding-left:14px!important;padding-right:8px!important}html.ev-v2 .elementor-location-header{top:10px}
+  html.ev-v2 .v2-chip{font-size:10.5px!important;letter-spacing:.04em!important;padding:7px 12px!important;border-radius:14px!important}}
+html.ev-v2 header .elementor-menu-toggle{border:1px solid var(--v2-border)!important;border-radius:999px!important;background:rgba(255,255,255,.04)!important;color:var(--v2-text)!important}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var root=document.documentElement;root.classList.add('ev-v2');
+  if(document.body.classList.contains('admin-bar'))root.classList.add('admin-bar-on');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hero=document.querySelector('.v2-hero');if(!hero)return;
+  var aur=document.createElement('div');aur.className='v2-aurora';aur.setAttribute('aria-hidden','true');aur.innerHTML='<i></i><i></i><i></i>';hero.prepend(aur);
+  var img=hero.querySelector('img');var visual=img&&img.parentElement;
+  if(visual){var beam=document.createElement('div');beam.className='v2-beam';beam.setAttribute('aria-hidden','true');visual.prepend(beam);
+    var floor=document.createElement('div');floor.className='v2-floor';floor.setAttribute('aria-hidden','true');visual.appendChild(floor)}
+  var led=[].slice.call(hero.querySelectorAll('.v2-float div')).find(function(d){return getComputedStyle(d).backgroundColor==='rgb(85, 230, 139)'&&d.offsetWidth<=12});if(led)led.classList.add('v2-led-pulse');
+  if(reduce)return;
+  /* Entrance */
+  var copy=hero.querySelector('h1').parentElement;
+  [].forEach.call(copy.children,function(c,i){if(c.tagName!=='H1'){c.classList.add('v2-in');c.style.setProperty('--d',(i*110)+'ms')}});
+  if(img){img.classList.add('v2-in-scale');img.style.setProperty('--d','200ms')}
+  var floats=[].slice.call(hero.querySelectorAll('.v2-float'));
+  floats.forEach(function(f,i){f.classList.add('v2-in');f.style.setProperty('--d',(700+i*180)+'ms')});
+  var rail=hero.querySelector('.v2-glass');if(rail){rail.classList.add('v2-in');rail.style.setProperty('--d','900ms')}
+  /* Parallax (mouse on desktop, scroll everywhere) — wrappers so entrance and parallax transforms don't fight */
+  function wrap(el){var w=document.createElement('div');w.className='v2-px';w.style.cssText='position:absolute;inset:0;pointer-events:none;z-index:3';return w}
+  var layers=[];
+  if(img){var w=document.createElement('div');w.className='v2-px';w.style.cssText='position:relative;z-index:1;width:100%;display:flex;justify-content:center';img.parentNode.insertBefore(w,img);w.appendChild(img);layers.push([w,10,0.06])}
+  floats.forEach(function(f,i){var w=wrap();f.parentNode.insertBefore(w,f);w.appendChild(f);f.style.pointerEvents='auto';layers.push([w,-(16+i*6),-0.03-(i*0.015)])});
+  var mx=0,my=0,sy=0,raf=null;
+  function apply(){layers.forEach(function(l){l[0].style.setProperty('--px',(mx*l[1]).toFixed(1)+'px');l[0].style.setProperty('--py',(my*l[1]+sy*l[2]*-1).toFixed(1)+'px')});raf=null}
+  if(window.matchMedia('(pointer:fine)').matches){hero.addEventListener('mousemove',function(e){var r=hero.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5;if(!raf)raf=requestAnimationFrame(apply)});
+    hero.addEventListener('mouseleave',function(){mx=my=0;if(!raf)raf=requestAnimationFrame(apply)})}
+  window.addEventListener('scroll',function(){sy=Math.min(window.scrollY,900);if(!raf)raf=requestAnimationFrame(apply)},{passive:true});
+  /* Magnetic CTAs */
+  if(window.matchMedia('(pointer:fine)').matches){
+    hero.querySelectorAll('.v2-btn-primary,.v2-btn-glass').forEach(function(b){
+      b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;b.style.transform='translate3d('+(x*8).toFixed(1)+'px,'+(y*6-2).toFixed(1)+'px,0)'});
+      b.addEventListener('mouseleave',function(){b.style.transform=''});
+    });
+  }
+});
+</script>

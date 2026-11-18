@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded',function(){
   if(reduce)return;
   /* Hero: charging dial (LED-ring inspired) behind the price receipt */
   var hero=secs[0];
-  if(hero){
+  if(hero&&!hero.classList.contains('v2-hero')){
     hero.classList.add('ev-hero-host');
     var cx=1060,cy=470,R=430,C=2*Math.PI*R,ticks='';
     for(var t=0;t<72;t++){var ang=(-225+t*(270/71))*Math.PI/180,long=t%9===0,r1=R+18,r2=R+(long?44:30);
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded',function(){
     h1.setAttribute('aria-label',h1.textContent.trim());
     h1.innerHTML=words.map(function(w,i){return '<span class="ev-word" aria-hidden="true" style="--ev-d:'+(120+i*110)+'ms">'+w+'</span>'}).join(' ');
     var line2=h1.nextElementSibling;
-    if(line2){line2.classList.add('ev-fade-in');line2.style.setProperty('--ev-d',(120+words.length*110+80)+'ms');
+    if(line2&&!h1.closest('.v2-hero')){line2.classList.add('ev-fade-in');line2.style.setProperty('--ev-d',(120+words.length*110+80)+'ms');
       var bar=document.createElement('span');bar.className='ev-charge';bar.setAttribute('aria-hidden','true');bar.innerHTML='<i style="--ev-d:'+(120+words.length*110+300)+'ms"></i>';line2.after(bar)}
   }
   /* Reveal targets: blocks below the fold. Fail-safe: anything scrolled to OR past is revealed. */
