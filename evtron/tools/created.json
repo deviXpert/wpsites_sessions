@@ -24,10 +24,11 @@
  },
  "header": 85,
  "footer": 86,
- "home": 95,
+ "home": 141,
  "snippet_home": 99,
  "snippet_head": 44,
  "snippet_motion": 112,
  "home_v2": 141,
- "snippet_v2": 145
+ "snippet_v2": 145,
+ "home_v1": 95
 }
