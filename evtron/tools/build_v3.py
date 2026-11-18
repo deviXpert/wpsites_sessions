@@ -118,18 +118,35 @@ specs = section('V3 specs', [div('Spec grid wrap', [
 ], 'display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 56px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 32px; }')],
     ['ev-divider-top'])
 
-# ---------- 4c. Warranty, payment and peace of mind ----------
-PEACE = [('fa-solid fa-shield', 'Warranty', '3 years included. Extend to 5 years for £89.99.', 'Claims are handled directly by EV-Tron, with manufacturer support where needed.'),
-         ('fa-regular fa-credit-card', 'Pay your way', 'Card, Apple Pay, Google Pay or PayPal.', 'Or spread the cost with Klarna or PayPal Pay in 3, subject to approval.'),
-         ('fa-solid fa-rotate-left', 'Fair refunds', 'Full refund if your home isn’t suitable after our remote check.', 'As long as no chargeable work has been agreed. Non-standard work is always explained first.'),
-         ('fa-solid fa-headset', 'One point of contact', 'Installation, technical help and aftercare, all through EV-Tron.', 'Monday to Saturday, 8:30am to 6:30pm · sales@evtron.co.uk')]
-peace = section('V3 peace', [
-    head('Peace head', 'Buy with confidence'),
-    div('Peace grid', [div(f'Peace {i}', [gtile(f'Peace {i} icon', ic), h(f'Peace {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Peace {i} d', d, ['ev-body'], 'margin-top: 6px;'),
-                                          p(f'Peace {i} more', more, ['ev-small'], 'margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--ev-divider); color: var(--ev-accent);')], classes=['ev-card'])
-                       for i, (ic, t, d, more) in enumerate(PEACE)],
-        'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
-], ['ev-divider-top'])
+# ---------- 4c. Buy with confidence: split panel (warranty highlight + rows) ----------
+METHODS = ['Card', 'Apple Pay', 'Google Pay', 'PayPal', 'Klarna', 'PayPal Pay in 3']
+def mchip(cid, t):
+    return p(cid, t, None, MONO + 'font-size: 12px; letter-spacing: 0.04em; color: var(--ev-text); padding: 6px 12px; border: 1px solid var(--ev-control); border-radius: 999px; white-space: nowrap;')
+def prow(cid, ic, title, text, extra=None):
+    kids = [gtile(cid + ' icon', ic), div(cid + ' body', [h(cid + ' t', title, 'h3', ['ev-h3']), p(cid + ' d', text, ['ev-body'], 'margin-top: 6px;')] + (extra or []), 'flex: 1 1 auto; min-width: 0;')]
+    return div(cid, kids, 'display: flex; gap: 20px; align-items: flex-start; padding: 28px 20px; border-bottom: 1px solid var(--ev-divider); border-radius: 12px; @media(--mobile){ padding: 24px 4px; }')
+warranty = div('Warranty panel', [
+    p('W label', 'Warranty', ['ev-label'], 'color: var(--ev-accent);'),
+    div('W figures', [
+        div('W std', [p('W std n', '3', None, MONO + 'font-weight: 500; font-size: clamp(72px, 8vw, 112px); line-height: 0.9; color: var(--ev-text);'), p('W std l', 'years included', ['ev-body'], 'margin-top: 10px;')]),
+        div('W plus', [p('W plus n', '5', None, MONO + 'font-weight: 500; font-size: clamp(72px, 8vw, 112px); line-height: 0.9; color: var(--ev-accent);'), p('W plus l', 'years with the £89.99 extension', ['ev-body'], 'margin-top: 10px;')]),
+    ], 'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 28px;'),
+    p('W text', 'Warranty claims are handled directly by EV-Tron, with manufacturer support where needed. Full terms are published before launch.', ['ev-body'], 'margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(59,227,127,0.25);'),
+], 'display: flex; flex-direction: column; padding: 40px; border-radius: var(--ev-r-md); background-color: #0E1A15; border: 1px solid rgba(59,227,127,0.30); @media(--mobile){ padding: 28px 22px; }')
+rows = div('Peace rows', [
+    prow('Row pay', 'fa-regular fa-credit-card', 'Pay your way', 'Pay in full, or spread the cost with an approved instalment plan.',
+         [div('Pay chips', [mchip(f'PM {i}', m) for i, m in enumerate(METHODS)], 'display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px;')]),
+    prow('Row refund', 'fa-solid fa-rotate-left', 'Fair refunds', 'Full refund if our remote check shows your home isn’t suitable and no chargeable work has been agreed. Non-standard work is always explained first.'),
+    prow('Row contact', 'fa-solid fa-headset', 'One point of contact', 'Installation, technical help and aftercare, all through EV-Tron.',
+         [p('Row contact meta', 'Mon–Sat · 8:30am–6:30pm · sales@evtron.co.uk', None, MONO + 'font-size: 12.5px; color: var(--ev-accent); margin-top: 10px;')]),
+], 'display: flex; flex-direction: column; border-top: 1px solid var(--ev-divider);')
+peace = section('V3 peace', [div('Peace grid', [
+    div('Peace left', [h('Peace title', 'Buy with confidence', 'h2', ['ev-h2']),
+                       p('Peace lead', 'A clear warranty, flexible payment and one team from order to aftercare.', ['ev-lead'], 'margin-top: 16px; margin-bottom: 36px;'),
+                       warranty], 'display: flex; flex-direction: column;'),
+    rows,
+], 'display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: end; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 32px; align-items: start; }')],
+    ['ev-divider-top'])
 
 # ---------- 5. Key features ----------
 FEAT = [('fa-solid fa-wifi', 'Smart app', 'Wi-Fi and Bluetooth. Schedule cheaper off-peak charging.', 'See live voltage, current, power, temperature, time and energy added.'),

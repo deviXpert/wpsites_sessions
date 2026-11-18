@@ -24,6 +24,13 @@
   .v3-ix:hover .v3-more,.v3-ix:focus-within .v3-more{opacity:1;transform:none;max-height:120px;margin-top:12px!important;padding-top:12px!important;border-top-color:#2A3441!important}
 }
 @media (prefers-reduced-motion:reduce){.v3-ix .v3-tile,.v3-ix .v3-more{transition:none!important}.v3-ix:hover .v3-tile{transform:none}}
+/* Buy with confidence rows */
+.v3-row{transition:background-color .25s ease}
+.v3-row:hover{background-color:#11161D}
+.v3-row .v3-rtile{transition:background-color .25s ease,transform .3s cubic-bezier(.2,.7,.2,1)}
+.v3-row:hover .v3-rtile{background-color:#3BE37F!important;transform:rotate(-6deg)}
+.v3-row:hover .v3-rtile .e-svg-base{color:#06210F!important}
+@media (prefers-reduced-motion:reduce){.v3-row .v3-rtile{transition:none!important}.v3-row:hover .v3-rtile{transform:none}}
 </style>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
@@ -41,12 +48,18 @@ document.addEventListener('DOMContentLoaded',function(){
   }
   /* Interactive cards: Why EV-Tron + Buy with confidence */
   [].forEach.call(document.querySelectorAll('main > section'),function(sec){
-    if(!/Why EV-Tron|Buy with confidence/.test((sec.querySelector('h2')||{}).textContent||''))return;
+    if(!/Why EV-Tron/.test((sec.querySelector('h2')||{}).textContent||''))return;
     sec.querySelectorAll('.ev-card').forEach(function(card){
       card.classList.add('v3-ix');card.setAttribute('tabindex','0');
       var tile=card.firstElementChild;if(tile)tile.classList.add('v3-tile');
       var ps=card.querySelectorAll('p');if(ps.length)ps[ps.length-1].classList.add('v3-more');
     });
+  });
+  /* Buy with confidence: row hover */
+  [].forEach.call(document.querySelectorAll('main > section'),function(sec){
+    if(!/Buy with confidence/.test((sec.querySelector('h2')||{}).textContent||''))return;
+    var rows=[].slice.call(sec.querySelectorAll('h3')).filter(function(h){return /Pay your way|Fair refunds|One point of contact/.test(h.textContent)}).map(function(h){return h.parentElement.parentElement});
+    rows.forEach(function(r){r.classList.add('v3-row');if(r.firstElementChild)r.firstElementChild.classList.add('v3-rtile')});
   });
   /* Sticky mobile buy bar: appears once the hero buttons scroll out of view */
   var bar=document.createElement('div');bar.className='v3-bar';
