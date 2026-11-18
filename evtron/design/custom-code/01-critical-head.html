@@ -21,6 +21,11 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 /* Elementor V4 icon widget: centre SVGs inside badges (no baseline offset) */
 .e-svg-base{display:flex!important;align-items:center;justify-content:center;line-height:0;flex:0 0 auto;min-width:0}
 .e-svg-base svg{display:block}
+/* Sticky header: stick the Elementor header location wrapper (the inner element has no room to stick) */
+.elementor-location-header{position:sticky;top:0;z-index:100}
+.admin-bar .elementor-location-header{top:32px}
+@media (max-width:782px){.admin-bar .elementor-location-header{top:46px}}
+@media (max-width:600px){.admin-bar .elementor-location-header{top:0}}
 /* Numbers line up */
 .ev-num,[class*="ev-price"],[class*="ev-label"]{font-variant-numeric:tabular-nums}
 /* Skip link */
