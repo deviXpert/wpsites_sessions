@@ -20,7 +20,8 @@ add_action( 'elementor_pro/forms/validation', function ( $record, $ajax_handler 
 	if ( isset( $fields['phone'] ) ) {
 		$d = preg_replace( '/\D+/', '', $val( 'phone' ) );
 		if ( strlen( $d ) === 11 && $d[0] === '1' ) { $d = substr( $d, 1 ); }
-		if ( strlen( $d ) !== 10 || ! preg_match( '/^[2-9]\d{2}[2-9]\d{6}$/', $d ) ) {
+		$ca = array( 204,226,236,249,250,257,263,289,306,343,354,365,367,368,382,403,416,418,428,431,437,438,450,460,468,474,506,514,519,548,579,581,584,587,604,613,639,647,672,683,705,709,742,753,778,780,782,807,819,825,867,873,879,902,905 );
+		if ( strlen( $d ) !== 10 || ! preg_match( '/^[2-9]\d{2}[2-9]\d{6}$/', $d ) || ! in_array( (int) substr( $d, 0, 3 ), $ca, true ) ) {
 			$ajax_handler->add_error( 'phone', 'Please enter a valid Canadian phone number, e.g. 587-914-0130.' );
 			return;
 		}
@@ -29,7 +30,7 @@ add_action( 'elementor_pro/forms/validation', function ( $record, $ajax_handler 
 	$text = implode( "\n", array_map( function ( $f ) { return is_array( $f['value'] ) ? implode( ' ', $f['value'] ) : (string) $f['value']; }, $fields ) );
 
 	// 2) Links, emails, non-Latin scripts.
-	if ( preg_match( '~https?://|www\.|\[url|<a\s|\.(com|net|org|ru|xyz|top|info|io)\b~i', $text )
+	if ( preg_match( '~https?://|www\.|\[url|<a\s|\b[a-z0-9-]+\.(ca|com|net|org|ru|xyz|top|info|io|co|us|uk|biz|online|site|store)\b~i', $text )
 		|| preg_match( '/[\w.+-]+@[\w-]+\.[\w.]+/', $text )
 		|| preg_match( '/[\p{Cyrillic}\p{Han}\p{Arabic}\p{Hebrew}\p{Thai}\p{Hangul}\p{Hiragana}\p{Katakana}\p{Devanagari}]/u', $text ) ) {
 		$block(); return;
@@ -40,8 +41,8 @@ add_action( 'elementor_pro/forms/validation', function ( $record, $ajax_handler 
 		. 'digital marketing|marketing (services|agency)|social media (marketing|management)|lead generation|guest post|outsourc|'
 		. 'virtual assistant|app development|crypto|bitcoin|forex|investment opportunit|loan offer|'
 		. 'din pris|jeres pris|ihren? preis|ihre preise|votre prix|vos prix|uw prijs|je prijs|tu precio|su precio|il tuo prezzo|'
-		. 'twoja cena|ditt pris|hinnan|jūsų kain|wanted to know your price|know your prices?|price list)\b/iu';
-	if ( preg_match( $spam, $text ) ) { $block(); return; }
+		. 'twoja cena|ditt pris|hinnan|jūsų kain|wanted to know your price|know your prices?|price list|videos?|animation|explainer|advertis\w*|promot\w*|your (business|website|site|company|brand)|social media|instagram|tiktok|youtube|samples? of|our (services|team|work|agency|company)|i just visited|i came across|i noticed your|partnership|collaborat\w*|sponsor\w*|unsubscribe|opt[- ]out|\(?usd\)?)\b/iu';
+	if ( preg_match( $spam, $text ) || preg_match( '/\$\s?\d/', $text ) ) { $block(); return; }
 
 	// 4) Max 3 submissions per IP per hour.
 	$ip  = isset( $_SERVER['REMOTE_ADDR'] ) ? $_SERVER['REMOTE_ADDR'] : '';

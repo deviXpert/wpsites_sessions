@@ -29,7 +29,7 @@ def build():
         C([
             C([T('<p><span class="j-dot"></span>Dispatch online now &middot; Calgary, Alberta</p>', 'j-pill j-up'),
                H(f'24/7 Towing Services in {hl("Calgary")}', 'h1', 'j-splitw'),
-               P('When you need a reliable towing service in Calgary, <strong>Jim Towing is ready to help.</strong> We provide 24/7 towing and roadside assistance for breakdowns, accidents, dead batteries, flat tires, low fuel and other roadside emergencies.', 'j-lead j-up j-up2'),
+               P('When you need reliable towing in Calgary, <strong>Jim Towing Ltd. is ready to help 24/7.</strong> We provide professional towing and roadside assistance, including emergency towing, flatbed towing, accident recovery, long-distance vehicle transport, battery jump-starts, flat tire changes, fuel delivery and vehicle lockout assistance. Whether you\'re stranded on Deerfoot Trail, Stoney Trail or Glenmore Trail, our team is here to help. We proudly serve Calgary and surrounding Alberta communities, including Airdrie, Chestermere, Cochrane, Okotoks and nearby areas, delivering dependable towing and roadside support whenever you need it.', 'j-lead j-up j-up2'),
                BTNS(CALL(), QUOTE('j-btn-ghost'), cls='j-up j-up3'),
                RAW(trust, 'j-up j-up4')], 'j-hero-copy j-col'),
             C([H('Need a tow? <span class="j-red">Get help now.</span>', 'h2', 'j-cf-t'),

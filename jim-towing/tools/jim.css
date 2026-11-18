@@ -862,3 +862,19 @@ body{padding-bottom:0}
 .j-footer{padding-bottom:84px}
 }
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.j-js .rv,.j-word{opacity:1!important;transform:none!important;filter:none!important}}
+
+/* ===== button states, final (beats Astra :hover/:focus; no sticky hover on touch) ===== */
+.j-btn .elementor-button .elementor-button-text,.j-btn .elementor-button .elementor-button-icon{color:inherit!important}
+.j-btn .elementor-button,.j-btn .elementor-button:is(:visited,:focus,:active){background:var(--j-red)!important;border-color:var(--j-red)!important;color:#fff!important}
+.j-btn-ghost .elementor-button,.j-btn-ghost .elementor-button:is(:visited,:focus,:active){background:rgba(20,23,31,.55)!important;border-color:rgba(255,255,255,.35)!important;color:#fff!important}
+.j-btn-dark .elementor-button,.j-btn-dark .elementor-button:is(:visited,:focus,:active){background:var(--j-ink)!important;border-color:var(--j-ink)!important;color:#fff!important}
+.j-btn-line .elementor-button,.j-btn-line .elementor-button:is(:visited,:focus,:active){background:transparent!important;border-color:var(--j-ink)!important;color:var(--j-ink)!important}
+.j-btn-gold .elementor-button,.j-btn-gold .elementor-button:is(:visited,:focus,:active){background:var(--j-gold)!important;border-color:var(--j-gold)!important;color:var(--j-ink)!important}
+.j-link .elementor-button,.j-link .elementor-button:is(:visited,:focus,:active){background:none!important;border:0!important;color:var(--j-ink)!important}
+@media (hover:hover){
+.j-btn .elementor-button:hover{background:var(--j-red2)!important;border-color:var(--j-red2)!important;color:#fff!important}
+.j-btn-ghost .elementor-button:hover,.j-btn-gold .elementor-button:hover,.j-cta .j-btn .elementor-button:hover{background:#fff!important;border-color:#fff!important;color:var(--j-ink)!important}
+.j-btn-line .elementor-button:hover{background:var(--j-ink)!important;border-color:var(--j-ink)!important;color:#fff!important}
+.j-btn-dark .elementor-button:hover{background:var(--j-red)!important;border-color:var(--j-red)!important;color:#fff!important}
+.j-link .elementor-button:hover{background:none!important;color:var(--j-red)!important}
+}
