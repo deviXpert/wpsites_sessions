@@ -21,7 +21,7 @@ UK home EV charger brand. Sells chargers **supplied and fitted** at fixed VAT-in
 - Work in phases with checkpoints. The user approves each phase.
 
 - Brand: **EVTRON everywhere** (no "EV-TRONX" on the site). Accent: logo **charge-green #3BE37F**, used sparingly.
-- Variants (from client photos): EVTRON tethered = black/red/grey/green; Fox tethered (L Series) = black/blue/purple/pink; Fox untethered (A Series) = black.
+- Variants (from client photos): EVTRON tethered = black/red/grey/green; Fox tethered (L Series) = black/blue/purple/pink; Fox untethered (A Series) = white (per brief; the client photo shows black, so authentic white images are needed).
 - Payments: full payment default (Stripe incl. Apple/Google Pay + PayPal). Instalments via Klarna/Clearpay (Stripe) and/or PayPal Pay in 3. Shop Pay Installments is Shopify-only, so not possible.
 
 ## Open

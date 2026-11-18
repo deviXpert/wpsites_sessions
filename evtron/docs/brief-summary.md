@@ -55,7 +55,7 @@ Home · Choose your charger (compare the three) · Product pages (gallery, colou
 - **Variants follow the client's product photos:**
   - **EVTRON tethered:** 4 colours: black, red (deep maroon), grey, green. Names to confirm: Mythos Black / Space Grey / Midnight Green from the brief, plus a name for the red.
   - **Fox tethered (L Series):** 4 colours: black, blue (teal), purple, pink.
-  - **Fox untethered (A Series):** black (overrides the brief's "white").
+  - **Fox untethered (A Series):** **white, per the brief** (user confirmed). The supplied photo shows black, so we need a genuine white product image.
 - **Payments:** **full payment by default** (Stripe cards, Apple Pay and Google Pay, plus PayPal), **plus an instalment option.**
   - ⚠️ **Shop Pay Installments is Shopify-only** (Affirm via Shopify Payments) and can't run on WooCommerce.
   - Proposed WooCommerce equivalents: **Klarna** and/or **Clearpay** via the Stripe gateway, and **PayPal Pay in 3** via WooCommerce PayPal Payments. All need the merchant accounts approved, and the order limits must cover £945 to £1,295+.
