@@ -30,6 +30,10 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 #ast-scroll-top{width:44px!important;height:44px!important;border-radius:999px!important;background:rgba(12,25,20,.72)!important;color:#F2EFE9!important;
   border:1px solid rgba(190,255,215,.2)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);right:20px!important;bottom:20px!important;display:flex;align-items:center;justify-content:center}
 #ast-scroll-top .ast-icon svg{fill:currentColor!important;width:14px;height:14px}
+/* Cards: smooth green hover border */
+.ev-card{transition:border-color .2s ease,transform .25s ease}
+.ev-card:hover{transform:translateY(-3px)}
+@media (prefers-reduced-motion:reduce){.ev-card:hover{transform:none}}
 /* Numbers line up */
 .ev-num,[class*="ev-price"],[class*="ev-label"]{font-variant-numeric:tabular-nums}
 /* Skip link */

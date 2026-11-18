@@ -8,6 +8,13 @@ C = json.load(open('created.json'))
 M = json.load(open('media.json'))
 cfg.clear(); st.clear(); cl.clear()
 
+
+def gtile(cid, value):
+    """Green icon tile for V3 cards."""
+    return div(cid, [icon(cid + ' svg', value, 20, 'var(--ev-accent)')],
+               'width: 48px; height: 48px; min-width: 48px; max-width: 48px; flex: 0 0 48px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background-color: rgba(59,227,127,0.10); border: 1px solid rgba(59,227,127,0.30);')
+
+
 BUY_EVT = '/ev-chargers/evtron-tethered-ev-charger/'
 BOOK = '/get-a-quote/'
 
@@ -65,7 +72,7 @@ STEPS = [('fa-solid fa-cart-shopping', 'Buy online or book a survey', 'Order you
          ('fa-solid fa-plug-circle-check', 'Installed and certified', 'Most standard installs within 10 days of survey approval, and as little as 48 to 96 hours in selected areas. Fitted, tested and certified.')]
 steps = section('V3 steps', [
     head('Steps head', 'Three simple steps'),
-    div('V3 step grid', [div(f'V3 step {i}', [icon_tile(f'V3 step {i} icon', ic), p(f'V3 step {i} n', f'Step {i+1}', ['ev-label'], 'margin-top: 20px;'),
+    div('V3 step grid', [div(f'V3 step {i}', [gtile(f'V3 step {i} icon', ic), p(f'V3 step {i} n', f'Step {i+1}', ['ev-label'], 'margin-top: 20px;'),
                                               h(f'V3 step {i} t', t, 'h3', ['ev-h3'], 'margin-top: 6px;'), p(f'V3 step {i} d', d, ['ev-body'], 'margin-top: 8px;')], classes=['ev-card'])
                          for i, (ic, t, d) in enumerate(STEPS)],
         'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
@@ -91,7 +98,7 @@ included = section('V3 included', [
             div('Extras card', [p('Extras label', 'Optional extras', ['ev-label'], 'margin-bottom: 6px;'), div('Extras rows', extras_rows),
                                 p('Extras note', 'Groundworks and excavation aren’t offered.', ['ev-small'], 'margin-top: 14px;')], classes=['ev-card']),
             div('Suit card', [p('Suit label', 'Is my home suitable?', ['ev-label'], 'margin-bottom: 14px;'), checklist('Suit list', SUIT, '+'),
-                              btn('Inc CTA', 'Book a free survey', BOOK, 'ghost', 'margin-top: 22px;')], classes=['ev-card']),
+                              btn('Inc CTA', 'Book a free survey', BOOK, 'primary', 'margin-top: 22px;')], classes=['ev-card']),
         ], 'display: flex; flex-direction: column; gap: 20px;'),
     ], 'display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 20px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }'),
 ], ['ev-divider-top'])
@@ -118,7 +125,7 @@ PEACE = [('fa-solid fa-shield', 'Warranty', '3 years included. Extend to 5 years
          ('fa-solid fa-headset', 'One point of contact', 'Installation, technical help and aftercare, all through EV-Tron. Monday to Saturday, 8:30am to 6:30pm.')]
 peace = section('V3 peace', [
     head('Peace head', 'Buy with confidence'),
-    div('Peace grid', [div(f'Peace {i}', [icon_tile(f'Peace {i} icon', ic), h(f'Peace {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Peace {i} d', d, ['ev-body'], 'margin-top: 6px;')], classes=['ev-card'])
+    div('Peace grid', [div(f'Peace {i}', [gtile(f'Peace {i} icon', ic), h(f'Peace {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Peace {i} d', d, ['ev-body'], 'margin-top: 6px;')], classes=['ev-card'])
                        for i, (ic, t, d) in enumerate(PEACE)],
         'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
 ], ['ev-divider-top'])
@@ -130,7 +137,7 @@ FEAT = [('fa-solid fa-wifi', 'Smart app', 'Wi-Fi and Bluetooth. Schedule cheaper
         ('fa-solid fa-cloud-rain', 'Weatherproof', 'IP65 rated for outdoor walls (EV-Tron).')]
 features = section('V3 features', [
     head('Feat head', 'Why EV-Tron'),
-    div('Feat grid', [div(f'Feat {i}', [icon_tile(f'Feat {i} icon', ic), h(f'Feat {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Feat {i} d', d, ['ev-body'], 'margin-top: 6px;')])
+    div('Feat grid', [div(f'Feat {i}', [gtile(f'Feat {i} icon', ic), h(f'Feat {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Feat {i} d', d, ['ev-body'], 'margin-top: 6px;')])
                       for i, (ic, t, d) in enumerate(FEAT)],
         'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); gap: 28px; }'),
 ], ['ev-divider-top'])
