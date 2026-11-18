@@ -8,7 +8,7 @@
 | [strategy.md](strategy.md) | 2: positioning, IA, keywords, SEO plan | Draft for Checkpoint 2 |
 | [design-directions.md](design-directions.md) | 3: three dark directions + prototypes | For Checkpoint 3 |
 | [design-system.md](design-system.md) | 3: dark design system (Direction A) | Draft for review |
-| architecture.md | 4: stack (WordPress + Elementor Pro + WooCommerce) | Not started |
+| [architecture.md](architecture.md) | 4: stack, plugins, content model, forms, analytics, workflow | Draft for Checkpoint 4 |
 | qa-report.md | 8: QA | Not started |
 | deployment.md | 9: deployment and handover | Not started |
 
