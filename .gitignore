@@ -1,3 +1,7 @@
 __pycache__/
 *.png
 prev/
+evtron/research/shots/
+evtron/research/site/
+evtron/research/sources/*.html
+!evtron/assets/**/*.png

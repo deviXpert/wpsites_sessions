@@ -1,0 +1,19 @@
+{
+  "name": "EVTRON",
+  "short_name": "EVTRON",
+  "icons": [
+    {
+      "src": "/apple-touch-icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/app-icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0B0F14",
+  "background_color": "#0B0F14",
+  "display": "standalone"
+}
