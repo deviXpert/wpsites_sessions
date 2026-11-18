@@ -7,7 +7,7 @@
 | [client-questions.md](client-questions.md) | 0: questions to send to the client | Ready to send |
 | [strategy.md](strategy.md) | 2: positioning, IA, keywords, SEO plan | Draft for Checkpoint 2 |
 | [design-directions.md](design-directions.md) | 3: three dark directions + prototypes | For Checkpoint 3 |
-| design-system.md | 3: dark design system | After direction is picked |
+| [design-system.md](design-system.md) | 3: dark design system (Direction A) | Draft for review |
 | architecture.md | 4: stack (WordPress + Elementor Pro + WooCommerce) | Not started |
 | qa-report.md | 8: QA | Not started |
 | deployment.md | 9: deployment and handover | Not started |

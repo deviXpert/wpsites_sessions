@@ -1,0 +1,38 @@
+/* EVTRON design tokens: source of truth. Paste into Elementor > Custom Code (head, all pages). */
+:root{
+  color-scheme: dark;
+  /* Surfaces: elevation by lightness */
+  --ev-ink:#0B0F14;      /* page background (level 0) */
+  --ev-s1:#11161D;       /* panels, cards (level 1) */
+  --ev-s2:#171E27;       /* raised within panels, table heads (level 2) */
+  --ev-s3:#1F2833;       /* selected / pressed fills (level 3) */
+  /* Lines */
+  --ev-divider:#2A3441;  /* decorative hairlines only (not for controls) */
+  --ev-control:#6A7688;  /* borders of inputs, ghost buttons, chips, swatches: ≥3:1 on every surface */
+  /* Text */
+  --ev-text:#F2EFE9;     /* headings, key figures (warm white) */
+  --ev-body:#C3C7CD;     /* running text */
+  --ev-muted:#939CA8;    /* labels, captions, secondary */
+  /* Accent and states */
+  --ev-accent:#3BE37F;   /* charge-green (logo) */
+  --ev-accent-hover:#5CEB97;
+  --ev-accent-ink:#06210F;     /* text on accent */
+  --ev-accent-tint:rgba(59,227,127,.08); /* highlighted rows, selected tiles */
+  --ev-warn:#F2C14E;     /* "may cost extra", TBC notes, placeholders (internal) */
+  --ev-error:#FF8A80;    /* form errors */
+  --ev-success:#3BE37F;  /* same as accent */
+  /* Type */
+  --ev-font:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ev-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  /* Radius */
+  --ev-r-sm:6px;   /* buttons, inputs */
+  --ev-r-md:10px;  /* panels, cards, tables */
+  --ev-r-pill:999px; /* chips */
+  /* Spacing (4px base) */
+  --ev-1:4px;--ev-2:8px;--ev-3:12px;--ev-4:16px;--ev-5:24px;--ev-6:32px;--ev-7:48px;--ev-8:72px;--ev-9:96px;
+  /* Layout */
+  --ev-max:1240px; --ev-gutter:max(16px,env(safe-area-inset-left,0px));
+  /* Motion */
+  --ev-fast:150ms; --ev-ease:cubic-bezier(.2,.7,.2,1);
+}
+html,body{background:var(--ev-ink);color:var(--ev-body)}
