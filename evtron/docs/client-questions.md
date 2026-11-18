@@ -38,7 +38,7 @@ Please answer what you can. Anything left blank will appear on the site as a cle
 27. Instalments: do you want Klarna (via Stripe), PayPal Pay in 3, or both? Each needs approval on your account.
 28. Do you offer any discounts (for example NHS or Blue Light, referral codes)?
 
-## 5. Trust and content
+## 5. Content and setup
 29. Photos: please send the original product photos (not WhatsApp screenshots).
 30. Is there anything about your company story, team or values you'd like on the About page?
 31. Who will update the website after launch, and what will they need to change (prices, stock, blog posts)?
