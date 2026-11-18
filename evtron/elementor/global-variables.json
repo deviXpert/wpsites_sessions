@@ -235,10 +235,10 @@
   "e-gv-325871c": {
    "type": "global-size-variable",
    "label": "ev-max",
-   "value": "1240px",
+   "value": "1440px",
    "order": 30,
    "created_at": "2026-11-18 11:44:26",
-   "updated_at": "2026-11-18 11:44:26"
+   "updated_at": "2026-11-18 11:55:17"
   },
   "e-gv-35c3fe0": {
    "type": "global-size-variable",
@@ -323,12 +323,12 @@
   "e-gv-4082593": {
    "type": "global-custom-size-variable",
    "label": "ev-section",
-   "value": "clamp(56px, 7vw, 72px)",
+   "value": "clamp(80px, 9vw, 128px)",
    "order": 41,
    "created_at": "2026-11-18 11:44:26",
-   "updated_at": "2026-11-18 11:44:26"
+   "updated_at": "2026-11-18 12:04:43"
   }
  },
  "total": 41,
- "watermark": 1
+ "watermark": 3
 }

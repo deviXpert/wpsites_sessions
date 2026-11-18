@@ -1,7 +1,5 @@
 {
  "id": 86,
- "title": "EVTRON footer",
- "type": "footer",
  "data": [
   {
    "id": "669004b9",
@@ -442,7 +440,8 @@
            "unit": "px",
            "size": 6
           },
-          "color_menu_item_hover": "#F2EFE9"
+          "color_menu_item_hover": "#F2EFE9",
+          "menu": "footer-chargers"
          },
          "elements": [],
          "widgetType": "nav-menu"
@@ -623,7 +622,8 @@
            "unit": "px",
            "size": 6
           },
-          "color_menu_item_hover": "#F2EFE9"
+          "color_menu_item_hover": "#F2EFE9",
+          "menu": "footer-help"
          },
          "elements": [],
          "widgetType": "nav-menu"
@@ -804,7 +804,8 @@
            "unit": "px",
            "size": 6
           },
-          "color_menu_item_hover": "#F2EFE9"
+          "color_menu_item_hover": "#F2EFE9",
+          "menu": "footer-learn"
          },
          "elements": [],
          "widgetType": "nav-menu"
@@ -985,7 +986,8 @@
            "unit": "px",
            "size": 6
           },
-          "color_menu_item_hover": "#F2EFE9"
+          "color_menu_item_hover": "#F2EFE9",
+          "menu": "footer-legal"
          },
          "elements": [],
          "widgetType": "nav-menu"

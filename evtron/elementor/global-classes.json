@@ -152,18 +152,6 @@
         }
        }
       },
-      "border-width": {
-       "$$type": "border-width-v2",
-       "value": {
-        "block-start": {
-         "$$type": "size",
-         "value": {
-          "size": 1,
-          "unit": "px"
-         }
-        }
-       }
-      },
       "background": {
        "$$type": "background",
        "value": {
@@ -174,9 +162,7 @@
        }
       }
      },
-     "custom_css": {
-      "raw": "Ym9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
-     }
+     "custom_css": null
     }
    ]
   },
@@ -1096,6 +1082,179 @@
      "custom_css": null
     }
    ]
+  },
+  "g-fd99f80": {
+   "id": "g-fd99f80",
+   "label": "ev-section-head",
+   "type": "class",
+   "variants": [
+    {
+     "meta": {
+      "breakpoint": "mobile",
+      "state": null
+     },
+     "props": {
+      "margin": {
+       "$$type": "dimensions",
+       "value": {
+        "block-end": {
+         "$$type": "size",
+         "value": {
+          "size": 40,
+          "unit": "px"
+         }
+        }
+       }
+      }
+     },
+     "custom_css": null
+    },
+    {
+     "meta": {
+      "breakpoint": "desktop",
+      "state": null
+     },
+     "props": {
+      "max-width": {
+       "$$type": "size",
+       "value": {
+        "size": 720,
+        "unit": "px"
+       }
+      },
+      "margin": {
+       "$$type": "dimensions",
+       "value": {
+        "block-end": {
+         "$$type": "size",
+         "value": {
+          "size": 56,
+          "unit": "px"
+         }
+        }
+       }
+      },
+      "display": {
+       "$$type": "string",
+       "value": "flex"
+      },
+      "flex-direction": {
+       "$$type": "string",
+       "value": "column"
+      },
+      "gap": {
+       "$$type": "size",
+       "value": {
+        "size": 16,
+        "unit": "px"
+       }
+      }
+     },
+     "custom_css": null
+    }
+   ]
+  },
+  "g-0c712f9": {
+   "id": "g-0c712f9",
+   "label": "ev-card",
+   "type": "class",
+   "variants": [
+    {
+     "meta": {
+      "breakpoint": "desktop",
+      "state": "hover"
+     },
+     "props": {
+      "border-color": {
+       "$$type": "global-color-variable",
+       "value": "e-gv-203417b"
+      }
+     },
+     "custom_css": null
+    },
+    {
+     "meta": {
+      "breakpoint": "desktop",
+      "state": null
+     },
+     "props": {
+      "padding": {
+       "$$type": "size",
+       "value": {
+        "size": 24,
+        "unit": "px"
+       }
+      },
+      "border-radius": {
+       "$$type": "global-size-variable",
+       "value": "e-gv-a3b2a9f"
+      },
+      "border-width": {
+       "$$type": "size",
+       "value": {
+        "size": 1,
+        "unit": "px"
+       }
+      },
+      "border-color": {
+       "$$type": "global-color-variable",
+       "value": "e-gv-6532a4c"
+      },
+      "border-style": {
+       "$$type": "string",
+       "value": "solid"
+      },
+      "background": {
+       "$$type": "background",
+       "value": {
+        "color": {
+         "$$type": "global-color-variable",
+         "value": "e-gv-3d2ccf4"
+        }
+       }
+      },
+      "display": {
+       "$$type": "string",
+       "value": "flex"
+      },
+      "flex-direction": {
+       "$$type": "string",
+       "value": "column"
+      }
+     },
+     "custom_css": null
+    }
+   ]
+  },
+  "g-03789a1": {
+   "id": "g-03789a1",
+   "label": "ev-divider-top",
+   "type": "class",
+   "variants": [
+    {
+     "meta": {
+      "breakpoint": "desktop",
+      "state": null
+     },
+     "props": {
+      "border-width": {
+       "$$type": "border-width-v2",
+       "value": {
+        "block-start": {
+         "$$type": "size",
+         "value": {
+          "size": 1,
+          "unit": "px"
+         }
+        }
+       }
+      }
+     },
+     "custom_css": {
+      "raw": "Ym9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
+     }
+    }
+   ]
   }
  },
  "meta": {
@@ -1115,7 +1274,10 @@
    "g-1cdebe1",
    "g-bdbc982",
    "g-4b7440d",
-   "g-b8a990b"
+   "g-b8a990b",
+   "g-fd99f80",
+   "g-0c712f9",
+   "g-03789a1"
   ]
  }
 }

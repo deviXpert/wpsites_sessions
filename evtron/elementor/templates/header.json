@@ -1,7 +1,5 @@
 {
  "id": 85,
- "title": "EVTRON header",
- "type": "header",
  "data": [
   {
    "id": "1f4afb1e",
@@ -155,11 +153,13 @@
         "color_menu_item": "#C3C7CD",
         "padding_horizontal_menu_item": {
          "unit": "px",
-         "size": 10
+         "size": 12,
+         "sizes": []
         },
         "padding_vertical_menu_item": {
          "unit": "px",
-         "size": 12
+         "size": 12,
+         "sizes": []
         },
         "color_menu_item_hover": "#F2EFE9",
         "dropdown_typography_font_size": {
@@ -212,9 +212,17 @@
         },
         "toggle_background_color": "transparent",
         "_flex_grow": 1,
-        "_flex_size": "custom",
+        "_flex_size": "grow",
         "_flex_shrink": 1,
-        "custom_css": "selector .elementor-nav-menu--main .elementor-item { font-family: var(--ev-font) !important; }\nselector .elementor-nav-menu--dropdown { font-family: var(--ev-font) !important; }"
+        "custom_css": "selector .elementor-nav-menu--main .elementor-item { font-family: var(--ev-font) !important; }\nselector .elementor-nav-menu--dropdown { font-family: var(--ev-font) !important; }",
+        "menu": "main",
+        "align_items": "center",
+        "menu_space_between": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "toggle_align": "right"
        },
        "elements": [],
        "widgetType": "nav-menu"
@@ -238,7 +246,7 @@
           "_title": "Basket",
           "icon": "basket-light",
           "items_indicator": "bubble",
-          "show_subtotal": "yes",
+          "show_subtotal": "",
           "cart_type": "side-cart",
           "open_cart": "click",
           "toggle_button_text_color": "#F2EFE9",
@@ -313,7 +321,8 @@
            "isLinked": true
           },
           "checkout_button_background_color": "#3BE37F",
-          "custom_css": "selector .elementor-menu-cart__product-name a { font-family: var(--ev-font) !important; }\nselector .elementor-menu-cart__product-price { font-family: var(--ev-mono) !important; }\nselector .elementor-menu-cart__subtotal { font-family: var(--ev-mono) !important; }"
+          "custom_css": "selector .elementor-menu-cart__product-name a { font-family: var(--ev-font) !important; }\nselector .elementor-menu-cart__product-price { font-family: var(--ev-mono) !important; }\nselector .elementor-menu-cart__subtotal { font-family: var(--ev-mono) !important; }",
+          "hide_empty_indicator": ""
          },
          "elements": [],
          "widgetType": "woocommerce-menu-cart"
