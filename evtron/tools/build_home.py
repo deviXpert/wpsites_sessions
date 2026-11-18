@@ -116,7 +116,7 @@ chargers = section('Chargers', [
 
 # ---------- 3. How it works ----------
 steps = [('01', 'Order online', 'Choose your charger, finish and cable. Pay in full or in instalments.', 'fa-solid fa-cart-shopping'),
-         ('02', 'Quick home check', 'Send a few photos so we can confirm a standard installation.', 'fa-regular fa-camera'),
+         ('02', 'Free remote check', 'A free remote check by phone, photos or video, so there are no unnecessary home visits.', 'fa-regular fa-camera'),
          ('03', 'Installation day', 'Fitted, tested and certified by a qualified electrician.', 'fa-solid fa-screwdriver-wrench'),
          ('04', 'Charge off-peak', 'Schedule charging for your tariff’s cheaper hours.', 'fa-regular fa-moon')]
 
@@ -148,10 +148,10 @@ how = section('How', [
     div('Steps', step_cells, 'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 32px; } @media(--mobile){ grid-template-columns: minmax(0, 1fr); gap: 32px; }'),
     div('Price includes', [
         div('Included col', [p('Included label', 'Included in the price', ['ev-label']),
-                             checklist('Included list', ['Your chosen charger, supplied and fitted', 'Safety protection to UK wiring regulations', 'Testing and certification', 'App set-up and a walkthrough'], '✓')],
+                             checklist('Included list', ['Your charger in your chosen colour', 'Up to 10 metres of supply cable', 'Dedicated EV consumer unit with surge protection', 'Dynamic load balancing and CT clamp', 'DNO notification, testing and electrical certificate', 'App set-up, demonstration and aftercare support'], '✓')],
             'display: flex; flex-direction: column; gap: 20px;'),
-        div('Extra col', [p('Extra label', 'May cost extra (always quoted first)', ['ev-label']),
-                          checklist('Extra list', ['Longer cable runs', 'Consumer unit upgrade', 'Groundworks or trenching', 'A charging post instead of a wall mount'], '+')],
+        div('Extra col', [p('Extra label', 'Optional extras (agreed before we start)', ['ev-label']),
+                          checklist('Extra list', ['Extra supply cable beyond 10m: £15 per metre', 'Black charging post: £200', 'Steel charging post: £280', 'Non-standard installations: quoted first'], '+')],
             'display: flex; flex-direction: column; gap: 20px;'),
     ], 'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; margin-top: 80px; padding: 40px; background-color: var(--ev-s1); border: 1px solid var(--ev-divider); border-radius: var(--ev-r-md); @media(--mobile){ grid-template-columns: minmax(0, 1fr); gap: 32px; padding: 24px; margin-top: 56px; }'),
 ], ['ev-divider-top'])
@@ -194,7 +194,7 @@ faqs = section('FAQs', [div('FAQ grid', [
                      h('FAQs title', 'Questions people ask first', 'h2', ['ev-h2'], 'margin-top: 16px;'),
                      p('FAQs intro', 'Straight answers before you choose. Open one at a time.', ['ev-lead'], 'margin-top: 16px;'),
                      div('Help card', [p('Help title', 'Still have a question?', None, 'color: var(--ev-text); font-weight: 600; font-size: 17px;'),
-                                       p('Help text', 'Email us and a person will reply, usually within one working day [to be confirmed].', ['ev-small'], 'margin-top: 8px;'),
+                                       p('Help text', 'We’re here Monday to Saturday, 8:30am to 6:30pm. Email us any time.', ['ev-small'], 'margin-top: 8px;'),
                                        p('Help email', '<a href="mailto:sales@evtron.co.uk">sales@evtron.co.uk</a>', None, MONO + 'font-size: 14px; color: var(--ev-accent); margin-top: 16px;'),
                                        div('Help buttons', [btn('FAQs more', 'See all FAQs', '/faqs/', 'ghost'), btn('Help quote', 'Get a quote', '/get-a-quote/', 'ghost')],
                                            'display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px;')],

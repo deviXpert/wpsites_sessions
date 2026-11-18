@@ -5,6 +5,7 @@
 | [brief-summary.md](brief-summary.md) | 0: brief, inputs, questions | Draft for Checkpoint 1 |
 | [competitor-teardown.md](competitor-teardown.md) | 1: competitor research | Draft for Checkpoint 1 |
 | [client-questions.md](client-questions.md) | 0: questions to send to the client | Ready to send |
+| [client-answers.md](client-answers.md) | 0: client questionnaire answers + open items | Received 18 Nov 2026 |
 | [strategy.md](strategy.md) | 2: positioning, IA, keywords, SEO plan | Draft for Checkpoint 2 |
 | [design-directions.md](design-directions.md) | 3: three dark directions + prototypes | For Checkpoint 3 |
 | [design-system.md](design-system.md) | 3: dark design system (Direction A) | Draft for review |
