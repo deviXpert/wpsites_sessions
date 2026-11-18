@@ -20,7 +20,7 @@
 .ev-x-field input[type=range]{width:100%;accent-color:#3BE37F;min-height:32px}
 </style>
 <script>
-(function(){
+document.addEventListener('DOMContentLoaded',function(){
   var aside=document.querySelector('main aside');
   if(aside){
     var P={evtron:{n:'EVTRON Tethered',p:1295,cable:true,url:'/ev-chargers/evtron-tethered-ev-charger/',c:[['Mythos Black','#1B1D21'],['Red [name TBC]','#5A1418'],['Space Grey','#6E737A'],['Midnight Green','#1E4A3A']]},
@@ -30,6 +30,9 @@
     var cur='evtron',col=0,cab=1;
     var kids=aside.children, ctrl=kids[1], lines=kids[2], totalEl=kids[3]&&kids[3].lastElementChild, cta=aside.querySelector('a');
     var fmt=function(n){return '£'+n.toLocaleString('en-GB')};
+    var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function roll(el,to){if(!el)return;var from=parseFloat((el.textContent||'').replace(/[^0-9.]/g,''))||to;if(RM||from===to){el.textContent=fmt(to);return}var t0=performance.now(),d=320;(function f(t){var k=Math.min(1,(t-t0)/d),e=1-Math.pow(1-k,3);el.textContent=fmt(Math.round(from+(to-from)*e));if(k<1)requestAnimationFrame(f)})(t0)}
+    var first=true;
     function row(a,b,inc){return '<div style="display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed #2A3441;font-size:14px"><span>'+a+'</span><span style="font-family:IBM Plex Mono,monospace;white-space:nowrap;color:'+(inc?'#3BE37F':'#F2EFE9')+'">'+b+'</span></div>'}
     function render(){
       var p=P[cur],x=p.cable&&CAB[cab][1]?CAB[cab][1]:0;
@@ -40,8 +43,8 @@
       if(p.cable)L.push(['Cable '+CAB[cab][0],x?'+'+fmt(x):'Included',!x]);
       L.push(['Standard installation','Included',true]);
       if(cur==='evtron')L.push(['Load balancing CT clamp','Included',true]);
-      lines.innerHTML=L.map(function(l){return row(l[0],l[1],l[2])}).join('');
-      if(totalEl)totalEl.textContent=fmt(p.p+x);
+      lines.innerHTML=L.map(function(l,i){return row(l[0],l[1],l[2]).replace('<div style="','<div class="'+(first&&!RM?'ev-tick':'')+'" style="--ev-d:'+(300+i*120)+'ms;')}).join('');
+      roll(totalEl,p.p+x);first=false;
       if(cta){cta.setAttribute('href',p.url);cta.textContent='View '+p.n}
     }
     ctrl.addEventListener('click',function(e){
@@ -70,5 +73,5 @@
       cost.textContent='£'+(e*p/100).toFixed(2);time.textContent='About '+Math.floor(h)+' h '+Math.round((h%1)*60)+' min on a 7kW charger'};
     ['ev-kwh','ev-ppk','ev-pct'].forEach(function(i){q(i).addEventListener('input',go)});go();
   }
-})();
+});
 </script>

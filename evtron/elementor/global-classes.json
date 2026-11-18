@@ -81,6 +81,20 @@
       "padding": {
        "$$type": "dimensions",
        "value": {
+        "block-start": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        },
+        "block-end": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        },
         "inline-start": {
          "$$type": "size",
          "value": {
@@ -149,6 +163,20 @@
         "block-end": {
          "$$type": "global-size-variable",
          "value": "e-gv-4082593"
+        },
+        "inline-start": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        },
+        "inline-end": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
         }
        }
       },
@@ -1119,6 +1147,13 @@
        "$$type": "size",
        "value": {
         "size": 720,
+        "unit": "px"
+       }
+      },
+      "padding": {
+       "$$type": "size",
+       "value": {
+        "size": 0,
         "unit": "px"
        }
       },
