@@ -12,6 +12,18 @@
 .v3-bar small{display:block;font-family:"Manrope",sans-serif;font-size:12px;color:#939CA8;font-weight:400}
 .v3-bar a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:6px;background:#3BE37F;color:#06210F;font-weight:600;font-size:15px;text-decoration:none}
 @media(max-width:767px){.v3-bar{display:flex}body.v3-has-bar #ast-scroll-top{bottom:84px!important}}
+/* Interactive feature + confidence cards */
+.v3-ix{cursor:default}
+.v3-ix .v3-tile{transition:background-color .25s ease,border-color .25s ease,transform .3s cubic-bezier(.2,.7,.2,1)}
+.v3-ix .v3-tile .e-svg-base{transition:color .25s ease}
+.v3-ix:hover .v3-tile,.v3-ix:focus-within .v3-tile{background-color:#3BE37F!important;border-color:#3BE37F!important;transform:rotate(-6deg) scale(1.06)}
+.v3-ix:hover .v3-tile .e-svg-base,.v3-ix:focus-within .v3-tile .e-svg-base{color:#06210F!important}
+@media (hover:hover){
+  .v3-ix .v3-more{opacity:0;transform:translate3d(0,6px,0);max-height:0;overflow:hidden;margin-top:0!important;padding-top:0!important;border-top-color:transparent!important;
+    transition:opacity .3s ease,transform .3s ease,max-height .35s ease,margin-top .3s ease,padding-top .3s ease}
+  .v3-ix:hover .v3-more,.v3-ix:focus-within .v3-more{opacity:1;transform:none;max-height:120px;margin-top:12px!important;padding-top:12px!important;border-top-color:#2A3441!important}
+}
+@media (prefers-reduced-motion:reduce){.v3-ix .v3-tile,.v3-ix .v3-more{transition:none!important}.v3-ix:hover .v3-tile{transform:none}}
 </style>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
@@ -27,6 +39,15 @@ document.addEventListener('DOMContentLoaded',function(){
     });
     label.setAttribute('aria-live','polite');
   }
+  /* Interactive cards: Why EV-Tron + Buy with confidence */
+  [].forEach.call(document.querySelectorAll('main > section'),function(sec){
+    if(!/Why EV-Tron|Buy with confidence/.test((sec.querySelector('h2')||{}).textContent||''))return;
+    sec.querySelectorAll('.ev-card').forEach(function(card){
+      card.classList.add('v3-ix');card.setAttribute('tabindex','0');
+      var tile=card.firstElementChild;if(tile)tile.classList.add('v3-tile');
+      var ps=card.querySelectorAll('p');if(ps.length)ps[ps.length-1].classList.add('v3-more');
+    });
+  });
   /* Sticky mobile buy bar: appears once the hero buttons scroll out of view */
   var bar=document.createElement('div');bar.className='v3-bar';
   bar.innerHTML='<p>£1,295<small>EV-Tron · fully installed</small></p><a href="/ev-chargers/evtron-tethered-ev-charger/">Buy now</a>';

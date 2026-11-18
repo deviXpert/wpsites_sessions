@@ -119,27 +119,29 @@ specs = section('V3 specs', [div('Spec grid wrap', [
     ['ev-divider-top'])
 
 # ---------- 4c. Warranty, payment and peace of mind ----------
-PEACE = [('fa-solid fa-shield', 'Warranty', '3 years included. Extend to 5 years for £89.99. Claims handled directly by EV-Tron.'),
-         ('fa-regular fa-credit-card', 'Pay your way', 'Card, Apple Pay, Google Pay or PayPal. Or spread the cost with Klarna or PayPal Pay in 3 (subject to approval).'),
-         ('fa-solid fa-rotate-left', 'Fair refunds', 'If our remote check shows your home isn’t suitable, and no chargeable work has been agreed, you get a full refund.'),
-         ('fa-solid fa-headset', 'One point of contact', 'Installation, technical help and aftercare, all through EV-Tron. Monday to Saturday, 8:30am to 6:30pm.')]
+PEACE = [('fa-solid fa-shield', 'Warranty', '3 years included. Extend to 5 years for £89.99.', 'Claims are handled directly by EV-Tron, with manufacturer support where needed.'),
+         ('fa-regular fa-credit-card', 'Pay your way', 'Card, Apple Pay, Google Pay or PayPal.', 'Or spread the cost with Klarna or PayPal Pay in 3, subject to approval.'),
+         ('fa-solid fa-rotate-left', 'Fair refunds', 'Full refund if your home isn’t suitable after our remote check.', 'As long as no chargeable work has been agreed. Non-standard work is always explained first.'),
+         ('fa-solid fa-headset', 'One point of contact', 'Installation, technical help and aftercare, all through EV-Tron.', 'Monday to Saturday, 8:30am to 6:30pm · sales@evtron.co.uk')]
 peace = section('V3 peace', [
     head('Peace head', 'Buy with confidence'),
-    div('Peace grid', [div(f'Peace {i}', [gtile(f'Peace {i} icon', ic), h(f'Peace {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Peace {i} d', d, ['ev-body'], 'margin-top: 6px;')], classes=['ev-card'])
-                       for i, (ic, t, d) in enumerate(PEACE)],
+    div('Peace grid', [div(f'Peace {i}', [gtile(f'Peace {i} icon', ic), h(f'Peace {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Peace {i} d', d, ['ev-body'], 'margin-top: 6px;'),
+                                          p(f'Peace {i} more', more, ['ev-small'], 'margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--ev-divider); color: var(--ev-accent);')], classes=['ev-card'])
+                       for i, (ic, t, d, more) in enumerate(PEACE)],
         'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
 ], ['ev-divider-top'])
 
 # ---------- 5. Key features ----------
-FEAT = [('fa-solid fa-wifi', 'Smart app', 'Wi-Fi and Bluetooth. Schedule cheaper off-peak charging and see live charging data.'),
-        ('fa-solid fa-gauge-high', 'Load balancing', 'Protects your home supply automatically.'),
-        ('fa-solid fa-shield-halved', 'Protected install', 'Surge and PEN fault protection as standard.'),
-        ('fa-solid fa-cloud-rain', 'Weatherproof', 'IP65 rated for outdoor walls (EV-Tron).')]
+FEAT = [('fa-solid fa-wifi', 'Smart app', 'Wi-Fi and Bluetooth. Schedule cheaper off-peak charging.', 'See live voltage, current, power, temperature, time and energy added.'),
+        ('fa-solid fa-gauge-high', 'Load balancing', 'Protects your home supply automatically.', 'A CT clamp reads your home’s demand and lowers charging when needed.'),
+        ('fa-solid fa-shield-halved', 'Protected install', 'Surge and PEN fault protection as standard.', 'Plus over/under-voltage, overcurrent, earth leakage and temperature protection.'),
+        ('fa-solid fa-cloud-rain', 'Weatherproof', 'IP65 rated for outdoor walls (EV-Tron).', 'Suitable indoors or outdoors, subject to a suitable location.')]
 features = section('V3 features', [
     head('Feat head', 'Why EV-Tron'),
-    div('Feat grid', [div(f'Feat {i}', [gtile(f'Feat {i} icon', ic), h(f'Feat {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Feat {i} d', d, ['ev-body'], 'margin-top: 6px;')])
-                      for i, (ic, t, d) in enumerate(FEAT)],
-        'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); gap: 28px; }'),
+    div('Feat grid', [div(f'Feat {i}', [gtile(f'Feat {i} icon', ic), h(f'Feat {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Feat {i} d', d, ['ev-body'], 'margin-top: 6px;'),
+                                        p(f'Feat {i} more', more, ['ev-small'], 'margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--ev-divider); color: var(--ev-accent);')], classes=['ev-card'])
+                      for i, (ic, t, d, more) in enumerate(FEAT)],
+        'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
 ], ['ev-divider-top'])
 
 # ---------- 5b. About (client copy) ----------
@@ -162,15 +164,32 @@ FAQ = [('Will it work with my car?', 'Yes, if your car uses Type 2, which most U
        ('What warranty do I get?', '3 years as standard, or 5 years in total with the £89.99 extension. Warranty claims are handled directly by EV-Tron.'),
        ('Can I charge from solar panels?', 'The two Fox chargers are solar-compatible, depending on the model and your system. EV-Tron Tethered doesn’t support solar-surplus charging.'),
        ('Do you do groundworks?', 'No. We don’t offer groundworks or excavation, so the charger needs a suitable wall or post location near your parking.')]
-items = [el('e-accordion-item', f'Q {i}', None, 'border-bottom: 1px solid var(--ev-divider);', None, [
-    el('e-accordion-item-header', f'Q {i} h', None, 'padding: 22px 0; gap: 16px;', None, [
-        el('e-accordion-item-title', f'Q {i} t', None, None, None, [p(f'Q {i} q', q, None, 'color: var(--ev-text); font-weight: 600; font-size: 17px;')]),
-        el('e-accordion-item-icon', f'Q {i} i', None, 'width: 20px; color: var(--ev-accent);', None, [icon(f'Q {i} plus', 'fa-solid fa-plus', 12, 'var(--ev-accent)')])]),
-    el('e-accordion-item-content', f'Q {i} c', None, 'padding: 0 0 22px 0;', None, [p(f'Q {i} a', a, ['ev-body'], 'max-width: 64ch;')])]) for i, (q, a) in enumerate(FAQ)]
-faq = section('V3 faq', [
-    head('FAQ head', 'Quick answers'),
-    el('e-accordion', 'V3 FAQ list', {'default_state': 'all_collapsed', 'max_expanded': 'one', 'show_icon': True, 'icon_rotation': 45, 'faq_schema': True}, 'border-top: 1px solid var(--ev-divider); max-width: 860px;', None, items),
-], ['ev-divider-top'])
+items = []
+for i, (q, a) in enumerate(FAQ):
+    items.append(el('e-accordion-item', f'Q {i}', None, 'border-bottom: 1px solid var(--ev-divider); border-radius: var(--ev-r-md);', None, [
+        el('e-accordion-item-header', f'Q {i} h', None, 'padding-top: 22px; padding-bottom: 22px; padding-left: 24px; padding-right: 24px; gap: 24px; @media(--mobile){ padding-left: 16px; padding-right: 16px; gap: 16px; }', None, [
+            el('e-accordion-item-title', f'Q {i} t', None, None, None, [div(f'Q {i} row', [
+                p(f'Q {i} n', f'{i+1:02d}', None, MONO + 'font-size: 13px; color: var(--ev-muted); width: 32px; flex-shrink: 0; padding-top: 3px;'),
+                p(f'Q {i} q', q, None, 'color: var(--ev-text); font-weight: 600; font-size: 17px; line-height: 1.4; @media(--mobile){ font-size: 16px; }')],
+                'display: flex; align-items: flex-start; gap: 16px;')]),
+            el('e-accordion-item-icon', f'Q {i} i', None, 'width: 32px; height: 32px; min-width: 32px; max-width: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid var(--ev-control); border-radius: 999px; color: var(--ev-text);', None,
+               [icon(f'Q {i} plus', 'fa-solid fa-plus', 12, 'var(--ev-text)')])]),
+        el('e-accordion-item-content', f'Q {i} c', None, 'padding-top: 0; padding-bottom: 26px; padding-left: 72px; padding-right: 64px; @media(--mobile){ padding-left: 16px; padding-right: 16px; }', None,
+           [p(f'Q {i} a', a, ['ev-body'], 'max-width: 62ch;')])]))
+faq = section('V3 faq', [div('FAQ grid', [
+    div('FAQ side', [p('FAQ eyebrow', 'FAQs', ['ev-label'], 'color: var(--ev-accent);'),
+                     h('FAQ title', 'Quick answers', 'h2', ['ev-h2'], 'margin-top: 16px;'),
+                     p('FAQ intro', 'Straight answers before you buy. Open one at a time.', ['ev-lead'], 'margin-top: 16px;'),
+                     div('Help card', [p('Help title', 'Still have a question?', None, 'color: var(--ev-text); font-weight: 600; font-size: 17px;'),
+                                       p('Help text', 'We’re here Monday to Saturday, 8:30am to 6:30pm. Email us any time.', ['ev-small'], 'margin-top: 8px;'),
+                                       p('Help email', '<a href="mailto:sales@evtron.co.uk">sales@evtron.co.uk</a>', None, MONO + 'font-size: 14px; color: var(--ev-accent); margin-top: 16px;'),
+                                       div('Help buttons', [btn('Help book', 'Book a free survey', BOOK, 'primary'), btn('Help faqs', 'All FAQs', '/faqs/', 'ghost')],
+                                           'display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px;')],
+                         'margin-top: 40px; padding: 24px; background-color: var(--ev-s1); border: 1px solid var(--ev-divider); border-radius: var(--ev-r-md);')],
+        'display: flex; flex-direction: column; position: sticky; top: 120px; @media(--tablet){ position: static; }'),
+    el('e-accordion', 'V3 FAQ list', {'default_state': 'first_expanded', 'max_expanded': 'one', 'show_icon': True, 'icon_rotation': 45, 'faq_schema': True}, 'display: flex; flex-direction: column; gap: 8px;', None, items),
+], 'display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 80px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 40px; }')],
+    ['ev-divider-top'])
 
 # ---------- 7. Final band ----------
 final = section('V3 final', [div('Final panel', [
