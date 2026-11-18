@@ -1,0 +1,39 @@
+<!-- EV-Tron V3 "Simple": colour swatch selection in the hero + sticky mobile buy bar. Elementor > Custom Code > "EV-Tron V3" (Home V3 only). -->
+<style>
+.v3-sw{cursor:pointer;transition:transform .15s ease}
+.v3-sw:hover{transform:scale(1.08)}
+.v3-sw[aria-checked="true"]{outline:2px solid #3BE37F;outline-offset:4px}
+.v3-sw:focus-visible{outline:2px solid #3BE37F;outline-offset:4px}
+.v3-bar{position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;align-items:center;justify-content:space-between;gap:12px;
+  padding:12px max(16px,env(safe-area-inset-left,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-right,0px));
+  background:rgba(11,15,20,.96);border-top:1px solid #2A3441;transform:translateY(100%);transition:transform .3s ease}
+.v3-bar.on{transform:none}
+.v3-bar p{margin:0;font-family:"IBM Plex Mono",ui-monospace,monospace;color:#F2EFE9;font-size:18px;font-weight:500}
+.v3-bar small{display:block;font-family:"Manrope",sans-serif;font-size:12px;color:#939CA8;font-weight:400}
+.v3-bar a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:6px;background:#3BE37F;color:#06210F;font-weight:600;font-size:15px;text-decoration:none}
+@media(max-width:767px){.v3-bar{display:flex}body.v3-has-bar #ast-scroll-top{bottom:84px!important}}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  /* Hero colour swatches */
+  var label=[].slice.call(document.querySelectorAll('main p')).find(function(p){return p.textContent.trim()==='Mythos Black'});
+  var row=label&&label.previousElementSibling;
+  var names=['Mythos Black','Space Grey','Midnight Green','Crimson Red'];
+  if(row){row.setAttribute('role','radiogroup');row.setAttribute('aria-label','Colour');
+    [].forEach.call(row.children,function(s,i){s.classList.add('v3-sw');s.setAttribute('role','radio');s.setAttribute('tabindex',i===0?'0':'-1');s.setAttribute('aria-label',names[i]);s.setAttribute('aria-checked',String(i===0));
+      var pick=function(){[].forEach.call(row.children,function(o,j){o.setAttribute('aria-checked',String(j===i));o.setAttribute('tabindex',j===i?'0':'-1')});label.textContent=names[i]};
+      s.addEventListener('click',pick);s.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}
+        if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();var n=row.children[(i+(e.key==='ArrowRight'?1:3))%4];n.focus();n.click()}});
+    });
+    label.setAttribute('aria-live','polite');
+  }
+  /* Sticky mobile buy bar: appears once the hero buttons scroll out of view */
+  var bar=document.createElement('div');bar.className='v3-bar';
+  bar.innerHTML='<p>£1,295<small>EV-Tron · fully installed</small></p><a href="/ev-chargers/evtron-tethered-ev-charger/">Buy now</a>';
+  document.body.appendChild(bar);document.body.classList.add('v3-has-bar');
+  var heroBtn=[].slice.call(document.querySelectorAll('main a')).find(function(a){return a.textContent.trim()==='Buy now'});
+  var foot=document.querySelector('footer.elementor-element');
+  var upd=function(){var past=heroBtn?heroBtn.getBoundingClientRect().bottom<0:window.scrollY>600;var atFoot=foot?foot.getBoundingClientRect().top<window.innerHeight:false;bar.classList.toggle('on',past&&!atFoot)};
+  window.addEventListener('scroll',upd,{passive:true});upd();
+});
+</script>
