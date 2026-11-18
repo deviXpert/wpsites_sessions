@@ -43,11 +43,15 @@ Please answer what you can. Anything left blank will appear on the site as a cle
 ## 6. Client actions
 - **Register Stripe and PayPal business accounts** in the business's legal name, and apply for instalments (Klarna and/or PayPal Pay in 3). Share access with the developer once they're approved so the payments can be connected and tested.
 
-## 7. Documents to send
-- Supplier specification `Specs.pdf` and the two charger manuals
-- Smart charge point statement of compliance (EVTRON charger)
-- Installer accreditation certificates
-- Warranty terms from the manufacturers
+## 7. Documents to get (you don't have these yet, so please request them)
+| Document | Get it from | Why we need it | Needed by |
+|---|---|---|---|
+| EVTRON charger specification and user manuals (English) | Your EVTRON charger supplier | Accurate specs, features and app details on the product page | Before the product pages go live |
+| **Smart charge point statement of compliance** (Electric Vehicles (Smart Charge Points) Regulations 2021) for the exact EVTRON model | Your EVTRON charger supplier | UK law: the charger can't be sold in Great Britain without it | **Before the EVTRON charger is put on sale** |
+| UKCA / CE declaration of conformity for the EVTRON charger | Your EVTRON charger supplier | Confirms the charger is legal to sell in the UK | Before the EVTRON charger is put on sale |
+| Warranty terms (EVTRON charger and Fox chargers) | Your supplier, and Fox ESS or your Fox distributor | To write the warranty page (the brief offers 3 years, the manual says 1 year) | **Before launch** |
+| Fox datasheets and manuals for the exact models | Fox ESS or your Fox distributor | Accurate Fox product pages | Before the Fox pages go live |
+| Installer accreditation certificates (e.g. NICEIC, NAPIT, OZEV-approved) | Your installer(s) | Only if they hold any. We'll only mention accreditations you can prove | Optional |
 
 ---
 *Already decided (no need to ask):* enquiries go to sales@ and info@ at evtron.co.uk; the website will be managed by the developer; product photos will be sent later (placeholders used until then).
