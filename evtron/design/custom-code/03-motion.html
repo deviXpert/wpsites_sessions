@@ -44,10 +44,11 @@
 .ev-spec-strip{position:absolute;left:0;right:0;bottom:0;padding:12px 16px;background:rgba(11,15,20,.88);border-top:1px solid #2A3441;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.04em;color:#F2EFE9;transform:translate3d(0,100%,0);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
 .ev-lift:hover .ev-spec-strip,.ev-lift:focus-within .ev-spec-strip{transform:none}
 /* Header "charge the page" battery */
-.ev-pbat{display:inline-flex;align-items:center;gap:8px;margin-right:4px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:#939CA8;white-space:nowrap}
+.ev-pbat{display:inline-flex;align-items:center;gap:8px;margin-right:4px;opacity:0;transform:translate3d(0,-4px,0);transition:opacity .3s ease,transform .3s ease;pointer-events:none;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:#939CA8;white-space:nowrap}
 .ev-pbat b{position:relative;display:block;width:30px;height:14px;border:1.5px solid #6A7688;border-radius:3px;padding:1.5px}
 .ev-pbat b::after{content:"";position:absolute;right:-4px;top:4px;width:2px;height:5px;border-radius:0 1px 1px 0;background:#6A7688}
 .ev-pbat i{display:block;height:100%;width:100%;background:#3BE37F;border-radius:1px;transform-origin:left;transform:scaleX(var(--ev-p,0))}
+.ev-pbat.ev-on{opacity:1;transform:none;pointer-events:auto;cursor:default}
 @media(max-width:1180px){.ev-pbat span{display:none}}
 @media(max-width:767px){.ev-pbat{display:none}}
 header.ev-scrolled{background-color:rgba(11,15,20,.985)!important}
@@ -81,13 +82,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var bat=null;
   if(hdr){
     var act=hdr.querySelector('.elementor-widget-woocommerce-menu-cart');
-    if(act&&act.parentElement){bat=document.createElement('span');bat.className='ev-pbat';bat.setAttribute('aria-hidden','true');bat.innerHTML='<b><i></i></b><span>0%</span>';act.parentElement.insertBefore(bat,act)}
+    if(act&&act.parentElement){bat=document.createElement('span');bat.className='ev-pbat';bat.setAttribute('aria-hidden','true');bat.innerHTML='<b><i></i></b><span>0%</span>';bat.title='Page charged: 0%';act.parentElement.insertBefore(bat,act)}
   }
   var ticking=false;
   function onScroll(){
     var y=window.scrollY,max=Math.max(1,document.documentElement.scrollHeight-window.innerHeight),pc=Math.min(1,y/max);
     if(hdr)hdr.classList.toggle('ev-scrolled',y>8);
-    if(bat){bat.style.setProperty('--ev-p',pc.toFixed(3));bat.lastChild.textContent=Math.round(pc*100)+'%'}
+    if(bat){var pct=Math.round(pc*100);bat.style.setProperty('--ev-p',pc.toFixed(3));bat.lastChild.textContent=pct+'%';bat.title='Page charged: '+pct+'%';bat.classList.toggle('ev-on',pct>=1)}
     revealPassed();ticking=false;
   }
   window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
