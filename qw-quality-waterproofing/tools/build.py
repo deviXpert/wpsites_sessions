@@ -8,7 +8,7 @@ from el import *
 from content import SERVICES, LOCATIONS
 
 MENU_SLUG = 'qw-main-menu'
-SVC_ORDER = ['exterior-waterproofing', 'interior-waterproofing', 'sump-pump-installation', 'foundation-crack-repair', 'interlocking']
+SVC_ORDER = ['exterior-waterproofing', 'interior-waterproofing', 'sump-pump-installation', 'foundation-crack-repair', 'underpinning', 'interlocking']
 LOC_ORDER = ['basement-waterproofing-toronto', 'basement-waterproofing-mississauga', 'basement-waterproofing-brampton', 'basement-waterproofing-st-catharines', 'basement-waterproofing-north-bay']
 FB = 'https://www.facebook.com/share/1E1EebBzXR/?mibextid=wwXIfr'
 IG = 'https://www.instagram.com/qualitywaterproofinginc'
@@ -61,8 +61,7 @@ def inspection_card():
 
 def services_grid(dark=False, intro=True, exclude=None, bg='cream'):
     cards = [SERVICE_CARD(SERVICES[s]['card'], SERVICES[s]['name'], SERVICES[s]['card_text'], page_url(s)) for s in SVC_ORDER if s != exclude]
-    if not exclude:
-        cards.append(inspection_card())
+    if len(cards) % 3: cards.append(inspection_card())  # only fill an empty slot in the 3-column grid
     head = HEAD('What We Do', 'Waterproofing & Exterior <span class="qw-hl">Services</span>',
                 'From the footing to the front walk – we protect your home from water with proven methods and careful workmanship.' if intro else None,
                 align='center', dark=dark)
@@ -228,13 +227,13 @@ GEN_FAQ = [('Do you offer free estimates?', 'Yes. We provide free on-site inspec
            ('What areas do you serve?', 'We serve Toronto and the Greater Toronto Area – including Mississauga, Brampton, Etobicoke, North York, Scarborough and Vaughan – as well as St. Catharines in the Niagara Region and North Bay and the surrounding area.'),
            ('Should I choose interior or exterior waterproofing?', 'It depends on where the water is entering, access around your home and your plans for the basement. Exterior waterproofing stops water before it reaches the wall; interior waterproofing manages it from inside with a drain and sump pump. We will explain both options during your inspection.'),
            ('Do you do residential and commercial work?', 'Yes. Our team has over 10 years of residential and commercial construction experience.'),
-           ('Besides waterproofing, what else do you do?', 'We also install sump pumps, repair foundation cracks and build interlocking patios, walkways and driveways. Ask us about walkouts and underpinning too.')]
+           ('Besides waterproofing, what else do you do?', 'We also install sump pumps, repair foundation cracks, underpin and lower basements, and build interlocking patios, walkways and driveways. Ask us about walkouts too.')]
 
 def home():
     seed('home')
     return [
         hero('Toronto · Mississauga · Brampton · St. Catharines · North Bay', 'Basement Waterproofing & Foundation Repair in the <span class="qw-hl">GTA & North Bay</span>',
-             'Wet basement? Leaking foundation crack? Quality Waterproofing keeps homes across Toronto, the GTA, St. Catharines and North Bay dry with exterior and interior waterproofing, sump pumps, crack repair and expert interlocking.',
+             'Wet basement? Leaking foundation crack? Quality Waterproofing keeps homes across Toronto, the GTA, St. Catharines and North Bay dry with exterior and interior waterproofing, underpinning, sump pumps, crack repair and expert interlocking.',
              bg='ext_long_trench', video=True, minh=720),
         trust_strip(),
         services_grid(),
@@ -256,7 +255,7 @@ def home():
 def services_hub():
     seed('services')
     return [hero('Our Services', 'Basement Waterproofing <span class="qw-hl">Services</span> in Toronto & the GTA',
-                 'Exterior and interior waterproofing, sump pump installation, exterior foundation crack repair and interlocking – everything you need to keep water out and protect your home.',
+                 'Exterior and interior waterproofing, sump pump installation, exterior foundation crack repair, underpinning and interlocking – everything you need to keep water out and protect your home.',
                  bg='ext_orange_membrane', minh=560),
             services_grid(intro=True), why_us('ext_crew_trench', 'int_column'), process(), areas_section(), cta_band()]
 
@@ -275,7 +274,7 @@ def service_page(slug):
         signs,
         process(S['steps'], f'Our {S["name"]} <span class="qw-hl">Process</span>'),
         benefits,
-        gallery(S['gallery'], f'{S["name"]} <span class="qw-hl">Projects</span>', 'Project Gallery', cols=4, bg='light'),
+        gallery(S['gallery'], S.get('gallery_h') or f'{S["name"]} <span class="qw-hl">Projects</span>', 'Project Gallery', cols=4, bg='light'),
         areas_section(),
         faq_section(S['faq'], side_img=S['gallery'][1]),
         form_section(),
@@ -286,7 +285,8 @@ def location_page(slug):
     seed(slug); L = LOCATIONS[slug]; city = L['city']
     local = SECTION(HEAD('Local Expertise', L['local_h'].replace(city, f'<span class="qw-hl">{city}</span>'), align='center')
                     + [C([IBOX(i, t, d, view='stacked') for i, t, d in L['local']], 'Local Grid', grid=4, grid_t=2, grid_gaps=gap(30), _margin=dims(24, 0, 0, 0))], 'Local Issues', bg='white')
-    svc_cards = [SERVICE_CARD(SERVICES[s]['card'], f"{SERVICES[s]['name']}", SERVICES[s]['card_text'], page_url(s)) for s in SVC_ORDER] + [inspection_card()]
+    svc_cards = [SERVICE_CARD(SERVICES[s]['card'], f"{SERVICES[s]['name']}", SERVICES[s]['card_text'], page_url(s)) for s in SVC_ORDER]
+    if len(svc_cards) % 3: svc_cards.append(inspection_card())
     svcs = SECTION(HEAD('Services in ' + city, f'Our Services in <span class="qw-hl">{city}</span>', f'Everything you need to keep your {city} basement dry and your exterior looking great.', align='center')
                    + [C(svc_cards, 'Services Grid', grid=3, grid_t=2, grid_gaps=gap(24), _margin=dims(24, 0, 0, 0))], 'Services', bg='cream')
     hoods = SECTION([C([

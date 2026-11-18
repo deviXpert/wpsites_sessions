@@ -13,6 +13,7 @@ No SEO plugin is installed yet. After installing one, copy these in. The focus k
 | `/interior-waterproofing/` | Interior Basement Waterproofing in Toronto & the GTA \| QW | A dry basement without digging up your yard. Our interior waterproofing system collects water at the footing with a perimeter drain and membrane and sends… |
 | `/sump-pump-installation/` | Sump Pump Installation & Replacement in Toronto & the GTA \| QW | Your last line of defence against a flooded basement. We install new sump pits, replace failing pumps and add battery backups so your basement stays dry –… |
 | `/foundation-crack-repair/` | Foundation Crack Repair in Toronto & the GTA \| QW | A small crack can let in a lot of water. We repair leaking foundation cracks from the outside – excavating, sealing and membraning the crack so it stays… |
+| `/underpinning/` | Underpinning & Basement Lowering Toronto \| Quality Waterproofing | Underpinning and basement lowering in Toronto & the GTA – more ceiling height and living space, with waterproofing done at the same time. |
 | `/interlocking/` | Interlocking Patios, Walkways & Driveways in Toronto & the GTA \| QW | Beautiful, durable interlock built on a proper base. From backyard patios and pool decks to walkways, steps and driveways, we design and install… |
 | `/basement-waterproofing-toronto/` | Basement Waterproofing Toronto \| Quality Waterproofing | Wet basement in Toronto? Quality Waterproofing provides exterior and interior waterproofing, sump pumps, foundation crack repair and interlocking across… |
 | `/basement-waterproofing-mississauga/` | Basement Waterproofing Mississauga \| Quality Waterproofing | Trusted basement waterproofing, sump pump installation, foundation crack repair and interlocking for homes across Mississauga – from Port Credit to… |
@@ -27,5 +28,4 @@ No SEO plugin is installed yet. After installing one, copy these in. The focus k
 | /basement-waterproofing/ | /services/ |
 | /waterproofing/ | /services/ |
 | /concrete/ | /services/ |
-| /underpinning/ | /services/ |
-| /about-us/, /contact/, /exterior-waterproofing/, /interior-waterproofing/, /interlocking/ | same slugs, no redirect needed |
+| /about-us/, /contact/, /exterior-waterproofing/, /interior-waterproofing/, /interlocking/, /underpinning/ | same slugs, no redirect needed |

@@ -11,7 +11,7 @@ Cloud environment: "Quality WaterProofing" (allowlist has the staging host, the 
 
 ## User requirements (agreed)
 - Built in Elementor with **native widgets**; styling via widget controls + Global Colors/Fonts. Minimal CSS, kept in a global Elementor place.
-- Focus areas: Toronto/GTA, Mississauga, Brampton, St. Catharines (added later, Niagara Region), North Bay. Services: exterior waterproofing, interior waterproofing, sump pump, exterior foundation crack repair, interlocking.
+- Focus areas: Toronto/GTA, Mississauga, Brampton, St. Catharines (added later, Niagara Region), North Bay. Services: exterior waterproofing, interior waterproofing, sump pump, exterior foundation crack repair, underpinning (added later, `/underpinning/` – old-site slug kept), interlocking.
 - Logo tagline "Our company will help protect your home's basement from water damage" is used only as text: opening line of the About story and the footer company blurb (also the JSON-LD `slogan`). No standalone tagline/logo band (user asked to remove it).
 - **Light theme** (like the reference site): white / cream / light-grey sections. Header: dark top bar + **white main bar** (logo variant for light backgrounds, media 117 `logo_light`); footer stays dark with the original cut-out logo (media 55, dark backgrounds only). Hero photo banners keep a dark overlay for white text.
 - Test note: headless Chromium reports touch mode, so SmartMenus dropdowns don't open on synthetic hover in Playwright. Real desktop hover works.
@@ -37,7 +37,7 @@ Cloud environment: "Quality WaterProofing" (allowlist has the staging host, the 
 | Menu "QW Main Menu" (slug `qw-main-menu`) | 4 – all items link to their pages (demo mode ended; `restore_menu.py` + `menu_backup.json` kept in case placeholder mode is needed again). Footer links are generated only for published pages (`live()` in build.py). |
 | Media | see `tools/media.json` (key → id/url); sources + alt text in `tools/media_src.py` |
 
-Pages (**all 15 published** – client demo mode ended; `build.py`/`yoast.py` keep each page's current status; Astra full-width / no title, template `elementor_header_footer`): Home, About, Services hub, 5 service pages (`/exterior-waterproofing/`, `/interior-waterproofing/`, `/sump-pump-installation/`, `/foundation-crack-repair/`, `/interlocking/`), 5 location pages (`/basement-waterproofing-toronto|mississauga|brampton|st-catharines|north-bay/`), Projects (filterable gallery), Contact.
+Pages (**all 15 published** – client demo mode ended; `build.py`/`yoast.py` keep each page's current status; Astra full-width / no title, template `elementor_header_footer`): Home, About, Services hub, 6 service pages (`/underpinning/`, `/exterior-waterproofing/`, `/interior-waterproofing/`, `/sump-pump-installation/`, `/foundation-crack-repair/`, `/interlocking/`), 5 location pages (`/basement-waterproofing-toronto|mississauga|brampton|st-catharines|north-bay/`), Projects (filterable gallery), Contact.
 
 ## How to rebuild / resume
 ```bash
@@ -69,3 +69,5 @@ python3 yoast.py                                                        # push Y
 5. Old-site services not requested (underpinning, walkouts, concrete, landscaping) are only mentioned in About/FAQ text.
 6. The "Hello world!" post and the draft Privacy Policy page are still the WordPress defaults. A privacy policy page should be written before launch.
 7. WordPress "Search engine visibility" was not changed. Check it at launch.
+
+8. **Underpinning photos:** no real underpinning project photos were supplied, so its gallery is titled "Foundation & Basement Work" and uses general excavation/basement photos. Replace with real underpinning photos when the client sends them. The Projects page has no Underpinning filter tab yet for the same reason.
