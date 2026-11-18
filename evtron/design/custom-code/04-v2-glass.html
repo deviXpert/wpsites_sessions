@@ -1,0 +1,57 @@
+<!-- EVTRON V2 glassmorphism layer. Elementor > Custom Code > "EVTRON V2 glass" (Home V2 page only).
+     Panels are detected by their solid surface colour and turned into frosted glass over a slow ambient light field.
+     Text contrast is kept AA: panels stay dark (white tint <= 6%) and the light field is low-intensity. -->
+<style>
+html.ev-glass{background:#070A0E!important}
+html.ev-glass body,html.ev-glass #page,html.ev-glass .site,html.ev-glass .site-content,html.ev-glass .ast-container,html.ev-glass #content,html.ev-glass main,html.ev-glass .elementor,html.ev-glass .elementor-location-footer{background:transparent!important}
+.ev-amb{position:fixed;inset:-10vmax;z-index:0;pointer-events:none;overflow:hidden}
+.ev-amb i{position:absolute;border-radius:50%;filter:blur(80px);opacity:.8;will-change:transform}
+.ev-amb i:nth-child(1){width:46vmax;height:46vmax;left:52%;top:2%;background:radial-gradient(circle at 40% 40%,rgba(59,227,127,.30),rgba(59,227,127,0) 65%)}
+.ev-amb i:nth-child(2){width:52vmax;height:52vmax;left:-8%;top:38%;background:radial-gradient(circle,rgba(11,122,59,.38),rgba(11,122,59,0) 65%)}
+.ev-amb i:nth-child(3){width:40vmax;height:40vmax;left:58%;top:62%;background:radial-gradient(circle,rgba(70,96,140,.30),rgba(70,96,140,0) 65%)}
+@media (prefers-reduced-motion:no-preference){
+  .ev-amb i:nth-child(1){animation:evDrift1 28s ease-in-out infinite alternate}
+  .ev-amb i:nth-child(2){animation:evDrift2 34s ease-in-out infinite alternate}
+  .ev-amb i:nth-child(3){animation:evDrift3 30s ease-in-out infinite alternate}
+  @keyframes evDrift1{to{transform:translate3d(-12vmax,10vmax,0) scale(1.1)}}
+  @keyframes evDrift2{to{transform:translate3d(14vmax,-8vmax,0) scale(.92)}}
+  @keyframes evDrift3{to{transform:translate3d(-10vmax,-12vmax,0) scale(1.08)}}
+}
+html.ev-glass #page,html.ev-glass .elementor-location-header{position:relative;z-index:1}
+/* Sections and footer let the light through */
+html.ev-glass main section,html.ev-glass footer.elementor-element,html.ev-glass .ev-glyph{background-color:transparent!important}
+html.ev-glass .ev-glyph{background:#070A0E!important;border-radius:4px}
+/* Frosted glass panels */
+html.ev-glass .ev-g{background:linear-gradient(160deg,rgba(255,255,255,.065),rgba(255,255,255,.02))!important;
+  -webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);
+  border:1px solid rgba(255,255,255,.10)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 24px 60px -30px rgba(0,0,0,.6)}
+html.ev-glass .ev-g-deep{background:rgba(7,10,14,.55)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:rgba(255,255,255,.08)!important}
+/* Header frosted */
+html.ev-glass header.elementor-element{background-color:rgba(7,10,14,.55)!important;-webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%);border-bottom-color:rgba(255,255,255,.08)!important}
+html.ev-glass header.ev-scrolled{background-color:rgba(7,10,14,.72)!important}
+/* Glass controls */
+html.ev-glass .ev-btn-ghost,html.ev-glass .ev-x-chip,html.ev-glass .ev-x-seg button,html.ev-glass .ev-fd-tg{background:rgba(255,255,255,.04)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+html.ev-glass .ev-fd-row{background:rgba(7,10,14,.45)}
+html.ev-glass .ev-calc-out{background:rgba(7,10,14,.35)!important}
+html.ev-glass .ev-calc-tiles>div{background:rgba(7,10,14,.55)!important}
+html.ev-glass .ev-spec-strip{background:rgba(7,10,14,.6);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+/* Fallback when backdrop-filter is unsupported: keep panels solid and readable */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){html.ev-glass .ev-g{background:#11161D!important}}
+@media (forced-colors:active){.ev-amb{display:none}}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var root=document.documentElement;root.classList.add('ev-glass');
+  var amb=document.createElement('div');amb.className='ev-amb';amb.setAttribute('aria-hidden','true');amb.innerHTML='<i></i><i></i><i></i>';document.body.prepend(amb);
+  var S1='rgb(17, 22, 29)',INK='rgb(11, 15, 20)';
+  function glassify(){
+    document.querySelectorAll('main *, footer.elementor-element *').forEach(function(el){
+      if(el.closest('.ev-g')&&el.closest('.ev-g')!==el)return;
+      var bg=getComputedStyle(el).backgroundColor;
+      if(bg===S1){el.classList.add('ev-g')}
+      else if(bg===INK&&el.tagName!=='SECTION'&&!el.classList.contains('ev-glyph')&&el.getBoundingClientRect().width<1200){el.classList.add('ev-g-deep')}
+    });
+  }
+  glassify();setTimeout(glassify,600); /* after the interaction scripts have rendered */
+});
+</script>

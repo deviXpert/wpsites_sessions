@@ -206,10 +206,10 @@ faqs = section('FAQs', [div('FAQ grid', [
 
 # ---------- 6. Closing CTA ----------
 closing = section('Closing', [div('Closing panel', [
-    div('Closing copy', [h('Closing title', 'One price. Fitted. No surprises.', 'h2', ['ev-h2']),
-                         p('Closing text', 'Compare the three chargers side by side and choose the one that suits your home.', ['ev-lead'], 'margin-top: 16px;')],
+    div('Closing copy', [h('Closing title', 'Not sure which charger? Three quick questions.', 'h2', ['ev-h2']),
+                         p('Closing text', 'Answer three yes-or-no questions and we’ll match you to a charger, with the reasons and the installed price.', ['ev-lead'], 'margin-top: 16px;')],
         'max-width: 640px;'),
-    btn('Closing CTA', 'Compare the chargers', '/ev-chargers/'),
+    btn('Closing CTA', 'Compare all chargers', '/ev-chargers/', 'ghost'),
 ], 'display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px; padding: 56px; background-color: var(--ev-s1); border: 1px solid var(--ev-divider); border-radius: var(--ev-r-md); @media(--mobile){ padding: 32px 24px; }')],
     ['ev-divider-top'])
 

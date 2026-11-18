@@ -2,13 +2,13 @@
  "id": 86,
  "data": [
   {
-   "id": "669004b9",
+   "id": "bef28ec",
    "elType": "e-div-block",
    "settings": {
     "classes": {
      "$$type": "classes",
      "value": [
-      "e-aee202-4f71"
+      "e-25817d8-ad1b"
      ]
     },
     "tag": {
@@ -18,132 +18,398 @@
    },
    "elements": [
     {
-     "id": "5e222a8e",
+     "id": "61ff3430",
      "elType": "e-div-block",
      "settings": {
       "classes": {
        "$$type": "classes",
        "value": [
-        "g-cc5a7e9",
-        "e-6c4f9bdb-a154"
+        "g-cc5a7e9"
        ]
       }
      },
      "elements": [
       {
-       "id": "530f38c6",
+       "id": "5ab85e8c",
        "elType": "e-div-block",
        "settings": {
         "classes": {
          "$$type": "classes",
          "value": [
-          "e-46cadb69-2447"
+          "e-2586f007-c591"
          ]
         }
        },
        "elements": [
         {
-         "id": "53783fe7",
-         "elType": "widget",
+         "id": "e4b74e8",
+         "elType": "e-div-block",
          "settings": {
           "classes": {
            "$$type": "classes",
            "value": [
-            "e-206d54c0-80f4"
+            "e-1bc54f94-9136"
            ]
-          },
-          "image": {
-           "$$type": "image",
-           "value": {
-            "src": {
-             "$$type": "image-src",
-             "value": {
-              "id": {
-               "$$type": "image-attachment-id",
-               "value": 26
-              }
-             }
+          }
+         },
+         "elements": [
+          {
+           "id": "72c514e7",
+           "elType": "widget",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "g-d4a52b2",
+              "e-258389-1dcd"
+             ]
             },
-            "size": {
+            "paragraph": {
+             "$$type": "escaped-html",
+             "value": "Ready when you are"
+            },
+            "tag": {
              "$$type": "string",
-             "value": "medium_large"
+             "value": "p"
             }
-           }
+           },
+           "elements": [],
+           "widgetType": "e-paragraph",
+           "styles": {
+            "e-258389-1dcd": {
+             "id": "e-258389-1dcd",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "color": {
+                 "$$type": "global-color-variable",
+                 "value": "e-gv-8a77d9d"
+                },
+                "margin": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 0,
+                  "unit": "px"
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Footer eyebrow"
+           },
+           "version": "0.0"
           },
-          "link": {
-           "$$type": "link",
-           "value": {
-            "destination": {
-             "$$type": "url",
-             "value": "https://evtron.co.uk/"
+          {
+           "id": "3c95a83f",
+           "elType": "widget",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "g-6c8e9c4",
+              "e-4f8fe03c-3a02"
+             ]
+            },
+            "tag": {
+             "$$type": "string",
+             "value": "h2"
+            },
+            "title": {
+             "$$type": "escaped-html",
+             "value": "Plug in to simpler home charging."
             }
-           }
-          }
-         },
-         "elements": [],
-         "widgetType": "e-image",
-         "styles": {
-          "e-206d54c0-80f4": {
-           "id": "e-206d54c0-80f4",
-           "label": "local",
-           "type": "class",
-           "variants": [
+           },
+           "elements": [],
+           "widgetType": "e-heading",
+           "styles": {
+            "e-4f8fe03c-3a02": {
+             "id": "e-4f8fe03c-3a02",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "font-size": {
+                 "$$type": "size",
+                 "value": {
+                  "size": "clamp(36px, 5vw, 64px)",
+                  "unit": "custom"
+                 }
+                },
+                "margin": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 20,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Footer title"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "5b18008d",
+           "elType": "widget",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "g-4303cd1",
+              "e-2d666c48-db6d"
+             ]
+            },
+            "paragraph": {
+             "$$type": "escaped-html",
+             "value": "One clear installed price, a short home check, and a qualified electrician on the day."
+            },
+            "tag": {
+             "$$type": "string",
+             "value": "p"
+            }
+           },
+           "elements": [],
+           "widgetType": "e-paragraph",
+           "styles": {
+            "e-2d666c48-db6d": {
+             "id": "e-2d666c48-db6d",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "margin": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 20,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Footer lead"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "560c39f2",
+           "elType": "e-div-block",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-76f37653-7054"
+             ]
+            }
+           },
+           "elements": [
             {
-             "meta": {
-              "breakpoint": "desktop",
-              "state": null
-             },
-             "props": {
-              "width": {
-               "$$type": "size",
-               "value": {
-                "size": 132,
-                "unit": "px"
-               }
+             "id": "2d955674",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "g-1cdebe1"
+               ]
               },
-              "height": {
-               "$$type": "size",
+              "text": {
+               "$$type": "escaped-html",
+               "value": "Choose your charger"
+              },
+              "link": {
+               "$$type": "link",
                "value": {
-                "size": "",
-                "unit": "auto"
+                "destination": {
+                 "$$type": "url",
+                 "value": "https://evtron.co.uk/ev-chargers/"
+                }
                }
               }
              },
-             "custom_css": null
+             "elements": [],
+             "widgetType": "e-button",
+             "editor_settings": {
+              "title": "Footer CTA 1"
+             },
+             "version": "0.0"
+            },
+            {
+             "id": "338a66ed",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "g-bdbc982"
+               ]
+              },
+              "text": {
+               "$$type": "escaped-html",
+               "value": "Get a quote"
+              },
+              "link": {
+               "$$type": "link",
+               "value": {
+                "destination": {
+                 "$$type": "url",
+                 "value": "https://evtron.co.uk/get-a-quote/"
+                }
+               }
+              }
+             },
+             "elements": [],
+             "widgetType": "e-button",
+             "editor_settings": {
+              "title": "Footer CTA 2"
+             },
+             "version": "0.0"
             }
-           ]
+           ],
+           "isInner": false,
+           "styles": {
+            "e-76f37653-7054": {
+             "id": "e-76f37653-7054",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "padding": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 0,
+                  "unit": "px"
+                 }
+                },
+                "margin": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 32,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                },
+                "display": {
+                 "$$type": "string",
+                 "value": "flex"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 12,
+                  "unit": "px"
+                 }
+                },
+                "flex-wrap": {
+                 "$$type": "string",
+                 "value": "wrap"
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Footer buttons"
+           },
+           "version": "0.0"
           }
-         },
-         "editor_settings": {
-          "title": "Footer logo"
-         },
-         "version": "0.0"
-        },
-        {
-         "id": "6b2d88b2",
-         "elType": "widget",
-         "settings": {
-          "classes": {
-           "$$type": "classes",
-           "value": [
-            "g-c4cd10f",
-            "e-6427e334-4274"
-           ]
-          },
-          "paragraph": {
-           "$$type": "escaped-html",
-           "value": "Home EV chargers, supplied and fitted at one clear price. Driven by innovation."
-          },
-          "tag": {
-           "$$type": "string",
-           "value": "p"
-          }
-         },
-         "elements": [],
-         "widgetType": "e-paragraph",
+         ],
+         "isInner": false,
          "styles": {
-          "e-6427e334-4274": {
-           "id": "e-6427e334-4274",
+          "e-1bc54f94-9136": {
+           "id": "e-1bc54f94-9136",
            "label": "local",
            "type": "class",
            "variants": [
@@ -153,19 +419,24 @@
               "state": null
              },
              "props": {
-              "max-width": {
-               "$$type": "size",
-               "value": {
-                "size": 32,
-                "unit": "ch"
-               }
-              },
-              "margin": {
+              "padding": {
                "$$type": "size",
                "value": {
                 "size": 0,
                 "unit": "px"
                }
+              },
+              "display": {
+               "$$type": "string",
+               "value": "flex"
+              },
+              "flex-direction": {
+               "$$type": "string",
+               "value": "column"
+              },
+              "justify-content": {
+               "$$type": "string",
+               "value": "center"
               }
              },
              "custom_css": null
@@ -174,23 +445,2231 @@
           }
          },
          "editor_settings": {
-          "title": "Footer tagline"
+          "title": "Footer CTA"
          },
          "version": "0.0"
         },
         {
-         "id": "12a127f",
+         "id": "7f19021d",
+         "elType": "e-div-block",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "e-7e7365cc-ba58"
+           ]
+          }
+         },
+         "elements": [
+          {
+           "id": "2cfcd1e4",
+           "elType": "e-div-block",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-2d664b7f-9dc8"
+             ]
+            }
+           },
+           "elements": [
+            {
+             "id": "2fadae9e",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "g-d4a52b2",
+                "e-6e4564d2-51e6"
+               ]
+              },
+              "paragraph": {
+               "$$type": "escaped-html",
+               "value": "Smart charging clock \u00b7 UK time"
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "p"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-paragraph",
+             "styles": {
+              "e-6e4564d2-51e6": {
+               "id": "e-6e4564d2-51e6",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Clock label"
+             },
+             "version": "0.0"
+            },
+            {
+             "id": "16d8c72d",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "g-d4a52b2",
+                "e-137387df-d0b2"
+               ]
+              },
+              "paragraph": {
+               "$$type": "escaped-html",
+               "value": "Live"
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "p"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-paragraph",
+             "styles": {
+              "e-137387df-d0b2": {
+               "id": "e-137387df-d0b2",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-8a77d9d"
+                  },
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Clock live"
+             },
+             "version": "0.0"
+            }
+           ],
+           "isInner": false,
+           "styles": {
+            "e-2d664b7f-9dc8": {
+             "id": "e-2d664b7f-9dc8",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "padding": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 0,
+                  "unit": "px"
+                 }
+                },
+                "display": {
+                 "$$type": "string",
+                 "value": "flex"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 12,
+                  "unit": "px"
+                 }
+                },
+                "justify-content": {
+                 "$$type": "string",
+                 "value": "space-between"
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Clock head"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "1f81ba69",
+           "elType": "widget",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "g-4dd13db",
+              "e-78cfaa1c-66ae"
+             ]
+            },
+            "paragraph": {
+             "$$type": "escaped-html",
+             "value": "UK smart chargers come set to avoid charging in default peak hours: weekdays 8am to 11am and 4pm to 10pm. Outside those hours is usually the best time to plug in."
+            },
+            "tag": {
+             "$$type": "string",
+             "value": "p"
+            }
+           },
+           "elements": [],
+           "widgetType": "e-paragraph",
+           "styles": {
+            "e-78cfaa1c-66ae": {
+             "id": "e-78cfaa1c-66ae",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "margin": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 20,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Clock fallback"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "110b0a96",
+           "elType": "widget",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "g-c4cd10f",
+              "e-6846886c-d89d"
+             ]
+            },
+            "paragraph": {
+             "$$type": "escaped-html",
+             "value": "Source: Electric Vehicles (Smart Charge Points) Regulations 2021. Your own tariff\u2019s off-peak times may differ."
+            },
+            "tag": {
+             "$$type": "string",
+             "value": "p"
+            }
+           },
+           "elements": [],
+           "widgetType": "e-paragraph",
+           "styles": {
+            "e-6846886c-d89d": {
+             "id": "e-6846886c-d89d",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "margin": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 16,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Clock source"
+           },
+           "version": "0.0"
+          }
+         ],
+         "isInner": false,
+         "styles": {
+          "e-7e7365cc-ba58": {
+           "id": "e-7e7365cc-ba58",
+           "label": "local",
+           "type": "class",
+           "variants": [
+            {
+             "meta": {
+              "breakpoint": "mobile",
+              "state": null
+             },
+             "props": {
+              "padding": {
+               "$$type": "size",
+               "value": {
+                "size": 20,
+                "unit": "px"
+               }
+              }
+             },
+             "custom_css": null
+            },
+            {
+             "meta": {
+              "breakpoint": "desktop",
+              "state": null
+             },
+             "props": {
+              "padding": {
+               "$$type": "size",
+               "value": {
+                "size": 32,
+                "unit": "px"
+               }
+              },
+              "border-radius": {
+               "$$type": "global-size-variable",
+               "value": "e-gv-a3b2a9f"
+              },
+              "border-width": {
+               "$$type": "size",
+               "value": {
+                "size": 1,
+                "unit": "px"
+               }
+              },
+              "border-color": {
+               "$$type": "global-color-variable",
+               "value": "e-gv-6532a4c"
+              },
+              "border-style": {
+               "$$type": "string",
+               "value": "solid"
+              },
+              "background": {
+               "$$type": "background",
+               "value": {
+                "color": {
+                 "$$type": "global-color-variable",
+                 "value": "e-gv-3d2ccf4"
+                }
+               }
+              }
+             },
+             "custom_css": null
+            }
+           ]
+          }
+         },
+         "editor_settings": {
+          "title": "Charging clock"
+         },
+         "version": "0.0"
+        }
+       ],
+       "isInner": false,
+       "styles": {
+        "e-2586f007-c591": {
+         "id": "e-2586f007-c591",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "tablet",
+            "state": null
+           },
+           "props": {
+            "gap": {
+             "$$type": "size",
+             "value": {
+              "size": 48,
+              "unit": "px"
+             }
+            },
+            "grid-template-columns": {
+             "$$type": "string",
+             "value": "minmax(0, 1fr)"
+            }
+           },
+           "custom_css": null
+          },
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "padding": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "display": {
+             "$$type": "string",
+             "value": "grid"
+            },
+            "gap": {
+             "$$type": "size",
+             "value": {
+              "size": 80,
+              "unit": "px"
+             }
+            },
+            "grid-template-columns": {
+             "$$type": "string",
+             "value": "minmax(0, 1.05fr) minmax(0, 0.95fr)"
+            },
+            "align-items": {
+             "$$type": "string",
+             "value": "center"
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Footer top"
+       },
+       "version": "0.0"
+      },
+      {
+       "id": "1df22b2",
+       "elType": "e-div-block",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-2fc211eb-9a9f"
+         ]
+        }
+       },
+       "elements": [
+        {
+         "id": "584a441e",
+         "elType": "e-div-block",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "e-3cd4db18-12ab"
+           ]
+          }
+         },
+         "elements": [
+          {
+           "id": "44ed9861",
+           "elType": "e-div-block",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-3f773750-973b"
+             ]
+            }
+           },
+           "elements": [
+            {
+             "id": "ebcbc",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "e-2cb12c9f-141a"
+               ]
+              },
+              "paragraph": {
+               "$$type": "escaped-html",
+               "value": "01  Chargers"
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "p"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-paragraph",
+             "styles": {
+              "e-2cb12c9f-141a": {
+               "id": "e-2cb12c9f-141a",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "mobile",
+                  "state": null
+                 },
+                 "props": {
+                  "width": {
+                   "$$type": "size",
+                   "value": {
+                    "size": "",
+                    "unit": "auto"
+                   }
+                  },
+                  "padding": {
+                   "$$type": "dimensions",
+                   "value": {
+                    "block-start": {
+                     "$$type": "size",
+                     "value": {
+                      "size": 0,
+                      "unit": "px"
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "custom_css": null
+                },
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "width": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 160,
+                    "unit": "px"
+                   }
+                  },
+                  "font-family": {
+                   "$$type": "global-font-variable",
+                   "value": "e-gv-03e899a"
+                  },
+                  "font-size": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 13,
+                    "unit": "px"
+                   }
+                  },
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-03f1fbe"
+                  },
+                  "letter-spacing": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0.06,
+                    "unit": "em"
+                   }
+                  },
+                  "text-transform": {
+                   "$$type": "string",
+                   "value": "uppercase"
+                  },
+                  "padding": {
+                   "$$type": "dimensions",
+                   "value": {
+                    "block-start": {
+                     "$$type": "size",
+                     "value": {
+                      "size": 10,
+                      "unit": "px"
+                     }
+                    }
+                   }
+                  },
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "flex": {
+                   "$$type": "flex",
+                   "value": {
+                    "flexShrink": {
+                     "$$type": "number",
+                     "value": 0
+                    }
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Index Chargers label"
+             },
+             "version": "0.0"
+            },
+            {
+             "id": "733932f4",
+             "elType": "widget",
+             "settings": {
+              "_title": "Index Chargers menu",
+              "menu_name": "footer-chargers",
+              "layout": "horizontal",
+              "pointer": "none",
+              "dropdown": "none",
+              "toggle": "",
+              "align_items": "start",
+              "menu_typography_font_weight": "500",
+              "menu_typography_typography": "custom",
+              "menu_typography_font_size": {
+               "unit": "px",
+               "size": 16
+              },
+              "color_menu_item": "#F2EFE9",
+              "padding_horizontal_menu_item": {
+               "unit": "px",
+               "size": 14
+              },
+              "padding_vertical_menu_item": {
+               "unit": "px",
+               "size": 10
+              },
+              "color_menu_item_hover": "#3BE37F",
+              "menu": "footer-chargers",
+              "custom_css": "\nselector .elementor-nav-menu--main .elementor-item{font-family:var(--ev-font);}\nselector .elementor-nav-menu--main .elementor-nav-menu > li:first-child > a{padding-left:0}"
+             },
+             "elements": [],
+             "widgetType": "nav-menu"
+            }
+           ],
+           "isInner": false,
+           "styles": {
+            "e-3f773750-973b": {
+             "id": "e-3f773750-973b",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "mobile",
+                "state": null
+               },
+               "props": {
+                "flex-direction": {
+                 "$$type": "string",
+                 "value": "column"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 4,
+                  "unit": "px"
+                 }
+                }
+               },
+               "custom_css": null
+              },
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "padding": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 18,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 18,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                },
+                "border-width": {
+                 "$$type": "border-width-v2",
+                 "value": {
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 1,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                },
+                "display": {
+                 "$$type": "string",
+                 "value": "flex"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 24,
+                  "unit": "px"
+                 }
+                },
+                "align-items": {
+                 "$$type": "string",
+                 "value": "flex-start"
+                }
+               },
+               "custom_css": {
+                "raw": "Ym9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
+               }
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Index Chargers"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "4c44cd24",
+           "elType": "e-div-block",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-130e7ccc-5845"
+             ]
+            }
+           },
+           "elements": [
+            {
+             "id": "3f5c08c7",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "e-1cd6586e-dade"
+               ]
+              },
+              "paragraph": {
+               "$$type": "escaped-html",
+               "value": "02  Help"
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "p"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-paragraph",
+             "styles": {
+              "e-1cd6586e-dade": {
+               "id": "e-1cd6586e-dade",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "mobile",
+                  "state": null
+                 },
+                 "props": {
+                  "width": {
+                   "$$type": "size",
+                   "value": {
+                    "size": "",
+                    "unit": "auto"
+                   }
+                  },
+                  "padding": {
+                   "$$type": "dimensions",
+                   "value": {
+                    "block-start": {
+                     "$$type": "size",
+                     "value": {
+                      "size": 0,
+                      "unit": "px"
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "custom_css": null
+                },
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "width": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 160,
+                    "unit": "px"
+                   }
+                  },
+                  "font-family": {
+                   "$$type": "global-font-variable",
+                   "value": "e-gv-03e899a"
+                  },
+                  "font-size": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 13,
+                    "unit": "px"
+                   }
+                  },
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-03f1fbe"
+                  },
+                  "letter-spacing": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0.06,
+                    "unit": "em"
+                   }
+                  },
+                  "text-transform": {
+                   "$$type": "string",
+                   "value": "uppercase"
+                  },
+                  "padding": {
+                   "$$type": "dimensions",
+                   "value": {
+                    "block-start": {
+                     "$$type": "size",
+                     "value": {
+                      "size": 10,
+                      "unit": "px"
+                     }
+                    }
+                   }
+                  },
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "flex": {
+                   "$$type": "flex",
+                   "value": {
+                    "flexShrink": {
+                     "$$type": "number",
+                     "value": 0
+                    }
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Index Help label"
+             },
+             "version": "0.0"
+            },
+            {
+             "id": "9694e74",
+             "elType": "widget",
+             "settings": {
+              "_title": "Index Help menu",
+              "menu_name": "footer-help",
+              "layout": "horizontal",
+              "pointer": "none",
+              "dropdown": "none",
+              "toggle": "",
+              "align_items": "start",
+              "menu_typography_font_weight": "500",
+              "menu_typography_typography": "custom",
+              "menu_typography_font_size": {
+               "unit": "px",
+               "size": 16
+              },
+              "color_menu_item": "#F2EFE9",
+              "padding_horizontal_menu_item": {
+               "unit": "px",
+               "size": 14
+              },
+              "padding_vertical_menu_item": {
+               "unit": "px",
+               "size": 10
+              },
+              "color_menu_item_hover": "#3BE37F",
+              "menu": "footer-help",
+              "custom_css": "\nselector .elementor-nav-menu--main .elementor-item{font-family:var(--ev-font);}\nselector .elementor-nav-menu--main .elementor-nav-menu > li:first-child > a{padding-left:0}"
+             },
+             "elements": [],
+             "widgetType": "nav-menu"
+            }
+           ],
+           "isInner": false,
+           "styles": {
+            "e-130e7ccc-5845": {
+             "id": "e-130e7ccc-5845",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "mobile",
+                "state": null
+               },
+               "props": {
+                "flex-direction": {
+                 "$$type": "string",
+                 "value": "column"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 4,
+                  "unit": "px"
+                 }
+                }
+               },
+               "custom_css": null
+              },
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "padding": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 18,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 18,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                },
+                "border-width": {
+                 "$$type": "border-width-v2",
+                 "value": {
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 1,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                },
+                "display": {
+                 "$$type": "string",
+                 "value": "flex"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 24,
+                  "unit": "px"
+                 }
+                },
+                "align-items": {
+                 "$$type": "string",
+                 "value": "flex-start"
+                }
+               },
+               "custom_css": {
+                "raw": "Ym9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
+               }
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Index Help"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "2c49dbc0",
+           "elType": "e-div-block",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-1f29de45-250a"
+             ]
+            }
+           },
+           "elements": [
+            {
+             "id": "3f5f5eeb",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "e-4652f4e-3185"
+               ]
+              },
+              "paragraph": {
+               "$$type": "escaped-html",
+               "value": "03  Learn"
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "p"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-paragraph",
+             "styles": {
+              "e-4652f4e-3185": {
+               "id": "e-4652f4e-3185",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "mobile",
+                  "state": null
+                 },
+                 "props": {
+                  "width": {
+                   "$$type": "size",
+                   "value": {
+                    "size": "",
+                    "unit": "auto"
+                   }
+                  },
+                  "padding": {
+                   "$$type": "dimensions",
+                   "value": {
+                    "block-start": {
+                     "$$type": "size",
+                     "value": {
+                      "size": 0,
+                      "unit": "px"
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "custom_css": null
+                },
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "width": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 160,
+                    "unit": "px"
+                   }
+                  },
+                  "font-family": {
+                   "$$type": "global-font-variable",
+                   "value": "e-gv-03e899a"
+                  },
+                  "font-size": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 13,
+                    "unit": "px"
+                   }
+                  },
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-03f1fbe"
+                  },
+                  "letter-spacing": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0.06,
+                    "unit": "em"
+                   }
+                  },
+                  "text-transform": {
+                   "$$type": "string",
+                   "value": "uppercase"
+                  },
+                  "padding": {
+                   "$$type": "dimensions",
+                   "value": {
+                    "block-start": {
+                     "$$type": "size",
+                     "value": {
+                      "size": 10,
+                      "unit": "px"
+                     }
+                    }
+                   }
+                  },
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "flex": {
+                   "$$type": "flex",
+                   "value": {
+                    "flexShrink": {
+                     "$$type": "number",
+                     "value": 0
+                    }
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Index Learn label"
+             },
+             "version": "0.0"
+            },
+            {
+             "id": "192703b8",
+             "elType": "widget",
+             "settings": {
+              "_title": "Index Learn menu",
+              "menu_name": "footer-learn",
+              "layout": "horizontal",
+              "pointer": "none",
+              "dropdown": "none",
+              "toggle": "",
+              "align_items": "start",
+              "menu_typography_font_weight": "500",
+              "menu_typography_typography": "custom",
+              "menu_typography_font_size": {
+               "unit": "px",
+               "size": 16
+              },
+              "color_menu_item": "#F2EFE9",
+              "padding_horizontal_menu_item": {
+               "unit": "px",
+               "size": 14
+              },
+              "padding_vertical_menu_item": {
+               "unit": "px",
+               "size": 10
+              },
+              "color_menu_item_hover": "#3BE37F",
+              "menu": "footer-learn",
+              "custom_css": "\nselector .elementor-nav-menu--main .elementor-item{font-family:var(--ev-font);}\nselector .elementor-nav-menu--main .elementor-nav-menu > li:first-child > a{padding-left:0}"
+             },
+             "elements": [],
+             "widgetType": "nav-menu"
+            }
+           ],
+           "isInner": false,
+           "styles": {
+            "e-1f29de45-250a": {
+             "id": "e-1f29de45-250a",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "mobile",
+                "state": null
+               },
+               "props": {
+                "flex-direction": {
+                 "$$type": "string",
+                 "value": "column"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 4,
+                  "unit": "px"
+                 }
+                }
+               },
+               "custom_css": null
+              },
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "padding": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 18,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 18,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                },
+                "border-width": {
+                 "$$type": "border-width-v2",
+                 "value": {
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 1,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                },
+                "display": {
+                 "$$type": "string",
+                 "value": "flex"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 24,
+                  "unit": "px"
+                 }
+                },
+                "align-items": {
+                 "$$type": "string",
+                 "value": "flex-start"
+                }
+               },
+               "custom_css": {
+                "raw": "Ym9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
+               }
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Index Learn"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "3205e299",
+           "elType": "e-div-block",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-45e07644-cfe1"
+             ]
+            }
+           },
+           "elements": [
+            {
+             "id": "137b47f3",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "e-193307b4-cec6"
+               ]
+              },
+              "paragraph": {
+               "$$type": "escaped-html",
+               "value": "04  Legal"
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "p"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-paragraph",
+             "styles": {
+              "e-193307b4-cec6": {
+               "id": "e-193307b4-cec6",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "mobile",
+                  "state": null
+                 },
+                 "props": {
+                  "width": {
+                   "$$type": "size",
+                   "value": {
+                    "size": "",
+                    "unit": "auto"
+                   }
+                  },
+                  "padding": {
+                   "$$type": "dimensions",
+                   "value": {
+                    "block-start": {
+                     "$$type": "size",
+                     "value": {
+                      "size": 0,
+                      "unit": "px"
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "custom_css": null
+                },
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "width": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 160,
+                    "unit": "px"
+                   }
+                  },
+                  "font-family": {
+                   "$$type": "global-font-variable",
+                   "value": "e-gv-03e899a"
+                  },
+                  "font-size": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 13,
+                    "unit": "px"
+                   }
+                  },
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-03f1fbe"
+                  },
+                  "letter-spacing": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0.06,
+                    "unit": "em"
+                   }
+                  },
+                  "text-transform": {
+                   "$$type": "string",
+                   "value": "uppercase"
+                  },
+                  "padding": {
+                   "$$type": "dimensions",
+                   "value": {
+                    "block-start": {
+                     "$$type": "size",
+                     "value": {
+                      "size": 10,
+                      "unit": "px"
+                     }
+                    }
+                   }
+                  },
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "flex": {
+                   "$$type": "flex",
+                   "value": {
+                    "flexShrink": {
+                     "$$type": "number",
+                     "value": 0
+                    }
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Index Legal label"
+             },
+             "version": "0.0"
+            },
+            {
+             "id": "31225cad",
+             "elType": "widget",
+             "settings": {
+              "_title": "Index Legal menu",
+              "menu_name": "footer-legal",
+              "layout": "horizontal",
+              "pointer": "none",
+              "dropdown": "none",
+              "toggle": "",
+              "align_items": "start",
+              "menu_typography_font_weight": "500",
+              "menu_typography_typography": "custom",
+              "menu_typography_font_size": {
+               "unit": "px",
+               "size": 16
+              },
+              "color_menu_item": "#F2EFE9",
+              "padding_horizontal_menu_item": {
+               "unit": "px",
+               "size": 14
+              },
+              "padding_vertical_menu_item": {
+               "unit": "px",
+               "size": 10
+              },
+              "color_menu_item_hover": "#3BE37F",
+              "menu": "footer-legal",
+              "custom_css": "\nselector .elementor-nav-menu--main .elementor-item{font-family:var(--ev-font);}\nselector .elementor-nav-menu--main .elementor-nav-menu > li:first-child > a{padding-left:0}"
+             },
+             "elements": [],
+             "widgetType": "nav-menu"
+            }
+           ],
+           "isInner": false,
+           "styles": {
+            "e-45e07644-cfe1": {
+             "id": "e-45e07644-cfe1",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "mobile",
+                "state": null
+               },
+               "props": {
+                "flex-direction": {
+                 "$$type": "string",
+                 "value": "column"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 4,
+                  "unit": "px"
+                 }
+                }
+               },
+               "custom_css": null
+              },
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "padding": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 18,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 18,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                },
+                "border-width": {
+                 "$$type": "border-width-v2",
+                 "value": {
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 1,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                },
+                "display": {
+                 "$$type": "string",
+                 "value": "flex"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 24,
+                  "unit": "px"
+                 }
+                },
+                "align-items": {
+                 "$$type": "string",
+                 "value": "flex-start"
+                }
+               },
+               "custom_css": {
+                "raw": "Ym9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
+               }
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Index Legal"
+           },
+           "version": "0.0"
+          }
+         ],
+         "isInner": false,
+         "styles": {
+          "e-3cd4db18-12ab": {
+           "id": "e-3cd4db18-12ab",
+           "label": "local",
+           "type": "class",
+           "variants": [
+            {
+             "meta": {
+              "breakpoint": "desktop",
+              "state": null
+             },
+             "props": {
+              "padding": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              },
+              "border-width": {
+               "$$type": "border-width-v2",
+               "value": {
+                "block-start": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 1,
+                  "unit": "px"
+                 }
+                }
+               }
+              },
+              "display": {
+               "$$type": "string",
+               "value": "flex"
+              },
+              "flex-direction": {
+               "$$type": "string",
+               "value": "column"
+              }
+             },
+             "custom_css": {
+              "raw": "Ym9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
+             }
+            }
+           ]
+          }
+         },
+         "editor_settings": {
+          "title": "Index rows"
+         },
+         "version": "0.0"
+        },
+        {
+         "id": "66f20373",
+         "elType": "e-div-block",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "e-7efd2d20-4089"
+           ]
+          }
+         },
+         "elements": [
+          {
+           "id": "51da5e78",
+           "elType": "widget",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "g-d4a52b2",
+              "e-4cf2090b-a849"
+             ]
+            },
+            "paragraph": {
+             "$$type": "escaped-html",
+             "value": "Talk to us"
+            },
+            "tag": {
+             "$$type": "string",
+             "value": "p"
+            }
+           },
+           "elements": [],
+           "widgetType": "e-paragraph",
+           "styles": {
+            "e-4cf2090b-a849": {
+             "id": "e-4cf2090b-a849",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "margin": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 0,
+                  "unit": "px"
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Contact label"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "70241bf9",
+           "elType": "widget",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-7fb15f1c-ebff"
+             ]
+            },
+            "paragraph": {
+             "$$type": "escaped-html",
+             "value": "<a href=\"mailto:sales@evtron.co.uk\">sales@evtron.co.uk</a><br><a href=\"mailto:info@evtron.co.uk\">info@evtron.co.uk</a>"
+            },
+            "tag": {
+             "$$type": "string",
+             "value": "p"
+            }
+           },
+           "elements": [],
+           "widgetType": "e-paragraph",
+           "styles": {
+            "e-7fb15f1c-ebff": {
+             "id": "e-7fb15f1c-ebff",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "font-family": {
+                 "$$type": "global-font-variable",
+                 "value": "e-gv-03e899a"
+                },
+                "font-size": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 15,
+                  "unit": "px"
+                 }
+                },
+                "color": {
+                 "$$type": "global-color-variable",
+                 "value": "e-gv-1c28168"
+                },
+                "line-height": {
+                 "$$type": "size",
+                 "value": {
+                  "size": "1.9",
+                  "unit": "custom"
+                 }
+                },
+                "margin": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 14,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Contact emails"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "6037620",
+           "elType": "widget",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "g-c4cd10f",
+              "e-4af277e-f9a9"
+             ]
+            },
+            "paragraph": {
+             "$$type": "escaped-html",
+             "value": "Sales and order questions to sales@. Everything else to info@."
+            },
+            "tag": {
+             "$$type": "string",
+             "value": "p"
+            }
+           },
+           "elements": [],
+           "widgetType": "e-paragraph",
+           "styles": {
+            "e-4af277e-f9a9": {
+             "id": "e-4af277e-f9a9",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "margin": {
+                 "$$type": "dimensions",
+                 "value": {
+                  "block-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 14,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "block-end": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  },
+                  "inline-start": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Contact note"
+           },
+           "version": "0.0"
+          }
+         ],
+         "isInner": false,
+         "styles": {
+          "e-7efd2d20-4089": {
+           "id": "e-7efd2d20-4089",
+           "label": "local",
+           "type": "class",
+           "variants": [
+            {
+             "meta": {
+              "breakpoint": "desktop",
+              "state": null
+             },
+             "props": {
+              "padding": {
+               "$$type": "size",
+               "value": {
+                "size": 24,
+                "unit": "px"
+               }
+              },
+              "border-radius": {
+               "$$type": "global-size-variable",
+               "value": "e-gv-a3b2a9f"
+              },
+              "border-width": {
+               "$$type": "size",
+               "value": {
+                "size": 1,
+                "unit": "px"
+               }
+              },
+              "border-color": {
+               "$$type": "global-color-variable",
+               "value": "e-gv-6532a4c"
+              },
+              "border-style": {
+               "$$type": "string",
+               "value": "solid"
+              },
+              "display": {
+               "$$type": "string",
+               "value": "flex"
+              },
+              "flex-direction": {
+               "$$type": "string",
+               "value": "column"
+              },
+              "align-self": {
+               "$$type": "string",
+               "value": "start"
+              }
+             },
+             "custom_css": null
+            }
+           ]
+          }
+         },
+         "editor_settings": {
+          "title": "Footer contact"
+         },
+         "version": "0.0"
+        }
+       ],
+       "isInner": false,
+       "styles": {
+        "e-2fc211eb-9a9f": {
+         "id": "e-2fc211eb-9a9f",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "tablet",
+            "state": null
+           },
+           "props": {
+            "margin": {
+             "$$type": "dimensions",
+             "value": {
+              "block-start": {
+               "$$type": "size",
+               "value": {
+                "size": 72,
+                "unit": "px"
+               }
+              }
+             }
+            },
+            "grid-template-columns": {
+             "$$type": "string",
+             "value": "minmax(0, 1fr)"
+            }
+           },
+           "custom_css": null
+          },
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "padding": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "margin": {
+             "$$type": "dimensions",
+             "value": {
+              "block-start": {
+               "$$type": "size",
+               "value": {
+                "size": 96,
+                "unit": "px"
+               }
+              }
+             }
+            },
+            "display": {
+             "$$type": "string",
+             "value": "grid"
+            },
+            "gap": {
+             "$$type": "size",
+             "value": {
+              "size": 48,
+              "unit": "px"
+             }
+            },
+            "grid-template-columns": {
+             "$$type": "string",
+             "value": "minmax(0, 1fr) 320px"
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Footer index"
+       },
+       "version": "0.0"
+      },
+      {
+       "id": "672eb1c2",
+       "elType": "widget",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-797c0e5a-db3d"
+         ]
+        },
+        "image": {
+         "$$type": "image",
+         "value": {
+          "src": {
+           "$$type": "image-src",
+           "value": {
+            "id": {
+             "$$type": "image-attachment-id",
+             "value": 26
+            }
+           }
+          },
+          "size": {
+           "$$type": "string",
+           "value": "full"
+          }
+         }
+        }
+       },
+       "elements": [],
+       "widgetType": "e-image",
+       "styles": {
+        "e-797c0e5a-db3d": {
+         "id": "e-797c0e5a-db3d",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "mobile",
+            "state": null
+           },
+           "props": {
+            "margin": {
+             "$$type": "dimensions",
+             "value": {
+              "block-start": {
+               "$$type": "size",
+               "value": {
+                "size": 64,
+                "unit": "px"
+               }
+              }
+             }
+            }
+           },
+           "custom_css": null
+          },
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "width": {
+             "$$type": "size",
+             "value": {
+              "size": 100,
+              "unit": "%"
+             }
+            },
+            "height": {
+             "$$type": "size",
+             "value": {
+              "size": "",
+              "unit": "auto"
+             }
+            },
+            "margin": {
+             "$$type": "dimensions",
+             "value": {
+              "block-start": {
+               "$$type": "size",
+               "value": {
+                "size": 96,
+                "unit": "px"
+               }
+              }
+             }
+            },
+            "opacity": {
+             "$$type": "size",
+             "value": {
+              "size": 7,
+              "unit": "%"
+             }
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Footer wordmark"
+       },
+       "version": "0.0"
+      },
+      {
+       "id": "2111f1cb",
+       "elType": "e-div-block",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-4950dcdd-9c6f"
+         ]
+        }
+       },
+       "elements": [
+        {
+         "id": "18040c05",
          "elType": "widget",
          "settings": {
           "classes": {
            "$$type": "classes",
            "value": [
-            "e-5d877e0e-6dca"
+            "e-2220807-c7d7"
            ]
           },
           "paragraph": {
            "$$type": "escaped-html",
-           "value": "<a href=\"mailto:sales@evtron.co.uk\">sales@evtron.co.uk</a><br><a href=\"mailto:info@evtron.co.uk\">info@evtron.co.uk</a>"
+           "value": "[PLACEHOLDER] Company name \u00b7 Company number \u00b7 Registered address \u00b7 VAT status"
           },
           "tag": {
            "$$type": "string",
@@ -200,8 +2679,8 @@
          "elements": [],
          "widgetType": "e-paragraph",
          "styles": {
-          "e-5d877e0e-6dca": {
-           "id": "e-5d877e0e-6dca",
+          "e-2220807-c7d7": {
+           "id": "e-2220807-c7d7",
            "label": "local",
            "type": "class",
            "variants": [
@@ -218,20 +2697,13 @@
               "font-size": {
                "$$type": "size",
                "value": {
-                "size": 13,
+                "size": 12,
                 "unit": "px"
                }
               },
               "color": {
                "$$type": "global-color-variable",
-               "value": "e-gv-efa46bd"
-              },
-              "line-height": {
-               "$$type": "size",
-               "value": {
-                "size": "1.8",
-                "unit": "custom"
-               }
+               "value": "e-gv-03f1fbe"
               },
               "margin": {
                "$$type": "size",
@@ -247,95 +2719,23 @@
           }
          },
          "editor_settings": {
-          "title": "Footer emails"
+          "title": "Legal company"
          },
          "version": "0.0"
-        }
-       ],
-       "isInner": false,
-       "styles": {
-        "e-46cadb69-2447": {
-         "id": "e-46cadb69-2447",
-         "label": "local",
-         "type": "class",
-         "variants": [
-          {
-           "meta": {
-            "breakpoint": "tablet",
-            "state": null
-           },
-           "props": {
-            "grid-column": {
-             "$$type": "span",
-             "value": "1 / -1"
-            }
-           },
-           "custom_css": null
-          },
-          {
-           "meta": {
-            "breakpoint": "desktop",
-            "state": null
-           },
-           "props": {
-            "padding": {
-             "$$type": "size",
-             "value": {
-              "size": 0,
-              "unit": "px"
-             }
-            },
-            "display": {
-             "$$type": "string",
-             "value": "flex"
-            },
-            "flex-direction": {
-             "$$type": "string",
-             "value": "column"
-            },
-            "gap": {
-             "$$type": "size",
-             "value": {
-              "size": 14,
-              "unit": "px"
-             }
-            }
-           },
-           "custom_css": null
-          }
-         ]
-        }
-       },
-       "editor_settings": {
-        "title": "Footer brand"
-       },
-       "version": "0.0"
-      },
-      {
-       "id": "31ff2de7",
-       "elType": "e-div-block",
-       "settings": {
-        "classes": {
-         "$$type": "classes",
-         "value": [
-          "e-2422ccc1-e5bd"
-         ]
-        }
-       },
-       "elements": [
+        },
         {
-         "id": "332c53bf",
+         "id": "38c089e6",
          "elType": "widget",
          "settings": {
           "classes": {
            "$$type": "classes",
            "value": [
-            "e-5a44d66d-55fa"
+            "e-70fe8687-ef2d"
            ]
           },
           "paragraph": {
            "$$type": "escaped-html",
-           "value": "Chargers"
+           "value": "\u00a9 2026 EVTRON \u00b7 Driven by innovation"
           },
           "tag": {
            "$$type": "string",
@@ -345,8 +2745,8 @@
          "elements": [],
          "widgetType": "e-paragraph",
          "styles": {
-          "e-5a44d66d-55fa": {
-           "id": "e-5a44d66d-55fa",
+          "e-70fe8687-ef2d": {
+           "id": "e-70fe8687-ef2d",
            "label": "local",
            "type": "class",
            "variants": [
@@ -356,52 +2756,26 @@
               "state": null
              },
              "props": {
-              "font-weight": {
-               "$$type": "string",
-               "value": "600"
+              "font-family": {
+               "$$type": "global-font-variable",
+               "value": "e-gv-03e899a"
               },
               "font-size": {
                "$$type": "size",
                "value": {
-                "size": 13,
+                "size": 12,
                 "unit": "px"
                }
               },
               "color": {
                "$$type": "global-color-variable",
-               "value": "e-gv-1c28168"
+               "value": "e-gv-03f1fbe"
               },
               "margin": {
-               "$$type": "dimensions",
+               "$$type": "size",
                "value": {
-                "block-start": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                },
-                "inline-end": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                },
-                "block-end": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 4,
-                  "unit": "px"
-                 }
-                },
-                "inline-start": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                }
+                "size": 0,
+                "unit": "px"
                }
               }
              },
@@ -411,46 +2785,15 @@
           }
          },
          "editor_settings": {
-          "title": "Col Chargers title"
+          "title": "Legal copy"
          },
          "version": "0.0"
-        },
-        {
-         "id": "6b96f956",
-         "elType": "widget",
-         "settings": {
-          "_title": "Col Chargers menu",
-          "menu_name": "footer-chargers",
-          "layout": "vertical",
-          "pointer": "none",
-          "dropdown": "none",
-          "toggle": "",
-          "menu_typography_font_weight": "400",
-          "menu_typography_typography": "custom",
-          "menu_typography_font_size": {
-           "unit": "px",
-           "size": 14
-          },
-          "color_menu_item": "#C3C7CD",
-          "padding_horizontal_menu_item": {
-           "unit": "px",
-           "size": 0
-          },
-          "padding_vertical_menu_item": {
-           "unit": "px",
-           "size": 6
-          },
-          "color_menu_item_hover": "#F2EFE9",
-          "menu": "footer-chargers"
-         },
-         "elements": [],
-         "widgetType": "nav-menu"
         }
        ],
        "isInner": false,
        "styles": {
-        "e-2422ccc1-e5bd": {
-         "id": "e-2422ccc1-e5bd",
+        "e-4950dcdd-9c6f": {
+         "id": "e-4950dcdd-9c6f",
          "label": "local",
          "type": "class",
          "variants": [
@@ -461,912 +2804,130 @@
            },
            "props": {
             "padding": {
-             "$$type": "size",
+             "$$type": "dimensions",
              "value": {
-              "size": 0,
-              "unit": "px"
-             }
-            },
-            "display": {
-             "$$type": "string",
-             "value": "flex"
-            },
-            "flex-direction": {
-             "$$type": "string",
-             "value": "column"
-            },
-            "gap": {
-             "$$type": "size",
-             "value": {
-              "size": 8,
-              "unit": "px"
-             }
-            }
-           },
-           "custom_css": null
-          }
-         ]
-        }
-       },
-       "editor_settings": {
-        "title": "Col Chargers"
-       },
-       "version": "0.0"
-      },
-      {
-       "id": "1b94ebb0",
-       "elType": "e-div-block",
-       "settings": {
-        "classes": {
-         "$$type": "classes",
-         "value": [
-          "e-3ced7576-6819"
-         ]
-        }
-       },
-       "elements": [
-        {
-         "id": "79dadf42",
-         "elType": "widget",
-         "settings": {
-          "classes": {
-           "$$type": "classes",
-           "value": [
-            "e-66720ef9-f730"
-           ]
-          },
-          "paragraph": {
-           "$$type": "escaped-html",
-           "value": "Help"
-          },
-          "tag": {
-           "$$type": "string",
-           "value": "p"
-          }
-         },
-         "elements": [],
-         "widgetType": "e-paragraph",
-         "styles": {
-          "e-66720ef9-f730": {
-           "id": "e-66720ef9-f730",
-           "label": "local",
-           "type": "class",
-           "variants": [
-            {
-             "meta": {
-              "breakpoint": "desktop",
-              "state": null
-             },
-             "props": {
-              "font-weight": {
-               "$$type": "string",
-               "value": "600"
-              },
-              "font-size": {
+              "block-start": {
                "$$type": "size",
                "value": {
-                "size": 13,
+                "size": 20,
                 "unit": "px"
                }
               },
-              "color": {
-               "$$type": "global-color-variable",
-               "value": "e-gv-1c28168"
-              },
-              "margin": {
-               "$$type": "dimensions",
-               "value": {
-                "block-start": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                },
-                "inline-end": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                },
-                "block-end": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 4,
-                  "unit": "px"
-                 }
-                },
-                "inline-start": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                }
-               }
-              }
-             },
-             "custom_css": null
-            }
-           ]
-          }
-         },
-         "editor_settings": {
-          "title": "Col Help title"
-         },
-         "version": "0.0"
-        },
-        {
-         "id": "251c493e",
-         "elType": "widget",
-         "settings": {
-          "_title": "Col Help menu",
-          "menu_name": "footer-help",
-          "layout": "vertical",
-          "pointer": "none",
-          "dropdown": "none",
-          "toggle": "",
-          "menu_typography_font_weight": "400",
-          "menu_typography_typography": "custom",
-          "menu_typography_font_size": {
-           "unit": "px",
-           "size": 14
-          },
-          "color_menu_item": "#C3C7CD",
-          "padding_horizontal_menu_item": {
-           "unit": "px",
-           "size": 0
-          },
-          "padding_vertical_menu_item": {
-           "unit": "px",
-           "size": 6
-          },
-          "color_menu_item_hover": "#F2EFE9",
-          "menu": "footer-help"
-         },
-         "elements": [],
-         "widgetType": "nav-menu"
-        }
-       ],
-       "isInner": false,
-       "styles": {
-        "e-3ced7576-6819": {
-         "id": "e-3ced7576-6819",
-         "label": "local",
-         "type": "class",
-         "variants": [
-          {
-           "meta": {
-            "breakpoint": "desktop",
-            "state": null
-           },
-           "props": {
-            "padding": {
-             "$$type": "size",
-             "value": {
-              "size": 0,
-              "unit": "px"
-             }
-            },
-            "display": {
-             "$$type": "string",
-             "value": "flex"
-            },
-            "flex-direction": {
-             "$$type": "string",
-             "value": "column"
-            },
-            "gap": {
-             "$$type": "size",
-             "value": {
-              "size": 8,
-              "unit": "px"
-             }
-            }
-           },
-           "custom_css": null
-          }
-         ]
-        }
-       },
-       "editor_settings": {
-        "title": "Col Help"
-       },
-       "version": "0.0"
-      },
-      {
-       "id": "26592282",
-       "elType": "e-div-block",
-       "settings": {
-        "classes": {
-         "$$type": "classes",
-         "value": [
-          "e-1981d7dc-adfd"
-         ]
-        }
-       },
-       "elements": [
-        {
-         "id": "44ac3b02",
-         "elType": "widget",
-         "settings": {
-          "classes": {
-           "$$type": "classes",
-           "value": [
-            "e-2705585a-99f1"
-           ]
-          },
-          "paragraph": {
-           "$$type": "escaped-html",
-           "value": "Learn"
-          },
-          "tag": {
-           "$$type": "string",
-           "value": "p"
-          }
-         },
-         "elements": [],
-         "widgetType": "e-paragraph",
-         "styles": {
-          "e-2705585a-99f1": {
-           "id": "e-2705585a-99f1",
-           "label": "local",
-           "type": "class",
-           "variants": [
-            {
-             "meta": {
-              "breakpoint": "desktop",
-              "state": null
-             },
-             "props": {
-              "font-weight": {
-               "$$type": "string",
-               "value": "600"
-              },
-              "font-size": {
+              "inline-end": {
                "$$type": "size",
                "value": {
-                "size": 13,
+                "size": 0,
                 "unit": "px"
                }
               },
-              "color": {
-               "$$type": "global-color-variable",
-               "value": "e-gv-1c28168"
-              },
-              "margin": {
-               "$$type": "dimensions",
-               "value": {
-                "block-start": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                },
-                "inline-end": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                },
-                "block-end": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 4,
-                  "unit": "px"
-                 }
-                },
-                "inline-start": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                }
-               }
-              }
-             },
-             "custom_css": null
-            }
-           ]
-          }
-         },
-         "editor_settings": {
-          "title": "Col Learn title"
-         },
-         "version": "0.0"
-        },
-        {
-         "id": "2552da9d",
-         "elType": "widget",
-         "settings": {
-          "_title": "Col Learn menu",
-          "menu_name": "footer-learn",
-          "layout": "vertical",
-          "pointer": "none",
-          "dropdown": "none",
-          "toggle": "",
-          "menu_typography_font_weight": "400",
-          "menu_typography_typography": "custom",
-          "menu_typography_font_size": {
-           "unit": "px",
-           "size": 14
-          },
-          "color_menu_item": "#C3C7CD",
-          "padding_horizontal_menu_item": {
-           "unit": "px",
-           "size": 0
-          },
-          "padding_vertical_menu_item": {
-           "unit": "px",
-           "size": 6
-          },
-          "color_menu_item_hover": "#F2EFE9",
-          "menu": "footer-learn"
-         },
-         "elements": [],
-         "widgetType": "nav-menu"
-        }
-       ],
-       "isInner": false,
-       "styles": {
-        "e-1981d7dc-adfd": {
-         "id": "e-1981d7dc-adfd",
-         "label": "local",
-         "type": "class",
-         "variants": [
-          {
-           "meta": {
-            "breakpoint": "desktop",
-            "state": null
-           },
-           "props": {
-            "padding": {
-             "$$type": "size",
-             "value": {
-              "size": 0,
-              "unit": "px"
-             }
-            },
-            "display": {
-             "$$type": "string",
-             "value": "flex"
-            },
-            "flex-direction": {
-             "$$type": "string",
-             "value": "column"
-            },
-            "gap": {
-             "$$type": "size",
-             "value": {
-              "size": 8,
-              "unit": "px"
-             }
-            }
-           },
-           "custom_css": null
-          }
-         ]
-        }
-       },
-       "editor_settings": {
-        "title": "Col Learn"
-       },
-       "version": "0.0"
-      },
-      {
-       "id": "483b64d3",
-       "elType": "e-div-block",
-       "settings": {
-        "classes": {
-         "$$type": "classes",
-         "value": [
-          "e-6112903b-72b6"
-         ]
-        }
-       },
-       "elements": [
-        {
-         "id": "5b1a0c7d",
-         "elType": "widget",
-         "settings": {
-          "classes": {
-           "$$type": "classes",
-           "value": [
-            "e-f1e95b1-c1df"
-           ]
-          },
-          "paragraph": {
-           "$$type": "escaped-html",
-           "value": "Legal"
-          },
-          "tag": {
-           "$$type": "string",
-           "value": "p"
-          }
-         },
-         "elements": [],
-         "widgetType": "e-paragraph",
-         "styles": {
-          "e-f1e95b1-c1df": {
-           "id": "e-f1e95b1-c1df",
-           "label": "local",
-           "type": "class",
-           "variants": [
-            {
-             "meta": {
-              "breakpoint": "desktop",
-              "state": null
-             },
-             "props": {
-              "font-weight": {
-               "$$type": "string",
-               "value": "600"
-              },
-              "font-size": {
+              "block-end": {
                "$$type": "size",
                "value": {
-                "size": 13,
+                "size": 0,
                 "unit": "px"
                }
               },
-              "color": {
-               "$$type": "global-color-variable",
-               "value": "e-gv-1c28168"
-              },
-              "margin": {
-               "$$type": "dimensions",
+              "inline-start": {
+               "$$type": "size",
                "value": {
-                "block-start": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                },
-                "inline-end": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                },
-                "block-end": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 4,
-                  "unit": "px"
-                 }
-                },
-                "inline-start": {
-                 "$$type": "size",
-                 "value": {
-                  "size": 0,
-                  "unit": "px"
-                 }
-                }
+                "size": 0,
+                "unit": "px"
                }
               }
-             },
-             "custom_css": null
-            }
-           ]
-          }
-         },
-         "editor_settings": {
-          "title": "Col Legal title"
-         },
-         "version": "0.0"
-        },
-        {
-         "id": "73b2b511",
-         "elType": "widget",
-         "settings": {
-          "_title": "Col Legal menu",
-          "menu_name": "footer-legal",
-          "layout": "vertical",
-          "pointer": "none",
-          "dropdown": "none",
-          "toggle": "",
-          "menu_typography_font_weight": "400",
-          "menu_typography_typography": "custom",
-          "menu_typography_font_size": {
-           "unit": "px",
-           "size": 14
-          },
-          "color_menu_item": "#C3C7CD",
-          "padding_horizontal_menu_item": {
-           "unit": "px",
-           "size": 0
-          },
-          "padding_vertical_menu_item": {
-           "unit": "px",
-           "size": 6
-          },
-          "color_menu_item_hover": "#F2EFE9",
-          "menu": "footer-legal"
-         },
-         "elements": [],
-         "widgetType": "nav-menu"
-        }
-       ],
-       "isInner": false,
-       "styles": {
-        "e-6112903b-72b6": {
-         "id": "e-6112903b-72b6",
-         "label": "local",
-         "type": "class",
-         "variants": [
-          {
-           "meta": {
-            "breakpoint": "desktop",
-            "state": null
-           },
-           "props": {
-            "padding": {
-             "$$type": "size",
+             }
+            },
+            "margin": {
+             "$$type": "dimensions",
              "value": {
-              "size": 0,
-              "unit": "px"
+              "block-start": {
+               "$$type": "size",
+               "value": {
+                "size": 24,
+                "unit": "px"
+               }
+              }
+             }
+            },
+            "border-width": {
+             "$$type": "border-width-v2",
+             "value": {
+              "block-start": {
+               "$$type": "size",
+               "value": {
+                "size": 1,
+                "unit": "px"
+               }
+              }
              }
             },
             "display": {
              "$$type": "string",
              "value": "flex"
             },
-            "flex-direction": {
-             "$$type": "string",
-             "value": "column"
-            },
             "gap": {
-             "$$type": "size",
-             "value": {
-              "size": 8,
-              "unit": "px"
-             }
-            }
-           },
-           "custom_css": null
-          }
-         ]
-        }
-       },
-       "editor_settings": {
-        "title": "Col Legal"
-       },
-       "version": "0.0"
-      }
-     ],
-     "isInner": false,
-     "styles": {
-      "e-6c4f9bdb-a154": {
-       "id": "e-6c4f9bdb-a154",
-       "label": "local",
-       "type": "class",
-       "variants": [
-        {
-         "meta": {
-          "breakpoint": "tablet",
-          "state": null
-         },
-         "props": {
-          "grid-template-columns": {
-           "$$type": "string",
-           "value": "1fr 1fr 1fr"
-          }
-         },
-         "custom_css": null
-        },
-        {
-         "meta": {
-          "breakpoint": "mobile",
-          "state": null
-         },
-         "props": {
-          "gap": {
-           "$$type": "size",
-           "value": {
-            "size": 28,
-            "unit": "px"
-           }
-          },
-          "grid-template-columns": {
-           "$$type": "string",
-           "value": "1fr 1fr"
-          }
-         },
-         "custom_css": null
-        },
-        {
-         "meta": {
-          "breakpoint": "desktop",
-          "state": null
-         },
-         "props": {
-          "padding": {
-           "$$type": "dimensions",
-           "value": {
-            "block-start": {
-             "$$type": "size",
-             "value": {
-              "size": 0,
-              "unit": "px"
-             }
-            },
-            "block-end": {
-             "$$type": "size",
-             "value": {
-              "size": 0,
-              "unit": "px"
-             }
-            }
-           }
-          },
-          "display": {
-           "$$type": "string",
-           "value": "grid"
-          },
-          "gap": {
-           "$$type": "size",
-           "value": {
-            "size": 32,
-            "unit": "px"
-           }
-          },
-          "grid-template-columns": {
-           "$$type": "string",
-           "value": "1.4fr 1fr 1fr 1fr 1fr"
-          }
-         },
-         "custom_css": null
-        }
-       ]
-      }
-     },
-     "editor_settings": {
-      "title": "Footer grid"
-     },
-     "version": "0.0"
-    },
-    {
-     "id": "719d23b6",
-     "elType": "e-div-block",
-     "settings": {
-      "classes": {
-       "$$type": "classes",
-       "value": [
-        "g-cc5a7e9",
-        "e-5d943caa-f1d2"
-       ]
-      }
-     },
-     "elements": [
-      {
-       "id": "350fa193",
-       "elType": "widget",
-       "settings": {
-        "classes": {
-         "$$type": "classes",
-         "value": [
-          "g-c4cd10f",
-          "e-49e01a4-dece"
-         ]
-        },
-        "paragraph": {
-         "$$type": "escaped-html",
-         "value": "[PLACEHOLDER] Company name \u00b7 Company number \u00b7 Registered address \u00b7 VAT status"
-        },
-        "tag": {
-         "$$type": "string",
-         "value": "p"
-        }
-       },
-       "elements": [],
-       "widgetType": "e-paragraph",
-       "styles": {
-        "e-49e01a4-dece": {
-         "id": "e-49e01a4-dece",
-         "label": "local",
-         "type": "class",
-         "variants": [
-          {
-           "meta": {
-            "breakpoint": "desktop",
-            "state": null
-           },
-           "props": {
-            "font-family": {
-             "$$type": "global-font-variable",
-             "value": "e-gv-03e899a"
-            },
-            "font-size": {
              "$$type": "size",
              "value": {
               "size": 12,
               "unit": "px"
              }
             },
-            "margin": {
-             "$$type": "size",
-             "value": {
-              "size": 0,
-              "unit": "px"
-             }
+            "flex-wrap": {
+             "$$type": "string",
+             "value": "wrap"
+            },
+            "justify-content": {
+             "$$type": "string",
+             "value": "space-between"
             }
            },
-           "custom_css": null
+           "custom_css": {
+            "raw": "Ym9yZGVyLXRvcC1zdHlsZTogZGFzaGVkOyBib3JkZXItdG9wLWNvbG9yOiB2YXIoLS1ldi1jb250cm9sKTs="
+           }
           }
          ]
         }
        },
        "editor_settings": {
-        "title": "Company details"
-       },
-       "version": "0.0"
-      },
-      {
-       "id": "1d6c925f",
-       "elType": "widget",
-       "settings": {
-        "classes": {
-         "$$type": "classes",
-         "value": [
-          "g-c4cd10f",
-          "e-1f1d1693-bfc9"
-         ]
-        },
-        "paragraph": {
-         "$$type": "escaped-html",
-         "value": "\u00a9 2026 EVTRON"
-        },
-        "tag": {
-         "$$type": "string",
-         "value": "p"
-        }
-       },
-       "elements": [],
-       "widgetType": "e-paragraph",
-       "styles": {
-        "e-1f1d1693-bfc9": {
-         "id": "e-1f1d1693-bfc9",
-         "label": "local",
-         "type": "class",
-         "variants": [
-          {
-           "meta": {
-            "breakpoint": "desktop",
-            "state": null
-           },
-           "props": {
-            "font-family": {
-             "$$type": "global-font-variable",
-             "value": "e-gv-03e899a"
-            },
-            "font-size": {
-             "$$type": "size",
-             "value": {
-              "size": 12,
-              "unit": "px"
-             }
-            },
-            "margin": {
-             "$$type": "size",
-             "value": {
-              "size": 0,
-              "unit": "px"
-             }
-            }
-           },
-           "custom_css": null
-          }
-         ]
-        }
-       },
-       "editor_settings": {
-        "title": "Copyright"
+        "title": "Footer legal"
        },
        "version": "0.0"
       }
      ],
      "isInner": false,
-     "styles": {
-      "e-5d943caa-f1d2": {
-       "id": "e-5d943caa-f1d2",
-       "label": "local",
-       "type": "class",
-       "variants": [
-        {
-         "meta": {
-          "breakpoint": "desktop",
-          "state": null
-         },
-         "props": {
-          "padding": {
-           "$$type": "dimensions",
-           "value": {
-            "block-start": {
-             "$$type": "size",
-             "value": {
-              "size": 20,
-              "unit": "px"
-             }
-            },
-            "block-end": {
-             "$$type": "size",
-             "value": {
-              "size": 0,
-              "unit": "px"
-             }
-            }
-           }
-          },
-          "margin": {
-           "$$type": "dimensions",
-           "value": {
-            "block-start": {
-             "$$type": "size",
-             "value": {
-              "size": 40,
-              "unit": "px"
-             }
-            }
-           }
-          },
-          "border-width": {
-           "$$type": "border-width-v2",
-           "value": {
-            "block-start": {
-             "$$type": "size",
-             "value": {
-              "size": 1,
-              "unit": "px"
-             }
-            }
-           }
-          },
-          "display": {
-           "$$type": "string",
-           "value": "flex"
-          },
-          "gap": {
-           "$$type": "size",
-           "value": {
-            "size": 12,
-            "unit": "px"
-           }
-          },
-          "flex-wrap": {
-           "$$type": "string",
-           "value": "wrap"
-          },
-          "justify-content": {
-           "$$type": "string",
-           "value": "space-between"
-          }
-         },
-         "custom_css": {
-          "raw": "Ym9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
-         }
-        }
-       ]
-      }
-     },
      "editor_settings": {
-      "title": "Footer legal bar"
+      "title": "Footer inner"
      },
      "version": "0.0"
     }
    ],
    "isInner": false,
    "styles": {
-    "e-aee202-4f71": {
-     "id": "e-aee202-4f71",
+    "e-25817d8-ad1b": {
+     "id": "e-25817d8-ad1b",
      "label": "local",
      "type": "class",
      "variants": [
+      {
+       "meta": {
+        "breakpoint": "mobile",
+        "state": null
+       },
+       "props": {
+        "padding": {
+         "$$type": "dimensions",
+         "value": {
+          "block-start": {
+           "$$type": "size",
+           "value": {
+            "size": 80,
+            "unit": "px"
+           }
+          }
+         }
+        }
+       },
+       "custom_css": null
+      },
       {
        "meta": {
         "breakpoint": "desktop",
@@ -1379,14 +2940,28 @@
           "block-start": {
            "$$type": "size",
            "value": {
-            "size": 64,
+            "size": 120,
+            "unit": "px"
+           }
+          },
+          "inline-end": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
             "unit": "px"
            }
           },
           "block-end": {
            "$$type": "size",
            "value": {
-            "size": 40,
+            "size": 32,
+            "unit": "px"
+           }
+          },
+          "inline-start": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
             "unit": "px"
            }
           }

@@ -18,9 +18,11 @@
   .ev-lift img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
   .ev-lift:hover img{transform:scale(1.03)}
   .ev-tick{opacity:0;animation:evFade .5s ease forwards;animation-delay:var(--ev-d,0ms)}
-  .ev-flow .ev-pulse{animation:evFlow var(--ev-t,14s) linear infinite}
-  @keyframes evFlow{to{stroke-dashoffset:-1000}}
+  .ev-dial-arc{animation:evDial 2.6s cubic-bezier(.3,.6,.2,1) .4s forwards,evBreathe 5s ease-in-out 3.2s infinite}
+  @keyframes evDial{to{stroke-dashoffset:var(--ev-to)}}
+  @keyframes evBreathe{0%,100%{stroke-opacity:.38}50%{stroke-opacity:.2}}
 }
+@media (prefers-reduced-motion: reduce){.ev-dial-arc{stroke-dashoffset:var(--ev-to)!important}}
 /* Charge bar under hero headline */
 .ev-charge{display:block;height:3px;width:min(220px,40%);margin-top:28px;border-radius:3px;background:#1F2833;overflow:hidden}
 .ev-charge i{display:block;height:100%;width:100%;background:#3BE37F;transform-origin:left}
@@ -49,6 +51,23 @@
 @media(max-width:1180px){.ev-pbat span{display:none}}
 @media(max-width:767px){.ev-pbat{display:none}}
 header.ev-scrolled{background-color:rgba(11,15,20,.985)!important}
+/* Footer smart charging clock */
+.ev-clk-time{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:20px}
+.ev-clk-now{margin:0;font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:500;font-size:clamp(44px,5vw,64px);line-height:1;color:#F2EFE9;font-variant-numeric:tabular-nums}
+.ev-clk-day{margin:6px 0 0;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#939CA8}
+.ev-clk-pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;border:1px solid rgba(59,227,127,.4);color:#3BE37F}
+.ev-clk-pill i{width:8px;height:8px;border-radius:50%;background:currentColor}
+.ev-clk-pill.peak{border-color:rgba(242,193,78,.45);color:#F2C14E}
+@media (prefers-reduced-motion:no-preference){.ev-clk-pill i{animation:evPulse 2s ease-in-out infinite}@keyframes evPulse{50%{opacity:.35}}}
+.ev-clk-bar{position:relative;display:grid;grid-template-columns:repeat(24,1fr);gap:2px;margin-top:24px}
+.ev-clk-bar span{height:28px;border-radius:2px;background:#1F2833}
+.ev-clk-bar span.pk{background:rgba(242,193,78,.28)}
+.ev-clk-bar span.off{background:rgba(59,227,127,.22)}
+.ev-clk-mark{position:absolute;top:-6px;bottom:-6px;width:2px;background:#F2EFE9;border-radius:2px;transform:translateX(-1px)}
+.ev-clk-axis{display:flex;justify-content:space-between;margin-top:8px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:#939CA8}
+.ev-clk-key{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:13px;color:#C3C7CD}
+.ev-clk-key b{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.ev-clk-next{margin:16px 0 0;font-size:14.5px;color:#C3C7CD}
 </style>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
@@ -87,25 +106,57 @@ document.addEventListener('DOMContentLoaded',function(){
     var img=a.querySelector('img'),spec=[].slice.call(a.querySelectorAll('p')).find(function(p){return /kW/.test(p.textContent)});
     if(img&&spec){var wrap=document.createElement('div');wrap.className='ev-spec-host';img.parentNode.insertBefore(wrap,img);wrap.appendChild(img);var st=document.createElement('div');st.className='ev-spec-strip';st.setAttribute('aria-hidden','true');st.textContent=spec.textContent;wrap.appendChild(st)}
   });
+
+  /* Footer: live smart charging clock (UK default peak hours, weekdays 8-11 and 16-22) */
+  var clkLabel=[].slice.call(document.querySelectorAll('footer p')).find(function(p){return /Smart charging clock/.test(p.textContent)});
+  if(clkLabel){
+    var panel=clkLabel.parentElement.parentElement,fb=clkLabel.parentElement.nextElementSibling;
+    var ui=document.createElement('div');ui.setAttribute('aria-live','polite');
+    ui.innerHTML='<div class="ev-clk-time"><div><p class="ev-clk-now" id="ev-clk-now">--:--</p><p class="ev-clk-day" id="ev-clk-day"></p></div><span class="ev-clk-pill" id="ev-clk-pill"><i></i><span></span></span></div>'+
+      '<div class="ev-clk-bar" id="ev-clk-bar" aria-hidden="true">'+Array.apply(null,{length:24}).map(function(){return '<span></span>'}).join('')+'<em class="ev-clk-mark" id="ev-clk-mark"></em></div>'+
+      '<div class="ev-clk-axis" aria-hidden="true"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>'+
+      '<div class="ev-clk-key"><span><b style="background:rgba(59,227,127,.5)"></b>Outside default peak</span><span><b style="background:rgba(242,193,78,.6)"></b>Default peak hours</span></div>'+
+      '<p class="ev-clk-next" id="ev-clk-next"></p>';
+    if(fb)fb.replaceWith(ui);else panel.appendChild(ui);
+    var fmtT=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',hour:'2-digit',minute:'2-digit',hour12:false});
+    var fmtD=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'long'});
+    var dur=function(m){var h=Math.floor(m/60),r=m%60;return (h?h+'h ':'')+r+'m'};
+    var tick=function(){
+      var now=new Date(),t=fmtT.format(now),day=fmtD.format(now),hh=+t.slice(0,2),mm=+t.slice(3,5),mins=hh*60+mm;
+      var wk=['Saturday','Sunday'].indexOf(day)<0;
+      var pk=function(h){return wk&&((h>=8&&h<11)||(h>=16&&h<22))};
+      var isPk=wk&&((mins>=480&&mins<660)||(mins>=960&&mins<1320));
+      document.getElementById('ev-clk-now').textContent=t;
+      document.getElementById('ev-clk-day').textContent=day+(wk?' · weekday':' · weekend');
+      var pill=document.getElementById('ev-clk-pill');pill.classList.toggle('peak',isPk);pill.lastChild.textContent=isPk?'Default peak hours':'Good time to charge';
+      [].forEach.call(document.getElementById('ev-clk-bar').querySelectorAll('span'),function(c,i){c.className=pk(i)?'pk':'off'});
+      document.getElementById('ev-clk-mark').style.left=(mins/1440*100)+'%';
+      var nx;
+      if(!wk)nx='No default peak hours at weekends. Smart scheduling still follows your tariff.';
+      else if(isPk){var end=mins<660?660:1320;nx='Default peak ends in '+dur(end-mins)+'.'}
+      else{var st=mins<480?480:(mins<960?960:null);nx=st?'Next default peak starts in '+dur(st-mins)+'.':'No more default peak hours today.'}
+      document.getElementById('ev-clk-next').textContent=nx;
+    };
+    tick();setInterval(tick,30000);
+  }
   onScroll();
   if(reduce)return;
-  /* Hero: crossover line field */
+  /* Hero: charging dial (LED-ring inspired) behind the price receipt */
   var hero=secs[0];
   if(hero){
     hero.classList.add('ev-hero-host');
-    var W=1440,H=900,paths='';
-    /* Crossover pairs: one curve rising, one falling, crossing like the EVTRON mark */
-    for(var k=0;k<7;k++){
-      var x0=560+k*70,y0=120+k*95,a=150+k*18,x1=x0+900;
-      var up='M'+(x0-400)+' '+(y0+a)+' C'+(x0+180)+' '+(y0+a)+' '+(x0+260)+' '+(y0-a*0.2)+' '+(x0+520)+' '+(y0-a*0.2)+' S'+(x1)+' '+(y0-a)+' '+(x1+300)+' '+(y0-a);
-      var dn='M'+(x0-400)+' '+(y0-a*0.6)+' C'+(x0+180)+' '+(y0-a*0.6)+' '+(x0+260)+' '+(y0+a*0.6)+' '+(x0+520)+' '+(y0+a*0.6)+' S'+(x1)+' '+(y0+a)+' '+(x1+300)+' '+(y0+a);
-      [up,dn].forEach(function(d,j){
-        paths+='<path d="'+d+'" stroke="#1A2230" stroke-width="1" class="ev-base"/>';
-        if((k+j)%3===0)paths+='<path pathLength="1000" d="'+d+'" stroke="#3BE37F" stroke-opacity=".7" stroke-width="1.5" class="ev-pulse" style="--ev-t:'+(9+(k%4)*2.5)+'s;stroke-dashoffset:'+(k*137+j*400)+'"/>';
-      });
-    }
+    var cx=1060,cy=470,R=430,C=2*Math.PI*R,ticks='';
+    for(var t=0;t<72;t++){var ang=(-225+t*(270/71))*Math.PI/180,long=t%9===0,r1=R+18,r2=R+(long?44:30);
+      ticks+='<line x1="'+(cx+r1*Math.cos(ang)).toFixed(1)+'" y1="'+(cy+r1*Math.sin(ang)).toFixed(1)+'" x2="'+(cx+r2*Math.cos(ang)).toFixed(1)+'" y2="'+(cy+r2*Math.sin(ang)).toFixed(1)+'" stroke="'+(long?'#2A3441':'#1A2230')+'" stroke-width="'+(long?2:1)+'"/>'}
+    var arcLen=C*0.75;
     var svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
-    svg.setAttribute('class','ev-flow');svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.setAttribute('preserveAspectRatio','xMidYMid slice');svg.setAttribute('aria-hidden','true');svg.innerHTML=paths;
+    svg.setAttribute('class','ev-flow ev-dial');svg.setAttribute('viewBox','0 0 1440 900');svg.setAttribute('preserveAspectRatio','xMidYMid slice');svg.setAttribute('aria-hidden','true');
+    svg.innerHTML='<g transform="rotate(135 '+cx+' '+cy+')">'+
+      '<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="#141B24" stroke-width="6" stroke-linecap="round" stroke-dasharray="'+arcLen.toFixed(1)+' '+C.toFixed(1)+'"/>'+
+      '<circle class="ev-dial-arc" cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="#3BE37F" stroke-opacity=".38" stroke-width="6" stroke-linecap="round" style="--ev-len:'+arcLen.toFixed(1)+';--ev-to:'+(arcLen*0.2).toFixed(1)+';stroke-dasharray:'+arcLen.toFixed(1)+' '+C.toFixed(1)+';stroke-dashoffset:'+arcLen.toFixed(1)+'"/>'+
+      '<circle cx="'+cx+'" cy="'+cy+'" r="'+(R-40)+'" fill="none" stroke="#131A23" stroke-width="1"/></g>'+ticks+
+      '<text x="'+(cx+(R+70)*Math.cos(135*Math.PI/180)).toFixed(0)+'" y="'+(cy+(R+70)*Math.sin(135*Math.PI/180)+4).toFixed(0)+'" fill="#3A4655" font-family="IBM Plex Mono, monospace" font-size="14" text-anchor="middle">0</text>'+
+      '<text x="'+(cx+(R+78)*Math.cos(45*Math.PI/180)).toFixed(0)+'" y="'+(cy+(R+78)*Math.sin(45*Math.PI/180)+4).toFixed(0)+'" fill="#3A4655" font-family="IBM Plex Mono, monospace" font-size="14" text-anchor="middle">7kW</text>';
     hero.prepend(svg);
   }
   /* Hero headline: word-by-word reveal + charge bar */
