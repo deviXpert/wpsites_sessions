@@ -1,0 +1,304 @@
+<title>EVTRON Spec Sheet</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#0B0F14">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap">
+<style>
+/* Direction A: "Spec Sheet". Asymmetric two-column editorial grid; numbers carry the design (Plex Mono); one receipt panel as the hero object. */
+:root{
+  --ink:#0B0F14;--s1:#11161D;--s2:#171E27;--s3:#1F2833;--line:#2A3441;--line-strong:#3A4655;
+  --text:#F2EFE9;--body:#C3C7CD;--muted:#939CA8;--accent:#3BE37F;--accent-ink:#06210F;--warn:#F2C14E;
+  --display:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --r:6px;--max:1240px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--ink)}
+body{background:var(--ink);color:var(--body);font:400 16px/1.6 var(--display);margin:0;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media(min-width:768px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+.proto{background:var(--s2);color:var(--muted);font:500 12px/1.4 var(--mono);text-align:center;padding-block:8px;letter-spacing:.02em}
+.proto b{color:var(--warn);font-weight:500}
+h1,h2,h3{color:var(--text);font-family:var(--display);text-wrap:balance;margin:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.label{font:500 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(11,15,20,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:24px;min-height:68px}
+.logo{display:block;width:124px;height:auto}
+.links{display:none;gap:24px;margin-left:12px}
+.links a{text-decoration:none;color:var(--body);font-weight:500;font-size:15px;padding-block:8px}
+.links a:hover{color:var(--text)}
+.nav .spacer{flex:1}
+.basket{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:var(--body);font:500 13px var(--mono);min-height:44px;padding-inline:4px}
+.menu-btn{background:none;border:1px solid var(--line-strong);color:var(--text);border-radius:var(--r);min-height:44px;padding:0 14px;font:600 14px var(--display)}
+@media(min-width:1000px){.links{display:flex}.menu-btn{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:var(--r);font:600 15px/1 var(--display);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background-color .15s ease}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{background:#5CEB97}
+.btn-ghost{border-color:var(--line-strong);color:var(--text);background:transparent}
+.btn-ghost:hover{background:var(--s2)}
+.btn:active{transform:translateY(1px)}
+.hide-sm{display:none}@media(min-width:1000px){.hide-sm{display:inline-flex}}
+/* hero */
+.hero{padding-block:56px 72px;display:grid;gap:48px}
+@media(min-width:1000px){.hero{grid-template-columns:1.1fr .9fr;align-items:start;padding-block:88px 96px}}
+.hero h1{font-size:clamp(40px,7vw,76px);line-height:1.02;letter-spacing:-.035em;font-weight:600}
+.hero h1 span{display:block;color:var(--muted);font-weight:300}
+.hero p.lead{font-size:clamp(17px,2vw,19px);max-width:52ch;margin:24px 0 32px;color:var(--body)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);margin-top:40px;overflow:hidden}
+.facts div{background:var(--ink);padding:16px}@media(min-width:600px){.facts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.facts .v{font:500 clamp(18px,2.4vw,24px)/1.1 var(--mono);color:var(--text)}
+.facts .k{font-size:13px;color:var(--muted);margin-top:4px}
+/* receipt */
+.receipt{background:var(--s1);border:1px solid var(--line);border-radius:10px;padding:24px;position:relative}
+.receipt h2{font-size:15px;font-weight:600;letter-spacing:.01em;display:flex;justify-content:space-between;gap:12px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:18px 0}
+.seg button{min-height:44px;border-radius:var(--r);border:1px solid var(--line-strong);background:transparent;color:var(--body);font:600 13px/1.2 var(--display);padding:8px 6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--s3);color:var(--text);border-color:var(--accent)}
+.row-opts{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.sw{width:32px;height:32px;border-radius:50%;border:2px solid var(--line-strong);cursor:pointer;padding:0;position:relative}
+.sw[aria-checked="true"]{outline:2px solid var(--accent);outline-offset:3px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{min-height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--line-strong);background:transparent;color:var(--body);font:500 13px var(--mono);cursor:pointer}
+.chip[aria-checked="true"]{border-color:var(--accent);color:var(--text)}
+.chip:disabled{opacity:.45;cursor:not-allowed;text-decoration:line-through}
+.lines{list-style:none;padding:0;margin:18px 0 0;border-top:1px dashed var(--line-strong)}
+.lines li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.lines li span:last-child{font-family:var(--mono);color:var(--text);white-space:nowrap}
+.lines li.inc span:last-child{color:var(--accent)}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin-top:16px;gap:12px}
+.total .p{font:500 clamp(30px,4vw,40px)/1 var(--mono);color:var(--text)}
+.note{font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.receipt .btn{width:100%;margin-top:18px}
+/* sections */
+section{padding-block:72px;border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:12px;margin-bottom:36px}
+@media(min-width:1000px){.sec-head{grid-template-columns:1fr 1fr;align-items:end}}
+.sec-head h2{font-size:clamp(28px,4vw,44px);letter-spacing:-.025em;line-height:1.08;font-weight:600}
+.sec-head p{margin:0;max-width:56ch}
+/* datasheet table */
+.ds{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:14.5px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--s1);position:sticky;top:0}
+thead th .nm{display:block;color:var(--text);font-size:17px;font-weight:600}
+thead th .pr{display:block;font:500 15px var(--mono);color:var(--text);margin-top:6px}
+tbody th{color:var(--muted);font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;width:190px}
+td.mono{color:var(--text)}
+tr.hl td,tr.hl th{background:rgba(59,227,127,.06)}
+tr:last-child td,tr:last-child th{border-bottom:0}
+.yes{color:var(--accent)}
+.filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+/* product rows */
+.prods{display:grid;gap:16px}
+@media(min-width:900px){.prods{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{background:var(--s1);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:14px}
+.card .img{aspect-ratio:4/3;max-width:100%;background:var(--s2);border-radius:8px;display:grid;place-items:center;position:relative;overflow:hidden}
+.ph{position:absolute;left:10px;top:10px;font:500 10.5px var(--mono);letter-spacing:.06em;color:var(--warn);background:rgba(11,15,20,.8);padding:3px 6px;border-radius:4px}
+.card h3{font-size:20px;letter-spacing:-.01em}
+.card .tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font:500 11.5px var(--mono);letter-spacing:.04em;padding:4px 8px;border:1px solid var(--line-strong);border-radius:4px;color:var(--body)}
+.tag.solar{border-color:rgba(59,227,127,.5);color:var(--accent)}
+.card .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;border-top:1px solid var(--line)}
+.card .foot .p{font:500 22px var(--mono);color:var(--text)}
+.dots{display:flex;gap:6px}.dots i{width:14px;height:14px;border-radius:50%;display:block;border:1px solid var(--line-strong)}
+/* included */
+.cols{display:grid;gap:16px}
+@media(min-width:800px){.cols{grid-template-columns:1fr 1fr}}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.list li{display:grid;grid-template-columns:28px 1fr;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}
+.list li::before{content:"✓";color:var(--accent);font-weight:700}
+.list.extra li::before{content:"+";color:var(--muted)}
+.tbc{font:500 11px var(--mono);color:var(--warn);margin-left:6px}
+/* calculator */
+.calc{display:grid;gap:24px;background:var(--s1);border:1px solid var(--line);border-radius:10px;padding:24px}
+@media(min-width:900px){.calc{grid-template-columns:1fr 1fr;padding:32px}}
+.field{display:grid;gap:8px;margin-bottom:18px}
+.field label{font-weight:600;color:var(--text);font-size:14.5px;display:flex;justify-content:space-between}
+.field output{font:500 14px var(--mono);color:var(--accent)}
+input[type=range]{width:100%;accent-color:var(--accent);min-height:32px}
+.res{display:grid;gap:12px;align-content:start}
+.res .big{font:500 clamp(40px,6vw,56px)/1 var(--mono);color:var(--text)}
+.steps{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+@media(min-width:900px){.steps{grid-template-columns:repeat(4,1fr)}}
+.steps div{background:var(--ink);padding:24px}
+.steps .n{font:500 13px var(--mono);color:var(--accent)}
+.steps h3{font-size:18px;margin:10px 0 6px}
+.steps p{margin:0;font-size:14.5px}
+footer{border-top:1px solid var(--line);padding-block:48px 64px;font-size:14px;color:var(--muted)}
+.fgrid{display:grid;gap:28px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.fgrid{grid-template-columns:1.4fr repeat(4,1fr)}}
+footer h4{color:var(--text);font-size:13px;margin:0 0 10px;font-weight:600}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{text-decoration:none}footer a:hover{color:var(--text)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="proto" role="note">Prototype A · <b>Placeholder images and unconfirmed prices/details</b> · throwaway concept, not the build</div>
+<header>
+  <div class="wrap nav">
+    <a href="#" aria-label="EVTRON home"><!--LOGO--></a>
+    <nav class="links" aria-label="Main"><a href="#chargers">Chargers</a><a href="#included">Installation</a><a href="#costs">Running costs</a><a href="#">Guides</a><a href="#">FAQs</a><a href="#">Contact</a></nav>
+    <span class="spacer"></span>
+    <a class="basket" href="#" aria-label="Basket, 0 items"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18l-2 12H5L3 6Z"/><path d="M8 6a4 4 0 0 1 8 0"/></svg><span class="mono">0</span></a>
+    <a class="btn btn-primary hide-sm" href="#chargers">Choose your charger</a>
+    <button class="menu-btn" type="button" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <p class="label">Home EV chargers · supplied and fitted</p>
+    <h1 style="margin-top:14px">Fast. Smart. Effortless.<span>One price, fully installed.</span></h1>
+    <p class="lead">Three carefully chosen home chargers. Pick one, see exactly what the price includes, and pay in full or spread the cost.</p>
+    <div class="cta"><a class="btn btn-primary" href="#chargers">Compare the chargers</a><a class="btn btn-ghost" href="#included">What's included</a></div>
+    <div class="facts" role="list">
+      <div role="listitem"><div class="v">7kW</div><div class="k">Single-phase home charging</div></div>
+      <div role="listitem"><div class="v">Type 2</div><div class="k">Fits most UK EVs and PHEVs</div></div>
+      <div role="listitem"><div class="v">3</div><div class="k">Chargers, one clear price each</div></div>
+    </div>
+  </div>
+
+  <aside class="receipt" aria-labelledby="rc-h">
+    <h2 id="rc-h"><span>Your installed price</span><span class="label">Live</span></h2>
+    <div class="seg" role="group" aria-label="Charger">
+      <button type="button" aria-pressed="true" data-p="evtron">EVTRON Tethered</button>
+      <button type="button" aria-pressed="false" data-p="foxt">Fox Tethered</button>
+      <button type="button" aria-pressed="false" data-p="foxu">Fox Untethered</button>
+    </div>
+    <div class="row-opts" role="radiogroup" aria-label="Colour" id="swatches"></div>
+    <p class="note" id="cname" style="margin:-4px 0 14px"></p>
+    <div id="cable-wrap">
+      <p class="label" style="margin:0 0 8px">Cable length</p>
+      <div class="chips" role="radiogroup" aria-label="Cable length" id="cables"></div>
+    </div>
+    <ul class="lines" id="lines"></ul>
+    <div class="total"><span>Total, fully installed</span><span class="p" id="total">£1,295</span></div>
+    <p class="note">Includes a standard installation <span class="tbc">[definition TBC]</span>. Prices shown are proposed and unconfirmed.</p>
+    <a class="btn btn-primary" href="#">Add to basket</a>
+    <p class="note" style="text-align:center">Or spread the cost with Klarna or PayPal Pay in 3 <span class="tbc">[subject to approval]</span></p>
+  </aside>
+</div>
+
+<section id="chargers">
+  <div class="wrap">
+    <div class="sec-head"><h2>Three chargers. Every number on the table.</h2><p>Tap a need to highlight what matters to you. Specifications show only verified figures; anything still awaiting the supplier is marked.</p></div>
+    <div class="filter" role="group" aria-label="Highlight">
+      <button class="chip" type="button" aria-checked="false" data-hl="solar">I have solar panels</button>
+      <button class="chip" type="button" aria-checked="false" data-hl="cable">I want a cable attached</button>
+      <button class="chip" type="button" aria-checked="false" data-hl="look">Looks matter</button>
+    </div>
+    <div class="ds" tabindex="0" role="region" aria-label="Comparison table">
+      <table>
+        <thead><tr><th scope="col"><span class="label">Model</span></th>
+          <th scope="col"><span class="nm">EVTRON Tethered</span><span class="pr">£1,295</span></th>
+          <th scope="col"><span class="nm">Fox Tethered</span><span class="pr">£995</span></th>
+          <th scope="col"><span class="nm">Fox Untethered</span><span class="pr">£945</span></th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Power</th><td class="mono">7kW</td><td class="mono">7.3kW</td><td class="mono">7.3kW <span class="tbc">model TBC</span></td></tr>
+          <tr data-r="cable"><th scope="row">Connection</th><td>Tethered Type 2</td><td>Tethered Type 2</td><td>Type 2 socket (use your own cable)</td></tr>
+          <tr data-r="cable"><th scope="row">Cable</th><td class="mono">7.5m · 10m<span class="tbc">10m TBC</span></td><td class="mono">5m</td><td>—</td></tr>
+          <tr data-r="solar"><th scope="row">Solar surplus charging</th><td>No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr data-r="look"><th scope="row">Finishes</th><td>Black · Red · Grey · Green</td><td>Black · Blue · Purple · Pink</td><td>White</td></tr>
+          <tr><th scope="row">Weather rating</th><td class="mono">IP65</td><td class="mono">IP55 · IK08</td><td class="mono">IP55 · IK08</td></tr>
+          <tr><th scope="row">App &amp; scheduling</th><td>Scheduling <span class="tbc">app TBC</span></td><td>Wi-Fi + Bluetooth app</td><td>App <span class="tbc">TBC</span></td></tr>
+          <tr><th scope="row">Warranty</th><td>3 years <span class="tbc">terms TBC</span></td><td><span class="tbc">TBC</span></td><td><span class="tbc">TBC</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prods" style="margin-top:32px" id="cards"></div>
+  </div>
+</section>
+
+<section id="included">
+  <div class="wrap">
+    <div class="sec-head"><h2>What "fully installed" means</h2><p>Know before you pay. If your home needs more, we tell you the cost first and you decide.</p></div>
+    <div class="cols">
+      <div><p class="label" style="margin:0 0 12px">Included in the price</p>
+        <ul class="list"><li>Supply of your chosen charger</li><li>Mounting on an exterior wall<span class="tbc">TBC</span></li><li>Cable run up to <span class="mono">[X]</span>m from your consumer unit<span class="tbc">TBC</span></li><li>Safety protection fitted to UK wiring regulations</li><li>Testing, certification and network operator notification<span class="tbc">TBC</span></li><li>App set-up and a walkthrough</li></ul></div>
+      <div><p class="label" style="margin:0 0 12px">Might cost extra (always quoted first)</p>
+        <ul class="list extra"><li>Longer cable runs</li><li>Consumer unit upgrade</li><li>Groundworks or trenching</li><li>Charging post instead of wall mount</li></ul></div>
+    </div>
+    <div class="steps" style="margin-top:40px">
+      <div><span class="n">01</span><h3>Order online</h3><p>Choose your charger, colour and cable.</p></div>
+      <div><span class="n">02</span><h3>Quick check</h3><p>Send a few photos so we can confirm a standard install.</p></div>
+      <div><span class="n">03</span><h3>Installation day</h3><p>Fitted, tested and certified.</p></div>
+      <div><span class="n">04</span><h3>Charge off-peak</h3><p>Schedule charging for cheaper hours.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="costs">
+  <div class="wrap">
+    <div class="sec-head"><h2>What a full charge costs at home</h2><p>Use your own numbers. We don't assume a tariff; check your bill for your off-peak rate.</p></div>
+    <div class="calc">
+      <form id="cf" onsubmit="return false">
+        <div class="field"><label for="kwh">Battery size <output id="o-kwh">60 kWh</output></label><input id="kwh" type="range" min="20" max="110" step="1" value="60"></div>
+        <div class="field"><label for="ppk">Your electricity rate <output id="o-ppk">8.5p per kWh</output></label><input id="ppk" type="range" min="5" max="35" step="0.5" value="8.5"></div>
+        <div class="field"><label for="pct">Charging from <output id="o-pct">20% to 80%</output></label><input id="pct" type="range" min="10" max="75" step="5" value="20"></div>
+      </form>
+      <div class="res" aria-live="polite">
+        <p class="label" style="margin:0">Estimated cost</p>
+        <div class="big" id="cost">£3.06</div>
+        <p style="margin:0" id="time">About 5 h 9 min on a 7kW charger</p>
+        <p class="note">Estimate only: ignores charging losses (typically a few percent) and assumes the full 7kW is available. Example values, not a quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div><!--LOGO2--><p style="margin-top:14px;max-width:32ch">Driven by innovation. Home EV chargers, supplied and fitted.</p><p class="mono" style="font-size:13px">sales@evtron.co.uk<br>info@evtron.co.uk</p></div>
+    <div><h4>Chargers</h4><ul><li><a href="#">EVTRON Tethered</a></li><li><a href="#">Fox Tethered</a></li><li><a href="#">Fox Untethered</a></li><li><a href="#">Accessories</a></li></ul></div>
+    <div><h4>Help</h4><ul><li><a href="#">Installation</a></li><li><a href="#">FAQs</a></li><li><a href="#">Get a quote</a></li><li><a href="#">Contact</a></li></ul></div>
+    <div><h4>Learn</h4><ul><li><a href="#">EV tariffs</a></li><li><a href="#">Solar charging</a></li><li><a href="#">Grants</a></li><li><a href="#">Guides</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Cookies</a></li><li><a href="#">Warranty</a></li></ul></div>
+  </div>
+  <div class="wrap" style="margin-top:32px"><p class="mono" style="font-size:12px">[PLACEHOLDER] Company name · company number · registered address</p></div>
+</footer>
+
+<script>
+const P={
+ evtron:{name:"EVTRON Tethered",price:1295,cable:true,colours:[["Mythos Black","#1B1D21"],["Red [name TBC]","#5A1418"],["Space Grey","#6E737A"],["Midnight Green","#1E4A3A"]]},
+ foxt:{name:"Fox Tethered",price:995,cable:false,colours:[["Black","#1E2024"],["Blue","#6FB7B5"],["Purple","#9C86C9"],["Pink","#D7A3AE"]]},
+ foxu:{name:"Fox Untethered",price:945,cable:false,colours:[["White","#ECEDEA"]]}
+};
+const CABLES=[["5m",null,"Not currently available"],["7.5m",0],["10m",90]];
+let cur="evtron",col=0,cab=1;
+const $=s=>document.querySelector(s);
+const fmt=n=>"£"+n.toLocaleString("en-GB");
+function render(){
+ const p=P[cur];
+ $("#swatches").innerHTML=p.colours.map((c,i)=>`<button class="sw" role="radio" aria-checked="${i===col}" aria-label="${c[0]}" style="background:${c[1]}" data-i="${i}"></button>`).join("");
+ $("#cname").textContent="Finish: "+p.colours[col][0];
+ $("#cable-wrap").hidden=!p.cable;
+ $("#cables").innerHTML=CABLES.map((c,i)=>`<button class="chip" role="radio" aria-checked="${i===cab}" ${c[1]===null?'disabled title="'+c[2]+'"':''} data-i="${i}">${c[0]}${c[1]?" +£"+c[1]:""}</button>`).join("");
+ const extra=p.cable?CABLES[cab][1]:0;
+ const lines=[[p.name+" · "+p.colours[col][0],fmt(p.price)],["Standard installation","Included"],["Load balancing CT clamp",cur==="evtron"?"Included":"TBC"]];
+ if(p.cable)lines.splice(1,0,["Cable "+CABLES[cab][0],extra?"+"+fmt(extra):"Included"]);
+ $("#lines").innerHTML=lines.map(l=>`<li class="${l[1]==="Included"?"inc":""}"><span>${l[0]}</span><span>${l[1]}</span></li>`).join("");
+ $("#total").textContent=fmt(p.price+extra);
+ document.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.p===cur));
+}
+document.querySelector(".seg").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;cur=b.dataset.p;col=0;cab=1;render()});
+$("#swatches").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;col=+b.dataset.i;render()});
+$("#cables").addEventListener("click",e=>{const b=e.target.closest("button");if(!b||b.disabled)return;cab=+b.dataset.i;render()});
+render();
+/* cards */
+const charger=(c,u)=>u?`<svg viewBox="0 0 120 120" width="62%" aria-hidden="true"><rect x="30" y="12" width="60" height="96" rx="16" fill="${c}" stroke="#ffffff22"/><circle cx="60" cy="74" r="15" fill="none" stroke="#0B0F14" stroke-width="5" opacity=".55"/><circle cx="60" cy="74" r="8" fill="#0B0F14" opacity=".5"/></svg>`:`<svg viewBox="0 0 120 120" width="62%" aria-hidden="true"><path d="M40 92c-18 0-26 8-26 16" fill="none" stroke="#2b333d" stroke-width="5" stroke-linecap="round"/><rect x="34" y="10" width="52" height="80" rx="14" fill="${c}" stroke="#ffffff22"/><rect x="56" y="24" width="8" height="34" rx="4" fill="#ffffff2a"/><rect x="50" y="88" width="20" height="10" rx="3" fill="#2b333d"/></svg>`;
+$("#cards").innerHTML=Object.entries(P).map(([k,p])=>`<article class="card"><div class="img"><span class="ph">PLACEHOLDER IMAGE</span>${charger(p.colours[0][1],k==="foxu")}</div><h3>${p.name}</h3><div class="tags"><span class="tag">${k==="foxu"?"UNTETHERED":"TETHERED"}</span>${k!=="evtron"?'<span class="tag solar">SOLAR-READY</span>':'<span class="tag">4 FINISHES</span>'}</div><div class="dots" aria-label="${p.colours.length} colours">${p.colours.map(c=>`<i style="background:${c[1]}" title="${c[0]}"></i>`).join("")}</div><div class="foot"><span class="p">${fmt(p.price)}</span><a class="btn btn-ghost" href="#">View</a></div></article>`).join("");
+/* highlight filter */
+document.querySelector(".filter").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const on=b.getAttribute("aria-checked")!=="true";b.setAttribute("aria-checked",on);document.querySelectorAll(`tr[data-r="${b.dataset.hl}"]`).forEach(r=>r.classList.toggle("hl",on))});
+/* calculator */
+function calc(){const k=+$("#kwh").value,p=+$("#ppk").value,f=+$("#pct").value,to=80;const e=Math.max(0,(to-f)/100*k);$("#o-kwh").textContent=k+" kWh";$("#o-ppk").textContent=p+"p per kWh";$("#o-pct").textContent=f+"% to 80%";$("#cost").textContent="£"+(e*p/100).toFixed(2);const h=e/7;$("#time").textContent=`About ${Math.floor(h)} h ${Math.round((h%1)*60)} min on a 7kW charger`}
+["kwh","ppk","pct"].forEach(i=>$("#"+i).addEventListener("input",calc));calc();
+</script>
