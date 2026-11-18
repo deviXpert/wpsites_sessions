@@ -5,3 +5,5 @@ evtron/research/shots/
 evtron/research/site/
 evtron/research/sources/*.html
 !evtron/assets/**/*.png
+evtron/qa/shots/*.png
+evtron/tools/__pycache__/

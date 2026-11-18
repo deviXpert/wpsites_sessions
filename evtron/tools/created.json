@@ -1,0 +1,27 @@
+{
+ "coming_soon": 45,
+ "menus": {
+  "Main": {
+   "id": 18,
+   "slug": "main"
+  },
+  "Footer Chargers": {
+   "id": 19,
+   "slug": "footer-chargers"
+  },
+  "Footer Help": {
+   "id": 20,
+   "slug": "footer-help"
+  },
+  "Footer Learn": {
+   "id": 21,
+   "slug": "footer-learn"
+  },
+  "Footer Legal": {
+   "id": 22,
+   "slug": "footer-legal"
+  }
+ },
+ "header": 85,
+ "footer": 86
+}

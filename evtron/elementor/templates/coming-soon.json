@@ -1,0 +1,1408 @@
+{
+ "id": 45,
+ "title": "Coming soon (EVTRON)",
+ "type": "page",
+ "data": [
+  {
+   "id": "320b4400",
+   "elType": "e-div-block",
+   "settings": {
+    "classes": {
+     "$$type": "classes",
+     "value": [
+      "e-702611dc-a7de"
+     ]
+    },
+    "tag": {
+     "$$type": "string",
+     "value": "main"
+    }
+   },
+   "elements": [
+    {
+     "id": "23b09db6",
+     "elType": "e-div-block",
+     "settings": {
+      "classes": {
+       "$$type": "classes",
+       "value": [
+        "g-cc5a7e9",
+        "e-6dc142cc-9e1c"
+       ]
+      }
+     },
+     "elements": [
+      {
+       "id": "484ccdce",
+       "elType": "widget",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-4a6813ac-9899"
+         ]
+        },
+        "image": {
+         "$$type": "image",
+         "value": {
+          "src": {
+           "$$type": "image-src",
+           "value": {
+            "id": {
+             "$$type": "image-attachment-id",
+             "value": 26
+            }
+           }
+          },
+          "size": {
+           "$$type": "string",
+           "value": "full"
+          }
+         }
+        }
+       },
+       "elements": [],
+       "widgetType": "e-image",
+       "styles": {
+        "e-4a6813ac-9899": {
+         "id": "e-4a6813ac-9899",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "width": {
+             "$$type": "size",
+             "value": {
+              "size": 150,
+              "unit": "px"
+             }
+            },
+            "height": {
+             "$$type": "size",
+             "value": {
+              "size": "",
+              "unit": "auto"
+             }
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Logo"
+       },
+       "version": "0.0"
+      },
+      {
+       "id": "719461ce",
+       "elType": "e-div-block",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-2610c8f8-5a6b"
+         ]
+        }
+       },
+       "elements": [
+        {
+         "id": "280fe2f3",
+         "elType": "widget",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "g-d4a52b2"
+           ]
+          },
+          "paragraph": {
+           "$$type": "escaped-html",
+           "value": "evtron.co.uk \u00b7 Launching soon"
+          },
+          "tag": {
+           "$$type": "string",
+           "value": "p"
+          }
+         },
+         "elements": [],
+         "widgetType": "e-paragraph",
+         "editor_settings": {
+          "title": "Eyebrow"
+         },
+         "version": "0.0"
+        },
+        {
+         "id": "3803507b",
+         "elType": "widget",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "g-6c8e9c4",
+            "e-191eb490-a9fa"
+           ]
+          },
+          "tag": {
+           "$$type": "string",
+           "value": "h1"
+          },
+          "title": {
+           "$$type": "escaped-html",
+           "value": "Home EV charging,<br><span>fully installed.</span>"
+          }
+         },
+         "elements": [],
+         "widgetType": "e-heading",
+         "styles": {
+          "e-191eb490-a9fa": {
+           "id": "e-191eb490-a9fa",
+           "label": "local",
+           "type": "class",
+           "variants": [
+            {
+             "meta": {
+              "breakpoint": "desktop",
+              "state": null
+             },
+             "props": {
+              "margin": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              }
+             },
+             "custom_css": null
+            }
+           ]
+          }
+         },
+         "editor_settings": {
+          "title": "Headline"
+         },
+         "version": "0.0"
+        },
+        {
+         "id": "482876e9",
+         "elType": "widget",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "g-4303cd1",
+            "e-6eae4e20-6b1c"
+           ]
+          },
+          "paragraph": {
+           "$$type": "escaped-html",
+           "value": "We're putting the finishing touches to our new website. Soon you'll be able to choose a home charger, see exactly what installation includes, and order online at one clear price."
+          },
+          "tag": {
+           "$$type": "string",
+           "value": "p"
+          }
+         },
+         "elements": [],
+         "widgetType": "e-paragraph",
+         "styles": {
+          "e-6eae4e20-6b1c": {
+           "id": "e-6eae4e20-6b1c",
+           "label": "local",
+           "type": "class",
+           "variants": [
+            {
+             "meta": {
+              "breakpoint": "desktop",
+              "state": null
+             },
+             "props": {
+              "margin": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              }
+             },
+             "custom_css": null
+            }
+           ]
+          }
+         },
+         "editor_settings": {
+          "title": "Intro"
+         },
+         "version": "0.0"
+        }
+       ],
+       "isInner": false,
+       "styles": {
+        "e-2610c8f8-5a6b": {
+         "id": "e-2610c8f8-5a6b",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "max-width": {
+             "$$type": "size",
+             "value": {
+              "size": 760,
+              "unit": "px"
+             }
+            },
+            "padding": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "display": {
+             "$$type": "string",
+             "value": "flex"
+            },
+            "flex-direction": {
+             "$$type": "string",
+             "value": "column"
+            },
+            "gap": {
+             "$$type": "size",
+             "value": {
+              "size": 20,
+              "unit": "px"
+             }
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Message"
+       },
+       "version": "0.0"
+      },
+      {
+       "id": "26817d10",
+       "elType": "e-div-block",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-4551c4a6-330e"
+         ]
+        }
+       },
+       "elements": [
+        {
+         "id": "62a465d",
+         "elType": "widget",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "g-d4a52b2"
+           ]
+          },
+          "paragraph": {
+           "$$type": "escaped-html",
+           "value": "Coming to the range"
+          },
+          "tag": {
+           "$$type": "string",
+           "value": "p"
+          }
+         },
+         "elements": [],
+         "widgetType": "e-paragraph",
+         "editor_settings": {
+          "title": "Range label"
+         },
+         "version": "0.0"
+        },
+        {
+         "id": "220d837a",
+         "elType": "e-div-block",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "e-ee6b430-ff00"
+           ]
+          }
+         },
+         "elements": [
+          {
+           "id": "1a5e62fc",
+           "elType": "e-div-block",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-362bb37a-9a9b"
+             ]
+            }
+           },
+           "elements": [
+            {
+             "id": "5624faca",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "g-16efae4",
+                "e-4e1fe970-db81"
+               ]
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "h2"
+              },
+              "title": {
+               "$$type": "escaped-html",
+               "value": "EVTRON Tethered"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-heading",
+             "styles": {
+              "e-4e1fe970-db81": {
+               "id": "e-4e1fe970-db81",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Item 1 name"
+             },
+             "version": "0.0"
+            },
+            {
+             "id": "61efd8b3",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "e-694e780-f1ef"
+               ]
+              },
+              "paragraph": {
+               "$$type": "escaped-html",
+               "value": "7kW \u00b7 Type 2 \u00b7 four finishes"
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "p"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-paragraph",
+             "styles": {
+              "e-694e780-f1ef": {
+               "id": "e-694e780-f1ef",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "font-family": {
+                   "$$type": "global-font-variable",
+                   "value": "e-gv-03e899a"
+                  },
+                  "font-size": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 13,
+                    "unit": "px"
+                   }
+                  },
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-03f1fbe"
+                  },
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Item 1 note"
+             },
+             "version": "0.0"
+            }
+           ],
+           "isInner": false,
+           "styles": {
+            "e-362bb37a-9a9b": {
+             "id": "e-362bb37a-9a9b",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "padding": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 20,
+                  "unit": "px"
+                 }
+                },
+                "background": {
+                 "$$type": "background",
+                 "value": {
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-3d2ccf4"
+                  }
+                 }
+                },
+                "display": {
+                 "$$type": "string",
+                 "value": "flex"
+                },
+                "flex-direction": {
+                 "$$type": "string",
+                 "value": "column"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 6,
+                  "unit": "px"
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Item 1"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "58cc489d",
+           "elType": "e-div-block",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-2c3b483c-2bc5"
+             ]
+            }
+           },
+           "elements": [
+            {
+             "id": "95a38bd",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "g-16efae4",
+                "e-5960fd68-98b2"
+               ]
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "h2"
+              },
+              "title": {
+               "$$type": "escaped-html",
+               "value": "Fox Tethered"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-heading",
+             "styles": {
+              "e-5960fd68-98b2": {
+               "id": "e-5960fd68-98b2",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Item 2 name"
+             },
+             "version": "0.0"
+            },
+            {
+             "id": "28110d2f",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "e-1b6d8ef9-a7d1"
+               ]
+              },
+              "paragraph": {
+               "$$type": "escaped-html",
+               "value": "Solar-compatible \u00b7 four colours"
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "p"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-paragraph",
+             "styles": {
+              "e-1b6d8ef9-a7d1": {
+               "id": "e-1b6d8ef9-a7d1",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "font-family": {
+                   "$$type": "global-font-variable",
+                   "value": "e-gv-03e899a"
+                  },
+                  "font-size": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 13,
+                    "unit": "px"
+                   }
+                  },
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-03f1fbe"
+                  },
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Item 2 note"
+             },
+             "version": "0.0"
+            }
+           ],
+           "isInner": false,
+           "styles": {
+            "e-2c3b483c-2bc5": {
+             "id": "e-2c3b483c-2bc5",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "padding": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 20,
+                  "unit": "px"
+                 }
+                },
+                "background": {
+                 "$$type": "background",
+                 "value": {
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-3d2ccf4"
+                  }
+                 }
+                },
+                "display": {
+                 "$$type": "string",
+                 "value": "flex"
+                },
+                "flex-direction": {
+                 "$$type": "string",
+                 "value": "column"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 6,
+                  "unit": "px"
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Item 2"
+           },
+           "version": "0.0"
+          },
+          {
+           "id": "50a78921",
+           "elType": "e-div-block",
+           "settings": {
+            "classes": {
+             "$$type": "classes",
+             "value": [
+              "e-589531b5-fbd1"
+             ]
+            }
+           },
+           "elements": [
+            {
+             "id": "47b2c9a5",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "g-16efae4",
+                "e-1626518f-9b71"
+               ]
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "h2"
+              },
+              "title": {
+               "$$type": "escaped-html",
+               "value": "Fox Untethered"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-heading",
+             "styles": {
+              "e-1626518f-9b71": {
+               "id": "e-1626518f-9b71",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Item 3 name"
+             },
+             "version": "0.0"
+            },
+            {
+             "id": "d4ac30",
+             "elType": "widget",
+             "settings": {
+              "classes": {
+               "$$type": "classes",
+               "value": [
+                "e-24465f4b-2f74"
+               ]
+              },
+              "paragraph": {
+               "$$type": "escaped-html",
+               "value": "Solar-compatible \u00b7 Type 2 socket"
+              },
+              "tag": {
+               "$$type": "string",
+               "value": "p"
+              }
+             },
+             "elements": [],
+             "widgetType": "e-paragraph",
+             "styles": {
+              "e-24465f4b-2f74": {
+               "id": "e-24465f4b-2f74",
+               "label": "local",
+               "type": "class",
+               "variants": [
+                {
+                 "meta": {
+                  "breakpoint": "desktop",
+                  "state": null
+                 },
+                 "props": {
+                  "font-family": {
+                   "$$type": "global-font-variable",
+                   "value": "e-gv-03e899a"
+                  },
+                  "font-size": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 13,
+                    "unit": "px"
+                   }
+                  },
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-03f1fbe"
+                  },
+                  "margin": {
+                   "$$type": "size",
+                   "value": {
+                    "size": 0,
+                    "unit": "px"
+                   }
+                  }
+                 },
+                 "custom_css": null
+                }
+               ]
+              }
+             },
+             "editor_settings": {
+              "title": "Item 3 note"
+             },
+             "version": "0.0"
+            }
+           ],
+           "isInner": false,
+           "styles": {
+            "e-589531b5-fbd1": {
+             "id": "e-589531b5-fbd1",
+             "label": "local",
+             "type": "class",
+             "variants": [
+              {
+               "meta": {
+                "breakpoint": "desktop",
+                "state": null
+               },
+               "props": {
+                "padding": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 20,
+                  "unit": "px"
+                 }
+                },
+                "background": {
+                 "$$type": "background",
+                 "value": {
+                  "color": {
+                   "$$type": "global-color-variable",
+                   "value": "e-gv-3d2ccf4"
+                  }
+                 }
+                },
+                "display": {
+                 "$$type": "string",
+                 "value": "flex"
+                },
+                "flex-direction": {
+                 "$$type": "string",
+                 "value": "column"
+                },
+                "gap": {
+                 "$$type": "size",
+                 "value": {
+                  "size": 6,
+                  "unit": "px"
+                 }
+                }
+               },
+               "custom_css": null
+              }
+             ]
+            }
+           },
+           "editor_settings": {
+            "title": "Item 3"
+           },
+           "version": "0.0"
+          }
+         ],
+         "isInner": false,
+         "styles": {
+          "e-ee6b430-ff00": {
+           "id": "e-ee6b430-ff00",
+           "label": "local",
+           "type": "class",
+           "variants": [
+            {
+             "meta": {
+              "breakpoint": "mobile",
+              "state": null
+             },
+             "props": {
+              "grid-template-columns": {
+               "$$type": "string",
+               "value": "1fr"
+              }
+             },
+             "custom_css": null
+            },
+            {
+             "meta": {
+              "breakpoint": "desktop",
+              "state": null
+             },
+             "props": {
+              "overflow": {
+               "$$type": "string",
+               "value": "hidden"
+              },
+              "padding": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              },
+              "border-radius": {
+               "$$type": "global-size-variable",
+               "value": "e-gv-a3b2a9f"
+              },
+              "border-width": {
+               "$$type": "size",
+               "value": {
+                "size": 1,
+                "unit": "px"
+               }
+              },
+              "border-color": {
+               "$$type": "global-color-variable",
+               "value": "e-gv-6532a4c"
+              },
+              "border-style": {
+               "$$type": "string",
+               "value": "solid"
+              },
+              "background": {
+               "$$type": "background",
+               "value": {
+                "color": {
+                 "$$type": "global-color-variable",
+                 "value": "e-gv-6532a4c"
+                }
+               }
+              },
+              "display": {
+               "$$type": "string",
+               "value": "grid"
+              },
+              "gap": {
+               "$$type": "size",
+               "value": {
+                "size": 1,
+                "unit": "px"
+               }
+              },
+              "grid-template-columns": {
+               "$$type": "string",
+               "value": "repeat(3, minmax(0, 1fr))"
+              }
+             },
+             "custom_css": null
+            }
+           ]
+          }
+         },
+         "editor_settings": {
+          "title": "Range list"
+         },
+         "version": "0.0"
+        }
+       ],
+       "isInner": false,
+       "styles": {
+        "e-4551c4a6-330e": {
+         "id": "e-4551c4a6-330e",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "max-width": {
+             "$$type": "size",
+             "value": {
+              "size": 760,
+              "unit": "px"
+             }
+            },
+            "padding": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "display": {
+             "$$type": "string",
+             "value": "flex"
+            },
+            "flex-direction": {
+             "$$type": "string",
+             "value": "column"
+            },
+            "gap": {
+             "$$type": "size",
+             "value": {
+              "size": 18,
+              "unit": "px"
+             }
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Range panel"
+       },
+       "version": "0.0"
+      },
+      {
+       "id": "61c8bc64",
+       "elType": "e-div-block",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-4867f83e-faee"
+         ]
+        }
+       },
+       "elements": [
+        {
+         "id": "4c93ff56",
+         "elType": "widget",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "g-c4cd10f",
+            "e-2c17cbad-fa4a"
+           ]
+          },
+          "paragraph": {
+           "$$type": "escaped-html",
+           "value": "Questions in the meantime? Email <a href=\"mailto:info@evtron.co.uk\">info@evtron.co.uk</a>"
+          },
+          "tag": {
+           "$$type": "string",
+           "value": "p"
+          }
+         },
+         "elements": [],
+         "widgetType": "e-paragraph",
+         "styles": {
+          "e-2c17cbad-fa4a": {
+           "id": "e-2c17cbad-fa4a",
+           "label": "local",
+           "type": "class",
+           "variants": [
+            {
+             "meta": {
+              "breakpoint": "desktop",
+              "state": null
+             },
+             "props": {
+              "color": {
+               "$$type": "global-color-variable",
+               "value": "e-gv-efa46bd"
+              },
+              "margin": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              }
+             },
+             "custom_css": null
+            }
+           ]
+          }
+         },
+         "editor_settings": {
+          "title": "Contact"
+         },
+         "version": "0.0"
+        },
+        {
+         "id": "58311b3a",
+         "elType": "widget",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "g-c4cd10f",
+            "e-59f177f1-86fd"
+           ]
+          },
+          "paragraph": {
+           "$$type": "escaped-html",
+           "value": "\u00a9 2026 EVTRON. Driven by innovation."
+          },
+          "tag": {
+           "$$type": "string",
+           "value": "p"
+          }
+         },
+         "elements": [],
+         "widgetType": "e-paragraph",
+         "styles": {
+          "e-59f177f1-86fd": {
+           "id": "e-59f177f1-86fd",
+           "label": "local",
+           "type": "class",
+           "variants": [
+            {
+             "meta": {
+              "breakpoint": "desktop",
+              "state": null
+             },
+             "props": {
+              "margin": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              }
+             },
+             "custom_css": null
+            }
+           ]
+          }
+         },
+         "editor_settings": {
+          "title": "Copyright"
+         },
+         "version": "0.0"
+        }
+       ],
+       "isInner": false,
+       "styles": {
+        "e-4867f83e-faee": {
+         "id": "e-4867f83e-faee",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "max-width": {
+             "$$type": "size",
+             "value": {
+              "size": 760,
+              "unit": "px"
+             }
+            },
+            "padding": {
+             "$$type": "dimensions",
+             "value": {
+              "inline-start": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              },
+              "inline-end": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              },
+              "block-end": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              }
+             }
+            },
+            "border-width": {
+             "$$type": "border-width-v2",
+             "value": {
+              "block-start": {
+               "$$type": "size",
+               "value": {
+                "size": 1,
+                "unit": "px"
+               }
+              }
+             }
+            },
+            "display": {
+             "$$type": "string",
+             "value": "flex"
+            },
+            "gap": {
+             "$$type": "size",
+             "value": {
+              "size": 12,
+              "unit": "px"
+             }
+            },
+            "flex-wrap": {
+             "$$type": "string",
+             "value": "wrap"
+            },
+            "justify-content": {
+             "$$type": "string",
+             "value": "space-between"
+            }
+           },
+           "custom_css": {
+            "raw": "Ym9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
+           }
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Foot"
+       },
+       "version": "0.0"
+      }
+     ],
+     "isInner": false,
+     "styles": {
+      "e-6dc142cc-9e1c": {
+       "id": "e-6dc142cc-9e1c",
+       "label": "local",
+       "type": "class",
+       "variants": [
+        {
+         "meta": {
+          "breakpoint": "mobile",
+          "state": null
+         },
+         "props": {
+          "gap": {
+           "$$type": "size",
+           "value": {
+            "size": 40,
+            "unit": "px"
+           }
+          }
+         },
+         "custom_css": null
+        },
+        {
+         "meta": {
+          "breakpoint": "desktop",
+          "state": null
+         },
+         "props": {
+          "padding": {
+           "$$type": "dimensions",
+           "value": {
+            "block-start": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "block-end": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            }
+           }
+          },
+          "display": {
+           "$$type": "string",
+           "value": "flex"
+          },
+          "flex-direction": {
+           "$$type": "string",
+           "value": "column"
+          },
+          "gap": {
+           "$$type": "size",
+           "value": {
+            "size": 56,
+            "unit": "px"
+           }
+          }
+         },
+         "custom_css": null
+        }
+       ]
+      }
+     },
+     "editor_settings": {
+      "title": "Inner"
+     },
+     "version": "0.0"
+    }
+   ],
+   "isInner": false,
+   "styles": {
+    "e-702611dc-a7de": {
+     "id": "e-702611dc-a7de",
+     "label": "local",
+     "type": "class",
+     "variants": [
+      {
+       "meta": {
+        "breakpoint": "desktop",
+        "state": null
+       },
+       "props": {
+        "min-height": {
+         "$$type": "size",
+         "value": {
+          "size": 100,
+          "unit": "vh"
+         }
+        },
+        "padding": {
+         "$$type": "dimensions",
+         "value": {
+          "block-start": {
+           "$$type": "size",
+           "value": {
+            "size": 56,
+            "unit": "px"
+           }
+          },
+          "block-end": {
+           "$$type": "size",
+           "value": {
+            "size": 56,
+            "unit": "px"
+           }
+          }
+         }
+        },
+        "background": {
+         "$$type": "background",
+         "value": {
+          "color": {
+           "$$type": "global-color-variable",
+           "value": "e-gv-112f597"
+          }
+         }
+        },
+        "display": {
+         "$$type": "string",
+         "value": "flex"
+        },
+        "align-items": {
+         "$$type": "string",
+         "value": "center"
+        }
+       },
+       "custom_css": null
+      }
+     ]
+    }
+   },
+   "editor_settings": {
+    "title": "Coming soon page"
+   },
+   "version": "0.0"
+  }
+ ]
+}

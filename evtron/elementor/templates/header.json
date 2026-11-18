@@ -1,0 +1,602 @@
+{
+ "id": 85,
+ "title": "EVTRON header",
+ "type": "header",
+ "data": [
+  {
+   "id": "1f4afb1e",
+   "elType": "e-div-block",
+   "settings": {
+    "classes": {
+     "$$type": "classes",
+     "value": [
+      "e-59d5957b-bb6a"
+     ]
+    },
+    "tag": {
+     "$$type": "string",
+     "value": "header"
+    }
+   },
+   "elements": [
+    {
+     "id": "550e1833",
+     "elType": "e-div-block",
+     "settings": {
+      "classes": {
+       "$$type": "classes",
+       "value": [
+        "g-cc5a7e9",
+        "e-715141ea-4ebb"
+       ]
+      }
+     },
+     "elements": [
+      {
+       "id": "6c8a5040",
+       "elType": "widget",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-7bdc46f0-8a10"
+         ]
+        },
+        "image": {
+         "$$type": "image",
+         "value": {
+          "src": {
+           "$$type": "image-src",
+           "value": {
+            "id": {
+             "$$type": "image-attachment-id",
+             "value": 26
+            }
+           }
+          },
+          "size": {
+           "$$type": "string",
+           "value": "medium_large"
+          }
+         }
+        },
+        "link": {
+         "$$type": "link",
+         "value": {
+          "destination": {
+           "$$type": "url",
+           "value": "https://evtron.co.uk/"
+          }
+         }
+        }
+       },
+       "elements": [],
+       "widgetType": "e-image",
+       "styles": {
+        "e-7bdc46f0-8a10": {
+         "id": "e-7bdc46f0-8a10",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "mobile",
+            "state": null
+           },
+           "props": {
+            "width": {
+             "$$type": "size",
+             "value": {
+              "size": 112,
+              "unit": "px"
+             }
+            }
+           },
+           "custom_css": null
+          },
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "width": {
+             "$$type": "size",
+             "value": {
+              "size": 128,
+              "unit": "px"
+             }
+            },
+            "height": {
+             "$$type": "size",
+             "value": {
+              "size": "",
+              "unit": "auto"
+             }
+            },
+            "flex": {
+             "$$type": "flex",
+             "value": {
+              "flexShrink": {
+               "$$type": "number",
+               "value": 0
+              }
+             }
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Header logo"
+       },
+       "version": "0.0"
+      },
+      {
+       "id": "23d2c116",
+       "elType": "widget",
+       "settings": {
+        "_title": "Main navigation",
+        "menu_name": "main",
+        "layout": "horizontal",
+        "pointer": "none",
+        "dropdown": "tablet",
+        "toggle": "burger",
+        "full_width": "stretch",
+        "text_align": "aside",
+        "menu_typography_font_weight": "500",
+        "menu_typography_typography": "custom",
+        "menu_typography_font_size": {
+         "unit": "px",
+         "size": 15
+        },
+        "color_menu_item": "#C3C7CD",
+        "padding_horizontal_menu_item": {
+         "unit": "px",
+         "size": 10
+        },
+        "padding_vertical_menu_item": {
+         "unit": "px",
+         "size": 12
+        },
+        "color_menu_item_hover": "#F2EFE9",
+        "dropdown_typography_font_size": {
+         "unit": "px",
+         "size": 15
+        },
+        "dropdown_typography_typography": "custom",
+        "color_dropdown_item": "#C3C7CD",
+        "padding_horizontal_dropdown_item": {
+         "unit": "px",
+         "size": 18
+        },
+        "padding_vertical_dropdown_item": {
+         "unit": "px",
+         "size": 14
+        },
+        "dropdown_border_radius": {
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "unit": "px",
+         "isLinked": true
+        },
+        "dropdown_border_width": {
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "unit": "px",
+         "isLinked": true
+        },
+        "dropdown_border_color": "#2A3441",
+        "dropdown_border_border": "solid",
+        "background_color_dropdown_item": "#171E27",
+        "color_dropdown_item_hover": "#F2EFE9",
+        "background_color_dropdown_item_hover": "#1F2833",
+        "toggle_size": {
+         "unit": "px",
+         "size": 24
+        },
+        "toggle_color": "#F2EFE9",
+        "toggle_border_radius": {
+         "unit": "px",
+         "size": 6
+        },
+        "toggle_border_width": {
+         "unit": "px",
+         "size": 1
+        },
+        "toggle_background_color": "transparent",
+        "_flex_grow": 1,
+        "_flex_size": "custom",
+        "_flex_shrink": 1,
+        "custom_css": "selector .elementor-nav-menu--main .elementor-item { font-family: var(--ev-font) !important; }\nselector .elementor-nav-menu--dropdown { font-family: var(--ev-font) !important; }"
+       },
+       "elements": [],
+       "widgetType": "nav-menu"
+      },
+      {
+       "id": "583beb76",
+       "elType": "e-div-block",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-38af35a5-7530"
+         ]
+        }
+       },
+       "elements": [
+        {
+         "id": "1488603a",
+         "elType": "widget",
+         "settings": {
+          "_title": "Basket",
+          "icon": "basket-light",
+          "items_indicator": "bubble",
+          "show_subtotal": "yes",
+          "cart_type": "side-cart",
+          "open_cart": "click",
+          "toggle_button_text_color": "#F2EFE9",
+          "toggle_button_padding": {
+           "top": "10",
+           "right": "12",
+           "bottom": "10",
+           "left": "12",
+           "unit": "px",
+           "isLinked": false
+          },
+          "toggle_button_border_radius": {
+           "unit": "px",
+           "size": 6
+          },
+          "toggle_button_border_width": {
+           "unit": "px",
+           "size": 1
+          },
+          "toggle_button_border_color": "#6A7688",
+          "toggle_button_background_color": "transparent",
+          "toggle_icon_size": {
+           "unit": "px",
+           "size": 20
+          },
+          "toggle_button_icon_color": "#F2EFE9",
+          "items_indicator_text_color": "#06210F",
+          "items_indicator_background_color": "#3BE37F",
+          "border_width": {
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "unit": "px",
+           "isLinked": true
+          },
+          "border_color": "#2A3441",
+          "border_type": "solid",
+          "background_color": "#11161D",
+          "product_title_color": "#F2EFE9",
+          "product_price_color": "#F2EFE9",
+          "subtotal_color": "#F2EFE9",
+          "view_cart_button_text_color": "#F2EFE9",
+          "view_cart_button_show": "yes",
+          "view_cart_button_border_radius": {
+           "top": "6",
+           "right": "6",
+           "bottom": "6",
+           "left": "6",
+           "unit": "px",
+           "isLinked": true
+          },
+          "view_cart_border_width": {
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "unit": "px",
+           "isLinked": true
+          },
+          "view_cart_border_color": "#6A7688",
+          "view_cart_border_border": "solid",
+          "view_cart_button_background_color": "transparent",
+          "checkout_button_text_color": "#06210F",
+          "checkout_button_show": "yes",
+          "view_checkout_button_border_radius": {
+           "top": "6",
+           "right": "6",
+           "bottom": "6",
+           "left": "6",
+           "unit": "px",
+           "isLinked": true
+          },
+          "checkout_button_background_color": "#3BE37F",
+          "custom_css": "selector .elementor-menu-cart__product-name a { font-family: var(--ev-font) !important; }\nselector .elementor-menu-cart__product-price { font-family: var(--ev-mono) !important; }\nselector .elementor-menu-cart__subtotal { font-family: var(--ev-mono) !important; }"
+         },
+         "elements": [],
+         "widgetType": "woocommerce-menu-cart"
+        },
+        {
+         "id": "d509f11",
+         "elType": "widget",
+         "settings": {
+          "classes": {
+           "$$type": "classes",
+           "value": [
+            "g-1cdebe1",
+            "e-3ccdc3d1-cf7b"
+           ]
+          },
+          "text": {
+           "$$type": "escaped-html",
+           "value": "Choose your charger"
+          },
+          "link": {
+           "$$type": "link",
+           "value": {
+            "destination": {
+             "$$type": "url",
+             "value": "https://evtron.co.uk/ev-chargers/"
+            }
+           }
+          }
+         },
+         "elements": [],
+         "widgetType": "e-button",
+         "styles": {
+          "e-3ccdc3d1-cf7b": {
+           "id": "e-3ccdc3d1-cf7b",
+           "label": "local",
+           "type": "class",
+           "variants": [
+            {
+             "meta": {
+              "breakpoint": "mobile",
+              "state": null
+             },
+             "props": {
+              "display": {
+               "$$type": "string",
+               "value": "none"
+              }
+             },
+             "custom_css": null
+            }
+           ]
+          }
+         },
+         "editor_settings": {
+          "title": "Header CTA"
+         },
+         "version": "0.0"
+        }
+       ],
+       "isInner": false,
+       "styles": {
+        "e-38af35a5-7530": {
+         "id": "e-38af35a5-7530",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "padding": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "margin": {
+             "$$type": "dimensions",
+             "value": {
+              "inline-start": {
+               "$$type": "size",
+               "value": {
+                "size": "",
+                "unit": "auto"
+               }
+              }
+             }
+            },
+            "display": {
+             "$$type": "string",
+             "value": "flex"
+            },
+            "flex-direction": {
+             "$$type": "string",
+             "value": "row"
+            },
+            "gap": {
+             "$$type": "size",
+             "value": {
+              "size": 12,
+              "unit": "px"
+             }
+            },
+            "align-items": {
+             "$$type": "string",
+             "value": "center"
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Header actions"
+       },
+       "version": "0.0"
+      }
+     ],
+     "isInner": false,
+     "styles": {
+      "e-715141ea-4ebb": {
+       "id": "e-715141ea-4ebb",
+       "label": "local",
+       "type": "class",
+       "variants": [
+        {
+         "meta": {
+          "breakpoint": "mobile",
+          "state": null
+         },
+         "props": {
+          "min-height": {
+           "$$type": "size",
+           "value": {
+            "size": 64,
+            "unit": "px"
+           }
+          },
+          "gap": {
+           "$$type": "size",
+           "value": {
+            "size": 12,
+            "unit": "px"
+           }
+          }
+         },
+         "custom_css": null
+        },
+        {
+         "meta": {
+          "breakpoint": "desktop",
+          "state": null
+         },
+         "props": {
+          "min-height": {
+           "$$type": "size",
+           "value": {
+            "size": 72,
+            "unit": "px"
+           }
+          },
+          "padding": {
+           "$$type": "dimensions",
+           "value": {
+            "block-start": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "block-end": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            }
+           }
+          },
+          "display": {
+           "$$type": "string",
+           "value": "flex"
+          },
+          "flex-direction": {
+           "$$type": "string",
+           "value": "row"
+          },
+          "gap": {
+           "$$type": "size",
+           "value": {
+            "size": 28,
+            "unit": "px"
+           }
+          },
+          "align-items": {
+           "$$type": "string",
+           "value": "center"
+          }
+         },
+         "custom_css": null
+        }
+       ]
+      }
+     },
+     "editor_settings": {
+      "title": "Header bar"
+     },
+     "version": "0.0"
+    }
+   ],
+   "isInner": false,
+   "styles": {
+    "e-59d5957b-bb6a": {
+     "id": "e-59d5957b-bb6a",
+     "label": "local",
+     "type": "class",
+     "variants": [
+      {
+       "meta": {
+        "breakpoint": "desktop",
+        "state": null
+       },
+       "props": {
+        "position": {
+         "$$type": "string",
+         "value": "sticky"
+        },
+        "inset-block-start": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        },
+        "z-index": {
+         "$$type": "number",
+         "value": 50
+        },
+        "padding": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        },
+        "border-width": {
+         "$$type": "border-width-v2",
+         "value": {
+          "block-end": {
+           "$$type": "size",
+           "value": {
+            "size": 1,
+            "unit": "px"
+           }
+          }
+         }
+        },
+        "background": {
+         "$$type": "background",
+         "value": {
+          "color": {
+           "$$type": "color",
+           "value": "rgba(11,15,20,0.94)"
+          }
+         }
+        }
+       },
+       "custom_css": {
+        "raw": "Ym9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHZhcigtLWV2LWRpdmlkZXIpOw=="
+       }
+      }
+     ]
+    }
+   },
+   "editor_settings": {
+    "title": "Site header"
+   },
+   "version": "0.0"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+<!-- EVTRON critical head. Elementor > Custom Code > "EVTRON critical head" (location: head, priority 1, entire site). -->
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B0F14">
+<style id="evtron-critical">
+/* Dark only: paint the ink background before anything else so there is never a white flash. */
+:root{color-scheme:dark;
+  /* Astra palette mapped to EVTRON tokens (prevents Astra painting light backgrounds) */
+  --ast-global-color-0:#3BE37F;--ast-global-color-1:#5CEB97;--ast-global-color-2:#F2EFE9;--ast-global-color-3:#C3C7CD;
+  --ast-global-color-4:#0B0F14;--ast-global-color-5:#11161D;--ast-global-color-6:#171E27;--ast-global-color-7:#2A3441;--ast-global-color-8:#939CA8}
+html,body,#page,.site,.site-content,.ast-container{background-color:#0B0F14!important}
+body{color:#C3C7CD;font-family:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,h5,h6{color:#F2EFE9;text-wrap:balance}
+a{color:inherit}
+::selection{background:#3BE37F;color:#06210F}
+html{scrollbar-color:#3A4655 #0B0F14}
+/* Visible focus on dark, everywhere */
+:focus-visible{outline:2px solid #3BE37F!important;outline-offset:3px}
+/* Dark autofill */
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,textarea:-webkit-autofill,select:-webkit-autofill{
+  -webkit-text-fill-color:#F2EFE9;caret-color:#F2EFE9;box-shadow:0 0 0 1000px #171E27 inset;transition:background-color 9999s}
+/* Numbers line up */
+.ev-num,[class*="ev-price"],[class*="ev-label"]{font-variant-numeric:tabular-nums}
+/* Skip link */
+.ev-skip{position:absolute;left:16px;top:-60px;z-index:9999;background:#3BE37F;color:#06210F;padding:12px 16px;border-radius:6px;font-weight:600;text-decoration:none}
+.ev-skip:focus{top:16px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@media (forced-colors:active){
+  .ev-btn-primary,.ev-btn-ghost,input,select,textarea,button{border:1px solid CanvasText!important}
+  :focus-visible{outline:2px solid Highlight!important}
+}
+@media print{
+  :root{color-scheme:light}
+  html,body,#page,.site,.site-content{background:#fff!important;color:#111!important}
+  h1,h2,h3,h4,h5,h6{color:#111!important}
+  .elementor-location-header,.elementor-location-footer,.ev-btn-primary,.ev-btn-ghost{display:none!important}
+}
+</style>

@@ -1,0 +1,249 @@
+{
+ "colors": {
+  "primary": {
+   "id": "primary",
+   "title": "Accent green",
+   "value": "#3BE37F"
+  },
+  "secondary": {
+   "id": "secondary",
+   "title": "Surface 1",
+   "value": "#11161D"
+  },
+  "text": {
+   "id": "text",
+   "title": "Body text",
+   "value": "#C3C7CD"
+  },
+  "accent": {
+   "id": "accent",
+   "title": "Warm white",
+   "value": "#F2EFE9"
+  },
+  "evink01": {
+   "id": "evink01",
+   "title": "Ink background",
+   "value": "#0B0F14"
+  },
+  "evsurf2": {
+   "id": "evsurf2",
+   "title": "Surface 2",
+   "value": "#171E27"
+  },
+  "evsurf3": {
+   "id": "evsurf3",
+   "title": "Surface 3",
+   "value": "#1F2833"
+  },
+  "evmuted": {
+   "id": "evmuted",
+   "title": "Muted text",
+   "value": "#939CA8"
+  },
+  "evdivid": {
+   "id": "evdivid",
+   "title": "Divider",
+   "value": "#2A3441"
+  },
+  "evctrlb": {
+   "id": "evctrlb",
+   "title": "Control border",
+   "value": "#6A7688"
+  },
+  "evacink": {
+   "id": "evacink",
+   "title": "Accent ink",
+   "value": "#06210F"
+  },
+  "evacchv": {
+   "id": "evacchv",
+   "title": "Accent hover",
+   "value": "#5CEB97"
+  },
+  "evwarn1": {
+   "id": "evwarn1",
+   "title": "Warning",
+   "value": "#F2C14E"
+  },
+  "everror": {
+   "id": "everror",
+   "title": "Error",
+   "value": "#FF8A80"
+  },
+  "astglobalcolor0": {
+   "id": "astglobalcolor0",
+   "title": "Theme Brand",
+   "value": "#046bd2"
+  },
+  "astglobalcolor1": {
+   "id": "astglobalcolor1",
+   "title": "Theme Alternate Brand",
+   "value": "#045cb4"
+  },
+  "astglobalcolor2": {
+   "id": "astglobalcolor2",
+   "title": "Theme Headings",
+   "value": "#1e293b"
+  },
+  "astglobalcolor3": {
+   "id": "astglobalcolor3",
+   "title": "Theme Text",
+   "value": "#334155"
+  },
+  "astglobalcolor4": {
+   "id": "astglobalcolor4",
+   "title": "Theme Primary Background",
+   "value": "#FFFFFF"
+  },
+  "astglobalcolor5": {
+   "id": "astglobalcolor5",
+   "title": "Theme Secondary Background",
+   "value": "#F0F5FA"
+  },
+  "astglobalcolor6": {
+   "id": "astglobalcolor6",
+   "title": "Theme Alternate Background",
+   "value": "#111111"
+  },
+  "astglobalcolor7": {
+   "id": "astglobalcolor7",
+   "title": "Theme Subtle Background",
+   "value": "#D1D5DB"
+  },
+  "astglobalcolor8": {
+   "id": "astglobalcolor8",
+   "title": "Theme Other Supporting",
+   "value": "#111111"
+  }
+ },
+ "typography": {
+  "primary": {
+   "title": "Headings (Manrope 600)",
+   "id": "primary",
+   "value": {
+    "typography_typography": "custom",
+    "typography_font_family": "Manrope",
+    "typography_font_weight": "600",
+    "typography_font_size": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_text_transform": "",
+    "typography_font_style": "",
+    "typography_text_decoration": "",
+    "typography_line_height": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_letter_spacing": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_word_spacing": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    }
+   }
+  },
+  "secondary": {
+   "title": "Display light (Manrope 300)",
+   "id": "secondary",
+   "value": {
+    "typography_typography": "custom",
+    "typography_font_family": "Manrope",
+    "typography_font_weight": "300",
+    "typography_font_size": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_text_transform": "",
+    "typography_font_style": "",
+    "typography_text_decoration": "",
+    "typography_line_height": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_letter_spacing": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_word_spacing": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    }
+   }
+  },
+  "text": {
+   "title": "Body (Manrope 400)",
+   "id": "text",
+   "value": {
+    "typography_typography": "custom",
+    "typography_font_family": "Manrope",
+    "typography_font_weight": "400",
+    "typography_font_size": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_text_transform": "",
+    "typography_font_style": "",
+    "typography_text_decoration": "",
+    "typography_line_height": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_letter_spacing": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_word_spacing": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    }
+   }
+  },
+  "accent": {
+   "title": "Numbers and labels (Plex Mono 500)",
+   "id": "accent",
+   "value": {
+    "typography_typography": "custom",
+    "typography_font_family": "IBM Plex Mono",
+    "typography_font_weight": "500",
+    "typography_font_size": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_text_transform": "",
+    "typography_font_style": "",
+    "typography_text_decoration": "",
+    "typography_line_height": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_letter_spacing": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    },
+    "typography_word_spacing": {
+     "unit": "px",
+     "size": "",
+     "sizes": []
+    }
+   }
+  }
+ }
+}
