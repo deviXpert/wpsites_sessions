@@ -106,13 +106,23 @@ def areas_section(city_focus=None, dark=False):
                 'Basement waterproofing, sump pumps, crack repair and interlocking for homeowners across Toronto, Mississauga, Brampton, St. Catharines, North Bay and surrounding communities.', align='center')
     return SECTION(head + [C(cards, 'Areas Grid', grid=5, grid_t=3, grid_gaps=gap(20), _margin=dims(24, 0, 0, 0))], 'Service Areas', bg='cream', flex_gap=gap(20))
 
-def faq_section(items, title='Frequently Asked <span class="qw-hl">Questions</span>', side_img='ext_parging'):
-    left = C(HEAD('FAQ', title) + [
-        T('Have a question that isn’t answered here? Call us at <a href="' + TEL + '">' + PHONE + '</a> or send us a message – we’re happy to help.'),
-        IMG(side_img, h=300, hm=220),
-    ], 'FAQ Intro', flex_gap=gap(16))
-    return SECTION([C([left, C([FAQ(items)], 'FAQ List')], 'FAQ Grid', grid=2, grid_t=1, grid_gaps=gap(60, 36),
-                      grid_columns_grid=cols('1fr 1.35fr'))], 'FAQ', bg='light')
+def faq_section(items, title='Frequently Asked <span class="qw-hl">Questions</span>', side_img=None):
+    """Centered single-column FAQ: heading, 960px accordion, then a 'still have questions' help strip."""
+    head = HEAD('Got Questions?', title, 'Straight answers to the questions homeowners ask us most.', align='center')
+    help_strip = C([
+        C([W('icon', 'Icon', selected_icon=ico('fas fa-headset'), view='stacked', shape='square', size=px(20), icon_padding=px(14), align='left', _flex_size='none',
+             g={'primary_color': col('secondary'), 'secondary_color': col('primary')}),
+           C([H('Still have questions?', 'p', 'qwh3', 'primary'), T('Talk to us directly – we’re happy to help.', 'text', 'qwsmall')], 'Help Text', flex_gap=gap(2), _flex_size='grow')],
+          'Help Copy', row=True, flex_direction_mobile='row', flex_wrap='nowrap', flex_wrap_mobile='nowrap', flex_align_items='center', flex_gap=gap(16)),
+        C([BTN('Call ' + PHONE, TEL, 'outline', 'fas fa-phone-alt', size='sm', align_mobile='justify', _element_width_mobile='inherit'),
+           BTN('Get a Free Estimate', '#estimate', 'gold', 'fas fa-clipboard-check', size='sm', align_mobile='justify', _element_width_mobile='inherit')],
+          'Help Buttons', row=True, flex_wrap='nowrap', flex_wrap_tablet='wrap', flex_gap=gap(12), flex_direction_mobile='column',
+          flex_justify_content='flex-end', flex_justify_content_tablet='flex-start'),
+    ], 'Help Strip', grid=2, grid_t=1, grid_columns_grid=cols('1fr auto'), grid_gaps=gap(24, 18), grid_align_items='center',
+       padding=dims(22, 28), padding_mobile=dims(20), background_background='classic', g={'background_color': col('qwwhite')},
+       border_border='solid', border_width=dims(1, 1, 1, 4), border_color='#C9A24B', border_radius=dims(6))
+    body = C([FAQ(items), help_strip], 'FAQ Body', width=px(960), width_tablet=px(100, '%'), flex_gap=gap(20), _margin=dims(28, 0, 0, 0))
+    return SECTION(head + [body], 'FAQ', bg='light', flex_align_items='center')
 
 def cta_band(title='Ready for a <span class="qw-hl-ink">Dry, Healthy</span> Basement?', text='Book your free on-site inspection today. We’ll find the source of the water and give you a clear written quote – with no pressure.'):
     copy = C([H(title, 'h2', 'qwh2', 'primary'), T(text, 'primary', 'qwlead')], 'CTA Copy', flex_gap=gap(12))

@@ -201,9 +201,9 @@ def COUNTER(n, suffix, title, dark=True):
                 'typography_number_typography': typ('qwstat'), 'typography_title_typography': typ('qwsmall')})
 
 def FAQ(items):
-    return W('accordion', 'FAQ Accordion', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': '<p>' + a + '</p>'} for q, a in items],
+    return W('accordion', 'FAQ Accordion', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': a} for q, a in items],  # no <p>: its margin left a gap under answers
              faq_schema='yes', selected_icon=ico('fas fa-plus'), selected_active_icon=ico('fas fa-minus'), title_html_tag='h3', icon_align='right',
-             border_width=px(1), border_color='#E3E6EC', title_padding=dims(22, 24), content_padding=dims(4, 24, 24, 24),
+             border_width=px(1), border_color='#E3E6EC', title_padding=dims(22, 28), title_padding_mobile=dims(18, 20), content_padding=dims(0, 28, 24, 28), content_padding_mobile=dims(0, 20, 20, 20),
              g={'title_color': col('primary'), 'tab_active_color': col('qwgolddk'), 'icon_color': col('secondary'), 'icon_active_color': col('qwgolddk'),
                 'title_background': col('qwwhite'), 'content_background_color': col('qwwhite'), 'content_color': col('text'),
                 'title_typography_typography': typ('qwh3'), 'content_typography_typography': typ('qwbody')})
