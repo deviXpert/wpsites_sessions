@@ -17,7 +17,7 @@ UK home EV charger brand. Sells chargers **supplied and fitted** at fixed VAT-in
 - Use **native Elementor widgets wherever possible**. Custom CSS/JS goes only in **Elementor → Custom Code (global)**.
 - **Dark theme only.** No light theme or toggle. Base `#0B0F14`, warm-white `#F2EFE9` text. WCAG 2.2 AA.
 - Brand fonts: Manrope (300 to 600), IBM Plex Mono 400 (specs and labels), self-hosted.
-- A Coming Soon / Maintenance page for logged-out visitors comes first (Elementor Maintenance Mode).
+- Coming Soon page exists (Elementor Maintenance Mode, template #45). Temporarily OFF at user request (18 Nov 2026); site is public but noindex, nofollow. Re-enable: elementor_maintenance_mode_mode = maintenance.
 - Work in phases with checkpoints. The user approves each phase.
 
 - Brand: **EVTRON everywhere** (no "EV-TRONX" on the site). Accent: logo **charge-green #3BE37F**, used sparingly.
