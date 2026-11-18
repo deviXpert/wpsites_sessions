@@ -41,9 +41,9 @@ hero = div('V3 hero', [div('V3 hero inner', [
     'background-color: var(--ev-ink);', tag='section')
 
 # ---------- 2. Choose your charger: three simple cards ----------
-CARDS = [('EV-Tron Tethered', M['render_evtron'], 'Our own design. Four colours, 7.5m cable, smart app.', '£1,295', BUY_EVT, None),
-         ('Fox Tethered', M['render_foxt'], 'Solar-compatible. Cable attached. Four colours.', '£995', '/ev-chargers/fox-tethered-solar-ev-charger/', 'Solar-compatible'),
-         ('Fox Untethered', M['render_foxu'], 'Solar-compatible socket. Use your own cable.', '£945', '/ev-chargers/fox-untethered-solar-ev-charger/', 'Lowest price')]
+CARDS = [('EV-Tron Tethered', M['render_evtron'], '7kW · up to 32A · Type 2 · 7.5m cable. Wi-Fi and Bluetooth app. Four colours.', '£1,295', BUY_EVT, None),
+         ('Fox Tethered', M['render_foxt'], '7.3kW · Type 2 tethered. Solar-compatible. Black, blue, purple or pink.', '£995', '/ev-chargers/fox-tethered-solar-ev-charger/', 'Solar-compatible'),
+         ('Fox Untethered', M['render_foxu'], '7.3kW · Type 2 socket, use your own cable. Solar-compatible. White.', '£945', '/ev-chargers/fox-untethered-solar-ev-charger/', 'Lowest price')]
 cards = [div(f'{n} card', [
     img(f'{n} img', mid, 'width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; background-color: var(--ev-ink); border-radius: 8px;'),
     div(f'{n} title row', [h(f'{n} name', n, 'h3', ['ev-h3'])] + ([p(f'{n} tag', tag, ['ev-label'], 'color: var(--ev-accent); white-space: nowrap;')] if tag else []),
@@ -62,7 +62,7 @@ choose = section('V3 choose', [
 # ---------- 3. How it works: three steps ----------
 STEPS = [('fa-solid fa-cart-shopping', 'Buy online or book a survey', 'Order your charger, or book a free survey first if you’re not sure.'),
          ('fa-regular fa-camera', 'Free remote check', 'Share a few photos or a quick video call. No home visit needed.'),
-         ('fa-solid fa-plug-circle-check', 'Installed and certified', 'A qualified electrician fits, tests and certifies your charger.')]
+         ('fa-solid fa-plug-circle-check', 'Installed and certified', 'Most standard installs within 10 days of survey approval, and as little as 48 to 96 hours in selected areas. Fitted, tested and certified.')]
 steps = section('V3 steps', [
     head('Steps head', 'Three simple steps'),
     div('V3 step grid', [div(f'V3 step {i}', [icon_tile(f'V3 step {i} icon', ic), p(f'V3 step {i} n', f'Step {i+1}', ['ev-label'], 'margin-top: 20px;'),
@@ -71,21 +71,60 @@ steps = section('V3 steps', [
         'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
 ], ['ev-divider-top'])
 
-# ---------- 4. What's included ----------
-included = section('V3 included', [div('Inc grid', [
-    div('Inc copy', [h('Inc title', 'What’s included in the price', 'h2', ['ev-h2']),
-                     p('Inc lead', 'A standard installation covers everything most homes need.', ['ev-lead'], 'margin-top: 16px;'),
-                     p('Inc extras', 'Extras, only if needed: extra cable £15 per metre beyond 10m · charging post from £200. Always agreed before work starts.', ['ev-small'], 'margin-top: 24px; max-width: 46ch;'),
-                     btn('Inc CTA', 'Book a free survey', BOOK, 'ghost', 'margin-top: 32px;')],
+# ---------- 4. What's included (full package from the client) ----------
+PKG = ['Your charger in your chosen colour', 'Up to 10 metres of supply cable', 'Wall mounting and standard drilling through external walls',
+       'Connection to your existing electrical supply', 'Dedicated EV consumer unit with surge protection', 'Electrical protection and earthing arrangements',
+       'Dynamic load balancing and CT clamp', 'PEN fault protection appropriate to your installation', 'DNO applications and notifications',
+       'Testing, commissioning and electrical installation certificate', 'App set-up, demonstration and English operating manual', 'Post-installation customer support']
+EXTRAS = [('Extra supply cable beyond 10m', '£15 per metre'), ('Black charging post', '£200'), ('Steel charging post', '£280'), ('Non-standard installations', 'Quoted first')]
+SUIT = ['Suitable off-street parking', 'A suitable wall or post location', 'An electrical check (done remotely)', 'Any property permissions you need']
+extras_rows = [div(f'Extra {i}', [p(f'Extra {i} k', k, ['ev-body']), p(f'Extra {i} v', v, None, MONO + 'font-size: 14px; color: var(--ev-text); white-space: nowrap;')],
+                   'display: flex; justify-content: space-between; gap: 16px; padding-top: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--ev-divider);') for i, (k, v) in enumerate(EXTRAS)]
+included = section('V3 included', [
+    head('Inc head', 'What’s included in the price', 'A standard installation covers everything most homes need. Anything extra is agreed with you before work starts.'),
+    div('Inc grid', [
+        div('Inc list card', [p('Inc list label', 'Included as standard', ['ev-label'], 'color: var(--ev-accent); margin-bottom: 18px;'),
+                              div('Inc cols', [checklist('Inc list A', PKG[:6], '✓'), checklist('Inc list B', PKG[6:], '✓')],
+                                  'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; @media(--mobile){ grid-template-columns: minmax(0, 1fr); }')],
+            classes=['ev-card']),
+        div('Inc side', [
+            div('Extras card', [p('Extras label', 'Optional extras', ['ev-label'], 'margin-bottom: 6px;'), div('Extras rows', extras_rows),
+                                p('Extras note', 'Groundworks and excavation aren’t offered.', ['ev-small'], 'margin-top: 14px;')], classes=['ev-card']),
+            div('Suit card', [p('Suit label', 'Is my home suitable?', ['ev-label'], 'margin-bottom: 14px;'), checklist('Suit list', SUIT, '+'),
+                              btn('Inc CTA', 'Book a free survey', BOOK, 'ghost', 'margin-top: 22px;')], classes=['ev-card']),
+        ], 'display: flex; flex-direction: column; gap: 20px;'),
+    ], 'display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 20px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }'),
+], ['ev-divider-top'])
+
+# ---------- 4b. EV-Tron at a glance (specs from the client) ----------
+SPECS = [('Power', '7kW single-phase'), ('Current', 'Up to 32A, adjustable'), ('Connector', 'Type 2, tethered'), ('Cable', '7.5m'),
+         ('Weather', 'IP65, indoor or outdoor'), ('Connectivity', 'Wi-Fi and Bluetooth'), ('Access', 'RFID card or app'), ('Status', 'LED indicators'),
+         ('Load balancing', 'Built in, CT clamp included'), ('Protection', 'Over/under-voltage, overcurrent, earth leakage, over-temperature')]
+specs = section('V3 specs', [div('Spec grid wrap', [
+    div('Spec copy', [h('Spec title', 'EV-Tron at a glance', 'h2', ['ev-h2']),
+                      p('Spec lead', 'Smart scheduling, real-time charging information and the protection you’d expect, in four premium finishes.', ['ev-lead'], 'margin-top: 16px;'),
+                      img('Spec image', M['render_evtron'], 'width: 100%; max-width: 260px; height: auto; margin-top: 32px; @media(--tablet){ display: none; }')],
         'display: flex; flex-direction: column; align-items: flex-start;'),
-    div('Inc list wrap', [checklist('Inc list', ['Your charger in your chosen colour', 'Up to 10 metres of supply cable', 'Dedicated EV consumer unit with surge protection',
-                                                 'Dynamic load balancing and CT clamp', 'DNO notification and electrical certificate', 'Testing, app set-up and a demonstration'], '✓')],
-        classes=['ev-card']),
-], 'display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 32px; }')],
+    div('Spec table', [div(f'Spec {i}', [p(f'Spec {i} k', k, ['ev-label']), p(f'Spec {i} v', v, None, 'font-size: 15.5px; color: var(--ev-text); font-weight: 500; text-align: right; max-width: 32ch;')],
+                           'display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding-top: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--ev-divider);')
+                       for i, (k, v) in enumerate(SPECS)], 'border-top: 1px solid var(--ev-divider);'),
+], 'display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 56px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 32px; }')],
     ['ev-divider-top'])
 
+# ---------- 4c. Warranty, payment and peace of mind ----------
+PEACE = [('fa-solid fa-shield', 'Warranty', '3 years included. Extend to 5 years for £89.99. Claims handled directly by EV-Tron.'),
+         ('fa-regular fa-credit-card', 'Pay your way', 'Card, Apple Pay, Google Pay or PayPal. Or spread the cost with Klarna or PayPal Pay in 3 (subject to approval).'),
+         ('fa-solid fa-rotate-left', 'Fair refunds', 'If our remote check shows your home isn’t suitable, and no chargeable work has been agreed, you get a full refund.'),
+         ('fa-solid fa-headset', 'One point of contact', 'Installation, technical help and aftercare, all through EV-Tron. Monday to Saturday, 8:30am to 6:30pm.')]
+peace = section('V3 peace', [
+    head('Peace head', 'Buy with confidence'),
+    div('Peace grid', [div(f'Peace {i}', [icon_tile(f'Peace {i} icon', ic), h(f'Peace {i} t', t, 'h3', ['ev-h3'], 'margin-top: 18px;'), p(f'Peace {i} d', d, ['ev-body'], 'margin-top: 6px;')], classes=['ev-card'])
+                       for i, (ic, t, d) in enumerate(PEACE)],
+        'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
+], ['ev-divider-top'])
+
 # ---------- 5. Key features ----------
-FEAT = [('fa-solid fa-wifi', 'Smart app', 'Wi-Fi and Bluetooth. Schedule cheaper charging.'),
+FEAT = [('fa-solid fa-wifi', 'Smart app', 'Wi-Fi and Bluetooth. Schedule cheaper off-peak charging and see live charging data.'),
         ('fa-solid fa-gauge-high', 'Load balancing', 'Protects your home supply automatically.'),
         ('fa-solid fa-shield-halved', 'Protected install', 'Surge and PEN fault protection as standard.'),
         ('fa-solid fa-cloud-rain', 'Weatherproof', 'IP65 rated for outdoor walls (EV-Tron).')]
@@ -96,12 +135,26 @@ features = section('V3 features', [
         'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); gap: 28px; }'),
 ], ['ev-divider-top'])
 
+# ---------- 5b. About (client copy) ----------
+about = section('V3 about', [div('About wrap', [
+    p('About eyebrow', 'Driven by innovation', ['ev-label'], 'color: var(--ev-accent);'),
+    h('About title', 'The future of electric driving starts at home.', 'h2', ['ev-h2'], 'margin-top: 16px; max-width: 22ch;'),
+    p('About text', 'Our mission is to make home EV charging smarter, simpler and more accessible. We combine innovative technology, premium contemporary design and professional installation, with a network of qualified electricians covering England, and the rest of the UK to follow.', ['ev-lead'], 'margin-top: 18px; max-width: 62ch;'),
+    div('About values', [p(f'Value {i}', v, None, MONO + 'font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ev-body); padding: 8px 14px; border: 1px solid var(--ev-control); border-radius: 999px;')
+                         for i, v in enumerate(['Intelligent technology', 'Premium design', 'Transparent pricing', 'Fast installation', 'Professional workmanship', 'Exceptional aftercare'])],
+        'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px;'),
+], 'display: flex; flex-direction: column; align-items: flex-start;')], ['ev-divider-top'])
+
 # ---------- 6. FAQ (short, one open at a time) ----------
 FAQ = [('Will it work with my car?', 'Yes, if your car uses Type 2, which most UK electric and plug-in hybrid cars do.'),
        ('How long does installation take?', 'Most standard installs happen within 10 days of your survey being approved, and in as little as 48 to 96 hours in selected areas.'),
        ('Do I need a home visit?', 'Usually not. We check your home remotely using photos or a video call.'),
        ('Can I pay in instalments?', 'Yes. Pay in full, or spread the cost with Klarna or PayPal Pay in 3, subject to status.'),
-       ('Where do you install?', 'Across England, with the rest of the UK coming soon.')]
+       ('Where do you install?', 'Across England, with the rest of the UK coming soon.'),
+       ('What if my home isn’t suitable?', 'If our remote check shows your home isn’t suitable and no chargeable work has been agreed, you get a full refund.'),
+       ('What warranty do I get?', '3 years as standard, or 5 years in total with the £89.99 extension. Warranty claims are handled directly by EV-Tron.'),
+       ('Can I charge from solar panels?', 'The two Fox chargers are solar-compatible, depending on the model and your system. EV-Tron Tethered doesn’t support solar-surplus charging.'),
+       ('Do you do groundworks?', 'No. We don’t offer groundworks or excavation, so the charger needs a suitable wall or post location near your parking.')]
 items = [el('e-accordion-item', f'Q {i}', None, 'border-bottom: 1px solid var(--ev-divider);', None, [
     el('e-accordion-item-header', f'Q {i} h', None, 'padding: 22px 0; gap: 16px;', None, [
         el('e-accordion-item-title', f'Q {i} t', None, None, None, [p(f'Q {i} q', q, None, 'color: var(--ev-text); font-weight: 600; font-size: 17px;')]),
@@ -116,12 +169,13 @@ faq = section('V3 faq', [
 final = section('V3 final', [div('Final panel', [
     h('Final title', 'Ready to charge at home?', 'h2', ['ev-h2'], 'text-align: center;'),
     p('Final text', 'Buy now, or book a free survey and we’ll confirm everything first.', ['ev-lead'], 'margin-top: 14px; text-align: center;'),
+    p('Final meta', 'Covering England · Monday to Saturday, 8:30am to 6:30pm · sales@evtron.co.uk', None, MONO + 'font-size: 12px; letter-spacing: 0.04em; color: var(--ev-muted); margin-top: 28px; text-align: center;'),
     div('Final CTAs', [btn('Final buy', 'Buy now', '/ev-chargers/', 'primary', 'min-width: 200px;'), btn('Final book', 'Book a free survey', BOOK, 'ghost', 'min-width: 200px;')],
         'display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 28px;'),
 ], 'display: flex; flex-direction: column; align-items: center; padding: 64px 32px; background-color: var(--ev-s1); border: 1px solid var(--ev-divider); border-radius: var(--ev-r-md); @media(--mobile){ padding: 40px 20px; }')],
     ['ev-divider-top'])
 
-X = div('Home V3', [hero, choose, steps, included, features, faq, final], 'background-color: var(--ev-ink);', ['ev-plain'], tag='main')
+X = div('Home V3', [hero, choose, steps, included, specs, features, peace, about, faq, final], 'background-color: var(--ev-ink);', ['ev-plain'], tag='main')
 
 if __name__ == '__main__':
     pid = C.get('home_v3')
