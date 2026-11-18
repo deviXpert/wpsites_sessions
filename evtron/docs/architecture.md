@@ -100,4 +100,4 @@ Form submissions are also saved in Elementor → Submissions (database) as a bac
 - Mailboxes sales@ and info@ will be created by the client or developer. FluentSMTP is configured once they exist.
 - Staging: **not used**.
 - Backups and migration: **All-in-One WP Migration** (manual exports) + Hostinger backups.
-- Analytics: ❓ still open (A cookieless / B GA4 + banner). Needed by Phase 6.
+- Analytics: **deferred to a later stage** (user decision). No tracking or consent banner until decided (task list).
