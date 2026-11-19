@@ -85,7 +85,7 @@ hero = div('V2 hero', [div('V2 hero inner', [
 def v2head(cid, chip_text, title, lead=None, center=False):
     kids = [chip(cid + ' chip', chip_text), h(cid + ' title', title, 'h2', ['v2-h2'], 'margin-top: 20px;')]
     if lead: kids.append(p(cid + ' lead', lead, ['v2-lead'], 'margin-top: 18px;'))
-    return div(cid, kids, 'display: flex; flex-direction: column; align-items: ' + ('center; text-align: center; margin-left: auto; margin-right: auto;' if center else 'flex-start;') + ' max-width: 760px; margin-bottom: 64px; @media(--mobile){ margin-bottom: 40px; }')
+    return div(cid, kids, 'display: flex; flex-direction: column; align-items: ' + ('center; text-align: center; margin-left: auto; margin-right: auto;' if center else 'flex-start;') + ' max-width: 760px; margin-bottom: 64px; @media(--mobile){ margin-bottom: 40px; }', ['v2-centre'] if center else None)
 
 
 def v2sec(cid, children):

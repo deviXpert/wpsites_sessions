@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded',function(){
       kids.forEach(function(k,i){if(k.getBoundingClientRect().top>vh*0.9){k.classList.add('ev-rv');k.style.setProperty('--ev-d',(i*90)+'ms');targets.push(k)}});
     });
   });
-  var how=secs.find(function(x){return /From order to first charge/.test(x.textContent)}),steps=how?how.querySelector(':scope > div > div:nth-child(2)'):null;
+  var how=secs.find(function(x){return /From order to first charge/.test(x.textContent)&&!x.querySelector('.v2-proc')}),steps=how?how.querySelector(':scope > div > div:nth-child(2)'):null;
   if(steps){[].forEach.call(steps.children,function(s,i){s.classList.add('ev-step-line');s.style.setProperty('--ev-d',(250+i*220)+'ms');targets.push(s)})}
   function revealPassed(){
     if(!targets||!targets.length)return;var lim=window.innerHeight*0.92;

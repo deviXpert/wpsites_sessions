@@ -1,0 +1,113 @@
+<!-- EV-Tron product page: configurator (colour, cable, warranty, accessories), live summary and total, details reveal with offer unlock,
+     selection written into the callback form, sticky mobile bar. Elementor > Custom Code > "EV-Tron product" (product pages only).
+     Options are read from the page itself (title + price text), so prices are edited in Elementor, not here. -->
+<style>
+html{scroll-padding-top:130px}
+.pp-hero{isolation:isolate;overflow:hidden}
+.pp-hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse 50% 60% at 28% 50%,rgba(56,220,125,.18),transparent 62%),radial-gradient(ellipse 40% 40% at 90% 10%,rgba(40,185,103,.08),transparent 60%),linear-gradient(180deg,#07110E,#081410 60%,#07110E)}
+.pp-stage img{transition:opacity .6s ease}
+.pp-js .pp-stage img{opacity:0}
+.pp-js .pp-stage img.on{opacity:1}
+.pp-swatches > div{cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
+.pp-swatches > div:hover{transform:scale(1.08)}
+.pp-swatches > div.on{box-shadow:0 0 0 3px #07110E,0 0 0 5px #55E68B}
+.pp-swatches > div:focus-visible,.pp-opt:focus-visible{outline:2px solid #A3FFC1;outline-offset:3px}
+.pp-opt{transition:border-color .2s ease,background-color .2s ease,transform .2s ease}
+.pp-opt:hover{border-color:rgba(120,255,170,.4)!important}
+.pp-opt.on{border-color:#55E68B!important;background-color:rgba(85,230,139,.10)!important;box-shadow:inset 0 0 0 1px rgba(85,230,139,.35)}
+.pp-opt.on::after{content:"";position:absolute;top:-7px;left:-7px;width:20px;height:20px;border-radius:50%;background:#55E68B url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306150C' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat}
+.pp-line{display:flex;justify-content:space-between;gap:16px;font-size:14px;color:#DCE8E0;line-height:1.4}
+.pp-line span:last-child{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;color:#A3FFC1;white-space:nowrap}
+.pp-line.base span:first-child{font-weight:600;color:#F5FFF8}
+.pp-js .pp-details:not(.open){display:none}
+.pp-details.open .pp-unlock{animation:ppunlock .7s cubic-bezier(.2,.7,.2,1)}
+@keyframes ppunlock{from{opacity:0;transform:translate3d(0,16px,0) scale(.98)}}
+.pp-unlock{border-color:rgba(120,255,170,.45)!important;box-shadow:0 0 40px rgba(85,230,139,.12)}
+.pp-details input:not([type=checkbox]),.pp-details select,.pp-details textarea{background-color:rgba(7,17,14,.6)!important;color:#F5FFF8!important;border:1px solid #6A7688!important;border-radius:12px!important;box-shadow:none!important}
+.pp-details input:not([type=checkbox]):focus,.pp-details select:focus,.pp-details textarea:focus{border-color:#55E68B!important;outline:2px solid rgba(85,230,139,.35)!important;outline-offset:1px}
+.pp-details input::placeholder,.pp-details textarea::placeholder{color:#7F8F86}
+.pp-details select option{background:#0C1914;color:#F5FFF8}
+#pp-selection{color:#A3FFC1!important;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px!important;background-color:rgba(85,230,139,.06)!important;border-color:rgba(120,255,170,.3)!important}
+.pp-bar{position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;align-items:center;justify-content:space-between;gap:12px;
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(7,17,14,.92);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  border-top:1px solid rgba(190,255,215,.16);transform:translateY(100%);transition:transform .3s ease}
+.pp-bar.on{transform:none}
+.pp-bar p{margin:0;font-family:"IBM Plex Mono",ui-monospace,monospace;color:#F5FFF8;font-size:18px}
+.pp-bar small{display:block;font-family:"Manrope",sans-serif;font-size:12px;color:#A1B5A8}
+.pp-bar a{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;background:linear-gradient(135deg,#72F3A0,#28B967);color:#06150C;font-weight:600;font-size:15px;text-decoration:none}
+@media(max-width:1024px){.pp-bar{display:flex}body.pp-has-bar #ast-scroll-top{bottom:84px!important}}
+@media (prefers-reduced-motion:reduce){.pp-stage img,.pp-opt,.pp-swatches > div{transition:none}.pp-details.open .pp-unlock{animation:none}}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var groupsEl=[].slice.call(document.querySelectorAll('.pp-group'));if(!groupsEl.length)return;
+  document.documentElement.classList.add('pp-js');
+  var BASE=595,PRODUCT='EV-Tron Tethered';
+  var money=function(n){return '£'+(Math.round(n*100)%100?n.toFixed(2):String(Math.round(n))).replace(/\B(?=(\d{3})+(?!\d))/g,',')};
+  var txt=function(e){return (e&&e.textContent||'').trim()};
+  /* Model from the page: each option = first <p> (title) + last <p> (price) */
+  var groups=groupsEl.map(function(g){var opts=[].slice.call(g.querySelectorAll('.pp-opt')).map(function(o){var ps=o.querySelectorAll('p');var price=txt(ps[ps.length-1]);
+      var m=price.match(/£([\d,]+(?:\.\d+)?)/);return {el:o,title:txt(ps[0]),price:price,amount:m?parseFloat(m[1].replace(/,/g,'')):0}});
+    return {el:g,name:txt(g.querySelector('h3')),multi:g.classList.contains('pp-multi'),opts:opts,sel:[]}});
+  var byName=function(n){return groups.find(function(g){return g.name.toLowerCase()===n})};
+  var colour=byName('colour'),cable=byName('cable length');
+  if(colour)colour.sel=[0];if(cable)cable.sel=[Math.min(1,cable.opts.length-1)];
+  groups.forEach(function(g){if(!g.multi&&!g.sel.length)g.sel=[0]});
+  /* Sections get anchors so #configure / #details / #specs links work */
+  var secOf=function(sel){var e=document.querySelector(sel);return e&&e.closest('section')};
+  var cfgSec=secOf('.pp-summary'),detSec=document.querySelector('.pp-details'),specSec=secOf('.pp-specs');
+  if(cfgSec)cfgSec.id='configure';if(detSec)detSec.id='details';if(specSec)specSec.id='specs';
+  var stages=[].slice.call(document.querySelectorAll('.pp-stage')),heroSw=[].slice.call(document.querySelectorAll('.pp-swatches > div'));
+  var cname=[].slice.call(document.querySelectorAll('main p')).find(function(p){return txt(p)==='Mythos Black'&&/colour/i.test(txt(p.previousElementSibling))});
+  var lines=document.querySelector('.pp-lines'),summary=document.querySelector('.pp-summary');
+  var totalEl=summary&&[].slice.call(summary.querySelectorAll('p')).find(function(p){return /^£/.test(txt(p))});
+  var selInput=document.getElementById('pp-selection');
+  if(!selInput){var lab=[].slice.call(document.querySelectorAll('.pp-details label')).find(function(l){return txt(l)==='Your selection'});
+    selInput=lab&&lab.parentElement.querySelector('textarea,input');if(selInput){selInput.id='pp-selection';selInput.setAttribute('aria-readonly','true')}}
+  var bar=document.createElement('div');bar.className='pp-bar';bar.innerHTML='<p><span></span><small>EV-Tron Tethered · your build</small></p><a href="#details">Continue</a>';
+  document.body.appendChild(bar);document.body.classList.add('pp-has-bar');
+  function render(){
+    var total=BASE,rows=['<div class="pp-line base"><span>'+PRODUCT+'</span><span>'+money(BASE)+'</span></div>'],parts=[PRODUCT];
+    groups.forEach(function(g){g.opts.forEach(function(o,i){var on=g.sel.indexOf(i)>-1;o.el.classList.toggle('on',on);o.el.setAttribute('aria-checked',String(on))});
+      var chosen=g.sel.map(function(i){return g.opts[i]});
+      chosen.forEach(function(o){total+=o.amount;rows.push('<div class="pp-line"><span>'+(g.multi?o.title:g.name+': '+o.title)+'</span><span>'+(o.amount?'+'+money(o.amount):o.price)+'</span></div>')});
+      parts.push(g.name+': '+(chosen.length?chosen.map(function(o){return o.title+(o.amount?' (+'+money(o.amount)+')':'')}).join(', '):'none'))});
+    parts.push('Total: '+money(total));
+    if(lines)lines.innerHTML=rows.join('');if(totalEl)totalEl.textContent=money(total);
+    bar.querySelector('span').textContent=money(total);
+    if(selInput){selInput.value=parts.join('\n');if(selInput.tagName==='TEXTAREA')selInput.rows=parts.length;if(selInput.tagName==='INPUT')selInput.setAttribute('value',selInput.value)}
+    var c=colour?colour.sel[0]:0;
+    stages.forEach(function(s){[].forEach.call(s.querySelectorAll('img'),function(im,j){im.classList.toggle('on',j===c)})});
+    heroSw.forEach(function(s,j){s.classList.toggle('on',j===c);s.setAttribute('aria-checked',String(j===c))});
+    if(cname&&colour)cname.textContent=colour.opts[c].title;
+  }
+  function pick(g,i){
+    if(g.multi){var k=g.sel.indexOf(i);if(k>-1)g.sel.splice(k,1);else{
+        if(/post/i.test(g.opts[i].title))g.sel=g.sel.filter(function(j){return !/post/i.test(g.opts[j].title)});g.sel.push(i)}}
+    else g.sel=[i];
+    render();
+  }
+  groups.forEach(function(g){
+    g.el.setAttribute('role',g.multi?'group':'radiogroup');g.el.setAttribute('aria-label',g.name);
+    g.opts.forEach(function(o,i){o.el.setAttribute('role',g.multi?'checkbox':'radio');o.el.setAttribute('tabindex','0');
+      o.el.addEventListener('click',function(){pick(g,i)});
+      o.el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(g,i)}})})});
+  if(heroSw.length&&colour){var row=heroSw[0].parentElement;row.setAttribute('role','radiogroup');row.setAttribute('aria-label','Colour');
+    heroSw.forEach(function(s,j){s.setAttribute('role','radio');s.setAttribute('tabindex','0');s.setAttribute('aria-label',colour.opts[j]?colour.opts[j].title:'');
+      s.addEventListener('click',function(){pick(colour,j)});
+      s.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(colour,j)}})})}
+  render();
+  /* Continue to details: reveal the offer + form, then focus the first field */
+  function openDetails(scroll){if(!detSec)return;detSec.classList.add('open');
+    if(scroll){detSec.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+      var f=detSec.querySelector('input:not([readonly]):not([type=checkbox])');if(f)setTimeout(function(){f.focus({preventScroll:true})},700)}}
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href*="#details"]');if(!a)return;e.preventDefault();openDetails(true);history.replaceState(null,'','#details')});
+  if(location.hash==='#details')openDetails(true);
+  /* Sticky bar: after the hero, hidden once the details are on screen */
+  var hero=document.querySelector('.pp-hero');
+  function bupd(){var past=hero?hero.getBoundingClientRect().bottom<0:scrollY>500;var inDet=detSec&&detSec.classList.contains('open')&&detSec.getBoundingClientRect().top<innerHeight;
+    var foot=document.querySelector('footer.elementor-element');var atFoot=foot&&foot.getBoundingClientRect().top<innerHeight;bar.classList.toggle('on',past&&!inDet&&!atFoot)}
+  addEventListener('scroll',bupd,{passive:true});bupd();
+});
+</script>

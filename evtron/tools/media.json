@@ -9,5 +9,6 @@
  "render_foxt": 160,
  "render_foxu": 161,
  "render_evtron_grey": 200,
- "render_evtron_green": 201
+ "render_evtron_green": 201,
+ "render_evtron_red": 226
 }

@@ -32,5 +32,18 @@
  "snippet_v2": 145,
  "home_v1": 95,
  "home_v3": 182,
- "snippet_v3": 186
+ "snippet_v3": 186,
+ "snippet_product": 243,
+ "wc_cat_ev": 25,
+ "wc_cat_acc": 26,
+ "wc_evtron": 254,
+ "wc_foxt": 267,
+ "wc_foxu": 272,
+ "wc_addons": [
+  250,
+  251,
+  252,
+  253
+ ],
+ "tpl_product_evtron": 273
 }
