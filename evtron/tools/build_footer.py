@@ -13,8 +13,8 @@ top = div('Footer top', [
     div('Footer CTA', [
         p('Footer eyebrow', 'Ready when you are', ['ev-label'], 'color: var(--ev-accent);'),
         h('Footer title', 'Plug in to simpler home charging.', 'h2', ['ev-h-display'], 'margin-top: 20px; font-size: clamp(36px, 5vw, 64px);'),
-        p('Footer lead', 'One clear installed price, a short home check, and a qualified electrician on the day.', ['ev-lead'], 'margin-top: 20px;'),
-        div('Footer buttons', [btn('Footer CTA 1', 'Choose your charger', '/ev-chargers/'), btn('Footer CTA 2', 'Get a quote', '/get-a-quote/', 'ghost')],
+        p('Footer lead', 'Buy your charger online, or let a qualified electrician fit it after a free remote survey.', ['ev-lead'], 'margin-top: 20px;'),
+        div('Footer buttons', [btn('Footer CTA 1', 'Buy now', '/ev-chargers/evtron-tethered-ev-charger/#configure'), btn('Footer CTA 2', 'Request installation', '/ev-chargers/evtron-tethered-ev-charger/#details', 'ghost')],
             'display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px;'),
     ], 'display: flex; flex-direction: column; justify-content: center;'),
     div('Charging clock', [

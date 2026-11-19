@@ -1,0 +1,69 @@
+<!-- EV-Tron WooCommerce dark skin: basket, checkout, my account (classic shortcode templates under Astra).
+     Elementor > Custom Code > "EV-Tron shop pages" (pages: basket, checkout, my-account). -->
+<style>
+.woocommerce,.woocommerce-page{--w-bg:#0C1914;--w-bg2:#07110E;--w-line:rgba(190,255,215,.14);--w-text:#F5FFF8;--w-text2:#A1B5A8;--w-acc:#55E68B;--w-ctrl:#6A7688}
+.woocommerce-page .entry-title,.woocommerce-page h1{font-weight:600;letter-spacing:-.03em;color:var(--w-text)}
+.woocommerce-page #primary{padding-top:56px;padding-bottom:96px}
+/* Notices */
+.woocommerce-info,.woocommerce-message,.woocommerce-error,.woocommerce-noreviews,.wc-block-components-notice-banner{
+  background:linear-gradient(155deg,rgba(255,255,255,.06),rgba(255,255,255,.02))!important;color:#DCE8E0!important;border:1px solid var(--w-line)!important;
+  border-left:3px solid var(--w-acc)!important;border-radius:14px!important;padding:16px 20px 16px 52px!important;box-shadow:none!important}
+.woocommerce-error{border-left-color:#E5484D!important}
+.woocommerce-info::before,.woocommerce-message::before{color:var(--w-acc)!important;top:16px!important;left:20px!important}
+.woocommerce-info a,.woocommerce-message a,.woocommerce-error a,.woocommerce-info .showlogin,.woocommerce-info .showcoupon{color:#A3FFC1!important;text-decoration:underline;text-underline-offset:3px}
+/* Forms */
+.woocommerce form .form-row label,.woocommerce-page form .form-row label{color:#C9D6CE;font-weight:500;font-size:14px}
+.woocommerce form .form-row .required{color:#A3FFC1}
+.woocommerce form .form-row input.input-text,.woocommerce form .form-row textarea,.woocommerce form .form-row select,.woocommerce-page input[type=text],.woocommerce-page input[type=email],
+.woocommerce-page input[type=tel],.woocommerce-page input[type=password],.woocommerce-page input[type=number],.woocommerce-page textarea,.woocommerce-page select,
+.select2-container--default .select2-selection--single{
+  background-color:rgba(7,17,14,.6)!important;color:var(--w-text)!important;border:1px solid var(--w-ctrl)!important;border-radius:12px!important;min-height:50px;padding:12px 16px!important;box-shadow:none!important}
+.woocommerce-page textarea{min-height:110px}
+.woocommerce form .form-row input.input-text:focus,.woocommerce-page input:focus,.woocommerce-page textarea:focus,.woocommerce-page select:focus,
+.select2-container--default.select2-container--focus .select2-selection--single,.select2-container--open .select2-selection--single{border-color:var(--w-acc)!important;outline:2px solid rgba(85,230,139,.3)!important;outline-offset:1px}
+.woocommerce-page ::placeholder{color:#7F8F86!important}
+.select2-container--default .select2-selection--single{display:flex;align-items:center}
+.select2-container--default .select2-selection--single .select2-selection__rendered{color:var(--w-text)!important;padding:0!important;line-height:1.4!important}
+.select2-container--default .select2-selection--single .select2-selection__arrow{height:48px!important;right:10px!important}
+.select2-dropdown{background:#0C1914!important;border:1px solid var(--w-line)!important;border-radius:12px!important;overflow:hidden;color:var(--w-text)}
+.select2-search--dropdown .select2-search__field{background:#07110E!important;color:var(--w-text)!important;border:1px solid var(--w-ctrl)!important;border-radius:8px}
+.select2-results__option--highlighted[aria-selected],.select2-results__option--highlighted[data-selected]{background:rgba(85,230,139,.18)!important;color:var(--w-text)!important}
+.woocommerce-page input[type=checkbox],.woocommerce-page input[type=radio]{accent-color:var(--w-acc)}
+/* Panels: order review, totals, payment */
+.woocommerce-checkout #order_review,.woocommerce-checkout-review-order,.woocommerce .cart-collaterals .cart_totals,.woocommerce-page .cart-collaterals .cart_totals,
+.woocommerce-checkout #order_review_heading+#order_review{background:linear-gradient(155deg,rgba(255,255,255,.06),rgba(255,255,255,.02))!important;border:1px solid var(--w-line)!important;border-radius:22px!important}
+.woocommerce table.shop_table,.woocommerce-page table.shop_table{border:1px solid var(--w-line)!important;border-radius:16px!important;border-collapse:separate!important;overflow:hidden;background:transparent!important;color:#DCE8E0}
+.woocommerce table.shop_table th,.woocommerce table.shop_table td{border-color:var(--w-line)!important;background:transparent!important;color:#DCE8E0}
+.woocommerce table.shop_table th{color:var(--w-text);font-weight:600}
+.woocommerce table.shop_table .amount,.woocommerce-Price-amount{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;color:var(--w-text)}
+.woocommerce table.shop_table .order-total .amount{color:#A3FFC1;font-size:1.15em}
+.woocommerce-checkout #payment,.woocommerce-checkout #payment div.payment_box{background:rgba(7,17,14,.55)!important;border-radius:16px!important;color:#DCE8E0}
+.woocommerce-checkout #payment div.payment_box::before{border-bottom-color:rgba(7,17,14,.55)!important}
+.woocommerce-checkout #payment ul.payment_methods{border-bottom-color:var(--w-line)!important}
+.woocommerce-terms-and-conditions-wrapper,.woocommerce-privacy-policy-text{color:var(--w-text2)}
+.woocommerce-terms-and-conditions-wrapper a,.woocommerce-privacy-policy-text a{color:#A3FFC1}
+.woocommerce table.shop_table thead,.woocommerce table.shop_table thead tr,.woocommerce table.shop_table thead th{background:rgba(255,255,255,.04)!important;color:var(--w-text2)!important;font-size:13px;letter-spacing:.04em}
+.woocommerce .cart_totals h2,.woocommerce-cart .cart-collaterals .cart_totals>h2{background:transparent!important;color:var(--w-text)!important;border:0!important;padding:24px 24px 0!important;margin:0!important;font-size:22px}
+/* Product rows in the basket */
+.woocommerce-cart table.cart img{width:72px;border-radius:12px;background:#0C1914}
+.woocommerce-cart table.cart td.product-name a{color:var(--w-text);font-weight:600;text-decoration:none}
+.woocommerce-cart table.cart td.product-name dl.variation{color:var(--w-text2)}
+.woocommerce a.remove{color:#A1B5A8!important;border:1px solid var(--w-line);border-radius:999px}
+.woocommerce a.remove:hover{background:#E5484D!important;color:#fff!important}
+.woocommerce .quantity .qty{width:72px!important;text-align:center}
+/* Buttons */
+.woocommerce .button,.woocommerce button.button,.woocommerce a.button,.woocommerce input.button,.woocommerce #respond input#submit,.woocommerce-page .button{
+  border-radius:999px!important;border:1px solid rgba(190,255,215,.24)!important;background:rgba(255,255,255,.04)!important;color:var(--w-text)!important;font-weight:600!important;padding:14px 24px!important;line-height:1.2!important;transition:border-color .2s ease,background-color .2s ease}
+.woocommerce .button:hover,.woocommerce-page .button:hover{border-color:rgba(120,255,170,.5)!important;background:rgba(85,230,139,.08)!important}
+.woocommerce .button.alt,.woocommerce button.button.alt,.woocommerce a.checkout-button,.woocommerce #place_order,.woocommerce-page .button.alt{
+  background:linear-gradient(135deg,#72F3A0,#28B967)!important;color:#06150C!important;border:0!important;box-shadow:0 10px 30px -12px rgba(85,230,139,.45)}
+.woocommerce .button:disabled,.woocommerce .button.disabled{opacity:.5!important}
+/* Empty basket */
+.woocommerce .cart-empty{font-size:20px;color:var(--w-text)}
+.woocommerce .return-to-shop .button{background:linear-gradient(135deg,#72F3A0,#28B967)!important;color:#06150C!important;border:0!important}
+/* My account */
+.woocommerce-account .woocommerce-MyAccount-navigation ul{list-style:none;margin:0;padding:8px;border:1px solid var(--w-line);border-radius:18px}
+.woocommerce-account .woocommerce-MyAccount-navigation a{display:block;padding:10px 14px;border-radius:12px;color:var(--w-text2);text-decoration:none}
+.woocommerce-account .woocommerce-MyAccount-navigation .is-active a,.woocommerce-account .woocommerce-MyAccount-navigation a:hover{background:rgba(85,230,139,.1);color:var(--w-text)}
+.woocommerce form.login,.woocommerce form.register,.woocommerce form.checkout_coupon,.woocommerce form.woocommerce-form-login{border:1px solid var(--w-line)!important;border-radius:18px!important;padding:24px!important;background:rgba(255,255,255,.02)}
+</style>
