@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded',function(){
   [].forEach.call(document.querySelectorAll('.v2-sec .v2-float'),function(f,i){f.classList.add('v2-bob');f.style.setProperty('--bd',(i*1.3)+'s')});
   var ph=[].slice.call(document.querySelectorAll('.v2-sec p')).find(function(x){return x.textContent==='Driveway charger'});if(ph&&ph.parentElement&&ph.parentElement.parentElement)ph.parentElement.parentElement.classList.add('v2-phone-wrap');
   var allSecs=[].slice.call(document.querySelectorAll('main > section'));
-  var last=allSecs[allSecs.length-1];if(last&&!last.classList.contains('v2-sec'))last.classList.add('v2-final');
+  var last=allSecs[allSecs.length-1];if(last&&!last.classList.contains('v2-sec')&&!last.querySelector('details,.e-accordion'))last.classList.add('v2-final');
   function keptPanels(){allSecs.forEach(function(sec){if(sec.classList.contains('v2-sec')||sec.classList.contains('v2-hero'))return;
     sec.querySelectorAll('*').forEach(function(el){var bg=getComputedStyle(el).backgroundColor;if((bg==='rgb(17, 22, 29)')&&!el.parentElement.closest('.v2-kept-panel'))el.classList.add('v2-kept-panel')})})}
   keptPanels();setTimeout(keptPanels,700);

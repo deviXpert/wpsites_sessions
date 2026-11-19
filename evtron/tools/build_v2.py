@@ -141,13 +141,18 @@ def foxcard(cid, name, mid, meta, colours, cnames, price, url, chips, note='full
     ], 'flex-direction: row; gap: 20px; align-items: center; @media(--mobile){ flex-direction: column; align-items: stretch; }', ['v2-card'], tag='article')
 
 
+FINISHES = [('render_evtron', 'Mythos Black'), ('render_evtron_grey', 'Space Grey'), ('render_evtron_green', 'Midnight Green'), ('render_evtron_red', 'Crimson Red')]
+finish_grid = div('Finish grid', [div(f'Finish {i}', [
+    el('e-image', f'Finish {i} img', {'image': {'src': {'id': M[k]}, 'size': 'medium_large'}}, 'width: 72%; height: auto; margin-left: auto; margin-right: auto; position: relative; z-index: 1;'),
+    p(f'Finish {i} name', n, None, 'font-size: 15px; font-weight: 600; color: #F5FFF8; text-align: center; margin-top: 8px;'),
+    p(f'Finish {i} price', PRICE, None, MONO + 'font-size: 12.5px; color: #A1B5A8; text-align: center; margin-top: 4px;'),
+], 'padding: 22px 18px; justify-content: flex-end;', ['v2-solid']) for i, (k, n) in enumerate(FINISHES)],
+    'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; @media(--mobile){ gap: 10px; }')
+
 showcase = v2sec('V2 range', [
-    v2head('Range head', 'The range', 'EV-Tron, plus solar-ready chargers from Fox ESS.', 'EV-Tron is our own charger. Got solar panels? We also supply and install Fox ESS chargers, which can work with your solar system.'),
-    div('Range grid', [featured,
-        foxcard('Fox tethered', 'Fox ESS Tethered', M['render_foxt'], '7.3kW · Type 2 · Tethered', ['#1E2024', '#6FB7B5', '#9C86C9', '#D7A3AE'], 'Black · Blue · Purple · Pink', '£995', '/ev-chargers/fox-tethered-solar-ev-charger/', ['Fox ESS · partner brand', 'Solar-compatible']),
-        foxcard('Fox untethered', 'Fox ESS Untethered', M['render_foxu'], '7.3kW · Type 2 socket · Untethered', ['#ECEDEA'], 'White', '£945', '/ev-chargers/fox-untethered-solar-ev-charger/', ['Fox ESS · partner brand', 'Solar-compatible'])],
+    v2head('Range head', 'The charger', 'Meet EV-Tron.', 'Our own 7kW smart charger, in four finishes. Buy it online, or have it fitted by a qualified electrician after a free remote survey.'),
+    div('Range grid', [featured, finish_grid],
         'display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 20px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }'),
-    p('Range note', 'Fox ESS is an independent brand, supplied and installed by EV-Tron. Solar charging depends on the model and your system.', None, MONO + 'font-size: 11px; color: rgba(161,181,168,0.75); margin-top: 18px; letter-spacing: 0.04em;'),
 ])
 
 # ================= 3. Benefits Bento =================
@@ -264,13 +269,27 @@ if __name__ == '__main__':
     v1 = json.loads(wp.req('wp/v2/pages/95?context=edit')['meta']['_elementor_data'])
     v2 = json.loads(wp.req(f'wp/v2/pages/{PID}?context=edit')['meta']['_elementor_data'])
     new = v2[0]['elements']            # hero, showcase, bento, tech, process, trust
-    v1s = v1[0]['elements']            # 0 hero, 1 chargers, 2 how (replaced by process), 3 costs, 4 faqs, 5 closing
-    v2[0]['elements'] = new[:5] + [v1s[3], new[5], v1s[4], v1s[5]]
-    raw = json.dumps(v2)
+    v1s = v1[0]['elements']            # 0 hero, 1 chargers, 2 how (replaced by process), 3 costs, 4 faqs, 5 closing (matcher, not used)
+    v2[0]['elements'] = new[:5] + [v1s[3], new[5], v1s[4]]          # closing matcher dropped: one charger on sale for now
     P = 'https://evtron.co.uk/ev-chargers/evtron-tethered-ev-charger/'
-    for a, b in [('with the reasons and the installed price', 'with the reasons and the price'),   # copy and link tweaks for kept V1 sections
-                 ('"value": "Get a quote"', '"value": "Request installation"'), ('https://evtron.co.uk/get-a-quote/', P + '#details'),
-                 ('"value": "Compare all chargers"', '"value": "Explore EV-Tron"'), ('"value": "https://evtron.co.uk/ev-chargers/"', '"value": "' + P + '"')]:
-        raw = raw.replace(a, b)
+    TWEAKS = [('with the reasons and the installed price', 'with the reasons and the price'),        # copy and link tweaks for kept V1 sections
+              ('Get a quote', 'Request installation'), ('https://evtron.co.uk/get-a-quote/', P + '#details'),
+              ('Compare all chargers', 'Explore EV-Tron'), ('https://evtron.co.uk/ev-chargers/', P),
+              ('All three chargers use Type 2', 'EV-Tron uses Type 2'),
+              ('The two Fox chargers can use surplus solar power to charge your car. What you need depends on your inverter, and we’ll confirm it before you order.',
+               'EV-Tron isn’t designed to charge from solar panels. If you have solar, email sales@evtron.co.uk and we’ll talk you through your options.')]
+
+    def tweak(o):
+        if isinstance(o, dict): return {k: tweak(v) for k, v in o.items()}
+        if isinstance(o, list): return [tweak(v) for v in o]
+        if isinstance(o, str):
+            for a, b in TWEAKS:
+                if a.startswith('https://'):
+                    o = b if o == a else o          # links: exact match only
+                else:
+                    o = o.replace(a, b)             # copy: substring
+        return o
+    v2 = tweak(v2)
+    raw = json.dumps(v2)
     print('assembled', len(v2[0]['elements']), wp.req(f'wp/v2/pages/{PID}', 'POST', {'meta': {'_elementor_data': raw}}).get('id'))
     wp.req('wp-abilities/v1/abilities/elementor/clear-cache/run', 'DELETE')
