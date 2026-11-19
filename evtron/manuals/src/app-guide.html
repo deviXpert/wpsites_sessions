@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>EV-Tron App and Operating Guide</title>
+<link rel="stylesheet" href="manual.css">
+<style>
+@page{size:210mm 297mm;margin:0}
+:root{--pw:210mm;--ph:297mm;--px:16mm;--pt:24mm;--pb:22mm;--rt:10mm;--fs:8.6pt;--h1:24pt;--h2:12pt;--h3:9.4pt;--cover-h1:40pt;--logo-h:4.6mm}
+.band{margin:calc(var(--pt) * -1) calc(var(--px) * -1) 0;padding:calc(var(--pt) + 4mm) var(--px) 10mm;background:var(--ink);color:var(--warm);position:relative;overflow:hidden}
+.band .glow{position:absolute;inset:0;background:radial-gradient(50% 80% at 85% 30%,rgba(59,227,127,.22),transparent 70%)}
+.band h1{color:var(--warm);font-size:30pt}
+.band h1 em{font-style:normal;color:var(--green)}
+.band .lead{color:#AEB5BF}
+.band .run.top{color:#8F99A6}
+.sec{display:grid;grid-template-columns:62mm 1fr;gap:8mm;align-items:start;padding:6mm 0;border-bottom:.5pt solid var(--line)}
+.sec:last-of-type{border-bottom:0}
+.sec h2{margin-top:0}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3 2 20.5h20L12 3Z" fill="none" stroke="#3BE37F" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v4.6" stroke="#3BE37F" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.2" fill="#3BE37F"/></symbol>
+  <symbol id="i-tip" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none" stroke="#0B7A3B" stroke-width="2"/><path d="M12 11v6" stroke="#0B7A3B" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7.6" r="1.2" fill="#0B7A3B"/></symbol>
+</svg>
+
+<!-- PAGE 1: overview -->
+<section class="page">
+  <div class="band">
+    <div class="glow"></div>
+    <div class="run top"><img src="../img/evtron-horizontal-dark.svg" alt="EV-Tron" style="height:5.4mm"><span>App and operating guide · v1.0</span></div>
+    <div style="position:relative">
+      <div class="eyebrow">EMS3 series · wall-mounted AC chargers</div>
+      <h1>App and<br><em>operating guide.</em></h1>
+      <p class="lead" style="max-width:62%">How to set up the app, schedule and control charging, read the status lights and keep your charger safe.</p>
+    </div>
+  </div>
+  <div class="sec" style="padding-top:8mm">
+    <div><div class="eyebrow">01 · Overview</div><h2>About your charger</h2></div>
+    <div>
+      <p>For battery-electric, plug-in hybrid and range-extender vehicles with a Type 2 (European 7-pin) AC charging inlet. Suitable for home, commercial and fixed installations.</p>
+      <ul class="list">
+        <li>Start charging by plugging in, with an RFID card, or from the app, including over Bluetooth.</li>
+        <li>App control and scheduling, with automatic shut-off when charging is complete.</li>
+        <li>Live readings: power, voltage, current, temperature and charging time.</li>
+        <li>Protection against over-temperature, over-voltage, prolonged under-voltage, over-current and leakage current.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="sec">
+    <div><div class="eyebrow">02 · Models</div><h2>Technical parameters</h2></div>
+    <div>
+      <table class="grid" style="margin-top:0">
+        <tr><th>Model</th><th>Power</th><th>Voltage</th><th>Rated current</th><th>Selectable</th></tr>
+        <tr><td class="m"><b>EMS3-70-C</b></td><td class="m">7 kW</td><td class="m">220 V</td><td class="m">32 A</td><td class="m">8 / 13 / 16 / 32 A</td></tr>
+        <tr><td class="m">EMS3-110-C</td><td class="m">11 kW</td><td class="m">380 V</td><td class="m">16 A</td><td class="m">8 / 10 / 13 / 16 A</td></tr>
+        <tr><td class="m">EMS3-220-C</td><td class="m">22 kW</td><td class="m">380 V</td><td class="m">32 A</td><td class="m">8 / 13 / 16 / 32 A</td></tr>
+      </table>
+      <p class="small muted" style="margin-top:2.4mm">The EV-Tron home charger is the <b>EMS3-70-C</b> (7 kW, single-phase). Plug: industrial (where fitted).</p>
+    </div>
+  </div>
+  <div class="sec">
+    <div><div class="eyebrow">03 · Appearance</div><h2>Parts of your charger</h2>
+      <div class="card" style="margin-top:4mm;padding:3mm"><div class="fig"><img src="../img/u-001-ink.png" alt="Front of the charger" style="mix-blend-mode:multiply">
+        <span class="pin num g" style="left:47%;top:95%">1</span><span class="pin num g" style="left:28%;top:30%">2</span><span class="pin num g" style="left:62%;top:67%">3</span></div></div>
+    </div>
+    <div class="legend" style="margin-top:0">
+      <div><span class="num">1</span><p><b>Cable.</b> Tethered charging cable and supply lead.</p></div>
+      <div><span class="num">2</span><p><b>Main control unit.</b> Houses the electronics and the status light strip.</p></div>
+      <div><span class="num">3</span><p><b>Card reading area.</b> Tap your RFID card to start or stop charging.</p></div>
+      <div><span class="num">4</span><p><b>Emergency stop button.</b> On the side. Press in an emergency; turn clockwise to reset.</p></div>
+      <div><span class="num">5</span><p><b>Type 2 connector.</b> The universal European 7-pin charging connector.</p></div>
+      <div><span class="num">6</span><p><b>Connector holder.</b> Wall holster for the connector between charges.</p></div>
+    </div>
+  </div>
+  <div class="run bot"><span>EV-Tron · App and operating guide</span><span class="pg"><b>01</b> / 04</span></div>
+</section>
+
+<!-- PAGE 2: app setup -->
+<section class="page">
+  <div class="run top"><img src="../img/evtron-horizontal-light.svg" alt="EV-Tron"><span>04 · Using the app</span></div>
+  <div class="eyebrow">04 · Using the app</div>
+  <h1>Get set up in minutes.</h1>
+  <p class="lead">Your charger uses the <b>WeGoodCharger</b> app. Your installer will help you set it up on the day.</p>
+  <div class="cols" style="margin-top:6mm;gap:4mm">
+    <div class="qr"><img src="../img/qr-ios.png" alt="QR code: WeGoodCharger on the UK App Store"><div><span class="k">iPhone</span><p class="small">Scan, or search “WeGoodCharger” in the App Store.</p></div></div>
+    <div class="qr"><img src="../img/qr-app.png" alt="QR code: evtron.co.uk/app"><div><span class="k">Android</span><p class="small">Scan for the latest download link at evtron.co.uk/app</p></div></div>
+  </div>
+  <div class="sec" style="margin-top:4mm">
+    <div class="shot"><div class="fig"><img src="../img/a-001.png" alt="App home screen with the language button top right"><span class="pin num g" style="left:70%;top:10%">1</span></div></div>
+    <div><h2><span class="num" style="margin-right:2mm">1</span>Choose your language</h2>
+      <p>Open the app and tap the <b>language</b> button in the top-right corner. Choose your language, then confirm to go back.</p>
+      <div class="shot" style="width:52mm;margin-top:3mm"><img src="../img/a-002.png" alt="Language selection list"></div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="shot"><div class="fig"><img src="../img/a-003.png" alt="Control screen with the Setting button"><span class="pin num g" style="left:52%;top:50%">2</span></div></div>
+    <div><h2><span class="num" style="margin-right:2mm">2</span>Adjust your settings</h2>
+      <p>Tap <b>Setting</b> to open the parameter screen. Set what you need, confirm, then exit.</p>
+      <ul class="list">
+        <li><b>Plug and Charge:</b> start charging as soon as you plug in.</li>
+        <li><b>Auto Charge via Bluetooth:</b> start automatically when your phone is nearby.</li>
+        <li><b>Charging Current:</b> set the current to suit your vehicle and supply. Change it before you plug in.</li>
+      </ul>
+      <div class="shot" style="margin-top:3mm"><img src="../img/a-004.png" alt="Settings: Plug and Charge, Auto Charge via Bluetooth, Charging Current"></div>
+    </div>
+  </div>
+  <div class="run bot"><span>EV-Tron · App and operating guide</span><span class="pg"><b>02</b> / 04</span></div>
+</section>
+
+<!-- PAGE 3: scheduling + charging -->
+<section class="page">
+  <div class="run top"><img src="../img/evtron-horizontal-light.svg" alt="EV-Tron"><span>04 · Using the app</span></div>
+  <div class="sec" style="padding-top:0">
+    <div class="shot"><div class="fig"><img src="../img/a-005.png" alt="Control screen with the Reserve button"><span class="pin num g" style="left:36%;top:49%">3</span></div></div>
+    <div><h2><span class="num" style="margin-right:2mm">3</span>Schedule charging</h2>
+      <p>Tap <b>Reserve</b> and set when you want to charge, for example during cheaper off-peak hours.</p>
+      <div class="card" style="margin-top:3mm;background:var(--tint);border-color:transparent">
+        <span class="mono small" style="color:var(--deep);letter-spacing:.08em;text-transform:uppercase">Example</span>
+        <p style="margin-top:1.4mm">To charge from <b class="mono">19:00</b> to <b class="mono">23:00</b>, set a 4-hour window. Plug in, and the charger counts down and starts charging automatically.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="shot"><div class="fig"><img src="../img/a-006.png" alt="Live data screen with the Charge Now button"><span class="pin num g" style="left:9%;top:82%">4</span></div></div>
+    <div><h2><span class="num" style="margin-right:2mm">4</span>Start and stop</h2>
+      <p>Tap <b>Charge Now</b> to start and <b>Stop Charging</b> to stop. While charging, the screen shows voltage, current, power, temperature, charging time and energy delivered.</p>
+    </div>
+  </div>
+  <div class="eyebrow" style="margin-top:7mm">05 · Charging</div>
+  <h1>Every charge, step by step.</h1>
+  <div class="steps" style="grid-template-columns:repeat(4,1fr)">
+    <div class="step"><div class="bar" style="width:25%"></div><div class="n">0<span>1</span></div><h3>Check</h3><p>Make sure the charger, cable and supply are in good condition.</p></div>
+    <div class="step"><div class="bar" style="width:50%"></div><div class="n">0<span>2</span></div><h3>Set current</h3><p>Confirm the current suits your vehicle and supply. Adjust it in the app before plugging in.</p></div>
+    <div class="step"><div class="bar" style="width:75%"></div><div class="n">0<span>3</span></div><h3>Plug in</h3><p>Push the connector fully into your vehicle's charging inlet.</p></div>
+    <div class="step"><div class="bar" style="width:100%"></div><div class="n">0<span>4</span></div><h3>Start</h3><p>Tap your RFID card or use the app. Live data appears on screen.</p></div>
+  </div>
+  <h2 style="margin-top:7mm">Status lights</h2>
+  <div class="cols3" style="margin-top:2mm">
+    <div class="light" style="grid-template-columns:10mm 1fr"><div class="lamp"><i style="background:#2F7BFF;height:6mm"></i></div><div><span class="k">Blue</span><h3>Powered on</h3></div></div>
+    <div class="light" style="grid-template-columns:10mm 1fr"><div class="lamp"><i style="background:#3BE37F;opacity:.4"></i><i style="background:#3BE37F"></i></div><div><span class="k">Green · moving</span><h3>Charging</h3></div></div>
+    <div class="light" style="grid-template-columns:10mm 1fr"><div class="lamp"><i style="background:#E5484D;height:6mm"></i></div><div><span class="k">Red</span><h3>Fault or error</h3></div></div>
+  </div>
+  <div class="run bot"><span>EV-Tron · App and operating guide</span><span class="pg"><b>03</b> / 04</span></div>
+</section>
+
+<!-- PAGE 4: protection, precautions, package -->
+<section class="page">
+  <div class="run top"><img src="../img/evtron-horizontal-light.svg" alt="EV-Tron"><span>06 · Safety and support</span></div>
+  <div class="eyebrow">06 · Protection functions</div>
+  <h1>Built-in protection.</h1>
+  <table class="grid" style="margin-top:4mm">
+    <tr><th style="width:34%">Protection</th><th>What happens</th></tr>
+    <tr><td>Over-voltage</td><td>Charging stops when the voltage exceeds <b class="mono">270 V</b>.</td></tr>
+    <tr><td>Prolonged under-voltage</td><td>Charging stops when the voltage stays below <b class="mono">90 V</b>.</td></tr>
+    <tr><td>Over-current</td><td>Charging stops when the current exceeds <b class="mono">1.1 ×</b> the rated current.</td></tr>
+    <tr><td>Leakage current</td><td>If leakage between the vehicle and the control box exceeds <b class="mono">30 mA</b>, power is cut and charging stops.</td></tr>
+    <tr><td>Over-temperature</td><td>The charging current is reduced, then restored as the unit cools. Charge in a cool, well-ventilated place.</td></tr>
+  </table>
+  <div class="note tip"><svg><use href="#i-tip"/></svg><div><span class="t">If it stops responding</span><p>If the charger won't connect, stops responding or shows a fault, switch it off for <b>3 seconds</b> and back on. If the fault clears, carry on as normal. If not, contact us.</p></div></div>
+  <div class="cols" style="margin-top:6mm;gap:8mm">
+    <div>
+      <div class="eyebrow">07 · Precautions</div>
+      <ul class="list">
+        <li>Don't reuse old cables. Minimum copper size: <b class="mono">1.5 mm²</b> at 8 A, <b class="mono">2.5 mm²</b> at 16 A, <b class="mono">4 mm²</b> at 24 A, <b class="mono">6 mm²</b> at 32 A. Undersized cable can overheat.</li>
+        <li>The charger must be properly earthed.</li>
+        <li>Never put your fingers into the connector opening.</li>
+        <li>Don't use the charger if it or its cable is damaged.</li>
+        <li>Only qualified persons may open or repair the unit. There is a risk of high-voltage electric shock inside.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">08 · In the box</div>
+      <table class="grid" style="margin-top:0">
+        <tr><th>Item</th><th>Spec</th><th>Qty</th></tr>
+        <tr><td>Main unit</td><td class="m">EMS3-XX-C</td><td class="m">1</td></tr>
+        <tr><td>Manual</td><td class="muted">Printed</td><td class="m">1</td></tr>
+        <tr><td>Back panel</td><td class="muted">Metal</td><td class="m">1</td></tr>
+        <tr><td>Connector holder</td><td class="muted">Black plastic</td><td class="m">1</td></tr>
+        <tr><td>Certificate of conformity</td><td class="muted">Document</td><td class="m">1</td></tr>
+      </table>
+      <p class="small muted" style="margin-top:2.4mm">Standards: <span class="mono">EN 62196-2, EN 61851-1, EN 62752</span></p>
+    </div>
+  </div>
+  <div class="band" style="margin:8mm calc(var(--px) * -1) 0;padding:8mm var(--px);border-radius:0">
+    <div class="glow"></div>
+    <div style="position:relative;display:grid;grid-template-columns:1fr auto;gap:8mm;align-items:end">
+      <div><div class="eyebrow">Help and support</div><h2 style="color:var(--warm);margin:0;font-size:16pt">One point of contact, from install to aftercare.</h2>
+        <p class="small" style="color:#AEB5BF;margin-top:2mm">evtron.co.uk · sales@evtron.co.uk · info@evtron.co.uk · <span class="ph">[PLACEHOLDER: phone]</span> · Mon–Sat 8:30–18:30</p></div>
+      <img src="../img/evtron-horizontal-dark.svg" alt="EV-Tron" style="height:7mm">
+    </div>
+  </div>
+  <p class="small muted" style="margin-top:4mm">Read this guide carefully before using the product. We continually improve our products, so design and specifications may change without notice.</p>
+  <div class="run bot"><span>EV-Tron · App and operating guide</span><span class="pg"><b>04</b> / 04</span></div>
+</section>
+</body>
+</html>
