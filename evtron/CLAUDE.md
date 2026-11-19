@@ -32,7 +32,7 @@ UK home EV charger brand. Sells chargers **supplied and fitted** at fixed VAT-in
 - Plugins: Yoast SEO (free), All-in-One WP Migration for backups, no staging. Mailboxes sales@/info@ to be created.
 
 - Client answers received 18 Nov 2026: see docs/client-answers.md (Crimson Red, install package, £15/m extra cable, England coverage, not VAT registered, Mon–Sat 8:30–6:30).
-- Homepage = V2 glassmorphism (page 141, front page). V1 kept at /home-v1/ (page 95). build_v2.py appends V1's how/costs/faqs/matcher sections from page 95.
+- **V2 glassmorphism is FINAL** (client decision 19 Nov 2026): page 141, front page. V1 (page 95) and V3 Simple (page 182) set to draft, kept for reference. build_v2.py appends V1's how/costs/faqs/matcher sections from page 95.
 
 ## Open
 Batch 2 business details (brief-summary §9). EV-TRONX smart-charging compliance. Fox exact SKUs.
