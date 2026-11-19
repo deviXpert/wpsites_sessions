@@ -14,7 +14,7 @@ ROOT = '1f4afb1e'          # header root (tag header)
 CTA = 'd509f11'            # header primary button
 BUY_URL = '/ev-chargers/evtron-tethered-ev-charger/#configure'
 
-USPS = ['Installation included', 'Free remote survey', 'Secure checkout', 'Installed within 10 days of survey approval']
+USPS = ['Installation available', 'Free remote survey', 'Secure checkout', 'Installed within 10 days of survey approval']
 
 
 def tick(cid):

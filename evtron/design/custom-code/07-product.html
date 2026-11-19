@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded',function(){
   var groupsEl=[].slice.call(document.querySelectorAll('.pp-group'));if(!groupsEl.length)return;
   document.documentElement.classList.add('pp-js');
   var BASE=595,PRODUCT='EV-Tron Tethered';
+  /* WooCommerce ids (tools/created.json): EV-Tron variable product + hidden add-on products, keyed by option title */
+  var WC={product:254,addons:{'5-year warranty':250,'CT clamp':251,'Black charging post':252,'Steel charging post':253},
+          len:{'5 metres':'5m','7.5 metres':'7-5m','10 metres':'10m'},checkout:'/checkout/'};
   var money=function(n){return '£'+(Math.round(n*100)%100?n.toFixed(2):String(Math.round(n))).replace(/\B(?=(\d{3})+(?!\d))/g,',')};
   var txt=function(e){return (e&&e.textContent||'').trim()};
   /* Model from the page: each option = first <p> (title) + last <p> (price) */
@@ -51,7 +54,7 @@ document.addEventListener('DOMContentLoaded',function(){
       var m=price.match(/£([\d,]+(?:\.\d+)?)/);return {el:o,title:txt(ps[0]),price:price,amount:m?parseFloat(m[1].replace(/,/g,'')):0}});
     return {el:g,name:txt(g.querySelector('h3')),multi:g.classList.contains('pp-multi'),opts:opts,sel:[]}});
   var byName=function(n){return groups.find(function(g){return g.name.toLowerCase()===n})};
-  var colour=byName('colour'),cable=byName('cable length');
+  var colour=byName('colour'),cable=byName('cable length'),install=byName('installation');
   if(colour)colour.sel=[0];if(cable)cable.sel=[Math.min(1,cable.opts.length-1)];
   groups.forEach(function(g){if(!g.multi&&!g.sel.length)g.sel=[0]});
   /* Sections get anchors so #configure / #details / #specs links work */
@@ -67,6 +70,8 @@ document.addEventListener('DOMContentLoaded',function(){
     selInput=lab&&lab.parentElement.querySelector('textarea,input');if(selInput){selInput.id='pp-selection';selInput.setAttribute('aria-readonly','true')}}
   var bar=document.createElement('div');bar.className='pp-bar';bar.innerHTML='<p><span></span><small>EV-Tron Tethered · your build</small></p><a href="#details">Continue</a>';
   document.body.appendChild(bar);document.body.classList.add('pp-has-bar');
+  var cta=summary&&summary.querySelector('a'),note=summary&&[].slice.call(summary.querySelectorAll('p')).pop();
+  var fitted=function(){return install&&install.sel[0]===1};
   function render(){
     var total=BASE,rows=['<div class="pp-line base"><span>'+PRODUCT+'</span><span>'+money(BASE)+'</span></div>'],parts=[PRODUCT];
     groups.forEach(function(g){g.opts.forEach(function(o,i){var on=g.sel.indexOf(i)>-1;o.el.classList.toggle('on',on);o.el.setAttribute('aria-checked',String(on))});
@@ -81,6 +86,27 @@ document.addEventListener('DOMContentLoaded',function(){
     stages.forEach(function(s){[].forEach.call(s.querySelectorAll('img'),function(im,j){im.classList.toggle('on',j===c)})});
     heroSw.forEach(function(s,j){s.classList.toggle('on',j===c);s.setAttribute('aria-checked',String(j===c))});
     if(cname&&colour)cname.textContent=colour.opts[c].title;
+    var lab=fitted()?'Continue to details':'Add to basket';
+    if(cta){var t=cta.querySelector('.e-button-text')||cta;if(!busy)t.textContent=lab}
+    if(note)note.textContent=fitted()?'No payment now. We’ll call you to arrange your free remote survey and quote.':'Secure checkout. Prefer it fitted? Choose Supply and install.';
+    bar.querySelector('a').textContent=fitted()?'Continue':'Add to basket';
+  }
+  /* Charger only: put the exact build in the WooCommerce basket, then go to checkout */
+  var busy=false;
+  function slug(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+  function addToBasket(){
+    if(busy)return;busy=true;var t=cta&&(cta.querySelector('.e-button-text')||cta);if(t)t.textContent='Adding to basket…';
+    var api='/wp-json/wc/store/v1/',col=slug(colour.opts[colour.sel[0]].title),len=WC.len[cable.opts[cable.sel[0]].title],nonce;
+    var extras=[];groups.forEach(function(g){if(g===colour||g===cable||g===install)return;g.sel.forEach(function(i){var id=WC.addons[g.opts[i].title];if(id)extras.push(id)})});
+    fetch(api+'products/'+WC.product,{credentials:'same-origin'}).then(function(r){return r.json()}).then(function(p){
+      var v=(p.variations||[]).find(function(x){return x.attributes.every(function(a){return /colour/i.test(a.name)?a.value===col:a.value===len})});
+      if(!v)throw new Error('variation');
+      return fetch(api+'cart',{credentials:'same-origin'}).then(function(r){nonce=r.headers.get('Nonce');
+        return fetch(api+'cart/items',{method:'DELETE',credentials:'same-origin',headers:{'Nonce':nonce}})}).then(function(){
+        return [v.id].concat(extras).reduce(function(ch,id){return ch.then(function(){return fetch(api+'cart/add-item',{method:'POST',credentials:'same-origin',
+          headers:{'Content-Type':'application/json','Nonce':nonce},body:JSON.stringify({id:id,quantity:1})}).then(function(r){if(!r.ok)throw new Error('add '+id)})})},Promise.resolve())})
+    }).then(function(){location.href=WC.checkout}).catch(function(){busy=false;render();
+      if(note)note.textContent='Sorry, we couldn’t add that to your basket. Please try again, or choose Supply and install and we’ll call you.'});
   }
   function pick(g,i){
     if(g.multi){var k=g.sel.indexOf(i);if(k>-1)g.sel.splice(k,1);else{
@@ -102,8 +128,10 @@ document.addEventListener('DOMContentLoaded',function(){
   function openDetails(scroll){if(!detSec)return;detSec.classList.add('open');
     if(scroll){detSec.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
       var f=detSec.querySelector('input:not([readonly]):not([type=checkbox])');if(f)setTimeout(function(){f.focus({preventScroll:true})},700)}}
-  document.addEventListener('click',function(e){var a=e.target.closest('a[href*="#details"]');if(!a)return;e.preventDefault();openDetails(true);history.replaceState(null,'','#details')});
-  if(location.hash==='#details')openDetails(true);
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href*="#details"]');if(!a)return;e.preventDefault();
+    if(!fitted()&&(a===cta||a.closest('.pp-bar'))){addToBasket();return}
+    openDetails(true);history.replaceState(null,'','#details')});
+  if(location.hash==='#details'){if(install)install.sel=[1];render();openDetails(true)}
   /* Sticky bar: after the hero, hidden once the details are on screen */
   var hero=document.querySelector('.pp-hero');
   function bupd(){var past=hero?hero.getBoundingClientRect().bottom<0:scrollY>500;var inDet=detSec&&detSec.classList.contains('open')&&detSec.getBoundingClientRect().top<innerHeight;

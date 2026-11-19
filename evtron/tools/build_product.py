@@ -58,7 +58,7 @@ hero = div('PP hero', [div('PP hero inner', [div('PP hero grid', [
         h('PP title', 'EV-Tron Tethered', 'h1', ['v2-h2'], 'margin-top: 18px; font-size: clamp(40px, 4.6vw, 68px);'),
         p('PP sub', '7kW smart home charger with a tethered Type 2 cable.', ['v2-lead'], 'margin-top: 12px;'),
         div('PP price row', [p('PP price', PRICE, ['v2-num'], 'font-size: 44px; line-height: 1;'),
-                             p('PP price note', 'Choose your cable, warranty and extras below', None, 'font-size: 14px; color: #A1B5A8;')],
+                             p('PP price note', 'Charger price. Installation available, quoted after a free remote survey', None, 'font-size: 14px; color: #A1B5A8;')],
             'display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-top: 28px;'),
         div('PP colour', [p('PP colour k', 'Colour', ['v2-label']), p('PP colour name', 'Mythos Black', None, 'font-size: 15px; color: #F5FFF8; font-weight: 600;')],
             'display: flex; gap: 12px; align-items: baseline; margin-top: 28px;'),
@@ -111,6 +111,9 @@ groups = div('Cfg steps', [
           [option('O acc 0', 'CT clamp', '+£15', 'Measures your home’s demand for load balancing'),
            option('O acc 1', 'Black charging post', '+£200', 'Free-standing post for drives without a wall'),
            option('O acc 2', 'Steel charging post', '+£280', 'Brushed steel free-standing post')], multi=True),
+    group('G install', '05', 'Installation', 'Buy the charger on its own, or let us supply and fit it.',
+          [option('O ins 0', 'Charger only', 'Buy online', 'Checkout now. Delivered to you for your own electrician to fit'),
+           option('O ins 1', 'Supply and install', 'Quote', 'We call you, run a free remote survey and quote for fitting')], cols=2),
 ], 'display: flex; flex-direction: column;')
 
 summary = div('Cfg summary', [
@@ -119,12 +122,12 @@ summary = div('Cfg summary', [
     div('Sum lines', [], 'display: flex; flex-direction: column; gap: 10px; margin-top: 8px;', ['pp-lines']),
     div('Sum total row', [p('Sum total k', 'Total', None, 'font-size: 15px; color: #A1B5A8;'), p('Sum total', PRICE, ['v2-num'], 'font-size: 34px;', )],
         'display: flex; justify-content: space-between; align-items: baseline; margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(190,255,215,0.14);'),
-    vbtn('Sum continue', 'Continue to details', '#details', 'primary', 'width: 100%; justify-content: center; margin-top: 20px;'),
-    p('Sum note', 'No payment now. Our sales team will call you to confirm everything.', None, 'font-size: 12.5px; color: #A1B5A8; margin-top: 12px; text-align: center;'),
+    vbtn('Sum continue', 'Add to basket', '#details', 'primary', 'width: 100%; justify-content: center; margin-top: 20px;'),
+    p('Sum note', 'Secure checkout. Prefer it fitted? Choose Supply and install.', None, 'font-size: 12.5px; color: #A1B5A8; margin-top: 12px; text-align: center;'),
 ], 'position: sticky; top: 120px; padding: 28px; @media(--tablet){ position: relative; top: 0; }', ['v2-glass', 'pp-summary'])
 
 configure = div('PP configure', [div('PP configure inner', [
-    v2head('Cfg head', 'Build your order', 'Make it yours.', 'Pick a finish, choose your cable and add any extras. Your total updates as you go.'),
+    v2head('Cfg head', 'Build your order', 'Make it yours.', 'Pick a finish, choose your cable and extras, then buy online or ask us to fit it. Your total updates as you go.'),
     div('Cfg grid', [groups, summary],
         'display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 48px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 24px; }'),
 ], classes=['ev-container'])], classes=['v2-sec'], tag='section')
@@ -139,9 +142,9 @@ def field(cid, label, ftype='text', required=True, placeholder='', readonly=Fals
 
 
 form = el('e-form', 'Order form', {
-    'form-name': 'EV-Tron order request',
+    'form-name': 'EV-Tron installation request',
     'actions-after-submit': ['collect-submissions', 'email'],
-    'email': {'to': ['sales@evtron.co.uk'], 'subject': 'New EV-Tron order request', 'from-name': 'EV-Tron website', 'send-as': 'html'},
+    'email': {'to': ['sales@evtron.co.uk'], 'subject': 'New EV-Tron supply and install request', 'from-name': 'EV-Tron website', 'send-as': 'html'},
 }, 'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; @media(--mobile){ grid-template-columns: minmax(0, 1fr); }', None, [
     div('F selection', [el('e-form-label', 'F selection l', {'text': 'Your selection', 'input-id': 'pp-selection'}, 'font-size: 13px; color: #C9D6CE; font-weight: 500;'),
                         el('e-form-textarea', 'F selection t', {'rows': 3, 'readonly': True, 'resizable': False},
@@ -178,8 +181,8 @@ details = div('PP details', [div('PP details inner', [
     div('Details grid', [
         div('Details copy', [chip('Det chip', 'Last step'),
                              h('Det title', 'Where should we call you?', 'h2', ['v2-h2'], 'margin-top: 20px;'),
-                             p('Det lead', 'Leave your details and our sales team will call to confirm your order, answer any questions and arrange your free remote survey.', ['v2-lead'], 'margin-top: 16px;'),
-                             div('Det ticks', [ticks('Det t', ['No payment taken now', 'Monday to Saturday, 8:30am to 6:30pm', 'Prefer email? sales@evtron.co.uk'], '14.5px')], 'margin-top: 28px;')],
+                             p('Det lead', 'Leave your details and our sales team will call to talk through your installation, arrange your free remote survey and confirm your quote.', ['v2-lead'], 'margin-top: 16px;'),
+                             div('Det ticks', [ticks('Det t', ['No payment taken until you approve your quote', 'Monday to Saturday, 8:30am to 6:30pm', 'Prefer email? sales@evtron.co.uk'], '14.5px')], 'margin-top: 28px;')],
             'display: flex; flex-direction: column; align-items: flex-start;'),
         div('Details form', [form], 'padding: 32px; @media(--mobile){ padding: 20px; }', ['v2-card']),
     ], 'display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 48px; align-items: start; margin-top: 40px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 28px; }'),

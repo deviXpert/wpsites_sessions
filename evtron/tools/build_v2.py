@@ -62,14 +62,14 @@ copy = div('Hero copy', [
     chip('Hero chip', '● Home EV charging · supplied and fitted'),
     h('Hero title', 'Fast. Smart. Effortless.', 'h1', ['v2-display'], 'margin-top: 28px; font-size: clamp(44px, 5.6vw, 88px);'),
     p('Hero subtitle', 'Three finishes. Pick yours.', ['v2-display'], 'font-weight: 300; color: #A3FFC1; margin-top: 10px; font-size: clamp(30px, 3.4vw, 54px); line-height: 1.05; letter-spacing: -0.035em;'),
-    p('Hero lead', 'A premium 7kW smart charger in Mythos Black, Space Grey or Midnight Green. Installation by a qualified electrician is included, starting with a free remote survey.', ['v2-lead'], 'margin-top: 28px;'),
+    p('Hero lead', 'A premium 7kW smart charger in Mythos Black, Space Grey or Midnight Green. Buy it online, or have it fitted by a qualified electrician after a free remote survey.', ['v2-lead'], 'margin-top: 28px;'),
     div('Hero CTAs', [vbtn('CTA primary', 'Buy now', PRODUCT + '#configure'), vbtn('CTA glass', 'Explore EV-Tron', PRODUCT, 'glass')],
         'display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px;'),
     div('Hero chips', [chip('Chip 1', '7kW home charging'), chip('Chip 2', 'Type 2'), chip('Chip 3', 'Wi-Fi + Bluetooth')],
         'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px;'),
 ], 'display: flex; flex-direction: column; align-items: flex-start; position: relative; z-index: 2;')
 
-rail_items = [('Power', '7kW single-phase'), ('Connector', 'Type 2'), ('Installation', 'Included'), ('Survey', 'Free and remote')]
+rail_items = [('Power', '7kW single-phase'), ('Connector', 'Type 2'), ('Installation', 'Available'), ('Survey', 'Free and remote')]
 rail = div('Spec rail', [div(f'Rail {i}', [p(f'Rail {i} k', k, ['v2-label']), p(f'Rail {i} v', v, None, 'font-size: 15.5px; font-weight: 600; color: #F5FFF8; margin-top: 6px;')],
                              'padding: 22px 24px; ' + ('' if i == 0 else 'border-left: 1px solid rgba(190,255,215,0.12); @media(--mobile){ border-left: 0; border-top: 1px solid rgba(190,255,215,0.12); }'))
                          for i, (k, v) in enumerate(rail_items)],
