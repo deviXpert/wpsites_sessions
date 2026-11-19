@@ -7,5 +7,7 @@
  "placeholder-fox-untethered": 94,
  "render_evtron": 131,
  "render_foxt": 160,
- "render_foxu": 161
+ "render_foxu": 161,
+ "render_evtron_grey": 200,
+ "render_evtron_green": 201
 }

@@ -125,17 +125,17 @@ document.addEventListener('DOMContentLoaded',function(){
     var card=document.createElement('div');card.className='ev-fd-card';card.setAttribute('aria-live','polite');
     panel.appendChild(card);
     if(cmp)cmp.remove();
-    var R={evtron:['EV-Tron Tethered','£1,295','/ev-chargers/evtron-tethered-ev-charger/'],foxt:['Fox Tethered','£995','/ev-chargers/fox-tethered-solar-ev-charger/'],foxu:['Fox Untethered','£945','/ev-chargers/fox-untethered-solar-ev-charger/']};
+    var R={evtron:['EV-Tron Tethered','£595','/ev-chargers/evtron-tethered-ev-charger/','charger price'],foxt:['Fox ESS Tethered','£995','/ev-chargers/fox-tethered-solar-ev-charger/','fully installed'],foxu:['Fox ESS Untethered','£945','/ev-chargers/fox-untethered-solar-ev-charger/','fully installed']};
     var pick=function(){
       var k,why=[];
-      if(!A.cable){k='foxu';why.push('A tidy Type 2 socket: you use your own cable');why.push(A.solar?'Can charge from your surplus solar power':'Our lowest installed price');}
+      if(!A.cable){k='foxu';why.push('A tidy Type 2 socket: you use your own cable');why.push(A.solar?'Can charge from your surplus solar power':'Simple, compact wall unit');}
       else if(A.solar){k='foxt';why.push('Can charge from your surplus solar power');why.push('Cable attached, so you just plug in');if(A.colour)why.push('Choose black, blue, purple or pink');}
       else{k=A.colour?'evtron':'foxt';why.push('Cable attached, so you just plug in');if(k==='evtron'){why.push('Four finishes: black, red, grey or green');why.push('Long 7.5m cable for longer driveways')}else why.push('Our lower-priced tethered option');}
       return [k,why]};
     var render=function(){
       [].forEach.call(qs.querySelectorAll('button'),function(b){b.setAttribute('aria-pressed',String(A[b.dataset.q]===(b.dataset.v==='1')))});
       var r=pick(),p=R[r[0]];card.classList.add('ev-swap');
-      setTimeout(function(){card.innerHTML='<p class="ev-x-lab" style="color:#3BE37F">Your match</p><p class="ev-fd-name">'+p[0]+'</p><p class="ev-fd-price">'+p[1]+'<small>fully installed</small></p><ul class="ev-fd-why">'+r[1].map(function(w){return '<li>'+w+'</li>'}).join('')+'</ul><div class="ev-fd-actions"><a class="ev-fd-go" href="'+p[2]+'">View '+p[0]+'</a><a class="ev-btn-ghost" style="display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border:1px solid #6A7688;border-radius:6px;color:#F2EFE9;text-decoration:none;font-weight:600;font-size:15px" href="/ev-chargers/">Compare all</a></div>';card.classList.remove('ev-swap')},120)};
+      setTimeout(function(){card.innerHTML='<p class="ev-x-lab" style="color:#3BE37F">Your match</p><p class="ev-fd-name">'+p[0]+'</p><p class="ev-fd-price">'+p[1]+'<small>'+p[3]+'</small></p><ul class="ev-fd-why">'+r[1].map(function(w){return '<li>'+w+'</li>'}).join('')+'</ul><div class="ev-fd-actions"><a class="ev-fd-go" href="'+p[2]+'">View '+p[0]+'</a><a class="ev-btn-ghost" style="display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border:1px solid #6A7688;border-radius:6px;color:#F2EFE9;text-decoration:none;font-weight:600;font-size:15px" href="/ev-chargers/">Compare all</a></div>';card.classList.remove('ev-swap')},120)};
     qs.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;A[b.dataset.q]=b.dataset.v==='1';render()});
     render();
   }

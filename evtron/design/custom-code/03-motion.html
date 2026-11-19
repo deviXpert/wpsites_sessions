@@ -78,6 +78,10 @@ document.addEventListener('DOMContentLoaded',function(){
   var main=document.querySelector('main main')||document.querySelector('main');
   var secs=main?[].slice.call(main.querySelectorAll(':scope > section')):[];
   /* Header: solid on scroll + "charge the page" battery */
+  /* Utility row: rotate USPs on phones */
+  (function(){var u=[].slice.call(document.querySelectorAll('.ev-usp'));if(!u.length)return;var i=0;u[0].classList.add('on');
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    setInterval(function(){if(window.innerWidth>767)return;u[i].classList.remove('on');i=(i+1)%u.length;u[i].classList.add('on')},3200)})();
   var hdr=document.querySelector('header.elementor-element');
   var bat=null;
   if(hdr){

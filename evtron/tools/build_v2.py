@@ -8,6 +8,9 @@ C = json.load(open('created.json'))
 M = json.load(open('media.json'))
 PID = C['home_v2']
 cfg.clear(); st.clear(); cl.clear()
+PRICE = '£595'                                   # client 19 Nov: charger price shown is £595
+PRODUCT = '/ev-chargers/evtron-tethered-ev-charger/'
+HERO_COLOURS = [('render_evtron', 'Mythos Black', '#1B1D21'), ('render_evtron_grey', 'Space Grey', '#7A8088'), ('render_evtron_green', 'Midnight Green', '#1E4A3A')]
 
 
 def vbtn(cid, text, url, kind='primary', style=None):
@@ -29,9 +32,9 @@ float_status = div('Float status', [
 ], 'width: max-content; left: 0; top: 10%; @media(--mobile){ top: 2%; left: 0; }', ['v2-float'])
 
 float_price = div('Float price', [
-    p('Price label', 'Installed from', ['v2-label']),
-    p('Price value', '£945', None, MONO + 'font-weight: 500; font-size: 34px; line-height: 1; color: #F5FFF8; margin-top: 8px;'),
-    p('Price note', 'incl. standard installation', None, 'font-size: 13px; color: #A1B5A8; margin-top: 6px;'),
+    p('Price label', 'EV-Tron charger', ['v2-label']),
+    p('Price value', PRICE, None, MONO + 'font-weight: 500; font-size: 34px; line-height: 1; color: #F5FFF8; margin-top: 8px;'),
+    p('Price note', 'Choose cable and extras next', None, 'font-size: 13px; color: #A1B5A8; margin-top: 6px;'),
 ], 'width: max-content; right: 0; top: 44%; @media(--mobile){ top: auto; bottom: 14%; right: 0; }', ['v2-float'])
 
 float_sched = div('Float schedule', [
@@ -40,27 +43,33 @@ float_sched = div('Float schedule', [
     div('Sched bars', [div(f'Bar {i}', [], f'width: 8px; min-width: 8px; max-width: 8px; flex: 0 0 8px; height: {hgt}px; border-radius: 3px; background-color: {"#55E68B" if g else "rgba(255,255,255,0.14)"};')
                        for i, (hgt, g) in enumerate([(14, 1), (22, 1), (10, 0), (8, 0), (18, 1), (26, 1), (12, 0), (20, 1)])],
         'display: flex; align-items: flex-end; gap: 5px; margin-top: 12px; height: 26px;'),
-], 'width: max-content; left: 2%; bottom: 10%; @media(--mobile){ display: none; }', ['v2-float'])
+], 'width: max-content; left: 0; top: 58%; @media(--mobile){ display: none; }', ['v2-float'])
 
 visual = div('Hero visual', [
     div('Visual halo', [], 'position: absolute; left: 50%; top: 50%; width: 78%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 999px; border: 1px solid rgba(190,255,215,0.10);'),
-    el('e-image', 'Hero product', {'image': {'src': {'id': M['render_evtron']}, 'size': 'full'}},
-       'position: relative; z-index: 1; width: 66%; max-width: 480px; height: auto; margin-left: auto; margin-right: auto; @media(--mobile){ width: 80%; }'),
+    div('Hero stack', [el('e-image', f'Hero product {i}', {'image': {'src': {'id': M[k]}, 'size': 'full'}},
+                          'display: block; width: 100%; height: auto;' + ('' if i == 0 else ' position: absolute; left: 0; top: 0;'))
+                       for i, (k, n, _) in enumerate(HERO_COLOURS)], classes=['v2-stack']),
+    div('Hero swatches', [div(f'Hero sw {i}', [div(f'Hero sw dot {i}', [], f'width: 12px; min-width: 12px; height: 12px; border-radius: 999px; background-color: {c}; border: 1px solid rgba(255,255,255,0.35);'),
+                                               p(f'Hero sw name {i}', n, None, 'font-size: 12.5px; color: #C9D6CE; white-space: nowrap;')],
+                              'display: flex; align-items: center; gap: 8px; width: auto; flex: 0 0 auto; padding: 7px 12px; border-radius: 999px; border: 1px solid rgba(190,255,215,0.14); background-color: rgba(7,17,14,0.45);')
+                          for i, (_, n, c) in enumerate(HERO_COLOURS)],
+        'display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; position: relative; z-index: 2; margin-top: 4px;', ['v2-swatches']),
     float_status, float_price, float_sched,
-], 'position: relative; display: flex; align-items: center; justify-content: center; min-height: 620px; @media(--tablet){ min-height: 600px; max-width: 640px; width: 100%; margin-left: auto; margin-right: auto; } @media(--mobile){ min-height: 460px; }')
+], 'position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 620px; @media(--tablet){ min-height: 600px; max-width: 640px; width: 100%; margin-left: auto; margin-right: auto; } @media(--mobile){ min-height: 460px; }')
 
 copy = div('Hero copy', [
     chip('Hero chip', '● Home EV charging · supplied and fitted'),
     h('Hero title', 'Fast. Smart. Effortless.', 'h1', ['v2-display'], 'margin-top: 28px; font-size: clamp(44px, 5.6vw, 88px);'),
-    p('Hero subtitle', 'One price, fully installed.', ['v2-display'], 'font-weight: 300; color: #A3FFC1; margin-top: 10px; font-size: clamp(30px, 3.4vw, 54px); line-height: 1.05; letter-spacing: -0.035em;'),
-    p('Hero lead', 'Premium home chargers, fitted by qualified electricians at one clear price. See exactly what’s included, then pay in full or spread the cost.', ['v2-lead'], 'margin-top: 28px;'),
-    div('Hero CTAs', [vbtn('CTA primary', 'Choose your charger', '/ev-chargers/'), vbtn('CTA glass', 'How installation works', '/installation/', 'glass')],
+    p('Hero subtitle', 'Three finishes. Pick yours.', ['v2-display'], 'font-weight: 300; color: #A3FFC1; margin-top: 10px; font-size: clamp(30px, 3.4vw, 54px); line-height: 1.05; letter-spacing: -0.035em;'),
+    p('Hero lead', 'A premium 7kW smart charger in Mythos Black, Space Grey or Midnight Green. Installation by a qualified electrician is included, starting with a free remote survey.', ['v2-lead'], 'margin-top: 28px;'),
+    div('Hero CTAs', [vbtn('CTA primary', 'Buy now', PRODUCT + '#configure'), vbtn('CTA glass', 'Explore EV-Tron', PRODUCT, 'glass')],
         'display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px;'),
-    div('Hero chips', [chip('Chip 1', '7kW home charging'), chip('Chip 2', 'Type 2'), chip('Chip 3', 'Pay in instalments')],
+    div('Hero chips', [chip('Chip 1', '7kW home charging'), chip('Chip 2', 'Type 2'), chip('Chip 3', 'Wi-Fi + Bluetooth')],
         'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px;'),
 ], 'display: flex; flex-direction: column; align-items: flex-start; position: relative; z-index: 2;')
 
-rail_items = [('Power', '7kW single-phase'), ('Connector', 'Type 2'), ('Installation', 'Included as standard'), ('Payment', 'In full or instalments')]
+rail_items = [('Power', '7kW single-phase'), ('Connector', 'Type 2'), ('Installation', 'Included'), ('Survey', 'Free and remote')]
 rail = div('Spec rail', [div(f'Rail {i}', [p(f'Rail {i} k', k, ['v2-label']), p(f'Rail {i} v', v, None, 'font-size: 15.5px; font-weight: 600; color: #F5FFF8; margin-top: 6px;')],
                              'padding: 22px 24px; ' + ('' if i == 0 else 'border-left: 1px solid rgba(190,255,215,0.12); @media(--mobile){ border-left: 0; border-top: 1px solid rgba(190,255,215,0.12); }'))
                          for i, (k, v) in enumerate(rail_items)],
@@ -107,16 +116,16 @@ featured = div('Featured EV-Tron', [
     h('Feat name', 'EV-Tron Tethered', 'h3', ['v2-h2'], 'font-size: clamp(30px, 3vw, 44px);'),
     div('Feat colours', [dots('Feat dots', [c for _, c in EVC]), p('Feat colour name', 'Mythos Black · Space Grey · Midnight Green · Crimson Red', None, 'font-size: 13.5px; color: #A1B5A8;')],
         'display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 14px;'),
-    div('Feat specs', [spec('FS1', 'Power', '7kW'), spec('FS2', 'Current', 'Up to 32A'), spec('FS3', 'Cable', '7.5m'),
+    div('Feat specs', [spec('FS1', 'Power', '7kW'), spec('FS2', 'Current', 'Up to 32A'), spec('FS3', 'Cable', 'Up to 10m'),
                        spec('FS4', 'Weather', 'IP65'), spec('FS5', 'Connect', 'Wi-Fi + BT'), spec('FS6', 'Load balancing', 'Built in')],
         'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 24px; @media(--mobile){ grid-template-columns: repeat(2, minmax(0, 1fr)); }'),
-    div('Feat foot', [div('Feat price wrap', [p('Feat price', '£1,295', ['v2-num'], 'font-size: 40px;'), p('Feat price note', 'fully installed', None, 'font-size: 13.5px; color: #A1B5A8; margin-top: 6px;')]),
-                      vbtn('Feat CTA', 'View EV-Tron Tethered', '/ev-chargers/evtron-tethered-ev-charger/')],
+    div('Feat foot', [div('Feat price wrap', [p('Feat price', PRICE, ['v2-num'], 'font-size: 40px;'), p('Feat price note', 'Charger price · cable and extras next', None, 'font-size: 13.5px; color: #A1B5A8; margin-top: 6px;')]),
+                      div('Feat btns', [vbtn('Feat explore', 'Explore', PRODUCT, 'glass'), vbtn('Feat buy', 'Buy now', PRODUCT + '#configure')], 'display: flex; gap: 10px; flex-wrap: wrap;')],
         'display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; margin-top: auto; padding-top: 28px;'),
 ], 'grid-row: span 2; padding: 32px; @media(--tablet){ grid-row: auto; }', ['v2-card'], tag='article')
 
 
-def foxcard(cid, name, mid, meta, colours, cnames, price, url, chips):
+def foxcard(cid, name, mid, meta, colours, cnames, price, url, chips, note='fully installed'):
     return div(cid, [
         div(cid + ' img', [el('e-image', cid + ' image', {'image': {'src': {'id': mid}, 'size': 'large'}}, 'width: 100%; height: auto; position: relative; z-index: 1;')],
             'position: relative; flex: 0 0 38%; max-width: 38%; @media(--mobile){ flex: 0 0 auto; max-width: 70%; margin-left: auto; margin-right: auto; }'),
@@ -125,19 +134,20 @@ def foxcard(cid, name, mid, meta, colours, cnames, price, url, chips):
             h(cid + ' name', name, 'h3', ['v2-h3'], 'font-size: clamp(22px, 2vw, 28px); margin-top: 16px;'),
             p(cid + ' meta', meta, None, MONO + 'font-size: 12.5px; color: #A1B5A8; margin-top: 8px; letter-spacing: 0.04em;'),
             div(cid + ' colours', [dots(cid + ' dots', colours), p(cid + ' cn', cnames, None, 'font-size: 13px; color: #A1B5A8;')], 'display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 14px;'),
-            div(cid + ' foot', [p(cid + ' price', price, ['v2-num'], 'font-size: 30px;'), vbtn(cid + ' cta', 'View', url, 'glass', 'min-height: 46px; padding: 0 22px;')],
+            div(cid + ' foot', [div(cid + ' pw', [p(cid + ' price', price, ['v2-num'], 'font-size: 30px;'), p(cid + ' pn', note, None, 'font-size: 12.5px; color: #A1B5A8; margin-top: 4px;')]),
+                                div(cid + ' btns', [vbtn(cid + ' explore', 'Explore', url, 'glass', 'min-height: 44px; padding: 0 18px;'), vbtn(cid + ' buy', 'Buy', url + '#buy', 'primary', 'min-height: 44px; padding: 0 18px;')], 'display: flex; gap: 8px;')],
                 'display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: auto; padding-top: 20px;'),
         ], 'display: flex; flex-direction: column; flex: 1 1 auto; min-width: 0;'),
     ], 'flex-direction: row; gap: 20px; align-items: center; @media(--mobile){ flex-direction: column; align-items: stretch; }', ['v2-card'], tag='article')
 
 
 showcase = v2sec('V2 range', [
-    v2head('Range head', 'The range', 'Three chargers. One clear, installed price.', 'Every price includes a standard installation: up to 10 metres of cable, a dedicated EV consumer unit with surge protection, load balancing and certification.'),
+    v2head('Range head', 'The range', 'EV-Tron, plus solar-ready chargers from Fox ESS.', 'EV-Tron is our own charger. Got solar panels? We also supply and install Fox ESS chargers, which can work with your solar system.'),
     div('Range grid', [featured,
-        foxcard('Fox tethered', 'Fox Tethered', M['render_foxt'], '7.3kW · Type 2 · Tethered', ['#1E2024', '#6FB7B5', '#9C86C9', '#D7A3AE'], 'Black · Blue · Purple · Pink', '£995', '/ev-chargers/fox-tethered-solar-ev-charger/', ['Solar-compatible']),
-        foxcard('Fox untethered', 'Fox Untethered', M['render_foxu'], '7.3kW · Type 2 socket · Untethered', ['#ECEDEA'], 'White', '£945', '/ev-chargers/fox-untethered-solar-ev-charger/', ['Solar-compatible', 'Lowest price'])],
+        foxcard('Fox tethered', 'Fox ESS Tethered', M['render_foxt'], '7.3kW · Type 2 · Tethered', ['#1E2024', '#6FB7B5', '#9C86C9', '#D7A3AE'], 'Black · Blue · Purple · Pink', '£995', '/ev-chargers/fox-tethered-solar-ev-charger/', ['Fox ESS · partner brand', 'Solar-compatible']),
+        foxcard('Fox untethered', 'Fox ESS Untethered', M['render_foxu'], '7.3kW · Type 2 socket · Untethered', ['#ECEDEA'], 'White', '£945', '/ev-chargers/fox-untethered-solar-ev-charger/', ['Fox ESS · partner brand', 'Solar-compatible'])],
         'display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 20px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }'),
-    p('Range note', 'Fox solar charging depends on model and system configuration.', None, MONO + 'font-size: 11px; color: rgba(161,181,168,0.75); margin-top: 18px; letter-spacing: 0.04em;'),
+    p('Range note', 'Fox ESS is an independent brand, supplied and installed by EV-Tron. Solar charging depends on the model and your system.', None, MONO + 'font-size: 11px; color: rgba(161,181,168,0.75); margin-top: 18px; letter-spacing: 0.04em;'),
 ])
 
 # ================= 3. Benefits Bento =================
@@ -204,9 +214,29 @@ tech = v2sec('V2 tech', [div('Tech grid', [
     tech_visual,
 ], 'display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: 56px; align-items: center; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 40px; }')])
 
+# ================= 5. The process (replaces V1 "How it works") =================
+STEPS = [('fa-solid fa-sliders', 'Choose and order', 'Pick your colour, cable length and any extras online. We’ll call you to confirm the details.', 'Online, in a few clicks'),
+         ('fa-solid fa-mobile-screen', 'Free remote survey', 'Send photos or a short video, or talk us through it by phone. We confirm your installation and agree any extras first.', 'Phone, photos or video'),
+         ('fa-solid fa-bolt', 'Installed and ready', 'A qualified electrician fits, tests and certifies your charger, then sets up the app with you.', 'Installed within 10 days of survey approval')]
+process = v2sec('V2 process', [
+    v2head('Proc head', 'The process', 'From order to first charge, in three steps.', 'No home visit needed to get started. We check everything remotely, then a qualified electrician fits your charger.', center=True),
+    div('Proc track', [
+        div('Proc line', [div('Proc fill', [], 'width: 0; height: 100%; border-radius: 999px; background-color: #55E68B;')],
+            'position: absolute; left: 32px; right: 32px; width: auto; top: 14px; height: 2px; border-radius: 999px; background-color: rgba(190,255,215,0.14); @media(--tablet){ display: none; }'),
+        div('Proc grid', [div(f'Step {i}', [
+            p(f'Step {i} n', f'0{i + 1}', None, MONO + 'font-size: 64px; line-height: 1; font-weight: 500; letter-spacing: -0.04em; color: rgba(163,255,193,0.18);'),
+            itile(f'Step {i} icon', ic),
+            h(f'Step {i} t', t, 'h3', ['v2-h3'], 'margin-top: 20px;'),
+            p(f'Step {i} d', d, ['v2-body'], 'margin-top: 8px;'),
+            p(f'Step {i} m', m, None, MONO + 'font-size: 12px; letter-spacing: 0.04em; color: #A3FFC1; margin-top: auto; padding-top: 24px;'),
+        ], 'gap: 0;', ['v2-card', 'v2-step']) for i, (ic, t, d, m) in enumerate(STEPS)],
+            'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }'),
+    ], 'padding-top: 44px; @media(--tablet){ padding-top: 0; }', ['v2-proc']),
+])
+
 # ================= 7. Trust =================
 facts = [('fa-solid fa-mobile-screen', 'Free remote survey', 'By phone, photos or video, so there are no unnecessary home visits.'),
-         ('fa-solid fa-sterling-sign', 'One installed price', 'Any extras are agreed before work starts. No surprises.'),
+         ('fa-solid fa-sterling-sign', 'Clear pricing', 'Your options are priced up front, and any extra work is agreed before it starts.'),
          ('fa-solid fa-screwdriver-wrench', 'Qualified electricians', 'Our network of experienced, qualified electricians fits every charger.'),
          ('fa-solid fa-file-circle-check', 'Certified on completion', 'Electrical installation certificate and DNO notification handled for you.'),
          ('fa-solid fa-headset', 'One point of contact', 'Installation, technical help and aftercare all go through EV-Tron.'),
@@ -214,7 +244,7 @@ facts = [('fa-solid fa-mobile-screen', 'Free remote survey', 'By phone, photos o
 trust = v2sec('V2 trust', [div('Trust grid', [
     div('Trust statement', [chip('Trust chip', 'Honest by design'),
                             h('Trust title', 'Straightforward from order to aftercare.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
-                            p('Trust lead', 'We publish the installed price, spell out what’s included, and agree any extras with you first.', ['v2-lead'], 'margin-top: 18px;'),
+                            p('Trust lead', 'We publish our prices, spell out what’s included, and agree any extras with you first.', ['v2-lead'], 'margin-top: 18px;'),
                             div('Trust meta', [p('TM1', 'Covering England · UK-wide expansion planned', None, MONO + 'font-size: 12px; color: #A3FFC1; letter-spacing: 0.04em;'),
                                                p('TM2', 'Monday to Saturday · 8:30am to 6:30pm', None, MONO + 'font-size: 12px; color: #A1B5A8; letter-spacing: 0.04em; margin-top: 8px;')],
                                 'margin-top: auto; padding-top: 40px; border-top: 1px solid rgba(190,255,215,0.12);')],
@@ -224,7 +254,7 @@ trust = v2sec('V2 trust', [div('Trust grid', [
         'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
 ], 'display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 20px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }')])
 
-X = div('Home V2', [hero, showcase, bento, tech, trust], 'background-color: #07110E;', tag='main')
+X = div('Home V2', [hero, showcase, bento, tech, process, trust], 'background-color: #07110E;', tag='main')
 
 if __name__ == '__main__':
     r = wp.ability('elementor/build-composition', {'post_id': PID, 'xml_structure': X, 'element_config': cfg, 'style': st, 'classes': cl, 'mode': 'replace_children'})
@@ -233,8 +263,11 @@ if __name__ == '__main__':
     # Append V1's remaining sections (unchanged for now) into the V2 <main>, after the new hero
     v1 = json.loads(wp.req('wp/v2/pages/95?context=edit')['meta']['_elementor_data'])
     v2 = json.loads(wp.req(f'wp/v2/pages/{PID}?context=edit')['meta']['_elementor_data'])
-    new = v2[0]['elements']            # hero, showcase, bento, tech, trust (trust built last, see below)
-    v1s = v1[0]['elements']            # 0 hero, 1 chargers, 2 how, 3 costs, 4 faqs, 5 closing
-    v2[0]['elements'] = new[:4] + [v1s[2], v1s[3], new[4], v1s[4], v1s[5]]
-    print('assembled', len(v2[0]['elements']), wp.req(f'wp/v2/pages/{PID}', 'POST', {'meta': {'_elementor_data': json.dumps(v2)}}).get('id'))
+    new = v2[0]['elements']            # hero, showcase, bento, tech, process, trust
+    v1s = v1[0]['elements']            # 0 hero, 1 chargers, 2 how (replaced by process), 3 costs, 4 faqs, 5 closing
+    v2[0]['elements'] = new[:5] + [v1s[3], new[5], v1s[4], v1s[5]]
+    raw = json.dumps(v2)
+    for a, b in [('with the reasons and the installed price', 'with the reasons and the price')]:   # copy tweaks for kept V1 sections
+        raw = raw.replace(a, b)
+    print('assembled', len(v2[0]['elements']), wp.req(f'wp/v2/pages/{PID}', 'POST', {'meta': {'_elementor_data': raw}}).get('id'))
     wp.req('wp-abilities/v1/abilities/elementor/clear-cache/run', 'DELETE')

@@ -26,6 +26,13 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 .admin-bar .elementor-location-header{top:32px}
 @media (max-width:782px){.admin-bar .elementor-location-header{top:46px}}
 @media (max-width:600px){.admin-bar .elementor-location-header{top:0}}
+/* Header utility row (sales@ + USPs): collapses once the page scrolls; one rotating USP on phones */
+.ev-util{max-height:56px;overflow:hidden;transition:max-height .35s ease,padding .35s ease,opacity .25s ease,border-color .35s ease}
+header.ev-scrolled .ev-util{max-height:0;padding-top:0!important;padding-bottom:0!important;opacity:0;border-bottom-color:transparent!important}
+@media(max-width:1279px){.ev-usp:nth-child(4){display:none!important}}
+@media(max-width:1024px){.ev-usp:nth-child(3){display:none!important}}
+@media(max-width:767px){.ev-usp{display:none!important}.ev-usp.on{display:flex!important;animation:evusp .45s ease}}
+@keyframes evusp{from{opacity:0;transform:translate3d(0,4px,0)}}
 /* Astra scroll-to-top: small, quiet glass circle */
 #ast-scroll-top{width:44px!important;height:44px!important;border-radius:999px!important;background:rgba(12,25,20,.72)!important;color:#F2EFE9!important;
   border:1px solid rgba(190,255,215,.2)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);right:20px!important;bottom:20px!important;display:flex;align-items:center;justify-content:center}
