@@ -11,10 +11,12 @@ html.ev-v2 main section{background-color:var(--v2-bg)!important}
 /* ---------- Floating glass navbar ---------- */
 html.ev-v2 .elementor-location-header{position:fixed!important;left:0;right:0;top:16px;z-index:100;pointer-events:none}
 html.ev-v2.admin-bar-on .elementor-location-header{top:48px}
-html.ev-v2 header.elementor-element{pointer-events:auto;width:calc(100% - 32px);max-width:1408px;margin:0 auto;border-radius:20px!important;
+html.ev-v2 header.elementor-element{pointer-events:auto;width:calc(100% - 32px);max-width:1408px;margin:0 auto;border-radius:20px!important;isolation:isolate;
   background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03))!important;background-color:rgba(7,17,14,.55)!important;
-  -webkit-backdrop-filter:blur(22px) saturate(160%);backdrop-filter:blur(22px) saturate(160%);
   border:1px solid var(--v2-border)!important;box-shadow:0 18px 50px -20px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.08);transition:background-color .3s ease,box-shadow .3s ease,transform .3s ease}
+/* Blur lives on a pseudo-element: backdrop-filter on the header itself would trap the fixed cart drawer inside the pill */
+html.ev-v2 header.elementor-element::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;
+  -webkit-backdrop-filter:blur(22px) saturate(160%);backdrop-filter:blur(22px) saturate(160%)}
 html.ev-v2 header.elementor-element > div{min-height:64px!important;padding-left:20px!important;padding-right:12px!important}
 html.ev-v2 header.ev-scrolled{background-color:rgba(7,17,14,.78)!important;box-shadow:0 20px 60px -20px rgba(0,0,0,.75),inset 0 1px 0 rgba(255,255,255,.08)}
 html.ev-v2 header .elementor-nav-menu--main .elementor-item{color:var(--v2-text2)!important;border-radius:999px;transition:color .2s ease,background-color .2s ease}
