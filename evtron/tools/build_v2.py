@@ -267,7 +267,10 @@ if __name__ == '__main__':
     v1s = v1[0]['elements']            # 0 hero, 1 chargers, 2 how (replaced by process), 3 costs, 4 faqs, 5 closing
     v2[0]['elements'] = new[:5] + [v1s[3], new[5], v1s[4], v1s[5]]
     raw = json.dumps(v2)
-    for a, b in [('with the reasons and the installed price', 'with the reasons and the price')]:   # copy tweaks for kept V1 sections
+    P = 'https://evtron.co.uk/ev-chargers/evtron-tethered-ev-charger/'
+    for a, b in [('with the reasons and the installed price', 'with the reasons and the price'),   # copy and link tweaks for kept V1 sections
+                 ('"value": "Get a quote"', '"value": "Request installation"'), ('https://evtron.co.uk/get-a-quote/', P + '#details'),
+                 ('"value": "Compare all chargers"', '"value": "Explore EV-Tron"'), ('"value": "https://evtron.co.uk/ev-chargers/"', '"value": "' + P + '"')]:
         raw = raw.replace(a, b)
     print('assembled', len(v2[0]['elements']), wp.req(f'wp/v2/pages/{PID}', 'POST', {'meta': {'_elementor_data': raw}}).get('id'))
     wp.req('wp-abilities/v1/abilities/elementor/clear-cache/run', 'DELETE')
