@@ -52,7 +52,7 @@ python3 yoast.py                                                        # push Y
 ```
 - `el.py` = widget helpers (C/SECTION/H/T/BTN/IBOX/CARD/SERVICE_CARD (Pro CTA widget)/FAQ (accordion + FAQ schema)/FORM (Pro form)/…). Element IDs are seeded per page, so rebuilds keep the same IDs.
 - `content.py` = all service + location copy (signs, steps, benefits, galleries, FAQs, neighbourhoods).
-- After pushing, `build.py` calls MCP `elementor/clear-cache`; CSS is regenerated on the next page view.
+- After pushing, `build.py` calls MCP `elementor/clear-cache` (**required** – Elementor caches rendered HTML, so without it the live page keeps showing old content; `mcp.sh` now auto-reconnects when the MCP session expires); CSS is regenerated on the next page view.
 - Elementor lazy-loads background images and gallery thumbnails. Screenshots need a slow scroll (shot.js already does this).
 
 ## SEO done
@@ -70,4 +70,4 @@ python3 yoast.py                                                        # push Y
 6. The "Hello world!" post and the draft Privacy Policy page are still the WordPress defaults. A privacy policy page should be written before launch.
 7. WordPress "Search engine visibility" was not changed. Check it at launch.
 
-8. **Underpinning photos:** no real underpinning project photos were supplied, so its gallery is titled "Foundation & Basement Work" and uses general excavation/basement photos. Replace with real underpinning photos when the client sends them. The Projects page has no Underpinning filter tab yet for the same reason.
+8. **Underpinning media:** real client footage (4 WhatsApp videos, Nov 19). Stills `up_*` (media 125–131) were pulled from the sharpest video frames (768px – fine for cards/gallery). Hero = 10s loop `up_video` (media 132). The Projects page has an Underpinning filter tab. The client also sent 3 underpinning photos as pasted images; they weren't received as files, so they still need adding.

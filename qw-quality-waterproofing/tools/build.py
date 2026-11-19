@@ -15,6 +15,7 @@ IG = 'https://www.instagram.com/qualitywaterproofinginc'
 
 # ================= shared sections =================
 def hero(eyebrow, h1, lead, bg=None, video=False, form=True, trust=None, minh=640):
+    vkey = video if isinstance(video, str) else 'hero_video'
     trust = trust or ['10+ Years Experience', 'Free On-Site Estimates', 'Residential & Commercial']
     left = C([
         EYE(eyebrow, color='qwgoldlt'),
@@ -35,7 +36,7 @@ def hero(eyebrow, h1, lead, bg=None, video=False, form=True, trust=None, minh=64
              background_overlay_color='rgba(10,14,23,0.86)', background_overlay_color_b='rgba(10,14,23,0.40)',
              background_overlay_gradient_angle=px(90, 'deg'), background_overlay_gradient_angle_mobile=px(180, 'deg'), background_overlay_opacity=px(1))
     if video:
-        s.update(background_background='video', background_video_link=MEDIA['hero_video']['url'], background_play_on_mobile='yes',
+        s.update(background_background='video', background_video_link=MEDIA[vkey]['url'], background_play_on_mobile='yes',
                  background_video_fallback=img(bg), background_privacy_mode='')
     else:
         s.update(background_background='classic', background_image=img(bg), background_position='center center', background_size='cover')
@@ -269,12 +270,12 @@ def service_page(slug):
     benefits = SECTION(HEAD('Benefits', f'Why Choose Our <span class="qw-hl">{S["name"]}</span>', align='center')
                        + [C([IBOX(i, t, d, view='stacked') for i, t, d in S['benefits']], 'Benefits Grid', grid=3, grid_t=2, grid_gaps=gap(36, 40), _margin=dims(26, 0, 0, 0))], 'Benefits', bg='white')
     return [
-        hero(S['name'] + ' · Toronto & GTA', S['h1'], S['lead'], bg=S['hero']),
+        hero(S['name'] + ' · Toronto & GTA', S['h1'], S['lead'], bg=S['hero'], video=S.get('hero_video', False)),
         split(S['intro_h'], S['intro'], S['intro_img'], S['intro_img2'], eyebrow=S['name'], extra=[CTA_BTNS(dark=False)]),
         signs,
         process(S['steps'], f'Our {S["name"]} <span class="qw-hl">Process</span>'),
         benefits,
-        gallery(S['gallery'], S.get('gallery_h') or f'{S["name"]} <span class="qw-hl">Projects</span>', 'Project Gallery', cols=4, bg='light'),
+        gallery(S['gallery'], S.get('gallery_h') or f'{S["name"]} <span class="qw-hl">Projects</span>', 'Project Gallery', cols=S.get('gallery_cols', 4), bg='light'),
         areas_section(),
         faq_section(S['faq'], side_img=S['gallery'][1]),
         form_section(),
@@ -330,6 +331,7 @@ def projects():
         g('Interior Waterproofing', SERVICES['interior-waterproofing']['gallery'] + ['int_orange']),
         g('Sump Pumps', ['sump_basin', 'sump_system', 'sump_pit']),
         g('Crack Repair', SERVICES['foundation-crack-repair']['gallery']),
+        g('Underpinning', ['up_pins_numbered', 'up_pin_forms', 'up_pin_excavated', 'up_shoring', 'up_footing_rebar', 'up_footing_form', 'up_basement_dig']),
         g('Interlocking', SERVICES['interlocking']['gallery'] + ['il_live_deck'])],
         show_all_galleries='yes', show_all_galleries_label='All Projects', gallery_layout='grid', columns=4, columns_tablet=3, columns_mobile=2, gap=px(12), gap_mobile=px(8),
         aspect_ratio='1:1', thumbnail_image_size='medium_large', link_to='file', open_lightbox='yes', image_hover_animation='zoom-in', overlay_background='yes',
