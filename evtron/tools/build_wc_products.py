@@ -1,7 +1,7 @@
 """WooCommerce catalogue (client info + 19 Nov feedback). Idempotent: finds by slug/SKU before creating.
 - EV-Tron Tethered: variable product, Colour x Cable length (5m / 7.5m free upgrade / 10m +£80), base £595.
 - Add-ons (hidden from the catalogue, bought via the configurator): 5-year warranty, CT clamp, black post, steel post.
-- Fox ESS Tethered / Untethered: partner brand, drafts until their pages are designed.
+- Fox ESS Tethered / Untethered: partner brand, published 21 Nov 2026 (general product template).
 Prices are what the client gave; the client is not VAT registered, so products are tax_status none for now.
 Run: EVTRON_WP_USER=<admin login> python3 build_wc_products.py"""
 import json
@@ -85,11 +85,11 @@ for c, k, cs in COLS:
 r = wp.req(f"{W}products/{evt['id']}/variations/batch", 'POST', batch)
 print('variations', len(r.get('create', [])), 'created', len(r.get('update', [])), 'updated')
 
-# ---------- Fox ESS (partner brand, drafts) ----------
+# ---------- Fox ESS (partner brand) ----------
 fox_note = '<p>Fox ESS is an independent brand, supplied and installed by EV-Tron. Solar charging depends on the model and your solar system.</p>'
 foxt = product('fox-tethered-solar-ev-charger', {
-    'name': 'Fox ESS Tethered Solar EV Charger', 'type': 'variable', 'status': 'draft', 'tax_status': 'none', 'categories': [{'id': cat_ev['id']}],
-    'short_description': '<p>Solar-compatible 7kW tethered Type 2 charger from Fox ESS. Price includes standard installation.</p>' + fox_note,
+    'name': 'Fox ESS Tethered Solar EV Charger', 'type': 'variable', 'status': 'publish', 'tax_status': 'none', 'categories': [{'id': cat_ev['id']}],
+    'short_description': '<p>Solar-compatible 7kW tethered Type 2 charger from Fox ESS, an independent brand we supply and install. Price includes a standard installation.</p>',
     'images': [{'id': M['render_foxt']}], 'meta_data': ASTRA,
     'attributes': [{'id': att_col['id'], 'variation': True, 'visible': True, 'options': ['Black', 'Blue', 'Purple', 'Pink']}],
     'default_attributes': [{'id': att_col['id'], 'option': 'Black'}]})
@@ -101,9 +101,9 @@ for c in ['Black', 'Blue', 'Purple', 'Pink']:
     (batch['update'].append({'id': have[sku], **v}) if sku in have else batch['create'].append(v))
 wp.req(f"{W}products/{foxt['id']}/variations/batch", 'POST', batch)
 foxu = product('fox-untethered-solar-ev-charger', {
-    'name': 'Fox ESS Untethered Solar EV Charger', 'type': 'simple', 'status': 'draft', 'sku': 'FOX-A-UNTETH-WHT', 'regular_price': '945', 'tax_status': 'none',
+    'name': 'Fox ESS Untethered Solar EV Charger', 'type': 'simple', 'status': 'publish', 'sku': 'FOX-A-UNTETH-WHT', 'regular_price': '945', 'tax_status': 'none',
     'categories': [{'id': cat_ev['id']}], 'images': [{'id': M['render_foxu']}], 'meta_data': ASTRA,
-    'short_description': '<p>Solar-compatible 7kW untethered Type 2 socket charger from Fox ESS, in white. Price includes standard installation.</p>' + fox_note})
+    'short_description': '<p>Solar-compatible 7kW untethered Type 2 socket charger from Fox ESS, an independent brand we supply and install. In white. Price includes a standard installation.</p>'})
 print('fox', foxt['id'], foxu['id'])
 
 C.update({'wc_cat_ev': cat_ev['id'], 'wc_cat_acc': cat_acc['id'], 'wc_evtron': evt['id'], 'wc_foxt': foxt['id'], 'wc_foxu': foxu['id'], 'wc_addons': addon_ids})

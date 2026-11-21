@@ -34,10 +34,11 @@ UK home EV charger brand. Sells chargers **supplied and fitted** at fixed VAT-in
 - Client answers received 18 Nov 2026: see docs/client-answers.md (Crimson Red, install package, £15/m extra cable, England coverage, not VAT registered, Mon–Sat 8:30–6:30).
 - **V2 glassmorphism is FINAL** (client decision 19 Nov 2026): page 141, front page. V1 (page 95) and V3 Simple (page 182) set to draft, kept for reference. build_v2.py appends V1's how/costs/faqs/matcher sections from page 95.
 
-- **Selling (19 Nov 2026):** only **EV-Tron Tethered** is on sale. Fox ESS (partner brand, solar-compatible) products exist as WooCommerce **drafts**, hidden from menus and pages until the client confirms Fox pricing and colours.
+- **Selling (21 Nov 2026):** EV-Tron Tethered (own brand, configurator page) plus **Fox ESS Tethered £995 / Untethered £945** (partner brand, solar-compatible, installed prices) published on the general product template, in the main menu and footer. Homepage stays EV-Tron-only; solar FAQs point to Fox. Fox colours and a charger-only Fox price still to confirm.
 - **Purchase paths:** charger only = online (configurator → WooCommerce basket → checkout, £595 / 10m £675, add-ons as hidden products); supply and install = callback form (atomic e-form → submissions + email to sales@), then remote survey and quote. CT clamp is a separate £15 add-on.
 - **WooCommerce:** product base `/ev-chargers/` (set by the user in Permalinks). Products: EV-Tron 254 (12 variations), add-ons 250–253, Fox 267/272 (drafts). Templates: EV-Tron 273 (configurator, snippet 07), general product 300-ish (`tpl_product_generic` in tools/created.json). Shop pages skin: snippet 08.
 - Menus trimmed to pages the site will have (no compare, accessories, tariffs, guides or get-a-quote pages).
+- **Pages (21 Nov 2026, tools/build_pages.py):** Installation (request form → sales@), FAQs, Contact (form → info@), Warranty, Grants, and legal pages (Terms, Privacy, Cookies, Cancellations) that render `docs/legal/<slug>.md` once the user supplies the text. V2 styles (snippet 145) now load site-wide.
 
 ## Open
 Batch 2 business details (brief-summary §9). EV-TRONX smart-charging compliance. Fox exact SKUs.

@@ -277,7 +277,7 @@ if __name__ == '__main__':
               ('Compare all chargers', 'Explore EV-Tron'), ('https://evtron.co.uk/ev-chargers/', P),
               ('All three chargers use Type 2', 'EV-Tron uses Type 2'),
               ('The two Fox chargers can use surplus solar power to charge your car. What you need depends on your inverter, and we’ll confirm it before you order.',
-               'EV-Tron isn’t designed to charge from solar panels. If you have solar, email sales@evtron.co.uk and we’ll talk you through your options.')]
+               'EV-Tron isn’t designed to charge from solar panels. If you have solar, our Fox ESS chargers can use surplus solar power, depending on the model and your system. Email sales@evtron.co.uk and we’ll check what suits your set-up.')]
 
     def tweak(o):
         if isinstance(o, dict): return {k: tweak(v) for k, v in o.items()}

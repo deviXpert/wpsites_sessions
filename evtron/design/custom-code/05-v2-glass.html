@@ -108,6 +108,15 @@ html.ev-v2 header.elementor-element > .ev-util{min-height:0!important}
 html.ev-v2 header.ev-scrolled > .ev-util{padding-top:0!important;padding-bottom:0!important}
 @media(max-width:1024px){html.ev-v2 .v2-hero > div{margin-top:44px}}
 @media(max-width:767px){html.ev-v2 .ev-util{padding-top:5px!important;padding-bottom:5px!important}html.ev-v2 .ev-usp,html.ev-v2 .ev-usp p{font-size:12px!important}}
+/* ---------- Forms (atomic e-form with class v2-form) ---------- */
+html.ev-v2 .v2-form input:not([type=checkbox]),html.ev-v2 .v2-form select,html.ev-v2 .v2-form textarea{background-color:rgba(7,17,14,.6)!important;color:#F5FFF8!important;border:1px solid #6A7688!important;border-radius:12px!important;box-shadow:none!important}
+html.ev-v2 .v2-form input:not([type=checkbox]):focus,html.ev-v2 .v2-form select:focus,html.ev-v2 .v2-form textarea:focus{border-color:#55E68B!important;outline:2px solid rgba(85,230,139,.35)!important;outline-offset:1px}
+html.ev-v2 .v2-form ::placeholder{color:#7F8F86}
+html.ev-v2 .v2-form select option{background:#0C1914;color:#F5FFF8}
+html.ev-v2 .v2-form input[type=checkbox]{accent-color:#55E68B}
+/* Shop pages (Astra content area) sit below the floating header */
+html.ev-v2 body.woocommerce-page:not(.single-product) #primary{padding-top:200px!important}
+@media(max-width:767px){html.ev-v2 body.woocommerce-page:not(.single-product) #primary{padding-top:170px!important}}
 /* ---------- Hero: three finishes, cross-fading ---------- */
 html.ev-v2 .v2-stack img{transition:opacity 1.1s ease}
 html.ev-v2 .v2-stack.js img{opacity:0}
@@ -197,6 +206,8 @@ document.addEventListener('DOMContentLoaded',function(){
   function keptPanels(){allSecs.forEach(function(sec){if(sec.classList.contains('v2-sec')||sec.classList.contains('v2-hero'))return;
     sec.querySelectorAll('*').forEach(function(el){var bg=getComputedStyle(el).backgroundColor;if((bg==='rgb(17, 22, 29)')&&!el.parentElement.closest('.v2-kept-panel'))el.classList.add('v2-kept-panel')})})}
   keptPanels();setTimeout(keptPanels,700);
+  /* Anchor for 'Request installation' links: the section holding the first form */
+  var vf=document.querySelector('.v2-form');if(vf){var fs=vf.closest('section');if(fs&&!fs.id)fs.id='request'}
   /* Three finishes: cross-fade, swatches in sync (click to pick) */
   var stack=hero.querySelector('.v2-stack'),sws=[].slice.call(hero.querySelectorAll('.v2-swatches > div'));
   if(stack){var ims=[].slice.call(stack.querySelectorAll('img'));if(ims.length>1){stack.classList.add('js');var cur=0,timer=null;

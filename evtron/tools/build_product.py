@@ -243,7 +243,7 @@ FAQ = [('Will it work with my car?', 'EV-Tron uses a Type 2 connector, which mos
        ('Can I control it from my phone?', 'Yes. The charger connects over Wi-Fi or Bluetooth to the WeGoodCharger app, so you can start, stop, schedule and monitor charging. We set it up with you on the day.'),
        ('Do I need a home visit before installation?', 'No. We start with a free remote survey by phone, photos or video. Any extra work is agreed with you before installation.'),
        ('How soon can it be installed?', 'Most installations happen within 10 days of survey approval, and in some areas in as little as 48 to 96 hours, subject to availability.'),
-       ('Does it work with solar panels?', 'EV-Tron isn’t designed to charge from solar panels. If you have solar, email sales@evtron.co.uk and we’ll talk you through your options.'),
+       ('Does it work with solar panels?', 'EV-Tron isn’t designed to charge from solar panels. If you have solar, our Fox ESS chargers can use surplus solar power, depending on the model and your system. Email sales@evtron.co.uk and we’ll check what suits your set-up.'),
        ('What warranty do I get?', 'Every EV-Tron comes with a 3-year warranty. You can extend it to 5 years for £89.99 when you order.')]
 items = []
 for i, (q, a) in enumerate(FAQ):

@@ -48,5 +48,16 @@
  "tpl_product_evtron": 273,
  "snippet_woo": 291,
  "about": 294,
- "tpl_product_generic": 299
+ "tpl_product_generic": 299,
+ "pages": {
+  "installation": 315,
+  "faqs": 318,
+  "contact": 321,
+  "warranty": 324,
+  "ev-charger-grants": 327,
+  "terms": 330,
+  "privacy-policy": 333,
+  "cookie-policy": 336,
+  "cancellations-returns": 339
+ }
 }
