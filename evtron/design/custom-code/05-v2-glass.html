@@ -132,6 +132,9 @@ html.ev-v2 .v2-fnav button{min-height:46px;padding:0 22px;border-radius:999px;fo
 html.ev-v2 .v2-fback{background:transparent!important;color:#C9D6CE!important;border:1px solid rgba(190,255,215,.22)!important}
 html.ev-v2 .v2-fnext{background:linear-gradient(135deg,#72F3A0,#28B967)!important;color:#06150C!important;border:0!important}
 @media (prefers-reduced-motion:reduce){html.ev-v2 .v2-steps.js .v2-fstep.on{animation:none}}
+/* Legal text: readable measure, bold in white, unfinished placeholders highlighted for review */
+html.ev-v2 .v2-legal strong{color:#F5FFF8;font-weight:600}
+html.ev-v2 .v2-ph{background:#4A3B00;color:#FFE27A;padding:1px 6px;border-radius:5px;font-family:"IBM Plex Mono",monospace;font-size:.86em}
 /* Shop pages (Astra content area) sit below the floating header */
 html.ev-v2 body.woocommerce-page:not(.single-product) #primary{padding-top:200px!important}
 @media(max-width:767px){html.ev-v2 body.woocommerce-page:not(.single-product) #primary{padding-top:170px!important}}
@@ -207,6 +210,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var root=document.documentElement;root.classList.add('ev-v2');
   if(document.body.classList.contains('admin-bar'))root.classList.add('admin-bar-on');
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* Legal pages: highlight [PLACEHOLDER: …] so missing details are obvious until filled in */
+  [].forEach.call(document.querySelectorAll('.v2-legal p, .v2-legal h2'),function(el){if(/\[PLACEHOLDER/.test(el.innerHTML))el.innerHTML=el.innerHTML.replace(/\[PLACEHOLDER:([^\]]*)\]/g,'<mark class="v2-ph">$1</mark>')});
   /* Step-by-step forms */
   [].forEach.call(document.querySelectorAll('.v2-steps'),function(f){
     var steps=[].slice.call(f.querySelectorAll('.v2-fstep'));if(steps.length<2)return;

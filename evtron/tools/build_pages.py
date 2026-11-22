@@ -299,10 +299,9 @@ def page_warranty():
                            step_cards('WA steps', [('fa-solid fa-envelope', 'Get in touch', 'Email info@evtron.co.uk with your order number and a short description.'),
                                                    ('fa-solid fa-camera', 'We diagnose it', 'Photos or a short video help us find the cause quickly, often remotely.'),
                                                    ('fa-solid fa-screwdriver-wrench', 'We put it right', 'Depending on what’s needed, we fix it remotely, repair it or replace it.')])]),
-        v2sec('WA terms', [div('WA t card', [itile('WA t icon', 'fa-solid fa-file-lines'),
-                                             div('WA t txt', [h('WA t t', 'Full warranty terms', 'h3', ['v2-h3']),
-                                                              p('WA t d', 'Our full warranty terms, including what is and isn’t covered, are being finalised and will be published on this page before launch.', ['v2-body'], 'margin-top: 8px;')])],
-                                   'display: flex; gap: 20px; align-items: flex-start; padding: 32px;', ['v2-glass'])]),
+        v2sec('WA terms', [div('WA t wrap', [chip('WA t chip', 'Warranty terms'), h('WA t title', 'The details.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
+                                             div('WA t body', md_blocks('../docs/legal/warranty-terms.md', 'WT'), 'padding: 8px 48px 44px; margin-top: 28px; max-width: 920px; @media(--mobile){ padding: 4px 22px 28px; }', ['v2-glass', 'v2-legal'])],
+                               'display: flex; flex-direction: column; align-items: flex-start;')]),
     ]
 
 
@@ -389,22 +388,33 @@ def page_installers():
 LEGAL = {'terms': 'Terms and conditions', 'privacy-policy': 'Privacy policy', 'cookie-policy': 'Cookie policy', 'cancellations-returns': 'Cancellations and returns'}
 
 
+def md_blocks(src, pre):
+    """Tiny Markdown renderer for legal text: '#'/'##' headings, '- ' bullet blocks, paragraphs, **bold**."""
+    import re
+    bold = lambda t: re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
+    blocks, n = [], 0
+    for raw in open(src).read().split('\n\n'):
+        t = raw.strip()
+        if not t: continue
+        n += 1
+        if t.startswith('#'):
+            blocks.append(h(f'{pre} b{n}', t.lstrip('#').strip(), 'h2', ['v2-h3'], 'margin-top: 36px; font-size: 22px;'))
+        elif all(l.strip().startswith('- ') for l in t.splitlines()):
+            items = [bold(l.strip()[2:]) for l in t.splitlines()]
+            blocks.append(div(f'{pre} b{n}', [div(f'{pre} b{n} {i}', [div(f'{pre} b{n} {i} d', [], 'width: 6px; height: 6px; min-width: 6px; flex: 0 0 6px; border-radius: 999px; background-color: #55E68B; margin-top: 10px;'),
+                                                                     p(f'{pre} b{n} {i} p', it, None, 'font-size: 16px; color: #DCE8E0; line-height: 1.6;')],
+                                                  'display: flex; gap: 14px; align-items: flex-start;') for i, it in enumerate(items)],
+                              'display: flex; flex-direction: column; gap: 10px; margin-top: 16px;'))
+        else:
+            blocks.append(p(f'{pre} b{n}', bold(' '.join(t.splitlines())), ['v2-body'], 'margin-top: 14px; font-size: 16.5px; line-height: 1.75;'))
+    return blocks
+
+
 def page_legal(slug):
     title = LEGAL[slug]
     src = f'../docs/legal/{slug}.md'
     if os.path.exists(src):
-        blocks, n = [], 0
-        for raw in open(src).read().split('\n\n'):
-            t = raw.strip()
-            if not t: continue
-            n += 1
-            if t.startswith('#'):
-                blocks.append(h(f'LG b{n}', t.lstrip('#').strip(), 'h2', ['v2-h3'], 'margin-top: 32px; font-size: 22px;'))
-            elif all(l.strip().startswith('- ') for l in t.splitlines()):
-                blocks.append(ticks(f'LG b{n}', [l.strip()[2:] for l in t.splitlines()], '16px'))
-            else:
-                blocks.append(p(f'LG b{n}', ' '.join(t.splitlines()), ['v2-body'], 'margin-top: 14px; font-size: 16.5px; line-height: 1.75;'))
-        body = div('LG body', blocks, 'padding: 40px; max-width: 900px; @media(--mobile){ padding: 22px; }', ['v2-glass'])
+        body = div('LG body', md_blocks(src, 'LG'), 'padding: 40px 48px 48px; max-width: 920px; @media(--mobile){ padding: 22px; }', ['v2-glass', 'v2-legal'])
     else:
         body = div('LG body', [itile('LG icon', 'fa-solid fa-file-lines'),
                                div('LG txt', [h('LG t', 'Being finalised', 'h2', ['v2-h3'], 'font-size: 24px;'),
