@@ -344,7 +344,7 @@ def page_dealerships():
                 'padding: 16px; @media(--mobile){ padding: 10px; }', ['v2-glass']),
             div('DL d txt', [chip('DL d chip', 'In your showroom'), h('DL d t', 'Your customers scan. We do the rest.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
                              p('DL d l', 'Your showroom display carries your own QR code. Customers scan it to book a free remote survey, and every booking is linked to your dealership, so your £150 referral fee is tracked automatically.', ['v2-lead'], 'margin-top: 16px;'),
-                             div('DL d ticks', [ticks('DL d tk', ['Pull-up banner and counter card', 'A QR code unique to your dealership', 'Supplied and fitted from £995 for your customers'])], 'margin-top: 24px;')],
+                             div('DL d ticks', [ticks('DL d tk', ['Pull-up banner and counter card', 'A QR code unique to your dealership', 'Customers scan to book a free survey'])], 'margin-top: 24px;')],
                 'display: flex; flex-direction: column; align-items: flex-start;'),
         ], 'display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 56px; align-items: center; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 28px; }')]),
         v2sec('DL fee', [div('DL fee card', [
