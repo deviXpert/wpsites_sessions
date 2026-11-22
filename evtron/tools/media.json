@@ -5,11 +5,15 @@
  "placeholder-evtron-tethered": 92,
  "placeholder-fox-tethered": 93,
  "placeholder-fox-untethered": 94,
- "render_evtron": 131,
+ "render_evtron": 463,
  "render_foxt": 160,
  "render_foxu": 161,
- "render_evtron_grey": 200,
- "render_evtron_green": 201,
- "render_evtron_red": 226,
- "render_cable": 372
+ "render_evtron_grey": 464,
+ "render_evtron_green": 465,
+ "render_evtron_red": 466,
+ "render_cable": 372,
+ "illus_render_evtron": 131,
+ "illus_render_evtron_grey": 200,
+ "illus_render_evtron_green": 201,
+ "illus_render_evtron_red": 226
 }

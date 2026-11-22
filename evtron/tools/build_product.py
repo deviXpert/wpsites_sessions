@@ -49,7 +49,7 @@ def swatches(cid):
 # ================= 1. Hero buy box =================
 hero = div('PP hero', [div('PP hero inner', [div('PP hero grid', [
     div('PP visual', [stage('PP stage', '78%'),
-                      div('PP visual note', [p('PP vn', 'Illustration · 7kW · Type 2 · tethered', None, MONO + 'font-size: 11.5px; letter-spacing: 0.06em; color: #A1B5A8;')],
+                      div('PP visual note', [p('PP vn', '7kW · Type 2 · tethered', None, MONO + 'font-size: 11.5px; letter-spacing: 0.06em; color: #A1B5A8;')],
                           'display: flex; justify-content: center; margin-top: 8px;')],
         'position: relative; padding: 32px; @media(--mobile){ padding: 16px; }', ['v2-glass']),
     div('PP buy', [
