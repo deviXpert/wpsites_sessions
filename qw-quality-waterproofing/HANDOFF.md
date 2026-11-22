@@ -76,7 +76,7 @@ python3 yoast.py                                                        # push Y
 - Plugin **Site Reviews** 8.3.8 (installed on live only). Native Elementor widgets: `site_reviews_summary`, `site_reviews` (list), `site_reviews_form`.
 - Page `/reviews/` (ID 134) – hero, rating summary + review list, "Share your experience" + form (`#write-review`), CTA. Built by `reviews()` in build.py.
 - When /reviews/ is published, build.py automatically adds a "What Our Customers Say" block on Home (before the FAQ) and a Reviews link in the footer (`live('reviews')`).
-- **Status: DRAFT** – by default Site Reviews publishes new reviews instantly (verified with a test review, deleted). Needs **Site Reviews → Settings → General → Require Approval = Yes** (not settable via API).
+- **Status: LIVE** (Nov 22). Require Approval = Yes (set by the user in Site Reviews → Settings → General; verified by `reviews_go_live.py` – test review held as pending, then deleted). Notifications are all OFF – suggest sending to the client's email. Form button restyled gold in kit Custom CSS (`.glsr-review-form .glsr-button`).
 - Go live: `python3 reviews_go_live.py` – submits a test review through the real form, refuses to publish if it went public, deletes it, then publishes the page, adds the menu item (before Contact), rebuilds reviews/home/footer and refreshes Yoast.
 - Google button: set `GOOGLE_REVIEW_URL` in build.py to the client's Google Business Profile review link, then rebuild `reviews home`.
 - Draft previews are unstyled (Elementor only writes post-CSS for published pages) – check styling after publishing.

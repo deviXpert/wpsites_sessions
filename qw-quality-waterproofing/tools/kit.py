@@ -60,6 +60,9 @@ S={
 .qw-light{transition:transform .35s ease,box-shadow .35s ease}
 .qw-light:hover{transform:translateY(-4px)}
 @media (prefers-reduced-motion:reduce){.qw-light,.qw-light:hover{transition:none;transform:none}}
+/* Site Reviews form button – match the gold site buttons */
+.glsr-review-form .glsr-button{background:#C9A24B;color:#0E1420;border:0;border-radius:4px;padding:14px 26px;font-family:Sora,sans-serif;font-weight:600}
+.glsr-review-form .glsr-button:hover{background:#E8CC84;color:#0E1420}
 ''',
  'site_name':'Quality Waterproofing','site_description':'Basement Waterproofing & Foundation Repair in Toronto & the GTA',
 }
