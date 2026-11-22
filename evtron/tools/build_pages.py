@@ -156,7 +156,7 @@ HOURS = 'Monday to Saturday, 8:30am to 6:30pm'
 
 
 def page_installation():
-    side = facts_panel('IN facts', [('Survey', 'Free and remote'), ('Turnaround', 'Most installs within 10 days of survey approval'), ('Coverage', 'Nationwide'), ('Hours', HOURS)])
+    side = facts_panel('IN facts', [('Survey', 'Free and remote'), ('Turnaround', 'Most installs within 10 days of survey approval'), ('Coverage', 'National'), ('Hours', HOURS)])
     return [
         hero('IN hero', 'Installation', 'Professional installation, made simple.',
              'Every installation starts with a free remote survey. A qualified electrician then fits, tests and certifies your charger, and sets up the app with you.', side),
@@ -257,7 +257,7 @@ def page_contact():
     methods = [('fa-solid fa-cart-shopping', 'Buying and installation', 'sales@evtron.co.uk', 'Orders, quotes and installation requests.'),
                ('fa-solid fa-envelope', 'Everything else', 'info@evtron.co.uk', 'Questions, support, warranty and aftercare.'),
                ('fa-regular fa-clock', 'Opening hours', HOURS, 'We reply as soon as we can during these hours.'),
-               ('fa-solid fa-location-dot', 'Coverage', 'Nationwide', 'Installations by our trusted installer network.')]
+               ('fa-solid fa-location-dot', 'Coverage', 'National', 'Installations by our trusted installer network.')]
     return [
         hero('CT hero', 'Contact', 'Talk to EV-Tron.', 'Questions about the charger, your order or installation? Send us a message and we’ll get back to you.'),
         v2sec('CT main', [div('CT grid', [

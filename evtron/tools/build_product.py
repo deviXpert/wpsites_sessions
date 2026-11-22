@@ -245,7 +245,7 @@ install = v2sec('PP install', [
         div('Inst extras', [p('Ext k', 'Good to know', ['v2-label']),
                             div('Ext rows', [div(f'ER {i}', [p(f'ER {i} k', k, None, 'font-size: 14.5px; color: #DCE8E0;'), p(f'ER {i} v', v, None, MONO + 'font-size: 13.5px; color: #A3FFC1; text-align: right;')],
                                                  'display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(190,255,215,0.10);')
-                                             for i, (k, v) in enumerate([('Cable beyond 10m', '£15 per metre'), ('Non-standard work', 'Quoted first'), ('Groundworks', 'Not offered'), ('Coverage', 'Nationwide')])],
+                                             for i, (k, v) in enumerate([('Cable beyond 10m', '£15 per metre'), ('Non-standard work', 'Quoted first'), ('Groundworks', 'Not offered'), ('Coverage', 'National')])],
                                 'margin-top: 8px;')],
             'padding: 28px; @media(--mobile){ padding: 22px; }', ['v2-solid']),
     ], 'display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }'),
