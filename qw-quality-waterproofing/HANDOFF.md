@@ -1,6 +1,6 @@
 # Quality Waterproofing — Elementor Rebuild Handoff
 
-New site (staging): **https://meteoric-cornflowerblue-pheasant-37.hostingersite.com** (WordPress + Astra + Elementor 4.4 / Elementor Pro "Advanced")
+**LIVE: https://qualitywaterproofinginc.ca** (copied from staging Nov 2026; same IDs, same login – run tools with `WP_URL=https://qualitywaterproofinginc.ca QW_EXPECTED_HOST=qualitywaterproofinginc.ca`; `el.py` rewrites media URLs to the target host). Staging: https://meteoric-cornflowerblue-pheasant-37.hostingersite.com (WordPress + Astra + Elementor 4.4 / Elementor Pro "Advanced")
 Old live site being replaced: https://qualitywaterproofinginc.ca · Client reference (for structure only): https://rccwaterproofing.com
 Cloud environment: "Quality WaterProofing" (allowlist has the staging host, the old site and the reference site).
 
@@ -71,3 +71,12 @@ python3 yoast.py                                                        # push Y
 7. WordPress "Search engine visibility" was not changed. Check it at launch.
 
 8. **Underpinning media:** real client footage (4 WhatsApp videos, Nov 19). Stills `up_*` (media 125–131) were pulled from the sharpest video frames (768px – fine for cards/gallery). Hero = 10s loop `up_video` (media 132). The Projects page has an Underpinning filter tab. The client also sent 3 underpinning photos as pasted images; they weren't received as files, so they still need adding.
+
+## Reviews feature (live site)
+- Plugin **Site Reviews** 8.3.8 (installed on live only). Native Elementor widgets: `site_reviews_summary`, `site_reviews` (list), `site_reviews_form`.
+- Page `/reviews/` (ID 134) – hero, rating summary + review list, "Share your experience" + form (`#write-review`), CTA. Built by `reviews()` in build.py.
+- When /reviews/ is published, build.py automatically adds a "What Our Customers Say" block on Home (before the FAQ) and a Reviews link in the footer (`live('reviews')`).
+- **Status: DRAFT** – by default Site Reviews publishes new reviews instantly (verified with a test review, deleted). Needs **Site Reviews → Settings → General → Require Approval = Yes** (not settable via API).
+- Go live: `python3 reviews_go_live.py` – submits a test review through the real form, refuses to publish if it went public, deletes it, then publishes the page, adds the menu item (before Contact), rebuilds reviews/home/footer and refreshes Yoast.
+- Google button: set `GOOGLE_REVIEW_URL` in build.py to the client's Google Business Profile review link, then rebuild `reviews home`.
+- Draft previews are unstyled (Elementor only writes post-CSS for published pages) – check styling after publishing.

@@ -210,7 +210,7 @@ def footer():
           icon_primary_color='#161E2D', icon_secondary_color='#C9A24B', hover_primary_color='#C9A24B', hover_secondary_color='#0E1420', border_radius=dims(4)),
     ], 'Footer About', flex_gap=gap(18))
     svc = C([fh('Services')] + [fl([(SERVICES[s]['name'], 'fas fa-chevron-right', live(s)) for s in SVC_ORDER])], 'Footer Services', flex_gap=gap(10))
-    areas = C([fh('Service Areas')] + [fl([('Waterproofing ' + LOCATIONS[s]['label'], 'fas fa-chevron-right', live(s)) for s in LOC_ORDER] + [('Projects', 'fas fa-chevron-right', live('projects')), ('About Us', 'fas fa-chevron-right', live('about-us'))])], 'Footer Areas', flex_gap=gap(10))
+    areas = C([fh('Service Areas')] + [fl([('Waterproofing ' + LOCATIONS[s]['label'], 'fas fa-chevron-right', live(s)) for s in LOC_ORDER] + [('Projects', 'fas fa-chevron-right', live('projects')), ('Reviews', 'fas fa-chevron-right', live('reviews')), ('About Us', 'fas fa-chevron-right', live('about-us'))])], 'Footer Areas', flex_gap=gap(10))
     contact = C([fh('Get In Touch'),
                  ILIST([(PHONE, 'fas fa-phone-alt', TEL), (EMAIL, 'fas fa-envelope', 'mailto:' + EMAIL), ('Toronto · Mississauga · Brampton · St. Catharines · North Bay', 'fas fa-map-marker-alt')],
                        color='qwwhite', icon_color='secondary', typo='qwsmall', size=15, gapv=14),
@@ -249,6 +249,7 @@ def home():
         gallery(['ext_trench_membrane', 'int_dmx_window', 'il_pool1', 'ext_brick_membrane', 'sump_basin', 'il_patio_steps', 'int_unfinished', 'ext_red_brick', 'crack_patch', 'il_steps', 'ext_long_trench', 'il_rear'],
                 intro='Real projects completed by our crews – exterior and interior waterproofing, sump pumps, crack repairs and interlocking.'),
         areas_section(),
+        *([home_reviews()] if live('reviews') else []),
         faq_section(GEN_FAQ),
         cta_band(),
     ]
@@ -343,6 +344,52 @@ def projects():
             SECTION(HEAD('Project Gallery', 'Real Work, <span class="qw-hl">Real Homes</span>', 'Filter by service and click any photo to view it full size.', align='center') + [C([gal], 'Gallery Wrap', _margin=dims(20, 0, 0, 0))], 'Projects', bg='white'),
             cta_band()]
 
+# ---------- reviews (Site Reviews plugin – native Elementor widgets) ----------
+GOOGLE_REVIEW_URL = None  # client's Google Business Profile "write a review" link – add it to show the Google buttons
+
+def review_list(n=6, pagination=True):
+    return W('site_reviews', 'Reviews List', display=n, pagination='ajax' if pagination else '', schema='true')
+
+def review_buttons(dark=True, write='#write-review'):
+    btns = [BTN('Write a Review', write, 'gold', 'fas fa-pen', align_mobile='justify', _element_width_mobile='inherit', text_padding_mobile=dims(16, 20))]
+    if GOOGLE_REVIEW_URL:
+        btns.append(BTN('Review Us on Google', GOOGLE_REVIEW_URL, 'ghost' if dark else 'outline', 'fab fa-google', align_mobile='justify', _element_width_mobile='inherit',
+                        text_padding_mobile=dims(16, 20), link={'url': GOOGLE_REVIEW_URL, 'is_external': 'on', 'nofollow': ''}))
+    return C(btns, 'Review Buttons', row=True, flex_wrap='wrap', flex_gap=gap(14), flex_direction_mobile='row')
+
+def home_reviews():
+    """Home page block: latest approved reviews + invitation to write one (Site Reviews widgets)."""
+    head = HEAD('Customer Reviews', 'What Our <span class="qw-hl">Customers Say</span>',
+                'Real feedback from homeowners we’ve worked with. Had work done by our crew? Tell us how we did.', align='center')
+    btns = C([BTN('Write a Review', page_url('reviews') + '#write-review', 'gold', 'fas fa-pen', align_mobile='justify', _element_width_mobile='inherit'),
+              BTN('Read All Reviews', page_url('reviews'), 'outline', 'fas fa-arrow-right', align_mobile='justify', _element_width_mobile='inherit')],
+             'Review Buttons', row=True, flex_wrap='wrap', flex_gap=gap(14), flex_direction_mobile='row', flex_justify_content='center')
+    body = C([review_list(3, pagination=False), btns], 'Reviews Body', width=px(960), width_tablet=px(100, '%'), flex_gap=gap(24), _margin=dims(24, 0, 0, 0))
+    return SECTION(head + [body], 'Home Reviews', bg='white', flex_align_items='center')
+
+def reviews():
+    seed('reviews')
+    h = hero('Customer Reviews', 'Quality Waterproofing <span class="qw-hl">Reviews</span>',
+             'Read what homeowners across Toronto, the GTA, St. Catharines and North Bay say about working with us. Had work done by our crew? We’d love to hear about your experience.',
+             bg='il_pool2', form=False, minh=460)
+    # replace the estimate/call buttons in this hero with review buttons
+    copy = h['elements'][0]['elements'][0]['elements']
+    copy[3] = review_buttons(dark=True)
+    summary = CARD([H('Overall <span class="qw-hl">Rating</span>', 'h2', 'qwh3'), W('site_reviews_summary', 'Rating Summary'),
+                    T('Every review comes from a real customer and is checked before it’s published.', 'text', 'qwsmall'),
+                    BTN('Write a Review', '#write-review', 'gold', 'fas fa-pen', size='sm')], title='Summary Card', pad=30)
+    listing = SECTION([C([summary, C([H('What Our <span class="qw-hl">Customers Say</span>', 'h2', 'qwh2'), review_list(6)], 'Reviews Column', flex_gap=gap(18))],
+                         'Reviews Grid', grid=2, grid_t=1, grid_columns_grid=cols('1fr 2fr'), grid_gaps=gap(48, 32))], 'Reviews List', bg='white')
+    how = ILIST([('Rate your experience from 1 to 5 stars', 'fas fa-star'), ('Tell other homeowners about the job we did', 'fas fa-pen'),
+                 ('We check every review before it appears on the site', 'fas fa-shield-alt'), ('Your email address is never shown publicly', 'fas fa-lock')],
+                color='primary', size=16, gapv=14)
+    left = C(HEAD('Leave a Review', 'Share Your <span class="qw-hl">Experience</span>',
+                  'Your feedback helps other homeowners choose with confidence – and helps us keep improving.') + [how]
+             + ([BTN('Prefer Google? Review Us There', GOOGLE_REVIEW_URL, 'outline', 'fab fa-google', size='sm')] if GOOGLE_REVIEW_URL else []), 'Write Copy', flex_gap=gap(18))
+    form = CARD([H('Write Your <span class="qw-hl">Review</span>', 'h3', 'qwh3'), W('site_reviews_form', 'Review Form')], title='Review Form Card', pad=36, _element_id='write-review')
+    write = SECTION([C([left, form], 'Write Grid', grid=2, grid_t=1, grid_gaps=gap(56, 36))], 'Write a Review', bg='cream')
+    return [h, listing, write, cta_band()]
+
 def contact():
     seed('contact')
     cards = [CARD([IBOX('fas fa-phone-alt', 'Call Us', f'<a href="{TEL}">{PHONE}</a>', view='stacked', align='left')], title='Phone Card', pad=28),
@@ -372,11 +419,12 @@ def build(name):
     if name == 'about-us': return about()
     if name == 'projects': return projects()
     if name == 'contact': return contact()
+    if name == 'reviews': return reviews()
     if name in SERVICES: return service_page(name)
     if name in LOCATIONS: return location_page(name)
     raise SystemExit('unknown part ' + name)
 
-ALL = ['header', 'footer', 'home', 'services', 'about-us', 'projects', 'contact'] + SVC_ORDER + LOC_ORDER
+ALL = ['header', 'footer', 'home', 'services', 'about-us', 'projects', 'contact', 'reviews'] + SVC_ORDER + LOC_ORDER
 if __name__ == '__main__':
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
     dry = '--dry' in sys.argv

@@ -6,6 +6,9 @@ import wp
 
 D = os.path.dirname(os.path.abspath(__file__))
 MEDIA = json.load(open(os.path.join(D, 'media.json')))
+# media.json was recorded on staging; point every URL at the site being built (same uploads, same IDs)
+_STAGING = 'https://meteoric-cornflowerblue-pheasant-37.hostingersite.com'
+for _m in MEDIA.values(): _m['url'] = _m['url'].replace(_STAGING, wp.U)
 PAGES = json.load(open(os.path.join(D, 'pages.json')))
 U = wp.U
 PHONE, TEL = '(437) 264-2664', 'tel:+14372642664'
