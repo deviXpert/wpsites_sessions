@@ -50,6 +50,11 @@
 /* General product template: hide the Details band when a product has no long description */
 main section:has(.gp-content):not(:has(.gp-content :is(p,li,ul,h2,h3,h4):not(:empty))){display:none}
 .gp-content ul{padding-left:1.2em;margin:12px 0}.gp-content li{margin:6px 0;color:#DCE8E0}
+.gp-content h3{font-size:19px;font-weight:600;color:#F5FFF8;margin:28px 0 8px}
+.gp-content table{width:100%;border-collapse:collapse;margin:12px 0 18px;border:0!important}
+.gp-content th,.gp-content td{text-align:left;padding:12px 0;border:0!important;border-bottom:1px solid rgba(190,255,215,.10)!important;background:transparent!important;font-size:14.5px;vertical-align:top}
+.gp-content th{color:#A1B5A8;font-weight:500;width:42%;padding-right:16px}
+.gp-content td{color:#F5FFF8;font-family:"IBM Plex Mono",monospace;font-size:13.5px}
 .gp-gallery .woocommerce-product-gallery__image img{border-radius:16px}
 .gp-cart .variations th,.gp-cart .variations td{background:transparent!important;border:0!important;padding:0 0 10px!important;color:#C9D6CE}
 .gp-cart .reset_variations{color:#A3FFC1!important;font-size:13px}
@@ -80,3 +85,13 @@ main section:has(.gp-content):not(:has(.gp-content :is(p,li,ul,h2,h3,h4):not(:em
 .woocommerce-account .woocommerce-MyAccount-navigation .is-active a,.woocommerce-account .woocommerce-MyAccount-navigation a:hover{background:rgba(85,230,139,.1);color:var(--w-text)}
 .woocommerce form.login,.woocommerce form.register,.woocommerce form.checkout_coupon,.woocommerce form.woocommerce-form-login{border:1px solid var(--w-line)!important;border-radius:18px!important;padding:24px!important;background:rgba(255,255,255,.02)}
 </style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  /* General product template: the dynamic price tag loses WooCommerce's screen-reader class, so tidy variable-product ranges to "From £x" */
+  [].forEach.call(document.querySelectorAll('.pp-hero p.v2-num'),function(p){
+    var t=p.textContent;if(!/£/.test(t))return;
+    var clean=t.replace(/Price range:.*$/,'').replace(/(Original|Current) price was:.*?\./g,'').trim();
+    var m=clean.match(/^(£[\d,.]+)\s*[–-]\s*£[\d,.]+/);p.textContent=m?'From '+m[1]:clean;
+  });
+});
+</script>

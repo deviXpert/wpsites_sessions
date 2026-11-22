@@ -35,17 +35,26 @@ hero = div('GP hero', [div('GP hero inner', [div('GP grid', [
 details = v2sec('GP details', [div('GP d grid', [
     div('GP d side', [chip('GP d chip', 'Details'), h('GP d title', 'The full picture.', 'h2', ['v2-h2'], 'margin-top: 20px;')],
         'display: flex; flex-direction: column; align-items: flex-start;'),
-    div('GP d body', [p('GP content', TAG('woocommerce-product-content-tag'), ['v2-body'], 'font-size: 16.5px; line-height: 1.7;')],
+    div('GP d body', [el('theme-post-content', 'GP content', {})],
         'padding: 36px; @media(--mobile){ padding: 22px; }', ['v2-card', 'gp-content']),
 ], 'display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); gap: 56px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 24px; }')])
 
 X = div('Product', [hero, details], 'background-color: #07110E;', tag='main')
 
 FOX = {
-    'wc_foxt': ('<p>A 7kW tethered Type 2 home charger from Fox ESS, an independent brand we supply and install. It can charge your car from surplus solar power, depending on the model and your solar system.</p>'
-                '<ul><li>7kW single-phase, tethered Type 2 cable</li><li>Solar-compatible, subject to model and system</li><li>Dynamic load balancing with CT clamp included in the installation</li>'
-                '<li>Colours: black, blue, purple and pink (availability to be confirmed)</li><li>Price includes a standard installation by a qualified electrician</li></ul>'
-                '<p>Not sure it suits your solar set-up? Email sales@evtron.co.uk before you order and we’ll check.</p>'),
+    'wc_foxt': ('<p>The Fox ESS L Series (model L07P) is a 7.3kW single-phase home charger with a tethered Type 2 cable. Fox ESS is an independent brand that we supply and install.</p>'
+                '<h3>Solar linkage</h3><p>Switch on solar mode in the Fox app and the charger can run your car on surplus solar power that would otherwise go to the grid. What you need depends on your solar system, so we check it during your free remote survey.</p>'
+                '<h3>Smart features</h3><ul><li>Remote access and settings in the Fox ESS app, over Wi-Fi or Bluetooth</li><li>Scheduled charging to make the most of cheaper off-peak hours</li>'
+                '<li>Real-time energy use and cost</li><li>Dynamic load balancing adjusts charging to your home’s demand, with the CT clamp included in the installation</li><li>Start with plug and play or the app</li></ul>'
+                '<h3>Specifications</h3><table><tbody>'
+                '<tr><th>Model</th><td>Fox ESS L Series L07P</td></tr><tr><th>Rated power</th><td>7.3kW, single-phase</td></tr><tr><th>Maximum current</th><td>32A</td></tr>'
+                '<tr><th>Voltage</th><td>230V AC ±20%, 50/60Hz</td></tr><tr><th>Connector</th><td>Type 2, tethered 5m cable</td></tr><tr><th>Connectivity</th><td>Wi-Fi and Bluetooth</td></tr>'
+                '<tr><th>Protection rating</th><td>IP55, IK08</td></tr><tr><th>Residual current detection</th><td>AC 30mA / DC 6mA (IEC 62955)</td></tr>'
+                '<tr><th>Electrical protection</th><td>Over-current, residual current, earth, surge, over- and under-voltage, over-temperature</td></tr>'
+                '<tr><th>Operating temperature</th><td>−25°C to +50°C</td></tr><tr><th>Size (W × H × D)</th><td>197 × 196 × 105 mm</td></tr><tr><th>Weight</th><td>3.7kg</td></tr>'
+                '<tr><th>Mounting</th><td>Wall or post, bottom or rear cable entry</td></tr><tr><th>Certification</th><td>CE; EN/IEC 61851-1:2019, EN/IEC 61851-21-2:2021</td></tr>'
+                '<tr><th>Colours</th><td>Black, blue, purple and pink (availability to be confirmed)</td></tr></tbody></table>'
+                '<p>Price includes a standard installation by a qualified electrician. Specifications from the Fox ESS L Series datasheet (V1.1, August 2024).</p>'),
     'wc_foxu': ('<p>A 7kW untethered Type 2 socket charger from Fox ESS, an independent brand we supply and install. You plug in your own cable, and it can charge your car from surplus solar power, depending on the model and your solar system.</p>'
                 '<ul><li>7kW single-phase, Type 2 socket (use your own cable)</li><li>Solar-compatible, subject to model and system</li><li>Dynamic load balancing with CT clamp included in the installation</li>'
                 '<li>Colour: white</li><li>Price includes a standard installation by a qualified electrician</li></ul>'
