@@ -31,7 +31,7 @@ We may decline an order, for example if a product is unavailable or we can’t i
 
 ## 5. Delivery
 
-We deliver to addresses in the UK. Delivery times are shown at checkout or given to you when you order: [PLACEHOLDER: delivery areas, charges and timescales].
+We deliver to addresses in the UK. Delivery of chargers is free. Delivery times are given to you when you order: [PLACEHOLDER: delivery timescales].
 
 The product is your responsibility once it’s delivered to you, or to someone you’ve nominated. It becomes yours once we’ve received full payment.
 
