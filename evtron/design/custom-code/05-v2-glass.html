@@ -115,6 +115,23 @@ html.ev-v2 .v2-form input:not([type=checkbox]):focus,html.ev-v2 .v2-form select:
 html.ev-v2 .v2-form ::placeholder{color:#7F8F86}
 html.ev-v2 .v2-form select option{background:#0C1914;color:#F5FFF8}
 html.ev-v2 .v2-form input[type=checkbox]{accent-color:#55E68B}
+/* Step-by-step forms: one question per screen (no-JS: everything shows as a normal form) */
+html.ev-v2 .v2-steps.js .v2-fstep{display:none}
+html.ev-v2 .v2-steps.js .v2-fstep.on{display:block;animation:v2fin .35s cubic-bezier(.2,.7,.2,1)}
+html.ev-v2 .v2-steps.js .v2-fend{display:none!important}
+html.ev-v2 .v2-steps.js.at-end .v2-fend{display:flex!important}
+@keyframes v2fin{from{opacity:0;transform:translate3d(14px,0,0)}}
+html.ev-v2 .v2-fprog{display:flex;gap:6px}
+html.ev-v2 .v2-fprog i{flex:1;height:4px;border-radius:99px;background:rgba(255,255,255,.12);transition:background-color .3s ease}
+html.ev-v2 .v2-fprog i.on{background:#55E68B}
+html.ev-v2 .v2-fopt{transition:border-color .2s ease,background-color .2s ease}
+html.ev-v2 .v2-fopt:hover{border-color:rgba(120,255,170,.4)!important}
+html.ev-v2 .v2-fopt.on{border-color:#55E68B!important;background-color:rgba(85,230,139,.09)!important}
+html.ev-v2 .v2-fnav{display:flex;justify-content:space-between;align-items:center;gap:12px}
+html.ev-v2 .v2-fnav button{min-height:46px;padding:0 22px;border-radius:999px;font:600 15px "Manrope",sans-serif;cursor:pointer}
+html.ev-v2 .v2-fback{background:transparent!important;color:#C9D6CE!important;border:1px solid rgba(190,255,215,.22)!important}
+html.ev-v2 .v2-fnext{background:linear-gradient(135deg,#72F3A0,#28B967)!important;color:#06150C!important;border:0!important}
+@media (prefers-reduced-motion:reduce){html.ev-v2 .v2-steps.js .v2-fstep.on{animation:none}}
 /* Shop pages (Astra content area) sit below the floating header */
 html.ev-v2 body.woocommerce-page:not(.single-product) #primary{padding-top:200px!important}
 @media(max-width:767px){html.ev-v2 body.woocommerce-page:not(.single-product) #primary{padding-top:170px!important}}
@@ -190,6 +207,30 @@ document.addEventListener('DOMContentLoaded',function(){
   var root=document.documentElement;root.classList.add('ev-v2');
   if(document.body.classList.contains('admin-bar'))root.classList.add('admin-bar-on');
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* Step-by-step forms */
+  [].forEach.call(document.querySelectorAll('.v2-steps'),function(f){
+    var steps=[].slice.call(f.querySelectorAll('.v2-fstep'));if(steps.length<2)return;
+    f.classList.add('js');
+    var prog=document.createElement('div');prog.className='v2-fprog';prog.setAttribute('aria-hidden','true');prog.innerHTML=steps.map(function(){return '<i></i>'}).join('');f.insertBefore(prog,f.firstChild);
+    var nav=document.createElement('div');nav.className='v2-fnav';nav.innerHTML='<button type="button" class="v2-fback">Back</button><button type="button" class="v2-fnext">Next</button>';
+    steps[steps.length-1].parentNode.insertBefore(nav,steps[steps.length-1].nextSibling);
+    var back=nav.firstChild,next=nav.lastChild,cur=0;
+    function show(i,focus){cur=i;steps.forEach(function(s,j){s.classList.toggle('on',j===i);s.setAttribute('aria-hidden',String(j!==i))});
+      [].forEach.call(prog.children,function(b,j){b.classList.toggle('on',j<=i)});
+      var last=i===steps.length-1;f.classList.toggle('at-end',last);back.style.visibility=i?'visible':'hidden';
+      next.style.display=(last||steps[i].querySelector('input[type=radio]'))?'none':'';
+      if(focus){var el=steps[i].querySelector('input:not([type=radio]),textarea,select,input[type=radio]');if(el)setTimeout(function(){el.focus({preventScroll:true})},60)}}
+    function valid(i){var els=steps[i].querySelectorAll('input,textarea,select');for(var k=0;k<els.length;k++){if(!els[k].checkValidity()){els[k].reportValidity();return false}}return true}
+    next.addEventListener('click',function(){if(valid(cur))show(cur+1,true)});
+    back.addEventListener('click',function(){if(cur)show(cur-1,true)});
+    steps.forEach(function(s,i){[].forEach.call(s.querySelectorAll('.v2-fopt'),function(o){var r=o.querySelector('input[type=radio]');if(!r)return;
+      o.addEventListener('click',function(e){if(e.target!==r){r.checked=true;r.dispatchEvent(new Event('change',{bubbles:true}))}});
+      r.addEventListener('change',function(){[].forEach.call(s.querySelectorAll('.v2-fopt'),function(x){var y=x.querySelector('input');x.classList.toggle('on',!!(y&&y.checked))});
+        if(i<steps.length-1)setTimeout(function(){show(i+1,true)},260)})})});
+    f.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.tagName==='INPUT'&&e.target.type!=='checkbox'&&cur<steps.length-1){e.preventDefault();if(valid(cur))show(cur+1,true)}});
+    f.addEventListener('invalid',function(e){var st=e.target.closest&&e.target.closest('.v2-fstep');var k=steps.indexOf(st);if(k>-1&&k!==cur)show(k,false)},true);
+    show(0,false);
+  });
   var hero=document.querySelector('.v2-hero');if(!hero)return;
   var aur=document.createElement('div');aur.className='v2-aurora';aur.setAttribute('aria-hidden','true');aur.innerHTML='<i></i><i></i><i></i>';hero.prepend(aur);
   var img=hero.querySelector('.v2-stack')||hero.querySelector('img');var visual=img&&img.parentElement;

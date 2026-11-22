@@ -58,7 +58,9 @@
   "terms": 330,
   "privacy-policy": 333,
   "cookie-policy": 336,
-  "cancellations-returns": 339
+  "cancellations-returns": 339,
+  "for-dealerships": 391,
+  "for-installers": 394
  },
  "wc_cat_cables": 40,
  "wc_cable": 373

@@ -82,8 +82,7 @@ if __name__ == '__main__':
     r = wp.ability('elementor/build-composition', {'post_id': pid, 'xml_structure': X, 'element_config': cfg, 'style': st, 'classes': cl, 'mode': 'replace_children'})
     print('build', r.get('success'), r.get('message') or '', [w for w in (r.get('warnings') or []) if 'not linked' not in w][:6])
     print('publish', wp.req('wp-abilities/v1/abilities/elementor/publish-document/run?' + urllib.parse.urlencode({'input[post_id]': pid}), 'DELETE').get('status'))
-    r = wp.ability('elementor/manage-site-parts', {'operations': [{'action': 'update', 'post_id': 145, 'conditions': [
-        'include/singular/front_page', 'include/singular/page/141', f"include/singular/product/{C['wc_evtron']}", f'include/singular/page/{pid}']}]})
+    r = wp.ability('elementor/manage-site-parts', {'operations': [{'action': 'update', 'post_id': 145, 'conditions': ['include/general']}]})   # V2 styles site-wide
     print('v2 styles on', r['results'][0].get('conditions'))
     wp.req('wp-abilities/v1/abilities/elementor/clear-cache/run', 'DELETE')
     print(wp.req(f'wp/v2/pages/{pid}')['link'])

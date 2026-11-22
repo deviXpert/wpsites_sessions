@@ -31,7 +31,7 @@ def hero(cid, chip_text, title, lead, side=None):
                                h(cid + ' title', title, 'h1', ['v2-display'], 'margin-top: 26px; font-size: clamp(42px, 5.4vw, 84px);'),
                                p(cid + ' lead', lead, ['v2-lead'], 'margin-top: 24px; max-width: 58ch;')],
                'display: flex; flex-direction: column; align-items: flex-start;')
-    inner = div(cid + ' grid', [copy, side], 'display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 56px; align-items: end; '
+    inner = div(cid + ' grid', [copy, side], 'display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 56px; align-items: center; '
                 '@media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 32px; }') if side else copy
     return div(cid, [div(cid + ' inner', [inner], classes=['ev-container'])], classes=['v2-hero'], tag='section')
 
@@ -107,6 +107,44 @@ def step_cards(cid, steps):
             'gap: 0;', ['v2-card', 'v2-step']) for i, (ic, t, d) in enumerate(steps)],
             f'display: grid; grid-template-columns: repeat({len(steps)}, minmax(0, 1fr)); gap: 16px; @media(--tablet){{ grid-template-columns: repeat(2, minmax(0, 1fr)); }} @media(--mobile){{ grid-template-columns: minmax(0, 1fr); }}'),
     ], 'padding-top: 44px; @media(--tablet){ padding-top: 0; }', ['v2-proc'])
+
+
+# ---------------- step-by-step forms (one question per screen; behaviour in snippet 05) ----------------
+def radio_step(cid, n, total, question, name, options):
+    return div(cid, [p(cid + ' k', f'Step {n} of {total}', ['v2-label']),
+                     h(cid + ' q', question, 'h3', ['v2-h3'], 'margin-top: 10px; font-size: 22px;'),
+                     div(cid + ' opts', [div(f'{cid} o{i}', [el('e-form-radio-button', f'{cid} r{i}', {'name': name, 'value': o, 'required': True},
+                                                                'width: 18px; height: 18px; flex: 0 0 18px; accent-color: #55E68B; margin: 0;'),
+                                                             p(f'{cid} t{i}', o, None, 'font-size: 15.5px; color: #F5FFF8;')],
+                                             'display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid rgba(190,255,215,0.16); '
+                                             'background-color: rgba(255,255,255,0.02); cursor: pointer;', ['v2-fopt']) for i, o in enumerate(options)],
+                         'display: flex; flex-direction: column; gap: 10px; margin-top: 20px;')],
+               'grid-column: 1 / -1;', ['v2-fstep'])
+
+
+def field_step(cid, n, total, question, fields, last=False):
+    return div(cid, [p(cid + ' k', f'Step {n} of {total}', ['v2-label']),
+                     h(cid + ' q', question, 'h3', ['v2-h3'], 'margin-top: 10px; font-size: 22px;'),
+                     div(cid + ' f', fields, 'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 20px; @media(--mobile){ grid-template-columns: minmax(0, 1fr); }')],
+               'grid-column: 1 / -1;', ['v2-fstep'] + (['v2-flast'] if last else []))
+
+
+def step_form(cid, name, to, subject, steps, submit, success, consent):
+    """steps: list of step divs. Consent + submit live in the last step (JS keeps them there)."""
+    return el('e-form', cid, {'form-name': name, 'actions-after-submit': ['collect-submissions', 'email'],
+                              'email': {'to': [to], 'subject': subject, 'from-name': 'EV-Tron website', 'send-as': 'html'}},
+              'display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px;', ['v2-form', 'v2-steps'], steps + [
+        div(cid + ' consent', [el('e-form-checkbox', cid + ' cc', {'name': 'consent', 'value': 'yes', 'required': True}, 'width: 20px; height: 20px; flex: 0 0 20px; margin-top: 2px; accent-color: #55E68B;'),
+                               el('e-form-label', cid + ' cl', {'text': consent + ' *'}, 'font-size: 13.5px; color: #C9D6CE; line-height: 1.5;')],
+            'display: flex; gap: 12px; align-items: flex-start;', ['v2-fend']),
+        div(cid + ' submit row', [el('e-form-submit-button', cid + ' submit', {'text': submit},
+                                     'min-height: 54px; padding: 0 32px; border-radius: 999px; border: 0; font-weight: 600; font-size: 16px; color: #06150C; background-color: #55E68B; cursor: pointer;', ['v2-btn-primary'])],
+            '', ['v2-fend']),
+        el('e-form-success-message', cid + ' ok', None, 'padding: 18px; border-radius: 14px; background-color: rgba(85,230,139,0.12); color: #DFFBEA; font-size: 15px; text-align: left;', None,
+           [p(cid + ' ok p', success, None, 'color: #DFFBEA;')]),
+        el('e-form-error-message', cid + ' err', None, 'padding: 18px; border-radius: 14px; background-color: rgba(229,72,77,0.14); color: #FFD9DA; font-size: 15px; text-align: left;', None,
+           [p(cid + ' err p', 'Sorry, something went wrong. Please try again, or email ' + to + '.', None, 'color: #FFD9DA;')]),
+    ])
 
 
 # ---------------- facts (client answers) ----------------
@@ -228,14 +266,13 @@ def page_contact():
                                                                    p(f'CM {i} d', d, ['v2-body'], 'margin-top: 4px; font-size: 14.5px;')])],
                                    'display: flex; gap: 16px; align-items: flex-start; padding: 22px;', ['v2-solid']) for i, (ic, k, v, d) in enumerate(methods)],
                 'display: flex; flex-direction: column; gap: 12px;'),
-            div('CT form card', [h('CT f t', 'Send us a message', 'h2', ['v2-h3'], 'font-size: 24px; margin-bottom: 20px;'),
-                                 form('Contact form', 'EV-Tron contact', 'info@evtron.co.uk', 'New message from the EV-Tron website', [
-                                     field('CF name', 'ct-name', 'Full name'), field('CF email', 'ct-email', 'Email address', 'email'),
-                                     field('CF phone', 'ct-phone', 'Phone number', 'tel', required=False),
-                                     select('CF topic', 'ct-topic', 'What’s it about?', 'topic', ['Buying a charger', 'Installation', 'An existing order', 'Warranty or support', 'Something else']),
-                                     textarea('CF msg', 'Your message', 'How can we help?', required=True)],
-                                     'Send message', 'Thank you. Your message has been sent and we’ll get back to you soon.',
-                                     'I agree to EV-Tron using my details to reply to this message.')],
+            div('CT form card', [step_form('Contact form', 'EV-Tron contact', 'info@evtron.co.uk', 'New message from the EV-Tron website', [
+                radio_step('CS1', 1, 3, 'What’s it about?', 'topic', ['Buying a charger', 'Installation', 'An existing order', 'Warranty or support', 'Something else']),
+                field_step('CS2', 2, 3, 'How can we help?', [textarea('CS2 msg', 'Your message', 'Tell us a little about what you need.', required=True)]),
+                field_step('CS3', 3, 3, 'How can we reach you?', [field('CS3 name', 'ct-name', 'Full name'), field('CS3 phone', 'ct-phone', 'Mobile number', 'tel'),
+                                                                 field('CS3 email', 'ct-email', 'Email address', 'email', full=True)], last=True)],
+                'Send message', 'Thank you. Your message has been sent and we’ll get back to you soon.',
+                'I agree to EV-Tron using my details to reply to this message.')],
                 'padding: 32px; @media(--mobile){ padding: 20px; }', ['v2-card']),
         ], 'display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 24px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }')]),
         v2sec('CT links', [div('CT l grid', [div(f'CL {i}', [h(f'CL {i} t', t, 'h3', ['v2-h3']), p(f'CL {i} d', d, ['v2-body'], 'margin-top: 8px;'),
@@ -281,6 +318,74 @@ def page_grants():
     ]
 
 
+def page_dealerships():
+    form_card = div('DL form card', [step_form('Dealer form', 'EV-Tron dealership enquiry', 'sales@evtron.co.uk', 'New dealership partner enquiry', [
+        radio_step('DS1', 1, 5, 'What type of business do you operate?', 'business-type',
+                   ['EV / car dealership', 'Leasing company', 'Vehicle broker', 'Fleet management company', 'EV rental company', 'Other']),
+        radio_step('DS2', 2, 5, 'How many EV customers do you deal with per month?', 'ev-customers', ['1 to 10', '11 to 25', '26 to 50', '50+']),
+        radio_step('DS3', 3, 5, 'Do you currently offer EV home charging to your customers?', 'offers-charging', ['Yes', 'No']),
+        field_step('DS4', 4, 5, 'Tell us about you', [field('DS4 name', 'dl-name', 'Your name'), field('DS4 biz', 'dl-business', 'Business name'),
+                                                     field('DS4 town', 'dl-town', 'Town or city', full=True)]),
+        field_step('DS5', 5, 5, 'Where should we contact you?', [field('DS5 phone', 'dl-phone', 'Mobile number', 'tel'), field('DS5 email', 'dl-email', 'Email address', 'email')], last=True)],
+        'Send enquiry', 'Thank you. Our partnerships team will be in touch shortly.',
+        'I agree to EV-Tron contacting me about a partnership.')], 'padding: 32px; @media(--mobile){ padding: 20px; }', ['v2-card'])
+    return [
+        hero('DL hero', 'For dealerships', 'Help every EV buyer charge at home.',
+             'We partner with car dealerships, leasing companies and brokers nationwide. Your customers get a premium home charger, fitted by trusted installers, from one simple introduction.', form_card),
+        v2sec('DL how', [v2head('DL h head', 'How it works', 'One introduction. We handle the rest.', None, center=True),
+                         step_cards('DL steps', [('fa-solid fa-handshake', 'You introduce us', 'Tell your customer about EV-Tron, or share their details with their permission.'),
+                                                 ('fa-solid fa-mobile-screen', 'We take care of it', 'We call your customer, run a free remote survey and arrange installation, nationwide.'),
+                                                 ('fa-solid fa-bolt', 'They charge at home', 'A trusted installer fits their EV-Tron, so they’re ready to charge from day one.')])]),
+        v2sec('DL why', [v2head('DL w head', 'Why partner with EV-Tron', 'Built to make your customers’ switch easier.', None),
+                         div('DL w grid', [div(f'DW {i}', [itile(f'DW {i} icon', ic), h(f'DW {i} t', t, 'h3', ['v2-h3'], 'margin-top: 20px;'), p(f'DW {i} d', d, ['v2-body'], 'margin-top: 8px;')], classes=['v2-solid'])
+                                           for i, (ic, t, d) in enumerate([('fa-solid fa-location-dot', 'Nationwide coverage', 'Installations across the country through our trusted installer network.'),
+                                                                          ('fa-solid fa-headset', 'One point of contact', 'Your team and your customers deal with us, from first call to aftercare.'),
+                                                                          ('fa-solid fa-gem', 'A charger to be proud of', 'A premium 7kW smart charger in four finishes, solar compatible.'),
+                                                                          ('fa-solid fa-mobile-screen', 'No hassle for customers', 'A free remote survey, with no home visit needed to get started.')])],
+                             'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); }')]),
+    ]
+
+
+def page_installers():
+    login = div('IR login', [itile('IR l icon', 'fa-solid fa-right-to-bracket'),
+                             h('IR l t', 'Already one of our installers?', 'h3', ['v2-h3'], 'margin-top: 18px;'),
+                             p('IR l d', 'Log in to your installer account to upload job paperwork.', ['v2-body'], 'margin-top: 8px;'),
+                             vbtn('IR l b', 'Installer login', '/my-account/', 'primary', 'margin-top: 22px;')],
+                 'padding: 32px; align-items: flex-start;', ['v2-glass'])
+    form_card = div('IR form card', [step_form('Installer form', 'EV-Tron installer application', 'sales@evtron.co.uk', 'New installer application', [
+        radio_step('IS1', 1, 4, 'Which competent person scheme are you registered with?', 'scheme', ['NICEIC', 'NAPIT', 'Another scheme', 'Not registered yet']),
+        radio_step('IS2', 2, 4, 'How many EV charger installs could you take on per month?', 'capacity', ['1 to 5', '6 to 15', '16 to 30', '30+']),
+        field_step('IS3', 3, 4, 'Where do you work?', [field('IS3 area', 'ir-area', 'Areas you cover (towns or postcode areas)', full=True)]),
+        field_step('IS4', 4, 4, 'Your details', [field('IS4 name', 'ir-name', 'Your name'), field('IS4 co', 'ir-company', 'Company name'),
+                                                field('IS4 phone', 'ir-phone', 'Mobile number', 'tel'), field('IS4 email', 'ir-email', 'Email address', 'email')], last=True)],
+        'Apply to join', 'Thank you. We’ll review your details and be in touch.',
+        'I agree to EV-Tron contacting me about joining the installer network.')], 'padding: 32px; @media(--mobile){ padding: 20px; }', ['v2-card'])
+    return [
+        hero('IR hero', 'For installers', 'Join the EV-Tron installer network.',
+             'We work with qualified, experienced electricians nationwide. Surveys are done before you arrive and the charger is delivered to you ahead of the job.', login),
+        v2sec('IR why', [div('IR w grid', [
+            div('IR w side', [chip('IR w chip', 'Working with us'), h('IR w t', 'Good jobs, ready to go.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
+                              p('IR w l', 'We handle the customer, the survey and the kit. You do what you do best.', ['v2-lead'], 'margin-top: 16px;')],
+                'display: flex; flex-direction: column; align-items: flex-start;'),
+            div('IR w list', [ticks('IR w ticks', ['Every job surveyed remotely before you’re booked', 'The charger delivered to you ahead of installation day',
+                                                   'Clear job details and one point of contact', 'Installations nationwide, close to where you work'])],
+                'padding: 36px; @media(--mobile){ padding: 22px; }', ['v2-card']),
+        ], 'display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 48px; align-items: center; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 24px; }')]),
+        v2sec('IR need', [v2head('IR n head', 'What we look for', 'Qualified, insured and experienced.', None, center=True),
+                          div('IR n grid', [div(f'IN {i}', [itile(f'IN {i} icon', ic), h(f'IN {i} t', t, 'h3', ['v2-h3'], 'margin-top: 20px;'), p(f'IN {i} d', d, ['v2-body'], 'margin-top: 8px;')], classes=['v2-solid'])
+                                            for i, (ic, t, d) in enumerate([('fa-solid fa-clipboard-check', 'Scheme registered', 'Registered with NICEIC, NAPIT or another competent person scheme.'),
+                                                                           ('fa-solid fa-shield-halved', 'Fully insured', 'Public liability insurance appropriate to the work.'),
+                                                                           ('fa-solid fa-plug', 'EV experience', 'Experience installing home EV chargers to BS 7671 and the IET Code of Practice.')])],
+                              'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }')]),
+        v2sec('IR apply', [div('IR a grid', [
+            div('IR a side', [chip('IR a chip', 'Apply'), h('IR a t', 'Join the network.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
+                              p('IR a l', 'Four quick questions. We’ll review your details and get back to you.', ['v2-lead'], 'margin-top: 16px;')],
+                'display: flex; flex-direction: column; align-items: flex-start;'),
+            form_card,
+        ], 'display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 48px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 24px; }')]),
+    ]
+
+
 LEGAL = {'terms': 'Terms and conditions', 'privacy-policy': 'Privacy policy', 'cookie-policy': 'Cookie policy', 'cancellations-returns': 'Cancellations and returns'}
 
 
@@ -310,7 +415,8 @@ def page_legal(slug):
 
 
 PAGES = {'installation': ('Installation', page_installation), 'faqs': ('FAQs', page_faqs), 'contact': ('Contact', page_contact),
-         'warranty': ('Warranty', page_warranty)}   # Grants page removed (client, 22 Nov 2026)
+         'warranty': ('Warranty', page_warranty),   # Grants page removed (client, 22 Nov 2026)
+         'for-dealerships': ('For dealerships', page_dealerships), 'for-installers': ('For installers', page_installers)}
 PAGES.update({s: (t, (lambda s=s: page_legal(s))) for s, t in LEGAL.items()})
 META = {'_elementor_edit_mode': 'builder', '_elementor_template_type': 'wp-page', '_elementor_page_settings': {'hide_title': 'yes'},
         'site-sidebar-layout': 'no-sidebar', 'ast-site-content-layout': 'full-width-container', 'site-content-style': 'unboxed'}

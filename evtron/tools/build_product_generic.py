@@ -77,7 +77,7 @@ if __name__ == '__main__':
     print('publish', wp.req('wp-abilities/v1/abilities/elementor/publish-document/run?' + urllib.parse.urlencode({'input[post_id]': tid}), 'DELETE').get('status'))
     pid = C['wc_evtron']
     ops = [{'action': 'update', 'post_id': tid, 'conditions': ['include/product']},
-           {'action': 'update', 'post_id': 145, 'conditions': ['include/singular/front_page', 'include/singular/page/141', 'include/product', f"include/singular/page/{C['about']}"]},
+           {'action': 'update', 'post_id': 145, 'conditions': ['include/general']},   # V2 styles site-wide
            {'action': 'update', 'post_id': C['snippet_woo'], 'conditions': ['include/singular/page/20', 'include/singular/page/21', 'include/singular/page/22', 'include/product']}]
     print([x.get('conditions') for x in wp.ability('elementor/manage-site-parts', {'operations': ops})['results']])
     wp.req('wp-abilities/v1/abilities/elementor/clear-cache/run', 'DELETE')

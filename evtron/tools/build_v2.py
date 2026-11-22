@@ -155,6 +155,15 @@ showcase = v2sec('V2 range', [
         'display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 20px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }'),
 ])
 
+# ================= 2b. Dealership band (client: highlight, keep it light) =================
+dealers = v2sec('V2 dealers', [div('Dealer band', [
+    div('Dealer copy', [itile('Dealer icon', 'fa-solid fa-handshake'),
+                        div('Dealer txt', [h('Dealer t', 'Partnering with car dealerships nationwide.', 'h2', ['v2-h3'], 'font-size: clamp(20px, 2vw, 26px);'),
+                                           p('Dealer d', 'Buying a new EV? Ask your dealer about EV-Tron. Run a dealership, leasing company or broker? Let’s work together.', ['v2-body'], 'margin-top: 6px;')])],
+        'display: flex; gap: 18px; align-items: center; flex: 1 1 420px;'),
+    vbtn('Dealer btn', 'For dealerships', '/for-dealerships/', 'glass'),
+], 'display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: center; justify-content: space-between; padding: 26px 32px; @media(--mobile){ padding: 22px; }', ['v2-glass'])])
+
 # ================= 3. Benefits Bento =================
 bars = div('Sched chart', [div(f'SB {i}', [], f'flex: 1 1 0; min-width: 0; height: {hh}%; border-radius: 4px 4px 2px 2px; background-color: {"#55E68B" if g else "rgba(255,255,255,0.10)"};')
                            for i, (hh, g) in enumerate([(70, 1), (82, 1), (90, 1), (76, 1), (40, 0), (30, 0), (22, 0), (18, 0), (20, 0), (26, 0), (30, 0), (34, 0), (28, 0), (24, 0), (22, 0), (30, 0), (46, 0), (60, 0), (64, 0), (52, 0), (40, 0), (34, 0), (58, 1), (66, 1)])],
@@ -270,7 +279,7 @@ trust = v2sec('V2 trust', [div('Trust grid', [
         'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
 ], 'display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 20px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }')])
 
-X = div('Home V2', [hero, showcase, bento, tech, process, tariffs, trust], 'background-color: #07110E;', tag='main')
+X = div('Home V2', [hero, showcase, dealers, bento, tech, process, tariffs, trust], 'background-color: #07110E;', tag='main')
 
 if __name__ == '__main__':
     r = wp.ability('elementor/build-composition', {'post_id': PID, 'xml_structure': X, 'element_config': cfg, 'style': st, 'classes': cl, 'mode': 'replace_children'})
@@ -279,9 +288,9 @@ if __name__ == '__main__':
     # Append V1's remaining sections (unchanged for now) into the V2 <main>, after the new hero
     v1 = json.loads(wp.req('wp/v2/pages/95?context=edit')['meta']['_elementor_data'])
     v2 = json.loads(wp.req(f'wp/v2/pages/{PID}?context=edit')['meta']['_elementor_data'])
-    new = v2[0]['elements']            # hero, showcase, bento, tech, process, tariffs, trust
+    new = v2[0]['elements']            # hero, showcase, dealers, bento, tech, process, tariffs, trust
     v1s = v1[0]['elements']            # 0 hero, 1 chargers, 2 how (replaced by process), 3 costs, 4 faqs, 5 closing (matcher, not used)
-    v2[0]['elements'] = new[:5] + [v1s[3], new[5], new[6], v1s[4]]   # ... costs, tariffs band, trust, faqs          # closing matcher dropped: one charger on sale for now
+    v2[0]['elements'] = new[:6] + [v1s[3], new[6], new[7], v1s[4]]   # ... costs, tariffs band, trust, faqs          # closing matcher dropped: one charger on sale for now
     P = 'https://evtron.co.uk/ev-chargers/evtron-tethered-ev-charger/'
     TWEAKS = [('with the reasons and the installed price', 'with the reasons and the price'),        # copy and link tweaks for kept V1 sections
               ('Get a quote', 'Request installation'), ('https://evtron.co.uk/get-a-quote/', P + '#details'),

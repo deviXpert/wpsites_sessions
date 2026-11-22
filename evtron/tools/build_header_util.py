@@ -29,7 +29,12 @@ def build():
     usps = div('Util usps', [div(f'Util usp {i}', [tick(f'Util tick {i}'), p(f'Util usp t {i}', t, None, 'font-size: 12.5px; color: #C9D6CE;')], classes=['ev-usp'])
                              for i, t in enumerate(USPS)],
                'display: flex; align-items: center; justify-content: flex-end; gap: 28px; flex: 1 1 auto; flex-wrap: nowrap; overflow: hidden; @media(--mobile){ justify-content: center; }')
-    return div('Utility bar', [mail, usps], classes=['ev-util'])
+    link = lambda cid, t, u: el('e-button', cid, {'text': t, 'link': {'destination': SITE + u}},
+                                'font-size: 12.5px; line-height: 1; padding: 7px 4px; min-height: 0; border: 0; background-color: transparent; color: #C9D6CE; font-weight: 500; '
+                                '&:hover{ color: #A3FFC1; } @media(--mobile){ display: none; }')
+    left = div('Util left', [mail, link('Util installers', 'For installers', '/for-installers/'), link('Util dealers', 'For dealerships', '/for-dealerships/')],
+               'display: flex; align-items: center; gap: 14px; width: auto; flex: 0 0 auto; @media(--mobile){ display: none; }')
+    return div('Utility bar', [left, usps], classes=['ev-util'])
 
 
 if __name__ == '__main__':
