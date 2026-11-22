@@ -119,7 +119,7 @@ featured = div('Featured EV-Tron', [
     div('Feat specs', [spec('FS1', 'Power', '7kW'), spec('FS2', 'Current', 'Up to 32A'), spec('FS3', 'Cable', 'Up to 10m'),
                        spec('FS4', 'Weather', 'IP65'), spec('FS5', 'Connect', 'Wi-Fi + Bluetooth'), spec('FS6', 'Solar', 'Compatible')],
         'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 24px; @media(--mobile){ grid-template-columns: repeat(2, minmax(0, 1fr)); }'),
-    div('Feat foot', [div('Feat price wrap', [p('Feat price', PRICE, ['v2-num'], 'font-size: 40px;'), p('Feat price note', 'Charger price · cable and extras next', None, 'font-size: 13.5px; color: #A1B5A8; margin-top: 6px;')]),
+    div('Feat foot', [div('Feat price wrap', [p('Feat price', PRICE, ['v2-num'], 'font-size: 40px;'), p('Feat price note', 'Charger only · or from £995 supplied and fitted', None, 'font-size: 13.5px; color: #A1B5A8; margin-top: 6px;')]),
                       div('Feat btns', [vbtn('Feat explore', 'Explore', PRODUCT, 'glass'), vbtn('Feat buy', 'Buy now', PRODUCT + '#configure')], 'display: flex; gap: 10px; flex-wrap: wrap;')],
         'display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; margin-top: auto; padding-top: 28px;'),
 ], 'grid-row: span 2; padding: 32px; @media(--tablet){ grid-row: auto; }', ['v2-card'], tag='article')

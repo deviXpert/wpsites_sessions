@@ -132,6 +132,8 @@ html.ev-v2 .v2-fnav button{min-height:46px;padding:0 22px;border-radius:999px;fo
 html.ev-v2 .v2-fback{background:transparent!important;color:#C9D6CE!important;border:1px solid rgba(190,255,215,.22)!important}
 html.ev-v2 .v2-fnext{background:linear-gradient(135deg,#72F3A0,#28B967)!important;color:#06150C!important;border:0!important}
 @media (prefers-reduced-motion:reduce){html.ev-v2 .v2-steps.js .v2-fstep.on{animation:none}}
+html.ev-v2 .v2-hide{display:none!important}
+html.ev-v2 .v2-dealer-note{margin:18px 0 0;font:500 12px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:#A3FFC1}
 /* Legal text: readable measure, bold in white, unfinished placeholders highlighted for review */
 html.ev-v2 .v2-legal strong{color:#F5FFF8;font-weight:600}
 html.ev-v2 .v2-ph{background:#4A3B00;color:#FFE27A;padding:1px 6px;border-radius:5px;font-family:"IBM Plex Mono",monospace;font-size:.86em}
@@ -212,6 +214,12 @@ document.addEventListener('DOMContentLoaded',function(){
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* Legal pages: highlight [PLACEHOLDER: …] so missing details are obvious until filled in */
   [].forEach.call(document.querySelectorAll('.v2-legal p, .v2-legal h2'),function(el){if(/\[PLACEHOLDER/.test(el.innerHTML))el.innerHTML=el.innerHTML.replace(/\[PLACEHOLDER:([^\]]*)\]/g,'<mark class="v2-ph">$1</mark>')});
+  /* QR landing (/book/?dealer=slug): record the dealership with the booking and greet the customer */
+  var dl=document.getElementById('bk-dealer');
+  if(dl){var slug=(new URLSearchParams(location.search).get('dealer')||'').toLowerCase().replace(/[^a-z0-9-]/g,'').slice(0,60);
+    dl.value=slug||'website';
+    if(slug){var nm=slug.split('-').filter(Boolean).map(function(w){return w.charAt(0).toUpperCase()+w.slice(1)}).join(' ');
+      var h1=document.querySelector('.v2-hero h1');if(h1){var t=document.createElement('p');t.className='v2-dealer-note';t.textContent='Recommended installer for '+nm;h1.parentNode.insertBefore(t,h1)}}}
   /* Step-by-step forms */
   [].forEach.call(document.querySelectorAll('.v2-steps'),function(f){
     var steps=[].slice.call(f.querySelectorAll('.v2-fstep'));if(steps.length<2)return;

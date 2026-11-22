@@ -13,6 +13,7 @@ import build_v2 as B
 from build_home import el, div, p, h, cfg, st, cl, MONO
 
 C = json.load(open('created.json'))
+M = json.load(open('media.json'))
 chip, v2head, v2sec, itile, vbtn = B.chip, B.v2head, B.v2sec, B.itile, B.vbtn
 PRODUCT = '/ev-chargers/evtron-tethered-ev-charger/'
 TICK = lambda cid: el('e-svg', cid, {'svg': {'value': 'fa-solid fa-check', 'library': 'fa-solid'}}, 'width: 14px; height: 14px; color: #55E68B;')
@@ -156,7 +157,7 @@ HOURS = 'Monday to Saturday, 8:30am to 6:30pm'
 
 
 def page_installation():
-    side = facts_panel('IN facts', [('Survey', 'Free and remote'), ('Turnaround', 'Most installs within 10 days of survey approval'), ('Coverage', 'National'), ('Hours', HOURS)])
+    side = facts_panel('IN facts', [('Price', 'From £995 supplied and fitted'), ('Survey', 'Free and remote'), ('Turnaround', 'Most installs within 10 days of survey approval'), ('Coverage', 'National'), ('Hours', HOURS)])
     return [
         hero('IN hero', 'Installation', 'Professional installation, made simple.',
              'Every installation starts with a free remote survey. A qualified electrician then fits, tests and certifies your charger, and sets up the app with you.', side),
@@ -220,7 +221,7 @@ FAQS = [
         ('Can I start charging without my phone?', 'Yes. Use plug and charge, or tap the RFID card supplied with the charger.')]),
     ('Buying', [
         ('Can I buy the charger without installation?', 'Yes. Choose Charger only in the configurator and check out online. It will need to be installed by a qualified electrician.'),
-        ('How do I get it installed by EV-Tron?', 'Choose Supply and install, or request installation on our Installation page. We’ll call you, run a free remote survey and send your quote.'),
+        ('How do I get it installed by EV-Tron?', 'Supplied and fitted starts from £995. Choose Supply and install, or request installation on our Installation page. We’ll call you, run a free remote survey and confirm your price.'),
         ('How can I pay?', 'Online by card, Apple Pay, Google Pay or PayPal. Pay-later options are planned, subject to approval.'),
         ('Is there a free gift?', 'Supply and install orders currently unlock a free handheld vacuum cleaner. Full offer terms will be published before launch.')]),
     ('Installation', [
@@ -335,6 +336,15 @@ def page_dealerships():
                          step_cards('DL steps', [('fa-solid fa-handshake', 'You introduce us', 'Tell your customer about EV-Tron, or share their details with their permission.'),
                                                  ('fa-solid fa-mobile-screen', 'We take care of it', 'We call your customer, run a free remote survey and arrange installation, nationwide.'),
                                                  ('fa-solid fa-bolt', 'They charge, you earn', 'A trusted installer fits their EV-Tron, and you earn £150 for the completed installation.')])]),
+        v2sec('DL display', [div('DL d grid', [
+            div('DL d img', [el('e-image', 'DL d photo', {'image': {'src': {'id': M['dealer_showroom']}, 'size': 'large'}}, 'width: 100%; height: auto; display: block; border-radius: 18px;'),
+                             p('DL d cap', 'Our dealership display: pull-up banner and counter card', None, MONO + 'font-size: 11.5px; letter-spacing: 0.04em; color: #A1B5A8; margin-top: 12px;')],
+                'padding: 16px; @media(--mobile){ padding: 10px; }', ['v2-glass']),
+            div('DL d txt', [chip('DL d chip', 'In your showroom'), h('DL d t', 'Your customers scan. We do the rest.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
+                             p('DL d l', 'Your showroom display carries your own QR code. Customers scan it to book a free remote survey, and every booking is linked to your dealership, so your £150 referral fee is tracked automatically.', ['v2-lead'], 'margin-top: 16px;'),
+                             div('DL d ticks', [ticks('DL d tk', ['Pull-up banner and counter card', 'A QR code unique to your dealership', 'Supplied and fitted from £995 for your customers'])], 'margin-top: 24px;')],
+                'display: flex; flex-direction: column; align-items: flex-start;'),
+        ], 'display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 56px; align-items: center; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 28px; }')]),
         v2sec('DL fee', [div('DL fee card', [
             div('DL fee num', [p('DL fee k', 'Referral fee', ['v2-label']), p('DL fee v', '£150', ['v2-num'], 'font-size: clamp(64px, 8vw, 120px); line-height: 1; margin-top: 10px; color: #A3FFC1;'),
                                p('DL fee u', 'per completed installation', None, 'font-size: 16px; color: #DCE8E0; margin-top: 8px;')],
@@ -394,6 +404,42 @@ def page_installers():
     ]
 
 
+def page_book():
+    """QR landing page for dealership displays: /book/?dealer=<slug>. Not in the menus."""
+    form_card = div('BK form card', [step_form('Book form', 'EV-Tron survey booking', 'sales@evtron.co.uk', 'New free survey booking (QR / dealership)', [
+        radio_step('BS1', 1, 4, 'When do you get your electric car?', 'ev-status', ['I already have it', 'I’m collecting it soon', 'I’m still choosing']),
+        radio_step('BS2', 2, 4, 'Do you have off-street parking?', 'parking', ['Yes, a driveway or garage', 'Not sure', 'No']),
+        field_step('BS3', 3, 4, 'Where’s the charger going?', [field('BS3 pc', 'bk-postcode', 'Postcode', full=True)]),
+        field_step('BS4', 4, 4, 'Where should we contact you?', [field('BS4 name', 'bk-name', 'Full name', full=True), field('BS4 phone', 'bk-phone', 'Mobile number', 'tel'),
+                                                                field('BS4 email', 'bk-email', 'Email address', 'email')], last=True),
+        div('BK dealer', [el('e-form-label', 'BK dealer l', {'text': 'Dealership', 'input-id': 'bk-dealer'}, LABEL),
+                          el('e-form-input', 'BK dealer i', {'type': 'text', 'required': False, '_cssid': 'bk-dealer'}, INPUT)], 'display: none;', ['v2-hide'])],
+        'Book my free survey', 'Thank you. We’ll be in touch shortly to arrange your free remote survey.',
+        'I agree to EV-Tron contacting me about my survey and installation.')], 'padding: 28px; @media(--mobile){ padding: 18px; }', ['v2-card'])
+    copy = div('BK copy', [
+        chip('BK chip', 'Free remote survey'),
+        h('BK title', 'Just bought an electric car?', 'h1', ['v2-display'], 'margin-top: 22px; font-size: clamp(40px, 5.2vw, 80px);'),
+        p('BK lead', 'Charge it at home with EV-Tron: a premium 7kW smart charger, supplied and fitted by qualified electricians.', ['v2-lead'], 'margin-top: 20px; max-width: 52ch;'),
+        div('BK price', [p('BK pk', 'From', None, 'font-size: 15px; color: #A1B5A8;'), p('BK pv', '£995', ['v2-num'], 'font-size: 44px; line-height: 1;'),
+                         p('BK pn', 'supplied and fitted', None, 'font-size: 15px; color: #A1B5A8;')], 'display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-top: 24px;'),
+        div('BK ticks', [ticks('BK t', ['Free remote survey, no home visit needed', 'Fitted by qualified electricians', '3-year warranty included'])], 'margin-top: 24px;'),
+    ], 'display: flex; flex-direction: column; align-items: flex-start;')
+    finishes = div('BK fin', [div(f'BK f {i}', [el('e-image', f'BK f {i} img', {'image': {'src': {'id': M[k]}, 'size': 'medium_large'}}, 'width: 100%; height: auto; display: block;'),
+                                                 p(f'BK f {i} n', n, None, 'font-size: 14px; color: #DCE8E0; text-align: center; margin-top: 6px;')])
+                              for i, (k, n) in enumerate([('render_evtron', 'Mythos Black'), ('render_evtron_grey', 'Space Grey'), ('render_evtron_green', 'Midnight Green'), ('render_evtron_red', 'Crimson Red')])],
+                  'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; @media(--mobile){ grid-template-columns: repeat(2, minmax(0, 1fr)); }')
+    return [
+        div('BK hero', [div('BK hero inner', [div('BK grid', [copy, form_card],
+            'display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 28px; }')],
+            classes=['ev-container'])], classes=['v2-hero'], tag='section'),
+        v2sec('BK range', [v2head('BK r head', 'Choose your finish', 'Same charger. Four finishes.', 'Solar compatible, app controlled, IP65 rated, with a tethered Type 2 cable.', center=True), finishes]),
+        v2sec('BK how', [v2head('BK h head', 'What happens next', 'No home visit, no hassle.', None, center=True),
+                         step_cards('BK steps', [('fa-solid fa-mobile-screen', 'Free remote survey', 'We call you, then you send a few photos or a short video of where the charger will go.'),
+                                                 ('fa-solid fa-file-invoice', 'Your quote and date', 'We confirm your price and book a time that suits you with our trusted installer.'),
+                                                 ('fa-solid fa-bolt', 'Installed and ready', 'Your EV-Tron is fitted, tested and certified, and we show you how it works.')])]),
+    ]
+
+
 LEGAL = {'terms': 'Terms and conditions', 'privacy-policy': 'Privacy policy', 'cookie-policy': 'Cookie policy', 'cancellations-returns': 'Cancellations and returns'}
 
 
@@ -435,7 +481,8 @@ def page_legal(slug):
 
 PAGES = {'installation': ('Installation', page_installation), 'faqs': ('FAQs', page_faqs), 'contact': ('Contact', page_contact),
          'warranty': ('Warranty', page_warranty),   # Grants page removed (client, 22 Nov 2026)
-         'for-dealerships': ('For dealerships', page_dealerships), 'for-installers': ('For installers', page_installers)}
+         'for-dealerships': ('For dealerships', page_dealerships), 'for-installers': ('For installers', page_installers),
+         'book': ('Book your free survey', page_book)}
 PAGES.update({s: (t, (lambda s=s: page_legal(s))) for s, t in LEGAL.items()})
 META = {'_elementor_edit_mode': 'builder', '_elementor_template_type': 'wp-page', '_elementor_page_settings': {'hide_title': 'yes'},
         'site-sidebar-layout': 'no-sidebar', 'ast-site-content-layout': 'full-width-container', 'site-content-style': 'unboxed'}
