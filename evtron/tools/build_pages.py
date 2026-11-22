@@ -330,11 +330,20 @@ def page_dealerships():
         'I agree to EV-Tron contacting me about a partnership.')], 'padding: 32px; @media(--mobile){ padding: 20px; }', ['v2-card'])
     return [
         hero('DL hero', 'For dealerships', 'Help every EV buyer charge at home.',
-             'We partner with car dealerships, leasing companies and brokers nationwide. Your customers get a premium home charger, fitted by trusted installers, from one simple introduction.', form_card),
+             'We partner with car dealerships, leasing companies and brokers nationwide. Your customers get a premium home charger, fitted by trusted installers. You earn £150 for every installation you introduce.', form_card),
         v2sec('DL how', [v2head('DL h head', 'How it works', 'One introduction. We handle the rest.', None, center=True),
                          step_cards('DL steps', [('fa-solid fa-handshake', 'You introduce us', 'Tell your customer about EV-Tron, or share their details with their permission.'),
                                                  ('fa-solid fa-mobile-screen', 'We take care of it', 'We call your customer, run a free remote survey and arrange installation, nationwide.'),
-                                                 ('fa-solid fa-bolt', 'They charge at home', 'A trusted installer fits their EV-Tron, so they’re ready to charge from day one.')])]),
+                                                 ('fa-solid fa-bolt', 'They charge, you earn', 'A trusted installer fits their EV-Tron, and you earn £150 for the completed installation.')])]),
+        v2sec('DL fee', [div('DL fee card', [
+            div('DL fee num', [p('DL fee k', 'Referral fee', ['v2-label']), p('DL fee v', '£150', ['v2-num'], 'font-size: clamp(64px, 8vw, 120px); line-height: 1; margin-top: 10px; color: #A3FFC1;'),
+                               p('DL fee u', 'per completed installation', None, 'font-size: 16px; color: #DCE8E0; margin-top: 8px;')],
+                'display: flex; flex-direction: column; align-items: flex-start; flex: 0 0 auto; width: auto;'),
+            div('DL fee txt', [h('DL fee t', 'Every introduction can pay.', 'h2', ['v2-h2'], 'font-size: clamp(28px, 3vw, 44px);'),
+                               p('DL fee d', 'For every customer you introduce whose EV-Tron charger is installed, we pay your business £150. No targets and no stock to hold. Full partner terms are provided when you join.', ['v2-lead'], 'margin-top: 14px;'),
+                               vbtn('DL fee b', 'Become a partner', '/for-dealerships/#request', 'primary', 'margin-top: 24px;')],
+                'flex: 1 1 auto; min-width: 0; align-items: flex-start;'),
+        ], 'display: flex; flex-direction: row; flex-wrap: nowrap; gap: 64px; align-items: center; padding: 56px; @media(--tablet){ flex-direction: column; align-items: flex-start; gap: 24px; } @media(--mobile){ padding: 26px; }', ['v2-card'])]),
         v2sec('DL why', [v2head('DL w head', 'Why partner with EV-Tron', 'Built to make your customers’ switch easier.', None),
                          div('DL w grid', [div(f'DW {i}', [itile(f'DW {i} icon', ic), h(f'DW {i} t', t, 'h3', ['v2-h3'], 'margin-top: 20px;'), p(f'DW {i} d', d, ['v2-body'], 'margin-top: 8px;')], classes=['v2-solid'])
                                            for i, (ic, t, d) in enumerate([('fa-solid fa-location-dot', 'Nationwide coverage', 'Installations across the country through our trusted installer network.'),

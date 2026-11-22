@@ -159,7 +159,7 @@ showcase = v2sec('V2 range', [
 dealers = v2sec('V2 dealers', [div('Dealer band', [
     div('Dealer copy', [itile('Dealer icon', 'fa-solid fa-handshake'),
                         div('Dealer txt', [h('Dealer t', 'Partnering with car dealerships nationwide.', 'h2', ['v2-h3'], 'font-size: clamp(20px, 2vw, 26px);'),
-                                           p('Dealer d', 'Buying a new EV? Ask your dealer about EV-Tron. Run a dealership, leasing company or broker? Let’s work together.', ['v2-body'], 'margin-top: 6px;')])],
+                                           p('Dealer d', 'Buying a new EV? Ask your dealer about EV-Tron. Run a dealership, leasing company or broker? Earn £150 for every installation you introduce.', ['v2-body'], 'margin-top: 6px;')])],
         'display: flex; gap: 18px; align-items: center; flex: 1 1 420px;'),
     vbtn('Dealer btn', 'For dealerships', '/for-dealerships/', 'glass'),
 ], 'display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: center; justify-content: space-between; padding: 26px 32px; @media(--mobile){ padding: 22px; }', ['v2-glass'])])
