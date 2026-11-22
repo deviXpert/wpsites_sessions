@@ -157,7 +157,7 @@ HOURS = 'Monday to Saturday, 8:30am to 6:30pm'
 
 
 def page_installation():
-    side = facts_panel('IN facts', [('Price', 'From £995 supplied and fitted'), ('Survey', 'Free and remote'), ('Turnaround', 'Most installs within 10 days of survey approval'), ('Coverage', 'National'), ('Hours', HOURS)])
+    side = facts_panel('IN facts', [('Survey', 'Free and remote'), ('Turnaround', 'Most installs within 10 days of survey approval'), ('Coverage', 'National'), ('Hours', HOURS)])
     return [
         hero('IN hero', 'Installation', 'Professional installation, made simple.',
              'Every installation starts with a free remote survey. A qualified electrician then fits, tests and certifies your charger, and sets up the app with you.', side),
@@ -221,7 +221,7 @@ FAQS = [
         ('Can I start charging without my phone?', 'Yes. Use plug and charge, or tap the RFID card supplied with the charger.')]),
     ('Buying', [
         ('Can I buy the charger without installation?', 'Yes. Choose Charger only in the configurator and check out online. It will need to be installed by a qualified electrician.'),
-        ('How do I get it installed by EV-Tron?', 'Supplied and fitted starts from £995. Choose Supply and install, or request installation on our Installation page. We’ll call you, run a free remote survey and confirm your price.'),
+        ('How do I get it installed by EV-Tron?', 'Choose Supply and install, or request installation on our Installation page. We’ll call you, run a free remote survey and send your quote.'),
         ('How can I pay?', 'Online by card, Apple Pay, Google Pay or PayPal. Pay-later options are planned, subject to approval.'),
         ('Is there a free gift?', 'Supply and install orders currently unlock a free handheld vacuum cleaner. Full offer terms will be published before launch.')]),
     ('Installation', [
@@ -422,8 +422,6 @@ def page_book():
         chip('BK chip', 'Free remote survey'),
         h('BK title', 'Just bought an electric car?', 'h1', ['v2-display'], 'margin-top: 22px; font-size: clamp(40px, 5.2vw, 80px);'),
         p('BK lead', 'Charge it at home with EV-Tron: a premium 7kW smart charger, supplied and fitted by qualified electricians.', ['v2-lead'], 'margin-top: 20px; max-width: 52ch;'),
-        div('BK price', [p('BK pk', 'From', None, 'font-size: 15px; color: #A1B5A8;'), p('BK pv', '£995', ['v2-num'], 'font-size: 44px; line-height: 1;'),
-                         p('BK pn', 'supplied and fitted', None, 'font-size: 15px; color: #A1B5A8;')], 'display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-top: 24px;'),
         div('BK ticks', [ticks('BK t', ['Free remote survey, no home visit needed', 'Fitted by qualified electricians', '3-year warranty included'])], 'margin-top: 24px;'),
     ], 'display: flex; flex-direction: column; align-items: flex-start;')
     finishes = div('BK fin', [div(f'BK f {i}', [el('e-image', f'BK f {i} img', {'image': {'src': {'id': M[k]}, 'size': 'medium_large'}}, 'width: 100%; height: auto; display: block;'),

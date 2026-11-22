@@ -58,7 +58,7 @@ hero = div('PP hero', [div('PP hero inner', [div('PP hero grid', [
         h('PP title', 'EV-Tron Tethered', 'h1', ['v2-h2'], 'margin-top: 18px; font-size: clamp(40px, 4.6vw, 68px);'),
         p('PP sub', '7kW smart home charger with a tethered Type 2 cable.', ['v2-lead'], 'margin-top: 12px;'),
         div('PP price row', [p('PP price', PRICE, ['v2-num'], 'font-size: 44px; line-height: 1;'),
-                             p('PP price note', 'Charger only. Or from £995 supplied and fitted', None, 'font-size: 14px; color: #A1B5A8;')],
+                             p('PP price note', 'Charger only. Installation available, quoted after a free remote survey', None, 'font-size: 14px; color: #A1B5A8;')],
             'display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-top: 28px;'),
         div('PP colour', [p('PP colour k', 'Colour', ['v2-label']), p('PP colour name', 'Mythos Black', None, 'font-size: 15px; color: #F5FFF8; font-weight: 600;')],
             'display: flex; gap: 12px; align-items: baseline; margin-top: 28px;'),
@@ -113,7 +113,7 @@ groups = div('Cfg steps', [
            option('O acc 2', 'Steel charging post', '+£280', 'Brushed steel free-standing post')], multi=True),
     group('G install', '05', 'Installation', 'Buy the charger on its own, or let us supply and fit it.',
           [option('O ins 0', 'Charger only', 'Buy online', 'Checkout now. Delivered to you for your own electrician to fit'),
-           option('O ins 1', 'Supply and install', 'Quote', 'From £995 supplied and fitted. Final price after your free remote survey')], cols=2),
+           option('O ins 1', 'Supply and install', 'Quote', 'We call you, run a free remote survey and quote for fitting')], cols=2),
 ], 'display: flex; flex-direction: column;')
 
 summary = div('Cfg summary', [
