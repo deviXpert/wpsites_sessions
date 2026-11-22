@@ -157,6 +157,8 @@ showcase = v2sec('V2 range', [
 
 # ================= 2b. Dealership band (client: highlight, keep it light) =================
 dealers = v2sec('V2 dealers', [div('Dealer band', [
+    el('e-image', 'Dealer img', {'image': {'src': {'id': M['dealer_pullup_four']}, 'size': 'medium_large'}},
+       'width: 150px; min-width: 150px; height: auto; display: block; border-radius: 14px; flex: 0 0 150px; @media(--mobile){ width: 100%; min-width: 0; flex: 1 1 100%; }'),
     div('Dealer copy', [itile('Dealer icon', 'fa-solid fa-handshake'),
                         div('Dealer txt', [h('Dealer t', 'Partnering with car dealerships nationwide.', 'h2', ['v2-h3'], 'font-size: clamp(20px, 2vw, 26px);'),
                                            p('Dealer d', 'Buying a new EV? Ask your dealer about EV-Tron. Run a dealership, leasing company or broker? Earn £150 for every installation you introduce.', ['v2-body'], 'margin-top: 6px;')])],

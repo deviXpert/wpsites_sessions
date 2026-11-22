@@ -337,8 +337,10 @@ def page_dealerships():
                                                  ('fa-solid fa-mobile-screen', 'We take care of it', 'We call your customer, run a free remote survey and arrange installation, nationwide.'),
                                                  ('fa-solid fa-bolt', 'They charge, you earn', 'A trusted installer fits their EV-Tron, and you earn £150 for the completed installation.')])]),
         v2sec('DL display', [div('DL d grid', [
-            div('DL d img', [el('e-image', 'DL d photo', {'image': {'src': {'id': M['dealer_showroom']}, 'size': 'large'}}, 'width: 100%; height: auto; display: block; border-radius: 18px;'),
-                             p('DL d cap', 'Our dealership display: pull-up banner and counter card', None, MONO + 'font-size: 11.5px; letter-spacing: 0.04em; color: #A1B5A8; margin-top: 12px;')],
+            div('DL d img', [div('DL d pair', [el('e-image', 'DL d photo1', {'image': {'src': {'id': M['dealer_pullup_four']}, 'size': 'large'}}, 'width: 100%; height: auto; display: block; border-radius: 14px;'),
+                                               el('e-image', 'DL d photo2', {'image': {'src': {'id': M['dealer_showroom']}, 'size': 'large'}}, 'width: 100%; height: auto; display: block; border-radius: 14px;')],
+                                 'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;'),
+                             p('DL d cap', 'Our dealership pull-up banners, shown in a showroom setting', None, MONO + 'font-size: 11.5px; letter-spacing: 0.04em; color: #A1B5A8; margin-top: 12px;')],
                 'padding: 16px; @media(--mobile){ padding: 10px; }', ['v2-glass']),
             div('DL d txt', [chip('DL d chip', 'In your showroom'), h('DL d t', 'Your customers scan. We do the rest.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
                              p('DL d l', 'Your showroom display carries your own QR code. Customers scan it to book a free remote survey, and every booking is linked to your dealership, so your £150 referral fee is tracked automatically.', ['v2-lead'], 'margin-top: 16px;'),
