@@ -10,7 +10,7 @@ PID = C['home_v2']
 cfg.clear(); st.clear(); cl.clear()
 PRICE = '£595'                                   # client 19 Nov: charger price shown is £595
 PRODUCT = '/ev-chargers/evtron-tethered-ev-charger/'
-HERO_COLOURS = [('render_evtron', 'Mythos Black', '#1B1D21'), ('render_evtron_grey', 'Space Grey', '#7A8088'), ('render_evtron_green', 'Midnight Green', '#1E4A3A')]
+HERO_COLOURS = [('render_evtron', 'Mythos Black', '#1B1D21'), ('render_evtron_grey', 'Space Grey', '#7A8088'), ('render_evtron_green', 'Midnight Green', '#1E4A3A'), ('render_evtron_red', 'Crimson Red', '#7A1A20')]
 
 
 def vbtn(cid, text, url, kind='primary', style=None):
@@ -61,15 +61,15 @@ visual = div('Hero visual', [
 copy = div('Hero copy', [
     chip('Hero chip', '● Home EV charging · supplied and fitted'),
     h('Hero title', 'Fast. Smart. Effortless.', 'h1', ['v2-display'], 'margin-top: 28px; font-size: clamp(44px, 5.6vw, 88px);'),
-    p('Hero subtitle', 'Three finishes. Pick yours.', ['v2-display'], 'font-weight: 300; color: #A3FFC1; margin-top: 10px; font-size: clamp(30px, 3.4vw, 54px); line-height: 1.05; letter-spacing: -0.035em;'),
-    p('Hero lead', 'A premium 7kW smart charger in Mythos Black, Space Grey or Midnight Green. Buy it online, or have it fitted by a qualified electrician after a free remote survey.', ['v2-lead'], 'margin-top: 28px;'),
+    p('Hero subtitle', 'Four finishes. Pick yours.', ['v2-display'], 'font-weight: 300; color: #A3FFC1; margin-top: 10px; font-size: clamp(30px, 3.4vw, 54px); line-height: 1.05; letter-spacing: -0.035em;'),
+    p('Hero lead', 'A premium 7kW smart charger in four finishes, solar compatible to help lower your electricity bills. Buy it online, or have it fitted after a free remote survey.', ['v2-lead'], 'margin-top: 28px;'),
     div('Hero CTAs', [vbtn('CTA primary', 'Buy now', PRODUCT + '#configure'), vbtn('CTA glass', 'Explore EV-Tron', PRODUCT, 'glass')],
         'display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px;'),
-    div('Hero chips', [chip('Chip 1', '7kW home charging'), chip('Chip 2', 'Type 2'), chip('Chip 3', 'Wi-Fi + Bluetooth')],
+    div('Hero chips', [chip('Chip 1', '7kW home charging'), chip('Chip 2', 'Type 2 (IEC 62196-2)'), chip('Chip 3', 'Solar compatible')],
         'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px;'),
 ], 'display: flex; flex-direction: column; align-items: flex-start; position: relative; z-index: 2;')
 
-rail_items = [('Power', '7kW single-phase'), ('Connector', 'Type 2'), ('Installation', 'Available'), ('Survey', 'Free and remote')]
+rail_items = [('Power', '7kW single-phase'), ('Connector', 'Type 2 (IEC 62196-2)'), ('Installation', 'Available'), ('Survey', 'Free and remote')]
 rail = div('Spec rail', [div(f'Rail {i}', [p(f'Rail {i} k', k, ['v2-label']), p(f'Rail {i} v', v, None, 'font-size: 15.5px; font-weight: 600; color: #F5FFF8; margin-top: 6px;')],
                              'padding: 22px 24px; ' + ('' if i == 0 else 'border-left: 1px solid rgba(190,255,215,0.12); @media(--mobile){ border-left: 0; border-top: 1px solid rgba(190,255,215,0.12); }'))
                          for i, (k, v) in enumerate(rail_items)],
@@ -117,7 +117,7 @@ featured = div('Featured EV-Tron', [
     div('Feat colours', [dots('Feat dots', [c for _, c in EVC]), p('Feat colour name', 'Mythos Black · Space Grey · Midnight Green · Crimson Red', None, 'font-size: 13.5px; color: #A1B5A8;')],
         'display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 14px;'),
     div('Feat specs', [spec('FS1', 'Power', '7kW'), spec('FS2', 'Current', 'Up to 32A'), spec('FS3', 'Cable', 'Up to 10m'),
-                       spec('FS4', 'Weather', 'IP65'), spec('FS5', 'Connect', 'Wi-Fi + BT'), spec('FS6', 'Load balancing', 'With CT clamp')],
+                       spec('FS4', 'Weather', 'IP65'), spec('FS5', 'Connect', 'Wi-Fi + Bluetooth'), spec('FS6', 'Solar', 'Compatible')],
         'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 24px; @media(--mobile){ grid-template-columns: repeat(2, minmax(0, 1fr)); }'),
     div('Feat foot', [div('Feat price wrap', [p('Feat price', PRICE, ['v2-num'], 'font-size: 40px;'), p('Feat price note', 'Charger price · cable and extras next', None, 'font-size: 13.5px; color: #A1B5A8; margin-top: 6px;')]),
                       div('Feat btns', [vbtn('Feat explore', 'Explore', PRODUCT, 'glass'), vbtn('Feat buy', 'Buy now', PRODUCT + '#configure')], 'display: flex; gap: 10px; flex-wrap: wrap;')],
@@ -177,10 +177,10 @@ bento = v2sec('V2 benefits', [
         tile('B app', [itile('B app icon', 'fa-solid fa-wifi'), h('B app t', 'Wi-Fi and Bluetooth', 'h3', ['v2-h3'], 'margin-top: 20px;'), p('B app d', 'Start, stop and monitor charging from your phone.', ['v2-body'], 'margin-top: 8px;')]),
         tile('B safety', [itile('B safe icon', 'fa-solid fa-shield-halved'), h('B safe t', 'Protected installation', 'h3', ['v2-h3'], 'margin-top: 20px;'), p('B safe d', 'A dedicated EV consumer unit with surge protection, and PEN fault protection appropriate to your home.', ['v2-body'], 'margin-top: 8px;')], glass=False),
         tile('B ip', [p('B ip n', 'IP65', ['v2-num'], 'font-size: clamp(44px, 4.4vw, 64px);'), p('B ip d', 'Weather-sealed for outdoor installation (EV-Tron).', ['v2-body'], 'margin-top: 12px;')], 'justify-content: flex-end;'),
-        tile('B load', [itile('B load icon', 'fa-solid fa-gauge-high'), h('B load t', 'Load balancing ready', 'h3', ['v2-h3'], 'margin-top: 20px;'),
-                        p('B load d', 'Add a CT clamp (£15) and the charger watches your home’s demand, adjusting charging so your supply isn’t overloaded.', ['v2-body'], 'margin-top: 8px; max-width: 46ch;'), loadviz],
+        tile('B load', [itile('B load icon', 'fa-solid fa-gauge-high'), h('B load t', 'Load balancing', 'h3', ['v2-h3'], 'margin-top: 20px;'),
+                        p('B load d', 'The charger can watch your home’s demand and adjust charging, so your supply isn’t overloaded.', ['v2-body'], 'margin-top: 8px; max-width: 46ch;'), loadviz],
              'grid-column: span 2; @media(--mobile){ grid-column: auto; }', glass=False),
-        tile('B rfid', [itile('B rfid icon', 'fa-solid fa-id-card'), h('B rfid t', 'RFID access', 'h3', ['v2-h3'], 'margin-top: 20px;'), p('B rfid d', 'Tap a card to start or stop a session.', ['v2-body'], 'margin-top: 8px;')]),
+        tile('B solar', [itile('B solar icon', 'fa-solid fa-solar-panel'), h('B solar t', 'Solar compatible', 'h3', ['v2-h3'], 'margin-top: 20px;'), p('B solar d', 'Use more of your own solar energy to help lower your electricity bills.', ['v2-body'], 'margin-top: 8px;')]),
         tile('B fast', [p('B fast n', '48–96h', ['v2-num'], 'font-size: clamp(36px, 3.6vw, 52px);'), p('B fast d', 'Installation in as little as 48 to 96 hours in selected areas.', ['v2-body'], 'margin-top: 12px;')], 'justify-content: flex-end;', glass=False),
     ], 'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); gap: 14px; }'),
 ])
@@ -220,11 +220,11 @@ tech = v2sec('V2 tech', [div('Tech grid', [
 ], 'display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: 56px; align-items: center; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 40px; }')])
 
 # ================= 5. The process (replaces V1 "How it works") =================
-STEPS = [('fa-solid fa-sliders', 'Choose and order', 'Pick your colour, cable length and any extras online. We’ll call you to confirm the details.', 'Online, in a few clicks'),
-         ('fa-solid fa-mobile-screen', 'Free remote survey', 'Send photos or a short video, or talk us through it by phone. We confirm your installation and agree any extras first.', 'Phone, photos or video'),
-         ('fa-solid fa-bolt', 'Installed and ready', 'A qualified electrician fits, tests and certifies your charger, then sets up the app with you.', 'Installed within 10 days of survey approval')]
+STEPS = [('fa-solid fa-sliders', 'Choose and order', 'Pick your finish, cable length and any extras online. We’ll call you to confirm the details.', 'Online, in a few clicks'),
+         ('fa-solid fa-mobile-screen', 'Free remote survey', 'Send photos or a short video, or talk us through it by phone. Our team then works with you and our trusted installer to book a time that suits you.', 'Phone, photos or video'),
+         ('fa-solid fa-truck-fast', 'Delivered and installed', 'Your EV-Tron is delivered to your installer ahead of the day, so everything’s ready when they arrive. They fit, test and certify it, then show you how it works.', 'Installed within 10 days of survey approval')]
 process = v2sec('V2 process', [
-    v2head('Proc head', 'The process', 'From order to first charge, in three steps.', 'No home visit needed to get started. We check everything remotely, then a qualified electrician fits your charger.', center=True),
+    v2head('Proc head', 'The process', 'From order to first charge, in three steps.', 'No home visit, no hassle. We check everything remotely, then a qualified electrician fits your charger.', center=True),
     div('Proc track', [
         div('Proc line', [div('Proc fill', [], 'width: 0; height: 100%; border-radius: 999px; background-color: #55E68B;')],
             'position: absolute; left: 32px; right: 32px; width: auto; top: 14px; height: 2px; border-radius: 999px; background-color: rgba(190,255,215,0.14); @media(--tablet){ display: none; }'),
@@ -239,18 +239,29 @@ process = v2sec('V2 process', [
     ], 'padding-top: 44px; @media(--tablet){ padding-top: 0; }', ['v2-proc']),
 ])
 
+# ================= 6b. Tariffs band (sits under V1's cost calculator) =================
+SUPPLIERS = ['Octopus Energy', 'Utility Warehouse', 'EDF', 'E.ON', 'British Gas']
+tariffs = v2sec('V2 tariffs', [div('Tariff card', [
+    div('Tariff copy', [itile('Tariff icon', 'fa-regular fa-clock'),
+                        div('Tariff txt', [h('Tariff t', 'Works with your tariff.', 'h2', ['v2-h3'], 'font-size: clamp(22px, 2.2vw, 30px);'),
+                                           p('Tariff d', 'Whoever supplies your electricity, set your charging schedule around your tariff’s cheaper hours.', ['v2-body'], 'margin-top: 6px;')])],
+        'display: flex; gap: 18px; align-items: flex-start; flex: 1 1 380px;'),
+    div('Tariff names', [p(f'Tariff n {i}', n, ['v2-chip'], 'margin: 0;') for i, n in enumerate(SUPPLIERS + ['and more'])],
+        'display: flex; flex-wrap: wrap; gap: 8px; flex: 1 1 380px; justify-content: flex-end; @media(--tablet){ justify-content: flex-start; }'),
+], 'display: flex; flex-wrap: wrap; gap: 24px; align-items: center; padding: 32px; @media(--mobile){ padding: 22px; }', ['v2-glass'])])
+
 # ================= 7. Trust =================
 facts = [('fa-solid fa-mobile-screen', 'Free remote survey', 'By phone, photos or video, so there are no unnecessary home visits.'),
          ('fa-solid fa-sterling-sign', 'Clear pricing', 'Your options are priced up front, and any extra work is agreed before it starts.'),
          ('fa-solid fa-screwdriver-wrench', 'Qualified electricians', 'Our network of experienced, qualified electricians fits every charger.'),
          ('fa-solid fa-file-circle-check', 'Certified on completion', 'Electrical installation certificate and DNO notification handled for you.'),
          ('fa-solid fa-headset', 'One point of contact', 'Installation, technical help and aftercare all go through EV-Tron.'),
-         ('fa-solid fa-shield', '3-year warranty', 'Extendable to 5 years for £89.99. Full terms published before launch.')]
+         ('fa-solid fa-shield', '3-year warranty included', 'Upgrade to 5 years for extra peace of mind, for only £89.99.')]
 trust = v2sec('V2 trust', [div('Trust grid', [
     div('Trust statement', [chip('Trust chip', 'Honest by design'),
                             h('Trust title', 'Straightforward from order to aftercare.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
                             p('Trust lead', 'We publish our prices, spell out what’s included, and agree any extras with you first.', ['v2-lead'], 'margin-top: 18px;'),
-                            div('Trust meta', [p('TM1', 'Covering England · UK-wide expansion planned', None, MONO + 'font-size: 12px; color: #A3FFC1; letter-spacing: 0.04em;'),
+                            div('Trust meta', [p('TM1', 'Nationwide coverage · Working with dealerships nationwide', None, MONO + 'font-size: 12px; color: #A3FFC1; letter-spacing: 0.04em;'),
                                                p('TM2', 'Monday to Saturday · 8:30am to 6:30pm', None, MONO + 'font-size: 12px; color: #A1B5A8; letter-spacing: 0.04em; margin-top: 8px;')],
                                 'margin-top: auto; padding-top: 40px; border-top: 1px solid rgba(190,255,215,0.12);')],
         'justify-content: flex-start; padding: 40px; @media(--mobile){ padding: 24px; }', ['v2-card']),
@@ -259,7 +270,7 @@ trust = v2sec('V2 trust', [div('Trust grid', [
         'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
 ], 'display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 20px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }')])
 
-X = div('Home V2', [hero, showcase, bento, tech, process, trust], 'background-color: #07110E;', tag='main')
+X = div('Home V2', [hero, showcase, bento, tech, process, tariffs, trust], 'background-color: #07110E;', tag='main')
 
 if __name__ == '__main__':
     r = wp.ability('elementor/build-composition', {'post_id': PID, 'xml_structure': X, 'element_config': cfg, 'style': st, 'classes': cl, 'mode': 'replace_children'})
@@ -268,16 +279,22 @@ if __name__ == '__main__':
     # Append V1's remaining sections (unchanged for now) into the V2 <main>, after the new hero
     v1 = json.loads(wp.req('wp/v2/pages/95?context=edit')['meta']['_elementor_data'])
     v2 = json.loads(wp.req(f'wp/v2/pages/{PID}?context=edit')['meta']['_elementor_data'])
-    new = v2[0]['elements']            # hero, showcase, bento, tech, process, trust
+    new = v2[0]['elements']            # hero, showcase, bento, tech, process, tariffs, trust
     v1s = v1[0]['elements']            # 0 hero, 1 chargers, 2 how (replaced by process), 3 costs, 4 faqs, 5 closing (matcher, not used)
-    v2[0]['elements'] = new[:5] + [v1s[3], new[5], v1s[4]]          # closing matcher dropped: one charger on sale for now
+    v2[0]['elements'] = new[:5] + [v1s[3], new[5], new[6], v1s[4]]   # ... costs, tariffs band, trust, faqs          # closing matcher dropped: one charger on sale for now
     P = 'https://evtron.co.uk/ev-chargers/evtron-tethered-ev-charger/'
     TWEAKS = [('with the reasons and the installed price', 'with the reasons and the price'),        # copy and link tweaks for kept V1 sections
               ('Get a quote', 'Request installation'), ('https://evtron.co.uk/get-a-quote/', P + '#details'),
               ('Compare all chargers', 'Explore EV-Tron'), ('https://evtron.co.uk/ev-chargers/', P),
               ('All three chargers use Type 2', 'EV-Tron uses Type 2'),
+              ('Am I eligible for a government grant?', 'What warranty do I get?'),
+              ('The OZEV chargepoint grant (75% of the cost, up to £500) is for people who rent, or own and live in a flat, with private off-street parking. People who own a house aren’t eligible. The scheme runs until 31 March 2027 (source: gov.uk).',
+               'Every EV-Tron comes with a 3-year warranty. Upgrade to 5 years for extra peace of mind, for only £89.99 when you order.'),
+              ('Can I pay in instalments?', 'How can I pay?'),
+              ('Yes. You can pay in full, or spread the cost with Klarna or PayPal Pay in 3, subject to status.',
+               'Online by card, Apple Pay, Google Pay or PayPal. Pay-later options are planned, subject to approval.'),
               ('The two Fox chargers can use surplus solar power to charge your car. What you need depends on your inverter, and we’ll confirm it before you order.',
-               'EV-Tron isn’t designed to charge from solar panels. If you have solar, our Fox ESS chargers can use surplus solar power, depending on the model and your system. Email sales@evtron.co.uk and we’ll check what suits your set-up.')]
+               'Yes. EV-Tron is solar compatible, so you can use more of your own solar energy and lower your electricity bills. Our Fox ESS chargers are solar compatible too.')]
 
     def tweak(o):
         if isinstance(o, dict): return {k: tweak(v) for k, v in o.items()}

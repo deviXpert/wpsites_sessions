@@ -37,6 +37,25 @@ html{scroll-padding-top:130px}
 .pp-bar small{display:block;font-family:"Manrope",sans-serif;font-size:12px;color:#A1B5A8}
 .pp-bar a{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;background:linear-gradient(135deg,#72F3A0,#28B967);color:#06150C;font-weight:600;font-size:15px;text-decoration:none}
 @media(max-width:1024px){.pp-bar{display:flex}body.pp-has-bar #ast-scroll-top{bottom:84px!important}}
+.pp-pop{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.pp-pop-card{pointer-events:auto;position:relative;text-align:center;padding:34px 40px 30px;border-radius:26px;max-width:min(380px,calc(100vw - 32px));
+  background:linear-gradient(160deg,rgba(85,230,139,.22),rgba(12,25,20,.94) 55%);border:1px solid rgba(120,255,170,.55);
+  -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:0 30px 80px -20px rgba(0,0,0,.7),0 0 60px rgba(85,230,139,.25);
+  animation:pppop .7s cubic-bezier(.2,1.4,.3,1) both}
+.pp-pop-card.out{animation:ppout .35s ease forwards}
+.pp-pop-ic{width:64px;height:64px;margin:0 auto 14px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:#55E68B;color:#06150C;box-shadow:0 0 0 8px rgba(85,230,139,.15)}
+.pp-pop-k{font:500 11.5px/1 "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:#A3FFC1;margin:0}
+.pp-pop-t{font:600 30px/1.1 "Manrope",sans-serif;letter-spacing:-.03em;color:#F5FFF8;margin:10px 0 0}
+.pp-pop-d{font:400 15px/1.5 "Manrope",sans-serif;color:#C9D6CE;margin:10px 0 0}
+.pp-pop-b{margin-top:20px;display:inline-flex;align-items:center;min-height:44px;padding:0 22px;border-radius:999px;border:0;cursor:pointer;font:600 15px "Manrope",sans-serif;
+  color:#06150C;background:linear-gradient(135deg,#72F3A0,#28B967)}
+.pp-bit{position:absolute;left:50%;top:50%;width:9px;height:14px;border-radius:2px;pointer-events:none;animation:ppbit 1.25s cubic-bezier(.15,.7,.3,1) forwards}
+@keyframes pppop{from{opacity:0;transform:scale(.6) translate3d(0,20px,0)}}
+@keyframes ppout{to{opacity:0;transform:scale(.92)}}
+@keyframes ppbit{0%{transform:translate(-50%,-50%) rotate(0) scale(.6);opacity:1}100%{transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) rotate(var(--r)) scale(1);opacity:0}}
+.pp-opt.pp-glow{animation:ppglow 1.6s ease 2}
+@keyframes ppglow{50%{box-shadow:0 0 0 4px rgba(85,230,139,.35),0 0 40px rgba(85,230,139,.35)}}
+@media (prefers-reduced-motion:reduce){.pp-pop-card,.pp-pop-card.out{animation:none}.pp-bit{display:none}.pp-opt.pp-glow{animation:none}}
 @media (prefers-reduced-motion:reduce){.pp-stage img,.pp-opt,.pp-swatches > div{transition:none}.pp-details.open .pp-unlock{animation:none}}
 </style>
 <script>
@@ -124,6 +143,26 @@ document.addEventListener('DOMContentLoaded',function(){
       s.addEventListener('click',function(){pick(colour,j)});
       s.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(colour,j)}})})}
   render();
+  /* Cable upgrade unlocked: pop-up with a burst the first time the cable step comes into view */
+  if(cable&&cable.opts[1]&&'IntersectionObserver' in window){
+    var shown=false,io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting||shown)return;shown=true;io.disconnect();unlock()})},{threshold:.45});
+    io.observe(cable.el);
+  }
+  function unlock(){
+    var o=cable.opts[1];cable.sel=[1];render();o.el.classList.add('pp-glow');
+    var wrap=document.createElement('div');wrap.className='pp-pop';wrap.setAttribute('role','dialog');wrap.setAttribute('aria-live','assertive');wrap.setAttribute('aria-label','Cable upgrade unlocked');
+    wrap.innerHTML='<div class="pp-pop-card"><div class="pp-pop-ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7.5a4 4 0 0 1 7.6-1.7"/></svg></div>'+
+      '<p class="pp-pop-k">Unlocked</p><p class="pp-pop-t">'+o.title+' cable, free</p><p class="pp-pop-d">You’ve unlocked a free cable upgrade. It’s been added to your build.</p><button type="button" class="pp-pop-b">Nice, thanks</button></div>';
+    document.body.appendChild(wrap);
+    var card=wrap.firstChild,cols=['#55E68B','#A3FFC1','#F5FFF8','#28B967','#72F3A0'];
+    if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){for(var i=0;i<46;i++){var b=document.createElement('i');b.className='pp-bit';
+      var a=Math.random()*Math.PI*2,d=140+Math.random()*220;b.style.setProperty('--x',(Math.cos(a)*d).toFixed(0)+'px');b.style.setProperty('--y',(Math.sin(a)*d-40).toFixed(0)+'px');
+      b.style.setProperty('--r',(Math.random()*720-360).toFixed(0)+'deg');b.style.background=cols[i%cols.length];b.style.animationDelay=(Math.random()*120).toFixed(0)+'ms';card.appendChild(b)}}
+    var btn=card.querySelector('.pp-pop-b');btn.focus({preventScroll:true});
+    var close=function(){card.classList.add('out');setTimeout(function(){wrap.remove()},360)};
+    btn.addEventListener('click',close);var t=setTimeout(close,4200);btn.addEventListener('focus',function(){clearTimeout(t)},{once:true});
+    document.addEventListener('keydown',function k(e){if(e.key==='Escape'){close();document.removeEventListener('keydown',k)}});
+  }
   /* Continue to details: reveal the offer + form, then focus the first field */
   function openDetails(scroll){if(!detSec)return;detSec.classList.add('open');
     if(scroll){detSec.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});

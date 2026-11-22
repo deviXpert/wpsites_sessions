@@ -118,15 +118,15 @@ HOURS = 'Monday to Saturday, 8:30am to 6:30pm'
 
 
 def page_installation():
-    side = facts_panel('IN facts', [('Survey', 'Free and remote'), ('Turnaround', 'Most installs within 10 days of survey approval'), ('Coverage', 'England'), ('Hours', HOURS)])
+    side = facts_panel('IN facts', [('Survey', 'Free and remote'), ('Turnaround', 'Most installs within 10 days of survey approval'), ('Coverage', 'Nationwide'), ('Hours', HOURS)])
     return [
         hero('IN hero', 'Installation', 'Professional installation, made simple.',
              'Every installation starts with a free remote survey. A qualified electrician then fits, tests and certifies your charger, and sets up the app with you.', side),
-        v2sec('IN process', [v2head('IN p head', 'How it works', 'Four steps from request to first charge.', 'No home visit needed to get started.', center=True),
-                             step_cards('IN steps', [('fa-solid fa-phone', 'Request a callback', 'Tell us about your home and your car. We’ll call you back at a time that suits you.'),
-                                                     ('fa-solid fa-mobile-screen', 'Free remote survey', 'Send photos or a short video, or talk us through it by phone. No home visit needed.'),
-                                                     ('fa-solid fa-file-invoice', 'Your quote', 'We confirm your installation and agree any extra work with you before anything is booked.'),
-                                                     ('fa-solid fa-bolt', 'Installed and ready', 'A qualified electrician fits, tests and certifies your charger, then sets up the app with you.')])]),
+        v2sec('IN process', [v2head('IN p head', 'How it works', 'Four steps from request to first charge.', 'No home visit, no hassle.', center=True),
+                             step_cards('IN steps', [('fa-solid fa-phone', 'Get in touch', 'Order online or request a callback. We’ll talk through your home, your car and the best spot for your charger.'),
+                                                     ('fa-solid fa-mobile-screen', 'Free remote survey', 'Send photos or a short video, or talk us through it by phone. No home visit, no hassle.'),
+                                                     ('fa-solid fa-file-invoice', 'Your quote and date', 'We confirm your installation, agree any extras with you, and book a time that suits you with our trusted installer.'),
+                                                     ('fa-solid fa-truck-fast', 'Delivered and installed', 'Your EV-Tron is delivered to your installer ahead of the day. They fit, test and certify it, then show you how it works.')])]),
         v2sec('IN incl', [div('IN incl grid', [
             div('IN incl side', [chip('IN i chip', 'What’s included'), h('IN i t', 'A standard installation covers it all.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
                                  p('IN i l', 'Anything non-standard is quoted and agreed with you before work starts.', ['v2-lead'], 'margin-top: 16px;')],
@@ -174,9 +174,9 @@ FAQS = [
         ('Can it be installed outdoors?', 'Yes. EV-Tron is IP65 rated against dust and water jets, and works from −20°C to +50°C.'),
         ('Which colours are available?', 'Four finishes, all the same price: Mythos Black, Space Grey, Midnight Green and Crimson Red.'),
         ('Which cable lengths can I choose?', 'The charging cable comes in 5 metres as standard. 7.5 metres is a free upgrade, and 10 metres is £80 extra.'),
-        ('Does it work with solar panels?', 'EV-Tron isn’t designed to charge from solar panels. If you have solar, our Fox ESS chargers can use surplus solar power, depending on the model and your system. Email sales@evtron.co.uk and we’ll check what suits your set-up.')]),
+        ('Does it work with solar panels?', 'Yes. EV-Tron is solar compatible, so you can use more of your own solar energy and lower your electricity bills. Our Fox ESS chargers are solar compatible too.')]),
     ('App and smart features', [
-        ('Can I control it from my phone?', 'Yes. EV-Tron connects over Wi-Fi or Bluetooth to the WeGoodCharger app, so you can start and stop charging, schedule it and see live data such as power, current and energy.'),
+        ('Can I control it from my phone?', 'Yes. Over Wi-Fi or Bluetooth you can start and stop charging, set a schedule and see live data such as power, current and energy. We set it all up with you.'),
         ('Can I charge at off-peak times?', 'Yes. Set a charging schedule in the app to match your tariff’s cheaper hours.'),
         ('What is load balancing?', 'With the optional CT clamp (£15), the charger watches your home’s electricity use and adjusts charging so your supply isn’t overloaded.'),
         ('Can I start charging without my phone?', 'Yes. Use plug and charge, or tap the RFID card supplied with the charger.')]),
@@ -186,13 +186,13 @@ FAQS = [
         ('How can I pay?', 'Online by card, Apple Pay, Google Pay or PayPal. Pay-later options are planned, subject to approval.'),
         ('Is there a free gift?', 'Supply and install orders currently unlock a free handheld vacuum cleaner. Full offer terms will be published before launch.')]),
     ('Installation', [
-        ('Do I need a home visit first?', 'No. We start with a free remote survey by phone, photos or video.'),
+        ('Do I need a home visit first?', 'No home visit and no hassle. We start with a free remote survey by phone, photos or video, and agree everything with you before installation.'),
         ('How soon can it be installed?', 'Most installations happen within 10 days of survey approval, and in some areas in as little as 48 to 96 hours, subject to availability.'),
-        ('Where do you install?', 'We currently install across England.'),
+        ('Where do you install?', 'Nationwide, through our network of trusted installers.'),
         ('Is my home suitable?', 'You’ll need off-street parking, a suitable location for the charger, an electrical supply that can support it, and any permissions needed if you rent or live in a flat. We don’t offer groundworks or excavation.'),
         ('Who installs the charger?', 'Qualified electricians from our installation network. Every installation is tested, certified and notified to your network operator.')]),
     ('Warranty and aftercare', [
-        ('What warranty do I get?', 'Every EV-Tron comes with a 3-year warranty. You can extend it to 5 years in total for £89.99 when you order.'),
+        ('What warranty do I get?', 'Every EV-Tron comes with a 3-year warranty. Upgrade to 5 years for extra peace of mind, for only £89.99 when you order.'),
         ('Who do I contact if something goes wrong?', 'Us. EV-Tron is your single point of contact for installation, technical help and warranty. Email info@evtron.co.uk.'),
         ('Do I get a manual?', 'Yes. Every charger comes with an English user manual, and your installer will show you how to use the charger and the app.')]),
 ]
@@ -219,7 +219,7 @@ def page_contact():
     methods = [('fa-solid fa-cart-shopping', 'Buying and installation', 'sales@evtron.co.uk', 'Orders, quotes and installation requests.'),
                ('fa-solid fa-envelope', 'Everything else', 'info@evtron.co.uk', 'Questions, support, warranty and aftercare.'),
                ('fa-regular fa-clock', 'Opening hours', HOURS, 'We reply as soon as we can during these hours.'),
-               ('fa-solid fa-location-dot', 'Coverage', 'England', 'UK-wide expansion is planned.')]
+               ('fa-solid fa-location-dot', 'Coverage', 'Nationwide', 'Installations by our trusted installer network.')]
     return [
         hero('CT hero', 'Contact', 'Talk to EV-Tron.', 'Questions about the charger, your order or installation? Send us a message and we’ll get back to you.'),
         v2sec('CT main', [div('CT grid', [
@@ -252,16 +252,16 @@ def page_warranty():
         div('WA std', [p('WA s k', 'Standard', ['v2-label']), p('WA s n', '3 years', ['v2-num'], 'font-size: clamp(44px, 5vw, 72px); margin-top: 12px;'),
                        p('WA s d', 'Included with every EV-Tron charger.', ['v2-body'], 'margin-top: 10px;')], 'padding: 36px;', ['v2-solid']),
         div('WA ext', [p('WA e k', 'Extended', ['v2-label']), p('WA e n', '5 years', ['v2-num'], 'font-size: clamp(44px, 5vw, 72px); margin-top: 12px; color: #A3FFC1;'),
-                       p('WA e d', 'Add 2 more years for £89.99 when you order.', ['v2-body'], 'margin-top: 10px;'),
+                       p('WA e d', 'Upgrade for extra peace of mind, for only £89.99 when you order.', ['v2-body'], 'margin-top: 10px;'),
                        vbtn('WA e b', 'Configure your charger', PRODUCT + '#configure', 'primary', 'margin-top: 24px;')], 'padding: 36px; align-items: flex-start;', ['v2-card']),
     ], 'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; @media(--mobile){ grid-template-columns: minmax(0, 1fr); }')
     return [
-        hero('WA hero', 'Warranty', 'Covered, with one number to call.', 'Every EV-Tron comes with a 3-year warranty, handled directly by us. No passing you between manufacturer and installer.'),
+        hero('WA hero', 'Warranty', 'Covered, with one number to call.', '3-year warranty included, handled directly by us. Upgrade to 5 years for extra peace of mind, for only £89.99.'),
         v2sec('WA cover sec', [v2head('WA c head', 'Your cover', 'Choose 3 or 5 years.', None), cover]),
         v2sec('WA claim', [v2head('WA cl head', 'Getting help', 'If something isn’t right.', 'We’re your single point of contact for technical help and warranty claims.', center=True),
-                           step_cards('WA steps', [('fa-solid fa-envelope', 'Get in touch', 'Email info@evtron.co.uk with your order number and model (EMS3-70-C).'),
-                                                   ('fa-solid fa-camera', 'Show us the issue', 'Describe what’s happening. Photos or a short video help us diagnose it quickly.'),
-                                                   ('fa-solid fa-screwdriver-wrench', 'We guide the next steps', 'We’ll work through it with you and arrange what’s needed.')])]),
+                           step_cards('WA steps', [('fa-solid fa-envelope', 'Get in touch', 'Email info@evtron.co.uk with your order number and a short description.'),
+                                                   ('fa-solid fa-camera', 'We diagnose it', 'Photos or a short video help us find the cause quickly, often remotely.'),
+                                                   ('fa-solid fa-screwdriver-wrench', 'We put it right', 'Depending on what’s needed, we fix it remotely, repair it or replace it.')])]),
         v2sec('WA terms', [div('WA t card', [itile('WA t icon', 'fa-solid fa-file-lines'),
                                              div('WA t txt', [h('WA t t', 'Full warranty terms', 'h3', ['v2-h3']),
                                                               p('WA t d', 'Our full warranty terms, including what is and isn’t covered, are being finalised and will be published on this page before launch.', ['v2-body'], 'margin-top: 8px;')])],
@@ -310,7 +310,7 @@ def page_legal(slug):
 
 
 PAGES = {'installation': ('Installation', page_installation), 'faqs': ('FAQs', page_faqs), 'contact': ('Contact', page_contact),
-         'warranty': ('Warranty', page_warranty), 'ev-charger-grants': ('EV charger grants', page_grants)}
+         'warranty': ('Warranty', page_warranty)}   # Grants page removed (client, 22 Nov 2026)
 PAGES.update({s: (t, (lambda s=s: page_legal(s))) for s, t in LEGAL.items()})
 META = {'_elementor_edit_mode': 'builder', '_elementor_template_type': 'wp-page', '_elementor_page_settings': {'hide_title': 'yes'},
         'site-sidebar-layout': 'no-sidebar', 'ast-site-content-layout': 'full-width-container', 'site-content-style': 'unboxed'}

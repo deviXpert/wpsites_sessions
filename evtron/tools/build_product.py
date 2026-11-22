@@ -63,7 +63,7 @@ hero = div('PP hero', [div('PP hero inner', [div('PP hero grid', [
         div('PP colour', [p('PP colour k', 'Colour', ['v2-label']), p('PP colour name', 'Mythos Black', None, 'font-size: 15px; color: #F5FFF8; font-weight: 600;')],
             'display: flex; gap: 12px; align-items: baseline; margin-top: 28px;'),
         div('PP sw wrap', [swatches('PP swatches')], 'margin-top: 12px;'),
-        div('PP points', [ticks('PP ticks', ['Up to 7kW, 32A single-phase charging', 'App control over Wi-Fi and Bluetooth', 'Tethered Type 2 cable, up to 10 metres', 'IP65 rated for outdoor installation'])], 'margin-top: 28px;'),
+        div('PP points', [ticks('PP ticks', ['Up to 7kW, 32A single-phase charging', 'Solar compatible to help lower your bills', 'Control it from your phone over Wi-Fi and Bluetooth', 'IP65 rated for outdoor installation'])], 'margin-top: 28px;'),
         div('PP ctas', [vbtn('PP buy btn', 'Configure and buy', '#configure'),
                         vbtn('PP specs btn', 'See specifications', '#specs', 'glass')],
             'display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px;'),
@@ -104,9 +104,9 @@ groups = div('Cfg steps', [
           [option('O cab 0', '5 metres', 'Included', 'Standard length'),
            option('O cab 1', '7.5 metres', 'Free', 'Free upgrade, unlocked for you', 'Unlocked'),
            option('O cab 2', '10 metres', '+£80', 'For longer driveways')]),
-    group('G warranty', '03', 'Warranty', 'Every EV-Tron comes with a 3-year warranty.',
+    group('G warranty', '03', 'Warranty', '3-year warranty included. Upgrade to 5 years for extra peace of mind.',
           [option('O war 0', '3-year warranty', 'Included', 'Standard cover'),
-           option('O war 1', '5-year warranty', '+£89.99', 'Extend your cover by 2 years')]),
+           option('O war 1', '5-year warranty', '+£89.99', 'Extra peace of mind, for only £89.99')]),
     group('G acc', '04', 'Accessories', 'Optional. Choose one charging post at most.',
           [option('O acc 0', 'CT clamp', '+£15', 'Measures your home’s demand for load balancing'),
            option('O acc 1', 'Black charging post', '+£200', 'Free-standing post for drives without a wall'),
@@ -190,12 +190,12 @@ details = div('PP details', [div('PP details inner', [
 
 
 # ================= 4. Features =================
-FEATS = [('fa-solid fa-wifi', 'App control', 'Start, stop and monitor charging from your phone over Wi-Fi or Bluetooth, using the WeGoodCharger app.'),
+FEATS = [('fa-solid fa-mobile-screen', 'Phone control', 'Start, stop and monitor charging from your phone over Wi-Fi or Bluetooth.'),
          ('fa-regular fa-clock', 'Scheduled charging', 'Set charging to run in your tariff’s cheaper off-peak hours.'),
+         ('fa-solid fa-solar-panel', 'Solar compatible', 'Use more of your own solar energy to help lower your electricity bills.'),
          ('fa-solid fa-id-card', 'RFID card', 'Tap the supplied RFID card to start or stop a session.'),
-         ('fa-solid fa-sliders', 'Adjustable current', 'Set the charging current to suit your car and your home’s supply.'),
          ('fa-solid fa-cloud-rain', 'IP65 rated', 'Sealed against dust and water jets, for indoor or outdoor installation.'),
-         ('fa-solid fa-shield-halved', 'Built-in protection', 'Over- and under-voltage, over-current, 30mA leakage and over-temperature protection.')]
+         ('fa-solid fa-shield-halved', 'PEN fault protection', 'Every EV-Tron installation includes PEN fault protection, as UK wiring regulations require, to keep you safe if the supply’s neutral is lost.')]
 features = v2sec('PP features', [
     v2head('Feat head', 'Features', 'Smart where it matters.', 'Everything you need from a home charger, without the clutter.'),
     div('Feat grid', [div(f'PF {i}', [itile(f'PF {i} icon', ic), h(f'PF {i} t', t, 'h3', ['v2-h3'], 'margin-top: 20px;'), p(f'PF {i} d', d, ['v2-body'], 'margin-top: 8px;')], classes=['v2-solid'])
@@ -203,15 +203,29 @@ features = v2sec('PP features', [
         'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
 ])
 
+# ================= 4b. Protection (supplier's 12-point list; 6 not yet in the EMS3 manual, labelled as manufacturer spec) =================
+PROTECT = [('fa-solid fa-arrow-up', 'Over-voltage'), ('fa-solid fa-arrow-down', 'Under-voltage'), ('fa-solid fa-gauge-high', 'Over-current'), ('fa-solid fa-plug-circle-xmark', 'Leakage'),
+           ('fa-solid fa-temperature-high', 'Overheat'), ('fa-solid fa-bolt-lightning', 'Lightning surge'), ('fa-solid fa-circle-xmark', 'Short circuit'), ('fa-solid fa-plug-circle-check', 'Earthing'),
+           ('fa-solid fa-battery-full', 'Overcharge'), ('fa-solid fa-rotate', 'Auto-recovery'), ('fa-solid fa-fire-extinguisher', 'Flame-retardant'), ('fa-solid fa-droplet', 'Waterproof IP65')]
+protect = v2sec('PP protect', [
+    v2head('Prot head', 'Safety', '12-layer safety protection.', 'Smart, reliable and completely protected, from the supply to your car.', center=True),
+    div('Prot grid', [div(f'PR {i}', [icon(f'PR {i} icon', ic, 22, '#55E68B'), p(f'PR {i} t', t, None, 'font-size: 14.5px; font-weight: 600; color: #F5FFF8; text-align: center; margin-top: 12px;')],
+                          'display: flex; flex-direction: column; align-items: center; padding: 22px 12px; border-radius: 18px; border: 1px solid rgba(190,255,215,0.14); background-color: rgba(255,255,255,0.025);')
+                      for i, (ic, t) in enumerate(PROTECT)],
+        'display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; @media(--tablet){ grid-template-columns: repeat(4, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: repeat(2, minmax(0, 1fr)); }'),
+    p('Prot note', 'Protection features as specified by the manufacturer.', None, MONO + 'font-size: 11.5px; color: rgba(161,181,168,0.8); letter-spacing: 0.04em; text-align: center; margin-top: 20px;'),
+])
+
 # ================= 5. Specifications =================
-SPECS = [('Model', 'EMS3-70-C'), ('Rated power', '7kW'), ('Rated current', '32A, adjustable'), ('Supply', 'Single-phase'),
-         ('Connector', 'Type 2, tethered'), ('Cable length', '5m, 7.5m or 10m'), ('Start methods', 'Plug and charge, RFID card, app'),
-         ('Connectivity', 'Wi-Fi and Bluetooth'), ('Ingress protection', 'IP65'), ('Operating temperature', '−20°C to +50°C'),
-         ('Unit size', '274 × 204 mm'), ('Leakage protection', '30mA'), ('Standards', 'EN 62196-2, EN 61851-1, EN 62752'),
-         ('Finishes', 'Mythos Black, Space Grey, Midnight Green, Crimson Red'), ('Warranty', '3 years, extendable to 5')]
+SPECS = [('Rated power', '7kW'), ('Rated current', '32A, adjustable'), ('Supply', 'Single-phase'),
+         ('Connector', 'Type 2 (IEC 62196-2), tethered'), ('Cable length', '5m, 7.5m or 10m'), ('Start methods', 'Plug and charge, RFID card, phone'),
+         ('Connectivity', 'Wi-Fi and Bluetooth'), ('Solar', 'Compatible'), ('Ingress protection', 'IP65'), ('Operating temperature', '−20°C to +50°C'),
+         ('Unit size', '274 × 204 mm'), ('Leakage protection', '30mA'), ('Standards', 'EN 62196-2, EN 61851-1, EN 62752'), ('Certification', 'CE, RoHS'),
+         ('Installation', 'To BS 7671 (IET Wiring Regulations)'),
+         ('Finishes', 'Mythos Black, Space Grey, Midnight Green, Crimson Red'), ('Warranty', '3 years included, upgrade to 5 for £89.99')]
 specs = v2sec('PP specs', [div('Spec grid', [
     div('Spec side', [chip('Spec chip', 'Specifications'), h('Spec title', 'The technical detail.', 'h2', ['v2-h2'], 'margin-top: 20px;'),
-                      p('Spec lead', 'From the manufacturer’s data for model EMS3-70-C.', ['v2-lead'], 'margin-top: 16px;')],
+                      p('Spec lead', 'From the manufacturer’s technical data.', ['v2-lead'], 'margin-top: 16px;')],
         'display: flex; flex-direction: column; align-items: flex-start; position: sticky; top: 140px; @media(--tablet){ position: relative; top: 0; }'),
     div('Spec table', [div(f'SR {i}', [p(f'SR {i} k', k, None, 'font-size: 14.5px; color: #A1B5A8;'), p(f'SR {i} v', v, None, MONO + 'font-size: 14px; color: #F5FFF8; text-align: right;')],
                            'display: flex; justify-content: space-between; gap: 24px; padding: 16px 0; border-bottom: 1px solid rgba(190,255,215,0.10);')
@@ -231,7 +245,7 @@ install = v2sec('PP install', [
         div('Inst extras', [p('Ext k', 'Good to know', ['v2-label']),
                             div('Ext rows', [div(f'ER {i}', [p(f'ER {i} k', k, None, 'font-size: 14.5px; color: #DCE8E0;'), p(f'ER {i} v', v, None, MONO + 'font-size: 13.5px; color: #A3FFC1; text-align: right;')],
                                                  'display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(190,255,215,0.10);')
-                                             for i, (k, v) in enumerate([('Cable beyond 10m', '£15 per metre'), ('Non-standard work', 'Quoted first'), ('Groundworks', 'Not offered'), ('Coverage', 'England')])],
+                                             for i, (k, v) in enumerate([('Cable beyond 10m', '£15 per metre'), ('Non-standard work', 'Quoted first'), ('Groundworks', 'Not offered'), ('Coverage', 'Nationwide')])],
                                 'margin-top: 8px;')],
             'padding: 28px; @media(--mobile){ padding: 22px; }', ['v2-solid']),
     ], 'display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); }'),
@@ -240,11 +254,11 @@ install = v2sec('PP install', [
 # ================= 7. FAQs =================
 FAQ = [('Will it work with my car?', 'EV-Tron uses a Type 2 connector, which most electric and plug-in hybrid cars sold in the UK use. If you’re not sure, check your car’s charging port or handbook.'),
        ('How fast does it charge?', 'Up to 7kW. How many miles that adds per hour depends on your car, but it’s typically several times faster than a 3-pin plug.'),
-       ('Can I control it from my phone?', 'Yes. The charger connects over Wi-Fi or Bluetooth to the WeGoodCharger app, so you can start, stop, schedule and monitor charging. We set it up with you on the day.'),
-       ('Do I need a home visit before installation?', 'No. We start with a free remote survey by phone, photos or video. Any extra work is agreed with you before installation.'),
+       ('Can I control it from my phone?', 'Yes. Start, stop, schedule and monitor charging from your phone over Wi-Fi or Bluetooth. We set it all up with you on the day.'),
+       ('Do I need a home visit before installation?', 'No home visit and no hassle. We start with a free remote survey by phone, photos or video, and agree any extra work with you before installation.'),
        ('How soon can it be installed?', 'Most installations happen within 10 days of survey approval, and in some areas in as little as 48 to 96 hours, subject to availability.'),
-       ('Does it work with solar panels?', 'EV-Tron isn’t designed to charge from solar panels. If you have solar, our Fox ESS chargers can use surplus solar power, depending on the model and your system. Email sales@evtron.co.uk and we’ll check what suits your set-up.'),
-       ('What warranty do I get?', 'Every EV-Tron comes with a 3-year warranty. You can extend it to 5 years for £89.99 when you order.')]
+       ('Does it work with solar panels?', 'Yes. EV-Tron is solar compatible, so you can use more of your own solar energy and lower your electricity bills.'),
+       ('What warranty do I get?', 'Every EV-Tron comes with a 3-year warranty. Upgrade to 5 years for extra peace of mind, for only £89.99 when you order.')]
 items = []
 for i, (q, a) in enumerate(FAQ):
     items.append(el('e-accordion-item', f'PQ {i}', None, 'border-radius: 16px;', None, [
@@ -261,7 +275,7 @@ faqs = v2sec('PP faqs', [div('PQ grid', [
     el('e-accordion', 'PQ list', {'default_state': 'first_expanded', 'max_expanded': 'one', 'show_icon': True, 'icon_rotation': 45, 'faq_schema': True}, 'display: flex; flex-direction: column; gap: 10px;', None, items),
 ], 'display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); gap: 56px; align-items: start; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 28px; }')])
 
-X = div('Product EV-Tron', [hero, configure, details, features, specs, install, faqs], 'background-color: #07110E;', tag='main')
+X = div('Product EV-Tron', [hero, configure, details, features, protect, specs, install, faqs], 'background-color: #07110E;', tag='main')
 
 
 def ensure_classes():

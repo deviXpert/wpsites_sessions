@@ -27,7 +27,7 @@ mission = v2sec('AB mission', [div('AB m grid', [
     div('AB m body', [
         h('AB m title', 'Smarter, simpler, more accessible home charging.', 'h2', ['v2-h2']),
         p('AB m p1', 'By combining innovative technology, premium contemporary design and professional installation, we provide charging solutions designed around modern lifestyles.', ['v2-lead'], 'margin-top: 24px;'),
-        p('AB m p2', 'Through our network of qualified electricians, we aim to deliver nationwide installation coverage, fast turnaround times and a seamless customer experience. Today we cover England.', ['v2-body'], 'margin-top: 18px; font-size: 17px;'),
+        p('AB m p2', 'Through our network of qualified electricians, we deliver nationwide installation coverage, fast turnaround times and a seamless customer experience. We also work with car dealerships nationwide.', ['v2-body'], 'margin-top: 18px; font-size: 17px;'),
         p('AB m p3', 'From choosing your charger to installation and ongoing aftercare, we’re committed to making every step straightforward and hassle-free.', ['v2-body'], 'margin-top: 14px; font-size: 17px;'),
     ]),
 ], 'display: grid; grid-template-columns: minmax(0, 0.45fr) minmax(0, 1.55fr); gap: 56px; @media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 20px; }')])
@@ -49,7 +49,7 @@ values = v2sec('AB values', [
         'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; @media(--tablet){ grid-template-columns: repeat(2, minmax(0, 1fr)); } @media(--mobile){ grid-template-columns: minmax(0, 1fr); }'),
 ])
 
-FACTS = [('Coverage', 'England, with UK-wide expansion planned'), ('Survey', 'Free and remote, by phone, photos or video'),
+FACTS = [('Coverage', 'Nationwide'), ('Survey', 'Free and remote, by phone, photos or video'),
          ('Opening hours', 'Monday to Saturday, 8:30am to 6:30pm'), ('Get in touch', 'sales@evtron.co.uk · info@evtron.co.uk')]
 facts = v2sec('AB facts', [div('AB f grid', [
     div('AB f copy', [chip('AB f chip', 'Get started'),

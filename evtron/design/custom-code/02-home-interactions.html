@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded',function(){
   var calcSec=[].slice.call(document.querySelectorAll('main > section')).find(function(x){return /What a charge costs at home/.test(x.textContent)});
   var calc=calcSec&&calcSec.querySelector(':scope > div > div:nth-child(2)');
   if(calc){
-    var B=[['Small','40'],['Medium','60'],['Large','80']];
+    var B=[['Small','40'],['Medium','60'],['Large','80'],['XL','100']];
     calc.classList.add('ev-calc');
     calc.innerHTML=
      '<div class="ev-calc-in"><p class="ev-x-lab">Battery size</p><div class="ev-x-row" role="radiogroup" aria-label="Battery size" id="ev-bp">'+
