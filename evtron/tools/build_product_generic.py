@@ -56,7 +56,7 @@ FOX = {
                 '<tr><th>Colours</th><td>Black, blue, purple and pink (availability to be confirmed)</td></tr></tbody></table>'
                 '<p>Price includes a standard installation by a qualified electrician. Specifications from the Fox ESS L Series datasheet (V1.1, August 2024).</p>'),
     'wc_foxu': ('<p>A 7kW untethered Type 2 socket charger from Fox ESS, an independent brand we supply and install. You plug in your own cable, and it can charge your car from surplus solar power, depending on the model and your solar system.</p>'
-                '<ul><li>7kW single-phase, Type 2 socket (use your own cable)</li><li>Solar-compatible, subject to model and system</li><li>Dynamic load balancing with CT clamp included in the installation</li>'
+                '<ul><li>7kW single-phase, Type 2 socket: you’ll need a Type 2 charging cable. Add <a href="/ev-chargers/type-2-ev-charging-cable/">our Type 2 cable</a> from £113.99 if you don’t have one</li><li>Solar-compatible, subject to model and system</li><li>Dynamic load balancing with CT clamp included in the installation</li>'
                 '<li>Colour: white</li><li>Price includes a standard installation by a qualified electrician</li></ul>'
                 '<p>Not sure it suits your solar set-up? Email sales@evtron.co.uk before you order and we’ll check.</p>'),
 }

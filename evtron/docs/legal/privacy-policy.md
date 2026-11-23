@@ -2,7 +2,7 @@ Last updated: [PLACEHOLDER: date approved]. This policy explains how EV-Tron col
 
 ## Who we are
 
-EV-Tron is a trading name of [PLACEHOLDER: company name], registered in England and Wales under number [PLACEHOLDER: company number], at [PLACEHOLDER: registered address]. We are the controller of your personal information. ICO registration number: [PLACEHOLDER: ICO number].
+EV-Tron is a trading name of [PLACEHOLDER: company name], registered in England and Wales under number [PLACEHOLDER: company number], at [PLACEHOLDER: registered address]. We are the controller of your personal information.
 
 Questions about your data: info@evtron.co.uk.
 
@@ -63,7 +63,7 @@ To use any of these rights, email info@evtron.co.uk. We’ll reply within one mo
 
 ## Complaints
 
-If you’re unhappy with how we’ve handled your information, please contact us first. You can also complain to the Information Commissioner’s Office (ICO) at ico.org.uk or on 0303 123 1113.
+If you’re unhappy with how we’ve handled your information, please contact us first. You also have the right to complain to the Information Commissioner’s Office (ICO), the UK’s data protection regulator.
 
 ## Children
 

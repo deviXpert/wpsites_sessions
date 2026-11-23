@@ -21,8 +21,9 @@ for n, s in [('15 metres', '15m'), ('20 metres', '20m')]:
     term(f"products/attributes/{att_len['id']}/terms", n, s)
 
 LENS = [('5 metres', '113.99', '5M'), ('10 metres', '152.99', '10M'), ('15 metres', '259.99', '15M'), ('20 metres', '313.99', '20M')]
-desc = ('<p>A Type 2 to Type 2 charging cable rated at 32A, for charging at up to 7.4kW on a single-phase supply. Use it with untethered home chargers '
-        'and public chargers that have a Type 2 socket.</p>'
+desc = ('<p>A Type 2 to Type 2 charging cable rated at 32A, for charging at up to 7.4kW on a single-phase supply. You need one with an untethered charger such as '
+        'the <a href="/ev-chargers/fox-untethered-solar-ev-charger/">Fox ESS Untethered</a>, and it also works with public chargers that have a Type 2 socket. '
+        'EV-Tron and Fox ESS Tethered chargers have their cable built in, so they don’t need one.</p>'
         '<h3>Built to last</h3><ul><li>Silver-coated copper contacts, rated for up to 10,000 plug-ins</li>'
         '<li>Oversized 0.75mm² pilot core for reliable car-to-charger communication, especially on longer cables</li>'
         '<li>Flexible, hard-wearing halogen-free sheath that’s easy to coil and store</li>'
