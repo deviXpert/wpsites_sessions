@@ -1,5 +1,5 @@
 const { chromium } = require('/opt/node-tools/node_modules/playwright');
-const URL='https://papayawhip-ostrich-717285.hostingersite.com/?nc='+Date.now();
+const URL='https://busybeeautorepair.ca/?nc='+Date.now();
 const res=[]; const ok=(n,c,d='')=>res.push(`${c?'PASS':'FAIL'}  ${n}${d?' — '+d:''}`);
 (async () => {
   const b = await chromium.launch({ proxy: { server: process.env.HTTPS_PROXY } });
@@ -105,8 +105,8 @@ const res=[]; const ok=(n,c,d='')=>res.push(`${c?'PASS':'FAIL'}  ${n}${d?' — '
   ok('Mobile menu link opens Contact page', p.url().includes('/contact-us/'), p.url());
   await p.goto(URL, { waitUntil: 'networkidle' });
   await p.evaluate(()=>scrollTo(0,0)); await p.click('.bb-mhero .bb-vbtn[data-slide="1"] a'); await p.waitForTimeout(800);
-  const ms=await p.evaluate(()=>({pts:document.querySelector('.bb-mhero .bb-pts.is-active').dataset.slide,name:document.querySelector('.bb-mhero .bb-vname').textContent}));
-  ok('Mobile hero vehicle switch + points', ms.pts==='1'&&ms.name==='Pickup truck', JSON.stringify(ms));
+  const ms=await p.evaluate(()=>({name:document.querySelector('.bb-mhero .bb-vname').textContent,pts:document.querySelectorAll('.bb-mhero .bb-pt').length}));
+  ok('Mobile hero vehicle switch (hotspots removed per brief)', ms.name==='Pickup truck'&&ms.pts===0, JSON.stringify(ms));
   await p.evaluate(()=>{sessionStorage.removeItem('busy-bee-winter-preview');scrollTo(0,1500)}); await p.waitForTimeout(1200);
   const mp=await p.evaluate(()=>[...document.querySelectorAll('.elementor-popup-modal')].some(m=>getComputedStyle(m).display!=='none'));
   ok('Winter popup does NOT auto-open on mobile (as design)', !mp);

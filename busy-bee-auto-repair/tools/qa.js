@@ -1,6 +1,6 @@
 // Site-wide quality audit: node qa.js [widths]  – console errors, failed requests, broken images, alt text, overflow,
 // H1 / title / meta description, tiny text, small tap targets.  Prints only problems.
-const {chromium}=require('playwright');const B='https://papayawhip-ostrich-717285.hostingersite.com';
+const {chromium}=require('playwright');const B='https://busybeeautorepair.ca';
 const urls=['/','/services/','/engine-repair-calgary/','/brake-repair-calgary/','/oil-change-calgary/','/tire-shop-calgary/','/wheel-alignment-calgary/','/car-battery-replacement-calgary/','/auto-electrical-diagnostics-calgary/','/suspension-repair-calgary/','/transmission-repair-calgary/','/radiator-repair-calgary/','/car-maintenance-calgary/','/about-us/','/contact-us/','/blog/','/check-engine-light-calgary/','/winter-tires-calgary-when-to-switch/','/how-often-oil-change-calgary/'];
 const widths=(process.argv[2]||'1440,768,390').split(',').map(Number);
 (async()=>{const b=await chromium.launch();

@@ -150,9 +150,12 @@ was removed – see git history (commits up to "checker caption matches the samp
 (free plan, watermarked; Pro $41/mo removes it). Waiting for the client's go-ahead.
 
 ## Homepage update brief (Nov 2026) – design/homepage-brief-2026-11.txt
-Site moved to https://busybeeautorepair.ca (same WP install, home = 208); staging host is gone. wp.py host guard still points at
+Site moved to https://busybeeautorepair.ca (same WP install, home = 208). Deploy with: export BB_EXPECTED_HOST=busybeeautorepair.ca BB_WP_URL=https://busybeeautorepair.ca
 staging – needs BB_EXPECTED_HOST / BB_WP_URL set to the new domain (owner approval) before any deploy.
 Built in build_home.py: new H1 + hero copy, hero text panel, glowing hotspots removed, service card copy, alignment link, brands intro,
 Dodge logo darker, Why text block (5 items – "Experienced technicians" left out until confirmed), reviews sub-text + Google link,
 pricing note with "Prices last checked: November 2026", NEW winter-ready section, FAQ 10 Q&A, NEW Visit us section, booking intro.
 Not built (owner content needed): Meet the Team, diagnostic price card. Schema/meta updated (schema.py, build_meta.py).
+Deployed live 2026-11-23. Newer Elementor stages edits – el.regen() now also calls elementor/publish-document. MCP needs the
+MCP-Protocol-Version header (wp.py). Still OPEN: Settings → Reading "Discourage search engines" must be unticked by the owner
+(not exposed by the WP REST API) – the whole site is noindex until then. Exact Yoast SEO title must be typed into the page's Yoast field.

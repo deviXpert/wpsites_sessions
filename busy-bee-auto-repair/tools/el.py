@@ -549,7 +549,11 @@ def save(kind, post_id, elements, page_settings=None, extra=None):
 
 def regen(post_id):
     """Ask Elementor to rebuild the document's CSS (MCP update-page-settings triggers a proper document save)."""
-    return wp.mcp('elementor/update-page-settings', {'post_id': post_id, 'settings': {}})
+    r = wp.mcp('elementor/update-page-settings', {'post_id': post_id, 'settings': {}})
+    # newer Elementor stages edits as a draft revision – publish it so the live page updates
+    if isinstance(r, dict) and (r.get('data') or {}).get('staged'):
+        wp.mcp('elementor/publish-document', {'post_id': post_id})
+    return r
 
 
 def book_popup(elements, popup_id, urls=('#book', '/#book')):

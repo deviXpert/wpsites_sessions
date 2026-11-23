@@ -159,7 +159,7 @@ def hero_desktop():
     left = C('Hero copy', [
         hero_badge(),
         h1(),
-        T(f'<p>{HERO_P}</p>', wht(0.9), M(16, 400, 26), mar=(16, 0, 0, 0), w=510, w_tablet='full', name='Intro'),
+        T(f'<p>{HERO_P}</p>', wht(0.9), M(16, 400, 26), mar=(16, 0, 0, 0), w=510, w_tablet='full', name='Intro', cls='bb-hero-intro'),
         C('Actions', [
             BTN('Book an Appointment', BOOK, M(14, 700, 20), color=PAPER, bg=INK, ic='calendar-days', ic_pos='before', ic_gap=12,
                 ic_size=16, radius=PILL, border=(1, INK), name='Book an Appointment', cls='bb-btn-disc bb-disc-bee bb-ring'),
@@ -219,7 +219,7 @@ def hero_mobile():
     copy = C('Mobile hero copy', [
         hero_badge(mobile=True),
         h1('div'),
-        T(f'<p>{HERO_P}</p>', PAPER, M(14, 400, 22.75), mar=(16, 0, 0, 0), w=384, name='Intro'),
+        T(f'<p>{HERO_P}</p>', PAPER, M(14, 400, 22.75), mar=(16, 0, 0, 0), w=384, name='Intro', cls='bb-hero-intro'),
         C('Actions', [
             BTN('Book an Appointment', BOOK, S(14, 700, 20), color=PAPER, bg=INK, ic='calendar-days', ic_pos='before', ic_size=16,
                 pad=(13, 16), radius=PILL, border=(1, INK), sh=SH_INK, name='Book an Appointment'),
@@ -874,7 +874,7 @@ def winter_ready():
                        for p in paras])
     return C('Winter ready', [C('Grid', [left, right], grid='0.9fr 1.1fr', grid_tablet='1fr', grid_mobile='1fr', rows='auto',
                                 rows_tablet='auto', rows_mobile='auto', gap=56, gap_tablet=28, w=cu('min(1152px, 100%)'), mar=(0, 'auto'))],
-             tag='section', id_='winter-ready', pad=(88, 32), pad_mobile=(44, 20), bg='#F6F7F3', cls='bb-winter-ready')
+             tag='section', id_='winter-care', pad=(88, 32), pad_mobile=(44, 20), bg='#F6F7F3', cls='bb-winter-ready')
 
 
 # ================================================================ VISIT US (between FAQ and booking)

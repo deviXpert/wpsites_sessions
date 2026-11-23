@@ -1,4 +1,4 @@
-const {chromium}=require('playwright');const B='https://papayawhip-ostrich-717285.hostingersite.com';
+const {chromium}=require('playwright');const B='https://busybeeautorepair.ca';
 const urls=['/','/services/','/engine-repair-calgary/','/brake-repair-calgary/','/oil-change-calgary/','/tire-shop-calgary/','/wheel-alignment-calgary/','/car-battery-replacement-calgary/','/auto-electrical-diagnostics-calgary/','/suspension-repair-calgary/','/transmission-repair-calgary/','/radiator-repair-calgary/','/car-maintenance-calgary/','/about-us/','/contact-us/','/blog/','/check-engine-light-calgary/','/winter-tires-calgary-when-to-switch/','/how-often-oil-change-calgary/'];
 (async()=>{const b=await chromium.launch();
 for(const w of [390,768]){const p=await b.newPage({viewport:{width:w,height:900},isMobile:w<500});

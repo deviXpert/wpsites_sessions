@@ -54,7 +54,7 @@ def mcp(ability, params=None):
     url = U + '/wp-json/mcp/mcp-adapter-default-server'
     def call(body, sid=None):
         h = {'Authorization': _AUTH, 'Content-Type': 'application/json'}
-        if sid: h['Mcp-Session-Id'] = sid
+        if sid: h['Mcp-Session-Id'] = sid; h['MCP-Protocol-Version'] = '2025-06-18'
         r = urllib.request.Request(url, data=json.dumps(body).encode(), method='POST', headers=h)
         with urllib.request.urlopen(r, timeout=120) as resp:
             return resp.headers.get('Mcp-Session-Id'), resp.read().decode()
