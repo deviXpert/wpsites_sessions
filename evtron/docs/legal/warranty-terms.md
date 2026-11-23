@@ -24,7 +24,7 @@ Your charger must be installed by a qualified electrician, in line with BS 7671 
 
 ## Other products
 
-Warranty periods for Fox ESS chargers and charging cables: [PLACEHOLDER: confirm warranty periods].
+Charging cables have a 2-year warranty. Corrosion caused by water getting into the plugs isn’t covered, so fit the dust covers when the cable isn’t in use. Fox ESS chargers: [PLACEHOLDER: confirm warranty period].
 
 ## Your legal rights
 
