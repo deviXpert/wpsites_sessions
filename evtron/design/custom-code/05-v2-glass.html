@@ -137,7 +137,7 @@ html.ev-v2 .v2-dealer-note{margin:18px 0 0;font:500 12px/1 "IBM Plex Mono",monos
 /* Homepage dealership pop-up (once per visitor, after a few seconds) */
 .ev-dpop{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(3,8,6,.62);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);opacity:0;transition:opacity .35s ease}
 .ev-dpop.on{opacity:1}
-.ev-dpop-card{position:relative;display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px;align-items:center;max-width:720px;width:100%;padding:26px;border-radius:26px;
+.ev-dpop-card{position:relative;display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;align-items:center;max-width:720px;width:100%;padding:26px;border-radius:26px;
   background:linear-gradient(155deg,rgba(255,255,255,.09),rgba(255,255,255,.03) 45%,rgba(12,25,20,.96));border:1px solid rgba(120,255,170,.35);
   box-shadow:0 40px 100px -30px rgba(0,0,0,.8),0 0 60px rgba(85,230,139,.12);transform:translate3d(0,18px,0) scale(.97);transition:transform .45s cubic-bezier(.2,1.2,.3,1)}
 .ev-dpop.on .ev-dpop-card{transform:none}
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded',function(){
   /* Homepage dealership pop-up: once per visitor, 6s after landing, never over an open menu or another dialog */
   if(document.body.classList.contains('home')){
     var seen=false;try{seen=localStorage.getItem('evDealerPop')==='1'}catch(e){}
-    var IMG='https://evtron.co.uk/wp-content/uploads/2026/11/pullup-four-finishes-1-768x840.webp',ready=false,due=false,pre=new Image();
+    var IMG='https://evtron.co.uk/wp-content/uploads/2026/11/evtron-counter-card-768x1091.webp',ready=false,due=false,pre=new Image();
     var open=function(){if(!ready||!due)return;ready=false;show()};
     if(!seen){pre.onload=pre.onerror=function(){ready=true;open()};pre.src=IMG;setTimeout(function(){due=true;open()},6000)}
     function show(){
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded',function(){
       try{localStorage.setItem('evDealerPop','1')}catch(e){}
       var last=document.activeElement,w=document.createElement('div');w.className='ev-dpop';w.setAttribute('role','dialog');w.setAttribute('aria-modal','true');w.setAttribute('aria-labelledby','ev-dpop-t');
       w.innerHTML='<div class="ev-dpop-card"><button type="button" class="ev-dpop-x" aria-label="Close">×</button>'+
-        '<img class="ev-dpop-img" src="'+IMG+'" width="768" height="840" alt="EV-Tron pull-up banner in a car showroom">'+
+        '<img class="ev-dpop-img" src="'+IMG+'" width="768" height="1091" alt="EV-Tron counter card for dealerships">'+
         '<div><p class="ev-dpop-k">For dealerships</p><p class="ev-dpop-t" id="ev-dpop-t">Partnering with car dealerships nationwide.</p>'+
         '<p class="ev-dpop-d">Sell EV-Tron to your customers or introduce them to us, and we supply and fit their home charger.</p>'+
         '<p class="ev-dpop-fee"><b>£150</b><span>for every completed installation</span></p>'+

@@ -157,14 +157,19 @@ showcase = v2sec('V2 range', [
 
 # ================= 2b. Dealership band (client: highlight, keep it light) =================
 dealers = v2sec('V2 dealers', [div('Dealer band', [
-    el('e-image', 'Dealer img', {'image': {'src': {'id': M['dealer_pullup_four']}, 'size': 'medium_large'}},
-       'width: 150px; min-width: 150px; height: auto; display: block; border-radius: 14px; flex: 0 0 150px; @media(--mobile){ width: 100%; min-width: 0; flex: 1 1 100%; }'),
-    div('Dealer copy', [itile('Dealer icon', 'fa-solid fa-handshake'),
-                        div('Dealer txt', [h('Dealer t', 'Partnering with car dealerships nationwide.', 'h2', ['v2-h3'], 'font-size: clamp(20px, 2vw, 26px);'),
-                                           p('Dealer d', 'Buying a new EV? Ask your dealer about EV-Tron. Run a dealership, leasing company or broker? Earn £150 for every installation you introduce.', ['v2-body'], 'margin-top: 6px;')])],
-        'display: flex; gap: 18px; align-items: center; flex: 1 1 420px;'),
-    vbtn('Dealer btn', 'For dealerships', '/for-dealerships/', 'glass'),
-], 'display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: center; justify-content: space-between; padding: 26px 32px; @media(--mobile){ padding: 22px; }', ['v2-glass'])])
+    div('Dealer media', [el('e-image', 'Dealer img', {'image': {'src': {'id': M['banner_counter']}, 'size': 'large'}},
+                            'width: 100%; height: auto; display: block; border-radius: 16px;')],
+        'padding: 16px; border-radius: 22px; background-color: rgba(7,17,14,0.55); border: 1px solid rgba(190,255,215,0.12);'),
+    div('Dealer copy', [chip('Dealer chip', 'For dealerships'),
+                        h('Dealer t', 'Partnering with car dealerships nationwide.', 'h2', ['v2-h2'], 'margin-top: 20px; font-size: clamp(30px, 3.4vw, 48px);'),
+                        p('Dealer d', 'Buying a new EV? Ask your dealer about EV-Tron. Run a dealership, leasing company or broker? Sell EV-Tron or introduce your customers, and we supply and fit their home charger.', ['v2-lead'], 'margin-top: 16px; max-width: 56ch;'),
+                        div('Dealer fee', [p('Dealer fee v', '£150', ['v2-num'], 'font-size: 48px; line-height: 1; color: #A3FFC1;'),
+                                           p('Dealer fee u', 'for every completed installation', None, 'font-size: 15px; color: #A1B5A8;')],
+                            'display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-top: 24px;'),
+                        vbtn('Dealer btn', 'Become a partner', '/for-dealerships/', 'primary', 'margin-top: 28px;')],
+        'display: flex; flex-direction: column; align-items: flex-start;'),
+], 'display: grid; grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr); gap: 56px; align-items: center; padding: 40px; '
+   '@media(--tablet){ grid-template-columns: minmax(0, 1fr); gap: 28px; } @media(--mobile){ padding: 20px; }', ['v2-glass'])])
 
 # ================= 3. Benefits Bento =================
 bars = div('Sched chart', [div(f'SB {i}', [], f'flex: 1 1 0; min-width: 0; height: {hh}%; border-radius: 4px 4px 2px 2px; background-color: {"#55E68B" if g else "rgba(255,255,255,0.10)"};')
