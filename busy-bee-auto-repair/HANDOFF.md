@@ -148,3 +148,11 @@ studio renders, domain-locked public key) or `IMAGIN_KEY` (demo 'img' is waterma
 Checker shows the single Honda Civic sample photo; all image-switching code (Imagin, CarImages API, drawn illustrations, loading state)
 was removed – see git history (commits up to "checker caption matches the sample photo") to restore. CarImages API account exists
 (free plan, watermarked; Pro $41/mo removes it). Waiting for the client's go-ahead.
+
+## Homepage update brief (Nov 2026) – design/homepage-brief-2026-11.txt
+Site moved to https://busybeeautorepair.ca (same WP install, home = 208); staging host is gone. wp.py host guard still points at
+staging – needs BB_EXPECTED_HOST / BB_WP_URL set to the new domain (owner approval) before any deploy.
+Built in build_home.py: new H1 + hero copy, hero text panel, glowing hotspots removed, service card copy, alignment link, brands intro,
+Dodge logo darker, Why text block (5 items – "Experienced technicians" left out until confirmed), reviews sub-text + Google link,
+pricing note with "Prices last checked: November 2026", NEW winter-ready section, FAQ 10 Q&A, NEW Visit us section, booking intro.
+Not built (owner content needed): Meet the Team, diagnostic price card. Schema/meta updated (schema.py, build_meta.py).

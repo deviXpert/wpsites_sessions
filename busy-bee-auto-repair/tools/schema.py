@@ -5,22 +5,23 @@ from urllib.parse import urlparse
 from common import FACEBOOK, INSTAGRAM, REVIEWS
 from sitemap import SERVICE_PAGES
 
-STOREFRONT = urlparse(json.load(open('media.json'))['busy-bee-auto-repair-storefront-calgary']['url']).path
+LOGO = urlparse(json.load(open('media.json'))['busy-bee-auto-repair-logo']['url']).path
 
-BASE = 'https://busybeeauto.ca'  # live domain; the staging host rewrites nothing in JSON-LD, so keep the production URL here
+BASE = 'https://busybeeautorepair.ca'  # live domain; the staging host rewrites nothing in JSON-LD, so keep the production URL here
 
 DATA = {
     '@context': 'https://schema.org', '@type': 'AutoRepair', '@id': BASE + '/#business',
     'name': 'Busy Bee Auto Repair & Tire Shop', 'url': BASE + '/', 'telephone': '+1-403-930-5888',
     'email': 'busybeeautocalgary@gmail.com', 'priceRange': '$$',
-    'image': BASE + STOREFRONT,
+    'image': BASE + LOGO,
     'address': {'@type': 'PostalAddress', 'streetAddress': '324 41 Ave NE', 'addressLocality': 'Calgary', 'addressRegion': 'AB',
                 'postalCode': 'T2E 2N3', 'addressCountry': 'CA'},
     'openingHoursSpecification': [{'@type': 'OpeningHoursSpecification',
                                    'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
                                    'opens': '09:00', 'closes': '18:00'}],
-    'areaServed': ['NE Calgary', 'Calgary', 'Bridgeland', 'Renfrew', 'Mayland Heights', 'Marlborough', 'Airdrie'],
-    'sameAs': [FACEBOOK, INSTAGRAM, REVIEWS], 'hasMap': REVIEWS,
+    'areaServed': ['Calgary', 'Airdrie'],
+    'sameAs': [FACEBOOK, INSTAGRAM], 'hasMap': REVIEWS,  # add the GBP URL to sameAs once the owner confirms it
+
     'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': 'Auto repair services', 'itemListElement': [
         {'@type': 'Offer', 'itemOffered': {'@type': 'Service', 'name': label, 'url': BASE + url}} for _, label, url, *_ in SERVICE_PAGES]},
 }

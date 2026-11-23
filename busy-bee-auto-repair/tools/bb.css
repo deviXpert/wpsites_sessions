@@ -765,3 +765,16 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
   html.bb-menu-open,html.bb-menu-open body{overflow:hidden!important;overscroll-behavior:none}
 }
 @media (min-width:768px) and (max-width:1023px){.bb-mega .e-n-menu-wrapper{max-height:calc(100dvh - 156px)!important}}
+
+/* ==================== Homepage update brief (Nov 2026) ==================== */
+/* H1 second line "– All makes & models" */
+.bb-h1 .bb-h1-sub{display:block;font-size:.42em;line-height:1.25;letter-spacing:0;margin-top:.45em;color:#ffe600}
+/* hero paragraph readable over the photo */
+.bb-hero-copy .elementor-widget-text-editor,.bb-mhero .elementor-widget-text-editor{background:rgb(10 14 16/.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);padding:14px 16px;border-radius:12px;text-shadow:none!important}
+/* Dodge logo: darker so it matches the other marks */
+.bb-brand-cell img[alt^="Dodge"]{filter:brightness(.35) contrast(1.4)}
+/* Why board: vertical "WHY BUSY BEE" must fit its column */
+@media (min-width:901px){.bb-why-spine .elementor-heading-title{font-size:clamp(34px,3.4vw,50px)!important;line-height:1!important;letter-spacing:-2px!important}}
+/* Visit us text links */
+.bb-visit-text a{color:#1a2024;font-weight:700;text-decoration:underline;text-decoration-color:#ffe600;text-decoration-thickness:2px;text-underline-offset:3px}
+.bb-winter-ready .elementor-widget-text-editor p{margin:0}

@@ -9,8 +9,8 @@ import build_pages
 
 ids = json.load(open('ids.json'))
 DESC = {
-    ('home', 'front_page', ''): 'Family-owned auto repair shop in NE Calgary. Certified mechanics for brakes, tires, oil changes and '
-                               'diagnostics on all makes. Walk-ins welcome. Call today.',
+    ('home', 'front_page', ''): 'Family-owned auto repair shop in NE Calgary. Brakes, tires, Mobil 1 oil changes from $75, free battery '
+                               'test & diagnostics. Walk-ins welcome. Call today.',
     ('services', 'page', ids['services']): 'Complete car repair and maintenance in NE Calgary: engine, brakes, tires, alignment, oil '
                                            'changes, batteries, and diagnostics. All makes and models.',
     ('about', 'page', ids['page_about']): build_pages.PAGES['about'][4],

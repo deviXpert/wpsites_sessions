@@ -42,14 +42,15 @@ def hero_badge(mobile=False):
 
 
 def h1(tag='h1'):
-    return H('Auto repair in<br>Calgary you can<br>actually <span class="bb-type" data-word="trust">trust</span>', tag, PAPER,
+    return H('Auto repair in Calgary you can <span class="bb-type" data-word="trust">trust</span>'
+             '<span class="bb-h1-sub">– All makes &amp; models</span>', tag, PAPER,
              M(60, 800, 1.02, tt='uppercase', size_t=48, size_m=36), name='Hero title', mar=(24, 0, 0, 0), mar_mobile=(20, 0, 0, 0),
              w=650, w_tablet='full', cls='bb-h1')
 
 
-HERO_P = ('Busy Bee Auto Repair &amp; Tire Shop is a family-owned auto repair shop in NE Calgary. Our certified mechanics fix all '
-          'makes and models, from a quick oil change to a check engine light nobody else could solve. You get a clear diagnosis, '
-          'an honest quote, and the work done right the first time.')
+HERO_P = ('Busy Bee Auto Repair &amp; Tire Shop is a family-owned auto repair shop at 324 41 Ave NE in Calgary, Alberta. Our '
+          'mechanics repair cars, SUVs and light trucks of all makes, from oil changes, brakes and tires to engine repair, electrical '
+          'work and computer diagnostics. We explain the problem, give you a quote, and wait for your approval before any work begins.')
 
 
 def whatsapp_btn():
@@ -142,7 +143,7 @@ def point(ic, x, y, size=48, icon_size=20):
 
 
 def hero_desktop():
-    base = abs_fill('Slide 1 – SUV', [zone(*z) for z in ZONES] + [
+    base = abs_fill('Slide 1 – SUV', [
         C('Ground line', [], pos={'x': 0, 'y': pct(8), 'v': 'end'}, w=pct(100), minh=1,
           border=(dims(0, 0, 1, 0), wht(0.25), 'dashed'), cls='bb-fade'),
         H('Multi-point diagnostic scan', 'div', ink(0.7), M(10, 600, 15, tt='uppercase'), name='Scan tag', pad=(4, 8),
@@ -152,7 +153,7 @@ def hero_desktop():
     ], bgimg='busy-bee-auto-repair-calgary-workshop-hero', cls='bb-slide bb-slide-1 is-active', attrs={'data-slide': 0})
     slides = [base]
     for i, (key, name, pts) in enumerate(SLIDES, start=1):
-        slides.append(abs_fill(f'Slide {i + 1} – {name}', [point(*p) for p in pts], bgimg=key, z=10,
+        slides.append(abs_fill(f'Slide {i + 1} – {name}', [], bgimg=key, z=10,
                                cls=f'bb-slide bb-slide-n bb-slide-{i + 1}', attrs={'data-slide': i}))
 
     left = C('Hero copy', [
@@ -235,7 +236,7 @@ def hero_mobile():
         vehicle_buttons([m[1] for m in MSLIDES], mobile=True, labels=[m[2] for m in MSLIDES]),
         diag_block(mobile=True),
     ], pad=(96, 20, 24, 20), z=20)
-    return C('Hero (mobile)', slides + overlays + [copy, C('Points', pts, cls='bb-pts-layer', z=10, **vh)], tag='section',
+    return C('Hero (mobile)', slides + overlays + [copy], tag='section',
              cls='bb-mhero', bg=PITCH, ov=True, hide='dt')
 
 
@@ -261,14 +262,14 @@ def suppliers():
 
 # ================================================================ SERVICES
 SERVICES = [  # slug, category, eyebrow, title, description, price, badge, icon, photo
-    ('oil-change', 'Maintenance', 'Routine care', 'Mobil 1 synthetic oil change', 'Mobil 1 synthetic oil changes from $75, with a free inspection.', 'From $75', 'Same day', 'droplets', 'mobil-1-synthetic-oil-change-calgary'),
-    ('brakes', 'Repair', 'Safety system', 'Brake repair &amp; replacement', 'Pads, rotors, calipers, and brake fluid service.', 'Quote after inspection', None, 'disc-3', 'brake-repair-calgary'),
-    ('diagnostics', 'Repair', 'Fault finding', 'Computer diagnostics &amp; electrical', 'Warning lights, wiring, starters, and sensors.', 'Quote after scan', None, 'circle-gauge', 'computer-diagnostics-calgary'),
-    ('battery', 'Maintenance', 'Starting &amp; charging', 'Battery &amp; alternator service', 'Free battery testing and charging system checks.', 'Free battery test', 'Free', 'battery-charging', 'battery-alternator-service-calgary'),
-    ('engine', 'Repair', 'Powertrain', 'Engine maintenance &amp; repair', 'Check engine lights, misfires, leaks, timing belts, and more.', 'Quote after inspection', None, 'settings-2', 'engine-repair-audi-calgary'),
-    ('cooling', 'Maintenance', 'Temperature control', 'Cooling system &amp; radiator', 'Radiators, water pumps, thermostats, and coolant flushes.', 'Quote after inspection', None, 'snowflake', 'computer-diagnostics-calgary'),
-    ('suspension', 'Repair', 'Ride &amp; handling', 'Suspension &amp; steering repair', 'Shocks, struts, ball joints, tie rods, and bearings.', 'Quote after inspection', None, 'waves', 'brake-repair-calgary'),
-    ('transmission', 'Repair', 'Driveline', 'Transmission repair', 'Fluid service, diagnosis, and repair.', 'Quote after inspection', None, 'unplug', 'busy-bee-repair-bay-calgary'),
+    ('oil-change', 'Maintenance', 'Routine care', 'Mobil 1 synthetic oil change', 'Mobil 1 synthetic oil change from $75, with a free vehicle inspection. Often done the same day.', 'From $75', 'Same day', 'droplets', 'mobil-1-synthetic-oil-change-calgary'),
+    ('brakes', 'Repair', 'Safety system', 'Brake repair &amp; replacement', 'Pads, rotors, calipers and brake fluid service. Quote after inspection.', 'Quote after inspection', None, 'disc-3', 'brake-repair-calgary'),
+    ('diagnostics', 'Repair', 'Fault finding', 'Computer diagnostics &amp; electrical', 'Warning lights, sensors, wiring and starters found with professional scan tools.', 'Quote after scan', None, 'circle-gauge', 'computer-diagnostics-calgary'),
+    ('battery', 'Maintenance', 'Starting &amp; charging', 'Battery &amp; alternator service', 'Free battery test and charging-system check. Replacement and repairs quoted separately.', 'Free battery test', 'Free', 'battery-charging', 'battery-alternator-service-calgary'),
+    ('engine', 'Repair', 'Powertrain', 'Engine maintenance &amp; repair', 'Check engine lights, misfires, leaks, timing belts and spark plugs.', 'Quote after inspection', None, 'settings-2', 'engine-repair-audi-calgary'),
+    ('cooling', 'Maintenance', 'Temperature control', 'Cooling system &amp; radiator', 'Radiators, water pumps, thermostats and coolant flushes.', 'Quote after inspection', None, 'snowflake', 'computer-diagnostics-calgary'),
+    ('suspension', 'Repair', 'Ride &amp; handling', 'Suspension &amp; steering repair', 'Shocks, struts, ball joints, tie rods and wheel bearings.', 'Quote after inspection', None, 'waves', 'brake-repair-calgary'),
+    ('transmission', 'Repair', 'Driveline', 'Transmission repair', 'Fluid service, diagnosis and repair for shifting problems.', 'Quote after inspection', None, 'unplug', 'busy-bee-repair-bay-calgary'),
 ]
 
 
@@ -302,6 +303,8 @@ def feature_card():
             border=(1, ink(0.2)), sh=SH_BEE, name='Book a tire swap', w_mobile=pct(100), align_mobile='justify'),
         BTN('Tire services', SVC['tires'], M(14, 700, 20), color=PAPER, bg='rgba(0,0,0,0)', pad=(11, 20), radius=PILL,
             border=(1, wht(0.25)), sh=SH_SM, name='Tire services', w_mobile=pct(100), align_mobile='justify'),
+        BTN('Wheel alignment', SVC['alignment'], M(14, 700, 20), color=PAPER, bg='rgba(0,0,0,0)', pad=(11, 20), radius=PILL,
+            border=(1, wht(0.25)), sh=SH_SM, name='Wheel alignment', w_mobile=pct(100), align_mobile='justify'),
     ], d='row', d_mobile='column', wrap='wrap', gap=12, pad=(8, 0, 0, 0), mar=(0, 0, 0, 0), cls='bb-push-bottom')
     return C('Feature – Tires', [
         ICON('circle-dot', 320, color=BEE, name='Decorative ring', hide='d', pos={'x': -64, 'y': -64, 'h': 'end', 'v': 'end'},
@@ -309,7 +312,7 @@ def feature_card():
         top,
         H('Tires, wheels &amp; alignment', 'h3', PAPER, M(36, 800, 45, tt='uppercase', size_m=30, lh_m=37.5), mar=(32, 0, 0, 0),
           name='Title'),
-        T('<p>New and used tires, installation, repair, rotation, and balancing. Wheel alignment for straighter tracking and longer tire life.</p>',
+        T('<p>New and used tires, seasonal swaps, tire repair (up to 16 in, $84), balancing, rotation and wheel alignment.</p>',
           '#E3E7E8', M(16, 400, 28, size_m=14), mar=(16, 0, 0, 0), name='Text'),
         lst, btns,
     ], tag='article', pad=40, pad_mobile=32, bg='#192024', radius=28, ov=True, bgimg='winter-tire-change-calgary', bgpos='58% center',
@@ -348,10 +351,10 @@ def services():
         C('Intro', [eyebrow_dot('Services · NE Calgary'),
                     H('Car Repair Services in Calgary', 'h2', INK, M(48, 800, 1.05, tt='uppercase', size_m=28), mar=(12, 0, 0, 0),
                       name='Title'),
-                    T('<p>Whatever your vehicle needs, our Calgary auto shop handles it under one roof.</p>', ink(0.6),
+                    T('<p>One shop for most of what your vehicle needs. Every service links to its own page with warning signs, what we check, and what to expect.</p>', ink(0.6),
                       M(16, 400, 28, size_m=14), mar=(16, 0, 0, 0), w=576, w_mobile='full', name='Intro')],
           w=672, w_tablet=pct(100)),
-        H('View all services ↗︎', 'span', INK, M(14, 700, 20, deco='underline'), href='#services', name='View all services',
+        H('View all services ↗︎', 'span', INK, M(14, 700, 20, deco='underline'), href='/services/', name='View all services',
           w=96, w_tablet='auto', cls='bb-underline'),
         C('Filters', [filter_btn(x, x == 'All') for x in ('All', 'Maintenance', 'Repair', 'Tires')], d='row', gap=8, w='auto',
           cls='bb-filters'),
@@ -481,7 +484,7 @@ def brands():
         C('Left', [section_eyebrow('Domestic &amp; import specialists'),
                    H('Your car.<br>Our expertise.', 'h2', DK, S(cu('clamp(36px, 4vw, 52px)'), 800, 1.06, cu('-0.045em'), 'uppercase'),
                      mar=(25, 0, 0, 0), name='Title')], w='auto'),
-        C('Right', [T('<p>Our mechanics work on domestic, Asian, and European vehicles every day.</p>', '#748085', S(14, 400, 26.6),
+        C('Right', [T('<p>We repair domestic, Asian and European cars, SUVs and light trucks. Our mechanics work on Audi, BMW, Mercedes-Benz, Porsche, Toyota, Honda, Ford, GMC, Hyundai, Dodge and many more every day. Not sure we can work on your vehicle? Call <a href="tel:+14039305888">(403) 930-5888</a> and ask.</p>', '#748085', S(14, 400, 26.6),
                       name='Text'),
                     ILIST([('arrow-right', 'Talk to our team', TEL)], t=S(12, 800, 18), color=DK, ic_color=DK, ic_size=18, gap_=12,
                           mar=(20, 0, 0, 0), name='Talk to our team', cls='bb-icon-after')],
@@ -620,7 +623,21 @@ def why():
           pos={'x': 25, 'y': 25, 'v': 'end'}, w='auto', z=1, cls='bb-why-makes-copy'),
     ], bg='#343A38', radius=36.192, radius_mobile=24, ov=True, cls='bb-why-makes', **P(71.33, 3.28, 26.34, 93.44))
     board = C('Why board', [spine, heading, diag, quotes, fix, makes], minh=680, radius=36, bg='#050505', cls='bb-why-board')
-    return C('Why Busy Bee', [board], tag='section', id_='why-busy-bee', pad=(72, 24), pad_mobile=(40, 24), bg=PAPER,
+    points = [('We diagnose first, then replace.', 'We find the real cause of the problem before recommending parts, so you don’t pay '
+                                                  'for repairs you didn’t need.'),
+              ('You approve every price.', 'You get a clear estimate and nothing starts until you say yes.'),
+              ('Warranty you can read.', 'Most repairs include a parts and labour warranty. Ask us about the coverage on your job.'),
+              ('Quality parts.', 'We source parts from suppliers such as NAPA, Lordco, PartSource and Auto Value, and can arrange '
+                                 'dealer-sourced parts when needed.'),
+              ('Local and family-owned.', 'Our name is on every job.')]
+    reasons = C('Why reasons', [C(t, [ICON('check', 16, color='#141615', bg=YEL, box=30, name='Tick', w='auto'),
+                                      C('Text', [H(t, 'h3', '#141615', S(16, 800, 22), name='Title'),
+                                                 H(d, 'p', '#4B5558', S(14, 400, 22), mar=(4, 0, 0, 0), name='Text')], w='auto', grow=True,
+                                        cls='bb-shrink')], d='row', ai='flex-start', gap=14)
+                                for t, d in points],
+                grid='repeat(3, minmax(0, 1fr))', grid_tablet='repeat(2, minmax(0, 1fr))', grid_mobile='1fr', rows='auto',
+                rows_tablet='auto', rows_mobile='auto', gap=(28, 32), mar=(40, 0, 0, 0), pad=(0, 8))
+    return C('Why Busy Bee', [board, reasons], tag='section', id_='why-busy-bee', pad=(72, 24), pad_mobile=(40, 24), bg=PAPER,
              cls='bb-why bb-sys')
 
 
@@ -673,13 +690,15 @@ def reviews():
           d='row', ai='center', gap=12, pad=(10, 32), bg=PAPER, radius=PILL, border=(1, '#E8EAED'), w='auto', mar=(0, 'auto')),
         H('What our customers say', 'h2', INK, M(48, 800, 1.05, tt='uppercase', size_m=28), align='center', mar=(12, 0, 0, 0),
           name='Title'),
-        T('<p>4.8 stars on Google from Calgary drivers.</p>', ink(0.6), M(16, 400, 24, size_m=14), align='center', mar=(16, 0, 0, 0),
+        T('<p>4.8 stars from Calgary drivers on Google.</p>', ink(0.6), M(16, 400, 24, size_m=14), align='center', mar=(16, 0, 0, 0),
           name='Intro'),
     ], w=cu('min(672px, 100%)'), mar=(0, 'auto'), cls='bb-reveal')
     # live Google reviews from the Trustindex "Widgets for Google Reviews" plugin (native Elementor Shortcode widget)
     widget = C('Trustindex', [W('shortcode', 'Google reviews (Trustindex)', shortcode='[trustindex no-registration=google]')],
                mar=(48, 0, 0, 0), mar_mobile=(28, 0, 0, 0), cls='bb-trustindex')
-    return C('Reviews', [head, widget], tag='section', id_='reviews', pad=(65, 64, 112, 64), pad_tablet=(65, 40, 112, 40),
+    more = H('Read all our Google reviews →', 'p', INK, M(14, 800, 20), href=REVIEWS, align='center', mar=(24, 0, 0, 0),
+             name='All reviews link', cls='bb-underline-link')
+    return C('Reviews', [head, widget, more], tag='section', id_='reviews', pad=(65, 64, 112, 64), pad_tablet=(65, 40, 112, 40),
              pad_mobile=(65, 20, 40, 20), bg=PAPER, cls='bb-reviews')
 
 
@@ -825,19 +844,91 @@ def pricing():
               gap=0, gap_mobile=16, rows='auto', rows_mobile='auto', ai='center', cls='bb-price-grid')
     return C('Pricing', [C('Wrap', [head, toggle, cards,
                                     T('<p>Final pricing depends on your vehicle\'s make, model and condition. You always approve the '
-                                      'estimate before work starts.</p>', ink(0.5), M(12, 400, 24), align='center', mar=(32, 0, 0, 0),
+                                      'estimate before work starts. Prices last checked: November 2026.</p>', ink(0.5), M(12, 400, 24), align='center', mar=(32, 0, 0, 0),
                                       name='Footnote')],
                                    w=cu('min(1024px, 100%)'), mar=(0, 'auto'))],
              tag='section', id_='pricing', pad=(112, 32), pad_mobile=(40, 20), bg=PAPER, cls='bb-pricing')
 
 
+# ================================================================ WINTER READY (text section, after pricing)
+def winter_ready():
+    paras = ['Cold mornings are hard on vehicles. Low temperatures reduce battery output and thicken engine oil, which is why weak batteries '
+             'often fail on the first cold snap. A free battery test and charging-system check takes little time and can save you a no-start.',
+             'Tires matter just as much. Alberta does not require winter tires by law, but many Calgary drivers switch when temperatures stay '
+             'near or below 7°C because winter tires stay softer and grip better in the cold. We offer seasonal tire swaps, balancing and tire '
+             'checks.',
+             'Check your owner’s manual for the recommended oil grade. If your vehicle calls for synthetic, our Mobil 1 oil change starts from '
+             '$75 and includes a free inspection.']
+    left = C('Heading', [eyebrow_dot('Winter in Calgary'),
+                         H('Getting Your Vehicle Ready for a Calgary Winter', 'h2', INK, M(44, 800, 1.06, tt='uppercase', size_m=28),
+                           mar=(12, 0, 0, 0), name='Title'),
+                         C('Buttons', [
+                             BTN('Book your winter tire change', BOOK, M(14, 700, 20), color=INK, bg=BEE, ic='arrow-right', ic_size=16,
+                                 pad=(14, 22), radius=PILL, border=(1, ink(0.2)), sh=SH_BEE, name='Book winter tires',
+                                 w_mobile=pct(100), align_mobile='justify'),
+                             BTN('Get your battery tested free', SVC['battery'], M(14, 700, 20), color=INK, bg=PAPER, ic='battery-charging',
+                                 ic_pos='before', ic_size=16, pad=(14, 22), radius=PILL, border=(1, ink(0.2)), name='Battery test',
+                                 w_mobile=pct(100), align_mobile='justify'),
+                         ], d='row', d_mobile='column', wrap='wrap', gap=12, mar=(28, 0, 0, 0))])
+    right = C('Text', [T(f'<p>{p}</p>', ink(0.7), M(16, 400, 28, size_m=15, lh_m=26), mar=(0, 0, 16, 0), name='Paragraph')
+                       for p in paras])
+    return C('Winter ready', [C('Grid', [left, right], grid='0.9fr 1.1fr', grid_tablet='1fr', grid_mobile='1fr', rows='auto',
+                                rows_tablet='auto', rows_mobile='auto', gap=56, gap_tablet=28, w=cu('min(1152px, 100%)'), mar=(0, 'auto'))],
+             tag='section', id_='winter-ready', pad=(88, 32), pad_mobile=(44, 20), bg='#F6F7F3', cls='bb-winter-ready')
+
+
+# ================================================================ VISIT US (between FAQ and booking)
+def visit():
+    details = T('<p><strong>Busy Bee Auto Repair &amp; Tire Shop</strong><br>'
+                f'<a href="{MAPS}" target="_blank" rel="noopener">324 41 Ave NE, Calgary, AB T2E 2N3</a><br>'
+                'Phone: <a href="tel:+14039305888">(403) 930-5888</a><br>'
+                f'Email: <a href="mailto:{EMAIL}">{EMAIL}</a><br>'
+                'Hours: Monday to Friday, 9:00 AM to 6:00 PM. Closed Saturday and Sunday.</p>'
+                '<p>We’re close to Deerfoot Trail and easy to reach from Downtown, Bridgeland, Renfrew, Mayland Heights, Marlborough and '
+                'Airdrie.</p>', INK, M(16, 400, 28, size_m=15, lh_m=26), mar=(20, 0, 0, 0), name='Details', cls='bb-visit-text')
+    left = C('Text', [eyebrow_dot('Find us'),
+                      H('Visit Busy Bee Auto Repair in NE Calgary', 'h2', INK, M(44, 800, 1.06, tt='uppercase', size_m=28),
+                        mar=(12, 0, 0, 0), name='Title'),
+                      details,
+                      C('Buttons', [
+                          BTN('Get Directions', MAPS, M(14, 700, 20), color=INK, bg=BEE, ic='navigation', ic_pos='before', ic_size=16,
+                              pad=(14, 22), radius=PILL, border=(1, ink(0.2)), name='Directions'),
+                          BTN('Call Now', TEL, M(14, 700, 20), color=PAPER, bg=INK, ic='phone', ic_pos='before', ic_size=16,
+                              pad=(14, 22), radius=PILL, border=(1, INK), name='Call'),
+                          BTN('Book an Appointment', BOOK, M(14, 700, 20), color=INK, bg=PAPER, ic='calendar-days', ic_pos='before',
+                              ic_size=16, pad=(14, 22), radius=PILL, border=(1, ink(0.2)), name='Book'),
+                      ], d='row', wrap='wrap', gap=10, mar=(24, 0, 0, 0))])
+    gmap = W('google_maps', 'Map', address='Busy Bee Auto Repair, 324 41 Ave NE, Calgary, AB T2E 2N3', zoom={'unit': 'px', 'size': 15},
+             height=px(460), height_mobile=px(300), cls='bb-sm-map')
+    return C('Visit us', [C('Grid', [left, gmap], grid='1fr 1fr', grid_tablet='1fr', grid_mobile='1fr', rows='auto', rows_tablet='auto',
+                            rows_mobile='auto', gap=48, gap_tablet=28, ai='center', w=cu('min(1152px, 100%)'), mar=(0, 'auto'))],
+             tag='section', id_='visit', pad=(72, 32), pad_mobile=(40, 20), bg=PAPER, cls='bb-visit')
+
+
 # ================================================================ FAQ
 FAQS = [
-    ('Do you work on all makes and models?', 'Yes. We service domestic, Asian, and European cars, SUVs, and light trucks.'),
-    ('Do I need an appointment?', 'Appointments get you in fastest, but walk-ins are welcome.'),
-    ('How much does a diagnostic cost?', "It depends on the issue. We'll quote the diagnostic upfront and always ask before doing any repairs."),
-    ('Do your repairs come with a warranty?', "Yes. Parts and labour are covered, and we'll explain the terms for your specific repair."),
-    ('Where are you located?', '324 41 Ave NE, Calgary, AB T2E 2N3.'),
+    ('Where is Busy Bee Auto Repair in Calgary?', 'We’re at 324 41 Ave NE, Calgary, AB T2E 2N3, close to Deerfoot Trail in NE Calgary. '
+     'We’re open Monday to Friday, 9 AM to 6 PM. Call (403) 930-5888 for directions or to book.'),
+    ('Do I need an appointment?', 'No. Walk-ins are welcome Monday to Friday, 9 AM to 6 PM. An appointment is the fastest way to be seen, '
+     'especially during winter tire season when the shop is busiest.'),
+    ('Do you work on all makes and models?', 'Yes. We service domestic, Asian and European cars, SUVs and light trucks. If you drive a '
+     'specialty or exotic vehicle, call us first so we can confirm we can help.'),
+    ('How much does a diagnostic cost?', 'We quote the diagnostic upfront. We explain what we find and give you a repair estimate. We never '
+     'start repairs without your approval.'),
+    ('Do your repairs come with a warranty?', 'Most repairs include a parts and labour warranty. Terms vary by repair and parts used, so '
+     'ask us about the coverage on your specific job.'),
+    ('How much does a Mobil 1 synthetic oil change cost?', 'Mobil 1 synthetic oil changes start from $75 and include a free vehicle '
+     'inspection. The final price depends on your vehicle’s oil capacity and filter. Call us with your make, model and year for an exact '
+     'quote.'),
+    ('Is the battery test really free?', 'Yes. We offer free battery testing and a charging-system check. If the battery or alternator needs '
+     'replacing, we quote that separately and you approve it before we begin.'),
+    ('How do I know if my brakes need attention?', 'Warning signs include squealing, grinding, vibration when braking, a soft pedal, the car '
+     'pulling to one side, or longer stopping distances. If you notice any of these, get your brakes inspected as soon as possible.'),
+    ('Do I need winter tires in Calgary?', 'Alberta does not require winter tires, but many drivers fit them for better grip in cold, snow '
+     'and ice. A common guideline is to switch when temperatures stay near or below 7°C. We offer seasonal tire swaps, balancing and tire '
+     'checks.'),
+    ('How often should I change my oil?', 'Follow the interval in your owner’s manual or your vehicle’s oil-life monitor. Short trips, cold '
+     'starts and towing count as severe driving and can call for shorter intervals. We check your oil during every oil change inspection.'),
 ]
 
 
@@ -917,7 +1008,7 @@ def book():
     head = C('Head', [
         ICON('sparkles', 28, color=BEE, name='Sparkles', w='auto', cls='bb-sparkles'),
         H('Need a Mechanic in Calgary Today?', 'h2', INK, M(48, 800, 1.05, tt='uppercase', size_m=30), mar=(12, 0, 0, 0), name='Title'),
-        T("<p>Call (403) 930-5888 or book online. We'll get you back on the road safely, without the runaround.</p>", ink(0.65),
+        T("<p>Call (403) 930-5888, message us on WhatsApp, or walk in at 324 41 Ave NE. We’ll tell you what’s wrong and what it costs, and you decide.</p>", ink(0.65),
           M(16, 400, 24, size_m=14), mar=(16, 0, 0, 0), w=576, w_mobile='full', name='Intro'),
     ], mar=(0, 0, 40, 0), mar_mobile=(0, 0, 32, 0))
     card = booking_card(shadow=shadow(0, 24, 60, -30, 'rgba(23,23,23,0.6)'))
@@ -929,7 +1020,7 @@ def book():
 def build():
     el.seed('home')
     return el.book_popup([hero_mobile(), hero_desktop(), tpl('suppliers'), services(), ribbon(), winter(), brands(), checker(), why(), tpl('reviews'), process(), pricing(),
-            faq(), tpl('booking')], json.load(open('ids.json'))['popup_book'])
+            winter_ready(), faq(), visit(), tpl('booking')], json.load(open('ids.json'))['popup_book'])
 
 
 PAGE_SETTINGS = {'hide_title': 'yes', 'template': 'elementor_header_footer'}

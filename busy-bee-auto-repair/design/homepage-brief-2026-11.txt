@@ -1,0 +1,506 @@
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+  Busy Bee Auto Repair – Homepage Update
+  Brief (Final Copy for Dev Team)
+  Site: busybeeautorepair.ca (WordPress + Elementor) Page: Homepage Purpose: Replace
+  the current homepage text with the SEO/AEO-optimised copy below, build the new
+  sections, and complete the technical tasks.
+
+
+  How to read this document
+
+     Label                                  Meaning                          Dev action
+
+     🟥 NEW SECTION – This section does not exist                             Design and build a new section using
+     BUILD                                  on the site yet                  the existing style (yellow/black,
+                                                                             same card styles)
+
+     🟨 UPDATE                               The section exists               Keep the design. Replace or add the
+     EXISTING                                                                text shown
+
+     ✅ NO CHANGE                            The section exists and is fine   Leave as is
+
+     ⚠️ CONFIRM                             A fact only the shop owner       Use the fallback shown until the
+                                            can confirm                      owner confirms. Never publish a
+                                                                             placeholder in square brackets
+
+
+
+
+  0. DO THESE FIRST (go-live blockers)
+     1.   🔴 Remove noindex. The page currently outputs                       noindex, nofollow . In WordPress
+          check Settings > Reading (“Discourage search engines”) and the SEO plugin page-
+          level setting. Search engines and AI tools cannot use the page until this is removed.
+     2. One canonical domain. Use https://busybeeautorepair.ca/ as canonical. Redirect
+        every other version (www / non-www / any other domain) with a 301. Verify the
+          property in Google Search Console and submit the sitemap.
+     3. Exactly one H1 on the page (see Section 1).
+     4. Meta title and description (see Part B).
+     5. Add the JSON-LD schema (see Part B) and validate it in Google’s Rich Results Test.
+     6. Internal links: every service card must link to its service page (listed in Section 4).
+
+
+
+
+                                                                                                                Page 1 of 10
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+     7. Image alt text and descriptive filenames (see Part B).
+     8. Mobile check (iPhone and Android). Most customers visit on phones.
+
+
+
+  PART A – PAGE CONTENT, SECTION BY SECTION (in page
+  order)
+
+  1. Hero —           🟨 UPDATE EXISTING
+  H1 (replace current H1): Auto Repair in Calgary You Can Trust – All Makes & Models
+
+  Small tag above H1 (keep): Computer diagnostics • All makes and models
+
+  Paragraph (replace current paragraph): Busy Bee Auto Repair & Tire Shop is a family-
+  owned auto repair shop at 324 41 Ave NE in Calgary, Alberta. Our mechanics repair cars,
+  SUVs and light trucks of all makes, from oil changes, brakes and tires to engine repair,
+  electrical work and computer diagnostics. We explain the problem, give you a quote, and
+  wait for your approval before any work begins.
+
+  Buttons (keep): Book an Appointment | Call (403) 930-5888 | WhatsApp Us
+
+  Design fix: the paragraph sits on a busy photo and is hard to read. Add a darker overlay or
+  a semi-transparent dark panel behind the text.
+
+  Design fix: the yellow glowing circles on the right of the hero have no clear purpose.
+  Remove them or give them a label.
+
+
+
+
+                                     ✅
+  2. Service quick cards under the hero (Engine, Battery, Brakes, Suspension,
+  Cooling, Tires) —     NO CHANGE
+  Check each card links to its service page.
+
+
+  3. “Quality parts from proven suppliers” logo strip —✅ NO CHANGE
+  4. Car Repair Services in Calgary (dark service cards) — 🟨 UPDATE EXISTING
+  H2 (keep): Car Repair Services in Calgary
+
+  Sub-text (replace): One shop for most of what your vehicle needs. Every service links to
+  its own page with warning signs, what we check, and what to expect.
+
+
+
+
+                                                                                           Page 2 of 10
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+  Replace the card descriptions with the text below and make the whole card clickable to
+  the page shown.
+
+
+     Card                                       Description                        Link to
+
+     Tires, Wheels &                            New and used tires, seasonal       /tire-shop-calgary/ (alignment
+     Alignment                                  swaps, tire repair (up to 16 in,   link: /wheel-alignment-
+                                                $84), balancing, rotation and      calgary/)
+                                                wheel alignment.
+
+     Mobil 1 Synthetic Oil                      Mobil 1 synthetic oil change       /oil-change-calgary/
+     Change                                     from $75, with a free vehicle
+                                                inspection. Often done the
+                                                same day.
+
+     Brake Repair &                             Pads, rotors, calipers and brake   /brake-repair-calgary/
+     Replacement                                fluid service. Quote after
+                                                inspection.
+
+     Computer Diagnostics                       Warning lights, sensors, wiring    /auto-electrical-diagnostics-
+     & Electrical                               and starters found with            calgary/
+                                                professional scan tools.
+
+     Battery & Alternator                       Free battery test and charging-    /car-battery-replacement-
+     Service                                    system check. Replacement          calgary/
+                                                and repairs quoted separately.
+
+     Engine Maintenance &                       Check engine lights, misfires,     /engine-repair-calgary/
+     Repair                                     leaks, timing belts and spark
+                                                plugs.
+
+     Cooling System &                           Radiators, water pumps,            /radiator-repair-calgary/
+     Radiator                                   thermostats and coolant
+                                                flushes.
+
+     Suspension & Steering                      Shocks, struts, ball joints, tie   /suspension-repair-calgary/
+     Repair                                     rods and wheel bearings.
+
+     Transmission Repair                        Fluid service, diagnosis and       /transmission-repair-calgary/
+                                                repair for shifting problems.
+
+
+  Car Maintenance (/car-maintenance-calgary/) appears in the menu. Add it as a card if the
+  layout allows.
+
+
+
+
+                                                                                                                 Page 3 of 10
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+  5. Trust bar (Estimate approved / Warranty / Same day) —✅ NO CHANGE
+  6. Winter marquee and “Winter roads. Meet your match.” banner — ✅ NO
+  CHANGE
+
+  7. Three offer cards (Winter tires, Oil change from $75, Free battery test) —                     ✅
+  NO CHANGE
+
+
+  8. Brands (“Your car. Our expertise.”) —                               🟨 UPDATE EXISTING
+  Replace the right-hand intro text with: We repair domestic, Asian and European cars,
+  SUVs and light trucks. Our mechanics work on Audi, BMW, Mercedes-Benz, Porsche,
+  Toyota, Honda, Ford, GMC, Hyundai, Dodge and many more every day. Not sure we can
+  work on your vehicle? Call (403) 930-5888 and ask.
+
+  Design fixes:
+
+         The Dodge logo is too faint compared with the others. Use a darker version.
+         The brand names appear twice (logo grid and text list). Keep both if wanted, but the
+         intro text above must be added.
+         Do not link brand names to separate pages unless those pages have unique content.
+
+
+  9. Symptom checker (“Know your car. Understand the signs.”) —                              ✅ NO
+  CHANGE
+
+
+  10. Why Calgary Drivers Choose Our Mechanics —                                 🟨 UPDATE EXISTING (add
+  a text block)
+  Keep the existing bento layout (Honest diagnosis first / Clear, upfront quotes / Finds the
+  real problem / All makes).
+
+  Fix: the vertical “BUSY BEE” text on the left is cut off (shows “HY BUSY BEE”). Please fix
+  the layout.
+
+  Add this crawlable text block below the bento (plain text, six short items):
+
+         We diagnose first, then replace. We find the real cause of the problem before
+         recommending parts, so you don’t pay for repairs you didn’t need.
+         You approve every price. You get a clear estimate and nothing starts until you say yes.
+
+
+
+
+                                                                                                    Page 4 of 10
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+         Warranty you can read. Most repairs include a parts and labour warranty. Ask us
+         about the coverage on your job.                         ⚠️
+                                          CONFIRM: owner to give the standard term (for
+         example “12 months / 20,000 km”). Until confirmed, keep the sentence as written.
+         Quality parts. We source parts from suppliers such as NAPA, Lordco, PartSource and
+         Auto Value, and can arrange dealer-sourced parts when needed.
+         Experienced technicians.                       ⚠️ CONFIRM: owner to provide real licences and years of
+         experience. Until confirmed, delete this bullet. Do not publish “certified” claims we
+         can’t prove.
+         Local and family-owned. Our name is on every job.                     ⚠️
+                                                              CONFIRM: owner name and
+         year opened. Until confirmed, keep this sentence as written.
+
+
+  11. Meet the Team —                      🟥 NEW SECTION – BUILD
+       🟥 This section does not exist. Build it between “Why Calgary Drivers Choose Our
+       Mechanics” and “What Our Customers Say”.
+
+
+  Design: 2–4 cards in the existing card style: real photo, name, role, one-line experience.
+
+  H2: Meet the Team Behind Your Repair
+
+  Intro text: The people who diagnose and repair your vehicle are the ones who answer
+  your questions. Here is who you’ll meet at Busy Bee.
+
+  Card content:             ⚠️ CONFIRM – the owner must supply real photos, names, roles, years of
+  experience and any licences (for example Red Seal or Alberta journeyman). Do not use
+  stock or AI photos in this section. If the owner can’t provide this before launch, hide the
+  section and publish it later.
+
+
+  12. Reviews (“What our customers say”) —                               🟨 UPDATE EXISTING
+  H2 (keep): What Our Customers Say Sub-text (replace): 4.8 stars from Calgary drivers on
+  Google.        ⚠️
+              Keep the review count and rating in sync with the live Google Business Profile
+  (the Trustindex widget updates itself). Add link under the widget: Read all our Google
+  reviews → (link to the Google Business Profile reviews page)
+
+  Show only real Google reviews. Do not write testimonials by hand.
+
+
+  13. “Good repairs. No surprises.” (4 steps) —                          ✅ NO CHANGE
+
+                                                                                                           Page 5 of 10
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+  14. Straightforward Pricing —                              🟨 UPDATE EXISTING
+  Keep the three cards (Battery testing: Free / Mobil 1 oil change: From $75 / Wheels & tires:
+  From $84).
+
+  Replace the note under the cards with: Final pricing depends on your vehicle’s make,
+  model and condition. You always approve the estimate before work starts. Prices last
+  checked: [month year – dev to set at publish date].
+
+  Optional 4th card: Computer diagnostic.                                  ⚠️
+                                               CONFIRM the price and whether it is
+  credited toward the repair. If not confirmed, do not add this card.
+
+
+  15. Getting Ready for a Calgary Winter —                                      🟥 NEW SECTION – BUILD
+       🟥 This section does not exist. Build it directly after “Straightforward Pricing”. It is
+       a text section (two columns on desktop, one on mobile) with two buttons. It must not
+       duplicate the existing dark winter banner higher up the page.
+
+  H2: Getting Your Vehicle Ready for a Calgary Winter
+
+  Paragraph 1: Cold mornings are hard on vehicles. Low temperatures reduce battery
+  output and thicken engine oil, which is why weak batteries often fail on the first cold snap.
+  A free battery test and charging-system check takes little time and can save you a no-
+  start.
+
+  Paragraph 2: Tires matter just as much. Alberta does not require winter tires by law, but
+  many Calgary drivers switch when temperatures stay near or below 7°C because winter
+  tires stay softer and grip better in the cold. We offer seasonal tire swaps, balancing and
+  tire checks.
+
+  Paragraph 3: Check your owner’s manual for the recommended oil grade. If your vehicle
+  calls for synthetic, our Mobil 1 oil change starts from $75 and includes a free inspection.
+
+  Buttons: Book your winter tire change (opens the booking popup) | Get your battery
+  tested free (links to /car-battery-replacement-calgary/)
+
+
+  16. Frequently Asked Questions —                                       🟨 UPDATE EXISTING (5 questions → 10)
+  Keep the accordion design. Replace all answers with the text below and add questions 6–
+  10 (new). Keep the questions as plain visible text (not hidden in tabs that need JavaScript
+  to load).
+
+
+
+                                                                                                            Page 6 of 10
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+  Q1. Where is Busy Bee Auto Repair in Calgary? We’re at 324 41 Ave NE, Calgary, AB T2E
+  2N3, close to Deerfoot Trail in NE Calgary. We’re open Monday to Friday, 9 AM to 6 PM.
+  Call (403) 930-5888 for directions or to book.
+
+  Q2. Do I need an appointment? No. Walk-ins are welcome Monday to Friday, 9 AM to 6
+  PM. An appointment is the fastest way to be seen, especially during winter tire season
+  when the shop is busiest.
+
+  Q3. Do you work on all makes and models? Yes. We service domestic, Asian and European
+  cars, SUVs and light trucks. If you drive a specialty or exotic vehicle, call us first so we can
+  confirm we can help.
+
+  Q4. How much does a diagnostic cost? We quote the diagnostic upfront. We explain what
+  we find and give you a repair estimate. We never start repairs without your approval.     ⚠️
+  CONFIRM: if the owner gives a price, add it to this answer.
+
+  Q5. Do your repairs come with a warranty? Most repairs include a parts and labour
+  warranty. Terms vary by repair and parts used, so ask us about the coverage on your
+  specific job.
+
+  🟥 NEW Q6. How much does a Mobil 1 synthetic oil change cost? Mobil 1 synthetic oil
+  changes start from $75 and include a free vehicle inspection. The final price depends on
+  your vehicle’s oil capacity and filter. Call us with your make, model and year for an exact
+  quote.
+
+  🟥 NEW Q7. Is the battery test really free? Yes. We offer free battery testing and a
+  charging-system check. If the battery or alternator needs replacing, we quote that
+  separately and you approve it before we begin.
+
+  🟥 NEW Q8. How do I know if my brakes need attention? Warning signs include
+  squealing, grinding, vibration when braking, a soft pedal, the car pulling to one side, or
+  longer stopping distances. If you notice any of these, get your brakes inspected as soon
+  as possible.
+
+  🟥 NEW Q9. Do I need winter tires in Calgary? Alberta does not require winter tires, but
+  many drivers fit them for better grip in cold, snow and ice. A common guideline is to
+  switch when temperatures stay near or below 7°C. We offer seasonal tire swaps,
+  balancing and tire checks.
+
+  🟥 NEW Q10. How often should I change my oil? Follow the interval in your owner’s
+  manual or your vehicle’s oil-life monitor. Short trips, cold starts and towing count as severe
+  driving and can call for shorter intervals. We check your oil during every oil change
+  inspection.
+
+
+
+                                                                                            Page 7 of 10
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+  17. Visit Us (location, hours and map) —                               🟥 NEW SECTION – BUILD
+       🟥 This section does not exist. Build it between the FAQ and the booking form
+       (“Need a mechanic in Calgary today?”).
+
+
+  Layout: left column text, right column embedded Google Map (the shop’s Google
+  Business Profile listing). On mobile, text first, then the map. Make the phone number a
+  tap-to-call link and the address a link to Google Maps directions.
+
+  H2: Visit Busy Bee Auto Repair in NE Calgary
+
+  Details (use exactly this format, same as the footer and Google Business Profile): Busy
+  Bee Auto Repair & Tire Shop 324 41 Ave NE, Calgary, AB T2E 2N3 Phone: (403) 930-5888
+  Email: busybeeautocalgary@gmail.com Hours: Monday to Friday, 9:00 AM to 6:00 PM.
+  Closed Saturday and Sunday.
+
+  Text: We’re close to Deerfoot Trail and easy to reach from Downtown, Bridgeland,
+  Renfrew, Mayland Heights, Marlborough and Airdrie.
+
+  Buttons: Get Directions | Call Now | Book an Appointment
+
+
+  18. Booking form and final CTA (“Need a mechanic in Calgary today?”) —                         🟨
+  UPDATE EXISTING
+  Replace the short text under the H2 with: Call (403) 930-5888, message us on
+  WhatsApp, or walk in at 324 41 Ave NE. We’ll tell you what’s wrong and what it costs, and
+  you decide.
+
+  Form design: no change.
+
+
+  19. Footer —             ✅ NO CHANGE
+  ⚠️ CONFIRM which phone number is primary. The footer lists (403) 930-5888 and (825)
+  540-1995. Use one primary number in the page body, schema and Google Business Profile.
+
+
+
+  PART B – TECHNICAL SEO (dev)
+  Meta title (54 characters): Auto Repair Calgary | Busy Bee Auto Repair & Tire Shop
+
+
+
+
+                                                                                                 Page 8 of 10
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+  Meta description (about 150 characters): Family-owned auto repair shop in NE Calgary.
+  Brakes, tires, Mobil 1 oil changes from $75, free battery test & diagnostics. Walk-ins
+  welcome. Call today.
+
+  Canonical: https://busybeeautorepair.ca/
+
+  Image alt text (examples, use the same style on all images; no keyword stuffing):
+
+         Mechanic pouring Mobil 1 synthetic oil during an oil change at Busy Bee Auto Repair in
+         Calgary
+         Technician inspecting a brake rotor and caliper at Busy Bee Auto Repair, NE Calgary
+         Technician running a computer diagnostic scan on a vehicle at Busy Bee Auto Repair
+         Winter tires available for seasonal swap at Busy Bee Auto Repair & Tire Shop, Calgary
+
+  Rename image files descriptively (for example brake-inspection-calgary.webp ).
+  Decorative images get empty alt text.
+
+  JSON-LD (add to the homepage head; validate before publishing):
+
+     {
+         "@context": "https://schema.org",
+         "@type": "AutoRepair",
+         "@id": "https://busybeeautorepair.ca/#business",
+         "name": "Busy Bee Auto Repair & Tire Shop",
+         "url": "https://busybeeautorepair.ca/",
+         "telephone": "+1-403-930-5888",
+       "image": "https://busybeeautorepair.ca/wp-content/uploads/2026/10/busy-bee-
+     auto-repair-logo.webp",
+         "address": {
+           "@type": "PostalAddress",
+             "streetAddress": "324 41 Ave NE",
+             "addressLocality": "Calgary",
+             "addressRegion": "AB",
+             "postalCode": "T2E 2N3",
+           "addressCountry": "CA"
+         },
+         "openingHoursSpecification": [{
+           "@type": "OpeningHoursSpecification",
+             "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+             "opens": "09:00",
+           "closes": "18:00"
+         }],
+         "areaServed": ["Calgary", "Airdrie"],
+
+
+
+
+                                                                                          Page 9 of 10
+Busy Bee Auto Repair – Homepage Update Brief (Final Copy for Dev Team)
+
+
+
+
+         "sameAs": [
+             "https://www.facebook.com/profile.php?id=61575647326309",
+             "https://www.instagram.com/busybee_autorepair/"
+         ]
+     }
+
+
+  Add the Google Business Profile URL to sameAs once the owner provides it. Do not add
+   aggregateRating : self-served ratings on the business’s own site are not eligible for review
+  rich results.
+
+  Other technical tasks
+
+         Heading order H1 > H2 > H3 with no skipped levels. Only one H1 on the page.
+         Check robots.txt does not block Googlebot, CSS or JS.
+         Generate and submit an XML sitemap (Yoast or RankMath).
+         Keep images in WebP, lazy-load below the fold, and check Core Web Vitals on mobile.
+         Make sure all content in Part A is real HTML text, not text inside images.
+
+
+
+  PART C – FOR THE OWNER (not for the dev team)
+  These are the            ⚠️ CONFIRM items. Please send them to the dev team before launch:
+     1. Technician names, photos, years of experience and real licences or certifications
+     2. Standard warranty term (for example months and km)
+     3. Owner name and year the shop opened
+     4. Computer diagnostic price (and whether it is credited toward the repair)
+     5. Which phone number is primary
+     6. Google Business Profile URL
+     7. Real photos of the shop, team and work to replace the AI-looking service photos
+
+  Also do (outside the website): complete the Google Business Profile (categories,
+  services, hours, photos), keep name/address/phone identical on every directory, and ask
+  real customers for Google reviews.
+
+  No one can guarantee rankings. This update gives the page the right content and technical
+  foundation. Results depend on competition, reviews and time.
+
+
+
+
+                                                                                               Page 10 of 10
+
