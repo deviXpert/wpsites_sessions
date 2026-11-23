@@ -20,7 +20,7 @@ DATA = {
                                    'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
                                    'opens': '09:00', 'closes': '18:00'}],
     'areaServed': ['Calgary', 'Airdrie'],
-    'sameAs': [FACEBOOK, INSTAGRAM], 'hasMap': REVIEWS,  # add the GBP URL to sameAs once the owner confirms it
+    'sameAs': [FACEBOOK, INSTAGRAM, REVIEWS], 'hasMap': REVIEWS,  # REVIEWS = Google Business Profile (place id)
 
     'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': 'Auto repair services', 'itemListElement': [
         {'@type': 'Offer', 'itemOffered': {'@type': 'Service', 'name': label, 'url': BASE + url}} for _, label, url, *_ in SERVICE_PAGES]},
