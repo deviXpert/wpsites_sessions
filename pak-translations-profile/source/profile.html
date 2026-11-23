@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pak Translations – Company Profile</title>
+<style>
+@font-face{font-family:'Outfit';font-weight:400;src:url(fonts/outfit-400.ttf) format('truetype')}
+@font-face{font-family:'Outfit';font-weight:500;src:url(fonts/outfit-500.ttf) format('truetype')}
+@font-face{font-family:'Outfit';font-weight:600;src:url(fonts/outfit-600.ttf) format('truetype')}
+@font-face{font-family:'Outfit';font-weight:700;src:url(fonts/outfit-700.ttf) format('truetype')}
+@font-face{font-family:'Figtree';font-weight:400;src:url(fonts/figtree-400.ttf) format('truetype')}
+@font-face{font-family:'Figtree';font-weight:500;src:url(fonts/figtree-500.ttf) format('truetype')}
+@font-face{font-family:'Figtree';font-weight:600;src:url(fonts/figtree-600.ttf) format('truetype')}
+@font-face{font-family:'Figtree';font-weight:700;src:url(fonts/figtree-700.ttf) format('truetype')}
+
+:root{
+  --g:#6DB52E; --g-2:#4E9A1F; --g-d:#2F6E14;
+  --y:#F8C300; --y-2:#FFD84A;
+  --ink:#0B1A10; --ink-2:#10261A; --ink-3:#173322;
+  --text:#4A5560; --line:#E2E9DA; --bg:#F5F8F1;
+}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff}
+body{font-family:'Figtree',sans-serif;color:var(--text);font-size:10.4pt;line-height:1.55;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1,h2,h3,h4,.outfit{font-family:'Outfit',sans-serif;color:var(--ink);font-weight:700;line-height:1.15}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;break-after:page;background:#fff}
+.page:last-child{page-break-after:auto;break-after:auto}
+.inner{position:absolute;inset:0;padding:22mm 18mm 30mm}
+
+/* header strip on interior pages */
+.top{position:absolute;top:0;left:0;right:0;height:9mm;background:var(--ink);display:flex;align-items:center;justify-content:space-between;padding:0 18mm;color:#cfe0c4;font-size:7.6pt;letter-spacing:.04em}
+.top b{color:var(--y);font-weight:600}
+.top .brand{display:flex;align-items:center;gap:2.2mm;color:#fff;font-family:'Outfit';font-weight:600;font-size:8.6pt;letter-spacing:0}
+.top .brand img{height:5.4mm}
+
+/* footer */
+.foot{position:absolute;left:18mm;right:18mm;bottom:11mm;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:3.2mm;font-size:7.8pt;color:var(--text)}
+.foot .c{display:flex;gap:7mm}
+.foot .c span b{color:var(--ink);font-weight:600;margin-right:1.4mm}
+.foot .pn{font-family:'Outfit';font-weight:700;color:#fff;background:var(--g);border-radius:999px;min-width:8mm;height:8mm;display:flex;align-items:center;justify-content:center;font-size:8.4pt}
+
+/* section header */
+.eyebrow{display:inline-flex;align-items:center;gap:2mm;background:#EEF6E6;color:var(--g-d);border:1px solid #D6EBC4;border-radius:999px;padding:1.2mm 3.6mm;font-size:7.8pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.eyebrow::before{content:"";width:1.8mm;height:1.8mm;border-radius:50%;background:var(--y)}
+.title{font-size:30pt;margin:4mm 0 2mm;letter-spacing:-.01em}
+.title em{font-style:normal;color:var(--g)}
+.lead{font-size:11.6pt;color:var(--text);max-width:150mm;margin-bottom:8mm}
+.bar{width:16mm;height:1.6mm;border-radius:999px;background:linear-gradient(90deg,var(--g),var(--y));margin:3mm 0 5mm}
+
+/* decorative bubbles */
+.deco{position:absolute;right:-30mm;top:-26mm;width:110mm;height:110mm;opacity:.07;pointer-events:none}
+
+/* cards */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:5.2mm 5.4mm;position:relative}
+.card.tint{background:var(--bg);border-color:#E6EEDD}
+.card h3{font-size:12.4pt;margin-bottom:1.6mm;display:flex;align-items:center;gap:2.6mm}
+.card p{font-size:9.6pt;line-height:1.52}
+.num{flex:none;width:8.4mm;height:8.4mm;border-radius:10px;background:var(--g);color:#fff;font-family:'Outfit';font-weight:700;font-size:9pt;display:flex;align-items:center;justify-content:center}
+.num.y{background:var(--y);color:var(--ink)}
+.wide{grid-column:1/-1}
+
+/* lists */
+ul.ticks{list-style:none}
+ul.ticks li{position:relative;padding-left:7mm;margin:2.2mm 0}
+ul.ticks li::before{content:"";position:absolute;left:0;top:.9mm;width:4.4mm;height:4.4mm;border-radius:50%;background:var(--g) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.4l2.6 2.6L12 5.6' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/80% no-repeat}
+
+/* COVER */
+.cover{background:var(--ink);color:#fff}
+.cover .glow1{position:absolute;width:150mm;height:150mm;border-radius:50%;background:radial-gradient(circle,rgba(109,181,46,.35),rgba(109,181,46,0) 65%);left:-50mm;top:-40mm}
+.cover .glow2{position:absolute;width:140mm;height:140mm;border-radius:50%;background:radial-gradient(circle,rgba(248,195,0,.22),rgba(248,195,0,0) 65%);right:-50mm;bottom:20mm}
+.cover .logo{position:absolute;left:18mm;top:20mm;width:44mm}
+.cover .tagpill{position:absolute;right:18mm;top:24mm;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:1.6mm 4mm;font-size:8.2pt;color:#d9e7cf;letter-spacing:.04em}
+.cover .tagpill b{color:var(--y)}
+.cover .main{position:absolute;left:18mm;right:18mm;top:112mm}
+.cover .kicker{color:var(--y);font-family:'Outfit';font-weight:600;letter-spacing:.22em;text-transform:uppercase;font-size:10pt}
+.cover h1{color:#fff;font-size:52pt;line-height:1;margin:5mm 0 6mm;letter-spacing:-.02em}
+.cover h1 span{color:var(--g)}
+.cover .sub{font-size:13.5pt;color:#cfdcc6;max-width:140mm;line-height:1.5}
+.cover .motto{display:inline-block;margin-top:9mm;background:var(--y);color:var(--ink);font-family:'Outfit';font-weight:700;border-radius:999px;padding:2.6mm 6mm;font-size:12pt}
+.cover .stats{position:absolute;left:18mm;right:18mm;bottom:44mm;display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}
+.cover .stat{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);border-radius:18px;padding:4.5mm 5mm}
+.cover .stat b{display:block;font-family:'Outfit';font-size:17pt;color:#fff}
+.cover .stat span{font-size:8.6pt;color:#b9cbb0}
+.cover .contact{position:absolute;left:0;right:0;bottom:0;height:28mm;background:var(--ink-2);border-top:1.2mm solid var(--g);display:grid;grid-template-columns:repeat(3,1fr);padding:0 18mm;align-items:center}
+.cover .contact div{font-size:8pt;color:#9fb595;text-transform:uppercase;letter-spacing:.12em}
+.cover .contact div b{display:block;font-size:10.6pt;color:#fff;text-transform:none;letter-spacing:0;font-family:'Outfit';font-weight:600;margin-top:1mm}
+
+/* TOC */
+.toc{margin-top:6mm;display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.toc a{display:flex;align-items:center;gap:4mm;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid #E6EEDD;border-radius:16px;padding:4.6mm 5mm}
+.toc a .n{font-family:'Outfit';font-weight:700;font-size:20pt;color:var(--g);width:12mm}
+.toc a .t{font-family:'Outfit';font-weight:600;font-size:12.6pt;flex:1}
+.toc a .p{font-size:8.6pt;color:var(--text)}
+
+/* about */
+.quote{background:var(--ink);color:#fff;border-radius:22px;padding:7mm 8mm;margin-top:6mm;position:relative}
+.quote h3{color:var(--y);font-size:9pt;letter-spacing:.16em;text-transform:uppercase;margin-bottom:2mm}
+.quote p{font-family:'Outfit';font-size:15pt;line-height:1.35;color:#fff}
+.founder{display:grid;grid-template-columns:1.25fr 1fr;gap:7mm;align-items:start}
+.badge{display:flex;align-items:center;gap:3mm;background:var(--bg);border-radius:16px;padding:4mm;margin-bottom:3mm;border:1px solid #E6EEDD}
+.badge .i{flex:none;width:10mm;height:10mm;border-radius:12px;background:var(--y);display:flex;align-items:center;justify-content:center;font-family:'Outfit';font-weight:700;color:var(--ink);font-size:11pt}
+.badge b{display:block;color:var(--ink);font-family:'Outfit';font-size:11pt}
+.badge span{font-size:8.8pt}
+p+p{margin-top:3mm}
+
+/* process */
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin-top:2mm}
+.step{display:flex;gap:4mm;background:#fff;border:1px solid var(--line);border-radius:18px;padding:5.5mm}
+.step .big{flex:none;width:13mm;height:13mm;border-radius:14px;background:var(--ink);color:var(--y);font-family:'Outfit';font-weight:700;font-size:13pt;display:flex;align-items:center;justify-content:center}
+.step h3{font-size:13pt;margin-bottom:1mm}
+.step p{font-size:9.8pt}
+.flow{margin-top:8mm;background:var(--bg);border-radius:18px;padding:5mm 6mm;display:flex;align-items:center;justify-content:space-between;font-family:'Outfit';font-weight:600;color:var(--ink);font-size:10pt}
+.flow i{font-style:normal;color:var(--g);font-weight:700}
+
+/* expertise */
+.exp{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.exp .card{padding:4.4mm 5mm}
+.exp .card h3{font-size:11.4pt}
+.exp .card p{font-size:9.2pt}
+.tagdot{width:2.6mm;height:2.6mm;border-radius:50%;background:var(--g);flex:none}
+.tagdot.y{background:var(--y)}
+
+/* tools */
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}
+.tool{border:1px solid var(--line);border-radius:16px;padding:4.4mm 4.6mm;background:#fff;min-height:21mm}
+.tool b{display:block;font-family:'Outfit';color:var(--ink);font-size:11pt;line-height:1.2}
+.tool span{font-size:8.4pt;color:var(--text)}
+.tool.cat{background:var(--bg);border-color:#E6EEDD}
+.legend{display:flex;gap:6mm;font-size:8.6pt;margin:2mm 0 5mm}
+.legend span{display:flex;align-items:center;gap:2mm}
+.legend i{width:4mm;height:4mm;border-radius:4px;display:inline-block}
+
+/* table */
+table{width:100%;border-collapse:separate;border-spacing:0;font-size:8.3pt;line-height:1.4;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+th{background:var(--ink);color:#fff;font-family:'Outfit';font-weight:600;text-align:left;padding:2.6mm 2.4mm;font-size:8.4pt;vertical-align:bottom}
+td{padding:2.6mm 2.4mm;border-top:1px solid var(--line);vertical-align:top;color:var(--text)}
+tr:nth-child(even) td{background:var(--bg)}
+td.lang{color:var(--ink);font-weight:600}
+td ul{list-style:none}
+td ul li{padding-left:3mm;position:relative}
+td ul li::before{content:"";position:absolute;left:0;top:1.6mm;width:1.4mm;height:1.4mm;border-radius:50%;background:var(--g)}
+.pill{display:inline-block;background:#EEF6E6;color:var(--g-d);border-radius:999px;padding:.4mm 2.2mm;font-weight:600;font-size:7.8pt}
+.num-cell{font-family:'Outfit';font-weight:700;color:var(--ink);font-size:9pt;white-space:nowrap}
+
+/* references */
+.refs{display:grid;grid-template-columns:repeat(3,1fr);gap:4.5mm}
+.ref{border:1px solid var(--line);border-radius:18px;padding:5.5mm 5mm;font-size:8.8pt;line-height:1.5;background:#fff}
+.ref .av{width:11mm;height:11mm;border-radius:50%;background:var(--g);color:#fff;font-family:'Outfit';font-weight:700;display:flex;align-items:center;justify-content:center;font-size:11pt;margin-bottom:3mm}
+.ref:nth-child(2) .av{background:var(--y);color:var(--ink)}
+.ref:nth-child(3) .av{background:var(--ink);color:var(--y)}
+.ref h3{font-size:12pt;margin-bottom:.6mm}
+.ref .role{color:var(--g-d);font-weight:600;font-size:8.6pt;margin-bottom:.4mm}
+.ref .org{color:var(--ink);font-weight:600;margin-bottom:2.6mm}
+.ref .d{word-break:break-word}
+.ref .d div{margin-top:.8mm}
+.ref .d b{color:var(--ink);font-weight:600}
+.cta{margin-top:9mm;background:var(--ink);border-radius:24px;padding:9mm 9mm;color:#fff;position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;right:-20mm;top:-30mm;width:80mm;height:80mm;border-radius:50%;background:radial-gradient(circle,rgba(109,181,46,.45),rgba(109,181,46,0) 65%)}
+.cta h2{color:#fff;font-size:24pt;margin-bottom:2mm;position:relative}
+.cta h2 span{color:var(--y)}
+.cta p{color:#cfdcc6;font-size:11pt;max-width:120mm;position:relative}
+.cta .row{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:6mm;position:relative}
+.cta .row div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:3.6mm 4mm;font-size:7.8pt;letter-spacing:.12em;text-transform:uppercase;color:#9fb595}
+.cta .row b{display:block;font-family:'Outfit';color:#fff;font-size:10.6pt;letter-spacing:0;text-transform:none;margin-top:.8mm}
+.cta .btn{display:inline-block;margin-top:6mm;background:var(--y);color:var(--ink);font-family:'Outfit';font-weight:700;border-radius:999px;padding:2.8mm 7mm;font-size:11pt;position:relative}
+</style>
+</head>
+<body>
+
+<!-- reusable deco svg -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="bubbles" viewBox="0 0 100 100">
+      <path d="M10 8h44a8 8 0 0 1 8 8v34a8 8 0 0 1-8 8H32L18 74V58h-8a8 8 0 0 1-8-8V16a8 8 0 0 1 8-8z" fill="#6DB52E"/>
+      <path d="M46 30h44a8 8 0 0 1 8 8v34a8 8 0 0 1-8 8h-8v16L68 80H46a8 8 0 0 1-8-8V38a8 8 0 0 1 8-8z" fill="#F8C300"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="glow1"></div><div class="glow2"></div>
+  <img class="logo" src="logo.png" alt="Pak Translations">
+  <div class="tagpill">Translation in <b>120+ languages</b> · Serving clients worldwide</div>
+  <div class="main">
+    <div class="kicker">Company Profile</div>
+    <h1>Pak <span>Translations</span></h1>
+    <p class="sub">A PhD-led language services company delivering accurate, fast and on-time translation, localization, interpreting and linguistic services to clients around the world.</p>
+    <div class="motto">A Name to Rely Upon</div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>PhD-led</b><span>Founded by a PhD in Translation Studies</span></div>
+    <div class="stat"><b>10+ services</b><span>One-stop shop for all your language needs</span></div>
+    <div class="stat"><b>Worldwide</b><span>Trusted by clients in the UK, USA &amp; beyond</span></div>
+  </div>
+  <div class="contact">
+    <div>Website<b>www.pak-translations.com</b></div>
+    <div>Email<b>info@pak-translations.com</b></div>
+    <div>Telephone<b>+92 337 1440929</b></div>
+  </div>
+</section>
+
+<!-- 2 CONTENTS -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>A Name to Rely Upon</b></div></div>
+  <svg class="deco"><use href="#bubbles"/></svg>
+  <div class="inner">
+    <span class="eyebrow">Inside this profile</span>
+    <h2 class="title">Table of <em>Contents</em></h2>
+    <div class="bar"></div>
+    <div class="toc">
+      <a><span class="n">01</span><span class="t">Who We Are</span><span class="p">Page 3</span></a>
+      <a><span class="n">02</span><span class="t">What We Do</span><span class="p">Page 4</span></a>
+      <a><span class="n">03</span><span class="t">How We Do It</span><span class="p">Page 6</span></a>
+      <a><span class="n">04</span><span class="t">Why Choose Us</span><span class="p">Page 7</span></a>
+      <a><span class="n">05</span><span class="t">Areas of Expertise</span><span class="p">Page 8</span></a>
+      <a><span class="n">06</span><span class="t">CAT &amp; Other Tools</span><span class="p">Page 9</span></a>
+      <a><span class="n">07</span><span class="t">Sample Work</span><span class="p">Page 10</span></a>
+      <a><span class="n">08</span><span class="t">References</span><span class="p">Page 11</span></a>
+    </div>
+    <div class="quote" style="margin-top:12mm">
+      <h3>Our promise</h3>
+      <p>We are not just another LSP out there. We are genuinely committed to quality, honesty and consistency.</p>
+    </div>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">2</div></div>
+</section>
+
+<!-- 3 WHO WE ARE -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>01</b> · Who We Are</div></div>
+  <svg class="deco"><use href="#bubbles"/></svg>
+  <div class="inner">
+    <span class="eyebrow">About us</span>
+    <h2 class="title">Who <em>We Are</em></h2>
+    <div class="bar"></div>
+    <div class="founder">
+      <div>
+        <p>The founder, <b style="color:var(--ink)">Muhammad Salman Riaz</b> (PhD Translation Studies and MPhil Linguistics), has been delivering high-quality language services in Urdu and Pakistani Punjabi for over 9.5 years to clients based in various parts of the world. He has a reputation for delivering top-notch language services and exceeding clients’ expectations in terms of responsiveness, quality, and loyalty.</p>
+        <p>In 2019, capitalizing on his rich experience and a network of competent freelance language specialists, he established <b style="color:var(--ink)">Pak Translations</b> (www.pak-translations.com) – a language agency working with the principles of:</p>
+        <ul class="ticks" style="margin-top:3mm">
+          <li>Consistently delivering impeccable services</li>
+          <li>Being a reliable partner to our clients</li>
+          <li>Being honest and reliable in our business dealings and relationships</li>
+        </ul>
+      </div>
+      <div>
+        <div class="badge"><div class="i">PhD</div><div><b>Translation Studies</b><span>Founder’s doctorate, plus MPhil Linguistics</span></div></div>
+        <div class="badge"><div class="i">9.5</div><div><b>Years of experience</b><span>Delivering Urdu &amp; Punjabi language services</span></div></div>
+        <div class="badge"><div class="i">’19</div><div><b>Founded in 2019</b><span>Backed by a network of expert linguists</span></div></div>
+      </div>
+    </div>
+    <div class="quote">
+      <h3>Remember</h3>
+      <p>We are not just another LSP out there. We are genuinely committed to quality, honesty and consistency.</p>
+      <div style="font-size:10pt;color:#cfdcc6;margin-top:3mm;line-height:1.55">We build an understanding of our clients’ specific needs, assign projects to the most-suited linguists, and remain available to both the clients and the linguists for any queries. This has made us a preferred choice of our clients.</div>
+    </div>
+    <div class="grid2" style="grid-template-columns:repeat(3,1fr);margin-top:6mm">
+      <div class="card tint" style="text-align:center"><h3 style="justify-content:center">High Quality</h3><p>Distinguishing characteristic</p></div>
+      <div class="card tint" style="text-align:center"><h3 style="justify-content:center">Honesty</h3><p>Distinguishing characteristic</p></div>
+      <div class="card tint" style="text-align:center"><h3 style="justify-content:center">Reliability</h3><p>Distinguishing characteristic</p></div>
+    </div>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">3</div></div>
+</section>
+
+<!-- 4 WHAT WE DO (1) -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>02</b> · What We Do</div></div>
+  <svg class="deco"><use href="#bubbles"/></svg>
+  <div class="inner">
+    <span class="eyebrow">Our services</span>
+    <h2 class="title">What <em>We Do</em></h2>
+    <div class="bar"></div>
+    <div class="grid2">
+      <div class="card"><h3><span class="num">01</span>Localization (App, Software, Website)</h3><p>More and more companies are becoming aware of the significance of reaching out to new markets and having a presence online. Localization plays a key role in this pursuit. Fully aware of this, Pak Translations offers top-notch localization services through a pool of carefully selected, experienced localizers who are adept in the art of adapting content to local markets, while remaining sensitive to local cultural and language norms.</p></div>
+      <div class="card"><h3><span class="num y">02</span>Document Translation</h3><p>Be it brochures, certificates, SMS messages, affidavits, court summons, medical reports, or any other document, Pak Translations has the experts who can transfer your message into other languages, maintaining both accuracy and readability.</p></div>
+      <div class="card"><h3><span class="num y">03</span>Editing and Proofreading</h3><p>It is crucial to have your documents, websites, apps &amp; software, and subtitles free of errors and presented in the required format and layout. This is where our expert editors and proofreaders come in. They can ensure that the final version you get is both spotless and natural sounding.</p></div>
+      <div class="card"><h3><span class="num">04</span>Audio/Video Transcription &amp; Translation</h3><p>Transcription and translation of audio and video files is a demanding art requiring insertion of accurate time-codes and faithful rendition of speech, while ensuring that the translation is understandable to the readers. A high level of concentration and an ability to comprehend speech despite background noise, overlapping, and interruptions are key to success. Our translators possess the necessary skills and can meet the client’s expectations.</p></div>
+      <div class="card tint wide"><h3><span class="num">05</span>Interpreting</h3><p>As it needs to be done on the spot, interpreting is a very sensitive service, requiring not only a good command of the languages involved but also the ability to quickly process speech and translate it into another language in your mind. It needs profound competence, as the margin for error is almost none. Our interpreters are there to interpret for you efficiently and in different formats: <b style="color:var(--ink)">in person, over the phone, and via videoconferencing</b>. Both consecutive and simultaneous interpretation services are available.</p></div>
+    </div>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">4</div></div>
+</section>
+
+<!-- 5 WHAT WE DO (2) -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>02</b> · What We Do</div></div>
+  <div class="inner" style="padding-top:20mm">
+    <div class="grid2">
+      <div class="card"><h3><span class="num y">06</span>Subtitling</h3><p>Subtitling is even more demanding than audio/video transcription, in that it requires precise synchronization between the subtitles and the time-codes, as well as preparation of files in various formats such as SubRip &amp; VobSub and open or closed subtitles/captions. We cater to our clients’ specific subtitling needs with efficiency and accuracy.</p></div>
+      <div class="card"><h3><span class="num">07</span>Content Creation</h3><p>We are blessed with a pool of creative writers and expert copywriters with years of experience in writing convincing and attractive content: blog articles, social media posts, print and digital ads, case stories, email marketing content, presentations and more. Our expert writers help you reach your targeted audience in an effective and appealing way.</p></div>
+      <div class="card"><h3><span class="num">08</span>Foreign Language Material Development</h3><p>We provide expert services in developing reading, writing, and listening tests for foreign/second language learners in accordance with the various proficiency levels set by the clients. Apart from testing, we are experts in collating and creating listening, writing, and reading passages to be used as practice material in language learning classes.</p></div>
+      <div class="card"><h3><span class="num y">09</span>Linguistics-Related Services</h3><p>Be it phonetic transcription, pronunciation validation, PoS (parts of speech) or case tagging, stress placement, or assistance with building a corpus or dictionary, we are here to fulfil your needs. Our expertise has been well proven in the projects we have carried out so far, and our clients’ testimonials are proof of it. Please check with us whether we currently offer these services in the required language(s).</p></div>
+      <div class="card tint wide"><h3><span class="num">10</span>Desktop Publishing</h3><p>We have DTP services available for our clients. Whether it is brochures, flyers, books or any other document, we can do typesetting, formatting, layout adjustment, and designing in accordance with your specific needs.</p></div>
+    </div>
+    <div class="quote" style="margin-top:6mm;display:flex;align-items:center;justify-content:space-between;gap:6mm">
+      <div><h3>One-stop shop</h3><p style="font-size:13.5pt">All your language needs, handled by one reliable partner.</p></div>
+      <div style="flex:none;background:var(--y);color:var(--ink);font-family:'Outfit';font-weight:700;border-radius:999px;padding:2.6mm 6mm;font-size:10.5pt">Get a Free Quote</div>
+    </div>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">5</div></div>
+</section>
+
+<!-- 6 HOW WE DO IT -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>03</b> · How We Do It</div></div>
+  <svg class="deco"><use href="#bubbles"/></svg>
+  <div class="inner">
+    <span class="eyebrow">Our process</span>
+    <h2 class="title">How <em>We Do It</em></h2>
+    <div class="bar"></div>
+    <p class="lead">A simple, transparent six-step process that keeps you informed from the first message to long after delivery.</p>
+    <div class="steps">
+      <div class="step"><div class="big">01</div><div><h3>Order</h3><p>You place an order with us using the order placing form.</p></div></div>
+      <div class="step"><div class="big">02</div><div><h3>Understanding</h3><p>We discuss the project requirements with you, asking questions, requesting reference/helpful material, and/or providing suggestions for better results.</p></div></div>
+      <div class="step"><div class="big">03</div><div><h3>Assignment</h3><p>In light of your requirements, we assign the task to the most relevant linguist, who delivers it after completing and proofreading.</p></div></div>
+      <div class="step"><div class="big">04</div><div><h3>QA</h3><p>We perform the final check on the project for any formatting, layout, punctuation, missing-line and similar issues.</p></div></div>
+      <div class="step"><div class="big">05</div><div><h3>Delivery</h3><p>We deliver the project to you on time.</p></div></div>
+      <div class="step"><div class="big">06</div><div><h3>Post-Delivery Support</h3><p>We are always there to resolve any post-delivery questions and concerns.</p></div></div>
+    </div>
+    <div class="flow">Order <i>›</i> Understanding <i>›</i> Assignment <i>›</i> QA <i>›</i> Delivery <i>›</i> Support</div>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">6</div></div>
+</section>
+
+<!-- 7 WHY CHOOSE US -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>04</b> · Why Choose Us</div></div>
+  <svg class="deco"><use href="#bubbles"/></svg>
+  <div class="inner">
+    <span class="eyebrow">Why clients choose us</span>
+    <h2 class="title">Why <em>Choose Us</em></h2>
+    <div class="bar"></div>
+    <div class="grid2">
+      <div class="card"><h3><span class="num">01</span>A Variety of Language Services</h3><p>Professional language needs vary from document translation to website localization to various phonetic and morphosyntactic requirements to, say, developing text-to-speech (TTS) software. Keeping this in view, Pak Translations serves as a one-stop shop for all your language needs (for details, refer to our Services). We make sure to serve with top-class service and envision becoming a leading translation company in the world.</p></div>
+      <div class="card"><h3><span class="num y">02</span>Excellent Customer Support</h3><p>We offer end-to-end services, which means that we work with our clients from the beginning of the project to the end. We go through the project instructions in detail and ask for further details or clarifications to narrow down to the client’s specific needs. Where needed, we also request reference/supporting material and, where applicable, provide relevant and helpful suggestions. We are always there to answer any queries and concerns after delivering the project.</p></div>
+      <div class="card"><h3><span class="num y">03</span>Quality Control</h3><p>Quality control is the backbone of a successful business. As the first step, we select our language experts only after rigorously testing their skills. Our Translator Instructions (shared with all linguists as part of onboarding) bind them to check their deliverables thoroughly before delivering to us. We regularly get the work reviewed by other linguists, and we are always there to answer any post-delivery queries and concerns – a step that helps us ensure the quality is up to the client’s expectations.</p></div>
+      <div class="card"><h3><span class="num">04</span>On-Time Delivery &amp; Competitive Prices</h3><p>We make sure to deliver work to clients on time. In the case of any unforeseen potential delays (such as a linguist falling ill), we inform our clients in time and take prompt action to assign the work to another linguist in our team.</p><p>We offer reasonable prices to our clients and keep their available budget in view.</p></div>
+    </div>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">7</div></div>
+</section>
+
+<!-- 8 AREAS OF EXPERTISE -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>05</b> · Areas of Expertise</div></div>
+  <svg class="deco"><use href="#bubbles"/></svg>
+  <div class="inner">
+    <span class="eyebrow">Domains</span>
+    <h2 class="title">Areas of <em>Expertise</em></h2>
+    <div class="bar"></div>
+    <p class="lead" style="margin-bottom:5mm">We have been providing language services in a wide variety of domains, including, but not limited to:</p>
+    <div class="exp">
+      <div class="card"><h3><span class="tagdot"></span>IT</h3><p>App localization, software localization, website localization, UI localization, customer feedback, FAQs, etc.</p></div>
+      <div class="card"><h3><span class="tagdot y"></span>Medical</h3><p>Healthcare brochures, medical announcements for the public, health information video clips, medical reports, medical questionnaires, etc.</p></div>
+      <div class="card"><h3><span class="tagdot y"></span>Legal</h3><p>Contracts, damage claim forms, proceedings of lawsuits, court orders, privacy policies, user agreements, police recordings, etc.</p></div>
+      <div class="card"><h3><span class="tagdot"></span>Marketing / Business</h3><p>User surveys, company announcements, company information brochures, business presentations, blogs, etc.</p></div>
+      <div class="card"><h3><span class="tagdot"></span>Advertising</h3><p>Newspaper advertisements, social media ads, billboards, and brands.</p></div>
+      <div class="card"><h3><span class="tagdot y"></span>Government / Public Sector</h3><p>Official press releases, immigration-related content, audio/video transcription and translation for police and court, etc.</p></div>
+      <div class="card"><h3><span class="tagdot y"></span>Education</h3><p>Educational training videos and slides, etc.</p></div>
+      <div class="card"><h3><span class="tagdot"></span>Certificates</h3><p>Birth certificate, marriage certificate, land registration certificate, ID card, etc.</p></div>
+      <div class="card tint wide"><h3><span class="tagdot"></span>Slang</h3><p>Content involving slang. Our most recent project in this regard was the localization of US users’ comments on online forums and product comments on e-commerce websites. The comments were mostly in slang used by US speakers and hence very difficult to translate, requiring a lot of research and accurate comprehension of the source. Our team worked very hard on the project, and <b style="color:var(--ink)">it passed all three rounds of the client’s LQA</b>.</p></div>
+    </div>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">8</div></div>
+</section>
+
+<!-- 9 TOOLS -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>06</b> · CAT &amp; Other Tools</div></div>
+  <svg class="deco"><use href="#bubbles"/></svg>
+  <div class="inner">
+    <span class="eyebrow">Technology</span>
+    <h2 class="title">CAT &amp; <em>Other Tools</em></h2>
+    <div class="bar"></div>
+    <p class="lead" style="margin-bottom:3mm">Our linguists work in the industry’s leading computer-assisted translation (CAT), localization, audio and subtitling tools.</p>
+    <div class="legend"><span><i style="background:var(--bg);border:1px solid #D6E3CA"></i>CAT &amp; localization tools</span><span><i style="background:#fff;border:1px solid var(--line)"></i>Audio, transcription &amp; subtitling tools</span></div>
+    <div class="tools">
+      <div class="tool cat"><b>SDL Trados</b><span>CAT tool</span></div>
+      <div class="tool cat"><b>Memsource</b><span>CAT tool</span></div>
+      <div class="tool cat"><b>MemoQ</b><span>CAT tool</span></div>
+      <div class="tool cat"><b>Idiom Workbench</b><span>CAT tool</span></div>
+      <div class="tool cat"><b>Google Translator Toolkit</b><span>CAT tool</span></div>
+      <div class="tool cat"><b>Polyglot</b><span>Localization tool</span></div>
+      <div class="tool cat"><b>Smartling</b><span>Localization platform</span></div>
+      <div class="tool cat"><b>Across</b><span>CAT tool</span></div>
+      <div class="tool cat"><b>Transtool</b><span>CAT tool</span></div>
+      <div class="tool cat"><b>Microsoft LocStudio</b><span>Localization Studio – standard localization tool used by Microsoft</span></div>
+      <div class="tool cat"><b>Microsoft LEAF</b><span>Standard localization tool used by Microsoft</span></div>
+      <div class="tool cat"><b>MateCAT</b><span>Free online CAT tool</span></div>
+      <div class="tool"><b>Audacity</b><span>Voice recording and editing</span></div>
+      <div class="tool"><b>Express Scribe</b><span>Transcription, plus quality-enhancement tools</span></div>
+      <div class="tool"><b>Aegisub</b><span>Subtitling</span></div>
+    </div>
+    <p style="margin-top:5mm;font-size:9.6pt">…and several others, depending on each client’s requirements.</p>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">9</div></div>
+</section>
+
+<!-- 10 SAMPLE WORK -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>07</b> · Sample Work</div></div>
+  <svg class="deco"><use href="#bubbles"/></svg>
+  <div class="inner">
+    <span class="eyebrow">Portfolio</span>
+    <h2 class="title">Sample <em>Work</em></h2>
+    <div class="bar"></div>
+    <p style="margin-bottom:5mm;font-size:10pt">The following are a few sample projects, most of them completed in November 2020. They give an idea of the type of work we are typically engaged in. (Details of other projects can be provided upon request.)</p>
+    <table>
+      <thead><tr><th style="width:23%">Language Combination</th><th>Service</th><th>Date</th><th>Words / Minutes</th><th>Domain</th><th style="width:28%">Content Type</th><th>End / Direct Client</th></tr></thead>
+      <tbody>
+        <tr><td class="lang">Urdu, Bengali, Sinhala, Indian Punjabi and Kannada to English</td><td><span class="pill">Translation</span></td><td>Nov 2020</td><td class="num-cell">9,310</td><td>Legal / Immigration</td><td><ul><li>Family tree</li><li>Personal letter</li><li>Marriage certificate</li><li>Divorce certificate</li><li>Birth certificate</li><li>Change of name newspaper notice and affidavit</li></ul></td><td>UK Law &amp; Immigration Firms</td></tr>
+        <tr><td class="lang">English to Urdu and Sylheti</td><td><span class="pill">Translation</span></td><td>Nov 2020</td><td class="num-cell">15,530</td><td>Legal / Immigration</td><td><ul><li>Claim forms</li><li>Reply to the defense</li></ul></td><td>UK Law &amp; Immigration Firms</td></tr>
+        <tr><td class="lang">English to Urdu &amp; Pakistani Punjabi</td><td><span class="pill">Translation</span></td><td>Nov 2020</td><td class="num-cell">4,784</td><td>Medical / Healthcare</td><td><ul><li>NHS flyers on coronavirus guidance by NHS Foundation Trusts</li><li>Cancer information leaflet</li><li>COVID-related information leaflet</li><li>Patient interview</li><li>Privacy notice by an NHS Foundation / Teaching Hospital</li></ul></td><td>NHS</td></tr>
+        <tr><td class="lang">English to Urdu, Pakistani Punjabi, Indian Punjabi, Pashto, Malayalam, Gujarati, Bengali and Hindi</td><td><span class="pill">Translation</span></td><td>Nov – Dec 2020</td><td class="num-cell">Approx. 50,000</td><td>Medical / Healthcare</td><td><ul><li>UK government COVID-related guidelines</li><li>NHS COVID-related flyers</li></ul></td><td>UK Government</td></tr>
+        <tr><td class="lang">English to Urdu</td><td><span class="pill">Localization</span></td><td>Nov 2020</td><td class="num-cell">5,000+</td><td>App / Software Localization</td><td><ul><li>UI</li><li>Legal</li><li>Marketing</li><li>Surveys</li></ul></td><td>Leading Mobile Company</td></tr>
+        <tr><td class="lang">English to Urdu</td><td><span class="pill">Translation</span></td><td>Nov 2020</td><td class="num-cell">29,076</td><td>Educational</td><td><ul><li>Educational booklets for grade 2 students</li></ul></td><td>US Educational Organization</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">10</div></div>
+</section>
+
+<!-- 11 REFERENCES -->
+<section class="page">
+  <div class="top"><div class="brand"><img src="logo.png" alt="">Pak Translations</div><div><b>08</b> · References</div></div>
+  <svg class="deco"><use href="#bubbles"/></svg>
+  <div class="inner">
+    <span class="eyebrow">Trusted by</span>
+    <h2 class="title">Our <em>References</em></h2>
+    <div class="bar"></div>
+    <div class="refs">
+      <div class="ref"><div class="av">SG</div><h3>Sabine Gorricho</h3><div class="role">Corporate Account Manager</div><div class="org">Wolfestone Translation Ltd., UK</div>
+        <div class="d"><div><b>Tel:</b> 0044 1792 450 972 ext. 210</div><div><b>Email:</b> sabine.gorricho@wolfestone.co.uk</div><div><b>Web:</b> www.wolfestone.co.uk</div></div></div>
+      <div class="ref"><div class="av">MB</div><h3>Muzaffer Sharif Bhutta</h3><div class="role">Director &amp; Company Secretary</div><div class="org">Agribusiness Support Fund</div>
+        <div class="d"><div>144-DD Block, Central Commercial Area, Phase IV, DHA, Lahore, Pakistan</div><div><b>Tel:</b> +92 333 4247 295</div><div><b>Email:</b> muzaffer.bhutta@asf.org.pk</div><div><b>Web:</b> www.asf.org.pk</div></div></div>
+      <div class="ref"><div class="av">UB</div><h3>Umar Butt</h3><div class="role">Owner &amp; Managing Director</div><div class="org">FLAME AD Communications</div>
+        <div class="d"><div><b>Tel:</b> +92 42 35888881</div><div><b>Email:</b> info@flameadcom.com</div><div><b>Facebook:</b> facebook.com/ FlameAdCommunications</div></div></div>
+    </div>
+    <div class="cta">
+      <h2>Let’s work <span>together</span></h2>
+      <p>Tell us about your project and we’ll get back to you with a quote, fast. Accurate, fast &amp; on time – a name to rely upon.</p>
+      <div class="row">
+        <div>Website<b>pak-translations.com</b></div>
+        <div>Email<b style="font-size:9.6pt">info@pak-translations.com</b></div>
+        <div>Telephone<b>+92 337 1440929</b></div>
+      </div>
+      <div class="btn">Get a Free Quote</div>
+    </div>
+  </div>
+  <div class="foot"><div class="c"><span><b>Web</b>www.pak-translations.com</span><span><b>Email</b>info@pak-translations.com</span><span><b>Tel</b>+92 337 1440929</span></div><div class="pn">11</div></div>
+</section>
+
+</body>
+</html>
