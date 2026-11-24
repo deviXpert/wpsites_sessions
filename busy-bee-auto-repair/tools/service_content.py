@@ -322,3 +322,8 @@ PAGES = {
                                                    'you a clear list.')],
         cta_text='Book scheduled maintenance: (403) 930-5888.', related=['oil', 'brakes', 'battery']),
 }
+
+# Client copy from Google Docs (Nov 2026) replaces the SEO-doc copy for these pages
+from docs_copy import OVERRIDES as _O
+for _k, _v in _O.items():
+    PAGES[_k].update(_v)

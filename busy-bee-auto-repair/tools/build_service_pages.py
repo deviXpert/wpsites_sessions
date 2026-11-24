@@ -59,7 +59,7 @@ def sec_steps(head, em, items):
                      H(p, 'p', '#667074', S(13, 400, 21), name='Text')], pad=(20, 0, 0, 0), border=(dims(2, 0, 0, 0), YEL))
     n = len(items)
     return wrap(head, [svc.title(head, em),
-                       C('Steps', [step(i + 1, *s) for i, s in enumerate(items)], grid=f'repeat({n}, minmax(0, 1fr))',
+                       C('Steps', [step(i + 1, *s) for i, s in enumerate(items)], grid=f'repeat({min(n, 4)}, minmax(0, 1fr))',
                          grid_tablet='repeat(2, minmax(0, 1fr))', grid_mobile='1fr', rows='auto', rows_tablet='auto',
                          rows_mobile='auto', gap=24)])
 
@@ -78,11 +78,45 @@ def sec_text(head, paras, photo):
         ai='stretch')])
 
 
+def sec_rich(head, html, photo=None):
+    """Long-form copy block: H2 + rich text (paragraphs, lists, links); optional photo beside it."""
+    copy = C('Copy', [H(head, 'h2', DK2, S(34, 850, 1.1, -1.1, 'uppercase', size_m=26, ls_m=-0.6), name='Title'),
+                      T(html, '#3F4A4D', S(16, 400, 27, size_m=15, lh_m=25), mar=(16, 0, 0, 0), name='Text', cls='bb-rich')],
+              jc='center')
+    if not photo:
+        return wrap(head, [C('Narrow', [copy], w=cu('min(860px, 100%)'))], pad=(44, 32), pad_mobile=(30, 22))
+    return wrap(head, [C('Grid', [copy, IMG(photo, w=pct(100), h=cu('100%'), fit='cover', alt='', radius=12, name='Photo',
+                                            cls='bb-fill-img')],
+                         grid='1.15fr 0.85fr', grid_tablet='1fr', grid_mobile='1fr', rows='auto', rows_tablet='auto', rows_mobile='auto',
+                         gap=44, gap_mobile=22, ai='stretch')], pad=(44, 32), pad_mobile=(30, 22))
+
+
+def sec_cards(head, intro, cards, numbered=True, outro=None, cols=3):
+    """H2 + intro + grid of cards (title + rich text), optionally numbered."""
+    items = []
+    for i, (t, html) in enumerate(cards, 1):
+        top = [H(f'{i:02d}', 'span', DK2, S(13, 850, 18, 1), pad=(6, 10), name='Number', w='auto', cls='bb-card-num')] if numbered else []
+        items.append(C(t[:40], top + [H(t, 'h3', DK2, S(18, 850, 24, -0.2, 'uppercase', size_m=16, lh_m=22), mar=(12 if numbered else 0, 0, 10, 0),
+                                        name='Title'),
+                                      T(html, '#4B5558', S(14.5, 400, 24), name='Text', cls='bb-rich')],
+                       pad=(24, 24), pad_mobile=20, bg=PAPER, radius=14, border=(1, '#E4E7E3'), cls='bb-copy-card'))
+    kids = [H(head, 'h2', DK2, S(34, 850, 1.1, -1.1, 'uppercase', size_m=26, ls_m=-0.6), name='Title')]
+    if intro:
+        kids.append(T(intro, '#3F4A4D', S(16, 400, 27, size_m=15, lh_m=25), mar=(14, 0, 0, 0), w=cu('min(860px, 100%)'), name='Intro',
+                      cls='bb-rich'))
+    kids.append(C('Cards', items, grid=f'repeat({cols}, minmax(0, 1fr))', grid_tablet='repeat(2, minmax(0, 1fr))', grid_mobile='1fr',
+                  rows='auto', rows_tablet='auto', rows_mobile='auto', gap=16, mar=(26, 0, 0, 0)))
+    if outro:
+        kids.append(T(outro, '#3F4A4D', S(16, 400, 27, size_m=15, lh_m=25), mar=(22, 0, 0, 0), w=cu('min(860px, 100%)'), name='Outro',
+                      cls='bb-rich'))
+    return wrap(head, kids, pad=(44, 32), pad_mobile=(30, 22))
+
+
 def sec_callout(head, text):
     return wrap(head, [C('Callout', [
         ICON('shield-check', 30, color=DK2, name='Icon', w='auto', cls='bb-sw16'),
         C('Copy', [H(head, 'h2', DK2, S(26, 850, 1.15, -0.8, 'uppercase', size_m=22), name='Title'),
-                   T(f'<p>{text}</p>', DK2, S(15, 400, 25), mar=(10, 0, 0, 0), name='Text')], w='auto', grow=True, cls='bb-shrink'),
+                   T(f'<p>{text}</p>', DK2, S(15, 400, 25), mar=(10, 0, 0, 0), name='Text', cls='bb-rich')], w='auto', grow=True, cls='bb-shrink'),
     ], d='row', d_mobile='column', ai='flex-start', gap=22, pad=(32, 36), pad_mobile=26, bg=YEL, radius=12)], pad=(30, 32),
         pad_mobile=(24, 22))
 
@@ -126,7 +160,8 @@ def build(key):
     el.seed('svc-' + key)
     kinds = {'list': lambda s: sec_list(*s[1:]), 'signs': lambda s: sec_signs(s[1], s[2], c['photos'][-1], *s[3:]),
              'steps': lambda s: sec_steps(*s[1:]), 'text': lambda s: sec_text(*s[1:]), 'callout': lambda s: sec_callout(*s[1:]),
-             'prices': lambda s: sec_prices(*s[1:])}
+             'prices': lambda s: sec_prices(*s[1:]), 'rich': lambda s: sec_rich(*s[1:]),
+             'cards': lambda s: sec_cards(*s[1:])}
     hero = svc.hero(h1=c['h1'], intro=c['intro'], eyebrow=c['eyebrow'], slides=[(p, '') for p in c['photos'][:1]],
                     actions=[svc.yellow_btn(c['cta'], '#book', name='Primary CTA'),
                              BTN('Call ' + PHONE, TEL, S(13, 800, 19.5), color=PAPER, bg='rgba(0,0,0,0)', ic='phone', ic_pos='before',
