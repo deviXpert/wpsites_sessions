@@ -259,7 +259,8 @@ def faq(faqs=FAQS, eyebrow='BEFORE YOUR VISIT', heading='Questions?<br><em>Clear
           'everything in plain English before any work.</p>', '#596367', S(15, 400, 25), name='Intro'),
         H('Mon–Fri · 9 AM–6 PM · Walk-ins welcome', 'p', DK2, S(13, 700, 20), mar=(16, 0, 0, 0), name='Hours'),
     ], cls='bb-faq-intro')
-    acc = W('accordion', 'FAQ', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': f'<p>{a}</p>'} for q, a in faqs],
+    acc = W('accordion', 'FAQ', tabs=[{'_id': uid(), 'tab_title': q, 'tab_content': a if a.startswith('<') else f'<p>{a}</p>'}
+                                   for q, a in faqs],
             selected_icon=icon('plus'), selected_active_icon=icon('minus'), icon_align='right', title_html_tag='h3', faq_schema='yes',
             border_width=px(0), title_color=DK2, tab_active_color=DK2, icon_color=DK2, icon_active_color=DK2,
             title_padding=dims(20, 22), content_padding=dims(0, 22, 22, 22), content_color='#4B5558',

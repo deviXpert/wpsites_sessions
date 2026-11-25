@@ -325,5 +325,8 @@ PAGES = {
 
 # Client copy from Google Docs (Nov 2026) replaces the SEO-doc copy for these pages
 from docs_copy import OVERRIDES as _O
+from docs_copy2 import OVERRIDES as _O2
+
+_O = {**_O, **_O2}
 for _k, _v in _O.items():
     PAGES[_k].update(_v)

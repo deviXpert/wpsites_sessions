@@ -159,3 +159,10 @@ Not built (owner content needed): Meet the Team, diagnostic price card. Schema/m
 Deployed live 2026-11-23. Newer Elementor stages edits – el.regen() now also calls elementor/publish-document. MCP needs the
 MCP-Protocol-Version header (wp.py). Still OPEN: Settings → Reading "Discourage search engines" must be unticked by the owner
 (not exposed by the WP REST API) – the whole site is noindex until then. Exact Yoast SEO title must be typed into the page's Yoast field.
+
+## Service-page copy from client Google Docs (Nov 2026)
+- Engine / Brakes / Oil: hand-mapped in `tools/docs_copy.py`.
+- The other 8 (tires, alignment, battery, electrical, suspension, transmission, cooling, maintenance): `tools/docs_copy2.py` parses the
+  cached HTML exports in `design/gdocs/<key>.html` with `tools/docs_parse.py` (word for word; H2 → section, ≥2 H3 → card grid,
+  "Book/Visit" → yellow callout, FAQ H3s → accordion + FAQPage schema, doc links → internal links, tables → `.bb-table`).
+- Client edits a doc → re-download its export (command in docs_copy2.py) and run `python3 build_service_pages.py <key>`.

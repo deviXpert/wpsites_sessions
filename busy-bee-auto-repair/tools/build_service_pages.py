@@ -116,8 +116,9 @@ def sec_callout(head, text):
     return wrap(head, [C('Callout', [
         ICON('shield-check', 30, color=DK2, name='Icon', w='auto', cls='bb-sw16'),
         C('Copy', [H(head, 'h2', DK2, S(26, 850, 1.15, -0.8, 'uppercase', size_m=22), name='Title'),
-                   T(f'<p>{text}</p>', DK2, S(15, 400, 25), mar=(10, 0, 0, 0), name='Text', cls='bb-rich')], w='auto', grow=True, cls='bb-shrink'),
-    ], d='row', d_mobile='column', ai='flex-start', gap=22, pad=(32, 36), pad_mobile=26, bg=YEL, radius=12)], pad=(30, 32),
+                   T(text if text.startswith('<') else f'<p>{text}</p>', DK2, S(15, 400, 25), mar=(10, 0, 0, 0), name='Text',
+                     cls='bb-rich')], w='auto', grow=True, cls='bb-shrink'),
+    ], d='row', d_mobile='column', ai='flex-start', gap=22, pad=(32, 36), pad_mobile=26, bg=YEL, radius=12, cls='bb-callout')], pad=(30, 32),
         pad_mobile=(24, 22))
 
 
