@@ -797,3 +797,36 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .bb-copy-card{transition:border-color .2s,box-shadow .2s}.bb-copy-card:hover{border-color:#d6dbd2!important;box-shadow:0 14px 30px -20px rgb(16 23 25/.4)}
 .bb-sm-h1 .bb-h1-sub{display:block;font-size:.4em;line-height:1.3;letter-spacing:0;margin-top:.5em;color:#ffe600;text-transform:none}
 .elementor .bb-rich p{margin:0 0 14px!important}.elementor .bb-rich p:last-child{margin-bottom:0!important}.elementor .bb-rich ul,.elementor .bb-rich ol{margin:4px 0 14px!important}
+
+/* ===== Service pages: long-form doc sections (feature split, photo split, why-us band) – Nov 2026 ===== */
+/* lists: yellow tick bullets, numbered dark circles */
+.elementor .bb-rich ul{list-style:none!important;padding-left:0!important}
+.bb-rich ul>li{position:relative;padding-left:32px;margin:9px 0}
+.bb-rich ul>li::before{content:"";position:absolute;left:0;top:2px;width:21px;height:21px;border-radius:50%;background:#ffe600 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a2024' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/12px no-repeat}
+.elementor .bb-rich ol{list-style:none!important;padding-left:0!important;counter-reset:bbol}
+.bb-rich ol>li{position:relative;padding-left:40px;margin:12px 0;counter-increment:bbol;min-height:26px}
+.bb-rich ol>li::before{content:counter(bbol);position:absolute;left:0;top:0;width:27px;height:27px;border-radius:8px;background:#1a2024;color:#ffe600;font-weight:850;font-size:13px;line-height:27px;text-align:center}
+/* feature split: white card */
+.bb-feature-card{box-shadow:0 18px 40px -28px rgba(26,32,36,.35);transition:box-shadow .25s ease}
+.bb-feature-card:hover{box-shadow:0 24px 50px -26px rgba(26,32,36,.45)}
+@media (min-width:1024px){.bb-sys .bb-sticky-side{top:110px}}
+/* photo split: photo fills its column, yellow offset frame behind it */
+.bb-photo-frame{position:relative;isolation:isolate}
+.bb-photo-frame::before{content:"";position:absolute;inset:22px -14px -14px 22px;border-radius:18px;background:#ffe600;z-index:-1}
+.bb-photo-frame.bb-photo-left::before{inset:22px 22px -14px -14px}
+.bb-photo-frame>.elementor-widget-image,.bb-photo-frame .elementor-widget-container{height:100%;width:100%}
+.bb-photo-frame img{width:100%!important;height:100%!important;object-fit:cover;border-radius:16px;display:block}
+@media (max-width:1023px){.bb-photo-grid>.bb-photo-frame{order:-1;min-height:240px}.bb-photo-frame::before{inset:14px -8px -8px 14px}.bb-photo-frame.bb-photo-left::before{inset:14px 14px -8px -8px}}
+/* why-us band (dark) */
+.bb-why{position:relative;overflow:hidden}
+.bb-why::after{content:"";position:absolute;right:-120px;top:-120px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,230,0,.16),rgba(255,230,0,0) 70%);pointer-events:none}
+.bb-why .bb-rich strong{color:#fff}.bb-why .bb-rich a{color:#ffe600;text-decoration-color:#ffe600}
+.bb-why .bb-rich ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0!important}
+.bb-why .bb-rich ul>li{margin:0;padding:16px 16px 16px 50px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;color:#eef1f1}
+.bb-why .bb-rich ul>li::before{left:16px;top:17px}
+@media (max-width:767px){.bb-why .bb-rich ul{grid-template-columns:1fr}}
+.bb-rich .bb-step-h{margin:20px 0 8px!important;font-weight:800;color:#1a2024;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.bb-rich .bb-step-h span{background:#ffe600;color:#1a2024;border-radius:6px;padding:3px 9px;font-size:12px;font-weight:850;letter-spacing:.05em;text-transform:uppercase}
+.bb-ask a,.bb-ask{text-decoration:none}.bb-ask strong{color:#1a2024;border-bottom:2px solid #ffe600}
+@media (max-width:1023px){.bb-ask{display:none}}
+@media (min-width:1024px){.bb-photo-frame{position:sticky!important;top:110px;align-self:start;height:clamp(380px,64vh,580px)}}

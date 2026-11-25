@@ -156,6 +156,9 @@ def to_html(bl):
             out.append(f'<h3>{h}</h3>')
         elif t == 'table':
             out.append(h)
+        elif re.match(r'^Step \d+:', txt):  # "Step 1: Initial inspection" → labelled step heading
+            n, rest = re.match(r'^Step (\d+):\s*(.*)$', txt).groups()
+            out.append(f'<p class="bb-step-h"><span>Step {n}:</span> {html.escape(rest, quote=False)}</p>')
         else:
             out.append(f'<p>{h}</p>')
     if lst:

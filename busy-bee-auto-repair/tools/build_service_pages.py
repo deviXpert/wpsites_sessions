@@ -91,6 +91,116 @@ def sec_rich(head, html, photo=None):
                          gap=44, gap_mobile=22, ai='stretch')], pad=(44, 32), pad_mobile=(30, 22))
 
 
+# ---- Long-form doc sections: three looks so consecutive text blocks never read as one wall of copy (Nov 2026) ----
+def _icon_for(head, default):
+    h = head.lower()
+    for words, ic in ((('why choose',), 'badge-check'), (('cost', 'price', 'how much'), 'clipboard-check'),
+                      (('how often', 'when should', 'schedule', 'km'), 'calendar-days'),
+                      (('winter', 'calgary', 'season', 'roads', 'driving conditions'), 'snowflake'),
+                      (('sign', 'warning', 'problem', 'overdue', 'overheat'), 'circle-alert'),
+                      (('diagnos', 'inspection', 'what happens', 'check engine', 'vs', 'difference', 'guesswork'), 'scan-search'),
+                      (('warranty', 'protect'), 'shield-check'), (('prevent', 'maintenance', 'service'), 'timer-reset')):
+        if any(w in h for w in words):
+            return ic
+    return default
+
+
+def _badge(ic):
+    return ICON(ic, 22, color=DK2, bg=YEL, box=52, radius=14, name='Icon', w='auto')
+
+
+def _eyebrow(txt):
+    return H(txt, 'p', '#7A6A00', S(11, 800, 16.5, 1.76), name='Eyebrow', cls='bb-nowrap')
+
+
+def sec_feature(head, html, ic, eyebrow):
+    """Editorial split: sticky icon + heading on the left, copy in a white card on the right."""
+    side = C('Side', [_badge(ic), _eyebrow(eyebrow),
+                      H(head, 'h2', DK2, S(34, 850, 1.1, -1.1, 'uppercase', size_m=26, ls_m=-0.6), name='Title'),
+                      H(f'Questions? Talk to a technician: <strong>{PHONE}</strong>', 'p', '#4B5558', S(14, 500, 21), href=TEL,
+                        mar=(6, 0, 0, 0), name='Ask', cls='bb-ask')],
+             gap=14, cls='bb-sticky-side')
+    card = C('Card', [T(html, '#3F4A4D', S(16, 400, 27, size_m=15, lh_m=25), name='Text', cls='bb-rich')],
+             pad=(34, 38), pad_mobile=(24, 20), bg=PAPER, radius=18, border=(1, '#E4E7E3'), cls='bb-feature-card')
+    return wrap(head, [C('Grid', [side, card], grid='0.82fr 1.18fr', grid_tablet='1fr', grid_mobile='1fr', rows='auto',
+                         rows_tablet='auto', rows_mobile='auto', gap=48, gap_tablet=22, gap_mobile=18, ai='start')],
+                pad=(44, 32), pad_mobile=(30, 22))
+
+
+def sec_photo(head, html, photo, ic, eyebrow, left=False):
+    """Copy beside a workshop photo (yellow offset frame); photo side alternates down the page, photo first on mobile."""
+    copy = C('Copy', [_badge(ic), _eyebrow(eyebrow),
+                      H(head, 'h2', DK2, S(34, 850, 1.1, -1.1, 'uppercase', size_m=26, ls_m=-0.6), name='Title'),
+                      T(html, '#3F4A4D', S(16, 400, 27, size_m=15, lh_m=25), mar=(4, 0, 0, 0), name='Text', cls='bb-rich')],
+             gap=12, jc='center', cls='bb-photo-copy')
+    pic = C('Photo', [IMG(photo, w=pct(100), h=cu('100%'), fit='cover', alt=head, radius=16, name='Photo', cls='bb-fill-img')],
+            minh=360, minh_mobile=220, cls='bb-photo-frame' + (' bb-photo-left' if left else ''))
+    kids = [pic, copy] if left else [copy, pic]
+    return wrap(head, [C('Grid', kids, grid='0.9fr 1.1fr' if left else '1.1fr 0.9fr', grid_tablet='1fr', grid_mobile='1fr',
+                         rows='auto', rows_tablet='auto', rows_mobile='auto', gap=56, gap_tablet=26, gap_mobile=22, ai='stretch',
+                         cls='bb-photo-grid')], pad=(48, 32), pad_mobile=(30, 22))
+
+
+def sec_why(head, html, eyebrow):
+    """"Why choose Busy Bee" as a dark band: heading + actions left, the doc's reasons as tick cards right."""
+    left = C('Side', [_badge('badge-check'), H('WHY BUSY BEE', 'p', YEL, S(11, 800, 16.5, 1.76), name='Eyebrow'),
+                      H(head, 'h2', PAPER, S(34, 850, 1.1, -1.1, 'uppercase', size_m=26, ls_m=-0.6), name='Title'),
+                      C('Actions', [svc.yellow_btn('Book online', '#book', name='Book'),
+                                    BTN('Call ' + PHONE, TEL, S(13, 800, 19.5), color=PAPER, bg='rgba(0,0,0,0)', ic='phone',
+                                        ic_pos='before', ic_size=16, pad=(14, 22), radius=6, border=(1, 'rgba(255,255,255,0.45)'),
+                                        hover_bg=PAPER, hover_color=DK2, name='Call')],
+                        d='row', wrap='wrap', gap=12, mar=(10, 0, 0, 0))], gap=14, cls='bb-sticky-side')
+    right = C('Copy', [T(html, '#D5DADB', S(16, 400, 27, size_m=15, lh_m=25), name='Text', cls='bb-rich')])
+    inner = C('Band', [C('Grid', [left, right], grid='0.8fr 1.2fr', grid_tablet='1fr', grid_mobile='1fr', rows='auto',
+                         rows_tablet='auto', rows_mobile='auto', gap=48, gap_tablet=24, ai='start')],
+              pad=(48, 48), pad_mobile=(30, 20), bg=DK2, radius=22, cls='bb-why')
+    return wrap(head, [inner], pad=(30, 32), pad_mobile=(24, 14))
+
+
+PHOTO_POOL = {  # workshop photos per page, best match first; hero + intro photos are skipped so nothing repeats on a page
+    'tires': ['busy-bee-auto-repair-storefront-calgary', 'busy-bee-service-bays-calgary', 'bmw-repair-calgary'],
+    'alignment': ['busy-bee-repair-bay-calgary', 'bmw-repair-calgary', 'mercedes-repair-calgary'],
+    'battery': ['engine-repair-audi-calgary', 'busy-bee-auto-repair-storefront-calgary', 'busy-bee-repair-bay-calgary'],
+    'electrical': ['engine-repair-audi-calgary', 'bmw-repair-calgary', 'busy-bee-repair-bay-calgary'],
+    'suspension': ['pickup-truck-repair-calgary', 'bmw-repair-calgary', 'busy-bee-repair-bay-calgary'],
+    'transmission': ['pickup-truck-repair-calgary', 'mercedes-repair-calgary', 'busy-bee-service-bays-calgary'],
+    'cooling': ['busy-bee-repair-bay-calgary', 'bmw-repair-calgary', 'busy-bee-service-bays-calgary'],
+    'maintenance': ['battery-alternator-service-calgary', 'brake-repair-calgary', 'busy-bee-service-bays-calgary'],
+    'engine': ['computer-diagnostics-calgary', 'pickup-truck-repair-calgary', 'busy-bee-service-bays-calgary'],
+    'brakes': ['busy-bee-repair-bay-calgary', 'pickup-truck-repair-calgary', 'busy-bee-service-bays-calgary'],
+    'oil': ['busy-bee-repair-bay-calgary', 'engine-repair-audi-calgary', 'busy-bee-service-bays-calgary'],
+}
+
+
+def dress(key, sections):
+    """Give plain 'rich' sections a look: why-us band, photo (alternating sides) or editorial split, in rotation."""
+    c, m = PAGES[key], META[key]
+    used = set(c['photos'][:1]) | {s[3] for s in sections if s[0] == 'rich' and len(s) > 3 and s[3]}
+    pool = [p for p in PHOTO_POOL.get(key, []) if p not in used]
+    eyebrow = m['label'].upper().replace('&', '&amp;')
+    out, n, left = [], 0, False
+    for s in sections:
+        if s[0] != 'rich':
+            out.append(s)
+            continue
+        head, html = s[1], s[2]
+        fixed = s[3] if len(s) > 3 else None
+        if 'why choose' in head.lower():
+            out.append(('why', head, html, eyebrow))
+            continue
+        ic = _icon_for(head, m['icon'])
+        if fixed:
+            out.append(('photo', head, html, fixed, ic, eyebrow, left))
+            left = not left
+        elif n % 2 == 0 and pool and '<table' not in html:
+            out.append(('photo', head, html, pool.pop(0), ic, eyebrow, left))
+            left = not left
+        else:
+            out.append(('feature', head, html, ic, eyebrow))
+        n += 1
+    return out
+
+
 def sec_cards(head, intro, cards, numbered=True, outro=None, cols=3):
     """H2 + intro + grid of cards (title + rich text), optionally numbered."""
     items = []
@@ -162,7 +272,8 @@ def build(key):
     kinds = {'list': lambda s: sec_list(*s[1:]), 'signs': lambda s: sec_signs(s[1], s[2], c['photos'][-1], *s[3:]),
              'steps': lambda s: sec_steps(*s[1:]), 'text': lambda s: sec_text(*s[1:]), 'callout': lambda s: sec_callout(*s[1:]),
              'prices': lambda s: sec_prices(*s[1:]), 'rich': lambda s: sec_rich(*s[1:]),
-             'cards': lambda s: sec_cards(*s[1:])}
+             'cards': lambda s: sec_cards(*s[1:]), 'feature': lambda s: sec_feature(*s[1:]),
+             'photo': lambda s: sec_photo(*s[1:]), 'why': lambda s: sec_why(*s[1:])}
     hero = svc.hero(h1=c['h1'], intro=c['intro'], eyebrow=c['eyebrow'], slides=[(p, '') for p in c['photos'][:1]],
                     actions=[svc.yellow_btn(c['cta'], '#book', name='Primary CTA'),
                              BTN('Call ' + PHONE, TEL, S(13, 800, 19.5), color=PAPER, bg='rgba(0,0,0,0)', ic='phone', ic_pos='before',
@@ -170,7 +281,7 @@ def build(key):
                                  name='Call')],
                     aside=aside(c['offer']), select=False)
     body = [hero, C('Spacer', [], minh=24)]
-    body += [kinds[s[0]](s) for s in c['sections']]
+    body += [kinds[s[0]](s) for s in dress(key, c['sections'])]
     body += [tpl('reasons'), tpl('booking'),
              svc.faq(c['faqs'], eyebrow=m['label'].upper().replace('&', '&amp;') + ' FAQS', heading='Questions?<br><em>Clear answers.</em>'),
              related(c['related']), tpl('location'), tpl('reviews')]
