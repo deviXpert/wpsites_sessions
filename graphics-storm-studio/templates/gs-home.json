@@ -1,0 +1,5778 @@
+{
+ "title": "GS – Homepage",
+ "type": "page",
+ "version": "0.4",
+ "page_settings": {
+  "template": "elementor_header_footer",
+  "hide_title": "yes"
+ },
+ "content": [
+  {
+   "id": "f18e2a4",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "72",
+     "right": "0",
+     "bottom": "72",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(124,92,255,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top left",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(6,132,196,0.28)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Hero"
+   },
+   "elements": [
+    {
+     "id": "10fd1bb",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "64",
+       "row": "64",
+       "isLinked": true,
+       "unit": "px",
+       "size": 64
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Hero – Inner"
+     },
+     "elements": [
+      {
+       "id": "7427f66",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "56",
+         "row": "56",
+         "isLinked": true,
+         "unit": "px",
+         "size": 56
+        },
+        "flex_align_items": "center",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "Hero Row",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "d198b30",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_animation": "fadeInUp",
+          "animation_duration": "fast",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "24",
+           "row": "24",
+           "isLinked": true,
+           "unit": "px",
+           "size": 24
+          },
+          "width": {
+           "unit": "%",
+           "size": 55,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Hero Copy",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "9484165",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Digital Marketing Agency · USA & Canada",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Eyebrow – Digital Marketing Agency · USA & Canada"
+           },
+           "elements": []
+          },
+          {
+           "id": "4d4178b",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Grow Faster With a Digital Marketing Agency That <span>Delivers Results</span>",
+            "header_size": "h1",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh1",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "H1 – Hero"
+           },
+           "elements": []
+          },
+          {
+           "id": "887b969",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Graphics Storm Studio builds high-converting websites, ranks you on Google with proven SEO services and grows your audience with social media marketing and standout graphic design – all from one dedicated team.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gslead",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Hero Lead"
+           },
+           "elements": []
+          },
+          {
+           "id": "029a034",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column",
+            "flex_align_items_mobile": "stretch",
+            "flex_direction": "row",
+            "flex_gap": {
+             "column": "14",
+             "row": "14",
+             "isLinked": true,
+             "unit": "px",
+             "size": 14
+            },
+            "flex_align_items": "stretch",
+            "_title": "Hero Buttons",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "fcceab6",
+             "elType": "widget",
+             "widgetType": "button",
+             "settings": {
+              "text": "Get a Free Proposal",
+              "link": {
+               "url": "#free-proposal",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              },
+              "size": "md",
+              "hover_animation": "float",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              },
+              "icon_align": "row-reverse",
+              "icon_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "_title": "Button – Get a Free Proposal"
+             },
+             "elements": []
+            },
+            {
+             "id": "4a2b283",
+             "elType": "widget",
+             "widgetType": "button",
+             "settings": {
+              "text": "View Our Work",
+              "link": {
+               "url": "/our-portfolio/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              },
+              "size": "md",
+              "hover_animation": "float",
+              "selected_icon": {
+               "value": "fas fa-play-circle",
+               "library": "fa-solid"
+              },
+              "icon_align": "row-reverse",
+              "icon_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "_css_classes": "gs-glass",
+              "button_box_shadow_box_shadow_type": "yes",
+              "button_box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 0,
+               "blur": 0,
+               "spread": 0,
+               "color": "rgba(0,0,0,0)"
+              },
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass2",
+               "border_color": "globals/colors?id=gsline",
+               "button_text_color": "globals/colors?id=gswhite",
+               "button_background_hover_color": "globals/colors?id=gswhite",
+               "hover_color": "globals/colors?id=gsnavy"
+              },
+              "_title": "Button – View Our Work"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "6e5979e",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "92e5057",
+              "text": "130+ happy clients",
+              "selected_icon": {
+               "value": "fas fa-star",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "e6eb1d5",
+              "text": "5+ years experience",
+              "selected_icon": {
+               "value": "fas fa-award",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "6955544",
+              "text": "USA & Canada offices",
+              "selected_icon": {
+               "value": "fas fa-globe-americas",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "view": "inline",
+            "icon_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "text_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "space_between": {
+             "unit": "px",
+             "size": 28,
+             "sizes": []
+            },
+            "__globals__": {
+             "icon_color": "globals/colors?id=accent",
+             "text_color": "globals/colors?id=text",
+             "icon_typography_typography": "globals/typography?id=gssmall",
+             "text_color_hover": "globals/colors?id=gswhite"
+            },
+            "_title": "Trust Row"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "98f371c",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "_element_id": "free-proposal",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 45,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Hero Form",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "ffa594a",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "24",
+             "right": "24",
+             "bottom": "24",
+             "left": "24",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "32",
+             "right": "32",
+             "bottom": "32",
+             "left": "32",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "28",
+             "right": "28",
+             "bottom": "28",
+             "left": "28",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "22",
+             "right": "22",
+             "bottom": "22",
+             "left": "22",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass--strong",
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline"
+            },
+            "_title": "Lead Form Panel",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "8b48189",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "Get Your Free Proposal",
+              "header_size": "h2",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gsh3",
+               "title_color": "globals/colors?id=gswhite"
+              },
+              "_title": "Form Title"
+             },
+             "elements": []
+            },
+            {
+             "id": "8f14df5",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>Tell us what you need – we reply within 1 business day.</p>",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gssmall",
+               "text_color": "globals/colors?id=text"
+              },
+              "_title": "Form Intro"
+             },
+             "elements": []
+            },
+            {
+             "id": "6053273",
+             "elType": "widget",
+             "widgetType": "form",
+             "settings": {
+              "form_name": "Home Hero Lead",
+              "form_fields": [
+               {
+                "field_type": "text",
+                "field_label": "Full name",
+                "placeholder": "Your full name",
+                "required": "true",
+                "width": "50",
+                "custom_id": "name",
+                "autocomplete": "name",
+                "_id": "b4946ac"
+               },
+               {
+                "field_type": "email",
+                "field_label": "Email",
+                "placeholder": "you@company.com",
+                "required": "true",
+                "width": "50",
+                "custom_id": "email",
+                "_id": "0621ea6"
+               },
+               {
+                "field_type": "tel",
+                "field_label": "Phone / WhatsApp",
+                "placeholder": "+1 (555) 000-0000",
+                "width": "50",
+                "custom_id": "phone",
+                "_id": "15f5b9c"
+               },
+               {
+                "field_type": "checkbox",
+                "field_label": "Services you need",
+                "inline_list": "elementor-subgroup-inline",
+                "field_options": "Website Development\nSEO\nSocial Media Marketing\nGraphic Design\nLogo & Branding\nPaid Ads",
+                "width": "100",
+                "custom_id": "services",
+                "_id": "7b0debf"
+               },
+               {
+                "_id": "f824237",
+                "custom_id": "hp",
+                "field_type": "honeypot",
+                "field_label": "",
+                "width": "100"
+               }
+              ],
+              "show_labels": "yes",
+              "mark_required": "yes",
+              "input_size": "md",
+              "button_text": "Get My Free Proposal",
+              "button_size": "md",
+              "button_width": "100",
+              "selected_button_icon": {
+               "value": "fas fa-paper-plane",
+               "library": "fa-solid"
+              },
+              "button_icon_align": "row-reverse",
+              "button_icon_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "submit_actions": [
+               "email",
+               "collect_submissions"
+              ],
+              "email_to": "info@graphicsstormstudio.com",
+              "email_subject": "New enquiry from graphicsstormstudio.com",
+              "email_content": "[all-fields]",
+              "email_from_name": "Graphics Storm Studio Website",
+              "email_reply_to": "email",
+              "success_message": "Thank you! We received your request and will reply within 1 business day.",
+              "error_message": "Something went wrong – please email info@graphicsstormstudio.com.",
+              "required_field_message": "This field is required.",
+              "invalid_message": "Please check this field.",
+              "column_gap": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
+              },
+              "row_gap": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
+              },
+              "label_spacing": {
+               "unit": "px",
+               "size": 8,
+               "sizes": []
+              },
+              "_css_classes": "gs-form",
+              "button_border_radius": {
+               "unit": "px",
+               "top": "999",
+               "right": "999",
+               "bottom": "999",
+               "left": "999",
+               "isLinked": true
+              },
+              "field_border_radius": {
+               "unit": "px",
+               "top": "12",
+               "right": "12",
+               "bottom": "12",
+               "left": "12",
+               "isLinked": true
+              },
+              "field_border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "__globals__": {
+               "label_color": "globals/colors?id=text",
+               "label_typography_typography": "globals/typography?id=gssmall",
+               "field_text_color": "globals/colors?id=gswhite",
+               "field_background_color": "globals/colors?id=gsglass",
+               "field_border_color": "globals/colors?id=gsline",
+               "button_background_color": "globals/colors?id=secondary",
+               "button_background_hover_color": "globals/colors?id=gsvioletdk",
+               "button_text_color": "globals/colors?id=gswhite",
+               "button_typography_typography": "globals/typography?id=gsbtn"
+              },
+              "_title": "Hero Lead Form"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "b49f247",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "_title": "Client Logos",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "4877683",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Trusted by growing brands across the USA, Canada & beyond</p>",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gssmall",
+           "text_color": "globals/colors?id=gsmuted"
+          },
+          "_title": "Logos Label"
+         },
+         "elements": []
+        },
+        {
+         "id": "ad3537d",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_align_items": "center",
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 5,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_rows_grid": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_auto_flow": "row",
+          "grid_gaps": {
+           "column": "32",
+           "row": "32",
+           "isLinked": true,
+           "unit": "px",
+           "size": 32
+          },
+          "_title": "Logo Row",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "0fa01bc",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 1",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-1.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          },
+          {
+           "id": "957d81c",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 2",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-2.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          },
+          {
+           "id": "8b92dc0",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 3",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-3.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          },
+          {
+           "id": "c03feca",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 4",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-4.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          },
+          {
+           "id": "5ce5769",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 5",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-5.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5b9d066",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(6,132,196,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top right",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.22)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom left",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_element_id": "services",
+    "_title": "Services"
+   },
+   "elements": [
+    {
+     "id": "10f0689",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Services – Inner"
+     },
+     "elements": [
+      {
+       "id": "66c9573",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "flex_align_items": "center",
+        "_title": "Section Head",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "bb716b8",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "What we do",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – What we do"
+         },
+         "elements": []
+        },
+        {
+         "id": "23ffb45",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Digital Marketing Services Built to <span>Grow Your Business</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "Section Title"
+         },
+         "elements": []
+        },
+        {
+         "id": "8b4eb84",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>From website development and SEO services to social media marketing and graphic design – everything you need to attract, convert and keep customers.</p>",
+          "align": "center",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 720,
+           "sizes": []
+          },
+          "_element_custom_width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gslead",
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "Section Intro"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "9dbccf3",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 3,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_rows_grid": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_auto_flow": "row",
+        "grid_gaps": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "_title": "Services Grid",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "547f559",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_justify_content": "space-between",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Service Card – Website Development",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "7540aee",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-laptop-code",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Website Development",
+            "description_text": "Fast, mobile-first WordPress websites engineered to rank on Google and turn visitors into enquiries.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "link": {
+             "url": "/website-development/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Website Development"
+           },
+           "elements": []
+          },
+          {
+           "id": "056d17b",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Learn more",
+            "link": {
+             "url": "/website-development/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "sm",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "button_background_hover_color": "rgba(0,0,0,0)",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "__globals__": {
+             "button_text_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Card Link"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "d3b84dc",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_justify_content": "space-between",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Service Card – Search Engine Optimization",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "3de4d4c",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-search-dollar",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Search Engine Optimization",
+            "description_text": "Technical SEO, content and local SEO that put you on page one for the searches your customers make.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "link": {
+             "url": "/search-engine-optimization/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Search Engine Optimization"
+           },
+           "elements": []
+          },
+          {
+           "id": "5a69def",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Learn more",
+            "link": {
+             "url": "/search-engine-optimization/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "sm",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "button_background_hover_color": "rgba(0,0,0,0)",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "__globals__": {
+             "button_text_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Card Link"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "159f175",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_justify_content": "space-between",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Service Card – Social Media Marketing",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "418c19d",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-hashtag",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Social Media Marketing",
+            "description_text": "Scroll-stopping content and paid social campaigns on Instagram, Facebook, TikTok and LinkedIn.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "link": {
+             "url": "/social-media-marketing/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Social Media Marketing"
+           },
+           "elements": []
+          },
+          {
+           "id": "51ba05e",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Learn more",
+            "link": {
+             "url": "/social-media-marketing/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "sm",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "button_background_hover_color": "rgba(0,0,0,0)",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "__globals__": {
+             "button_text_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Card Link"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "36fd090",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_justify_content": "space-between",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Service Card – Graphic Design",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "786e82a",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-pen-nib",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Graphic Design",
+            "description_text": "Social creatives, brochures, packaging and ad designs that make your brand impossible to ignore.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "link": {
+             "url": "/graphics-designing/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Graphic Design"
+           },
+           "elements": []
+          },
+          {
+           "id": "3f6b503",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Learn more",
+            "link": {
+             "url": "/graphics-designing/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "sm",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "button_background_hover_color": "rgba(0,0,0,0)",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "__globals__": {
+             "button_text_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Card Link"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "2989885",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_justify_content": "space-between",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Service Card – Logo & Brand Identity",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "3229c88",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-bezier-curve",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Logo & Brand Identity",
+            "description_text": "Memorable logos and complete brand guidelines that build trust from the very first impression.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "link": {
+             "url": "/graphics-designing/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Logo & Brand Identity"
+           },
+           "elements": []
+          },
+          {
+           "id": "56aeec8",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Learn more",
+            "link": {
+             "url": "/graphics-designing/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "sm",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "button_background_hover_color": "rgba(0,0,0,0)",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "__globals__": {
+             "button_text_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Card Link"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "130f4a5",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_justify_content": "space-between",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Service Card – Paid Advertising (PPC)",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "fdbb375",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-bullhorn",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Paid Advertising (PPC)",
+            "description_text": "Google Ads and Meta Ads campaigns tracked to the lead – so every dollar is accountable.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "link": {
+             "url": "/contact-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Paid Advertising (PPC)"
+           },
+           "elements": []
+          },
+          {
+           "id": "25b0e01",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Learn more",
+            "link": {
+             "url": "/contact-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "sm",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "background_color": "rgba(0,0,0,0)",
+            "button_background_hover_color": "rgba(0,0,0,0)",
+            "text_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "__globals__": {
+             "button_text_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Card Link"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "27e31c0",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(93,176,216,0.18)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "center center",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.18)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "top right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Why Choose Us"
+   },
+   "elements": [
+    {
+     "id": "fa89079",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "72",
+       "row": "72",
+       "isLinked": true,
+       "unit": "px",
+       "size": 72
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Why Choose Us – Inner"
+     },
+     "elements": [
+      {
+       "id": "24e043d",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "56",
+         "row": "56",
+         "isLinked": true,
+         "unit": "px",
+         "size": 56
+        },
+        "flex_align_items": "center",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "Why Row",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "6c30f3f",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "22",
+           "row": "22",
+           "isLinked": true,
+           "unit": "px",
+           "size": 22
+          },
+          "width": {
+           "unit": "%",
+           "size": 45,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Why Copy",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "452675a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Why Graphics Storm Studio",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Eyebrow – Why Graphics Storm Studio"
+           },
+           "elements": []
+          },
+          {
+           "id": "da83e26",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "The Digital Marketing Partner That Treats Your Growth <span>Like Its Own</span>",
+            "header_size": "h2",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh2",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Why Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "de3a600",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>No more wasted budget, missed deadlines or confusing reports. We combine premium design with data-driven marketing to give you a clear plan, a dedicated team and results you can measure.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gslead",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Why Text"
+           },
+           "elements": []
+          },
+          {
+           "id": "db627a0",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "c4ba00a",
+              "text": "Personalised campaigns for your goals and budget",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "5476dfd",
+              "text": "Reach your ideal audience faster",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "6468d32",
+              "text": "Low cost, high return marketing",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "9d23a32",
+              "text": "Honest monthly reporting – no jargon",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "view": "traditional",
+            "icon_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "text_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "space_between": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "__globals__": {
+             "icon_color": "globals/colors?id=accent",
+             "text_color": "globals/colors?id=text",
+             "icon_typography_typography": "globals/typography?id=gsbody",
+             "text_color_hover": "globals/colors?id=gswhite"
+            },
+            "_title": "Why Checklist"
+           },
+           "elements": []
+          },
+          {
+           "id": "bed763e",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "About Our Agency",
+            "link": {
+             "url": "/about-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "_css_classes": "gs-glass",
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline",
+             "button_text_color": "globals/colors?id=gswhite",
+             "button_background_hover_color": "globals/colors?id=gswhite",
+             "hover_color": "globals/colors?id=gsnavy"
+            },
+            "_title": "Button – About Our Agency"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "58f0442",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 55,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Why Cards",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "eb85195",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "container_type": "grid",
+            "grid_columns_grid": {
+             "unit": "fr",
+             "size": 2,
+             "sizes": []
+            },
+            "grid_columns_grid_tablet": {
+             "unit": "fr",
+             "size": 2,
+             "sizes": []
+            },
+            "grid_columns_grid_mobile": {
+             "unit": "fr",
+             "size": 1,
+             "sizes": []
+            },
+            "grid_rows_grid": {
+             "unit": "fr",
+             "size": 1,
+             "sizes": []
+            },
+            "grid_auto_flow": "row",
+            "grid_gaps": {
+             "column": "20",
+             "row": "20",
+             "isLinked": true,
+             "unit": "px",
+             "size": 20
+            },
+            "_title": "Why Grid",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "57511a5",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "16",
+               "row": "16",
+               "isLinked": true,
+               "unit": "px",
+               "size": 16
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 20,
+               "blur": 50,
+               "spread": 0,
+               "color": "rgba(2,6,23,0.45)"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "28",
+               "right": "28",
+               "bottom": "28",
+               "left": "28",
+               "isLinked": true
+              },
+              "padding_tablet": {
+               "unit": "px",
+               "top": "24",
+               "right": "24",
+               "bottom": "24",
+               "left": "24",
+               "isLinked": true
+              },
+              "padding_mobile": {
+               "unit": "px",
+               "top": "22",
+               "right": "22",
+               "bottom": "22",
+               "left": "22",
+               "isLinked": true
+              },
+              "css_classes": "gs-glass",
+              "_transform_translateY_popover_hover": "transform",
+              "_transform_translateY_effect_hover": {
+               "unit": "px",
+               "size": -6,
+               "sizes": []
+              },
+              "_transform_transition_hover": {
+               "unit": "ms",
+               "size": 300,
+               "sizes": []
+              },
+              "border_hover_border": "solid",
+              "border_hover_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_hover_transition": {
+               "unit": "s",
+               "size": 0.3,
+               "sizes": []
+              },
+              "box_shadow_hover_box_shadow_type": "yes",
+              "box_shadow_hover_box_shadow": {
+               "horizontal": 0,
+               "vertical": 28,
+               "blur": 60,
+               "spread": 0,
+               "color": "rgba(6,132,196,0.28)"
+              },
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass",
+               "border_color": "globals/colors?id=gsline",
+               "border_hover_color": "globals/colors?id=accent"
+              },
+              "_title": "Why – Results you can measure",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "f1f4554",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "selected_icon": {
+                 "value": "fas fa-chart-line",
+                 "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "rounded",
+                "title_text": "Results you can measure",
+                "description_text": "Every campaign is tied to clear KPIs – traffic, leads and revenue – with honest monthly reporting.",
+                "title_size": "h3",
+                "position": "top",
+                "text_align": "left",
+                "icon_size": {
+                 "unit": "px",
+                 "size": 26,
+                 "sizes": []
+                },
+                "icon_padding": {
+                 "unit": "px",
+                 "size": 16,
+                 "sizes": []
+                },
+                "border_radius": {
+                 "unit": "px",
+                 "top": "14",
+                 "right": "14",
+                 "bottom": "14",
+                 "left": "14",
+                 "isLinked": true
+                },
+                "icon_space": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_bottom_space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                },
+                "position_mobile": "top",
+                "__globals__": {
+                 "primary_color": "globals/colors?id=gsglass2",
+                 "secondary_color": "globals/colors?id=accent",
+                 "title_color": "globals/colors?id=gswhite",
+                 "title_typography_typography": "globals/typography?id=gsh3",
+                 "description_color": "globals/colors?id=text",
+                 "description_typography_typography": "globals/typography?id=gsbody"
+                },
+                "_title": "Icon Box – Results you can measure"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "55de329",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "16",
+               "row": "16",
+               "isLinked": true,
+               "unit": "px",
+               "size": 16
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 20,
+               "blur": 50,
+               "spread": 0,
+               "color": "rgba(2,6,23,0.45)"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "28",
+               "right": "28",
+               "bottom": "28",
+               "left": "28",
+               "isLinked": true
+              },
+              "padding_tablet": {
+               "unit": "px",
+               "top": "24",
+               "right": "24",
+               "bottom": "24",
+               "left": "24",
+               "isLinked": true
+              },
+              "padding_mobile": {
+               "unit": "px",
+               "top": "22",
+               "right": "22",
+               "bottom": "22",
+               "left": "22",
+               "isLinked": true
+              },
+              "css_classes": "gs-glass",
+              "_transform_translateY_popover_hover": "transform",
+              "_transform_translateY_effect_hover": {
+               "unit": "px",
+               "size": -6,
+               "sizes": []
+              },
+              "_transform_transition_hover": {
+               "unit": "ms",
+               "size": 300,
+               "sizes": []
+              },
+              "border_hover_border": "solid",
+              "border_hover_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_hover_transition": {
+               "unit": "s",
+               "size": 0.3,
+               "sizes": []
+              },
+              "box_shadow_hover_box_shadow_type": "yes",
+              "box_shadow_hover_box_shadow": {
+               "horizontal": 0,
+               "vertical": 28,
+               "blur": 60,
+               "spread": 0,
+               "color": "rgba(6,132,196,0.28)"
+              },
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass",
+               "border_color": "globals/colors?id=gsline",
+               "border_hover_color": "globals/colors?id=accent"
+              },
+              "_title": "Why – One dedicated team",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "9dd53e1",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "selected_icon": {
+                 "value": "fas fa-users",
+                 "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "rounded",
+                "title_text": "One dedicated team",
+                "description_text": "Strategists, designers, developers and marketers under one roof, with one point of contact.",
+                "title_size": "h3",
+                "position": "top",
+                "text_align": "left",
+                "icon_size": {
+                 "unit": "px",
+                 "size": 26,
+                 "sizes": []
+                },
+                "icon_padding": {
+                 "unit": "px",
+                 "size": 16,
+                 "sizes": []
+                },
+                "border_radius": {
+                 "unit": "px",
+                 "top": "14",
+                 "right": "14",
+                 "bottom": "14",
+                 "left": "14",
+                 "isLinked": true
+                },
+                "icon_space": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_bottom_space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                },
+                "position_mobile": "top",
+                "__globals__": {
+                 "primary_color": "globals/colors?id=gsglass2",
+                 "secondary_color": "globals/colors?id=accent",
+                 "title_color": "globals/colors?id=gswhite",
+                 "title_typography_typography": "globals/typography?id=gsh3",
+                 "description_color": "globals/colors?id=text",
+                 "description_typography_typography": "globals/typography?id=gsbody"
+                },
+                "_title": "Icon Box – One dedicated team"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "43eeb25",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "16",
+               "row": "16",
+               "isLinked": true,
+               "unit": "px",
+               "size": 16
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 20,
+               "blur": 50,
+               "spread": 0,
+               "color": "rgba(2,6,23,0.45)"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "28",
+               "right": "28",
+               "bottom": "28",
+               "left": "28",
+               "isLinked": true
+              },
+              "padding_tablet": {
+               "unit": "px",
+               "top": "24",
+               "right": "24",
+               "bottom": "24",
+               "left": "24",
+               "isLinked": true
+              },
+              "padding_mobile": {
+               "unit": "px",
+               "top": "22",
+               "right": "22",
+               "bottom": "22",
+               "left": "22",
+               "isLinked": true
+              },
+              "css_classes": "gs-glass",
+              "_transform_translateY_popover_hover": "transform",
+              "_transform_translateY_effect_hover": {
+               "unit": "px",
+               "size": -6,
+               "sizes": []
+              },
+              "_transform_transition_hover": {
+               "unit": "ms",
+               "size": 300,
+               "sizes": []
+              },
+              "border_hover_border": "solid",
+              "border_hover_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_hover_transition": {
+               "unit": "s",
+               "size": 0.3,
+               "sizes": []
+              },
+              "box_shadow_hover_box_shadow_type": "yes",
+              "box_shadow_hover_box_shadow": {
+               "horizontal": 0,
+               "vertical": 28,
+               "blur": 60,
+               "spread": 0,
+               "color": "rgba(6,132,196,0.28)"
+              },
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass",
+               "border_color": "globals/colors?id=gsline",
+               "border_hover_color": "globals/colors?id=accent"
+              },
+              "_title": "Why – Budget-friendly plans",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "3e85649",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "selected_icon": {
+                 "value": "fas fa-hand-holding-usd",
+                 "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "rounded",
+                "title_text": "Budget-friendly plans",
+                "description_text": "Premium quality without agency bloat – flexible plans that grow with your business.",
+                "title_size": "h3",
+                "position": "top",
+                "text_align": "left",
+                "icon_size": {
+                 "unit": "px",
+                 "size": 26,
+                 "sizes": []
+                },
+                "icon_padding": {
+                 "unit": "px",
+                 "size": 16,
+                 "sizes": []
+                },
+                "border_radius": {
+                 "unit": "px",
+                 "top": "14",
+                 "right": "14",
+                 "bottom": "14",
+                 "left": "14",
+                 "isLinked": true
+                },
+                "icon_space": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_bottom_space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                },
+                "position_mobile": "top",
+                "__globals__": {
+                 "primary_color": "globals/colors?id=gsglass2",
+                 "secondary_color": "globals/colors?id=accent",
+                 "title_color": "globals/colors?id=gswhite",
+                 "title_typography_typography": "globals/typography?id=gsh3",
+                 "description_color": "globals/colors?id=text",
+                 "description_typography_typography": "globals/typography?id=gsbody"
+                },
+                "_title": "Icon Box – Budget-friendly plans"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "ddb428b",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "16",
+               "row": "16",
+               "isLinked": true,
+               "unit": "px",
+               "size": 16
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 20,
+               "blur": 50,
+               "spread": 0,
+               "color": "rgba(2,6,23,0.45)"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "28",
+               "right": "28",
+               "bottom": "28",
+               "left": "28",
+               "isLinked": true
+              },
+              "padding_tablet": {
+               "unit": "px",
+               "top": "24",
+               "right": "24",
+               "bottom": "24",
+               "left": "24",
+               "isLinked": true
+              },
+              "padding_mobile": {
+               "unit": "px",
+               "top": "22",
+               "right": "22",
+               "bottom": "22",
+               "left": "22",
+               "isLinked": true
+              },
+              "css_classes": "gs-glass",
+              "_transform_translateY_popover_hover": "transform",
+              "_transform_translateY_effect_hover": {
+               "unit": "px",
+               "size": -6,
+               "sizes": []
+              },
+              "_transform_transition_hover": {
+               "unit": "ms",
+               "size": 300,
+               "sizes": []
+              },
+              "border_hover_border": "solid",
+              "border_hover_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_hover_transition": {
+               "unit": "s",
+               "size": 0.3,
+               "sizes": []
+              },
+              "box_shadow_hover_box_shadow_type": "yes",
+              "box_shadow_hover_box_shadow": {
+               "horizontal": 0,
+               "vertical": 28,
+               "blur": 60,
+               "spread": 0,
+               "color": "rgba(6,132,196,0.28)"
+              },
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass",
+               "border_color": "globals/colors?id=gsline",
+               "border_hover_color": "globals/colors?id=accent"
+              },
+              "_title": "Why – On-time delivery",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "510f221",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "selected_icon": {
+                 "value": "fas fa-clock",
+                 "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "rounded",
+                "title_text": "On-time delivery",
+                "description_text": "Agreed timelines, fast communication and no surprises. We do what we say, when we say it.",
+                "title_size": "h3",
+                "position": "top",
+                "text_align": "left",
+                "icon_size": {
+                 "unit": "px",
+                 "size": 26,
+                 "sizes": []
+                },
+                "icon_padding": {
+                 "unit": "px",
+                 "size": 16,
+                 "sizes": []
+                },
+                "border_radius": {
+                 "unit": "px",
+                 "top": "14",
+                 "right": "14",
+                 "bottom": "14",
+                 "left": "14",
+                 "isLinked": true
+                },
+                "icon_space": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_bottom_space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                },
+                "position_mobile": "top",
+                "__globals__": {
+                 "primary_color": "globals/colors?id=gsglass2",
+                 "secondary_color": "globals/colors?id=accent",
+                 "title_color": "globals/colors?id=gswhite",
+                 "title_typography_typography": "globals/typography?id=gsh3",
+                 "description_color": "globals/colors?id=text",
+                 "description_typography_typography": "globals/typography?id=gsbody"
+                },
+                "_title": "Icon Box – On-time delivery"
+               },
+               "elements": []
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "178bdf0",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "background_background": "classic",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 20,
+         "blur": 50,
+         "spread": 0,
+         "color": "rgba(2,6,23,0.45)"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "48",
+         "right": "48",
+         "bottom": "48",
+         "left": "48",
+         "isLinked": true
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "40",
+         "right": "40",
+         "bottom": "40",
+         "left": "40",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "css_classes": "gs-glass--strong",
+        "__globals__": {
+         "background_color": "globals/colors?id=gsglass2",
+         "border_color": "globals/colors?id=gsline"
+        },
+        "_title": "Stats Panel",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "99f92e2",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 4,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_rows_grid": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_auto_flow": "row",
+          "grid_gaps": {
+           "column": "32",
+           "row": "32",
+           "isLinked": true,
+           "unit": "px",
+           "size": 32
+          },
+          "_title": "Counters",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "d91aeeb",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "_title": "Stat – Projects delivered last month",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "eee9dac",
+             "elType": "widget",
+             "widgetType": "counter",
+             "settings": {
+              "starting_number": 0,
+              "ending_number": 514,
+              "suffix": "+",
+              "title": "Projects delivered last month",
+              "duration": 1600,
+              "thousand_separator": "yes",
+              "title_tag": "p",
+              "number_alignment": "start",
+              "title_horizontal_alignment": "start",
+              "__globals__": {
+               "number_color": "globals/colors?id=gswhite",
+               "typography_number_typography": "globals/typography?id=gsstat",
+               "title_color": "globals/colors?id=text",
+               "typography_title_typography": "globals/typography?id=gsbody"
+              },
+              "_title": "Counter – Projects delivered last month"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "2519b29",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "_title": "Stat – Websites developed",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "26d0da5",
+             "elType": "widget",
+             "widgetType": "counter",
+             "settings": {
+              "starting_number": 0,
+              "ending_number": 180,
+              "suffix": "+",
+              "title": "Websites developed",
+              "duration": 1600,
+              "thousand_separator": "yes",
+              "title_tag": "p",
+              "number_alignment": "start",
+              "title_horizontal_alignment": "start",
+              "__globals__": {
+               "number_color": "globals/colors?id=gswhite",
+               "typography_number_typography": "globals/typography?id=gsstat",
+               "title_color": "globals/colors?id=text",
+               "typography_title_typography": "globals/typography?id=gsbody"
+              },
+              "_title": "Counter – Websites developed"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "3e3bbc1",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "_title": "Stat – Happy clients",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "fb27103",
+             "elType": "widget",
+             "widgetType": "counter",
+             "settings": {
+              "starting_number": 0,
+              "ending_number": 130,
+              "suffix": "+",
+              "title": "Happy clients",
+              "duration": 1600,
+              "thousand_separator": "yes",
+              "title_tag": "p",
+              "number_alignment": "start",
+              "title_horizontal_alignment": "start",
+              "__globals__": {
+               "number_color": "globals/colors?id=gswhite",
+               "typography_number_typography": "globals/typography?id=gsstat",
+               "title_color": "globals/colors?id=text",
+               "typography_title_typography": "globals/typography?id=gsbody"
+              },
+              "_title": "Counter – Happy clients"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "21216b4",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "_title": "Stat – Years of experience",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "709b183",
+             "elType": "widget",
+             "widgetType": "counter",
+             "settings": {
+              "starting_number": 0,
+              "ending_number": 5,
+              "suffix": "+",
+              "title": "Years of experience",
+              "duration": 1600,
+              "thousand_separator": "yes",
+              "title_tag": "p",
+              "number_alignment": "start",
+              "title_horizontal_alignment": "start",
+              "__globals__": {
+               "number_color": "globals/colors?id=gswhite",
+               "typography_number_typography": "globals/typography?id=gsstat",
+               "title_color": "globals/colors?id=text",
+               "typography_title_typography": "globals/typography?id=gsbody"
+              },
+              "_title": "Counter – Years of experience"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e9671e4",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(124,92,255,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top left",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(6,132,196,0.28)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Process"
+   },
+   "elements": [
+    {
+     "id": "97f76a0",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Process – Inner"
+     },
+     "elements": [
+      {
+       "id": "af7320d",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "flex_align_items": "center",
+        "_title": "Section Head",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "87c8f22",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "How we work",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – How we work"
+         },
+         "elements": []
+        },
+        {
+         "id": "c278bd8",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "A Simple 4-Step Process to <span>Predictable Growth</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "Section Title"
+         },
+         "elements": []
+        },
+        {
+         "id": "f1d4b85",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Transparent from day one – you always know what we are doing, why, and what it achieved.</p>",
+          "align": "center",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 720,
+           "sizes": []
+          },
+          "_element_custom_width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gslead",
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "Section Intro"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "596a573",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 4,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_rows_grid": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_auto_flow": "row",
+        "grid_gaps": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "_title": "Process Steps",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "01a7ff9",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Step 01",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "4c2469f",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "01",
+            "header_size": "p",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsstat",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Step Number"
+           },
+           "elements": []
+          },
+          {
+           "id": "bded7bf",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Discover",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Step Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "5e069d8",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>We learn your business, audience and competitors, and audit your current website, SEO and social channels.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Step Text"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "ab5665e",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Step 02",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "ba36188",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "02",
+            "header_size": "p",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsstat",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Step Number"
+           },
+           "elements": []
+          },
+          {
+           "id": "b87f259",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Strategy",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Step Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "2bd2374",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>You get a clear, prioritised plan with goals, channels, timelines and the KPIs we will be measured on.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Step Text"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "fe3e550",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Step 03",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "d997db4",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "03",
+            "header_size": "p",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsstat",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Step Number"
+           },
+           "elements": []
+          },
+          {
+           "id": "11b3c7a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Create & Launch",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Step Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "3a52dee",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Our designers, developers and marketers build and launch – with your approval at every milestone.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Step Text"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "4902b07",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Step 04",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "491e280",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "04",
+            "header_size": "p",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsstat",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Step Number"
+           },
+           "elements": []
+          },
+          {
+           "id": "b5e45d9",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Measure & Grow",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Step Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "2f9b00c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>We track leads and sales, report monthly and keep optimising what works to compound your growth.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Step Text"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b206046",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(6,132,196,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top right",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.22)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom left",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Testimonials"
+   },
+   "elements": [
+    {
+     "id": "0e78129",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Testimonials – Inner"
+     },
+     "elements": [
+      {
+       "id": "54c3dbe",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "flex_align_items": "center",
+        "_title": "Section Head",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "2a6b68d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Client reviews",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Client reviews"
+         },
+         "elements": []
+        },
+        {
+         "id": "b5d8237",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "What Our Clients <span>Say About Us</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "Section Title"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "b1d9165",
+       "elType": "widget",
+       "widgetType": "testimonial-carousel",
+       "settings": {
+        "slides": [
+         {
+          "_id": "66db029",
+          "content": "The brand guidelines and logos were absolutely fantastic! They have transformed my brand and will help me scale up for more business. Great communication and very speedy delivery – ahead of schedule.",
+          "name": "Mr. James",
+          "title": "Brand identity client"
+         },
+         {
+          "_id": "6f22961",
+          "content": "Working with Mr. Fahad was very pleasant and professional. Communication was fast and I am more than satisfied with the result. Looking forward to the next project.",
+          "name": "Anthony",
+          "title": "Website client"
+         },
+         {
+          "_id": "c19b858",
+          "content": "My first time working with Fahad and it has been a pleasure. Brief well met, clear communication and fast delivery. Not much more you can ask for.",
+          "name": "Lisa P.",
+          "title": "Marketing client"
+         },
+         {
+          "_id": "26bf590",
+          "content": "Wonderful experience as always – so happy with the final product. Highly recommend!",
+          "name": "Patrick",
+          "title": "Design client"
+         }
+        ],
+        "skin": "default",
+        "layout": "image_above",
+        "alignment": "left",
+        "slides_per_view": "3",
+        "slides_per_view_tablet": "2",
+        "slides_per_view_mobile": "1",
+        "slides_to_scroll": "1",
+        "space_between": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "autoplay": "yes",
+        "autoplay_speed": 6000,
+        "loop": "yes",
+        "pause_on_hover": "yes",
+        "pagination": "bullets",
+        "show_arrows": "",
+        "speed": 600,
+        "slide_background_color": "rgba(255,255,255,0.06)",
+        "slide_border_size": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "slide_border_radius": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "slide_border_color": "rgba(255,255,255,0.14)",
+        "slide_padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "32",
+         "left": "28",
+         "isLinked": false
+        },
+        "_css_classes": "gs-glass-slides",
+        "__globals__": {
+         "content_color": "globals/colors?id=text",
+         "content_typography_typography": "globals/typography?id=gsbody",
+         "name_color": "globals/colors?id=gswhite",
+         "name_typography_typography": "globals/typography?id=gsh4",
+         "title_color": "globals/colors?id=accent",
+         "title_typography_typography": "globals/typography?id=gssmall",
+         "pagination_color": "globals/colors?id=accent"
+        },
+        "_title": "Testimonials Carousel"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "611d7db",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(93,176,216,0.18)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "center center",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.18)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "top right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "FAQ"
+   },
+   "elements": [
+    {
+     "id": "cf56f78",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "FAQ – Inner"
+     },
+     "elements": [
+      {
+       "id": "a8ee68a",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "56",
+         "row": "56",
+         "isLinked": true,
+         "unit": "px",
+         "size": 56
+        },
+        "flex_align_items": "stretch",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "FAQ Row",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "ceacee7",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 38,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "FAQ Intro",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "93a7482",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "FAQ",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Eyebrow – FAQ"
+           },
+           "elements": []
+          },
+          {
+           "id": "8d9d8f7",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Digital Marketing <span>Questions, Answered</span>",
+            "header_size": "h2",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh2",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "FAQ Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "9c727a6",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Can’t find what you are looking for? Our team is happy to help.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gslead",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "FAQ Text"
+           },
+           "elements": []
+          },
+          {
+           "id": "1b84c1f",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Ask Us Anything",
+            "link": {
+             "url": "/contact-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-comments",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "_css_classes": "gs-glass",
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline",
+             "button_text_color": "globals/colors?id=gswhite",
+             "button_background_hover_color": "globals/colors?id=gswhite",
+             "hover_color": "globals/colors?id=gsnavy"
+            },
+            "_title": "Button – Ask Us Anything"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "a7903fd",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 62,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "FAQ List",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "9b0d5b9",
+           "elType": "widget",
+           "widgetType": "nested-accordion",
+           "settings": {
+            "items": [
+             {
+              "_id": "e2916c6",
+              "item_title": "What does a digital marketing agency do?"
+             },
+             {
+              "_id": "2b271a3",
+              "item_title": "How much do your digital marketing services cost?"
+             },
+             {
+              "_id": "c2ddec3",
+              "item_title": "How long does SEO take to show results?"
+             },
+             {
+              "_id": "7293842",
+              "item_title": "How long does it take to build a website?"
+             },
+             {
+              "_id": "f555b68",
+              "item_title": "Do you work with clients outside the USA and Canada?"
+             }
+            ],
+            "faq_schema": "yes",
+            "title_tag": "h3",
+            "default_state": "expanded",
+            "max_items_expended": "one",
+            "accordion_item_title_space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "accordion_item_title_distance_from_content": {
+             "unit": "px",
+             "size": 0,
+             "sizes": []
+            },
+            "accordion_background_normal_background": "classic",
+            "accordion_border_normal_border": "solid",
+            "accordion_border_normal_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "accordion_border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "accordion_padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "22",
+             "bottom": "20",
+             "left": "22",
+             "isLinked": false
+            },
+            "accordion_background_hover_background": "classic",
+            "accordion_background_active_background": "classic",
+            "content_background_background": "classic",
+            "icon_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "title_text_shadow_text_shadow_type": "",
+            "icon_section_icon": {
+             "value": "fas fa-plus",
+             "library": "fa-solid"
+            },
+            "icon_section_active_icon": {
+             "value": "fas fa-minus",
+             "library": "fa-solid"
+            },
+            "__globals__": {
+             "accordion_background_normal_color": "globals/colors?id=gsglass",
+             "accordion_background_hover_color": "globals/colors?id=gsglass2",
+             "accordion_background_active_color": "globals/colors?id=gsglass2",
+             "accordion_border_normal_color": "globals/colors?id=gsline",
+             "title_typography_typography": "globals/typography?id=gsh4",
+             "normal_title_color": "globals/colors?id=gswhite",
+             "hover_title_color": "globals/colors?id=accent",
+             "active_title_color": "globals/colors?id=accent",
+             "icon_color": "globals/colors?id=accent",
+             "icon_active_color": "globals/colors?id=accent"
+            },
+            "_title": "FAQ – Accordion"
+           },
+           "elements": [
+            {
+             "id": "ca0488b",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "padding": {
+               "unit": "px",
+               "top": "4",
+               "right": "22",
+               "bottom": "20",
+               "left": "22",
+               "isLinked": false
+              },
+              "_title": "FAQ – What does a digital marketing ",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "b626d48",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>A digital marketing agency plans and runs the online activity that brings you customers – your website, search engine optimization (SEO), social media marketing, paid ads and the design that ties it together. At Graphics Storm Studio one team handles all of it, so your brand and results stay consistent.</p>",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gsbody",
+                 "text_color": "globals/colors?id=text"
+                },
+                "_title": "Answer"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "470bd0e",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "padding": {
+               "unit": "px",
+               "top": "4",
+               "right": "22",
+               "bottom": "20",
+               "left": "22",
+               "isLinked": false
+              },
+              "_title": "FAQ – How much do your digital marke",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "2d09cbb",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Every business is different, so we quote after a free strategy call. We offer one-off projects (for example a new website or logo) and flexible monthly plans for SEO and social media marketing – with no long lock-in contracts.</p>",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gsbody",
+                 "text_color": "globals/colors?id=text"
+                },
+                "_title": "Answer"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "eb4974d",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "padding": {
+               "unit": "px",
+               "top": "4",
+               "right": "22",
+               "bottom": "20",
+               "left": "22",
+               "isLinked": false
+              },
+              "_title": "FAQ – How long does SEO take to show",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "14de64a",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Most clients see early ranking and traffic gains within 8–12 weeks, with stronger, compounding results after 4–6 months. We report progress monthly so you always know what has been done and what it achieved.</p>",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gsbody",
+                 "text_color": "globals/colors?id=text"
+                },
+                "_title": "Answer"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "16d1f9c",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "padding": {
+               "unit": "px",
+               "top": "4",
+               "right": "22",
+               "bottom": "20",
+               "left": "22",
+               "isLinked": false
+              },
+              "_title": "FAQ – How long does it take to build",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "d616cb6",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>A typical business website takes 3–6 weeks from kickoff to launch, depending on the number of pages and features. You get a clear timeline before we start and a staging link to review along the way.</p>",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gsbody",
+                 "text_color": "globals/colors?id=text"
+                },
+                "_title": "Answer"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "3552c23",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "padding": {
+               "unit": "px",
+               "top": "4",
+               "right": "22",
+               "bottom": "20",
+               "left": "22",
+               "isLinked": false
+              },
+              "_title": "FAQ – Do you work with clients outsi",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "dc57790",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Yes. We have offices in Springfield (IL, USA) and North York (ON, Canada) and work remotely with businesses worldwide.</p>",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gsbody",
+                 "text_color": "globals/colors?id=text"
+                },
+                "_title": "Answer"
+               },
+               "elements": []
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6b9663d",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "32",
+     "right": "0",
+     "bottom": "32",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "24",
+     "right": "0",
+     "bottom": "24",
+     "left": "0",
+     "isLinked": false
+    },
+    "_title": "CTA Band"
+   },
+   "elements": [
+    {
+     "id": "027ffa4",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "CTA Band – Inner"
+     },
+     "elements": [
+      {
+       "id": "637acd4",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_align_items": "center",
+        "flex_gap": {
+         "column": "18",
+         "row": "18",
+         "isLinked": true,
+         "unit": "px",
+         "size": 18
+        },
+        "flex_direction": "column",
+        "background_background": "gradient",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 20,
+         "blur": 50,
+         "spread": 0,
+         "color": "rgba(2,6,23,0.45)"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "64",
+         "right": "64",
+         "bottom": "64",
+         "left": "64",
+         "isLinked": true
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "48",
+         "right": "48",
+         "bottom": "48",
+         "left": "48",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "32",
+         "right": "32",
+         "bottom": "32",
+         "left": "32",
+         "isLinked": true
+        },
+        "css_classes": "gs-glass--strong",
+        "__globals__": {
+         "border_color": "globals/colors?id=gsline"
+        },
+        "_title": "CTA Panel",
+        "content_width": "full",
+        "background_color": "rgba(124,92,255,0.22)",
+        "background_color_b": "rgba(6,132,196,0.18)",
+        "background_gradient_angle": {
+         "unit": "deg",
+         "size": 135,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "cc3e752",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Free strategy call",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Free strategy call"
+         },
+         "elements": []
+        },
+        {
+         "id": "9d6639a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Ready to Grow Your Business <span>Online?</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "CTA Title"
+         },
+         "elements": []
+        },
+        {
+         "id": "3bb6918",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Book a free, no-obligation strategy call. We will review your website, SEO and social media and show you exactly where your next customers will come from.</p>",
+          "align": "center",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 680,
+           "sizes": []
+          },
+          "_element_custom_width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gslead",
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "CTA Text"
+         },
+         "elements": []
+        },
+        {
+         "id": "041884c",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_wrap": "wrap",
+          "flex_direction_mobile": "column",
+          "flex_align_items_mobile": "stretch",
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "14",
+           "row": "14",
+           "isLinked": true,
+           "unit": "px",
+           "size": 14
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "center",
+          "_title": "CTA Buttons",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "b4eca89",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Get a Free Proposal",
+            "link": {
+             "url": "/contact-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "_title": "Button – Get a Free Proposal"
+           },
+           "elements": []
+          },
+          {
+           "id": "c1f1f17",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Chat on WhatsApp",
+            "link": {
+             "url": "https://wa.me/18128182053",
+             "is_external": "on",
+             "nofollow": "",
+             "custom_attributes": "rel|noopener noreferrer"
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fab fa-whatsapp",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "_css_classes": "gs-glass",
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline",
+             "button_text_color": "globals/colors?id=gswhite",
+             "button_background_hover_color": "globals/colors?id=gswhite",
+             "hover_color": "globals/colors?id=gsnavy"
+            },
+            "_title": "Button – Chat on WhatsApp"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

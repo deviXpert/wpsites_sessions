@@ -1,0 +1,4123 @@
+{
+ "title": "GS – About Us",
+ "type": "page",
+ "version": "0.4",
+ "page_settings": {
+  "template": "elementor_header_footer",
+  "hide_title": "yes"
+ },
+ "content": [
+  {
+   "id": "bcba8c5",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "56",
+     "right": "0",
+     "bottom": "56",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(124,92,255,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top left",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(6,132,196,0.28)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Page Hero"
+   },
+   "elements": [
+    {
+     "id": "0658460",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Page Hero – Inner"
+     },
+     "elements": [
+      {
+       "id": "f25954b",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "20",
+         "row": "20",
+         "isLinked": true,
+         "unit": "px",
+         "size": 20
+        },
+        "flex_align_items": "center",
+        "_animation": "fadeInUp",
+        "animation_duration": "fast",
+        "_title": "Hero Copy",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "59dbff4",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "About us",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – About us"
+         },
+         "elements": []
+        },
+        {
+         "id": "c0a37b0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "A Design-Led Digital Marketing Agency Built for <span>Growth</span>",
+          "header_size": "h1",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh1",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "H1 – Page Title"
+         },
+         "elements": []
+        },
+        {
+         "id": "8fff213",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Graphics Storm Studio helps ambitious businesses grow online through strategic websites, SEO, social media marketing and brand design – all under one roof.</p>",
+          "align": "center",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 760,
+           "sizes": []
+          },
+          "_element_custom_width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gslead",
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "Lead"
+         },
+         "elements": []
+        },
+        {
+         "id": "c6bc8c8",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_wrap": "wrap",
+          "flex_direction_mobile": "column",
+          "flex_align_items_mobile": "stretch",
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "14",
+           "row": "14",
+           "isLinked": true,
+           "unit": "px",
+           "size": 14
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "center",
+          "_title": "Hero Buttons",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "489dd9c",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Get a Free Proposal",
+            "link": {
+             "url": "/contact-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "_title": "Button – Get a Free Proposal"
+           },
+           "elements": []
+          },
+          {
+           "id": "ae7e60b",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Call +1 (812) 818-2053",
+            "link": {
+             "url": "tel:+18128182053",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-phone-alt",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "_css_classes": "gs-glass",
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline",
+             "button_text_color": "globals/colors?id=gswhite",
+             "button_background_hover_color": "globals/colors?id=gswhite",
+             "hover_color": "globals/colors?id=gsnavy"
+            },
+            "_title": "Button – Call +1 (812) 818-2053"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "efd3a24",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(6,132,196,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top right",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.22)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom left",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Our Story"
+   },
+   "elements": [
+    {
+     "id": "5ccd7ec",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "72",
+       "row": "72",
+       "isLinked": true,
+       "unit": "px",
+       "size": 72
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Our Story – Inner"
+     },
+     "elements": [
+      {
+       "id": "ea570a6",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "56",
+         "row": "56",
+         "isLinked": true,
+         "unit": "px",
+         "size": 56
+        },
+        "flex_align_items": "center",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "Story Row",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "fba3de3",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 45,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Story Image",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "b2011d2",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Graphics Storm Studio team working together",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "24",
+             "right": "24",
+             "bottom": "24",
+             "left": "24",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – about-team.webp (1000×1100, team at work)"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "6988550",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 55,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Story Copy",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "ab10fc5",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Our story",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Eyebrow – Our story"
+           },
+           "elements": []
+          },
+          {
+           "id": "7de93df",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "We Combine Creative Design With <span>Data-Driven Marketing</span>",
+            "header_size": "h2",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh2",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Story Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "d3980d1",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Graphics Storm Studio started with a big idea: build a creative agency that delivers purposeful, measurable work for the dreamers, doers and builders of the world.</p><p>Today our team of strategists, designers, developers and marketers helps businesses in the USA, Canada and beyond turn their brand into a growth engine – from the first logo sketch to page-one rankings and campaigns that sell.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Story Text"
+           },
+           "elements": []
+          },
+          {
+           "id": "a27afc2",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "container_type": "grid",
+            "grid_columns_grid": {
+             "unit": "fr",
+             "size": 1,
+             "sizes": []
+            },
+            "grid_columns_grid_tablet": {
+             "unit": "fr",
+             "size": 1,
+             "sizes": []
+            },
+            "grid_columns_grid_mobile": {
+             "unit": "fr",
+             "size": 1,
+             "sizes": []
+            },
+            "grid_rows_grid": {
+             "unit": "fr",
+             "size": 1,
+             "sizes": []
+            },
+            "grid_auto_flow": "row",
+            "grid_gaps": {
+             "column": "14",
+             "row": "14",
+             "isLinked": true,
+             "unit": "px",
+             "size": 14
+            },
+            "_title": "Timeline",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "52e6c78",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "16",
+               "row": "16",
+               "isLinked": true,
+               "unit": "px",
+               "size": 16
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 20,
+               "blur": 50,
+               "spread": 0,
+               "color": "rgba(2,6,23,0.45)"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "22",
+               "right": "22",
+               "bottom": "22",
+               "left": "22",
+               "isLinked": true
+              },
+              "padding_tablet": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "padding_mobile": {
+               "unit": "px",
+               "top": "18",
+               "right": "18",
+               "bottom": "18",
+               "left": "18",
+               "isLinked": true
+              },
+              "css_classes": "gs-glass",
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass",
+               "border_color": "globals/colors?id=gsline"
+              },
+              "_title": "Timeline – Where it began",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "1da748b",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "selected_icon": {
+                 "value": "fas fa-flag",
+                 "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "rounded",
+                "title_text": "Where it began",
+                "description_text": "A small studio with a design-first mindset and a promise to treat every client’s business like our own.",
+                "title_size": "h3",
+                "position": "top",
+                "text_align": "left",
+                "icon_size": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "icon_padding": {
+                 "unit": "px",
+                 "size": 12,
+                 "sizes": []
+                },
+                "border_radius": {
+                 "unit": "px",
+                 "top": "14",
+                 "right": "14",
+                 "bottom": "14",
+                 "left": "14",
+                 "isLinked": true
+                },
+                "icon_space": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_bottom_space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                },
+                "position_mobile": "top",
+                "__globals__": {
+                 "primary_color": "globals/colors?id=gsglass2",
+                 "secondary_color": "globals/colors?id=accent",
+                 "title_color": "globals/colors?id=gswhite",
+                 "title_typography_typography": "globals/typography?id=gsh3",
+                 "description_color": "globals/colors?id=text",
+                 "description_typography_typography": "globals/typography?id=gsbody"
+                },
+                "_title": "Icon Box – Where it began"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "55439b6",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "16",
+               "row": "16",
+               "isLinked": true,
+               "unit": "px",
+               "size": 16
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 20,
+               "blur": 50,
+               "spread": 0,
+               "color": "rgba(2,6,23,0.45)"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "22",
+               "right": "22",
+               "bottom": "22",
+               "left": "22",
+               "isLinked": true
+              },
+              "padding_tablet": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "padding_mobile": {
+               "unit": "px",
+               "top": "18",
+               "right": "18",
+               "bottom": "18",
+               "left": "18",
+               "isLinked": true
+              },
+              "css_classes": "gs-glass",
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass",
+               "border_color": "globals/colors?id=gsline"
+              },
+              "_title": "Timeline – How we evolved",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "b07fe2c",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "selected_icon": {
+                 "value": "fas fa-seedling",
+                 "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "rounded",
+                "title_text": "How we evolved",
+                "description_text": "We added web development, SEO and social media so clients could grow with one trusted partner.",
+                "title_size": "h3",
+                "position": "top",
+                "text_align": "left",
+                "icon_size": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "icon_padding": {
+                 "unit": "px",
+                 "size": 12,
+                 "sizes": []
+                },
+                "border_radius": {
+                 "unit": "px",
+                 "top": "14",
+                 "right": "14",
+                 "bottom": "14",
+                 "left": "14",
+                 "isLinked": true
+                },
+                "icon_space": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_bottom_space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                },
+                "position_mobile": "top",
+                "__globals__": {
+                 "primary_color": "globals/colors?id=gsglass2",
+                 "secondary_color": "globals/colors?id=accent",
+                 "title_color": "globals/colors?id=gswhite",
+                 "title_typography_typography": "globals/typography?id=gsh3",
+                 "description_color": "globals/colors?id=text",
+                 "description_typography_typography": "globals/typography?id=gsbody"
+                },
+                "_title": "Icon Box – How we evolved"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "14b0e1b",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "16",
+               "row": "16",
+               "isLinked": true,
+               "unit": "px",
+               "size": 16
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 20,
+               "blur": 50,
+               "spread": 0,
+               "color": "rgba(2,6,23,0.45)"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "22",
+               "right": "22",
+               "bottom": "22",
+               "left": "22",
+               "isLinked": true
+              },
+              "padding_tablet": {
+               "unit": "px",
+               "top": "20",
+               "right": "20",
+               "bottom": "20",
+               "left": "20",
+               "isLinked": true
+              },
+              "padding_mobile": {
+               "unit": "px",
+               "top": "18",
+               "right": "18",
+               "bottom": "18",
+               "left": "18",
+               "isLinked": true
+              },
+              "css_classes": "gs-glass",
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass",
+               "border_color": "globals/colors?id=gsline"
+              },
+              "_title": "Timeline – Where we are today",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "410e519",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "selected_icon": {
+                 "value": "fas fa-gem",
+                 "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "rounded",
+                "title_text": "Where we are today",
+                "description_text": "A full-service digital marketing agency known for premium design, honest reporting and on-time delivery.",
+                "title_size": "h3",
+                "position": "top",
+                "text_align": "left",
+                "icon_size": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "icon_padding": {
+                 "unit": "px",
+                 "size": 12,
+                 "sizes": []
+                },
+                "border_radius": {
+                 "unit": "px",
+                 "top": "14",
+                 "right": "14",
+                 "bottom": "14",
+                 "left": "14",
+                 "isLinked": true
+                },
+                "icon_space": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_bottom_space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                },
+                "position_mobile": "top",
+                "__globals__": {
+                 "primary_color": "globals/colors?id=gsglass2",
+                 "secondary_color": "globals/colors?id=accent",
+                 "title_color": "globals/colors?id=gswhite",
+                 "title_typography_typography": "globals/typography?id=gsh3",
+                 "description_color": "globals/colors?id=text",
+                 "description_typography_typography": "globals/typography?id=gsbody"
+                },
+                "_title": "Icon Box – Where we are today"
+               },
+               "elements": []
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1d17c98",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "background_background": "classic",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 20,
+         "blur": 50,
+         "spread": 0,
+         "color": "rgba(2,6,23,0.45)"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "48",
+         "right": "48",
+         "bottom": "48",
+         "left": "48",
+         "isLinked": true
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "40",
+         "right": "40",
+         "bottom": "40",
+         "left": "40",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "css_classes": "gs-glass--strong",
+        "__globals__": {
+         "background_color": "globals/colors?id=gsglass2",
+         "border_color": "globals/colors?id=gsline"
+        },
+        "_title": "Stats Panel",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "528b51a",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 4,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_rows_grid": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_auto_flow": "row",
+          "grid_gaps": {
+           "column": "32",
+           "row": "32",
+           "isLinked": true,
+           "unit": "px",
+           "size": 32
+          },
+          "_title": "Counters",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "d694037",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "_title": "Stat – Projects delivered last month",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "263ac7a",
+             "elType": "widget",
+             "widgetType": "counter",
+             "settings": {
+              "starting_number": 0,
+              "ending_number": 514,
+              "suffix": "+",
+              "title": "Projects delivered last month",
+              "duration": 1600,
+              "thousand_separator": "yes",
+              "title_tag": "p",
+              "number_alignment": "start",
+              "title_horizontal_alignment": "start",
+              "__globals__": {
+               "number_color": "globals/colors?id=gswhite",
+               "typography_number_typography": "globals/typography?id=gsstat",
+               "title_color": "globals/colors?id=text",
+               "typography_title_typography": "globals/typography?id=gsbody"
+              },
+              "_title": "Counter – Projects delivered last month"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "4101da3",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "_title": "Stat – Websites developed",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "82bb676",
+             "elType": "widget",
+             "widgetType": "counter",
+             "settings": {
+              "starting_number": 0,
+              "ending_number": 180,
+              "suffix": "+",
+              "title": "Websites developed",
+              "duration": 1600,
+              "thousand_separator": "yes",
+              "title_tag": "p",
+              "number_alignment": "start",
+              "title_horizontal_alignment": "start",
+              "__globals__": {
+               "number_color": "globals/colors?id=gswhite",
+               "typography_number_typography": "globals/typography?id=gsstat",
+               "title_color": "globals/colors?id=text",
+               "typography_title_typography": "globals/typography?id=gsbody"
+              },
+              "_title": "Counter – Websites developed"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "224495b",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "_title": "Stat – Happy clients",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "4ec4e7a",
+             "elType": "widget",
+             "widgetType": "counter",
+             "settings": {
+              "starting_number": 0,
+              "ending_number": 130,
+              "suffix": "+",
+              "title": "Happy clients",
+              "duration": 1600,
+              "thousand_separator": "yes",
+              "title_tag": "p",
+              "number_alignment": "start",
+              "title_horizontal_alignment": "start",
+              "__globals__": {
+               "number_color": "globals/colors?id=gswhite",
+               "typography_number_typography": "globals/typography?id=gsstat",
+               "title_color": "globals/colors?id=text",
+               "typography_title_typography": "globals/typography?id=gsbody"
+              },
+              "_title": "Counter – Happy clients"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "2eb16b6",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "4",
+             "row": "4",
+             "isLinked": true,
+             "unit": "px",
+             "size": 4
+            },
+            "_title": "Stat – Years of experience",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "7f7d8dc",
+             "elType": "widget",
+             "widgetType": "counter",
+             "settings": {
+              "starting_number": 0,
+              "ending_number": 5,
+              "suffix": "+",
+              "title": "Years of experience",
+              "duration": 1600,
+              "thousand_separator": "yes",
+              "title_tag": "p",
+              "number_alignment": "start",
+              "title_horizontal_alignment": "start",
+              "__globals__": {
+               "number_color": "globals/colors?id=gswhite",
+               "typography_number_typography": "globals/typography?id=gsstat",
+               "title_color": "globals/colors?id=text",
+               "typography_title_typography": "globals/typography?id=gsbody"
+              },
+              "_title": "Counter – Years of experience"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5657e67",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(124,92,255,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top left",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(6,132,196,0.28)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "CEO Message"
+   },
+   "elements": [
+    {
+     "id": "8177d8c",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "CEO Message – Inner"
+     },
+     "elements": [
+      {
+       "id": "f781667",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_gap": {
+         "column": "22",
+         "row": "22",
+         "isLinked": true,
+         "unit": "px",
+         "size": 22
+        },
+        "flex_direction": "column",
+        "background_background": "classic",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 20,
+         "blur": 50,
+         "spread": 0,
+         "color": "rgba(2,6,23,0.45)"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "56",
+         "right": "56",
+         "bottom": "56",
+         "left": "56",
+         "isLinked": true
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "40",
+         "right": "40",
+         "bottom": "40",
+         "left": "40",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "css_classes": "gs-glass--strong",
+        "__globals__": {
+         "background_color": "globals/colors?id=gsglass2",
+         "border_color": "globals/colors?id=gsline"
+        },
+        "_title": "CEO Quote",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "b0a914a",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-quote-left",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "__globals__": {
+           "primary_color": "globals/colors?id=secondary"
+          },
+          "_title": "Quote Icon"
+         },
+         "elements": []
+        },
+        {
+         "id": "9528b4a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "My idea behind Graphics Storm Studio was to build a state-of-the-art digital agency that transforms businesses, solves real challenges and celebrates every client win as our own.",
+          "header_size": "p",
+          "_css_classes": "",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh3",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "Quote"
+         },
+         "elements": []
+        },
+        {
+         "id": "01dcecb",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction_mobile": "column",
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "flex_align_items": "center",
+          "_title": "CEO",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "d29cb09",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Fahad Mustafa Butt",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 64,
+             "sizes": []
+            },
+            "_title": "📷 PLACEHOLDER – ceo-portrait.webp (400×400)"
+           },
+           "elements": []
+          },
+          {
+           "id": "90f3dbf",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_gap": {
+             "column": "2",
+             "row": "2",
+             "isLinked": true,
+             "unit": "px",
+             "size": 2
+            },
+            "_title": "CEO Name",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "3c20445",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "Fahad Mustafa Butt",
+              "header_size": "p",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gsh4",
+               "title_color": "globals/colors?id=gswhite"
+              },
+              "_title": "CEO Name"
+             },
+             "elements": []
+            },
+            {
+             "id": "d1a378c",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>Founder & CEO</p>",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gssmall",
+               "text_color": "globals/colors?id=accent"
+              },
+              "_title": "CEO Role"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e16ec3a",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(93,176,216,0.18)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "center center",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.18)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "top right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Values"
+   },
+   "elements": [
+    {
+     "id": "fedca27",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Values – Inner"
+     },
+     "elements": [
+      {
+       "id": "64cfd61",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "flex_align_items": "center",
+        "_title": "Section Head",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "220a124",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Our values",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Our values"
+         },
+         "elements": []
+        },
+        {
+         "id": "708bb17",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "What You Can <span>Always Expect</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "Section Title"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "39430a0",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 3,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_rows_grid": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_auto_flow": "row",
+        "grid_gaps": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "_title": "Values Grid",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "f95efb5",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Value – Client satisfaction",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "9029226",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-smile",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Client satisfaction",
+            "description_text": "We are not done until you are delighted with the result.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Client satisfaction"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "ed88342",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Value – Clear communication",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "7332db0",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-comments",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Clear communication",
+            "description_text": "Fast replies, regular updates and plain-English reports.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Clear communication"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "090c2b1",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Value – Team of experts",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "9ad8d0f",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-user-tie",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Team of experts",
+            "description_text": "Specialists in design, development, SEO and social media.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Team of experts"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "64c38df",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Value – Premium designs",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "61279d8",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-gem",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Premium designs",
+            "description_text": "Original, modern work that makes your brand stand out.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Premium designs"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "a238be2",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Value – Professional service",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "06a34a1",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-briefcase",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Professional service",
+            "description_text": "Clear processes, contracts and timelines on every project.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Professional service"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "a27fb49",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Value – On-time delivery",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "f8c74f1",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-shipping-fast",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "On-time delivery",
+            "description_text": "We respect your deadlines as much as you do.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – On-time delivery"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c86a35b",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(6,132,196,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top right",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.22)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom left",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Team"
+   },
+   "elements": [
+    {
+     "id": "ebb4922",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Team – Inner"
+     },
+     "elements": [
+      {
+       "id": "6bb7e1b",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "flex_align_items": "center",
+        "_title": "Section Head",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "d43799d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Our team",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Our team"
+         },
+         "elements": []
+        },
+        {
+         "id": "67a4e6c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Meet the People Behind <span>Your Growth</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "Section Title"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "7f85c63",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 5,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 3,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_rows_grid": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_auto_flow": "row",
+        "grid_gaps": {
+         "column": "20",
+         "row": "20",
+         "isLinked": true,
+         "unit": "px",
+         "size": 20
+        },
+        "_title": "Team Grid",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "4840303",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "10",
+           "row": "10",
+           "isLinked": true,
+           "unit": "px",
+           "size": 10
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Team – Fahad Mustafa Butt",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "73573c0",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Fahad Mustafa Butt, CEO at Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – team-fahad.webp (600×600 square headshot)"
+           },
+           "elements": []
+          },
+          {
+           "id": "63c48c0",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Fahad Mustafa Butt",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Name"
+           },
+           "elements": []
+          },
+          {
+           "id": "d771041",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>CEO</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=accent"
+            },
+            "_title": "Role"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "528352d",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "10",
+           "row": "10",
+           "isLinked": true,
+           "unit": "px",
+           "size": 10
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Team – Nabeel Ali Butt",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "30cdf4d",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Nabeel Ali Butt, Creative Director at Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – team-nabeel.webp (600×600 square headshot)"
+           },
+           "elements": []
+          },
+          {
+           "id": "02a3cf5",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Nabeel Ali Butt",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Name"
+           },
+           "elements": []
+          },
+          {
+           "id": "7a51daa",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Creative Director</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=accent"
+            },
+            "_title": "Role"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "52e010c",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "10",
+           "row": "10",
+           "isLinked": true,
+           "unit": "px",
+           "size": 10
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Team – Saba Baig",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "ab87535",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Saba Baig, Project Manager at Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – team-saba.webp (600×600 square headshot)"
+           },
+           "elements": []
+          },
+          {
+           "id": "cbef5b0",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Saba Baig",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Name"
+           },
+           "elements": []
+          },
+          {
+           "id": "c1f7c2f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Project Manager</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=accent"
+            },
+            "_title": "Role"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "ed1c577",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "10",
+           "row": "10",
+           "isLinked": true,
+           "unit": "px",
+           "size": 10
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Team – Isha Tariq",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "c37e75d",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Isha Tariq, Content Manager at Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – team-isha.webp (600×600 square headshot)"
+           },
+           "elements": []
+          },
+          {
+           "id": "ac0837f",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Isha Tariq",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Name"
+           },
+           "elements": []
+          },
+          {
+           "id": "d7686f9",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Content Manager</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=accent"
+            },
+            "_title": "Role"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "8180784",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "10",
+           "row": "10",
+           "isLinked": true,
+           "unit": "px",
+           "size": 10
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Team – Muhammad Usman",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "2351acd",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Muhammad Usman, Graphic Designer at Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – team-muhammad.webp (600×600 square headshot)"
+           },
+           "elements": []
+          },
+          {
+           "id": "9098240",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Muhammad Usman",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Name"
+           },
+           "elements": []
+          },
+          {
+           "id": "e6469e6",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Graphic Designer</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=accent"
+            },
+            "_title": "Role"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6b9663d",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "32",
+     "right": "0",
+     "bottom": "32",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "24",
+     "right": "0",
+     "bottom": "24",
+     "left": "0",
+     "isLinked": false
+    },
+    "_title": "CTA Band"
+   },
+   "elements": [
+    {
+     "id": "027ffa4",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "CTA Band – Inner"
+     },
+     "elements": [
+      {
+       "id": "637acd4",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_align_items": "center",
+        "flex_gap": {
+         "column": "18",
+         "row": "18",
+         "isLinked": true,
+         "unit": "px",
+         "size": 18
+        },
+        "flex_direction": "column",
+        "background_background": "gradient",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 20,
+         "blur": 50,
+         "spread": 0,
+         "color": "rgba(2,6,23,0.45)"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "64",
+         "right": "64",
+         "bottom": "64",
+         "left": "64",
+         "isLinked": true
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "48",
+         "right": "48",
+         "bottom": "48",
+         "left": "48",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "32",
+         "right": "32",
+         "bottom": "32",
+         "left": "32",
+         "isLinked": true
+        },
+        "css_classes": "gs-glass--strong",
+        "__globals__": {
+         "border_color": "globals/colors?id=gsline"
+        },
+        "_title": "CTA Panel",
+        "content_width": "full",
+        "background_color": "rgba(124,92,255,0.22)",
+        "background_color_b": "rgba(6,132,196,0.18)",
+        "background_gradient_angle": {
+         "unit": "deg",
+         "size": 135,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "cc3e752",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Free strategy call",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Free strategy call"
+         },
+         "elements": []
+        },
+        {
+         "id": "9d6639a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Ready to Grow Your Business <span>Online?</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "CTA Title"
+         },
+         "elements": []
+        },
+        {
+         "id": "3bb6918",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Book a free, no-obligation strategy call. We will review your website, SEO and social media and show you exactly where your next customers will come from.</p>",
+          "align": "center",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 680,
+           "sizes": []
+          },
+          "_element_custom_width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gslead",
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "CTA Text"
+         },
+         "elements": []
+        },
+        {
+         "id": "041884c",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_wrap": "wrap",
+          "flex_direction_mobile": "column",
+          "flex_align_items_mobile": "stretch",
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "14",
+           "row": "14",
+           "isLinked": true,
+           "unit": "px",
+           "size": 14
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "center",
+          "_title": "CTA Buttons",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "b4eca89",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Get a Free Proposal",
+            "link": {
+             "url": "/contact-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "_title": "Button – Get a Free Proposal"
+           },
+           "elements": []
+          },
+          {
+           "id": "c1f1f17",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Chat on WhatsApp",
+            "link": {
+             "url": "https://wa.me/18128182053",
+             "is_external": "on",
+             "nofollow": "",
+             "custom_attributes": "rel|noopener noreferrer"
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fab fa-whatsapp",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "_css_classes": "gs-glass",
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline",
+             "button_text_color": "globals/colors?id=gswhite",
+             "button_background_hover_color": "globals/colors?id=gswhite",
+             "hover_color": "globals/colors?id=gsnavy"
+            },
+            "_title": "Button – Chat on WhatsApp"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

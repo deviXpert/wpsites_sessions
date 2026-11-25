@@ -1,0 +1,98 @@
+{
+ "title": "GS – Section Title",
+ "type": "section",
+ "version": "0.4",
+ "page_settings": {},
+ "content": [
+  {
+   "id": "7785793",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "_title": "Section Title Block"
+   },
+   "elements": [
+    {
+     "id": "d601347",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "14",
+       "row": "14",
+       "isLinked": true,
+       "unit": "px",
+       "size": 14
+      },
+      "flex_align_items": "center",
+      "_title": "Section Head",
+      "content_width": "full"
+     },
+     "elements": [
+      {
+       "id": "a2f09cd",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Eyebrow text",
+        "header_size": "p",
+        "align": "center",
+        "__globals__": {
+         "typography_typography": "globals/typography?id=gseyebrow",
+         "title_color": "globals/colors?id=accent"
+        },
+        "_title": "Eyebrow – Eyebrow text"
+       },
+       "elements": []
+      },
+      {
+       "id": "017fec8",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Section Title With <span>Highlight</span>",
+        "header_size": "h2",
+        "align": "center",
+        "_css_classes": "gs-grad",
+        "__globals__": {
+         "typography_typography": "globals/typography?id=gsh2",
+         "title_color": "globals/colors?id=gswhite"
+        },
+        "_title": "Section Title"
+       },
+       "elements": []
+      },
+      {
+       "id": "d315fcf",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Optional intro paragraph.</p>",
+        "align": "center",
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "_element_custom_width_tablet": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "__globals__": {
+         "typography_typography": "globals/typography?id=gslead",
+         "text_color": "globals/colors?id=text"
+        },
+        "_title": "Section Intro"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+/* =====================================================================
+   Graphics Storm Studio – GLOBAL utility CSS (the ONLY custom CSS on the site)
+   Paste into: Elementor → Site Settings → Custom CSS
+   Everything else (colours, fonts, borders, radius, shadow, padding,
+   hover transforms, sticky header) is set natively in Elementor.
+   This file only adds what Elementor has no control for.
+   Usage: type the class name in  Advanced → CSS Classes  of a Container/Widget.
+   ===================================================================== */
+
+/* ---- 1. Glass panels (backdrop blur is not a native Elementor control) ---- */
+/* .gs-glass          – standard frosted card (set bg rgba(255,255,255,.06),
+                         1px border rgba(255,255,255,.14), radius 20, shadow natively) */
+/* .gs-glass--strong  – heavier blur for hero panels / forms (bg .10 natively) */
+.gs-glass,
+.gs-glass--strong {
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+}
+.gs-glass--strong {
+  -webkit-backdrop-filter: blur(26px) saturate(160%);
+  backdrop-filter: blur(26px) saturate(160%);
+}
+/* Fallback: browsers without backdrop-filter get an opaque navy panel so text
+   contrast stays WCAG AA (Elementor's translucent bg is overridden only here). */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .gs-glass, .gs-glass--strong, .gs-glass-header.elementor-sticky--effects {
+    background-color: rgba(12, 19, 48, 0.94) !important;
+  }
+}
+
+/* ---- 2. Sticky glass header ---------------------------------------------- */
+/* Header container: Motion Effects → Sticky: Top, Effects Offset: 60.
+   Elementor Pro adds .elementor-sticky--effects after the offset; we blur it. */
+.gs-glass-header {
+  transition: background-color .3s ease, box-shadow .3s ease, padding .3s ease;
+}
+.gs-glass-header.elementor-sticky--effects {
+  background-color: rgba(7, 11, 31, 0.72) !important;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  backdrop-filter: blur(18px) saturate(150%);
+}
+
+/* ---- 3. Decorative colour blobs ------------------------------------------ */
+/* Empty container: Position Absolute, size + radial/solid bg set natively.
+   .gs-blob only blurs it and keeps it behind content / non-clickable. */
+.gs-blob {
+  filter: blur(80px);
+  opacity: .55;
+  pointer-events: none;
+  z-index: 0 !important;
+}
+.gs-blob ~ .e-con, .gs-blob ~ .elementor-element { position: relative; z-index: 1; }
+
+/* ---- 4. Gradient text for the highlighted word in headings --------------- */
+/* Wrap the word in <span> inside a Heading widget and add class .gs-grad   */
+.gs-grad .elementor-heading-title span {
+  background: linear-gradient(90deg, #5DB0D8 0%, #0684C4 45%, #9D86FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---- 5. Forms on dark glass (placeholder colour has no global control) ---- */
+.gs-form ::placeholder { color: #A9B6D3; opacity: 1; }
+.gs-form .elementor-field-option label { color: #DCE4F5; }
+
+/* ---- 6. Accessibility ------------------------------------------------------ */
+/* Visible keyboard focus everywhere (WCAG 2.4.7) */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #5DB0D8;
+  outline-offset: 3px;
+}
+/* Respect users who turn animations off */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- 7. Global safety: no horizontal scroll from blobs/animations --------- */
+html, body { overflow-x: clip; }

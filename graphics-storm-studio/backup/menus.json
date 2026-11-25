@@ -1,0 +1,96 @@
+[
+ {
+  "id": 2,
+  "description": "",
+  "name": "Main Menu",
+  "slug": "main-menu",
+  "meta": [],
+  "locations": [],
+  "auto_add": false,
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/menus/2",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/menus"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/taxonomies/nav_menu"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/menu-items?menus=2"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 6,
+  "description": "",
+  "name": "Menu2",
+  "slug": "menu2",
+  "meta": [],
+  "locations": [],
+  "auto_add": false,
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/menus/6",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/menus"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/taxonomies/nav_menu"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/menu-items?menus=6"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

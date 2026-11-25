@@ -1,0 +1,869 @@
+{
+ "title": "GS – Footer",
+ "type": "footer",
+ "version": "0.4",
+ "page_settings": {},
+ "content": [
+  {
+   "id": "d0b8906",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "footer",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(93,176,216,0.18)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "center center",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.18)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "top right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Footer"
+   },
+   "elements": [
+    {
+     "id": "d66fddd",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Footer – Inner"
+     },
+     "elements": [
+      {
+       "id": "ba2c9dc",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_wrap": "wrap",
+        "flex_wrap_tablet": "wrap",
+        "flex_gap_tablet": {
+         "column": "32",
+         "row": "32",
+         "isLinked": true,
+         "unit": "px",
+         "size": 32
+        },
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "40",
+         "row": "40",
+         "isLinked": true,
+         "unit": "px",
+         "size": 40
+        },
+        "flex_align_items": "stretch",
+        "flex_direction_mobile": "column",
+        "_title": "Footer Columns",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "8b5ba86",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "18",
+           "row": "18",
+           "isLinked": true,
+           "unit": "px",
+           "size": 18
+          },
+          "width": {
+           "unit": "%",
+           "size": 34,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Footer Brand",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "3b2dc17",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Graphics <span>Storm</span> Studio",
+            "header_size": "div",
+            "link": {
+             "url": "/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "_css_classes": "gs-grad gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Logo (text) – swap for Site Logo widget after upload"
+           },
+           "elements": []
+          },
+          {
+           "id": "48cbd26",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>A design-led digital marketing agency helping businesses grow with websites, SEO, social media marketing and graphic design.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Footer About"
+           },
+           "elements": []
+          },
+          {
+           "id": "fa822d2",
+           "elType": "widget",
+           "widgetType": "social-icons",
+           "settings": {
+            "social_icon_list": [
+             {
+              "_id": "a1a6b02",
+              "social_icon": {
+               "value": "fab fa-instagram",
+               "library": "fa-brands"
+              },
+              "link": {
+               "url": "https://www.instagram.com/graphics_storm/",
+               "is_external": "on",
+               "nofollow": "",
+               "custom_attributes": "rel|noopener noreferrer"
+              },
+              "item_icon_color": "default"
+             },
+             {
+              "_id": "8833083",
+              "social_icon": {
+               "value": "fab fa-whatsapp",
+               "library": "fa-brands"
+              },
+              "link": {
+               "url": "https://wa.me/18128182053",
+               "is_external": "on",
+               "nofollow": "",
+               "custom_attributes": "rel|noopener noreferrer"
+              },
+              "item_icon_color": "default"
+             },
+             {
+              "_id": "c17c7d0",
+              "social_icon": {
+               "value": "fab fa-facebook-f",
+               "library": "fa-brands"
+              },
+              "link": {
+               "url": "#facebook-url-here",
+               "is_external": "on",
+               "nofollow": "",
+               "custom_attributes": "rel|noopener noreferrer"
+              },
+              "item_icon_color": "default"
+             },
+             {
+              "_id": "28f666d",
+              "social_icon": {
+               "value": "fab fa-linkedin-in",
+               "library": "fa-brands"
+              },
+              "link": {
+               "url": "#linkedin-url-here",
+               "is_external": "on",
+               "nofollow": "",
+               "custom_attributes": "rel|noopener noreferrer"
+              },
+              "item_icon_color": "default"
+             }
+            ],
+            "shape": "circle",
+            "align": "left",
+            "icon_color": "custom",
+            "icon_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "em",
+             "size": 0.75,
+             "sizes": []
+            },
+            "icon_spacing": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "hover_animation": "float",
+            "__globals__": {
+             "icon_primary_color": "globals/colors?id=gsglass2",
+             "icon_secondary_color": "globals/colors?id=gswhite",
+             "border_color": "globals/colors?id=gsline",
+             "hover_primary_color": "globals/colors?id=secondary",
+             "hover_secondary_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Social Icons"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "52c9ccd",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "width": {
+           "unit": "%",
+           "size": 18,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 33,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Footer Links",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "cbed3e4",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Company",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Footer Title – Company"
+           },
+           "elements": []
+          },
+          {
+           "id": "ed0032e",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "9662781",
+              "text": "Home",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "0a761e1",
+              "text": "About Us",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/about-us/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "987ff96",
+              "text": "Our Work",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/our-portfolio/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "3ab4f6c",
+              "text": "Contact Us",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/contact-us/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "06168da",
+              "text": "Free Consultation",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/contact-us/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             }
+            ],
+            "view": "traditional",
+            "icon_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "text_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "space_between": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "__globals__": {
+             "icon_color": "globals/colors?id=primary",
+             "text_color": "globals/colors?id=text",
+             "icon_typography_typography": "globals/typography?id=gssmall",
+             "text_color_hover": "globals/colors?id=gswhite"
+            },
+            "_title": "Company Links"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "d86dd0b",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "width": {
+           "unit": "%",
+           "size": 22,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 33,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Footer Services",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "71b936e",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Services",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Footer Title – Services"
+           },
+           "elements": []
+          },
+          {
+           "id": "5cf23c0",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "f3464b1",
+              "text": "Website Development",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/website-development/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "edf9ef5",
+              "text": "SEO Services",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/search-engine-optimization/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "c575c4d",
+              "text": "Social Media Marketing",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/social-media-marketing/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "523e17e",
+              "text": "Graphic Design",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/graphics-designing/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "7de4fe0",
+              "text": "Logo & Branding",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/graphics-designing/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             }
+            ],
+            "view": "traditional",
+            "icon_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "text_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "space_between": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "__globals__": {
+             "icon_color": "globals/colors?id=primary",
+             "text_color": "globals/colors?id=text",
+             "icon_typography_typography": "globals/typography?id=gssmall",
+             "text_color_hover": "globals/colors?id=gswhite"
+            },
+            "_title": "Service Links"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "2cc933a",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "width": {
+           "unit": "%",
+           "size": 26,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 33,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Footer Contact",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "9e8574e",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Get in touch",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Footer Title – Get in touch"
+           },
+           "elements": []
+          },
+          {
+           "id": "f0b67fa",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "8c1d412",
+              "text": "info@graphicsstormstudio.com",
+              "selected_icon": {
+               "value": "fas fa-envelope",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "mailto:info@graphicsstormstudio.com",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "dc95902",
+              "text": "+1 (812) 818-2053",
+              "selected_icon": {
+               "value": "fas fa-phone-alt",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "tel:+18128182053",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "2807acc",
+              "text": "1 Deauville Ln, North York, ON M3C 1Z7, Canada",
+              "selected_icon": {
+               "value": "fas fa-map-marker-alt",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "b8f01c1",
+              "text": "2501 Chatham Rd, Suite R, Springfield, IL 62704, USA",
+              "selected_icon": {
+               "value": "fas fa-map-marker-alt",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "view": "traditional",
+            "icon_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "text_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "space_between": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "__globals__": {
+             "icon_color": "globals/colors?id=accent",
+             "text_color": "globals/colors?id=text",
+             "icon_typography_typography": "globals/typography?id=gssmall",
+             "text_color_hover": "globals/colors?id=gswhite"
+            },
+            "_title": "Contact List"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c9954d4",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_align_items_mobile": "flex-start",
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "space-between",
+        "flex_direction_mobile": "column",
+        "__globals__": {
+         "border_color": "globals/colors?id=gsline"
+        },
+        "_title": "Footer Bottom",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "7a7688e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "© Graphics Storm Studio. All rights reserved.",
+          "header_size": "p",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gssmall",
+           "title_color": "globals/colors?id=gsmuted"
+          },
+          "_title": "Copyright (dynamic year)",
+          "__dynamic__": {
+           "title": "[elementor-tag id=\"c8aab43\" name=\"current-date-time\" settings=\"%7B%22date_format%22%3A%20%22custom%22%2C%20%22time_format%22%3A%20%22%22%2C%20%22custom_format%22%3A%20%22Y%22%2C%20%22before%22%3A%20%22%5Cu00a9%20%22%2C%20%22after%22%3A%20%22%20Graphics%20Storm%20Studio.%20All%20rights%20reserved.%22%7D\"]"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "197bcb7",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "3c52b2d",
+            "text": "Privacy Policy",
+            "selected_icon": {
+             "value": "fas fa-circle",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/privacy-policy/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            }
+           },
+           {
+            "_id": "acfe9dc",
+            "text": "Terms of Service",
+            "selected_icon": {
+             "value": "fas fa-circle",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/terms-of-service/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            }
+           }
+          ],
+          "view": "inline",
+          "icon_size": {
+           "unit": "px",
+           "size": 4,
+           "sizes": []
+          },
+          "text_indent": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "space_between": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "__globals__": {
+           "icon_color": "globals/colors?id=accent",
+           "text_color": "globals/colors?id=gsmuted",
+           "icon_typography_typography": "globals/typography?id=gssmall",
+           "text_color_hover": "globals/colors?id=gswhite"
+          },
+          "_title": "Legal Links"
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

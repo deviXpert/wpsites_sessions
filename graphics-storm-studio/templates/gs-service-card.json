@@ -1,0 +1,179 @@
+{
+ "title": "GS – Service Card",
+ "type": "section",
+ "version": "0.4",
+ "page_settings": {},
+ "content": [
+  {
+   "id": "306b5b4",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "16",
+     "row": "16",
+     "isLinked": true,
+     "unit": "px",
+     "size": 16
+    },
+    "background_background": "classic",
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "1",
+     "right": "1",
+     "bottom": "1",
+     "left": "1",
+     "isLinked": true
+    },
+    "border_radius": {
+     "unit": "px",
+     "top": "20",
+     "right": "20",
+     "bottom": "20",
+     "left": "20",
+     "isLinked": true
+    },
+    "box_shadow_box_shadow_type": "yes",
+    "box_shadow_box_shadow": {
+     "horizontal": 0,
+     "vertical": 20,
+     "blur": 50,
+     "spread": 0,
+     "color": "rgba(2,6,23,0.45)"
+    },
+    "padding": {
+     "unit": "px",
+     "top": "32",
+     "right": "32",
+     "bottom": "32",
+     "left": "32",
+     "isLinked": true
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "28",
+     "right": "28",
+     "bottom": "28",
+     "left": "28",
+     "isLinked": true
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "24",
+     "right": "24",
+     "bottom": "24",
+     "left": "24",
+     "isLinked": true
+    },
+    "css_classes": "gs-glass",
+    "_transform_translateY_popover_hover": "transform",
+    "_transform_translateY_effect_hover": {
+     "unit": "px",
+     "size": -6,
+     "sizes": []
+    },
+    "_transform_transition_hover": {
+     "unit": "ms",
+     "size": 300,
+     "sizes": []
+    },
+    "border_hover_border": "solid",
+    "border_hover_width": {
+     "unit": "px",
+     "top": "1",
+     "right": "1",
+     "bottom": "1",
+     "left": "1",
+     "isLinked": true
+    },
+    "border_hover_transition": {
+     "unit": "s",
+     "size": 0.3,
+     "sizes": []
+    },
+    "box_shadow_hover_box_shadow_type": "yes",
+    "box_shadow_hover_box_shadow": {
+     "horizontal": 0,
+     "vertical": 28,
+     "blur": 60,
+     "spread": 0,
+     "color": "rgba(6,132,196,0.28)"
+    },
+    "__globals__": {
+     "background_color": "globals/colors?id=gsglass",
+     "border_color": "globals/colors?id=gsline",
+     "border_hover_color": "globals/colors?id=accent"
+    },
+    "_title": "Service Card",
+    "content_width": "full"
+   },
+   "elements": [
+    {
+     "id": "19adee0",
+     "elType": "widget",
+     "widgetType": "icon-box",
+     "settings": {
+      "selected_icon": {
+       "value": "fas fa-star",
+       "library": "fa-solid"
+      },
+      "view": "stacked",
+      "shape": "rounded",
+      "title_text": "Service name",
+      "description_text": "Short description.",
+      "title_size": "h3",
+      "position": "top",
+      "text_align": "left",
+      "icon_size": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "icon_padding": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "border_radius": {
+       "unit": "px",
+       "top": "14",
+       "right": "14",
+       "bottom": "14",
+       "left": "14",
+       "isLinked": true
+      },
+      "icon_space": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "title_bottom_space": {
+       "unit": "px",
+       "size": 10,
+       "sizes": []
+      },
+      "position_mobile": "top",
+      "link": {
+       "url": "#",
+       "is_external": "",
+       "nofollow": "",
+       "custom_attributes": ""
+      },
+      "__globals__": {
+       "primary_color": "globals/colors?id=gsglass2",
+       "secondary_color": "globals/colors?id=accent",
+       "title_color": "globals/colors?id=gswhite",
+       "title_typography_typography": "globals/typography?id=gsh3",
+       "description_color": "globals/colors?id=text",
+       "description_typography_typography": "globals/typography?id=gsbody"
+      },
+      "_title": "Icon Box – Service name"
+     },
+     "elements": []
+    }
+   ]
+  }
+ ]
+}

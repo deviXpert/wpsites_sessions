@@ -1,0 +1,325 @@
+{
+ "title": "GS – CTA Band",
+ "type": "section",
+ "version": "0.4",
+ "page_settings": {},
+ "content": [
+  {
+   "id": "6b9663d",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "32",
+     "right": "0",
+     "bottom": "32",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "24",
+     "right": "0",
+     "bottom": "24",
+     "left": "0",
+     "isLinked": false
+    },
+    "_title": "CTA Band"
+   },
+   "elements": [
+    {
+     "id": "027ffa4",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "CTA Band – Inner"
+     },
+     "elements": [
+      {
+       "id": "637acd4",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_align_items": "center",
+        "flex_gap": {
+         "column": "18",
+         "row": "18",
+         "isLinked": true,
+         "unit": "px",
+         "size": 18
+        },
+        "flex_direction": "column",
+        "background_background": "gradient",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 20,
+         "blur": 50,
+         "spread": 0,
+         "color": "rgba(2,6,23,0.45)"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "64",
+         "right": "64",
+         "bottom": "64",
+         "left": "64",
+         "isLinked": true
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "48",
+         "right": "48",
+         "bottom": "48",
+         "left": "48",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "32",
+         "right": "32",
+         "bottom": "32",
+         "left": "32",
+         "isLinked": true
+        },
+        "css_classes": "gs-glass--strong",
+        "__globals__": {
+         "border_color": "globals/colors?id=gsline"
+        },
+        "_title": "CTA Panel",
+        "content_width": "full",
+        "background_color": "rgba(124,92,255,0.22)",
+        "background_color_b": "rgba(6,132,196,0.18)",
+        "background_gradient_angle": {
+         "unit": "deg",
+         "size": 135,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "cc3e752",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Free strategy call",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Free strategy call"
+         },
+         "elements": []
+        },
+        {
+         "id": "9d6639a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Ready to Grow Your Business <span>Online?</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "CTA Title"
+         },
+         "elements": []
+        },
+        {
+         "id": "3bb6918",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Book a free, no-obligation strategy call. We will review your website, SEO and social media and show you exactly where your next customers will come from.</p>",
+          "align": "center",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 680,
+           "sizes": []
+          },
+          "_element_custom_width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gslead",
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "CTA Text"
+         },
+         "elements": []
+        },
+        {
+         "id": "041884c",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_wrap": "wrap",
+          "flex_direction_mobile": "column",
+          "flex_align_items_mobile": "stretch",
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "14",
+           "row": "14",
+           "isLinked": true,
+           "unit": "px",
+           "size": 14
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "center",
+          "_title": "CTA Buttons",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "b4eca89",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Get a Free Proposal",
+            "link": {
+             "url": "/contact-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "_title": "Button – Get a Free Proposal"
+           },
+           "elements": []
+          },
+          {
+           "id": "c1f1f17",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Chat on WhatsApp",
+            "link": {
+             "url": "https://wa.me/18128182053",
+             "is_external": "on",
+             "nofollow": "",
+             "custom_attributes": "rel|noopener noreferrer"
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fab fa-whatsapp",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "_css_classes": "gs-glass",
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline",
+             "button_text_color": "globals/colors?id=gswhite",
+             "button_background_hover_color": "globals/colors?id=gswhite",
+             "hover_color": "globals/colors?id=gsnavy"
+            },
+            "_title": "Button – Chat on WhatsApp"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

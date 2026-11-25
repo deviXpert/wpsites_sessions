@@ -1,0 +1,2150 @@
+{
+ "title": "GS – Our Work",
+ "type": "page",
+ "version": "0.4",
+ "page_settings": {
+  "template": "elementor_header_footer",
+  "hide_title": "yes"
+ },
+ "content": [
+  {
+   "id": "0c084f6",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "56",
+     "right": "0",
+     "bottom": "56",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(124,92,255,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top left",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(6,132,196,0.28)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Page Hero"
+   },
+   "elements": [
+    {
+     "id": "4decb5d",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Page Hero – Inner"
+     },
+     "elements": [
+      {
+       "id": "b11077a",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "20",
+         "row": "20",
+         "isLinked": true,
+         "unit": "px",
+         "size": 20
+        },
+        "flex_align_items": "center",
+        "_animation": "fadeInUp",
+        "animation_duration": "fast",
+        "_title": "Hero Copy",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "b007417",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Our work",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Our work"
+         },
+         "elements": []
+        },
+        {
+         "id": "2b4e37f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Websites, Brands & Campaigns That <span>Get Results</span>",
+          "header_size": "h1",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh1",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "H1 – Page Title"
+         },
+         "elements": []
+        },
+        {
+         "id": "e022b98",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>A selection of recent website development, branding, social media and SEO projects for growing businesses.</p>",
+          "align": "center",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 760,
+           "sizes": []
+          },
+          "_element_custom_width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gslead",
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "Lead"
+         },
+         "elements": []
+        },
+        {
+         "id": "d23bf0a",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_wrap": "wrap",
+          "flex_direction_mobile": "column",
+          "flex_align_items_mobile": "stretch",
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "14",
+           "row": "14",
+           "isLinked": true,
+           "unit": "px",
+           "size": 14
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "center",
+          "_title": "Hero Buttons",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "3b6ab74",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Get a Free Proposal",
+            "link": {
+             "url": "/contact-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "_title": "Button – Get a Free Proposal"
+           },
+           "elements": []
+          },
+          {
+           "id": "b8e4579",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Call +1 (812) 818-2053",
+            "link": {
+             "url": "tel:+18128182053",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-phone-alt",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "_css_classes": "gs-glass",
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline",
+             "button_text_color": "globals/colors?id=gswhite",
+             "button_background_hover_color": "globals/colors?id=gswhite",
+             "hover_color": "globals/colors?id=gsnavy"
+            },
+            "_title": "Button – Call +1 (812) 818-2053"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7f04e55",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(6,132,196,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top right",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.22)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom left",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Portfolio"
+   },
+   "elements": [
+    {
+     "id": "7659316",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "32",
+       "row": "32",
+       "isLinked": true,
+       "unit": "px",
+       "size": 32
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Portfolio – Inner"
+     },
+     "elements": [
+      {
+       "id": "3b13b7b",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "34af914",
+          "text": "Websites",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "63a26c9",
+          "text": "Branding",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "8cf8bf2",
+          "text": "Social Media",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "35921f2",
+          "text": "SEO",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "64dc22d",
+          "text": "Graphic Design",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "view": "inline",
+        "icon_size": {
+         "unit": "px",
+         "size": 6,
+         "sizes": []
+        },
+        "text_indent": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "space_between": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "__globals__": {
+         "icon_color": "globals/colors?id=accent",
+         "text_color": "globals/colors?id=text",
+         "icon_typography_typography": "globals/typography?id=gsnav",
+         "text_color_hover": "globals/colors?id=gswhite"
+        },
+        "_title": "Categories (add anchors or Loop Grid filter later)"
+       },
+       "elements": []
+      },
+      {
+       "id": "418a109",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 3,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_rows_grid": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_auto_flow": "row",
+        "grid_gaps": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "_title": "Projects Grid",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "5c73bd7",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Project 1",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "71f389f",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "[Project 1 name] – Website Development project by Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – project-1.webp (1200×900 (4:3) screenshot / mockup)"
+           },
+           "elements": []
+          },
+          {
+           "id": "3b8216d",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Website Development",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Category"
+           },
+           "elements": []
+          },
+          {
+           "id": "bb1f46f",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "[Project 1 name]",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Project Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "77ae64f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>[One-line result, e.g. “New website + SEO: 3× more enquiries in 6 months”]</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Project Result"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "231a2a9",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Project 2",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "1da5b59",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "[Project 2 name] – Brand Identity project by Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – project-2.webp (1200×900 (4:3) screenshot / mockup)"
+           },
+           "elements": []
+          },
+          {
+           "id": "b968682",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Brand Identity",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Category"
+           },
+           "elements": []
+          },
+          {
+           "id": "b529af3",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "[Project 2 name]",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Project Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "7ffc864",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>[One-line result, e.g. “New website + SEO: 3× more enquiries in 6 months”]</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Project Result"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "d148571",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Project 3",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "c3eb4f2",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "[Project 3 name] – Social Media Marketing project by Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – project-3.webp (1200×900 (4:3) screenshot / mockup)"
+           },
+           "elements": []
+          },
+          {
+           "id": "4d00727",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Social Media Marketing",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Category"
+           },
+           "elements": []
+          },
+          {
+           "id": "730294c",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "[Project 3 name]",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Project Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "f4f14ec",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>[One-line result, e.g. “New website + SEO: 3× more enquiries in 6 months”]</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Project Result"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "bc23ff0",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Project 4",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "0dac114",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "[Project 4 name] – SEO project by Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – project-4.webp (1200×900 (4:3) screenshot / mockup)"
+           },
+           "elements": []
+          },
+          {
+           "id": "7b0e5bd",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "SEO",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Category"
+           },
+           "elements": []
+          },
+          {
+           "id": "e6035e0",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "[Project 4 name]",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Project Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "c6d3c69",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>[One-line result, e.g. “New website + SEO: 3× more enquiries in 6 months”]</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Project Result"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "f2d7b33",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Project 5",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "26e6c53",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "[Project 5 name] – Graphic Design project by Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – project-5.webp (1200×900 (4:3) screenshot / mockup)"
+           },
+           "elements": []
+          },
+          {
+           "id": "13f0a6a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Graphic Design",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Category"
+           },
+           "elements": []
+          },
+          {
+           "id": "9567783",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "[Project 5 name]",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Project Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "f8d3369",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>[One-line result, e.g. “New website + SEO: 3× more enquiries in 6 months”]</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Project Result"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "20f4272",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Project 6",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "9212df8",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "[Project 6 name] – Website Development project by Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – project-6.webp (1200×900 (4:3) screenshot / mockup)"
+           },
+           "elements": []
+          },
+          {
+           "id": "f8fc44c",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Website Development",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Category"
+           },
+           "elements": []
+          },
+          {
+           "id": "1a5bb92",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "[Project 6 name]",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Project Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "4e7097c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>[One-line result, e.g. “New website + SEO: 3× more enquiries in 6 months”]</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Project Result"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eb1e2a0",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(93,176,216,0.18)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "center center",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.18)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "top right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Testimonials"
+   },
+   "elements": [
+    {
+     "id": "8ead16e",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Testimonials – Inner"
+     },
+     "elements": [
+      {
+       "id": "524b60a",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "flex_align_items": "center",
+        "_title": "Section Head",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "d7d9c8f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Client reviews",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Client reviews"
+         },
+         "elements": []
+        },
+        {
+         "id": "22a8e47",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Trusted by <span>Growing Brands</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "Section Title"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "d8a1f83",
+       "elType": "widget",
+       "widgetType": "testimonial-carousel",
+       "settings": {
+        "slides": [
+         {
+          "_id": "d388122",
+          "content": "The brand guidelines and logos were absolutely fantastic! They have transformed my brand and will help me scale up for more business. Great communication and very speedy delivery – ahead of schedule.",
+          "name": "Mr. James",
+          "title": "Brand identity client"
+         },
+         {
+          "_id": "44f62a7",
+          "content": "Working with Mr. Fahad was very pleasant and professional. Communication was fast and I am more than satisfied with the result. Looking forward to the next project.",
+          "name": "Anthony",
+          "title": "Website client"
+         },
+         {
+          "_id": "5adbdd2",
+          "content": "My first time working with Fahad and it has been a pleasure. Brief well met, clear communication and fast delivery. Not much more you can ask for.",
+          "name": "Lisa P.",
+          "title": "Marketing client"
+         },
+         {
+          "_id": "3375ad4",
+          "content": "Wonderful experience as always – so happy with the final product. Highly recommend!",
+          "name": "Patrick",
+          "title": "Design client"
+         }
+        ],
+        "skin": "default",
+        "layout": "image_above",
+        "alignment": "left",
+        "slides_per_view": "3",
+        "slides_per_view_tablet": "2",
+        "slides_per_view_mobile": "1",
+        "slides_to_scroll": "1",
+        "space_between": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "autoplay": "yes",
+        "autoplay_speed": 6000,
+        "loop": "yes",
+        "pause_on_hover": "yes",
+        "pagination": "bullets",
+        "show_arrows": "",
+        "speed": 600,
+        "slide_background_color": "rgba(255,255,255,0.06)",
+        "slide_border_size": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "slide_border_radius": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "slide_border_color": "rgba(255,255,255,0.14)",
+        "slide_padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "32",
+         "left": "28",
+         "isLinked": false
+        },
+        "_css_classes": "gs-glass-slides",
+        "__globals__": {
+         "content_color": "globals/colors?id=text",
+         "content_typography_typography": "globals/typography?id=gsbody",
+         "name_color": "globals/colors?id=gswhite",
+         "name_typography_typography": "globals/typography?id=gsh4",
+         "title_color": "globals/colors?id=accent",
+         "title_typography_typography": "globals/typography?id=gssmall",
+         "pagination_color": "globals/colors?id=accent"
+        },
+        "_title": "Testimonials Carousel"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6b9663d",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "32",
+     "right": "0",
+     "bottom": "32",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "24",
+     "right": "0",
+     "bottom": "24",
+     "left": "0",
+     "isLinked": false
+    },
+    "_title": "CTA Band"
+   },
+   "elements": [
+    {
+     "id": "027ffa4",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "CTA Band – Inner"
+     },
+     "elements": [
+      {
+       "id": "637acd4",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_align_items": "center",
+        "flex_gap": {
+         "column": "18",
+         "row": "18",
+         "isLinked": true,
+         "unit": "px",
+         "size": 18
+        },
+        "flex_direction": "column",
+        "background_background": "gradient",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 20,
+         "blur": 50,
+         "spread": 0,
+         "color": "rgba(2,6,23,0.45)"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "64",
+         "right": "64",
+         "bottom": "64",
+         "left": "64",
+         "isLinked": true
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "48",
+         "right": "48",
+         "bottom": "48",
+         "left": "48",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "32",
+         "right": "32",
+         "bottom": "32",
+         "left": "32",
+         "isLinked": true
+        },
+        "css_classes": "gs-glass--strong",
+        "__globals__": {
+         "border_color": "globals/colors?id=gsline"
+        },
+        "_title": "CTA Panel",
+        "content_width": "full",
+        "background_color": "rgba(124,92,255,0.22)",
+        "background_color_b": "rgba(6,132,196,0.18)",
+        "background_gradient_angle": {
+         "unit": "deg",
+         "size": 135,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "cc3e752",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Free strategy call",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Free strategy call"
+         },
+         "elements": []
+        },
+        {
+         "id": "9d6639a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Ready to Grow Your Business <span>Online?</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "CTA Title"
+         },
+         "elements": []
+        },
+        {
+         "id": "3bb6918",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Book a free, no-obligation strategy call. We will review your website, SEO and social media and show you exactly where your next customers will come from.</p>",
+          "align": "center",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 680,
+           "sizes": []
+          },
+          "_element_custom_width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gslead",
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "CTA Text"
+         },
+         "elements": []
+        },
+        {
+         "id": "041884c",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_wrap": "wrap",
+          "flex_direction_mobile": "column",
+          "flex_align_items_mobile": "stretch",
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "14",
+           "row": "14",
+           "isLinked": true,
+           "unit": "px",
+           "size": 14
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "center",
+          "_title": "CTA Buttons",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "b4eca89",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Get a Free Proposal",
+            "link": {
+             "url": "/contact-us/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-arrow-right",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "_title": "Button – Get a Free Proposal"
+           },
+           "elements": []
+          },
+          {
+           "id": "c1f1f17",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Chat on WhatsApp",
+            "link": {
+             "url": "https://wa.me/18128182053",
+             "is_external": "on",
+             "nofollow": "",
+             "custom_attributes": "rel|noopener noreferrer"
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fab fa-whatsapp",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "_css_classes": "gs-glass",
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline",
+             "button_text_color": "globals/colors?id=gswhite",
+             "button_background_hover_color": "globals/colors?id=gswhite",
+             "hover_color": "globals/colors?id=gsnavy"
+            },
+            "_title": "Button – Chat on WhatsApp"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

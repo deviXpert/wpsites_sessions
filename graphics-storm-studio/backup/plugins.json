@@ -1,0 +1,431 @@
+[
+ {
+  "plugin": "all-in-one-wp-migration/all-in-one-wp-migration",
+  "status": "active",
+  "name": "All-in-One WP Migration and Backup",
+  "plugin_uri": "https://servmask.com/",
+  "author": "ServMask",
+  "author_uri": "https://servmask.com/",
+  "description": {
+   "raw": "All-in-One WP Migration makes moving your entire WordPress site simple. Export or import your database, media, plugins, and themes with just a few clicks.",
+   "rendered": "All-in-One WP Migration makes moving your entire WordPress site simple. Export or import your database, media, plugins, and themes with just a few clicks. <cite>By <a href=\"https://servmask.com/\">ServMask</a>.</cite>"
+  },
+  "version": "7.113",
+  "network_only": true,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "all-in-one-wp-migration",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/all-in-one-wp-migration/all-in-one-wp-migration",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "contact-form-7/wp-contact-form-7",
+  "status": "active",
+  "name": "Contact Form 7",
+  "plugin_uri": "https://contactform7.com/",
+  "author": "Takayuki Miyoshi",
+  "author_uri": "https://ideasilo.wordpress.com/",
+  "description": {
+   "raw": "Just another contact form plugin. Simple but flexible.",
+   "rendered": "Just another contact form plugin. Simple but flexible. <cite>By <a href=\"https://ideasilo.wordpress.com/\">Takayuki Miyoshi</a>.</cite>"
+  },
+  "version": "5.8",
+  "network_only": false,
+  "requires_wp": "6.2",
+  "requires_php": "7.4",
+  "textdomain": "contact-form-7",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/contact-form-7/wp-contact-form-7",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "country-phone-field-contact-form-7/country-phone-field-contact-form-7",
+  "status": "active",
+  "name": "Country &amp; Phone Field Contact Form 7",
+  "plugin_uri": "",
+  "author": "Narinder Singh Bisht",
+  "author_uri": "http://narindersingh.in",
+  "description": {
+   "raw": "Add country drop down with flags and phone number with country phone extensions field in contact form 7.",
+   "rendered": "Add country drop down with flags and phone number with country phone extensions field in contact form 7. <cite>By <a href=\"http://narindersingh.in\">Narinder Singh Bisht</a>.</cite>"
+  },
+  "version": "2.6.5",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "nb-cpf",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/country-phone-field-contact-form-7/country-phone-field-contact-form-7",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "elementor/elementor",
+  "status": "active",
+  "name": "Elementor",
+  "plugin_uri": "https://elementor.com/?utm_source=wp-plugins&#038;utm_campaign=plugin-uri&#038;utm_medium=wp-dash",
+  "author": "Elementor.com",
+  "author_uri": "https://elementor.com/?utm_source=wp-plugins&#038;utm_campaign=author-uri&#038;utm_medium=wp-dash",
+  "description": {
+   "raw": "The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now!",
+   "rendered": "The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now! <cite>By <a href=\"https://elementor.com/?utm_source=wp-plugins&#038;utm_campaign=author-uri&#038;utm_medium=wp-dash\">Elementor.com</a>.</cite>"
+  },
+  "version": "4.4.2",
+  "network_only": false,
+  "requires_wp": "6.8",
+  "requires_php": "7.4",
+  "textdomain": "elementor",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/elementor/elementor",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "elementor-pro/elementor-pro",
+  "status": "active",
+  "name": "Elementor Pro",
+  "plugin_uri": "https://go.elementor.com/wp-dash-wp-plugins-author-uri/",
+  "author": "Elementor.com",
+  "author_uri": "https://go.elementor.com/wp-dash-wp-plugins-author-uri/",
+  "description": {
+   "raw": "Elevate your designs and unlock the full power of the Atomic Editor. Gain access to dozens of Pro widgets, Website Templates, Theme Builder, Pop Ups, Forms, reusable Components, and WooCommerce building capabilities.",
+   "rendered": "Elevate your designs and unlock the full power of the Atomic Editor. Gain access to dozens of Pro widgets, Website Templates, Theme Builder, Pop Ups, Forms, reusable Components, and WooCommerce building capabilities. <cite>By <a href=\"https://go.elementor.com/wp-dash-wp-plugins-author-uri/\">Elementor.com</a>.</cite>"
+  },
+  "version": "4.3.1",
+  "network_only": false,
+  "requires_wp": "6.8",
+  "requires_php": "7.4",
+  "textdomain": "elementor-pro",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/elementor-pro/elementor-pro",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "essential-addons-for-elementor-lite/essential_adons_elementor",
+  "status": "active",
+  "name": "Essential Addons for Elementor",
+  "plugin_uri": "https://essential-addons.com/",
+  "author": "WPDeveloper",
+  "author_uri": "https://wpdeveloper.com/",
+  "description": {
+   "raw": "The Essential plugin you install after Elementor! Packed with 100+ stunning elements like Data Table, Event Calendar, Filterable Gallery, WooCommerce.",
+   "rendered": "The Essential plugin you install after Elementor! Packed with 100+ stunning elements like Data Table, Event Calendar, Filterable Gallery, WooCommerce. <cite>By <a href=\"https://wpdeveloper.com/\">WPDeveloper</a>.</cite>"
+  },
+  "version": "6.8.9",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "essential-addons-for-elementor-lite",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/essential-addons-for-elementor-lite/essential_adons_elementor",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "happy-elementor-addons/plugin",
+  "status": "active",
+  "name": "Happy Elementor Addons",
+  "plugin_uri": "https://happyaddons.com/",
+  "author": "Leevio",
+  "author_uri": "https://happyaddons.com/",
+  "description": {
+   "raw": "<a href=\"https://happyaddons.com/\">Happy Addons for Elementor</a> Is the Best Elementor Addons Comes With 44+ Free Elementor Widgets Including Table Builder, Testimonial, Event Calendar,Slider,News Ticker, Image Grid, etc &amp; Features Like Elementor Equal Height, Text Stroke, Shape Dividers, Floating Effect, Grid Layout, 500+ Elementor Icons, 450+ Template Packs &amp; More.",
+   "rendered": "<a href=\"https://happyaddons.com/\">Happy Addons for Elementor</a> Is the Best Elementor Addons Comes With 44+ Free Elementor Widgets Including Table Builder, Testimonial, Event Calendar,Slider,News Ticker, Image Grid, etc &amp; Features Like Elementor Equal Height, Text Stroke, Shape Dividers, Floating Effect, Grid Layout, 500+ Elementor Icons, 450+ Template Packs &amp; More. <cite>By <a href=\"https://happyaddons.com/\">Leevio</a>.</cite>"
+  },
+  "version": "3.53.0",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "happy-elementor-addons",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/happy-elementor-addons/plugin",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "kirki/kirki",
+  "status": "active",
+  "name": "Kirki",
+  "plugin_uri": "https://kirki.com",
+  "author": "Kirki",
+  "author_uri": "https://kirki.com",
+  "description": {
+   "raw": "Kirki is an all-in-one no-code builder that empowers users to build professional-grade WordPress sites without writing any code. It\u2019s a promising glimpse into the future of website development.",
+   "rendered": "Kirki is an all-in-one no-code builder that empowers users to build professional-grade WordPress sites without writing any code. It\u2019s a promising glimpse into the future of website development. <cite>By <a href=\"https://kirki.com\">Kirki</a>.</cite>"
+  },
+  "version": "6.4.3",
+  "network_only": false,
+  "requires_wp": "5.9",
+  "requires_php": "7.4",
+  "textdomain": "kirki",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/kirki/kirki",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "meta-box/meta-box",
+  "status": "active",
+  "name": "Meta Box",
+  "plugin_uri": "https://metabox.io",
+  "author": "MetaBox.io",
+  "author_uri": "https://metabox.io",
+  "description": {
+   "raw": "Create custom meta boxes and custom fields in WordPress.",
+   "rendered": "Create custom meta boxes and custom fields in WordPress. <cite>By <a href=\"https://metabox.io\">MetaBox.io</a>.</cite>"
+  },
+  "version": "5.15.5",
+  "network_only": false,
+  "requires_wp": "6.7",
+  "requires_php": "7.4",
+  "textdomain": "meta-box",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/meta-box/meta-box",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "sg-security/sg-security",
+  "status": "active",
+  "name": "Security Optimizer",
+  "plugin_uri": "https://siteground.com",
+  "author": "SiteGround",
+  "author_uri": "https://www.siteground.com",
+  "description": {
+   "raw": "Security Optimizer by SiteGround is the all-in-one security solution for your WordPress website. With the carefully selected and easy to configure functions the plugin provides everything you need to secure your website and prevent a number of threats such as brute-force attacks, compromised login, data leaks and more.",
+   "rendered": "Security Optimizer by SiteGround is the all-in-one security solution for your WordPress website. With the carefully selected and easy to configure functions the plugin provides everything you need to secure your website and prevent a number of threats such as brute-force attacks, compromised login, data leaks and more. <cite>By <a href=\"https://www.siteground.com\">SiteGround</a>.</cite>"
+  },
+  "version": "1.7.1",
+  "network_only": false,
+  "requires_wp": "",
+  "requires_php": "",
+  "textdomain": "sg-security",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/sg-security/sg-security",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "tidio-live-chat/tidio-elements",
+  "status": "active",
+  "name": "Tidio Chat",
+  "plugin_uri": "http://www.tidio.com",
+  "author": "Tidio LLC",
+  "author_uri": "http://www.tidio.com",
+  "description": {
+   "raw": "Tidio Live Chat - live chat boosted with chatbots for your online business. Integrates with your website in less than 20 seconds.",
+   "rendered": "Tidio Live Chat &#8211; live chat boosted with chatbots for your online business. Integrates with your website in less than 20 seconds. <cite>By <a href=\"http://www.tidio.com\">Tidio LLC</a>.</cite>"
+  },
+  "version": "8.0.1",
+  "network_only": false,
+  "requires_wp": "4.7",
+  "requires_php": "7.4",
+  "textdomain": "tidio-live-chat",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/tidio-live-chat/tidio-elements",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "under-construction-page/under-construction",
+  "status": "active",
+  "name": "Under Construction",
+  "plugin_uri": "https://underconstructionpage.com/",
+  "author": "WebFactory Ltd",
+  "author_uri": "https://www.webfactoryltd.com/",
+  "description": {
+   "raw": "Put your site behind a great looking under construction, coming soon, maintenance mode or landing page.",
+   "rendered": "Put your site behind a great looking under construction, coming soon, maintenance mode or landing page. <cite>By <a href=\"https://www.webfactoryltd.com/\">WebFactory Ltd</a>.</cite>"
+  },
+  "version": "5.83",
+  "network_only": false,
+  "requires_wp": "4.0",
+  "requires_php": "5.2",
+  "textdomain": "under-construction-page",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/under-construction-page/under-construction",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plugin": "wp-mail-smtp/wp_mail_smtp",
+  "status": "active",
+  "name": "WP Mail SMTP",
+  "plugin_uri": "https://wpmailsmtp.com/",
+  "author": "WP Mail SMTP",
+  "author_uri": "https://wpmailsmtp.com/",
+  "description": {
+   "raw": "Send WordPress emails reliably via SMTP or API using SendLayer, Brevo, SMTP.com, Gmail, Outlook, or another email service of your choice.",
+   "rendered": "Send WordPress emails reliably via SMTP or API using SendLayer, Brevo, SMTP.com, Gmail, Outlook, or another email service of your choice. <cite>By <a href=\"https://wpmailsmtp.com/\">WP Mail SMTP</a>.</cite>"
+  },
+  "version": "4.10.5",
+  "network_only": false,
+  "requires_wp": "5.5",
+  "requires_php": "7.4",
+  "textdomain": "wp-mail-smtp",
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/wp-mail-smtp/wp_mail_smtp",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ]
+  }
+ }
+]

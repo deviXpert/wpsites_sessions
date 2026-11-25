@@ -1,0 +1,1795 @@
+{
+ "title": "GS – Contact Us",
+ "type": "page",
+ "version": "0.4",
+ "page_settings": {
+  "template": "elementor_header_footer",
+  "hide_title": "yes"
+ },
+ "content": [
+  {
+   "id": "c75c547",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "56",
+     "right": "0",
+     "bottom": "56",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(124,92,255,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top left",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(6,132,196,0.28)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Page Hero"
+   },
+   "elements": [
+    {
+     "id": "daa2ba8",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Page Hero – Inner"
+     },
+     "elements": [
+      {
+       "id": "e5d7a8e",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "20",
+         "row": "20",
+         "isLinked": true,
+         "unit": "px",
+         "size": 20
+        },
+        "flex_align_items": "center",
+        "_animation": "fadeInUp",
+        "animation_duration": "fast",
+        "_title": "Hero Copy",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "25f199e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Contact us",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – Contact us"
+         },
+         "elements": []
+        },
+        {
+         "id": "6defb98",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Let’s Talk About <span>Growing Your Business</span>",
+          "header_size": "h1",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh1",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "H1 – Page Title"
+         },
+         "elements": []
+        },
+        {
+         "id": "0d401a3",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Tell us about your project and get a free, no-obligation proposal. We reply within 1 business day.</p>",
+          "align": "center",
+          "_element_width": "initial",
+          "_element_custom_width": {
+           "unit": "px",
+           "size": 760,
+           "sizes": []
+          },
+          "_element_custom_width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gslead",
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "Lead"
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "369b239",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(6,132,196,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top right",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.22)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom left",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "Contact"
+   },
+   "elements": [
+    {
+     "id": "e1bd3ea",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Contact – Inner"
+     },
+     "elements": [
+      {
+       "id": "60dd770",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "40",
+         "row": "40",
+         "isLinked": true,
+         "unit": "px",
+         "size": 40
+        },
+        "flex_align_items": "stretch",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "Contact Row",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "c1375ca",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "width": {
+           "unit": "%",
+           "size": 40,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Contact Info",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "74538b4",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Get in touch",
+            "header_size": "h2",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Info Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "396a599",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Prefer to talk? Call, email or WhatsApp us – or visit one of our offices.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Info Text"
+           },
+           "elements": []
+          },
+          {
+           "id": "9e3e850",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass",
+            "_transform_translateY_popover_hover": "transform",
+            "_transform_translateY_effect_hover": {
+             "unit": "px",
+             "size": -6,
+             "sizes": []
+            },
+            "_transform_transition_hover": {
+             "unit": "ms",
+             "size": 300,
+             "sizes": []
+            },
+            "border_hover_border": "solid",
+            "border_hover_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_hover_transition": {
+             "unit": "s",
+             "size": 0.3,
+             "sizes": []
+            },
+            "box_shadow_hover_box_shadow_type": "yes",
+            "box_shadow_hover_box_shadow": {
+             "horizontal": 0,
+             "vertical": 28,
+             "blur": 60,
+             "spread": 0,
+             "color": "rgba(6,132,196,0.28)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass",
+             "border_color": "globals/colors?id=gsline",
+             "border_hover_color": "globals/colors?id=accent"
+            },
+            "_title": "Info – Email us",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "9ba3ea4",
+             "elType": "widget",
+             "widgetType": "icon-box",
+             "settings": {
+              "selected_icon": {
+               "value": "fas fa-envelope",
+               "library": "fa-solid"
+              },
+              "view": "stacked",
+              "shape": "rounded",
+              "title_text": "Email us",
+              "description_text": "info@graphicsstormstudio.com",
+              "title_size": "h2",
+              "position": "left",
+              "text_align": "left",
+              "icon_size": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "icon_padding": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "14",
+               "right": "14",
+               "bottom": "14",
+               "left": "14",
+               "isLinked": true
+              },
+              "icon_space": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "title_bottom_space": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "position_mobile": "left",
+              "link": {
+               "url": "mailto:info@graphicsstormstudio.com",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              },
+              "title_typography_typography": "",
+              "__globals__": {
+               "title_typography_typography": "globals/typography?id=gsh4"
+              },
+              "_title": "Icon Box – Email us"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "ab2d8d7",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass",
+            "_transform_translateY_popover_hover": "transform",
+            "_transform_translateY_effect_hover": {
+             "unit": "px",
+             "size": -6,
+             "sizes": []
+            },
+            "_transform_transition_hover": {
+             "unit": "ms",
+             "size": 300,
+             "sizes": []
+            },
+            "border_hover_border": "solid",
+            "border_hover_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_hover_transition": {
+             "unit": "s",
+             "size": 0.3,
+             "sizes": []
+            },
+            "box_shadow_hover_box_shadow_type": "yes",
+            "box_shadow_hover_box_shadow": {
+             "horizontal": 0,
+             "vertical": 28,
+             "blur": 60,
+             "spread": 0,
+             "color": "rgba(6,132,196,0.28)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass",
+             "border_color": "globals/colors?id=gsline",
+             "border_hover_color": "globals/colors?id=accent"
+            },
+            "_title": "Info – Call us",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "fbcfcbe",
+             "elType": "widget",
+             "widgetType": "icon-box",
+             "settings": {
+              "selected_icon": {
+               "value": "fas fa-phone-alt",
+               "library": "fa-solid"
+              },
+              "view": "stacked",
+              "shape": "rounded",
+              "title_text": "Call us",
+              "description_text": "+1 (812) 818-2053",
+              "title_size": "h2",
+              "position": "left",
+              "text_align": "left",
+              "icon_size": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "icon_padding": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "14",
+               "right": "14",
+               "bottom": "14",
+               "left": "14",
+               "isLinked": true
+              },
+              "icon_space": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "title_bottom_space": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "position_mobile": "left",
+              "link": {
+               "url": "tel:+18128182053",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              },
+              "title_typography_typography": "",
+              "__globals__": {
+               "title_typography_typography": "globals/typography?id=gsh4"
+              },
+              "_title": "Icon Box – Call us"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "183c1ce",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass",
+            "_transform_translateY_popover_hover": "transform",
+            "_transform_translateY_effect_hover": {
+             "unit": "px",
+             "size": -6,
+             "sizes": []
+            },
+            "_transform_transition_hover": {
+             "unit": "ms",
+             "size": 300,
+             "sizes": []
+            },
+            "border_hover_border": "solid",
+            "border_hover_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_hover_transition": {
+             "unit": "s",
+             "size": 0.3,
+             "sizes": []
+            },
+            "box_shadow_hover_box_shadow_type": "yes",
+            "box_shadow_hover_box_shadow": {
+             "horizontal": 0,
+             "vertical": 28,
+             "blur": 60,
+             "spread": 0,
+             "color": "rgba(6,132,196,0.28)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass",
+             "border_color": "globals/colors?id=gsline",
+             "border_hover_color": "globals/colors?id=accent"
+            },
+            "_title": "Info – WhatsApp",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "2fcddee",
+             "elType": "widget",
+             "widgetType": "icon-box",
+             "settings": {
+              "selected_icon": {
+               "value": "fab fa-whatsapp",
+               "library": "fa-solid"
+              },
+              "view": "stacked",
+              "shape": "rounded",
+              "title_text": "WhatsApp",
+              "description_text": "Chat with our team",
+              "title_size": "h2",
+              "position": "left",
+              "text_align": "left",
+              "icon_size": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "icon_padding": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "14",
+               "right": "14",
+               "bottom": "14",
+               "left": "14",
+               "isLinked": true
+              },
+              "icon_space": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "title_bottom_space": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "position_mobile": "left",
+              "link": {
+               "url": "https://wa.me/18128182053",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              },
+              "title_typography_typography": "",
+              "__globals__": {
+               "title_typography_typography": "globals/typography?id=gsh4"
+              },
+              "_title": "Icon Box – WhatsApp"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "1af7aab",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass",
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass",
+             "border_color": "globals/colors?id=gsline"
+            },
+            "_title": "Info – Canada office",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "1344a48",
+             "elType": "widget",
+             "widgetType": "icon-box",
+             "settings": {
+              "selected_icon": {
+               "value": "fas fa-map-marker-alt",
+               "library": "fa-solid"
+              },
+              "view": "stacked",
+              "shape": "rounded",
+              "title_text": "Canada office",
+              "description_text": "1 Deauville Ln, North York, ON M3C 1Z7, Canada",
+              "title_size": "h2",
+              "position": "left",
+              "text_align": "left",
+              "icon_size": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "icon_padding": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "14",
+               "right": "14",
+               "bottom": "14",
+               "left": "14",
+               "isLinked": true
+              },
+              "icon_space": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "title_bottom_space": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "position_mobile": "left",
+              "title_typography_typography": "",
+              "__globals__": {
+               "title_typography_typography": "globals/typography?id=gsh4"
+              },
+              "_title": "Icon Box – Canada office"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "ea8f9d4",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass",
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass",
+             "border_color": "globals/colors?id=gsline"
+            },
+            "_title": "Info – USA office",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "727b241",
+             "elType": "widget",
+             "widgetType": "icon-box",
+             "settings": {
+              "selected_icon": {
+               "value": "fas fa-map-marker-alt",
+               "library": "fa-solid"
+              },
+              "view": "stacked",
+              "shape": "rounded",
+              "title_text": "USA office",
+              "description_text": "2501 Chatham Rd, Suite R, Springfield, IL 62704, USA",
+              "title_size": "h2",
+              "position": "left",
+              "text_align": "left",
+              "icon_size": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "icon_padding": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "border_radius": {
+               "unit": "px",
+               "top": "14",
+               "right": "14",
+               "bottom": "14",
+               "left": "14",
+               "isLinked": true
+              },
+              "icon_space": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "title_bottom_space": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "position_mobile": "left",
+              "title_typography_typography": "",
+              "__globals__": {
+               "title_typography_typography": "globals/typography?id=gsh4"
+              },
+              "_title": "Icon Box – USA office"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "25c8f5a",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 60,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Contact Form",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "6f0a11a",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "24",
+             "right": "24",
+             "bottom": "24",
+             "left": "24",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "36",
+             "right": "36",
+             "bottom": "36",
+             "left": "36",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "28",
+             "right": "28",
+             "bottom": "28",
+             "left": "28",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "22",
+             "right": "22",
+             "bottom": "22",
+             "left": "22",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass--strong",
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline"
+            },
+            "_title": "Contact Form Panel",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "55e3ab1",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "Request a free proposal",
+              "header_size": "h2",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gsh3",
+               "title_color": "globals/colors?id=gswhite"
+              },
+              "_title": "Form Title"
+             },
+             "elements": []
+            },
+            {
+             "id": "61bcce3",
+             "elType": "widget",
+             "widgetType": "form",
+             "settings": {
+              "form_name": "Contact Page",
+              "form_fields": [
+               {
+                "field_type": "text",
+                "field_label": "Full name",
+                "placeholder": "Your full name",
+                "required": "true",
+                "width": "50",
+                "custom_id": "name",
+                "autocomplete": "name",
+                "_id": "da35aeb"
+               },
+               {
+                "field_type": "email",
+                "field_label": "Email",
+                "placeholder": "you@company.com",
+                "required": "true",
+                "width": "50",
+                "custom_id": "email",
+                "_id": "97fe6fa"
+               },
+               {
+                "field_type": "tel",
+                "field_label": "Phone / WhatsApp",
+                "placeholder": "+1 (555) 000-0000",
+                "width": "50",
+                "custom_id": "phone",
+                "_id": "2970106"
+               },
+               {
+                "field_type": "text",
+                "field_label": "Website (optional)",
+                "placeholder": "https://",
+                "width": "50",
+                "custom_id": "website",
+                "_id": "7f3954a"
+               },
+               {
+                "field_type": "select",
+                "field_label": "Monthly budget",
+                "field_options": "Select a range\nUnder $1,000\n$1,000 – $3,000\n$3,000 – $10,000\n$10,000+",
+                "width": "50",
+                "custom_id": "budget",
+                "_id": "feec9e3"
+               },
+               {
+                "field_type": "checkbox",
+                "field_label": "Services you need",
+                "inline_list": "elementor-subgroup-inline",
+                "field_options": "Website Development\nSEO\nSocial Media Marketing\nGraphic Design\nLogo & Branding\nPaid Ads",
+                "width": "100",
+                "custom_id": "services",
+                "_id": "054e06e"
+               },
+               {
+                "field_type": "textarea",
+                "field_label": "Project details",
+                "placeholder": "Tell us about your goals…",
+                "rows": "4",
+                "width": "100",
+                "custom_id": "message",
+                "_id": "0bd5ef6"
+               },
+               {
+                "_id": "f053c3b",
+                "custom_id": "hp",
+                "field_type": "honeypot",
+                "field_label": "",
+                "width": "100"
+               }
+              ],
+              "show_labels": "yes",
+              "mark_required": "yes",
+              "input_size": "md",
+              "button_text": "Send My Request",
+              "button_size": "md",
+              "button_width": "100",
+              "selected_button_icon": {
+               "value": "fas fa-paper-plane",
+               "library": "fa-solid"
+              },
+              "button_icon_align": "row-reverse",
+              "button_icon_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "submit_actions": [
+               "email",
+               "collect_submissions"
+              ],
+              "email_to": "info@graphicsstormstudio.com",
+              "email_subject": "New enquiry from graphicsstormstudio.com",
+              "email_content": "[all-fields]",
+              "email_from_name": "Graphics Storm Studio Website",
+              "email_reply_to": "email",
+              "success_message": "Thank you! We received your request and will reply within 1 business day.",
+              "error_message": "Something went wrong – please email info@graphicsstormstudio.com.",
+              "required_field_message": "This field is required.",
+              "invalid_message": "Please check this field.",
+              "column_gap": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
+              },
+              "row_gap": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
+              },
+              "label_spacing": {
+               "unit": "px",
+               "size": 8,
+               "sizes": []
+              },
+              "_css_classes": "gs-form",
+              "button_border_radius": {
+               "unit": "px",
+               "top": "999",
+               "right": "999",
+               "bottom": "999",
+               "left": "999",
+               "isLinked": true
+              },
+              "field_border_radius": {
+               "unit": "px",
+               "top": "12",
+               "right": "12",
+               "bottom": "12",
+               "left": "12",
+               "isLinked": true
+              },
+              "field_border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "__globals__": {
+               "label_color": "globals/colors?id=text",
+               "label_typography_typography": "globals/typography?id=gssmall",
+               "field_text_color": "globals/colors?id=gswhite",
+               "field_background_color": "globals/colors?id=gsglass",
+               "field_border_color": "globals/colors?id=gsline",
+               "button_background_color": "globals/colors?id=secondary",
+               "button_background_hover_color": "globals/colors?id=gsvioletdk",
+               "button_text_color": "globals/colors?id=gswhite",
+               "button_typography_typography": "globals/typography?id=gsbtn"
+              },
+              "_title": "Contact Form"
+             },
+             "elements": []
+            },
+            {
+             "id": "729eda2",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>By submitting this form you agree to be contacted about your enquiry. We never share your details.</p>",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gssmall",
+               "text_color": "globals/colors?id=gsmuted"
+              },
+              "_title": "Privacy Note"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "769b439",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(93,176,216,0.18)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "center center",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.18)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "top right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_title": "FAQ"
+   },
+   "elements": [
+    {
+     "id": "d947782",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "FAQ – Inner"
+     },
+     "elements": [
+      {
+       "id": "5f5de24",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "flex_align_items": "center",
+        "_title": "Section Head",
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "c628a8f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "FAQ",
+          "header_size": "p",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gseyebrow",
+           "title_color": "globals/colors?id=accent"
+          },
+          "_title": "Eyebrow – FAQ"
+         },
+         "elements": []
+        },
+        {
+         "id": "6a17b0e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Before You <span>Get in Touch</span>",
+          "header_size": "h2",
+          "align": "center",
+          "_css_classes": "gs-grad",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gsh2",
+           "title_color": "globals/colors?id=gswhite"
+          },
+          "_title": "Section Title"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "2e0f4b4",
+       "elType": "widget",
+       "widgetType": "nested-accordion",
+       "settings": {
+        "items": [
+         {
+          "_id": "a074eb1",
+          "item_title": "How much do your digital marketing services cost?"
+         },
+         {
+          "_id": "c2d5cde",
+          "item_title": "How long does SEO take to show results?"
+         },
+         {
+          "_id": "fc7d0c0",
+          "item_title": "How long does it take to build a website?"
+         }
+        ],
+        "faq_schema": "yes",
+        "title_tag": "h3",
+        "default_state": "expanded",
+        "max_items_expended": "one",
+        "accordion_item_title_space_between": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "accordion_item_title_distance_from_content": {
+         "unit": "px",
+         "size": 0,
+         "sizes": []
+        },
+        "accordion_background_normal_background": "classic",
+        "accordion_border_normal_border": "solid",
+        "accordion_border_normal_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "accordion_border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        },
+        "accordion_padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "22",
+         "bottom": "20",
+         "left": "22",
+         "isLinked": false
+        },
+        "accordion_background_hover_background": "classic",
+        "accordion_background_active_background": "classic",
+        "content_background_background": "classic",
+        "icon_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "title_text_shadow_text_shadow_type": "",
+        "icon_section_icon": {
+         "value": "fas fa-plus",
+         "library": "fa-solid"
+        },
+        "icon_section_active_icon": {
+         "value": "fas fa-minus",
+         "library": "fa-solid"
+        },
+        "__globals__": {
+         "accordion_background_normal_color": "globals/colors?id=gsglass",
+         "accordion_background_hover_color": "globals/colors?id=gsglass2",
+         "accordion_background_active_color": "globals/colors?id=gsglass2",
+         "accordion_border_normal_color": "globals/colors?id=gsline",
+         "title_typography_typography": "globals/typography?id=gsh4",
+         "normal_title_color": "globals/colors?id=gswhite",
+         "hover_title_color": "globals/colors?id=accent",
+         "active_title_color": "globals/colors?id=accent",
+         "icon_color": "globals/colors?id=accent",
+         "icon_active_color": "globals/colors?id=accent"
+        },
+        "_title": "FAQ – Accordion"
+       },
+       "elements": [
+        {
+         "id": "5dc291f",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "padding": {
+           "unit": "px",
+           "top": "4",
+           "right": "22",
+           "bottom": "20",
+           "left": "22",
+           "isLinked": false
+          },
+          "_title": "FAQ – How much do your digital marke",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "1dbd836",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Every business is different, so we quote after a free strategy call. We offer one-off projects (for example a new website or logo) and flexible monthly plans for SEO and social media marketing – with no long lock-in contracts.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Answer"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "68fffc6",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "padding": {
+           "unit": "px",
+           "top": "4",
+           "right": "22",
+           "bottom": "20",
+           "left": "22",
+           "isLinked": false
+          },
+          "_title": "FAQ – How long does SEO take to show",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "bfc5c86",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Most clients see early ranking and traffic gains within 8–12 weeks, with stronger, compounding results after 4–6 months. We report progress monthly so you always know what has been done and what it achieved.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Answer"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "37e947e",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "padding": {
+           "unit": "px",
+           "top": "4",
+           "right": "22",
+           "bottom": "20",
+           "left": "22",
+           "isLinked": false
+          },
+          "_title": "FAQ – How long does it take to build",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "b443d0d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>A typical business website takes 3–6 weeks from kickoff to launch, depending on the number of pages and features. You get a clear timeline before we start and a staging link to review along the way.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Answer"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
