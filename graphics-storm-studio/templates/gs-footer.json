@@ -132,7 +132,15 @@
         "flex_align_items": "stretch",
         "flex_direction_mobile": "column",
         "_title": "Footer Columns",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -150,7 +158,7 @@
           },
           "width": {
            "unit": "%",
-           "size": 34,
+           "size": 29,
            "sizes": []
           },
           "width_tablet": {
@@ -164,7 +172,15 @@
            "sizes": []
           },
           "_title": "Footer Brand",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -324,12 +340,12 @@
           },
           "width": {
            "unit": "%",
-           "size": 18,
+           "size": 16,
            "sizes": []
           },
           "width_tablet": {
            "unit": "%",
-           "size": 33,
+           "size": 30,
            "sizes": []
           },
           "width_mobile": {
@@ -338,7 +354,15 @@
            "sizes": []
           },
           "_title": "Footer Links",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -476,12 +500,12 @@
           },
           "width": {
            "unit": "%",
-           "size": 22,
+           "size": 21,
            "sizes": []
           },
           "width_tablet": {
            "unit": "%",
-           "size": 33,
+           "size": 30,
            "sizes": []
           },
           "width_mobile": {
@@ -490,7 +514,15 @@
            "sizes": []
           },
           "_title": "Footer Services",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -628,12 +660,12 @@
           },
           "width": {
            "unit": "%",
-           "size": 26,
+           "size": 24,
            "sizes": []
           },
           "width_tablet": {
            "unit": "%",
-           "size": 33,
+           "size": 30,
            "sizes": []
           },
           "width_mobile": {
@@ -642,7 +674,15 @@
            "sizes": []
           },
           "_title": "Footer Contact",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {

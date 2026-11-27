@@ -38,6 +38,7 @@ def C(title, children, /, **s):
     """Flex container. Defaults: full width, column. Pass Elementor container settings as kwargs."""
     s = _g(s); s['_title'] = title
     s.setdefault('content_width', 'full')
+    s.setdefault('padding', dims(0))   # cancel Elementor's 10px default container padding (keeps edges aligned)
     return {'id': uid(), 'elType': 'container', 'isInner': False, 'settings': s, 'elements': children}
 
 def ROW(title, children, gap_=24, wrap=False, stack='mobile', align='stretch', justify=None, **s):
@@ -144,6 +145,8 @@ def BTN(text, url, style='primary', icon='fas fa-arrow-right', align=None, name=
         b.update(border_border='solid', border_width=dims(1))
         b['g'] = dict(background_color=col('gsglass2'), border_color=col('gsline'), button_text_color=col('gswhite'),
                       button_background_hover_color=col('gswhite'), hover_color=col('gsnavy'))
+    if style in ('primary', 'ghost') and size == 'md':
+        b['align_mobile'] = 'justify'   # full-width, easy-to-tap buttons on phones
     if style in ('ghost', 'link'):  # cancel the global violet glow shadow
         b.update(button_box_shadow_box_shadow_type='yes', button_box_shadow_box_shadow=shadow(0, 0, 'rgba(0,0,0,0)'))
     if align: b['align'] = align
@@ -204,13 +207,14 @@ def FAQ(items, name='FAQ – Accordion'):
           accordion_background_normal_background='classic', accordion_border_normal_border='solid',
           accordion_border_normal_width=dims(1), accordion_border_radius=dims(16), accordion_padding=dims(20, 22),
           accordion_background_hover_background='classic', accordion_background_active_background='classic',
-          content_background_background='classic', icon_size=px(14), title_text_shadow_text_shadow_type='',
+          content_background_background='classic', icon_size=px(14),
+          content_border_border='solid', content_border_width=dims(0, 1, 1, 1), content_border_radius=dims(0, 0, 16, 16), title_text_shadow_text_shadow_type='',
           icon_section_icon=ico('fas fa-plus'), icon_section_active_icon=ico('fas fa-minus'),
           g=dict(accordion_background_normal_color=col('gsglass'), accordion_background_hover_color=col('gsglass2'),
                  accordion_background_active_color=col('gsglass2'), accordion_border_normal_color=col('gsline'),
                  title_typography_typography=typ('gsh4'), normal_title_color=col('gswhite'),
                  hover_title_color=col('accent'), active_title_color=col('accent'),
-                 icon_color=col('accent'), icon_active_color=col('accent')))
+                 icon_color=col('accent'), icon_active_color=col('accent'), content_border_color=col('gsline')))
     w['elements'] = kids
     w['elType'] = 'widget'
     return w

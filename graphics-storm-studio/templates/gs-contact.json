@@ -127,7 +127,15 @@
         "animation": "fadeInUp",
         "animation_duration": "fast",
         "_title": "Hero Copy",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -315,7 +323,15 @@
         "flex_direction_mobile": "column",
         "flex_direction_tablet": "column",
         "_title": "Contact Row",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -347,7 +363,15 @@
            "sizes": []
           },
           "_title": "Contact Info",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -1165,7 +1189,15 @@
            "sizes": []
           },
           "_title": "Contact Form",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -1557,7 +1589,15 @@
         },
         "flex_align_items": "center",
         "_title": "Section Head",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -1662,6 +1702,23 @@
          "size": 14,
          "sizes": []
         },
+        "content_border_border": "solid",
+        "content_border_width": {
+         "unit": "px",
+         "top": "0",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": false
+        },
+        "content_border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": false
+        },
         "title_text_shadow_text_shadow_type": "",
         "icon_section_icon": {
          "value": "fas fa-plus",
@@ -1681,7 +1738,8 @@
          "hover_title_color": "globals/colors?id=accent",
          "active_title_color": "globals/colors?id=accent",
          "icon_color": "globals/colors?id=accent",
-         "icon_active_color": "globals/colors?id=accent"
+         "icon_active_color": "globals/colors?id=accent",
+         "content_border_color": "globals/colors?id=gsline"
         },
         "_title": "FAQ – Accordion"
        },

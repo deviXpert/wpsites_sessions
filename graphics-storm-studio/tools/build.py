@@ -123,16 +123,16 @@ def footer():
                                    border_border='solid', border_width=dims(1), hover_animation='float',
                                    g=dict(icon_primary_color=col('gsglass2'), icon_secondary_color=col('gswhite'), border_color=col('gsline'),
                                           hover_primary_color=col('secondary'), hover_secondary_color=col('gswhite')))],
-                 w=34, wt=100, gap_=18)
+                 w=29, wt=100, gap_=18)
     quick = COL('Footer Links', [head('Company'), ICONLIST(['Home', 'About Us', 'Our Work', 'Contact Us', 'Free Consultation'], icon='fas fa-angle-right',
                                                          t='gssmall', name='Company Links', icolor='primary',
-                                                         links=[K.URL['home'], K.URL['about'], K.URL['work'], K.URL['contact'], K.URL['contact']], space_between=px(10))], w=18, wt=33, gap_=16)
+                                                         links=[K.URL['home'], K.URL['about'], K.URL['work'], K.URL['contact'], K.URL['contact']], space_between=px(10))], w=16, wt=30, gap_=16)
     svc = COL('Footer Services', [head('Services'), ICONLIST(['Website Development', 'SEO Services', 'Social Media Marketing', 'Graphic Design', 'Logo & Branding'],
                                                          icon='fas fa-angle-right', t='gssmall', name='Service Links', icolor='primary',
-                                                         links=[K.URL['web'], K.URL['seo'], K.URL['smm'], K.URL['design'], K.URL['design']], space_between=px(10))], w=22, wt=33, gap_=16)
+                                                         links=[K.URL['web'], K.URL['seo'], K.URL['smm'], K.URL['design'], K.URL['design']], space_between=px(10))], w=21, wt=30, gap_=16)
     contact = COL('Footer Contact', [head('Get in touch'), ICONLIST([(K.EMAIL, 'fas fa-envelope'), (K.PHONE_DISPLAY, 'fas fa-phone-alt')]
                                                                   + [(a, 'fas fa-map-marker-alt') for _, a in K.OFFICES], t='gssmall', name='Contact List',
-                                                                  links=['mailto:' + K.EMAIL, K.PHONE_TEL, None, None], space_between=px(12))], w=26, wt=33, gap_=16)
+                                                                  links=['mailto:' + K.EMAIL, K.PHONE_TEL, None, None], space_between=px(12))], w=24, wt=30, gap_=16)
     top = ROW('Footer Columns', [brand, quick, svc, contact], gap_=40, stack='mobile', flex_wrap='wrap', flex_wrap_tablet='wrap', flex_gap_tablet=gap(32))
     year_tag = '[elementor-tag id="%s" name="current-date-time" settings="%s"]' % (el.uid(), urllib.parse.quote(json.dumps(
         {'date_format': 'custom', 'time_format': '', 'custom_format': 'Y', 'before': '© ', 'after': ' Graphics Storm Studio. All rights reserved.'})))

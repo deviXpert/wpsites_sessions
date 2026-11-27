@@ -10,7 +10,15 @@
    "isInner": false,
    "settings": {
     "content_width": "boxed",
-    "_title": "Section Title Block"
+    "_title": "Section Title Block",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
    },
    "elements": [
     {
@@ -28,7 +36,15 @@
       },
       "flex_align_items": "center",
       "_title": "Section Head",
-      "content_width": "full"
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
      },
      "elements": [
       {

@@ -229,7 +229,15 @@
           "flex_align_items": "center",
           "flex_justify_content": "center",
           "_title": "CTA Buttons",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -256,6 +264,7 @@
              "size": 10,
              "sizes": []
             },
+            "align_mobile": "justify",
             "_title": "Button – Get a Free Proposal"
            },
            "elements": []
@@ -293,6 +302,7 @@
              "left": "1",
              "isLinked": true
             },
+            "align_mobile": "justify",
             "button_box_shadow_box_shadow_type": "yes",
             "button_box_shadow_box_shadow": {
              "horizontal": 0,

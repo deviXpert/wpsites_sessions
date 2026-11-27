@@ -127,7 +127,15 @@
         "flex_direction_mobile": "column",
         "flex_direction_tablet": "column",
         "_title": "Hero Row",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -161,7 +169,15 @@
            "sizes": []
           },
           "_title": "Hero Copy",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -227,7 +243,15 @@
             },
             "flex_align_items": "stretch",
             "_title": "Hero Buttons",
-            "content_width": "full"
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
            },
            "elements": [
             {
@@ -254,6 +278,7 @@
                "size": 10,
                "sizes": []
               },
+              "align_mobile": "justify",
               "_title": "Button – Get a Free Quote"
              },
              "elements": []
@@ -291,6 +316,7 @@
                "left": "1",
                "isLinked": true
               },
+              "align_mobile": "justify",
               "button_box_shadow_box_shadow_type": "yes",
               "button_box_shadow_box_shadow": {
                "horizontal": 0,
@@ -343,7 +369,15 @@
            "sizes": []
           },
           "_title": "Hero Panel",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -642,7 +676,15 @@
         },
         "flex_align_items": "center",
         "_title": "Section Head",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -715,7 +757,15 @@
          "size": 24
         },
         "_title": "Benefits Grid",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -1337,7 +1387,15 @@
         },
         "flex_align_items": "center",
         "_title": "Section Head",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -1436,7 +1494,15 @@
          "size": 24
         },
         "_title": "Features Grid",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -2553,7 +2619,15 @@
         },
         "flex_align_items": "center",
         "_title": "Section Head",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -2626,7 +2700,15 @@
          "size": 24
         },
         "_title": "Process Steps",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -3367,7 +3449,15 @@
         "flex_direction_mobile": "column",
         "flex_direction_tablet": "column",
         "_title": "Quote Row",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -3399,7 +3489,15 @@
            "sizes": []
           },
           "_title": "FAQ",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -3504,6 +3602,23 @@
              "size": 14,
              "sizes": []
             },
+            "content_border_border": "solid",
+            "content_border_width": {
+             "unit": "px",
+             "top": "0",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": false
+            },
+            "content_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": false
+            },
             "title_text_shadow_text_shadow_type": "",
             "icon_section_icon": {
              "value": "fas fa-plus",
@@ -3523,7 +3638,8 @@
              "hover_title_color": "globals/colors?id=accent",
              "active_title_color": "globals/colors?id=accent",
              "icon_color": "globals/colors?id=accent",
-             "icon_active_color": "globals/colors?id=accent"
+             "icon_active_color": "globals/colors?id=accent",
+             "content_border_color": "globals/colors?id=gsline"
             },
             "_title": "FAQ – Accordion"
            },
@@ -3694,7 +3810,15 @@
            "sizes": []
           },
           "_title": "Quote Form Col",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -4168,7 +4292,15 @@
           "flex_align_items": "center",
           "flex_justify_content": "center",
           "_title": "CTA Buttons",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -4195,6 +4327,7 @@
              "size": 10,
              "sizes": []
             },
+            "align_mobile": "justify",
             "_title": "Button – Get a Free Proposal"
            },
            "elements": []
@@ -4232,6 +4365,7 @@
              "left": "1",
              "isLinked": true
             },
+            "align_mobile": "justify",
             "button_box_shadow_box_shadow_type": "yes",
             "button_box_shadow_box_shadow": {
              "horizontal": 0,

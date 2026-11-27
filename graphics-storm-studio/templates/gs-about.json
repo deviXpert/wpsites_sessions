@@ -127,7 +127,15 @@
         "animation": "fadeInUp",
         "animation_duration": "fast",
         "_title": "Hero Copy",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -208,7 +216,15 @@
           "flex_align_items": "stretch",
           "flex_justify_content": "center",
           "_title": "Hero Buttons",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -235,6 +251,7 @@
              "size": 10,
              "sizes": []
             },
+            "align_mobile": "justify",
             "_title": "Button – Get a Free Proposal"
            },
            "elements": []
@@ -272,6 +289,7 @@
              "left": "1",
              "isLinked": true
             },
+            "align_mobile": "justify",
             "button_box_shadow_box_shadow_type": "yes",
             "button_box_shadow_box_shadow": {
              "horizontal": 0,
@@ -419,7 +437,15 @@
         "flex_direction_mobile": "column",
         "flex_direction_tablet": "column",
         "_title": "Story Row",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -451,7 +477,15 @@
            "sizes": []
           },
           "_title": "Story Image",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -510,7 +544,15 @@
            "sizes": []
           },
           "_title": "Story Copy",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -593,7 +635,15 @@
              "size": 14
             },
             "_title": "Timeline",
-            "content_width": "full"
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
            },
            "elements": [
             {
@@ -1102,7 +1152,15 @@
            "size": 32
           },
           "_title": "Counters",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -1119,7 +1177,15 @@
              "size": 4
             },
             "_title": "Stat – Projects delivered last month",
-            "content_width": "full"
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
            },
            "elements": [
             {
@@ -1162,7 +1228,15 @@
              "size": 4
             },
             "_title": "Stat – Websites developed",
-            "content_width": "full"
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
            },
            "elements": [
             {
@@ -1205,7 +1279,15 @@
              "size": 4
             },
             "_title": "Stat – Happy clients",
-            "content_width": "full"
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
            },
            "elements": [
             {
@@ -1248,7 +1330,15 @@
              "size": 4
             },
             "_title": "Stat – Years of experience",
-            "content_width": "full"
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
            },
            "elements": [
             {
@@ -1513,7 +1603,15 @@
           },
           "flex_align_items": "center",
           "_title": "CEO",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -1559,7 +1657,15 @@
              "size": 2
             },
             "_title": "CEO Name",
-            "content_width": "full"
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
            },
            "elements": [
             {
@@ -1719,7 +1825,15 @@
         },
         "flex_align_items": "center",
         "_title": "Section Head",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -1792,7 +1906,15 @@
          "size": 24
         },
         "_title": "Values Grid",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -2909,7 +3031,15 @@
         },
         "flex_align_items": "center",
         "_title": "Section Head",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -2982,7 +3112,15 @@
          "size": 20
         },
         "_title": "Team Grid",
-        "content_width": "full"
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
        },
        "elements": [
         {
@@ -4026,7 +4164,15 @@
           "flex_align_items": "center",
           "flex_justify_content": "center",
           "_title": "CTA Buttons",
-          "content_width": "full"
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
          "elements": [
           {
@@ -4053,6 +4199,7 @@
              "size": 10,
              "sizes": []
             },
+            "align_mobile": "justify",
             "_title": "Button – Get a Free Proposal"
            },
            "elements": []
@@ -4090,6 +4237,7 @@
              "left": "1",
              "isLinked": true
             },
+            "align_mobile": "justify",
             "button_box_shadow_box_shadow_type": "yes",
             "button_box_shadow_box_shadow": {
              "horizontal": 0,
