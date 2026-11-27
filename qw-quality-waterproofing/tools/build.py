@@ -241,12 +241,12 @@ def home():
         split('Wet Basement? We Have <span class="qw-hl">the Solutions</span>',
               ['A wet basement is a major concern for any homeowner. Leaks lead to damaged drywall and flooring, ruined belongings, mould growth and poor air quality – and they only get worse with time.',
                'Quality Waterproofing specializes in repairing wet basements and preventing future leaks. We waterproof foundations from the outside, install interior drainage and sump pump systems, seal leaking cracks and correct grading with new interlock, so water is directed away from your home for good.'],
-              'ext_orange_membrane', 'int_dmx_window', eyebrow='The Problem',
+              'ext_m6', 'int_dmx_window', eyebrow='The Problem',
               extra=[ILIST(['Water at the base of walls or the floor joint', 'Damp walls, white efflorescence or musty smells', 'Leaks after heavy rain or spring thaw', 'Cracked foundation walls'], _margin=dims(6, 0, 6, 0)),
                      BTN('Book a Free Inspection', '#estimate', 'gold', 'fas fa-arrow-right')]),
         why_us(bg='cream'),
         process(),
-        gallery(['ext_trench_membrane', 'int_dmx_window', 'il_pool1', 'ext_brick_membrane', 'sump_basin', 'il_patio_steps', 'int_unfinished', 'ext_red_brick', 'crack_patch', 'il_steps', 'ext_long_trench', 'il_rear'],
+        gallery(['ext_trench_membrane', 'int_dmx_window', 'il_pool1', 'ext_m4', 'sump_basin', 'il_patio_steps', 'int_unfinished', 'ext_red_brick', 'crack_patch', 'il_steps', 'ext_long_trench', 'il_rear'],
                 intro='Real projects completed by our crews – exterior and interior waterproofing, sump pumps, crack repairs and interlocking.'),
         areas_section(),
         *([home_reviews()] if live('reviews') else []),
@@ -258,8 +258,20 @@ def services_hub():
     seed('services')
     return [hero('Our Services', 'Basement Waterproofing <span class="qw-hl">Services</span> in Toronto & the GTA',
                  'Exterior and interior waterproofing, sump pump installation, exterior foundation crack repair, underpinning and interlocking – everything you need to keep water out and protect your home.',
-                 bg='ext_orange_membrane', minh=560),
+                 bg='ext_n4', minh=560),
             services_grid(intro=True), why_us('ext_crew_trench', 'int_column'), process(), areas_section(), cta_band()]
+
+def video_section(S):
+    """Portrait job-site video (hosted MP4, native Video widget) beside a short explanation."""
+    vid = W('video', 'Job Video', video_type='hosted', hosted_url={'url': MEDIA[S['video']]['url'], 'id': MEDIA[S['video']]['id']}, autoplay='yes', mute='yes',
+            loop='yes', controls='yes', play_on_mobile='yes', aspect_ratio='916', _border_radius=dims(6),
+            _element_width='initial', _element_custom_width=px(360), _element_custom_width_mobile=px(100, '%'))
+    copy = C(HEAD('See It Working', f'A {S["name"].split()[0]} Pump <span class="qw-hl">in Action</span>') + [
+        T('This is one of our recent sump pump installations doing its job – collecting water from the weeping tile and pumping it out and away from the foundation before it can reach the basement floor.'),
+        ILIST(['Properly sized pit, pump and check valve', 'Discharge line carried away from the foundation', 'Tested before we leave the job'], _margin=dims(4, 0, 4, 0)),
+        CTA_BTNS(dark=False)], 'Video Copy', flex_gap=gap(16), flex_justify_content='center')
+    return SECTION([C([C([vid], 'Video Wrap', flex_align_items='center'), copy], 'Video Grid', grid=2, grid_t=1, grid_columns_grid=cols('1fr 1.3fr'),
+                      grid_gaps=gap(56, 32), grid_align_items='center')], 'Video', bg='cream')
 
 def service_page(slug):
     seed(slug); S = SERVICES[slug]
@@ -273,10 +285,11 @@ def service_page(slug):
     return [
         hero(S['name'] + ' · Toronto & GTA', S['h1'], S['lead'], bg=S['hero'], video=S.get('hero_video', False)),
         split(S['intro_h'], S['intro'], S['intro_img'], S['intro_img2'], eyebrow=S['name'], extra=[CTA_BTNS(dark=False)]),
+        *([video_section(S)] if S.get('video') else []),
         signs,
         process(S['steps'], f'Our {S["name"]} <span class="qw-hl">Process</span>'),
         benefits,
-        gallery(S['gallery'], S.get('gallery_h') or f'{S["name"]} <span class="qw-hl">Projects</span>', 'Project Gallery', cols=S.get('gallery_cols', 4), bg='light'),
+        *([gallery(S['gallery'], S.get('gallery_h') or f'{S["name"]} <span class="qw-hl">Projects</span>', 'Project Gallery', cols=S.get('gallery_cols', 4), bg='light')] if S.get('gallery') else []),
         areas_section(),
         faq_section(S['faq'], side_img=S['gallery'][1]),
         form_section(),
@@ -329,10 +342,10 @@ def projects():
     def g(t, keys): return {'_id': uid(), 'gallery_title': t, 'multiple_gallery': [img(k) for k in keys]}
     gal = W('gallery', 'Project Gallery', gallery_type='multiple', galleries=[
         g('Exterior Waterproofing', SERVICES['exterior-waterproofing']['gallery'] + ['ext_worker_dig', 'ext_brick_coat', 'ext_parging', 'ext_blueskin', 'ext_crew_trench', 'ext_live2']),
-        g('Interior Waterproofing', SERVICES['interior-waterproofing']['gallery'] + ['int_orange']),
+        g('Interior Waterproofing', SERVICES['interior-waterproofing']['gallery'] + ['int_dmx_window', 'int_long']),
         g('Sump Pumps', ['sump_basin', 'sump_system', 'sump_pit']),
         g('Crack Repair', SERVICES['foundation-crack-repair']['gallery']),
-        g('Underpinning', ['up_pins_numbered', 'up_pin_forms', 'up_pin_excavated', 'up_shoring', 'up_footing_rebar', 'up_footing_form', 'up_basement_dig']),
+        g('Underpinning', SERVICES['underpinning']['gallery']),
         g('Interlocking', SERVICES['interlocking']['gallery'] + ['il_live_deck'])],
         show_all_galleries='yes', show_all_galleries_label='All Projects', gallery_layout='grid', columns=4, columns_tablet=3, columns_mobile=2, gap=px(12), gap_mobile=px(8),
         aspect_ratio='1:1', thumbnail_image_size='medium_large', link_to='file', open_lightbox='yes', image_hover_animation='zoom-in', overlay_background='yes',
