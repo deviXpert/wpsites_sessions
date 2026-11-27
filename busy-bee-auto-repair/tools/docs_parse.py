@@ -91,8 +91,8 @@ class _P(HTMLParser):
             self.href = None
         elif tag in self.BLOCK and self.cur is not None:
             t, lk, h, plain = self.cur
-            body = tidy(''.join(h))
-            txt = re.sub(r'\s+', ' ', ''.join(plain)).strip()
+            body = canadian(tidy(''.join(h)))
+            txt = canadian(re.sub(r'\s+', ' ', ''.join(plain)).strip())
             if txt and self.table is not None and self.table and self.table[-1]:
                 self.table[-1][-1].append(body)
             elif txt:
@@ -104,6 +104,11 @@ class _P(HTMLParser):
             return
         self.cur[2].append(html.escape(d, quote=False))
         self.cur[3].append(d)
+
+
+def canadian(t):
+    """The docs mix British "tyre" with "tire"; the site, its headings and its SEO keywords use Canadian "tire"."""
+    return re.sub(r'\b([Tt])yre(s?)\b', r'\1ire\2', re.sub(r'\bTYRE(S?)\b', r'TIRE\1', t))
 
 
 def tidy(h):
@@ -214,6 +219,7 @@ def parse(raw, lead_head, photo=None):
     for head2, body in groups:
         low = head2.lower()
         if low.startswith('frequently asked'):
+            d['faq_head'] = head2
             q = None
             for b in body:
                 if b[0] in ('h3', 'h4'):

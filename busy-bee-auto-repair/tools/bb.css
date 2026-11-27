@@ -830,3 +830,6 @@ body,html{overflow-x:hidden;overflow-x:clip;max-width:100%}
 .bb-ask a,.bb-ask{text-decoration:none}.bb-ask strong{color:#1a2024;border-bottom:2px solid #ffe600}
 @media (max-width:1023px){.bb-ask{display:none}}
 @media (min-width:1024px){.bb-photo-frame{position:sticky!important;top:110px;align-self:start;height:clamp(380px,64vh,580px)}}
+/* Service-page FAQ heading = the doc's long "Frequently Asked Questions About …" heading → smaller type */
+.elementor .bb-faq-intro .elementor-heading-title:has(.bb-faq-long){font-size:30px!important;line-height:1.1!important}
+@media (max-width:767px){.elementor .bb-faq-intro .elementor-heading-title:has(.bb-faq-long){font-size:24px!important}}

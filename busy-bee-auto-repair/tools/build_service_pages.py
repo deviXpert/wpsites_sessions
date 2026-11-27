@@ -266,6 +266,15 @@ def aside(offer):
     return a
 
 
+def faq_heading(c):
+    """Doc FAQ heading ("Frequently Asked Questions About Tires in Calgary") with its topic in yellow; generic fallback."""
+    h = c.get('faq_head')
+    if not h:
+        return 'Questions?<br><em>Clear answers.</em>'
+    lead, _, topic = h.partition(' About ')
+    return f'<span class="bb-faq-long">{lead} about <em>{topic}</em></span>' if topic else f'<span class="bb-faq-long">{h}</span>'
+
+
 def build(key):
     c, m = PAGES[key], META[key]
     el.seed('svc-' + key)
@@ -283,7 +292,7 @@ def build(key):
     body = [hero, C('Spacer', [], minh=24)]
     body += [kinds[s[0]](s) for s in dress(key, c['sections'])]
     body += [tpl('reasons'), tpl('booking'),
-             svc.faq(c['faqs'], eyebrow=m['label'].upper().replace('&', '&amp;') + ' FAQS', heading='Questions?<br><em>Clear answers.</em>'),
+             svc.faq(c['faqs'], eyebrow=m['label'].upper().replace('&', '&amp;') + ' FAQS', heading=faq_heading(c)),
              related(c['related']), tpl('location'), tpl('reviews')]
     return el.book_popup(body, json.load(open('ids.json'))['popup_book'])
 

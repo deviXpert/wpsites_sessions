@@ -503,7 +503,7 @@ OIL = dict(
             'Before winter, it is useful to check your oil level, battery condition, coolant and other essential maintenance items. During '
             'warmer months, regular inspections can help identify leaks, worn components and fluid-related concerns.',
             'An oil change is also a good opportunity to review other maintenance needs. For example, if your vehicle has unusual vibrations '
-            'or uneven tyre wear, you may benefit from a separate ' + A('wheel alignment', 'alignment') + ' inspection. If you notice '
+            'or uneven tire wear, you may benefit from a separate ' + A('wheel alignment', 'alignment') + ' inspection. If you notice '
             'squealing or reduced braking performance, have the ' + A('brake system', 'brakes') + ' checked rather than assuming an oil '
             'service will address the issue.',
             'Our goal is to help you understand your vehicle’s maintenance needs so you can make informed decisions about its care.'),
