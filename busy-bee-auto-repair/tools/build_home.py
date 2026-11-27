@@ -218,7 +218,7 @@ def hero_mobile():
             for ic, x, y, svc in points], cls='bb-pts' + (' is-active' if i == 0 else ''), attrs={'data-slide': i}, **vh))
     copy = C('Mobile hero copy', [
         hero_badge(mobile=True),
-        h1('div'),
+        h1('h1'),  # mobile hero is a separate block (desktop one is hidden on phones) → its own H1
         T(f'<p>{HERO_P}</p>', PAPER, M(14, 400, 22.75), mar=(16, 0, 0, 0), w=384, name='Intro', cls='bb-hero-intro'),
         C('Actions', [
             BTN('Book an Appointment', BOOK, S(14, 700, 20), color=PAPER, bg=INK, ic='calendar-days', ic_pos='before', ic_size=16,
