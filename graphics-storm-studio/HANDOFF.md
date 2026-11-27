@@ -49,4 +49,7 @@ python3 backup.py         # fresh snapshot to ../backup/
 - No SEO plugin installed. GTM (GTM-W59NCNT) was output by the old theme and is gone with Hello, so it needs re-adding.
 - Privacy Policy and Terms pages don't exist (the footer links to them).
 - Clean-up done 2026-11-27: Kirki and Meta Box deleted; 127 broken media entries deleted. The user still needs to delete the Astra/Astra Child (Onum) themes in Appearance → Themes.
-- Visual QA: the user agreed to a short window (Under Construction off). Run `node tools/qa.js <outdir> <urls>` (needs `npm i axe-core` in the run dir) on temporarily published drafts, then set them back to draft.
+- Visual QA done 2026-11-27 (pages temporarily published as `/gss-qa-*/`, then set back to draft). On all 9 pages at 1440/1024/768/390px: 0px horizontal overflow, exactly 1 H1, **0 axe-core WCAG 2 A/AA violations**. Screenshots are in `qa-screenshots/`.
+  Fixes made during QA: violet CTA `#7C5CFF` → `#7052FF` (white text 4.35 → 4.84:1); container entrance animation key (`animation`, not `_animation`); Elementor's default 10px container padding set to 0; logo no-wrap; full-width buttons on mobile; footer column widths; FAQ content border.
+  Re-run: `node tools/qa.js <outdir> <urls>` and `node tools/a11y-probe.js <url>` (needs `npm i axe-core` in the run directory).
+- **The Under Construction plugin was removed by the user**, so the OLD pages are public again until launch (`tools/launch.py --go`).
