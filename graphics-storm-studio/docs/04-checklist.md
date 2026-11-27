@@ -25,9 +25,9 @@
 ## D. Clean-up (old Onum theme leftovers)
 | Item | Safe to remove? | Why |
 |---|---|---|
-| Themes **Astra** (v1.2.7 by OceanThemes) and **Astra Child** | ✅ Yes, after launch | They are actually the old Onum theme renamed (Onum 1.2.7). Inactive, outdated, and ship old jQuery plugins (a security risk if left installed). Also removes bootstrap.css, slick.css, flaticon.css, font-awesome.css, simple-likes-public.css, particles.js, isotope, magnific-popup and countdown |
-| **Kirki** | ✅ Yes | It was only the Onum theme's customizer framework |
-| **Meta Box** | ✅ Probably | Used by Onum for header/footer builder fields. Check that nothing else uses it |
+| Themes **Astra** (v1.2.7 by OceanThemes) and **Astra Child** | ✅ Approved: **delete in Appearance → Themes** (the REST API can't delete themes) | They are actually the old Onum theme renamed (Onum 1.2.7). Inactive, outdated, and ship old jQuery plugins (a security risk if left installed). Also removes bootstrap.css, slick.css, flaticon.css, font-awesome.css, simple-likes-public.css, particles.js, isotope, magnific-popup and countdown |
+| **Kirki** | ✔ **Deleted** 2026-11-27 | It was only the Onum theme's customizer framework |
+| **Meta Box** | ✔ **Deleted** 2026-11-27 | Used by Onum for header/footer builder fields. Check that nothing else uses it |
 | **Happy Elementor Addons** | ✅ After launch | Only the old pages use its widgets (gradient heading, CF7). The new build uses none |
 | **Essential Addons for Elementor** | ✅ After launch | Not used by the new build; loads CSS/JS on every page |
 | **Contact Form 7 + Country & Phone Field** | ✅ After launch | Replaced by the Elementor Pro Form (native styling, Submissions, honeypot, reCAPTCHA v3) |
@@ -35,7 +35,7 @@
 | **Under Construction** | ✅ After launch | |
 | `ot_header_builders` / `ot_footer_builders` posts (IDs 3050, 3069, 261) | ✅ | Orphaned Onum header/footer data, no longer rendered |
 | Old menus "Main Menu" (2), "Menu2" (6) | ✅ After launch | Replaced by GSS Main |
-| **127 Media Library items** (uploads 2022/2023) | ✅ | All 127 files return 404 (verified). The library entries are empty shells, so delete them and upload fresh images (section F) |
+| **127 Media Library items** (uploads 2022/2023) | ✔ **Deleted** 2026-11-27 (list in `backup/media.json`) | All 127 files return 404 (verified). The library entries are empty shells, so delete them and upload fresh images (section F) |
 | Legacy colours in Site Settings ("Legacy – …") | ✅ After launch | Only the old pages used them |
 | Customizer → Additional CSS of the old theme | ✅ | It no longer loads with Hello, so nothing to do. All CSS now lives in Site Settings → Custom CSS |
 | **Joinchat** | – | It is **not installed** (the old button was part of the old theme or code). The new design adds WhatsApp buttons natively (CTA band, Contact, footer). If you want a floating button, install Joinchat and set its colour to `#25D366` or violet |

@@ -48,4 +48,5 @@ python3 backup.py         # fresh snapshot to ../backup/
 - Facebook/LinkedIn URLs unknown (placeholders in the footer). Our Work project names and results are placeholders.
 - No SEO plugin installed. GTM (GTM-W59NCNT) was output by the old theme and is gone with Hello, so it needs re-adding.
 - Privacy Policy and Terms pages don't exist (the footer links to them).
-- Clean-up list awaiting the user's OK: `docs/04-checklist.md` § D.
+- Clean-up done 2026-11-27: Kirki and Meta Box deleted; 127 broken media entries deleted. The user still needs to delete the Astra/Astra Child (Onum) themes in Appearance → Themes.
+- Visual QA: the user agreed to a short window (Under Construction off). Run `node tools/qa.js <outdir> <urls>` (needs `npm i axe-core` in the run dir) on temporarily published drafts, then set them back to draft.
