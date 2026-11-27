@@ -157,26 +157,32 @@ def sec_why(head, html, eyebrow):
     return wrap(head, [inner], pad=(30, 32), pad_mobile=(24, 14))
 
 
-PHOTO_POOL = {  # workshop photos per page, best match first; hero + intro photos are skipped so nothing repeats on a page
-    'tires': ['busy-bee-auto-repair-storefront-calgary', 'busy-bee-service-bays-calgary', 'bmw-repair-calgary'],
-    'alignment': ['busy-bee-repair-bay-calgary', 'bmw-repair-calgary', 'mercedes-repair-calgary'],
-    'battery': ['engine-repair-audi-calgary', 'busy-bee-auto-repair-storefront-calgary', 'busy-bee-repair-bay-calgary'],
-    'electrical': ['engine-repair-audi-calgary', 'bmw-repair-calgary', 'busy-bee-repair-bay-calgary'],
-    'suspension': ['pickup-truck-repair-calgary', 'bmw-repair-calgary', 'busy-bee-repair-bay-calgary'],
-    'transmission': ['pickup-truck-repair-calgary', 'mercedes-repair-calgary', 'busy-bee-service-bays-calgary'],
-    'cooling': ['busy-bee-repair-bay-calgary', 'bmw-repair-calgary', 'busy-bee-service-bays-calgary'],
-    'maintenance': ['battery-alternator-service-calgary', 'brake-repair-calgary', 'busy-bee-service-bays-calgary'],
-    'engine': ['computer-diagnostics-calgary', 'pickup-truck-repair-calgary', 'busy-bee-service-bays-calgary'],
-    'brakes': ['busy-bee-repair-bay-calgary', 'pickup-truck-repair-calgary', 'busy-bee-service-bays-calgary'],
-    'oil': ['busy-bee-repair-bay-calgary', 'engine-repair-audi-calgary', 'busy-bee-service-bays-calgary'],
+GENERIC = ['busy-bee-repair-bay-calgary', 'busy-bee-service-bays-calgary', 'engine-repair-audi-calgary', 'pickup-truck-repair-calgary',
+           'bmw-repair-calgary', 'mercedes-repair-calgary', 'busy-bee-auto-repair-storefront-calgary',
+           'busy-bee-auto-repair-calgary-workshop-hero']
+PHOTO_POOL = {  # library photos per page, best match first (then the generic workshop shots); hero + intro photos are skipped so
+    # nothing repeats on a page.  Topic stock photos go at the front of these lists when they are added.
+    'tires': ['busy-bee-auto-repair-storefront-calgary', 'winter-tire-change-calgary', 'pickup-truck-repair-calgary'] + GENERIC,
+    'alignment': ['busy-bee-repair-bay-calgary', 'winter-tire-change-calgary', 'bmw-repair-calgary'] + GENERIC,
+    'battery': ['engine-repair-audi-calgary', 'computer-diagnostics-calgary', 'busy-bee-auto-repair-storefront-calgary'] + GENERIC,
+    'electrical': ['engine-repair-audi-calgary', 'battery-alternator-service-calgary', 'bmw-repair-calgary'] + GENERIC,
+    'suspension': ['pickup-truck-repair-calgary', 'brake-repair-calgary', 'bmw-repair-calgary'] + GENERIC,
+    'transmission': ['pickup-truck-repair-calgary', 'computer-diagnostics-calgary', 'mercedes-repair-calgary'] + GENERIC,
+    'cooling': ['busy-bee-repair-bay-calgary', 'computer-diagnostics-calgary', 'bmw-repair-calgary'] + GENERIC,
+    'maintenance': ['battery-alternator-service-calgary', 'brake-repair-calgary', 'mobil-1-synthetic-oil-change-calgary',
+                    'winter-tire-change-calgary', 'computer-diagnostics-calgary'] + GENERIC,
+    'engine': ['computer-diagnostics-calgary', 'pickup-truck-repair-calgary'] + GENERIC,
+    'brakes': ['busy-bee-repair-bay-calgary', 'pickup-truck-repair-calgary'] + GENERIC,
+    'oil': ['busy-bee-repair-bay-calgary', 'engine-repair-audi-calgary'] + GENERIC,
 }
 
 
 def dress(key, sections):
     """Give plain 'rich' sections a look: why-us band, photo (alternating sides) or editorial split, in rotation."""
     c, m = PAGES[key], META[key]
-    used = set(c['photos'][:1]) | {s[3] for s in sections if s[0] == 'rich' and len(s) > 3 and s[3]}
-    pool = [p for p in PHOTO_POOL.get(key, []) if p not in used]
+    hero = c['photos'][0]
+    used = {hero} | {s[3] for s in sections if s[0] == 'rich' and len(s) > 3 and s[3]}
+    pool = list(dict.fromkeys(p for p in PHOTO_POOL.get(key, []) if p not in used))
     eyebrow = m['label'].upper().replace('&', '&amp;')
     out, n, left = [], 0, False
     for s in sections:
@@ -189,6 +195,8 @@ def dress(key, sections):
             out.append(('why', head, html, eyebrow))
             continue
         ic = _icon_for(head, m['icon'])
+        if fixed == hero and pool:  # never show the hero photo twice on one page
+            fixed = pool.pop(0)
         if fixed:
             out.append(('photo', head, html, fixed, ic, eyebrow, left))
             left = not left
