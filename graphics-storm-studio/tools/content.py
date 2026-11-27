@@ -19,8 +19,8 @@ STATS = [(514, 'Projects delivered last month'), (180, 'Websites developed'), (1
 
 TESTIMONIALS = [  # from the old site (photos removed – they were hot-linked from another domain)
  ('Mr. James', 'Brand identity client', 'The brand guidelines and logos were absolutely fantastic! They have transformed my brand and will help me scale up for more business. Great communication and very speedy delivery – ahead of schedule.'),
- ('Anthony', 'Website client', 'Working with Mr. Fahad was very pleasant and professional. Communication was fast and I am more than satisfied with the result. Looking forward to the next project.'),
- ('Lisa P.', 'Marketing client', 'My first time working with Fahad and it has been a pleasure. Brief well met, clear communication and fast delivery. Not much more you can ask for.'),
+ ('Anthony', 'Website client', 'Working with [the team] was very pleasant and professional. Communication was fast and I am more than satisfied with the result. Looking forward to the next project.'),
+ ('Lisa P.', 'Marketing client', 'My first time working with [Graphics Storm Studio] and it has been a pleasure. Brief well met, clear communication and fast delivery. Not much more you can ask for.'),
  ('Patrick', 'Design client', 'Wonderful experience as always – so happy with the final product. Highly recommend!'),
 ]
 
