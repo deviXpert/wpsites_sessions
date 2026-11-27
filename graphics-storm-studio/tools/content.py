@@ -57,7 +57,7 @@ WHY = [
 
 SERVICE_PAGES = {
  'web': dict(
-  slug='website-development', title='Website Development',
+  slug='website-development', info='gss-website-development.svg', title='Website Development',
   meta_title='Website Development Services | Custom WordPress Websites – Graphics Storm Studio',
   meta_desc='Professional website development services: fast, mobile-friendly, SEO-ready WordPress websites that turn visitors into leads. Get a free quote today.',
   eyebrow='Website Development Services',
@@ -78,7 +78,7 @@ SERVICE_PAGES = {
        ('Will my website be mobile-friendly and SEO-ready?', 'Yes. Every website is responsive, speed-optimised and includes on-page SEO basics like titles, meta descriptions, headings and schema.'),
        ('Do you offer maintenance after launch?', 'Yes – every site includes 30 days of free support, and optional monthly care plans cover updates, backups and security.')]),
  'seo': dict(
-  slug='search-engine-optimization', title='Search Engine Optimization',
+  slug='search-engine-optimization', info='gss-seo-services.svg', title='Search Engine Optimization',
   meta_title='SEO Services That Rank | Search Engine Optimization Agency – Graphics Storm Studio',
   meta_desc='Results-driven SEO services: technical SEO, keyword research, content and local SEO that grow organic traffic and leads. Get your free SEO audit.',
   eyebrow='SEO Services',
@@ -99,7 +99,7 @@ SERVICE_PAGES = {
        ('Is local SEO included?', 'Yes. For businesses serving a local area we optimise your Google Business Profile, local citations and location pages.'),
        ('Will I own the content and reports?', 'Absolutely. All content, data and accounts are yours.')]),
  'smm': dict(
-  slug='social-media-marketing', title='Social Media Marketing',
+  slug='social-media-marketing', info='gss-social-media-marketing.svg', title='Social Media Marketing',
   meta_title='Social Media Marketing Agency | Content & Paid Social – Graphics Storm Studio',
   meta_desc='Social media marketing services for Instagram, Facebook, TikTok and LinkedIn: content creation, community management and paid ads that grow your brand.',
   eyebrow='Social Media Marketing',
@@ -120,7 +120,7 @@ SERVICE_PAGES = {
        ('How many posts per month do I get?', 'Plans are flexible – typically 12 to 30 pieces of content per month across your chosen platforms.'),
        ('Is ad spend included?', 'Ad spend is paid directly to the platform, so you keep full control and transparency. Our fee covers strategy, creative and management.')]),
  'design': dict(
-  slug='graphics-designing', title='Graphic Design',
+  slug='graphics-designing', info='gss-graphic-design.svg', title='Graphic Design',
   meta_title='Graphic Design & Logo Design Services | Graphics Storm Studio',
   meta_desc='Creative graphic design services: logo design, brand identity, social media graphics, print and packaging design that make your brand stand out.',
   eyebrow='Graphic Design Services',

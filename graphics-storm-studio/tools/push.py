@@ -42,3 +42,12 @@ def part(key, ptype, title, elements, conditions=None):
             'meta': {'_elementor_data': json.dumps(elements), '_elementor_edit_mode': 'builder'}})
     print(key, pid, 'saved' if 'id' in r else r, el.count(elements))
     return pid
+
+
+def live(orig_id, elements):
+    """Update a PUBLISHED page in place (post-launch). Saves through Elementor so CSS regenerates."""
+    el.finalize(elements)
+    r = wp.req(f'wp/v2/pages/{orig_id}', 'POST', {'meta': {'_elementor_data': json.dumps(elements)}})
+    s = wp.ability('elementor/update-page-settings', {'post_id': orig_id, 'settings': {'hide_title': 'yes'}})
+    if s.get('staged'): wp.ability('elementor/publish-document', {'post_id': orig_id}, 'DELETE')
+    print('live', orig_id, 'saved' if 'id' in r else r, el.count(elements))

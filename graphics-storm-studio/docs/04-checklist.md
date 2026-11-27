@@ -73,6 +73,7 @@
 - The homepage slug is `xa-interactive-inc` (an old leftover). It's the front page, so the URL is `/` and the slug doesn't matter. Optionally rename it to `home`.
 
 ## H. Security
+- Elementor **Enable Unfiltered File Uploads** is ON (needed for the SVG infographics). Elementor sanitises SVGs and only admins can upload them. You can switch it off again once all SVGs are uploaded; the existing ones keep working.
 - Keep everything updated, and remove the unused plugins and themes (section D).
 - SiteGround **Security Optimizer** (already active): enable *Disable XML-RPC*, *Lock system folders*, *Disable themes/plugins editor*, *Hide WordPress version*, **2-Factor Authentication for admins**, and *Login attempts limit*.
 - `/wp-json/wp/v2/users` is already blocked (403 ✔).

@@ -10,6 +10,37 @@ import content as K
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, '..', 'templates')
 
+# ------------------------------------------------------------------ infographics (animated SVG in native Image widgets)
+import gfx
+def _media():
+    try: return json.load(open(os.path.join(HERE, 'created.json'))).get('media', {})
+    except Exception: return {}
+INFO_ALT = {'gss-growth-engine.svg': 'Infographic: website development, SEO, social media marketing and graphic design working together as one growth engine to deliver more leads and revenue',
+            'gss-website-development.svg': 'Infographic: responsive website built for desktop and mobile with a 98 PageSpeed score',
+            'gss-seo-services.svg': 'Infographic: your website climbing to the number one Google result with organic traffic up 214 percent',
+            'gss-social-media-marketing.svg': 'Infographic: social media post gaining likes, followers and leads with growing reach and engagement',
+            'gss-graphic-design.svg': 'Infographic: logo being designed with the pen tool, brand colour palette and typography'}
+def INFO(name, label):
+    m = _media().get(name)
+    img = {'url': m['url'], 'id': m['id'], 'alt': INFO_ALT[name], 'source': 'library'} if m else {'url': el.PLACEHOLDER, 'id': '', 'alt': INFO_ALT[name], 'source': 'library'}
+    return W('image', f'Infographic – {label} (animated SVG)', image=img, image_size='full', width=px(100, '%'), align='center',
+             caption_source='none', image_border_radius=dims(18))
+
+def info_panel(name, label):
+    return GLASS(f'Infographic Panel – {label}', [INFO(name, label)], strong=True, pad=(20, 16, 12), radius=24)
+
+def growth_engine_section(bg='a'):
+    return SECTION('Growth Engine', [ROW('Engine Row', [
+        COL('Engine Copy', [EYEBROW('One team · one strategy'),
+                            H('Four Services. One <span>Growth Engine.</span>', 'h2', name='Engine Title'),
+                            P('Your website, SEO, social media and branding should not work in silos. We plan them together, so every channel feeds the next – and every click has a better chance of becoming a customer.', 'gslead', name='Engine Text'),
+                            ICONLIST(['Website converts the traffic SEO and social bring in', 'SEO compounds free, high-intent visitors every month',
+                                      'Social media builds awareness, trust and retargeting audiences', 'Design keeps your brand consistent and memorable everywhere'],
+                                     name='Engine Checklist'),
+                            BTN('Get a Free Growth Plan', K.URL['contact'])], w=42, wt=100, gap_=22),
+        COL('Engine Visual', [info_panel('gss-growth-engine.svg', 'Growth Engine')], w=58, wt=100)],
+        gap_=56, stack='tablet', align='center')], bg=bg)
+
 # ------------------------------------------------------------------ shared blocks
 def logo():
     return H('Graphics <span>Storm</span> Studio', 'div', 'gsh4', name='Logo (text) – swap for Site Logo widget after upload',
@@ -190,7 +221,7 @@ def home(ids=None):
                           BTN('Ask Us Anything', K.URL['contact'], 'ghost', 'fas fa-comments')], w=38, wt=100, gap_=20),
         COL('FAQ List', [FAQ(K.HOME_FAQ)], w=62, wt=100)], gap_=56, stack='tablet')], bg='c')
 
-    return [hero, services, why, proc, testi, faq, cta(ids)]
+    return [hero, services, growth_engine_section('a'), why, proc, testi, faq, cta(ids)]
 
 def about(ids=None):
     el.seed('about'); A = K.ABOUT
@@ -224,7 +255,9 @@ def service(key, ids=None):
         COL('Hero Panel', [GLASS('What’s Included', [H('What’s included', 'h2', 'gsh3', name='Included Title'), ICONLIST(S['included'], name='Included List')],
                                  strong=True, pad=(32, 28, 24), radius=24)], w=44, wt=100)], gap_=56, stack='tablet', align='center')], bg='a', pad=(96, 72, 48))
     benefits = SECTION('Benefits', [section_head('Why it matters', f'Why Invest in Professional <span>{S["title"]}</span>?'),
-                                    GRID('Benefits Grid', [GLASS(f'Benefit – {t}', [ICONBOX(i, t, d)], hover=True) for i, t, d in S['benefits']], 3, 3, 1)], bg='b')
+                                    ROW('Benefits Row', [COL('Infographic', [info_panel(S['info'], S['title'])], w=55, wt=100),
+                                                         COL('Benefits List', [GLASS(f'Benefit – {t}', [ICONBOX(i, t, d, position='left', position_mobile='top', icon_size=px(22), icon_padding=px(14))], hover=True, pad=(24, 22, 20)) for i, t, d in S['benefits']], w=45, wt=100, gap_=18)],
+                                        gap_=40, stack='tablet', align='center')], bg='b')
     features = SECTION('Features', [section_head('Our services', f'{S["title"]} Services <span>We Offer</span>',
                                                  'Everything you need, delivered by specialists – pick a single service or a complete package.'),
                                     GRID('Features Grid', [GLASS(f'Feature – {t}', [ICONBOX(i, t, d)], hover=True) for i, t, d in S['features']], 3, 2, 1)], bg='c')
@@ -243,6 +276,7 @@ def services_hub(ids=None):
     return [page_hero('Our services', 'Digital Marketing Services That <span>Drive Growth</span>',
                       'Website development, SEO services, social media marketing and graphic design – one expert team, one clear strategy, measurable results.'),
             SECTION('Services', [service_cards(tag='h2')], bg='b'),
+            growth_engine_section('a'),
             SECTION('Process', [section_head('How we work', 'A Simple 4-Step <span>Process</span>'), process(), stats_band()], bg='c', gap_=56),
             cta(ids)]
 

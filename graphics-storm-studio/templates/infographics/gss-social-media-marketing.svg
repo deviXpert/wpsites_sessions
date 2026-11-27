@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" width="600" height="460" role="img" aria-labelledby="t d">
+<title id="t">Social media marketing infographic</title><desc id="d">Animated infographic: a social media post collecting likes, new followers and leads, with reach, engagement and leads bars growing.</desc>
+<defs>
+<linearGradient id="gBV" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0684C4"/><stop offset="1" stop-color="#7052FF"/></linearGradient>
+<linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5DB0D8"/><stop offset=".5" stop-color="#0684C4"/><stop offset="1" stop-color="#9D86FF"/></linearGradient>
+<linearGradient id="gBar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#0684C4"/><stop offset="1" stop-color="#9D86FF"/></linearGradient>
+<radialGradient id="glowV"><stop offset="0" stop-color="#7052FF" stop-opacity=".45"/><stop offset="1" stop-color="#7052FF" stop-opacity="0"/></radialGradient>
+<radialGradient id="glowB"><stop offset="0" stop-color="#0684C4" stop-opacity=".45"/><stop offset="1" stop-color="#0684C4" stop-opacity="0"/></radialGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity=".55"/></filter>
+</defs>
+<style>
+text{font-family:'Sora','Inter','Segoe UI',Roboto,Arial,sans-serif;fill:#fff} .m{fill:#C9D3E8} .s{fill:#93A1BF} .a{fill:#5DB0D8}
+.glass{fill:rgba(255,255,255,.07);stroke:rgba(255,255,255,.18);stroke-width:1}
+.glass2{fill:rgba(255,255,255,.11);stroke:rgba(255,255,255,.22);stroke-width:1}
+.flow{fill:none;stroke:url(#gSky);stroke-width:2;stroke-dasharray:5 9;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+.float{animation:float 5s ease-in-out infinite} @keyframes float{50%{transform:translateY(-6px)}}
+.grow{transform-box:fill-box;transform-origin:bottom;animation:grow 4s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes grow{0%{transform:scaleY(.08)}35%,85%{transform:scaleY(1)}100%{transform:scaleY(.08)}}
+.draw{stroke-dasharray:600;stroke-dashoffset:600;animation:draw 5s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:600}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:600}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 5s ease-in-out infinite}
+@keyframes pop{0%,8%{transform:scale(0);opacity:0}16%,88%{transform:scale(1);opacity:1}100%{transform:scale(0);opacity:0}}
+.heart{animation:heart 3.2s ease-out infinite;opacity:0}
+@keyframes heart{0%{transform:translate(0,0) scale(.6);opacity:0}15%{opacity:1}100%{transform:translate(var(--x,0px),-150px) scale(1.15);opacity:0}}
+.like{transform-box:fill-box;transform-origin:center;animation:like 3.2s ease-in-out infinite}
+@keyframes like{0%,20%{transform:scale(1)}28%{transform:scale(1.35)}36%,100%{transform:scale(1)}}.grow2{transform-box:fill-box;transform-origin:left;animation:grow2 4.5s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes grow2{0%{transform:scaleX(.05)}40%,85%{transform:scaleX(1)}100%{transform:scaleX(.05)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important} .draw{stroke-dashoffset:0} .pop{transform:none;opacity:1}}
+</style>
+
+<g filter="url(#soft)"><rect class="glass2" x="216" y="34" width="168" height="340" rx="28"/></g>
+<rect x="286" y="46" width="28" height="6" rx="3" fill="rgba(255,255,255,.3)"/>
+<circle cx="242" cy="78" r="11" fill="url(#gBV)"/><text x="260" y="76" font-size="10.5" font-weight="700">yourbrand</text><text class="s" x="260" y="88" font-size="8.5">Sponsored</text>
+<rect x="230" y="98" width="140" height="150" rx="14" fill="url(#gBV)" opacity=".8"/>
+<circle cx="300" cy="160" r="30" fill="rgba(255,255,255,.18)"/><path d="M288 176l12-26 12 26z" fill="rgba(255,255,255,.55)"/>
+<g class="like" transform="translate(246 270) scale(.75)"><g fill="none" stroke="#FF6B9A" stroke-width="2" stroke-linejoin="round"><path d="M0 9s-11-6.5-11-13.5A5.5 5.5 0 0 1 0 -8a5.5 5.5 0 0 1 11 3.5C11 2.5 0 9 0 9z"/></g></g>
+<text x="262" y="274" font-size="11" font-weight="700">2,481 likes</text>
+<rect x="232" y="286" width="120" height="7" rx="3.5" fill="rgba(255,255,255,.15)"/><rect x="232" y="300" width="90" height="7" rx="3.5" fill="rgba(255,255,255,.1)"/>
+<g class="heart" style="animation-delay:0.00s;--x:-30px"><g transform="translate(290 300)"><path d="M0 9s-11-6.5-11-13.5A5.5 5.5 0 0 1 0 -8a5.5 5.5 0 0 1 11 3.5C11 2.5 0 9 0 9z" fill="#FF6B9A"/></g></g><g class="heart" style="animation-delay:0.55s;--x:24px"><g transform="translate(308 300)"><path d="M0 9s-11-6.5-11-13.5A5.5 5.5 0 0 1 0 -8a5.5 5.5 0 0 1 11 3.5C11 2.5 0 9 0 9z" fill="#FF6B9A"/></g></g><g class="heart" style="animation-delay:1.10s;--x:-10px"><g transform="translate(296 300)"><path d="M0 9s-11-6.5-11-13.5A5.5 5.5 0 0 1 0 -8a5.5 5.5 0 0 1 11 3.5C11 2.5 0 9 0 9z" fill="#FF6B9A"/></g></g><g class="heart" style="animation-delay:1.65s;--x:40px"><g transform="translate(313 300)"><path d="M0 9s-11-6.5-11-13.5A5.5 5.5 0 0 1 0 -8a5.5 5.5 0 0 1 11 3.5C11 2.5 0 9 0 9z" fill="#FF6B9A"/></g></g><g class="heart" style="animation-delay:2.20s;--x:-44px"><g transform="translate(285 300)"><path d="M0 9s-11-6.5-11-13.5A5.5 5.5 0 0 1 0 -8a5.5 5.5 0 0 1 11 3.5C11 2.5 0 9 0 9z" fill="#FF6B9A"/></g></g><g class="heart" style="animation-delay:2.75s;--x:8px"><g transform="translate(302 300)"><path d="M0 9s-11-6.5-11-13.5A5.5 5.5 0 0 1 0 -8a5.5 5.5 0 0 1 11 3.5C11 2.5 0 9 0 9z" fill="#FF6B9A"/></g></g>
+<g class="float"><g filter="url(#soft)"><rect class="glass2" x="424" y="112" width="160" height="200" rx="18"/></g><text class="m" x="440" y="150" font-size="11.5" font-weight="600">Reach</text>
+<rect x="440" y="160" width="130" height="12" rx="6" fill="rgba(255,255,255,.1)"/>
+<rect class="grow2" style="animation-delay:0.0s" x="440" y="160" width="128" height="12" rx="6" fill="url(#gSky)"/><text class="m" x="440" y="212" font-size="11.5" font-weight="600">Engagement</text>
+<rect x="440" y="222" width="130" height="12" rx="6" fill="rgba(255,255,255,.1)"/>
+<rect class="grow2" style="animation-delay:0.4s" x="440" y="222" width="104" height="12" rx="6" fill="url(#gSky)"/><text class="m" x="440" y="274" font-size="11.5" font-weight="600">Leads</text>
+<rect x="440" y="284" width="130" height="12" rx="6" fill="rgba(255,255,255,.1)"/>
+<rect class="grow2" style="animation-delay:0.8s" x="440" y="284" width="84" height="12" rx="6" fill="url(#gSky)"/></g>
+<g class="float" style="animation-delay:1s"><g class="pop" style="animation-delay:.8s"><g filter="url(#soft)"><rect class="glass2" x="24" y="96" width="166" height="54" rx="16"/></g>
+<circle cx="50" cy="123" r="13" fill="#7052FF"/><text x="50" y="128" text-anchor="middle" font-size="13" font-weight="800">+</text>
+<text x="72" y="119" font-size="11.5" font-weight="700">New followers</text><text class="a" x="72" y="135" font-size="11" font-weight="600">+1,240 this month</text></g></g>
+<g class="float" style="animation-delay:2s"><g class="pop" style="animation-delay:1.8s"><g filter="url(#soft)"><rect class="glass2" x="24" y="246" width="166" height="54" rx="16"/></g>
+<circle cx="50" cy="273" r="13" fill="#0684C4"/><text x="50" y="277" text-anchor="middle" font-size="11" font-weight="800">✉</text>
+<text x="72" y="269" font-size="11.5" font-weight="700">New lead</text><text class="a" x="72" y="285" font-size="11" font-weight="600">from Instagram ad</text></g></g>
+<g class="pop" style="animation-delay:2.4s"><rect x="210" y="396" width="180" height="34" rx="17" fill="#7052FF"/><text x="300" y="418" text-anchor="middle" font-size="12.5" font-weight="700">▲ 3× reach in 90 days</text></g>
+</svg>

@@ -11,5 +11,27 @@
  "design": 5733,
  "services": 5735,
  "work": 5737,
- "contact": 5739
+ "contact": 5739,
+ "media": {
+  "gss-growth-engine.svg": {
+   "id": 5836,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-growth-engine.svg"
+  },
+  "gss-website-development.svg": {
+   "id": 5837,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-website-development.svg"
+  },
+  "gss-seo-services.svg": {
+   "id": 5838,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-seo-services.svg"
+  },
+  "gss-social-media-marketing.svg": {
+   "id": 5839,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-social-media-marketing.svg"
+  },
+  "gss-graphic-design.svg": {
+   "id": 5840,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-graphic-design.svg"
+  }
+ }
 }
