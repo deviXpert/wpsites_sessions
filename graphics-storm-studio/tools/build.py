@@ -274,7 +274,7 @@ def about(ids=None):
                             GRID('Team Grid', [GLASS(f'Team – {n}', [IMG(f'team-{n.split()[0].lower()}.webp', '600×600 square headshot', f'{n}, {r} at Graphics Storm Studio', radius=16),
                                                                     H(n, 'h3', 'gsh4', name='Name'), P(r, 'gssmall', 'accent', name='Role')], pad=(16, 16, 16), hover=True, flex_gap=gap(10))
                                                for n, r in A['team']], 5, 3, 2, 20)], bg='b')
-    return [hero, story, ceo, values, team, cta(ids)]
+    return [hero, story, ceo, values, cta(ids)]   # team section removed at client request (no team photos)
 
 def service(key, ids=None):
     el.seed('svc-' + key); S = K.SERVICE_PAGES[key]
