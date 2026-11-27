@@ -6,7 +6,7 @@ Design: dark navy glassmorphism, brand blue `#0684C4` + violet CTA `#7052FF`, So
 ## ⚠️ Before doing anything in a new session
 1. Credentials come from env vars only: `GSS_WP_URL/GSS_WP_USER/GSS_WP_APP_PASSWORD` (preferred) or `WP_URL/WP_USER/WP_APP_PASSWORD`. Never paste them in chat.
 2. `tools/wp.py` **refuses to run unless the host is graphicsstormstudio.com** (other clients live in this repo).
-3. The redesign is built as **drafts**. Never overwrite the original published pages until the user approves (`tools/launch.py --go`).
+3. **LAUNCHED 2026-11-27.** The redesign now lives in the ORIGINAL page IDs (21, 2738, 5429, 5607, 5516, 5562, 4213, 4569, 2802), the header and footer are Entire Site, and the drafts are trashed. The user may now edit in Elementor, so fetch live `_elementor_data` and patch it; don't regenerate from `build.py` without the user's OK. The pre-redesign backup is in the first commit of `backup/` (git history).
 4. The site is behind the *Under Construction* plugin (user-enabled), which blocks anonymous front-end views, including CSS generation for drafts.
 
 ## Deliverables
@@ -52,4 +52,5 @@ python3 backup.py         # fresh snapshot to ../backup/
 - Visual QA done 2026-11-27 (pages temporarily published as `/gss-qa-*/`, then set back to draft). On all 9 pages at 1440/1024/768/390px: 0px horizontal overflow, exactly 1 H1, **0 axe-core WCAG 2 A/AA violations**. Screenshots are in `qa-screenshots/`.
   Fixes made during QA: violet CTA `#7C5CFF` → `#7052FF` (white text 4.35 → 4.84:1); container entrance animation key (`animation`, not `_animation`); Elementor's default 10px container padding set to 0; logo no-wrap; full-width buttons on mobile; footer column widths; FAQ content border.
   Re-run: `node tools/qa.js <outdir> <urls>` and `node tools/a11y-probe.js <url>` (needs `npm i axe-core` in the run directory).
-- **The Under Construction plugin was removed by the user**, so the OLD pages are public again until launch (`tools/launch.py --go`).
+- Post-launch live QA (9 live URLs × 4 widths): 0 overflow, 1 H1, 0 axe WCAG A/AA violations, nothing stuck invisible.
+- Still to do (user): images, Our Work projects, Facebook/LinkedIn URLs, reCAPTCHA v3 keys + test forms, SEO plugin + metas, re-add GTM, Privacy/Terms pages, remove Happy Addons / Essential Addons / CF7 + phone field (unused, still loading assets), turn on Elementor performance features, revoke the application password.
