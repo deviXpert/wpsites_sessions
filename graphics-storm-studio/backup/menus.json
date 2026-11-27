@@ -1,5 +1,52 @@
 [
  {
+  "id": 9,
+  "description": "",
+  "name": "GSS Main",
+  "slug": "gss-main",
+  "meta": [],
+  "locations": [],
+  "auto_add": false,
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/menus/9",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/menus"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/taxonomies/nav_menu"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/menu-items?menus=9"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
   "id": 2,
   "description": "",
   "name": "Main Menu",

@@ -231,72 +231,6 @@
   }
  },
  {
-  "plugin": "kirki/kirki",
-  "status": "active",
-  "name": "Kirki",
-  "plugin_uri": "https://kirki.com",
-  "author": "Kirki",
-  "author_uri": "https://kirki.com",
-  "description": {
-   "raw": "Kirki is an all-in-one no-code builder that empowers users to build professional-grade WordPress sites without writing any code. It\u2019s a promising glimpse into the future of website development.",
-   "rendered": "Kirki is an all-in-one no-code builder that empowers users to build professional-grade WordPress sites without writing any code. It\u2019s a promising glimpse into the future of website development. <cite>By <a href=\"https://kirki.com\">Kirki</a>.</cite>"
-  },
-  "version": "6.4.3",
-  "network_only": false,
-  "requires_wp": "5.9",
-  "requires_php": "7.4",
-  "textdomain": "kirki",
-  "_links": {
-   "self": [
-    {
-     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/kirki/kirki",
-     "targetHints": {
-      "allow": [
-       "GET",
-       "POST",
-       "PUT",
-       "PATCH",
-       "DELETE"
-      ]
-     }
-    }
-   ]
-  }
- },
- {
-  "plugin": "meta-box/meta-box",
-  "status": "active",
-  "name": "Meta Box",
-  "plugin_uri": "https://metabox.io",
-  "author": "MetaBox.io",
-  "author_uri": "https://metabox.io",
-  "description": {
-   "raw": "Create custom meta boxes and custom fields in WordPress.",
-   "rendered": "Create custom meta boxes and custom fields in WordPress. <cite>By <a href=\"https://metabox.io\">MetaBox.io</a>.</cite>"
-  },
-  "version": "5.15.5",
-  "network_only": false,
-  "requires_wp": "6.7",
-  "requires_php": "7.4",
-  "textdomain": "meta-box",
-  "_links": {
-   "self": [
-    {
-     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/meta-box/meta-box",
-     "targetHints": {
-      "allow": [
-       "GET",
-       "POST",
-       "PUT",
-       "PATCH",
-       "DELETE"
-      ]
-     }
-    }
-   ]
-  }
- },
- {
   "plugin": "sg-security/sg-security",
   "status": "active",
   "name": "Security Optimizer",
@@ -349,39 +283,6 @@
    "self": [
     {
      "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/tidio-live-chat/tidio-elements",
-     "targetHints": {
-      "allow": [
-       "GET",
-       "POST",
-       "PUT",
-       "PATCH",
-       "DELETE"
-      ]
-     }
-    }
-   ]
-  }
- },
- {
-  "plugin": "under-construction-page/under-construction",
-  "status": "active",
-  "name": "Under Construction",
-  "plugin_uri": "https://underconstructionpage.com/",
-  "author": "WebFactory Ltd",
-  "author_uri": "https://www.webfactoryltd.com/",
-  "description": {
-   "raw": "Put your site behind a great looking under construction, coming soon, maintenance mode or landing page.",
-   "rendered": "Put your site behind a great looking under construction, coming soon, maintenance mode or landing page. <cite>By <a href=\"https://www.webfactoryltd.com/\">WebFactory Ltd</a>.</cite>"
-  },
-  "version": "5.83",
-  "network_only": false,
-  "requires_wp": "4.0",
-  "requires_php": "5.2",
-  "textdomain": "under-construction-page",
-  "_links": {
-   "self": [
-    {
-     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/plugins/under-construction-page/under-construction",
      "targetHints": {
       "allow": [
        "GET",

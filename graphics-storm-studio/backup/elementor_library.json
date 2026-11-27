@@ -1,5 +1,361 @@
 [
  {
+  "id": 5721,
+  "date": "2026-11-25T20:12:44",
+  "date_gmt": "2026-11-25T20:12:44",
+  "guid": {
+   "rendered": "https://graphicsstormstudio.com/?post_type=elementor_library&#038;p=5721",
+   "raw": "https://graphicsstormstudio.com/?post_type=elementor_library&#038;p=5721"
+  },
+  "modified": "2026-11-27T10:39:19",
+  "modified_gmt": "2026-11-27T10:39:19",
+  "password": "",
+  "slug": "gs-cta-band",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://graphicsstormstudio.com/?elementor_library=gs-cta-band",
+  "title": {
+   "raw": "GS \u2013 CTA Band",
+   "rendered": "GS \u2013 CTA Band"
+  },
+  "author": 2,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "section",
+   "_elementor_data": "[{\"id\": \"6b9663d\", \"elType\": \"container\", \"isInner\": false, \"settings\": {\"content_width\": \"full\", \"html_tag\": \"section\", \"flex_direction\": \"column\", \"padding\": {\"unit\": \"px\", \"top\": \"40\", \"right\": \"0\", \"bottom\": \"40\", \"left\": \"0\", \"isLinked\": false}, \"padding_tablet\": {\"unit\": \"px\", \"top\": \"32\", \"right\": \"0\", \"bottom\": \"32\", \"left\": \"0\", \"isLinked\": false}, \"padding_mobile\": {\"unit\": \"px\", \"top\": \"24\", \"right\": \"0\", \"bottom\": \"24\", \"left\": \"0\", \"isLinked\": false}, \"_title\": \"CTA Band\"}, \"elements\": [{\"id\": \"027ffa4\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"content_width\": \"boxed\", \"flex_direction\": \"column\", \"flex_gap\": {\"column\": \"48\", \"row\": \"48\", \"isLinked\": true, \"unit\": \"px\", \"size\": 48}, \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"24\", \"bottom\": \"0\", \"left\": \"24\", \"isLinked\": false}, \"padding_mobile\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"16\", \"bottom\": \"0\", \"left\": \"16\", \"isLinked\": false}, \"_title\": \"CTA Band \\u2013 Inner\"}, \"elements\": [{\"id\": \"637acd4\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"flex_align_items\": \"center\", \"flex_gap\": {\"column\": \"18\", \"row\": \"18\", \"isLinked\": true, \"unit\": \"px\", \"size\": 18}, \"flex_direction\": \"column\", \"background_background\": \"gradient\", \"border_border\": \"solid\", \"border_width\": {\"unit\": \"px\", \"top\": \"1\", \"right\": \"1\", \"bottom\": \"1\", \"left\": \"1\", \"isLinked\": true}, \"border_radius\": {\"unit\": \"px\", \"top\": \"28\", \"right\": \"28\", \"bottom\": \"28\", \"left\": \"28\", \"isLinked\": true}, \"box_shadow_box_shadow_type\": \"yes\", \"box_shadow_box_shadow\": {\"horizontal\": 0, \"vertical\": 20, \"blur\": 50, \"spread\": 0, \"color\": \"rgba(2,6,23,0.45)\"}, \"padding\": {\"unit\": \"px\", \"top\": \"64\", \"right\": \"64\", \"bottom\": \"64\", \"left\": \"64\", \"isLinked\": true}, \"padding_tablet\": {\"unit\": \"px\", \"top\": \"48\", \"right\": \"48\", \"bottom\": \"48\", \"left\": \"48\", \"isLinked\": true}, \"padding_mobile\": {\"unit\": \"px\", \"top\": \"32\", \"right\": \"32\", \"bottom\": \"32\", \"left\": \"32\", \"isLinked\": true}, \"css_classes\": \"gs-glass--strong\", \"__globals__\": {\"border_color\": \"globals/colors?id=gsline\"}, \"_title\": \"CTA Panel\", \"content_width\": \"full\", \"background_color\": \"rgba(124,92,255,0.22)\", \"background_color_b\": \"rgba(6,132,196,0.18)\", \"background_gradient_angle\": {\"unit\": \"deg\", \"size\": 135, \"sizes\": []}}, \"elements\": [{\"id\": \"cc3e752\", \"elType\": \"widget\", \"widgetType\": \"heading\", \"settings\": {\"title\": \"Free strategy call\", \"header_size\": \"p\", \"align\": \"center\", \"__globals__\": {\"typography_typography\": \"globals/typography?id=gseyebrow\", \"title_color\": \"globals/colors?id=accent\"}, \"_title\": \"Eyebrow \\u2013 Free strategy call\"}, \"elements\": []}, {\"id\": \"9d6639a\", \"elType\": \"widget\", \"widgetType\": \"heading\", \"settings\": {\"title\": \"Ready to Grow Your Business <span>Online?</span>\", \"header_size\": \"h2\", \"align\": \"center\", \"_css_classes\": \"gs-grad\", \"__globals__\": {\"typography_typography\": \"globals/typography?id=gsh2\", \"title_color\": \"globals/colors?id=gswhite\"}, \"_title\": \"CTA Title\"}, \"elements\": []}, {\"id\": \"3bb6918\", \"elType\": \"widget\", \"widgetType\": \"text-editor\", \"settings\": {\"editor\": \"<p>Book a free, no-obligation strategy call. We will review your website, SEO and social media and show you exactly where your next customers will come from.</p>\", \"align\": \"center\", \"_element_width\": \"initial\", \"_element_custom_width\": {\"unit\": \"px\", \"size\": 680, \"sizes\": []}, \"_element_custom_width_tablet\": {\"unit\": \"%\", \"size\": 100, \"sizes\": []}, \"__globals__\": {\"typography_typography\": \"globals/typography?id=gslead\", \"text_color\": \"globals/colors?id=text\"}, \"_title\": \"CTA Text\"}, \"elements\": []}, {\"id\": \"041884c\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"flex_wrap\": \"wrap\", \"flex_direction_mobile\": \"column\", \"flex_align_items_mobile\": \"stretch\", \"flex_direction\": \"row\", \"flex_gap\": {\"column\": \"14\", \"row\": \"14\", \"isLinked\": true, \"unit\": \"px\", \"size\": 14}, \"flex_align_items\": \"center\", \"flex_justify_content\": \"center\", \"_title\": \"CTA Buttons\", \"content_width\": \"full\", \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": true}}, \"elements\": [{\"id\": \"b4eca89\", \"elType\": \"widget\", \"widgetType\": \"button\", \"settings\": {\"text\": \"Get a Free Proposal\", \"link\": {\"url\": \"/contact-us/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}, \"size\": \"md\", \"hover_animation\": \"float\", \"selected_icon\": {\"value\": \"fas fa-arrow-right\", \"library\": \"fa-solid\"}, \"icon_align\": \"row-reverse\", \"icon_indent\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"align_mobile\": \"justify\", \"_title\": \"Button \\u2013 Get a Free Proposal\"}, \"elements\": []}, {\"id\": \"c1f1f17\", \"elType\": \"widget\", \"widgetType\": \"button\", \"settings\": {\"text\": \"Chat on WhatsApp\", \"link\": {\"url\": \"https://wa.me/18128182053\", \"is_external\": \"on\", \"nofollow\": \"\", \"custom_attributes\": \"rel|noopener noreferrer\"}, \"size\": \"md\", \"hover_animation\": \"float\", \"selected_icon\": {\"value\": \"fab fa-whatsapp\", \"library\": \"fa-solid\"}, \"icon_align\": \"row-reverse\", \"icon_indent\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"border_border\": \"solid\", \"border_width\": {\"unit\": \"px\", \"top\": \"1\", \"right\": \"1\", \"bottom\": \"1\", \"left\": \"1\", \"isLinked\": true}, \"align_mobile\": \"justify\", \"button_box_shadow_box_shadow_type\": \"yes\", \"button_box_shadow_box_shadow\": {\"horizontal\": 0, \"vertical\": 0, \"blur\": 0, \"spread\": 0, \"color\": \"rgba(0,0,0,0)\"}, \"__globals__\": {\"background_color\": \"globals/colors?id=gsglass2\", \"border_color\": \"globals/colors?id=gsline\", \"button_text_color\": \"globals/colors?id=gswhite\", \"button_background_hover_color\": \"globals/colors?id=gswhite\", \"hover_color\": \"globals/colors?id=gsnavy\"}, \"_title\": \"Button \\u2013 Chat on WhatsApp\"}, \"elements\": []}]}]}]}]}]",
+   "_elementor_page_settings": {
+    "hide_title": "yes"
+   },
+   "_elementor_conditions": []
+  },
+  "permalink_template": "https://graphicsstormstudio.com/?elementor_library=gs-cta-band",
+  "generated_slug": "gs-cta-band",
+  "class_list": [
+   "post-5721",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5721",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/users/2"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 3,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5721/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 5751,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5721/revisions/5751"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/media?parent=5721"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5721"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5721"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5721"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 5717,
+  "date": "2026-11-25T20:12:43",
+  "date_gmt": "2026-11-25T20:12:43",
+  "guid": {
+   "rendered": "https://graphicsstormstudio.com/?post_type=elementor_library&#038;p=5717",
+   "raw": "https://graphicsstormstudio.com/?post_type=elementor_library&#038;p=5717"
+  },
+  "modified": "2026-11-27T10:39:17",
+  "modified_gmt": "2026-11-27T10:39:17",
+  "password": "",
+  "slug": "gs-header-sticky-glass",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://graphicsstormstudio.com/?elementor_library=gs-header-sticky-glass",
+  "title": {
+   "raw": "GS \u2013 Header (Sticky Glass)",
+   "rendered": "GS \u2013 Header (Sticky Glass)"
+  },
+  "author": 2,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "header",
+   "_elementor_data": "[{\"id\": \"5e8a2c4\", \"elType\": \"container\", \"isInner\": false, \"settings\": {\"html_tag\": \"header\", \"css_classes\": \"gs-glass-header\", \"sticky\": \"top\", \"sticky_on\": [\"desktop\", \"tablet\", \"mobile\"], \"sticky_effects_offset\": 60, \"background_background\": \"classic\", \"z_index\": 99, \"__globals__\": {\"background_color\": \"globals/colors?id=gstransparent\"}, \"_title\": \"Header \\u2013 Sticky Glass\", \"content_width\": \"full\", \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": true}}, \"elements\": [{\"id\": \"740389a\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"content_width\": \"boxed\", \"flex_direction\": \"row\", \"flex_align_items\": \"center\", \"flex_justify_content\": \"space-between\", \"flex_wrap\": \"nowrap\", \"padding\": {\"unit\": \"px\", \"top\": \"14\", \"right\": \"24\", \"bottom\": \"14\", \"left\": \"24\", \"isLinked\": false}, \"padding_mobile\": {\"unit\": \"px\", \"top\": \"12\", \"right\": \"16\", \"bottom\": \"12\", \"left\": \"16\", \"isLinked\": false}, \"flex_gap\": {\"column\": \"24\", \"row\": \"24\", \"isLinked\": true, \"unit\": \"px\", \"size\": 24}, \"_title\": \"Header Bar\"}, \"elements\": [{\"id\": \"1d3024d\", \"elType\": \"widget\", \"widgetType\": \"heading\", \"settings\": {\"title\": \"Graphics <span>Storm</span> Studio\", \"header_size\": \"div\", \"link\": {\"url\": \"/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}, \"_css_classes\": \"gs-grad gs-grad\", \"_element_width\": \"auto\", \"_flex_size\": \"none\", \"__globals__\": {\"typography_typography\": \"globals/typography?id=gsh4\", \"title_color\": \"globals/colors?id=gswhite\"}, \"_title\": \"Logo (text) \\u2013 swap for Site Logo widget after upload\"}, \"elements\": []}, {\"id\": \"bdec103\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"flex_direction\": \"row\", \"flex_align_items\": \"center\", \"flex_gap\": {\"column\": \"18\", \"row\": \"18\", \"isLinked\": true, \"unit\": \"px\", \"size\": 18}, \"flex_justify_content\": \"flex-end\", \"width\": {\"unit\": \"%\", \"size\": 100, \"sizes\": []}, \"flex_grow\": 1, \"_title\": \"Nav + CTA\", \"content_width\": \"full\", \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": true}}, \"elements\": [{\"id\": \"6a66b2b\", \"elType\": \"widget\", \"widgetType\": \"nav-menu\", \"settings\": {\"menu\": \"gss-main\", \"layout\": \"horizontal\", \"align_items\": \"center\", \"pointer\": \"underline\", \"animation_line\": \"fade\", \"submenu_icon\": {\"value\": \"fas fa-chevron-down\", \"library\": \"fa-solid\"}, \"dropdown\": \"tablet\", \"full_width\": \"stretch\", \"text_align\": \"aside\", \"toggle\": \"burger\", \"toggle_align\": \"right\", \"padding_horizontal_menu_item\": {\"unit\": \"px\", \"size\": 14, \"sizes\": []}, \"padding_vertical_menu_item\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"pointer_width\": {\"unit\": \"px\", \"size\": 2, \"sizes\": []}, \"dropdown_border_radius\": {\"unit\": \"px\", \"top\": \"14\", \"right\": \"14\", \"bottom\": \"14\", \"left\": \"14\", \"isLinked\": true}, \"padding_horizontal_dropdown_item\": {\"unit\": \"px\", \"size\": 20, \"sizes\": []}, \"padding_vertical_dropdown_item\": {\"unit\": \"px\", \"size\": 12, \"sizes\": []}, \"dropdown_top_distance\": {\"unit\": \"px\", \"size\": 14, \"sizes\": []}, \"toggle_size\": {\"unit\": \"px\", \"size\": 22, \"sizes\": []}, \"toggle_border_width\": {\"unit\": \"px\", \"size\": 1, \"sizes\": []}, \"toggle_border_radius\": {\"unit\": \"px\", \"size\": 12, \"sizes\": []}, \"background_color_dropdown_item\": \"#0E1738\", \"toggle_background_color\": \"rgba(255,255,255,0.10)\", \"__globals__\": {\"menu_typography_typography\": \"globals/typography?id=gsnav\", \"color_menu_item\": \"globals/colors?id=gswhite\", \"color_menu_item_hover\": \"globals/colors?id=accent\", \"pointer_color_menu_item_hover\": \"globals/colors?id=accent\", \"color_menu_item_active\": \"globals/colors?id=accent\", \"pointer_color_menu_item_active\": \"globals/colors?id=accent\", \"color_dropdown_item\": \"globals/colors?id=text\", \"color_dropdown_item_hover\": \"globals/colors?id=gswhite\", \"background_color_dropdown_item_hover\": \"globals/colors?id=primary\", \"dropdown_typography_typography\": \"globals/typography?id=gsnav\", \"toggle_color\": \"globals/colors?id=gswhite\"}, \"_title\": \"Main Menu\"}, \"elements\": []}, {\"id\": \"b628e45\", \"elType\": \"widget\", \"widgetType\": \"button\", \"settings\": {\"text\": \"Free Consultation\", \"link\": {\"url\": \"/contact-us/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}, \"size\": \"sm\", \"hover_animation\": \"float\", \"hide_mobile\": \"hidden-mobile\", \"_title\": \"Header CTA\"}, \"elements\": []}]}]}]}]",
+   "_elementor_page_settings": {
+    "hide_title": "yes"
+   },
+   "_elementor_conditions": [
+    "include/singular/page/5723",
+    "include/singular/page/5725",
+    "include/singular/page/5727",
+    "include/singular/page/5729",
+    "include/singular/page/5731",
+    "include/singular/page/5733",
+    "include/singular/page/5735",
+    "include/singular/page/5737",
+    "include/singular/page/5739"
+   ]
+  },
+  "permalink_template": "https://graphicsstormstudio.com/?elementor_library=gs-header-sticky-glass",
+  "generated_slug": "gs-header-sticky-glass",
+  "class_list": [
+   "post-5717",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5717",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/users/2"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 3,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5717/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 5745,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5717/revisions/5745"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/media?parent=5717"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5717"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5717"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5717"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 5719,
+  "date": "2026-11-25T20:12:43",
+  "date_gmt": "2026-11-25T20:12:43",
+  "guid": {
+   "rendered": "https://graphicsstormstudio.com/?post_type=elementor_library&#038;p=5719",
+   "raw": "https://graphicsstormstudio.com/?post_type=elementor_library&#038;p=5719"
+  },
+  "modified": "2026-11-27T10:39:18",
+  "modified_gmt": "2026-11-27T10:39:18",
+  "password": "",
+  "slug": "gs-footer",
+  "status": "publish",
+  "type": "elementor_library",
+  "link": "https://graphicsstormstudio.com/?elementor_library=gs-footer",
+  "title": {
+   "raw": "GS \u2013 Footer",
+   "rendered": "GS \u2013 Footer"
+  },
+  "author": 2,
+  "featured_media": 0,
+  "template": "",
+  "meta": {
+   "_elementor_edit_mode": "builder",
+   "_elementor_template_type": "footer",
+   "_elementor_data": "[{\"id\": \"d0b8906\", \"elType\": \"container\", \"isInner\": false, \"settings\": {\"content_width\": \"full\", \"html_tag\": \"footer\", \"flex_direction\": \"column\", \"padding\": {\"unit\": \"px\", \"top\": \"80\", \"right\": \"0\", \"bottom\": \"80\", \"left\": \"0\", \"isLinked\": false}, \"padding_tablet\": {\"unit\": \"px\", \"top\": \"64\", \"right\": \"0\", \"bottom\": \"64\", \"left\": \"0\", \"isLinked\": false}, \"padding_mobile\": {\"unit\": \"px\", \"top\": \"48\", \"right\": \"0\", \"bottom\": \"48\", \"left\": \"0\", \"isLinked\": false}, \"background_background\": \"gradient\", \"background_color\": \"rgba(93,176,216,0.18)\", \"background_color_stop\": {\"unit\": \"%\", \"size\": 0, \"sizes\": []}, \"background_color_b\": \"#070B1F\", \"background_color_b_stop\": {\"unit\": \"%\", \"size\": 55, \"sizes\": []}, \"background_gradient_type\": \"radial\", \"background_gradient_position\": \"center center\", \"background_overlay_background\": \"gradient\", \"background_overlay_color\": \"rgba(124,92,255,0.18)\", \"background_overlay_color_stop\": {\"unit\": \"%\", \"size\": 0, \"sizes\": []}, \"background_overlay_color_b\": \"rgba(7,11,31,0)\", \"background_overlay_color_b_stop\": {\"unit\": \"%\", \"size\": 50, \"sizes\": []}, \"background_overlay_gradient_type\": \"radial\", \"background_overlay_gradient_position\": \"top right\", \"background_overlay_opacity\": {\"unit\": \"\", \"size\": 1, \"sizes\": []}, \"_title\": \"Footer\"}, \"elements\": [{\"id\": \"d66fddd\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"content_width\": \"boxed\", \"flex_direction\": \"column\", \"flex_gap\": {\"column\": \"48\", \"row\": \"48\", \"isLinked\": true, \"unit\": \"px\", \"size\": 48}, \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"24\", \"bottom\": \"0\", \"left\": \"24\", \"isLinked\": false}, \"padding_mobile\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"16\", \"bottom\": \"0\", \"left\": \"16\", \"isLinked\": false}, \"_title\": \"Footer \\u2013 Inner\"}, \"elements\": [{\"id\": \"ba2c9dc\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"flex_wrap\": \"wrap\", \"flex_wrap_tablet\": \"wrap\", \"flex_gap_tablet\": {\"column\": \"32\", \"row\": \"32\", \"isLinked\": true, \"unit\": \"px\", \"size\": 32}, \"flex_direction\": \"row\", \"flex_gap\": {\"column\": \"40\", \"row\": \"40\", \"isLinked\": true, \"unit\": \"px\", \"size\": 40}, \"flex_align_items\": \"stretch\", \"flex_direction_mobile\": \"column\", \"_title\": \"Footer Columns\", \"content_width\": \"full\", \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": true}}, \"elements\": [{\"id\": \"8b5ba86\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"flex_direction\": \"column\", \"flex_gap\": {\"column\": \"18\", \"row\": \"18\", \"isLinked\": true, \"unit\": \"px\", \"size\": 18}, \"width\": {\"unit\": \"%\", \"size\": 29, \"sizes\": []}, \"width_tablet\": {\"unit\": \"%\", \"size\": 100, \"sizes\": []}, \"width_mobile\": {\"unit\": \"%\", \"size\": 100, \"sizes\": []}, \"_title\": \"Footer Brand\", \"content_width\": \"full\", \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": true}}, \"elements\": [{\"id\": \"3b2dc17\", \"elType\": \"widget\", \"widgetType\": \"heading\", \"settings\": {\"title\": \"Graphics <span>Storm</span> Studio\", \"header_size\": \"div\", \"link\": {\"url\": \"/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}, \"_css_classes\": \"gs-grad gs-grad\", \"_element_width\": \"auto\", \"_flex_size\": \"none\", \"__globals__\": {\"typography_typography\": \"globals/typography?id=gsh4\", \"title_color\": \"globals/colors?id=gswhite\"}, \"_title\": \"Logo (text) \\u2013 swap for Site Logo widget after upload\"}, \"elements\": []}, {\"id\": \"48cbd26\", \"elType\": \"widget\", \"widgetType\": \"text-editor\", \"settings\": {\"editor\": \"<p>A design-led digital marketing agency helping businesses grow with websites, SEO, social media marketing and graphic design.</p>\", \"__globals__\": {\"typography_typography\": \"globals/typography?id=gssmall\", \"text_color\": \"globals/colors?id=text\"}, \"_title\": \"Footer About\"}, \"elements\": []}, {\"id\": \"fa822d2\", \"elType\": \"widget\", \"widgetType\": \"social-icons\", \"settings\": {\"social_icon_list\": [{\"_id\": \"a1a6b02\", \"social_icon\": {\"value\": \"fab fa-instagram\", \"library\": \"fa-brands\"}, \"link\": {\"url\": \"https://www.instagram.com/graphics_storm/\", \"is_external\": \"on\", \"nofollow\": \"\", \"custom_attributes\": \"rel|noopener noreferrer\"}, \"item_icon_color\": \"default\"}, {\"_id\": \"8833083\", \"social_icon\": {\"value\": \"fab fa-whatsapp\", \"library\": \"fa-brands\"}, \"link\": {\"url\": \"https://wa.me/18128182053\", \"is_external\": \"on\", \"nofollow\": \"\", \"custom_attributes\": \"rel|noopener noreferrer\"}, \"item_icon_color\": \"default\"}, {\"_id\": \"c17c7d0\", \"social_icon\": {\"value\": \"fab fa-facebook-f\", \"library\": \"fa-brands\"}, \"link\": {\"url\": \"#facebook-url-here\", \"is_external\": \"on\", \"nofollow\": \"\", \"custom_attributes\": \"rel|noopener noreferrer\"}, \"item_icon_color\": \"default\"}, {\"_id\": \"28f666d\", \"social_icon\": {\"value\": \"fab fa-linkedin-in\", \"library\": \"fa-brands\"}, \"link\": {\"url\": \"#linkedin-url-here\", \"is_external\": \"on\", \"nofollow\": \"\", \"custom_attributes\": \"rel|noopener noreferrer\"}, \"item_icon_color\": \"default\"}], \"shape\": \"circle\", \"align\": \"left\", \"icon_color\": \"custom\", \"icon_size\": {\"unit\": \"px\", \"size\": 16, \"sizes\": []}, \"icon_padding\": {\"unit\": \"em\", \"size\": 0.75, \"sizes\": []}, \"icon_spacing\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"border_border\": \"solid\", \"border_width\": {\"unit\": \"px\", \"top\": \"1\", \"right\": \"1\", \"bottom\": \"1\", \"left\": \"1\", \"isLinked\": true}, \"hover_animation\": \"float\", \"__globals__\": {\"icon_primary_color\": \"globals/colors?id=gsglass2\", \"icon_secondary_color\": \"globals/colors?id=gswhite\", \"border_color\": \"globals/colors?id=gsline\", \"hover_primary_color\": \"globals/colors?id=secondary\", \"hover_secondary_color\": \"globals/colors?id=gswhite\"}, \"_title\": \"Social Icons\"}, \"elements\": []}]}, {\"id\": \"52c9ccd\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"flex_direction\": \"column\", \"flex_gap\": {\"column\": \"16\", \"row\": \"16\", \"isLinked\": true, \"unit\": \"px\", \"size\": 16}, \"width\": {\"unit\": \"%\", \"size\": 16, \"sizes\": []}, \"width_tablet\": {\"unit\": \"%\", \"size\": 30, \"sizes\": []}, \"width_mobile\": {\"unit\": \"%\", \"size\": 100, \"sizes\": []}, \"_title\": \"Footer Links\", \"content_width\": \"full\", \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": true}}, \"elements\": [{\"id\": \"cbed3e4\", \"elType\": \"widget\", \"widgetType\": \"heading\", \"settings\": {\"title\": \"Company\", \"header_size\": \"h2\", \"__globals__\": {\"typography_typography\": \"globals/typography?id=gsh4\", \"title_color\": \"globals/colors?id=gswhite\"}, \"_title\": \"Footer Title \\u2013 Company\"}, \"elements\": []}, {\"id\": \"ed0032e\", \"elType\": \"widget\", \"widgetType\": \"icon-list\", \"settings\": {\"icon_list\": [{\"_id\": \"9662781\", \"text\": \"Home\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"0a761e1\", \"text\": \"About Us\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/about-us/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"987ff96\", \"text\": \"Our Work\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/our-portfolio/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"3ab4f6c\", \"text\": \"Contact Us\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/contact-us/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"06168da\", \"text\": \"Free Consultation\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/contact-us/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}], \"view\": \"traditional\", \"icon_size\": {\"unit\": \"px\", \"size\": 16, \"sizes\": []}, \"text_indent\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"space_between\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"__globals__\": {\"icon_color\": \"globals/colors?id=primary\", \"text_color\": \"globals/colors?id=text\", \"icon_typography_typography\": \"globals/typography?id=gssmall\", \"text_color_hover\": \"globals/colors?id=gswhite\"}, \"_title\": \"Company Links\"}, \"elements\": []}]}, {\"id\": \"d86dd0b\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"flex_direction\": \"column\", \"flex_gap\": {\"column\": \"16\", \"row\": \"16\", \"isLinked\": true, \"unit\": \"px\", \"size\": 16}, \"width\": {\"unit\": \"%\", \"size\": 21, \"sizes\": []}, \"width_tablet\": {\"unit\": \"%\", \"size\": 30, \"sizes\": []}, \"width_mobile\": {\"unit\": \"%\", \"size\": 100, \"sizes\": []}, \"_title\": \"Footer Services\", \"content_width\": \"full\", \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": true}}, \"elements\": [{\"id\": \"71b936e\", \"elType\": \"widget\", \"widgetType\": \"heading\", \"settings\": {\"title\": \"Services\", \"header_size\": \"h2\", \"__globals__\": {\"typography_typography\": \"globals/typography?id=gsh4\", \"title_color\": \"globals/colors?id=gswhite\"}, \"_title\": \"Footer Title \\u2013 Services\"}, \"elements\": []}, {\"id\": \"5cf23c0\", \"elType\": \"widget\", \"widgetType\": \"icon-list\", \"settings\": {\"icon_list\": [{\"_id\": \"f3464b1\", \"text\": \"Website Development\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/website-development/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"edf9ef5\", \"text\": \"SEO Services\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/search-engine-optimization/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"c575c4d\", \"text\": \"Social Media Marketing\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/social-media-marketing/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"523e17e\", \"text\": \"Graphic Design\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/graphics-designing/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"7de4fe0\", \"text\": \"Logo & Branding\", \"selected_icon\": {\"value\": \"fas fa-angle-right\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/graphics-designing/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}], \"view\": \"traditional\", \"icon_size\": {\"unit\": \"px\", \"size\": 16, \"sizes\": []}, \"text_indent\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"space_between\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"__globals__\": {\"icon_color\": \"globals/colors?id=primary\", \"text_color\": \"globals/colors?id=text\", \"icon_typography_typography\": \"globals/typography?id=gssmall\", \"text_color_hover\": \"globals/colors?id=gswhite\"}, \"_title\": \"Service Links\"}, \"elements\": []}]}, {\"id\": \"2cc933a\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"flex_direction\": \"column\", \"flex_gap\": {\"column\": \"16\", \"row\": \"16\", \"isLinked\": true, \"unit\": \"px\", \"size\": 16}, \"width\": {\"unit\": \"%\", \"size\": 24, \"sizes\": []}, \"width_tablet\": {\"unit\": \"%\", \"size\": 30, \"sizes\": []}, \"width_mobile\": {\"unit\": \"%\", \"size\": 100, \"sizes\": []}, \"_title\": \"Footer Contact\", \"content_width\": \"full\", \"padding\": {\"unit\": \"px\", \"top\": \"0\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": true}}, \"elements\": [{\"id\": \"9e8574e\", \"elType\": \"widget\", \"widgetType\": \"heading\", \"settings\": {\"title\": \"Get in touch\", \"header_size\": \"h2\", \"__globals__\": {\"typography_typography\": \"globals/typography?id=gsh4\", \"title_color\": \"globals/colors?id=gswhite\"}, \"_title\": \"Footer Title \\u2013 Get in touch\"}, \"elements\": []}, {\"id\": \"f0b67fa\", \"elType\": \"widget\", \"widgetType\": \"icon-list\", \"settings\": {\"icon_list\": [{\"_id\": \"8c1d412\", \"text\": \"info@graphicsstormstudio.com\", \"selected_icon\": {\"value\": \"fas fa-envelope\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"mailto:info@graphicsstormstudio.com\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"dc95902\", \"text\": \"+1 (812) 818-2053\", \"selected_icon\": {\"value\": \"fas fa-phone-alt\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"tel:+18128182053\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"2807acc\", \"text\": \"1 Deauville Ln, North York, ON M3C 1Z7, Canada\", \"selected_icon\": {\"value\": \"fas fa-map-marker-alt\", \"library\": \"fa-solid\"}}, {\"_id\": \"b8f01c1\", \"text\": \"2501 Chatham Rd, Suite R, Springfield, IL 62704, USA\", \"selected_icon\": {\"value\": \"fas fa-map-marker-alt\", \"library\": \"fa-solid\"}}], \"view\": \"traditional\", \"icon_size\": {\"unit\": \"px\", \"size\": 16, \"sizes\": []}, \"text_indent\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"space_between\": {\"unit\": \"px\", \"size\": 12, \"sizes\": []}, \"__globals__\": {\"icon_color\": \"globals/colors?id=accent\", \"text_color\": \"globals/colors?id=text\", \"icon_typography_typography\": \"globals/typography?id=gssmall\", \"text_color_hover\": \"globals/colors?id=gswhite\"}, \"_title\": \"Contact List\"}, \"elements\": []}]}]}, {\"id\": \"c9954d4\", \"elType\": \"container\", \"isInner\": true, \"settings\": {\"border_border\": \"solid\", \"border_width\": {\"unit\": \"px\", \"top\": \"1\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": false}, \"padding\": {\"unit\": \"px\", \"top\": \"24\", \"right\": \"0\", \"bottom\": \"0\", \"left\": \"0\", \"isLinked\": false}, \"flex_align_items_mobile\": \"flex-start\", \"flex_direction\": \"row\", \"flex_gap\": {\"column\": \"12\", \"row\": \"12\", \"isLinked\": true, \"unit\": \"px\", \"size\": 12}, \"flex_align_items\": \"center\", \"flex_justify_content\": \"space-between\", \"flex_direction_mobile\": \"column\", \"__globals__\": {\"border_color\": \"globals/colors?id=gsline\"}, \"_title\": \"Footer Bottom\", \"content_width\": \"full\"}, \"elements\": [{\"id\": \"7a7688e\", \"elType\": \"widget\", \"widgetType\": \"heading\", \"settings\": {\"title\": \"\\u00a9 Graphics Storm Studio. All rights reserved.\", \"header_size\": \"p\", \"__globals__\": {\"typography_typography\": \"globals/typography?id=gssmall\", \"title_color\": \"globals/colors?id=gsmuted\"}, \"_title\": \"Copyright (dynamic year)\", \"__dynamic__\": {\"title\": \"[elementor-tag id=\\\"c8aab43\\\" name=\\\"current-date-time\\\" settings=\\\"%7B%22date_format%22%3A%20%22custom%22%2C%20%22time_format%22%3A%20%22%22%2C%20%22custom_format%22%3A%20%22Y%22%2C%20%22before%22%3A%20%22%5Cu00a9%20%22%2C%20%22after%22%3A%20%22%20Graphics%20Storm%20Studio.%20All%20rights%20reserved.%22%7D\\\"]\"}}, \"elements\": []}, {\"id\": \"197bcb7\", \"elType\": \"widget\", \"widgetType\": \"icon-list\", \"settings\": {\"icon_list\": [{\"_id\": \"3c52b2d\", \"text\": \"Privacy Policy\", \"selected_icon\": {\"value\": \"fas fa-circle\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/privacy-policy/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}, {\"_id\": \"acfe9dc\", \"text\": \"Terms of Service\", \"selected_icon\": {\"value\": \"fas fa-circle\", \"library\": \"fa-solid\"}, \"link\": {\"url\": \"/terms-of-service/\", \"is_external\": \"\", \"nofollow\": \"\", \"custom_attributes\": \"\"}}], \"view\": \"inline\", \"icon_size\": {\"unit\": \"px\", \"size\": 4, \"sizes\": []}, \"text_indent\": {\"unit\": \"px\", \"size\": 10, \"sizes\": []}, \"space_between\": {\"unit\": \"px\", \"size\": 20, \"sizes\": []}, \"__globals__\": {\"icon_color\": \"globals/colors?id=accent\", \"text_color\": \"globals/colors?id=gsmuted\", \"icon_typography_typography\": \"globals/typography?id=gssmall\", \"text_color_hover\": \"globals/colors?id=gswhite\"}, \"_title\": \"Legal Links\"}, \"elements\": []}]}]}]}]",
+   "_elementor_page_settings": {
+    "hide_title": "yes"
+   },
+   "_elementor_conditions": [
+    "include/singular/page/5723",
+    "include/singular/page/5725",
+    "include/singular/page/5727",
+    "include/singular/page/5729",
+    "include/singular/page/5731",
+    "include/singular/page/5733",
+    "include/singular/page/5735",
+    "include/singular/page/5737",
+    "include/singular/page/5739"
+   ]
+  },
+  "permalink_template": "https://graphicsstormstudio.com/?elementor_library=gs-footer",
+  "generated_slug": "gs-footer",
+  "class_list": [
+   "post-5719",
+   "elementor_library",
+   "type-elementor_library",
+   "status-publish",
+   "hentry"
+  ],
+  "_links": {
+   "self": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5719",
+     "targetHints": {
+      "allow": [
+       "GET",
+       "POST",
+       "PUT",
+       "PATCH",
+       "DELETE"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/types/elementor_library"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/users/2"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 3,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5719/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 5748,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5719/revisions/5748"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/media?parent=5719"
+    }
+   ],
+   "wp:action-publish": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5719"
+    }
+   ],
+   "wp:action-unfiltered-html": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5719"
+    }
+   ],
+   "wp:action-assign-author": [
+    {
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/5719"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
   "id": 17,
   "date": "2022-06-08T05:50:44",
   "date_gmt": "2022-06-08T05:50:44",
@@ -7,8 +363,8 @@
    "rendered": "https://xainteractive.eatscape.solutions/?p=17",
    "raw": "https://xainteractive.eatscape.solutions/?p=17"
   },
-  "modified": "2023-07-25T16:32:09",
-  "modified_gmt": "2023-07-25T16:32:09",
+  "modified": "2026-11-27T10:33:03",
+  "modified_gmt": "2026-11-27T10:33:03",
   "password": "",
   "slug": "default-kit",
   "status": "publish",
@@ -28,33 +384,88 @@
    "_elementor_page_settings": {
     "custom_colors": [
      {
+      "_id": "gsnavy",
+      "title": "Navy \u2013 Page Background",
+      "color": "#070B1F"
+     },
+     {
+      "_id": "gsnavy2",
+      "title": "Navy \u2013 Raised Surface",
+      "color": "#0E1738"
+     },
+     {
+      "_id": "gswhite",
+      "title": "White \u2013 Headings",
+      "color": "#FFFFFF"
+     },
+     {
+      "_id": "gsmuted",
+      "title": "Muted Text",
+      "color": "#93A1BF"
+     },
+     {
+      "_id": "gsvioletdk",
+      "title": "Violet \u2013 Hover",
+      "color": "#5B3BE0"
+     },
+     {
+      "_id": "gsglass",
+      "title": "Glass Fill (6% white)",
+      "color": "#FFFFFF0F"
+     },
+     {
+      "_id": "gsglass2",
+      "title": "Glass Fill Strong (10% white)",
+      "color": "#FFFFFF1A"
+     },
+     {
+      "_id": "gsline",
+      "title": "Glass Border (14% white)",
+      "color": "#FFFFFF24"
+     },
+     {
+      "_id": "gsvioletglow",
+      "title": "Violet Glow (blob)",
+      "color": "#7C5CFF59"
+     },
+     {
+      "_id": "gsblueglow",
+      "title": "Blue Glow (blob)",
+      "color": "#0684C44D"
+     },
+     {
+      "_id": "gstransparent",
+      "title": "Transparent",
+      "color": "#070B1F00"
+     },
+     {
       "_id": "f62cc45",
-      "title": "White",
+      "title": "Legacy \u2013 White",
       "color": "#FFFFFF"
      },
      {
       "_id": "7364dfa",
-      "title": "Black",
+      "title": "Legacy \u2013 Black",
       "color": "#000000"
      },
      {
       "_id": "8a7b28d",
-      "title": "Text color",
+      "title": "Legacy \u2013 Text color",
       "color": "#131212"
      },
      {
       "_id": "cad6eef",
-      "title": "gss",
+      "title": "Legacy \u2013 gss",
       "color": "#0684c4"
      },
      {
       "_id": "981fb0d",
-      "title": "gss lite",
+      "title": "Legacy \u2013 gss lite",
       "color": "#5db0d8"
      },
      {
       "_id": "81fbbdc",
-      "title": "logo gray",
+      "title": "Legacy \u2013 logo gray",
       "color": "#b4b3b4"
      }
     ],
@@ -63,67 +474,679 @@
     "system_colors": [
      {
       "_id": "primary",
-      "title": "Primary",
-      "color": "#6EC1E4"
+      "title": "Brand Blue",
+      "color": "#0684C4"
      },
      {
       "_id": "secondary",
-      "title": "Secondary",
-      "color": "#54595F"
+      "title": "Accent Violet (CTA)",
+      "color": "#7052FF"
      },
      {
       "_id": "text",
-      "title": "Text",
-      "color": "#7A7A7A"
+      "title": "Body Text",
+      "color": "#C9D3E8"
      },
      {
       "_id": "accent",
-      "title": "Accent",
-      "color": "#61CE70"
+      "title": "Light Blue",
+      "color": "#5DB0D8"
      }
     ],
     "system_typography": [
      {
       "_id": "primary",
-      "title": "Primary",
+      "title": "Headings",
       "typography_typography": "custom",
-      "typography_font_family": "Roboto",
-      "typography_font_weight": "600"
+      "typography_font_family": "Sora",
+      "typography_font_weight": "700"
      },
      {
       "_id": "secondary",
-      "title": "Secondary",
+      "title": "Subheadings",
       "typography_typography": "custom",
-      "typography_font_family": "Roboto Slab",
-      "typography_font_weight": "400"
+      "typography_font_family": "Sora",
+      "typography_font_weight": "600"
      },
      {
       "_id": "text",
-      "title": "Text",
+      "title": "Body",
       "typography_typography": "custom",
-      "typography_font_family": "Roboto",
-      "typography_font_weight": "400"
+      "typography_font_family": "Inter",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
      },
      {
       "_id": "accent",
-      "title": "Accent",
+      "title": "Buttons",
       "typography_typography": "custom",
-      "typography_font_family": "Roboto",
-      "typography_font_weight": "500"
+      "typography_font_family": "Sora",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
      }
     ],
-    "custom_typography": [],
+    "custom_typography": [
+     {
+      "_id": "gsh1",
+      "title": "H1 \u2013 Hero",
+      "typography_typography": "custom",
+      "typography_font_family": "Sora",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 64,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 48,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 38,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.08,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": -1.5,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "gsh2",
+      "title": "H2 \u2013 Section Title",
+      "typography_typography": "custom",
+      "typography_font_family": "Sora",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 46,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 38,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 30,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.15,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": -1,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "gsh3",
+      "title": "H3 \u2013 Card / Sub Title",
+      "typography_typography": "custom",
+      "typography_font_family": "Sora",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 24,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 22,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.3,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": -0.3,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "gsh4",
+      "title": "H4 \u2013 Small Title",
+      "typography_typography": "custom",
+      "typography_font_family": "Sora",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 19,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "gseyebrow",
+      "title": "Eyebrow / Kicker",
+      "typography_typography": "custom",
+      "typography_font_family": "Inter",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.5,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     {
+      "_id": "gslead",
+      "title": "Lead Paragraph",
+      "typography_typography": "custom",
+      "typography_font_family": "Inter",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 19,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.65,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "gsbody",
+      "title": "Body",
+      "typography_typography": "custom",
+      "typography_font_family": "Inter",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.7,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "gssmall",
+      "title": "Small / Meta",
+      "typography_typography": "custom",
+      "typography_font_family": "Inter",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "gsbtn",
+      "title": "Button",
+      "typography_typography": "custom",
+      "typography_font_family": "Sora",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "gsnav",
+      "title": "Navigation",
+      "typography_typography": "custom",
+      "typography_font_family": "Inter",
+      "typography_font_weight": "500",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 15,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      }
+     },
+     {
+      "_id": "gsstat",
+      "title": "Stat Number",
+      "typography_typography": "custom",
+      "typography_font_family": "Sora",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 52,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 38,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": -1,
+       "sizes": []
+      }
+     }
+    ],
     "default_generic_fonts": "Sans-serif",
     "page_title_selector": "h1.entry-title",
-    "activeItemIndex": 1,
     "viewport_md": 768,
     "viewport_lg": 1025,
     "container_width": {
      "unit": "px",
-     "size": 1340,
+     "size": 1240,
      "sizes": []
     },
-    "ha_scroll_to_top_button_text": "Top"
+    "ha_scroll_to_top_button_text": "Top",
+    "body_color": "#C9D3E8",
+    "body_typography_typography": "custom",
+    "body_typography_font_family": "Inter",
+    "body_typography_font_size": {
+     "unit": "px",
+     "size": 17,
+     "sizes": []
+    },
+    "body_typography_font_size_mobile": {
+     "unit": "px",
+     "size": 16,
+     "sizes": []
+    },
+    "body_typography_font_weight": "400",
+    "body_typography_line_height": {
+     "unit": "em",
+     "size": 1.7,
+     "sizes": []
+    },
+    "paragraph_spacing": {
+     "unit": "px",
+     "size": 16,
+     "sizes": []
+    },
+    "link_normal_color": "#5DB0D8",
+    "link_hover_color": "#FFFFFF",
+    "button_typography_typography": "custom",
+    "button_typography_font_family": "Sora",
+    "button_typography_font_weight": "600",
+    "button_typography_font_size": {
+     "unit": "px",
+     "size": 16,
+     "sizes": []
+    },
+    "button_typography_line_height": {
+     "unit": "em",
+     "size": 1.2,
+     "sizes": []
+    },
+    "button_text_color": "#FFFFFF",
+    "button_background_background": "classic",
+    "button_background_color": "#7052FF",
+    "button_hover_text_color": "#FFFFFF",
+    "button_hover_background_background": "classic",
+    "button_hover_background_color": "#5B3BE0",
+    "button_border_radius": {
+     "unit": "px",
+     "top": "999",
+     "right": "999",
+     "bottom": "999",
+     "left": "999",
+     "isLinked": true
+    },
+    "button_padding": {
+     "unit": "px",
+     "top": "16",
+     "right": "30",
+     "bottom": "16",
+     "left": "30",
+     "isLinked": false
+    },
+    "button_box_shadow_box_shadow_type": "yes",
+    "button_box_shadow_box_shadow": {
+     "horizontal": 0,
+     "vertical": 12,
+     "blur": 30,
+     "spread": 0,
+     "color": "rgba(112,82,255,0.35)"
+    },
+    "form_label_typography_typography": "custom",
+    "form_label_typography_font_family": "Inter",
+    "form_label_typography_font_weight": "500",
+    "form_label_typography_font_size": {
+     "unit": "px",
+     "size": 14,
+     "sizes": []
+    },
+    "form_label_color": "#DCE4F5",
+    "form_field_typography_typography": "custom",
+    "form_field_typography_font_family": "Inter",
+    "form_field_typography_font_size": {
+     "unit": "px",
+     "size": 16,
+     "sizes": []
+    },
+    "form_field_text_color": "#FFFFFF",
+    "form_field_background_color": "rgba(255,255,255,0.06)",
+    "form_field_border_border": "solid",
+    "form_field_border_width": {
+     "unit": "px",
+     "top": "1",
+     "right": "1",
+     "bottom": "1",
+     "left": "1",
+     "isLinked": true
+    },
+    "form_field_border_color": "rgba(255,255,255,0.18)",
+    "form_field_border_radius": {
+     "unit": "px",
+     "top": "12",
+     "right": "12",
+     "bottom": "12",
+     "left": "12",
+     "isLinked": true
+    },
+    "form_field_padding": {
+     "unit": "px",
+     "top": "14",
+     "right": "16",
+     "bottom": "14",
+     "left": "16",
+     "isLinked": false
+    },
+    "form_field_focus_text_color": "#FFFFFF",
+    "form_field_focus_background_color": "rgba(255,255,255,0.10)",
+    "form_field_focus_border_border": "solid",
+    "form_field_focus_border_width": {
+     "unit": "px",
+     "top": "1",
+     "right": "1",
+     "bottom": "1",
+     "left": "1",
+     "isLinked": true
+    },
+    "form_field_focus_border_color": "#5DB0D8",
+    "body_background_background": "classic",
+    "body_background_color": "#070B1F",
+    "container_padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "24",
+     "bottom": "0",
+     "left": "24",
+     "isLinked": false
+    },
+    "container_padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "16",
+     "bottom": "0",
+     "left": "16",
+     "isLinked": false
+    },
+    "space_between_widgets": {
+     "column": "20",
+     "row": "20",
+     "isLinked": true,
+     "unit": "px",
+     "size": 20
+    },
+    "default_page_template": "elementor_header_footer",
+    "viewport_tablet": 1024,
+    "viewport_mobile": 767,
+    "global_image_lightbox": "",
+    "h1_color": "#FFFFFF",
+    "h1_typography_typography": "custom",
+    "h1_typography_font_family": "Sora",
+    "h1_typography_font_weight": "700",
+    "h2_color": "#FFFFFF",
+    "h2_typography_typography": "custom",
+    "h2_typography_font_family": "Sora",
+    "h2_typography_font_weight": "700",
+    "h3_color": "#FFFFFF",
+    "h3_typography_typography": "custom",
+    "h3_typography_font_family": "Sora",
+    "h3_typography_font_weight": "600",
+    "h4_color": "#FFFFFF",
+    "h4_typography_typography": "custom",
+    "h4_typography_font_family": "Sora",
+    "h4_typography_font_weight": "600",
+    "h5_color": "#FFFFFF",
+    "h5_typography_typography": "custom",
+    "h5_typography_font_family": "Sora",
+    "h5_typography_font_weight": "600",
+    "h6_color": "#FFFFFF",
+    "h6_typography_typography": "custom",
+    "h6_typography_font_family": "Sora",
+    "h6_typography_font_weight": "600",
+    "h1_typography_font_size": {
+     "unit": "px",
+     "size": 64,
+     "sizes": []
+    },
+    "h1_typography_font_size_tablet": {
+     "unit": "px",
+     "size": 48,
+     "sizes": []
+    },
+    "h1_typography_font_size_mobile": {
+     "unit": "px",
+     "size": 38,
+     "sizes": []
+    },
+    "h1_typography_line_height": {
+     "unit": "em",
+     "size": 1.08,
+     "sizes": []
+    },
+    "h2_typography_font_size": {
+     "unit": "px",
+     "size": 46,
+     "sizes": []
+    },
+    "h2_typography_font_size_tablet": {
+     "unit": "px",
+     "size": 38,
+     "sizes": []
+    },
+    "h2_typography_font_size_mobile": {
+     "unit": "px",
+     "size": 30,
+     "sizes": []
+    },
+    "h2_typography_line_height": {
+     "unit": "em",
+     "size": 1.15,
+     "sizes": []
+    },
+    "h3_typography_font_size": {
+     "unit": "px",
+     "size": 24,
+     "sizes": []
+    },
+    "h3_typography_font_size_tablet": {
+     "unit": "px",
+     "size": 22,
+     "sizes": []
+    },
+    "h3_typography_font_size_mobile": {
+     "unit": "px",
+     "size": 20,
+     "sizes": []
+    },
+    "h3_typography_line_height": {
+     "unit": "em",
+     "size": 1.3,
+     "sizes": []
+    },
+    "h4_typography_font_size": {
+     "unit": "px",
+     "size": 19,
+     "sizes": []
+    },
+    "h4_typography_font_size_tablet": {
+     "unit": "px",
+     "size": 18,
+     "sizes": []
+    },
+    "h4_typography_font_size_mobile": {
+     "unit": "px",
+     "size": 18,
+     "sizes": []
+    },
+    "h4_typography_line_height": {
+     "unit": "em",
+     "size": 1.4,
+     "sizes": []
+    },
+    "h5_typography_font_size": {
+     "unit": "px",
+     "size": 17,
+     "sizes": []
+    },
+    "h5_typography_font_size_tablet": {
+     "unit": "px",
+     "size": 17,
+     "sizes": []
+    },
+    "h5_typography_font_size_mobile": {
+     "unit": "px",
+     "size": 16,
+     "sizes": []
+    },
+    "h5_typography_line_height": {
+     "unit": "em",
+     "size": 1.4,
+     "sizes": []
+    },
+    "h6_typography_font_size": {
+     "unit": "px",
+     "size": 15,
+     "sizes": []
+    },
+    "h6_typography_font_size_tablet": {
+     "unit": "px",
+     "size": 15,
+     "sizes": []
+    },
+    "h6_typography_font_size_mobile": {
+     "unit": "px",
+     "size": 15,
+     "sizes": []
+    },
+    "h6_typography_line_height": {
+     "unit": "em",
+     "size": 1.4,
+     "sizes": []
+    },
+    "custom_css": "/* =====================================================================\n   Graphics Storm Studio \u2013 GLOBAL utility CSS (the ONLY custom CSS on the site)\n   Paste into: Elementor \u2192 Site Settings \u2192 Custom CSS\n   Everything else (colours, fonts, borders, radius, shadow, padding,\n   hover transforms, sticky header) is set natively in Elementor.\n   This file only adds what Elementor has no control for.\n   Usage: type the class name in  Advanced \u2192 CSS Classes  of a Container/Widget.\n   ===================================================================== */\n\n/* ---- 1. Glass panels (backdrop blur is not a native Elementor control) ---- */\n/* .gs-glass          \u2013 standard frosted card (set bg rgba(255,255,255,.06),\n                         1px border rgba(255,255,255,.14), radius 20, shadow natively) */\n/* .gs-glass--strong  \u2013 heavier blur for hero panels / forms (bg .10 natively) */\n.gs-glass,\n.gs-glass--strong {\n  -webkit-backdrop-filter: blur(16px) saturate(140%);\n  backdrop-filter: blur(16px) saturate(140%);\n}\n.gs-glass--strong {\n  -webkit-backdrop-filter: blur(26px) saturate(160%);\n  backdrop-filter: blur(26px) saturate(160%);\n}\n/* Fallback: browsers without backdrop-filter get an opaque navy panel so text\n   contrast stays WCAG AA (Elementor's translucent bg is overridden only here). */\n@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {\n  .gs-glass, .gs-glass--strong, .gs-glass-header.elementor-sticky--effects {\n    background-color: rgba(12, 19, 48, 0.94) !important;\n  }\n}\n\n/* ---- 2. Sticky glass header ---------------------------------------------- */\n/* Header container: Motion Effects \u2192 Sticky: Top, Effects Offset: 60.\n   Elementor Pro adds .elementor-sticky--effects after the offset; we blur it. */\n.gs-glass-header {\n  transition: background-color .3s ease, box-shadow .3s ease, padding .3s ease;\n}\n.gs-glass-header.elementor-sticky--effects {\n  background-color: rgba(7, 11, 31, 0.72) !important;\n  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.35);\n  border-bottom: 1px solid rgba(255, 255, 255, 0.10);\n  -webkit-backdrop-filter: blur(18px) saturate(150%);\n  backdrop-filter: blur(18px) saturate(150%);\n}\n\n/* ---- 3. Decorative colour blobs ------------------------------------------ */\n/* Empty container: Position Absolute, size + radial/solid bg set natively.\n   .gs-blob only blurs it and keeps it behind content / non-clickable. */\n.gs-blob {\n  filter: blur(80px);\n  opacity: .55;\n  pointer-events: none;\n  z-index: 0 !important;\n}\n.gs-blob ~ .e-con, .gs-blob ~ .elementor-element { position: relative; z-index: 1; }\n\n/* ---- 4. Gradient text for the highlighted word in headings --------------- */\n/* Wrap the word in <span> inside a Heading widget and add class .gs-grad   */\n.gs-grad .elementor-heading-title span {\n  background: linear-gradient(90deg, #5DB0D8 0%, #0684C4 45%, #9D86FF 100%);\n  -webkit-background-clip: text;\n  background-clip: text;\n  color: transparent;\n}\n\n/* ---- 5. Forms on dark glass (placeholder colour has no global control) ---- */\n.gs-form ::placeholder { color: #A9B6D3; opacity: 1; }\n.gs-form .elementor-field-option label { color: #DCE4F5; }\n\n/* ---- 6. Accessibility ------------------------------------------------------ */\n/* Visible keyboard focus everywhere (WCAG 2.4.7) */\na:focus-visible, button:focus-visible, input:focus-visible,\nselect:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {\n  outline: 2px solid #5DB0D8;\n  outline-offset: 3px;\n}\n/* Respect users who turn animations off */\n@media (prefers-reduced-motion: reduce) {\n  *, *::before, *::after {\n    animation-duration: .01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: .01ms !important;\n    scroll-behavior: auto !important;\n  }\n}\n\n/* ---- 7. Global safety: no horizontal scroll from blobs/animations --------- */\nhtml, body { overflow-x: clip; }\n"
    },
    "_elementor_conditions": []
   },
@@ -169,14 +1192,14 @@
    ],
    "version-history": [
     {
-     "count": 6,
+     "count": 7,
      "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/17/revisions"
     }
    ],
    "predecessor-version": [
     {
-     "id": 5513,
-     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/17/revisions/5513"
+     "id": 5741,
+     "href": "https://graphicsstormstudio.com/wp-json/wp/v2/elementor_library/17/revisions/5741"
     }
    ],
    "wp:attachment": [
