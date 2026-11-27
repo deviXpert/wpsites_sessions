@@ -80,3 +80,9 @@ python3 yoast.py                                                        # push Y
 - Go live: `python3 reviews_go_live.py` – submits a test review through the real form, refuses to publish if it went public, deletes it, then publishes the page, adds the menu item (before Contact), rebuilds reviews/home/footer and refreshes Yoast.
 - Google button: set `GOOGLE_REVIEW_URL` in build.py to the client's Google Business Profile review link, then rebuild `reviews home`.
 - Draft previews are unstyled (Elementor only writes post-CSS for published pages) – check styling after publishing.
+
+## Hero videos (Nov 27)
+- Every page hero has a muted background video loop (`hero(video=<MEDIA key>)`, default `hero_general`; `video=None` = photo only). The `bg` image is the fallback.
+- Loops built by `tools/make_videos.py <scratchpad> <out>` from the client's phone clips: `hero_general` (Home, About, Services, Projects, Reviews, Contact, all area pages), `hero_exterior` (Exterior + Crack Repair), `hero_interior`, `hero_sump`, `hero_interlock`; Underpinning keeps `up_video`.
+- Portrait clips are shown sharp in the centre over a blurred copy of themselves (cropping 576px-wide portrait video to 16:9 looked blurry).
+- Better source footage = landscape (phone held sideways), 1080p+. Swap a loop by re-running make_videos.py with new clips and uploading.

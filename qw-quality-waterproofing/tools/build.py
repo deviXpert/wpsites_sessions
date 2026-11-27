@@ -14,8 +14,9 @@ FB = 'https://www.facebook.com/share/1E1EebBzXR/?mibextid=wwXIfr'
 IG = 'https://www.instagram.com/qualitywaterproofinginc'
 
 # ================= shared sections =================
-def hero(eyebrow, h1, lead, bg=None, video=False, form=True, trust=None, minh=640):
-    vkey = video if isinstance(video, str) else 'hero_video'
+def hero(eyebrow, h1, lead, bg=None, video='hero_general', form=True, trust=None, minh=640):
+    """Every hero has a muted background video loop (MEDIA key); `bg` is the fallback image. video=None for a photo-only hero."""
+    vkey = video if isinstance(video, str) else ('hero_general' if video else None)
     trust = trust or ['10+ Years Experience', 'Free On-Site Estimates', 'Residential & Commercial']
     left = C([
         EYE(eyebrow, color='qwgoldlt'),
@@ -35,7 +36,7 @@ def hero(eyebrow, h1, lead, bg=None, video=False, form=True, trust=None, minh=64
     s = dict(min_height=px(minh), min_height_mobile=px(0), flex_align_items='center', background_overlay_background='gradient',
              background_overlay_color='rgba(10,14,23,0.86)', background_overlay_color_b='rgba(10,14,23,0.40)',
              background_overlay_gradient_angle=px(90, 'deg'), background_overlay_gradient_angle_mobile=px(180, 'deg'), background_overlay_opacity=px(1))
-    if video:
+    if vkey:
         s.update(background_background='video', background_video_link=MEDIA[vkey]['url'], background_play_on_mobile='yes',
                  background_video_fallback=img(bg), background_privacy_mode='')
     else:
@@ -283,7 +284,7 @@ def service_page(slug):
     benefits = SECTION(HEAD('Benefits', f'Why Choose Our <span class="qw-hl">{S["name"]}</span>', align='center')
                        + [C([IBOX(i, t, d, view='stacked') for i, t, d in S['benefits']], 'Benefits Grid', grid=3, grid_t=2, grid_gaps=gap(36, 40), _margin=dims(26, 0, 0, 0))], 'Benefits', bg='white')
     return [
-        hero(S['name'] + ' · Toronto & GTA', S['h1'], S['lead'], bg=S['hero'], video=S.get('hero_video', False)),
+        hero(S['name'] + ' · Toronto & GTA', S['h1'], S['lead'], bg=S['hero'], video=S.get('hero_video', 'hero_general')),
         split(S['intro_h'], S['intro'], S['intro_img'], S['intro_img2'], eyebrow=S['name'], extra=[CTA_BTNS(dark=False)]),
         *([video_section(S)] if S.get('video') else []),
         signs,

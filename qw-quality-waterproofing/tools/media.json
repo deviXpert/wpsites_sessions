@@ -494,5 +494,25 @@
   "url": "https://qualitywaterproofinginc.ca/wp-content/uploads/2026/11/basement-lowering-excavation-underpinning-crew.webp",
   "w": 1069,
   "h": 889
+ },
+ "hero_general": {
+  "id": 171,
+  "url": "https://qualitywaterproofinginc.ca/wp-content/uploads/2026/11/quality-waterproofing-hero-general.mp4"
+ },
+ "hero_exterior": {
+  "id": 172,
+  "url": "https://qualitywaterproofinginc.ca/wp-content/uploads/2026/11/quality-waterproofing-hero-exterior.mp4"
+ },
+ "hero_interior": {
+  "id": 173,
+  "url": "https://qualitywaterproofinginc.ca/wp-content/uploads/2026/11/quality-waterproofing-hero-interior.mp4"
+ },
+ "hero_sump": {
+  "id": 174,
+  "url": "https://qualitywaterproofinginc.ca/wp-content/uploads/2026/11/quality-waterproofing-hero-sump.mp4"
+ },
+ "hero_interlock": {
+  "id": 175,
+  "url": "https://qualitywaterproofinginc.ca/wp-content/uploads/2026/11/quality-waterproofing-hero-interlock.mp4"
  }
 }
