@@ -3501,7 +3501,7 @@
    ]
   },
   {
-   "id": "e8e1949",
+   "id": "907b6c3",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -3571,7 +3571,7 @@
    },
    "elements": [
     {
-     "id": "529d0aa",
+     "id": "1522b62",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -3604,7 +3604,7 @@
      },
      "elements": [
       {
-       "id": "4549123",
+       "id": "228e6f7",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3952,7 +3952,7 @@
          ]
         },
         {
-         "id": "39f87ba",
+         "id": "85ee8dc",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3993,18 +3993,18 @@
          },
          "elements": [
           {
-           "id": "c9adc96",
+           "id": "cd395e1",
            "elType": "container",
            "isInner": true,
            "settings": {
-            "flex_direction": "column",
             "flex_gap": {
-             "column": "16",
-             "row": "16",
+             "column": "18",
+             "row": "18",
              "isLinked": true,
              "unit": "px",
-             "size": 16
+             "size": 18
             },
+            "flex_direction": "column",
             "background_background": "classic",
             "border_border": "solid",
             "border_width": {
@@ -4033,10 +4033,10 @@
             },
             "padding": {
              "unit": "px",
-             "top": "32",
-             "right": "32",
-             "bottom": "32",
-             "left": "32",
+             "top": "36",
+             "right": "36",
+             "bottom": "36",
+             "left": "36",
              "isLinked": true
             },
             "padding_tablet": {
@@ -4065,36 +4065,89 @@
            },
            "elements": [
             {
-             "id": "1e57d1c",
-             "elType": "widget",
-             "widgetType": "heading",
+             "id": "de1fd44",
+             "elType": "container",
+             "isInner": true,
              "settings": {
-              "title": "Get a free quote",
-              "header_size": "h2",
-              "__globals__": {
-               "typography_typography": "globals/typography?id=gsh3",
-               "title_color": "globals/colors?id=gswhite"
+              "flex_gap": {
+               "column": "8",
+               "row": "8",
+               "isLinked": true,
+               "unit": "px",
+               "size": 8
               },
-              "_title": "Form Title"
+              "padding": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "18",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "__globals__": {
+               "border_color": "globals/colors?id=gsline"
+              },
+              "_title": "Form Header",
+              "content_width": "full"
              },
-             "elements": []
+             "elements": [
+              {
+               "id": "1e57d1c",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Free proposal · no obligation",
+                "header_size": "p",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gseyebrow",
+                 "title_color": "globals/colors?id=accent"
+                },
+                "_title": "Eyebrow – Free proposal · no obligation"
+               },
+               "elements": []
+              },
+              {
+               "id": "f152ce6",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Get a free website development quote",
+                "header_size": "h3",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gsh3",
+                 "title_color": "globals/colors?id=gswhite"
+                },
+                "_title": "Form Title"
+               },
+               "elements": []
+              },
+              {
+               "id": "852b32f",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Share a few details and we will send a tailored proposal within 1 business day.</p>",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gssmall",
+                 "text_color": "globals/colors?id=text"
+                },
+                "_title": "Form Intro"
+               },
+               "elements": []
+              }
+             ]
             },
             {
-             "id": "f152ce6",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Share a few details and we will send a tailored proposal within 1 business day.</p>",
-              "__globals__": {
-               "typography_typography": "globals/typography?id=gssmall",
-               "text_color": "globals/colors?id=text"
-              },
-              "_title": "Form Intro"
-             },
-             "elements": []
-            },
-            {
-             "id": "9133227",
+             "id": "39f87ba",
              "elType": "widget",
              "widgetType": "form",
              "settings": {
@@ -4108,7 +4161,7 @@
                 "width": "50",
                 "custom_id": "name",
                 "autocomplete": "name",
-                "_id": "852b32f"
+                "_id": "ab65c73"
                },
                {
                 "field_type": "email",
@@ -4117,7 +4170,7 @@
                 "required": "true",
                 "width": "50",
                 "custom_id": "email",
-                "_id": "de1fd44"
+                "_id": "94b714e"
                },
                {
                 "field_type": "tel",
@@ -4125,7 +4178,15 @@
                 "placeholder": "+1 (555) 000-0000",
                 "width": "50",
                 "custom_id": "phone",
-                "_id": "ab65c73"
+                "_id": "9c19360"
+               },
+               {
+                "field_type": "select",
+                "field_label": "Monthly budget",
+                "field_options": "Select a range\nUnder $1,000\n$1,000 – $3,000\n$3,000 – $10,000\n$10,000+",
+                "width": "50",
+                "custom_id": "budget",
+                "_id": "9133227"
                },
                {
                 "field_type": "textarea",
@@ -4134,10 +4195,10 @@
                 "rows": "4",
                 "width": "100",
                 "custom_id": "message",
-                "_id": "94b714e"
+                "_id": "aef7aa7"
                },
                {
-                "_id": "9c19360",
+                "_id": "c9adc96",
                 "custom_id": "hp",
                 "field_type": "honeypot",
                 "field_label": "",
@@ -4229,11 +4290,68 @@
              "elements": []
             },
             {
-             "id": "aef7aa7",
+             "id": "87ca933",
+             "elType": "widget",
+             "widgetType": "icon-list",
+             "settings": {
+              "icon_list": [
+               {
+                "_id": "4549123",
+                "text": "No obligation",
+                "selected_icon": {
+                 "value": "fas fa-check-circle",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "529d0aa",
+                "text": "Reply in 1 business day",
+                "selected_icon": {
+                 "value": "fas fa-clock",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "e8e1949",
+                "text": "100% confidential",
+                "selected_icon": {
+                 "value": "fas fa-lock",
+                 "library": "fa-solid"
+                }
+               }
+              ],
+              "view": "inline",
+              "icon_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "text_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "space_between": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "__globals__": {
+               "icon_color": "globals/colors?id=accent",
+               "text_color": "globals/colors?id=text",
+               "icon_typography_typography": "globals/typography?id=gssmall",
+               "text_color_hover": "globals/colors?id=gswhite"
+              },
+              "_title": "Form Trust Row"
+             },
+             "elements": []
+            },
+            {
+             "id": "c587b30",
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "<p>By submitting this form you agree to be contacted about your enquiry. We never sell your details – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
+              "editor": "<p>We only use your details to reply to your enquiry – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
               "__globals__": {
                "typography_typography": "globals/typography?id=gssmall",
                "text_color": "globals/colors?id=gsmuted"

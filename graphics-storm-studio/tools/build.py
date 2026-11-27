@@ -48,9 +48,13 @@ def growth_engine_section(bg='a'):
         gap_=56, stack='tablet', align='center')], bg=bg)
 
 # ------------------------------------------------------------------ shared blocks
-def logo():
-    return H('Graphics <span>Storm</span> Studio', 'div', 'gsh4', name='Logo (text) – swap for Site Logo widget after upload',
-             link=link('/'), _css_classes='gs-grad', _element_width='auto', _flex_size='none')
+LOGO = {'id': 5904, 'url': 'https://graphicsstormstudio.com/wp-content/uploads/2026/11/graphics-storm-studio-logo.webp',
+        'alt': 'Graphics Storm Studio – digital marketing agency', 'source': 'library'}
+
+def logo(w=180, wm=150):
+    """Brand logo (Image widget, links home). Transparent WebP made from the client's logo – brand/gss-logo.webp."""
+    return W('image', 'Logo', image=LOGO, image_size='full', width=px(w), width_tablet=px(w), width_mobile=px(wm),
+             link_to='custom', link=link('/'), align='left', _element_width='auto', _flex_size='none')
 
 def cta_band():
     """Saved template 'GS – CTA Band' (embedded everywhere via the Template widget)."""
@@ -71,8 +75,17 @@ def cta_band():
     inner['settings']['__globals__'].pop('background_color', None)
     return [SECTION('CTA Band', [inner], pad=(40, 32, 24), tag='section')]
 
+def FORM_HEAD(title, sub):
+    return C('Form Header', [EYEBROW('Free proposal · no obligation'), H(title, 'h3', 'gsh3', name='Form Title'),
+                             P(sub, 'gssmall', 'text', name='Form Intro')], flex_gap=gap(8),
+             padding=dims(0, 0, 18, 0), border_border='solid', border_width=dims(0, 0, 1, 0), g=dict(border_color=col('gsline')))
+
+def FORM_TRUST():
+    return ICONLIST([('No obligation', 'fas fa-check-circle'), ('Reply in 1 business day', 'fas fa-clock'), ('100% confidential', 'fas fa-lock')],
+                    inline=True, t='gssmall', name='Form Trust Row', space_between=px(20), icon_size=px(13))
+
 def PRIVACY_NOTE():
-    return P('By submitting this form you agree to be contacted about your enquiry. We never sell your details – see our <a href="/privacy-policy/">Privacy Policy</a>.',
+    return P('We only use your details to reply to your enquiry – see our <a href="/privacy-policy/">Privacy Policy</a>.',
              'gssmall', 'gsmuted', name='Privacy Note')
 
 def cta(ids):
@@ -97,7 +110,7 @@ def service_cards(items=K.SERVICES_GRID, tag='h3'):
                  for i, t, d, u in items], 3, 2, 1)
 
 def stats_band():
-    return GLASS('Stats Panel', [GRID('Counters', [COL(f'Stat – {t}', [COUNTER(n, t)], gap_=4) for n, t in K.STATS], 4, 2, 2, 32)],
+    return GLASS('Stats Panel', [GRID('Counters', [COL(f'Stat – {t}', [COUNTER(n, t)], gap_=4, flex_align_items='center') for n, t in K.STATS], 4, 2, 2, 32)],
                  strong=True, pad=(48, 40, 28), radius=24)
 
 def process():
@@ -156,7 +169,7 @@ def header():
 def footer():
     el.seed('footer')
     head = lambda t: H(t, 'h2', 'gsh4', name=f'Footer Title – {t}')
-    brand = COL('Footer Brand', [logo(), P('A design-led digital marketing agency helping businesses grow with websites, SEO, social media marketing and graphic design.', 'gssmall', name='Footer About'),
+    brand = COL('Footer Brand', [logo(200, 180), P('A design-led digital marketing agency helping businesses grow with websites, SEO, social media marketing and graphic design.', 'gssmall', name='Footer About'),
                                  W('social-icons', 'Social Icons', social_icon_list=[
                                      {'_id': el.uid(), 'social_icon': ico('fab fa-instagram', 'fa-brands'), 'link': link(K.INSTAGRAM, True), 'item_icon_color': 'default'},
                                      {'_id': el.uid(), 'social_icon': ico('fab fa-whatsapp', 'fa-brands'), 'link': link(K.WHATSAPP, True), 'item_icon_color': 'default'},
@@ -210,9 +223,9 @@ def home(ids=None):
                               ICONLIST(['A quick audit of your website, SEO and social media', 'Recommended services for your goals and budget',
                                         'Fixed, transparent pricing before any work starts'], name='Proposal Checklist')], w=45, wt=100, gap_=20),
         COL('Proposal Form', [GLASS('Lead Form Panel', [
-            H('Tell us about your project', 'h3', 'gsh3', name='Form Title'),
-            FORM('Home Lead Form', ('name', 'email', 'phone', 'services'), 'Get My Free Proposal', 'Home Lead'),
-            PRIVACY_NOTE()], strong=True, pad=(32, 28, 22), radius=24)], w=55, wt=100)],
+            FORM_HEAD('Tell us about your project', 'Takes 60 seconds. We reply with a tailored plan, timeline and price.'),
+            FORM('Home Lead Form', ('name', 'email', 'phone', 'service', 'message_short'), 'Get My Free Proposal', 'Home Lead'),
+            FORM_TRUST(), PRIVACY_NOTE()], strong=True, pad=(36, 28, 22), radius=24, flex_gap=gap(18))], w=55, wt=100)],
         gap_=56, stack='tablet', align='center')], anchor='free-proposal', bg='c')
 
     services = SECTION('Services', [section_head('What we do', 'Digital Marketing Services Built to <span>Grow Your Business</span>',
@@ -282,11 +295,10 @@ def service(key, ids=None):
     proc = SECTION('Process', [section_head('Our process', 'How We <span>Work With You</span>'), process()], bg='a')
     quote = SECTION('Quote Form', [ROW('Quote Row', [
         COL('FAQ', [EYEBROW('FAQ'), H(f'{S["title"]} <span>FAQs</span>', 'h2', name='FAQ Title'), FAQ(S['faq'])], w=55, wt=100, gap_=20),
-        COL('Quote Form Col', [GLASS('Quote Form Panel', [H('Get a free quote', 'h2', 'gsh3', name='Form Title'),
-                                                           P('Share a few details and we will send a tailored proposal within 1 business day.', 'gssmall', name='Form Intro'),
-                                                           FORM('Service Quote Form', ('name', 'email', 'phone', 'message'), 'Request My Free Quote', f'{S["title"]} Quote'),
-                                                           PRIVACY_NOTE()],
-                                     strong=True, pad=(32, 28, 22), radius=24)], w=45, wt=100, _element_id='service-quote')],
+        COL('Quote Form Col', [GLASS('Quote Form Panel', [FORM_HEAD(f'Get a free {S["title"].lower()} quote', 'Share a few details and we will send a tailored proposal within 1 business day.'),
+                                                           FORM('Service Quote Form', ('name', 'email', 'phone', 'budget', 'message'), 'Request My Free Quote', f'{S["title"]} Quote'),
+                                                           FORM_TRUST(), PRIVACY_NOTE()],
+                                     strong=True, pad=(36, 28, 22), radius=24, flex_gap=gap(18))], w=45, wt=100, _element_id='service-quote')],
         gap_=48, stack='tablet')], bg='b')
     return [hero, benefits, features, proc, quote, cta(ids)]
 
@@ -313,7 +325,8 @@ def work(ids=None):
                       info=('gss-our-work.svg', 'Our Work')),
             SECTION('Portfolio', [ICONLIST([c for c in ['Websites', 'Branding', 'Social Media', 'SEO', 'Graphic Design']], inline=True, icon='fas fa-circle',
                                            t='gsnav', name='Categories (add anchors or Loop Grid filter later)', icon_size=px(6)),
-                                  GRID('Projects Grid', cards, 3, 2, 1)], bg='b', gap_=32),
+                                  GRID('Projects Grid', cards, 3, 2, 1)], bg='b', gap_=32,
+                    hide_desktop='hidden-desktop', hide_tablet='hidden-tablet', hide_mobile='hidden-mobile'),  # hidden until real projects are added
             SECTION('Testimonials', [section_head('Client reviews', 'Trusted by <span>Growing Brands</span>'), testimonials()], bg='c'),
             cta(ids)]
 
@@ -331,11 +344,11 @@ def contact(ids=None):
             SECTION('Contact', [ROW('Contact Row', [
                 COL('Contact Info', [H('Get in touch', 'h2', 'gsh3', name='Info Title'),
                                      P('Prefer to talk? Call, email or WhatsApp us – or visit one of our offices.', name='Info Text')] + cards, w=40, wt=100, gap_=16),
-                COL('Contact Form', [GLASS('Contact Form Panel', [H('Request a free proposal', 'h2', 'gsh3', name='Form Title'),
-                                                                  FORM('Contact Form', ('name', 'email', 'phone', 'company', 'budget', 'services', 'message'),
+                COL('Contact Form', [GLASS('Contact Form Panel', [FORM_HEAD('Request a free proposal', 'Tell us a little about your business and goals – we reply within 1 business day.'),
+                                                                  FORM('Contact Form', ('name', 'email', 'phone', 'company', 'service', 'budget', 'message'),
                                                                        'Send My Request', 'Contact Page'),
-                                                                  PRIVACY_NOTE()],
-                                           strong=True, pad=(36, 28, 22), radius=24)], w=60, wt=100)], gap_=40, stack='tablet')], bg='b'),
+                                                                  FORM_TRUST(), PRIVACY_NOTE()],
+                                           strong=True, pad=(40, 28, 22), radius=24, flex_gap=gap(18))], w=60, wt=100)], gap_=40, stack='tablet')], bg='b'),
             SECTION('FAQ', [section_head('FAQ', 'Before You <span>Get in Touch</span>'), FAQ(K.HOME_FAQ[1:4])], bg='c')]
 
 def legal_page(kind, ids=None):

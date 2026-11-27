@@ -825,7 +825,7 @@
    ]
   },
   {
-   "id": "786e82a",
+   "id": "130f4a5",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -896,7 +896,7 @@
    },
    "elements": [
     {
-     "id": "159f175",
+     "id": "25b0e01",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -929,7 +929,7 @@
      },
      "elements": [
       {
-       "id": "51ba05e",
+       "id": "fdbb375",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1101,7 +1101,7 @@
          ]
         },
         {
-         "id": "418c19d",
+         "id": "2989885",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1141,18 +1141,18 @@
          },
          "elements": [
           {
-           "id": "d3b84dc",
+           "id": "56aeec8",
            "elType": "container",
            "isInner": true,
            "settings": {
-            "flex_direction": "column",
             "flex_gap": {
-             "column": "16",
-             "row": "16",
+             "column": "18",
+             "row": "18",
              "isLinked": true,
              "unit": "px",
-             "size": 16
+             "size": 18
             },
+            "flex_direction": "column",
             "background_background": "classic",
             "border_border": "solid",
             "border_width": {
@@ -1181,10 +1181,10 @@
             },
             "padding": {
              "unit": "px",
-             "top": "32",
-             "right": "32",
-             "bottom": "32",
-             "left": "32",
+             "top": "36",
+             "right": "36",
+             "bottom": "36",
+             "left": "36",
              "isLinked": true
             },
             "padding_tablet": {
@@ -1213,22 +1213,89 @@
            },
            "elements": [
             {
-             "id": "23ffb45",
-             "elType": "widget",
-             "widgetType": "heading",
+             "id": "7540aee",
+             "elType": "container",
+             "isInner": true,
              "settings": {
-              "title": "Tell us about your project",
-              "header_size": "h3",
-              "__globals__": {
-               "typography_typography": "globals/typography?id=gsh3",
-               "title_color": "globals/colors?id=gswhite"
+              "flex_gap": {
+               "column": "8",
+               "row": "8",
+               "isLinked": true,
+               "unit": "px",
+               "size": 8
               },
-              "_title": "Form Title"
+              "padding": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "18",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "__globals__": {
+               "border_color": "globals/colors?id=gsline"
+              },
+              "_title": "Form Header",
+              "content_width": "full"
              },
-             "elements": []
+             "elements": [
+              {
+               "id": "23ffb45",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Free proposal · no obligation",
+                "header_size": "p",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gseyebrow",
+                 "title_color": "globals/colors?id=accent"
+                },
+                "_title": "Eyebrow – Free proposal · no obligation"
+               },
+               "elements": []
+              },
+              {
+               "id": "8b4eb84",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Tell us about your project",
+                "header_size": "h3",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gsh3",
+                 "title_color": "globals/colors?id=gswhite"
+                },
+                "_title": "Form Title"
+               },
+               "elements": []
+              },
+              {
+               "id": "66c9573",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Takes 60 seconds. We reply with a tailored plan, timeline and price.</p>",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gssmall",
+                 "text_color": "globals/colors?id=text"
+                },
+                "_title": "Form Intro"
+               },
+               "elements": []
+              }
+             ]
             },
             {
-             "id": "3de4d4c",
+             "id": "51ba05e",
              "elType": "widget",
              "widgetType": "form",
              "settings": {
@@ -1242,7 +1309,7 @@
                 "width": "50",
                 "custom_id": "name",
                 "autocomplete": "name",
-                "_id": "8b4eb84"
+                "_id": "056d17b"
                },
                {
                 "field_type": "email",
@@ -1251,7 +1318,7 @@
                 "required": "true",
                 "width": "50",
                 "custom_id": "email",
-                "_id": "66c9573"
+                "_id": "547f559"
                },
                {
                 "field_type": "tel",
@@ -1259,19 +1326,27 @@
                 "placeholder": "+1 (555) 000-0000",
                 "width": "50",
                 "custom_id": "phone",
-                "_id": "7540aee"
+                "_id": "3de4d4c"
                },
                {
-                "field_type": "checkbox",
-                "field_label": "Services you need",
-                "inline_list": "elementor-subgroup-inline",
-                "field_options": "Website Development\nSEO\nSocial Media Marketing\nGraphic Design\nLogo & Branding\nPaid Ads",
+                "field_type": "select",
+                "field_label": "What do you need help with?",
+                "field_options": "Choose a service\nWebsite Development\nSEO (Search Engine Optimization)\nSocial Media Marketing\nGraphic Design\nLogo & Brand Identity\nPaid Ads (PPC)\nNot sure yet – please advise",
+                "width": "50",
+                "custom_id": "service",
+                "_id": "5a69def"
+               },
+               {
+                "field_type": "textarea",
+                "field_label": "Project details (optional)",
+                "placeholder": "A few words about your goals…",
+                "rows": "3",
                 "width": "100",
-                "custom_id": "services",
-                "_id": "056d17b"
+                "custom_id": "message",
+                "_id": "d3b84dc"
                },
                {
-                "_id": "547f559",
+                "_id": "418c19d",
                 "custom_id": "hp",
                 "field_type": "honeypot",
                 "field_label": "",
@@ -1363,11 +1438,68 @@
              "elements": []
             },
             {
-             "id": "5a69def",
+             "id": "36fd090",
+             "elType": "widget",
+             "widgetType": "icon-list",
+             "settings": {
+              "icon_list": [
+               {
+                "_id": "159f175",
+                "text": "No obligation",
+                "selected_icon": {
+                 "value": "fas fa-check-circle",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "786e82a",
+                "text": "Reply in 1 business day",
+                "selected_icon": {
+                 "value": "fas fa-clock",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "3f6b503",
+                "text": "100% confidential",
+                "selected_icon": {
+                 "value": "fas fa-lock",
+                 "library": "fa-solid"
+                }
+               }
+              ],
+              "view": "inline",
+              "icon_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "text_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "space_between": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "__globals__": {
+               "icon_color": "globals/colors?id=accent",
+               "text_color": "globals/colors?id=text",
+               "icon_typography_typography": "globals/typography?id=gssmall",
+               "text_color_hover": "globals/colors?id=gswhite"
+              },
+              "_title": "Form Trust Row"
+             },
+             "elements": []
+            },
+            {
+             "id": "3229c88",
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "<p>By submitting this form you agree to be contacted about your enquiry. We never sell your details – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
+              "editor": "<p>We only use your details to reply to your enquiry – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
               "__globals__": {
                "typography_typography": "globals/typography?id=gssmall",
                "text_color": "globals/colors?id=gsmuted"
@@ -1387,7 +1519,7 @@
    ]
   },
   {
-   "id": "55de329",
+   "id": "eee9dac",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1458,7 +1590,7 @@
    },
    "elements": [
     {
-     "id": "9dd53e1",
+     "id": "24e043d",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1491,7 +1623,7 @@
      },
      "elements": [
       {
-       "id": "56aeec8",
+       "id": "452675a",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1517,7 +1649,7 @@
        },
        "elements": [
         {
-         "id": "3f6b503",
+         "id": "9dbccf3",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1533,7 +1665,7 @@
          "elements": []
         },
         {
-         "id": "36fd090",
+         "id": "10f0689",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1550,7 +1682,7 @@
          "elements": []
         },
         {
-         "id": "3229c88",
+         "id": "5b9d066",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -1578,7 +1710,7 @@
        ]
       },
       {
-       "id": "57511a5",
+       "id": "58f0442",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1624,7 +1756,7 @@
        },
        "elements": [
         {
-         "id": "25b0e01",
+         "id": "c4ba00a",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1731,7 +1863,7 @@
          },
          "elements": [
           {
-           "id": "2989885",
+           "id": "da83e26",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -1794,7 +1926,7 @@
            "elements": []
           },
           {
-           "id": "fdbb375",
+           "id": "de3a600",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1846,7 +1978,7 @@
          ]
         },
         {
-         "id": "10f0689",
+         "id": "9d23a32",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1953,7 +2085,7 @@
          },
          "elements": [
           {
-           "id": "130f4a5",
+           "id": "5476dfd",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2016,7 +2148,7 @@
            "elements": []
           },
           {
-           "id": "9dbccf3",
+           "id": "6468d32",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2068,7 +2200,7 @@
          ]
         },
         {
-         "id": "da83e26",
+         "id": "6c30f3f",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2175,7 +2307,7 @@
          },
          "elements": [
           {
-           "id": "5b9d066",
+           "id": "db627a0",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2238,7 +2370,7 @@
            "elements": []
           },
           {
-           "id": "452675a",
+           "id": "bed763e",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2290,7 +2422,7 @@
          ]
         },
         {
-         "id": "5476dfd",
+         "id": "9dd53e1",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2397,7 +2529,7 @@
          },
          "elements": [
           {
-           "id": "de3a600",
+           "id": "f1f4554",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2460,7 +2592,7 @@
            "elements": []
           },
           {
-           "id": "c4ba00a",
+           "id": "57511a5",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2512,7 +2644,7 @@
          ]
         },
         {
-         "id": "db627a0",
+         "id": "43eeb25",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2619,7 +2751,7 @@
          },
          "elements": [
           {
-           "id": "6468d32",
+           "id": "55de329",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2682,7 +2814,7 @@
            "elements": []
           },
           {
-           "id": "9d23a32",
+           "id": "3e85649",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2734,7 +2866,7 @@
          ]
         },
         {
-         "id": "f1f4554",
+         "id": "eb85195",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2841,7 +2973,7 @@
          },
          "elements": [
           {
-           "id": "bed763e",
+           "id": "510f221",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2904,7 +3036,7 @@
            "elements": []
           },
           {
-           "id": "6c30f3f",
+           "id": "ddb428b",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2962,7 +3094,7 @@
    ]
   },
   {
-   "id": "11b3c7a",
+   "id": "97f76a0",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -3032,7 +3164,7 @@
    },
    "elements": [
     {
-     "id": "d997db4",
+     "id": "596a573",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -3065,7 +3197,7 @@
      },
      "elements": [
       {
-       "id": "c278bd8",
+       "id": "b87f259",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3093,7 +3225,7 @@
        },
        "elements": [
         {
-         "id": "26d0da5",
+         "id": "fa89079",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3133,7 +3265,7 @@
          },
          "elements": [
           {
-           "id": "3e85649",
+           "id": "d91aeeb",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -3148,7 +3280,7 @@
            "elements": []
           },
           {
-           "id": "43eeb25",
+           "id": "26d0da5",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -3164,7 +3296,7 @@
            "elements": []
           },
           {
-           "id": "510f221",
+           "id": "2519b29",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -3178,13 +3310,13 @@
            "elements": []
           },
           {
-           "id": "eee9dac",
+           "id": "99f92e2",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
             "icon_list": [
              {
-              "_id": "ddb428b",
+              "_id": "fb27103",
               "text": "Personalised campaigns for your goals and budget",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3192,7 +3324,7 @@
               }
              },
              {
-              "_id": "eb85195",
+              "_id": "3e3bbc1",
               "text": "Reach your ideal audience faster",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3200,7 +3332,7 @@
               }
              },
              {
-              "_id": "58f0442",
+              "_id": "709b183",
               "text": "Low cost, high return marketing",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3208,7 +3340,7 @@
               }
              },
              {
-              "_id": "24e043d",
+              "_id": "21216b4",
               "text": "Honest monthly reporting – no jargon",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3243,7 +3375,7 @@
            "elements": []
           },
           {
-           "id": "d91aeeb",
+           "id": "178bdf0",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -3298,7 +3430,7 @@
          ]
         },
         {
-         "id": "87c8f22",
+         "id": "ba36188",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3338,7 +3470,7 @@
          },
          "elements": [
           {
-           "id": "27e31c0",
+           "id": "01a7ff9",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3384,7 +3516,7 @@
            },
            "elements": [
             {
-             "id": "fb27103",
+             "id": "87c8f22",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3490,7 +3622,7 @@
              },
              "elements": [
               {
-               "id": "2519b29",
+               "id": "27e31c0",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -3549,7 +3681,7 @@
              ]
             },
             {
-             "id": "709b183",
+             "id": "f1d4b85",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3655,7 +3787,7 @@
              },
              "elements": [
               {
-               "id": "3e3bbc1",
+               "id": "c278bd8",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -3714,7 +3846,7 @@
              ]
             },
             {
-             "id": "99f92e2",
+             "id": "4c2469f",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3820,7 +3952,7 @@
              },
              "elements": [
               {
-               "id": "21216b4",
+               "id": "af7320d",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -3879,7 +4011,7 @@
              ]
             },
             {
-             "id": "fa89079",
+             "id": "5e069d8",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3985,7 +4117,7 @@
              },
              "elements": [
               {
-               "id": "178bdf0",
+               "id": "bded7bf",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -4050,7 +4182,7 @@
        ]
       },
       {
-       "id": "ab5665e",
+       "id": "4902b07",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4122,7 +4254,7 @@
        },
        "elements": [
         {
-         "id": "2bd2374",
+         "id": "2f9b00c",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -4168,10 +4300,11 @@
          },
          "elements": [
           {
-           "id": "af7320d",
+           "id": "ab5665e",
            "elType": "container",
            "isInner": true,
            "settings": {
+            "flex_align_items": "center",
             "flex_direction": "column",
             "flex_gap": {
              "column": "4",
@@ -4193,7 +4326,7 @@
            },
            "elements": [
             {
-             "id": "f1d4b85",
+             "id": "2bd2374",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4204,8 +4337,11 @@
               "duration": 1600,
               "thousand_separator": "yes",
               "title_tag": "p",
-              "number_alignment": "start",
-              "title_horizontal_alignment": "start",
+              "number_alignment": "center",
+              "number_position": "center",
+              "title_horizontal_alignment": "center",
+              "title_vertical_alignment": "center",
+              "_element_width": "inherit",
               "__globals__": {
                "number_color": "globals/colors?id=gswhite",
                "typography_number_typography": "globals/typography?id=gsstat",
@@ -4219,10 +4355,11 @@
            ]
           },
           {
-           "id": "bded7bf",
+           "id": "11b3c7a",
            "elType": "container",
            "isInner": true,
            "settings": {
+            "flex_align_items": "center",
             "flex_direction": "column",
             "flex_gap": {
              "column": "4",
@@ -4244,7 +4381,7 @@
            },
            "elements": [
             {
-             "id": "4c2469f",
+             "id": "d997db4",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4255,8 +4392,11 @@
               "duration": 1600,
               "thousand_separator": "yes",
               "title_tag": "p",
-              "number_alignment": "start",
-              "title_horizontal_alignment": "start",
+              "number_alignment": "center",
+              "number_position": "center",
+              "title_horizontal_alignment": "center",
+              "title_vertical_alignment": "center",
+              "_element_width": "inherit",
               "__globals__": {
                "number_color": "globals/colors?id=gswhite",
                "typography_number_typography": "globals/typography?id=gsstat",
@@ -4270,10 +4410,11 @@
            ]
           },
           {
-           "id": "01a7ff9",
+           "id": "fe3e550",
            "elType": "container",
            "isInner": true,
            "settings": {
+            "flex_align_items": "center",
             "flex_direction": "column",
             "flex_gap": {
              "column": "4",
@@ -4295,7 +4436,7 @@
            },
            "elements": [
             {
-             "id": "5e069d8",
+             "id": "3a52dee",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4306,8 +4447,11 @@
               "duration": 1600,
               "thousand_separator": "yes",
               "title_tag": "p",
-              "number_alignment": "start",
-              "title_horizontal_alignment": "start",
+              "number_alignment": "center",
+              "number_position": "center",
+              "title_horizontal_alignment": "center",
+              "title_vertical_alignment": "center",
+              "_element_width": "inherit",
               "__globals__": {
                "number_color": "globals/colors?id=gswhite",
                "typography_number_typography": "globals/typography?id=gsstat",
@@ -4321,10 +4465,11 @@
            ]
           },
           {
-           "id": "b87f259",
+           "id": "b5e45d9",
            "elType": "container",
            "isInner": true,
            "settings": {
+            "flex_align_items": "center",
             "flex_direction": "column",
             "flex_gap": {
              "column": "4",
@@ -4346,7 +4491,7 @@
            },
            "elements": [
             {
-             "id": "ba36188",
+             "id": "491e280",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4357,8 +4502,11 @@
               "duration": 1600,
               "thousand_separator": "yes",
               "title_tag": "p",
-              "number_alignment": "start",
-              "title_horizontal_alignment": "start",
+              "number_alignment": "center",
+              "number_position": "center",
+              "title_horizontal_alignment": "center",
+              "title_vertical_alignment": "center",
+              "_element_width": "inherit",
               "__globals__": {
                "number_color": "globals/colors?id=gswhite",
                "typography_number_typography": "globals/typography?id=gsstat",
@@ -4380,7 +4528,7 @@
    ]
   },
   {
-   "id": "1b84c1f",
+   "id": "c2ddec3",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -4450,7 +4598,7 @@
    },
    "elements": [
     {
-     "id": "9c727a6",
+     "id": "470bd0e",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -4483,7 +4631,7 @@
      },
      "elements": [
       {
-       "id": "b5e45d9",
+       "id": "54c3dbe",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4509,7 +4657,7 @@
        },
        "elements": [
         {
-         "id": "3a52dee",
+         "id": "e9671e4",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -4525,7 +4673,7 @@
          "elements": []
         },
         {
-         "id": "fe3e550",
+         "id": "2a6b68d",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -4542,7 +4690,7 @@
          "elements": []
         },
         {
-         "id": "491e280",
+         "id": "b5d8237",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -4570,7 +4718,7 @@
        ]
       },
       {
-       "id": "8d9d8f7",
+       "id": "2d09cbb",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4616,7 +4764,7 @@
        },
        "elements": [
         {
-         "id": "97f76a0",
+         "id": "26bf590",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -4722,7 +4870,7 @@
          },
          "elements": [
           {
-           "id": "2f9b00c",
+           "id": "66db029",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -4738,7 +4886,7 @@
            "elements": []
           },
           {
-           "id": "4902b07",
+           "id": "6f22961",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -4753,317 +4901,11 @@
            "elements": []
           },
           {
-           "id": "596a573",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>We learn your business, audience and competitors, and audit your current website, SEO and social channels.</p>",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gsbody",
-             "text_color": "globals/colors?id=text"
-            },
-            "_title": "Step Text"
-           },
-           "elements": []
-          }
-         ]
-        },
-        {
-         "id": "54c3dbe",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
-           "column": "16",
-           "row": "16",
-           "isLinked": true,
-           "unit": "px",
-           "size": 16
-          },
-          "background_background": "classic",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "20",
-           "right": "20",
-           "bottom": "20",
-           "left": "20",
-           "isLinked": true
-          },
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 20,
-           "blur": 50,
-           "spread": 0,
-           "color": "rgba(2,6,23,0.45)"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "32",
-           "right": "32",
-           "bottom": "32",
-           "left": "32",
-           "isLinked": true
-          },
-          "padding_tablet": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": true
-          },
-          "css_classes": "gs-glass",
-          "_transform_translateY_popover_hover": "transform",
-          "_transform_translateY_effect_hover": {
-           "unit": "px",
-           "size": -6,
-           "sizes": []
-          },
-          "_transform_transition_hover": {
-           "unit": "ms",
-           "size": 300,
-           "sizes": []
-          },
-          "border_hover_border": "solid",
-          "border_hover_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_hover_transition": {
-           "unit": "s",
-           "size": 0.3,
-           "sizes": []
-          },
-          "box_shadow_hover_box_shadow_type": "yes",
-          "box_shadow_hover_box_shadow": {
-           "horizontal": 0,
-           "vertical": 28,
-           "blur": 60,
-           "spread": 0,
-           "color": "rgba(6,132,196,0.28)"
-          },
-          "__globals__": {
-           "background_color": "globals/colors?id=gsglass",
-           "border_color": "globals/colors?id=gsline",
-           "border_hover_color": "globals/colors?id=accent"
-          },
-          "_title": "Step 02",
-          "content_width": "full"
-         },
-         "elements": [
-          {
-           "id": "e9671e4",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "02",
-            "header_size": "p",
-            "_css_classes": "gs-grad",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gsstat",
-             "title_color": "globals/colors?id=accent"
-            },
-            "_title": "Step Number"
-           },
-           "elements": []
-          },
-          {
-           "id": "2a6b68d",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Strategy",
-            "header_size": "h3",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gsh3",
-             "title_color": "globals/colors?id=gswhite"
-            },
-            "_title": "Step Title"
-           },
-           "elements": []
-          },
-          {
-           "id": "b5d8237",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>You get a clear, prioritised plan with goals, channels, timelines and the KPIs we will be measured on.</p>",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gsbody",
-             "text_color": "globals/colors?id=text"
-            },
-            "_title": "Step Text"
-           },
-           "elements": []
-          }
-         ]
-        },
-        {
-         "id": "26bf590",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
-           "column": "16",
-           "row": "16",
-           "isLinked": true,
-           "unit": "px",
-           "size": 16
-          },
-          "background_background": "classic",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "20",
-           "right": "20",
-           "bottom": "20",
-           "left": "20",
-           "isLinked": true
-          },
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 20,
-           "blur": 50,
-           "spread": 0,
-           "color": "rgba(2,6,23,0.45)"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "32",
-           "right": "32",
-           "bottom": "32",
-           "left": "32",
-           "isLinked": true
-          },
-          "padding_tablet": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": true
-          },
-          "css_classes": "gs-glass",
-          "_transform_translateY_popover_hover": "transform",
-          "_transform_translateY_effect_hover": {
-           "unit": "px",
-           "size": -6,
-           "sizes": []
-          },
-          "_transform_transition_hover": {
-           "unit": "ms",
-           "size": 300,
-           "sizes": []
-          },
-          "border_hover_border": "solid",
-          "border_hover_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_hover_transition": {
-           "unit": "s",
-           "size": 0.3,
-           "sizes": []
-          },
-          "box_shadow_hover_box_shadow_type": "yes",
-          "box_shadow_hover_box_shadow": {
-           "horizontal": 0,
-           "vertical": 28,
-           "blur": 60,
-           "spread": 0,
-           "color": "rgba(6,132,196,0.28)"
-          },
-          "__globals__": {
-           "background_color": "globals/colors?id=gsglass",
-           "border_color": "globals/colors?id=gsline",
-           "border_hover_color": "globals/colors?id=accent"
-          },
-          "_title": "Step 03",
-          "content_width": "full"
-         },
-         "elements": [
-          {
-           "id": "66db029",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "03",
-            "header_size": "p",
-            "_css_classes": "gs-grad",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gsstat",
-             "title_color": "globals/colors?id=accent"
-            },
-            "_title": "Step Number"
-           },
-           "elements": []
-          },
-          {
-           "id": "6f22961",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Create & Launch",
-            "header_size": "h3",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gsh3",
-             "title_color": "globals/colors?id=gswhite"
-            },
-            "_title": "Step Title"
-           },
-           "elements": []
-          },
-          {
            "id": "c19b858",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>Our designers, developers and marketers build and launch – with your approval at every milestone.</p>",
+            "editor": "<p>We learn your business, audience and competitors, and audit your current website, SEO and social channels.</p>",
             "__globals__": {
              "typography_typography": "globals/typography?id=gsbody",
              "text_color": "globals/colors?id=text"
@@ -5176,7 +5018,7 @@
            "border_color": "globals/colors?id=gsline",
            "border_hover_color": "globals/colors?id=accent"
           },
-          "_title": "Step 04",
+          "_title": "Step 02",
           "content_width": "full"
          },
          "elements": [
@@ -5185,7 +5027,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "04",
+            "title": "02",
             "header_size": "p",
             "_css_classes": "gs-grad",
             "__globals__": {
@@ -5201,7 +5043,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Measure & Grow",
+            "title": "Strategy",
             "header_size": "h3",
             "__globals__": {
              "typography_typography": "globals/typography?id=gsh3",
@@ -5213,6 +5055,312 @@
           },
           {
            "id": "b206046",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>You get a clear, prioritised plan with goals, channels, timelines and the KPIs we will be measured on.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Step Text"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "ceacee7",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Step 03",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "8d9d8f7",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "03",
+            "header_size": "p",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsstat",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Step Number"
+           },
+           "elements": []
+          },
+          {
+           "id": "9c727a6",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Create & Launch",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Step Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "1b84c1f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Our designers, developers and marketers build and launch – with your approval at every milestone.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsbody",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Step Text"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "2b271a3",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Step 04",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "e2916c6",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "04",
+            "header_size": "p",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsstat",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Step Number"
+           },
+           "elements": []
+          },
+          {
+           "id": "b626d48",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Measure & Grow",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh3",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Step Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "ca0488b",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -5234,7 +5382,7 @@
    ]
   },
   {
-   "id": "eb4974d",
+   "id": "a7903fd",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -5304,7 +5452,7 @@
    },
    "elements": [
     {
-     "id": "14de64a",
+     "id": "9b0d5b9",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -5337,7 +5485,7 @@
      },
      "elements": [
       {
-       "id": "b626d48",
+       "id": "7293842",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5363,7 +5511,7 @@
        },
        "elements": [
         {
-         "id": "ceacee7",
+         "id": "14de64a",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -5379,7 +5527,7 @@
          "elements": []
         },
         {
-         "id": "e2916c6",
+         "id": "eb4974d",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -5398,31 +5546,31 @@
        ]
       },
       {
-       "id": "c2ddec3",
+       "id": "3552c23",
        "elType": "widget",
        "widgetType": "testimonial-carousel",
        "settings": {
         "slides": [
          {
-          "_id": "ca0488b",
+          "_id": "d616cb6",
           "content": "The brand guidelines and logos were absolutely fantastic! They have transformed my brand and will help me scale up for more business. Great communication and very speedy delivery – ahead of schedule.",
           "name": "Mr. James",
           "title": "Brand identity client"
          },
          {
-          "_id": "2b271a3",
+          "_id": "16d1f9c",
           "content": "Working with Mr. Fahad was very pleasant and professional. Communication was fast and I am more than satisfied with the result. Looking forward to the next project.",
           "name": "Anthony",
           "title": "Website client"
          },
          {
-          "_id": "2d09cbb",
+          "_id": "f555b68",
           "content": "My first time working with Fahad and it has been a pleasure. Brief well met, clear communication and fast delivery. Not much more you can ask for.",
           "name": "Lisa P.",
           "title": "Marketing client"
          },
          {
-          "_id": "470bd0e",
+          "_id": "dc57790",
           "content": "Wonderful experience as always – so happy with the final product. Highly recommend!",
           "name": "Patrick",
           "title": "Design client"
@@ -5489,7 +5637,7 @@
    ]
   },
   {
-   "id": "c51044f",
+   "id": "a235d3e",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -5559,7 +5707,7 @@
    },
    "elements": [
     {
-     "id": "4b2442b",
+     "id": "56194ce",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -5592,7 +5740,7 @@
      },
      "elements": [
       {
-       "id": "a7512a9",
+       "id": "bbc90bc",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5620,7 +5768,7 @@
        },
        "elements": [
         {
-         "id": "dc57790",
+         "id": "4c101a2",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5660,7 +5808,7 @@
          },
          "elements": [
           {
-           "id": "7293842",
+           "id": "a8ee68a",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5675,7 +5823,7 @@
            "elements": []
           },
           {
-           "id": "d616cb6",
+           "id": "cf56f78",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5691,7 +5839,7 @@
            "elements": []
           },
           {
-           "id": "16d1f9c",
+           "id": "611d7db",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -5705,7 +5853,7 @@
            "elements": []
           },
           {
-           "id": "f555b68",
+           "id": "9d58265",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -5760,7 +5908,7 @@
          ]
         },
         {
-         "id": "13ff84c",
+         "id": "5122346",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5800,29 +5948,29 @@
          },
          "elements": [
           {
-           "id": "e27dddc",
+           "id": "4c4ed45",
            "elType": "widget",
            "widgetType": "nested-accordion",
            "settings": {
             "items": [
              {
-              "_id": "3552c23",
+              "_id": "dbb023e",
               "item_title": "What does a digital marketing agency do?"
              },
              {
-              "_id": "a8ee68a",
+              "_id": "f961eba",
               "item_title": "How much do your digital marketing services cost?"
              },
              {
-              "_id": "9d58265",
+              "_id": "92e8f74",
               "item_title": "How long does SEO take to show results?"
              },
              {
-              "_id": "4594141",
+              "_id": "a7512a9",
               "item_title": "How long does it take to build a website?"
              },
              {
-              "_id": "8bf091e",
+              "_id": "1b78a4d",
               "item_title": "Do you work with clients outside the USA and Canada?"
              }
             ],
@@ -5917,7 +6065,7 @@
            },
            "elements": [
             {
-             "id": "a7903fd",
+             "id": "11ece38",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -5934,7 +6082,7 @@
              },
              "elements": [
               {
-               "id": "9b0d5b9",
+               "id": "4594141",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -5950,7 +6098,7 @@
              ]
             },
             {
-             "id": "611d7db",
+             "id": "1a2ecbe",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -5967,7 +6115,7 @@
              },
              "elements": [
               {
-               "id": "cf56f78",
+               "id": "8bf091e",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -5983,7 +6131,7 @@
              ]
             },
             {
-             "id": "dbb023e",
+             "id": "13ff84c",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6000,7 +6148,7 @@
              },
              "elements": [
               {
-               "id": "4c101a2",
+               "id": "e27dddc",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6016,7 +6164,7 @@
              ]
             },
             {
-             "id": "f961eba",
+             "id": "c51044f",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6033,7 +6181,7 @@
              },
              "elements": [
               {
-               "id": "11ece38",
+               "id": "4b2442b",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6049,7 +6197,7 @@
              ]
             },
             {
-             "id": "92e8f74",
+             "id": "b9c197e",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6066,7 +6214,7 @@
              },
              "elements": [
               {
-               "id": "1a2ecbe",
+               "id": "fae2b03",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {

@@ -85,6 +85,7 @@ S = {
  'viewport_tablet': 1024, 'viewport_mobile': 767, 'viewport_md': 768, 'viewport_lg': 1025,
  # Site identity
  'site_name': 'Graphics Storm Studio', 'site_description': 'Digital Marketing Agency',
+ 'site_logo': {'id': 5904, 'url': 'https://graphicsstormstudio.com/wp-content/uploads/2026/11/graphics-storm-studio-logo.webp'},
  # Lightbox off (we have no galleries needing it)
  'global_image_lightbox': '',
 }

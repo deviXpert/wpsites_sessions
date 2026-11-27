@@ -55,7 +55,11 @@ python3 backup.py         # fresh snapshot to ../backup/
 - Service pages: the infographic is in the hero, and "What's included" moved next to the benefit cards.
 - New SVGs: about 5859, services funnel 5860, our work 5861, contact 5862, privacy 5863, terms 5864.
 - Privacy Policy (page 5892, /privacy-policy/) and Terms of Service (5897, /terms-of-service/) are built from `tools/legal.py` (sticky table of contents on desktop). Every form has a privacy note linking to the policy. **Not legal advice; the owner should have them reviewed.** Governing law was chosen as Illinois (US/international clients) and Ontario (Canadian clients); confirm with the owner.
-- The user shared their logo in chat (blue chrome "STORM" wordmark with a globe, tagline "Your thoughts turn into reality", on a black background), but the file never reached the container. Ask for it to be uploaded, then swap the text logo for the Site Logo widget.
+- **Logo:** made from the client's JPG (`brand/logo-original.jpg`), black keyed to transparent → `brand/gss-logo.webp` (media 5904). Used as an Image widget in the header (180px, 150 mobile) and footer, and set as the Site Settings logo. The Site Logo widget showed a placeholder with this theme, so a plain Image widget is used.
+- **Favicon:** vector redraw of the logo globe, `brand/favicon.svg` → `favicon-512.png` (media 5952), set as the WordPress Site Icon.
+- **Forms redesigned:** header (eyebrow, title, subline, divider), paired 2-column fields, a service dropdown instead of checkboxes, a trust row and a privacy note.
+- **Hidden until real content exists:** the client-logo strip (Home) and the portfolio grid (Our Work), via Elementor's Hide on desktop/tablet/mobile.
+- ⚠️ **NEVER call `elementor/update-page-settings` on the kit (17) with partial settings.** It REPLACED the whole kit once (the live site lost its globals for about 2 minutes) and was restored with `python3 kit.py`. Always run `kit.py`, which sends the full set.
 
 ## Open items
 - Visual QA screenshots are blocked by Under Construction plus draft status (see the session notes). The user reviews the drafts while logged in.

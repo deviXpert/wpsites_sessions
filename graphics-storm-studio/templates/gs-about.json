@@ -1344,6 +1344,7 @@
            "elType": "container",
            "isInner": true,
            "settings": {
+            "flex_align_items": "center",
             "flex_direction": "column",
             "flex_gap": {
              "column": "4",
@@ -1376,8 +1377,11 @@
               "duration": 1600,
               "thousand_separator": "yes",
               "title_tag": "p",
-              "number_alignment": "start",
-              "title_horizontal_alignment": "start",
+              "number_alignment": "center",
+              "number_position": "center",
+              "title_horizontal_alignment": "center",
+              "title_vertical_alignment": "center",
+              "_element_width": "inherit",
               "__globals__": {
                "number_color": "globals/colors?id=gswhite",
                "typography_number_typography": "globals/typography?id=gsstat",
@@ -1395,6 +1399,7 @@
            "elType": "container",
            "isInner": true,
            "settings": {
+            "flex_align_items": "center",
             "flex_direction": "column",
             "flex_gap": {
              "column": "4",
@@ -1427,8 +1432,11 @@
               "duration": 1600,
               "thousand_separator": "yes",
               "title_tag": "p",
-              "number_alignment": "start",
-              "title_horizontal_alignment": "start",
+              "number_alignment": "center",
+              "number_position": "center",
+              "title_horizontal_alignment": "center",
+              "title_vertical_alignment": "center",
+              "_element_width": "inherit",
               "__globals__": {
                "number_color": "globals/colors?id=gswhite",
                "typography_number_typography": "globals/typography?id=gsstat",
@@ -1446,6 +1454,7 @@
            "elType": "container",
            "isInner": true,
            "settings": {
+            "flex_align_items": "center",
             "flex_direction": "column",
             "flex_gap": {
              "column": "4",
@@ -1478,8 +1487,11 @@
               "duration": 1600,
               "thousand_separator": "yes",
               "title_tag": "p",
-              "number_alignment": "start",
-              "title_horizontal_alignment": "start",
+              "number_alignment": "center",
+              "number_position": "center",
+              "title_horizontal_alignment": "center",
+              "title_vertical_alignment": "center",
+              "_element_width": "inherit",
               "__globals__": {
                "number_color": "globals/colors?id=gswhite",
                "typography_number_typography": "globals/typography?id=gsstat",
@@ -1497,6 +1509,7 @@
            "elType": "container",
            "isInner": true,
            "settings": {
+            "flex_align_items": "center",
             "flex_direction": "column",
             "flex_gap": {
              "column": "4",
@@ -1529,8 +1542,11 @@
               "duration": 1600,
               "thousand_separator": "yes",
               "title_tag": "p",
-              "number_alignment": "start",
-              "title_horizontal_alignment": "start",
+              "number_alignment": "center",
+              "number_position": "center",
+              "title_horizontal_alignment": "center",
+              "title_vertical_alignment": "center",
+              "_element_width": "inherit",
               "__globals__": {
                "number_color": "globals/colors?id=gswhite",
                "typography_number_typography": "globals/typography?id=gsstat",

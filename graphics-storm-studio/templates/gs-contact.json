@@ -381,7 +381,7 @@
    ]
   },
   {
-   "id": "a074eb1",
+   "id": "b443d0d",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -451,7 +451,7 @@
    },
    "elements": [
     {
-     "id": "5f5de24",
+     "id": "fc7d0c0",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -484,7 +484,7 @@
      },
      "elements": [
       {
-       "id": "6a17b0e",
+       "id": "68fffc6",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1338,7 +1338,7 @@
          ]
         },
         {
-         "id": "c628a8f",
+         "id": "bfc5c86",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1378,18 +1378,18 @@
          },
          "elements": [
           {
-           "id": "369b239",
+           "id": "c2d5cde",
            "elType": "container",
            "isInner": true,
            "settings": {
-            "flex_direction": "column",
             "flex_gap": {
-             "column": "16",
-             "row": "16",
+             "column": "18",
+             "row": "18",
              "isLinked": true,
              "unit": "px",
-             "size": 16
+             "size": 18
             },
+            "flex_direction": "column",
             "background_background": "classic",
             "border_border": "solid",
             "border_width": {
@@ -1418,10 +1418,10 @@
             },
             "padding": {
              "unit": "px",
-             "top": "36",
-             "right": "36",
-             "bottom": "36",
-             "left": "36",
+             "top": "40",
+             "right": "40",
+             "bottom": "40",
+             "left": "40",
              "isLinked": true
             },
             "padding_tablet": {
@@ -1450,22 +1450,89 @@
            },
            "elements": [
             {
-             "id": "7f3954a",
-             "elType": "widget",
-             "widgetType": "heading",
+             "id": "0bd5ef6",
+             "elType": "container",
+             "isInner": true,
              "settings": {
-              "title": "Request a free proposal",
-              "header_size": "h2",
-              "__globals__": {
-               "typography_typography": "globals/typography?id=gsh3",
-               "title_color": "globals/colors?id=gswhite"
+              "flex_gap": {
+               "column": "8",
+               "row": "8",
+               "isLinked": true,
+               "unit": "px",
+               "size": 8
               },
-              "_title": "Form Title"
+              "padding": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "18",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "__globals__": {
+               "border_color": "globals/colors?id=gsline"
+              },
+              "_title": "Form Header",
+              "content_width": "full"
              },
-             "elements": []
+             "elements": [
+              {
+               "id": "7f3954a",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Free proposal · no obligation",
+                "header_size": "p",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gseyebrow",
+                 "title_color": "globals/colors?id=accent"
+                },
+                "_title": "Eyebrow – Free proposal · no obligation"
+               },
+               "elements": []
+              },
+              {
+               "id": "feec9e3",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Request a free proposal",
+                "header_size": "h3",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gsh3",
+                 "title_color": "globals/colors?id=gswhite"
+                },
+                "_title": "Form Title"
+               },
+               "elements": []
+              },
+              {
+               "id": "054e06e",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Tell us a little about your business and goals – we reply within 1 business day.</p>",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gssmall",
+                 "text_color": "globals/colors?id=text"
+                },
+                "_title": "Form Intro"
+               },
+               "elements": []
+              }
+             ]
             },
             {
-             "id": "60dd770",
+             "id": "c628a8f",
              "elType": "widget",
              "widgetType": "form",
              "settings": {
@@ -1479,7 +1546,7 @@
                 "width": "50",
                 "custom_id": "name",
                 "autocomplete": "name",
-                "_id": "feec9e3"
+                "_id": "f053c3b"
                },
                {
                 "field_type": "email",
@@ -1488,7 +1555,7 @@
                 "required": "true",
                 "width": "50",
                 "custom_id": "email",
-                "_id": "054e06e"
+                "_id": "61bcce3"
                },
                {
                 "field_type": "tel",
@@ -1496,7 +1563,7 @@
                 "placeholder": "+1 (555) 000-0000",
                 "width": "50",
                 "custom_id": "phone",
-                "_id": "0bd5ef6"
+                "_id": "729eda2"
                },
                {
                 "field_type": "text",
@@ -1504,7 +1571,15 @@
                 "placeholder": "https://",
                 "width": "50",
                 "custom_id": "website",
-                "_id": "f053c3b"
+                "_id": "6f0a11a"
+               },
+               {
+                "field_type": "select",
+                "field_label": "What do you need help with?",
+                "field_options": "Choose a service\nWebsite Development\nSEO (Search Engine Optimization)\nSocial Media Marketing\nGraphic Design\nLogo & Brand Identity\nPaid Ads (PPC)\nNot sure yet – please advise",
+                "width": "50",
+                "custom_id": "service",
+                "_id": "25c8f5a"
                },
                {
                 "field_type": "select",
@@ -1512,16 +1587,7 @@
                 "field_options": "Select a range\nUnder $1,000\n$1,000 – $3,000\n$3,000 – $10,000\n$10,000+",
                 "width": "50",
                 "custom_id": "budget",
-                "_id": "61bcce3"
-               },
-               {
-                "field_type": "checkbox",
-                "field_label": "Services you need",
-                "inline_list": "elementor-subgroup-inline",
-                "field_options": "Website Development\nSEO\nSocial Media Marketing\nGraphic Design\nLogo & Branding\nPaid Ads",
-                "width": "100",
-                "custom_id": "services",
-                "_id": "729eda2"
+                "_id": "60dd770"
                },
                {
                 "field_type": "textarea",
@@ -1530,10 +1596,10 @@
                 "rows": "4",
                 "width": "100",
                 "custom_id": "message",
-                "_id": "6f0a11a"
+                "_id": "e1bd3ea"
                },
                {
-                "_id": "25c8f5a",
+                "_id": "369b239",
                 "custom_id": "hp",
                 "field_type": "honeypot",
                 "field_label": "",
@@ -1625,11 +1691,68 @@
              "elements": []
             },
             {
-             "id": "e1bd3ea",
+             "id": "1dbd836",
+             "elType": "widget",
+             "widgetType": "icon-list",
+             "settings": {
+              "icon_list": [
+               {
+                "_id": "6a17b0e",
+                "text": "No obligation",
+                "selected_icon": {
+                 "value": "fas fa-check-circle",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "5f5de24",
+                "text": "Reply in 1 business day",
+                "selected_icon": {
+                 "value": "fas fa-clock",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "a074eb1",
+                "text": "100% confidential",
+                "selected_icon": {
+                 "value": "fas fa-lock",
+                 "library": "fa-solid"
+                }
+               }
+              ],
+              "view": "inline",
+              "icon_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "text_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "space_between": {
+               "unit": "px",
+               "size": 20,
+               "sizes": []
+              },
+              "__globals__": {
+               "icon_color": "globals/colors?id=accent",
+               "text_color": "globals/colors?id=text",
+               "icon_typography_typography": "globals/typography?id=gssmall",
+               "text_color_hover": "globals/colors?id=gswhite"
+              },
+              "_title": "Form Trust Row"
+             },
+             "elements": []
+            },
+            {
+             "id": "5dc291f",
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "<p>By submitting this form you agree to be contacted about your enquiry. We never sell your details – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
+              "editor": "<p>We only use your details to reply to your enquiry – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
               "__globals__": {
                "typography_typography": "globals/typography?id=gssmall",
                "text_color": "globals/colors?id=gsmuted"
@@ -1649,7 +1772,7 @@
    ]
   },
   {
-   "id": "2b01b29",
+   "id": "3eeacaa",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1719,7 +1842,7 @@
    },
    "elements": [
     {
-     "id": "6f07128",
+     "id": "3c612ba",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1752,7 +1875,7 @@
      },
      "elements": [
       {
-       "id": "c2d5cde",
+       "id": "d947782",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1778,7 +1901,7 @@
        },
        "elements": [
         {
-         "id": "1dbd836",
+         "id": "37e947e",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1794,7 +1917,7 @@
          "elements": []
         },
         {
-         "id": "5dc291f",
+         "id": "2e0f4b4",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1813,21 +1936,21 @@
        ]
       },
       {
-       "id": "ca1eee2",
+       "id": "56a57cc",
        "elType": "widget",
        "widgetType": "nested-accordion",
        "settings": {
         "items": [
          {
-          "_id": "bfc5c86",
+          "_id": "769b439",
           "item_title": "How much do your digital marketing services cost?"
          },
          {
-          "_id": "b443d0d",
+          "_id": "6f07128",
           "item_title": "How long does SEO take to show results?"
          },
          {
-          "_id": "d947782",
+          "_id": "d3a3362",
           "item_title": "How long does it take to build a website?"
          }
         ],
@@ -1922,7 +2045,7 @@
        },
        "elements": [
         {
-         "id": "fc7d0c0",
+         "id": "ca1eee2",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1939,7 +2062,7 @@
          },
          "elements": [
           {
-           "id": "68fffc6",
+           "id": "a74a26b",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -1955,7 +2078,7 @@
          ]
         },
         {
-         "id": "2e0f4b4",
+         "id": "4d80c80",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1972,7 +2095,7 @@
          },
          "elements": [
           {
-           "id": "37e947e",
+           "id": "2b01b29",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -1988,7 +2111,7 @@
          ]
         },
         {
-         "id": "a74a26b",
+         "id": "73baee3",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2005,7 +2128,7 @@
          },
          "elements": [
           {
-           "id": "769b439",
+           "id": "297e5f9",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {

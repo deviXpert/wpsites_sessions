@@ -74,24 +74,41 @@
       {
        "id": "1d3024d",
        "elType": "widget",
-       "widgetType": "heading",
+       "widgetType": "image",
        "settings": {
-        "title": "Graphics <span>Storm</span> Studio",
-        "header_size": "div",
+        "image": {
+         "id": 5904,
+         "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/graphics-storm-studio-logo.webp",
+         "alt": "Graphics Storm Studio – digital marketing agency",
+         "source": "library"
+        },
+        "image_size": "full",
+        "width": {
+         "unit": "px",
+         "size": 180,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 180,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 150,
+         "sizes": []
+        },
+        "link_to": "custom",
         "link": {
          "url": "/",
          "is_external": "",
          "nofollow": "",
          "custom_attributes": ""
         },
-        "_css_classes": "gs-grad gs-grad",
+        "align": "left",
         "_element_width": "auto",
         "_flex_size": "none",
-        "__globals__": {
-         "typography_typography": "globals/typography?id=gsh4",
-         "title_color": "globals/colors?id=gswhite"
-        },
-        "_title": "Logo (text) – swap for Site Logo widget after upload"
+        "_title": "Logo"
        },
        "elements": []
       },

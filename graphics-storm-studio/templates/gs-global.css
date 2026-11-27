@@ -73,6 +73,8 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
   outline: 2px solid #5DB0D8;
   outline-offset: 3px;
 }
+/* Links inside paragraphs are underlined, not colour-only (WCAG 1.4.1 link-in-text-block) */
+.elementor-widget-text-editor p a { text-decoration: underline; text-underline-offset: 3px; }
 /* Respect users who turn animations off */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

@@ -181,7 +181,8 @@ def ICONLIST(items, inline=False, icon='fas fa-check-circle', t='gsbody', color=
 
 def COUNTER(n, title, suffix='+', name=None):
     return W('counter', name or f'Counter – {title}', starting_number=0, ending_number=n, suffix=suffix, title=title,
-             duration=1600, thousand_separator='yes', title_tag='p', number_alignment='start', title_horizontal_alignment='start',
+             duration=1600, thousand_separator='yes', title_tag='p', number_alignment='center', number_position='center',
+             title_horizontal_alignment='center', title_vertical_alignment='center', _element_width='inherit',
              g=dict(number_color=col('gswhite'), typography_number_typography=typ('gsstat'),
                     title_color=col('text'), typography_title_typography=typ('gsbody')))
 
@@ -232,6 +233,9 @@ def FORM(name='Lead Form', fields=('name', 'email', 'phone', 'services', 'messag
      'phone': dict(field_type='tel', field_label='Phone / WhatsApp', placeholder='+1 (555) 000-0000', width='50', custom_id='phone'),
      'company': dict(field_type='text', field_label='Website (optional)', placeholder='https://', width='50', custom_id='website'),
      'budget': dict(field_type='select', field_label='Monthly budget', field_options='Select a range\nUnder $1,000\n$1,000 – $3,000\n$3,000 – $10,000\n$10,000+', width='50', custom_id='budget'),
+     'service': dict(field_type='select', field_label='What do you need help with?',
+                     field_options='Choose a service\nWebsite Development\nSEO (Search Engine Optimization)\nSocial Media Marketing\nGraphic Design\nLogo & Brand Identity\nPaid Ads (PPC)\nNot sure yet – please advise', width='50', custom_id='service'),
+     'message_short': dict(field_type='textarea', field_label='Project details (optional)', placeholder='A few words about your goals…', rows='3', width='100', custom_id='message'),
      'services': dict(field_type='checkbox', field_label='Services you need', inline_list='elementor-subgroup-inline',
                       field_options='Website Development\nSEO\nSocial Media Marketing\nGraphic Design\nLogo & Branding\nPaid Ads', width='100', custom_id='services'),
      'message': dict(field_type='textarea', field_label='Project details', placeholder='Tell us about your goals…', rows='4', width='100', custom_id='message'),
@@ -239,6 +243,10 @@ def FORM(name='Lead Form', fields=('name', 'email', 'phone', 'services', 'messag
     lst = []
     for f in fields:
         d = dict(F[f]); d['_id'] = uid(); lst.append(d)
+    # keep two-column rows even: a lone half-width field before a full-width one becomes full width
+    half = [i for i, d in enumerate(lst) if d.get('width') == '50']
+    for k, i in enumerate(half):
+        if k == len(half) - 1 and len(half) % 2 == 1: lst[i]['width'] = '100'
     lst.append({'_id': uid(), 'custom_id': 'hp', 'field_type': 'honeypot', 'field_label': '', 'width': '100'})
     return W('form', name, form_name=form_name, form_fields=lst, show_labels='yes', mark_required='yes',
              input_size='md', button_text=button, button_size='md', button_width='100',
