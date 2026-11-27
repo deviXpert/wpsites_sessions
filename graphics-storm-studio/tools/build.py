@@ -13,7 +13,7 @@ OUT = os.path.join(HERE, '..', 'templates')
 # ------------------------------------------------------------------ shared blocks
 def logo():
     return H('Graphics <span>Storm</span> Studio', 'div', 'gsh4', name='Logo (text) – swap for Site Logo widget after upload',
-             link=link('/'), _css_classes='gs-grad')
+             link=link('/'), _css_classes='gs-grad', _element_width='auto', _flex_size='none')
 
 def cta_band():
     """Saved template 'GS – CTA Band' (embedded everywhere via the Template widget)."""
@@ -45,7 +45,7 @@ def page_hero(eyebrow, h1, lead, buttons=True, extra=None):
                         gap_=14, justify='center', flex_wrap='wrap', flex_direction_mobile='column', flex_align_items_mobile='stretch'))
     if extra: kids += extra
     return SECTION('Page Hero', [C('Hero Copy', kids, flex_direction='column', flex_gap=gap(20), flex_align_items='center',
-                                   _animation='fadeInUp', animation_duration='fast')], bg='a', pad=(96, 80, 56))
+                                   animation='fadeInUp', animation_duration='fast')], bg='a', pad=(96, 80, 56))
 
 def service_cards(items=K.SERVICES_GRID, tag='h3'):
     return GRID('Services Grid', [GLASS(f'Service Card – {t}', [ICONBOX(i, t, d, u, tag=tag),
@@ -156,7 +156,7 @@ def home(ids=None):
             gap_=14, flex_wrap='wrap', flex_direction_mobile='column', flex_align_items_mobile='stretch'),
         ICONLIST([('130+ happy clients', 'fas fa-star'), ('5+ years experience', 'fas fa-award'), ('USA & Canada offices', 'fas fa-globe-americas')],
                  inline=True, t='gssmall', name='Trust Row'),
-    ], w=55, wt=100, gap_=24, _animation='fadeInUp', animation_duration='fast')
+    ], w=55, wt=100, gap_=24, animation='fadeInUp', animation_duration='fast')
     hero_form = COL('Hero Form', [GLASS('Lead Form Panel', [
         H('Get Your Free Proposal', 'h2', 'gsh3', name='Form Title'),
         P('Tell us what you need – we reply within 1 business day.', 'gssmall', name='Form Intro'),
@@ -220,7 +220,7 @@ def service(key, ids=None):
         COL('Hero Copy', [EYEBROW(S['eyebrow']), H(S['h1'], 'h1', 'gsh1', name='H1 – Service'), P(S['lead'], 'gslead', name='Lead'),
                           ROW('Hero Buttons', [BTN('Get a Free Quote', '#service-quote'), BTN('Call ' + K.PHONE_DISPLAY, K.PHONE_TEL, 'ghost', 'fas fa-phone-alt')],
                               gap_=14, flex_wrap='wrap', flex_direction_mobile='column', flex_align_items_mobile='stretch')], w=56, wt=100, gap_=22,
-            _animation='fadeInUp', animation_duration='fast'),
+            animation='fadeInUp', animation_duration='fast'),
         COL('Hero Panel', [GLASS('What’s Included', [H('What’s included', 'h2', 'gsh3', name='Included Title'), ICONLIST(S['included'], name='Included List')],
                                  strong=True, pad=(32, 28, 24), radius=24)], w=44, wt=100)], gap_=56, stack='tablet', align='center')], bg='a', pad=(96, 72, 48))
     benefits = SECTION('Benefits', [section_head('Why it matters', f'Why Invest in Professional <span>{S["title"]}</span>?'),

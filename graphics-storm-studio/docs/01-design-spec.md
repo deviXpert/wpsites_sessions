@@ -9,14 +9,14 @@ Frosted glass only reads as glass when there is rich colour behind it. On a dark
 | Global (ID) | Name | Hex | Use |
 |---|---|---|---|
 | System `primary` | Brand Blue | `#0684C4` | Brand accents, hover backgrounds in menus |
-| System `secondary` | Accent Violet (CTA) | `#7C5CFF` | Primary buttons and CTAs only (white text: 4.6:1 ✔ AA) |
+| System `secondary` | Accent Violet (CTA) | `#7052FF` | Primary buttons and CTAs only (white text 4.84:1 ✔ AA – `#7C5CFF` failed at 4.35) |
 | System `text` | Body Text | `#C9D3E8` | Paragraphs (12.6:1 on navy ✔) |
 | System `accent` | Light Blue | `#5DB0D8` | Eyebrows, icons, links, active menu (7.9:1 ✔) |
 | `gsnavy` | Navy – Page Background | `#070B1F` | Body background |
 | `gsnavy2` | Navy – Raised Surface | `#0E1738` | Dropdowns, opaque fallback |
 | `gswhite` | White – Headings | `#FFFFFF` | All headings |
 | `gsmuted` | Muted Text | `#93A1BF` | Captions, copyright (7.0:1 ✔) |
-| `gsvioletdk` | Violet – Hover | `#6545F0` | Button hover |
+| `gsvioletdk` | Violet – Hover | `#5B3BE0` | Button hover (6.67:1) |
 | `gsglass` | Glass Fill 6% | `#FFFFFF0F` | Standard glass cards |
 | `gsglass2` | Glass Fill Strong 10% | `#FFFFFF1A` | Forms, hero panels, ghost buttons |
 | `gsline` | Glass Border 14% | `#FFFFFF24` | 1px card borders, dividers |
@@ -75,8 +75,8 @@ Site Settings › Typography also sets Body (Inter 17px, `#C9D3E8`), Links (`#5D
 ## Buttons (Site Settings › Buttons)
 | Style | How |
 |---|---|
-| **Primary** (violet pill) | Comes from Site Settings: Sora 600 16px, white on `#7C5CFF`, hover `#6545F0`, radius 999, padding 16/30, violet glow. Just drop in a Button widget |
-| **Ghost** (glass pill) | Button › Style: background `gsglass2`, border 1px `gsline`, text white; hover background white, text navy; shadow transparent; CSS class `gs-glass` |
+| **Primary** (violet pill) | Comes from Site Settings: Sora 600 16px, white on `#7052FF`, hover `#5B3BE0`, radius 999, padding 16/30, violet glow. Just drop in a Button widget |
+| **Ghost** (glass pill) | Button › Style: background `gsglass2`, border 1px `gsline`, text white; hover background white, text navy; shadow transparent |
 | **Text link** | Background transparent, padding 0, text Light Blue, plus an arrow icon |
 
 Every button uses Hover Animation **Float** and an icon on the right (arrow, phone, WhatsApp or paper plane).

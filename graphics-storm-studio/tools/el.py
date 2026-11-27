@@ -141,7 +141,7 @@ def BTN(text, url, style='primary', icon='fas fa-arrow-right', align=None, name=
     b = dict(text=text, link=link(url, ext), size=size, hover_animation='float')
     if icon: b.update(selected_icon=ico(icon), icon_align='row-reverse', icon_indent=px(10))
     if style == 'ghost':
-        b.update(border_border='solid', border_width=dims(1), _css_classes='gs-glass')
+        b.update(border_border='solid', border_width=dims(1))
         b['g'] = dict(background_color=col('gsglass2'), border_color=col('gsline'), button_text_color=col('gswhite'),
                       button_background_hover_color=col('gswhite'), hover_color=col('gsnavy'))
     if style in ('ghost', 'link'):  # cancel the global violet glow shadow

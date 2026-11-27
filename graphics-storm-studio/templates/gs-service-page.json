@@ -135,7 +135,7 @@
          "elType": "container",
          "isInner": true,
          "settings": {
-          "_animation": "fadeInUp",
+          "animation": "fadeInUp",
           "animation_duration": "fast",
           "flex_direction": "column",
           "flex_gap": {
@@ -291,7 +291,6 @@
                "left": "1",
                "isLinked": true
               },
-              "_css_classes": "gs-glass",
               "button_box_shadow_box_shadow_type": "yes",
               "button_box_shadow_box_shadow": {
                "horizontal": 0,
@@ -4233,7 +4232,6 @@
              "left": "1",
              "isLinked": true
             },
-            "_css_classes": "gs-glass",
             "button_box_shadow_box_shadow_type": "yes",
             "button_box_shadow_box_shadow": {
              "horizontal": 0,

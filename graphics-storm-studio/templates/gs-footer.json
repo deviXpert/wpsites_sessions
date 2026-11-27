@@ -181,6 +181,8 @@
              "custom_attributes": ""
             },
             "_css_classes": "gs-grad gs-grad",
+            "_element_width": "auto",
+            "_flex_size": "none",
             "__globals__": {
              "typography_typography": "globals/typography?id=gsh4",
              "title_color": "globals/colors?id=gswhite"

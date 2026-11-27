@@ -8,7 +8,7 @@
   {
    "_id": "secondary",
    "title": "Accent Violet (CTA)",
-   "color": "#7C5CFF"
+   "color": "#7052FF"
   },
   {
    "_id": "text",
@@ -45,7 +45,7 @@
   {
    "_id": "gsvioletdk",
    "title": "Violet \u2013 Hover",
-   "color": "#6545F0"
+   "color": "#5B3BE0"
   },
   {
    "_id": "gsglass",
@@ -465,10 +465,10 @@
  },
  "button_text_color": "#FFFFFF",
  "button_background_background": "classic",
- "button_background_color": "#7C5CFF",
+ "button_background_color": "#7052FF",
  "button_hover_text_color": "#FFFFFF",
  "button_hover_background_background": "classic",
- "button_hover_background_color": "#6545F0",
+ "button_hover_background_color": "#5B3BE0",
  "button_border_radius": {
   "unit": "px",
   "top": "999",
@@ -491,7 +491,7 @@
   "vertical": 12,
   "blur": 30,
   "spread": 0,
-  "color": "rgba(124,92,255,0.35)"
+  "color": "rgba(112,82,255,0.35)"
  },
  "form_label_typography_typography": "custom",
  "form_label_typography_font_family": "Inter",

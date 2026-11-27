@@ -16,11 +16,12 @@ def page(key, title, elements, slug=None, template='elementor_header_footer'):
         if not pid: raise SystemExit(r)
         IDS[key] = pid; _save()
     cur = wp.req(f'wp/v2/pages/{pid}?context=edit')
-    if cur.get('status') == 'publish':
+    qa = cur.get('slug', '').startswith('gss-qa-')   # temporarily published for visual QA only
+    if cur.get('status') == 'publish' and not qa:
         raise SystemExit(f'{key} ({pid}) is published – refusing to overwrite')
-    body = {'title': title, 'status': 'draft', 'template': template,
+    body = {'title': title, 'status': cur['status'] if qa else 'draft', 'template': template,
             'meta': {'_elementor_data': json.dumps(elements), '_elementor_edit_mode': 'builder', '_elementor_template_type': 'wp-page'}}
-    if slug: body['slug'] = slug
+    if slug and not qa: body['slug'] = slug
     r = wp.req(f'wp/v2/pages/{pid}', 'POST', body)
     print(key, pid, 'saved' if 'id' in r else r, el.count(elements))
     return pid

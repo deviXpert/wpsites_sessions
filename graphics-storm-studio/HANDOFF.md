@@ -1,7 +1,7 @@
 # Graphics Storm Studio – Glassmorphism Redesign Handoff
 
 Site: **https://graphicsstormstudio.com** (WordPress, **Hello Elementor** theme, Elementor 4.4.2 + Pro 4.3.1, Hostinger).
-Design: dark navy glassmorphism, brand blue `#0684C4` + violet CTA `#7C5CFF`, Sora + Inter. See `docs/01-design-spec.md`.
+Design: dark navy glassmorphism, brand blue `#0684C4` + violet CTA `#7052FF`, Sora + Inter. See `docs/01-design-spec.md`.
 
 ## ⚠️ Before doing anything in a new session
 1. Credentials come from env vars only: `GSS_WP_URL/GSS_WP_USER/GSS_WP_APP_PASSWORD` (preferred) or `WP_URL/WP_USER/WP_APP_PASSWORD`. Never paste them in chat.

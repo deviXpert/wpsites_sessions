@@ -23,7 +23,7 @@ def typo(_id, title, fam, w, size=None, lh=None, ls=None, tr=None, t=None, m=Non
     return d
 
 HEAD, BODY = 'Sora', 'Inter'
-NAVY, NAVY2, BLUE, SKY, VIOLET, VIOLET_DK = '#070B1F', '#0E1738', '#0684C4', '#5DB0D8', '#7C5CFF', '#6545F0'
+NAVY, NAVY2, BLUE, SKY, VIOLET, VIOLET_DK = '#070B1F', '#0E1738', '#0684C4', '#5DB0D8', '#7052FF', '#5B3BE0'
 WHITE, TEXT, MUTED = '#FFFFFF', '#C9D3E8', '#93A1BF'
 
 S = {
@@ -66,7 +66,7 @@ S = {
  'button_hover_text_color': WHITE, 'button_hover_background_background': 'classic', 'button_hover_background_color': VIOLET_DK,
  'button_border_radius': dims(999), 'button_padding': dims(16, 30),
  'button_box_shadow_box_shadow_type': 'yes',
- 'button_box_shadow_box_shadow': {'horizontal': 0, 'vertical': 12, 'blur': 30, 'spread': 0, 'color': 'rgba(124,92,255,0.35)'},
+ 'button_box_shadow_box_shadow': {'horizontal': 0, 'vertical': 12, 'blur': 30, 'spread': 0, 'color': 'rgba(112,82,255,0.35)'},
  # Form Fields tab (dark glass inputs)
  'form_label_typography_typography': 'custom', 'form_label_typography_font_family': BODY, 'form_label_typography_font_weight': '500',
  'form_label_typography_font_size': px(14), 'form_label_color': '#DCE4F5',

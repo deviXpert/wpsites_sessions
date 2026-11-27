@@ -124,7 +124,7 @@
          "size": 20
         },
         "flex_align_items": "center",
-        "_animation": "fadeInUp",
+        "animation": "fadeInUp",
         "animation_duration": "fast",
         "_title": "Hero Copy",
         "content_width": "full"
