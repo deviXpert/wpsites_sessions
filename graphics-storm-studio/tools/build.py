@@ -124,7 +124,8 @@ def logos_strip():
               GRID('Logo Row', [IMG(f'client-logo-{i}.svg', '240×96, transparent SVG/PNG, white or light version', f'Client logo {i}', radius=0,
                                     width=px(140), opacity=px(0.75, ''), align='center')
                                 for i in range(1, 6)], 5, 3, 2, 32, flex_align_items='center')],
-             flex_direction='column', flex_gap=gap(24))
+             flex_direction='column', flex_gap=gap(24),
+             hide_desktop='hidden-desktop', hide_tablet='hidden-tablet', hide_mobile='hidden-mobile')  # hidden until real client logos are uploaded
 
 # ------------------------------------------------------------------ header / footer
 def header():

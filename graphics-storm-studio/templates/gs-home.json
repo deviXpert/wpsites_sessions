@@ -559,6 +559,9 @@
          "unit": "px",
          "size": 24
         },
+        "hide_desktop": "hidden-desktop",
+        "hide_tablet": "hidden-tablet",
+        "hide_mobile": "hidden-mobile",
         "_title": "Client Logos",
         "content_width": "full",
         "padding": {
