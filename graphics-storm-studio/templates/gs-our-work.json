@@ -8,7 +8,7 @@
  },
  "content": [
   {
-   "id": "0c084f6",
+   "id": "35921f2",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -17,25 +17,25 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": "96",
+     "top": "88",
      "right": "0",
-     "bottom": "96",
+     "bottom": "88",
      "left": "0",
      "isLinked": false
     },
     "padding_tablet": {
      "unit": "px",
-     "top": "80",
+     "top": "72",
      "right": "0",
-     "bottom": "80",
+     "bottom": "72",
      "left": "0",
      "isLinked": false
     },
     "padding_mobile": {
      "unit": "px",
-     "top": "56",
+     "top": "48",
      "right": "0",
-     "bottom": "56",
+     "bottom": "48",
      "left": "0",
      "isLinked": false
     },
@@ -78,7 +78,7 @@
    },
    "elements": [
     {
-     "id": "4decb5d",
+     "id": "8cf8bf2",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -111,22 +111,22 @@
      },
      "elements": [
       {
-       "id": "b11077a",
+       "id": "63a26c9",
        "elType": "container",
        "isInner": true,
        "settings": {
-        "flex_direction": "column",
+        "flex_direction": "row",
         "flex_gap": {
-         "column": "20",
-         "row": "20",
+         "column": "56",
+         "row": "56",
          "isLinked": true,
          "unit": "px",
-         "size": 20
+         "size": 56
         },
         "flex_align_items": "center",
-        "animation": "fadeInUp",
-        "animation_duration": "fast",
-        "_title": "Hero Copy",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "Hero Row",
         "content_width": "full",
         "padding": {
          "unit": "px",
@@ -139,83 +139,36 @@
        },
        "elements": [
         {
-         "id": "b007417",
-         "elType": "widget",
-         "widgetType": "heading",
+         "id": "b11077a",
+         "elType": "container",
+         "isInner": true,
          "settings": {
-          "title": "Our work",
-          "header_size": "p",
-          "align": "center",
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gseyebrow",
-           "title_color": "globals/colors?id=accent"
-          },
-          "_title": "Eyebrow – Our work"
-         },
-         "elements": []
-        },
-        {
-         "id": "2b4e37f",
-         "elType": "widget",
-         "widgetType": "heading",
-         "settings": {
-          "title": "Websites, Brands & Campaigns That <span>Get Results</span>",
-          "header_size": "h1",
-          "align": "center",
-          "_css_classes": "gs-grad",
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gsh1",
-           "title_color": "globals/colors?id=gswhite"
-          },
-          "_title": "H1 – Page Title"
-         },
-         "elements": []
-        },
-        {
-         "id": "e022b98",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "settings": {
-          "editor": "<p>A selection of recent website development, branding, social media and SEO projects for growing businesses.</p>",
-          "align": "center",
-          "_element_width": "initial",
-          "_element_custom_width": {
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
            "unit": "px",
-           "size": 760,
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 50,
            "sizes": []
           },
-          "_element_custom_width_tablet": {
+          "width_tablet": {
            "unit": "%",
            "size": 100,
            "sizes": []
           },
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gslead",
-           "text_color": "globals/colors?id=text"
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
           },
-          "_title": "Lead"
-         },
-         "elements": []
-        },
-        {
-         "id": "d23bf0a",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_wrap": "wrap",
-          "flex_direction_mobile": "column",
-          "flex_align_items_mobile": "stretch",
-          "flex_direction": "row",
-          "flex_gap": {
-           "column": "14",
-           "row": "14",
-           "isLinked": true,
-           "unit": "px",
-           "size": 14
-          },
-          "flex_align_items": "stretch",
-          "flex_justify_content": "center",
-          "_title": "Hero Buttons",
+          "_title": "Hero Copy",
           "content_width": "full",
           "padding": {
            "unit": "px",
@@ -228,58 +181,219 @@
          },
          "elements": [
           {
-           "id": "3b6ab74",
+           "id": "b007417",
            "elType": "widget",
-           "widgetType": "button",
+           "widgetType": "heading",
            "settings": {
-            "text": "Get a Free Proposal",
-            "link": {
-             "url": "/contact-us/",
-             "is_external": "",
-             "nofollow": "",
-             "custom_attributes": ""
+            "title": "Our work",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
             },
-            "size": "md",
-            "hover_animation": "float",
-            "selected_icon": {
-             "value": "fas fa-arrow-right",
-             "library": "fa-solid"
-            },
-            "icon_align": "row-reverse",
-            "icon_indent": {
-             "unit": "px",
-             "size": 10,
-             "sizes": []
-            },
-            "align_mobile": "justify",
-            "_title": "Button – Get a Free Proposal"
+            "_title": "Eyebrow – Our work"
            },
            "elements": []
           },
           {
-           "id": "b8e4579",
+           "id": "2b4e37f",
            "elType": "widget",
-           "widgetType": "button",
+           "widgetType": "heading",
            "settings": {
-            "text": "Call +1 (812) 818-2053",
-            "link": {
-             "url": "tel:+18128182053",
-             "is_external": "",
-             "nofollow": "",
-             "custom_attributes": ""
+            "title": "Websites, Brands & Campaigns That <span>Get Results</span>",
+            "header_size": "h1",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh1",
+             "title_color": "globals/colors?id=gswhite"
             },
-            "size": "md",
-            "hover_animation": "float",
-            "selected_icon": {
-             "value": "fas fa-phone-alt",
-             "library": "fa-solid"
+            "_title": "H1 – Page Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "e022b98",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>A selection of recent website development, branding, social media and SEO projects for growing businesses.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gslead",
+             "text_color": "globals/colors?id=text"
             },
-            "icon_align": "row-reverse",
-            "icon_indent": {
+            "_title": "Lead"
+           },
+           "elements": []
+          },
+          {
+           "id": "d23bf0a",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column",
+            "flex_align_items_mobile": "stretch",
+            "flex_direction": "row",
+            "flex_gap": {
+             "column": "14",
+             "row": "14",
+             "isLinked": true,
              "unit": "px",
-             "size": 10,
-             "sizes": []
+             "size": 14
             },
+            "flex_align_items": "stretch",
+            "_title": "Hero Buttons",
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
+           },
+           "elements": [
+            {
+             "id": "3b6ab74",
+             "elType": "widget",
+             "widgetType": "button",
+             "settings": {
+              "text": "Get a Free Proposal",
+              "link": {
+               "url": "/contact-us/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              },
+              "size": "md",
+              "hover_animation": "float",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              },
+              "icon_align": "row-reverse",
+              "icon_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "align_mobile": "justify",
+              "_title": "Button – Get a Free Proposal"
+             },
+             "elements": []
+            },
+            {
+             "id": "b8e4579",
+             "elType": "widget",
+             "widgetType": "button",
+             "settings": {
+              "text": "Call +1 (812) 818-2053",
+              "link": {
+               "url": "tel:+18128182053",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              },
+              "size": "md",
+              "hover_animation": "float",
+              "selected_icon": {
+               "value": "fas fa-phone-alt",
+               "library": "fa-solid"
+              },
+              "icon_align": "row-reverse",
+              "icon_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "align_mobile": "justify",
+              "button_box_shadow_box_shadow_type": "yes",
+              "button_box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 0,
+               "blur": 0,
+               "spread": 0,
+               "color": "rgba(0,0,0,0)"
+              },
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass2",
+               "border_color": "globals/colors?id=gsline",
+               "button_text_color": "globals/colors?id=gswhite",
+               "button_background_hover_color": "globals/colors?id=gswhite",
+               "hover_color": "globals/colors?id=gsnavy"
+              },
+              "_title": "Button – Call +1 (812) 818-2053"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "34af914",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 50,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Hero Visual",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "0c084f6",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
             "border_border": "solid",
             "border_width": {
              "unit": "px",
@@ -289,25 +403,87 @@
              "left": "1",
              "isLinked": true
             },
-            "align_mobile": "justify",
-            "button_box_shadow_box_shadow_type": "yes",
-            "button_box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 0,
-             "blur": 0,
-             "spread": 0,
-             "color": "rgba(0,0,0,0)"
+            "border_radius": {
+             "unit": "px",
+             "top": "24",
+             "right": "24",
+             "bottom": "24",
+             "left": "24",
+             "isLinked": true
             },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass--strong",
             "__globals__": {
              "background_color": "globals/colors?id=gsglass2",
-             "border_color": "globals/colors?id=gsline",
-             "button_text_color": "globals/colors?id=gswhite",
-             "button_background_hover_color": "globals/colors?id=gswhite",
-             "hover_color": "globals/colors?id=gsnavy"
+             "border_color": "globals/colors?id=gsline"
             },
-            "_title": "Button – Call +1 (812) 818-2053"
+            "_title": "Infographic Panel – Our Work",
+            "content_width": "full"
            },
-           "elements": []
+           "elements": [
+            {
+             "id": "4decb5d",
+             "elType": "widget",
+             "widgetType": "image",
+             "settings": {
+              "image": {
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-our-work.svg",
+               "id": 5861,
+               "alt": "Infographic: laptop and phone showcasing website, brand identity and SEO projects with results",
+               "source": "library"
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "align": "center",
+              "caption_source": "none",
+              "image_border_radius": {
+               "unit": "px",
+               "top": "18",
+               "right": "18",
+               "bottom": "18",
+               "left": "18",
+               "isLinked": true
+              },
+              "_title": "Infographic – Our Work (animated SVG)"
+             },
+             "elements": []
+            }
+           ]
           }
          ]
         }
@@ -318,7 +494,7 @@
    ]
   },
   {
-   "id": "7f04e55",
+   "id": "d388122",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -388,7 +564,7 @@
    },
    "elements": [
     {
-     "id": "7659316",
+     "id": "524b60a",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -421,13 +597,13 @@
      },
      "elements": [
       {
-       "id": "3b13b7b",
+       "id": "d7d9c8f",
        "elType": "widget",
        "widgetType": "icon-list",
        "settings": {
         "icon_list": [
          {
-          "_id": "34af914",
+          "_id": "64dc22d",
           "text": "Websites",
           "selected_icon": {
            "value": "fas fa-circle",
@@ -435,7 +611,7 @@
           }
          },
          {
-          "_id": "63a26c9",
+          "_id": "3b13b7b",
           "text": "Branding",
           "selected_icon": {
            "value": "fas fa-circle",
@@ -443,7 +619,7 @@
           }
          },
          {
-          "_id": "8cf8bf2",
+          "_id": "418a109",
           "text": "Social Media",
           "selected_icon": {
            "value": "fas fa-circle",
@@ -451,7 +627,7 @@
           }
          },
          {
-          "_id": "35921f2",
+          "_id": "7659316",
           "text": "SEO",
           "selected_icon": {
            "value": "fas fa-circle",
@@ -459,7 +635,7 @@
           }
          },
          {
-          "_id": "64dc22d",
+          "_id": "7f04e55",
           "text": "Graphic Design",
           "selected_icon": {
            "value": "fas fa-circle",
@@ -494,7 +670,7 @@
        "elements": []
       },
       {
-       "id": "418a109",
+       "id": "22a8e47",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1608,7 +1784,7 @@
    ]
   },
   {
-   "id": "eb1e2a0",
+   "id": "0044863",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1678,7 +1854,7 @@
    },
    "elements": [
     {
-     "id": "8ead16e",
+     "id": "92d827f",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1711,7 +1887,7 @@
      },
      "elements": [
       {
-       "id": "524b60a",
+       "id": "3375ad4",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1737,7 +1913,7 @@
        },
        "elements": [
         {
-         "id": "d7d9c8f",
+         "id": "44f62a7",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1753,7 +1929,7 @@
          "elements": []
         },
         {
-         "id": "22a8e47",
+         "id": "5adbdd2",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1772,31 +1948,31 @@
        ]
       },
       {
-       "id": "d8a1f83",
+       "id": "4e76f3b",
        "elType": "widget",
        "widgetType": "testimonial-carousel",
        "settings": {
         "slides": [
          {
-          "_id": "d388122",
+          "_id": "d8a1f83",
           "content": "The brand guidelines and logos were absolutely fantastic! They have transformed my brand and will help me scale up for more business. Great communication and very speedy delivery – ahead of schedule.",
           "name": "Mr. James",
           "title": "Brand identity client"
          },
          {
-          "_id": "44f62a7",
+          "_id": "8ead16e",
           "content": "Working with Mr. Fahad was very pleasant and professional. Communication was fast and I am more than satisfied with the result. Looking forward to the next project.",
           "name": "Anthony",
           "title": "Website client"
          },
          {
-          "_id": "5adbdd2",
+          "_id": "eb1e2a0",
           "content": "My first time working with Fahad and it has been a pleasure. Brief well met, clear communication and fast delivery. Not much more you can ask for.",
           "name": "Lisa P.",
           "title": "Marketing client"
          },
          {
-          "_id": "3375ad4",
+          "_id": "5685dfb",
           "content": "Wonderful experience as always – so happy with the final product. Highly recommend!",
           "name": "Patrick",
           "title": "Design client"

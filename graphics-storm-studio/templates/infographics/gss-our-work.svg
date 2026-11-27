@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" width="600" height="460" role="img" aria-labelledby="t d">
+<title id="t">Our work portfolio infographic</title><desc id="d">Animated infographic: a laptop and phone cycling through website, brand identity and SEO projects with their results.</desc>
+<defs>
+<linearGradient id="gBV" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0684C4"/><stop offset="1" stop-color="#7052FF"/></linearGradient>
+<linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5DB0D8"/><stop offset=".5" stop-color="#0684C4"/><stop offset="1" stop-color="#9D86FF"/></linearGradient>
+<linearGradient id="gBar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#0684C4"/><stop offset="1" stop-color="#9D86FF"/></linearGradient>
+<radialGradient id="glowV"><stop offset="0" stop-color="#7052FF" stop-opacity=".45"/><stop offset="1" stop-color="#7052FF" stop-opacity="0"/></radialGradient>
+<radialGradient id="glowB"><stop offset="0" stop-color="#0684C4" stop-opacity=".45"/><stop offset="1" stop-color="#0684C4" stop-opacity="0"/></radialGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity=".55"/></filter>
+</defs>
+<style>
+text{font-family:'Sora','Inter','Segoe UI',Roboto,Arial,sans-serif;fill:#fff} .m{fill:#C9D3E8} .s{fill:#93A1BF} .a{fill:#5DB0D8}
+.glass{fill:rgba(255,255,255,.07);stroke:rgba(255,255,255,.18);stroke-width:1}
+.glass2{fill:rgba(255,255,255,.11);stroke:rgba(255,255,255,.22);stroke-width:1}
+.flow{fill:none;stroke:url(#gSky);stroke-width:2;stroke-dasharray:5 9;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+.float{animation:float 5s ease-in-out infinite} @keyframes float{50%{transform:translateY(-6px)}}
+.grow{transform-box:fill-box;transform-origin:bottom;animation:grow 4s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes grow{0%{transform:scaleY(.08)}35%,85%{transform:scaleY(1)}100%{transform:scaleY(.08)}}
+.draw{stroke-dasharray:600;stroke-dashoffset:600;animation:draw 5s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:600}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:600}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 5s ease-in-out infinite}
+@keyframes pop{0%,8%{transform:scale(0);opacity:0}16%,88%{transform:scale(1);opacity:1}100%{transform:scale(0);opacity:0}}
+.cyc{animation:cyc 9s ease-in-out infinite;opacity:0}
+@keyframes cyc{0%{opacity:0;transform:translateY(10px)}6%,30%{opacity:1;transform:none}36%,100%{opacity:0;transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){.cyc{opacity:0}.cyc.first{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important} .draw{stroke-dashoffset:0} .pop{transform:none;opacity:1}}
+</style>
+<g class="float"><g filter="url(#soft)"><rect class="glass2" x="80" y="80" width="332" height="200" rx="14"/></g>
+<path d="M60 286 H432 L414 300 H78 Z" fill="rgba(255,255,255,.16)"/></g>
+<g class="float" style="animation-delay:1.5s"><g filter="url(#soft)"><rect class="glass2" x="440" y="70" width="100" height="196" rx="20"/></g>
+<rect x="452" y="94" width="76" height="60" rx="8" fill="url(#gBV)" fill-opacity=".6"/><rect x="452" y="162" width="76" height="8" rx="4" fill="rgba(255,255,255,.4)"/><rect x="452" y="176" width="56" height="8" rx="4" fill="rgba(255,255,255,.25)"/>
+<rect x="452" y="196" width="76" height="40" rx="8" fill="#7052FF" fill-opacity=".45"/></g>
+<g class="cyc first" style="animation-delay:0s">
+<rect x="96" y="96" width="300" height="168" rx="8" fill="url(#gBV)" fill-opacity=".55"/>
+<rect x="116" y="118" width="140" height="14" rx="7" fill="rgba(255,255,255,.75)"/><rect x="116" y="142" width="200" height="9" rx="4.5" fill="rgba(255,255,255,.35)"/>
+<rect x="116" y="196" width="80" height="26" rx="13" fill="#fff" fill-opacity=".85"/>
+<g filter="url(#soft)"><rect class="glass2" x="330" y="300" width="210" height="64" rx="16"/></g>
+<text class="a" x="350" y="326" font-size="10.5" font-weight="700" letter-spacing="1.3">WEBSITE LAUNCH</text><text x="350" y="348" font-size="15" font-weight="800">3× more enquiries</text></g><g class="cyc" style="animation-delay:3s">
+<rect x="96" y="96" width="300" height="168" rx="8" fill="#7052FF" fill-opacity=".55"/>
+<rect x="116" y="118" width="140" height="14" rx="7" fill="rgba(255,255,255,.75)"/><rect x="116" y="142" width="200" height="9" rx="4.5" fill="rgba(255,255,255,.35)"/>
+<rect x="116" y="196" width="80" height="26" rx="13" fill="#fff" fill-opacity=".85"/>
+<g filter="url(#soft)"><rect class="glass2" x="330" y="300" width="210" height="64" rx="16"/></g>
+<text class="a" x="350" y="326" font-size="10.5" font-weight="700" letter-spacing="1.3">BRAND IDENTITY</text><text x="350" y="348" font-size="15" font-weight="800">New logo + guidelines</text></g><g class="cyc" style="animation-delay:6s">
+<rect x="96" y="96" width="300" height="168" rx="8" fill="#0684C4" fill-opacity=".55"/>
+<rect x="116" y="118" width="140" height="14" rx="7" fill="rgba(255,255,255,.75)"/><rect x="116" y="142" width="200" height="9" rx="4.5" fill="rgba(255,255,255,.35)"/>
+<rect x="116" y="196" width="80" height="26" rx="13" fill="#fff" fill-opacity=".85"/>
+<g filter="url(#soft)"><rect class="glass2" x="330" y="300" width="210" height="64" rx="16"/></g>
+<text class="a" x="350" y="326" font-size="10.5" font-weight="700" letter-spacing="1.3">SEO CAMPAIGN</text><text x="350" y="348" font-size="15" font-weight="800">+214% organic traffic</text></g>
+<g class="pop" style="animation-delay:.6s"><g filter="url(#soft)"><rect class="glass2" x="60" y="320" width="150" height="80" rx="16"/></g>
+<text class="a" x="78" y="346" font-size="10.5" font-weight="700" letter-spacing="1.3">PROJECTS</text><text x="78" y="380" font-size="26" font-weight="800">514+</text><text class="m" x="146" y="380" font-size="10.5">last month</text></g>
+</svg>

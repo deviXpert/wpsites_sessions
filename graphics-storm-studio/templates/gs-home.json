@@ -8,7 +8,7 @@
  },
  "content": [
   {
-   "id": "f18e2a4",
+   "id": "7b0debf",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -17,9 +17,9 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": "96",
+     "top": "88",
      "right": "0",
-     "bottom": "96",
+     "bottom": "88",
      "left": "0",
      "isLinked": false
     },
@@ -78,7 +78,7 @@
    },
    "elements": [
     {
-     "id": "10fd1bb",
+     "id": "15f5b9c",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -111,7 +111,7 @@
      },
      "elements": [
       {
-       "id": "7427f66",
+       "id": "0621ea6",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -398,11 +398,10 @@
          ]
         },
         {
-         "id": "98f371c",
+         "id": "b4946ac",
          "elType": "container",
          "isInner": true,
          "settings": {
-          "_element_id": "free-proposal",
           "flex_direction": "column",
           "flex_gap": {
            "column": "20",
@@ -426,7 +425,7 @@
            "size": 100,
            "sizes": []
           },
-          "_title": "Hero Form",
+          "_title": "Hero Visual",
           "content_width": "full",
           "padding": {
            "unit": "px",
@@ -439,7 +438,707 @@
          },
          "elements": [
           {
+           "id": "8f14df5",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "24",
+             "right": "24",
+             "bottom": "24",
+             "left": "24",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass--strong",
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline"
+            },
+            "_title": "Infographic Panel – Growth Engine",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "8b48189",
+             "elType": "widget",
+             "widgetType": "image",
+             "settings": {
+              "image": {
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-growth-engine.svg",
+               "id": 5836,
+               "alt": "Infographic: website development, SEO, social media marketing and graphic design working together as one growth engine to deliver more leads and revenue",
+               "source": "library"
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "align": "center",
+              "caption_source": "none",
+              "image_border_radius": {
+               "unit": "px",
+               "top": "18",
+               "right": "18",
+               "bottom": "18",
+               "left": "18",
+               "isLinked": true
+              },
+              "_title": "Infographic – Growth Engine (animated SVG)"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4877683",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "_title": "Client Logos",
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "f824237",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Trusted by growing brands across the USA, Canada & beyond</p>",
+          "align": "center",
+          "__globals__": {
+           "typography_typography": "globals/typography?id=gssmall",
+           "text_color": "globals/colors?id=gsmuted"
+          },
+          "_title": "Logos Label"
+         },
+         "elements": []
+        },
+        {
+         "id": "f18e2a4",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_align_items": "center",
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 5,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_rows_grid": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_auto_flow": "row",
+          "grid_gaps": {
+           "column": "32",
+           "row": "32",
+           "isLinked": true,
+           "unit": "px",
+           "size": 32
+          },
+          "_title": "Logo Row",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "6053273",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 1",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-1.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          },
+          {
            "id": "ffa594a",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 2",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-2.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          },
+          {
+           "id": "98f371c",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 3",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-3.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          },
+          {
+           "id": "7427f66",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 4",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-4.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          },
+          {
+           "id": "10fd1bb",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Client logo 5",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "width": {
+             "unit": "px",
+             "size": 140,
+             "sizes": []
+            },
+            "opacity": {
+             "unit": "",
+             "size": 0.75,
+             "sizes": []
+            },
+            "align": "center",
+            "_title": "📷 PLACEHOLDER – client-logo-5.svg (240×96, transparent SVG/PNG, white or light version)"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "786e82a",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(93,176,216,0.18)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "center center",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.18)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "top right",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_element_id": "free-proposal",
+    "_title": "Free Proposal"
+   },
+   "elements": [
+    {
+     "id": "159f175",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Free Proposal – Inner"
+     },
+     "elements": [
+      {
+       "id": "51ba05e",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "56",
+         "row": "56",
+         "isLinked": true,
+         "unit": "px",
+         "size": 56
+        },
+        "flex_align_items": "center",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "Proposal Row",
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "bb716b8",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 45,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Proposal Copy",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "0fa01bc",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Free proposal",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Eyebrow – Free proposal"
+           },
+           "elements": []
+          },
+          {
+           "id": "957d81c",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Get Your Free <span>Growth Proposal</span>",
+            "header_size": "h2",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh2",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Proposal Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "8b92dc0",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Tell us what you need and we will reply within 1 business day with a clear plan, timeline and price – no obligation.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gslead",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Proposal Text"
+           },
+           "elements": []
+          },
+          {
+           "id": "b49f247",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "c03feca",
+              "text": "A quick audit of your website, SEO and social media",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "5ce5769",
+              "text": "Recommended services for your goals and budget",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "ad3537d",
+              "text": "Fixed, transparent pricing before any work starts",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "view": "traditional",
+            "icon_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "text_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "space_between": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "__globals__": {
+             "icon_color": "globals/colors?id=accent",
+             "text_color": "globals/colors?id=text",
+             "icon_typography_typography": "globals/typography?id=gsbody",
+             "text_color_hover": "globals/colors?id=gswhite"
+            },
+            "_title": "Proposal Checklist"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "418c19d",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 55,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Proposal Form",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "d3b84dc",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -511,12 +1210,12 @@
            },
            "elements": [
             {
-             "id": "8b48189",
+             "id": "23ffb45",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Get Your Free Proposal",
-              "header_size": "h2",
+              "title": "Tell us about your project",
+              "header_size": "h3",
               "__globals__": {
                "typography_typography": "globals/typography?id=gsh3",
                "title_color": "globals/colors?id=gswhite"
@@ -526,25 +1225,11 @@
              "elements": []
             },
             {
-             "id": "8f14df5",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<p>Tell us what you need – we reply within 1 business day.</p>",
-              "__globals__": {
-               "typography_typography": "globals/typography?id=gssmall",
-               "text_color": "globals/colors?id=text"
-              },
-              "_title": "Form Intro"
-             },
-             "elements": []
-            },
-            {
-             "id": "6053273",
+             "id": "3de4d4c",
              "elType": "widget",
              "widgetType": "form",
              "settings": {
-              "form_name": "Home Hero Lead",
+              "form_name": "Home Lead",
               "form_fields": [
                {
                 "field_type": "text",
@@ -554,7 +1239,7 @@
                 "width": "50",
                 "custom_id": "name",
                 "autocomplete": "name",
-                "_id": "b4946ac"
+                "_id": "8b4eb84"
                },
                {
                 "field_type": "email",
@@ -563,7 +1248,7 @@
                 "required": "true",
                 "width": "50",
                 "custom_id": "email",
-                "_id": "0621ea6"
+                "_id": "66c9573"
                },
                {
                 "field_type": "tel",
@@ -571,7 +1256,7 @@
                 "placeholder": "+1 (555) 000-0000",
                 "width": "50",
                 "custom_id": "phone",
-                "_id": "15f5b9c"
+                "_id": "7540aee"
                },
                {
                 "field_type": "checkbox",
@@ -580,10 +1265,10 @@
                 "field_options": "Website Development\nSEO\nSocial Media Marketing\nGraphic Design\nLogo & Branding\nPaid Ads",
                 "width": "100",
                 "custom_id": "services",
-                "_id": "7b0debf"
+                "_id": "056d17b"
                },
                {
-                "_id": "f824237",
+                "_id": "547f559",
                 "custom_id": "hp",
                 "field_type": "honeypot",
                 "field_label": "",
@@ -670,282 +1355,25 @@
                "button_text_color": "globals/colors?id=gswhite",
                "button_typography_typography": "globals/typography?id=gsbtn"
               },
-              "_title": "Hero Lead Form"
+              "_title": "Home Lead Form"
+             },
+             "elements": []
+            },
+            {
+             "id": "5a69def",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>By submitting this form you agree to be contacted about your enquiry. We never sell your details – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gssmall",
+               "text_color": "globals/colors?id=gsmuted"
+              },
+              "_title": "Privacy Note"
              },
              "elements": []
             }
            ]
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "b49f247",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "flex_direction": "column",
-        "flex_gap": {
-         "column": "24",
-         "row": "24",
-         "isLinked": true,
-         "unit": "px",
-         "size": 24
-        },
-        "_title": "Client Logos",
-        "content_width": "full",
-        "padding": {
-         "unit": "px",
-         "top": "0",
-         "right": "0",
-         "bottom": "0",
-         "left": "0",
-         "isLinked": true
-        }
-       },
-       "elements": [
-        {
-         "id": "4877683",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "settings": {
-          "editor": "<p>Trusted by growing brands across the USA, Canada & beyond</p>",
-          "align": "center",
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gssmall",
-           "text_color": "globals/colors?id=gsmuted"
-          },
-          "_title": "Logos Label"
-         },
-         "elements": []
-        },
-        {
-         "id": "ad3537d",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_align_items": "center",
-          "container_type": "grid",
-          "grid_columns_grid": {
-           "unit": "fr",
-           "size": 5,
-           "sizes": []
-          },
-          "grid_columns_grid_tablet": {
-           "unit": "fr",
-           "size": 3,
-           "sizes": []
-          },
-          "grid_columns_grid_mobile": {
-           "unit": "fr",
-           "size": 2,
-           "sizes": []
-          },
-          "grid_rows_grid": {
-           "unit": "fr",
-           "size": 1,
-           "sizes": []
-          },
-          "grid_auto_flow": "row",
-          "grid_gaps": {
-           "column": "32",
-           "row": "32",
-           "isLinked": true,
-           "unit": "px",
-           "size": 32
-          },
-          "_title": "Logo Row",
-          "content_width": "full",
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": true
-          }
-         },
-         "elements": [
-          {
-           "id": "0fa01bc",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 1",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            },
-            "caption_source": "none",
-            "width": {
-             "unit": "px",
-             "size": 140,
-             "sizes": []
-            },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
-             "sizes": []
-            },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-1.svg (240×96, transparent SVG/PNG, white or light version)"
-           },
-           "elements": []
-          },
-          {
-           "id": "957d81c",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 2",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            },
-            "caption_source": "none",
-            "width": {
-             "unit": "px",
-             "size": 140,
-             "sizes": []
-            },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
-             "sizes": []
-            },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-2.svg (240×96, transparent SVG/PNG, white or light version)"
-           },
-           "elements": []
-          },
-          {
-           "id": "8b92dc0",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 3",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            },
-            "caption_source": "none",
-            "width": {
-             "unit": "px",
-             "size": 140,
-             "sizes": []
-            },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
-             "sizes": []
-            },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-3.svg (240×96, transparent SVG/PNG, white or light version)"
-           },
-           "elements": []
-          },
-          {
-           "id": "c03feca",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 4",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            },
-            "caption_source": "none",
-            "width": {
-             "unit": "px",
-             "size": 140,
-             "sizes": []
-            },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
-             "sizes": []
-            },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-4.svg (240×96, transparent SVG/PNG, white or light version)"
-           },
-           "elements": []
-          },
-          {
-           "id": "5ce5769",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 5",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            },
-            "caption_source": "none",
-            "width": {
-             "unit": "px",
-             "size": 140,
-             "sizes": []
-            },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
-             "sizes": []
-            },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-5.svg (240×96, transparent SVG/PNG, white or light version)"
-           },
-           "elements": []
           }
          ]
         }
@@ -956,7 +1384,7 @@
    ]
   },
   {
-   "id": "5b9d066",
+   "id": "55de329",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1027,7 +1455,7 @@
    },
    "elements": [
     {
-     "id": "10f0689",
+     "id": "9dd53e1",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1060,7 +1488,7 @@
      },
      "elements": [
       {
-       "id": "66c9573",
+       "id": "56aeec8",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1086,7 +1514,7 @@
        },
        "elements": [
         {
-         "id": "bb716b8",
+         "id": "3f6b503",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1102,7 +1530,7 @@
          "elements": []
         },
         {
-         "id": "23ffb45",
+         "id": "36fd090",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1119,7 +1547,7 @@
          "elements": []
         },
         {
-         "id": "8b4eb84",
+         "id": "3229c88",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -1147,7 +1575,7 @@
        ]
       },
       {
-       "id": "9dbccf3",
+       "id": "57511a5",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1193,7 +1621,7 @@
        },
        "elements": [
         {
-         "id": "547f559",
+         "id": "25b0e01",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1300,7 +1728,7 @@
          },
          "elements": [
           {
-           "id": "7540aee",
+           "id": "2989885",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -1363,7 +1791,7 @@
            "elements": []
           },
           {
-           "id": "056d17b",
+           "id": "fdbb375",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1415,7 +1843,7 @@
          ]
         },
         {
-         "id": "d3b84dc",
+         "id": "10f0689",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1522,7 +1950,7 @@
          },
          "elements": [
           {
-           "id": "3de4d4c",
+           "id": "130f4a5",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -1585,7 +2013,7 @@
            "elements": []
           },
           {
-           "id": "5a69def",
+           "id": "9dbccf3",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1637,7 +2065,7 @@
          ]
         },
         {
-         "id": "159f175",
+         "id": "da83e26",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1744,7 +2172,7 @@
          },
          "elements": [
           {
-           "id": "418c19d",
+           "id": "5b9d066",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -1807,7 +2235,7 @@
            "elements": []
           },
           {
-           "id": "51ba05e",
+           "id": "452675a",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1859,7 +2287,7 @@
          ]
         },
         {
-         "id": "36fd090",
+         "id": "5476dfd",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1966,7 +2394,7 @@
          },
          "elements": [
           {
-           "id": "786e82a",
+           "id": "de3a600",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2029,7 +2457,7 @@
            "elements": []
           },
           {
-           "id": "3f6b503",
+           "id": "c4ba00a",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2081,7 +2509,7 @@
          ]
         },
         {
-         "id": "2989885",
+         "id": "db627a0",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2188,7 +2616,7 @@
          },
          "elements": [
           {
-           "id": "3229c88",
+           "id": "6468d32",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2251,7 +2679,7 @@
            "elements": []
           },
           {
-           "id": "56aeec8",
+           "id": "9d23a32",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2303,7 +2731,7 @@
          ]
         },
         {
-         "id": "130f4a5",
+         "id": "f1f4554",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2410,7 +2838,7 @@
          },
          "elements": [
           {
-           "id": "fdbb375",
+           "id": "bed763e",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2473,7 +2901,7 @@
            "elements": []
           },
           {
-           "id": "25b0e01",
+           "id": "6c30f3f",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2531,472 +2959,7 @@
    ]
   },
   {
-   "id": "fae2b03",
-   "elType": "container",
-   "isInner": false,
-   "settings": {
-    "content_width": "full",
-    "html_tag": "section",
-    "flex_direction": "column",
-    "padding": {
-     "unit": "px",
-     "top": "112",
-     "right": "0",
-     "bottom": "112",
-     "left": "0",
-     "isLinked": false
-    },
-    "padding_tablet": {
-     "unit": "px",
-     "top": "88",
-     "right": "0",
-     "bottom": "88",
-     "left": "0",
-     "isLinked": false
-    },
-    "padding_mobile": {
-     "unit": "px",
-     "top": "64",
-     "right": "0",
-     "bottom": "64",
-     "left": "0",
-     "isLinked": false
-    },
-    "background_background": "gradient",
-    "background_color": "rgba(124,92,255,0.30)",
-    "background_color_stop": {
-     "unit": "%",
-     "size": 0,
-     "sizes": []
-    },
-    "background_color_b": "#070B1F",
-    "background_color_b_stop": {
-     "unit": "%",
-     "size": 55,
-     "sizes": []
-    },
-    "background_gradient_type": "radial",
-    "background_gradient_position": "top left",
-    "background_overlay_background": "gradient",
-    "background_overlay_color": "rgba(6,132,196,0.28)",
-    "background_overlay_color_stop": {
-     "unit": "%",
-     "size": 0,
-     "sizes": []
-    },
-    "background_overlay_color_b": "rgba(7,11,31,0)",
-    "background_overlay_color_b_stop": {
-     "unit": "%",
-     "size": 50,
-     "sizes": []
-    },
-    "background_overlay_gradient_type": "radial",
-    "background_overlay_gradient_position": "bottom right",
-    "background_overlay_opacity": {
-     "unit": "",
-     "size": 1,
-     "sizes": []
-    },
-    "_title": "Growth Engine"
-   },
-   "elements": [
-    {
-     "id": "1b78a4d",
-     "elType": "container",
-     "isInner": true,
-     "settings": {
-      "content_width": "boxed",
-      "flex_direction": "column",
-      "flex_gap": {
-       "column": "48",
-       "row": "48",
-       "isLinked": true,
-       "unit": "px",
-       "size": 48
-      },
-      "padding": {
-       "unit": "px",
-       "top": "0",
-       "right": "24",
-       "bottom": "0",
-       "left": "24",
-       "isLinked": false
-      },
-      "padding_mobile": {
-       "unit": "px",
-       "top": "0",
-       "right": "16",
-       "bottom": "0",
-       "left": "16",
-       "isLinked": false
-      },
-      "_title": "Growth Engine – Inner"
-     },
-     "elements": [
-      {
-       "id": "c51044f",
-       "elType": "container",
-       "isInner": true,
-       "settings": {
-        "flex_direction": "row",
-        "flex_gap": {
-         "column": "56",
-         "row": "56",
-         "isLinked": true,
-         "unit": "px",
-         "size": 56
-        },
-        "flex_align_items": "center",
-        "flex_direction_mobile": "column",
-        "flex_direction_tablet": "column",
-        "_title": "Engine Row",
-        "content_width": "full",
-        "padding": {
-         "unit": "px",
-         "top": "0",
-         "right": "0",
-         "bottom": "0",
-         "left": "0",
-         "isLinked": true
-        }
-       },
-       "elements": [
-        {
-         "id": "e27dddc",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
-           "column": "22",
-           "row": "22",
-           "isLinked": true,
-           "unit": "px",
-           "size": 22
-          },
-          "width": {
-           "unit": "%",
-           "size": 42,
-           "sizes": []
-          },
-          "width_tablet": {
-           "unit": "%",
-           "size": 100,
-           "sizes": []
-          },
-          "width_mobile": {
-           "unit": "%",
-           "size": 100,
-           "sizes": []
-          },
-          "_title": "Engine Copy",
-          "content_width": "full",
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": true
-          }
-         },
-         "elements": [
-          {
-           "id": "9d58265",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "One team · one strategy",
-            "header_size": "p",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gseyebrow",
-             "title_color": "globals/colors?id=accent"
-            },
-            "_title": "Eyebrow – One team · one strategy"
-           },
-           "elements": []
-          },
-          {
-           "id": "4c101a2",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Four Services. One <span>Growth Engine.</span>",
-            "header_size": "h2",
-            "_css_classes": "gs-grad",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gsh2",
-             "title_color": "globals/colors?id=gswhite"
-            },
-            "_title": "Engine Title"
-           },
-           "elements": []
-          },
-          {
-           "id": "dbb023e",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Your website, SEO, social media and branding should not work in silos. We plan them together, so every channel feeds the next – and every click has a better chance of becoming a customer.</p>",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gslead",
-             "text_color": "globals/colors?id=text"
-            },
-            "_title": "Engine Text"
-           },
-           "elements": []
-          },
-          {
-           "id": "1a2ecbe",
-           "elType": "widget",
-           "widgetType": "icon-list",
-           "settings": {
-            "icon_list": [
-             {
-              "_id": "4594141",
-              "text": "Website converts the traffic SEO and social bring in",
-              "selected_icon": {
-               "value": "fas fa-check-circle",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "11ece38",
-              "text": "SEO compounds free, high-intent visitors every month",
-              "selected_icon": {
-               "value": "fas fa-check-circle",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "f961eba",
-              "text": "Social media builds awareness, trust and retargeting audiences",
-              "selected_icon": {
-               "value": "fas fa-check-circle",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "8bf091e",
-              "text": "Design keeps your brand consistent and memorable everywhere",
-              "selected_icon": {
-               "value": "fas fa-check-circle",
-               "library": "fa-solid"
-              }
-             }
-            ],
-            "view": "traditional",
-            "icon_size": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            },
-            "text_indent": {
-             "unit": "px",
-             "size": 10,
-             "sizes": []
-            },
-            "space_between": {
-             "unit": "px",
-             "size": 12,
-             "sizes": []
-            },
-            "__globals__": {
-             "icon_color": "globals/colors?id=accent",
-             "text_color": "globals/colors?id=text",
-             "icon_typography_typography": "globals/typography?id=gsbody",
-             "text_color_hover": "globals/colors?id=gswhite"
-            },
-            "_title": "Engine Checklist"
-           },
-           "elements": []
-          },
-          {
-           "id": "92e8f74",
-           "elType": "widget",
-           "widgetType": "button",
-           "settings": {
-            "text": "Get a Free Growth Plan",
-            "link": {
-             "url": "/contact-us/",
-             "is_external": "",
-             "nofollow": "",
-             "custom_attributes": ""
-            },
-            "size": "md",
-            "hover_animation": "float",
-            "selected_icon": {
-             "value": "fas fa-arrow-right",
-             "library": "fa-solid"
-            },
-            "icon_align": "row-reverse",
-            "icon_indent": {
-             "unit": "px",
-             "size": 10,
-             "sizes": []
-            },
-            "align_mobile": "justify",
-            "_title": "Button – Get a Free Growth Plan"
-           },
-           "elements": []
-          }
-         ]
-        },
-        {
-         "id": "4b2442b",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
-           "column": "20",
-           "row": "20",
-           "isLinked": true,
-           "unit": "px",
-           "size": 20
-          },
-          "width": {
-           "unit": "%",
-           "size": 58,
-           "sizes": []
-          },
-          "width_tablet": {
-           "unit": "%",
-           "size": 100,
-           "sizes": []
-          },
-          "width_mobile": {
-           "unit": "%",
-           "size": 100,
-           "sizes": []
-          },
-          "_title": "Engine Visual",
-          "content_width": "full",
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": true
-          }
-         },
-         "elements": [
-          {
-           "id": "a7512a9",
-           "elType": "container",
-           "isInner": true,
-           "settings": {
-            "flex_direction": "column",
-            "flex_gap": {
-             "column": "16",
-             "row": "16",
-             "isLinked": true,
-             "unit": "px",
-             "size": 16
-            },
-            "background_background": "classic",
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "1",
-             "right": "1",
-             "bottom": "1",
-             "left": "1",
-             "isLinked": true
-            },
-            "border_radius": {
-             "unit": "px",
-             "top": "24",
-             "right": "24",
-             "bottom": "24",
-             "left": "24",
-             "isLinked": true
-            },
-            "box_shadow_box_shadow_type": "yes",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 20,
-             "blur": 50,
-             "spread": 0,
-             "color": "rgba(2,6,23,0.45)"
-            },
-            "padding": {
-             "unit": "px",
-             "top": "20",
-             "right": "20",
-             "bottom": "20",
-             "left": "20",
-             "isLinked": true
-            },
-            "padding_tablet": {
-             "unit": "px",
-             "top": "16",
-             "right": "16",
-             "bottom": "16",
-             "left": "16",
-             "isLinked": true
-            },
-            "padding_mobile": {
-             "unit": "px",
-             "top": "12",
-             "right": "12",
-             "bottom": "12",
-             "left": "12",
-             "isLinked": true
-            },
-            "css_classes": "gs-glass--strong",
-            "__globals__": {
-             "background_color": "globals/colors?id=gsglass2",
-             "border_color": "globals/colors?id=gsline"
-            },
-            "_title": "Infographic Panel – Growth Engine",
-            "content_width": "full"
-           },
-           "elements": [
-            {
-             "id": "13ff84c",
-             "elType": "widget",
-             "widgetType": "image",
-             "settings": {
-              "image": {
-               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-growth-engine.svg",
-               "id": 5836,
-               "alt": "Infographic: website development, SEO, social media marketing and graphic design working together as one growth engine to deliver more leads and revenue",
-               "source": "library"
-              },
-              "image_size": "full",
-              "width": {
-               "unit": "%",
-               "size": 100,
-               "sizes": []
-              },
-              "align": "center",
-              "caption_source": "none",
-              "image_border_radius": {
-               "unit": "px",
-               "top": "18",
-               "right": "18",
-               "bottom": "18",
-               "left": "18",
-               "isLinked": true
-              },
-              "_title": "Infographic – Growth Engine (animated SVG)"
-             },
-             "elements": []
-            }
-           ]
-          }
-         ]
-        }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "27e31c0",
+   "id": "11b3c7a",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -3066,7 +3029,7 @@
    },
    "elements": [
     {
-     "id": "fa89079",
+     "id": "d997db4",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -3099,7 +3062,7 @@
      },
      "elements": [
       {
-       "id": "24e043d",
+       "id": "c278bd8",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3127,7 +3090,7 @@
        },
        "elements": [
         {
-         "id": "6c30f3f",
+         "id": "26d0da5",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3167,7 +3130,7 @@
          },
          "elements": [
           {
-           "id": "452675a",
+           "id": "3e85649",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -3182,7 +3145,7 @@
            "elements": []
           },
           {
-           "id": "da83e26",
+           "id": "43eeb25",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -3198,7 +3161,7 @@
            "elements": []
           },
           {
-           "id": "de3a600",
+           "id": "510f221",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -3212,13 +3175,13 @@
            "elements": []
           },
           {
-           "id": "db627a0",
+           "id": "eee9dac",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
             "icon_list": [
              {
-              "_id": "c4ba00a",
+              "_id": "ddb428b",
               "text": "Personalised campaigns for your goals and budget",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3226,7 +3189,7 @@
               }
              },
              {
-              "_id": "5476dfd",
+              "_id": "eb85195",
               "text": "Reach your ideal audience faster",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3234,7 +3197,7 @@
               }
              },
              {
-              "_id": "6468d32",
+              "_id": "58f0442",
               "text": "Low cost, high return marketing",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3242,7 +3205,7 @@
               }
              },
              {
-              "_id": "9d23a32",
+              "_id": "24e043d",
               "text": "Honest monthly reporting – no jargon",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3277,7 +3240,7 @@
            "elements": []
           },
           {
-           "id": "bed763e",
+           "id": "d91aeeb",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -3332,7 +3295,7 @@
          ]
         },
         {
-         "id": "58f0442",
+         "id": "87c8f22",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3372,7 +3335,7 @@
          },
          "elements": [
           {
-           "id": "eb85195",
+           "id": "27e31c0",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3418,7 +3381,7 @@
            },
            "elements": [
             {
-             "id": "57511a5",
+             "id": "fb27103",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3524,7 +3487,7 @@
              },
              "elements": [
               {
-               "id": "f1f4554",
+               "id": "2519b29",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -3583,7 +3546,7 @@
              ]
             },
             {
-             "id": "55de329",
+             "id": "709b183",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3689,7 +3652,7 @@
              },
              "elements": [
               {
-               "id": "9dd53e1",
+               "id": "3e3bbc1",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -3748,7 +3711,7 @@
              ]
             },
             {
-             "id": "43eeb25",
+             "id": "99f92e2",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3854,7 +3817,7 @@
              },
              "elements": [
               {
-               "id": "3e85649",
+               "id": "21216b4",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -3913,7 +3876,7 @@
              ]
             },
             {
-             "id": "ddb428b",
+             "id": "fa89079",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -4019,7 +3982,7 @@
              },
              "elements": [
               {
-               "id": "510f221",
+               "id": "178bdf0",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -4084,7 +4047,7 @@
        ]
       },
       {
-       "id": "178bdf0",
+       "id": "ab5665e",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4156,7 +4119,7 @@
        },
        "elements": [
         {
-         "id": "99f92e2",
+         "id": "2bd2374",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -4202,7 +4165,7 @@
          },
          "elements": [
           {
-           "id": "d91aeeb",
+           "id": "af7320d",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4227,7 +4190,7 @@
            },
            "elements": [
             {
-             "id": "eee9dac",
+             "id": "f1d4b85",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4253,7 +4216,7 @@
            ]
           },
           {
-           "id": "2519b29",
+           "id": "bded7bf",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4278,7 +4241,7 @@
            },
            "elements": [
             {
-             "id": "26d0da5",
+             "id": "4c2469f",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4304,7 +4267,7 @@
            ]
           },
           {
-           "id": "3e3bbc1",
+           "id": "01a7ff9",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4329,7 +4292,7 @@
            },
            "elements": [
             {
-             "id": "fb27103",
+             "id": "5e069d8",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4355,7 +4318,7 @@
            ]
           },
           {
-           "id": "21216b4",
+           "id": "b87f259",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4380,7 +4343,7 @@
            },
            "elements": [
             {
-             "id": "709b183",
+             "id": "ba36188",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4414,7 +4377,7 @@
    ]
   },
   {
-   "id": "e9671e4",
+   "id": "1b84c1f",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -4484,7 +4447,7 @@
    },
    "elements": [
     {
-     "id": "97f76a0",
+     "id": "9c727a6",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -4517,7 +4480,7 @@
      },
      "elements": [
       {
-       "id": "af7320d",
+       "id": "b5e45d9",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4543,7 +4506,7 @@
        },
        "elements": [
         {
-         "id": "87c8f22",
+         "id": "3a52dee",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -4559,7 +4522,7 @@
          "elements": []
         },
         {
-         "id": "c278bd8",
+         "id": "fe3e550",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -4576,7 +4539,7 @@
          "elements": []
         },
         {
-         "id": "f1d4b85",
+         "id": "491e280",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -4604,7 +4567,7 @@
        ]
       },
       {
-       "id": "596a573",
+       "id": "8d9d8f7",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4650,7 +4613,7 @@
        },
        "elements": [
         {
-         "id": "01a7ff9",
+         "id": "97f76a0",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -4756,7 +4719,7 @@
          },
          "elements": [
           {
-           "id": "4c2469f",
+           "id": "2f9b00c",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -4772,7 +4735,7 @@
            "elements": []
           },
           {
-           "id": "bded7bf",
+           "id": "4902b07",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -4787,7 +4750,7 @@
            "elements": []
           },
           {
-           "id": "5e069d8",
+           "id": "596a573",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -4803,7 +4766,7 @@
          ]
         },
         {
-         "id": "ab5665e",
+         "id": "54c3dbe",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -4909,7 +4872,7 @@
          },
          "elements": [
           {
-           "id": "ba36188",
+           "id": "e9671e4",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -4925,7 +4888,7 @@
            "elements": []
           },
           {
-           "id": "b87f259",
+           "id": "2a6b68d",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -4940,7 +4903,7 @@
            "elements": []
           },
           {
-           "id": "2bd2374",
+           "id": "b5d8237",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -4956,7 +4919,7 @@
          ]
         },
         {
-         "id": "fe3e550",
+         "id": "26bf590",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5062,7 +5025,7 @@
          },
          "elements": [
           {
-           "id": "d997db4",
+           "id": "66db029",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5078,7 +5041,7 @@
            "elements": []
           },
           {
-           "id": "11b3c7a",
+           "id": "6f22961",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5093,7 +5056,7 @@
            "elements": []
           },
           {
-           "id": "3a52dee",
+           "id": "c19b858",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -5109,7 +5072,7 @@
          ]
         },
         {
-         "id": "4902b07",
+         "id": "93a7482",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5215,7 +5178,7 @@
          },
          "elements": [
           {
-           "id": "491e280",
+           "id": "b1d9165",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5231,7 +5194,7 @@
            "elements": []
           },
           {
-           "id": "b5e45d9",
+           "id": "0e78129",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5246,7 +5209,7 @@
            "elements": []
           },
           {
-           "id": "2f9b00c",
+           "id": "b206046",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -5268,7 +5231,7 @@
    ]
   },
   {
-   "id": "b206046",
+   "id": "eb4974d",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -5338,7 +5301,7 @@
    },
    "elements": [
     {
-     "id": "0e78129",
+     "id": "14de64a",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -5371,7 +5334,7 @@
      },
      "elements": [
       {
-       "id": "54c3dbe",
+       "id": "b626d48",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5397,7 +5360,7 @@
        },
        "elements": [
         {
-         "id": "2a6b68d",
+         "id": "ceacee7",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -5413,7 +5376,7 @@
          "elements": []
         },
         {
-         "id": "b5d8237",
+         "id": "e2916c6",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -5432,31 +5395,31 @@
        ]
       },
       {
-       "id": "b1d9165",
+       "id": "c2ddec3",
        "elType": "widget",
        "widgetType": "testimonial-carousel",
        "settings": {
         "slides": [
          {
-          "_id": "66db029",
+          "_id": "ca0488b",
           "content": "The brand guidelines and logos were absolutely fantastic! They have transformed my brand and will help me scale up for more business. Great communication and very speedy delivery – ahead of schedule.",
           "name": "Mr. James",
           "title": "Brand identity client"
          },
          {
-          "_id": "6f22961",
+          "_id": "2b271a3",
           "content": "Working with Mr. Fahad was very pleasant and professional. Communication was fast and I am more than satisfied with the result. Looking forward to the next project.",
           "name": "Anthony",
           "title": "Website client"
          },
          {
-          "_id": "c19b858",
+          "_id": "2d09cbb",
           "content": "My first time working with Fahad and it has been a pleasure. Brief well met, clear communication and fast delivery. Not much more you can ask for.",
           "name": "Lisa P.",
           "title": "Marketing client"
          },
          {
-          "_id": "26bf590",
+          "_id": "470bd0e",
           "content": "Wonderful experience as always – so happy with the final product. Highly recommend!",
           "name": "Patrick",
           "title": "Design client"
@@ -5523,7 +5486,7 @@
    ]
   },
   {
-   "id": "611d7db",
+   "id": "c51044f",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -5593,7 +5556,7 @@
    },
    "elements": [
     {
-     "id": "cf56f78",
+     "id": "4b2442b",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -5626,7 +5589,7 @@
      },
      "elements": [
       {
-       "id": "a8ee68a",
+       "id": "a7512a9",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5654,7 +5617,7 @@
        },
        "elements": [
         {
-         "id": "ceacee7",
+         "id": "dc57790",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5694,7 +5657,7 @@
          },
          "elements": [
           {
-           "id": "93a7482",
+           "id": "7293842",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5709,7 +5672,7 @@
            "elements": []
           },
           {
-           "id": "8d9d8f7",
+           "id": "d616cb6",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5725,7 +5688,7 @@
            "elements": []
           },
           {
-           "id": "9c727a6",
+           "id": "16d1f9c",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -5739,7 +5702,7 @@
            "elements": []
           },
           {
-           "id": "1b84c1f",
+           "id": "f555b68",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -5794,7 +5757,7 @@
          ]
         },
         {
-         "id": "a7903fd",
+         "id": "13ff84c",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5834,29 +5797,29 @@
          },
          "elements": [
           {
-           "id": "9b0d5b9",
+           "id": "e27dddc",
            "elType": "widget",
            "widgetType": "nested-accordion",
            "settings": {
             "items": [
              {
-              "_id": "e2916c6",
+              "_id": "3552c23",
               "item_title": "What does a digital marketing agency do?"
              },
              {
-              "_id": "2b271a3",
+              "_id": "a8ee68a",
               "item_title": "How much do your digital marketing services cost?"
              },
              {
-              "_id": "c2ddec3",
+              "_id": "9d58265",
               "item_title": "How long does SEO take to show results?"
              },
              {
-              "_id": "7293842",
+              "_id": "4594141",
               "item_title": "How long does it take to build a website?"
              },
              {
-              "_id": "f555b68",
+              "_id": "8bf091e",
               "item_title": "Do you work with clients outside the USA and Canada?"
              }
             ],
@@ -5951,7 +5914,7 @@
            },
            "elements": [
             {
-             "id": "ca0488b",
+             "id": "a7903fd",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -5968,7 +5931,7 @@
              },
              "elements": [
               {
-               "id": "b626d48",
+               "id": "9b0d5b9",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -5984,7 +5947,7 @@
              ]
             },
             {
-             "id": "470bd0e",
+             "id": "611d7db",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6001,7 +5964,7 @@
              },
              "elements": [
               {
-               "id": "2d09cbb",
+               "id": "cf56f78",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6017,7 +5980,7 @@
              ]
             },
             {
-             "id": "eb4974d",
+             "id": "dbb023e",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6034,7 +5997,7 @@
              },
              "elements": [
               {
-               "id": "14de64a",
+               "id": "4c101a2",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6050,7 +6013,7 @@
              ]
             },
             {
-             "id": "16d1f9c",
+             "id": "f961eba",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6067,7 +6030,7 @@
              },
              "elements": [
               {
-               "id": "d616cb6",
+               "id": "11ece38",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6083,7 +6046,7 @@
              ]
             },
             {
-             "id": "3552c23",
+             "id": "92e8f74",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6100,7 +6063,7 @@
              },
              "elements": [
               {
-               "id": "dc57790",
+               "id": "1a2ecbe",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {

@@ -50,6 +50,13 @@ python3 backup.py         # fresh snapshot to ../backup/
 - The user enabled Elementor → Settings → Advanced → **Enable Unfiltered File Uploads** (needed for SVG). Uploads go through `elementor/request-media-upload` tokens.
 - Live pages are updated with `push.live(orig_id, elements)` (checks: the live data was unchanged vs `build.py` before regenerating).
 
+## Hero infographics + legal pages (2026-11-27)
+- Every page hero is now two columns (copy + animated infographic glass panel) via `page_hero(..., info=(svg, label))`. On Home the lead form moved to its own section `#free-proposal` right after the hero.
+- Service pages: the infographic is in the hero, and "What's included" moved next to the benefit cards.
+- New SVGs: about 5859, services funnel 5860, our work 5861, contact 5862, privacy 5863, terms 5864.
+- Privacy Policy (page 5892, /privacy-policy/) and Terms of Service (5897, /terms-of-service/) are built from `tools/legal.py` (sticky table of contents on desktop). Every form has a privacy note linking to the policy. **Not legal advice; the owner should have them reviewed.** Governing law was chosen as Illinois (US/international clients) and Ontario (Canadian clients); confirm with the owner.
+- The user shared their logo in chat (blue chrome "STORM" wordmark with a globe, tagline "Your thoughts turn into reality", on a black background), but the file never reached the container. Ask for it to be uploaded, then swap the text logo for the Site Logo widget.
+
 ## Open items
 - Visual QA screenshots are blocked by Under Construction plus draft status (see the session notes). The user reviews the drafts while logged in.
 - Facebook/LinkedIn URLs unknown (placeholders in the footer). Our Work project names and results are placeholders.

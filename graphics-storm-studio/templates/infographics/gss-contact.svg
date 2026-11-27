@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" width="600" height="460" role="img" aria-labelledby="t d">
+<title id="t">Contact infographic</title><desc id="d">Animated infographic: your proposal request flies to the Graphics Storm Studio team, who reply within one business day and book a call.</desc>
+<defs>
+<linearGradient id="gBV" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0684C4"/><stop offset="1" stop-color="#7052FF"/></linearGradient>
+<linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5DB0D8"/><stop offset=".5" stop-color="#0684C4"/><stop offset="1" stop-color="#9D86FF"/></linearGradient>
+<linearGradient id="gBar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#0684C4"/><stop offset="1" stop-color="#9D86FF"/></linearGradient>
+<radialGradient id="glowV"><stop offset="0" stop-color="#7052FF" stop-opacity=".45"/><stop offset="1" stop-color="#7052FF" stop-opacity="0"/></radialGradient>
+<radialGradient id="glowB"><stop offset="0" stop-color="#0684C4" stop-opacity=".45"/><stop offset="1" stop-color="#0684C4" stop-opacity="0"/></radialGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity=".55"/></filter>
+</defs>
+<style>
+text{font-family:'Sora','Inter','Segoe UI',Roboto,Arial,sans-serif;fill:#fff} .m{fill:#C9D3E8} .s{fill:#93A1BF} .a{fill:#5DB0D8}
+.glass{fill:rgba(255,255,255,.07);stroke:rgba(255,255,255,.18);stroke-width:1}
+.glass2{fill:rgba(255,255,255,.11);stroke:rgba(255,255,255,.22);stroke-width:1}
+.flow{fill:none;stroke:url(#gSky);stroke-width:2;stroke-dasharray:5 9;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+.float{animation:float 5s ease-in-out infinite} @keyframes float{50%{transform:translateY(-6px)}}
+.grow{transform-box:fill-box;transform-origin:bottom;animation:grow 4s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes grow{0%{transform:scaleY(.08)}35%,85%{transform:scaleY(1)}100%{transform:scaleY(.08)}}
+.draw{stroke-dasharray:600;stroke-dashoffset:600;animation:draw 5s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:600}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:600}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 5s ease-in-out infinite}
+@keyframes pop{0%,8%{transform:scale(0);opacity:0}16%,88%{transform:scale(1);opacity:1}100%{transform:scale(0);opacity:0}}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important} .draw{stroke-dashoffset:0} .pop{transform:none;opacity:1}}
+</style>
+<g class="float"><g filter="url(#soft)"><rect class="glass2" x="40" y="90" width="170" height="220" rx="18"/></g>
+<text x="60" y="122" font-size="13" font-weight="700">Free proposal</text>
+<rect class="pop" style="animation-delay:0.10s" x="60" y="140" width="130" height="24" rx="8" fill="rgba(255,255,255,.09)" stroke="rgba(255,255,255,.2)"/><rect class="pop" style="animation-delay:0.35s" x="60" y="174" width="130" height="24" rx="8" fill="rgba(255,255,255,.09)" stroke="rgba(255,255,255,.2)"/><rect class="pop" style="animation-delay:0.60s" x="60" y="208" width="130" height="24" rx="8" fill="rgba(255,255,255,.09)" stroke="rgba(255,255,255,.2)"/>
+<rect class="pop" style="animation-delay:1s" x="60" y="248" width="130" height="30" rx="15" fill="#7052FF"/><text class="pop" style="animation-delay:1s" x="125" y="268" text-anchor="middle" font-size="11.5" font-weight="700">Send ➤</text></g>
+<path class="flow" d="M190 170 C 300 60, 360 300, 440 220"/>
+<g><path d="M-12 -8 L14 0 L-12 8 L-7 0 Z" fill="#fff"/><animateMotion dur="3.5s" repeatCount="indefinite" rotate="auto" path="M190 170 C 300 60, 360 300, 440 220"/></g>
+<g class="float" style="animation-delay:1.2s"><g filter="url(#soft)"><rect class="glass2" x="410" y="120" width="160" height="200" rx="18"/></g>
+<circle cx="440" cy="152" r="14" fill="url(#gBV)"/><text x="462" y="150" font-size="11.5" font-weight="700">GSS team</text><text class="a" x="462" y="164" font-size="9.5">online</text>
+<g class="pop" style="animation-delay:1.8s"><rect x="426" y="182" width="126" height="40" rx="12" fill="rgba(6,132,196,.35)"/><text x="436" y="200" font-size="10.5">Thanks! We'll send</text><text x="436" y="214" font-size="10.5">your plan today ✓</text></g>
+<g class="pop" style="animation-delay:2.4s"><rect x="426" y="232" width="100" height="30" rx="12" fill="rgba(112,82,255,.45)"/><text x="436" y="251" font-size="10.5">Call booked 📅</text></g></g>
+<g class="pop" style="animation-delay:.4s"><g filter="url(#soft)"><rect class="glass2" x="200" y="350" width="200" height="60" rx="18"/></g>
+<circle cx="230" cy="380" r="13" fill="none" stroke="#5DB0D8" stroke-width="2.5"/><path d="M230 372 V380 L236 384" stroke="#5DB0D8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<text x="252" y="376" font-size="12.5" font-weight="700">Reply within</text><text class="a" x="252" y="393" font-size="12" font-weight="600">1 business day</text></g>
+</svg>

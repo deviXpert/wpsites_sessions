@@ -51,3 +51,18 @@ def live(orig_id, elements):
     s = wp.ability('elementor/update-page-settings', {'post_id': orig_id, 'settings': {'hide_title': 'yes'}})
     if s.get('staged'): wp.ability('elementor/publish-document', {'post_id': orig_id}, 'DELETE')
     print('live', orig_id, 'saved' if 'id' in r else r, el.count(elements))
+
+
+def published(key, title, slug, elements):
+    """Create (once) and update a PUBLISHED new page (e.g. legal pages) and regenerate its CSS."""
+    el.finalize(elements)
+    pid = IDS.get(key)
+    if not pid:
+        r = wp.ability('elementor/create-page', {'title': title, 'template': 'elementor_header_footer', 'hide_title': True})
+        pid = r.get('post_id') or r.get('id'); IDS[key] = pid; _save()
+    r = wp.req(f'wp/v2/pages/{pid}', 'POST', {'title': title, 'slug': slug, 'status': 'publish', 'template': 'elementor_header_footer',
+            'meta': {'_elementor_data': json.dumps(elements), '_elementor_edit_mode': 'builder', '_elementor_template_type': 'wp-page'}})
+    s = wp.ability('elementor/update-page-settings', {'post_id': pid, 'settings': {'hide_title': 'yes'}})
+    if s.get('staged'): wp.ability('elementor/publish-document', {'post_id': pid}, 'DELETE')
+    print(key, pid, r.get('status'), r.get('link'), el.count(elements))
+    return pid

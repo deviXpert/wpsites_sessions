@@ -212,8 +212,105 @@ def design():
 <g class="pop" style="animation-delay:2.4s"><rect x="340" y="370" width="200" height="34" rx="17" fill="#7052FF"/><text x="440" y="392" text-anchor="middle" font-size="12.5" font-weight="700">Brand guidelines ready ✓</text></g>'''
     return wrap(W, H, 'Graphic design infographic', 'Animated infographic: a logo being drawn with the pen tool on a design grid, with a brand colour palette, typography and logo identity cards.', body, css)
 
+
+# ================= ABOUT: team & story =================
+def about():
+    W, H = 600, 500
+    cx, cy = 300, 200
+    roles = [('CEO', -150, -110), ('Creative', 150, -110), ('Projects', -190, 40), ('Content', 190, 40), ('Design', 0, 128)]
+    lines = ''.join(f'<path class="flow" d="M{cx} {cy} L{cx+x} {cy+y}"/>' for _, x, y in roles)
+    av = ''.join(f"""<g class="float" {d(i, 0, .6)}><g class="pop" {d(i, .2, .3)}><g filter="url(#soft)"><circle cx="{cx+x}" cy="{cy+y}" r="34" class="glass2"/></g>
+<circle cx="{cx+x}" cy="{cy+y-8}" r="10" fill="url(#gBV)"/><path d="M{cx+x-16} {cy+y+18} a16 13 0 0 1 32 0" fill="url(#gBV)"/>
+<text x="{cx+x}" y="{cy+y+52}" text-anchor="middle" font-size="11.5" font-weight="700">{t}</text></g></g>""" for i, (t, x, y) in enumerate(roles))
+    chips = [('5+', 'years', 28, 418), ('130+', 'clients', 222, 430), ('180+', 'websites', 416, 418)]
+    ch = ''.join(f"""<g class="pop" {d(i, 1.6, .35)}><g filter="url(#soft)"><rect class="glass2" x="{x}" y="{y}" width="156" height="50" rx="16"/></g>
+<text x="{x+16}" y="{y+32}" font-size="20" font-weight="800">{n}</text><text class="m" x="{x+26+len(n)*13}" y="{y+31}" font-size="11.5">{t}</text></g>""" for i, (n, t, x, y) in enumerate(chips))
+    body = f"""{lines}
+<circle class="pulse" cx="{cx}" cy="{cy}" r="48" fill="none" stroke="#5DB0D8" stroke-width="2"/>
+<g filter="url(#soft)"><circle cx="{cx}" cy="{cy}" r="48" fill="url(#gBV)"/></g>
+<text x="{cx}" y="{cy-2}" text-anchor="middle" font-size="16" font-weight="800">ONE</text><text x="{cx}" y="{cy+16}" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1.4">TEAM</text>
+{av}{ch}"""
+    return wrap(W, H, 'About Graphics Storm Studio infographic', 'Animated infographic: one connected team of CEO, creative, project, content and design specialists, with 5+ years, 130+ happy clients and 180+ websites.', body)
+
+# ================= SERVICES HUB: growth funnel =================
+def funnel():
+    W, H = 600, 460
+    tiers = [('Attract', 'Social media · Design · Ads', 480, '#9D86FF'), ('Rank', 'SEO · Content', 400, '#7052FF'),
+             ('Convert', 'Website · Landing pages', 320, '#0684C4'), ('Grow', 'Leads · Sales · Loyalty', 240, '#5DB0D8')]
+    t = ''
+    for i, (name, sub, w, c) in enumerate(tiers):
+        y = 46 + i * 92; x = (W - w) / 2
+        t += f"""<g class="pop" {d(i, .1, .35)}><g filter="url(#soft)"><path d="M{x} {y} H{x+w} L{x+w-36} {y+76} H{x+36} Z" fill="{c}" fill-opacity=".28" stroke="{c}" stroke-opacity=".7"/></g>
+<text x="{W/2}" y="{y+34}" text-anchor="middle" font-size="17" font-weight="800">{name}</text><text class="m" x="{W/2}" y="{y+54}" text-anchor="middle" font-size="11.5">{sub}</text></g>"""
+    drops = ''.join(f'<circle r="4.5" fill="#fff"><animateMotion dur="3s" begin="{k*0.6:.1f}s" repeatCount="indefinite" path="M{W/2 + off} 30 V 420"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="{k*0.6:.1f}s" repeatCount="indefinite"/></circle>' for k, off in enumerate([-60, 30, -15, 55, -40]))
+    body = f"""{drops}{t}
+<g class="pop" style="animation-delay:1.8s"><rect x="210" y="414" width="180" height="34" rx="17" fill="#7052FF"/><text x="300" y="436" text-anchor="middle" font-size="12.5" font-weight="700">▲ More customers</text></g>"""
+    return wrap(W, H, 'Digital marketing funnel infographic', 'Animated infographic: social media, design and ads attract visitors, SEO ranks you, your website converts them and you grow with more leads and sales.', body)
+
+# ================= OUR WORK: showcase =================
+def work():
+    W, H = 600, 460
+    css = """.cyc{animation:cyc 9s ease-in-out infinite;opacity:0}
+@keyframes cyc{0%{opacity:0;transform:translateY(10px)}6%,30%{opacity:1;transform:none}36%,100%{opacity:0;transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){.cyc{opacity:0}.cyc.first{opacity:1}}"""
+    screens = [('url(#gBV)', 'Website launch', '3× more enquiries'), ('#7052FF', 'Brand identity', 'New logo + guidelines'), ('#0684C4', 'SEO campaign', '+214% organic traffic')]
+    sc = ''.join(f"""<g class="cyc{' first' if i == 0 else ''}" style="animation-delay:{i*3}s">
+<rect x="96" y="96" width="300" height="168" rx="8" fill="{c}" fill-opacity=".55"/>
+<rect x="116" y="118" width="140" height="14" rx="7" fill="rgba(255,255,255,.75)"/><rect x="116" y="142" width="200" height="9" rx="4.5" fill="rgba(255,255,255,.35)"/>
+<rect x="116" y="196" width="80" height="26" rx="13" fill="#fff" fill-opacity=".85"/>
+<g filter="url(#soft)"><rect class="glass2" x="330" y="300" width="210" height="64" rx="16"/></g>
+<text class="a" x="350" y="326" font-size="10.5" font-weight="700" letter-spacing="1.3">{t.upper()}</text><text x="350" y="348" font-size="15" font-weight="800">{r}</text></g>""" for i, (c, t, r) in enumerate(screens))
+    body = f"""<g class="float"><g filter="url(#soft)"><rect class="glass2" x="80" y="80" width="332" height="200" rx="14"/></g>
+<path d="M60 286 H432 L414 300 H78 Z" fill="rgba(255,255,255,.16)"/></g>
+<g class="float" style="animation-delay:1.5s"><g filter="url(#soft)"><rect class="glass2" x="440" y="70" width="100" height="196" rx="20"/></g>
+<rect x="452" y="94" width="76" height="60" rx="8" fill="url(#gBV)" fill-opacity=".6"/><rect x="452" y="162" width="76" height="8" rx="4" fill="rgba(255,255,255,.4)"/><rect x="452" y="176" width="56" height="8" rx="4" fill="rgba(255,255,255,.25)"/>
+<rect x="452" y="196" width="76" height="40" rx="8" fill="#7052FF" fill-opacity=".45"/></g>
+{sc}
+<g class="pop" style="animation-delay:.6s"><g filter="url(#soft)"><rect class="glass2" x="60" y="320" width="150" height="80" rx="16"/></g>
+<text class="a" x="78" y="346" font-size="10.5" font-weight="700" letter-spacing="1.3">PROJECTS</text><text x="78" y="380" font-size="26" font-weight="800">514+</text><text class="m" x="146" y="380" font-size="10.5">last month</text></g>"""
+    return wrap(W, H, 'Our work portfolio infographic', 'Animated infographic: a laptop and phone cycling through website, brand identity and SEO projects with their results.', body, css)
+
+# ================= CONTACT: message flow =================
+def contact():
+    W, H = 600, 460
+    path = 'M190 170 C 300 60, 360 300, 440 220'
+    body = f"""<g class="float"><g filter="url(#soft)"><rect class="glass2" x="40" y="90" width="170" height="220" rx="18"/></g>
+<text x="60" y="122" font-size="13" font-weight="700">Free proposal</text>
+{''.join(f'<rect class="pop" {d(i, .1, .25)} x="60" y="{140 + i*34}" width="130" height="24" rx="8" fill="rgba(255,255,255,.09)" stroke="rgba(255,255,255,.2)"/>' for i in range(3))}
+<rect class="pop" style="animation-delay:1s" x="60" y="248" width="130" height="30" rx="15" fill="#7052FF"/><text class="pop" style="animation-delay:1s" x="125" y="268" text-anchor="middle" font-size="11.5" font-weight="700">Send ➤</text></g>
+<path class="flow" d="{path}"/>
+<g><path d="M-12 -8 L14 0 L-12 8 L-7 0 Z" fill="#fff"/><animateMotion dur="3.5s" repeatCount="indefinite" rotate="auto" path="{path}"/></g>
+<g class="float" style="animation-delay:1.2s"><g filter="url(#soft)"><rect class="glass2" x="410" y="120" width="160" height="200" rx="18"/></g>
+<circle cx="440" cy="152" r="14" fill="url(#gBV)"/><text x="462" y="150" font-size="11.5" font-weight="700">GSS team</text><text class="a" x="462" y="164" font-size="9.5">online</text>
+<g class="pop" style="animation-delay:1.8s"><rect x="426" y="182" width="126" height="40" rx="12" fill="rgba(6,132,196,.35)"/><text x="436" y="200" font-size="10.5">Thanks! We'll send</text><text x="436" y="214" font-size="10.5">your plan today ✓</text></g>
+<g class="pop" style="animation-delay:2.4s"><rect x="426" y="232" width="100" height="30" rx="12" fill="rgba(112,82,255,.45)"/><text x="436" y="251" font-size="10.5">Call booked 📅</text></g></g>
+<g class="pop" style="animation-delay:.4s"><g filter="url(#soft)"><rect class="glass2" x="200" y="350" width="200" height="60" rx="18"/></g>
+<circle cx="230" cy="380" r="13" fill="none" stroke="#5DB0D8" stroke-width="2.5"/><path d="M230 372 V380 L236 384" stroke="#5DB0D8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<text x="252" y="376" font-size="12.5" font-weight="700">Reply within</text><text class="a" x="252" y="393" font-size="12" font-weight="600">1 business day</text></g>"""
+    return wrap(W, H, 'Contact infographic', 'Animated infographic: your proposal request flies to the Graphics Storm Studio team, who reply within one business day and book a call.', body)
+
+# ================= LEGAL: privacy shield / terms document =================
+def privacy():
+    W, H = 600, 400
+    body = f"""<circle class="pulse" cx="300" cy="190" r="96" fill="none" stroke="#5DB0D8" stroke-width="2"/>
+<g filter="url(#soft)"><path d="M300 70 L392 104 V186 C392 252 350 296 300 318 C250 296 208 252 208 186 V104 Z" fill="url(#gBV)" fill-opacity=".85"/></g>
+<rect x="272" y="178" width="56" height="46" rx="8" fill="#fff" fill-opacity=".92"/><path d="M282 178 v-14 a18 18 0 0 1 36 0 v14" fill="none" stroke="#fff" stroke-width="7"/><circle cx="300" cy="198" r="6" fill="#0684C4"/>
+{''.join(f'<g class="pop" {d(i, .3, .35)}><g filter="url(#soft)"><rect class="glass2" x="{x}" y="{y}" width="132" height="40" rx="14"/></g><text x="{x+66}" y="{y+25}" text-anchor="middle" font-size="12" font-weight="700">{t}</text></g>' for i, (t, x, y) in enumerate([('✓ No data selling', 40, 90), ('✓ HTTPS secured', 428, 90), ('✓ Your rights', 40, 260), ('✓ Spam protected', 428, 260)]))}"""
+    return wrap(W, H, 'Privacy infographic', 'Animated infographic: a shield and padlock protecting your data – no data selling, HTTPS security, your privacy rights and spam protection.', body)
+
+def terms():
+    W, H = 600, 400
+    items = ['Clear scope &amp; pricing', 'You own final work', 'Honest results', '30-day website support']
+    body = f"""<g class="float"><g filter="url(#soft)"><rect class="glass2" x="170" y="40" width="260" height="320" rx="20"/></g>
+<rect x="200" y="70" width="150" height="14" rx="7" fill="rgba(255,255,255,.7)"/><rect x="200" y="94" width="110" height="9" rx="4.5" fill="rgba(255,255,255,.3)"/>
+{''.join(f'<g class="pop" {d(i, .3, .45)}><circle cx="212" cy="{140 + i*48}" r="11" fill="#7052FF"/><path d="M206 {140 + i*48} l4 4 8-8" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="232" y="{145 + i*48}" font-size="13" font-weight="600">{t}</text></g>' for i, t in enumerate(items))}
+<path class="draw" d="M210 334 c14 -22 26 8 40 -10 s22 -4 36 -12 s18 6 30 -2" fill="none" stroke="url(#gSky)" stroke-width="3" stroke-linecap="round"/></g>"""
+    return wrap(W, H, 'Terms of service infographic', 'Animated infographic: a service agreement with clear scope and pricing, ownership of final work, honest results and 30-day website support.', body)
+
 FILES = {'gss-growth-engine.svg': home, 'gss-website-development.svg': web, 'gss-seo-services.svg': seo,
-         'gss-social-media-marketing.svg': smm, 'gss-graphic-design.svg': design}
+         'gss-social-media-marketing.svg': smm, 'gss-graphic-design.svg': design,
+         'gss-about.svg': about, 'gss-services-funnel.svg': funnel, 'gss-our-work.svg': work, 'gss-contact.svg': contact,
+         'gss-privacy.svg': privacy, 'gss-terms.svg': terms}
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
     for n, f in FILES.items():

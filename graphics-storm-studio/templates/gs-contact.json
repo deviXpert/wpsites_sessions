@@ -8,7 +8,7 @@
  },
  "content": [
   {
-   "id": "c75c547",
+   "id": "55e3ab1",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -17,25 +17,25 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": "96",
+     "top": "88",
      "right": "0",
-     "bottom": "96",
+     "bottom": "88",
      "left": "0",
      "isLinked": false
     },
     "padding_tablet": {
      "unit": "px",
-     "top": "80",
+     "top": "72",
      "right": "0",
-     "bottom": "80",
+     "bottom": "72",
      "left": "0",
      "isLinked": false
     },
     "padding_mobile": {
      "unit": "px",
-     "top": "56",
+     "top": "48",
      "right": "0",
-     "bottom": "56",
+     "bottom": "48",
      "left": "0",
      "isLinked": false
     },
@@ -78,7 +78,7 @@
    },
    "elements": [
     {
-     "id": "daa2ba8",
+     "id": "c1375ca",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -111,22 +111,22 @@
      },
      "elements": [
       {
-       "id": "e5d7a8e",
+       "id": "396a599",
        "elType": "container",
        "isInner": true,
        "settings": {
-        "flex_direction": "column",
+        "flex_direction": "row",
         "flex_gap": {
-         "column": "20",
-         "row": "20",
+         "column": "56",
+         "row": "56",
          "isLinked": true,
          "unit": "px",
-         "size": 20
+         "size": 56
         },
         "flex_align_items": "center",
-        "animation": "fadeInUp",
-        "animation_duration": "fast",
-        "_title": "Hero Copy",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "Hero Row",
         "content_width": "full",
         "padding": {
          "unit": "px",
@@ -139,63 +139,240 @@
        },
        "elements": [
         {
-         "id": "25f199e",
-         "elType": "widget",
-         "widgetType": "heading",
+         "id": "e5d7a8e",
+         "elType": "container",
+         "isInner": true,
          "settings": {
-          "title": "Contact us",
-          "header_size": "p",
-          "align": "center",
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gseyebrow",
-           "title_color": "globals/colors?id=accent"
-          },
-          "_title": "Eyebrow – Contact us"
-         },
-         "elements": []
-        },
-        {
-         "id": "6defb98",
-         "elType": "widget",
-         "widgetType": "heading",
-         "settings": {
-          "title": "Let’s Talk About <span>Growing Your Business</span>",
-          "header_size": "h1",
-          "align": "center",
-          "_css_classes": "gs-grad",
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gsh1",
-           "title_color": "globals/colors?id=gswhite"
-          },
-          "_title": "H1 – Page Title"
-         },
-         "elements": []
-        },
-        {
-         "id": "0d401a3",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "settings": {
-          "editor": "<p>Tell us about your project and get a free, no-obligation proposal. We reply within 1 business day.</p>",
-          "align": "center",
-          "_element_width": "initial",
-          "_element_custom_width": {
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
            "unit": "px",
-           "size": 760,
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 50,
            "sizes": []
           },
-          "_element_custom_width_tablet": {
+          "width_tablet": {
            "unit": "%",
            "size": 100,
            "sizes": []
           },
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gslead",
-           "text_color": "globals/colors?id=text"
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
           },
-          "_title": "Lead"
+          "_title": "Hero Copy",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
          },
-         "elements": []
+         "elements": [
+          {
+           "id": "25f199e",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Contact us",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Eyebrow – Contact us"
+           },
+           "elements": []
+          },
+          {
+           "id": "6defb98",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Let’s Talk About <span>Growing Your Business</span>",
+            "header_size": "h1",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh1",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "H1 – Page Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "0d401a3",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Tell us about your project and get a free, no-obligation proposal. We reply within 1 business day.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gslead",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Lead"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "74538b4",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 50,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Hero Visual",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "c75c547",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "24",
+             "right": "24",
+             "bottom": "24",
+             "left": "24",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass--strong",
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline"
+            },
+            "_title": "Infographic Panel – Contact",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "daa2ba8",
+             "elType": "widget",
+             "widgetType": "image",
+             "settings": {
+              "image": {
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-contact.svg",
+               "id": 5862,
+               "alt": "Infographic: your enquiry is sent to our team, who reply within one business day",
+               "source": "library"
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "align": "center",
+              "caption_source": "none",
+              "image_border_radius": {
+               "unit": "px",
+               "top": "18",
+               "right": "18",
+               "bottom": "18",
+               "left": "18",
+               "isLinked": true
+              },
+              "_title": "Infographic – Contact (animated SVG)"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
         }
        ]
       }
@@ -204,7 +381,7 @@
    ]
   },
   {
-   "id": "369b239",
+   "id": "a074eb1",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -274,7 +451,7 @@
    },
    "elements": [
     {
-     "id": "e1bd3ea",
+     "id": "5f5de24",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -307,7 +484,7 @@
      },
      "elements": [
       {
-       "id": "60dd770",
+       "id": "6a17b0e",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -335,7 +512,7 @@
        },
        "elements": [
         {
-         "id": "c1375ca",
+         "id": "2970106",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -375,7 +552,7 @@
          },
          "elements": [
           {
-           "id": "74538b4",
+           "id": "da35aeb",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -390,7 +567,7 @@
            "elements": []
           },
           {
-           "id": "396a599",
+           "id": "97fe6fa",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -1161,7 +1338,7 @@
          ]
         },
         {
-         "id": "25c8f5a",
+         "id": "c628a8f",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1201,7 +1378,7 @@
          },
          "elements": [
           {
-           "id": "6f0a11a",
+           "id": "369b239",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1273,7 +1450,7 @@
            },
            "elements": [
             {
-             "id": "55e3ab1",
+             "id": "7f3954a",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -1288,7 +1465,7 @@
              "elements": []
             },
             {
-             "id": "61bcce3",
+             "id": "60dd770",
              "elType": "widget",
              "widgetType": "form",
              "settings": {
@@ -1302,7 +1479,7 @@
                 "width": "50",
                 "custom_id": "name",
                 "autocomplete": "name",
-                "_id": "da35aeb"
+                "_id": "feec9e3"
                },
                {
                 "field_type": "email",
@@ -1311,7 +1488,7 @@
                 "required": "true",
                 "width": "50",
                 "custom_id": "email",
-                "_id": "97fe6fa"
+                "_id": "054e06e"
                },
                {
                 "field_type": "tel",
@@ -1319,7 +1496,7 @@
                 "placeholder": "+1 (555) 000-0000",
                 "width": "50",
                 "custom_id": "phone",
-                "_id": "2970106"
+                "_id": "0bd5ef6"
                },
                {
                 "field_type": "text",
@@ -1327,7 +1504,7 @@
                 "placeholder": "https://",
                 "width": "50",
                 "custom_id": "website",
-                "_id": "7f3954a"
+                "_id": "f053c3b"
                },
                {
                 "field_type": "select",
@@ -1335,7 +1512,7 @@
                 "field_options": "Select a range\nUnder $1,000\n$1,000 – $3,000\n$3,000 – $10,000\n$10,000+",
                 "width": "50",
                 "custom_id": "budget",
-                "_id": "feec9e3"
+                "_id": "61bcce3"
                },
                {
                 "field_type": "checkbox",
@@ -1344,7 +1521,7 @@
                 "field_options": "Website Development\nSEO\nSocial Media Marketing\nGraphic Design\nLogo & Branding\nPaid Ads",
                 "width": "100",
                 "custom_id": "services",
-                "_id": "054e06e"
+                "_id": "729eda2"
                },
                {
                 "field_type": "textarea",
@@ -1353,10 +1530,10 @@
                 "rows": "4",
                 "width": "100",
                 "custom_id": "message",
-                "_id": "0bd5ef6"
+                "_id": "6f0a11a"
                },
                {
-                "_id": "f053c3b",
+                "_id": "25c8f5a",
                 "custom_id": "hp",
                 "field_type": "honeypot",
                 "field_label": "",
@@ -1448,11 +1625,11 @@
              "elements": []
             },
             {
-             "id": "729eda2",
+             "id": "e1bd3ea",
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "<p>By submitting this form you agree to be contacted about your enquiry. We never share your details.</p>",
+              "editor": "<p>By submitting this form you agree to be contacted about your enquiry. We never sell your details – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
               "__globals__": {
                "typography_typography": "globals/typography?id=gssmall",
                "text_color": "globals/colors?id=gsmuted"
@@ -1472,7 +1649,7 @@
    ]
   },
   {
-   "id": "769b439",
+   "id": "2b01b29",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1542,7 +1719,7 @@
    },
    "elements": [
     {
-     "id": "d947782",
+     "id": "6f07128",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1575,7 +1752,7 @@
      },
      "elements": [
       {
-       "id": "5f5de24",
+       "id": "c2d5cde",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1601,7 +1778,7 @@
        },
        "elements": [
         {
-         "id": "c628a8f",
+         "id": "1dbd836",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1617,7 +1794,7 @@
          "elements": []
         },
         {
-         "id": "6a17b0e",
+         "id": "5dc291f",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1636,21 +1813,21 @@
        ]
       },
       {
-       "id": "2e0f4b4",
+       "id": "ca1eee2",
        "elType": "widget",
        "widgetType": "nested-accordion",
        "settings": {
         "items": [
          {
-          "_id": "a074eb1",
+          "_id": "bfc5c86",
           "item_title": "How much do your digital marketing services cost?"
          },
          {
-          "_id": "c2d5cde",
+          "_id": "b443d0d",
           "item_title": "How long does SEO take to show results?"
          },
          {
-          "_id": "fc7d0c0",
+          "_id": "d947782",
           "item_title": "How long does it take to build a website?"
          }
         ],
@@ -1745,7 +1922,7 @@
        },
        "elements": [
         {
-         "id": "5dc291f",
+         "id": "fc7d0c0",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1762,7 +1939,7 @@
          },
          "elements": [
           {
-           "id": "1dbd836",
+           "id": "68fffc6",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -1778,7 +1955,7 @@
          ]
         },
         {
-         "id": "68fffc6",
+         "id": "2e0f4b4",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1795,7 +1972,7 @@
          },
          "elements": [
           {
-           "id": "bfc5c86",
+           "id": "37e947e",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -1811,7 +1988,7 @@
          ]
         },
         {
-         "id": "37e947e",
+         "id": "a74a26b",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1828,7 +2005,7 @@
          },
          "elements": [
           {
-           "id": "b443d0d",
+           "id": "769b439",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {

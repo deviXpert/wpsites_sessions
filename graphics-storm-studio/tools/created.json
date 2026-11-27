@@ -32,6 +32,32 @@
   "gss-graphic-design.svg": {
    "id": 5840,
    "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-graphic-design.svg"
+  },
+  "gss-about.svg": {
+   "id": 5859,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-about.svg"
+  },
+  "gss-services-funnel.svg": {
+   "id": 5860,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-services-funnel.svg"
+  },
+  "gss-our-work.svg": {
+   "id": 5861,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-our-work.svg"
+  },
+  "gss-contact.svg": {
+   "id": 5862,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-contact.svg"
+  },
+  "gss-privacy.svg": {
+   "id": 5863,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-privacy.svg"
+  },
+  "gss-terms.svg": {
+   "id": 5864,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-terms.svg"
   }
- }
+ },
+ "legal_privacy": 5892,
+ "legal_terms": 5897
 }

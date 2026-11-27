@@ -19,7 +19,13 @@ INFO_ALT = {'gss-growth-engine.svg': 'Infographic: website development, SEO, soc
             'gss-website-development.svg': 'Infographic: responsive website built for desktop and mobile with a 98 PageSpeed score',
             'gss-seo-services.svg': 'Infographic: your website climbing to the number one Google result with organic traffic up 214 percent',
             'gss-social-media-marketing.svg': 'Infographic: social media post gaining likes, followers and leads with growing reach and engagement',
-            'gss-graphic-design.svg': 'Infographic: logo being designed with the pen tool, brand colour palette and typography'}
+            'gss-graphic-design.svg': 'Infographic: logo being designed with the pen tool, brand colour palette and typography',
+            'gss-about.svg': 'Infographic: one connected Graphics Storm Studio team with 5+ years, 130+ clients and 180+ websites',
+            'gss-services-funnel.svg': 'Infographic: digital marketing funnel – attract with social media and design, rank with SEO, convert with your website, grow with more leads',
+            'gss-our-work.svg': 'Infographic: laptop and phone showcasing website, brand identity and SEO projects with results',
+            'gss-contact.svg': 'Infographic: your enquiry is sent to our team, who reply within one business day',
+            'gss-privacy.svg': 'Infographic: shield and padlock protecting your personal data',
+            'gss-terms.svg': 'Infographic: service agreement checklist with clear scope, ownership of work, honest results and support'}
 def INFO(name, label):
     m = _media().get(name)
     img = {'url': m['url'], 'id': m['id'], 'alt': INFO_ALT[name], 'source': 'library'} if m else {'url': el.PLACEHOLDER, 'id': '', 'alt': INFO_ALT[name], 'source': 'library'}
@@ -65,18 +71,23 @@ def cta_band():
     inner['settings']['__globals__'].pop('background_color', None)
     return [SECTION('CTA Band', [inner], pad=(40, 32, 24), tag='section')]
 
+def PRIVACY_NOTE():
+    return P('By submitting this form you agree to be contacted about your enquiry. We never sell your details – see our <a href="/privacy-policy/">Privacy Policy</a>.',
+             'gssmall', 'gsmuted', name='Privacy Note')
+
 def cta(ids):
     return TEMPLATE(ids['cta'], 'CTA Band (saved template)') if ids and ids.get('cta') else cta_band()[0]
 
-def page_hero(eyebrow, h1, lead, buttons=True, extra=None):
-    kids = [EYEBROW(eyebrow, 'center'), H(h1, 'h1', 'gsh1', align='center', name='H1 – Page Title'),
-            P(lead, 'gslead', align='center', maxw=760, name='Lead')]
+def page_hero(eyebrow, h1, lead, buttons=True, extra=None, info=None):
+    """Two-column hero: copy left, animated infographic (glass panel) right; stacks on tablet/mobile."""
+    kids = [EYEBROW(eyebrow), H(h1, 'h1', 'gsh1', name='H1 – Page Title'), P(lead, 'gslead', name='Lead')]
     if buttons:
         kids.append(ROW('Hero Buttons', [BTN('Get a Free Proposal', K.URL['contact']), BTN('Call ' + K.PHONE_DISPLAY, K.PHONE_TEL, 'ghost', 'fas fa-phone-alt')],
-                        gap_=14, justify='center', flex_wrap='wrap', flex_direction_mobile='column', flex_align_items_mobile='stretch'))
+                        gap_=14, flex_wrap='wrap', flex_direction_mobile='column', flex_align_items_mobile='stretch'))
     if extra: kids += extra
-    return SECTION('Page Hero', [C('Hero Copy', kids, flex_direction='column', flex_gap=gap(20), flex_align_items='center',
-                                   animation='fadeInUp', animation_duration='fast')], bg='a', pad=(96, 80, 56))
+    copy = COL('Hero Copy', kids, w=50, wt=100, gap_=20, animation='fadeInUp', animation_duration='fast')
+    visual = COL('Hero Visual', [info_panel(*info)], w=50, wt=100)
+    return SECTION('Page Hero', [ROW('Hero Row', [copy, visual], gap_=56, stack='tablet', align='center')], bg='a', pad=(88, 72, 48))
 
 def service_cards(items=K.SERVICES_GRID, tag='h3'):
     return GRID('Services Grid', [GLASS(f'Service Card – {t}', [ICONBOX(i, t, d, u, tag=tag),
@@ -188,14 +199,20 @@ def home(ids=None):
         ICONLIST([('130+ happy clients', 'fas fa-star'), ('5+ years experience', 'fas fa-award'), ('USA & Canada offices', 'fas fa-globe-americas')],
                  inline=True, t='gssmall', name='Trust Row'),
     ], w=55, wt=100, gap_=24, animation='fadeInUp', animation_duration='fast')
-    hero_form = COL('Hero Form', [GLASS('Lead Form Panel', [
-        H('Get Your Free Proposal', 'h2', 'gsh3', name='Form Title'),
-        P('Tell us what you need – we reply within 1 business day.', 'gssmall', name='Form Intro'),
-        FORM('Hero Lead Form', ('name', 'email', 'phone', 'services'), 'Get My Free Proposal', 'Home Hero Lead')],
-        strong=True, pad=(32, 28, 22), radius=24)], w=45, wt=100, _element_id='free-proposal')
-    hero = SECTION('Hero', [ROW('Hero Row', [hero_copy, hero_form], gap_=56, stack='tablet', align='center')],
-                   bg='a', pad=(96, 72, 48), gap_=64)
+    hero_visual = COL('Hero Visual', [info_panel('gss-growth-engine.svg', 'Growth Engine')], w=45, wt=100)
+    hero = SECTION('Hero', [ROW('Hero Row', [hero_copy, hero_visual], gap_=56, stack='tablet', align='center')],
+                   bg='a', pad=(88, 72, 48), gap_=64)
     hero['elements'][0]['elements'].append(logos_strip())
+    proposal = SECTION('Free Proposal', [ROW('Proposal Row', [
+        COL('Proposal Copy', [EYEBROW('Free proposal'), H('Get Your Free <span>Growth Proposal</span>', 'h2', name='Proposal Title'),
+                              P('Tell us what you need and we will reply within 1 business day with a clear plan, timeline and price – no obligation.', 'gslead', name='Proposal Text'),
+                              ICONLIST(['A quick audit of your website, SEO and social media', 'Recommended services for your goals and budget',
+                                        'Fixed, transparent pricing before any work starts'], name='Proposal Checklist')], w=45, wt=100, gap_=20),
+        COL('Proposal Form', [GLASS('Lead Form Panel', [
+            H('Tell us about your project', 'h3', 'gsh3', name='Form Title'),
+            FORM('Home Lead Form', ('name', 'email', 'phone', 'services'), 'Get My Free Proposal', 'Home Lead'),
+            PRIVACY_NOTE()], strong=True, pad=(32, 28, 22), radius=24)], w=55, wt=100)],
+        gap_=56, stack='tablet', align='center')], anchor='free-proposal', bg='c')
 
     services = SECTION('Services', [section_head('What we do', 'Digital Marketing Services Built to <span>Grow Your Business</span>',
                                                  'From website development and SEO services to social media marketing and graphic design – everything you need to attract, convert and keep customers.'),
@@ -221,11 +238,11 @@ def home(ids=None):
                           BTN('Ask Us Anything', K.URL['contact'], 'ghost', 'fas fa-comments')], w=38, wt=100, gap_=20),
         COL('FAQ List', [FAQ(K.HOME_FAQ)], w=62, wt=100)], gap_=56, stack='tablet')], bg='c')
 
-    return [hero, services, growth_engine_section('a'), why, proc, testi, faq, cta(ids)]
+    return [hero, proposal, services, why, proc, testi, faq, cta(ids)]
 
 def about(ids=None):
     el.seed('about'); A = K.ABOUT
-    hero = page_hero('About us', A['h1'], A['lead'])
+    hero = page_hero('About us', A['h1'], A['lead'], info=('gss-about.svg', 'About'))
     story = SECTION('Our Story', [ROW('Story Row', [
         COL('Story Image', [IMG('about-team.webp', '1000×1100, team at work', 'Graphics Storm Studio team working together', radius=24)], w=45, wt=100),
         COL('Story Copy', [EYEBROW('Our story'), H(A['story_h2'], 'h2', name='Story Title'), P(A['story'], name='Story Text'),
@@ -252,11 +269,11 @@ def service(key, ids=None):
                           ROW('Hero Buttons', [BTN('Get a Free Quote', '#service-quote'), BTN('Call ' + K.PHONE_DISPLAY, K.PHONE_TEL, 'ghost', 'fas fa-phone-alt')],
                               gap_=14, flex_wrap='wrap', flex_direction_mobile='column', flex_align_items_mobile='stretch')], w=56, wt=100, gap_=22,
             animation='fadeInUp', animation_duration='fast'),
-        COL('Hero Panel', [GLASS('What’s Included', [H('What’s included', 'h2', 'gsh3', name='Included Title'), ICONLIST(S['included'], name='Included List')],
-                                 strong=True, pad=(32, 28, 24), radius=24)], w=44, wt=100)], gap_=56, stack='tablet', align='center')], bg='a', pad=(96, 72, 48))
+        COL('Hero Visual', [info_panel(S['info'], S['title'])], w=44, wt=100)], gap_=56, stack='tablet', align='center')], bg='a', pad=(88, 72, 48))
     benefits = SECTION('Benefits', [section_head('Why it matters', f'Why Invest in Professional <span>{S["title"]}</span>?'),
-                                    ROW('Benefits Row', [COL('Infographic', [info_panel(S['info'], S['title'])], w=55, wt=100),
-                                                         COL('Benefits List', [GLASS(f'Benefit – {t}', [ICONBOX(i, t, d, position='left', position_mobile='top', icon_size=px(22), icon_padding=px(14))], hover=True, pad=(24, 22, 20)) for i, t, d in S['benefits']], w=45, wt=100, gap_=18)],
+                                    ROW('Benefits Row', [COL('Included', [GLASS('What’s Included', [H('What’s included', 'h3', 'gsh3', name='Included Title'), ICONLIST(S['included'], name='Included List')],
+                                                                                  strong=True, pad=(32, 28, 24), radius=24)], w=50, wt=100),
+                                                         COL('Benefits List', [GLASS(f'Benefit – {t}', [ICONBOX(i, t, d, position='left', position_mobile='top', icon_size=px(22), icon_padding=px(14))], hover=True, pad=(24, 22, 20)) for i, t, d in S['benefits']], w=50, wt=100, gap_=18)],
                                         gap_=40, stack='tablet', align='center')], bg='b')
     features = SECTION('Features', [section_head('Our services', f'{S["title"]} Services <span>We Offer</span>',
                                                  'Everything you need, delivered by specialists – pick a single service or a complete package.'),
@@ -266,7 +283,8 @@ def service(key, ids=None):
         COL('FAQ', [EYEBROW('FAQ'), H(f'{S["title"]} <span>FAQs</span>', 'h2', name='FAQ Title'), FAQ(S['faq'])], w=55, wt=100, gap_=20),
         COL('Quote Form Col', [GLASS('Quote Form Panel', [H('Get a free quote', 'h2', 'gsh3', name='Form Title'),
                                                            P('Share a few details and we will send a tailored proposal within 1 business day.', 'gssmall', name='Form Intro'),
-                                                           FORM('Service Quote Form', ('name', 'email', 'phone', 'message'), 'Request My Free Quote', f'{S["title"]} Quote')],
+                                                           FORM('Service Quote Form', ('name', 'email', 'phone', 'message'), 'Request My Free Quote', f'{S["title"]} Quote'),
+                                                           PRIVACY_NOTE()],
                                      strong=True, pad=(32, 28, 22), radius=24)], w=45, wt=100, _element_id='service-quote')],
         gap_=48, stack='tablet')], bg='b')
     return [hero, benefits, features, proc, quote, cta(ids)]
@@ -274,7 +292,8 @@ def service(key, ids=None):
 def services_hub(ids=None):
     el.seed('services-hub')
     return [page_hero('Our services', 'Digital Marketing Services That <span>Drive Growth</span>',
-                      'Website development, SEO services, social media marketing and graphic design – one expert team, one clear strategy, measurable results.'),
+                      'Website development, SEO services, social media marketing and graphic design – one expert team, one clear strategy, measurable results.',
+                      info=('gss-services-funnel.svg', 'Marketing Funnel')),
             SECTION('Services', [service_cards(tag='h2')], bg='b'),
             growth_engine_section('a'),
             SECTION('Process', [section_head('How we work', 'A Simple 4-Step <span>Process</span>'), process(), stats_band()], bg='c', gap_=56),
@@ -289,7 +308,8 @@ def work(ids=None):
                                     P('[One-line result, e.g. “New website + SEO: 3× more enquiries in 6 months”]', 'gssmall', name='Project Result')],
                    hover=True, pad=(16, 16, 14), flex_gap=gap(12)) for i, (c, _) in enumerate(cats, 1)]
     return [page_hero('Our work', 'Websites, Brands & Campaigns That <span>Get Results</span>',
-                      'A selection of recent website development, branding, social media and SEO projects for growing businesses.'),
+                      'A selection of recent website development, branding, social media and SEO projects for growing businesses.',
+                      info=('gss-our-work.svg', 'Our Work')),
             SECTION('Portfolio', [ICONLIST([c for c in ['Websites', 'Branding', 'Social Media', 'SEO', 'Graphic Design']], inline=True, icon='fas fa-circle',
                                            t='gsnav', name='Categories (add anchors or Loop Grid filter later)', icon_size=px(6)),
                                   GRID('Projects Grid', cards, 3, 2, 1)], bg='b', gap_=32),
@@ -305,16 +325,39 @@ def contact(ids=None):
                                            position_mobile='left', title_typography_typography='', g=dict(title_typography_typography=typ('gsh4')))],
                    pad=(20, 20, 16), hover=bool(u)) for i, t, d, u in info]
     return [page_hero('Contact us', 'Let’s Talk About <span>Growing Your Business</span>',
-                      'Tell us about your project and get a free, no-obligation proposal. We reply within 1 business day.', buttons=False),
+                      'Tell us about your project and get a free, no-obligation proposal. We reply within 1 business day.', buttons=False,
+                      info=('gss-contact.svg', 'Contact')),
             SECTION('Contact', [ROW('Contact Row', [
                 COL('Contact Info', [H('Get in touch', 'h2', 'gsh3', name='Info Title'),
                                      P('Prefer to talk? Call, email or WhatsApp us – or visit one of our offices.', name='Info Text')] + cards, w=40, wt=100, gap_=16),
                 COL('Contact Form', [GLASS('Contact Form Panel', [H('Request a free proposal', 'h2', 'gsh3', name='Form Title'),
                                                                   FORM('Contact Form', ('name', 'email', 'phone', 'company', 'budget', 'services', 'message'),
                                                                        'Send My Request', 'Contact Page'),
-                                                                  P('By submitting this form you agree to be contacted about your enquiry. We never share your details.', 'gssmall', 'gsmuted', name='Privacy Note')],
+                                                                  PRIVACY_NOTE()],
                                            strong=True, pad=(36, 28, 22), radius=24)], w=60, wt=100)], gap_=40, stack='tablet')], bg='b'),
             SECTION('FAQ', [section_head('FAQ', 'Before You <span>Get in Touch</span>'), FAQ(K.HOME_FAQ[1:4])], bg='c')]
+
+def legal_page(kind, ids=None):
+    import legal as L
+    el.seed('legal-' + kind)
+    if kind == 'privacy':
+        secs, h1, lead, info = L.PRIVACY, 'Privacy <span>Policy</span>', 'How Graphics Storm Studio collects, uses and protects your personal information – in plain English.', ('gss-privacy.svg', 'Privacy')
+    else:
+        secs, h1, lead, info = L.TERMS, 'Terms of <span>Service</span>', 'The terms that apply when you use our website and work with Graphics Storm Studio on websites, SEO, social media and design.', ('gss-terms.svg', 'Terms')
+    hero = page_hero('Legal · Last updated ' + L.UPDATED, h1, lead, buttons=False, info=info)
+    toc = GLASS('Table of Contents', [H('On this page', 'p', 'gsh4', name='TOC Title'),
+                                      ICONLIST([t for _, t, _ in secs], icon='fas fa-angle-right', t='gssmall', icolor='accent', name='TOC Links',
+                                               links=['#' + a for a, _, _ in secs], space_between=px(8))],
+                pad=(24, 20, 20), radius=20, sticky='top', sticky_on=['desktop'], sticky_offset=110, sticky_parent='yes')
+    body = [GLASS(f'Legal – {t}', [H(f'{n}. {t}', 'h2', 'gsh3', name='Section Title'), P(html, name='Section Text')],
+                  pad=(32, 28, 22), radius=20, _element_id=a) for n, (a, t, html) in enumerate(secs, 1)]
+    note = P('This document is provided for general information and does not create any rights beyond those stated. Questions? Email <a href="mailto:info@graphicsstormstudio.com">info@graphicsstormstudio.com</a>.',
+             'gssmall', 'gsmuted', name='Footnote')
+    main = SECTION('Legal Content', [ROW('Legal Row', [COL('TOC Column', [toc], w=30, wt=100), COL('Content Column', body + [note], w=70, wt=100, gap_=20)],
+                                         gap_=40, stack='tablet', align='flex-start')], bg='b', pad=(72, 56, 40))
+    return [hero, main, cta(ids)]
+
+LEGAL = {'privacy': ('Privacy Policy', 'privacy-policy'), 'terms': ('Terms of Service', 'terms-of-service')}
 
 PAGES = {  # key: (builder, title, original page id to replace at launch, slug)
  'home': (home, 'Home – Redesign', 21, None), 'about': (about, 'About Us – Redesign', 2738, None),

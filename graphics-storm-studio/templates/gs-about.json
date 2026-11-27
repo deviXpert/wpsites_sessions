@@ -8,7 +8,7 @@
  },
  "content": [
   {
-   "id": "bcba8c5",
+   "id": "7de93df",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -17,25 +17,25 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": "96",
+     "top": "88",
      "right": "0",
-     "bottom": "96",
+     "bottom": "88",
      "left": "0",
      "isLinked": false
     },
     "padding_tablet": {
      "unit": "px",
-     "top": "80",
+     "top": "72",
      "right": "0",
-     "bottom": "80",
+     "bottom": "72",
      "left": "0",
      "isLinked": false
     },
     "padding_mobile": {
      "unit": "px",
-     "top": "56",
+     "top": "48",
      "right": "0",
-     "bottom": "56",
+     "bottom": "48",
      "left": "0",
      "isLinked": false
     },
@@ -78,7 +78,7 @@
    },
    "elements": [
     {
-     "id": "0658460",
+     "id": "ab10fc5",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -111,22 +111,22 @@
      },
      "elements": [
       {
-       "id": "f25954b",
+       "id": "fba3de3",
        "elType": "container",
        "isInner": true,
        "settings": {
-        "flex_direction": "column",
+        "flex_direction": "row",
         "flex_gap": {
-         "column": "20",
-         "row": "20",
+         "column": "56",
+         "row": "56",
          "isLinked": true,
          "unit": "px",
-         "size": 20
+         "size": 56
         },
         "flex_align_items": "center",
-        "animation": "fadeInUp",
-        "animation_duration": "fast",
-        "_title": "Hero Copy",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "Hero Row",
         "content_width": "full",
         "padding": {
          "unit": "px",
@@ -139,83 +139,36 @@
        },
        "elements": [
         {
-         "id": "59dbff4",
-         "elType": "widget",
-         "widgetType": "heading",
+         "id": "f25954b",
+         "elType": "container",
+         "isInner": true,
          "settings": {
-          "title": "About us",
-          "header_size": "p",
-          "align": "center",
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gseyebrow",
-           "title_color": "globals/colors?id=accent"
-          },
-          "_title": "Eyebrow – About us"
-         },
-         "elements": []
-        },
-        {
-         "id": "c0a37b0",
-         "elType": "widget",
-         "widgetType": "heading",
-         "settings": {
-          "title": "A Design-Led Digital Marketing Agency Built for <span>Growth</span>",
-          "header_size": "h1",
-          "align": "center",
-          "_css_classes": "gs-grad",
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gsh1",
-           "title_color": "globals/colors?id=gswhite"
-          },
-          "_title": "H1 – Page Title"
-         },
-         "elements": []
-        },
-        {
-         "id": "8fff213",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "settings": {
-          "editor": "<p>Graphics Storm Studio helps ambitious businesses grow online through strategic websites, SEO, social media marketing and brand design – all under one roof.</p>",
-          "align": "center",
-          "_element_width": "initial",
-          "_element_custom_width": {
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
            "unit": "px",
-           "size": 760,
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 50,
            "sizes": []
           },
-          "_element_custom_width_tablet": {
+          "width_tablet": {
            "unit": "%",
            "size": 100,
            "sizes": []
           },
-          "__globals__": {
-           "typography_typography": "globals/typography?id=gslead",
-           "text_color": "globals/colors?id=text"
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
           },
-          "_title": "Lead"
-         },
-         "elements": []
-        },
-        {
-         "id": "c6bc8c8",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_wrap": "wrap",
-          "flex_direction_mobile": "column",
-          "flex_align_items_mobile": "stretch",
-          "flex_direction": "row",
-          "flex_gap": {
-           "column": "14",
-           "row": "14",
-           "isLinked": true,
-           "unit": "px",
-           "size": 14
-          },
-          "flex_align_items": "stretch",
-          "flex_justify_content": "center",
-          "_title": "Hero Buttons",
+          "_title": "Hero Copy",
           "content_width": "full",
           "padding": {
            "unit": "px",
@@ -228,58 +181,219 @@
          },
          "elements": [
           {
-           "id": "489dd9c",
+           "id": "59dbff4",
            "elType": "widget",
-           "widgetType": "button",
+           "widgetType": "heading",
            "settings": {
-            "text": "Get a Free Proposal",
-            "link": {
-             "url": "/contact-us/",
-             "is_external": "",
-             "nofollow": "",
-             "custom_attributes": ""
+            "title": "About us",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
             },
-            "size": "md",
-            "hover_animation": "float",
-            "selected_icon": {
-             "value": "fas fa-arrow-right",
-             "library": "fa-solid"
-            },
-            "icon_align": "row-reverse",
-            "icon_indent": {
-             "unit": "px",
-             "size": 10,
-             "sizes": []
-            },
-            "align_mobile": "justify",
-            "_title": "Button – Get a Free Proposal"
+            "_title": "Eyebrow – About us"
            },
            "elements": []
           },
           {
-           "id": "ae7e60b",
+           "id": "c0a37b0",
            "elType": "widget",
-           "widgetType": "button",
+           "widgetType": "heading",
            "settings": {
-            "text": "Call +1 (812) 818-2053",
-            "link": {
-             "url": "tel:+18128182053",
-             "is_external": "",
-             "nofollow": "",
-             "custom_attributes": ""
+            "title": "A Design-Led Digital Marketing Agency Built for <span>Growth</span>",
+            "header_size": "h1",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh1",
+             "title_color": "globals/colors?id=gswhite"
             },
-            "size": "md",
-            "hover_animation": "float",
-            "selected_icon": {
-             "value": "fas fa-phone-alt",
-             "library": "fa-solid"
+            "_title": "H1 – Page Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "8fff213",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Graphics Storm Studio helps ambitious businesses grow online through strategic websites, SEO, social media marketing and brand design – all under one roof.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gslead",
+             "text_color": "globals/colors?id=text"
             },
-            "icon_align": "row-reverse",
-            "icon_indent": {
+            "_title": "Lead"
+           },
+           "elements": []
+          },
+          {
+           "id": "c6bc8c8",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column",
+            "flex_align_items_mobile": "stretch",
+            "flex_direction": "row",
+            "flex_gap": {
+             "column": "14",
+             "row": "14",
+             "isLinked": true,
              "unit": "px",
-             "size": 10,
-             "sizes": []
+             "size": 14
             },
+            "flex_align_items": "stretch",
+            "_title": "Hero Buttons",
+            "content_width": "full",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
+           },
+           "elements": [
+            {
+             "id": "489dd9c",
+             "elType": "widget",
+             "widgetType": "button",
+             "settings": {
+              "text": "Get a Free Proposal",
+              "link": {
+               "url": "/contact-us/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              },
+              "size": "md",
+              "hover_animation": "float",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              },
+              "icon_align": "row-reverse",
+              "icon_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "align_mobile": "justify",
+              "_title": "Button – Get a Free Proposal"
+             },
+             "elements": []
+            },
+            {
+             "id": "ae7e60b",
+             "elType": "widget",
+             "widgetType": "button",
+             "settings": {
+              "text": "Call +1 (812) 818-2053",
+              "link": {
+               "url": "tel:+18128182053",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              },
+              "size": "md",
+              "hover_animation": "float",
+              "selected_icon": {
+               "value": "fas fa-phone-alt",
+               "library": "fa-solid"
+              },
+              "icon_align": "row-reverse",
+              "icon_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "align_mobile": "justify",
+              "button_box_shadow_box_shadow_type": "yes",
+              "button_box_shadow_box_shadow": {
+               "horizontal": 0,
+               "vertical": 0,
+               "blur": 0,
+               "spread": 0,
+               "color": "rgba(0,0,0,0)"
+              },
+              "__globals__": {
+               "background_color": "globals/colors?id=gsglass2",
+               "border_color": "globals/colors?id=gsline",
+               "button_text_color": "globals/colors?id=gswhite",
+               "button_background_hover_color": "globals/colors?id=gswhite",
+               "hover_color": "globals/colors?id=gsnavy"
+              },
+              "_title": "Button – Call +1 (812) 818-2053"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "b2011d2",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 50,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Hero Visual",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "bcba8c5",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "column": "16",
+             "row": "16",
+             "isLinked": true,
+             "unit": "px",
+             "size": 16
+            },
+            "background_background": "classic",
             "border_border": "solid",
             "border_width": {
              "unit": "px",
@@ -289,25 +403,87 @@
              "left": "1",
              "isLinked": true
             },
-            "align_mobile": "justify",
-            "button_box_shadow_box_shadow_type": "yes",
-            "button_box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 0,
-             "blur": 0,
-             "spread": 0,
-             "color": "rgba(0,0,0,0)"
+            "border_radius": {
+             "unit": "px",
+             "top": "24",
+             "right": "24",
+             "bottom": "24",
+             "left": "24",
+             "isLinked": true
             },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass--strong",
             "__globals__": {
              "background_color": "globals/colors?id=gsglass2",
-             "border_color": "globals/colors?id=gsline",
-             "button_text_color": "globals/colors?id=gswhite",
-             "button_background_hover_color": "globals/colors?id=gswhite",
-             "hover_color": "globals/colors?id=gsnavy"
+             "border_color": "globals/colors?id=gsline"
             },
-            "_title": "Button – Call +1 (812) 818-2053"
+            "_title": "Infographic Panel – About",
+            "content_width": "full"
            },
-           "elements": []
+           "elements": [
+            {
+             "id": "0658460",
+             "elType": "widget",
+             "widgetType": "image",
+             "settings": {
+              "image": {
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-about.svg",
+               "id": 5859,
+               "alt": "Infographic: one connected Graphics Storm Studio team with 5+ years, 130+ clients and 180+ websites",
+               "source": "library"
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "align": "center",
+              "caption_source": "none",
+              "image_border_radius": {
+               "unit": "px",
+               "top": "18",
+               "right": "18",
+               "bottom": "18",
+               "left": "18",
+               "isLinked": true
+              },
+              "_title": "Infographic – About (animated SVG)"
+             },
+             "elements": []
+            }
+           ]
           }
          ]
         }
@@ -318,7 +494,7 @@
    ]
   },
   {
-   "id": "efd3a24",
+   "id": "3c20445",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -388,7 +564,7 @@
    },
    "elements": [
     {
-     "id": "5ccd7ec",
+     "id": "d29cb09",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -421,7 +597,7 @@
      },
      "elements": [
       {
-       "id": "ea570a6",
+       "id": "4101da3",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -449,7 +625,7 @@
        },
        "elements": [
         {
-         "id": "fba3de3",
+         "id": "1da748b",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -489,7 +665,7 @@
          },
          "elements": [
           {
-           "id": "b2011d2",
+           "id": "d3980d1",
            "elType": "widget",
            "widgetType": "image",
            "settings": {
@@ -516,7 +692,7 @@
          ]
         },
         {
-         "id": "6988550",
+         "id": "82bb676",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -556,7 +732,7 @@
          },
          "elements": [
           {
-           "id": "ab10fc5",
+           "id": "52e6c78",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -571,7 +747,7 @@
            "elements": []
           },
           {
-           "id": "7de93df",
+           "id": "b07fe2c",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -587,7 +763,7 @@
            "elements": []
           },
           {
-           "id": "d3980d1",
+           "id": "55439b6",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -601,7 +777,7 @@
            "elements": []
           },
           {
-           "id": "a27afc2",
+           "id": "d694037",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -647,7 +823,7 @@
            },
            "elements": [
             {
-             "id": "52e6c78",
+             "id": "14b0e1b",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -719,7 +895,7 @@
              },
              "elements": [
               {
-               "id": "1da748b",
+               "id": "410e519",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -778,7 +954,7 @@
              ]
             },
             {
-             "id": "55439b6",
+             "id": "6988550",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -850,7 +1026,7 @@
              },
              "elements": [
               {
-               "id": "b07fe2c",
+               "id": "a27afc2",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -909,7 +1085,7 @@
              ]
             },
             {
-             "id": "14b0e1b",
+             "id": "263ac7a",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -981,7 +1157,7 @@
              },
              "elements": [
               {
-               "id": "410e519",
+               "id": "ea570a6",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -1046,7 +1222,7 @@
        ]
       },
       {
-       "id": "1d17c98",
+       "id": "9528b4a",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1118,7 +1294,7 @@
        },
        "elements": [
         {
-         "id": "528b51a",
+         "id": "b0a914a",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1164,7 +1340,7 @@
          },
          "elements": [
           {
-           "id": "d694037",
+           "id": "224495b",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1189,7 +1365,7 @@
            },
            "elements": [
             {
-             "id": "263ac7a",
+             "id": "4ec4e7a",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -1215,7 +1391,7 @@
            ]
           },
           {
-           "id": "4101da3",
+           "id": "2eb16b6",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1240,7 +1416,7 @@
            },
            "elements": [
             {
-             "id": "82bb676",
+             "id": "7f7d8dc",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -1266,7 +1442,7 @@
            ]
           },
           {
-           "id": "224495b",
+           "id": "1d17c98",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1291,7 +1467,7 @@
            },
            "elements": [
             {
-             "id": "4ec4e7a",
+             "id": "528b51a",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -1317,7 +1493,7 @@
            ]
           },
           {
-           "id": "2eb16b6",
+           "id": "efd3a24",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1342,7 +1518,7 @@
            },
            "elements": [
             {
-             "id": "7f7d8dc",
+             "id": "5ccd7ec",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -1376,7 +1552,7 @@
    ]
   },
   {
-   "id": "5657e67",
+   "id": "9029226",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1446,7 +1622,7 @@
    },
    "elements": [
     {
-     "id": "8177d8c",
+     "id": "64cfd61",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1479,7 +1655,7 @@
      },
      "elements": [
       {
-       "id": "f781667",
+       "id": "708bb17",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1551,7 +1727,7 @@
        },
        "elements": [
         {
-         "id": "b0a914a",
+         "id": "d1a378c",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -1572,7 +1748,7 @@
          "elements": []
         },
         {
-         "id": "9528b4a",
+         "id": "90f3dbf",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1588,7 +1764,7 @@
          "elements": []
         },
         {
-         "id": "01dcecb",
+         "id": "220a124",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1615,7 +1791,7 @@
          },
          "elements": [
           {
-           "id": "d29cb09",
+           "id": "01dcecb",
            "elType": "widget",
            "widgetType": "image",
            "settings": {
@@ -1645,7 +1821,7 @@
            "elements": []
           },
           {
-           "id": "90f3dbf",
+           "id": "5657e67",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1669,7 +1845,7 @@
            },
            "elements": [
             {
-             "id": "3c20445",
+             "id": "f781667",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -1684,7 +1860,7 @@
              "elements": []
             },
             {
-             "id": "d1a378c",
+             "id": "8177d8c",
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
@@ -1708,7 +1884,7 @@
    ]
   },
   {
-   "id": "e16ec3a",
+   "id": "73573c0",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1778,7 +1954,7 @@
    },
    "elements": [
     {
-     "id": "fedca27",
+     "id": "6bb7e1b",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1811,7 +1987,7 @@
      },
      "elements": [
       {
-       "id": "64cfd61",
+       "id": "ed88342",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1837,7 +2013,7 @@
        },
        "elements": [
         {
-         "id": "220a124",
+         "id": "f95efb5",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1853,7 +2029,7 @@
          "elements": []
         },
         {
-         "id": "708bb17",
+         "id": "7332db0",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1872,7 +2048,7 @@
        ]
       },
       {
-       "id": "39430a0",
+       "id": "67a4e6c",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1918,7 +2094,7 @@
        },
        "elements": [
         {
-         "id": "f95efb5",
+         "id": "090c2b1",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2024,7 +2200,7 @@
          },
          "elements": [
           {
-           "id": "9029226",
+           "id": "9ad8d0f",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2077,336 +2253,6 @@
              "description_typography_typography": "globals/typography?id=gsbody"
             },
             "_title": "Icon Box – Client satisfaction"
-           },
-           "elements": []
-          }
-         ]
-        },
-        {
-         "id": "ed88342",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
-           "column": "16",
-           "row": "16",
-           "isLinked": true,
-           "unit": "px",
-           "size": 16
-          },
-          "background_background": "classic",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "20",
-           "right": "20",
-           "bottom": "20",
-           "left": "20",
-           "isLinked": true
-          },
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 20,
-           "blur": 50,
-           "spread": 0,
-           "color": "rgba(2,6,23,0.45)"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "32",
-           "right": "32",
-           "bottom": "32",
-           "left": "32",
-           "isLinked": true
-          },
-          "padding_tablet": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": true
-          },
-          "css_classes": "gs-glass",
-          "_transform_translateY_popover_hover": "transform",
-          "_transform_translateY_effect_hover": {
-           "unit": "px",
-           "size": -6,
-           "sizes": []
-          },
-          "_transform_transition_hover": {
-           "unit": "ms",
-           "size": 300,
-           "sizes": []
-          },
-          "border_hover_border": "solid",
-          "border_hover_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_hover_transition": {
-           "unit": "s",
-           "size": 0.3,
-           "sizes": []
-          },
-          "box_shadow_hover_box_shadow_type": "yes",
-          "box_shadow_hover_box_shadow": {
-           "horizontal": 0,
-           "vertical": 28,
-           "blur": 60,
-           "spread": 0,
-           "color": "rgba(6,132,196,0.28)"
-          },
-          "__globals__": {
-           "background_color": "globals/colors?id=gsglass",
-           "border_color": "globals/colors?id=gsline",
-           "border_hover_color": "globals/colors?id=accent"
-          },
-          "_title": "Value – Clear communication",
-          "content_width": "full"
-         },
-         "elements": [
-          {
-           "id": "7332db0",
-           "elType": "widget",
-           "widgetType": "icon-box",
-           "settings": {
-            "selected_icon": {
-             "value": "fas fa-comments",
-             "library": "fa-solid"
-            },
-            "view": "stacked",
-            "shape": "rounded",
-            "title_text": "Clear communication",
-            "description_text": "Fast replies, regular updates and plain-English reports.",
-            "title_size": "h3",
-            "position": "top",
-            "text_align": "left",
-            "icon_size": {
-             "unit": "px",
-             "size": 26,
-             "sizes": []
-            },
-            "icon_padding": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            },
-            "border_radius": {
-             "unit": "px",
-             "top": "14",
-             "right": "14",
-             "bottom": "14",
-             "left": "14",
-             "isLinked": true
-            },
-            "icon_space": {
-             "unit": "px",
-             "size": 20,
-             "sizes": []
-            },
-            "title_bottom_space": {
-             "unit": "px",
-             "size": 10,
-             "sizes": []
-            },
-            "position_mobile": "top",
-            "__globals__": {
-             "primary_color": "globals/colors?id=gsglass2",
-             "secondary_color": "globals/colors?id=accent",
-             "title_color": "globals/colors?id=gswhite",
-             "title_typography_typography": "globals/typography?id=gsh3",
-             "description_color": "globals/colors?id=text",
-             "description_typography_typography": "globals/typography?id=gsbody"
-            },
-            "_title": "Icon Box – Clear communication"
-           },
-           "elements": []
-          }
-         ]
-        },
-        {
-         "id": "090c2b1",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
-           "column": "16",
-           "row": "16",
-           "isLinked": true,
-           "unit": "px",
-           "size": 16
-          },
-          "background_background": "classic",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "20",
-           "right": "20",
-           "bottom": "20",
-           "left": "20",
-           "isLinked": true
-          },
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 20,
-           "blur": 50,
-           "spread": 0,
-           "color": "rgba(2,6,23,0.45)"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "32",
-           "right": "32",
-           "bottom": "32",
-           "left": "32",
-           "isLinked": true
-          },
-          "padding_tablet": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": true
-          },
-          "css_classes": "gs-glass",
-          "_transform_translateY_popover_hover": "transform",
-          "_transform_translateY_effect_hover": {
-           "unit": "px",
-           "size": -6,
-           "sizes": []
-          },
-          "_transform_transition_hover": {
-           "unit": "ms",
-           "size": 300,
-           "sizes": []
-          },
-          "border_hover_border": "solid",
-          "border_hover_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_hover_transition": {
-           "unit": "s",
-           "size": 0.3,
-           "sizes": []
-          },
-          "box_shadow_hover_box_shadow_type": "yes",
-          "box_shadow_hover_box_shadow": {
-           "horizontal": 0,
-           "vertical": 28,
-           "blur": 60,
-           "spread": 0,
-           "color": "rgba(6,132,196,0.28)"
-          },
-          "__globals__": {
-           "background_color": "globals/colors?id=gsglass",
-           "border_color": "globals/colors?id=gsline",
-           "border_hover_color": "globals/colors?id=accent"
-          },
-          "_title": "Value – Team of experts",
-          "content_width": "full"
-         },
-         "elements": [
-          {
-           "id": "9ad8d0f",
-           "elType": "widget",
-           "widgetType": "icon-box",
-           "settings": {
-            "selected_icon": {
-             "value": "fas fa-user-tie",
-             "library": "fa-solid"
-            },
-            "view": "stacked",
-            "shape": "rounded",
-            "title_text": "Team of experts",
-            "description_text": "Specialists in design, development, SEO and social media.",
-            "title_size": "h3",
-            "position": "top",
-            "text_align": "left",
-            "icon_size": {
-             "unit": "px",
-             "size": 26,
-             "sizes": []
-            },
-            "icon_padding": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            },
-            "border_radius": {
-             "unit": "px",
-             "top": "14",
-             "right": "14",
-             "bottom": "14",
-             "left": "14",
-             "isLinked": true
-            },
-            "icon_space": {
-             "unit": "px",
-             "size": 20,
-             "sizes": []
-            },
-            "title_bottom_space": {
-             "unit": "px",
-             "size": 10,
-             "sizes": []
-            },
-            "position_mobile": "top",
-            "__globals__": {
-             "primary_color": "globals/colors?id=gsglass2",
-             "secondary_color": "globals/colors?id=accent",
-             "title_color": "globals/colors?id=gswhite",
-             "title_typography_typography": "globals/typography?id=gsh3",
-             "description_color": "globals/colors?id=text",
-             "description_typography_typography": "globals/typography?id=gsbody"
-            },
-            "_title": "Icon Box – Team of experts"
            },
            "elements": []
           }
@@ -2514,7 +2360,7 @@
            "border_color": "globals/colors?id=gsline",
            "border_hover_color": "globals/colors?id=accent"
           },
-          "_title": "Value – Premium designs",
+          "_title": "Value – Clear communication",
           "content_width": "full"
          },
          "elements": [
@@ -2524,13 +2370,13 @@
            "widgetType": "icon-box",
            "settings": {
             "selected_icon": {
-             "value": "fas fa-gem",
+             "value": "fas fa-comments",
              "library": "fa-solid"
             },
             "view": "stacked",
             "shape": "rounded",
-            "title_text": "Premium designs",
-            "description_text": "Original, modern work that makes your brand stand out.",
+            "title_text": "Clear communication",
+            "description_text": "Fast replies, regular updates and plain-English reports.",
             "title_size": "h3",
             "position": "top",
             "text_align": "left",
@@ -2571,7 +2417,7 @@
              "description_color": "globals/colors?id=text",
              "description_typography_typography": "globals/typography?id=gsbody"
             },
-            "_title": "Icon Box – Premium designs"
+            "_title": "Icon Box – Clear communication"
            },
            "elements": []
           }
@@ -2679,7 +2525,7 @@
            "border_color": "globals/colors?id=gsline",
            "border_hover_color": "globals/colors?id=accent"
           },
-          "_title": "Value – Professional service",
+          "_title": "Value – Team of experts",
           "content_width": "full"
          },
          "elements": [
@@ -2689,13 +2535,13 @@
            "widgetType": "icon-box",
            "settings": {
             "selected_icon": {
-             "value": "fas fa-briefcase",
+             "value": "fas fa-user-tie",
              "library": "fa-solid"
             },
             "view": "stacked",
             "shape": "rounded",
-            "title_text": "Professional service",
-            "description_text": "Clear processes, contracts and timelines on every project.",
+            "title_text": "Team of experts",
+            "description_text": "Specialists in design, development, SEO and social media.",
             "title_size": "h3",
             "position": "top",
             "text_align": "left",
@@ -2736,7 +2582,7 @@
              "description_color": "globals/colors?id=text",
              "description_typography_typography": "globals/typography?id=gsbody"
             },
-            "_title": "Icon Box – Professional service"
+            "_title": "Icon Box – Team of experts"
            },
            "elements": []
           }
@@ -2844,12 +2690,342 @@
            "border_color": "globals/colors?id=gsline",
            "border_hover_color": "globals/colors?id=accent"
           },
-          "_title": "Value – On-time delivery",
+          "_title": "Value – Premium designs",
           "content_width": "full"
          },
          "elements": [
           {
            "id": "f8c74f1",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-gem",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Premium designs",
+            "description_text": "Original, modern work that makes your brand stand out.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Premium designs"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "fedca27",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Value – Professional service",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "39430a0",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-briefcase",
+             "library": "fa-solid"
+            },
+            "view": "stacked",
+            "shape": "rounded",
+            "title_text": "Professional service",
+            "description_text": "Clear processes, contracts and timelines on every project.",
+            "title_size": "h3",
+            "position": "top",
+            "text_align": "left",
+            "icon_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "icon_padding": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "14",
+             "right": "14",
+             "bottom": "14",
+             "left": "14",
+             "isLinked": true
+            },
+            "icon_space": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "title_bottom_space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "position_mobile": "top",
+            "__globals__": {
+             "primary_color": "globals/colors?id=gsglass2",
+             "secondary_color": "globals/colors?id=accent",
+             "title_color": "globals/colors?id=gswhite",
+             "title_typography_typography": "globals/typography?id=gsh3",
+             "description_color": "globals/colors?id=text",
+             "description_typography_typography": "globals/typography?id=gsbody"
+            },
+            "_title": "Icon Box – Professional service"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "d43799d",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "16",
+           "row": "16",
+           "isLinked": true,
+           "unit": "px",
+           "size": 16
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "32",
+           "right": "32",
+           "bottom": "32",
+           "left": "32",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Value – On-time delivery",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "e16ec3a",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2914,7 +3090,7 @@
    ]
   },
   {
-   "id": "c86a35b",
+   "id": "fea5817",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -2984,7 +3160,7 @@
    },
    "elements": [
     {
-     "id": "ebb4922",
+     "id": "73a3d74",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -3017,7 +3193,7 @@
      },
      "elements": [
       {
-       "id": "6bb7e1b",
+       "id": "4840303",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3043,7 +3219,7 @@
        },
        "elements": [
         {
-         "id": "d43799d",
+         "id": "63c48c0",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -3059,7 +3235,7 @@
          "elements": []
         },
         {
-         "id": "67a4e6c",
+         "id": "d771041",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -3078,7 +3254,7 @@
        ]
       },
       {
-       "id": "7f85c63",
+       "id": "578c272",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3124,7 +3300,7 @@
        },
        "elements": [
         {
-         "id": "4840303",
+         "id": "528352d",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3230,7 +3406,7 @@
          },
          "elements": [
           {
-           "id": "73573c0",
+           "id": "30cdf4d",
            "elType": "widget",
            "widgetType": "image",
            "settings": {
@@ -3255,7 +3431,7 @@
            "elements": []
           },
           {
-           "id": "63c48c0",
+           "id": "02a3cf5",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -3270,173 +3446,11 @@
            "elements": []
           },
           {
-           "id": "d771041",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>CEO</p>",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gssmall",
-             "text_color": "globals/colors?id=accent"
-            },
-            "_title": "Role"
-           },
-           "elements": []
-          }
-         ]
-        },
-        {
-         "id": "528352d",
-         "elType": "container",
-         "isInner": true,
-         "settings": {
-          "flex_gap": {
-           "column": "10",
-           "row": "10",
-           "isLinked": true,
-           "unit": "px",
-           "size": 10
-          },
-          "flex_direction": "column",
-          "background_background": "classic",
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "20",
-           "right": "20",
-           "bottom": "20",
-           "left": "20",
-           "isLinked": true
-          },
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 20,
-           "blur": 50,
-           "spread": 0,
-           "color": "rgba(2,6,23,0.45)"
-          },
-          "padding": {
-           "unit": "px",
-           "top": "16",
-           "right": "16",
-           "bottom": "16",
-           "left": "16",
-           "isLinked": true
-          },
-          "padding_tablet": {
-           "unit": "px",
-           "top": "16",
-           "right": "16",
-           "bottom": "16",
-           "left": "16",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "16",
-           "right": "16",
-           "bottom": "16",
-           "left": "16",
-           "isLinked": true
-          },
-          "css_classes": "gs-glass",
-          "_transform_translateY_popover_hover": "transform",
-          "_transform_translateY_effect_hover": {
-           "unit": "px",
-           "size": -6,
-           "sizes": []
-          },
-          "_transform_transition_hover": {
-           "unit": "ms",
-           "size": 300,
-           "sizes": []
-          },
-          "border_hover_border": "solid",
-          "border_hover_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_hover_transition": {
-           "unit": "s",
-           "size": 0.3,
-           "sizes": []
-          },
-          "box_shadow_hover_box_shadow_type": "yes",
-          "box_shadow_hover_box_shadow": {
-           "horizontal": 0,
-           "vertical": 28,
-           "blur": 60,
-           "spread": 0,
-           "color": "rgba(6,132,196,0.28)"
-          },
-          "__globals__": {
-           "background_color": "globals/colors?id=gsglass",
-           "border_color": "globals/colors?id=gsline",
-           "border_hover_color": "globals/colors?id=accent"
-          },
-          "_title": "Team – Nabeel Ali Butt",
-          "content_width": "full"
-         },
-         "elements": [
-          {
-           "id": "30cdf4d",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Nabeel Ali Butt, Creative Director at Graphics Storm Studio",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
-             "unit": "px",
-             "top": "16",
-             "right": "16",
-             "bottom": "16",
-             "left": "16",
-             "isLinked": true
-            },
-            "caption_source": "none",
-            "_title": "📷 PLACEHOLDER – team-nabeel.webp (600×600 square headshot)"
-           },
-           "elements": []
-          },
-          {
-           "id": "02a3cf5",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Nabeel Ali Butt",
-            "header_size": "h3",
-            "__globals__": {
-             "typography_typography": "globals/typography?id=gsh4",
-             "title_color": "globals/colors?id=gswhite"
-            },
-            "_title": "Name"
-           },
-           "elements": []
-          },
-          {
            "id": "7a51daa",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>Creative Director</p>",
+            "editor": "<p>CEO</p>",
             "__globals__": {
              "typography_typography": "globals/typography?id=gssmall",
              "text_color": "globals/colors?id=accent"
@@ -3549,7 +3563,7 @@
            "border_color": "globals/colors?id=gsline",
            "border_hover_color": "globals/colors?id=accent"
           },
-          "_title": "Team – Saba Baig",
+          "_title": "Team – Nabeel Ali Butt",
           "content_width": "full"
          },
          "elements": [
@@ -3561,7 +3575,7 @@
             "image": {
              "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
              "id": "",
-             "alt": "Saba Baig, Project Manager at Graphics Storm Studio",
+             "alt": "Nabeel Ali Butt, Creative Director at Graphics Storm Studio",
              "source": "library"
             },
             "image_size": "large",
@@ -3574,7 +3588,7 @@
              "isLinked": true
             },
             "caption_source": "none",
-            "_title": "📷 PLACEHOLDER – team-saba.webp (600×600 square headshot)"
+            "_title": "📷 PLACEHOLDER – team-nabeel.webp (600×600 square headshot)"
            },
            "elements": []
           },
@@ -3583,7 +3597,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Saba Baig",
+            "title": "Nabeel Ali Butt",
             "header_size": "h3",
             "__globals__": {
              "typography_typography": "globals/typography?id=gsh4",
@@ -3598,7 +3612,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>Project Manager</p>",
+            "editor": "<p>Creative Director</p>",
             "__globals__": {
              "typography_typography": "globals/typography?id=gssmall",
              "text_color": "globals/colors?id=accent"
@@ -3711,7 +3725,7 @@
            "border_color": "globals/colors?id=gsline",
            "border_hover_color": "globals/colors?id=accent"
           },
-          "_title": "Team – Isha Tariq",
+          "_title": "Team – Saba Baig",
           "content_width": "full"
          },
          "elements": [
@@ -3723,7 +3737,7 @@
             "image": {
              "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
              "id": "",
-             "alt": "Isha Tariq, Content Manager at Graphics Storm Studio",
+             "alt": "Saba Baig, Project Manager at Graphics Storm Studio",
              "source": "library"
             },
             "image_size": "large",
@@ -3736,7 +3750,7 @@
              "isLinked": true
             },
             "caption_source": "none",
-            "_title": "📷 PLACEHOLDER – team-isha.webp (600×600 square headshot)"
+            "_title": "📷 PLACEHOLDER – team-saba.webp (600×600 square headshot)"
            },
            "elements": []
           },
@@ -3745,7 +3759,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Isha Tariq",
+            "title": "Saba Baig",
             "header_size": "h3",
             "__globals__": {
              "typography_typography": "globals/typography?id=gsh4",
@@ -3760,7 +3774,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>Content Manager</p>",
+            "editor": "<p>Project Manager</p>",
             "__globals__": {
              "typography_typography": "globals/typography?id=gssmall",
              "text_color": "globals/colors?id=accent"
@@ -3873,12 +3887,174 @@
            "border_color": "globals/colors?id=gsline",
            "border_hover_color": "globals/colors?id=accent"
           },
-          "_title": "Team – Muhammad Usman",
+          "_title": "Team – Isha Tariq",
           "content_width": "full"
          },
          "elements": [
           {
            "id": "2351acd",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+             "id": "",
+             "alt": "Isha Tariq, Content Manager at Graphics Storm Studio",
+             "source": "library"
+            },
+            "image_size": "large",
+            "image_border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "caption_source": "none",
+            "_title": "📷 PLACEHOLDER – team-isha.webp (600×600 square headshot)"
+           },
+           "elements": []
+          },
+          {
+           "id": "9098240",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Isha Tariq",
+            "header_size": "h3",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh4",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Name"
+           },
+           "elements": []
+          },
+          {
+           "id": "e6469e6",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Content Manager</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gssmall",
+             "text_color": "globals/colors?id=accent"
+            },
+            "_title": "Role"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "59f9ae1",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_gap": {
+           "column": "10",
+           "row": "10",
+           "isLinked": true,
+           "unit": "px",
+           "size": 10
+          },
+          "flex_direction": "column",
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 20,
+           "blur": 50,
+           "spread": 0,
+           "color": "rgba(2,6,23,0.45)"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_tablet": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          },
+          "css_classes": "gs-glass",
+          "_transform_translateY_popover_hover": "transform",
+          "_transform_translateY_effect_hover": {
+           "unit": "px",
+           "size": -6,
+           "sizes": []
+          },
+          "_transform_transition_hover": {
+           "unit": "ms",
+           "size": 300,
+           "sizes": []
+          },
+          "border_hover_border": "solid",
+          "border_hover_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_hover_transition": {
+           "unit": "s",
+           "size": 0.3,
+           "sizes": []
+          },
+          "box_shadow_hover_box_shadow_type": "yes",
+          "box_shadow_hover_box_shadow": {
+           "horizontal": 0,
+           "vertical": 28,
+           "blur": 60,
+           "spread": 0,
+           "color": "rgba(6,132,196,0.28)"
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=gsglass",
+           "border_color": "globals/colors?id=gsline",
+           "border_hover_color": "globals/colors?id=accent"
+          },
+          "_title": "Team – Muhammad Usman",
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "7f85c63",
            "elType": "widget",
            "widgetType": "image",
            "settings": {
@@ -3903,7 +4079,7 @@
            "elements": []
           },
           {
-           "id": "9098240",
+           "id": "ebb4922",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -3918,7 +4094,7 @@
            "elements": []
           },
           {
-           "id": "e6469e6",
+           "id": "c86a35b",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {

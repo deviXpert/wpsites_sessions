@@ -8,7 +8,7 @@
  },
  "content": [
   {
-   "id": "c4db86b",
+   "id": "97e8177",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -17,9 +17,9 @@
     "flex_direction": "column",
     "padding": {
      "unit": "px",
-     "top": "96",
+     "top": "88",
      "right": "0",
-     "bottom": "96",
+     "bottom": "88",
      "left": "0",
      "isLinked": false
     },
@@ -78,7 +78,7 @@
    },
    "elements": [
     {
-     "id": "35ce838",
+     "id": "2e839ba",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -111,7 +111,7 @@
      },
      "elements": [
       {
-       "id": "416f977",
+       "id": "974e277",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -341,7 +341,7 @@
          ]
         },
         {
-         "id": "93b663c",
+         "id": "101ba51",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -368,7 +368,7 @@
            "size": 100,
            "sizes": []
           },
-          "_title": "Hero Panel",
+          "_title": "Hero Visual",
           "content_width": "full",
           "padding": {
            "unit": "px",
@@ -381,7 +381,7 @@
          },
          "elements": [
           {
-           "id": "26c8650",
+           "id": "2829554",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -421,26 +421,26 @@
             },
             "padding": {
              "unit": "px",
-             "top": "32",
-             "right": "32",
-             "bottom": "32",
-             "left": "32",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
              "isLinked": true
             },
             "padding_tablet": {
              "unit": "px",
-             "top": "28",
-             "right": "28",
-             "bottom": "28",
-             "left": "28",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
              "isLinked": true
             },
             "padding_mobile": {
              "unit": "px",
-             "top": "24",
-             "right": "24",
-             "bottom": "24",
-             "left": "24",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
              "isLinked": true
             },
             "css_classes": "gs-glass--strong",
@@ -448,103 +448,38 @@
              "background_color": "globals/colors?id=gsglass2",
              "border_color": "globals/colors?id=gsline"
             },
-            "_title": "What’s Included",
+            "_title": "Infographic Panel – Website Development",
             "content_width": "full"
            },
            "elements": [
             {
              "id": "d15a434",
              "elType": "widget",
-             "widgetType": "heading",
+             "widgetType": "image",
              "settings": {
-              "title": "What’s included",
-              "header_size": "h2",
-              "__globals__": {
-               "typography_typography": "globals/typography?id=gsh3",
-               "title_color": "globals/colors?id=gswhite"
+              "image": {
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-website-development.svg",
+               "id": 5837,
+               "alt": "Infographic: responsive website built for desktop and mobile with a 98 PageSpeed score",
+               "source": "library"
               },
-              "_title": "Included Title"
-             },
-             "elements": []
-            },
-            {
-             "id": "a9af265",
-             "elType": "widget",
-             "widgetType": "icon-list",
-             "settings": {
-              "icon_list": [
-               {
-                "_id": "2829554",
-                "text": "Custom UI/UX design – no generic templates",
-                "selected_icon": {
-                 "value": "fas fa-check-circle",
-                 "library": "fa-solid"
-                }
-               },
-               {
-                "_id": "101ba51",
-                "text": "Mobile-first, fully responsive build",
-                "selected_icon": {
-                 "value": "fas fa-check-circle",
-                 "library": "fa-solid"
-                }
-               },
-               {
-                "_id": "974e277",
-                "text": "On-page SEO & schema built in",
-                "selected_icon": {
-                 "value": "fas fa-check-circle",
-                 "library": "fa-solid"
-                }
-               },
-               {
-                "_id": "2e839ba",
-                "text": "Speed & Core Web Vitals optimisation",
-                "selected_icon": {
-                 "value": "fas fa-check-circle",
-                 "library": "fa-solid"
-                }
-               },
-               {
-                "_id": "97e8177",
-                "text": "Contact forms, WhatsApp & analytics setup",
-                "selected_icon": {
-                 "value": "fas fa-check-circle",
-                 "library": "fa-solid"
-                }
-               },
-               {
-                "_id": "281ed1a",
-                "text": "Training + 30 days of free support",
-                "selected_icon": {
-                 "value": "fas fa-check-circle",
-                 "library": "fa-solid"
-                }
-               }
-              ],
-              "view": "traditional",
-              "icon_size": {
-               "unit": "px",
-               "size": 16,
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
                "sizes": []
               },
-              "text_indent": {
+              "align": "center",
+              "caption_source": "none",
+              "image_border_radius": {
                "unit": "px",
-               "size": 10,
-               "sizes": []
+               "top": "18",
+               "right": "18",
+               "bottom": "18",
+               "left": "18",
+               "isLinked": true
               },
-              "space_between": {
-               "unit": "px",
-               "size": 12,
-               "sizes": []
-              },
-              "__globals__": {
-               "icon_color": "globals/colors?id=accent",
-               "text_color": "globals/colors?id=text",
-               "icon_typography_typography": "globals/typography?id=gsbody",
-               "text_color_hover": "globals/colors?id=gswhite"
-              },
-              "_title": "Included List"
+              "_title": "Infographic – Website Development (animated SVG)"
              },
              "elements": []
             }
@@ -662,7 +597,7 @@
      },
      "elements": [
       {
-       "id": "9b341de",
+       "id": "26c8650",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -688,7 +623,7 @@
        },
        "elements": [
         {
-         "id": "e96faa5",
+         "id": "281ed1a",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -704,7 +639,7 @@
          "elements": []
         },
         {
-         "id": "cf8f2ae",
+         "id": "a9af265",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -765,7 +700,7 @@
           },
           "width": {
            "unit": "%",
-           "size": 55,
+           "size": 50,
            "sizes": []
           },
           "width_tablet": {
@@ -778,7 +713,7 @@
            "size": 100,
            "sizes": []
           },
-          "_title": "Infographic",
+          "_title": "Included",
           "content_width": "full",
           "padding": {
            "unit": "px",
@@ -831,26 +766,26 @@
             },
             "padding": {
              "unit": "px",
-             "top": "20",
-             "right": "20",
-             "bottom": "20",
-             "left": "20",
+             "top": "32",
+             "right": "32",
+             "bottom": "32",
+             "left": "32",
              "isLinked": true
             },
             "padding_tablet": {
              "unit": "px",
-             "top": "16",
-             "right": "16",
-             "bottom": "16",
-             "left": "16",
+             "top": "28",
+             "right": "28",
+             "bottom": "28",
+             "left": "28",
              "isLinked": true
             },
             "padding_mobile": {
              "unit": "px",
-             "top": "12",
-             "right": "12",
-             "bottom": "12",
-             "left": "12",
+             "top": "24",
+             "right": "24",
+             "bottom": "24",
+             "left": "24",
              "isLinked": true
             },
             "css_classes": "gs-glass--strong",
@@ -858,38 +793,103 @@
              "background_color": "globals/colors?id=gsglass2",
              "border_color": "globals/colors?id=gsline"
             },
-            "_title": "Infographic Panel – Website Development",
+            "_title": "What’s Included",
             "content_width": "full"
            },
            "elements": [
             {
+             "id": "93b663c",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "What’s included",
+              "header_size": "h3",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gsh3",
+               "title_color": "globals/colors?id=gswhite"
+              },
+              "_title": "Included Title"
+             },
+             "elements": []
+            },
+            {
              "id": "f129dd7",
              "elType": "widget",
-             "widgetType": "image",
+             "widgetType": "icon-list",
              "settings": {
-              "image": {
-               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/gss-website-development.svg",
-               "id": 5837,
-               "alt": "Infographic: responsive website built for desktop and mobile with a 98 PageSpeed score",
-               "source": "library"
-              },
-              "image_size": "full",
-              "width": {
-               "unit": "%",
-               "size": 100,
+              "icon_list": [
+               {
+                "_id": "416f977",
+                "text": "Custom UI/UX design – no generic templates",
+                "selected_icon": {
+                 "value": "fas fa-check-circle",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "35ce838",
+                "text": "Mobile-first, fully responsive build",
+                "selected_icon": {
+                 "value": "fas fa-check-circle",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "c4db86b",
+                "text": "On-page SEO & schema built in",
+                "selected_icon": {
+                 "value": "fas fa-check-circle",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "e96faa5",
+                "text": "Speed & Core Web Vitals optimisation",
+                "selected_icon": {
+                 "value": "fas fa-check-circle",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "cf8f2ae",
+                "text": "Contact forms, WhatsApp & analytics setup",
+                "selected_icon": {
+                 "value": "fas fa-check-circle",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "9b341de",
+                "text": "Training + 30 days of free support",
+                "selected_icon": {
+                 "value": "fas fa-check-circle",
+                 "library": "fa-solid"
+                }
+               }
+              ],
+              "view": "traditional",
+              "icon_size": {
+               "unit": "px",
+               "size": 16,
                "sizes": []
               },
-              "align": "center",
-              "caption_source": "none",
-              "image_border_radius": {
+              "text_indent": {
                "unit": "px",
-               "top": "18",
-               "right": "18",
-               "bottom": "18",
-               "left": "18",
-               "isLinked": true
+               "size": 10,
+               "sizes": []
               },
-              "_title": "Infographic – Website Development (animated SVG)"
+              "space_between": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "__globals__": {
+               "icon_color": "globals/colors?id=accent",
+               "text_color": "globals/colors?id=text",
+               "icon_typography_typography": "globals/typography?id=gsbody",
+               "text_color_hover": "globals/colors?id=gswhite"
+              },
+              "_title": "Included List"
              },
              "elements": []
             }
@@ -912,7 +912,7 @@
           },
           "width": {
            "unit": "%",
-           "size": 45,
+           "size": 50,
            "sizes": []
           },
           "width_tablet": {
@@ -3501,7 +3501,7 @@
    ]
   },
   {
-   "id": "529d0aa",
+   "id": "e8e1949",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -3571,7 +3571,7 @@
    },
    "elements": [
     {
-     "id": "4549123",
+     "id": "529d0aa",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -3604,7 +3604,7 @@
      },
      "elements": [
       {
-       "id": "39f87ba",
+       "id": "4549123",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3952,7 +3952,7 @@
          ]
         },
         {
-         "id": "c9adc96",
+         "id": "39f87ba",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3993,7 +3993,7 @@
          },
          "elements": [
           {
-           "id": "aef7aa7",
+           "id": "c9adc96",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4225,6 +4225,20 @@
                "button_typography_typography": "globals/typography?id=gsbtn"
               },
               "_title": "Service Quote Form"
+             },
+             "elements": []
+            },
+            {
+             "id": "aef7aa7",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>By submitting this form you agree to be contacted about your enquiry. We never sell your details – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gssmall",
+               "text_color": "globals/colors?id=gsmuted"
+              },
+              "_title": "Privacy Note"
              },
              "elements": []
             }
