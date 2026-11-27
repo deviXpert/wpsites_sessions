@@ -37,6 +37,7 @@ S = {
    C('gsline', 'Glass Border (14% white)', '#FFFFFF24'),
    C('gsvioletglow', 'Violet Glow (blob)', '#7C5CFF59'), C('gsblueglow', 'Blue Glow (blob)', '#0684C44D'),
    C('gstransparent', 'Transparent', '#070B1F00'),
+   C('gsgold', 'Star Gold (ratings)', '#FFC857'),
  ],
  'system_typography': [typo('primary', 'Headings', HEAD, 700), typo('secondary', 'Subheadings', HEAD, 600),
                        typo('text', 'Body', BODY, 400, 17, 1.7, None, None, 16, 16), typo('accent', 'Buttons', HEAD, 600, 16, 1.2)],

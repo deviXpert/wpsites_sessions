@@ -11,7 +11,7 @@ INSTAGRAM = 'https://www.instagram.com/graphics_storm/'
 OFFICES = [('Canada', '1 Deauville Ln, North York, ON M3C 1Z7, Canada'),
            ('USA', '2501 Chatham Rd, Suite R, Springfield, IL 62704, USA')]
 
-URL = {'home': '/', 'about': '/about-us/', 'services': '/services/', 'work': '/our-portfolio/', 'contact': '/contact-us/',
+URL = {'home': '/', 'reviews': '/reviews/', 'about': '/about-us/', 'services': '/services/', 'work': '/our-portfolio/', 'contact': '/contact-us/',
        'web': '/website-development/', 'seo': '/search-engine-optimization/', 'smm': '/social-media-marketing/',
        'design': '/graphics-designing/'}
 
@@ -154,7 +154,7 @@ ABOUT = dict(
            ('fas fa-seedling', 'How we evolved', 'We added web development, SEO and social media so clients could grow with one trusted partner.'),
            ('fas fa-gem', 'Where we are today', 'A full-service digital marketing agency known for premium design, honest reporting and on-time delivery.')],
  ceo_quote='My idea behind Graphics Storm Studio was to build a state-of-the-art digital agency that transforms businesses, solves real challenges and celebrates every client win as our own.',
- ceo='Fahad Mustafa Butt', ceo_role='Founder & CEO',
+ ceo='Nabeel Ali Butt', ceo_role='Founder & CEO',
  values=[('fas fa-smile', 'Client satisfaction', 'We are not done until you are delighted with the result.'),
          ('fas fa-comments', 'Clear communication', 'Fast replies, regular updates and plain-English reports.'),
          ('fas fa-user-tie', 'Team of experts', 'Specialists in design, development, SEO and social media.'),

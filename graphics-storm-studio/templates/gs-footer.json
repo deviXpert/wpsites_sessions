@@ -5,7 +5,7 @@
  "page_settings": {},
  "content": [
   {
-   "id": "d0b8906",
+   "id": "a9be83a",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -75,7 +75,7 @@
    },
    "elements": [
     {
-     "id": "d66fddd",
+     "id": "d0b8906",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -108,7 +108,7 @@
      },
      "elements": [
       {
-       "id": "ba2c9dc",
+       "id": "c8aab43",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -343,7 +343,7 @@
          ]
         },
         {
-         "id": "52c9ccd",
+         "id": "71b936e",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -398,7 +398,7 @@
            "elements": []
           },
           {
-           "id": "ed0032e",
+           "id": "52c9ccd",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
@@ -447,6 +447,20 @@
              },
              {
               "_id": "3ab4f6c",
+              "text": "Client Reviews",
+              "selected_icon": {
+               "value": "fas fa-angle-right",
+               "library": "fa-solid"
+              },
+              "link": {
+               "url": "/reviews/",
+               "is_external": "",
+               "nofollow": "",
+               "custom_attributes": ""
+              }
+             },
+             {
+              "_id": "06168da",
               "text": "Contact Us",
               "selected_icon": {
                "value": "fas fa-angle-right",
@@ -460,7 +474,7 @@
               }
              },
              {
-              "_id": "06168da",
+              "_id": "ed0032e",
               "text": "Free Consultation",
               "selected_icon": {
                "value": "fas fa-angle-right",
@@ -503,7 +517,7 @@
          ]
         },
         {
-         "id": "d86dd0b",
+         "id": "9e8574e",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -543,7 +557,7 @@
          },
          "elements": [
           {
-           "id": "71b936e",
+           "id": "f3464b1",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -558,13 +572,13 @@
            "elements": []
           },
           {
-           "id": "5cf23c0",
+           "id": "d86dd0b",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
             "icon_list": [
              {
-              "_id": "f3464b1",
+              "_id": "edf9ef5",
               "text": "Website Development",
               "selected_icon": {
                "value": "fas fa-angle-right",
@@ -578,7 +592,7 @@
               }
              },
              {
-              "_id": "edf9ef5",
+              "_id": "c575c4d",
               "text": "SEO Services",
               "selected_icon": {
                "value": "fas fa-angle-right",
@@ -592,7 +606,7 @@
               }
              },
              {
-              "_id": "c575c4d",
+              "_id": "523e17e",
               "text": "Social Media Marketing",
               "selected_icon": {
                "value": "fas fa-angle-right",
@@ -606,7 +620,7 @@
               }
              },
              {
-              "_id": "523e17e",
+              "_id": "7de4fe0",
               "text": "Graphic Design",
               "selected_icon": {
                "value": "fas fa-angle-right",
@@ -620,7 +634,7 @@
               }
              },
              {
-              "_id": "7de4fe0",
+              "_id": "5cf23c0",
               "text": "Logo & Branding",
               "selected_icon": {
                "value": "fas fa-angle-right",
@@ -663,7 +677,7 @@
          ]
         },
         {
-         "id": "2cc933a",
+         "id": "ba2c9dc",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -703,7 +717,7 @@
          },
          "elements": [
           {
-           "id": "9e8574e",
+           "id": "8c1d412",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -718,13 +732,13 @@
            "elements": []
           },
           {
-           "id": "f0b67fa",
+           "id": "2cc933a",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
             "icon_list": [
              {
-              "_id": "8c1d412",
+              "_id": "dc95902",
               "text": "info@graphicsstormstudio.com",
               "selected_icon": {
                "value": "fas fa-envelope",
@@ -738,7 +752,7 @@
               }
              },
              {
-              "_id": "dc95902",
+              "_id": "2807acc",
               "text": "+1 (812) 818-2053",
               "selected_icon": {
                "value": "fas fa-phone-alt",
@@ -752,7 +766,7 @@
               }
              },
              {
-              "_id": "2807acc",
+              "_id": "b8f01c1",
               "text": "1 Deauville Ln, North York, ON M3C 1Z7, Canada",
               "selected_icon": {
                "value": "fas fa-map-marker-alt",
@@ -760,7 +774,7 @@
               }
              },
              {
-              "_id": "b8f01c1",
+              "_id": "f0b67fa",
               "text": "2501 Chatham Rd, Suite R, Springfield, IL 62704, USA",
               "selected_icon": {
                "value": "fas fa-map-marker-alt",
@@ -799,7 +813,7 @@
        ]
       },
       {
-       "id": "c9954d4",
+       "id": "d66fddd",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -840,7 +854,7 @@
        },
        "elements": [
         {
-         "id": "7a7688e",
+         "id": "3c52b2d",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -852,19 +866,19 @@
           },
           "_title": "Copyright (dynamic year)",
           "__dynamic__": {
-           "title": "[elementor-tag id=\"c8aab43\" name=\"current-date-time\" settings=\"%7B%22date_format%22%3A%20%22custom%22%2C%20%22time_format%22%3A%20%22%22%2C%20%22custom_format%22%3A%20%22Y%22%2C%20%22before%22%3A%20%22%5Cu00a9%20%22%2C%20%22after%22%3A%20%22%20Graphics%20Storm%20Studio.%20All%20rights%20reserved.%22%7D\"]"
+           "title": "[elementor-tag id=\"7a7688e\" name=\"current-date-time\" settings=\"%7B%22date_format%22%3A%20%22custom%22%2C%20%22time_format%22%3A%20%22%22%2C%20%22custom_format%22%3A%20%22Y%22%2C%20%22before%22%3A%20%22%5Cu00a9%20%22%2C%20%22after%22%3A%20%22%20Graphics%20Storm%20Studio.%20All%20rights%20reserved.%22%7D\"]"
           }
          },
          "elements": []
         },
         {
-         "id": "197bcb7",
+         "id": "c9954d4",
          "elType": "widget",
          "widgetType": "icon-list",
          "settings": {
           "icon_list": [
            {
-            "_id": "3c52b2d",
+            "_id": "acfe9dc",
             "text": "Privacy Policy",
             "selected_icon": {
              "value": "fas fa-circle",
@@ -878,7 +892,7 @@
             }
            },
            {
-            "_id": "acfe9dc",
+            "_id": "197bcb7",
             "text": "Terms of Service",
             "selected_icon": {
              "value": "fas fa-circle",

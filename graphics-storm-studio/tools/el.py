@@ -225,7 +225,9 @@ def TEMPLATE(template_id, name):
     return W('template', name, template_id=str(template_id))
 
 def FORM(name='Lead Form', fields=('name', 'email', 'phone', 'services', 'message'), button='Get My Free Proposal',
-         form_name='Website Lead', email_to='info@graphicsstormstudio.com'):
+         form_name='Website Lead', email_to='info@graphicsstormstudio.com',
+         subject='New enquiry from graphicsstormstudio.com',
+         success='Thank you! We received your request and will reply within 1 business day.'):
     """Elementor Pro Form – inherits Site Settings → Form Fields + Buttons. Honeypot = bot protection."""
     F = {
      'name': dict(field_type='text', field_label='Full name', placeholder='Your full name', required='true', width='50', custom_id='name', autocomplete='name'),
@@ -238,6 +240,14 @@ def FORM(name='Lead Form', fields=('name', 'email', 'phone', 'services', 'messag
      'message_short': dict(field_type='textarea', field_label='Project details (optional)', placeholder='A few words about your goals…', rows='3', width='100', custom_id='message'),
      'services': dict(field_type='checkbox', field_label='Services you need', inline_list='elementor-subgroup-inline',
                       field_options='Website Development\nSEO\nSocial Media Marketing\nGraphic Design\nLogo & Branding\nPaid Ads', width='100', custom_id='services'),
+     'company_name': dict(field_type='text', field_label='Company / brand (optional)', placeholder='Your business name', width='50', custom_id='company'),
+     'used_service': dict(field_type='select', field_label='Service you used', required='true',
+                          field_options='Website Development\nSEO (Search Engine Optimization)\nSocial Media Marketing\nGraphic Design\nLogo & Brand Identity\nPaid Ads (PPC)\nOther', width='50', custom_id='service'),
+     'rating': dict(field_type='select', field_label='Your rating', required='true',
+                    field_options='★★★★★  5 – Excellent\n★★★★☆  4 – Very good\n★★★☆☆  3 – Good\n★★☆☆☆  2 – Fair\n★☆☆☆☆  1 – Poor', width='50', custom_id='rating'),
+     'review': dict(field_type='textarea', field_label='Your review', required='true', placeholder='What did we do for you, and how did it help your business?', rows='4', width='100', custom_id='review'),
+     'consent': dict(field_type='acceptance', field_label='', required='true', width='100', custom_id='consent',
+                     acceptance_text='I agree that Graphics Storm Studio may publish my review with my name and company on its website.'),
      'message': dict(field_type='textarea', field_label='Project details', placeholder='Tell us about your goals…', rows='4', width='100', custom_id='message'),
     }
     lst = []
@@ -252,9 +262,9 @@ def FORM(name='Lead Form', fields=('name', 'email', 'phone', 'services', 'messag
              input_size='md', button_text=button, button_size='md', button_width='100',
              selected_button_icon=ico('fas fa-paper-plane'), button_icon_align='row-reverse', button_icon_indent=px(10),
              submit_actions=['email', 'collect_submissions'], email_to=email_to,
-             email_subject='New enquiry from graphicsstormstudio.com', email_content='[all-fields]',
+             email_subject=subject, email_content='[all-fields]',
              email_from_name='Graphics Storm Studio Website', email_reply_to='email',
-             success_message='Thank you! We received your request and will reply within 1 business day.',
+             success_message=success,
              error_message='Something went wrong – please email info@graphicsstormstudio.com.',
              required_field_message='This field is required.', invalid_message='Please check this field.',
              column_gap=px(16), row_gap=px(16), label_spacing=px(8), _css_classes='gs-form',

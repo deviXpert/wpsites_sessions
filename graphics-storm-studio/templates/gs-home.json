@@ -5637,6 +5637,708 @@
    ]
   },
   {
+   "id": "5be58df",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "html_tag": "section",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "112",
+     "right": "0",
+     "bottom": "112",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "gradient",
+    "background_color": "rgba(6,132,196,0.30)",
+    "background_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_color_b": "#070B1F",
+    "background_color_b_stop": {
+     "unit": "%",
+     "size": 55,
+     "sizes": []
+    },
+    "background_gradient_type": "radial",
+    "background_gradient_position": "top right",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(124,92,255,0.22)",
+    "background_overlay_color_stop": {
+     "unit": "%",
+     "size": 0,
+     "sizes": []
+    },
+    "background_overlay_color_b": "rgba(7,11,31,0)",
+    "background_overlay_color_b_stop": {
+     "unit": "%",
+     "size": 50,
+     "sizes": []
+    },
+    "background_overlay_gradient_type": "radial",
+    "background_overlay_gradient_position": "bottom left",
+    "background_overlay_opacity": {
+     "unit": "",
+     "size": 1,
+     "sizes": []
+    },
+    "_element_id": "leave-review",
+    "_title": "Leave a Review"
+   },
+   "elements": [
+    {
+     "id": "fe85691",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "16",
+       "bottom": "0",
+       "left": "16",
+       "isLinked": false
+      },
+      "_title": "Leave a Review – Inner"
+     },
+     "elements": [
+      {
+       "id": "0f56644",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "56",
+         "row": "56",
+         "isLinked": true,
+         "unit": "px",
+         "size": 56
+        },
+        "flex_align_items": "center",
+        "flex_direction_mobile": "column",
+        "flex_direction_tablet": "column",
+        "_title": "Review Row",
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "9bab883",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 45,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Review Copy",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "1755c9d",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Worked with us?",
+            "header_size": "p",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gseyebrow",
+             "title_color": "globals/colors?id=accent"
+            },
+            "_title": "Eyebrow – Worked with us?"
+           },
+           "elements": []
+          },
+          {
+           "id": "3558d4f",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Your Review Helps Other <span>Businesses Grow</span>",
+            "header_size": "h2",
+            "_css_classes": "gs-grad",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gsh2",
+             "title_color": "globals/colors?id=gswhite"
+            },
+            "_title": "Review Title"
+           },
+           "elements": []
+          },
+          {
+           "id": "d255a71",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>If we have built your website, ranked your business, grown your social media or designed your brand, we would love to hear how it went.</p>",
+            "__globals__": {
+             "typography_typography": "globals/typography?id=gslead",
+             "text_color": "globals/colors?id=text"
+            },
+            "_title": "Review Text"
+           },
+           "elements": []
+          },
+          {
+           "id": "445d040",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "8b95266",
+              "text": "Takes about 1 minute",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "4fdfcad",
+              "text": "We publish approved reviews with your permission",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "57421dd",
+              "text": "Honest feedback helps us improve",
+              "selected_icon": {
+               "value": "fas fa-check-circle",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "view": "traditional",
+            "icon_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "text_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "space_between": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "__globals__": {
+             "icon_color": "globals/colors?id=accent",
+             "text_color": "globals/colors?id=text",
+             "icon_typography_typography": "globals/typography?id=gsbody",
+             "text_color_hover": "globals/colors?id=gswhite"
+            },
+            "_title": "Review Checklist"
+           },
+           "elements": []
+          },
+          {
+           "id": "f073a08",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "See All Reviews",
+            "link": {
+             "url": "/reviews/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "hover_animation": "float",
+            "selected_icon": {
+             "value": "fas fa-star",
+             "library": "fa-solid"
+            },
+            "icon_align": "row-reverse",
+            "icon_indent": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "align_mobile": "justify",
+            "button_box_shadow_box_shadow_type": "yes",
+            "button_box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 0,
+             "blur": 0,
+             "spread": 0,
+             "color": "rgba(0,0,0,0)"
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline",
+             "button_text_color": "globals/colors?id=gswhite",
+             "button_background_hover_color": "globals/colors?id=gswhite",
+             "hover_color": "globals/colors?id=gsnavy"
+            },
+            "_title": "Button – See All Reviews"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "b3a0638",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "20",
+           "row": "20",
+           "isLinked": true,
+           "unit": "px",
+           "size": 20
+          },
+          "width": {
+           "unit": "%",
+           "size": 55,
+           "sizes": []
+          },
+          "width_tablet": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_title": "Review Form Col",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "e0822a3",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_gap": {
+             "column": "18",
+             "row": "18",
+             "isLinked": true,
+             "unit": "px",
+             "size": 18
+            },
+            "flex_direction": "column",
+            "background_background": "classic",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "24",
+             "right": "24",
+             "bottom": "24",
+             "left": "24",
+             "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 20,
+             "blur": 50,
+             "spread": 0,
+             "color": "rgba(2,6,23,0.45)"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "36",
+             "right": "36",
+             "bottom": "36",
+             "left": "36",
+             "isLinked": true
+            },
+            "padding_tablet": {
+             "unit": "px",
+             "top": "28",
+             "right": "28",
+             "bottom": "28",
+             "left": "28",
+             "isLinked": true
+            },
+            "padding_mobile": {
+             "unit": "px",
+             "top": "22",
+             "right": "22",
+             "bottom": "22",
+             "left": "22",
+             "isLinked": true
+            },
+            "css_classes": "gs-glass--strong",
+            "__globals__": {
+             "background_color": "globals/colors?id=gsglass2",
+             "border_color": "globals/colors?id=gsline"
+            },
+            "_title": "Review Form Panel",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "83294c5",
+             "elType": "container",
+             "isInner": true,
+             "settings": {
+              "flex_gap": {
+               "column": "8",
+               "row": "8",
+               "isLinked": true,
+               "unit": "px",
+               "size": 8
+              },
+              "padding": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "18",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "__globals__": {
+               "border_color": "globals/colors?id=gsline"
+              },
+              "_title": "Form Header",
+              "content_width": "full"
+             },
+             "elements": [
+              {
+               "id": "e67947f",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Leave a review",
+                "header_size": "p",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gseyebrow",
+                 "title_color": "globals/colors?id=accent"
+                },
+                "_title": "Eyebrow – Leave a review"
+               },
+               "elements": []
+              },
+              {
+               "id": "5be1617",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Share your experience",
+                "header_size": "h3",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gsh3",
+                 "title_color": "globals/colors?id=gswhite"
+                },
+                "_title": "Form Title"
+               },
+               "elements": []
+              },
+              {
+               "id": "6fbebe1",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Worked with us? Tell other businesses what it was like. Your email is only used to verify you are a client – it is never published.</p>",
+                "__globals__": {
+                 "typography_typography": "globals/typography?id=gssmall",
+                 "text_color": "globals/colors?id=text"
+                },
+                "_title": "Form Intro"
+               },
+               "elements": []
+              }
+             ]
+            },
+            {
+             "id": "7068477",
+             "elType": "widget",
+             "widgetType": "form",
+             "settings": {
+              "form_name": "Client Review",
+              "form_fields": [
+               {
+                "field_type": "text",
+                "field_label": "Full name",
+                "placeholder": "Your full name",
+                "required": "true",
+                "width": "50",
+                "custom_id": "name",
+                "autocomplete": "name",
+                "_id": "f0c43c7"
+               },
+               {
+                "field_type": "email",
+                "field_label": "Email",
+                "placeholder": "you@company.com",
+                "required": "true",
+                "width": "50",
+                "custom_id": "email",
+                "_id": "3037317"
+               },
+               {
+                "field_type": "select",
+                "field_label": "Service you used",
+                "required": "true",
+                "field_options": "Website Development\nSEO (Search Engine Optimization)\nSocial Media Marketing\nGraphic Design\nLogo & Brand Identity\nPaid Ads (PPC)\nOther",
+                "width": "50",
+                "custom_id": "service",
+                "_id": "e7312c2"
+               },
+               {
+                "field_type": "select",
+                "field_label": "Your rating",
+                "required": "true",
+                "field_options": "★★★★★  5 – Excellent\n★★★★☆  4 – Very good\n★★★☆☆  3 – Good\n★★☆☆☆  2 – Fair\n★☆☆☆☆  1 – Poor",
+                "width": "50",
+                "custom_id": "rating",
+                "_id": "8a3b7fb"
+               },
+               {
+                "field_type": "textarea",
+                "field_label": "Your review",
+                "required": "true",
+                "placeholder": "What did we do for you, and how did it help your business?",
+                "rows": "4",
+                "width": "100",
+                "custom_id": "review",
+                "_id": "26861c2"
+               },
+               {
+                "field_type": "acceptance",
+                "field_label": "",
+                "required": "true",
+                "width": "100",
+                "custom_id": "consent",
+                "acceptance_text": "I agree that Graphics Storm Studio may publish my review with my name and company on its website.",
+                "_id": "066f17c"
+               },
+               {
+                "_id": "a25842f",
+                "custom_id": "hp",
+                "field_type": "honeypot",
+                "field_label": "",
+                "width": "100"
+               }
+              ],
+              "show_labels": "yes",
+              "mark_required": "yes",
+              "input_size": "md",
+              "button_text": "Submit My Review",
+              "button_size": "md",
+              "button_width": "100",
+              "selected_button_icon": {
+               "value": "fas fa-paper-plane",
+               "library": "fa-solid"
+              },
+              "button_icon_align": "row-reverse",
+              "button_icon_indent": {
+               "unit": "px",
+               "size": 10,
+               "sizes": []
+              },
+              "submit_actions": [
+               "email",
+               "collect_submissions"
+              ],
+              "email_to": "info@graphicsstormstudio.com",
+              "email_subject": "New client review from graphicsstormstudio.com",
+              "email_content": "[all-fields]",
+              "email_from_name": "Graphics Storm Studio Website",
+              "email_reply_to": "email",
+              "success_message": "Thank you for your review! We read every one and publish approved reviews on our website.",
+              "error_message": "Something went wrong – please email info@graphicsstormstudio.com.",
+              "required_field_message": "This field is required.",
+              "invalid_message": "Please check this field.",
+              "column_gap": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
+              },
+              "row_gap": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
+              },
+              "label_spacing": {
+               "unit": "px",
+               "size": 8,
+               "sizes": []
+              },
+              "_css_classes": "gs-form",
+              "button_border_radius": {
+               "unit": "px",
+               "top": "999",
+               "right": "999",
+               "bottom": "999",
+               "left": "999",
+               "isLinked": true
+              },
+              "field_border_radius": {
+               "unit": "px",
+               "top": "12",
+               "right": "12",
+               "bottom": "12",
+               "left": "12",
+               "isLinked": true
+              },
+              "field_border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "__globals__": {
+               "label_color": "globals/colors?id=text",
+               "label_typography_typography": "globals/typography?id=gssmall",
+               "field_text_color": "globals/colors?id=gswhite",
+               "field_background_color": "globals/colors?id=gsglass",
+               "field_border_color": "globals/colors?id=gsline",
+               "button_background_color": "globals/colors?id=secondary",
+               "button_background_hover_color": "globals/colors?id=gsvioletdk",
+               "button_text_color": "globals/colors?id=gswhite",
+               "button_typography_typography": "globals/typography?id=gsbtn"
+              },
+              "_title": "Review Form"
+             },
+             "elements": []
+            },
+            {
+             "id": "9cf22f9",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>We only use your details to reply to your enquiry – see our <a href=\"/privacy-policy/\">Privacy Policy</a>.</p>",
+              "__globals__": {
+               "typography_typography": "globals/typography?id=gssmall",
+               "text_color": "globals/colors?id=gsmuted"
+              },
+              "_title": "Privacy Note"
+             },
+             "elements": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "a235d3e",
    "elType": "container",
    "isInner": false,

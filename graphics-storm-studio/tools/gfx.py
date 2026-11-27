@@ -307,10 +307,56 @@ def terms():
 <path class="draw" d="M210 334 c14 -22 26 8 40 -10 s22 -4 36 -12 s18 6 30 -2" fill="none" stroke="url(#gSky)" stroke-width="3" stroke-linecap="round"/></g>"""
     return wrap(W, H, 'Terms of service infographic', 'Animated infographic: a service agreement with clear scope and pricing, ownership of final work, honest results and 30-day website support.', body)
 
+# ================= ABOUT: our story / journey =================
+def story():
+    W, H = 600, 640
+    path = 'M90 560 C 170 540, 160 450, 250 430 S 360 360, 330 300 S 400 190, 470 170 S 520 110, 520 80'
+    stops = [(90, 560, 'Design studio', 'Where it began', 'right'), (250, 430, '+ Web development', 'Websites that sell', 'right'),
+             (330, 300, '+ SEO &amp; social', 'Full-service marketing', 'left'), (470, 170, '130+ clients', 'USA · Canada · worldwide', 'left')]
+    pins = ''
+    for i, (x, y, t, sub, side) in enumerate(stops):
+        bx = x + 26 if side == 'right' else x - 26 - 190
+        pins += f"""<g class="pop" {d(i, .4, .9)}><circle cx="{x}" cy="{y}" r="16" fill="url(#gBV)"/><circle cx="{x}" cy="{y}" r="6" fill="#fff"/>
+<g filter="url(#soft)"><rect class="glass2" x="{bx}" y="{y-28}" width="190" height="56" rx="16"/></g>
+<text x="{bx+16}" y="{y-4}" font-size="14" font-weight="800">{t}</text><text class="m" x="{bx+16}" y="{y+14}" font-size="11.5">{sub}</text></g>"""
+    body = f"""<g opacity=".22">{''.join(f'<circle cx="{x}" cy="{y}" r="1.2" fill="#93A1BF"/>' for x in range(20, W, 40) for y in range(20, H, 40))}</g>
+<path d="{path}" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="14" stroke-linecap="round"/>
+<path class="draw" d="{path}" fill="none" stroke="url(#gSky)" stroke-width="6" stroke-linecap="round" style="stroke-dasharray:700;stroke-dashoffset:700"/>
+<circle r="7" fill="#fff"><animateMotion dur="5s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.6;1" calcMode="linear" path="{path}"/></circle>
+{pins}
+<g class="pop" style="animation-delay:3.6s"><g transform="translate(520 80)"><circle class="pulse" r="22" fill="none" stroke="#9D86FF" stroke-width="2"/>
+<path d="M0 -14 L5 -2 L14 0 L5 3 L0 14 L-5 3 L-14 0 L-5 -2 Z" fill="#fff"/></g></g>
+<g class="pop" style="animation-delay:4s"><rect x="40" y="40" width="210" height="64" rx="18" class="glass2"/>
+<text class="a" x="60" y="66" font-size="10.5" font-weight="700" letter-spacing="1.4">OUR JOURNEY</text><text x="60" y="90" font-size="17" font-weight="800">5+ years of growth</text></g>"""
+    css = '.draw{stroke-dasharray:700;stroke-dashoffset:700;animation:drawS 5s ease-in-out infinite}@keyframes drawS{0%{stroke-dashoffset:700}60%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:700}}'
+    return wrap(W, H, 'Graphics Storm Studio journey infographic', 'Animated infographic: our journey from a design studio, adding web development, then SEO and social media, to 130+ clients across the USA, Canada and worldwide.', body, css)
+
+# ================= REVIEWS =================
+def star(x, y, s=1, fill='#FFC857'):
+    return f'<path transform="translate({x} {y}) scale({s})" d="M0 -10 L2.9 -3.1 L10 -3.1 L4.3 1.2 L6.5 8.1 L0 4 L-6.5 8.1 L-4.3 1.2 L-10 -3.1 L-2.9 -3.1 Z" fill="{fill}"/>'
+
+def reviews():
+    W, H = 600, 480
+    stars_big = ''.join(f'<g class="pop" {d(i, .2, .18)}>{star(78 + i*30, 160, 1.3)}</g>' for i in range(5))
+    cards = [('“Fantastic brand guidelines and logos!”', 'Mr. James · Branding', 250, 70), ('“Fast communication, great result.”', 'Anthony · Website', 290, 190),
+             ('“Brief well met, fast delivery.”', 'Lisa P. · Marketing', 250, 310)]
+    cs = ''.join(f"""<g class="float" {d(i, 0, .8)}><g class="pop" {d(i, 1.1, .5)}><g filter="url(#soft)"><rect class="glass2" x="{x}" y="{y}" width="300" height="96" rx="18"/></g>
+<circle cx="{x+30}" cy="{y+32}" r="14" fill="url(#gBV)"/><text x="{x+30}" y="{y+37}" text-anchor="middle" font-size="12" font-weight="800">{who[0]}</text>
+{''.join(star(x+60 + k*16, y+28, .65) for k in range(5))}
+<text x="{x+20}" y="{y+64}" font-size="12.5" font-weight="700">{q}</text><text class="m" x="{x+20}" y="{y+82}" font-size="10.5">{who}</text></g></g>""" for i, (q, who, x, y) in enumerate(cards))
+    body = f"""<g filter="url(#soft)"><rect class="glass2" x="40" y="70" width="190" height="170" rx="20"/></g>
+<text class="a" x="62" y="100" font-size="10.5" font-weight="700" letter-spacing="1.4">CLIENT RATING</text>
+<text x="60" y="142" font-size="38" font-weight="800">5.0</text>
+<g transform="translate(-4 0)">{stars_big}</g>
+<text class="m" x="62" y="200" font-size="11">from verified clients</text><text class="m" x="62" y="218" font-size="11">USA · Canada · worldwide</text>
+{cs}
+<g class="pop" style="animation-delay:2.8s"><rect x="40" y="290" width="190" height="40" rx="20" fill="#7052FF"/><text x="135" y="315" text-anchor="middle" font-size="13" font-weight="700">✎ Leave a review</text></g>"""
+    return wrap(W, H, 'Client reviews infographic', 'Animated infographic: a 5.0 client rating with five stars and review cards from website, branding and marketing clients.', body)
+
 FILES = {'gss-growth-engine.svg': home, 'gss-website-development.svg': web, 'gss-seo-services.svg': seo,
          'gss-social-media-marketing.svg': smm, 'gss-graphic-design.svg': design,
          'gss-about.svg': about, 'gss-services-funnel.svg': funnel, 'gss-our-work.svg': work, 'gss-contact.svg': contact,
-         'gss-privacy.svg': privacy, 'gss-terms.svg': terms}
+         'gss-privacy.svg': privacy, 'gss-terms.svg': terms, 'gss-our-story.svg': story, 'gss-reviews.svg': reviews}
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
     for n, f in FILES.items():

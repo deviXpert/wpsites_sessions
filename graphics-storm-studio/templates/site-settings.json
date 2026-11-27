@@ -76,6 +76,11 @@
    "_id": "gstransparent",
    "title": "Transparent",
    "color": "#070B1F00"
+  },
+  {
+   "_id": "gsgold",
+   "title": "Star Gold (ratings)",
+   "color": "#FFC857"
   }
  ],
  "system_typography": [

@@ -25,6 +25,8 @@ INFO_ALT = {'gss-growth-engine.svg': 'Infographic: website development, SEO, soc
             'gss-our-work.svg': 'Infographic: laptop and phone showcasing website, brand identity and SEO projects with results',
             'gss-contact.svg': 'Infographic: your enquiry is sent to our team, who reply within one business day',
             'gss-privacy.svg': 'Infographic: shield and padlock protecting your personal data',
+            'gss-our-story.svg': 'Infographic: Graphics Storm Studio journey from design studio to web development, SEO and social media, to 130+ clients in the USA, Canada and worldwide',
+            'gss-reviews.svg': 'Infographic: 5.0 client rating with five stars and client review cards',
             'gss-terms.svg': 'Infographic: service agreement checklist with clear scope, ownership of work, honest results and support'}
 def INFO(name, label):
     m = _media().get(name)
@@ -180,9 +182,9 @@ def footer():
                                    g=dict(icon_primary_color=col('gsglass2'), icon_secondary_color=col('gswhite'), border_color=col('gsline'),
                                           hover_primary_color=col('secondary'), hover_secondary_color=col('gswhite')))],
                  w=29, wt=100, gap_=18)
-    quick = COL('Footer Links', [head('Company'), ICONLIST(['Home', 'About Us', 'Our Work', 'Contact Us', 'Free Consultation'], icon='fas fa-angle-right',
+    quick = COL('Footer Links', [head('Company'), ICONLIST(['Home', 'About Us', 'Our Work', 'Client Reviews', 'Contact Us', 'Free Consultation'], icon='fas fa-angle-right',
                                                          t='gssmall', name='Company Links', icolor='primary',
-                                                         links=[K.URL['home'], K.URL['about'], K.URL['work'], K.URL['contact'], K.URL['contact']], space_between=px(10))], w=16, wt=30, gap_=16)
+                                                         links=[K.URL['home'], K.URL['about'], K.URL['work'], K.URL['reviews'], K.URL['contact'], K.URL['contact']], space_between=px(10))], w=16, wt=30, gap_=16)
     svc = COL('Footer Services', [head('Services'), ICONLIST(['Website Development', 'SEO Services', 'Social Media Marketing', 'Graphic Design', 'Logo & Branding'],
                                                          icon='fas fa-angle-right', t='gssmall', name='Service Links', icolor='primary',
                                                          links=[K.URL['web'], K.URL['seo'], K.URL['smm'], K.URL['design'], K.URL['design']], space_between=px(10))], w=21, wt=30, gap_=16)
@@ -252,20 +254,23 @@ def home(ids=None):
                           BTN('Ask Us Anything', K.URL['contact'], 'ghost', 'fas fa-comments')], w=38, wt=100, gap_=20),
         COL('FAQ List', [FAQ(K.HOME_FAQ)], w=62, wt=100)], gap_=56, stack='tablet')], bg='c')
 
-    return [hero, proposal, services, why, proc, testi, faq, cta(ids)]
+    return [hero, proposal, services, why, proc, testi, review_band(), faq, cta(ids)]
 
 def about(ids=None):
     el.seed('about'); A = K.ABOUT
     hero = page_hero('About us', A['h1'], A['lead'], info=('gss-about.svg', 'About'))
     story = SECTION('Our Story', [ROW('Story Row', [
-        COL('Story Image', [IMG('about-team.webp', '1000×1100, team at work', 'Graphics Storm Studio team working together', radius=24)], w=45, wt=100),
+        COL('Story Visual', [info_panel('gss-our-story.svg', 'Our Story')], w=45, wt=100),
         COL('Story Copy', [EYEBROW('Our story'), H(A['story_h2'], 'h2', name='Story Title'), P(A['story'], name='Story Text'),
                            GRID('Timeline', [GLASS(f'Timeline – {t}', [ICONBOX(i, t, d, tag='h3', icon_size=px(20), icon_padding=px(12))], pad=(22, 20, 18)) for i, t, d in A['timeline']], 1, 1, 1, 14)],
             w=55, wt=100, gap_=20)], gap_=56, stack='tablet', align='center'), stats_band()], bg='b', gap_=72)
     ceo = SECTION('CEO Message', [GLASS('CEO Quote', [
         W('icon', 'Quote Icon', selected_icon=ico('fas fa-quote-left'), size=px(36), g=dict(primary_color=col('secondary'))),
         H(A['ceo_quote'], 'p', 'gsh3', name='Quote', _css_classes=''),
-        ROW('CEO', [IMG('ceo-portrait.webp', '400×400 square headshot', A['ceo'], radius=999, width=px(64), name='📷 PLACEHOLDER – ceo-portrait.webp (400×400)'),
+        ROW('CEO', [C('CEO Initials', [H(''.join(w[0] for w in A['ceo'].split()[::2]), 'p', 'gsh4', align='center', name='Initials', grad=False)],
+                      width=px(56, 'px'), min_height=px(56), flex_justify_content='center', flex_align_items='center', _flex_size='none',
+                      background_background='gradient', background_color='#0684C4', background_color_b='#7052FF',
+                      background_gradient_angle={'unit': 'deg', 'size': 135, 'sizes': []}, border_radius=dims(999)),
                     C('CEO Name', [H(A['ceo'], 'p', 'gsh4', name='CEO Name'), P(A['ceo_role'], 'gssmall', 'accent', name='CEO Role')], flex_gap=gap(2))],
             gap_=16, align='center', flex_direction_mobile='row')], strong=True, pad=(56, 40, 28), radius=28, flex_gap=gap(22))], bg='a')
     values = SECTION('Values', [section_head('Our values', 'What You Can <span>Always Expect</span>'),
@@ -370,6 +375,56 @@ def legal_page(kind, ids=None):
     main = SECTION('Legal Content', [ROW('Legal Row', [COL('TOC Column', [toc], w=30, wt=100), COL('Content Column', body + [note], w=70, wt=100, gap_=20)],
                                          gap_=40, stack='tablet', align='flex-start')], bg='b', pad=(72, 56, 40))
     return [hero, main, cta(ids)]
+
+# ------------------------------------------------------------------ reviews
+STARS = lambda: ICONLIST([('', 'fas fa-star')] * 5, inline=True, icolor='gsgold', name='5 Stars', icon_size=px(15), space_between=px(2), text_indent=px(0))
+
+def review_cards():
+    return GRID('Reviews Grid', [GLASS(f'Review – {n}', [
+        W('icon', 'Quote Icon', selected_icon=ico('fas fa-quote-left'), size=px(22), align='left', g=dict(primary_color=col('secondary'))),
+        STARS(), P(f'“{q}”', 'gsbody', name='Review Text'),
+        ROW('Reviewer', [C('Initial', [H(n[0], 'p', 'gsh4', align='center', name='Initial', grad=False)], width=px(44, 'px'), min_height=px(44),
+                           flex_justify_content='center', flex_align_items='center', _flex_size='none', background_background='gradient',
+                           background_color='#0684C4', background_color_b='#7052FF', background_gradient_angle={'unit': 'deg', 'size': 135, 'sizes': []},
+                           border_radius=dims(999)),
+                         C('Who', [H(n, 'p', 'gsh4', name='Name', grad=False), P(r, 'gssmall', 'accent', name='Client Type')], flex_gap=gap(0))],
+            gap_=12, align='center', flex_direction_mobile='row')], hover=True, pad=(28, 24, 22), flex_justify_content='space-between', flex_gap=gap(14))
+        for n, r, q in K.TESTIMONIALS], 2, 2, 1, 24)
+
+def review_form(title='Share your experience', compact=False):
+    fields = ('name', 'email', 'company_name', 'used_service', 'rating', 'review', 'consent') if not compact else ('name', 'email', 'used_service', 'rating', 'review', 'consent')
+    return GLASS('Review Form Panel', [
+        C('Form Header', [EYEBROW('Leave a review'), H(title, 'h3', 'gsh3', name='Form Title'),
+                          P('Worked with us? Tell other businesses what it was like. Your email is only used to verify you are a client – it is never published.', 'gssmall', 'text', name='Form Intro')],
+          flex_gap=gap(8), padding=dims(0, 0, 18, 0), border_border='solid', border_width=dims(0, 0, 1, 0), g=dict(border_color=col('gsline'))),
+        FORM('Review Form', fields, 'Submit My Review', 'Client Review', subject='New client review from graphicsstormstudio.com',
+             success='Thank you for your review! We read every one and publish approved reviews on our website.'),
+        PRIVACY_NOTE()], strong=True, pad=(36, 28, 22), radius=24, flex_gap=gap(18))
+
+def review_band():
+    """Home: compact 'leave a review' section after the testimonials."""
+    return SECTION('Leave a Review', [ROW('Review Row', [
+        COL('Review Copy', [EYEBROW('Worked with us?'), H('Your Review Helps Other <span>Businesses Grow</span>', 'h2', name='Review Title'),
+                            P('If we have built your website, ranked your business, grown your social media or designed your brand, we would love to hear how it went.', 'gslead', name='Review Text'),
+                            ICONLIST(['Takes about 1 minute', 'We publish approved reviews with your permission', 'Honest feedback helps us improve'], name='Review Checklist'),
+                            BTN('See All Reviews', K.URL['reviews'], 'ghost', 'fas fa-star')], w=45, wt=100, gap_=20),
+        COL('Review Form Col', [review_form(compact=True)], w=55, wt=100)], gap_=56, stack='tablet', align='center')], anchor='leave-review', bg='b')
+
+def reviews_page(ids=None):
+    el.seed('reviews')
+    return [page_hero('Client reviews', 'What Our Clients Say About <span>Working With Us</span>',
+                      'Real feedback from businesses we have helped with websites, SEO, social media marketing and graphic design.',
+                      buttons=False, info=('gss-reviews.svg', 'Reviews'),
+                      extra=[ROW('Hero Buttons', [BTN('Leave a Review', '#leave-review', icon='fas fa-pen'), BTN('Get a Free Proposal', K.URL['contact'], 'ghost')],
+                                 gap_=14, flex_wrap='wrap', flex_direction_mobile='column', flex_align_items_mobile='stretch')]),
+            SECTION('Reviews', [section_head('Testimonials', 'Trusted by <span>Growing Brands</span>'), review_cards()], bg='b'),
+            SECTION('Leave a Review', [ROW('Review Row', [
+                COL('Review Copy', [EYEBROW('Your turn'), H('Worked With Us? <span>Leave a Review</span>', 'h2', name='Review Title'),
+                                    P('Your feedback helps other business owners choose the right agency – and helps us keep improving.', 'gslead', name='Review Text'),
+                                    ICONLIST(['Rate us from 1 to 5 stars', 'Tell us which service you used', 'We publish approved reviews with your permission'], name='Review Checklist')],
+                    w=42, wt=100, gap_=20),
+                COL('Review Form Col', [review_form()], w=58, wt=100)], gap_=56, stack='tablet', align='center')], anchor='leave-review', bg='c'),
+            cta(ids)]
 
 LEGAL = {'privacy': ('Privacy Policy', 'privacy-policy'), 'terms': ('Terms of Service', 'terms-of-service')}
 

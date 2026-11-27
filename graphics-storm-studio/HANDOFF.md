@@ -61,6 +61,13 @@ python3 backup.py         # fresh snapshot to ../backup/
 - **Hidden until real content exists:** the client-logo strip (Home) and the portfolio grid (Our Work), via Elementor's Hide on desktop/tablet/mobile.
 - ⚠️ **NEVER call `elementor/update-page-settings` on the kit (17) with partial settings.** It REPLACED the whole kit once (the live site lost its globals for about 2 minutes) and was restored with `python3 kit.py`. Always run `kit.py`, which sends the full set. If the live `post-17.css` doesn't pick up a change afterwards, run `elementor/clear-cache` (DELETE) once and visit the pages.
 
+## Reviews (2026-11-27)
+- New page **Client Reviews** (5968, /reviews/), in the GSS Main menu (item 5979) and footer. It has a hero with `gss-reviews.svg` (5965), review cards (testimonials from `content.TESTIMONIALS` with 5 stars, an initial avatar and client type), and a "Leave a review" form.
+- Home: a `review_band()` section (#leave-review) after the testimonials carousel, with a compact review form.
+- Review form (Elementor Pro): name, email (to verify; not published), company (page only), service used, rating 1–5 stars (select), review, a required publish-permission acceptance box, and the honeypot. Email subject "New client review…"; saved in Elementor → Submissions. **Nothing auto-publishes.** To publish an approved review, add it to `TESTIMONIALS` in `content.py` and push Home + Reviews (or duplicate a review card in Elementor).
+- About: the CEO quote is attributed to **Nabeel Ali Butt** (initials avatar); the team section was removed; the story image is replaced by `gss-our-story.svg` (5961).
+- Kit colour `gsgold` #FFC857 added for stars.
+
 ## Open items
 - Visual QA screenshots are blocked by Under Construction plus draft status (see the session notes). The user reviews the drafts while logged in.
 - Facebook/LinkedIn URLs unknown (placeholders in the footer). Our Work project names and results are placeholders.
