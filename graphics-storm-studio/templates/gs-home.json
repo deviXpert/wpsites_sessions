@@ -547,7 +547,7 @@
        ]
       },
       {
-       "id": "4877683",
+       "id": "5ce5769",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -559,9 +559,6 @@
          "unit": "px",
          "size": 24
         },
-        "hide_desktop": "hidden-desktop",
-        "hide_tablet": "hidden-tablet",
-        "hide_mobile": "hidden-mobile",
         "_title": "Client Logos",
         "content_width": "full",
         "padding": {
@@ -575,11 +572,11 @@
        },
        "elements": [
         {
-         "id": "f824237",
+         "id": "8b92dc0",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Trusted by growing brands across the USA, Canada & beyond</p>",
+          "editor": "<p>Trusted by growing brands across the USA, Canada &amp; beyond</p>",
           "align": "center",
           "__globals__": {
            "typography_typography": "globals/typography?id=gssmall",
@@ -590,11 +587,10 @@
          "elements": []
         },
         {
-         "id": "f18e2a4",
+         "id": "c03feca",
          "elType": "container",
          "isInner": true,
          "settings": {
-          "flex_align_items": "center",
           "container_type": "grid",
           "grid_columns_grid": {
            "unit": "fr",
@@ -618,11 +614,11 @@
           },
           "grid_auto_flow": "row",
           "grid_gaps": {
-           "column": "32",
-           "row": "32",
+           "column": "20",
+           "row": "20",
            "isLinked": true,
            "unit": "px",
-           "size": 32
+           "size": 20
           },
           "_title": "Logo Row",
           "content_width": "full",
@@ -638,183 +634,438 @@
          "elements": [
           {
            "id": "6053273",
-           "elType": "widget",
-           "widgetType": "image",
+           "elType": "container",
+           "isInner": true,
            "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 1",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
+            "flex_justify_content": "center",
+            "flex_align_items": "center",
+            "min_height": {
              "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
+             "size": 96,
+             "sizes": []
+            },
+            "padding": {
+             "unit": "px",
+             "top": "16",
+             "right": "20",
+             "bottom": "16",
+             "left": "20",
+             "isLinked": false
+            },
+            "background_background": "classic",
+            "background_color": "rgba(255,255,255,0.94)",
+            "border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
              "isLinked": true
             },
-            "caption_source": "none",
-            "width": {
+            "_transform_translateY_popover_hover": "transform",
+            "_transform_translateY_effect_hover": {
              "unit": "px",
-             "size": 140,
+             "size": -4,
              "sizes": []
             },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
+            "_transform_transition_hover": {
+             "unit": "ms",
+             "size": 300,
              "sizes": []
             },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-1.svg (240×96, transparent SVG/PNG, white or light version)"
+            "_title": "Client – Quality Waterproofing Inc.",
+            "content_width": "full"
            },
-           "elements": []
-          },
-          {
-           "id": "ffa594a",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 2",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            },
-            "caption_source": "none",
-            "width": {
-             "unit": "px",
-             "size": 140,
-             "sizes": []
-            },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
-             "sizes": []
-            },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-2.svg (240×96, transparent SVG/PNG, white or light version)"
-           },
-           "elements": []
+           "elements": [
+            {
+             "id": "f824237",
+             "elType": "widget",
+             "widgetType": "image",
+             "settings": {
+              "image": {
+               "id": 5995,
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-quality-waterproofing.webp",
+               "alt": "Quality Waterproofing Inc. logo",
+               "source": "library"
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "space": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "height": {
+               "unit": "px",
+               "size": 56,
+               "sizes": []
+              },
+              "object_fit": "contain",
+              "link_to": "custom",
+              "link": {
+               "url": "https://qualitywaterproofinginc.ca/",
+               "is_external": "on",
+               "nofollow": "",
+               "custom_attributes": "rel|noopener noreferrer"
+              },
+              "align": "center",
+              "_title": "Logo – Quality Waterproofing Inc."
+             },
+             "elements": []
+            }
+           ]
           },
           {
            "id": "98f371c",
-           "elType": "widget",
-           "widgetType": "image",
+           "elType": "container",
+           "isInner": true,
            "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 3",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
+            "flex_justify_content": "center",
+            "flex_align_items": "center",
+            "min_height": {
              "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
+             "size": 96,
+             "sizes": []
+            },
+            "padding": {
+             "unit": "px",
+             "top": "16",
+             "right": "20",
+             "bottom": "16",
+             "left": "20",
+             "isLinked": false
+            },
+            "background_background": "classic",
+            "background_color": "rgba(255,255,255,0.94)",
+            "border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
              "isLinked": true
             },
-            "caption_source": "none",
-            "width": {
+            "_transform_translateY_popover_hover": "transform",
+            "_transform_translateY_effect_hover": {
              "unit": "px",
-             "size": 140,
+             "size": -4,
              "sizes": []
             },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
+            "_transform_transition_hover": {
+             "unit": "ms",
+             "size": 300,
              "sizes": []
             },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-3.svg (240×96, transparent SVG/PNG, white or light version)"
+            "_title": "Client – XA Interactive",
+            "content_width": "full"
            },
-           "elements": []
-          },
-          {
-           "id": "7427f66",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 4",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": true
-            },
-            "caption_source": "none",
-            "width": {
-             "unit": "px",
-             "size": 140,
-             "sizes": []
-            },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
-             "sizes": []
-            },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-4.svg (240×96, transparent SVG/PNG, white or light version)"
-           },
-           "elements": []
+           "elements": [
+            {
+             "id": "ffa594a",
+             "elType": "widget",
+             "widgetType": "image",
+             "settings": {
+              "image": {
+               "id": 5996,
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-xa-interactive.webp",
+               "alt": "XA Interactive logo",
+               "source": "library"
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "space": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "height": {
+               "unit": "px",
+               "size": 56,
+               "sizes": []
+              },
+              "object_fit": "contain",
+              "link_to": "custom",
+              "link": {
+               "url": "https://xainteractive.com/",
+               "is_external": "on",
+               "nofollow": "",
+               "custom_attributes": "rel|noopener noreferrer"
+              },
+              "align": "center",
+              "_title": "Logo – XA Interactive"
+             },
+             "elements": []
+            }
+           ]
           },
           {
            "id": "10fd1bb",
-           "elType": "widget",
-           "widgetType": "image",
+           "elType": "container",
+           "isInner": true,
            "settings": {
-            "image": {
-             "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
-             "id": "",
-             "alt": "Client logo 5",
-             "source": "library"
-            },
-            "image_size": "large",
-            "image_border_radius": {
+            "flex_justify_content": "center",
+            "flex_align_items": "center",
+            "min_height": {
              "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
+             "size": 96,
+             "sizes": []
+            },
+            "padding": {
+             "unit": "px",
+             "top": "16",
+             "right": "20",
+             "bottom": "16",
+             "left": "20",
+             "isLinked": false
+            },
+            "background_background": "classic",
+            "background_color": "rgba(255,255,255,0.94)",
+            "border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
              "isLinked": true
             },
-            "caption_source": "none",
-            "width": {
+            "_transform_translateY_popover_hover": "transform",
+            "_transform_translateY_effect_hover": {
              "unit": "px",
-             "size": 140,
+             "size": -4,
              "sizes": []
             },
-            "opacity": {
-             "unit": "",
-             "size": 0.75,
+            "_transform_transition_hover": {
+             "unit": "ms",
+             "size": 300,
              "sizes": []
             },
-            "align": "center",
-            "_title": "📷 PLACEHOLDER – client-logo-5.svg (240×96, transparent SVG/PNG, white or light version)"
+            "_title": "Client – Opal Medical Clinic & Aesthetics",
+            "content_width": "full"
            },
-           "elements": []
+           "elements": [
+            {
+             "id": "7427f66",
+             "elType": "widget",
+             "widgetType": "image",
+             "settings": {
+              "image": {
+               "id": 5997,
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-opal-md-clinic.webp",
+               "alt": "Opal Medical Clinic & Aesthetics logo",
+               "source": "library"
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "space": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "height": {
+               "unit": "px",
+               "size": 56,
+               "sizes": []
+              },
+              "object_fit": "contain",
+              "link_to": "custom",
+              "link": {
+               "url": "https://opalmdclinic.com/",
+               "is_external": "on",
+               "nofollow": "",
+               "custom_attributes": "rel|noopener noreferrer"
+              },
+              "align": "center",
+              "_title": "Logo – Opal Medical Clinic & Aesthetics"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "4877683",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_justify_content": "center",
+            "flex_align_items": "center",
+            "min_height": {
+             "unit": "px",
+             "size": 96,
+             "sizes": []
+            },
+            "padding": {
+             "unit": "px",
+             "top": "16",
+             "right": "20",
+             "bottom": "16",
+             "left": "20",
+             "isLinked": false
+            },
+            "background_background": "classic",
+            "background_color": "rgba(255,255,255,0.94)",
+            "border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "_transform_translateY_popover_hover": "transform",
+            "_transform_translateY_effect_hover": {
+             "unit": "px",
+             "size": -4,
+             "sizes": []
+            },
+            "_transform_transition_hover": {
+             "unit": "ms",
+             "size": 300,
+             "sizes": []
+            },
+            "_title": "Client – Mesmerized LV",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "f18e2a4",
+             "elType": "widget",
+             "widgetType": "image",
+             "settings": {
+              "image": {
+               "id": 5998,
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-mesmerized-lv.webp",
+               "alt": "Mesmerized LV logo",
+               "source": "library"
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "space": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "height": {
+               "unit": "px",
+               "size": 56,
+               "sizes": []
+              },
+              "object_fit": "contain",
+              "link_to": "custom",
+              "link": {
+               "url": "https://mesmerizedlv.com/",
+               "is_external": "on",
+               "nofollow": "",
+               "custom_attributes": "rel|noopener noreferrer"
+              },
+              "align": "center",
+              "_title": "Logo – Mesmerized LV"
+             },
+             "elements": []
+            }
+           ]
+          },
+          {
+           "id": "957d81c",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "flex_justify_content": "center",
+            "flex_align_items": "center",
+            "min_height": {
+             "unit": "px",
+             "size": 96,
+             "sizes": []
+            },
+            "padding": {
+             "unit": "px",
+             "top": "16",
+             "right": "20",
+             "bottom": "16",
+             "left": "20",
+             "isLinked": false
+            },
+            "background_background": "classic",
+            "background_color": "rgba(255,255,255,0.94)",
+            "border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            },
+            "_transform_translateY_popover_hover": "transform",
+            "_transform_translateY_effect_hover": {
+             "unit": "px",
+             "size": -4,
+             "sizes": []
+            },
+            "_transform_transition_hover": {
+             "unit": "ms",
+             "size": 300,
+             "sizes": []
+            },
+            "_title": "Client – Future Cricket Stars Foundation",
+            "content_width": "full"
+           },
+           "elements": [
+            {
+             "id": "0fa01bc",
+             "elType": "widget",
+             "widgetType": "image",
+             "settings": {
+              "image": {
+               "id": 5999,
+               "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-future-cricket-stars-foundation.webp",
+               "alt": "Future Cricket Stars Foundation logo",
+               "source": "library"
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "space": {
+               "unit": "%",
+               "size": 100,
+               "sizes": []
+              },
+              "height": {
+               "unit": "px",
+               "size": 56,
+               "sizes": []
+              },
+              "object_fit": "contain",
+              "link_to": "custom",
+              "link": {
+               "url": "https://fscfoundation.ca/",
+               "is_external": "on",
+               "nofollow": "",
+               "custom_attributes": "rel|noopener noreferrer"
+              },
+              "align": "center",
+              "_title": "Logo – Future Cricket Stars Foundation"
+             },
+             "elements": []
+            }
+           ]
           }
          ]
         }
@@ -825,7 +1076,7 @@
    ]
   },
   {
-   "id": "130f4a5",
+   "id": "da83e26",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -896,7 +1147,7 @@
    },
    "elements": [
     {
-     "id": "25b0e01",
+     "id": "452675a",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -929,7 +1180,7 @@
      },
      "elements": [
       {
-       "id": "fdbb375",
+       "id": "5b9d066",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -957,7 +1208,7 @@
        },
        "elements": [
         {
-         "id": "bb716b8",
+         "id": "056d17b",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -997,7 +1248,7 @@
          },
          "elements": [
           {
-           "id": "0fa01bc",
+           "id": "ad3537d",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -1012,7 +1263,7 @@
            "elements": []
           },
           {
-           "id": "957d81c",
+           "id": "b49f247",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -1028,7 +1279,7 @@
            "elements": []
           },
           {
-           "id": "8b92dc0",
+           "id": "bb716b8",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -1042,13 +1293,13 @@
            "elements": []
           },
           {
-           "id": "b49f247",
+           "id": "7540aee",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
             "icon_list": [
              {
-              "_id": "c03feca",
+              "_id": "23ffb45",
               "text": "A quick audit of your website, SEO and social media",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -1056,7 +1307,7 @@
               }
              },
              {
-              "_id": "5ce5769",
+              "_id": "8b4eb84",
               "text": "Recommended services for your goals and budget",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -1064,7 +1315,7 @@
               }
              },
              {
-              "_id": "ad3537d",
+              "_id": "66c9573",
               "text": "Fixed, transparent pricing before any work starts",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -1101,7 +1352,7 @@
          ]
         },
         {
-         "id": "2989885",
+         "id": "10f0689",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1141,7 +1392,7 @@
          },
          "elements": [
           {
-           "id": "56aeec8",
+           "id": "9dbccf3",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1213,7 +1464,7 @@
            },
            "elements": [
             {
-             "id": "7540aee",
+             "id": "d3b84dc",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -1249,7 +1500,7 @@
              },
              "elements": [
               {
-               "id": "23ffb45",
+               "id": "547f559",
                "elType": "widget",
                "widgetType": "heading",
                "settings": {
@@ -1264,7 +1515,7 @@
                "elements": []
               },
               {
-               "id": "8b4eb84",
+               "id": "3de4d4c",
                "elType": "widget",
                "widgetType": "heading",
                "settings": {
@@ -1279,7 +1530,7 @@
                "elements": []
               },
               {
-               "id": "66c9573",
+               "id": "5a69def",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -1295,7 +1546,7 @@
              ]
             },
             {
-             "id": "51ba05e",
+             "id": "3229c88",
              "elType": "widget",
              "widgetType": "form",
              "settings": {
@@ -1309,7 +1560,7 @@
                 "width": "50",
                 "custom_id": "name",
                 "autocomplete": "name",
-                "_id": "056d17b"
+                "_id": "418c19d"
                },
                {
                 "field_type": "email",
@@ -1318,7 +1569,7 @@
                 "required": "true",
                 "width": "50",
                 "custom_id": "email",
-                "_id": "547f559"
+                "_id": "51ba05e"
                },
                {
                 "field_type": "tel",
@@ -1326,7 +1577,7 @@
                 "placeholder": "+1 (555) 000-0000",
                 "width": "50",
                 "custom_id": "phone",
-                "_id": "3de4d4c"
+                "_id": "159f175"
                },
                {
                 "field_type": "select",
@@ -1334,7 +1585,7 @@
                 "field_options": "Choose a service\nWebsite Development\nSEO (Search Engine Optimization)\nSocial Media Marketing\nGraphic Design\nLogo & Brand Identity\nPaid Ads (PPC)\nNot sure yet – please advise",
                 "width": "50",
                 "custom_id": "service",
-                "_id": "5a69def"
+                "_id": "786e82a"
                },
                {
                 "field_type": "textarea",
@@ -1343,10 +1594,10 @@
                 "rows": "3",
                 "width": "100",
                 "custom_id": "message",
-                "_id": "d3b84dc"
+                "_id": "3f6b503"
                },
                {
-                "_id": "418c19d",
+                "_id": "36fd090",
                 "custom_id": "hp",
                 "field_type": "honeypot",
                 "field_label": "",
@@ -1438,13 +1689,13 @@
              "elements": []
             },
             {
-             "id": "36fd090",
+             "id": "25b0e01",
              "elType": "widget",
              "widgetType": "icon-list",
              "settings": {
               "icon_list": [
                {
-                "_id": "159f175",
+                "_id": "56aeec8",
                 "text": "No obligation",
                 "selected_icon": {
                  "value": "fas fa-check-circle",
@@ -1452,7 +1703,7 @@
                 }
                },
                {
-                "_id": "786e82a",
+                "_id": "2989885",
                 "text": "Reply in 1 business day",
                 "selected_icon": {
                  "value": "fas fa-clock",
@@ -1460,7 +1711,7 @@
                 }
                },
                {
-                "_id": "3f6b503",
+                "_id": "fdbb375",
                 "text": "100% confidential",
                 "selected_icon": {
                  "value": "fas fa-lock",
@@ -1495,7 +1746,7 @@
              "elements": []
             },
             {
-             "id": "3229c88",
+             "id": "130f4a5",
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
@@ -1519,7 +1770,7 @@
    ]
   },
   {
-   "id": "eee9dac",
+   "id": "3e3bbc1",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -1590,7 +1841,7 @@
    },
    "elements": [
     {
-     "id": "24e043d",
+     "id": "fb27103",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -1623,7 +1874,7 @@
      },
      "elements": [
       {
-       "id": "452675a",
+       "id": "6468d32",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1649,7 +1900,7 @@
        },
        "elements": [
         {
-         "id": "9dbccf3",
+         "id": "de3a600",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1665,7 +1916,7 @@
          "elements": []
         },
         {
-         "id": "10f0689",
+         "id": "c4ba00a",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1682,7 +1933,7 @@
          "elements": []
         },
         {
-         "id": "5b9d066",
+         "id": "5476dfd",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -1710,7 +1961,7 @@
        ]
       },
       {
-       "id": "58f0442",
+       "id": "2519b29",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1756,7 +2007,7 @@
        },
        "elements": [
         {
-         "id": "c4ba00a",
+         "id": "bed763e",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1863,7 +2114,7 @@
          },
          "elements": [
           {
-           "id": "da83e26",
+           "id": "9d23a32",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -1926,7 +2177,7 @@
            "elements": []
           },
           {
-           "id": "de3a600",
+           "id": "db627a0",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1978,7 +2229,7 @@
          ]
         },
         {
-         "id": "9d23a32",
+         "id": "57511a5",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2085,7 +2336,7 @@
          },
          "elements": [
           {
-           "id": "5476dfd",
+           "id": "6c30f3f",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2148,7 +2399,7 @@
            "elements": []
           },
           {
-           "id": "6468d32",
+           "id": "f1f4554",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2200,7 +2451,7 @@
          ]
         },
         {
-         "id": "6c30f3f",
+         "id": "3e85649",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2307,7 +2558,7 @@
          },
          "elements": [
           {
-           "id": "db627a0",
+           "id": "9dd53e1",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2370,7 +2621,7 @@
            "elements": []
           },
           {
-           "id": "bed763e",
+           "id": "55de329",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2422,7 +2673,7 @@
          ]
         },
         {
-         "id": "9dd53e1",
+         "id": "ddb428b",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2529,7 +2780,7 @@
          },
          "elements": [
           {
-           "id": "f1f4554",
+           "id": "43eeb25",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2592,7 +2843,7 @@
            "elements": []
           },
           {
-           "id": "57511a5",
+           "id": "510f221",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2644,7 +2895,7 @@
          ]
         },
         {
-         "id": "43eeb25",
+         "id": "24e043d",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2751,7 +3002,7 @@
          },
          "elements": [
           {
-           "id": "55de329",
+           "id": "eb85195",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2814,7 +3065,7 @@
            "elements": []
           },
           {
-           "id": "3e85649",
+           "id": "58f0442",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -2866,7 +3117,7 @@
          ]
         },
         {
-         "id": "eb85195",
+         "id": "26d0da5",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -2973,7 +3224,7 @@
          },
          "elements": [
           {
-           "id": "510f221",
+           "id": "eee9dac",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -3036,7 +3287,7 @@
            "elements": []
           },
           {
-           "id": "ddb428b",
+           "id": "d91aeeb",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -3094,7 +3345,7 @@
    ]
   },
   {
-   "id": "97f76a0",
+   "id": "66db029",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -3164,7 +3415,7 @@
    },
    "elements": [
     {
-     "id": "596a573",
+     "id": "54c3dbe",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -3197,7 +3448,7 @@
      },
      "elements": [
       {
-       "id": "b87f259",
+       "id": "3a52dee",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -3225,7 +3476,7 @@
        },
        "elements": [
         {
-         "id": "fa89079",
+         "id": "af7320d",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3265,7 +3516,7 @@
          },
          "elements": [
           {
-           "id": "d91aeeb",
+           "id": "709b183",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -3280,7 +3531,7 @@
            "elements": []
           },
           {
-           "id": "26d0da5",
+           "id": "21216b4",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -3296,7 +3547,7 @@
            "elements": []
           },
           {
-           "id": "2519b29",
+           "id": "99f92e2",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -3310,13 +3561,13 @@
            "elements": []
           },
           {
-           "id": "99f92e2",
+           "id": "c278bd8",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
             "icon_list": [
              {
-              "_id": "fb27103",
+              "_id": "178bdf0",
               "text": "Personalised campaigns for your goals and budget",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3324,7 +3575,7 @@
               }
              },
              {
-              "_id": "3e3bbc1",
+              "_id": "fa89079",
               "text": "Reach your ideal audience faster",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3332,7 +3583,7 @@
               }
              },
              {
-              "_id": "709b183",
+              "_id": "27e31c0",
               "text": "Low cost, high return marketing",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3340,7 +3591,7 @@
               }
              },
              {
-              "_id": "21216b4",
+              "_id": "87c8f22",
               "text": "Honest monthly reporting – no jargon",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -3375,7 +3626,7 @@
            "elements": []
           },
           {
-           "id": "178bdf0",
+           "id": "f1d4b85",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -3430,7 +3681,7 @@
          ]
         },
         {
-         "id": "ba36188",
+         "id": "11b3c7a",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -3470,7 +3721,7 @@
          },
          "elements": [
           {
-           "id": "01a7ff9",
+           "id": "d997db4",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -3516,7 +3767,7 @@
            },
            "elements": [
             {
-             "id": "87c8f22",
+             "id": "bded7bf",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3622,7 +3873,7 @@
              },
              "elements": [
               {
-               "id": "27e31c0",
+               "id": "4c2469f",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -3681,7 +3932,7 @@
              ]
             },
             {
-             "id": "f1d4b85",
+             "id": "01a7ff9",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3787,7 +4038,7 @@
              },
              "elements": [
               {
-               "id": "c278bd8",
+               "id": "5e069d8",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -3846,7 +4097,7 @@
              ]
             },
             {
-             "id": "4c2469f",
+             "id": "b87f259",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -3952,7 +4203,7 @@
              },
              "elements": [
               {
-               "id": "af7320d",
+               "id": "ba36188",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -4011,7 +4262,7 @@
              ]
             },
             {
-             "id": "5e069d8",
+             "id": "ab5665e",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -4117,7 +4368,7 @@
              },
              "elements": [
               {
-               "id": "bded7bf",
+               "id": "2bd2374",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -4182,7 +4433,7 @@
        ]
       },
       {
-       "id": "4902b07",
+       "id": "b5d8237",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4254,7 +4505,7 @@
        },
        "elements": [
         {
-         "id": "2f9b00c",
+         "id": "2a6b68d",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -4300,7 +4551,7 @@
          },
          "elements": [
           {
-           "id": "ab5665e",
+           "id": "491e280",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4326,7 +4577,7 @@
            },
            "elements": [
             {
-             "id": "2bd2374",
+             "id": "fe3e550",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4355,7 +4606,7 @@
            ]
           },
           {
-           "id": "11b3c7a",
+           "id": "2f9b00c",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4381,7 +4632,7 @@
            },
            "elements": [
             {
-             "id": "d997db4",
+             "id": "b5e45d9",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4410,7 +4661,7 @@
            ]
           },
           {
-           "id": "fe3e550",
+           "id": "596a573",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4436,7 +4687,7 @@
            },
            "elements": [
             {
-             "id": "3a52dee",
+             "id": "4902b07",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4465,7 +4716,7 @@
            ]
           },
           {
-           "id": "b5e45d9",
+           "id": "e9671e4",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -4491,7 +4742,7 @@
            },
            "elements": [
             {
-             "id": "491e280",
+             "id": "97f76a0",
              "elType": "widget",
              "widgetType": "counter",
              "settings": {
@@ -4528,7 +4779,7 @@
    ]
   },
   {
-   "id": "c2ddec3",
+   "id": "16d1f9c",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -4598,7 +4849,7 @@
    },
    "elements": [
     {
-     "id": "470bd0e",
+     "id": "d616cb6",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -4631,7 +4882,7 @@
      },
      "elements": [
       {
-       "id": "54c3dbe",
+       "id": "b1d9165",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4657,7 +4908,7 @@
        },
        "elements": [
         {
-         "id": "e9671e4",
+         "id": "6f22961",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -4673,7 +4924,7 @@
          "elements": []
         },
         {
-         "id": "2a6b68d",
+         "id": "c19b858",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -4690,7 +4941,7 @@
          "elements": []
         },
         {
-         "id": "b5d8237",
+         "id": "26bf590",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -4718,7 +4969,7 @@
        ]
       },
       {
-       "id": "2d09cbb",
+       "id": "7293842",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -4764,7 +5015,7 @@
        },
        "elements": [
         {
-         "id": "26bf590",
+         "id": "8d9d8f7",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -4870,7 +5121,7 @@
          },
          "elements": [
           {
-           "id": "66db029",
+           "id": "0e78129",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -4886,7 +5137,7 @@
            "elements": []
           },
           {
-           "id": "6f22961",
+           "id": "b206046",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -4901,7 +5152,7 @@
            "elements": []
           },
           {
-           "id": "c19b858",
+           "id": "93a7482",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -4917,7 +5168,7 @@
          ]
         },
         {
-         "id": "93a7482",
+         "id": "e2916c6",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5023,7 +5274,7 @@
          },
          "elements": [
           {
-           "id": "b1d9165",
+           "id": "9c727a6",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5039,7 +5290,7 @@
            "elements": []
           },
           {
-           "id": "0e78129",
+           "id": "1b84c1f",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5054,7 +5305,7 @@
            "elements": []
           },
           {
-           "id": "b206046",
+           "id": "ceacee7",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -5070,7 +5321,7 @@
          ]
         },
         {
-         "id": "ceacee7",
+         "id": "2d09cbb",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5176,7 +5427,7 @@
          },
          "elements": [
           {
-           "id": "8d9d8f7",
+           "id": "b626d48",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5192,7 +5443,7 @@
            "elements": []
           },
           {
-           "id": "9c727a6",
+           "id": "ca0488b",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5207,7 +5458,7 @@
            "elements": []
           },
           {
-           "id": "1b84c1f",
+           "id": "2b271a3",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -5223,7 +5474,7 @@
          ]
         },
         {
-         "id": "2b271a3",
+         "id": "eb4974d",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5329,7 +5580,7 @@
          },
          "elements": [
           {
-           "id": "e2916c6",
+           "id": "470bd0e",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5345,7 +5596,7 @@
            "elements": []
           },
           {
-           "id": "b626d48",
+           "id": "c2ddec3",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5360,7 +5611,7 @@
            "elements": []
           },
           {
-           "id": "ca0488b",
+           "id": "14de64a",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -5382,7 +5633,7 @@
    ]
   },
   {
-   "id": "a7903fd",
+   "id": "4c101a2",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -5452,7 +5703,7 @@
    },
    "elements": [
     {
-     "id": "9b0d5b9",
+     "id": "9d58265",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -5485,7 +5736,7 @@
      },
      "elements": [
       {
-       "id": "7293842",
+       "id": "3552c23",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5511,7 +5762,7 @@
        },
        "elements": [
         {
-         "id": "14de64a",
+         "id": "f555b68",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -5527,7 +5778,7 @@
          "elements": []
         },
         {
-         "id": "eb4974d",
+         "id": "dc57790",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -5546,31 +5797,31 @@
        ]
       },
       {
-       "id": "3552c23",
+       "id": "611d7db",
        "elType": "widget",
        "widgetType": "testimonial-carousel",
        "settings": {
         "slides": [
          {
-          "_id": "d616cb6",
+          "_id": "9b0d5b9",
           "content": "The brand guidelines and logos were absolutely fantastic! They have transformed my brand and will help me scale up for more business. Great communication and very speedy delivery – ahead of schedule.",
           "name": "Mr. James",
           "title": "Brand identity client"
          },
          {
-          "_id": "16d1f9c",
+          "_id": "a7903fd",
           "content": "Working with [the team] was very pleasant and professional. Communication was fast and I am more than satisfied with the result. Looking forward to the next project.",
           "name": "Anthony",
           "title": "Website client"
          },
          {
-          "_id": "f555b68",
+          "_id": "a8ee68a",
           "content": "My first time working with [Graphics Storm Studio] and it has been a pleasure. Brief well met, clear communication and fast delivery. Not much more you can ask for.",
           "name": "Lisa P.",
           "title": "Marketing client"
          },
          {
-          "_id": "dc57790",
+          "_id": "cf56f78",
           "content": "Wonderful experience as always – so happy with the final product. Highly recommend!",
           "name": "Patrick",
           "title": "Design client"
@@ -5637,7 +5888,7 @@
    ]
   },
   {
-   "id": "5be58df",
+   "id": "6fedc8d",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -5708,7 +5959,7 @@
    },
    "elements": [
     {
-     "id": "fe85691",
+     "id": "e574052",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -5741,7 +5992,7 @@
      },
      "elements": [
       {
-       "id": "0f56644",
+       "id": "6034980",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -5769,7 +6020,7 @@
        },
        "elements": [
         {
-         "id": "9bab883",
+         "id": "f0c43c7",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -5809,7 +6060,7 @@
          },
          "elements": [
           {
-           "id": "1755c9d",
+           "id": "57421dd",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5824,7 +6075,7 @@
            "elements": []
           },
           {
-           "id": "3558d4f",
+           "id": "445d040",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -5840,7 +6091,7 @@
            "elements": []
           },
           {
-           "id": "d255a71",
+           "id": "f073a08",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -5854,13 +6105,13 @@
            "elements": []
           },
           {
-           "id": "445d040",
+           "id": "6fbebe1",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
             "icon_list": [
              {
-              "_id": "8b95266",
+              "_id": "9bab883",
               "text": "Takes about 1 minute",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -5868,7 +6119,7 @@
               }
              },
              {
-              "_id": "4fdfcad",
+              "_id": "e67947f",
               "text": "We publish approved reviews with your permission",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -5876,7 +6127,7 @@
               }
              },
              {
-              "_id": "57421dd",
+              "_id": "5be1617",
               "text": "Honest feedback helps us improve",
               "selected_icon": {
                "value": "fas fa-check-circle",
@@ -5911,7 +6162,7 @@
            "elements": []
           },
           {
-           "id": "f073a08",
+           "id": "83294c5",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -5966,7 +6217,7 @@
          ]
         },
         {
-         "id": "b3a0638",
+         "id": "9fae940",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -6006,7 +6257,7 @@
          },
          "elements": [
           {
-           "id": "e0822a3",
+           "id": "d772f6e",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -6078,7 +6329,7 @@
            },
            "elements": [
             {
-             "id": "83294c5",
+             "id": "26861c2",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6114,7 +6365,7 @@
              },
              "elements": [
               {
-               "id": "e67947f",
+               "id": "3037317",
                "elType": "widget",
                "widgetType": "heading",
                "settings": {
@@ -6129,7 +6380,7 @@
                "elements": []
               },
               {
-               "id": "5be1617",
+               "id": "e7312c2",
                "elType": "widget",
                "widgetType": "heading",
                "settings": {
@@ -6144,7 +6395,7 @@
                "elements": []
               },
               {
-               "id": "6fbebe1",
+               "id": "8a3b7fb",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6160,7 +6411,7 @@
              ]
             },
             {
-             "id": "7068477",
+             "id": "fe85691",
              "elType": "widget",
              "widgetType": "form",
              "settings": {
@@ -6174,7 +6425,7 @@
                 "width": "50",
                 "custom_id": "name",
                 "autocomplete": "name",
-                "_id": "f0c43c7"
+                "_id": "066f17c"
                },
                {
                 "field_type": "email",
@@ -6183,7 +6434,7 @@
                 "required": "true",
                 "width": "50",
                 "custom_id": "email",
-                "_id": "3037317"
+                "_id": "a25842f"
                },
                {
                 "field_type": "select",
@@ -6192,7 +6443,7 @@
                 "field_options": "Website Development\nSEO (Search Engine Optimization)\nSocial Media Marketing\nGraphic Design\nLogo & Brand Identity\nPaid Ads (PPC)\nOther",
                 "width": "50",
                 "custom_id": "service",
-                "_id": "e7312c2"
+                "_id": "7068477"
                },
                {
                 "field_type": "select",
@@ -6201,7 +6452,7 @@
                 "field_options": "★★★★★  5 – Excellent\n★★★★☆  4 – Very good\n★★★☆☆  3 – Good\n★★☆☆☆  2 – Fair\n★☆☆☆☆  1 – Poor",
                 "width": "50",
                 "custom_id": "rating",
-                "_id": "8a3b7fb"
+                "_id": "9cf22f9"
                },
                {
                 "field_type": "textarea",
@@ -6211,7 +6462,7 @@
                 "rows": "4",
                 "width": "100",
                 "custom_id": "review",
-                "_id": "26861c2"
+                "_id": "e0822a3"
                },
                {
                 "field_type": "acceptance",
@@ -6220,10 +6471,10 @@
                 "width": "100",
                 "custom_id": "consent",
                 "acceptance_text": "I agree that Graphics Storm Studio may publish my review with my name and company on its website.",
-                "_id": "066f17c"
+                "_id": "b3a0638"
                },
                {
-                "_id": "a25842f",
+                "_id": "0f56644",
                 "custom_id": "hp",
                 "field_type": "honeypot",
                 "field_label": "",
@@ -6315,7 +6566,7 @@
              "elements": []
             },
             {
-             "id": "9cf22f9",
+             "id": "5be58df",
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
@@ -6339,7 +6590,7 @@
    ]
   },
   {
-   "id": "a235d3e",
+   "id": "4fdfcad",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -6409,7 +6660,7 @@
    },
    "elements": [
     {
-     "id": "56194ce",
+     "id": "8b95266",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -6442,7 +6693,7 @@
      },
      "elements": [
       {
-       "id": "bbc90bc",
+       "id": "d255a71",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -6470,7 +6721,7 @@
        },
        "elements": [
         {
-         "id": "4c101a2",
+         "id": "8bf091e",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -6510,7 +6761,7 @@
          },
          "elements": [
           {
-           "id": "a8ee68a",
+           "id": "dbb023e",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -6525,7 +6776,7 @@
            "elements": []
           },
           {
-           "id": "cf56f78",
+           "id": "4594141",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -6541,7 +6792,7 @@
            "elements": []
           },
           {
-           "id": "611d7db",
+           "id": "11ece38",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -6555,7 +6806,7 @@
            "elements": []
           },
           {
-           "id": "9d58265",
+           "id": "f961eba",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -6610,7 +6861,7 @@
          ]
         },
         {
-         "id": "5122346",
+         "id": "3558d4f",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -6650,29 +6901,29 @@
          },
          "elements": [
           {
-           "id": "4c4ed45",
+           "id": "1755c9d",
            "elType": "widget",
            "widgetType": "nested-accordion",
            "settings": {
             "items": [
              {
-              "_id": "dbb023e",
+              "_id": "1a2ecbe",
               "item_title": "What does a digital marketing agency do?"
              },
              {
-              "_id": "f961eba",
+              "_id": "13ff84c",
               "item_title": "How much do your digital marketing services cost?"
              },
              {
-              "_id": "92e8f74",
+              "_id": "c51044f",
               "item_title": "How long does SEO take to show results?"
              },
              {
-              "_id": "a7512a9",
+              "_id": "b9c197e",
               "item_title": "How long does it take to build a website?"
              },
              {
-              "_id": "1b78a4d",
+              "_id": "bbc90bc",
               "item_title": "Do you work with clients outside the USA and Canada?"
              }
             ],
@@ -6767,7 +7018,7 @@
            },
            "elements": [
             {
-             "id": "11ece38",
+             "id": "e27dddc",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6784,7 +7035,7 @@
              },
              "elements": [
               {
-               "id": "4594141",
+               "id": "92e8f74",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6800,7 +7051,7 @@
              ]
             },
             {
-             "id": "1a2ecbe",
+             "id": "4b2442b",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6817,7 +7068,7 @@
              },
              "elements": [
               {
-               "id": "8bf091e",
+               "id": "a7512a9",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6833,7 +7084,7 @@
              ]
             },
             {
-             "id": "13ff84c",
+             "id": "fae2b03",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6850,7 +7101,7 @@
              },
              "elements": [
               {
-               "id": "e27dddc",
+               "id": "1b78a4d",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6866,7 +7117,7 @@
              ]
             },
             {
-             "id": "c51044f",
+             "id": "5122346",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6883,7 +7134,7 @@
              },
              "elements": [
               {
-               "id": "4b2442b",
+               "id": "4c4ed45",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -6899,7 +7150,7 @@
              ]
             },
             {
-             "id": "b9c197e",
+             "id": "a235d3e",
              "elType": "container",
              "isInner": true,
              "settings": {
@@ -6916,7 +7167,7 @@
              },
              "elements": [
               {
-               "id": "fae2b03",
+               "id": "56194ce",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {

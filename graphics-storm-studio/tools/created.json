@@ -72,5 +72,42 @@
   "id": 5904,
   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/graphics-storm-studio-logo.webp"
  },
- "reviews": 5968
+ "reviews": 5968,
+ "clients": [
+  {
+   "key": "quality-waterproofing",
+   "name": "Quality Waterproofing Inc.",
+   "site": "https://qualitywaterproofinginc.ca/",
+   "id": 5995,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-quality-waterproofing.webp"
+  },
+  {
+   "key": "xa-interactive",
+   "name": "XA Interactive",
+   "site": "https://xainteractive.com/",
+   "id": 5996,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-xa-interactive.webp"
+  },
+  {
+   "key": "opal-md-clinic",
+   "name": "Opal Medical Clinic & Aesthetics",
+   "site": "https://opalmdclinic.com/",
+   "id": 5997,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-opal-md-clinic.webp"
+  },
+  {
+   "key": "mesmerized-lv",
+   "name": "Mesmerized LV",
+   "site": "https://mesmerizedlv.com/",
+   "id": 5998,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-mesmerized-lv.webp"
+  },
+  {
+   "key": "future-cricket-stars-foundation",
+   "name": "Future Cricket Stars Foundation",
+   "site": "https://fscfoundation.ca/",
+   "id": 5999,
+   "url": "https://graphicsstormstudio.com/wp-content/uploads/2026/11/client-logo-future-cricket-stars-foundation.webp"
+  }
+ ]
 }

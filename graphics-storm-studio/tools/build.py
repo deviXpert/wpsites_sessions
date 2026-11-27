@@ -12,6 +12,10 @@ OUT = os.path.join(HERE, '..', 'templates')
 
 # ------------------------------------------------------------------ infographics (animated SVG in native Image widgets)
 import gfx
+def _created():
+    try: return json.load(open(os.path.join(HERE, 'created.json')))
+    except Exception: return {}
+
 def _media():
     try: return json.load(open(os.path.join(HERE, 'created.json'))).get('media', {})
     except Exception: return {}
@@ -135,12 +139,17 @@ def testimonials():
                     pagination_color=col('accent')))
 
 def logos_strip():
-    return C('Client Logos', [P('Trusted by growing brands across the USA, Canada & beyond', 'gssmall', 'gsmuted', 'center', name='Logos Label'),
-              GRID('Logo Row', [IMG(f'client-logo-{i}.svg', '240×96, transparent SVG/PNG, white or light version', f'Client logo {i}', radius=0,
-                                    width=px(140), opacity=px(0.75, ''), align='center')
-                                for i in range(1, 6)], 5, 3, 2, 32, flex_align_items='center')],
-             flex_direction='column', flex_gap=gap(24),
-             hide_desktop='hidden-desktop', hide_tablet='hidden-tablet', hide_mobile='hidden-mobile')  # hidden until real client logos are uploaded
+    """Real client logos (from their own sites) on light tiles so every brand colour stays readable on navy."""
+    clients = _created().get('clients', [])
+    tiles = [C(f'Client – {c["name"]}', [W('image', f'Logo – {c["name"]}', image={'id': c['id'], 'url': c['url'], 'alt': f'{c["name"]} logo', 'source': 'library'},
+                                          image_size='full', width=px(100, '%'), space=px(100, '%'), height=px(56), object_fit='contain',
+                                          link_to='custom', link=link(c['site'], True), align='center')],
+               flex_justify_content='center', flex_align_items='center', min_height=px(96), padding=dims(16, 20),
+               background_background='classic', background_color='rgba(255,255,255,0.94)', border_radius=dims(16),
+               _transform_translateY_popover_hover='transform', _transform_translateY_effect_hover=px(-4), _transform_transition_hover=px(300, 'ms'))
+             for c in clients]
+    return C('Client Logos', [P('Trusted by growing brands across the USA, Canada &amp; beyond', 'gssmall', 'gsmuted', 'center', name='Logos Label'),
+              GRID('Logo Row', tiles, 5, 3, 2, 20)], flex_direction='column', flex_gap=gap(24))
 
 # ------------------------------------------------------------------ header / footer
 def header():

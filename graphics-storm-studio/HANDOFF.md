@@ -68,6 +68,10 @@ python3 backup.py         # fresh snapshot to ../backup/
 - About: the CEO quote is attributed to **Nabeel Ali Butt** (initials avatar); the team section was removed; the story image is replaced by `gss-our-story.svg` (5961).
 - Kit colour `gsgold` #FFC857 added for stars.
 
+## Client logos (2026-11-27)
+- Taken from the clients' own sites (the user supplied the list): Quality Waterproofing 5995, XA Interactive 5996, Opal MD Clinic 5997, Mesmerized LV 5998, Future Cricket Stars Foundation 5999. Files are in `brand/clients/`, IDs in `created.json` → `clients`.
+- Home "Trusted by" strip: light tiles (rgba white .94, radius 16) with full-colour logos that link to each client site, grid 5/3/2. The strip is visible again.
+
 ## Open items
 - Visual QA screenshots are blocked by Under Construction plus draft status (see the session notes). The user reviews the drafts while logged in.
 - Facebook/LinkedIn URLs unknown (placeholders in the footer). Our Work project names and results are placeholders.
