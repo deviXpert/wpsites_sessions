@@ -59,7 +59,7 @@ python3 backup.py         # fresh snapshot to ../backup/
 - **Favicon:** vector redraw of the logo globe, `brand/favicon.svg` → `favicon-512.png` (media 5952), set as the WordPress Site Icon.
 - **Forms redesigned:** header (eyebrow, title, subline, divider), paired 2-column fields, a service dropdown instead of checkboxes, a trust row and a privacy note.
 - **Hidden until real content exists:** the client-logo strip (Home) and the portfolio grid (Our Work), via Elementor's Hide on desktop/tablet/mobile.
-- ⚠️ **NEVER call `elementor/update-page-settings` on the kit (17) with partial settings.** It REPLACED the whole kit once (the live site lost its globals for about 2 minutes) and was restored with `python3 kit.py`. Always run `kit.py`, which sends the full set.
+- ⚠️ **NEVER call `elementor/update-page-settings` on the kit (17) with partial settings.** It REPLACED the whole kit once (the live site lost its globals for about 2 minutes) and was restored with `python3 kit.py`. Always run `kit.py`, which sends the full set. If the live `post-17.css` doesn't pick up a change afterwards, run `elementor/clear-cache` (DELETE) once and visit the pages.
 
 ## Open items
 - Visual QA screenshots are blocked by Under Construction plus draft status (see the session notes). The user reviews the drafts while logged in.

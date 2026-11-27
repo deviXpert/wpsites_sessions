@@ -65,6 +65,8 @@
 /* ---- 5. Forms on dark glass (placeholder colour has no global control) ---- */
 .gs-form ::placeholder { color: #A9B6D3; opacity: 1; }
 .gs-form .elementor-field-option label { color: #DCE4F5; }
+/* Open dropdown list: dark options (browsers draw them on white, which hid the white text) */
+.gs-form select option { background-color: #0E1738; color: #FFFFFF; }
 
 /* ---- 6. Accessibility ------------------------------------------------------ */
 /* Visible keyboard focus everywhere (WCAG 2.4.7) */
