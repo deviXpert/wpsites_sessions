@@ -1,0 +1,2031 @@
+{
+ "version": "0.4",
+ "title": "Wassi Footer",
+ "type": "footer",
+ "content": [
+  {
+   "id": "b113f77",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1152,
+     "sizes": []
+    },
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "64",
+     "right": "24",
+     "bottom": "28",
+     "left": "24",
+     "isLinked": false
+    },
+    "flex_gap": {
+     "unit": "px",
+     "row": "40",
+     "column": "40",
+     "size": 40,
+     "isLinked": true
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "96",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#0B1424"
+   },
+   "elements": [
+    {
+     "id": "f377537",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "flex_gap": {
+       "unit": "px",
+       "row": "40",
+       "column": "40",
+       "size": 40,
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between",
+      "flex_gap_mobile": {
+       "unit": "px",
+       "row": "32",
+       "column": "32",
+       "size": 32,
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "982fdef",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "flex_gap": {
+         "unit": "px",
+         "row": "16",
+         "column": "16",
+         "size": 16,
+         "isLinked": true
+        },
+        "width": {
+         "unit": "px",
+         "size": 320,
+         "sizes": []
+        },
+        "_flex_size": "custom",
+        "_flex_grow": 0,
+        "_flex_shrink": 1
+       },
+       "elements": [
+        {
+         "id": "432862d",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "https://wassitowing.ca/wp-content/uploads/wt/WassiTowing_horizontal_reversed.svg",
+           "id": "",
+           "source": "library"
+          },
+          "image_size": "full",
+          "width": {
+           "unit": "px",
+           "size": {
+            "unit": "px",
+            "size": 194,
+            "sizes": []
+           },
+           "sizes": []
+          },
+          "link_to": "custom",
+          "link": {
+           "url": "/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "_element_width": "auto"
+         },
+         "elements": []
+        },
+        {
+         "id": "f514e19",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Towing, roadside and recovery across every quadrant of Calgary.",
+          "header_size": "p",
+          "title_color": "#C5CEDB",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "3130a97",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Call [PHONE]",
+          "link": {
+           "url": "tel:+10000000000",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "button_text_color": "#101D32",
+          "hover_color": "#101D32",
+          "border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "14.0",
+           "right": "20",
+           "bottom": "14.0",
+           "left": "20",
+           "isLinked": false
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "800",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "background_background": "classic",
+          "background_color": "#FF6B00",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "#FF6B00",
+          "selected_icon": {
+           "value": {
+            "url": "https://wassitowing.ca/wp-content/uploads/wt/phone-2_4.svg",
+            "id": "",
+            "source": "library"
+           },
+           "library": "svg"
+          },
+          "icon_align": "row",
+          "icon_indent": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "_css_classes": "wt-i20"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "c4cd244",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "flex_gap": {
+         "unit": "px",
+         "row": "10",
+         "column": "10",
+         "size": 10,
+         "isLinked": true
+        },
+        "width": {
+         "unit": "custom",
+         "size": "auto",
+         "sizes": []
+        },
+        "css_classes": "wt-fcol"
+       },
+       "elements": [
+        {
+         "id": "eb085eb",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Services",
+          "header_size": "span",
+          "title_color": "#FF6B00",
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "800",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.3,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0.12,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase"
+         },
+         "elements": []
+        },
+        {
+         "id": "a1541da",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "a1682b2",
+            "text": "Flatbed &amp; Wheel-Lift Towing",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/flatbed-towing/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "924a74c",
+            "text": "Roadside Rescue",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/roadside-assistance/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "33b88e3",
+            "text": "Tire Rescue",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/flat-tire-change/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "1ca1a6c",
+            "text": "Fuel Drop",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/fuel-delivery/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "e7eeb3e",
+            "text": "Battery Boost",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/battery-boost/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "e92d19b",
+            "text": "Ditch &amp; Snow Recovery",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/winch-out/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "c6470c3",
+            "text": "Trailer &amp; Equipment Hauling",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/local-hauling/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "edc3c0d",
+            "text": "Motorcycle Transport",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/motorcycle-towing/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "4cb02ab",
+            "text": "Prestige &amp; Low-Clearance Towing",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/exotic-car-towing/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "text_color": "#C5CEDB",
+          "text_color_hover": "#FFFFFF",
+          "text_indent": {
+           "unit": "px",
+           "size": 0,
+           "sizes": []
+          },
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Inter",
+          "icon_typography_font_weight": "400",
+          "icon_typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "icon_typography_line_height": {
+           "unit": "em",
+           "size": 1.45,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "513f900",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "flex_gap": {
+         "unit": "px",
+         "row": "10",
+         "column": "10",
+         "size": 10,
+         "isLinked": true
+        },
+        "width": {
+         "unit": "custom",
+         "size": "auto",
+         "sizes": []
+        },
+        "css_classes": "wt-fcol"
+       },
+       "elements": [
+        {
+         "id": "fb744db",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Company",
+          "header_size": "span",
+          "title_color": "#FF6B00",
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "800",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.3,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0.12,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase"
+         },
+         "elements": []
+        },
+        {
+         "id": "22c4238",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "263c7db",
+            "text": "Home",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "2476f80",
+            "text": "About",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/about/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "5f88a33",
+            "text": "FAQs",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/faqs/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "25d412a",
+            "text": "Services",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "/services/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "text_color": "#C5CEDB",
+          "text_color_hover": "#FFFFFF",
+          "text_indent": {
+           "unit": "px",
+           "size": 0,
+           "sizes": []
+          },
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Inter",
+          "icon_typography_font_weight": "400",
+          "icon_typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "icon_typography_line_height": {
+           "unit": "em",
+           "size": 1.45,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "2dd3a30",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "flex_gap": {
+         "unit": "px",
+         "row": "10",
+         "column": "10",
+         "size": 10,
+         "isLinked": true
+        },
+        "width": {
+         "unit": "custom",
+         "size": "auto",
+         "sizes": []
+        },
+        "css_classes": "wt-fcol"
+       },
+       "elements": [
+        {
+         "id": "ab46f2d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Contact",
+          "header_size": "span",
+          "title_color": "#FF6B00",
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "800",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.3,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0.12,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase"
+         },
+         "elements": []
+        },
+        {
+         "id": "9f5f21f",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "e29eee1",
+            "text": "Call [PHONE]",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "tel:+10000000000",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "41c807a",
+            "text": "Text [SMS NUMBER]",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "sms:+10000000000",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "f832107",
+            "text": "[EMAIL]",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            },
+            "link": {
+             "url": "mailto:[EMAIL]",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "6ae0474",
+            "text": "Hours: [24/7, confirm]",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "99a27f3",
+            "text": "All of Calgary: NW, NE, SW, SE",
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "text_color": "#C5CEDB",
+          "text_color_hover": "#FFFFFF",
+          "text_indent": {
+           "unit": "px",
+           "size": 0,
+           "sizes": []
+          },
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Inter",
+          "icon_typography_font_weight": "400",
+          "icon_typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "icon_typography_line_height": {
+           "unit": "em",
+           "size": 1.45,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "fb0bdb3",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "padding": {
+       "unit": "px",
+       "top": "20",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "row": "12",
+       "column": "12",
+       "size": 12,
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "1",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "#22324D"
+     },
+     "elements": [
+      {
+       "id": "96e560d",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>\u00a9 2026 Wassi Towing Ltd. \u00b7 <a href=\"/privacy-policy/\">Privacy</a> \u00b7 <a href=\"/terms/\">Terms</a></p>",
+        "text_color": "#9AA6B8",
+        "paragraph_spacing": {
+         "unit": "px",
+         "size": 0,
+         "sizes": []
+        },
+        "link_color": "#9AA6B8",
+        "link_hover_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "400",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.5,
+         "sizes": []
+        },
+        "_element_width": "auto"
+       },
+       "elements": []
+      },
+      {
+       "id": "1de8ba9",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "If anyone is hurt or in danger, call 911 first.",
+        "header_size": "span",
+        "title_color": "#9AA6B8",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "400",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.4,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0199354",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "row": "0",
+     "column": "0",
+     "size": 0,
+     "isLinked": true
+    },
+    "_element_id": "wt-stranded",
+    "css_classes": "wt-stranded",
+    "background_background": "classic",
+    "background_color": "#0B1424"
+   },
+   "elements": [
+    {
+     "id": "110b5af",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "padding": {
+       "unit": "px",
+       "top": "56",
+       "right": "24",
+       "bottom": "72",
+       "left": "24",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "row": "28",
+       "column": "28",
+       "size": 28,
+       "isLinked": true
+      },
+      "boxed_width": {
+       "unit": "px",
+       "size": 712,
+       "sizes": []
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "32",
+       "right": "20",
+       "bottom": "48",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_gap_mobile": {
+       "unit": "px",
+       "row": "22",
+       "column": "22",
+       "size": 22,
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "423dad2",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "flex_gap": {
+         "unit": "px",
+         "row": "16",
+         "column": "16",
+         "size": 16,
+         "isLinked": true
+        },
+        "flex_justify_content": "space-between",
+        "flex_align_items": "center"
+       },
+       "elements": [
+        {
+         "id": "bef5eda",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "padding": {
+           "unit": "px",
+           "top": "8",
+           "right": "14",
+           "bottom": "8",
+           "left": "14",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "row": "8",
+           "column": "8",
+           "size": 8,
+           "isLinked": true
+          },
+          "flex_align_items": "center",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "width": {
+           "unit": "custom",
+           "size": "auto",
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "custom",
+           "size": "auto",
+           "sizes": []
+          },
+          "background_background": "classic",
+          "background_color": "#3A1A08",
+          "_flex_align_self": "flex-start"
+         },
+         "elements": [
+          {
+           "id": "28d5bc1",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": {
+              "url": "https://wassitowing.ca/wp-content/uploads/wt/alert-2_4.svg",
+              "id": "",
+              "source": "library"
+             },
+             "library": "svg"
+            },
+            "view": "default",
+            "primary_color": "#FF6B00",
+            "size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "_element_width": "auto"
+           },
+           "elements": []
+          },
+          {
+           "id": "c689b9c",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "STRANDED MODE",
+            "header_size": "span",
+            "title_color": "#FF6B00",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.4,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "ba9c18b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Exit",
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": "data-wt-stranded|close"
+          },
+          "button_text_color": "#FFFFFF",
+          "hover_color": "#FFFFFF",
+          "border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12.0",
+           "right": "16",
+           "bottom": "12.0",
+           "left": "16",
+           "isLinked": false
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "px",
+           "size": 17,
+           "sizes": []
+          },
+          "background_background": "classic",
+          "background_color": "rgba(0,0,0,0)",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "rgba(255,255,255,0.06)",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1.5",
+           "right": "1.5",
+           "bottom": "1.5",
+           "left": "1.5",
+           "isLinked": true
+          },
+          "border_color": "#3A4A66",
+          "button_hover_border_color": "#3A4A66"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "89417ff",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "You're not alone.<br><span style=\"color:#FF6B00\">Let's get you safe first.</span>",
+        "header_size": "h2",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "900",
+        "typography_font_size": {
+         "unit": "custom",
+         "size": "clamp(2.2rem, 5vw, 3.6rem)",
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.02,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "em",
+         "size": 0,
+         "sizes": []
+        },
+        "typography_font_style": "italic"
+       },
+       "elements": []
+      },
+      {
+       "id": "51dce54",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "flex_gap": {
+         "unit": "px",
+         "row": "14",
+         "column": "14",
+         "size": 14,
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "aa1696a",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Call a driver now",
+          "link": {
+           "url": "tel:+10000000000",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "button_text_color": "#101D32",
+          "hover_color": "#101D32",
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "30.5",
+           "right": "24",
+           "bottom": "30.5",
+           "left": "24",
+           "isLinked": false
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "900",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "px",
+           "size": 31,
+           "sizes": []
+          },
+          "background_background": "classic",
+          "background_color": "#FF6B00",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "#FF6B00",
+          "selected_icon": {
+           "value": {
+            "url": "https://wassitowing.ca/wp-content/uploads/wt/phone-2_6.svg",
+            "id": "",
+            "source": "library"
+           },
+           "library": "svg"
+          },
+          "icon_align": "row",
+          "icon_indent": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "_css_classes": "wt-i30",
+          "align": "justify",
+          "content_align": "center"
+         },
+         "elements": []
+        },
+        {
+         "id": "475c18b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Text my exact location",
+          "link": {
+           "url": "sms:+10000000000",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": "data-wt-sms-location|"
+          },
+          "button_text_color": "#101D32",
+          "hover_color": "#101D32",
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "26.0",
+           "right": "24",
+           "bottom": "26.0",
+           "left": "24",
+           "isLinked": false
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "800",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "#FFFFFF",
+          "selected_icon": {
+           "value": {
+            "url": "https://wassitowing.ca/wp-content/uploads/wt/pin-2_4.svg",
+            "id": "",
+            "source": "library"
+           },
+           "library": "svg"
+          },
+          "icon_align": "row",
+          "icon_indent": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "_css_classes": "wt-i28",
+          "align": "justify",
+          "content_align": "center"
+         },
+         "elements": []
+        },
+        {
+         "id": "fe60d6c",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "I'm safe, give me a quote",
+          "link": {
+           "url": "#quote",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": "data-wt-stranded|close"
+          },
+          "button_text_color": "#FFFFFF",
+          "hover_color": "#FFFFFF",
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "21.0",
+           "right": "24",
+           "bottom": "21.0",
+           "left": "24",
+           "isLinked": false
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "px",
+           "size": 23,
+           "sizes": []
+          },
+          "background_background": "classic",
+          "background_color": "rgba(0,0,0,0)",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "rgba(255,255,255,0.06)",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "2",
+           "right": "2",
+           "bottom": "2",
+           "left": "2",
+           "isLinked": true
+          },
+          "border_color": "#3A4A66",
+          "button_hover_border_color": "#3A4A66",
+          "selected_icon": {
+           "value": {
+            "url": "https://wassitowing.ca/wp-content/uploads/wt/check-2_4.svg",
+            "id": "",
+            "source": "library"
+           },
+           "library": "svg"
+          },
+          "icon_align": "row",
+          "icon_indent": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "_css_classes": "wt-i26",
+          "align": "justify",
+          "content_align": "center"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "aebd27f",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "flex_gap": {
+         "unit": "px",
+         "row": "6",
+         "column": "6",
+         "size": 6,
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#13203A",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "20",
+         "right": "18",
+         "bottom": "20",
+         "left": "18",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "92651e4",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "While you wait: tap each one as you go",
+          "header_size": "span",
+          "title_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "800",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.4,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e3b7fdd",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "padding": {
+           "unit": "px",
+           "top": "6",
+           "right": "4",
+           "bottom": "6",
+           "left": "4",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "row": "14",
+           "column": "14",
+           "size": 14,
+           "isLinked": true
+          },
+          "flex_align_items": "center",
+          "min_height": {
+           "unit": "px",
+           "size": 56,
+           "sizes": []
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#22324D",
+          "css_classes": "wt-check",
+          "_attributes": "role|button\ntabindex|0\naria-pressed|false"
+         },
+         "elements": [
+          {
+           "id": "161f3f4",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "flex_gap": {
+             "unit": "px",
+             "row": "0",
+             "column": "0",
+             "size": 0,
+             "isLinked": true
+            },
+            "css_classes": "wt-box",
+            "width": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "width_mobile": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "min_height": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "2",
+             "right": "2",
+             "bottom": "2",
+             "left": "2",
+             "isLinked": true
+            },
+            "border_color": "#5A6B88",
+            "border_radius": {
+             "unit": "px",
+             "top": "9",
+             "right": "9",
+             "bottom": "9",
+             "left": "9",
+             "isLinked": true
+            },
+            "_flex_size": "none"
+           },
+           "elements": []
+          },
+          {
+           "id": "7d30f25",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Hazard lights on",
+            "header_size": "span",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.4,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "18a6b46",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "padding": {
+           "unit": "px",
+           "top": "6",
+           "right": "4",
+           "bottom": "6",
+           "left": "4",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "row": "14",
+           "column": "14",
+           "size": 14,
+           "isLinked": true
+          },
+          "flex_align_items": "center",
+          "min_height": {
+           "unit": "px",
+           "size": 56,
+           "sizes": []
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#22324D",
+          "css_classes": "wt-check",
+          "_attributes": "role|button\ntabindex|0\naria-pressed|false"
+         },
+         "elements": [
+          {
+           "id": "6ab93cd",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "flex_gap": {
+             "unit": "px",
+             "row": "0",
+             "column": "0",
+             "size": 0,
+             "isLinked": true
+            },
+            "css_classes": "wt-box",
+            "width": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "width_mobile": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "min_height": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "2",
+             "right": "2",
+             "bottom": "2",
+             "left": "2",
+             "isLinked": true
+            },
+            "border_color": "#5A6B88",
+            "border_radius": {
+             "unit": "px",
+             "top": "9",
+             "right": "9",
+             "bottom": "9",
+             "left": "9",
+             "isLinked": true
+            },
+            "_flex_size": "none"
+           },
+           "elements": []
+          },
+          {
+           "id": "4c1eb4b",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Off the road or as far right as you can",
+            "header_size": "span",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.4,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "1537375",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "padding": {
+           "unit": "px",
+           "top": "6",
+           "right": "4",
+           "bottom": "6",
+           "left": "4",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "row": "14",
+           "column": "14",
+           "size": 14,
+           "isLinked": true
+          },
+          "flex_align_items": "center",
+          "min_height": {
+           "unit": "px",
+           "size": 56,
+           "sizes": []
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#22324D",
+          "css_classes": "wt-check",
+          "_attributes": "role|button\ntabindex|0\naria-pressed|false"
+         },
+         "elements": [
+          {
+           "id": "1645fc5",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "flex_gap": {
+             "unit": "px",
+             "row": "0",
+             "column": "0",
+             "size": 0,
+             "isLinked": true
+            },
+            "css_classes": "wt-box",
+            "width": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "width_mobile": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "min_height": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "2",
+             "right": "2",
+             "bottom": "2",
+             "left": "2",
+             "isLinked": true
+            },
+            "border_color": "#5A6B88",
+            "border_radius": {
+             "unit": "px",
+             "top": "9",
+             "right": "9",
+             "bottom": "9",
+             "left": "9",
+             "isLinked": true
+            },
+            "_flex_size": "none"
+           },
+           "elements": []
+          },
+          {
+           "id": "1d8b3d5",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Everyone out on the side away from traffic, if safe",
+            "header_size": "span",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.4,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "69a8d5b",
+         "elType": "container",
+         "isInner": true,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "padding": {
+           "unit": "px",
+           "top": "6",
+           "right": "4",
+           "bottom": "6",
+           "left": "4",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "row": "14",
+           "column": "14",
+           "size": 14,
+           "isLinked": true
+          },
+          "flex_align_items": "center",
+          "min_height": {
+           "unit": "px",
+           "size": 56,
+           "sizes": []
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#22324D",
+          "css_classes": "wt-check",
+          "_attributes": "role|button\ntabindex|0\naria-pressed|false"
+         },
+         "elements": [
+          {
+           "id": "1ba217a",
+           "elType": "container",
+           "isInner": true,
+           "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "flex_gap": {
+             "unit": "px",
+             "row": "0",
+             "column": "0",
+             "size": 0,
+             "isLinked": true
+            },
+            "css_classes": "wt-box",
+            "width": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "width_mobile": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "min_height": {
+             "unit": "px",
+             "size": 30,
+             "sizes": []
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "2",
+             "right": "2",
+             "bottom": "2",
+             "left": "2",
+             "isLinked": true
+            },
+            "border_color": "#5A6B88",
+            "border_radius": {
+             "unit": "px",
+             "top": "9",
+             "right": "9",
+             "bottom": "9",
+             "left": "9",
+             "isLinked": true
+            },
+            "_flex_size": "none"
+           },
+           "elements": []
+          },
+          {
+           "id": "7f527e2",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Engine off if the exhaust may be blocked by snow",
+            "header_size": "span",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.4,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "36c9a1c",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "If anyone is hurt or you're in danger, call 911 first.",
+        "header_size": "p",
+        "title_color": "#FFD7D9",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.5,
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "16",
+         "right": "18",
+         "bottom": "16",
+         "left": "18",
+         "isLinked": false
+        },
+        "_background_background": "classic",
+        "_background_color": "#3A0F12",
+        "_border_radius": {
+         "unit": "px",
+         "top": "14",
+         "right": "14",
+         "bottom": "14",
+         "left": "14",
+         "isLinked": true
+        }
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d487e4b",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "row": "0",
+     "column": "0",
+     "size": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "c5bb59e",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<!-- Mobile sticky action bar. Put in Elementor Theme Builder > Footer (or an HTML widget in the footer template).\n     Shows only under 768px. Replace numbers. Opens Stranded mode-ready SMS with location via data-wt-sms-location (stranded-mode.js). -->\n<nav class=\"wt-bar\" aria-label=\"Quick actions\">\n  <a href=\"tel:+10000000000\" class=\"wt-bar-call\">Call</a>\n  <a href=\"sms:+10000000000\" data-wt-sms-location>Text location</a>\n  <a href=\"/#quote\">Get quote</a>\n</nav>\n<style>\n.wt-bar{display:none}\n@media (max-width:767px){\n  .wt-bar{position:fixed;left:0;right:0;bottom:0;z-index:9998;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid #E2E6EC;box-shadow:0 -10px 30px rgba(16,29,50,.12);font-family:Inter,sans-serif}\n  .wt-bar a{display:flex;align-items:center;justify-content:center;min-height:56px;border-radius:14px;font-weight:700;font-size:14px;text-decoration:none;color:#101D32;border:1.5px solid #E2E6EC}\n  .wt-bar a.wt-bar-call{background:#FF6B00;border-color:#FF6B00;font-weight:800}\n  .wt-bar a:nth-child(2){background:#101D32;color:#fff;border-color:#101D32}\n  body{padding-bottom:84px}\n}\n</style>\n"
+     },
+     "elements": []
+    }
+   ]
+  }
+ ],
+ "page_settings": {}
+}

@@ -1,0 +1,391 @@
+{
+ "version": "0.4",
+ "title": "Wassi Call Band",
+ "type": "container",
+ "content": [
+  {
+   "id": "eff4666",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "flex_gap": {
+     "unit": "px",
+     "row": "0",
+     "column": "0",
+     "size": 0,
+     "isLinked": true
+    },
+    "background_background": "classic",
+    "background_color": "#FF6B00"
+   },
+   "elements": [
+    {
+     "id": "ad0a11b",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "flex_gap": {
+       "unit": "px",
+       "row": "0",
+       "column": "0",
+       "size": 0,
+       "isLinked": true
+      },
+      "min_height": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "css_classes": "wt-hazard"
+     },
+     "elements": []
+    },
+    {
+     "id": "3d38206",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "padding": {
+       "unit": "px",
+       "top": "56",
+       "right": "24",
+       "bottom": "56",
+       "left": "24",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "row": "28",
+       "column": "28",
+       "size": 28,
+       "isLinked": true
+      },
+      "boxed_width": {
+       "unit": "px",
+       "size": 1152,
+       "sizes": []
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "48",
+       "right": "20",
+       "bottom": "48",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "e998ce8",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "flex_gap": {
+         "unit": "px",
+         "row": "6",
+         "column": "6",
+         "size": 6,
+         "isLinked": true
+        },
+        "width": {
+         "unit": "px",
+         "size": 620,
+         "sizes": []
+        },
+        "_flex_size": "custom",
+        "_flex_grow": 0,
+        "_flex_shrink": 1
+       },
+       "elements": [
+        {
+         "id": "ceb59f3",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Stuck right now?",
+          "header_size": "h2",
+          "title_color": "#101D32",
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "900",
+          "typography_font_size": {
+           "unit": "custom",
+           "size": "clamp(2rem, 4vw, 3rem)",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "em",
+           "size": 0,
+           "sizes": []
+          },
+          "typography_font_style": "italic"
+         },
+         "elements": []
+        },
+        {
+         "id": "f983faa",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "A real person picks up and stays with you until help arrives.",
+          "header_size": "p",
+          "title_color": "#101D32",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.5,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "88bf6f8",
+       "elType": "container",
+       "isInner": true,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "flex_gap": {
+         "unit": "px",
+         "row": "12",
+         "column": "12",
+         "size": 12,
+         "isLinked": true
+        },
+        "flex_align_items": "flex-start",
+        "width": {
+         "unit": "custom",
+         "size": "auto",
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "3685364",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "[PHONE]",
+          "link": {
+           "url": "tel:+10000000000",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "button_text_color": "#101D32",
+          "hover_color": "#101D32",
+          "border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "900",
+          "typography_font_size": {
+           "unit": "custom",
+           "size": "clamp(2rem, 4.4vw, 3.4rem)",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "background_background": "classic",
+          "background_color": "rgba(0,0,0,0)",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "rgba(0,0,0,0)",
+          "selected_icon": {
+           "value": {
+            "url": "https://wassitowing.ca/wp-content/uploads/wt/phone-2_4.svg",
+            "id": "",
+            "source": "library"
+           },
+           "library": "svg"
+          },
+          "icon_align": "row",
+          "icon_indent": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "_css_classes": "wt-bigphone",
+          "typography_font_style": "italic"
+         },
+         "elements": []
+        },
+        {
+         "id": "8089391",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Or text us your location",
+          "link": {
+           "url": "sms:+10000000000",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": "data-wt-sms-location|"
+          },
+          "button_text_color": "#FFFFFF",
+          "hover_color": "#FFFFFF",
+          "border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "16.0",
+           "right": "22",
+           "bottom": "16.0",
+           "left": "22",
+           "isLinked": false
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Montserrat",
+          "typography_font_weight": "800",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          },
+          "background_background": "classic",
+          "background_color": "#101D32",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "#101D32",
+          "selected_icon": {
+           "value": {
+            "url": "https://wassitowing.ca/wp-content/uploads/wt/pin-2_4.svg",
+            "id": "",
+            "source": "library"
+           },
+           "library": "svg"
+          },
+          "icon_align": "row",
+          "icon_indent": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "_css_classes": "wt-i20"
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "25301c3",
+     "elType": "container",
+     "isInner": true,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "flex_gap": {
+       "unit": "px",
+       "row": "0",
+       "column": "0",
+       "size": 0,
+       "isLinked": true
+      },
+      "min_height": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "css_classes": "wt-hazard"
+     },
+     "elements": []
+    }
+   ]
+  }
+ ],
+ "page_settings": {}
+}
