@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://wassitowing.ca/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://wassitowing.ca/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Flatbed Towing in Calgary",
+      "item": "https://wassitowing.ca/services/flatbed-towing/"
+    }
+  ]
+}

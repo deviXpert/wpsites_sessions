@@ -1,0 +1,122 @@
+<!-- Wassi "Your price in 3 taps" quote widget.
+     Paste into an Elementor HTML widget (Home hero, right column; reuse on service pages).
+     Edit WT_QUOTE_CONFIG only. Fires dataLayer events: wt_quote_step, wt_quote_complete, wt_call_click, wt_sms_click. -->
+<div class="wtq" id="quote" aria-live="polite">
+  <div class="wtq-head"><h2 class="wtq-title">Your price in 3 taps</h2><span class="wtq-step" data-wtq-label>Step 1 of 3</span></div>
+  <div class="wtq-bars" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <div class="wtq-pane" data-wtq-pane="1">
+    <p class="wtq-q">Where are you?</p>
+    <button type="button" class="wtq-btn wtq-primary" data-wtq-geo>Use my location</button>
+    <label class="wtq-label" for="wtq-addr">Or type an address, highway or landmark
+      <input id="wtq-addr" type="text" autocomplete="street-address" placeholder="e.g. Deerfoot Trail &amp; Glenmore">
+    </label>
+    <button type="button" class="wtq-btn wtq-outline" data-wtq-next>Next</button>
+  </div>
+
+  <div class="wtq-pane" data-wtq-pane="2" hidden>
+    <p class="wtq-q">What happened?</p>
+    <div class="wtq-grid" data-wtq-choices="problem"></div>
+    <button type="button" class="wtq-link" data-wtq-back>&larr; Back</button>
+  </div>
+
+  <div class="wtq-pane" data-wtq-pane="3" hidden>
+    <p class="wtq-q">What are you driving?</p>
+    <div class="wtq-grid" data-wtq-choices="vehicle"></div>
+    <button type="button" class="wtq-link" data-wtq-back>&larr; Back</button>
+  </div>
+
+  <div class="wtq-pane" data-wtq-pane="4" hidden>
+    <p class="wtq-sum" data-wtq-summary></p>
+    <div class="wtq-result">
+      <div><span>ESTIMATED PRICE</span><strong data-wtq-price></strong></div>
+      <div><span>ARRIVAL</span><strong data-wtq-eta></strong></div>
+    </div>
+    <p class="wtq-note">Final price confirmed by phone before we dispatch. No surprises at hook-up.</p>
+    <div class="wtq-two">
+      <a class="wtq-btn wtq-primary" data-wtq-call href="#">Confirm &amp; call</a>
+      <a class="wtq-btn wtq-outline" data-wtq-sms href="#">Text me this</a>
+    </div>
+    <button type="button" class="wtq-link" data-wtq-restart>Start over</button>
+  </div>
+</div>
+
+<style>
+.wtq{--n:#101D32;--o:#FF6B00;--m:#5A6577;--l:#E2E6EC;background:#fff;border-radius:24px;padding:28px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);font-family:Inter,sans-serif;color:var(--n);display:flex;flex-direction:column;gap:18px;max-width:470px}
+.wtq-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.wtq-title{margin:0;font:italic 900 24px Montserrat,sans-serif}
+.wtq-step{font-size:13px;font-weight:600;color:var(--m)}
+.wtq-bars{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.wtq-bars i{height:6px;border-radius:99px;background:var(--l)}.wtq-bars i.on{background:var(--o)}
+.wtq-pane{display:flex;flex-direction:column;gap:12px}.wtq-pane[hidden]{display:none}
+.wtq-q{margin:0;font-weight:700;font-size:17px}
+.wtq-label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--m)}
+.wtq-label input{min-height:50px;padding:0 14px;border-radius:12px;border:1.5px solid var(--l);font:16px Inter,sans-serif;color:var(--n)}
+.wtq-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:14px;font:800 15px Montserrat,sans-serif;text-decoration:none;cursor:pointer;border:0}
+.wtq-primary{background:var(--o);color:var(--n)}.wtq-outline{background:#fff;color:var(--n);border:1.5px solid var(--n)}
+.wtq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.wtq-chip{min-height:48px;padding:0 14px;border-radius:12px;border:1.5px solid var(--l);background:#fff;color:var(--n);font:600 14px Inter,sans-serif;text-align:left;cursor:pointer}
+.wtq-chip[aria-pressed="true"]{background:var(--n);color:#fff;border-color:var(--n)}
+.wtq-link{align-self:flex-start;min-height:44px;border:0;background:none;color:var(--m);font:600 14px Inter,sans-serif;cursor:pointer}
+.wtq-sum{margin:0;font-size:14px;color:var(--m)}
+.wtq-result{background:var(--n);border-radius:16px;padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px;color:#fff}
+.wtq-result span{display:block;font-size:12px;font-weight:600;letter-spacing:.08em;color:#AFC0D6}
+.wtq-result strong{font:900 22px Montserrat,sans-serif}.wtq-result div:first-child strong{color:var(--o)}
+.wtq-note{margin:0;font-size:13px;line-height:1.5;color:var(--m)}
+.wtq-two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+</style>
+
+<script>
+(function(){
+  var WT_QUOTE_CONFIG = {
+    phone: "+10000000000",          // [PHONE] in E.164
+    sms:   "+10000000000",          // [SMS NUMBER]
+    problems: ["Won't start","Flat tire","Out of gas","Locked out","Stuck in snow/ditch","Accident","Needs a tow","Something else"],
+    vehicles: ["Car","SUV / Truck","Motorcycle","Exotic / Lowered","Trailer / Equipment"],
+    // Price ranges by problem; client to fill. Leave "" to show "Call for price".
+    price: { "Won't start":"[PRICE RANGE]", "Flat tire":"[PRICE RANGE]", "Out of gas":"[PRICE RANGE]", "Locked out":"[PRICE RANGE]",
+             "Stuck in snow/ditch":"[PRICE RANGE]", "Accident":"[PRICE RANGE]", "Needs a tow":"[PRICE RANGE]", "Something else":"" },
+    eta: "[X–Y] min"
+  };
+  var root=document.getElementById("quote"); if(!root) return;
+  var s={step:1,loc:"",coords:null,problem:"",vehicle:""};
+  function track(e,p){ (window.dataLayer=window.dataLayer||[]).push(Object.assign({event:e},p||{})); }
+  function $(q){return root.querySelector(q)} function $$(q){return root.querySelectorAll(q)}
+  function render(){
+    $$("[data-wtq-pane]").forEach(function(p){ p.hidden = +p.dataset.wtqPane!==s.step; });
+    $("[data-wtq-label]").textContent = s.step<4 ? "Step "+s.step+" of 3" : "Your estimate";
+    $$(".wtq-bars i").forEach(function(b,i){ b.classList.toggle("on", s.step>i); });
+    $$(".wtq-chip").forEach(function(c){ c.setAttribute("aria-pressed", String(s[c.dataset.kind]===c.dataset.val)); });
+    if(s.step===4){
+      var where = s.coords ? "Shared location" : (s.loc||"Location not given");
+      $("[data-wtq-summary]").textContent = where+" · "+s.problem+" · "+s.vehicle;
+      $("[data-wtq-price]").textContent = WT_QUOTE_CONFIG.price[s.problem] || "Call for price";
+      $("[data-wtq-eta]").textContent = WT_QUOTE_CONFIG.eta;
+      var map = s.coords ? " https://maps.google.com/?q="+s.coords : (s.loc? " Location: "+s.loc : "");
+      var body = "Hi Wassi, I need help: "+s.problem+", "+s.vehicle+"."+map;
+      $("[data-wtq-call]").href="tel:"+WT_QUOTE_CONFIG.phone;
+      $("[data-wtq-sms]").href="sms:"+WT_QUOTE_CONFIG.sms+"?&body="+encodeURIComponent(body);
+      track("wt_quote_complete",{problem:s.problem,vehicle:s.vehicle});
+    }
+  }
+  function go(n){ s.step=n; track("wt_quote_step",{step:n}); render(); var f=root.querySelector('[data-wtq-pane="'+n+'"] button, [data-wtq-pane="'+n+'"] a'); if(f) f.focus(); }
+  [["problem",WT_QUOTE_CONFIG.problems,3],["vehicle",WT_QUOTE_CONFIG.vehicles,4]].forEach(function(g){
+    var box=$('[data-wtq-choices="'+g[0]+'"]');
+    g[1].forEach(function(v){ var b=document.createElement("button"); b.type="button"; b.className="wtq-chip"; b.textContent=v;
+      b.dataset.kind=g[0]; b.dataset.val=v; b.setAttribute("aria-pressed","false");
+      b.addEventListener("click",function(){ s[g[0]]=v; go(g[2]); }); box.appendChild(b); });
+  });
+  $("[data-wtq-geo]").addEventListener("click",function(){
+    var btn=this; if(!navigator.geolocation){ go(2); return; }
+    btn.textContent="Finding you…";
+    navigator.geolocation.getCurrentPosition(function(p){ s.coords=p.coords.latitude.toFixed(5)+","+p.coords.longitude.toFixed(5); btn.textContent="Use my location"; go(2); },
+      function(){ btn.textContent="Use my location"; $("#wtq-addr").focus(); }, {enableHighAccuracy:true,timeout:8000});
+  });
+  $("#wtq-addr").addEventListener("input",function(e){ s.loc=e.target.value; });
+  $("[data-wtq-next]").addEventListener("click",function(){ go(2); });
+  $$("[data-wtq-back]").forEach(function(b){ b.addEventListener("click",function(){ go(Math.max(1,s.step-1)); }); });
+  $("[data-wtq-restart]").addEventListener("click",function(){ s={step:1,loc:"",coords:null,problem:"",vehicle:""}; $("#wtq-addr").value=""; go(1); });
+  $("[data-wtq-call]").addEventListener("click",function(){ track("wt_call_click",{source:"quote"}); });
+  $("[data-wtq-sms]").addEventListener("click",function(){ track("wt_sms_click",{source:"quote"}); });
+  render();
+})();
+</script>

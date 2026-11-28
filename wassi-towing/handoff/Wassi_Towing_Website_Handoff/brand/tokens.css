@@ -1,0 +1,15 @@
+/* Wassi Towing Ltd. design tokens. Paste into Elementor > Site Settings > Custom CSS, or the child theme */
+:root{
+  --wt-navy:#101D32; --wt-ink:#0B1424; --wt-navy-2:#1A2B47;
+  --wt-orange:#FF6B00; --wt-orange-text:#B84D00; --wt-orange-tint:#FFF1E6;
+  --wt-bg:#F5F6F8; --wt-line:#E2E6EC; --wt-muted:#5A6577; --wt-on-dark:#C5CEDB;
+  --wt-font-display:"Montserrat",sans-serif; --wt-font-body:"Inter",sans-serif;
+  --wt-radius-btn:14px; --wt-radius-card:20px; --wt-radius-panel:24px;
+  --wt-container:1200px; --wt-section-y:88px;
+  --wt-hazard:repeating-linear-gradient(-45deg,var(--wt-navy) 0 16px,var(--wt-orange) 16px 32px);
+  --wt-road-dash:repeating-linear-gradient(90deg,#fff 0 60px,transparent 60px 110px);
+}
+.wt-display{font-family:var(--wt-font-display);font-weight:900;font-style:italic;line-height:.98;letter-spacing:-.015em}
+.wt-eyebrow{font-family:var(--wt-font-display);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--wt-orange-text)}
+.wt-dark .wt-eyebrow{color:var(--wt-orange)}
+.wt-hazard{height:14px;background:var(--wt-hazard)}

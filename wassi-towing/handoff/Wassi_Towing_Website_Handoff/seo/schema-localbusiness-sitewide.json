@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AutomotiveBusiness",
+  "@id": "https://wassitowing.ca/#business",
+  "name": "Wassi Towing Ltd.",
+  "url": "https://wassitowing.ca/",
+  "logo": "https://wassitowing.ca/wp-content/uploads/wassi-logo.png",
+  "image": "https://wassitowing.ca/wp-content/uploads/wassi-truck.jpg",
+  "telephone": "[PHONE]",
+  "email": "[EMAIL]",
+  "priceRange": "[$$]",
+  "areaServed": {
+    "@type": "City",
+    "name": "Calgary",
+    "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "Alberta"
+    }
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
+  "sameAs": [
+    "[Google Business Profile URL]",
+    "[Facebook URL]"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Towing & roadside services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Flatbed Towing in Calgary",
+          "url": "https://wassitowing.ca/services/flatbed-towing/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Roadside Assistance & Car Lockouts in Calgary",
+          "url": "https://wassitowing.ca/services/roadside-assistance/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Flat Tire Change in Calgary",
+          "url": "https://wassitowing.ca/services/flat-tire-change/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fuel Delivery in Calgary",
+          "url": "https://wassitowing.ca/services/fuel-delivery/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Battery Boost & Jump Start in Calgary",
+          "url": "https://wassitowing.ca/services/battery-boost/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Winch-Out & Vehicle Recovery in Calgary",
+          "url": "https://wassitowing.ca/services/winch-out/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Local Hauling in Calgary",
+          "url": "https://wassitowing.ca/services/local-hauling/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Motorcycle Towing in Calgary",
+          "url": "https://wassitowing.ca/services/motorcycle-towing/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Exotic & Luxury Car Towing in Calgary",
+          "url": "https://wassitowing.ca/services/exotic-car-towing/"
+        }
+      }
+    ]
+  }
+}

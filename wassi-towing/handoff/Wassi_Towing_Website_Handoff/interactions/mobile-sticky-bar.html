@@ -1,0 +1,17 @@
+<!-- Mobile sticky action bar. Put in Elementor Theme Builder > Footer (or an HTML widget in the footer template).
+     Shows only under 768px. Replace numbers. Opens Stranded mode-ready SMS with location via data-wt-sms-location (stranded-mode.js). -->
+<nav class="wt-bar" aria-label="Quick actions">
+  <a href="tel:+10000000000" class="wt-bar-call">Call</a>
+  <a href="sms:+10000000000" data-wt-sms-location>Text location</a>
+  <a href="/#quote">Get quote</a>
+</nav>
+<style>
+.wt-bar{display:none}
+@media (max-width:767px){
+  .wt-bar{position:fixed;left:0;right:0;bottom:0;z-index:9998;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid #E2E6EC;box-shadow:0 -10px 30px rgba(16,29,50,.12);font-family:Inter,sans-serif}
+  .wt-bar a{display:flex;align-items:center;justify-content:center;min-height:56px;border-radius:14px;font-weight:700;font-size:14px;text-decoration:none;color:#101D32;border:1.5px solid #E2E6EC}
+  .wt-bar a.wt-bar-call{background:#FF6B00;border-color:#FF6B00;font-weight:800}
+  .wt-bar a:nth-child(2){background:#101D32;color:#fff;border-color:#101D32}
+  body{padding-bottom:84px}
+}
+</style>
