@@ -13,6 +13,9 @@ PAGES = json.load(open(os.path.join(D, 'pages.json')))
 U = wp.U
 PHONE, TEL = '(437) 264-2664', 'tel:+14372642664'
 EMAIL = 'waterproofingquality@gmail.com'
+ADDRESS = '1 Deauville Ln, North York, ON M3C 1Z6'          # one-line form for lists
+ADDRESS_HTML = '1 Deauville Ln<br>North York, ON M3C 1Z6<br>Canada'
+MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=1+Deauville+Ln+North+York+ON+M3C+1Z6'
 TAGLINE = "Our company will help protect your home's basement from water damage"
 
 def seed(s): random.seed(zlib.crc32(s.encode()))  # stable element IDs per page
@@ -226,7 +229,7 @@ def FORM(name='Free Estimate Request', compact=False, service_default=None):
         fields.append({'_id': uid(), 'custom_id': 'message', 'field_type': 'textarea', 'field_label': 'Tell Us About the Problem', 'placeholder': 'Where is the water coming in? When did it start?', 'rows': 3, 'width': '100'})
     return W('form', 'Form: ' + name, form_name=name, form_fields=fields, input_size='md', show_labels='yes', mark_required='yes',
              button_text='Request My Free Estimate', button_size='md', button_width='100', selected_button_icon=ico('fas fa-paper-plane'), button_icon_align='row-reverse', button_icon_indent=px(10),
-             submit_actions=['save-to-database', 'email'], email_subject='New estimate request – Quality Waterproofing website',
+             submit_actions=['save-to-database', 'email'], email_to=EMAIL, email_reply_to='[field id="email"]', email_subject='New estimate request – Quality Waterproofing website',
              success_message="Thanks! We've received your request and will call you shortly to book your free estimate.",
              column_gap=px(14), row_gap=px(14), label_spacing=px(6), button_border_radius=dims(4),
              g={'button_background_color': col('secondary'), 'button_text_color': col('primary'), 'button_background_hover_color': col('qwgoldlt'), 'button_hover_color': col('primary'),

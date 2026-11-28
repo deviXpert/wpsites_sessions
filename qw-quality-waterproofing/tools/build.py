@@ -14,8 +14,8 @@ FB = 'https://www.facebook.com/share/1E1EebBzXR/?mibextid=wwXIfr'
 IG = 'https://www.instagram.com/qualitywaterproofinginc'
 
 # ================= shared sections =================
-def hero(eyebrow, h1, lead, bg=None, video='hero_general', form=True, trust=None, minh=640):
-    """Every hero has a muted background video loop (MEDIA key); `bg` is the fallback image. video=None for a photo-only hero."""
+def hero(eyebrow, h1, lead, bg=None, video=None, form=True, trust=None, minh=640):
+    """Hero with a background photo (`bg`). Pass video=<MEDIA key> for a muted background video loop instead (Home only, at the client's request)."""
     vkey = video if isinstance(video, str) else ('hero_general' if video else None)
     trust = trust or ['10+ Years Experience', 'Free On-Site Estimates', 'Residential & Commercial']
     left = C([
@@ -149,7 +149,7 @@ def gallery(keys, title='Recent <span class="qw-hl">Projects</span>', eyebrow='O
 def form_section(title='Book Your <span class="qw-hl">Free Estimate</span>', text=None, eid='estimate-form'):
     text = text or 'Tell us a little about your basement or project and we’ll call you back to book a free on-site inspection anywhere in Toronto, Mississauga, Brampton, St. Catharines or North Bay.'
     left = C(HEAD('Contact Us', title) + [T(text),
-        ILIST([(PHONE, 'fas fa-phone-alt', TEL), (EMAIL, 'fas fa-envelope', 'mailto:' + EMAIL), ('Toronto · Mississauga · Brampton · St. Catharines · North Bay', 'fas fa-map-marker-alt')],
+        ILIST([(PHONE, 'fas fa-phone-alt', TEL), (EMAIL, 'fas fa-envelope', 'mailto:' + EMAIL), (ADDRESS, 'fas fa-map-marker-alt', MAPS_URL), ('Toronto · Mississauga · Brampton · St. Catharines · North Bay', 'fas fa-map-signs')],
               color='primary', typo='qwlead', size=18, gapv=16)], 'Form Copy', flex_gap=gap(18), flex_justify_content='center')
     right = CARD([FORM('Estimate Request')], title='Form Card', pad=36, _element_id=eid)
     return SECTION([C([left, right], 'Form Grid', grid=2, grid_t=1, grid_gaps=gap(60, 36), grid_align_items='center')], 'Estimate Form', bg='cream')
@@ -183,7 +183,9 @@ def header():
         padding=dims(6, 20), padding_mobile=dims(10, 16), flex_gap=gap(20), background_background='classic', g={'background_color': col('qwwhite')},
         box_shadow_box_shadow_type='yes', box_shadow_box_shadow=shadow(6, 24, 'rgba(14,20,32,0.10)'))
     ld = {'@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness', 'name': 'Quality Waterproofing', 'url': U + '/', 'telephone': '+1-437-264-2664',
-          'email': EMAIL, 'logo': MEDIA['logo']['url'], 'image': MEDIA['ext_trench_membrane']['url'], 'slogan': TAGLINE,
+          'email': EMAIL, 'hasMap': MAPS_URL,
+          'address': {'@type': 'PostalAddress', 'streetAddress': '1 Deauville Ln', 'addressLocality': 'North York', 'addressRegion': 'ON', 'postalCode': 'M3C 1Z6', 'addressCountry': 'CA'},
+          'logo': MEDIA['logo']['url'], 'image': MEDIA['ext_trench_membrane']['url'], 'slogan': TAGLINE,
           'description': 'Basement waterproofing, sump pump installation, foundation crack repair and interlocking in Toronto, Mississauga, Brampton, St. Catharines and North Bay.',
           'areaServed': [{'@type': 'City', 'name': c} for c in ('Toronto', 'Mississauga', 'Brampton', 'St. Catharines', 'North Bay', 'Vaughan', 'Markham', 'Richmond Hill', 'Oakville')],
           'sameAs': [FB, IG],
@@ -213,7 +215,7 @@ def footer():
     svc = C([fh('Services')] + [fl([(SERVICES[s]['name'], 'fas fa-chevron-right', live(s)) for s in SVC_ORDER])], 'Footer Services', flex_gap=gap(10))
     areas = C([fh('Service Areas')] + [fl([('Waterproofing ' + LOCATIONS[s]['label'], 'fas fa-chevron-right', live(s)) for s in LOC_ORDER] + [('Projects', 'fas fa-chevron-right', live('projects')), ('Reviews', 'fas fa-chevron-right', live('reviews')), ('About Us', 'fas fa-chevron-right', live('about-us'))])], 'Footer Areas', flex_gap=gap(10))
     contact = C([fh('Get In Touch'),
-                 ILIST([(PHONE, 'fas fa-phone-alt', TEL), (EMAIL, 'fas fa-envelope', 'mailto:' + EMAIL), ('Toronto · Mississauga · Brampton · St. Catharines · North Bay', 'fas fa-map-marker-alt')],
+                 ILIST([(PHONE, 'fas fa-phone-alt', TEL), (EMAIL, 'fas fa-envelope', 'mailto:' + EMAIL), (ADDRESS, 'fas fa-map-marker-alt', MAPS_URL), ('Toronto · Mississauga · Brampton · St. Catharines · North Bay', 'fas fa-map-signs')],
                        color='qwwhite', icon_color='secondary', typo='qwsmall', size=15, gapv=14),
                  BTN('Get a Free Estimate', live('contact') or U + '/#estimate', 'gold', 'fas fa-clipboard-check', size='sm')], 'Footer Contact', flex_gap=gap(14))
     grid = C([about, svc, areas, contact], 'Footer Grid', grid=4, grid_t=2, grid_gaps=gap(40), grid_columns_grid=cols('1.5fr 1fr 1.1fr 1.2fr'))
@@ -236,7 +238,7 @@ def home():
     return [
         hero('Toronto · Mississauga · Brampton · St. Catharines · North Bay', 'Basement Waterproofing & Foundation Repair in the <span class="qw-hl">GTA & North Bay</span>',
              'Wet basement? Leaking foundation crack? Quality Waterproofing keeps homes across Toronto, the GTA, St. Catharines and North Bay dry with exterior and interior waterproofing, underpinning, sump pumps, crack repair and expert interlocking.',
-             bg='ext_long_trench', video=True, minh=720),
+             bg='ext_long_trench', video='hero_general', minh=720),
         trust_strip(),
         services_grid(),
         split('Wet Basement? We Have <span class="qw-hl">the Solutions</span>',
@@ -259,7 +261,7 @@ def services_hub():
     seed('services')
     return [hero('Our Services', 'Basement Waterproofing <span class="qw-hl">Services</span> in Toronto & the GTA',
                  'Exterior and interior waterproofing, sump pump installation, exterior foundation crack repair, underpinning and interlocking – everything you need to keep water out and protect your home.',
-                 bg='ext_n4', minh=560),
+                 bg='ext_m5', minh=560),
             services_grid(intro=True), why_us('ext_crew_trench', 'int_column'), process(), areas_section(), cta_band()]
 
 def video_section(S):
@@ -284,7 +286,7 @@ def service_page(slug):
     benefits = SECTION(HEAD('Benefits', f'Why Choose Our <span class="qw-hl">{S["name"]}</span>', align='center')
                        + [C([IBOX(i, t, d, view='stacked') for i, t, d in S['benefits']], 'Benefits Grid', grid=3, grid_t=2, grid_gaps=gap(36, 40), _margin=dims(26, 0, 0, 0))], 'Benefits', bg='white')
     return [
-        hero(S['name'] + ' · Toronto & GTA', S['h1'], S['lead'], bg=S['hero'], video=S.get('hero_video', 'hero_general')),
+        hero(S['name'] + ' · Toronto & GTA', S['h1'], S['lead'], bg=S['hero']),
         split(S['intro_h'], S['intro'], S['intro_img'], S['intro_img2'], eyebrow=S['name'], extra=[CTA_BTNS(dark=False)]),
         *([video_section(S)] if S.get('video') else []),
         signs,
@@ -329,7 +331,7 @@ def about():
     return [
         hero('About Quality Waterproofing', 'Protecting GTA Basements With <span class="qw-hl">Quality Work</span>',
              'We are a waterproofing and exterior construction company serving Toronto, Mississauga, Brampton, St. Catharines and North Bay, with more than 10 years of residential and commercial experience.',
-             bg='ext_crew_trench', form=False, minh=520),
+             bg='ext_m1', form=False, minh=520),
         split('Who <span class="qw-hl">We Are</span>',
               ['<strong>' + TAGLINE + '.</strong> That has been our focus for more than 10 years.',
                'Quality Waterproofing specializes in basement waterproofing and the exterior work that keeps a home dry and looking its best – exterior and interior waterproofing, sump pump installation, foundation crack repair and interlocking. Our team also brings experience in landscaping, walkouts, underpinning, concrete and drainage.',
@@ -385,7 +387,7 @@ def reviews():
     seed('reviews')
     h = hero('Customer Reviews', 'Quality Waterproofing <span class="qw-hl">Reviews</span>',
              'Read what homeowners across Toronto, the GTA, St. Catharines and North Bay say about working with us. Had work done by our crew? We’d love to hear about your experience.',
-             bg='il_pool2', form=False, minh=460)
+             bg='il_pool3', form=False, minh=460)
     # replace the estimate/call buttons in this hero with review buttons
     copy = h['elements'][0]['elements'][0]['elements']
     copy[3] = review_buttons(dark=True)
@@ -408,7 +410,8 @@ def contact():
     seed('contact')
     cards = [CARD([IBOX('fas fa-phone-alt', 'Call Us', f'<a href="{TEL}">{PHONE}</a>', view='stacked', align='left')], title='Phone Card', pad=28),
              CARD([IBOX('fas fa-envelope', 'Email Us', f'<a href="mailto:{EMAIL}">{EMAIL}</a>', view='stacked', align='left')], title='Email Card', pad=28),
-             CARD([IBOX('fas fa-map-marker-alt', 'Service Areas', 'Toronto & GTA · Mississauga · Brampton · St. Catharines · North Bay', view='stacked', align='left')], title='Areas Card', pad=28)]
+             CARD([IBOX('fas fa-map-marker-alt', 'Our Office', f'<a href="{MAPS_URL}" target="_blank" rel="noopener">{ADDRESS_HTML}</a>', view='stacked', align='left')], title='Address Card', pad=28),
+             CARD([IBOX('fas fa-map-signs', 'Service Areas', 'Toronto & GTA · Mississauga · Brampton · St. Catharines · North Bay', view='stacked', align='left')], title='Areas Card', pad=28)]
     left = C(HEAD('Get In Touch', 'Let’s Talk About <span class="qw-hl">Your Basement</span>', 'Call, email or send the form and we’ll get back to you quickly to book your free on-site inspection.') + cards
              + [W('social-icons', 'Social Icons', social_icon_list=[{'_id': uid(), 'social_icon': ico('fab fa-facebook-f', 'fa-brands'), 'link': link(FB, True)},
                                                                    {'_id': uid(), 'social_icon': ico('fab fa-instagram', 'fa-brands'), 'link': link(IG, True)}],
@@ -417,8 +420,11 @@ def contact():
     right = CARD([H('Request a <span class="qw-hl">Free Estimate</span>', 'h2', 'qwh3'), T('All fields marked * are required.', 'text', 'qwsmall'), FORM('Contact Page Estimate')],
                  title='Contact Form Card', pad=40, _element_id='estimate')
     return [hero('Contact Quality Waterproofing', 'Contact Us for a <span class="qw-hl">Free Estimate</span>',
-                 'Serving Toronto, Mississauga, Brampton, St. Catharines, North Bay and the GTA. Call ' + PHONE + ' or send us a message below.', bg='int_long', form=False, minh=440),
+                 'Serving Toronto, Mississauga, Brampton, St. Catharines, North Bay and the GTA. Call ' + PHONE + ' or send us a message below.', bg='int_n3', form=False, minh=440),
             SECTION([C([left, right], 'Contact Grid', grid=2, grid_t=1, grid_gaps=gap(56, 40))], 'Contact', bg='white'),
+            SECTION(HEAD('Find Us', 'Visit <span class="qw-hl">Our Office</span>', ADDRESS + ', Canada', align='center')
+                    + [W('google_maps', 'Office Map', address='1 Deauville Ln, North York, ON M3C 1Z6, Canada', zoom=px(15), height=px(420), height_mobile=px(300),
+                         _border_radius=dims(6), _margin=dims(20, 0, 0, 0))], 'Office Map', bg='light'),
             areas_section(), faq_section(GEN_FAQ[:3])]
 
 # ================= push =================

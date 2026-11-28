@@ -81,8 +81,13 @@ python3 yoast.py                                                        # push Y
 - Google button: set `GOOGLE_REVIEW_URL` in build.py to the client's Google Business Profile review link, then rebuild `reviews home`.
 - Draft previews are unstyled (Elementor only writes post-CSS for published pages) – check styling after publishing.
 
-## Hero videos (Nov 27)
-- Every page hero has a muted background video loop (`hero(video=<MEDIA key>)`, default `hero_general`; `video=None` = photo only). The `bg` image is the fallback.
+## Hero videos (Nov 27 → changed Nov 28)
+- **Nov 28: client asked for photos instead of video on inner pages** ("just maybe pictures, nice ones"). Now only Home uses a video (`hero_general`); every other hero uses a sharp client photo (`hero=` key in content.py / `bg=` in build.py). The other loops stay in the media library.
+- (Nov 27, superseded) Every page hero had a muted background video loop (`hero(video=<MEDIA key>)`, default `hero_general`; `video=None` = photo only). The `bg` image is the fallback.
 - Loops built by `tools/make_videos.py <scratchpad> <out>` from the client's phone clips: `hero_general` (Home, About, Services, Projects, Reviews, Contact, all area pages), `hero_exterior` (Exterior + Crack Repair), `hero_interior`, `hero_sump`, `hero_interlock`; Underpinning keeps `up_video`.
 - Portrait clips are shown sharp in the centre over a blurred copy of themselves (cropping 576px-wide portrait video to 16:9 looked blurry).
 - Better source footage = landscape (phone held sideways), 1080p+. Swap a loop by re-running make_videos.py with new clips and uploading.
+
+## Business details (Nov 28)
+- Address: 1 Deauville Ln, North York, ON M3C 1Z6, Canada (`ADDRESS`, `ADDRESS_HTML`, `MAPS_URL` in el.py). Shown in footer, "Book Your Free Estimate" sections, Contact page ("Our Office" card + "Visit Our Office" Google map), and LocalBusiness JSON-LD `address`.
+- All Elementor forms email submissions to waterproofingquality@gmail.com (`email_to=EMAIL`), reply-to = the customer's email. Submissions also saved in Elementor → Submissions.

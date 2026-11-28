@@ -9,7 +9,7 @@ SERVICES = {
   name='Exterior Waterproofing', short='Exterior Waterproofing', icon='fas fa-water',
   title='Exterior Basement Waterproofing in Toronto & the GTA',
   h1='Exterior Basement Waterproofing in Toronto & the GTA',
-  hero_video='hero_exterior', hero='ext_crew_trench', card='ext_trench_membrane',
+  hero='ext_m6', card='ext_trench_membrane',
   lead='Stop basement leaks at the source. We excavate down to the footing, seal and membrane your foundation walls, and install new weeping tile so water is carried away from your home – not into it.',
   card_text='Excavation, foundation sealing, drainage membrane and new weeping tile – the permanent fix for leaking basement walls.',
   intro_h='The Permanent Fix for a <span class="qw-hl">Leaking Basement</span>',
@@ -42,7 +42,7 @@ SERVICES = {
   name='Interior Waterproofing', short='Interior Waterproofing', icon='fas fa-house-damage',
   title='Interior Basement Waterproofing in Toronto & the GTA',
   h1='Interior Basement Waterproofing in Toronto & the GTA',
-  hero_video='hero_interior', hero='int_dmx_window', card='int_dmx_wall',
+  hero='int_n1', card='int_dmx_wall',
   lead='A dry basement without digging up your yard. Our interior waterproofing system collects water at the footing with a perimeter drain and membrane and sends it safely to a sump pump.',
   card_text='Interior weeping tile, wall membrane and sump connection – a dry basement without excavating your yard.',
   intro_h='Waterproofing From the <span class="qw-hl">Inside Out</span>',
@@ -75,7 +75,7 @@ SERVICES = {
   name='Sump Pump Installation', short='Sump Pump Installation', icon='fas fa-tint',
   title='Sump Pump Installation & Replacement in Toronto & the GTA',
   h1='Sump Pump Installation & Replacement in Toronto & the GTA',
-  hero_video='hero_sump', hero='sump_system', card='sump_basin',
+  hero='sump_n2', card='sump_basin',
   lead='Your last line of defence against a flooded basement. We install new sump pits, replace failing pumps and add battery backups so your basement stays dry – even when the power goes out in a storm.',
   card_text='New sump pits, pump replacement and battery backup systems that keep working when the power goes out.',
   intro_h='Reliable Sump Pumps That <span class="qw-hl">Keep Working</span>',
@@ -107,7 +107,7 @@ SERVICES = {
   name='Foundation Crack Repair', short='Foundation Crack Repair', icon='fas fa-hammer',
   title='Foundation Crack Repair in Toronto & the GTA',
   h1='Exterior Foundation Crack Repair in Toronto & the GTA',
-  hero_video='hero_exterior', hero='crack_wall', card='crack_injection',
+  hero='crack_window', card='crack_injection',
   lead='A small crack can let in a lot of water. We repair leaking foundation cracks from the outside – excavating, sealing and membraning the crack so it stays dry for good.',
   card_text='Leaking foundation cracks excavated, sealed and membraned from the outside so water stays out.',
   intro_h='Seal Foundation Cracks <span class="qw-hl">Before They Spread</span>',
@@ -139,7 +139,7 @@ SERVICES = {
   name='Underpinning', short='Underpinning & Basement Lowering', icon='fas fa-arrows-alt-v',
   title='Underpinning & Basement Lowering in Toronto & the GTA',
   h1='Underpinning & Basement Lowering in Toronto & the GTA',
-  hero='up_p2', hero_video='up_video', card='up_p2', gallery_cols=4,
+  hero='up_p2', card='up_p2', gallery_cols=4,
   lead='Gain ceiling height and usable living space by lowering your basement floor. We underpin your foundation in carefully sequenced sections – and waterproof it while it is open.',
   card_text='Lower your basement floor for more ceiling height and living space – with waterproofing done at the same time.',
   intro_h='More Headroom. <span class="qw-hl">More Living Space.</span>',
@@ -171,7 +171,7 @@ SERVICES = {
   name='Interlocking', short='Interlocking & Landscaping', icon='fas fa-th-large',
   title='Interlocking Patios, Walkways & Driveways in Toronto & the GTA',
   h1='Interlocking Patios, Walkways & Driveways in Toronto & the GTA',
-  hero_video='hero_interlock', hero='il_pool1', card='il_patio_steps',
+  hero='il_pool1', card='il_patio_steps',
   lead='Beautiful, durable interlock built on a proper base. From backyard patios and pool decks to walkways, steps and driveways, we design and install interlocking that looks great and drains water away from your home.',
   card_text='Patios, pool decks, walkways, steps and driveways – built on a compacted base and graded away from your home.',
   intro_h='Interlock That Looks Great <span class="qw-hl">and Lasts</span>',
@@ -202,7 +202,7 @@ SERVICES = {
 
 LOCATIONS = {
  'basement-waterproofing-toronto': dict(
-  city='Toronto', label='Toronto & GTA', hero='ext_red_brick', img='ext_live2', img2='int_dmx_wall',
+  city='Toronto', label='Toronto & GTA', hero='ext_m4', img='ext_live2', img2='int_dmx_wall',
   h1='Basement Waterproofing in Toronto & the GTA',
   title='Basement Waterproofing Toronto | Quality Waterproofing',
   lead='Wet basement in Toronto? Quality Waterproofing provides exterior and interior waterproofing, sump pumps, foundation crack repair and interlocking across the Greater Toronto Area.',
@@ -238,7 +238,7 @@ LOCATIONS = {
        ('Do you also repair interlock in Mississauga?', 'Yes. Our interlocking crew installs and repairs patios, walkways and driveways, and can restore interlock after exterior waterproofing.')]),
 
  'basement-waterproofing-brampton': dict(
-  city='Brampton', label='Brampton', hero='ext_long_trench', img='ext_red_brick', img2='int_column',
+  city='Brampton', label='Brampton', hero='ext_n5', img='ext_red_brick', img2='int_column',
   h1='Basement Waterproofing in Brampton',
   title='Basement Waterproofing Brampton | Quality Waterproofing',
   lead='Keep your Brampton basement dry. Exterior and interior waterproofing, sump pumps, foundation crack repair and interlocking from a crew with 10+ years of experience.',
@@ -256,7 +256,7 @@ LOCATIONS = {
        ('Do you offer free estimates in Brampton?', 'Yes. We provide free on-site inspections and written quotes for Brampton homeowners.')]),
 
  'basement-waterproofing-st-catharines': dict(
-  city='St. Catharines', label='St. Catharines', hero='ext_membrane_downspout', img='ext_live2', img2='int_n3',
+  city='St. Catharines', label='St. Catharines', hero='ext_m7', img='ext_live2', img2='int_n3',
   h1='Basement Waterproofing in St. Catharines',
   title='Basement Waterproofing St. Catharines | Quality Waterproofing',
   lead='Basement waterproofing, sump pump installation, foundation crack repair and interlocking for homes across St. Catharines and the Niagara Region.',
@@ -273,7 +273,7 @@ LOCATIONS = {
        ('Do older St. Catharines homes need exterior waterproofing?', 'Many older homes have block or stone foundations and original drainage. If water is coming through the walls, exterior waterproofing with new weeping tile is usually the most complete fix. We will confirm during your free inspection.'),
        ('Do you offer free estimates in St. Catharines?', 'Yes. We provide free on-site inspections and written quotes for St. Catharines homeowners.')]),
  'basement-waterproofing-north-bay': dict(
-  city='North Bay', label='North Bay', hero='ext_trench_membrane', img='ext_live1', img2='sump_system',
+  city='North Bay', label='North Bay', hero='ext_n1', img='ext_live1', img2='sump_system',
   h1='Basement Waterproofing in North Bay',
   title='Basement Waterproofing North Bay | Quality Waterproofing',
   lead='Basement waterproofing, sump pumps and foundation crack repair for homes in North Bay and the surrounding area – built for Northern Ontario winters and spring melt.',
