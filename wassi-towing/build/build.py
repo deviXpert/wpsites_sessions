@@ -213,7 +213,7 @@ def quote_widget():
         '@media(max-width:767px){.wtq{padding:22px;border-radius:20px}}</style>')
     return src
 
-def home():
+def home(inline_band=False):
     S = SERVICE_URL
     # ---------------- 1. HERO ----------------
     trust = con(*[con(icon(n, ORANGE, 16, 2.2), span(t, '#D4DCE7', 14),
@@ -498,6 +498,8 @@ def home():
                      flex_justify_content='center', css_classes='wt-dots')
 
     # ---------------- 8. CALL BAND (global template) ----------------
+    if inline_band:
+        return [hero, dispatch, intro, how, why, area, pledge] + callband()
     band = full(widget('template', template_id='{{CALLBAND_ID}}'))
     return [hero, dispatch, intro, how, why, area, pledge, band]
 
@@ -507,7 +509,7 @@ if __name__ == '__main__':
     save('out/callband.json', callband(), 'Wassi Call Band', 'container')
     foot = footer()
     save('out/footer.json', foot, 'Wassi Footer', 'footer')
-    save('out/home.json', home(), 'Home', 'page',
+    save('out/home.json', home(True), 'Home', 'page',
          {'template': 'elementor_header_footer', 'hide_title': 'yes'})
     print('icons:', len(os.listdir(os.path.join(HERE, 'icons'))))
     for f in sorted(os.listdir(OUT)):

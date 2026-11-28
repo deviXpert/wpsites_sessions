@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "eff4666",
+   "id": "9d6d502",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -30,7 +30,7 @@
    },
    "elements": [
     {
-     "id": "ad0a11b",
+     "id": "ced7ea9",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -61,7 +61,7 @@
      "elements": []
     },
     {
-     "id": "3d38206",
+     "id": "76fc6df",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -101,7 +101,7 @@
      },
      "elements": [
       {
-       "id": "e998ce8",
+       "id": "4cf257d",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -133,7 +133,7 @@
        },
        "elements": [
         {
-         "id": "ceb59f3",
+         "id": "59e3cb0",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -163,7 +163,7 @@
          "elements": []
         },
         {
-         "id": "f983faa",
+         "id": "8ce2ffb",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -189,7 +189,7 @@
        ]
       },
       {
-       "id": "88bf6f8",
+       "id": "c3b2662",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -219,7 +219,7 @@
        },
        "elements": [
         {
-         "id": "3685364",
+         "id": "0adbea3",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -267,8 +267,8 @@
           "button_background_hover_color": "rgba(0,0,0,0)",
           "selected_icon": {
            "value": {
-            "url": "https://wassitowing.ca/wp-content/uploads/wt/phone-2_4.svg",
-            "id": "",
+            "url": "https://wassitowing.ca/wp-content/uploads/2026/11/phone-2_4.svg",
+            "id": 37,
             "source": "library"
            },
            "library": "svg"
@@ -285,7 +285,7 @@
          "elements": []
         },
         {
-         "id": "8089391",
+         "id": "5a8f5a2",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -333,8 +333,8 @@
           "button_background_hover_color": "#101D32",
           "selected_icon": {
            "value": {
-            "url": "https://wassitowing.ca/wp-content/uploads/wt/pin-2_4.svg",
-            "id": "",
+            "url": "https://wassitowing.ca/wp-content/uploads/2026/11/pin-2_4.svg",
+            "id": 40,
             "source": "library"
            },
            "library": "svg"
@@ -354,7 +354,7 @@
      ]
     },
     {
-     "id": "25301c3",
+     "id": "84eded9",
      "elType": "container",
      "isInner": true,
      "settings": {

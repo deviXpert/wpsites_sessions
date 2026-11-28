@@ -4,7 +4,7 @@
  "type": "header",
  "content": [
   {
-   "id": "194246e",
+   "id": "a845992",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -54,7 +54,7 @@
    },
    "elements": [
     {
-     "id": "8ed29b4",
+     "id": "3663c4c",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -92,14 +92,14 @@
      },
      "elements": [
       {
-       "id": "a30db6a",
+       "id": "0221556",
        "elType": "widget",
        "widgetType": "icon",
        "settings": {
         "selected_icon": {
          "value": {
-          "url": "https://wassitowing.ca/wp-content/uploads/wt/alert-2_2.svg",
-          "id": "",
+          "url": "https://wassitowing.ca/wp-content/uploads/2026/11/alert-2_2.svg",
+          "id": 25,
           "source": "library"
          },
          "library": "svg"
@@ -116,7 +116,7 @@
        "elements": []
       },
       {
-       "id": "d540778",
+       "id": "7f2680a",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -147,7 +147,7 @@
      ]
     },
     {
-     "id": "14ac115",
+     "id": "b36799f",
      "elType": "widget",
      "widgetType": "button",
      "settings": {
@@ -200,7 +200,7 @@
    ]
   },
   {
-   "id": "878d9ed",
+   "id": "5027745",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -251,13 +251,13 @@
    },
    "elements": [
     {
-     "id": "7a634e7",
+     "id": "23cfb16",
      "elType": "widget",
      "widgetType": "image",
      "settings": {
       "image": {
-       "url": "https://wassitowing.ca/wp-content/uploads/wt/WassiTowing_horizontal_reversed.svg",
-       "id": "",
+       "url": "https://wassitowing.ca/wp-content/uploads/2026/11/WassiTowing_horizontal_reversed.svg",
+       "id": 51,
        "source": "library"
       },
       "image_size": "full",
@@ -286,7 +286,7 @@
      "elements": []
     },
     {
-     "id": "2c05ad3",
+     "id": "7550040",
      "elType": "widget",
      "widgetType": "nav-menu",
      "settings": {
@@ -394,7 +394,7 @@
      "elements": []
     },
     {
-     "id": "4c8b423",
+     "id": "44613d6",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -425,7 +425,7 @@
      },
      "elements": [
       {
-       "id": "91f5441",
+       "id": "b69f373",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -486,7 +486,7 @@
        "elements": []
       },
       {
-       "id": "42f7dce",
+       "id": "7121d23",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -534,8 +534,8 @@
         "button_background_hover_color": "#FF6B00",
         "selected_icon": {
          "value": {
-          "url": "https://wassitowing.ca/wp-content/uploads/wt/phone-2_4.svg",
-          "id": "",
+          "url": "https://wassitowing.ca/wp-content/uploads/2026/11/phone-2_4.svg",
+          "id": 37,
           "source": "library"
          },
          "library": "svg"

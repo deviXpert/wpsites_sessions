@@ -1,0 +1,55 @@
+/* Wassi Towing Ltd. design tokens. Paste into Elementor > Site Settings > Custom CSS, or the child theme */
+:root{
+  --wt-navy:#101D32; --wt-ink:#0B1424; --wt-navy-2:#1A2B47;
+  --wt-orange:#FF6B00; --wt-orange-text:#B84D00; --wt-orange-tint:#FFF1E6;
+  --wt-bg:#F5F6F8; --wt-line:#E2E6EC; --wt-muted:#5A6577; --wt-on-dark:#C5CEDB;
+  --wt-font-display:"Montserrat",sans-serif; --wt-font-body:"Inter",sans-serif;
+  --wt-radius-btn:14px; --wt-radius-card:20px; --wt-radius-panel:24px;
+  --wt-container:1200px; --wt-section-y:88px;
+  --wt-hazard:repeating-linear-gradient(-45deg,var(--wt-navy) 0 16px,var(--wt-orange) 16px 32px);
+  --wt-road-dash:repeating-linear-gradient(90deg,#fff 0 60px,transparent 60px 110px);
+}
+.wt-display{font-family:var(--wt-font-display);font-weight:900;font-style:italic;line-height:.98;letter-spacing:-.015em}
+.wt-eyebrow{font-family:var(--wt-font-display);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--wt-orange-text)}
+.wt-dark .wt-eyebrow{color:var(--wt-orange)}
+.wt-hazard{height:14px;background:var(--wt-hazard)}
+
+/* ---- Wassi helpers (classes set on Elementor elements under Advanced > CSS Classes) ---- */
+.wt-hazard{background:var(--wt-hazard)}
+.wt-road-dash{background:var(--wt-road-dash);opacity:.85}
+.wt-pole{background:linear-gradient(90deg,#8A97AB,#C5CEDB,#8A97AB)}
+.wt-dots{background-image:radial-gradient(#F6C9A3 1.2px,transparent 1.2px);background-size:22px 22px}
+.wt-nowrap .elementor-heading-title{white-space:nowrap}
+.wt-deco{pointer-events:none;user-select:none}
+.wt-quote-col{max-width:470px}
+.wt-links a{font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.wt-nav .elementor-item-active{font-weight:700}
+.wt-drow:focus-visible,.wt-check:focus-visible{outline:2px solid #FF6B00;outline-offset:2px}
+.wt-bigphone .elementor-button-icon svg{width:.62em;height:.62em}
+/* button icon sizes (Elementor renders button icons at 1em by default) */
+.wt-i16 .elementor-button-icon svg{width:16px;height:16px}
+.wt-i18 .elementor-button-icon svg{width:18px;height:18px}
+.wt-i20 .elementor-button-icon svg{width:20px;height:20px}
+.wt-i26 .elementor-button-icon svg{width:26px;height:26px}
+.wt-i28 .elementor-button-icon svg{width:28px;height:28px}
+.wt-i30 .elementor-button-icon svg{width:30px;height:30px}
+.elementor-button .elementor-button-icon{display:inline-flex;align-items:center}
+/* Footer columns keep the design's 180px minimum */
+.wt-fcol{min-width:180px}
+
+/* ---- Stranded mode overlay ---- */
+.wt-stranded{position:fixed!important;inset:0;z-index:99999;overflow:auto;display:none!important}
+.wt-stranded.is-open{display:block!important}
+body.elementor-editor-active .wt-stranded{position:relative!important;display:block!important}
+body.wt-no-scroll{overflow:hidden}
+.wt-check{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.wt-check .wt-box{position:relative}
+.wt-check[aria-pressed=true] .elementor-heading-title{color:#8FA0B8}
+.wt-check[aria-pressed=true] .wt-box{background:#FF6B00;border-color:#FF6B00!important}
+.wt-check[aria-pressed=true] .wt-box::after{content:"✓";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#101D32;font-weight:900;font-size:16px}
+
+/* ---- Mobile header: hamburger dropdown full width under the bar ---- */
+@media (max-width:767px){
+  .wt-nav .elementor-nav-menu--dropdown{border-top:1px solid #22324D}
+  .wt-nav .elementor-nav-menu--dropdown a{border-bottom:1px solid #1A2B47}
+}

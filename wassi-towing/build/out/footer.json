@@ -4,7 +4,7 @@
  "type": "footer",
  "content": [
   {
-   "id": "b113f77",
+   "id": "52e671a",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -43,7 +43,7 @@
    },
    "elements": [
     {
-     "id": "f377537",
+     "id": "c11cd81",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -76,7 +76,7 @@
      },
      "elements": [
       {
-       "id": "982fdef",
+       "id": "a0e9d74",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -108,13 +108,13 @@
        },
        "elements": [
         {
-         "id": "432862d",
+         "id": "ba36b90",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
           "image": {
-           "url": "https://wassitowing.ca/wp-content/uploads/wt/WassiTowing_horizontal_reversed.svg",
-           "id": "",
+           "url": "https://wassitowing.ca/wp-content/uploads/2026/11/WassiTowing_horizontal_reversed.svg",
+           "id": 51,
            "source": "library"
           },
           "image_size": "full",
@@ -138,7 +138,7 @@
          "elements": []
         },
         {
-         "id": "f514e19",
+         "id": "9329685",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -162,7 +162,7 @@
          "elements": []
         },
         {
-         "id": "3130a97",
+         "id": "21bfd20",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -210,8 +210,8 @@
           "button_background_hover_color": "#FF6B00",
           "selected_icon": {
            "value": {
-            "url": "https://wassitowing.ca/wp-content/uploads/wt/phone-2_4.svg",
-            "id": "",
+            "url": "https://wassitowing.ca/wp-content/uploads/2026/11/phone-2_4.svg",
+            "id": 37,
             "source": "library"
            },
            "library": "svg"
@@ -229,7 +229,7 @@
        ]
       },
       {
-       "id": "c4cd244",
+       "id": "0de9b09",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -259,7 +259,7 @@
        },
        "elements": [
         {
-         "id": "eb085eb",
+         "id": "5bc5361",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -289,13 +289,13 @@
          "elements": []
         },
         {
-         "id": "a1541da",
+         "id": "9f50d4b",
          "elType": "widget",
          "widgetType": "icon-list",
          "settings": {
           "icon_list": [
            {
-            "_id": "a1682b2",
+            "_id": "5895ae9",
             "text": "Flatbed &amp; Wheel-Lift Towing",
             "selected_icon": {
              "value": "",
@@ -308,7 +308,7 @@
             }
            },
            {
-            "_id": "924a74c",
+            "_id": "c9a4de7",
             "text": "Roadside Rescue",
             "selected_icon": {
              "value": "",
@@ -321,7 +321,7 @@
             }
            },
            {
-            "_id": "33b88e3",
+            "_id": "4c80cac",
             "text": "Tire Rescue",
             "selected_icon": {
              "value": "",
@@ -334,7 +334,7 @@
             }
            },
            {
-            "_id": "1ca1a6c",
+            "_id": "2d61a88",
             "text": "Fuel Drop",
             "selected_icon": {
              "value": "",
@@ -347,7 +347,7 @@
             }
            },
            {
-            "_id": "e7eeb3e",
+            "_id": "9807547",
             "text": "Battery Boost",
             "selected_icon": {
              "value": "",
@@ -360,7 +360,7 @@
             }
            },
            {
-            "_id": "e92d19b",
+            "_id": "8d77186",
             "text": "Ditch &amp; Snow Recovery",
             "selected_icon": {
              "value": "",
@@ -373,7 +373,7 @@
             }
            },
            {
-            "_id": "c6470c3",
+            "_id": "cd65585",
             "text": "Trailer &amp; Equipment Hauling",
             "selected_icon": {
              "value": "",
@@ -386,7 +386,7 @@
             }
            },
            {
-            "_id": "edc3c0d",
+            "_id": "c4c695a",
             "text": "Motorcycle Transport",
             "selected_icon": {
              "value": "",
@@ -399,7 +399,7 @@
             }
            },
            {
-            "_id": "4cb02ab",
+            "_id": "5733c7e",
             "text": "Prestige &amp; Low-Clearance Towing",
             "selected_icon": {
              "value": "",
@@ -443,7 +443,7 @@
        ]
       },
       {
-       "id": "513f900",
+       "id": "c7d3ce2",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -473,7 +473,7 @@
        },
        "elements": [
         {
-         "id": "fb744db",
+         "id": "61f9b2d",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -503,13 +503,13 @@
          "elements": []
         },
         {
-         "id": "22c4238",
+         "id": "4201d34",
          "elType": "widget",
          "widgetType": "icon-list",
          "settings": {
           "icon_list": [
            {
-            "_id": "263c7db",
+            "_id": "4101ad8",
             "text": "Home",
             "selected_icon": {
              "value": "",
@@ -522,7 +522,7 @@
             }
            },
            {
-            "_id": "2476f80",
+            "_id": "7b099c5",
             "text": "About",
             "selected_icon": {
              "value": "",
@@ -535,7 +535,7 @@
             }
            },
            {
-            "_id": "5f88a33",
+            "_id": "f9cabda",
             "text": "FAQs",
             "selected_icon": {
              "value": "",
@@ -548,7 +548,7 @@
             }
            },
            {
-            "_id": "25d412a",
+            "_id": "50454a3",
             "text": "Services",
             "selected_icon": {
              "value": "",
@@ -592,7 +592,7 @@
        ]
       },
       {
-       "id": "2dd3a30",
+       "id": "50cd652",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -622,7 +622,7 @@
        },
        "elements": [
         {
-         "id": "ab46f2d",
+         "id": "2b1b4e5",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -652,13 +652,13 @@
          "elements": []
         },
         {
-         "id": "9f5f21f",
+         "id": "e96cbf1",
          "elType": "widget",
          "widgetType": "icon-list",
          "settings": {
           "icon_list": [
            {
-            "_id": "e29eee1",
+            "_id": "a22e4ed",
             "text": "Call [PHONE]",
             "selected_icon": {
              "value": "",
@@ -671,7 +671,7 @@
             }
            },
            {
-            "_id": "41c807a",
+            "_id": "9f6af70",
             "text": "Text [SMS NUMBER]",
             "selected_icon": {
              "value": "",
@@ -684,7 +684,7 @@
             }
            },
            {
-            "_id": "f832107",
+            "_id": "e4f0a75",
             "text": "[EMAIL]",
             "selected_icon": {
              "value": "",
@@ -697,7 +697,7 @@
             }
            },
            {
-            "_id": "6ae0474",
+            "_id": "5f1a5ef",
             "text": "Hours: [24/7, confirm]",
             "selected_icon": {
              "value": "",
@@ -705,7 +705,7 @@
             }
            },
            {
-            "_id": "99a27f3",
+            "_id": "fe39c78",
             "text": "All of Calgary: NW, NE, SW, SE",
             "selected_icon": {
              "value": "",
@@ -746,7 +746,7 @@
      ]
     },
     {
-     "id": "fb0bdb3",
+     "id": "610e5ae",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -782,7 +782,7 @@
      },
      "elements": [
       {
-       "id": "96e560d",
+       "id": "bf4e9f7",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -813,7 +813,7 @@
        "elements": []
       },
       {
-       "id": "1de8ba9",
+       "id": "e61c4e2",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -841,7 +841,7 @@
    ]
   },
   {
-   "id": "0199354",
+   "id": "6b910d1",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -869,7 +869,7 @@
    },
    "elements": [
     {
-     "id": "110b5af",
+     "id": "59da92e",
      "elType": "container",
      "isInner": true,
      "settings": {
@@ -913,7 +913,7 @@
      },
      "elements": [
       {
-       "id": "423dad2",
+       "id": "2f2ee5c",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -939,7 +939,7 @@
        },
        "elements": [
         {
-         "id": "bef5eda",
+         "id": "39453ea",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -985,14 +985,14 @@
          },
          "elements": [
           {
-           "id": "28d5bc1",
+           "id": "6480108",
            "elType": "widget",
            "widgetType": "icon",
            "settings": {
             "selected_icon": {
              "value": {
-              "url": "https://wassitowing.ca/wp-content/uploads/wt/alert-2_4.svg",
-              "id": "",
+              "url": "https://wassitowing.ca/wp-content/uploads/2026/11/alert-2_4.svg",
+              "id": 26,
               "source": "library"
              },
              "library": "svg"
@@ -1009,7 +1009,7 @@
            "elements": []
           },
           {
-           "id": "c689b9c",
+           "id": "27d854c",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -1035,7 +1035,7 @@
          ]
         },
         {
-         "id": "ba9c18b",
+         "id": "8a264b7",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -1098,7 +1098,7 @@
        ]
       },
       {
-       "id": "89417ff",
+       "id": "4cd74ef",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -1128,7 +1128,7 @@
        "elements": []
       },
       {
-       "id": "51dce54",
+       "id": "04f33bc",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1152,7 +1152,7 @@
        },
        "elements": [
         {
-         "id": "aa1696a",
+         "id": "0192e69",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -1200,8 +1200,8 @@
           "button_background_hover_color": "#FF6B00",
           "selected_icon": {
            "value": {
-            "url": "https://wassitowing.ca/wp-content/uploads/wt/phone-2_6.svg",
-            "id": "",
+            "url": "https://wassitowing.ca/wp-content/uploads/2026/11/phone-2_6.svg",
+            "id": 38,
             "source": "library"
            },
            "library": "svg"
@@ -1219,7 +1219,7 @@
          "elements": []
         },
         {
-         "id": "475c18b",
+         "id": "6a0a52a",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -1267,8 +1267,8 @@
           "button_background_hover_color": "#FFFFFF",
           "selected_icon": {
            "value": {
-            "url": "https://wassitowing.ca/wp-content/uploads/wt/pin-2_4.svg",
-            "id": "",
+            "url": "https://wassitowing.ca/wp-content/uploads/2026/11/pin-2_4.svg",
+            "id": 40,
             "source": "library"
            },
            "library": "svg"
@@ -1286,7 +1286,7 @@
          "elements": []
         },
         {
-         "id": "fe60d6c",
+         "id": "d33af21",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -1345,8 +1345,8 @@
           "button_hover_border_color": "#3A4A66",
           "selected_icon": {
            "value": {
-            "url": "https://wassitowing.ca/wp-content/uploads/wt/check-2_4.svg",
-            "id": "",
+            "url": "https://wassitowing.ca/wp-content/uploads/2026/11/check-2_4.svg",
+            "id": 31,
             "source": "library"
            },
            "library": "svg"
@@ -1366,7 +1366,7 @@
        ]
       },
       {
-       "id": "aebd27f",
+       "id": "9e3d78a",
        "elType": "container",
        "isInner": true,
        "settings": {
@@ -1408,7 +1408,7 @@
        },
        "elements": [
         {
-         "id": "92651e4",
+         "id": "454cc7b",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1432,7 +1432,7 @@
          "elements": []
         },
         {
-         "id": "e3b7fdd",
+         "id": "3df1913",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1474,7 +1474,7 @@
          },
          "elements": [
           {
-           "id": "161f3f4",
+           "id": "d148001",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1534,7 +1534,7 @@
            "elements": []
           },
           {
-           "id": "7d30f25",
+           "id": "7cd774e",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -1560,7 +1560,7 @@
          ]
         },
         {
-         "id": "18a6b46",
+         "id": "ca377e1",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1602,7 +1602,7 @@
          },
          "elements": [
           {
-           "id": "6ab93cd",
+           "id": "d0abb18",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1662,7 +1662,7 @@
            "elements": []
           },
           {
-           "id": "4c1eb4b",
+           "id": "3eee71f",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -1688,7 +1688,7 @@
          ]
         },
         {
-         "id": "1537375",
+         "id": "369a14d",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1730,7 +1730,7 @@
          },
          "elements": [
           {
-           "id": "1645fc5",
+           "id": "3b5d91c",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1790,7 +1790,7 @@
            "elements": []
           },
           {
-           "id": "1d8b3d5",
+           "id": "d7d17a3",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -1816,7 +1816,7 @@
          ]
         },
         {
-         "id": "69a8d5b",
+         "id": "90d4454",
          "elType": "container",
          "isInner": true,
          "settings": {
@@ -1858,7 +1858,7 @@
          },
          "elements": [
           {
-           "id": "1ba217a",
+           "id": "4d2a80b",
            "elType": "container",
            "isInner": true,
            "settings": {
@@ -1918,7 +1918,7 @@
            "elements": []
           },
           {
-           "id": "7f527e2",
+           "id": "c64c719",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -1946,7 +1946,7 @@
        ]
       },
       {
-       "id": "36c9a1c",
+       "id": "b092c0f",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -1992,7 +1992,7 @@
    ]
   },
   {
-   "id": "d487e4b",
+   "id": "866486a",
    "elType": "container",
    "isInner": false,
    "settings": {
@@ -2016,7 +2016,7 @@
    },
    "elements": [
     {
-     "id": "c5bb59e",
+     "id": "59f3659",
      "elType": "widget",
      "widgetType": "html",
      "settings": {
